@@ -1,4 +1,4 @@
-package com.shivanshusingh.PluginAnalyser;
+package com.shivanshusingh.PluginAnalyser.Analysis;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

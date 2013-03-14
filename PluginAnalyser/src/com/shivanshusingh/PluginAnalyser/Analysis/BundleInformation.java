@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.shivanshusingh.PluginAnalyser;
+package com.shivanshusingh.PluginAnalyser.Analysis;
 
 import java.io.IOException;
 import java.io.InputStream;
