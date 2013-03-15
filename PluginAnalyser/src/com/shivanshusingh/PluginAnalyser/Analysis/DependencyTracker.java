@@ -9,47 +9,17 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.text.ParseException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Enumeration;
-import java.util.HashSet;
-import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
-import java.util.Queue;
 import java.util.Set;
-import java.util.SortedSet;
-import java.util.Stack;
-import java.util.concurrent.ConcurrentLinkedQueue;
-import java.util.concurrent.LinkedBlockingQueue;
-import java.util.jar.Attributes;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 import java.util.jar.Manifest;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipFile;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-
-import org.apache.ivy.core.event.download.StartArtifactDownloadEvent;
-import org.apache.ivy.osgi.core.BundleInfo;
-import org.apache.ivy.osgi.core.BundleRequirement;
-import org.apache.ivy.osgi.core.ExportPackage;
-import org.apache.ivy.osgi.core.ManifestHeaderElement;
-import org.apache.ivy.osgi.core.ManifestHeaderValue;
 import org.apache.ivy.osgi.core.ManifestParser;
-import org.apache.ivy.osgi.util.Version;
-import org.apache.ivy.osgi.util.VersionRange;
 import org.objectweb.asm.ClassReader;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
-
-import sun.tools.tree.SuperExpression;
 
 
 /**
@@ -561,16 +531,19 @@ public class DependencyTracker extends ManifestParser {
 	}
 
 	
-	private static void extractManifestInformation(Manifest manifest) {
+	private static BundleInformation extractManifestInformation(Manifest manifest) {
+		BundleInformation bundleinfo=null;
 		try {
-			BundleInformation bundleinfo = new BundleInformation(manifest);
-			extractBundleInfo(bundleinfo);
+			 bundleinfo = new BundleInformation(manifest);
+			//extractBundleInfo(bundleinfo);
+			
 
 		} catch (ParseException e) {
 			System.out
 					.println("  NO Manifest found here or cannot parse that  or maybe theres nothing to parse inthis.  ");
 			// e.printStackTrace();
 		}
+		return bundleinfo;
 	}
 
 	private static BundleInformation extractManifestInformation( InputStream manifestStream) {
@@ -580,7 +553,7 @@ public class DependencyTracker extends ManifestParser {
 
 			bundleInformation = new BundleInformation(manifestStream);
 	
-			extractBundleInfo(bundleInformation);
+			//extractBundleInfo(bundleInformation);
 
 		} catch (ParseException e) {
 			System.out

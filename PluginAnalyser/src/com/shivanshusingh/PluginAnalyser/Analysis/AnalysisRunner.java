@@ -1,7 +1,6 @@
 package com.shivanshusingh.PluginAnalyser.Analysis;
 
 import java.io.IOException;
-import java.io.OutputStream;
 
 public class AnalysisRunner {
 
