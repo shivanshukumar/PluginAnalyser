@@ -7,6 +7,9 @@ public class AnalysisRunner {
 
 	
 	/**
+	 * starts the analysis and recording process for a given features / plugins folder.
+	 * The naming convention is this: directory/features/  contains all the feature relared jars
+	 * and directory/plugins/ contains al the plugin jars that need to ne analysed / deployed together.
 	 * @param args
 	 */
 	public static void main(final String[] args) throws IOException {
@@ -21,18 +24,20 @@ public class AnalysisRunner {
 
 		
 		
-		String destinationDirectory="/Users/singhsk/Developer/eclipse_plugins/testmirror_ganymede";
+		String destinationDirectory=
+				"/Users/singhsk/Developer/eclipse_plugins/testmirror_dltk"
+				//"/Users/singhsk/Developer/eclipse_plugins/testmirror_ganymede"
+				;
 		
-		// setting up the stage for all plugin analysis for the given feature
-		//  iterate for all included features if necessary.
+		// now doing the extractions from features. - feature.xml i.e.
+		String  featureFolderPath=	destinationDirectory+  "/features/";
+		FeatureAnalyser.analyseAndRecordAllInformationFromFeautreFolder(featureFolderPath);
 		
-		
+		  // reading all the files (plugin jars) in the specified plugin folder
 		String  pluginFolderPath=	destinationDirectory+  "/plugins/";
-				//"/Users/singhsk/Developer/voldemort-0.96/dist/";
-				//"/Users/singhsk/Developer/AndroidEclipseBundleforMac/adt-bundle-mac-x86_64/eclipse/plugins/";
-		// reading all the files (plugin jars) in the specified plugin folder
 		DependencyTracker.analyseAndRecordAllInformationFromPluginFolder(pluginFolderPath);
 	
+		
 		
 
 	}

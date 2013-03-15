@@ -7,88 +7,50 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.text.ParseException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Enumeration;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
-import java.util.Queue;
-import java.util.Set;
-import java.util.SortedSet;
-import java.util.Stack;
-import java.util.concurrent.ConcurrentLinkedQueue;
-import java.util.concurrent.LinkedBlockingQueue;
-import java.util.jar.Attributes;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
-import java.util.jar.Manifest;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipFile;
 
-import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
-import org.apache.ivy.core.event.download.StartArtifactDownloadEvent;
-import org.apache.ivy.osgi.core.BundleInfo;
-import org.apache.ivy.osgi.core.BundleRequirement;
-import org.apache.ivy.osgi.core.ExportPackage;
-import org.apache.ivy.osgi.core.ManifestHeaderElement;
-import org.apache.ivy.osgi.core.ManifestHeaderValue;
-import org.apache.ivy.osgi.core.ManifestParser;
-import org.apache.ivy.osgi.util.Version;
-import org.apache.ivy.osgi.util.VersionRange;
-import org.objectweb.asm.ClassReader;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import sun.tools.tree.SuperExpression;
-
-
-/**
- * 
- * @author singhsk
- *
- */
-public class DependencyTracker extends ManifestParser {
+public class FeatureAnalyser {
 
 	
-
-	/**
-	 * @param pluginFolderPath
-	 * @throws IOException
-	 */
-	public static void analyseAndRecordAllInformationFromPluginFolder(
-			String pluginFolderPath) throws IOException {
+	
+	
+	public static void analyseAndRecordAllInformationFromFeautreFolder(
+			String featureFolderPath) throws IOException {
 		
-		// reading all the files (plugin jars) in the specified plugin folder
+		// reading all the files (feature jars) in the specified feature folder
 		long l1 = System.currentTimeMillis();
 
-		System.out.println("=======Analysing Source:"+pluginFolderPath);
-		File folder = new File(pluginFolderPath);
+		System.out.println("=======Analysing  Feature Source:"+featureFolderPath);
+		File folder = new File(featureFolderPath);
 		if(null==folder)
 		{
 			System.out.println("==== nothing here.");
 			return;
 		}
 		File[] listOfFiles = folder.listFiles();
-		long PluginFolderFileCounter=0;
+		long featureFolderFileCounter=0;
 		    for (int i = 0; i < listOfFiles.length; i++) {
 		      if (listOfFiles[i].isFile()) {
-		    	  String pluginJarName=listOfFiles[i].getName();
-		    	  if(pluginJarName.toLowerCase().endsWith(".jar"))
+		    	  String featureJarName=listOfFiles[i].getName();
+		    	  if(featureJarName.toLowerCase().endsWith(".jar"))
 		    	  {
-		    		  // this means that this is a plugin jar (it is assumed that this would be a plugin jar if it is at this location)
-		    		  PluginFolderFileCounter++;
-		    		  analyseAndRecordAllInformationFromPluginJar(pluginFolderPath,pluginJarName );
-					
+		    		  // this means that this is a feature jar (it is assumed that this would be a feature jar if it is at this location)
+		    		  featureFolderFileCounter++;
+		    		  analyseAndRecordAllInformationFromFeatureJar(featureFolderPath,featureJarName );
 		    	  }
 
 		      }/* else if (listOfFiles[i].isDirectory()) {
@@ -96,63 +58,173 @@ public class DependencyTracker extends ManifestParser {
 		      }*/
 		    }
 		    long l2 = System.currentTimeMillis();
-		    System.out.println(PluginFolderFileCounter+" plugin jars have been analyzed");
+		    System.out.println(featureFolderFileCounter+" feature  jars have been analyzed");
 		    
-			System.err.println("for  source:"+pluginFolderPath+"  time: " + (l2 - l1) / 1000f + " seconds. \n");
-		//String pluginJarName ="com.android.ide.eclipse.adt_21.0.1.2012-12-6-2-58.jar";
+			System.err.println("for  source:"+featureFolderPath+"  time: " + (l2 - l1) / 1000f + " seconds. \n");
+		
 	}
 
 	/**
 	 * @throws IOException
 	 */
-	public static void analyseAndRecordAllInformationFromPluginJar(String pathPrefix, String pluginJarName) throws IOException {
-		try{
-		DependencyVisitor v = new DependencyVisitor();
-		BundleInformation bundleInformation = new BundleInformation();
-		// ////////archive/////////////////////////////////
-		String jarFileNameWithPathFull =pathPrefix+  pluginJarName;
+	public static void analyseAndRecordAllInformationFromFeatureJar(String pathPrefix, String featureJarName) throws IOException {
+		// ////////  feature archive/////////////////////////////////
+		String jarFileNameWithPathFull =pathPrefix+  featureJarName;
 		
 		long l1 = System.currentTimeMillis();
 
 		// ZipFile f = new ZipFile(jarFileNameWithPathFull);
 		JarFile f = new JarFile(jarFileNameWithPathFull);
 
-		// Actual part of getting the dependecies and offerrings from the
+		// Actual part of getting the meta data from the
 		// current jar file.////
 		
-		bundleInformation=getBundleManifestAndMetaInformation(f);
-		System.out.println("now starting the  plugin dependency  extraction");
-		extractDependenciesAndExportsFromJarFile(v, bundleInformation,  f);
+		System.out.println("now starting the  feature dependency  extraction");
 		
+		FeatureInformation featureInfo=	extractFeatureMetaDataFromFeatureJar( f);
 		
-		// ////////////////////////////////////////
-
-		// ///////// //sing le class reading try //////////////
-
-		/*
-		 * jarFileNameWithPathFull=
-		 * "./bin/com/shivanshusingh/PluginAnalyser_OLD/DUMMYFORTESTClassSignatureExtractor.class"
-		 * ; File f = new File(jarFileNameWithPathFull); InputStream in= new
-		 * FileInputStream(f); new ClassReader(in).accept(v, 0);
-		 */
-		// /////////////////////////// ////////////////////////
 
 		long l2 = System.currentTimeMillis();
 
-		writeDataToFile(v, bundleInformation, pluginJarName);
+		writeDataToFile(featureInfo, featureJarName);
 
 		System.err.println("time: " + (l2 - l1) / 1000f + " seconds. \n");
-		}catch(Exception e)
-		{
-			System.err.println("ERROR WHILE ANALYSING JAR: "+pathPrefix+pluginJarName);
+	}
+	
+	
+	public static FeatureInformation extractFeatureMetaDataFromFeatureJar(JarFile jarfileinstance)
+	{
+		FeatureInformation featureinfo = new FeatureInformation();
+		
+		Enumeration<? extends JarEntry> en = jarfileinstance.entries();
+
+		while (en.hasMoreElements()) {
+			JarEntry e = en.nextElement();
+
+			String name = e.getName();
+			if (name.toLowerCase().endsWith("feature.xml")) {
+				try {
+					System.out
+							.println("==== ==== ====  feature.xml :  enclosing  jar or such file name  =    "
+									+ jarfileinstance.getName() + ">" + name);
+					featureinfo = extractFeatureInformation(jarfileinstance
+							.getInputStream(e));
+
+				} catch (Exception exception) {
+					exception.printStackTrace();
+				}
+			}
+		}
+		return featureinfo;
+
+	}
+	
+	
+	private static FeatureInformation extractFeatureInformation(InputStream inputStream) {
+
+		FeatureInformation featureInfo=new FeatureInformation();
+		String TEMPFileName = "feature-analyser-temp-" + Math.random() + (
+		// jarfileinstance.getName()
+		// + "_" +
+				"feature.xml").replaceAll("/", "_").replace(" ", "_");
+		try {
+			BufferedReader br = new BufferedReader(new InputStreamReader(
+					inputStream));
+			String ss;
+
+			BufferedReader bufferedTempReader = new BufferedReader(
+					new InputStreamReader(inputStream));
+
+			BufferedWriter bufferedTempWriter;
+
+			bufferedTempWriter = new BufferedWriter(
+					new FileWriter(TEMPFileName));
+
+			int inread;
+			while ((inread = bufferedTempReader.read()) != -1) {
+				// System.out.print((char)inread);
+				bufferedTempWriter.write(inread);
+				//capturing the full xml text of the feature.xml
+				featureInfo.appendXml(new StringBuffer(""+(char)inread));
+			}
+			bufferedTempWriter.close();
+			bufferedTempReader.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	}
 
-	private static void writeDataToFile(DependencyVisitor v, BundleInformation bundleinfo,
-			String pluginJarFileName) throws IOException {
-		FileWriter fwriter = new FileWriter("PLUGIN-EXTRACT-"
-				+ pluginJarFileName.replace('/', '_') + ".txt");
+		try {
+			File f = new File(TEMPFileName);
+			System.out.println(	featureInfo.getXml()       );
+			// now the file (xml) is ready for analysis.
+			Document doc = DocumentBuilderFactory.newInstance()
+					.newDocumentBuilder().parse(f);
+			// System.out.println(doc.toString());
+			// System.out.println("Root element :" +
+			// doc.getDocumentElement().getNodeName());
+
+			/*
+			 * NodeList nList = doc.getElementsByTagName("import"); for (int
+			 * temp = 0; temp < nList.getLength(); temp++) {
+			 * 
+			 * Node nNode = nList.item(temp);
+			 * 
+			 * System.out.println("\nCurrent Element :" + nNode.getNodeName());
+			 * 
+			 * if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+			 * 
+			 * Element eElement = (Element) nNode;
+			 * 
+			 * System.out.println(" feature : " +
+			 * eElement.getAttribute("feature"));
+			 * System.out.println(" plugin : " +
+			 * eElement.getAttribute("plugin"));
+			 * System.out.println(" version : " +
+			 * eElement.getAttribute("version")); System.out.println(" match : "
+			 * + eElement.getAttribute("match")); } }
+			 */
+			NodeList nList = doc.getElementsByTagName("plugin");
+			for (int temp = 0; temp < nList.getLength(); temp++) {
+
+				Node nNode = nList.item(temp);
+
+				System.out.println("\nCurrent Element :" + nNode.getNodeName());
+
+				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+
+					Element eElement = (Element) nNode;
+
+					System.out.println(" id : "
+							+ eElement.getAttribute("id")
+							+ (" , version : " + eElement
+									.getAttribute("version")));
+				}
+			}
+
+			new File(TEMPFileName).delete();
+
+		} catch (ParserConfigurationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SAXException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return featureInfo;
+
+	}
+	
+	
+	
+
+	private static void writeDataToFile(FeatureInformation  featureInfo, 		String featureJarFileName) throws IOException {
+		/*FileWriter fwriter = new FileWriter("FEATURE-EXTRACT-"
+				+ featureJarFileName.replace('/', '_') + ".txt");
 		BufferedWriter writer = new BufferedWriter(fwriter);
 
 		List<String> allDetectedTypes = new ArrayList<String>(
@@ -392,229 +464,8 @@ public class DependencyTracker extends ManifestParser {
 		writer.write("===================================================\n");
 		writer.close();
 		fwriter.close();
+	*/
 	}
 
-	private static long internalFileCounter = 0;
-
-	private static BundleInformation getBundleManifestAndMetaInformation(JarFile jarfileinstance) throws IOException {
-		
-		BundleInformation bundleInformation=new BundleInformation();
-		// getting plugin meta-inf/manifest.mf manifest information
-		Enumeration<? extends JarEntry> en = jarfileinstance.entries();
-		
-		boolean flag_manifestFound=false  ,  flag_pluginxmlFound=false;
-		StringBuffer pluginxmlText = new StringBuffer();
-		while (en.hasMoreElements() && (!flag_manifestFound || !flag_pluginxmlFound)) 
-		{
-			
-			JarEntry e = en.nextElement();
-			String name = e.getName();
-			
-			if (!flag_manifestFound && name.toLowerCase().endsWith("meta-inf/manifest.mf")) 
-			{
-				// getting the manifest.
-				flag_manifestFound=true;
-				try {
-					
-					
-					System.out
-							.println("==== ==== ====  manifest try: file name  =  "
-									+ jarfileinstance.getName() + ">" + name);
-					
-					/*
-					 * Here printing out the detected Manifest file just for debugging
-					 * purposes.
-					 */
-					/*
-					 * if (name.toLowerCase().endsWith("manifest.mf")) {
-					 * System.out.println("====== indicated manifest entry");
-					 * BufferedReader br = new BufferedReader(new InputStreamReader(
-					 * jarfileinstance.getInputStream(e))); String ss; while ((ss =
-					 * br.readLine()) != null) { System.out.println(ss + "/////////"); }
-					 * 
-					 * extractManifestInformation(jarfileinstance.getInputStream(e));
-					 * 
-					 * }
-					 */
-					/* /////////////////////////////////// */
-					bundleInformation= extractManifestInformation(jarfileinstance
-							.getInputStream(e));
-					// extractManifestInformation(jarfileinstance.getManifest());
-
-				} catch (Exception exception) {
-				}
-			}
-			else if(!flag_pluginxmlFound && name.toLowerCase().endsWith("plugin.xml"))
-			{
-				flag_pluginxmlFound=true;
-				System.out.println("==== ====  plugin.xml capture. ");
-				BufferedReader br = new BufferedReader(new InputStreamReader(
-						  jarfileinstance.getInputStream(e))); 
-				String ss; 
-				while ((ss = br.readLine()) != null)
-				{
-					pluginxmlText.append(ss);
-				}
-				br.close();
-				System.out.println(pluginxmlText);
-			}
-		}
-		if(null!=bundleInformation)
-			bundleInformation.setPluginXml(pluginxmlText.toString());
-		return bundleInformation;
-		
-		
-		
-	}
-	private static void extractDependenciesAndExportsFromJarFile(
-			DependencyVisitor v, BundleInformation bundleInformation, JarFile jarfileinstance) throws IOException {
-
-		// // for zip files reading ///////////////
-		// ZipFile f = new ZipFile(jarFileNameWithPathFull.trim());
-		// Enumeration<? extends ZipEntry> en = f.entries();
-		// ///////////////////////////////////////////
-		long thisInterArchiveFileNumber = internalFileCounter;
-
-		System.out.println("==== ====  Starting the Archive 1."
-				+ internalFileCounter + " : " + jarfileinstance.getName()
-				+ " analysis ===================");
-
-		Enumeration<? extends JarEntry> en = jarfileinstance.entries();
-		int classesAnalyzedCounter = 0;
-
-		while (en.hasMoreElements()) {
-			JarEntry e = en.nextElement();
-
-			String name = e.getName();
-			//System.out.println(name);
-
-			
-
-			if (name.toLowerCase().endsWith(".class")) {
-				
-				classesAnalyzedCounter++;
-				new ClassReader(jarfileinstance.getInputStream(e)).accept(v, 0);
-				
-				 
-			
-			} else if (name.toLowerCase().endsWith(".jar")) {
-				// nested jar.
-				
-				System.out.println(name+" found");
-				//System.out.println(bundleInformation.getClasspathEntries().toString());
-				
-				
-				//  now check if this nested jar file is one of the Bundle classpath dependencies (lib jars)
-				if(null!=bundleInformation)
-				{
-					for (String libJarNameEnding : bundleInformation
-							.getClasspathEntries()) 
-					{
-						//System.out.println("CHECKING:"+name+": ends with:"+libJarNameEnding);
-						if (name.toLowerCase().endsWith(
-								libJarNameEnding.toLowerCase())) 
-						{
-							// good news, the jar is present in the bundle manifest jar file  entries' list.
-							System.out.println("now analysing internal lib jar:"+ name);
-							
-							 String TEMPFileName = "pluginanalyser-temp-" + Math.random()
-									 + ( // jarfileinstance.getName() // + "_" +
-									 name).replaceAll("/", "_").replace(" ", "_");
-									 
-									 BufferedReader bufferedTempReader = new BufferedReader( new
-									 InputStreamReader(jarfileinstance.getInputStream(e)));
-									 
-									 BufferedWriter bufferedTempWriter = new BufferedWriter( new
-									 FileWriter(TEMPFileName)); int inread; while ((inread =
-									 bufferedTempReader.read()) != -1) {
-									 bufferedTempWriter.write(inread); }
-									 bufferedTempWriter.close(); bufferedTempReader.close();
-									 System.out.println("==== created : " + TEMPFileName +
-									 "============ "); internalFileCounter++;
-									 extractDependenciesAndExportsFromJarFile(v, bundleInformation, new JarFile( TEMPFileName)); 
-									 System.out.println("==== delete = " + new File(TEMPFileName).delete() + " : " + TEMPFileName +
-									 "============ "); System.out.println("==== ==== ==== ==== ");
-							
-									 break;//get out when found and analysed.
-						}
-					
-					}
-				}
-				
-			}
-			
-
-		}
-		jarfileinstance.close();
-		System.out.println(classesAnalyzedCounter + " Class Files read.");
-		System.out.println(internalFileCounter + " internal Jar Files read.");
-		System.out.println("==== ==== Ending the Archive 1."
-				+ thisInterArchiveFileNumber + " analysis ===================");
-
-	}
-
-	
-	private static void extractManifestInformation(Manifest manifest) {
-		try {
-			BundleInformation bundleinfo = new BundleInformation(manifest);
-			extractBundleInfo(bundleinfo);
-
-		} catch (ParseException e) {
-			System.out
-					.println("  NO Manifest found here or cannot parse that  or maybe theres nothing to parse inthis.  ");
-			// e.printStackTrace();
-		}
-	}
-
-	private static BundleInformation extractManifestInformation( InputStream manifestStream) {
-		BundleInformation bundleInformation = null;
-
-		try {
-
-			bundleInformation = new BundleInformation(manifestStream);
-	
-			extractBundleInfo(bundleInformation);
-
-		} catch (ParseException e) {
-			System.out
-					.println("  NO Manifest found here or cannot parse that  or maybe theres nothing to parse inthis.    ");
-
-			// e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		return bundleInformation;
-	}
-
-	private static void extractBundleInfo(BundleInformation bundleinfo) {
-		Set<String> bundleExports = new LinkedHashSet<String>(
-				bundleinfo.getExports());
-		Set<String> bundleRequires = new LinkedHashSet<String>(
-				bundleinfo.getRequires());
-
-		// Java version so no use
-		List<String> bundleExecEnv = new ArrayList<String>(
-				bundleinfo.getExecutionEnvironments());
-
-		// this is the set of other plugins that this plugin would depend on.
-		// bundleinfo.getRequires() and bundleinfo.getImports() eventually point
-		// to bundleinfo.getRequirements() without any differences.
-		System.out.println("Bundle Requirements = "
-				+ bundleinfo.getRequirements().toString()); // Require-Bundle
-		// //////
-		System.out.println("Bundle Exports = " + bundleExports.toString()); // Export-Package
-		System.out.println("Name Symbolic = "
-				+ bundleinfo.getSymbolicName().toString());
-		System.out.println("Version = " + bundleinfo.getVersion().toString());
-		System.out.println("Version without qualifier  = "
-				+ bundleinfo.getVersion().withoutQualifier().toString());
-		System.out.println("Bundle Imports  = "
-				+ bundleinfo.getImports().toString());
-		System.out.println("Bundle ClassPathEntries  = "
-				+ bundleinfo.getClasspathEntries().toString());
-		System.out.println("Bundle hashcode  = "
-				+ bundleinfo.hashCode()    );
-
-	}
 
 }
