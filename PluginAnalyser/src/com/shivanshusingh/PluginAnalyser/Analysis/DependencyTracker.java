@@ -215,28 +215,45 @@ public class DependencyTracker extends ManifestParser {
 		// to bundleinfo.getRequirements() without any differences.
 		if(null!=bundleinfo)
 		{
-			writer.write("Bundle Requirements ========= \n");
+			writer.write("Bundle Requirements ======== \n");
 			for(Object s:bundleinfo.getRequirements())
 				writer.write(  s.toString()  + "\n");
 			System.out.println("Bundle Requirements = "
 					+ bundleinfo.getRequirements().toString()); // Require-Bundle
-			writer.write("---------------------------------------- \n");
-			writer.write("Bundle Exports ========= \n");
+			writer.write("--------\n");
+			writer.write("Bundle Exports ======== \n");
 			for(Object s:bundleinfo.getExports())
 				writer.write(  s.toString()  + "\n");
 			System.out.println("Bundle Exports = " + bundleinfo.getExports().toString()); // Export-Package
-			System.out.println("Name Symbolic = "
+			writer.write("--------\n");
+			writer.write("Symbolic Name ======== \n");
+			writer.write(   bundleinfo.getSymbolicName().toString()  +"\n" );
+			System.out.println("Symbolic Name = "
 					+ bundleinfo.getSymbolicName().toString());
+			writer.write("--------\n");
+			writer.write("Version ======== \n");
+			writer.write(bundleinfo.getVersion().toString()    +"\n"  );
 			System.out.println("Version = " + bundleinfo.getVersion().toString());
+			writer.write("--------\n");
+			writer.write("Version without qualifier ========\n");
+			writer.write(bundleinfo.getVersion().withoutQualifier().toString() +"\n");
 			System.out.println("Version without qualifier  = "
 					+ bundleinfo.getVersion().withoutQualifier().toString());
-			System.out.println("Bundle Imports  = "
+			writer.write("--------\n");
+			writer.write("Bundle Imports ========\n ");
+			for(Object s:bundleinfo.getImports())
+				writer.write(  s.toString()  + "\n");
+			System.out.println("Bundle Imports = "
 					+ bundleinfo.getImports().toString());
+			writer.write("--------\n");
+			writer.write("Bundle ClassPathEntries ========\n");
+			for(Object s:bundleinfo.getClasspathEntries())
+				writer.write(  s.toString()  + "\n");
 			System.out.println("Bundle ClassPathEntries  = "
 					+ bundleinfo.getClasspathEntries().toString());
+			writer.write("--------\n");
 			System.out.println("Bundle hashcode  = "
 					+ bundleinfo.hashCode()    );
-			writer.write("---------------------------------------- \n");
 			
 		}
 		
@@ -244,152 +261,142 @@ public class DependencyTracker extends ManifestParser {
 		
 			
 
-		writer.write("=================All My Classes (Types)  ==================================\n");
+		writer.write("All My Classes (Types)  ========\n");
 
 		for (String s : allMyClasses) {
 			writer.write(s + "\n");
 		}
-		writer.write("---------------------------------------- \n");
-		writer.write(allMyClasses.size() + "," + " own classes (types).\n");
+		writer.write("--------\n");
+		//writer.write(allMyClasses.size() + "," + " own classes (types).\n");
 		System.out.println(allMyClasses.size() + "," + " own classes (types).");
 
-		writer.write("=================All My Public Classes (Types) ==================================\n");
+		writer.write("All My Public Classes (Types) ========\n");
 
 		for (String s : allMyPublicClasses) {
 			writer.write(s + "\n");
 		}
-		writer.write("---------------------------------------- \n");
-		writer.write(allMyPublicClasses.size() + ","
-				+ " own public classes (types).\n");
+		writer.write("--------\n");
+		//writer.write(allMyPublicClasses.size() + ","+ " own public classes (types).\n");
 		System.out.println(allMyPublicClasses.size() + ","
 				+ " own public classes (types).");
 
-		writer.write("=================All My Methods ==================================\n");
+		writer.write("All My Methods ========\n");
 
 		for (String s : allMyMethods) {
 			writer.write(s + "\n");
 		}
-		writer.write("---------------------------------------- \n");
-		writer.write(allMyMethods.size() + "," + " internal methods.\n");
+		writer.write("--------\n");
+		//writer.write(allMyMethods.size() + "," + " internal methods.\n");
 		System.out.println(allMyMethods.size() + "," + " internal methods.");
 
-		writer.write("=================All My Public Methods ==================================\n");
+		writer.write("All My Public Methods ========\n");
 
 		for (String s : allMyPublicMethods) {
 			writer.write(s + "\n");
 		}
-		writer.write("---------------------------------------- \n");
-		writer.write(allMyPublicMethods.size() + ","
-				+ " internal public methods.\n");
+		writer.write("--------\n");
+		//writer.write(allMyPublicMethods.size() + ","+ " internal public methods.\n");
 		System.out.println(allMyPublicMethods.size() + ","
 				+ " internal public methods.");
 
-		writer.write("=================All   Invokations ==================================\n");
+		writer.write("All Invokations ========\n");
 
 		for (String s : allInvokations) {
 			writer.write(s + "\n");
 		}
-		writer.write("---------------------------------------- \n");
-		writer.write(allInvokations.size() + ","
-				+ " method invokations (intrnal and external).\n");
+		writer.write("--------\n");
+		//writer.write(allInvokations.size() + "," + " method invokations (intrnal and external).\n");
 		System.out.println(allInvokations.size() + ","
 				+ " method invokations (intrnal and external).");
 
-		writer.write("=================All  External  Invokations ==================================\n");
+		writer.write("All External Invokations ========\n");
 
 		for (String s : externalInvokations) {
 			writer.write(s + "\n");
 		}
-		writer.write("---------------------------------------- \n");
-		writer.write(externalInvokations.size() + ","
-				+ " method invokations (external).\n");
+		writer.write("--------\n");
+		//writer.write(externalInvokations.size() + ","+ " method invokations (external).\n");
 		System.out.println(externalInvokations.size() + ","
 				+ " method invokations (external).");
 
-		writer.write("=================All  External and non Excluded  Invokations ==================================\n");
+		writer.write("All External and non Excluded Invokations ========\n");
 
 		for (String s : externalNonJavaInvokations) {
 			writer.write(s + "\n");
 		}
-		writer.write("---------------------------------------- \n");
-		writer.write(externalNonJavaInvokations.size() + ","
-				+ " method invokations (external and non excluded).\n");
+		writer.write("--------\n");
+		//writer.write(externalNonJavaInvokations.size() + ","		+ " method invokations (external and non excluded).\n");
 		System.out.println(externalNonJavaInvokations.size() + ","
 				+ " method invokations (external and non excluded).");
 
-		writer.write("=================All Detected Types==================================\n");
+		writer.write("All Detected Types ========\n");
 		for (String s : allDetectedTypes) {
 			writer.write(s + "\n");
 		}
-		writer.write("---------------------------------------- \n");
-		writer.write(allDetectedTypes.size() + ","
-				+ " types (internal and external).\n");
+		writer.write("--------\n");
+		//writer.write(allDetectedTypes.size() + ","	+ " types (internal and external).\n");
 		System.out.println(allDetectedTypes.size() + ","
 				+ " types (internal and external).");
 
-		writer.write("=================All External Detected Types==================================\n");
+		writer.write("All External Detected Types ========\n");
 		for (String s : allExternalDetectedTypes) {
 			writer.write(s + "\n");
 		}
-		writer.write("---------------------------------------- \n");
-		writer.write(allExternalDetectedTypes.size() + ","
-				+ " types (external).\n");
+		writer.write("--------\n");
+		//writer.write(allExternalDetectedTypes.size() + ","	+ " types (external).\n");
 		System.out.println(allExternalDetectedTypes.size() + ","
 				+ " types (external).");
 
-		writer.write("=================All External Non Java Detected Types==================================\n");
+		writer.write("All External Non Java Detected Types ========\n");
 		for (String s : allExternalNonJavaDetectedTypes) {
 			writer.write(s + "\n");
 		}
-		writer.write("---------------------------------------- \n");
-		writer.write(allExternalNonJavaDetectedTypes.size() + ","
-				+ " types (external non excluded).\n");
-		System.out.println(allExternalNonJavaDetectedTypes.size() + ","
-				+ " types (external Non excluded).");
+		writer.write("--------\n");
+		//writer.write(allExternalNonJavaDetectedTypes.size() + ","	+ " types (external non excluded).\n");
+		System.out.println(allExternalNonJavaDetectedTypes.size() + ","	+ " types (external Non excluded).");
 
-		writer.write("=================All Jar Packages ==================================\n");
+		writer.write("All Jar Packages ========\n");
 
 		for (String s : jarPackages) {
 			writer.write(s + "\n");
 		}
-		writer.write("---------------------------------------- \n");
-		writer.write(jarPackages.size() + "," + " jar packages.\n");
+		writer.write("--------\n");
+		//writer.write(jarPackages.size() + "," + " jar packages.\n");
 
-		writer.write("=================All  Class packages ==================================\n");
+		writer.write("All  Class packages ========\n");
 
 		for (String s : classPackages) {
 			writer.write(s + "\n");
 		}
-		writer.write("---------------------------------------- \n");
-		writer.write(classPackages.size() + "," + " class packages.\n");
-		writer.write("=================All My Deprecated Methods ==================================\n");
+		writer.write("--------\n");
+		//writer.write(classPackages.size() + "," + " class packages.\n");
+		writer.write("All My Deprecated Methods ========\n");
 
 		for (String s : allMyDeprecatedMethods) {
 			writer.write(s + "\n");
 		}
-		writer.write("---------------------------------------- \n");
-		writer.write(allMyDeprecatedMethods.size() + ","
-				+ " deprecated methods.\n");
+		writer.write("--------\n");
+		//writer.write(allMyDeprecatedMethods.size() + ","	+ " deprecated methods.\n");
 		System.out.println(allMyDeprecatedMethods.size() + ","
 				+ " deprecated methods.");
 
-		writer.write("=================All My Deprecated Classes ==================================\n");
+		writer.write("All My Deprecated Classes ========\n");
 
 		for (String s : allMyDeprecatedClasses) {
 			writer.write(s + "\n");
 		}
-		writer.write("---------------------------------------- \n");
-		writer.write(allMyDeprecatedClasses.size() + ","
-				+ " deprecated   classes. \n");
+		writer.write("--------\n");
+		//writer.write(allMyDeprecatedClasses.size() + ","	+ " deprecated   classes. \n");
 		System.out.println(allMyDeprecatedClasses.size() + ","
 				+ " deprecated   classes.");
 
-	if(null!=bundleinfo){
-		writer.write("=================Bundle Plugin.xml ==================================\n");
+	if(null!=bundleinfo)
+	{
+		writer.write("Bundle Plugin.xml ========\n");
 		writer.write(bundleinfo.getPluginXml() + "\n");
-		writer.write("---------------------------------------- \n");
-	}
-		writer.write("===================================================\n");
+		writer.write("--------\n");
+		}
+		//writer.write("===================================================\n");
 		writer.close();
 		fwriter.close();
 	}

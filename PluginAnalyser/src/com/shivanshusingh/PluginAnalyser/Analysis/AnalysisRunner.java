@@ -5,11 +5,12 @@ import java.io.OutputStream;
 
 public class AnalysisRunner {
 
-	
 	/**
-	 * starts the analysis and recording process for a given features / plugins folder.
-	 * The naming convention is this: directory/features/  contains all the feature relared jars
-	 * and directory/plugins/ contains al the plugin jars that need to ne analysed / deployed together.
+	 * starts the analysis and recording process for a given features / plugins
+	 * folder. The naming convention is this: directory/features/ contains all
+	 * the feature relared jars and directory/plugins/ contains al the plugin
+	 * jars that need to ne analysed / deployed together.
+	 * 
 	 * @param args
 	 */
 	public static void main(final String[] args) throws IOException {
@@ -22,23 +23,17 @@ public class AnalysisRunner {
 		// "/Users/singhsk/Developer/Arcmexer/arcmexer.jar";
 		// "/Users/singhsk/Developer/AndroidEclipseBundleforMac/adt-bundle-mac-x86_64.zip";
 
-		
-		
-		String destinationDirectory=
-				"/Users/singhsk/Developer/eclipse_plugins/testmirror_dltk"
-				//"/Users/singhsk/Developer/eclipse_plugins/testmirror_ganymede"
-				;
-		
+		String destinationDirectory = "/Users/singhsk/Developer/eclipse_plugins/testmirror_googleandroid1"
+		// "/Users/singhsk/Developer/eclipse_plugins/testmirror_ganymede"
+		;
+
 		// now doing the extractions from features. - feature.xml i.e.
-		String  featureFolderPath=	destinationDirectory+  "/features/";
+		String featureFolderPath = destinationDirectory + "/features/";
 		FeatureAnalyser.analyseAndRecordAllInformationFromFeautreFolder(featureFolderPath);
-		
-		  // reading all the files (plugin jars) in the specified plugin folder
-		String  pluginFolderPath=	destinationDirectory+  "/plugins/";
-		DependencyTracker.analyseAndRecordAllInformationFromPluginFolder(pluginFolderPath);
-	
-		
-		
+
+		// reading all the files (plugin jars) in the specified plugin folder
+		String pluginFolderPath = destinationDirectory + "/plugins/";
+		 DependencyTracker.analyseAndRecordAllInformationFromPluginFolder(pluginFolderPath);
 
 	}
 
