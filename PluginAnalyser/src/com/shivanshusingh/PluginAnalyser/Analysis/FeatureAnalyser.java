@@ -3,6 +3,7 @@ package com.shivanshusingh.PluginAnalyser.Analysis;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
@@ -23,7 +24,7 @@ import org.xml.sax.SAXException;
 
 public class FeatureAnalyser {
 
-	public static void analyseAndRecordAllInformationFromFeautreFolder(
+	public static void analyseAndRecordAllInformationFromBaseFeautreFolder(
 			String featureFolderPath) throws IOException {
 
 		// reading all the files (feature jars) in the specified feature folder
@@ -37,30 +38,69 @@ public class FeatureAnalyser {
 			return;
 		}
 		File[] listOfFiles = folder.listFiles();
-		long featureFolderFileCounter = 0;
+		long featureAnlalysedCounter = 0;
 		for (int i = 0; i < listOfFiles.length; i++) {
-			if (listOfFiles[i].isFile()) {
+			if (listOfFiles[i].isFile()) 
+			{
+				// if this is a (jar) file.
 				String featureJarName = listOfFiles[i].getName();
 				if (featureJarName.toLowerCase().endsWith(".jar")) {
 					// this means that this is a feature jar (it is assumed that
 					// this would be a feature jar if it is at this location)
-					featureFolderFileCounter++;
+					featureAnlalysedCounter++;
 					analyseAndRecordAllInformationFromFeatureJar(
 							featureFolderPath, featureJarName);
 				}
 
-			}/*
-			 * else if (listOfFiles[i].isDirectory()) {
-			 * System.out.println("Directory " + listOfFiles[i].getName()); }
-			 */
+			}
+			 else if (listOfFiles[i].isDirectory()) {
+				 
+				// some of the features may exist as directories instead of jar files, so check the directories.
+				 featureAnlalysedCounter++;
+				 analyseAndRecordAllInformationFromFeatureDir(featureFolderPath, listOfFiles[i].getName());
+			  //System.out.println("Directory " + listOfFiles[i].getName()); 
+			}
+			 
 		}
 		long l2 = System.currentTimeMillis();
-		System.out.println(featureFolderFileCounter
+		System.out.println(featureAnlalysedCounter
 				+ " feature  jars have been analyzed");
 
 		System.err.println("for  source:" + featureFolderPath + "  time: "
 				+ (l2 - l1) / 1000f + " seconds. \n");
 
+	}
+	
+	public static void analyseAndRecordAllInformationFromFeatureDir(String pathPrefix, String featureDirName) throws IOException
+	{
+		FeatureInformation featureInfo = new FeatureInformation();
+
+		String dirNameWithPathFull = pathPrefix + featureDirName;
+		File folder = new File(dirNameWithPathFull);
+		if (null == folder || !folder.isDirectory() ) {
+			System.out.println("==== ==== nothing here.");
+			return ;
+		}
+		File[] listOfFiles = folder.listFiles();
+		
+		for (File e : listOfFiles) 
+		{
+			
+			String name = e.getName();
+			if (name.toLowerCase().endsWith("feature.xml")) {
+				try {
+					System.out
+							.println("==== ==== ====  feature.xml :  enclosing  dir or such file name  =    "
+									+ folder.getPath() + ">" + name);
+					featureInfo = extractFeatureInformation(new FileInputStream(e));
+
+				} catch (Exception exception) {
+					exception.printStackTrace();
+				}
+			break;
+			}
+		}
+		writeDataToFile(featureInfo, folder.getName());
 	}
 
 	/**
@@ -316,10 +356,14 @@ public class FeatureAnalyser {
 	}
 
 	private static void writeDataToFile(FeatureInformation featureInfo,
-			String featureJarFileName) throws IOException {
-
+			String featureFileName) throws IOException {
+		
+		featureFileName=featureFileName.toLowerCase().trim();
+		if(featureFileName.endsWith(".jar")||featureFileName.endsWith(".zip"))
+			featureFileName=featureFileName.substring(0, featureFileName.length()-4);
+		
 		FileWriter fwriter = new FileWriter("FEATURE-EXTRACT-"
-				+ featureJarFileName.replace('/', '_') + ".txt");
+				+ featureFileName.replace('/', '_') + ".txt");
 		BufferedWriter writer = new BufferedWriter(fwriter);
 		writer.write("Id ========\n");
 		writer.write(featureInfo.getId() + "\n");

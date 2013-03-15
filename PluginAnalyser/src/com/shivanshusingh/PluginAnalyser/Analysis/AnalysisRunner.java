@@ -22,17 +22,18 @@ public class AnalysisRunner {
 		// "/Users/singhsk/Developer/Arcmexer/arcmexer.jar";
 		// "/Users/singhsk/Developer/AndroidEclipseBundleforMac/adt-bundle-mac-x86_64.zip";
 
-		String destinationDirectory = "/Users/singhsk/Developer/eclipse_plugins/testmirror_googleandroid1"
+		String destinationDirectory =	// "/Users/singhsk/Developer/eclipse_sandbox"
+				"/Users/singhsk/Developer/eclipse_plugins/testmirror_googleandroid1"
 		// "/Users/singhsk/Developer/eclipse_plugins/testmirror_ganymede"
 		;
 
 		// now doing the extractions from features. - feature.xml i.e.
 		String featureFolderPath = destinationDirectory + "/features/";
-		FeatureAnalyser.analyseAndRecordAllInformationFromFeautreFolder(featureFolderPath);
+		//FeatureAnalyser.analyseAndRecordAllInformationFromBaseFeautreFolder(featureFolderPath);
 
 		// reading all the files (plugin jars) in the specified plugin folder
 		String pluginFolderPath = destinationDirectory + "/plugins/";
-		 DependencyTracker.analyseAndRecordAllInformationFromPluginFolder(pluginFolderPath);
+		 DependencyTracker.analyseAndRecordAllInformationFromBasePluginFolder(pluginFolderPath);
 
 	}
 

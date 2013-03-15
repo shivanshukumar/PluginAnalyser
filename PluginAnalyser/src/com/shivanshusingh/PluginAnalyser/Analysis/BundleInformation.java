@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
 import java.text.ParseException;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.List;
@@ -102,8 +103,11 @@ public class BundleInformation {
 		}
 	}
 
-	private BundleInfo getBundleInfo() {
-		return this.bundleinfo;
+	public BundleInfo getBundleInfo() {
+		if(null!=bundleinfo)
+			return this.bundleinfo;
+		else
+			return null;
 	}
 
 	public String toString() {
@@ -161,30 +165,59 @@ public class BundleInformation {
 	}
 
 	public Set/* <BundleRequirement> */getRequires() {
-		return bundleinfo.getRequires();
+		Set s = new HashSet();
+		if(null!=bundleinfo)
+			s=bundleinfo.getRequires();
+		return s;
 	}
 
 	public Set/* <BundleRequirement> */getImports() {
-		return bundleinfo.getImports();
+		Set s = new HashSet();
+		if(null!=bundleinfo)
+			s=bundleinfo.getImports();
+		return s;
 	}
 
 	public Set/* <ExportPackage> */getExports() {
-		return bundleinfo.getExports();
+		Set s = new HashSet();
+		if(null!=bundleinfo)
+			s=bundleinfo.getExports()    ;
+		return s;
 	}
 
 	public Set/* <BundleCapability> */getServices() {
-		return bundleinfo.getServices();
+		Set s = new HashSet();
+			if(null!=bundleinfo)
+				s=bundleinfo.getServices();
+		return s;
 	}
 
 	public String getSymbolicName() {
-		return bundleinfo.getSymbolicName();
+		if(null!=bundleinfo)
+			return bundleinfo.getSymbolicName();
+		else return "";
 
 	}
 
 	public Version getVersion() {
-		return bundleinfo.getVersion();
+		
+		Version v = null;
+		if(null!=bundleinfo)
+			v=bundleinfo.getVersion();
+		return v;
+		
+		
 
 	}
+	/*public String getVersionToString() {
+		
+		String s="";
+		if(null!=bundleinfo)
+			s=bundleinfo.getVersion().toString();
+		return s;
+		
+	}*/
+
 
 	public Version getRawVersion() {
 		return bundleinfo.getRawVersion();
@@ -264,7 +297,10 @@ public class BundleInformation {
 	}
 
 	public Set/* <BundleRequirement> */getRequirements() {
-		return bundleinfo.getRequirements();
+		Set s  =  new HashSet();
+		if(null!=bundleinfo)
+		  s  = bundleinfo.getRequirements();
+		return s;
 
 	}
 

@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
 
 import com.shivanshusingh.PluginAnalyser.Analysis.DependencyTracker;
 import com.shivanshusingh.PluginAnalyser.Analysis.FeatureAnalyser;
+import com.shivanshusingh.PluginAnalyser.Utils.PluginAnalyserUtils;
 
 
 public class DownloadAndStagingRunner {
@@ -43,7 +44,7 @@ public class DownloadAndStagingRunner {
 				if (f.exists()) {
 					System.out.println("DELETING: " + f.getPath());
 
-					if (!deleteFolder(f)) {
+					if (!PluginAnalyserUtils.deleteFolder(f)) {
 						System.err
 								.println("Error deleting old directory, not continuing forward");
 						return;
@@ -57,6 +58,7 @@ public class DownloadAndStagingRunner {
 		    		(verbose?" -verbose":"")		+
 		    		(raw?" -raw":"")	+
 		    		" -nosplash"		+
+		    		" -includeOptional"		+
 		    		" -application "+equinoxAppName	+
 		    		" -source "+ updateSiteURL		+  
 		    		" -destination "  +"file:"+destinationDirectory;
@@ -91,11 +93,11 @@ public class DownloadAndStagingRunner {
 		    
 		    // now doing the extractions from features. - feature.xml i.e.
 //			String  featureFolderPath=	destinationDirectory+  "/features/";
-//			FeatureAnalyser.analyseAndRecordAllInformationFromFeautreFolder(featureFolderPath);
+//			FeatureAnalyser.analyseAndRecordAllInformationFromBaseFeautreFolder(featureFolderPath);
 			
 			// reading all the files (plugin jars) in the specified plugin folder
 //			String  pluginFolderPath=	destinationDirectory+  "/plugins/";
-//			DependencyTracker.analyseAndRecordAllInformationFromPluginFolder(pluginFolderPath);
+//			DependencyTracker.analyseAndRecordAllInformationFromBasePluginFolder(pluginFolderPath);
 		
 		    
 
@@ -104,27 +106,5 @@ public class DownloadAndStagingRunner {
 		
 	
 	}
-	private static boolean deleteFolder(File folder) {
-		boolean success=true;
-		try{
-	    File[] files = folder.listFiles();
-	    if(files!=null) { //some JVMs return null for empty dirs
-	        for(File f: files) {
-	        	
-	            if(f.isDirectory()) {
-	              success=  deleteFolder(f);
-	            } else {
-	               success= f.delete();
-	            }
-	        }
-	    }
-	   success= folder.delete();
-		}
-		catch(Exception e)
-		{
-			success=false;
-		}
-		
-		return success;
-	}
+	
 }
