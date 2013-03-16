@@ -38,10 +38,12 @@ public class DownloadAndStagingRunner {
 				"https://dl-ssl.google.com/android/eclipse/"
 				//"http://download.aptana.com/studio3/plugin/install"
 				;//without 'site.xml'.
-		String destinationDirectory="/Users/singhsk/Developer/eclipse_plugins/testmirror_googleandroid1";//this is there the mirrired site would be available.
-		boolean writeModeClean=true, verbose=true, raw=true;
+		String destinationDirectory="/Users/singhsk/Developer/eclipse_plugins/testmirror_googleandroid1";//this is there the mirrired site would be available.  It automatically gets created by p2.
 		
-		boolean eraseOld=true;// this way old   mirror site can be complete removed first.
+		boolean writeModeClean=true
+				, verbose=true
+				, raw=true 				
+				, eraseOld=true;// this way old   mirror site can be complete removed first.
 		
 		try {
 			if (eraseOld) {
@@ -78,9 +80,10 @@ public class DownloadAndStagingRunner {
 		    br.close();
 		    br= new  BufferedReader(new InputStreamReader(child.getErrorStream()));
 		    while ((inread = br.read()) != -1)
-		    	System.out.print((char)inread);
+		    	System.err.print((char)inread);
 		    br.close();
-		    System.out.println("exitvalue="+child.exitValue());
+		    System.out.println("Download and Staging Process, exitvalue(0=success)="+child.exitValue());
+		    System.err.println("Download and Staging Process, exitvalue(0=success)="+child.exitValue());
 		    
 		    try {
 				child.waitFor();
@@ -96,15 +99,15 @@ public class DownloadAndStagingRunner {
 		     */
 		    
 		    
-		    String outputLocation="./output";
-		    // now doing the extractions from features. - feature.xml i.e.
-//			String  featureFolderPath=	destinationDirectory+  "/features/";
-//			FeatureAnalyser.analyseAndRecordAllInformationFromBaseFeautreFolder(featureFolderPath, outputLocation);
-			
+		    String outputLocation="./"+currTimeString+"/_OUTPUT";
+			// now doing the extractions from features. - feature.xml i.e.
+			String featureFolderPath = destinationDirectory + "/features/";
+			FeatureAnalyser.analyseAndRecordAllInformationFromBaseFeautreFolder(featureFolderPath, outputLocation+"/features");
+
 			// reading all the files (plugin jars) in the specified plugin folder
-//			String  pluginFolderPath=	destinationDirectory+  "/plugins/";
-//			DependencyTracker.analyseAndRecordAllInformationFromBasePluginFolder(pluginFolderPath, outputLocation);
-		
+			String pluginFolderPath = destinationDirectory + "/plugins/";
+			DependencyTracker.analyseAndRecordAllInformationFromBasePluginFolder(pluginFolderPath, outputLocation+"/plugins" );
+
 		    
 
 		} catch (IOException e) {
