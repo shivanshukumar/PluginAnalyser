@@ -402,7 +402,6 @@ public class DependencyVisitor extends ClassVisitor {
 			try {
 				throw new InvokeDynamicException();
 			} catch (InvokeDynamicException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			// /////////////////

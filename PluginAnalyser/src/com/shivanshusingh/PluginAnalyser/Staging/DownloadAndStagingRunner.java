@@ -11,7 +11,11 @@ import com.shivanshusingh.PluginAnalyser.Analysis.DependencyTracker;
 import com.shivanshusingh.PluginAnalyser.Analysis.FeatureAnalyser;
 import com.shivanshusingh.PluginAnalyser.Utils.PluginAnalyserUtils;
 
-
+/**
+ *  to download (mirror)  an eclipse repository / update site and run the feature and plugin analysis and data recording tasks.
+ * @author Shivanshu Singh
+ * 
+ */
 public class DownloadAndStagingRunner {
 
 	/**

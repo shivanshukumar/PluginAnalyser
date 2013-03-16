@@ -3,7 +3,7 @@ package com.shivanshusingh.PluginAnalyser.Analysis;
 import java.util.HashSet;
 import java.util.Set;
 
-/*
+/**
  * contains the Feature meta data, feature.xml, the associated plugins and the other dependencies.
  */
 

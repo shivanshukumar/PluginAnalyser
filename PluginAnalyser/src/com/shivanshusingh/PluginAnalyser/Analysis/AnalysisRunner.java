@@ -15,6 +15,7 @@ public class AnalysisRunner {
 	 * jars that need to ne analysed / deployed together.
 	 * 
 	 * @param args
+	 * @author Shivanshu Singh
 	 */
 	public static void main(final String[] args) throws IOException {
 		

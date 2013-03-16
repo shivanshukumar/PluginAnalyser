@@ -28,7 +28,7 @@ import com.shivanshusingh.PluginAnalyser.Utils.PluginAnalyserUtils;
 
 /**
  * 
- * @author singhsk
+ * @author Shivanshu Singh
  * 
  */
 public class DependencyTracker extends ManifestParser {
