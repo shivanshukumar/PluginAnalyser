@@ -19,7 +19,12 @@ public class DownloadAndStagingRunner {
 	 */
 	public static void main(String[] args) {
 		
-
+		String currTimeString=PluginAnalyserUtils.getCurrentTimeString();
+		
+		if(!PluginAnalyserUtils.startLogger("./"+currTimeString+"/_LOGS"))
+			System.err.println("Cannot start logging sorry. Please check the path provided or necessary permissions");
+		
+		PluginAnalyserUtils.setTEMP_DIR_PATH("./"+currTimeString+"/_TMP");
 		// getting features from an update  site
 		
 		
@@ -91,13 +96,14 @@ public class DownloadAndStagingRunner {
 		     */
 		    
 		    
+		    String outputLocation="./output";
 		    // now doing the extractions from features. - feature.xml i.e.
 //			String  featureFolderPath=	destinationDirectory+  "/features/";
-//			FeatureAnalyser.analyseAndRecordAllInformationFromBaseFeautreFolder(featureFolderPath);
+//			FeatureAnalyser.analyseAndRecordAllInformationFromBaseFeautreFolder(featureFolderPath, outputLocation);
 			
 			// reading all the files (plugin jars) in the specified plugin folder
 //			String  pluginFolderPath=	destinationDirectory+  "/plugins/";
-//			DependencyTracker.analyseAndRecordAllInformationFromBasePluginFolder(pluginFolderPath);
+//			DependencyTracker.analyseAndRecordAllInformationFromBasePluginFolder(pluginFolderPath, outputLocation);
 		
 		    
 

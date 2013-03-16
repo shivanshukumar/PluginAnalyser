@@ -22,11 +22,18 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import com.shivanshusingh.PluginAnalyser.Utils.PluginAnalyserUtils;
+
 public class FeatureAnalyser {
 
 	public static void analyseAndRecordAllInformationFromBaseFeautreFolder(
-			String featureFolderPath) throws IOException {
-
+			String featureFolderPath, String outputLocation) throws IOException {
+		
+		if(!PluginAnalyserUtils.checkAndCreateDirectory(outputLocation))
+		{
+			System.err.println("Error Accessing/Creating Output Directory for  Feature  Analysis Output at: "+outputLocation+"\n Cannot continue with the analysis." );
+			return;
+		}
 		// reading all the files (feature jars) in the specified feature folder
 		long l1 = System.currentTimeMillis();
 
@@ -49,7 +56,7 @@ public class FeatureAnalyser {
 					// this would be a feature jar if it is at this location)
 					featureAnlalysedCounter++;
 					analyseAndRecordAllInformationFromFeatureJar(
-							featureFolderPath, featureJarName);
+							featureFolderPath, featureJarName, outputLocation);
 				}
 
 			}
@@ -57,21 +64,23 @@ public class FeatureAnalyser {
 				 
 				// some of the features may exist as directories instead of jar files, so check the directories.
 				 featureAnlalysedCounter++;
-				 analyseAndRecordAllInformationFromFeatureDir(featureFolderPath, listOfFiles[i].getName());
+				 analyseAndRecordAllInformationFromFeatureDir(featureFolderPath, listOfFiles[i].getName(), outputLocation);
 			  //System.out.println("Directory " + listOfFiles[i].getName()); 
 			}
 			 
 		}
 		long l2 = System.currentTimeMillis();
-		System.out.println(featureAnlalysedCounter
-				+ " feature  jars have been analyzed");
+		System.out.println(featureAnlalysedCounter 	+ " features have been analyzed");
+		System.err.println(featureAnlalysedCounter 	+ " features have been analyzed");
+		System.out.println("for  source:" + featureFolderPath + "  time: "
+				+ (l2 - l1) / 1000f + " seconds. \n");
 
 		System.err.println("for  source:" + featureFolderPath + "  time: "
 				+ (l2 - l1) / 1000f + " seconds. \n");
 
 	}
 	
-	public static void analyseAndRecordAllInformationFromFeatureDir(String pathPrefix, String featureDirName) throws IOException
+	public static void analyseAndRecordAllInformationFromFeatureDir(String pathPrefix, String featureDirName, String outputLocation) throws IOException
 	{
 		FeatureInformation featureInfo = new FeatureInformation();
 
@@ -100,14 +109,14 @@ public class FeatureAnalyser {
 			break;
 			}
 		}
-		writeDataToFile(featureInfo, folder.getName());
+		writeDataToFile(featureInfo, folder.getName(), outputLocation);
 	}
 
 	/**
 	 * @throws IOException
 	 */
 	public static void analyseAndRecordAllInformationFromFeatureJar(
-			String pathPrefix, String featureJarName) throws IOException {
+			String pathPrefix, String featureJarName, String outputLocation) throws IOException {
 		// //////// feature archive/////////////////////////////////
 		String jarFileNameWithPathFull = pathPrefix + featureJarName;
 
@@ -125,7 +134,7 @@ public class FeatureAnalyser {
 
 		long l2 = System.currentTimeMillis();
 
-		writeDataToFile(featureInfo, featureJarName);
+		writeDataToFile(featureInfo, featureJarName, outputLocation);
 
 		System.err.println("time: " + (l2 - l1) / 1000f + " seconds. \n");
 	}
@@ -161,10 +170,15 @@ public class FeatureAnalyser {
 			InputStream inputStream) {
 
 		FeatureInformation featureInfo = new FeatureInformation();
-		String TEMPFileName = "feature-analyser-temp-" + Math.random() + (
+		String TEMPFileName = (PluginAnalyserUtils.getTEMP_DIR_PATH()+"/pa-sks-feature-tmp-" ).replace("//", "/")
+		+ Math.random() 
+		+ (
 		// jarfileinstance.getName()
 		// + "_" +
-				"feature.xml").replaceAll("/", "_").replace(" ", "_");
+				"feature.xml")
+				.replaceAll("/", "_")
+				.replace(" ", "_")
+				;
 		try {
 			
 			
@@ -356,13 +370,15 @@ public class FeatureAnalyser {
 	}
 
 	private static void writeDataToFile(FeatureInformation featureInfo,
-			String featureFileName) throws IOException {
+			String featureFileName, String outputLocation) throws IOException {
+		
+		outputLocation=(outputLocation+"/").trim().replaceAll("//", "/");
 		
 		featureFileName=featureFileName.toLowerCase().trim();
 		if(featureFileName.endsWith(".jar")||featureFileName.endsWith(".zip"))
 			featureFileName=featureFileName.substring(0, featureFileName.length()-4);
 		
-		FileWriter fwriter = new FileWriter("FEATURE-EXTRACT-"
+		FileWriter fwriter = new FileWriter(outputLocation+"FEATURE-EXTRACT-"
 				+ featureFileName.replace('/', '_') + ".txt");
 		BufferedWriter writer = new BufferedWriter(fwriter);
 		writer.write("Id ========\n");
