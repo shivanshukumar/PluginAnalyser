@@ -8,9 +8,11 @@ import com.shivanshusingh.pluginanalyser.utils.PluginAnalyserUtils;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
 
 /**
- * to start the analysis and recording process for featues and plugins of   product/configuration mirror site.
+ * to start the analysis and recording process for featues and plugins of
+ * product/configuration mirror site.
+ * 
  * @author singhsk
- *
+ * 
  */
 public class AnalysisRunner {
 	/**
