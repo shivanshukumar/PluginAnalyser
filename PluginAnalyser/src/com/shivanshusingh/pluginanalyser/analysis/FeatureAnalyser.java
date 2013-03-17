@@ -138,14 +138,18 @@ public class FeatureAnalyser {
 				break;
 			}
 		}
-		writeDataToFile(featureInfo, folder.getName(), outputLocation);
+		writeData(featureInfo, folder.getName(), outputLocation);
 		long l2 = System.currentTimeMillis();
 
 		Log.errln("==== analysed:  \n "+dirNameWithPathFull+"\n time: "+PluginAnalyserUtils.getFormattedTime(l2 - l1));
 
 	}
 
+	
 	/**
+	 * @param pathPrefix
+	 * @param featureJarName
+	 * @param outputLocation
 	 * @throws IOException
 	 */
 	public static void analyseAndRecordAllInformationFromFeatureJar(
@@ -167,12 +171,16 @@ public class FeatureAnalyser {
 
 		FeatureInformation featureInfo = extractFeatureMetaDataFromFeatureJar(f);
 
-		writeDataToFile(featureInfo, featureJarName, outputLocation);
+		writeData(featureInfo, featureJarName, outputLocation);
 		long l2 = System.currentTimeMillis();
 
 		Log.errln("==== analysed:  \n "+jarFileNameWithPathFull+"\n time: "+PluginAnalyserUtils.getFormattedTime(l2 - l1));
 	}
 
+	/**
+	 * @param jarfileinstance
+	 * @return
+	 */
 	public static FeatureInformation extractFeatureMetaDataFromFeatureJar(
 			JarFile jarfileinstance) {
 		FeatureInformation featureinfo = new FeatureInformation();
@@ -199,6 +207,11 @@ public class FeatureAnalyser {
 
 	}
 
+	/**
+	 * extracts the feature information  for the feature.xml or such inputStream
+	 * @param inputStream {@link InputStream} for the feature.xml file or such source that contains the feature information / metadata.
+	 *  @return {@link FeatureInformation] extracted .
+	 */
 	private static FeatureInformation extractFeatureInformation(
 			InputStream inputStream) {
 
@@ -404,7 +417,13 @@ public class FeatureAnalyser {
 
 	}
 
-	private static void writeDataToFile(FeatureInformation featureInfo,
+	/**
+	 * @param featureInfo
+	 * @param featureFileName
+	 * @param outputLocation
+	 * @throws IOException
+	 */
+	private static void writeData(FeatureInformation featureInfo,
 			String featureFileName, String outputLocation) throws IOException {
 
 		outputLocation = (outputLocation + "/").trim().replaceAll("//", "/");

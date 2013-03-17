@@ -1,3 +1,6 @@
+/**
+ *  examples of how to use the pluginanalyser   system.
+ */
 package examples;
 
 import java.io.IOException;
@@ -13,9 +16,6 @@ import com.shivanshusingh.pluginanalyser.utils.logging.Log;
  */
 public class PluginAnalyserJobRunner {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 
 		// experimenting with the eclipse update manager from command line to

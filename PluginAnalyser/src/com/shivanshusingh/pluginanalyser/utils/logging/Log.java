@@ -7,6 +7,11 @@ import java.io.PrintStream;
 import com.shivanshusingh.pluginanalyser.utils.PluginAnalyserUtils;
 import com.sun.tools.corba.se.idl.constExpr.Equal;
 
+/**
+ * Logger to log errors and other info.
+ * @author Shivanshu Singh
+ *
+ */
 public class Log {
 	
 	

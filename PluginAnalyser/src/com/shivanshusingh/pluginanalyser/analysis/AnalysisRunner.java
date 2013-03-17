@@ -33,7 +33,7 @@ public class AnalysisRunner {
 
 		// reading all the files (plugin jars) in the specified plugin folder
 		String pluginFolderPath = mirrorSiteLocation + "/plugins/";
-		DependencyTracker.analyseAndRecordAllInformationFromBasePluginFolder(
+		BundleAnalyser.analyseAndRecordAllInformationFromBasePluginFolder(
 				pluginFolderPath, outputLocation + "/plugins");
 	}
 

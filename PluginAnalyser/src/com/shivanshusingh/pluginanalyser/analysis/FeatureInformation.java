@@ -5,6 +5,8 @@ import java.util.Set;
 
 /**
  * contains the Feature meta data, feature.xml, the associated plugins and the other dependencies.
+ * @author Shivanshu Singh
+ * 
  */
 
 public class FeatureInformation {
