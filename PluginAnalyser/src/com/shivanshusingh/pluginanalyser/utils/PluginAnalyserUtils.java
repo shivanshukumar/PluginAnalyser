@@ -1,4 +1,4 @@
-package com.shivanshusingh.PluginAnalyser.Utils;
+package com.shivanshusingh.pluginanalyser.utils;
 
 import java.io.File;
 import java.text.DecimalFormat;
@@ -43,29 +43,55 @@ public class PluginAnalyserUtils {
 
 	/**
 	 * deletes all the files and folders recursively at the specified directory
-	 * location, including the directory location.
+	 * location, EXCLUDing the directory location  itself.
 	 * 
 	 * @param folder
-	 *            {@link File} handler for the directory location, which has to
-	 *            be deleted along with all of its contents
-	 * @return {@link boolean} true or fase depending upon whether the operation
+	 *            {@link File} handler for the directory location, all of its contents of  which  have to
+	 *            be  cleared   
+	 * @return {@link boolean} true or false depending upon whether the operation
 	 *         succeeded or not.
 	 */
-	public static boolean deleteFolder(File folder) {
+	public static boolean clearFolder(File folder) {
 		boolean success = true;
 		try {
 			File[] files = folder.listFiles();
 			if (files != null) { // some JVMs return null for empty dirs
 				for (File f : files) {
 
+					success = deleteTarget(f);
+				}
+			}
+		} catch (Exception e) {
+			success = false;
+		}
+
+		return success;
+	}
+	/**
+	 * deletes all the files and folders recursively at the specified directory
+	 * location, including the directory location.
+	 * 
+	 * @param handler
+	 *            {@link File} handler for the target, which has to
+	 *            be deleted along with all of its contents
+	 * @return {@link boolean} true or false depending upon whether the operation
+	 *         succeeded or not. 
+	 */
+	public static boolean deleteTarget(File handler) {
+		boolean success = true;
+		try {
+			File[] files = handler.listFiles();
+			if (files != null) { // some JVMs return null for empty dirs
+				for (File f : files) {
+
 					if (f.isDirectory()) {
-						success = deleteFolder(f);
+						success = deleteTarget(f);
 					} else {
 						success = f.delete();
 					}
 				}
 			}
-			success = folder.delete();
+			success = handler.delete();
 		} catch (Exception e) {
 			success = false;
 		}

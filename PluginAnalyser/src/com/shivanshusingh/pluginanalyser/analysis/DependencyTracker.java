@@ -1,4 +1,4 @@
-package com.shivanshusingh.PluginAnalyser.Analysis;
+package com.shivanshusingh.pluginanalyser.analysis;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -24,8 +24,8 @@ import java.util.jar.Manifest;
 import org.apache.ivy.osgi.core.ManifestParser;
 import org.objectweb.asm.ClassReader;
 
-import com.shivanshusingh.PluginAnalyser.Utils.PluginAnalyserUtils;
-import com.shivanshusingh.PluginAnalyser.Utils.Logging.Log;
+import com.shivanshusingh.pluginanalyser.utils.PluginAnalyserUtils;
+import com.shivanshusingh.pluginanalyser.utils.logging.Log;
 
 /**
  * 

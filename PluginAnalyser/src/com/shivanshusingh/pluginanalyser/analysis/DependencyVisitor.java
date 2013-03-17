@@ -1,4 +1,4 @@
-package com.shivanshusingh.PluginAnalyser.Analysis;
+package com.shivanshusingh.pluginanalyser.analysis;
 
 import java.util.Arrays;
 import java.util.HashMap;

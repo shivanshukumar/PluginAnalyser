@@ -1,10 +1,10 @@
-package com.shivanshusingh.PluginAnalyser.Utils.Logging;
+package com.shivanshusingh.pluginanalyser.utils.logging;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 
-import com.shivanshusingh.PluginAnalyser.Utils.PluginAnalyserUtils;
+import com.shivanshusingh.pluginanalyser.utils.PluginAnalyserUtils;
 import com.sun.tools.corba.se.idl.constExpr.Equal;
 
 public class Log {

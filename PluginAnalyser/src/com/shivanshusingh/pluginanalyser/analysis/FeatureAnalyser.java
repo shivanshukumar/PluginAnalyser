@@ -1,4 +1,4 @@
-package com.shivanshusingh.PluginAnalyser.Analysis;
+package com.shivanshusingh.pluginanalyser.analysis;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -22,8 +22,8 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import com.shivanshusingh.PluginAnalyser.Utils.PluginAnalyserUtils;
-import com.shivanshusingh.PluginAnalyser.Utils.Logging.Log;
+import com.shivanshusingh.pluginanalyser.utils.PluginAnalyserUtils;
+import com.shivanshusingh.pluginanalyser.utils.logging.Log;
 
 /**
  * this is the class that analyses features (dir or jar).
