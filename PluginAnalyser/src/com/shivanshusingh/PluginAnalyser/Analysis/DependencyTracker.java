@@ -25,6 +25,7 @@ import org.apache.ivy.osgi.core.ManifestParser;
 import org.objectweb.asm.ClassReader;
 
 import com.shivanshusingh.PluginAnalyser.Utils.PluginAnalyserUtils;
+import com.shivanshusingh.PluginAnalyser.Utils.Logging.Log;
 
 /**
  * 
@@ -39,18 +40,19 @@ public class DependencyTracker extends ManifestParser {
 	 */
 	public static void analyseAndRecordAllInformationFromBasePluginFolder(
 			String pluginFolderPath, String outputLocation) throws IOException {
-		if(!PluginAnalyserUtils.checkAndCreateDirectory(outputLocation))
-		{
-			System.err.println("Error Accessing/Creating Output Directory for Plugin Analysis Output at: "+outputLocation+"\n Cannot continue with the analysis." );
+		if (!PluginAnalyserUtils.checkAndCreateDirectory(outputLocation)) {
+			  Log.errln("xxxx Error Accessing/Creating Output Directory for Plugin Analysis Output at: "
+							+ outputLocation
+							+ "\n Cannot continue with the analysis.");
 			return;
 		}
 		// reading all the files (plugin jars) in the specified plugin folder
 		long l1 = System.currentTimeMillis();
 
-		System.out.println("=======Analysing Source:" + pluginFolderPath);
+		Log.outln("==== Analysing Source:" + pluginFolderPath);
 		File folder = new File(pluginFolderPath);
 		if (null == folder) {
-			System.out.println("==== nothing here.");
+			Log.outln("==== nothing here.");
 			return;
 		}
 		File[] listOfFiles = folder.listFiles();
@@ -74,49 +76,50 @@ public class DependencyTracker extends ManifestParser {
 				pluginAnalysedCounter++;
 				analyseAndRecordAllInformationFromPluginDir(pluginFolderPath,
 						listOfFiles[i].getName(), outputLocation);
-				System.out.println("Directory " + listOfFiles[i].getName());
+				// Log.outln("Directory " + listOfFiles[i].getName());
 			}
 		}
 		long l2 = System.currentTimeMillis();
-		System.out.println(pluginAnalysedCounter + " plugin have been analyzed");
-		System.err.println(pluginAnalysedCounter + " plugin have been analyzed");
-		System.out.println("for  source:" + pluginFolderPath + "  time: "
-				+ (l2 - l1) / 1000f + " seconds. \n");
-		System.err.println("for  source:" + pluginFolderPath + "  time: "
-				+ (l2 - l1) / 1000f + " seconds. \n");
+		  Log.outln(pluginAnalysedCounter + " plugin have been analyzed");
+	  Log.errln(pluginAnalysedCounter + " plugin have been analyzed");
+		Log.outln("for source:" + pluginFolderPath + " time: "
+				+ PluginAnalyserUtils.getFormattedTime(l2 - l1));
+		Log.errln("for source:" + pluginFolderPath + " time: "
+				+ PluginAnalyserUtils.getFormattedTime(l2 - l1));
 		// String pluginJarName
 		// ="com.android.ide.eclipse.adt_21.0.1.2012-12-6-2-58.jar";
 	}
 
 	public static void analyseAndRecordAllInformationFromPluginDir(
-			String pathPrefix, String pluginDirName, String outputLocation) throws IOException {
+			String pathPrefix, String pluginDirName, String outputLocation)
+			throws IOException {
+		long l1 = System.currentTimeMillis();
 
 		try {
 			DependencyVisitor v = new DependencyVisitor();
 			BundleInformation bundleInformation = new BundleInformation();
 			String dirNameWithPathFull = pathPrefix + pluginDirName;
 
-			long l1 = System.currentTimeMillis();
-
 			File folder = new File(dirNameWithPathFull);
 			if (null == folder || !folder.isDirectory()) {
-				System.out.println("==== ==== nothing here.");
+				Log.outln("==== ==== nothing here.");
 				return;
 			}
 
 			bundleInformation = getBundleManifestAndMetaInformationFromDir(folder);
-			System.out
-					.println("now starting the plugin_from_dir dependency  extraction for  : "
+			Log.outln("now starting the plugin_from_dir dependency  extraction for  : "
 							+ folder.getPath());
 			extractDependenciesAndExportsFromDir(v, bundleInformation, folder);
 
+			writeDataToFile(v, bundleInformation, folder.getName(),
+					outputLocation);
 			long l2 = System.currentTimeMillis();
 
-			writeDataToFile(v, bundleInformation, folder.getName(), outputLocation);
-
-			System.err.println("time: " + (l2 - l1) / 1000f + " seconds. \n");
+			Log.errln("==== analysed:  \n " + dirNameWithPathFull
+					+ "\n time: "
+					+ PluginAnalyserUtils.getFormattedTime(l2 - l1));
 		} catch (Exception e) {
-			System.err.println("ERROR WHILE ANALYSING PLUGIN Folder : "
+			Log.errln("xxxx ERROR WHILE ANALYSING PLUGIN Folder : "
 					+ pathPrefix + pluginDirName);
 			e.printStackTrace();
 		}
@@ -139,7 +142,7 @@ public class DependencyTracker extends ManifestParser {
 
 			File e = new File(en.next().toString());
 			String name = e.getName();
-			//System.out.println("==== handling :" + name);
+			// Log.outln("==== handling :" + name);
 
 			if (!flag_manifestFound
 					&& name.toLowerCase().endsWith("meta-inf/manifest.mf")) {
@@ -147,8 +150,7 @@ public class DependencyTracker extends ManifestParser {
 				flag_manifestFound = true;
 				try {
 
-					System.out
-							.println("==== ==== ====  manifest try: file name = "
+					Log.outln("== manifest try: file name = "
 									+ folder.getPath() + ">" + name);
 
 					bundleInformation = extractManifestInformation(new FileInputStream(
@@ -160,7 +162,8 @@ public class DependencyTracker extends ManifestParser {
 					&& name.toLowerCase().endsWith("plugin.xml")) {
 				flag_pluginxmlFound = true;
 				try {
-					System.out.println("==== ==== ====  plugin.xml capture: file name = "+folder.getPath() + ">" + name);
+					Log.outln("== plugin.xml capture: file name = "
+									+ folder.getPath() + ">" + name);
 					BufferedReader br;
 
 					br = new BufferedReader(new FileReader(e));
@@ -170,7 +173,7 @@ public class DependencyTracker extends ManifestParser {
 						pluginxmlText.append(ss);
 					}
 					br.close();
-					//System.out.println(pluginxmlText);
+					// Log.outln(pluginxmlText);
 				} catch (Exception e1) {
 					e1.printStackTrace();
 				}
@@ -186,14 +189,15 @@ public class DependencyTracker extends ManifestParser {
 	 * @throws IOException
 	 */
 	public static void analyseAndRecordAllInformationFromPluginJar(
-			String pathPrefix, String pluginJarName, String outputLocation) throws IOException {
+			String pathPrefix, String pluginJarName, String outputLocation)
+			throws IOException {
+		long l1 = System.currentTimeMillis();
+
 		try {
 			DependencyVisitor v = new DependencyVisitor();
 			BundleInformation bundleInformation = new BundleInformation();
 			// ////////archive/////////////////////////////////
 			String jarFileNameWithPathFull = pathPrefix + pluginJarName;
-
-			long l1 = System.currentTimeMillis();
 
 			// ZipFile f = new ZipFile(jarFileNameWithPathFull);
 			JarFile f = new JarFile(jarFileNameWithPathFull);
@@ -202,8 +206,7 @@ public class DependencyTracker extends ManifestParser {
 			// current jar file.////
 
 			bundleInformation = getBundleManifestAndMetaInformationFromJar(f);
-			System.out
-					.println("now starting the  plugin dependency  extraction");
+			Log.outln("== now starting the  plugin dependency  extraction");
 			extractDependenciesAndExportsFromJarFile(v, bundleInformation, f);
 
 			// ////////////////////////////////////////
@@ -218,13 +221,15 @@ public class DependencyTracker extends ManifestParser {
 			 */
 			// /////////////////////////// ////////////////////////
 
+			writeDataToFile(v, bundleInformation, pluginJarName, outputLocation);
 			long l2 = System.currentTimeMillis();
 
-			writeDataToFile(v, bundleInformation, pluginJarName, outputLocation);
+			Log.errln("==== analysed:  \n " + jarFileNameWithPathFull
+					+ "\n time: "
+					+ PluginAnalyserUtils.getFormattedTime(l2 - l1));
 
-			System.err.println("time: " + (l2 - l1) / 1000f + " seconds. \n");
 		} catch (Exception e) {
-			System.err.println("ERROR WHILE ANALYSING PLUGIN Jar : "
+			Log.errln("xxxx ERROR WHILE ANALYSING PLUGIN Jar : "
 					+ pathPrefix + pluginJarName);
 			e.printStackTrace();
 		}
@@ -253,8 +258,7 @@ public class DependencyTracker extends ManifestParser {
 				flag_manifestFound = true;
 				try {
 
-					System.out
-							.println("==== ==== ====  manifest try: file name = "
+					Log.outln("== manifest try: file name = "
 									+ jarfileinstance.getName() + ">" + name);
 
 					/*
@@ -263,11 +267,11 @@ public class DependencyTracker extends ManifestParser {
 					 */
 					/*
 					 * if (name.toLowerCase().endsWith("manifest.mf")) {
-					 * System.out.println("====== indicated manifest entry");
+					 * Log.outln("====== indicated manifest entry");
 					 * BufferedReader br = new BufferedReader(new
 					 * InputStreamReader( jarfileinstance.getInputStream(e)));
 					 * String ss; while ((ss = br.readLine()) != null) {
-					 * System.out.println(ss + "/////////"); }
+					 * Log.outln(ss + "/////////"); }
 					 * 
 					 * extractManifestInformation(jarfileinstance.getInputStream(
 					 * e));
@@ -284,7 +288,8 @@ public class DependencyTracker extends ManifestParser {
 			} else if (!flag_pluginxmlFound
 					&& name.toLowerCase().endsWith("plugin.xml")) {
 				flag_pluginxmlFound = true;
-				System.out.println("==== ==== ====  plugin.xml capture. : file name = "+jarfileinstance.getName() + ">" + name);
+				Log.outln("== plugin.xml capture. : file name = "
+								+ jarfileinstance.getName() + ">" + name);
 				BufferedReader br = new BufferedReader(new InputStreamReader(
 						jarfileinstance.getInputStream(e)));
 				String ss;
@@ -292,7 +297,7 @@ public class DependencyTracker extends ManifestParser {
 					pluginxmlText.append(ss);
 				}
 				br.close();
-				//System.out.println(pluginxmlText);
+				// Log.outln(pluginxmlText);
 			}
 		}
 		if (null != bundleInformation)
@@ -309,11 +314,9 @@ public class DependencyTracker extends ManifestParser {
 		// ZipFile f = new ZipFile(jarFileNameWithPathFull.trim());
 		// Enumeration<? extends ZipEntry> en = f.entries();
 		// ///////////////////////////////////////////
-		long thisInterArchiveFileNumber = internalFileCounter;
 
-		System.out.println("==== ====  Starting the Archive 1."
-				+ internalFileCounter + " : " + jarfileinstance.getName()
-				+ " analysis ===================");
+		Log.outln("==== Starting the Archive : "
+				+ jarfileinstance.getName() + " analysis ====");
 
 		Enumeration<? extends JarEntry> en = jarfileinstance.entries();
 		int classesAnalyzedCounter = 0;
@@ -322,7 +325,7 @@ public class DependencyTracker extends ManifestParser {
 			JarEntry e = en.nextElement();
 
 			String name = e.getName();
-			// System.out.println(name);
+			// Log.outln(name);
 
 			if (name.toLowerCase().endsWith(".class")) {
 
@@ -332,29 +335,29 @@ public class DependencyTracker extends ManifestParser {
 			} else if (name.toLowerCase().endsWith(".jar")) {
 				// nested jar.
 
-				System.out.println(name + " found");
-				// System.out.println(bundleInformation.getClasspathEntries().toString());
+				Log.outln("====> "+name + " found");
+				// Log.outln(bundleInformation.getClasspathEntries().toString());
 
 				// now check if this nested jar file is one of the Bundle
 				// classpath dependencies (lib jars)
 				if (null != bundleInformation) {
 					for (String libJarNameEnding : bundleInformation
 							.getClasspathEntries()) {
-						// System.out.println("CHECKING:"+name+": ends with:"+libJarNameEnding);
+						// Log.outln("CHECKING:"+name+": ends with:"+libJarNameEnding);
 						if (name.toLowerCase().endsWith(
 								libJarNameEnding.toLowerCase())) {
 							// good news, the jar is present in the bundle
 							// manifest jar file entries' list.
-							System.out
-									.println("now analysing internal lib jar:"
+							Log.outln("====> now analysing internal lib jar:"
 											+ name);
 
-							String TEMPFileName = (PluginAnalyserUtils.getTEMP_DIR_PATH()+"/pa-sks-plugin-tmp-").replace("//", "/")
+							String TEMPFileName = (PluginAnalyserUtils
+									.getTEMP_DIR_PATH() + "/pa-sks-plugin-tmp-")
+									.replace("//", "/")
 									+ Math.random() + ( // jarfileinstance.getName()
 														// // + "_" +
 									name).replaceAll("/", "_")
-											.replace(" ", "_")
-											;
+											.replace(" ", "_");
 
 							BufferedReader bufferedTempReader = new BufferedReader(
 									new InputStreamReader(
@@ -368,16 +371,16 @@ public class DependencyTracker extends ManifestParser {
 							}
 							bufferedTempWriter.close();
 							bufferedTempReader.close();
-							System.out.println("==== created : " + TEMPFileName
-									+ "============ ");
+							Log.outln("==== created : " + TEMPFileName
+									+ "==== ");
 							internalFileCounter++;
 							extractDependenciesAndExportsFromJarFile(v,
 									bundleInformation,
 									new JarFile(TEMPFileName));
-							System.out.println("==== delete = "
+							Log.outln("==== delete = "
 									+ new File(TEMPFileName).delete() + " : "
-									+ TEMPFileName + "============ ");
-							System.out.println("==== ==== ==== ==== ");
+									+ TEMPFileName + "====");
+							Log.outln("==== ==== ==== ==== ");
 
 							break;// get out when found and analysed.
 						}
@@ -388,23 +391,18 @@ public class DependencyTracker extends ManifestParser {
 			}
 
 		}
+		Log.outln("==== ==== "+classesAnalyzedCounter + " Class Files read.");
+		Log.outln("==== Ending the Archive : "
+				+ jarfileinstance.getName() + " analysis ====");
 		jarfileinstance.close();
-		System.out.println(classesAnalyzedCounter + " Class Files read.");
-		System.out.println(internalFileCounter + " internal Jar Files read.");
-		System.out.println("==== ==== Ending the Archive 1."
-				+ thisInterArchiveFileNumber + " analysis ===================");
-
 	}
 
 	private static void extractDependenciesAndExportsFromDir(
 			DependencyVisitor v, BundleInformation bundleInformation,
 			File folder) throws IOException {
 
-		long thisInterArchiveFileNumber = internalFileCounter;
-
-		System.out.println("==== ====  Starting the Plugin_from_Dir 1."
-				+ internalFileCounter + " : " + folder.getName()
-				+ " analysis ===================");
+		Log.outln("==== Starting the Plugin_from_Dir : "
+				+ folder.getCanonicalPath() + " analysis ====");
 
 		// getting a recursive list of all files contained in this plugin dir.
 		Set<String> dirFileList = PluginAnalyserUtils
@@ -418,7 +416,7 @@ public class DependencyTracker extends ManifestParser {
 			File e = new File(en.next());
 
 			String name = e.getName();
-			// System.out.println(name);
+			// Log.outln(name);
 
 			if (name.toLowerCase().endsWith(".class")) {
 
@@ -428,33 +426,30 @@ public class DependencyTracker extends ManifestParser {
 			} else if (name.toLowerCase().endsWith(".jar")) {
 				// nested jar.
 
-				System.out.println(name + " found");
-				// System.out.println(bundleInformation.getClasspathEntries().toString());
+				Log.outln("====> "+name + " found");
+				// Log.outln(bundleInformation.getClasspathEntries().toString());
 
 				// now check if this nested jar file is one of the Bundle
 				// classpath dependencies (lib jars)
 				if (null != bundleInformation) {
 					for (String libJarNameEnding : bundleInformation
 							.getClasspathEntries()) {
-						// System.out.println("CHECKING:"+name+": ends with:"+libJarNameEnding);
+						// Log.outln("CHECKING:"+name+": ends with:"+libJarNameEnding);
 						if (name.toLowerCase().endsWith(
 								libJarNameEnding.toLowerCase())) {
 							// good news, the jar is present in the bundle
 							// manifest jar file entries' list.
-							System.out
-									.println("now analysing internal lib jar:"
+							Log.outln("====> now analysing internal lib jar:"
 											+ name);
 
-							String TEMPFileName = (PluginAnalyserUtils.getTEMP_DIR_PATH()+"/pa-sks-plugin-tmp-").replace("//", "/")
-									+ Math.random() 
-									+ (
-											// jarfileinstance.getName()
-														// // + "_" +
-									name
-									)
-									.replaceAll("/", "_")
-									.replace(" ", "_")
-									;
+							String TEMPFileName = (PluginAnalyserUtils
+									.getTEMP_DIR_PATH() + "/pa-sks-plugin-tmp-")
+									.replace("//", "/")
+									+ Math.random() + (
+									// jarfileinstance.getName()
+									// // + "_" +
+									name).replaceAll("/", "_")
+											.replace(" ", "_");
 
 							BufferedReader bufferedTempReader = new BufferedReader(
 									new FileReader(e));
@@ -467,16 +462,16 @@ public class DependencyTracker extends ManifestParser {
 							}
 							bufferedTempWriter.close();
 							bufferedTempReader.close();
-							System.out.println("==== created : " + TEMPFileName
-									+ "============ ");
+							Log.outln("==== created : " + TEMPFileName
+									+ "====");
 							internalFileCounter++;
 							extractDependenciesAndExportsFromJarFile(v,
 									bundleInformation,
 									new JarFile(TEMPFileName));
-							System.out.println("==== delete = "
+							Log.outln("==== delete = "
 									+ new File(TEMPFileName).delete() + " : "
-									+ TEMPFileName + "============ ");
-							System.out.println("==== ==== ==== ==== ");
+									+ TEMPFileName + "====");
+							Log.outln("==== ==== ==== ==== ");
 
 							break;// get out when found and analysed.
 						}
@@ -487,11 +482,9 @@ public class DependencyTracker extends ManifestParser {
 			}
 
 		}
-
-		System.out.println(classesAnalyzedCounter + " Class Files read.");
-		System.out.println(internalFileCounter + " internal Jar Files read.");
-		System.out.println("==== ==== Ending the Plungin_from_Dir 1."
-				+ thisInterArchiveFileNumber + " analysis ===================");
+		Log.outln(classesAnalyzedCounter + " Class Files read.");
+		Log.outln("==== Ending the Plungin_from_Dir :  "
+				+ folder.getCanonicalPath() + " analysis =====");
 
 	}
 
@@ -503,8 +496,7 @@ public class DependencyTracker extends ManifestParser {
 			// extractBundleInfo(bundleinfo);
 
 		} catch (ParseException e) {
-			System.out
-					.println("  NO Manifest found here or cannot parse that  or maybe theres nothing to parse inthis.  ");
+			Log.outln("xxxx  NO Manifest found here or cannot parse that  or maybe theres nothing to parse inthis.  ");
 			// e.printStackTrace();
 		}
 		return bundleinfo;
@@ -521,8 +513,7 @@ public class DependencyTracker extends ManifestParser {
 			// extractBundleInfo(bundleInformation);
 
 		} catch (ParseException e) {
-			System.out
-					.println("  NO Manifest found here or cannot parse that  or maybe theres nothing to parse inthis.    ");
+			Log.outln("xxxx  NO Manifest found here or cannot parse that  or maybe theres nothing to parse inthis.    ");
 
 			// e.printStackTrace();
 		} catch (IOException e) {
@@ -532,18 +523,17 @@ public class DependencyTracker extends ManifestParser {
 	}
 
 	private static void writeDataToFile(DependencyVisitor v,
-			BundleInformation bundleinfo, String pluginFileName, String outputLocation)
-			throws IOException {
+			BundleInformation bundleinfo, String pluginFileName,
+			String outputLocation) throws IOException {
 
-		
 		pluginFileName = pluginFileName.toLowerCase().trim();
 		if (pluginFileName.endsWith(".jar") || pluginFileName.endsWith(".zip"))
 			pluginFileName = pluginFileName.substring(0,
 					pluginFileName.length() - 4);
 
-		outputLocation=(outputLocation+"/").trim().replaceAll("//", "/");
-		
-		FileWriter fwriter = new FileWriter(outputLocation+"PLUGIN-EXTRACT-"
+		outputLocation = (outputLocation + "/").trim().replaceAll("//", "/");
+
+		FileWriter fwriter = new FileWriter(outputLocation + "PLUGIN-EXTRACT-"
 				+ pluginFileName.replace('/', '_') + ".txt");
 		BufferedWriter writer = new BufferedWriter(fwriter);
 
@@ -602,72 +592,74 @@ public class DependencyTracker extends ManifestParser {
 		// this is the set of other plugins that this plugin would depend on.
 		// bundleinfo.getRequires() and bundleinfo.getImports() eventually point
 		// to bundleinfo.getRequirements() without any differences.
-		
-		boolean flag_bundleInfoExists=true;
-		if(null==bundleinfo  ||  null==bundleinfo.getBundleInfo() )
-			flag_bundleInfoExists=false;
-		
-			
-			writer.write("Bundle Requirements ======== \n");
-			if(flag_bundleInfoExists)
-			{
-				
-				for(Object s:bundleinfo.getRequirements())
-					writer.write(  s.toString()  + "\n");
-				//System.out.println("Bundle Requirements = "  + bundleinfo.getRequirements().toString()+"\n"+bundleinfo.getRequirements().size() +" , Bundle Requirements"); // Require-Bundle
-			}
-			writer.write("--------\n");
-			writer.write("Bundle Exports ======== \n");
-			if(flag_bundleInfoExists)
-			{
-				for(Object s:bundleinfo.getExports())
-					writer.write(  s.toString()  + "\n");
-				//System.out.println("Bundle Exports = " + bundleinfo.getExports().toString()); // Export-Package
-			}
-			writer.write("--------\n");
-			writer.write("Symbolic Name ======== \n");
-			if(flag_bundleInfoExists)
-			{
-			writer.write(null!= bundleinfo.getSymbolicName()? bundleinfo.getSymbolicName().toString()+"\n" :"" );
-			//System.out.println("Symbolic Name = "+ bundleinfo.getSymbolicName().toString());
-			}
-			writer.write("--------\n");
-			writer.write("Version ======== \n");
-			if(flag_bundleInfoExists)
-			{
-			writer.write(null!=bundleinfo.getVersion()? bundleinfo.getVersion().toString()+"\n" : ""  );
-			//System.out.println("Version = " + bundleinfo.getVersion().toString());
-			}
-			writer.write("--------\n");
-			writer.write("Version without qualifier ========\n");
-			if(flag_bundleInfoExists)
-			{
-			writer.write(null!=bundleinfo.getVersion()? bundleinfo.getVersion().withoutQualifier().toString()  +"\n" :"" );
-			//System.out.println("Version without qualifier  = "		+ bundleinfo.getVersion().withoutQualifier().toString());
-			}
-			writer.write("--------\n");
-			writer.write("Bundle Imports ========\n ");
-			if(flag_bundleInfoExists)
-			{
-			for(Object s:bundleinfo.getImports())
-				writer.write(  s.toString()  + "\n");
-			//System.out.println("Bundle Imports = "		+ bundleinfo.getImports().toString());
-			}
-			writer.write("--------\n");
-			writer.write("Bundle ClassPathEntries ========\n");
-			if(flag_bundleInfoExists)
-			{
-			for(Object s:bundleinfo.getClasspathEntries())
-				writer.write(  s.toString()  + "\n");
-			//System.out.println("Bundle ClassPathEntries  = "		+ bundleinfo.getClasspathEntries().toString());
-			}
-			writer.write("--------\n");
-			//System.out.println("Bundle hashcode  = "		+ bundleinfo.hashCode()    );
-			
-		
-		
-		////////////////////////////////////////////////////////
-		
+
+		boolean flag_bundleInfoExists = true;
+		if (null == bundleinfo || null == bundleinfo.getBundleInfo())
+			flag_bundleInfoExists = false;
+
+		writer.write("Bundle Requirements ======== \n");
+		if (flag_bundleInfoExists) {
+
+			for (Object s : bundleinfo.getRequirements())
+				writer.write(s.toString() + "\n");
+			// Log.outln("Bundle Requirements = " +
+			// bundleinfo.getRequirements().toString()+"\n"+bundleinfo.getRequirements().size()
+			// +" , Bundle Requirements"); // Require-Bundle
+		}
+		writer.write("--------\n");
+		writer.write("Bundle Exports ======== \n");
+		if (flag_bundleInfoExists) {
+			for (Object s : bundleinfo.getExports())
+				writer.write(s.toString() + "\n");
+			// Log.outln("Bundle Exports = " +
+			// bundleinfo.getExports().toString()); // Export-Package
+		}
+		writer.write("--------\n");
+		writer.write("Symbolic Name ======== \n");
+		if (flag_bundleInfoExists) {
+			writer.write(null != bundleinfo.getSymbolicName() ? bundleinfo
+					.getSymbolicName().toString() + "\n" : "");
+			// Log.outln("Symbolic Name = "+
+			// bundleinfo.getSymbolicName().toString());
+		}
+		writer.write("--------\n");
+		writer.write("Version ======== \n");
+		if (flag_bundleInfoExists) {
+			writer.write(null != bundleinfo.getVersion() ? bundleinfo
+					.getVersion().toString() + "\n" : "");
+			// Log.outln("Version = " +
+			// bundleinfo.getVersion().toString());
+		}
+		writer.write("--------\n");
+		writer.write("Version without qualifier ========\n");
+		if (flag_bundleInfoExists) {
+			writer.write(null != bundleinfo.getVersion() ? bundleinfo
+					.getVersion().withoutQualifier().toString()
+					+ "\n" : "");
+			// Log.outln("Version without qualifier  = " +
+			// bundleinfo.getVersion().withoutQualifier().toString());
+		}
+		writer.write("--------\n");
+		writer.write("Bundle Imports ========\n ");
+		if (flag_bundleInfoExists) {
+			for (Object s : bundleinfo.getImports())
+				writer.write(s.toString() + "\n");
+			// Log.outln("Bundle Imports = " +
+			// bundleinfo.getImports().toString());
+		}
+		writer.write("--------\n");
+		writer.write("Bundle ClassPathEntries ========\n");
+		if (flag_bundleInfoExists) {
+			for (Object s : bundleinfo.getClasspathEntries())
+				writer.write(s.toString() + "\n");
+			// Log.outln("Bundle ClassPathEntries  = " +
+			// bundleinfo.getClasspathEntries().toString());
+		}
+		writer.write("--------\n");
+		// Log.outln("Bundle hashcode  = " + bundleinfo.hashCode() );
+
+		// //////////////////////////////////////////////////////
+
 		writer.write("All My Classes (Types)  ========\n");
 
 		for (String s : allMyClasses) {
@@ -675,7 +667,8 @@ public class DependencyTracker extends ManifestParser {
 		}
 		writer.write("--------\n");
 		// writer.write(allMyClasses.size() + "," + " own classes (types).\n");
-		System.out.println(allMyClasses.size() + "," + " own classes (types).");
+		// Log.outln(allMyClasses.size() + "," +
+		// " own classes (types).");
 
 		writer.write("All My Public Classes (Types) ========\n");
 
@@ -685,8 +678,8 @@ public class DependencyTracker extends ManifestParser {
 		writer.write("--------\n");
 		// writer.write(allMyPublicClasses.size() + ","+
 		// " own public classes (types).\n");
-		System.out.println(allMyPublicClasses.size() + ","
-				+ " own public classes (types).");
+		// Log.outln(allMyPublicClasses.size() + "," +
+		// " own public classes (types).");
 
 		writer.write("All My Methods ========\n");
 
@@ -695,7 +688,7 @@ public class DependencyTracker extends ManifestParser {
 		}
 		writer.write("--------\n");
 		// writer.write(allMyMethods.size() + "," + " internal methods.\n");
-		System.out.println(allMyMethods.size() + "," + " internal methods.");
+		// Log.outln(allMyMethods.size() + "," + " internal methods.");
 
 		writer.write("All My Public Methods ========\n");
 
@@ -705,8 +698,8 @@ public class DependencyTracker extends ManifestParser {
 		writer.write("--------\n");
 		// writer.write(allMyPublicMethods.size() + ","+
 		// " internal public methods.\n");
-		System.out.println(allMyPublicMethods.size() + ","
-				+ " internal public methods.");
+		// Log.outln(allMyPublicMethods.size() + "," +
+		// " internal public methods.");
 
 		writer.write("All Invokations ========\n");
 
@@ -716,8 +709,8 @@ public class DependencyTracker extends ManifestParser {
 		writer.write("--------\n");
 		// writer.write(allInvokations.size() + "," +
 		// " method invokations (intrnal and external).\n");
-		System.out.println(allInvokations.size() + ","
-				+ " method invokations (intrnal and external).");
+		// Log.outln(allInvokations.size() + "," +
+		// " method invokations (intrnal and external).");
 
 		writer.write("All External Invokations ========\n");
 
@@ -727,8 +720,8 @@ public class DependencyTracker extends ManifestParser {
 		writer.write("--------\n");
 		// writer.write(externalInvokations.size() + ","+
 		// " method invokations (external).\n");
-		System.out.println(externalInvokations.size() + ","
-				+ " method invokations (external).");
+		// Log.outln(externalInvokations.size() + "," +
+		// " method invokations (external).");
 
 		writer.write("All External and non Excluded Invokations ========\n");
 
@@ -738,8 +731,8 @@ public class DependencyTracker extends ManifestParser {
 		writer.write("--------\n");
 		// writer.write(externalNonJavaInvokations.size() + "," +
 		// " method invokations (external and non excluded).\n");
-		System.out.println(externalNonJavaInvokations.size() + ","
-				+ " method invokations (external and non excluded).");
+		// Log.outln(externalNonJavaInvokations.size() + ","
+		// + " method invokations (external and non excluded).");
 
 		writer.write("All Detected Types ========\n");
 		for (String s : allDetectedTypes) {
@@ -748,8 +741,8 @@ public class DependencyTracker extends ManifestParser {
 		writer.write("--------\n");
 		// writer.write(allDetectedTypes.size() + "," +
 		// " types (internal and external).\n");
-		System.out.println(allDetectedTypes.size() + ","
-				+ " types (internal and external).");
+		// Log.outln(allDetectedTypes.size() + ","
+		// + " types (internal and external).");
 
 		writer.write("All External Detected Types ========\n");
 		for (String s : allExternalDetectedTypes) {
@@ -758,8 +751,8 @@ public class DependencyTracker extends ManifestParser {
 		writer.write("--------\n");
 		// writer.write(allExternalDetectedTypes.size() + "," +
 		// " types (external).\n");
-		System.out.println(allExternalDetectedTypes.size() + ","
-				+ " types (external).");
+		// Log.outln(allExternalDetectedTypes.size() + ","
+		// + " types (external).");
 
 		writer.write("All External Non Java Detected Types ========\n");
 		for (String s : allExternalNonJavaDetectedTypes) {
@@ -768,8 +761,8 @@ public class DependencyTracker extends ManifestParser {
 		writer.write("--------\n");
 		// writer.write(allExternalNonJavaDetectedTypes.size() + "," +
 		// " types (external non excluded).\n");
-		System.out.println(allExternalNonJavaDetectedTypes.size() + ","
-				+ " types (external Non excluded).");
+		// Log.outln(allExternalNonJavaDetectedTypes.size() + ","
+		// + " types (external Non excluded).");
 
 		writer.write("All Jar Packages ========\n");
 
@@ -794,8 +787,8 @@ public class DependencyTracker extends ManifestParser {
 		writer.write("--------\n");
 		// writer.write(allMyDeprecatedMethods.size() + "," +
 		// " deprecated methods.\n");
-		System.out.println(allMyDeprecatedMethods.size() + ","
-				+ " deprecated methods.");
+		// .println(allMyDeprecatedMethods.size() + ","
+		// + " deprecated methods.");
 
 		writer.write("All My Deprecated Classes ========\n");
 
@@ -805,8 +798,8 @@ public class DependencyTracker extends ManifestParser {
 		writer.write("--------\n");
 		// writer.write(allMyDeprecatedClasses.size() + "," +
 		// " deprecated   classes. \n");
-		System.out.println(allMyDeprecatedClasses.size() + ","
-				+ " deprecated   classes.");
+		// Log.outln(allMyDeprecatedClasses.size() + ","
+		// + " deprecated   classes.");
 
 		writer.write("Bundle Plugin.xml ========\n");
 		if (null != bundleinfo) {// this means that there won't be any
@@ -833,20 +826,20 @@ public class DependencyTracker extends ManifestParser {
 		// this is the set of other plugins that this plugin would depend on.
 		// bundleinfo.getRequires() and bundleinfo.getImports() eventually point
 		// to bundleinfo.getRequirements() without any differences.
-		System.out.println("Bundle Requirements = "
+		Log.outln("Bundle Requirements = "
 				+ bundleinfo.getRequirements().toString()); // Require-Bundle
 		// //////
-		System.out.println("Bundle Exports = " + bundleExports.toString()); // Export-Package
-		System.out.println("Name Symbolic = "
+		Log.outln("Bundle Exports = " + bundleExports.toString()); // Export-Package
+		Log.outln("Name Symbolic = "
 				+ bundleinfo.getSymbolicName().toString());
-		System.out.println("Version = " + bundleinfo.getVersion().toString());
-		System.out.println("Version without qualifier  = "
+		Log.outln("Version = " + bundleinfo.getVersion().toString());
+		Log.outln("Version without qualifier  = "
 				+ bundleinfo.getVersion().withoutQualifier().toString());
-		System.out.println("Bundle Imports  = "
+		Log.outln("Bundle Imports  = "
 				+ bundleinfo.getImports().toString());
-		System.out.println("Bundle ClassPathEntries  = "
+		Log.outln("Bundle ClassPathEntries  = "
 				+ bundleinfo.getClasspathEntries().toString());
-		System.out.println("Bundle hashcode  = " + bundleinfo.hashCode());
+		Log.outln("Bundle hashcode  = " + bundleinfo.hashCode());
 
 	}
 

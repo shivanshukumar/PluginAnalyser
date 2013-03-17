@@ -1,4 +1,4 @@
-package com.shivanshusingh.PluginAnalyser.Utils;
+package com.shivanshusingh.PluginAnalyser.Utils.Logging;
 
 import java.io.IOException;
 import java.io.OutputStream;

@@ -1,10 +1,9 @@
 package com.shivanshusingh.PluginAnalyser.Utils;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
+import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -91,56 +90,10 @@ public class PluginAnalyserUtils {
 				fileSet.addAll(listFilesForFolder(fileEntry));
 			} else {
 				fileSet.add(fileEntry.getAbsolutePath());
-				// System.out.println(fileEntry.getAbsolutePath());
+				// Log.outln(fileEntry.getAbsolutePath());
 			}
 		}
 		return fileSet;
-	}
-
-	/**
-	 * Starts the logging capability. It maps the System.out or stdout and
-	 * System.err or stderr to respective FileOutputStream. So after calling
-	 * this method, all stuff that gets written to stdout would be written to
-	 * _stdout.log and that written to stderr would be written to _stderr.log
-	 * files, and made available at the location represented by the path
-	 * provided.
-	 * 
-	 * @param path
-	 *            the path of the location where the logs should be made
-	 *            available. Any data that already exists at the specified
-	 *            location may be overwritten. the function takes care of
-	 *            creating the required director structure for the path
-	 *            provided, in case it does not already exist. It is assumed
-	 *            that the permissions to the specified locations allow for the
-	 *            method to write there.
-	 * @return true or false depending whether logging could be enabled or not.
-	 *         This may be false if it is not possible to access or create the
-	 *         location specified in the path param.
-	 */
-	public static boolean startLogger(String path) {
-		if (!checkAndCreateDirectory(path))
-			return false;
-		path = (path + "/").replaceAll("//", "/");
-		try {
-			FileOutputStream fout = new FileOutputStream(path + "_"
-					+ "stdout.log");
-			FileOutputStream ferr = new FileOutputStream(path + "_"
-					+ "stderr.log");
-
-			MultiOutputStream multiOut = new MultiOutputStream(fout);// ,
-																		// System.out);
-			MultiOutputStream multiErr = new MultiOutputStream(ferr);// ,
-																		// System.err);
-
-			PrintStream stdout = new PrintStream(multiOut);
-			PrintStream stderr = new PrintStream(multiErr);
-
-			System.setOut(stdout);
-			System.setErr(stderr);
-		} catch (FileNotFoundException ex) {
-			// Could not create/open the file
-		}
-		return true;
 	}
 
 	/**
@@ -172,18 +125,49 @@ public class PluginAnalyserUtils {
 	}
 
 	/**
-	 * gets the current timestamp in the format yyyy-MM-dd-HH-mm-ss-SSSS
+	 * gets the current timestamp in the format yyyy-MM-dd-HH-mm-ss-SSS
 	 * 
 	 * @return String
 	 */
 	public static String getCurrentTimeString() {
+		
+		return getCurrentTimeString("yyyy-MM-dd-HH-mm-ss-SSS");
+	}
+	/**
+	 * gets the current timestamp in the format  specified.
+	 * * @param format String containing the format of the timestamp wanted.
+	 * @return String
+	 */
+	public static String getCurrentTimeString(String format) {
 		java.util.Date dt = new java.util.Date();
 
-		java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat(
-				"yyyy-MM-dd-HH-mm-ss-SSSS");
+		java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat(format);
 
 		String currentTime = sdf.format(dt);
 		return currentTime;
+	}
+	/**
+	 * gets the formatted miliseconds string.
+	 * 
+	 * @return String
+	 */
+	public static String getFormattedTime(long  miliseconds ) {
+		
+		DecimalFormat form1 = new DecimalFormat("0");
+		DecimalFormat form2 = new DecimalFormat("00");
+		DecimalFormat form3 = new DecimalFormat("000");
+	      
+		String   formattedTime=""
+				//+	form2.format((long) miliseconds / (1000 * 60 * 60))+ "h:"
+				//+	form2.format((long) miliseconds / (1000 * 60))+"m:"
+				+	form2.format((long) miliseconds / 1000)+"s:"
+				+	form3.format((long) miliseconds % 1000)+"ms"
+				;
+		
+		
+		
+		
+		return formattedTime;
 	}
 
 }

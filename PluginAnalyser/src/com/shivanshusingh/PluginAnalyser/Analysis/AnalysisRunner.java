@@ -5,6 +5,7 @@ import java.sql.Date;
 import java.util.Calendar;
 
 import com.shivanshusingh.PluginAnalyser.Utils.PluginAnalyserUtils;
+import com.shivanshusingh.PluginAnalyser.Utils.Logging.Log;
 
 public class AnalysisRunner {
 
@@ -19,11 +20,6 @@ public class AnalysisRunner {
 	 */
 	public static void main(final String[] args) throws IOException {
 		
-		String currTimeString=PluginAnalyserUtils.getCurrentTimeString();
-		
-		if(!PluginAnalyserUtils.startLogger("./"+currTimeString+"/_LOGS"))
-			System.err.println("Cannot start logging sorry. Please check the path provided or necessary permissions");
-		PluginAnalyserUtils.setTEMP_DIR_PATH("./"+currTimeString+"/_TMP");
 		// "/Users/singhsk/Developer/eclipse plugins/com.objfac.ant.preprocess_0.9.1/preprocessor.jar";
 		// "/Users/singhsk/Developer/eclipse plugins/com.objfac.ant.preprocess_0.9.1.zip";
 		// "/Users/singhsk/Developer/asm-bytecode-analysis-framework/asm-4.1/lib/all/asm-all-4.1.jar";
@@ -33,15 +29,26 @@ public class AnalysisRunner {
 		// "/Users/singhsk/Developer/Arcmexer/arcmexer.jar";
 		// "/Users/singhsk/Developer/AndroidEclipseBundleforMac/adt-bundle-mac-x86_64.zip";
 
-		String destinationDirectory =	 "/Users/singhsk/Developer/eclipse_sandbox"
 				//"/Users/singhsk/Developer/eclipse_plugins/testmirror_googleandroid1"
 		// "/Users/singhsk/Developer/eclipse_plugins/testmirror_ganymede"
 		;
-
-		String outputLocation="./"+currTimeString+"/_OUTPUT";
+		String  mirrorSiteDesinationPathPrefix="/Users/singhsk/Developer/eclipse_plugins/"    ;//with a trailing slash(/)
+		String mirrorSiteDesinationName="testmirror_googleandroid1"    ;
+		String destinationDirectory=mirrorSiteDesinationPathPrefix+mirrorSiteDesinationName;//this is there the mirrired site would be available.  It automatically gets created by p2.
+		
+		String currTimeString="_OUTPUT_"+mirrorSiteDesinationName+"-"+PluginAnalyserUtils.getCurrentTimeString();
+		
+		if(!Log.startLogger("./"+currTimeString+"/_LOGS"))
+			Log.errln("Cannot start logging sorry. Please check the path provided or necessary permissions");
+		
+		PluginAnalyserUtils.setTEMP_DIR_PATH("./"+currTimeString+"/_TMP");
+		
+	    String outputLocation="./"+currTimeString+"/_OUTPUT";
 		// now doing the extractions from features. - feature.xml i.e.
 		String featureFolderPath = destinationDirectory + "/features/";
-		FeatureAnalyser.analyseAndRecordAllInformationFromBaseFeautreFolder(featureFolderPath, outputLocation+"/features");
+		
+			FeatureAnalyser.analyseAndRecordAllInformationFromBaseFeautreFolder(featureFolderPath, outputLocation+"/features");
+		
 
 		// reading all the files (plugin jars) in the specified plugin folder
 		String pluginFolderPath = destinationDirectory + "/plugins/";

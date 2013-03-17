@@ -23,6 +23,7 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
 import com.shivanshusingh.PluginAnalyser.Utils.PluginAnalyserUtils;
+import com.shivanshusingh.PluginAnalyser.Utils.Logging.Log;
 
 /**
  * this is the class that analyses features (dir or jar).
@@ -51,8 +52,7 @@ public class FeatureAnalyser {
 			String featureFolderPath, String outputLocation) throws IOException {
 
 		if (!PluginAnalyserUtils.checkAndCreateDirectory(outputLocation)) {
-			System.err
-					.println("Error Accessing/Creating Output Directory for  Feature  Analysis Output at: "
+			Log.errln("Error Accessing/Creating Output Directory for  Feature  Analysis Output at: "
 							+ outputLocation
 							+ "\n Cannot continue with the analysis.");
 			return;
@@ -60,11 +60,11 @@ public class FeatureAnalyser {
 		// reading all the files (feature jars) in the specified feature folder
 		long l1 = System.currentTimeMillis();
 
-		System.out.println("=======Analysing  Feature Source:"
+		Log.outln("=======Analysing  Feature Source:"
 				+ featureFolderPath);
 		File folder = new File(featureFolderPath);
 		if (null == folder) {
-			System.out.println("==== nothing here.");
+			Log.outln("==== nothing here.");
 			return;
 		}
 		File[] listOfFiles = folder.listFiles();
@@ -88,32 +88,36 @@ public class FeatureAnalyser {
 				featureAnlalysedCounter++;
 				analyseAndRecordAllInformationFromFeatureDir(featureFolderPath,
 						listOfFiles[i].getName(), outputLocation);
-				// System.out.println("Directory " + listOfFiles[i].getName());
+				// Log.outln("Directory " + listOfFiles[i].getName());
 			}
 
 		}
 		long l2 = System.currentTimeMillis();
-		System.out.println(featureAnlalysedCounter
+		Log.outln(featureAnlalysedCounter
 				+ " features have been analyzed");
-		System.err.println(featureAnlalysedCounter
+		Log.errln(featureAnlalysedCounter
 				+ " features have been analyzed");
-		System.out.println("for  source:" + featureFolderPath + "  time: "
-				+ (l2 - l1) / 1000f + " seconds. \n");
+		Log.outln("for  source:" + featureFolderPath + "  time: "
+				+ PluginAnalyserUtils.getFormattedTime(l2 - l1));
 
-		System.err.println("for  source:" + featureFolderPath + "  time: "
-				+ (l2 - l1) / 1000f + " seconds. \n");
+		Log.errln("for  source:" + featureFolderPath + "  time: "
+				+ PluginAnalyserUtils.getFormattedTime(l2 - l1));
 
 	}
 
 	public static void analyseAndRecordAllInformationFromFeatureDir(
 			String pathPrefix, String featureDirName, String outputLocation)
 			throws IOException {
+		long l1 = System.currentTimeMillis();
+
+		
 		FeatureInformation featureInfo = new FeatureInformation();
 
 		String dirNameWithPathFull = pathPrefix + featureDirName;
+		
 		File folder = new File(dirNameWithPathFull);
 		if (null == folder || !folder.isDirectory()) {
-			System.out.println("==== ==== nothing here.");
+			Log.outln("==== ==== nothing here.");
 			return;
 		}
 		File[] listOfFiles = folder.listFiles();
@@ -123,8 +127,7 @@ public class FeatureAnalyser {
 			String name = e.getName();
 			if (name.toLowerCase().endsWith("feature.xml")) {
 				try {
-					System.out
-							.println("==== ==== ====  feature.xml :  enclosing  dir or such file name  =    "
+					Log.outln("==== ==== ====  feature.xml :  enclosing  dir or such file name  =    "
 									+ folder.getPath() + ">" + name);
 					featureInfo = extractFeatureInformation(new FileInputStream(
 							e));
@@ -136,6 +139,10 @@ public class FeatureAnalyser {
 			}
 		}
 		writeDataToFile(featureInfo, folder.getName(), outputLocation);
+		long l2 = System.currentTimeMillis();
+
+		Log.errln("==== analysed:  \n "+dirNameWithPathFull+"\n time: "+PluginAnalyserUtils.getFormattedTime(l2 - l1));
+
 	}
 
 	/**
@@ -144,10 +151,11 @@ public class FeatureAnalyser {
 	public static void analyseAndRecordAllInformationFromFeatureJar(
 			String pathPrefix, String featureJarName, String outputLocation)
 			throws IOException {
+		long l1 = System.currentTimeMillis();
+
+		
 		// //////// feature archive/////////////////////////////////
 		String jarFileNameWithPathFull = pathPrefix + featureJarName;
-
-		long l1 = System.currentTimeMillis();
 
 		// ZipFile f = new ZipFile(jarFileNameWithPathFull);
 		JarFile f = new JarFile(jarFileNameWithPathFull);
@@ -155,15 +163,14 @@ public class FeatureAnalyser {
 		// Actual part of getting the meta data from the
 		// current jar file.////
 
-		System.out.println("now starting the  feature dependency  extraction");
+		Log.outln("now starting the  feature dependency  extraction");
 
 		FeatureInformation featureInfo = extractFeatureMetaDataFromFeatureJar(f);
 
+		writeDataToFile(featureInfo, featureJarName, outputLocation);
 		long l2 = System.currentTimeMillis();
 
-		writeDataToFile(featureInfo, featureJarName, outputLocation);
-
-		System.err.println("time: " + (l2 - l1) / 1000f + " seconds. \n");
+		Log.errln("==== analysed:  \n "+jarFileNameWithPathFull+"\n time: "+PluginAnalyserUtils.getFormattedTime(l2 - l1));
 	}
 
 	public static FeatureInformation extractFeatureMetaDataFromFeatureJar(
@@ -178,8 +185,7 @@ public class FeatureAnalyser {
 			String name = e.getName();
 			if (name.toLowerCase().endsWith("feature.xml")) {
 				try {
-					System.out
-							.println("==== ==== ====  feature.xml :  enclosing  jar or such file name  =    "
+					Log.outln("==== ==== ====  feature.xml :  enclosing  jar or such file name  =    "
 									+ jarfileinstance.getName() + ">" + name);
 					featureinfo = extractFeatureInformation(jarfileinstance
 							.getInputStream(e));
@@ -214,7 +220,7 @@ public class FeatureAnalyser {
 
 			int inread;
 			while ((inread = bufferedTempReader.read()) != -1) {
-				// System.out.print((char)inread);
+				// Log.out((char)inread);
 				bufferedTempWriter.write(inread);
 				// capturing the full xml text of the feature.xml
 				featureInfo.appendXml(new StringBuffer("" + (char) inread));
@@ -227,12 +233,12 @@ public class FeatureAnalyser {
 
 		try {
 			File f = new File(TEMPFileName);
-			// System.out.println(featureInfo.getXml());
+			// Log.outln(featureInfo.getXml());
 			// now the file (xml) is ready for analysis.
 			Document doc = DocumentBuilderFactory.newInstance()
 					.newDocumentBuilder().parse(f);
-			// System.out.println(doc.toString());
-			// System.out.println("Root element :" +
+			// Log.outln(doc.toString());
+			// Log.outln("Root element :" +
 			// doc.getDocumentElement().getNodeName());
 
 			NodeList nList = doc.getElementsByTagName("import");
@@ -240,7 +246,7 @@ public class FeatureAnalyser {
 
 				Node nNode = nList.item(p);
 
-				// System.out.println("\nCurrent Element :" +
+				// Log.outln("\nCurrent Element :" +
 				// nNode.getNodeName());
 
 				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
@@ -253,11 +259,11 @@ public class FeatureAnalyser {
 							.getAttribute("version");
 					String importedElementMatch = eElement
 							.getAttribute("match");
-					// System.out.println(" feature : " + importedFeature);
-					// System.out.println(" plugin : " + importedPlugin);
-					// System.out.println(" version : " +
+					// Log.outln(" feature : " + importedFeature);
+					// Log.outln(" plugin : " + importedPlugin);
+					// Log.outln(" version : " +
 					// importedElementVersion);
-					// System.out.println(" match : " + importedElementMatch);
+					// Log.outln(" match : " + importedElementMatch);
 
 					// adding the import element to featureinfo;
 					String importElement = (null != importedFeature
@@ -282,14 +288,14 @@ public class FeatureAnalyser {
 
 				Node nNode = nList.item(temp);
 
-				// System.out.println("\nCurrent Element :" +
+				// Log.outln("\nCurrent Element :" +
 				// nNode.getNodeName());
 
 				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 
 					Element eElement = (Element) nNode;
 
-					// System.out.println(" id : "
+					// Log.outln(" id : "
 					// + eElement.getAttribute("id")
 					// + (" , version : " + eElement
 					// .getAttribute("version")));
@@ -307,7 +313,7 @@ public class FeatureAnalyser {
 
 				Node nNode = nList.item(temp);
 
-				// System.out.println("\nCurrent Element :" +
+				// Log.outln("\nCurrent Element :" +
 				// nNode.getNodeName());
 
 				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
@@ -333,7 +339,7 @@ public class FeatureAnalyser {
 					featureInfo.setProviderName(eElement.getAttribute(
 							"provider-name").trim());
 
-					// System.out.println("  For \"Feature\" id : " +
+					// Log.outln("  For \"Feature\" id : " +
 					// eElement.getAttribute("id")
 					// + "\n label : " + eElement.getAttribute("label")
 					// + "\n version : "+eElement.getAttribute("version")
@@ -349,7 +355,7 @@ public class FeatureAnalyser {
 
 				Node nNode = nList.item(temp);
 
-				// System.out.println("\nCurrent Element :" +
+				// Log.outln("\nCurrent Element :" +
 				// nNode.getNodeName());
 
 				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
@@ -359,7 +365,7 @@ public class FeatureAnalyser {
 					featureInfo
 							.setDescription(eElement.getTextContent().trim());
 
-					// System.out.println(" description : "+eElement.getTextContent());
+					// Log.outln(" description : "+eElement.getTextContent());
 				}
 			}
 			nList = doc.getElementsByTagName("update");
@@ -367,7 +373,7 @@ public class FeatureAnalyser {
 
 				Node nNode = nList.item(temp);
 
-				// System.out.println("\nCurrent Element :" +
+				// Log.outln("\nCurrent Element :" +
 				// nNode.getNodeName());
 
 				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
@@ -378,13 +384,13 @@ public class FeatureAnalyser {
 					featureInfo.setUpdateLabel(eElement.getAttribute("label")
 							.trim());
 
-					// System.out.println(" updatelabel : "+eElement.getAttribute("label")
+					// Log.outln(" updatelabel : "+eElement.getAttribute("label")
 					// + "\n           url : "+ eElement.getAttribute("url")
 					// );
 				}
 			}
 
-			new File(TEMPFileName).delete();
+			Log.outln("== delete = " +new File(TEMPFileName).delete() +" : "+ TEMPFileName + "====");
 
 		} catch (ParserConfigurationException e) {
 			e.printStackTrace();
@@ -414,7 +420,7 @@ public class FeatureAnalyser {
 		BufferedWriter writer = new BufferedWriter(fwriter);
 		writer.write("Id ========\n");
 		writer.write(featureInfo.getId() + "\n");
-		System.out.println(featureInfo.getId() + "=========");
+		Log.outln(featureInfo.getId() + "=========");
 		writer.write("--------\n");
 		writer.write("Label ========\n");
 		writer.write(featureInfo.getLabel() + "\n");
@@ -442,14 +448,14 @@ public class FeatureAnalyser {
 		for (String s : featureInfo.getPlugins()) {
 			writer.write(s + "\n");
 		}
-		System.out.println(featureInfo.getPlugins().size() + "," + " plugins.");
+		//Log.outln(featureInfo.getPlugins().size() + "," + " plugins.");
 
 		writer.write("--------\n");
 		writer.write("Imports ========\n");
 		for (String s : featureInfo.getImports()) {
 			writer.write(s + "\n");
 		}
-		System.out.println(featureInfo.getImports().size() + "," + " imports.");
+		//Log.outln(featureInfo.getImports().size() + "," + " imports.");
 
 		writer.write("--------\n");
 		writer.write("Feature.xml ========\n");

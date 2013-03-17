@@ -278,7 +278,7 @@ public class DependencyVisitor extends ClassVisitor {
 	@Override
 	public MethodVisitor visitMethod(final int access, final String name,
 			final String desc, final String signature, final String[] exceptions) {
-		// System.out.println("=======\nThis Class MethodName="+name);
+		// Log.outln("=======\nThis Class MethodName="+name);
 
 		// mine - getting all
 		/* Building the current method signature */
@@ -290,7 +290,7 @@ public class DependencyVisitor extends ClassVisitor {
 			addSignature(signature);
 		}
 		addInternalNames(exceptions);
-		// System.out.println("++++");
+		// Log.outln("++++");
 		return new MethodDependencyVisitor();
 	}
 
@@ -515,13 +515,13 @@ public class DependencyVisitor extends ClassVisitor {
 		 */
 		addType(Type.getReturnType(desc));
 
-		// System.out.print("\n__retType__="+Type.getReturnType(desc).getClassName()+"{__argType__=");
+		// Log.out("\n__retType__="+Type.getReturnType(desc).getClassName()+"{__argType__=");
 		Type[] types = Type.getArgumentTypes(desc);
 		for (int i = 0; i < types.length; i++) {
 			addType(types[i]);
-			// System.out.print(types[i].getClassName() +",");
+			// Log.out(types[i].getClassName() +",");
 		}
-		// System.out.print("}\n");
+		// Log.out("}\n");
 	}
 
 	void addType(final Type t) {
@@ -547,7 +547,7 @@ public class DependencyVisitor extends ClassVisitor {
 	}
 
 	void addTypeSignature(final String signature) {
-		// System.out.println("__sig="+signature);
+		// Log.outln("__sig="+signature);
 		if (signature != null) {
 			new SignatureReader(signature)
 					.acceptType(new SignatureDependencyVisitor());

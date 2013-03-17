@@ -78,7 +78,7 @@ public class BundleInformation {
 	private void addClasspathEntries() throws ParseException {
 		if (null != manifest) {
 			Attributes mainAttributes = manifest.getMainAttributes();
-			// System.out.println( mainAttributes.keySet().toString() );
+			// Log.outln( mainAttributes.keySet().toString() );
 
 			parseAttribute(mainAttributes, BUNDLE_CLASSPATH);
 		}
@@ -98,7 +98,7 @@ public class BundleInformation {
 			while (itNames.hasNext()) {
 				String name = (String) itNames.next();
 				this.classpathEntries.add(name);
-				// System.out.println(name);
+				// Log.outln(name);
 			}
 		}
 	}
