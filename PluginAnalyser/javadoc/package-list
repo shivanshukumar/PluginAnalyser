@@ -1,4 +1,5 @@
-com.shivanshusingh.PluginAnalyser.Analysis
-com.shivanshusingh.PluginAnalyser.Staging
-com.shivanshusingh.PluginAnalyser.Utils
-com.shivanshusingh.PluginAnalyser.Utils.Logging
+com.shivanshusingh.pluginanalyser.analysis
+com.shivanshusingh.pluginanalyser.staging
+com.shivanshusingh.pluginanalyser.utils
+com.shivanshusingh.pluginanalyser.utils.logging
+examples
