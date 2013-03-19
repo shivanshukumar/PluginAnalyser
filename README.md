@@ -7,4 +7,5 @@ PluginAnalyser allows you to setup, mirror, analyse and record and compare to fi
 This is still work in progress. 
 
 How to use  what exists so far?
-See examples
+
+See  PluginAnalyser/examples/
