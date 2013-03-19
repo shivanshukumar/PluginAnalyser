@@ -8,4 +8,7 @@ This is still work in progress.
 
 How to use  what exists so far?
 
-See  PluginAnalyser/examples/
+See  PluginAnalyser/src/examples/
+
+
+Some background: <http://slidesha.re/ZtjrjL>
