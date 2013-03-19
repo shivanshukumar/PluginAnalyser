@@ -37,8 +37,7 @@ public class PluginAnalyserUtils {
 		if (!f.exists()) {
 			// create the directory and all parent directories if needed.
 			boolean success = f.mkdirs();
-			if (!success)
-				return success;
+			return success;
 		} else if (!f.isDirectory()) {
 			return false;
 		}
@@ -62,8 +61,9 @@ public class PluginAnalyserUtils {
 			File[] files = folder.listFiles();
 			if (files != null) { // some JVMs return null for empty dirs
 				for (File f : files) {
-
 					success = deleteTarget(f);
+					if(!success)
+						return false;
 				}
 			}
 		} catch (Exception e) {

@@ -4,6 +4,8 @@
 package examples;
 
 import java.io.IOException;
+import java.util.HashSet;
+import java.util.Set;
 
 import com.shivanshusingh.pluginanalyser.analysis.AnalysisRunner;
 import com.shivanshusingh.pluginanalyser.staging.DownloadAndStagingRunner;
@@ -27,29 +29,36 @@ public class PluginAnalyserJobRunner {
 																			// slash(/).
 		String eclipseApp = "Eclipse";
 		String equinoxAppName = "org.eclipse.equinox.p2.artifact.repository.mirrorApplication";
-		String updateSiteURL =
+		
+		// all update sites that are added to the update site collection from
+		// which all artifacts will be downloaded.
+		// each update site parameter should be the URL to the eclipse product
+		// update site without the 'site.xml' at end.
+		Set<String> updateSiteURLCollection = new HashSet<String>();
+
 		// "http://download.eclipse.org/technology/dltk/updates/"
-		"https://dl-ssl.google.com/android/eclipse/"
+
+		updateSiteURLCollection				.add("https://dl-ssl.google.com/android/eclipse/");
 		// "https://dl-ssl.google.com/android/eclipse/m/"//erroneous case.
-		// "http://download.eclipse.org/releases/juno/"
 		// "http://download.aptana.com/studio3/plugin/install"
-		;// without 'site.xml'.
-		String mirrorSiteDesinationPathPrefix = "/Users/singhsk/Developer/eclipse_plugins/";// with
-																							// a
-																							// trailing
-																							// slash(/)
-		String mirrorSiteDesinationName = updateSiteURL.replace("/", "-")
+		updateSiteURLCollection
+				.add("http://download.eclipse.org/egit/github/updates");
+//		updateSiteURLCollection  			.add("http://download.eclipse.org/releases/juno/");
+
+		
+		String mirrorSiteDesinationPathPrefix = "/Users/singhsk/Developer/eclipse_plugins/";
+		
+		String mirrorSiteDesinationName = "new_site"+Math.random();
+				mirrorSiteDesinationName=mirrorSiteDesinationName.replace("/", "-")
 				.replace(":", "-").replace(".", "-").replaceAll("-{1,}", "-")
-		// +PluginAnalyserUtils.getCurrentTimeString()
 		;
-		// "testmirror_googleandroid1" ;
+		
+		// this is there the mirrored site would be available. It automatically gets created by p2.
 		String destinationDirectory = mirrorSiteDesinationPathPrefix
-				+ mirrorSiteDesinationName;// this is there the mirrired site
-											// would be available. It
-											// automatically gets created by p2.
+				+ mirrorSiteDesinationName;
 		// "/Users/singhsk/Developer/eclipse_sandbox";
 		try {
-			boolean writeModeClean = true, verbose = true, raw = true, eraseOld = true;// this
+			boolean verbose = true, raw = true, eraseOld = true;// this
 																						// way
 																						// old
 																						// mirror
@@ -72,14 +81,14 @@ public class PluginAnalyserJobRunner {
 			// getting features from an update site
 
 			if (!DownloadAndStagingRunner.downloadAndStage(eclipseHome,
-					eclipseApp, equinoxAppName, updateSiteURL,
-					destinationDirectory, writeModeClean, verbose, raw,
+					eclipseApp, equinoxAppName, updateSiteURLCollection,
+					destinationDirectory, verbose, raw,
 					eraseOld))
 
 			{
 				Log.errln("XXXXXXX  " +
 						"\n  Download and staging error for: " +
-						"\n  "  + updateSiteURL	+
+						"\n  "  + updateSiteURLCollection	+
 						"\n    cannot continue  with the analysis and data extraction."  + 
 						"\n    ----" + 
 						"\n     You may want to check the logs at  :  " + 
