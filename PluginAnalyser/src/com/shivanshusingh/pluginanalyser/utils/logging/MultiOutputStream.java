@@ -2,7 +2,9 @@ package com.shivanshusingh.pluginanalyser.utils.logging;
 
 import java.io.IOException;
 import java.io.OutputStream;
-
+/**
+ *  utility to map multiple streams to one. 
+ */
 public class MultiOutputStream extends OutputStream
 {
 	OutputStream[] outputStreams;
