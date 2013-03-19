@@ -25,6 +25,8 @@ public class DependencyFinder {
 	Map<String,ImpExp> types=new HashMap<String,ImpExp>();
 	
 	/**
+	 * 
+	 * this function build the superset of dependencies from the extract files to finally figure out what dependencies were unstated or missiing.
 	 * @param pathToPluginExtractDir
 	 * @param pathToDependencyAnalysisDestinationDir
 	 * @param eraseOld
