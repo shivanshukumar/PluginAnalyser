@@ -26,6 +26,7 @@ import org.objectweb.asm.ClassReader;
 
 import com.shivanshusingh.pluginanalyser.utils.Util;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
+import com.shivanshusingh.pluginanalyser.utils.parsing.Constants;
 
 /**
  * Analyzes the plugin / bundles.
@@ -581,7 +582,7 @@ public class BundleAnalyser extends ManifestParser {
 
 		outputLocation = (outputLocation + "/").trim().replaceAll("//", "/");
 
-		FileWriter fwriter = new FileWriter(outputLocation + "PLUGIN-EXTRACT-"
+		FileWriter fwriter = new FileWriter(outputLocation + Constants.PLUGIN_EXTRACT_FILE_PREFIX
 				+ pluginFileName.replace('/', '_') + ".txt");
 		BufferedWriter writer = new BufferedWriter(fwriter);
 
@@ -654,7 +655,7 @@ public class BundleAnalyser extends ManifestParser {
 			// bundleinfo.getRequirements().toString()+"\n"+bundleinfo.getRequirements().size()
 			// +" , Bundle Requirements"); // Require-Bundle
 		}
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		writer.write("Bundle Exports ======== \n");
 		if (flag_bundleInfoExists) {
 			for (Object s : bundleinfo.getExports())
@@ -662,7 +663,7 @@ public class BundleAnalyser extends ManifestParser {
 			// Log.outln("Bundle Exports = " +
 			// bundleinfo.getExports().toString()); // Export-Package
 		}
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		writer.write("Symbolic Name ======== \n");
 		if (flag_bundleInfoExists) {
 			writer.write(null != bundleinfo.getSymbolicName() ? bundleinfo
@@ -670,7 +671,7 @@ public class BundleAnalyser extends ManifestParser {
 			// Log.outln("Symbolic Name = "+
 			// bundleinfo.getSymbolicName().toString());
 		}
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		writer.write("Version ======== \n");
 		if (flag_bundleInfoExists) {
 			writer.write(null != bundleinfo.getVersion() ? bundleinfo
@@ -678,7 +679,7 @@ public class BundleAnalyser extends ManifestParser {
 			// Log.outln("Version = " +
 			// bundleinfo.getVersion().toString());
 		}
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		writer.write("Version without qualifier ========\n");
 		if (flag_bundleInfoExists) {
 			writer.write(null != bundleinfo.getVersion() ? bundleinfo
@@ -687,7 +688,7 @@ public class BundleAnalyser extends ManifestParser {
 			// Log.outln("Version without qualifier  = " +
 			// bundleinfo.getVersion().withoutQualifier().toString());
 		}
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		writer.write("Bundle Imports ========\n ");
 		if (flag_bundleInfoExists) {
 			for (Object s : bundleinfo.getImports())
@@ -695,7 +696,7 @@ public class BundleAnalyser extends ManifestParser {
 			// Log.outln("Bundle Imports = " +
 			// bundleinfo.getImports().toString());
 		}
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		writer.write("Bundle ClassPathEntries ========\n");
 		if (flag_bundleInfoExists) {
 			for (Object s : bundleinfo.getClasspathEntries())
@@ -703,147 +704,162 @@ public class BundleAnalyser extends ManifestParser {
 			// Log.outln("Bundle ClassPathEntries  = " +
 			// bundleinfo.getClasspathEntries().toString());
 		}
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		// Log.outln("Bundle hashcode  = " + bundleinfo.hashCode() );
 
 		// //////////////////////////////////////////////////////
 
-		writer.write("All My Classes (Types)  ========\n");
+		writer.write(Constants.PLUGIN_ALL_MY_TYPES+"\n");
+		//"All My Classes (Types)  ========\n");
 
 		for (String s : allMyClasses) {
 			writer.write(s + "\n");
 		}
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		// writer.write(allMyClasses.size() + "," + " own classes (types).\n");
 		// Log.outln(allMyClasses.size() + "," +
 		// " own classes (types).");
 
-		writer.write("All My Public Classes (Types) ========\n");
+		writer.write(Constants.PLUGIN_ALL_MY_TYPES_PUBLIC+"\n");
+		//"All My Public Classes (Types) ========\n");
 
 		for (String s : allMyPublicClasses) {
 			writer.write(s + "\n");
 		}
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		// writer.write(allMyPublicClasses.size() + ","+
 		// " own public classes (types).\n");
 		// Log.outln(allMyPublicClasses.size() + "," +
 		// " own public classes (types).");
 
-		writer.write("All My Methods ========\n");
+		writer.write(Constants.PLUGIN_ALL_MY_METHODS+"\n");
+		//"All My Methods ========\n");
 
 		for (String s : allMyMethods) {
 			writer.write(s + "\n");
 		}
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		// writer.write(allMyMethods.size() + "," + " internal methods.\n");
 		// Log.outln(allMyMethods.size() + "," + " internal methods.");
 
-		writer.write("All My Public Methods ========\n");
+		writer.write(Constants.PLUGIN_ALL_MY_METHODS_PUBLIC+"\n");
+		//"All My Public Methods ========\n");
 
 		for (String s : allMyPublicMethods) {
 			writer.write(s + "\n");
 		}
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		// writer.write(allMyPublicMethods.size() + ","+
 		// " internal public methods.\n");
 		// Log.outln(allMyPublicMethods.size() + "," +
 		// " internal public methods.");
 
-		writer.write("All Invokations ========\n");
+		writer.write(Constants.PLUGIN_ALL_MY_METHOD_CALLS+"\n");
+		//"All Invokations ========\n");
 
 		for (String s : allInvokations) {
 			writer.write(s + "\n");
 		}
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		// writer.write(allInvokations.size() + "," +
 		// " method invokations (intrnal and external).\n");
 		// Log.outln(allInvokations.size() + "," +
 		// " method invokations (intrnal and external).");
 
-		writer.write("All External Invokations ========\n");
+		writer.write(Constants.PLUGIN_ALL_MY_METHOD_CALLS_EXTERNAL+"\n");
+		//"All External Invokations ========\n");
 
 		for (String s : externalInvokations) {
 			writer.write(s + "\n");
 		}
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		// writer.write(externalInvokations.size() + ","+
 		// " method invokations (external).\n");
 		// Log.outln(externalInvokations.size() + "," +
 		// " method invokations (external).");
 
-		writer.write("All External and non Excluded Invokations ========\n");
+		writer.write(Constants.PLUGIN_ALL_MY_METHOD_CALLS_EXTERNAL_AND_NON_JAVA+"\n");
+		//"All External and non Excluded Invokations ========\n");
 
 		for (String s : externalNonJavaInvokations) {
 			writer.write(s + "\n");
 		}
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		// writer.write(externalNonJavaInvokations.size() + "," +
 		// " method invokations (external and non excluded).\n");
 		// Log.outln(externalNonJavaInvokations.size() + ","
 		// + " method invokations (external and non excluded).");
 
-		writer.write("All Detected Types ========\n");
+		writer.write(Constants.PLUGIN_ALL_TYPES_DETECTED+"\n");
+		//"All Detected Types ========\n");
 		for (String s : allDetectedTypes) {
 			writer.write(s + "\n");
 		}
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		// writer.write(allDetectedTypes.size() + "," +
 		// " types (internal and external).\n");
 		// Log.outln(allDetectedTypes.size() + ","
 		// + " types (internal and external).");
 
-		writer.write("All External Detected Types ========\n");
+		writer.write(Constants.PLUGIN_ALL_TYPES_DETECTED_EXTERNAL+"\n");
+		//"All External Detected Types ========\n");
 		for (String s : allExternalDetectedTypes) {
 			writer.write(s + "\n");
 		}
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		// writer.write(allExternalDetectedTypes.size() + "," +
 		// " types (external).\n");
 		// Log.outln(allExternalDetectedTypes.size() + ","
 		// + " types (external).");
 
-		writer.write("All External Non Java Detected Types ========\n");
+		writer.write(Constants.PLUGIN_ALL_TYPES_DETECTED_EXTERNAL_AND_NON_JAVA+"\n");
+		//"All External Non Java Detected Types ========\n");
 		for (String s : allExternalNonJavaDetectedTypes) {
 			writer.write(s + "\n");
 		}
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		// writer.write(allExternalNonJavaDetectedTypes.size() + "," +
 		// " types (external non excluded).\n");
 		// Log.outln(allExternalNonJavaDetectedTypes.size() + ","
 		// + " types (external Non excluded).");
 
-		writer.write("All Jar Packages ========\n");
+		writer.write(Constants.PLUGIN_ALL_JAR_PACKAGES+"\n");
+		//"All Jar Packages ========\n");
 
 		for (String s : jarPackages) {
 			writer.write(s + "\n");
 		}
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		// writer.write(jarPackages.size() + "," + " jar packages.\n");
 
-		writer.write("All  Class packages ========\n");
+		writer.write(Constants.PLUGIN_ALL_CLASS_PACKAGES+"\n");
+		//"All  Class packages ========\n");
 
 		for (String s : classPackages) {
 			writer.write(s + "\n");
 		}
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		// writer.write(classPackages.size() + "," + " class packages.\n");
-		writer.write("All My Deprecated Methods ========\n");
+		writer.write(Constants.PLUGIN_ALL_MY_METHODS_DEPRECATED+"\n");
+		//"All My Deprecated Methods ========\n");
 
 		for (String s : allMyDeprecatedMethods) {
 			writer.write(s + "\n");
 		}
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		// writer.write(allMyDeprecatedMethods.size() + "," +
 		// " deprecated methods.\n");
 		// .println(allMyDeprecatedMethods.size() + ","
 		// + " deprecated methods.");
 
-		writer.write("All My Deprecated Classes ========\n");
+		writer.write(Constants.PLUGIN_ALL_MY_TYPES_DEPRECATED+"\n");
+		//"All My Deprecated Classes ========\n");
 
 		for (String s : allMyDeprecatedClasses) {
 			writer.write(s + "\n");
 		}
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		
 		// writer.write(allMyDeprecatedClasses.size() + "," +
 		// " deprecated   classes. \n");
 		// Log.outln(allMyDeprecatedClasses.size() + ","
@@ -854,7 +870,7 @@ public class BundleAnalyser extends ManifestParser {
 									// plugin.xml available.
 			writer.write(bundleinfo.getPluginXml() + "\n");
 		}
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 
 		// writer.write("===================================================\n");
 		writer.close();

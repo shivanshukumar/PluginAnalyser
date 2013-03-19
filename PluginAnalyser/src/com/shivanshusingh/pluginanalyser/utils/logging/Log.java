@@ -145,10 +145,8 @@ public class Log {
 			FileOutputStream ferr = new FileOutputStream(path + "_"
 					+ "stderr.log");
 	
-			MultiOutputStream multiOut = new MultiOutputStream(fout);// ,
-																		// System.out);
-			MultiOutputStream multiErr = new MultiOutputStream(ferr);// ,
-																		// System.err);
+			MultiOutputStream multiOut = new MultiOutputStream(fout  , System.out);
+			MultiOutputStream multiErr = new MultiOutputStream(ferr  , System.err);
 	
 			PrintStream stdout = new PrintStream(multiOut);
 			PrintStream stderr = new PrintStream(multiErr);

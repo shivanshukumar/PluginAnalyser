@@ -1,10 +1,11 @@
-package examples;
+package com.shivanshusingh.pluginanalyser.job;
 
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
 import com.shivanshusingh.pluginanalyser.analysis.AnalysisRunner;
+import com.shivanshusingh.pluginanalyser.comparison.DependencyFinder;
 import com.shivanshusingh.pluginanalyser.staging.DownloadAndStagingRunner;
 import com.shivanshusingh.pluginanalyser.utils.Util;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
@@ -15,7 +16,7 @@ import com.shivanshusingh.pluginanalyser.utils.logging.Log;
  */
 public class PluginAnalyserJobRunner {
 
-	public static void main(String[] args) {
+	public void run() {
 
 		String eclipseHome = "/Users/singhsk/Developer/eclipse_sandbox";// without
 																		// the
@@ -30,13 +31,13 @@ public class PluginAnalyserJobRunner {
 		// update site without the 'site.xml' at end.
 		Set<String> updateSiteURLCollection = new HashSet<String>();
 
-		updateSiteURLCollection
-				.add("http://download.eclipse.org/technology/dltk/updates/");
+		// updateSiteURLCollection
+		// .add("http://download.eclipse.org/technology/dltk/updates/");
 		updateSiteURLCollection
 				.add("https://dl-ssl.google.com/android/eclipse");
-		updateSiteURLCollection
-				.add("https://dl-ssl.google.com/android/eclipse/m/");// erroneous
-																		// case.
+		// updateSiteURLCollection
+		// .add("https://dl-ssl.google.com/android/eclipse/m/");// erroneous
+		// case.
 		// updateSiteURLCollection
 		// .add("http://download.aptana.com/studio3/plugin/install");
 		updateSiteURLCollection
@@ -64,27 +65,27 @@ public class PluginAnalyserJobRunner {
 			// this way old mirror site can be complete removed first.
 			boolean eraseOld = true;
 
-			String currTimeString = "_OUTPUT_" + mirrorSiteDesinationName
+			String currOutpurDir = "_OUTPUT_" + mirrorSiteDesinationName
 			// + "_" + Util.getCurrentTimeString()
 			;
 
-			if (!Log.startLogger("./" + currTimeString + "/_LOGS")) {
+			if (!Log.startLogger("./" + currOutpurDir + "/_LOGS")) {
 				Log.errln("Cannot start logging sorry. Please check the path provided or necessary permissions");
 			}
-			Util.setTEMP_DIR_PATH("./" + currTimeString + "/_TMP");
+			Util.setTEMP_DIR_PATH("./" + currOutpurDir + "/_TMP");
 			// getting features from an update site
 			String baseEclipseInstallationHome = eclipseHome;
-			if (!DownloadAndStagingRunner
-					.downloadAndStageWithEclipseInstallation(eclipseHome,
-							eclipseApp, equinoxAppName,
-							baseEclipseInstallationHome,
-							updateSiteURLCollection, destinationDirectory,
-							verbose, raw, eraseOld))
-			/*
-			 * !DownloadAndStagingRunner.downloadAndStage(eclipseHome,
-			 * eclipseApp, equinoxAppName, updateSiteURLCollection,
-			 * destinationDirectory, verbose, raw, eraseOld))
-			 */
+			
+			/*  if (!DownloadAndStagingRunner
+			 .downloadAndStageWithEclipseInstallation( eclipseHome,
+			  eclipseApp, equinoxAppName, baseEclipseInstallationHome,
+			  updateSiteURLCollection, destinationDirectory, verbose, raw,
+			  eraseOld))
+			*/ 
+
+			if (!DownloadAndStagingRunner.downloadAndStage(eclipseHome,
+					eclipseApp, equinoxAppName, updateSiteURLCollection,
+					destinationDirectory, verbose, raw, eraseOld))
 
 			{
 				Log.errln("XXXXXXX  "
@@ -103,11 +104,24 @@ public class PluginAnalyserJobRunner {
 			 * starting analysis ....
 			 */
 
-			String outputLocation = "./" + currTimeString + "/_OUTPUT";
+			String outputLocation = "./" + currOutpurDir + "/_OUTPUT";
 			AnalysisRunner.analyseAndRecord(destinationDirectory,
 					outputLocation);
 
-		} catch (IOException e) {
+			// ////////////////////////////////////////////////////// checking
+			// the dependency finder.
+
+			// currOutpurDir="_OUTPUT_new_site2013-03-19-16-33-07-731";
+			outputLocation = "./" + currOutpurDir + "/_OUTPUT";
+
+			String pluginExtractsLocation = outputLocation + "/plugins";
+			String extractAnalysisDestLocation = "./" + currOutpurDir
+					+ "/_PLUGIN/";
+			DependencyFinder.buildPluginDependencySuperSet(
+					pluginExtractsLocation, extractAnalysisDestLocation, true);
+			// ///////////////////////////////////////////////////////////////////////////////////////////////
+
+		} catch (Exception e) {
 			Log.err(e.getStackTrace().toString());
 			// e.printStackTrace();
 		}

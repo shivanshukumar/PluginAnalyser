@@ -24,6 +24,7 @@ import org.xml.sax.SAXException;
 
 import com.shivanshusingh.pluginanalyser.utils.Util;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
+import com.shivanshusingh.pluginanalyser.utils.parsing.Constants;
 
 /**
  * this is the class that analyses features (dir or jar).
@@ -440,28 +441,28 @@ public class FeatureAnalyser {
 		writer.write("Id ========\n");
 		writer.write(featureInfo.getId() + "\n");
 		Log.outln(featureInfo.getId() + "=========");
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		writer.write("Label ========\n");
 		writer.write(featureInfo.getLabel() + "\n");
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		writer.write("Version ========\n");
 		writer.write(featureInfo.getVersion() + "\n");
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		writer.write("Version  Without Qualifier  ========\n");
 		writer.write(featureInfo.getVersionWithoutQualifier() + "\n");
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		writer.write("ProviderName ========\n");
 		writer.write(featureInfo.getProviderName() + "\n");
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		writer.write("URL ========\n");
 		writer.write(featureInfo.getUrl() + "\n");
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		writer.write("UpdateLabel ========\n");
 		writer.write(featureInfo.getUpdateLabel() + "\n");
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		writer.write("Description ========\n");
 		writer.write(featureInfo.getDescription() + "\n");
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 
 		writer.write("Plugins ========\n");
 		for (String s : featureInfo.getPlugins()) {
@@ -469,17 +470,17 @@ public class FeatureAnalyser {
 		}
 		//Log.outln(featureInfo.getPlugins().size() + "," + " plugins.");
 
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		writer.write("Imports ========\n");
 		for (String s : featureInfo.getImports()) {
 			writer.write(s + "\n");
 		}
 		//Log.outln(featureInfo.getImports().size() + "," + " imports.");
 
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 		writer.write("Feature.xml ========\n");
 		writer.write(featureInfo.getXml().trim() + "\n");
-		writer.write("--------\n");
+		writer.write(Constants.TERMINATOR_MARKER+"\n");
 
 		writer.close();
 		fwriter.close();
