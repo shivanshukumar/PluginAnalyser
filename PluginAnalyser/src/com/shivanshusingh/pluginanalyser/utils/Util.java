@@ -1,6 +1,7 @@
 package com.shivanshusingh.pluginanalyser.utils;
 
 import java.io.File;
+import java.io.IOException;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -8,13 +9,17 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.apache.commons.io.FileUtils;
+
+import com.shivanshusingh.pluginanalyser.utils.logging.Log;
+
 /**
  * the utility functions   useful in the project.
  * 
  * @author Shivanshu Singh
  *
  */
-public class PluginAnalyserUtils {
+public class Util {
 
 	private static String TEMP_DIR_PATH = ".";
 
@@ -140,10 +145,10 @@ public class PluginAnalyserUtils {
 		DecimalFormat form3 = new DecimalFormat("000");
 	      
 		String   formattedTime=""
-				//+	form2.format((long) miliseconds / (1000 * 60 * 60))+ "h:"
-				//+	form2.format((long) miliseconds / (1000 * 60))+"m:"
-				+	form2.format((long) miliseconds / 1000)+"s:"
-				+	form3.format((long) miliseconds % 1000)+"ms"
+				//+	form2.format((long) miliseconds / (1000 * 60 * 60))+ " h : "
+				+	form2.format((long) miliseconds / (1000 * 60))+" m : "
+				+	form2.format((long) miliseconds / 1000)+" s : "
+				+	form3.format((long) miliseconds % 1000)+" ms"
 				;
 		
 		
@@ -152,6 +157,7 @@ public class PluginAnalyserUtils {
 		return formattedTime;
 	}
 
+	
 	/**
 	 * gets the path of the current temp directory to be used by the
 	 * application. All temporary files should be created in the directory
@@ -200,6 +206,63 @@ public class PluginAnalyserUtils {
 		}
 		return false;
 
+	}
+	
+	public static boolean checkDirectory(File directory, boolean isDirectory,boolean exists, boolean isReadable, boolean isWritable)
+	{
+		if(			
+				(isDirectory? 	directory.isDirectory()		:true)
+				&& (exists? 	directory.exists()			:true)
+				&& (isReadable? directory.canRead() 		:true)
+				&& (isWritable?	directory.canWrite() 		:true)
+				)
+			return true;
+		
+		return false;
+		
+		
+	}
+	public static boolean checkFile(File file, boolean isFile,boolean exists, boolean isReadable, boolean isWritable)
+	{
+		if(			
+				(isFile? 		file.isFile()		:true)
+				&& (exists? 	file.exists()		:true)
+				&& (isReadable? file.canRead() 		:true)
+				&& (isWritable?	file.canWrite() 	:true)
+				)
+			return true;
+		
+		return false;
+		
+		
+	}
+
+	/**
+	 * 
+	 *   copies all the contents (files and directories recursively) of the  srcDir to destDir. The destDir is created if it does not exist.
+	 *   example:  srcDir/x and destDir. copyDirectoryContents(srcDir, destDir) would result in: srcDir/x --> destDir/x
+	 *   
+	 *    @see FileUtils  .copyDirectory(File, File)
+	 *    @see FileUtils  .copyFile(File, File)
+	 * @param srcDir
+	 * @param destDir
+	 * @throws IOException
+	 */
+	public static void copyDirectoryContents(File srcDir, File destDir)
+			throws IOException {
+		// copying all the features.
+		File[] entries = srcDir.listFiles();
+		if(null!=entries)
+		{
+			for(File entry:entries)
+			{
+				File destFeatureFile=new File(destDir.getPath()+"/"+entry.getName());
+				if(entry.isDirectory())
+					FileUtils.copyDirectory(entry, destFeatureFile);
+				else if(entry.isFile())
+					FileUtils.copyFile(entry, destFeatureFile);
+			}
+		}
 	}
 
 }

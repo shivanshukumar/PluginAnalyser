@@ -24,7 +24,7 @@ import java.util.jar.Manifest;
 import org.apache.ivy.osgi.core.ManifestParser;
 import org.objectweb.asm.ClassReader;
 
-import com.shivanshusingh.pluginanalyser.utils.PluginAnalyserUtils;
+import com.shivanshusingh.pluginanalyser.utils.Util;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
 
 /**
@@ -42,7 +42,7 @@ public class BundleAnalyser extends ManifestParser {
 	 */
 	public static void analyseAndRecordAllInformationFromBasePluginFolder(
 			String pluginFolderPath, String outputLocation) throws IOException {
-		if (!PluginAnalyserUtils.checkAndCreateDirectory(outputLocation)) {
+		if (!Util.checkAndCreateDirectory(outputLocation)) {
 			  Log.errln("xxxx Error Accessing/Creating Output Directory for Plugin Analysis Output at: "
 							+ outputLocation
 							+ "\n Cannot continue with the analysis.");
@@ -85,9 +85,9 @@ public class BundleAnalyser extends ManifestParser {
 		  Log.outln(pluginAnalysedCounter + " plugin have been analyzed");
 	  Log.errln(pluginAnalysedCounter + " plugin have been analyzed");
 		Log.outln("for source:" + pluginFolderPath + " time: "
-				+ PluginAnalyserUtils.getFormattedTime(l2 - l1));
+				+ Util.getFormattedTime(l2 - l1));
 		Log.errln("for source:" + pluginFolderPath + " time: "
-				+ PluginAnalyserUtils.getFormattedTime(l2 - l1));
+				+ Util.getFormattedTime(l2 - l1));
 		// String pluginJarName
 		// ="com.android.ide.eclipse.adt_21.0.1.2012-12-6-2-58.jar";
 	}
@@ -125,7 +125,7 @@ public class BundleAnalyser extends ManifestParser {
 
 			Log.errln("==== analysed:  \n " + dirNameWithPathFull
 					+ "\n time: "
-					+ PluginAnalyserUtils.getFormattedTime(l2 - l1));
+					+ Util.getFormattedTime(l2 - l1));
 		} catch (Exception e) {
 			Log.errln("xxxx ERROR WHILE ANALYSING PLUGIN Folder : "
 					+ pathPrefix + pluginDirName);
@@ -142,7 +142,7 @@ public class BundleAnalyser extends ManifestParser {
 			File folder) {
 		// recursively constructing a set of paths of all files in this plugin
 		// folder.
-		Set<String> dirFileList = PluginAnalyserUtils
+		Set<String> dirFileList = Util
 				.listFilesForFolder(folder);
 		BundleInformation bundleInformation = new BundleInformation();
 		// getting plugin meta-inf/manifest.mf manifest information
@@ -242,7 +242,7 @@ public class BundleAnalyser extends ManifestParser {
 
 			Log.errln("==== analysed:  \n " + jarFileNameWithPathFull
 					+ "\n time: "
-					+ PluginAnalyserUtils.getFormattedTime(l2 - l1));
+					+ Util.getFormattedTime(l2 - l1));
 
 		} catch (Exception e) {
 			Log.errln("xxxx ERROR WHILE ANALYSING PLUGIN Jar : "
@@ -378,7 +378,7 @@ public class BundleAnalyser extends ManifestParser {
 							Log.outln("====> now analysing internal lib jar:"
 											+ name);
 
-							String TEMPFileName = (PluginAnalyserUtils
+							String TEMPFileName = (Util
 									.getTEMP_DIR_PATH() + "/pa-sks-plugin-tmp-")
 									.replace("//", "/")
 									+ Math.random() + ( // jarfileinstance.getName()
@@ -438,7 +438,7 @@ public class BundleAnalyser extends ManifestParser {
 				+ folder.getCanonicalPath() + " analysis ====");
 
 		// getting a recursive list of all files contained in this plugin dir.
-		Set<String> dirFileList = PluginAnalyserUtils
+		Set<String> dirFileList = Util
 				.listFilesForFolder(folder);
 
 		Iterator<String> en = dirFileList.iterator();
@@ -475,7 +475,7 @@ public class BundleAnalyser extends ManifestParser {
 							Log.outln("====> now analysing internal lib jar:"
 											+ name);
 
-							String TEMPFileName = (PluginAnalyserUtils
+							String TEMPFileName = (Util
 									.getTEMP_DIR_PATH() + "/pa-sks-plugin-tmp-")
 									.replace("//", "/")
 									+ Math.random() + (

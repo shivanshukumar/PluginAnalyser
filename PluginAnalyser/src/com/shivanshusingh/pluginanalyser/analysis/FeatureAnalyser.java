@@ -22,7 +22,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import com.shivanshusingh.pluginanalyser.utils.PluginAnalyserUtils;
+import com.shivanshusingh.pluginanalyser.utils.Util;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
 
 /**
@@ -51,7 +51,7 @@ public class FeatureAnalyser {
 	public static void analyseAndRecordAllInformationFromBaseFeautreFolder(
 			String featureFolderPath, String outputLocation) throws IOException {
 
-		if (!PluginAnalyserUtils.checkAndCreateDirectory(outputLocation)) {
+		if (!Util.checkAndCreateDirectory(outputLocation)) {
 			Log.errln("Error Accessing/Creating Output Directory for  Feature  Analysis Output at: "
 							+ outputLocation
 							+ "\n Cannot continue with the analysis.");
@@ -98,10 +98,10 @@ public class FeatureAnalyser {
 		Log.errln(featureAnlalysedCounter
 				+ " features have been analyzed");
 		Log.outln("for  source:" + featureFolderPath + "  time: "
-				+ PluginAnalyserUtils.getFormattedTime(l2 - l1));
+				+ Util.getFormattedTime(l2 - l1));
 
 		Log.errln("for  source:" + featureFolderPath + "  time: "
-				+ PluginAnalyserUtils.getFormattedTime(l2 - l1));
+				+ Util.getFormattedTime(l2 - l1));
 
 	}
 
@@ -141,7 +141,7 @@ public class FeatureAnalyser {
 		writeData(featureInfo, folder.getName(), outputLocation);
 		long l2 = System.currentTimeMillis();
 
-		Log.errln("==== analysed:  \n "+dirNameWithPathFull+"\n time: "+PluginAnalyserUtils.getFormattedTime(l2 - l1));
+		Log.errln("==== analysed:  \n "+dirNameWithPathFull+"\n time: "+Util.getFormattedTime(l2 - l1));
 
 	}
 
@@ -174,7 +174,7 @@ public class FeatureAnalyser {
 		writeData(featureInfo, featureJarName, outputLocation);
 		long l2 = System.currentTimeMillis();
 
-		Log.errln("==== analysed:  \n "+jarFileNameWithPathFull+"\n time: "+PluginAnalyserUtils.getFormattedTime(l2 - l1));
+		Log.errln("==== analysed:  \n "+jarFileNameWithPathFull+"\n time: "+Util.getFormattedTime(l2 - l1));
 	}
 
 	/**
@@ -216,7 +216,7 @@ public class FeatureAnalyser {
 			InputStream inputStream) {
 
 		FeatureInformation featureInfo = new FeatureInformation();
-		String TEMPFileName = (PluginAnalyserUtils.getTEMP_DIR_PATH() + "/pa-sks-feature-tmp-")
+		String TEMPFileName = (Util.getTEMP_DIR_PATH() + "/pa-sks-feature-tmp-")
 				.replace("//", "/") + Math.random() + (
 		// jarfileinstance.getName()
 		// + "_" +

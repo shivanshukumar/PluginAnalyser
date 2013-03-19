@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 
-import com.shivanshusingh.pluginanalyser.utils.PluginAnalyserUtils;
+import com.shivanshusingh.pluginanalyser.utils.Util;
 import com.sun.tools.corba.se.idl.constExpr.Equal;
 
 /**
@@ -136,7 +136,7 @@ public class Log {
 	 *         location specified in the path param.
 	 */
 	public static boolean startLogger(String path) {
-		if (!PluginAnalyserUtils.checkAndCreateDirectory(path))
+		if (!Util.checkAndCreateDirectory(path))
 			return false;
 		path = (path + "/").replaceAll("//", "/");
 		try {
