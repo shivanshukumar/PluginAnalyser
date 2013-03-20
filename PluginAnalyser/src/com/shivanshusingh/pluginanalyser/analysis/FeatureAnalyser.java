@@ -50,25 +50,23 @@ public class FeatureAnalyser {
 	 *            over written.
 	 * @param eraseOld
 	 */
-	
-	public static void analyseAndRecordAllInformationFromBaseFeautreFolder(
-			String featureFolderPath, String outputLocation, boolean eraseOld) throws IOException {
+
+	public static void analyseAndRecordAllInformationFromBaseFeautreFolder(String featureFolderPath, String outputLocation,
+			boolean eraseOld) throws IOException {
 
 		if (!Util.checkAndCreateDirectory(outputLocation)) {
-			Log.errln("Error Accessing/Creating Output Directory for  Feature  Analysis Output at: "
-							+ outputLocation
-							+ "\n Cannot continue with the analysis.");
+			Log.errln("Error Accessing/Creating Output Directory for  Feature  Analysis Output at: " + outputLocation
+					+ "\n Cannot continue with the analysis.");
 			return;
 		}
-		
-		if(eraseOld)
-				Util.clearFolder(new File(outputLocation));
-		
+
+		if (eraseOld)
+			Util.clearFolder(new File(outputLocation));
+
 		// reading all the files (feature jars) in the specified feature folder
 		long l1 = System.currentTimeMillis();
 
-		Log.outln("=======Analysing  Feature Source:"
-				+ featureFolderPath);
+		Log.outln("=======Analysing  Feature Source:" + featureFolderPath);
 		File folder = new File(featureFolderPath);
 		if (null == folder) {
 			Log.outln("==== nothing here.");
@@ -84,8 +82,7 @@ public class FeatureAnalyser {
 					// this means that this is a feature jar (it is assumed that
 					// this would be a feature jar if it is at this location)
 					featureAnlalysedCounter++;
-					analyseAndRecordAllInformationFromFeatureJar(
-							featureFolderPath, featureJarName, outputLocation);
+					analyseAndRecordAllInformationFromFeatureJar(featureFolderPath, featureJarName, outputLocation);
 				}
 
 			} else if (listOfFiles[i].isDirectory()) {
@@ -93,35 +90,28 @@ public class FeatureAnalyser {
 				// some of the features may exist as directories instead of jar
 				// files, so check the directories.
 				featureAnlalysedCounter++;
-				analyseAndRecordAllInformationFromFeatureDir(featureFolderPath,
-						listOfFiles[i].getName(), outputLocation);
+				analyseAndRecordAllInformationFromFeatureDir(featureFolderPath, listOfFiles[i].getName(), outputLocation);
 				// Log.outln("Directory " + listOfFiles[i].getName());
 			}
 
 		}
 		long l2 = System.currentTimeMillis();
-		Log.outln(featureAnlalysedCounter
-				+ " features have been analyzed");
-		Log.errln(featureAnlalysedCounter
-				+ " features have been analyzed");
-		Log.outln("for  source:" + featureFolderPath + "  time: "
-				+ Util.getFormattedTime(l2 - l1));
+		Log.outln(featureAnlalysedCounter + " features have been analyzed");
+		Log.errln(featureAnlalysedCounter + " features have been analyzed");
+		Log.outln("for  source:" + featureFolderPath + "  time: " + Util.getFormattedTime(l2 - l1));
 
-		Log.errln("for  source:" + featureFolderPath + "  time: "
-				+ Util.getFormattedTime(l2 - l1));
+		Log.errln("for  source:" + featureFolderPath + "  time: " + Util.getFormattedTime(l2 - l1));
 
 	}
 
-	public static void analyseAndRecordAllInformationFromFeatureDir(
-			String pathPrefix, String featureDirName, String outputLocation)
-			throws IOException {
+	public static void analyseAndRecordAllInformationFromFeatureDir(String pathPrefix, String featureDirName,
+			String outputLocation) throws IOException {
 		long l1 = System.currentTimeMillis();
 
-		
 		FeatureInformation featureInfo = new FeatureInformation();
 
 		String dirNameWithPathFull = pathPrefix + featureDirName;
-		
+
 		File folder = new File(dirNameWithPathFull);
 		if (null == folder || !folder.isDirectory()) {
 			Log.outln("==== ==== nothing here.");
@@ -134,10 +124,9 @@ public class FeatureAnalyser {
 			String name = e.getName();
 			if (name.toLowerCase().endsWith("feature.xml")) {
 				try {
-					Log.outln("==== ==== ====  feature.xml :  enclosing  dir or such file name  =    "
-									+ folder.getPath() + ">" + name);
-					featureInfo = extractFeatureInformation(new FileInputStream(
-							e));
+					Log.outln("==== ==== ====  feature.xml :  enclosing  dir or such file name  =    " + folder.getPath()
+							+ ">" + name);
+					featureInfo = extractFeatureInformation(new FileInputStream(e));
 
 				} catch (Exception exception) {
 					exception.printStackTrace();
@@ -148,23 +137,20 @@ public class FeatureAnalyser {
 		writeData(featureInfo, folder.getName(), outputLocation);
 		long l2 = System.currentTimeMillis();
 
-		Log.errln("==== analysed:  \n "+dirNameWithPathFull+"\n time: "+Util.getFormattedTime(l2 - l1));
+		Log.errln("==== analysed:  \n " + dirNameWithPathFull + "\n time: " + Util.getFormattedTime(l2 - l1));
 
 	}
 
-	
 	/**
 	 * @param pathPrefix
 	 * @param featureJarName
 	 * @param outputLocation
 	 * @throws IOException
 	 */
-	public static void analyseAndRecordAllInformationFromFeatureJar(
-			String pathPrefix, String featureJarName, String outputLocation)
-			throws IOException {
+	public static void analyseAndRecordAllInformationFromFeatureJar(String pathPrefix, String featureJarName,
+			String outputLocation) throws IOException {
 		long l1 = System.currentTimeMillis();
 
-		
 		// //////// feature archive/////////////////////////////////
 		String jarFileNameWithPathFull = pathPrefix + featureJarName;
 
@@ -181,15 +167,14 @@ public class FeatureAnalyser {
 		writeData(featureInfo, featureJarName, outputLocation);
 		long l2 = System.currentTimeMillis();
 
-		Log.errln("==== analysed:  \n "+jarFileNameWithPathFull+"\n time: "+Util.getFormattedTime(l2 - l1));
+		Log.errln("==== analysed:  \n " + jarFileNameWithPathFull + "\n time: " + Util.getFormattedTime(l2 - l1));
 	}
 
 	/**
 	 * @param jarfileinstance
 	 * @return
 	 */
-	public static FeatureInformation extractFeatureMetaDataFromFeatureJar(
-			JarFile jarfileinstance) {
+	public static FeatureInformation extractFeatureMetaDataFromFeatureJar(JarFile jarfileinstance) {
 		FeatureInformation featureinfo = new FeatureInformation();
 
 		Enumeration<? extends JarEntry> en = jarfileinstance.entries();
@@ -201,9 +186,8 @@ public class FeatureAnalyser {
 			if (name.toLowerCase().endsWith("feature.xml")) {
 				try {
 					Log.outln("==== ==== ====  feature.xml :  enclosing  jar or such file name  =    "
-									+ jarfileinstance.getName() + ">" + name);
-					featureinfo = extractFeatureInformation(jarfileinstance
-							.getInputStream(e));
+							+ jarfileinstance.getName() + ">" + name);
+					featureinfo = extractFeatureInformation(jarfileinstance.getInputStream(e));
 
 				} catch (Exception exception) {
 					exception.printStackTrace();
@@ -215,28 +199,27 @@ public class FeatureAnalyser {
 	}
 
 	/**
-	 * extracts the feature information  for the feature.xml or such inputStream
-	 * @param inputStream {@link InputStream} for the feature.xml file or such source that contains the feature information / metadata.
-	 *  @return {@link FeatureInformation] extracted .
+	 * extracts the feature information for the feature.xml or such inputStream
+	 * 
+	 * @param inputStream
+	 *            {@link InputStream} for the feature.xml file or such source
+	 *            that contains the feature information / metadata.
+	 * @return {@link FeatureInformation] extracted .
 	 */
-	private static FeatureInformation extractFeatureInformation(
-			InputStream inputStream) {
+	private static FeatureInformation extractFeatureInformation(InputStream inputStream) {
 
 		FeatureInformation featureInfo = new FeatureInformation();
-		String TEMPFileName = (Util.getTEMP_DIR_PATH() + "/pa-sks-feature-tmp-")
-				.replace("//", "/") + Math.random() + (
+		String TEMPFileName = (Util.getTEMP_DIR_PATH() + "/pa-sks-feature-tmp-").replace("//", "/") + Math.random() + (
 		// jarfileinstance.getName()
 		// + "_" +
 				"feature.xml").replaceAll("/", "_").replace(" ", "_");
 		try {
 
-			BufferedReader bufferedTempReader = new BufferedReader(
-					new InputStreamReader(inputStream));
+			BufferedReader bufferedTempReader = new BufferedReader(new InputStreamReader(inputStream));
 
 			BufferedWriter bufferedTempWriter;
 
-			bufferedTempWriter = new BufferedWriter(
-					new FileWriter(TEMPFileName));
+			bufferedTempWriter = new BufferedWriter(new FileWriter(TEMPFileName));
 
 			int inread;
 			while ((inread = bufferedTempReader.read()) != -1) {
@@ -255,8 +238,7 @@ public class FeatureAnalyser {
 			File f = new File(TEMPFileName);
 			// Log.outln(featureInfo.getXml());
 			// now the file (xml) is ready for analysis.
-			Document doc = DocumentBuilderFactory.newInstance()
-					.newDocumentBuilder().parse(f);
+			Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(f);
 			// Log.outln(doc.toString());
 			// Log.outln("Root element :" +
 			// doc.getDocumentElement().getNodeName());
@@ -275,10 +257,8 @@ public class FeatureAnalyser {
 
 					String importedFeature = eElement.getAttribute("feature");
 					String importedPlugin = eElement.getAttribute("plugin");
-					String importedElementVersion = eElement
-							.getAttribute("version");
-					String importedElementMatch = eElement
-							.getAttribute("match");
+					String importedElementVersion = eElement.getAttribute("version");
+					String importedElementMatch = eElement.getAttribute("match");
 					// Log.outln(" feature : " + importedFeature);
 					// Log.outln(" plugin : " + importedPlugin);
 					// Log.outln(" version : " +
@@ -286,17 +266,11 @@ public class FeatureAnalyser {
 					// Log.outln(" match : " + importedElementMatch);
 
 					// adding the import element to featureinfo;
-					String importElement = (null != importedFeature
-							&& !"".equals(importedFeature) ? "feature;"
-							+ importedFeature.trim().toLowerCase() + ";"
-							: (null != importedPlugin
-									&& !"".equals(importedPlugin) ? "plugin;"
-									+ importedPlugin.trim().toLowerCase() + ";"
-									: ""));
-					importElement += (null != importElement
-							&& !"".equals(importElement) ? importedElementVersion
-							.trim() + ";" + importedElementMatch + ";"
-							: "");
+					String importElement = (null != importedFeature && !"".equals(importedFeature) ? "feature;"
+							+ importedFeature.trim().toLowerCase() + ";" : (null != importedPlugin
+							&& !"".equals(importedPlugin) ? "plugin;" + importedPlugin.trim().toLowerCase() + ";" : ""));
+					importElement += (null != importElement && !"".equals(importElement) ? importedElementVersion.trim()
+							+ ";" + importedElementMatch + ";" : "");
 					if (null != importElement && !"".equals(importElement))
 						featureInfo.addImport(importElement);
 
@@ -322,9 +296,8 @@ public class FeatureAnalyser {
 
 					// adding the plugin that this feature is made up of to the
 					// featureinformation.
-					featureInfo.addPlugin(eElement.getAttribute("id").trim()
-							.toLowerCase()
-							+ ";" + eElement.getAttribute("version").trim());
+					featureInfo.addPlugin(eElement.getAttribute("id").trim().toLowerCase() + ";"
+							+ eElement.getAttribute("version").trim());
 				}
 			}
 
@@ -342,22 +315,15 @@ public class FeatureAnalyser {
 
 					featureInfo.setId(eElement.getAttribute("id").trim());
 					featureInfo.setLabel(eElement.getAttribute("label").trim());
-					featureInfo.setVersion(eElement.getAttribute("version")
-							.trim());
-					StringTokenizer versionTokens = new StringTokenizer(
-							eElement.getAttribute("version").trim(), ".");
-					StringBuffer versionWithoutQualifier = new StringBuffer(
-							versionTokens.nextToken());
+					featureInfo.setVersion(eElement.getAttribute("version").trim());
+					StringTokenizer versionTokens = new StringTokenizer(eElement.getAttribute("version").trim(), ".");
+					StringBuffer versionWithoutQualifier = new StringBuffer(versionTokens.nextToken());
 					for (int x = 0; x < 2 && versionTokens.hasMoreElements(); x++) {
-						versionWithoutQualifier.append("."
-								+ versionTokens.nextToken().trim());
+						versionWithoutQualifier.append("." + versionTokens.nextToken().trim());
 					}
-					featureInfo
-							.setVersionWithoutQualifier(versionWithoutQualifier
-									.toString());
+					featureInfo.setVersionWithoutQualifier(versionWithoutQualifier.toString());
 
-					featureInfo.setProviderName(eElement.getAttribute(
-							"provider-name").trim());
+					featureInfo.setProviderName(eElement.getAttribute("provider-name").trim());
 
 					// Log.outln("  For \"Feature\" id : " +
 					// eElement.getAttribute("id")
@@ -382,8 +348,7 @@ public class FeatureAnalyser {
 
 					Element eElement = (Element) nNode;
 
-					featureInfo
-							.setDescription(eElement.getTextContent().trim());
+					featureInfo.setDescription(eElement.getTextContent().trim());
 
 					// Log.outln(" description : "+eElement.getTextContent());
 				}
@@ -401,8 +366,7 @@ public class FeatureAnalyser {
 					Element eElement = (Element) nNode;
 
 					featureInfo.setUrl(eElement.getAttribute("url").trim());
-					featureInfo.setUpdateLabel(eElement.getAttribute("label")
-							.trim());
+					featureInfo.setUpdateLabel(eElement.getAttribute("label").trim());
 
 					// Log.outln(" updatelabel : "+eElement.getAttribute("label")
 					// + "\n           url : "+ eElement.getAttribute("url")
@@ -410,7 +374,7 @@ public class FeatureAnalyser {
 				}
 			}
 
-			Log.outln("== delete = " +new File(TEMPFileName).delete() +" : "+ TEMPFileName + "====");
+			Log.outln("== delete = " + new File(TEMPFileName).delete() + " : " + TEMPFileName + "====");
 
 		} catch (ParserConfigurationException e) {
 			e.printStackTrace();
@@ -430,15 +394,16 @@ public class FeatureAnalyser {
 	 * @param outputLocation
 	 * @throws IOException
 	 */
-	private static void writeData(FeatureInformation featureInfo,
-			String featureFileName, String outputLocation) throws IOException {
-
+	private static void writeData(FeatureInformation featureInfo, String featureFileName, String outputLocation)
+			throws IOException {
+		// TODO switch extract generation to largely or completely Constants
+		// based approach.
 		outputLocation = (outputLocation + "/").trim().replaceAll("//", "/");
 
 		featureFileName = featureFileName.toLowerCase().trim();
 		if (featureFileName.endsWith(Constants.JAR_FILE_EXTENSION))
-			featureFileName = featureFileName.substring(0,
-					featureFileName.length() - Constants.JAR_FILE_EXTENSION.length());
+			featureFileName = featureFileName
+					.substring(0, featureFileName.length() - Constants.JAR_FILE_EXTENSION.length());
 
 		FileWriter fwriter = new FileWriter(outputLocation + Constants.EXTRACT_FILE_PREFIX_FEATURE
 				+ featureFileName.replace('/', '_') + Constants.EXTRACT_FILE_EXTENSION_FEATURE);
@@ -446,46 +411,46 @@ public class FeatureAnalyser {
 		writer.write("Id ========\n");
 		writer.write(featureInfo.getId() + "\n");
 		Log.outln(featureInfo.getId() + "=========");
-		writer.write(Constants.MARKER_TERMINATOR+"\n");
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
 		writer.write("Label ========\n");
 		writer.write(featureInfo.getLabel() + "\n");
-		writer.write(Constants.MARKER_TERMINATOR+"\n");
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
 		writer.write("Version ========\n");
 		writer.write(featureInfo.getVersion() + "\n");
-		writer.write(Constants.MARKER_TERMINATOR+"\n");
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
 		writer.write("Version  Without Qualifier  ========\n");
 		writer.write(featureInfo.getVersionWithoutQualifier() + "\n");
-		writer.write(Constants.MARKER_TERMINATOR+"\n");
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
 		writer.write("ProviderName ========\n");
 		writer.write(featureInfo.getProviderName() + "\n");
-		writer.write(Constants.MARKER_TERMINATOR+"\n");
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
 		writer.write("URL ========\n");
 		writer.write(featureInfo.getUrl() + "\n");
-		writer.write(Constants.MARKER_TERMINATOR+"\n");
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
 		writer.write("UpdateLabel ========\n");
 		writer.write(featureInfo.getUpdateLabel() + "\n");
-		writer.write(Constants.MARKER_TERMINATOR+"\n");
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
 		writer.write("Description ========\n");
 		writer.write(featureInfo.getDescription() + "\n");
-		writer.write(Constants.MARKER_TERMINATOR+"\n");
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 		writer.write("Plugins ========\n");
 		for (String s : featureInfo.getPlugins()) {
 			writer.write(s + "\n");
 		}
-		//Log.outln(featureInfo.getPlugins().size() + "," + " plugins.");
+		// Log.outln(featureInfo.getPlugins().size() + "," + " plugins.");
 
-		writer.write(Constants.MARKER_TERMINATOR+"\n");
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
 		writer.write("Imports ========\n");
 		for (String s : featureInfo.getImports()) {
 			writer.write(s + "\n");
 		}
-		//Log.outln(featureInfo.getImports().size() + "," + " imports.");
+		// Log.outln(featureInfo.getImports().size() + "," + " imports.");
 
-		writer.write(Constants.MARKER_TERMINATOR+"\n");
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
 		writer.write("Feature.xml ========\n");
 		writer.write(featureInfo.getXml().trim() + "\n");
-		writer.write(Constants.MARKER_TERMINATOR+"\n");
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 		writer.close();
 		fwriter.close();
