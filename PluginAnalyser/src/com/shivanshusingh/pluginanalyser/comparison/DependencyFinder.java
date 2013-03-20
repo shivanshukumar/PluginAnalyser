@@ -26,7 +26,7 @@ public class DependencyFinder {
 	
 	/**
 	 * 
-	 * this function build the superset of dependencies from the extract files to finally figure out what dependencies were unstated or missiing.
+	 * this function build the superset of dependencies from the extract files to finally figure out what dependencies were unstated or missing.
 	 * @param pathToPluginExtractDir
 	 * @param pathToDependencyAnalysisDestinationDir
 	 * @param eraseOld
