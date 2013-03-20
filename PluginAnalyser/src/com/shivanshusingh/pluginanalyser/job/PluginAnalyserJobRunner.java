@@ -31,24 +31,42 @@ public class PluginAnalyserJobRunner {
 		// which all artifacts will be downloaded.
 		// each update site parameter should be the URL to the eclipse product
 		// update site without the 'site.xml' at end.
-		Set<String> updateSiteURLCollection = new HashSet<String>();
+		Set<String> updateSiteCollection = new HashSet<String>();
 
-		updateSiteURLCollection.add("http://download.eclipse.org/technology/dltk/updates/");
-		updateSiteURLCollection.add("https://dl-ssl.google.com/android/eclipse");
-		updateSiteURLCollection.add("https://dl-ssl.google.com/android/eclipse/m/");// erroneous
-																					// case.
-		// updateSiteURLCollection.add("http://download.aptana.com/studio3/plugin/install");
-		updateSiteURLCollection.add("http://download.eclipse.org/egit/github/updates");
-		updateSiteURLCollection.add("http://download.eclipse.org/technology/m2e/releases/1.3/1.3.1.20130219-1424");
+		 updateSiteCollection.add("http://download.eclipse.org/technology/dltk/updates/");
+		 updateSiteCollection.add("https://dl-ssl.google.com/android/eclipse");
 		/*
-		 * // add an eclipse site to club plugins with a base eclipse product.
-		 * updateSiteURLCollection
-		 * .add("http://download.eclipse.org/releases/juno/");
+		  updateSiteURLCollection.add(
+		  "https://dl-ssl.google.com/android/eclipse/m/");// erroneous case.
 		 */
+		updateSiteCollection.add("http://download.aptana.com/studio3/plugin/install");
+		updateSiteCollection.add("http://download.eclipse.org/egit/github/updates");
+		updateSiteCollection.add("http://download.eclipse.org/technology/m2e/releases/1.3/1.3.1.20130219-1424");
+		updateSiteCollection.add("http://www.apache.org/dist/ant/ivyde/updatesite");
+		updateSiteCollection.add("http://dist.springsource.org/release/GRECLIPSE/e4.2/");
+		updateSiteCollection.add("http://goldenhammers.com/merclipse/update ");
+		updateSiteCollection.add("http://download.eclipse.org/technology/subversive/1.0/update-site-1.0.1/	");
+		updateSiteCollection.add("http://jd.benow.ca/jd-eclipse/update");
+		updateSiteCollection.add("http://wwwiti.cs.uni-magdeburg.de/iti_db/research/featureide/deploy/");
+		updateSiteCollection.add("http://dist.springsource.com/release/TOOLS/composite/e3.7/bookmarks.xml");
+		updateSiteCollection.add("http://openextern.googlecode.com/svn/trunk/openextern_update/");
+		updateSiteCollection.add("http://update.eclemma.org/");
+		updateSiteCollection.add("http://andrei.gmxhome.de/eclipse/");
+		updateSiteCollection.add("http://download.eclipse.org/technology/m2e/milestones/1.4 ");
+		updateSiteCollection.add("http://pmd.sf.net/eclipse");
+		updateSiteCollection.add("http://findbugs.cs.umd.edu/eclipse/");
+		updateSiteCollection.add("						 http://eclipse-cs.sourceforge.net/update");
+		updateSiteCollection.add("						 http://download.eclipse.org/tools/pdt/updates/release");
+		updateSiteCollection.add("					 http://www.ne.jp/asahi/zigen/home/plugin/dbviewer/");
+		// add an eclipse site to club plugins with a base eclipse product.
+		 updateSiteCollection .add("http://download.eclipse.org/releases/juno/");
+
 		String mirrorSiteDesinationPathPrefix = "/Users/singhsk/Developer/eclipse_plugins";
 
-		String mirrorSiteDesinationName = "new_site" + Util.getCurrentTimeString();
-		mirrorSiteDesinationName = mirrorSiteDesinationName.replace("/", "-").replace(":", "-").replace(".", "-").replaceAll("-{1,}", "-");
+		String mirrorSiteDesinationName = "new_site2_____";// +
+															// Util.getCurrentTimeString();
+		mirrorSiteDesinationName = mirrorSiteDesinationName.replace("/", "-").replace(":", "-").replace(".", "-")
+				.replaceAll("-{1,}", "-");
 
 		// this is there the mirrored site would be available. It automatically
 		// gets created by p2.
@@ -57,7 +75,7 @@ public class PluginAnalyserJobRunner {
 			boolean verbose = false, raw = true;
 
 			// this way old mirror site can be complete removed first.
-			boolean eraseOld = true;
+			boolean eraseOld = false;
 
 			String currOutpurDir = "_OUTPUT_" + mirrorSiteDesinationName
 			// + "_" + Util.getCurrentTimeString()
@@ -68,25 +86,30 @@ public class PluginAnalyserJobRunner {
 			}
 			Util.setTEMP_DIR_PATH("./" + currOutpurDir + "/_TMP");
 			// getting features from an update site
-			String baseEclipseInstallationHome = eclipseHome;
+			
+			
+/*			String baseEclipseInstallationHome = eclipseHome;
 
-			if (!DownloadAndStagingRunner.downloadAndStageWithEclipseInstallation(eclipseHome, eclipseApp, equinoxAppName, baseEclipseInstallationHome,
-					updateSiteURLCollection, destinationDirectory, verbose, raw, eraseOld))
-
-			/*
-			 * if (!DownloadAndStagingRunner.downloadAndStage(eclipseHome,
-			 * eclipseApp, equinoxAppName, updateSiteURLCollection,
-			 * destinationDirectory, verbose, raw, eraseOld))
-			 */
+			if (!DownloadAndStagingRunner.downloadAndStageWithEclipseInstallation(eclipseHome, eclipseApp, equinoxAppName,
+					baseEclipseInstallationHome, updateSiteURLCollection, destinationDirectory, verbose, raw, eraseOld))
+*/
+			
+			  if (!DownloadAndStagingRunner.downloadAndStage(eclipseHome,
+			  eclipseApp, equinoxAppName, updateSiteCollection,
+			  destinationDirectory, verbose, raw, eraseOld))
+			 
 			{
-				Log.errln("XXXXXXX  " + "\n  Download and staging error for: " + "\n  " + updateSiteURLCollection
-						+ "\n    cannot continue  with the analysis and data extraction." + "\n    ----" + "\n     You may want to check the logs at  :  "
-						+ "\n     " + eclipseHome + "configuration/  " + "\n    ---- " + "\nXXXXXXX");
+				Log.errln("XXXXXXX  " + "\n  Download and staging error for: " + "\n  " + updateSiteCollection
+						+ "\n    cannot continue  with the analysis and data extraction." + "\n    ----"
+						+ "\n     You may want to check the logs at  :  " + "\n     " + eclipseHome + "configuration/  "
+						+ "\n    ---- " + "\nXXXXXXX");
 				Log.errln("But still  any  way   going on with the analysis for now ..............");
 			}
 			long stage2 = System.currentTimeMillis();
-			Log.outln("Downloading and Staging for site configuration at  :  " + destinationDirectory + "  time: " + Util.getFormattedTime(stage2 - stage1));
-			Log.errln("Downloading and Staging for site configuration at  :  " + destinationDirectory + "  time: " + Util.getFormattedTime(stage2 - stage1));
+			Log.outln("Downloading and Staging for site configuration at  :  " + destinationDirectory + "  time: "
+					+ Util.getFormattedTime(stage2 - stage1));
+			Log.errln("Downloading and Staging for site configuration at  :  " + destinationDirectory + "  time: "
+					+ Util.getFormattedTime(stage2 - stage1));
 
 			/*
 			 * starting analysis ....
@@ -95,10 +118,9 @@ public class PluginAnalyserJobRunner {
 			String outputLocation = "./" + currOutpurDir + "/_OUTPUT";
 			AnalysisRunner.analyseAndRecord(destinationDirectory, outputLocation, true);
 
-			// ////////////////////////////////////////////////////// 
+			// //////////////////////////////////////////////////////
 			// the dependency finder.
 
-			// currOutpurDir="_OUTPUT_new_site2013-03-19-16-33-07-731";
 			outputLocation = "./" + currOutpurDir + "/_OUTPUT";
 
 			String pluginExtractsLocation = outputLocation + "/plugins";
@@ -109,8 +131,10 @@ public class PluginAnalyserJobRunner {
 			DependencyFinder.buildPluginDependencySuperSet(pluginExtractsLocation, pluginextractAnalysisDestLocation, true);
 			// ///////////////////////////////////////////////////////////////////////////////////////////////
 			long time2 = System.currentTimeMillis();
-			Log.outln("Current Job for site configuration at  :  " + destinationDirectory + "  time: " + Util.getFormattedTime(time2 - time1));
-			Log.errln("Current Job for site configuration at  :  " + destinationDirectory + "  time: " + Util.getFormattedTime(time2 - time1));
+			Log.outln("Current Job for site configuration at  :  " + destinationDirectory + "  time: "
+					+ Util.getFormattedTime(time2 - time1));
+			Log.errln("Current Job for site configuration at  :  " + destinationDirectory + "  time: "
+					+ Util.getFormattedTime(time2 - time1));
 
 		} catch (Exception e) {
 

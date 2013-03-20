@@ -85,7 +85,7 @@ public class DownloadAndStagingRunner {
 
 		for (String updateSiteURL : updateSiteURLCollection) {
 			sitesDone++;
-			
+			updateSiteURL=updateSiteURL.trim();
 			// using the eclipse update manager from command line to get features  and plugin artifacts.
 			// http://wiki.eclipse.org/Equinox_p2_Repository_Mirroring
 			String command = eclipseHome.trim()
@@ -96,7 +96,7 @@ public class DownloadAndStagingRunner {
 					(verbose ? " -verbose" : "") + (raw ? " -raw" : "")
 					+ " -nosplash" + " -includeOptional" + " -application "
 					+ equinoxAppName.trim() + " -source "
-					+ updateSiteURL.trim() + " -destination " + "file:"
+					+ updateSiteURL + " -destination " + "file:"
 					+ destinationDirectory.trim();
 
 			Log.outln("Starting Download and Staging Process of " + sitesDone + " of "
@@ -106,7 +106,6 @@ public class DownloadAndStagingRunner {
 			
 			Log.outln("EXECUTING: " + command);
 			Process child = Runtime.getRuntime().exec(command);
-			
 
 			BufferedReader br = new BufferedReader(new InputStreamReader(
 					child.getInputStream()));
