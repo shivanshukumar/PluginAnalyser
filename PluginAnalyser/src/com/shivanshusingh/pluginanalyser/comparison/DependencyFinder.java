@@ -6,20 +6,14 @@ package com.shivanshusingh.pluginanalyser.comparison;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
-import java.util.StringTokenizer;
 
-import org.objectweb.asm.util.CheckAnnotationAdapter;
-
-import com.shivanshusingh.pluginanalyser.analysis.BundleInformation;
 import com.shivanshusingh.pluginanalyser.utils.Util;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
 import com.shivanshusingh.pluginanalyser.utils.parsing.Constants;
@@ -43,64 +37,70 @@ public class DependencyFinder {
 	 * @param eraseOld
 	 * @throws IOException
 	 */
-	public static void buildPluginDependencySuperSet(String pathToBasePluginExtractsDir, String pathToPluginDependencyAnalysisOutputLocation, boolean eraseOld)
-			throws IOException {
+	public static void buildPluginDependencySuperSet(String pathToBasePluginExtractsDir,
+			String pathToPluginDependencyAnalysisOutputLocation, boolean eraseOld) throws IOException {
 
-		Log.outln("==== Now Building the  Plugin Dependency  Set from source: "+pathToBasePluginExtractsDir+" ====");
-		Log.errln("==== Now Building the  Plugin Dependency  Set from source: "+pathToBasePluginExtractsDir+" ====");
-		
-		long time1=System.currentTimeMillis();
-		
-		
+		Log.outln("==== Now Building the  Plugin Dependency  Set from source: " + pathToBasePluginExtractsDir + " ====");
+		Log.errln("==== Now Building the  Plugin Dependency  Set from source: " + pathToBasePluginExtractsDir + " ====");
+
+		long time1 = System.currentTimeMillis();
+
 		File pluginExtractDirectory = new File(pathToBasePluginExtractsDir);
 
 		if (!Util.checkDirectory(pluginExtractDirectory, true, true, true, false)) {
 			// the plugin extracts source base directory is not accessible.
-			Log.errln("xxxx in buildPluginDependencySuperSet \\\n the plugin dir: " + pluginExtractDirectory.getAbsolutePath()
+			Log.errln("xxxx in buildPluginDependencySuperSet \\\n the plugin dir: "
+					+ pluginExtractDirectory.getAbsolutePath()
 					+ "\n is not a directory or not readable or   does not exist. \nxxxx");
 			return;
 		}
 		if (!Util.checkAndCreateDirectory(pathToPluginDependencyAnalysisOutputLocation)) {
-			Log.errln("xxxx in buildPluginDependencySuperSet \\\n the output location dir: " + pathToPluginDependencyAnalysisOutputLocation
-					+ "\n is not accessible. \nxxxx");
+			Log.errln("xxxx in buildPluginDependencySuperSet \\\n the output location dir: "
+					+ pathToPluginDependencyAnalysisOutputLocation + "\n is not accessible. \nxxxx");
 			return;
 		}
-		
-		if(eraseOld)
-		{
+
+		if (eraseOld) {
 			Util.clearFolder(new File(pathToPluginDependencyAnalysisOutputLocation));
 		}
 		File[] entries = pluginExtractDirectory.listFiles();
-		if (entries.length < 2) {
+		int entriesLength = entries.length;
+		if (entriesLength < 2) {
 
-			Log.errln("XXXX  \n " + pluginExtractDirectory.getAbsolutePath()
+			Log.errln("XXXX  \n "
+					+ pluginExtractDirectory.getAbsolutePath()
 					+ "\n has has than 2 extracts, cannot compare.\n The location must have at least 2 extract files.  \nXXXX  ");
 		}
-		
-		long pluginExtractsDone=0;
+
+		long pluginExtractsDone = 0;
 
 		for (File entry : entries) {
 			pluginExtractsDone++;
 			if (Util.checkFile(entry, true, true, true, false)) {
 				/**
 				 * this is the name of the PluginExtract file, without the
-				 * extension. this is for obtaining the fully qualified plugin name
-				 * with version and qualifier, even if that information is not in
-				 * the pluginExtract file, cause because of an originally missing
-				 * manifest.mf file for thus plugin.
+				 * extension. this is for obtaining the fully qualified plugin
+				 * name with version and qualifier, even if that information is
+				 * not in the pluginExtract file, cause because of an originally
+				 * missing manifest.mf file for thus plugin.
 				 */
 				String thisPluginExtractName = entry.getName().trim();
-				int startingIndex = thisPluginExtractName.indexOf(Constants.EXTRACT_FILE_PREFIX_PLUGIN) + Constants.EXTRACT_FILE_PREFIX_PLUGIN.length();
+				int startingIndex = thisPluginExtractName.indexOf(Constants.EXTRACT_FILE_PREFIX_PLUGIN)
+						+ Constants.EXTRACT_FILE_PREFIX_PLUGIN.length();
 				thisPluginExtractName = thisPluginExtractName.substring(startingIndex);
 				if (thisPluginExtractName.toLowerCase().endsWith(Constants.EXTRACT_FILE_EXTENSION_PLUGIN))
-					thisPluginExtractName = thisPluginExtractName.substring(0, thisPluginExtractName.length() - Constants.EXTRACT_FILE_EXTENSION_PLUGIN.length());
-				Log.outln("==== Adding to DependencySet,  plugin "+pluginExtractsDone  +" of "+entries.length+" : "+thisPluginExtractName+"====");
+					thisPluginExtractName = thisPluginExtractName.substring(0, thisPluginExtractName.length()
+							- Constants.EXTRACT_FILE_EXTENSION_PLUGIN.length());
+				Log.outln("==== Adding to DependencySet,  plugin " + pluginExtractsDone + " of " + entriesLength + " : "
+						+ thisPluginExtractName + "====");
 
 				// restoring the functions information from the file.
 				Set<String> myMethodExports = restorePropertyFromExtract(entry, Constants.PLUGIN_ALL_MY_METHODS_PUBLIC);
-				Set<String> myMethodImports = restorePropertyFromExtract(entry, Constants.PLUGIN_ALL_MY_METHOD_CALLS_EXTERNAL_AND_NON_JAVA);
+				Set<String> myMethodImports = restorePropertyFromExtract(entry,
+						Constants.PLUGIN_ALL_MY_METHOD_CALLS_EXTERNAL_AND_NON_JAVA);
 				Set<String> myTypeExports = restorePropertyFromExtract(entry, Constants.PLUGIN_ALL_MY_TYPES_PUBLIC);
-				Set<String> myTypeImports = restorePropertyFromExtract(entry, Constants.PLUGIN_ALL_TYPES_DETECTED_EXTERNAL_AND_NON_JAVA);
+				Set<String> myTypeImports = restorePropertyFromExtract(entry,
+						Constants.PLUGIN_ALL_TYPES_DETECTED_EXTERNAL_AND_NON_JAVA);
 
 				// merging functions
 				for (String s : myMethodExports) {
@@ -110,7 +110,6 @@ public class DependencyFinder {
 					impexp.exp.add(thisPluginExtractName);
 					functions.put(s, impexp);
 				}
-				
 
 				for (String s : myMethodImports) {
 					ImpExp impexp = new ImpExp();
@@ -119,7 +118,6 @@ public class DependencyFinder {
 					impexp.imp.add(thisPluginExtractName);
 					functions.put(s, impexp);
 				}
-				//System.out.println(functions.keySet().toString());
 
 				// merging types (classes)
 				for (String s : myTypeExports) {
@@ -137,31 +135,42 @@ public class DependencyFinder {
 					impexp.imp.add(thisPluginExtractName);
 					types.put(s, impexp);
 				}
-				//System.out.println(types.keySet().toString());
+				// System.out.println(types.keySet().toString());
+
+				if (pluginExtractsDone % 200 == 0 || pluginExtractsDone == entriesLength) {
+					System.out.println("#### functions \tobjectSize= "
+							+ (double) (functions.toString().length() / (1024 * 1024)) + "MB");
+
+					System.out.println("#### types \tobjectSize= " + (types.toString().length() / (1024 * 1024)) + "MB");
+				}
+
 			}
-			
+
 		}
 		// write out the merged file
 
-					writeData(pathToPluginDependencyAnalysisOutputLocation );
-					
-					
-					long time2=System.currentTimeMillis();
-					Log.outln("Dependency Set Creation for "+entries.length+" plugin extracts, at plugin extract src  :  "+pathToBasePluginExtractsDir +"  time: "+Util.getFormattedTime(time2-time1));
-					Log.errln("Dependency Set Creation for "+entries.length+" plugin extracts, at plugin extract src  :  "+pathToBasePluginExtractsDir +"  time: "+Util.getFormattedTime(time2-time1));
+		writeData(pathToPluginDependencyAnalysisOutputLocation);
+
+		long time2 = System.currentTimeMillis();
+		Log.outln("Dependency Set Creation for " + entriesLength + " plugin extracts, at plugin extract src  :  "
+				+ pathToBasePluginExtractsDir + "  time: " + Util.getFormattedTime(time2 - time1));
+		Log.errln("Dependency Set Creation for " + entriesLength + " plugin extracts, at plugin extract src  :  "
+				+ pathToBasePluginExtractsDir + "  time: " + Util.getFormattedTime(time2 - time1));
 
 	}
 
 	private static void writeData(String pluginDependencySetOutputLocationPath) throws IOException {
 		if (!Util.checkAndCreateDirectory(pluginDependencySetOutputLocationPath)) {
-			Log.errln("xxxx\n in writeData() in   DependencyFinder, the output location: " + pluginDependencySetOutputLocationPath
-					+ "  \n is not accessible, cannot record data.  \nxxxx");
+			Log.errln("xxxx\n in writeData() in   DependencyFinder, the output location: "
+					+ pluginDependencySetOutputLocationPath + "  \n is not accessible, cannot record data.  \nxxxx");
 			return;
 		}
-		
-		
-		File functionFile = new File(pluginDependencySetOutputLocationPath + "/" + Constants.DEPENDENCY_SET_FILE_PREFIX_PLUGIN + "functions"+Constants.DEPENDENCY_SET_FILE_EXTENSION_PLUGIN);
-		File typeFile = new File(pluginDependencySetOutputLocationPath + "/" + Constants.DEPENDENCY_SET_FILE_PREFIX_PLUGIN + "types"+Constants.DEPENDENCY_SET_FILE_EXTENSION_PLUGIN);
+
+		File functionFile = new File(pluginDependencySetOutputLocationPath + "/"
+				+ Constants.DEPENDENCY_SET_FILE_PREFIX_PLUGIN + "functions"
+				+ Constants.DEPENDENCY_SET_FILE_EXTENSION_PLUGIN);
+		File typeFile = new File(pluginDependencySetOutputLocationPath + "/" + Constants.DEPENDENCY_SET_FILE_PREFIX_PLUGIN
+				+ "types" + Constants.DEPENDENCY_SET_FILE_EXTENSION_PLUGIN);
 
 		// writing functions set.
 
@@ -178,7 +187,7 @@ public class DependencyFinder {
 			writer.write(key + "\n");
 
 			ImpExp impexp = functions.get(key);
-			
+
 			Set<String> imp = impexp.imp;
 			Set<String> exp = impexp.exp;
 
@@ -198,12 +207,17 @@ public class DependencyFinder {
 
 			// all importers not satisfied
 			writer.write(Constants.PLUGIN_DEPENDENCY_IMPORTERS_UNSATISFIED + "\n");
-			writer.write((0==exp.size()? true+", "+imp.size()+" importer(s) hungry ":false+", "+exp.size()+ (1<exp.size()? " exporters!! PLURAL??":" exporter")+" available ")+"\n");
+			writer.write((0 == exp.size() ? true + ", " + imp.size() + " importer(s) hungry " : false + ", " + exp.size()
+					+ (1 < exp.size() ? " exporters!! PLURAL??" : " exporter") + " available ")
+					+ "\n");
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
-			// all exporters   whose exports were not needed by anyone
+			// all exporters whose exports were not needed by anyone
 			writer.write(Constants.PLUGIN_DEPENDENCY_EXPORTERS_UNSATISFIED + "\n");
-			writer.write((0==imp.size()? true+", "+exp.size()+ (1<exp.size()? " exporters!! PLURAL??":" exporter")+" eagerly available ":false+", "+imp.size()+" importer(s) hungry ")+"\n");
+			writer.write((0 == imp.size() ? true + ", " + exp.size()
+					+ (1 < exp.size() ? " exporters!! PLURAL??" : " exporter") + " eagerly available " : false + ", "
+					+ imp.size() + " importer(s) hungry ")
+					+ "\n");
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 			// terminating the key ( function name )
@@ -234,7 +248,6 @@ public class DependencyFinder {
 			Set<String> imp = impexp.imp;
 			Set<String> exp = impexp.exp;
 
-			
 			// all importers
 			writer.write(Constants.PLUGIN_DEPENDENCY_IMPORTERS + "\n");
 			for (String s : imp) {
@@ -250,14 +263,19 @@ public class DependencyFinder {
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 			// all importers not satisfied
-						writer.write(Constants.PLUGIN_DEPENDENCY_IMPORTERS_UNSATISFIED + "\n");
-						writer.write((0==exp.size()? true+", "+imp.size()+" importer(s) hungry ":false+", "+exp.size()+ (1<exp.size()? " exporters!! PLURAL??":" exporter")+" available ")+"\n");
-						writer.write(Constants.MARKER_TERMINATOR + "\n");
+			writer.write(Constants.PLUGIN_DEPENDENCY_IMPORTERS_UNSATISFIED + "\n");
+			writer.write((0 == exp.size() ? true + ", " + imp.size() + " importer(s) hungry " : false + ", " + exp.size()
+					+ (1 < exp.size() ? " exporters!! PLURAL??" : " exporter") + " available ")
+					+ "\n");
+			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
-						// all exporters   whose exports were not needed by anyone.
-						writer.write(Constants.PLUGIN_DEPENDENCY_EXPORTERS_UNSATISFIED + "\n");
-						writer.write((0==imp.size()? true+", "+exp.size()+ (1<exp.size()? " exporters!! PLURAL??":" exporter")+" eagerly available ":false+", "+imp.size()+" importer(s) hungry ")+"\n");
-						writer.write(Constants.MARKER_TERMINATOR + "\n");
+			// all exporters whose exports were not needed by anyone.
+			writer.write(Constants.PLUGIN_DEPENDENCY_EXPORTERS_UNSATISFIED + "\n");
+			writer.write((0 == imp.size() ? true + ", " + exp.size()
+					+ (1 < exp.size() ? " exporters!! PLURAL??" : " exporter") + " eagerly available " : false + ", "
+					+ imp.size() + " importer(s) hungry ")
+					+ "\n");
+			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 			// terminating the key ( type /class name )
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
@@ -273,7 +291,7 @@ public class DependencyFinder {
 	/**
 	 * @param entry
 	 * @param property
-	 * @return  {@link Set}
+	 * @return {@link Set}
 	 * @throws IOException
 	 */
 	private static Set<String> restorePropertyFromExtract(File entry, String property) throws IOException {

@@ -113,7 +113,7 @@ public class Log {
 	{
 		java.util.Date dt = new java.util.Date();
 
-		java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("yyyy/MMM/dd hh:mm:ss");//yyyy-MM-dd hh:mm:ss:SSS
+		java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("yyyy/MMM/dd HH:mm:ss");//yyyy-MM-dd hh:mm:ss:SSS
 
 		String currentTime = sdf.format(dt);
 		

@@ -48,7 +48,6 @@ public class PluginAnalyserJobRunner {
 		updateSiteCollection.add("http://download.eclipse.org/technology/subversive/1.0/update-site-1.0.1/	");
 		updateSiteCollection.add("http://jd.benow.ca/jd-eclipse/update");
 		updateSiteCollection.add("http://wwwiti.cs.uni-magdeburg.de/iti_db/research/featureide/deploy/");
-		updateSiteCollection.add("http://dist.springsource.com/release/TOOLS/composite/e3.7/bookmarks.xml");
 		updateSiteCollection.add("http://openextern.googlecode.com/svn/trunk/openextern_update/");
 		updateSiteCollection.add("http://update.eclemma.org/");
 		updateSiteCollection.add("http://andrei.gmxhome.de/eclipse/");
@@ -94,12 +93,12 @@ public class PluginAnalyserJobRunner {
 					baseEclipseInstallationHome, updateSiteURLCollection, destinationDirectory, verbose, raw, eraseOld))
 */
 			
-			  if (!DownloadAndStagingRunner.downloadAndStage(eclipseHome,
+		/*	  if (!DownloadAndStagingRunner.downloadAndStage(eclipseHome,
 			  eclipseApp, equinoxAppName, updateSiteCollection,
 			  destinationDirectory, verbose, raw, eraseOld))
 			 
 			{
-				Log.errln("XXXXXXX  " + "\n  Download and staging error for: " + "\n  " + updateSiteCollection
+				Log.errln("XXXXXXX  " + "\n  Download and staging error for: " + "\n  " + destinationDirectory
 						+ "\n    cannot continue  with the analysis and data extraction." + "\n    ----"
 						+ "\n     You may want to check the logs at  :  " + "\n     " + eclipseHome + "configuration/  "
 						+ "\n    ---- " + "\nXXXXXXX");
@@ -110,7 +109,7 @@ public class PluginAnalyserJobRunner {
 					+ Util.getFormattedTime(stage2 - stage1));
 			Log.errln("Downloading and Staging for site configuration at  :  " + destinationDirectory + "  time: "
 					+ Util.getFormattedTime(stage2 - stage1));
-
+*/
 			/*
 			 * starting analysis ....
 			 */
