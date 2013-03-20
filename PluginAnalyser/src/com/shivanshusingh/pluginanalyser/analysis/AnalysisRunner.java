@@ -1,6 +1,9 @@
 package com.shivanshusingh.pluginanalyser.analysis;
 
+import java.io.File;
 import java.io.IOException;
+
+import com.shivanshusingh.pluginanalyser.utils.Util;
 
 /**
  * to start the analysis and recording process for featues and plugins of
@@ -21,20 +24,28 @@ public class AnalysisRunner {
 	 * 
 	 * @param mirrorSiteLocation
 	 * @param outputLocation
+	 * 
+	 * @param eraseOld
 	 * @throws IOException
 	 */
 	public static void analyseAndRecord(String mirrorSiteLocation,
-			String outputLocation) throws IOException {
+			String outputLocation, boolean eraseOld) throws IOException {
+		
+		if(eraseOld)
+		{
+			Util.checkAndCreateDirectory(outputLocation);
+			Util.clearFolder(new File(outputLocation));
+		}
 		// now doing the extractions from features. - feature.xml i.e.
 		String featureFolderPath = mirrorSiteLocation + "/features/";
 
 		FeatureAnalyser.analyseAndRecordAllInformationFromBaseFeautreFolder(
-				featureFolderPath, outputLocation + "/features");
+				featureFolderPath, outputLocation + "/features", true);
 
 		// reading all the files (plugin jars) in the specified plugin folder
 		String pluginFolderPath = mirrorSiteLocation + "/plugins/";
 		BundleAnalyser.analyseAndRecordAllInformationFromBasePluginFolder(
-				pluginFolderPath, outputLocation + "/plugins");
+				pluginFolderPath, outputLocation + "/plugins", true);
 	}
 
 }

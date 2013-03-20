@@ -39,16 +39,20 @@ public class BundleAnalyser extends ManifestParser {
 	/**
 	 * @param pluginFolderPath
 	 * @param outputLocation
+	 * @param eraseOld
 	 * @throws IOException
 	 */
 	public static void analyseAndRecordAllInformationFromBasePluginFolder(
-			String pluginFolderPath, String outputLocation) throws IOException {
+			String pluginFolderPath, String outputLocation, boolean eraseOld) throws IOException {
 		if (!Util.checkAndCreateDirectory(outputLocation)) {
 			  Log.errln("xxxx Error Accessing/Creating Output Directory for Plugin Analysis Output at: "
 							+ outputLocation
 							+ "\n Cannot continue with the analysis.");
 			return;
 		}
+		
+		if(eraseOld)
+			Util.clearFolder(new File(outputLocation));
 		// reading all the files (plugin jars) in the specified plugin folder
 		long l1 = System.currentTimeMillis();
 
@@ -63,7 +67,7 @@ public class BundleAnalyser extends ManifestParser {
 		for (int i = 0; i < listOfFiles.length; i++) {
 			if (listOfFiles[i].isFile()) {
 				String pluginJarName = listOfFiles[i].getName();
-				if (pluginJarName.toLowerCase().endsWith(".jar")) {
+				if (pluginJarName.toLowerCase().endsWith(Constants.JAR_FILE_EXTENSION)) {
 					// this means that this is a plugin jar (it is assumed that
 					// this would be a plugin jar if it is at this location)
 					pluginAnalysedCounter++;
@@ -360,7 +364,7 @@ public class BundleAnalyser extends ManifestParser {
 				classesAnalyzedCounter++;
 				new ClassReader(jarfileinstance.getInputStream(e)).accept(v, 0);
 
-			} else if (name.toLowerCase().endsWith(".jar")) {
+			} else if (name.toLowerCase().endsWith(Constants.JAR_FILE_EXTENSION)) {
 				// nested jar.
 
 				Log.outln("====> "+name + " found");
@@ -457,7 +461,7 @@ public class BundleAnalyser extends ManifestParser {
 				classesAnalyzedCounter++;
 				new ClassReader(new FileInputStream(e)).accept(v, 0);
 
-			} else if (name.toLowerCase().endsWith(".jar")) {
+			} else if (name.toLowerCase().endsWith(Constants.JAR_FILE_EXTENSION)) {
 				// nested jar.
 
 				Log.outln("====> "+name + " found");
@@ -576,14 +580,14 @@ public class BundleAnalyser extends ManifestParser {
 			String outputLocation) throws IOException {
 
 		pluginFileName = pluginFileName.toLowerCase().trim();
-		if (pluginFileName.endsWith(".jar") || pluginFileName.endsWith(".zip"))
+		if (pluginFileName.endsWith(Constants.JAR_FILE_EXTENSION))
 			pluginFileName = pluginFileName.substring(0,
-					pluginFileName.length() - 4);
+					pluginFileName.length() - Constants.JAR_FILE_EXTENSION.length());
 
 		outputLocation = (outputLocation + "/").trim().replaceAll("//", "/");
 
-		FileWriter fwriter = new FileWriter(outputLocation + Constants.PLUGIN_EXTRACT_FILE_PREFIX
-				+ pluginFileName.replace('/', '_') + ".txt");
+		FileWriter fwriter = new FileWriter(outputLocation + Constants.EXTRACT_FILE_PREFIX_PLUGIN
+				+ pluginFileName.replace('/', '_') + Constants.EXTRACT_FILE_EXTENSION_PLUGIN);
 		BufferedWriter writer = new BufferedWriter(fwriter);
 
 		List<String> allDetectedTypes = new ArrayList<String>(
@@ -655,7 +659,7 @@ public class BundleAnalyser extends ManifestParser {
 			// bundleinfo.getRequirements().toString()+"\n"+bundleinfo.getRequirements().size()
 			// +" , Bundle Requirements"); // Require-Bundle
 		}
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		writer.write("Bundle Exports ======== \n");
 		if (flag_bundleInfoExists) {
 			for (Object s : bundleinfo.getExports())
@@ -663,7 +667,7 @@ public class BundleAnalyser extends ManifestParser {
 			// Log.outln("Bundle Exports = " +
 			// bundleinfo.getExports().toString()); // Export-Package
 		}
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		writer.write("Symbolic Name ======== \n");
 		if (flag_bundleInfoExists) {
 			writer.write(null != bundleinfo.getSymbolicName() ? bundleinfo
@@ -671,7 +675,7 @@ public class BundleAnalyser extends ManifestParser {
 			// Log.outln("Symbolic Name = "+
 			// bundleinfo.getSymbolicName().toString());
 		}
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		writer.write("Version ======== \n");
 		if (flag_bundleInfoExists) {
 			writer.write(null != bundleinfo.getVersion() ? bundleinfo
@@ -679,7 +683,7 @@ public class BundleAnalyser extends ManifestParser {
 			// Log.outln("Version = " +
 			// bundleinfo.getVersion().toString());
 		}
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		writer.write("Version without qualifier ========\n");
 		if (flag_bundleInfoExists) {
 			writer.write(null != bundleinfo.getVersion() ? bundleinfo
@@ -688,7 +692,7 @@ public class BundleAnalyser extends ManifestParser {
 			// Log.outln("Version without qualifier  = " +
 			// bundleinfo.getVersion().withoutQualifier().toString());
 		}
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		writer.write("Bundle Imports ========\n ");
 		if (flag_bundleInfoExists) {
 			for (Object s : bundleinfo.getImports())
@@ -696,7 +700,7 @@ public class BundleAnalyser extends ManifestParser {
 			// Log.outln("Bundle Imports = " +
 			// bundleinfo.getImports().toString());
 		}
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		writer.write("Bundle ClassPathEntries ========\n");
 		if (flag_bundleInfoExists) {
 			for (Object s : bundleinfo.getClasspathEntries())
@@ -704,7 +708,7 @@ public class BundleAnalyser extends ManifestParser {
 			// Log.outln("Bundle ClassPathEntries  = " +
 			// bundleinfo.getClasspathEntries().toString());
 		}
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		// Log.outln("Bundle hashcode  = " + bundleinfo.hashCode() );
 
 		// //////////////////////////////////////////////////////
@@ -715,7 +719,7 @@ public class BundleAnalyser extends ManifestParser {
 		for (String s : allMyClasses) {
 			writer.write(s + "\n");
 		}
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		// writer.write(allMyClasses.size() + "," + " own classes (types).\n");
 		// Log.outln(allMyClasses.size() + "," +
 		// " own classes (types).");
@@ -726,7 +730,7 @@ public class BundleAnalyser extends ManifestParser {
 		for (String s : allMyPublicClasses) {
 			writer.write(s + "\n");
 		}
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		// writer.write(allMyPublicClasses.size() + ","+
 		// " own public classes (types).\n");
 		// Log.outln(allMyPublicClasses.size() + "," +
@@ -738,7 +742,7 @@ public class BundleAnalyser extends ManifestParser {
 		for (String s : allMyMethods) {
 			writer.write(s + "\n");
 		}
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		// writer.write(allMyMethods.size() + "," + " internal methods.\n");
 		// Log.outln(allMyMethods.size() + "," + " internal methods.");
 
@@ -748,7 +752,7 @@ public class BundleAnalyser extends ManifestParser {
 		for (String s : allMyPublicMethods) {
 			writer.write(s + "\n");
 		}
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		// writer.write(allMyPublicMethods.size() + ","+
 		// " internal public methods.\n");
 		// Log.outln(allMyPublicMethods.size() + "," +
@@ -760,7 +764,7 @@ public class BundleAnalyser extends ManifestParser {
 		for (String s : allInvokations) {
 			writer.write(s + "\n");
 		}
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		// writer.write(allInvokations.size() + "," +
 		// " method invokations (intrnal and external).\n");
 		// Log.outln(allInvokations.size() + "," +
@@ -772,7 +776,7 @@ public class BundleAnalyser extends ManifestParser {
 		for (String s : externalInvokations) {
 			writer.write(s + "\n");
 		}
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		// writer.write(externalInvokations.size() + ","+
 		// " method invokations (external).\n");
 		// Log.outln(externalInvokations.size() + "," +
@@ -784,7 +788,7 @@ public class BundleAnalyser extends ManifestParser {
 		for (String s : externalNonJavaInvokations) {
 			writer.write(s + "\n");
 		}
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		// writer.write(externalNonJavaInvokations.size() + "," +
 		// " method invokations (external and non excluded).\n");
 		// Log.outln(externalNonJavaInvokations.size() + ","
@@ -795,7 +799,7 @@ public class BundleAnalyser extends ManifestParser {
 		for (String s : allDetectedTypes) {
 			writer.write(s + "\n");
 		}
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		// writer.write(allDetectedTypes.size() + "," +
 		// " types (internal and external).\n");
 		// Log.outln(allDetectedTypes.size() + ","
@@ -806,7 +810,7 @@ public class BundleAnalyser extends ManifestParser {
 		for (String s : allExternalDetectedTypes) {
 			writer.write(s + "\n");
 		}
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		// writer.write(allExternalDetectedTypes.size() + "," +
 		// " types (external).\n");
 		// Log.outln(allExternalDetectedTypes.size() + ","
@@ -817,7 +821,7 @@ public class BundleAnalyser extends ManifestParser {
 		for (String s : allExternalNonJavaDetectedTypes) {
 			writer.write(s + "\n");
 		}
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		// writer.write(allExternalNonJavaDetectedTypes.size() + "," +
 		// " types (external non excluded).\n");
 		// Log.outln(allExternalNonJavaDetectedTypes.size() + ","
@@ -829,7 +833,7 @@ public class BundleAnalyser extends ManifestParser {
 		for (String s : jarPackages) {
 			writer.write(s + "\n");
 		}
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		// writer.write(jarPackages.size() + "," + " jar packages.\n");
 
 		writer.write(Constants.PLUGIN_ALL_CLASS_PACKAGES+"\n");
@@ -838,7 +842,7 @@ public class BundleAnalyser extends ManifestParser {
 		for (String s : classPackages) {
 			writer.write(s + "\n");
 		}
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		// writer.write(classPackages.size() + "," + " class packages.\n");
 		writer.write(Constants.PLUGIN_ALL_MY_METHODS_DEPRECATED+"\n");
 		//"All My Deprecated Methods ========\n");
@@ -846,7 +850,7 @@ public class BundleAnalyser extends ManifestParser {
 		for (String s : allMyDeprecatedMethods) {
 			writer.write(s + "\n");
 		}
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		// writer.write(allMyDeprecatedMethods.size() + "," +
 		// " deprecated methods.\n");
 		// .println(allMyDeprecatedMethods.size() + ","
@@ -858,7 +862,7 @@ public class BundleAnalyser extends ManifestParser {
 		for (String s : allMyDeprecatedClasses) {
 			writer.write(s + "\n");
 		}
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		
 		// writer.write(allMyDeprecatedClasses.size() + "," +
 		// " deprecated   classes. \n");
@@ -870,7 +874,7 @@ public class BundleAnalyser extends ManifestParser {
 									// plugin.xml available.
 			writer.write(bundleinfo.getPluginXml() + "\n");
 		}
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 
 		// writer.write("===================================================\n");
 		writer.close();

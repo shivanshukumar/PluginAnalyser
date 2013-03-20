@@ -48,9 +48,11 @@ public class FeatureAnalyser {
 	 *            of creating the directory structure if it does not already
 	 *            exist. If it already exists, any data available at the may be
 	 *            over written.
+	 * @param eraseOld
 	 */
+	
 	public static void analyseAndRecordAllInformationFromBaseFeautreFolder(
-			String featureFolderPath, String outputLocation) throws IOException {
+			String featureFolderPath, String outputLocation, boolean eraseOld) throws IOException {
 
 		if (!Util.checkAndCreateDirectory(outputLocation)) {
 			Log.errln("Error Accessing/Creating Output Directory for  Feature  Analysis Output at: "
@@ -58,6 +60,10 @@ public class FeatureAnalyser {
 							+ "\n Cannot continue with the analysis.");
 			return;
 		}
+		
+		if(eraseOld)
+				Util.clearFolder(new File(outputLocation));
+		
 		// reading all the files (feature jars) in the specified feature folder
 		long l1 = System.currentTimeMillis();
 
@@ -74,7 +80,7 @@ public class FeatureAnalyser {
 			if (listOfFiles[i].isFile()) {
 				// if this is a (jar) file.
 				String featureJarName = listOfFiles[i].getName();
-				if (featureJarName.toLowerCase().endsWith(".jar")) {
+				if (featureJarName.toLowerCase().endsWith(Constants.JAR_FILE_EXTENSION)) {
 					// this means that this is a feature jar (it is assumed that
 					// this would be a feature jar if it is at this location)
 					featureAnlalysedCounter++;
@@ -430,39 +436,38 @@ public class FeatureAnalyser {
 		outputLocation = (outputLocation + "/").trim().replaceAll("//", "/");
 
 		featureFileName = featureFileName.toLowerCase().trim();
-		if (featureFileName.endsWith(".jar")
-				|| featureFileName.endsWith(".zip"))
+		if (featureFileName.endsWith(Constants.JAR_FILE_EXTENSION))
 			featureFileName = featureFileName.substring(0,
-					featureFileName.length() - 4);
+					featureFileName.length() - Constants.JAR_FILE_EXTENSION.length());
 
-		FileWriter fwriter = new FileWriter(outputLocation + "FEATURE-EXTRACT-"
-				+ featureFileName.replace('/', '_') + ".txt");
+		FileWriter fwriter = new FileWriter(outputLocation + Constants.EXTRACT_FILE_PREFIX_FEATURE
+				+ featureFileName.replace('/', '_') + Constants.EXTRACT_FILE_EXTENSION_FEATURE);
 		BufferedWriter writer = new BufferedWriter(fwriter);
 		writer.write("Id ========\n");
 		writer.write(featureInfo.getId() + "\n");
 		Log.outln(featureInfo.getId() + "=========");
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		writer.write("Label ========\n");
 		writer.write(featureInfo.getLabel() + "\n");
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		writer.write("Version ========\n");
 		writer.write(featureInfo.getVersion() + "\n");
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		writer.write("Version  Without Qualifier  ========\n");
 		writer.write(featureInfo.getVersionWithoutQualifier() + "\n");
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		writer.write("ProviderName ========\n");
 		writer.write(featureInfo.getProviderName() + "\n");
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		writer.write("URL ========\n");
 		writer.write(featureInfo.getUrl() + "\n");
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		writer.write("UpdateLabel ========\n");
 		writer.write(featureInfo.getUpdateLabel() + "\n");
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		writer.write("Description ========\n");
 		writer.write(featureInfo.getDescription() + "\n");
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 
 		writer.write("Plugins ========\n");
 		for (String s : featureInfo.getPlugins()) {
@@ -470,17 +475,17 @@ public class FeatureAnalyser {
 		}
 		//Log.outln(featureInfo.getPlugins().size() + "," + " plugins.");
 
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		writer.write("Imports ========\n");
 		for (String s : featureInfo.getImports()) {
 			writer.write(s + "\n");
 		}
 		//Log.outln(featureInfo.getImports().size() + "," + " imports.");
 
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 		writer.write("Feature.xml ========\n");
 		writer.write(featureInfo.getXml().trim() + "\n");
-		writer.write(Constants.TERMINATOR_MARKER+"\n");
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
 
 		writer.close();
 		fwriter.close();

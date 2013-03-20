@@ -205,6 +205,10 @@ public class DownloadAndStagingRunner {
 			 boolean eraseOld
 
 	) throws IOException {
+		
+		Log.outln("========  Starting  Eclipse Base Installation Staging  ==========");
+		Log.errln("========  Starting  Eclipse Base Installation Staging  ==========");
+		
 		if (eraseOld) {
 			File f = new File(destinationDirectory);
 			if (f.exists()) {

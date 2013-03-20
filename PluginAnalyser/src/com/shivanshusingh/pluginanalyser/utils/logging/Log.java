@@ -14,14 +14,17 @@ import com.sun.tools.corba.se.idl.constExpr.Equal;
  */
 public class Log {
 	
-	
+	public static final String STD_ERR_LOG_FILENAME = "stderr.log";
+
+	public  static final String STD_OUT_LOG_FILENAME = "stdout.log";
+
 	private static  boolean outnewline=true;
 	private static  boolean errnewline=true;
 	public static void outln(String entry)
 	{
 		boolean oldOutNewLineFlag=outnewline;
 		outnewline=false;
-		out(addon()+entry);
+		out(outaddon()+entry);
 		System.out.print("\n");
 		outnewline=oldOutNewLineFlag;
 	}
@@ -37,7 +40,7 @@ public class Log {
 			
 			if(outnewline &&  !"".equals(entry))
 			{
-				toWrite += addon();
+				toWrite += outaddon();
 				outnewline=false;
 			}
 
@@ -59,7 +62,7 @@ public class Log {
 	{
 		boolean oldErrNewLine=errnewline;
 		errnewline=false;
-		err(addon()+entry);
+		err(erraddon()+entry);
 		System.err.print("\n");
 		errnewline=oldErrNewLine;	
 	}
@@ -74,7 +77,7 @@ public class Log {
 			
 			if(errnewline &&  !"".equals(entry))
 			{
-				toWrite += addon();
+				toWrite += erraddon();
 				errnewline=false;
 			}
 
@@ -113,8 +116,18 @@ public class Log {
 		java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("yyyy/MMM/dd hh:mm:ss");//yyyy-MM-dd hh:mm:ss:SSS
 
 		String currentTime = sdf.format(dt);
-		return "["+currentTime+" INFO] ";
+		
+		return currentTime;
 	}
+	private static String erraddon()
+	{
+		return "["+addon()+" ERR] ";
+	}
+	private static String outaddon()
+	{
+		return "["+addon()+" OUT] ";
+	}
+	
 	/**
 	 * Starts the logging capability. It maps the System.out or stdout and
 	 * System.err or stderr to respective FileOutputStream. So after calling
@@ -141,9 +154,9 @@ public class Log {
 		path = (path + "/").replaceAll("//", "/");
 		try {
 			FileOutputStream fout = new FileOutputStream(path + "_"
-					+ "stdout.log");
+					+ Log.STD_OUT_LOG_FILENAME);
 			FileOutputStream ferr = new FileOutputStream(path + "_"
-					+ "stderr.log");
+					+ Log.STD_ERR_LOG_FILENAME);
 	
 			MultiOutputStream multiOut = new MultiOutputStream(fout  , System.out);
 			MultiOutputStream multiErr = new MultiOutputStream(ferr  , System.err);
