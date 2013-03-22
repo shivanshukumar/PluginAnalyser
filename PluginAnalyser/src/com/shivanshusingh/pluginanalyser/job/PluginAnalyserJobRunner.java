@@ -7,6 +7,7 @@ import java.util.Set;
 import com.shivanshusingh.pluginanalyser.analysis.AnalysisRunner;
 import com.shivanshusingh.pluginanalyser.comparison.DependencyFinder;
 import com.shivanshusingh.pluginanalyser.staging.DownloadAndStagingRunner;
+import com.shivanshusingh.pluginanalyser.staging.EclipseMarketplaceCrawler;
 import com.shivanshusingh.pluginanalyser.utils.Util;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
 
@@ -20,6 +21,23 @@ public class PluginAnalyserJobRunner {
 		long time1 = System.currentTimeMillis();
 
 		long stage1 = System.currentTimeMillis();
+		
+		
+		
+		
+		///////////////////////////////////////////////////
+		//  		building the update site set from eclipse marketplace
+		
+		EclipseMarketplaceCrawler ec=new EclipseMarketplaceCrawler();
+		ec.crawl();
+		
+		
+		///////////////////////////////////////////////////
+		
+		
+		
+		
+		
 		String eclipseHome = "/Users/singhsk/Developer/eclipse_sandbox";// without
 																		// the
 																		// trailing
@@ -62,7 +80,7 @@ public class PluginAnalyserJobRunner {
 
 		String mirrorSiteDesinationPathPrefix = "/Users/singhsk/Developer/eclipse_plugins";
 
-		String mirrorSiteDesinationName = "new_site2_____";// +
+		String mirrorSiteDesinationName = "new_site3_____";// +
 															// Util.getCurrentTimeString();
 		mirrorSiteDesinationName = mirrorSiteDesinationName.replace("/", "-").replace(":", "-").replace(".", "-")
 				.replaceAll("-{1,}", "-");
@@ -87,16 +105,16 @@ public class PluginAnalyserJobRunner {
 			// getting features from an update site
 			
 			
-/*			String baseEclipseInstallationHome = eclipseHome;
+			String baseEclipseInstallationHome = eclipseHome;
 
 			if (!DownloadAndStagingRunner.downloadAndStageWithEclipseInstallation(eclipseHome, eclipseApp, equinoxAppName,
-					baseEclipseInstallationHome, updateSiteURLCollection, destinationDirectory, verbose, raw, eraseOld))
-*/
+					baseEclipseInstallationHome, updateSiteCollection, destinationDirectory, verbose, raw, eraseOld))
+
 			
 		/*	  if (!DownloadAndStagingRunner.downloadAndStage(eclipseHome,
 			  eclipseApp, equinoxAppName, updateSiteCollection,
 			  destinationDirectory, verbose, raw, eraseOld))
-			 
+		*/	 
 			{
 				Log.errln("XXXXXXX  " + "\n  Download and staging error for: " + "\n  " + destinationDirectory
 						+ "\n    cannot continue  with the analysis and data extraction." + "\n    ----"
@@ -109,7 +127,7 @@ public class PluginAnalyserJobRunner {
 					+ Util.getFormattedTime(stage2 - stage1));
 			Log.errln("Downloading and Staging for site configuration at  :  " + destinationDirectory + "  time: "
 					+ Util.getFormattedTime(stage2 - stage1));
-*/
+
 			/*
 			 * starting analysis ....
 			 */
