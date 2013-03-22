@@ -57,10 +57,21 @@ public class DependencyVisitor extends ClassVisitor {
 	Set<String> allMyDeprecatedMethods = new HashSet<String>();
 	// mine
 	Set<String> allMyPublicMethods = new HashSet<String>();
+	// mine
+	Map<String, TypeDependency> allMyTypeDependencies = new HashMap<String, TypeDependency>();
 
+	
+	//mine
+		public Map<String, TypeDependency> getAllMyTypeDependencies() {
+		return allMyTypeDependencies;
+	}
+
+	//mine
 	public Set<String> getAllMyDeprecatedMethods() {
 		return allMyDeprecatedMethods;
 	}
+	
+			//  mine
 	public Set<String> getAllMyDeprecatedClasses() {
 		return allMyDeprecatedClasses;
 	}
@@ -224,7 +235,8 @@ public class DependencyVisitor extends ClassVisitor {
 			final String[] interfaces) {
 
 		// mine - adding to MyClasses
-		allMyClasses.add(Type.getObjectType(name).getClassName());
+		String myFullyQualifiedClassName= Type.getObjectType(name).getClassName();
+		allMyClasses.add(myFullyQualifiedClassName);
 		//mine- adding to public classes and no other.
 		if((access&Opcodes.ACC_PUBLIC)!=0)
 			allMyPublicClasses.add(Type.getObjectType(name).getClassName());
@@ -232,6 +244,37 @@ public class DependencyVisitor extends ClassVisitor {
 		if ((access & Opcodes.ACC_DEPRECATED) != 0)
 			allMyDeprecatedClasses.add(Type.getObjectType(name).getClassName());
 
+		
+		
+		// adding all dependent types (super classes and interfaces)
+		if(null!=superName  &&  !"".equalsIgnoreCase(superName)  )
+		{
+			// add superclass
+			TypeDependency typeDep= new TypeDependency();
+			if(allMyTypeDependencies.containsKey(myFullyQualifiedClassName))
+				typeDep= allMyTypeDependencies.get(myFullyQualifiedClassName);
+			typeDep.superClass=(Type.getObjectType(superName).getClassName());
+			allMyTypeDependencies.put(myFullyQualifiedClassName, typeDep);
+		}
+		
+		if(null!=interfaces &&  1<=interfaces.length  )
+		{
+			// adding interfaces.
+			TypeDependency typeDep= new TypeDependency();
+			if(allMyTypeDependencies.containsKey(myFullyQualifiedClassName))
+				typeDep= allMyTypeDependencies.get(myFullyQualifiedClassName);
+			for(String s:interfaces)
+			{
+				if(null!=s  &&  !"".equalsIgnoreCase(s))
+				typeDep.interfaces.add(Type.getObjectType(s).getClassName());
+			}
+			allMyTypeDependencies.put(myFullyQualifiedClassName, typeDep);
+
+			
+
+		}
+		
+		
 
 		String p = getGroupKey(name);
 		current = groups.get(p);

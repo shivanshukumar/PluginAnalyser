@@ -530,6 +530,7 @@ public class BundleAnalyser extends ManifestParser {
 	 * @param manifest
 	 * @return
 	 */
+	@SuppressWarnings("unused")
 	private static BundleInformation extractManifestInformation(
 			Manifest manifest) {
 		BundleInformation bundleinfo = null;
@@ -622,6 +623,10 @@ public class BundleAnalyser extends ManifestParser {
 				v.getAllExternalMethodInvokations());
 		List<String> externalNonJavaInvokations = new ArrayList<String>(
 				v.getAllExternalNonJavaMethodInvokations());
+		
+		
+		Map<String, TypeDependency> allTypeDependencies_SuperClassAndInterfaces = v.getAllMyTypeDependencies();
+		
 
 		java.util.Collections.sort(allDetectedTypes);
 		java.util.Collections.sort(allMyMethods);
@@ -712,6 +717,66 @@ public class BundleAnalyser extends ManifestParser {
 		// Log.outln("Bundle hashcode  = " + bundleinfo.hashCode() );
 
 		// //////////////////////////////////////////////////////
+		
+		
+		// writing all superclass and interfaces dependencies.
+		
+		
+		Set<String> classesKeySet=allTypeDependencies_SuperClassAndInterfaces.keySet();
+		
+		////    writing to extract all the super classes
+
+		writer.write(Constants.PLUGIN_ALL_SUPERCLASS_EXTENDED_BY_ME+"\n");
+		for(  String key:classesKeySet)
+		{
+			String  toWrite=""; 
+			toWrite+=getClassTree(key, Constants.PLUGIN_ELEMENT_SUPERCLASS_INTERFACE_DELIM, allTypeDependencies_SuperClassAndInterfaces);
+			if(null!=toWrite  &&  !"".equalsIgnoreCase(toWrite)  &&  !key.trim().equalsIgnoreCase(toWrite.trim())  )
+				writer.write(toWrite.trim()+"\n");
+
+			/*
+			 * 
+			 * // for non recursive inheritence relationships. 
+			 * TypeDependency typeDep=(TypeDependency) allTypeDependencies_SuperClassAndInterfaces.get(key);
+			 * 
+			 * if(null!=typeDep.superClass &&!"".equalsIgnoreCase(typeDep.superClass)) {
+			 * 
+			 * writer.write(key+"=>"+typeDep.superClass+"\n");
+			 * 
+			 * 
+			 */
+				
+			
+		}
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
+		
+		
+		
+		////    writing to extract all the intefcaes implemented.
+
+		writer.write(Constants.PLUGIN_ALL_INTERFACES_IMPLEMENTED_BY_ME+"\n");
+		for(  String key1:classesKeySet)
+		{
+			TypeDependency typeDep1=(TypeDependency) allTypeDependencies_SuperClassAndInterfaces.get(key1);
+			
+			
+			String toWrite="";
+			if(null!=typeDep1.interfaces  && 1>= typeDep1.interfaces.size())
+			{
+				
+			//System.out.println("+++++++++++++++++++++++++++++++++++++++++interfacec implemented:"+typeDep1.interfaces.size());
+			for(String interfaceImplemented: typeDep1.interfaces)
+			{
+				  toWrite+=	  interfaceImplemented+";";
+			}
+			
+			if(!"".equalsIgnoreCase(toWrite))
+				writer.write(key1+Constants.PLUGIN_ELEMENT_SUPERCLASS_INTERFACE_DELIM+toWrite+"\n");
+			}
+		}
+		writer.write(Constants.MARKER_TERMINATOR+"\n");
+		
+		/////////////////////////////////////////////////////////
 
 		writer.write(Constants.PLUGIN_ALL_MY_TYPES+"\n");
 		//"All My Classes (Types)  ========\n");
@@ -879,6 +944,32 @@ public class BundleAnalyser extends ManifestParser {
 		// writer.write("===================================================\n");
 		writer.close();
 		fwriter.close();
+	}
+
+	private static StringBuffer getClassTree(String className, String delim  , Map<String, TypeDependency> allTypeDependencies_SuperClassAndInterfaces) {
+		StringBuffer toWrite = new StringBuffer(className);
+		/*if(allTypeDependencies_SuperClassAndInterfaces.containsKey(className))
+		{
+			TypeDependency typeDep=(TypeDependency) allTypeDependencies_SuperClassAndInterfaces.get(className);
+			
+			if(null!=typeDep.superClass &&!"".equalsIgnoreCase(typeDep.superClass))
+			{
+				
+				toWrite+=delim+getClassTree(typeDep.superClass,  delim, allTypeDependencies_SuperClassAndInterfaces);
+			}
+		}*/
+		
+		if(allTypeDependencies_SuperClassAndInterfaces.containsKey(className))
+		{
+			TypeDependency typeDep=(TypeDependency) allTypeDependencies_SuperClassAndInterfaces.get(className);
+			
+			if(null!=typeDep.superClass &&!"".equalsIgnoreCase(typeDep.superClass))
+			{
+				toWrite.append(delim+  getClassTree(typeDep.superClass, delim, allTypeDependencies_SuperClassAndInterfaces)  );
+			}
+		}
+		System.out.println(toWrite);
+		return toWrite;
 	}
 
 	/**

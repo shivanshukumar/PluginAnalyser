@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.shivanshusingh.pluginanalyser.comparison;
 
 import java.io.BufferedReader;
@@ -318,9 +315,4 @@ public class DependencyFinder {
 		}
 		return result;
 	}
-}
-
-class ImpExp {
-	protected Set<String> imp = new HashSet<String>();
-	protected Set<String> exp = new HashSet<String>();
 }
