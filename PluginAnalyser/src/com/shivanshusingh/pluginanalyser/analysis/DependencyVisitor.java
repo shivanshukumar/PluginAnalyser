@@ -438,7 +438,7 @@ public class DependencyVisitor extends ClassVisitor {
 			
 			// ////// This is where we capture External  Dynamic Method Calls
 			// YAYYYYYYYYYYYYYYYYYYYYYYYY ///////////
-			// TODO WE dont need to worry about this - generate an exception.
+			// WE dont need to worry about this
 			try {
 				throw new InvokeDynamicException();
 			} catch (InvokeDynamicException e) {

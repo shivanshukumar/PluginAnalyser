@@ -12,6 +12,8 @@ import java.io.InputStreamReader;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.List;
@@ -591,61 +593,148 @@ public class BundleAnalyser extends ManifestParser {
 				+ pluginFileName.replace('/', '_') + Constants.EXTRACT_FILE_EXTENSION_PLUGIN);
 		BufferedWriter writer = new BufferedWriter(fwriter);
 
-		List<String> allDetectedTypes = new ArrayList<String>(
-				v.getAllDetectedTypes());
-		List<String> allExternalDetectedTypes = new ArrayList<String>(
-				v.getAllExternalDetectedTypes());
-		List<String> allExternalNonJavaDetectedTypes = new ArrayList<String>(
-				v.getAllExternalNonJavaDetectedTypes());
-
-		List<String> allMyMethods = new ArrayList<String>(v.getAllMyMethods());
-		List<String> allMyDeprecatedMethods = new ArrayList<String>(
-				v.getAllMyDeprecatedMethods());
-		List<String> allMyDeprecatedPublicMethods = new ArrayList<String>(
-				v.getAllMyDeprecatedPublicMethods());
-		List<String> allMyPublicMethods = new ArrayList<String>(
-				v.getAllMyPublicMethods());
-
-		List<String> allInvokations = new ArrayList<String>(
-				v.getAllInvokations());
-		List<String> allMyClasses = new ArrayList<String>(v.getAllMyClasses());
-		List<String> allMyDeprecatedClasses = new ArrayList<String>(
-				v.getAllMyDeprecatedClasses());
-		List<String> allMyDeprecatedPublicClasses = new ArrayList<String>(
-				v.getAllMyDeprecatedPublicClasses());
-		List<String> allMyPublicClasses = new ArrayList<String>(
-				v.getAllMyPublicClasses());
-
-		Map<String, Map<String, Integer>> globals = v.getGlobals();
-		List<String> jarPackages = new ArrayList<String>(globals.keySet());
-		List<String> classPackages = new ArrayList<String>(v.getPackages());
-		List<String> externalInvokations = new ArrayList<String>(
-				v.getAllExternalMethodInvokations());
-		List<String> externalNonJavaInvokations = new ArrayList<String>(
-				v.getAllExternalNonJavaMethodInvokations());
 		
+		//////////////////////////////////////////////////
+		Set<String> allDetectedTypes = v.getAllDetectedTypes();
+		Set<String> allExternalDetectedTypes = v.getAllExternalDetectedTypes();
+		Set<String> allExternalNonJavaDetectedTypes = v.getAllExternalNonJavaDetectedTypes();
+
+		Set<String> allMyMethods = v.getAllMyMethods();
+		Set<String> allMyDeprecatedMethods = v.getAllMyDeprecatedMethods();
+		Set<String> allMyDeprecatedPublicMethods = v.getAllMyDeprecatedPublicMethods();
+		Set<String> allMyPublicMethods = v.getAllMyPublicMethods();
+
+		Set<String> allInvokations = v.getAllInvokations();
+		Set<String> externalInvokations = v.getAllExternalMethodInvokations();
+		Set<String> externalNonJavaInvokations = v.getAllExternalNonJavaMethodInvokations();
+
+		Set<String> allMyClasses = v.getAllMyClasses();
+		Set<String> allMyDeprecatedClasses = v.getAllMyDeprecatedClasses();
+		Set<String> allMyDeprecatedPublicClasses = v.getAllMyDeprecatedPublicClasses();
+		Set<String> allMyPublicClasses = v.getAllMyPublicClasses();
+
+		/////////////////////////////////////
 		
 		Map<String, TypeDependency> allTypeDependencies_SuperClassAndInterfaces = v.getAllMyTypeDependencies();
 		
+		Set<String> allInheritancePairs = new HashSet<String>();
+		Set<String> allInheritanceHierarchies = new HashSet<String>();
+		Set<String> allInterfaceImplPairs = new HashSet<String>();
+		Set<String> allInterfaceImplLists = new HashSet<String>();
+		Set<String> allInheritancePairsAndInterfaceImplPairsSuperSet = new HashSet<String>();
+	
+		// towards getting a set of all classes so that  the various sets can be built.
+		Set<String> classesKeySet = allTypeDependencies_SuperClassAndInterfaces.keySet();
 
-		java.util.Collections.sort(allDetectedTypes);
-		java.util.Collections.sort(allMyMethods);
-		java.util.Collections.sort(allMyPublicMethods);
-		java.util.Collections.sort(allMyDeprecatedMethods);
-		java.util.Collections.sort(allMyDeprecatedPublicMethods);
-		java.util.Collections.sort(allInvokations);
-		java.util.Collections.sort(allMyClasses);
-		java.util.Collections.sort(jarPackages);
-		java.util.Collections.sort(classPackages);
-		java.util.Collections.sort(externalInvokations);
-		java.util.Collections.sort(externalNonJavaInvokations);
-		java.util.Collections.sort(allExternalDetectedTypes);
-		java.util.Collections.sort(allExternalNonJavaDetectedTypes);
-		java.util.Collections.sort(allMyPublicClasses);
-		java.util.Collections.sort(allMyDeprecatedClasses);
-		java.util.Collections.sort(allMyDeprecatedPublicClasses);
+		// building all inheritance Pairs set and adding to the
+		// allInheritancePairsAndInterfaceImplPairsSuperSet
+		for (String key : classesKeySet) {
+			TypeDependency typeDep = (TypeDependency) allTypeDependencies_SuperClassAndInterfaces.get(key);
+			if (null != typeDep.superClass && !"".equalsIgnoreCase(typeDep.superClass)) {
+				String entry = key + Constants.DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE + typeDep.superClass;
+				allInheritancePairs.add(entry);
+				allInheritancePairsAndInterfaceImplPairsSuperSet.add(entry);
+			}
+		}
 
-		// /////////// BUNDLE MANIFEST ///////////////////
+		// building all inheritance Hierarchies Map
+
+		for (String key : classesKeySet) {
+			String entry = "";
+			entry += getInheritanceHeirarchy(key, Constants.DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE,
+					allTypeDependencies_SuperClassAndInterfaces);
+			if (null != entry && !"".equalsIgnoreCase(entry.trim()) && !key.trim().equalsIgnoreCase(entry.trim()))
+				allInheritanceHierarchies.add(key + Constants.DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE + entry);
+
+		}
+
+		// building all interface implementation lists, pairs and adding to the
+		// allInheritancePairsAndInterfaceImplPairsSuperSet
+		for (String key : classesKeySet)
+
+		{
+			TypeDependency typeDep = (TypeDependency) allTypeDependencies_SuperClassAndInterfaces.get(key);
+
+			String entry = "";
+			if (null != typeDep.interfaces && 1 >= typeDep.interfaces.size()) {
+
+				// System.out.println("++++++++ interfaces implemented:"+typeDep1.interfaces.size());
+				for (String interfaceImplemented : typeDep.interfaces) {
+					if (null != interfaceImplemented && !"".equalsIgnoreCase(interfaceImplemented.trim())) {
+						entry += interfaceImplemented.trim() + ";";
+
+						String localEntry = key.trim() + Constants.DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE
+								+ interfaceImplemented.trim();
+						allInterfaceImplPairs.add(localEntry);
+						allInheritancePairsAndInterfaceImplPairsSuperSet.add(localEntry);
+					}
+				}
+
+				if (!"".equalsIgnoreCase(entry))
+					allInterfaceImplLists.add(key.trim() + Constants.DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE
+							+ entry.trim());
+			}
+		}
+		
+		
+	////    pruning at the plugin level to remove all external method invokations such that they may appear in the external invokations list may be provided by some superclass or through an interface.
+		//TODO Prune.
+		
+		
+		//////////////////////////////////
+		
+		List<String> allDetectedTypes_List = new ArrayList<String>(allDetectedTypes);
+		List<String> allExternalDetectedTypes_List = new ArrayList<String>(allExternalDetectedTypes);
+		List<String> allExternalNonJavaDetectedTypes_List = new ArrayList<String>(allExternalNonJavaDetectedTypes);
+
+		List<String> allMyMethods_List = new ArrayList<String>(allMyMethods);
+		List<String> allMyDeprecatedMethods_List = new ArrayList<String>(allMyDeprecatedMethods);
+		List<String> allMyDeprecatedPublicMethods_List = new ArrayList<String>(allMyDeprecatedPublicMethods);
+		List<String> allMyPublicMethods_List = new ArrayList<String>(allMyPublicMethods);
+
+		List<String> allInvokations_List = new ArrayList<String>(allInvokations);
+		List<String> externalInvokations_List = new ArrayList<String>(externalInvokations);
+		List<String> externalNonJavaInvokations_List = new ArrayList<String>(externalNonJavaInvokations);
+
+		List<String> allMyClasses_List = new ArrayList<String>(allMyClasses);
+		List<String> allMyDeprecatedClasses_List = new ArrayList<String>(allMyDeprecatedClasses);
+		List<String> allMyDeprecatedPublicClasses_List = new ArrayList<String>(allMyDeprecatedClasses);
+		List<String> allMyPublicClasses_List = new ArrayList<String>(allMyPublicClasses);
+
+		Map<String, Map<String, Integer>> globals = v.getGlobals();
+		List<String> jarPackages_List = new ArrayList<String>(globals.keySet());
+		List<String> classPackages_List = new ArrayList<String>(v.getPackages());
+
+		List<String> allInheritancePairs_List = new ArrayList<String>(allInheritancePairs);
+		List<String> allInheritanceHierarchies_List = new ArrayList<String>(allInheritanceHierarchies);
+		List<String> allInterfaceImplPairs_List = new ArrayList<String>(allInterfaceImplPairs);
+		List<String> allInterfaceImplLists_List = new ArrayList<String>(allInterfaceImplLists);
+		List<String> allInheritancePairsAndInterfaceImplPairsSuperSet_List = new ArrayList<String>(
+				allInheritancePairsAndInterfaceImplPairsSuperSet);
+
+		java.util.Collections.sort(allDetectedTypes_List);
+		java.util.Collections.sort(allMyMethods_List);
+		java.util.Collections.sort(allMyPublicMethods_List);
+		java.util.Collections.sort(allMyDeprecatedMethods_List);
+		java.util.Collections.sort(allMyDeprecatedPublicMethods_List);
+		java.util.Collections.sort(allInvokations_List);
+		java.util.Collections.sort(allMyClasses_List);
+		java.util.Collections.sort(jarPackages_List);
+		java.util.Collections.sort(classPackages_List);
+		java.util.Collections.sort(externalInvokations_List);
+		java.util.Collections.sort(externalNonJavaInvokations_List);
+		java.util.Collections.sort(allExternalDetectedTypes_List);
+		java.util.Collections.sort(allExternalNonJavaDetectedTypes_List);
+		java.util.Collections.sort(allMyPublicClasses_List);
+		java.util.Collections.sort(allMyDeprecatedClasses_List);
+		java.util.Collections.sort(allMyDeprecatedPublicClasses_List);
+		java.util.Collections.sort(allInheritancePairs_List);
+		java.util.Collections.sort(allInheritanceHierarchies_List);
+		java.util.Collections.sort(allInterfaceImplPairs_List);
+		java.util.Collections.sort(allInterfaceImplLists_List);
+		java.util.Collections.sort(allInheritancePairsAndInterfaceImplPairsSuperSet_List);
+
+	// /////////// BUNDLE MANIFEST ///////////////////
 		// java.util.Collections.sort(bundleRequirements);
 		// this is the set of other plugins that this plugin would depend on.
 		// bundleinfo.getRequires() and bundleinfo.getImports() eventually point
@@ -655,7 +744,7 @@ public class BundleAnalyser extends ManifestParser {
 		if (null == bundleinfo || null == bundleinfo.getBundleInfo())
 			flag_bundleInfoExists = false;
 
-		writer.write("Bundle Requirements ======== \n");
+		writer.write(Constants.BUNDLE_REQUIREMENTS+"\n");
 		if (flag_bundleInfoExists) {
 
 			for (Object s : bundleinfo.getRequirements())
@@ -665,7 +754,7 @@ public class BundleAnalyser extends ManifestParser {
 			// +" , Bundle Requirements"); // Require-Bundle
 		}
 		writer.write(Constants.MARKER_TERMINATOR+"\n");
-		writer.write("Bundle Exports ======== \n");
+		writer.write(Constants.BUNDLE_EXPORTS+"\n");
 		if (flag_bundleInfoExists) {
 			for (Object s : bundleinfo.getExports())
 				writer.write(s.toString() + "\n");
@@ -673,7 +762,7 @@ public class BundleAnalyser extends ManifestParser {
 			// bundleinfo.getExports().toString()); // Export-Package
 		}
 		writer.write(Constants.MARKER_TERMINATOR+"\n");
-		writer.write("Symbolic Name ======== \n");
+		writer.write(Constants.BUNDLE_SYMBOLICNAME+"\n");
 		if (flag_bundleInfoExists) {
 			writer.write(null != bundleinfo.getSymbolicName() ? bundleinfo
 					.getSymbolicName().toString() + "\n" : "");
@@ -681,7 +770,7 @@ public class BundleAnalyser extends ManifestParser {
 			// bundleinfo.getSymbolicName().toString());
 		}
 		writer.write(Constants.MARKER_TERMINATOR+"\n");
-		writer.write("Version ======== \n");
+		writer.write(Constants.BUNDLE_VERSION+"\n");
 		if (flag_bundleInfoExists) {
 			writer.write(null != bundleinfo.getVersion() ? bundleinfo
 					.getVersion().toString() + "\n" : "");
@@ -689,7 +778,7 @@ public class BundleAnalyser extends ManifestParser {
 			// bundleinfo.getVersion().toString());
 		}
 		writer.write(Constants.MARKER_TERMINATOR+"\n");
-		writer.write("Version without qualifier ========\n");
+		writer.write(Constants.BUNDLE_VERSION_WITHOUT_QUALIFIER+"\n");
 		if (flag_bundleInfoExists) {
 			writer.write(null != bundleinfo.getVersion() ? bundleinfo
 					.getVersion().withoutQualifier().toString()
@@ -698,7 +787,7 @@ public class BundleAnalyser extends ManifestParser {
 			// bundleinfo.getVersion().withoutQualifier().toString());
 		}
 		writer.write(Constants.MARKER_TERMINATOR+"\n");
-		writer.write("Bundle Imports ========\n ");
+		writer.write(Constants.BUNDLE_IMPORTS+"\n ");
 		if (flag_bundleInfoExists) {
 			for (Object s : bundleinfo.getImports())
 				writer.write(s.toString() + "\n");
@@ -706,7 +795,7 @@ public class BundleAnalyser extends ManifestParser {
 			// bundleinfo.getImports().toString());
 		}
 		writer.write(Constants.MARKER_TERMINATOR+"\n");
-		writer.write("Bundle ClassPathEntries ========\n");
+		writer.write(Constants.BUNDLE_CLASSPATHENTRIES+"\n");
 		if (flag_bundleInfoExists) {
 			for (Object s : bundleinfo.getClasspathEntries())
 				writer.write(s.toString() + "\n");
@@ -717,71 +806,84 @@ public class BundleAnalyser extends ManifestParser {
 		// Log.outln("Bundle hashcode  = " + bundleinfo.hashCode() );
 
 		// //////////////////////////////////////////////////////
-		
-		
-		// writing all superclass and interfaces dependencies.
-		
-		
-		Set<String> classesKeySet=allTypeDependencies_SuperClassAndInterfaces.keySet();
-		
-		////    writing to extract all the super classes
 
-		writer.write(Constants.PLUGIN_ALL_SUPERCLASS_EXTENDED_BY_ME+"\n");
-		for(  String key:classesKeySet)
-		{
-			String  toWrite=""; 
-			toWrite+=getClassTree(key, Constants.PLUGIN_ELEMENT_SUPERCLASS_INTERFACE_DELIM, allTypeDependencies_SuperClassAndInterfaces);
-			if(null!=toWrite  &&  !"".equalsIgnoreCase(toWrite)  &&  !key.trim().equalsIgnoreCase(toWrite.trim())  )
-				writer.write(toWrite.trim()+"\n");
+		writer.write(Constants.PLUGIN_ALL_INHERITANCE_HIERARCHIES + "\n");
+		/*
+		 * for( String key:classesKeySet) { String toWrite="";
+		 * toWrite+=getInheritanceHeirarchy(key,
+		 * Constants.DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE,
+		 * allTypeDependencies_SuperClassAndInterfaces); if(null!=toWrite &&
+		 * !"".equalsIgnoreCase(toWrite) &&
+		 * !key.trim().equalsIgnoreCase(toWrite.trim()) )
+		 * writer.write(toWrite.trim()+"\n");
+		 * }
+		 */
 
-			/*
-			 * 
-			 * // for non recursive inheritence relationships. 
-			 * TypeDependency typeDep=(TypeDependency) allTypeDependencies_SuperClassAndInterfaces.get(key);
-			 * 
-			 * if(null!=typeDep.superClass &&!"".equalsIgnoreCase(typeDep.superClass)) {
-			 * 
-			 * writer.write(key+"=>"+typeDep.superClass+"\n");
-			 * 
-			 * 
-			 */
-				
-			
-		}
-		writer.write(Constants.MARKER_TERMINATOR+"\n");
-		
-		
-		
-		////    writing to extract all the intefcaes implemented.
+		for (String s : allInheritanceHierarchies_List)
+			writer.write(s + "\n");
 
-		writer.write(Constants.PLUGIN_ALL_INTERFACES_IMPLEMENTED_BY_ME+"\n");
-		for(  String key1:classesKeySet)
-		{
-			TypeDependency typeDep1=(TypeDependency) allTypeDependencies_SuperClassAndInterfaces.get(key1);
-			
-			
-			String toWrite="";
-			if(null!=typeDep1.interfaces  && 1>= typeDep1.interfaces.size())
-			{
-				
-			//System.out.println("+++++++++++++++++++++++++++++++++++++++++interfacec implemented:"+typeDep1.interfaces.size());
-			for(String interfaceImplemented: typeDep1.interfaces)
-			{
-				  toWrite+=	  interfaceImplemented+";";
-			}
-			
-			if(!"".equalsIgnoreCase(toWrite))
-				writer.write(key1+Constants.PLUGIN_ELEMENT_SUPERCLASS_INTERFACE_DELIM+toWrite+"\n");
-			}
-		}
-		writer.write(Constants.MARKER_TERMINATOR+"\n");
-		
-		/////////////////////////////////////////////////////////
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
+
+		writer.write(Constants.PLUGIN_ALL_INHERITANCE_PAIRS + "\n");
+		/*
+		 * for( String key:classesKeySet) {
+		 * 
+		 * // for non recursive inheritence relationships. TypeDependency
+		 * typeDep=(TypeDependency)
+		 * allTypeDependencies_SuperClassAndInterfaces.get(key);
+		 * 
+		 * if(null!=typeDep.superClass
+		 * &&!"".equalsIgnoreCase(typeDep.superClass))
+		 * 
+		 * writer.write(key+Constants.DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE+
+		 * typeDep.superClass+"\n");
+		 * 
+		 * 
+		 * }
+		 */
+		for (String s : allInheritancePairs_List)
+			writer.write(s + "\n");
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
+
+		writer.write(Constants.PLUGIN_ALL_INTERFACE_IMPLEMENTATION_LISTS + "\n");
+		/*
+		 * for( String key1:classesKeySet) { TypeDependency
+		 * typeDep1=(TypeDependency)
+		 * allTypeDependencies_SuperClassAndInterfaces.get(key1);
+		 * 
+		 * 
+		 * String toWrite=""; if(null!=typeDep1.interfaces && 1>=
+		 * typeDep1.interfaces.size()) {
+		 * 
+		 * //System.out.println(
+		 * "+++++++++++++++++++++++++++++++++++++++++interfacec implemented:"
+		 * +typeDep1.interfaces.size()); for(String interfaceImplemented:
+		 * typeDep1.interfaces) { toWrite+= interfaceImplemented+";"; }
+		 * 
+		 * if(!"".equalsIgnoreCase(toWrite))
+		 * writer.write(key1+Constants.DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE
+		 * +toWrite+"\n"); } }
+		 */
+		for (String s : allInterfaceImplLists_List)
+			writer.write(s + "\n");
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
+
+		writer.write(Constants.PLUGIN_ALL_INTERFACE_IMPLEMENTATION_PAIRS + "\n");
+		for (String s : allInterfaceImplPairs_List)
+			writer.write(s + "\n");
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
+
+		writer.write(Constants.PLUGIN_ALL_INHERITANCE_AND_INTERFACE_PAIRS + "\n");
+		for (String s : allInheritancePairsAndInterfaceImplPairsSuperSet_List)
+			writer.write(s + "\n");
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
+
+		// ///////////////////////////////////////////////////////
 
 		writer.write(Constants.PLUGIN_ALL_MY_TYPES+"\n");
 		//"All My Classes (Types)  ========\n");
 
-		for (String s : allMyClasses) {
+		for (String s : allMyClasses_List) {
 			writer.write(s + "\n");
 		}
 		writer.write(Constants.MARKER_TERMINATOR+"\n");
@@ -792,7 +894,7 @@ public class BundleAnalyser extends ManifestParser {
 		writer.write(Constants.PLUGIN_ALL_MY_TYPES_PUBLIC+"\n");
 		//"All My Public Classes (Types) ========\n");
 
-		for (String s : allMyPublicClasses) {
+		for (String s : allMyPublicClasses_List) {
 			writer.write(s + "\n");
 		}
 		writer.write(Constants.MARKER_TERMINATOR+"\n");
@@ -804,7 +906,7 @@ public class BundleAnalyser extends ManifestParser {
 		writer.write(Constants.PLUGIN_ALL_MY_METHODS+"\n");
 		//"All My Methods ========\n");
 
-		for (String s : allMyMethods) {
+		for (String s : allMyMethods_List) {
 			writer.write(s + "\n");
 		}
 		writer.write(Constants.MARKER_TERMINATOR+"\n");
@@ -814,7 +916,7 @@ public class BundleAnalyser extends ManifestParser {
 		writer.write(Constants.PLUGIN_ALL_MY_METHODS_PUBLIC+"\n");
 		//"All My Public Methods ========\n");
 
-		for (String s : allMyPublicMethods) {
+		for (String s : allMyPublicMethods_List) {
 			writer.write(s + "\n");
 		}
 		writer.write(Constants.MARKER_TERMINATOR+"\n");
@@ -826,7 +928,7 @@ public class BundleAnalyser extends ManifestParser {
 		writer.write(Constants.PLUGIN_ALL_MY_METHOD_CALLS+"\n");
 		//"All Invokations ========\n");
 
-		for (String s : allInvokations) {
+		for (String s : allInvokations_List) {
 			writer.write(s + "\n");
 		}
 		writer.write(Constants.MARKER_TERMINATOR+"\n");
@@ -838,7 +940,7 @@ public class BundleAnalyser extends ManifestParser {
 		writer.write(Constants.PLUGIN_ALL_MY_METHOD_CALLS_EXTERNAL+"\n");
 		//"All External Invokations ========\n");
 
-		for (String s : externalInvokations) {
+		for (String s : externalInvokations_List) {
 			writer.write(s + "\n");
 		}
 		writer.write(Constants.MARKER_TERMINATOR+"\n");
@@ -850,7 +952,7 @@ public class BundleAnalyser extends ManifestParser {
 		writer.write(Constants.PLUGIN_ALL_MY_METHOD_CALLS_EXTERNAL_AND_NON_JAVA+"\n");
 		//"All External and non Excluded Invokations ========\n");
 
-		for (String s : externalNonJavaInvokations) {
+		for (String s : externalNonJavaInvokations_List) {
 			writer.write(s + "\n");
 		}
 		writer.write(Constants.MARKER_TERMINATOR+"\n");
@@ -861,7 +963,7 @@ public class BundleAnalyser extends ManifestParser {
 
 		writer.write(Constants.PLUGIN_ALL_TYPES_DETECTED+"\n");
 		//"All Detected Types ========\n");
-		for (String s : allDetectedTypes) {
+		for (String s : allDetectedTypes_List) {
 			writer.write(s + "\n");
 		}
 		writer.write(Constants.MARKER_TERMINATOR+"\n");
@@ -872,7 +974,7 @@ public class BundleAnalyser extends ManifestParser {
 
 		writer.write(Constants.PLUGIN_ALL_TYPES_DETECTED_EXTERNAL+"\n");
 		//"All External Detected Types ========\n");
-		for (String s : allExternalDetectedTypes) {
+		for (String s : allExternalDetectedTypes_List) {
 			writer.write(s + "\n");
 		}
 		writer.write(Constants.MARKER_TERMINATOR+"\n");
@@ -883,7 +985,7 @@ public class BundleAnalyser extends ManifestParser {
 
 		writer.write(Constants.PLUGIN_ALL_TYPES_DETECTED_EXTERNAL_AND_NON_JAVA+"\n");
 		//"All External Non Java Detected Types ========\n");
-		for (String s : allExternalNonJavaDetectedTypes) {
+		for (String s : allExternalNonJavaDetectedTypes_List) {
 			writer.write(s + "\n");
 		}
 		writer.write(Constants.MARKER_TERMINATOR+"\n");
@@ -895,7 +997,7 @@ public class BundleAnalyser extends ManifestParser {
 		writer.write(Constants.PLUGIN_ALL_JAR_PACKAGES+"\n");
 		//"All Jar Packages ========\n");
 
-		for (String s : jarPackages) {
+		for (String s : jarPackages_List) {
 			writer.write(s + "\n");
 		}
 		writer.write(Constants.MARKER_TERMINATOR+"\n");
@@ -904,7 +1006,7 @@ public class BundleAnalyser extends ManifestParser {
 		writer.write(Constants.PLUGIN_ALL_CLASS_PACKAGES+"\n");
 		//"All  Class packages ========\n");
 
-		for (String s : classPackages) {
+		for (String s : classPackages_List) {
 			writer.write(s + "\n");
 		}
 		writer.write(Constants.MARKER_TERMINATOR+"\n");
@@ -912,7 +1014,7 @@ public class BundleAnalyser extends ManifestParser {
 		writer.write(Constants.PLUGIN_ALL_MY_METHODS_DEPRECATED+"\n");
 		//"All My Deprecated Methods ========\n");
 
-		for (String s : allMyDeprecatedMethods) {
+		for (String s : allMyDeprecatedMethods_List) {
 			writer.write(s + "\n");
 		}
 		writer.write(Constants.MARKER_TERMINATOR+"\n");
@@ -924,7 +1026,7 @@ public class BundleAnalyser extends ManifestParser {
 		writer.write(Constants.PLUGIN_ALL_MY_TYPES_DEPRECATED+"\n");
 		//"All My Deprecated Classes ========\n");
 
-		for (String s : allMyDeprecatedClasses) {
+		for (String s : allMyDeprecatedClasses_List) {
 			writer.write(s + "\n");
 		}
 		writer.write(Constants.MARKER_TERMINATOR+"\n");
@@ -934,7 +1036,7 @@ public class BundleAnalyser extends ManifestParser {
 		// Log.outln(allMyDeprecatedClasses.size() + ","
 		// + " deprecated   classes.");
 
-		writer.write("Bundle Plugin.xml ========\n");
+		writer.write(Constants.BUNDLE_PLUGIN_XML+"\n");
 		if (null != bundleinfo) {// this means that there won't be any
 									// plugin.xml available.
 			writer.write(bundleinfo.getPluginXml() + "\n");
@@ -946,18 +1048,8 @@ public class BundleAnalyser extends ManifestParser {
 		fwriter.close();
 	}
 
-	private static StringBuffer getClassTree(String className, String delim  , Map<String, TypeDependency> allTypeDependencies_SuperClassAndInterfaces) {
+	private static StringBuffer getInheritanceHeirarchy(String className, String delim  , Map<String, TypeDependency> allTypeDependencies_SuperClassAndInterfaces) {
 		StringBuffer toWrite = new StringBuffer(className);
-		/*if(allTypeDependencies_SuperClassAndInterfaces.containsKey(className))
-		{
-			TypeDependency typeDep=(TypeDependency) allTypeDependencies_SuperClassAndInterfaces.get(className);
-			
-			if(null!=typeDep.superClass &&!"".equalsIgnoreCase(typeDep.superClass))
-			{
-				
-				toWrite+=delim+getClassTree(typeDep.superClass,  delim, allTypeDependencies_SuperClassAndInterfaces);
-			}
-		}*/
 		
 		if(allTypeDependencies_SuperClassAndInterfaces.containsKey(className))
 		{
@@ -965,10 +1057,10 @@ public class BundleAnalyser extends ManifestParser {
 			
 			if(null!=typeDep.superClass &&!"".equalsIgnoreCase(typeDep.superClass))
 			{
-				toWrite.append(delim+  getClassTree(typeDep.superClass, delim, allTypeDependencies_SuperClassAndInterfaces)  );
+				toWrite.append(delim+  getInheritanceHeirarchy(typeDep.superClass, delim, allTypeDependencies_SuperClassAndInterfaces)  );
 			}
 		}
-		System.out.println(toWrite);
+//		System.out.println(toWrite);
 		return toWrite;
 	}
 

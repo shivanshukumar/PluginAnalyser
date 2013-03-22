@@ -135,10 +135,10 @@ public class DependencyFinder {
 				// System.out.println(types.keySet().toString());
 
 				if (pluginExtractsDone % 200 == 0 || pluginExtractsDone == entriesLength) {
-					System.out.println("#### functions \tobjectSize= "
+					Log.outln("#### functions \tobjectSize= "
 							+ (double) (functions.toString().length() / (1024 * 1024)) + "MB");
 
-					System.out.println("#### types \tobjectSize= " + (types.toString().length() / (1024 * 1024)) + "MB");
+					Log.outln("#### types \tobjectSize= " + (types.toString().length() / (1024 * 1024)) + "MB");
 				}
 
 			}
@@ -178,7 +178,7 @@ public class DependencyFinder {
 
 		for (String key : functions.keySet()) {
 
-			writer.write(Constants.PLUGIN_DEPENDENCY_ELEMENT_SET_DELIM + "\n");
+			writer.write(Constants.DELIM_PLUGIN_DEPENDENCY_ELEMENT_SET + "\n");
 
 			// writing the function signature.
 			writer.write(key + "\n");
@@ -236,7 +236,7 @@ public class DependencyFinder {
 
 		for (String key : types.keySet()) {
 
-			writer.write(Constants.PLUGIN_DEPENDENCY_ELEMENT_SET_DELIM + "\n");
+			writer.write(Constants.DELIM_PLUGIN_DEPENDENCY_ELEMENT_SET + "\n");
 
 			// writing the type signature.
 			writer.write(key + "\n");

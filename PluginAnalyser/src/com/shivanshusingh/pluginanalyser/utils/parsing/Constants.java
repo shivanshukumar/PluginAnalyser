@@ -8,46 +8,59 @@ package com.shivanshusingh.pluginanalyser.utils.parsing;
  */
 public interface Constants {
 
+	public static final String MARKER_ADDON 											= "==";
+	public static final String MARKER_INTERIM 											= "====";
+	public static final String MARKER_TERMINATOR 										= "----";
+	
+	public static final String BUNDLE_CLASSPATHENTRIES 									= MARKER_ADDON +  "Bundle ClassPathEntries"  			  +  MARKER_ADDON ;
+	public static final String BUNDLE_EXPORTS 											= MARKER_ADDON + "Bundle Exports"  						  +  MARKER_ADDON ;
+	public static final String BUNDLE_IMPORTS 											= MARKER_ADDON + "Bundle Imports"  						  +  MARKER_ADDON ;
+	public static final String BUNDLE_PLUGIN_XML 										= MARKER_ADDON + "Bundle Plugin.xml"  					  +  MARKER_ADDON ;
+	public static final String BUNDLE_REQUIREMENTS 										= MARKER_ADDON + "Bundle Requirements"  				  +  MARKER_ADDON ;
+	public static final String BUNDLE_SYMBOLICNAME 										= MARKER_ADDON + "Symbolic Name"  						  +  MARKER_ADDON ;
+	public static final String BUNDLE_VERSION 											= MARKER_ADDON + "Version"  							  +  MARKER_ADDON ;
+	public static final String BUNDLE_VERSION_WITHOUT_QUALIFIER 						= MARKER_ADDON + "Version without qualifier"  			  +  MARKER_ADDON ;
+
+	public static final String DELIM_PLUGIN_DEPENDENCY_ELEMENT_SET  					= "####";
+	public static final String DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE 				= " => ";
+
 	public static final String DEPENDENCY_SET_FILE_EXTENSION_PLUGIN 					= ".dpst";
 	public static final String DEPENDENCY_SET_FILE_PREFIX_PLUGIN 						= "DEPENDENCY-SET-PLUGIN-";
-
+	
 	public static final String EXTRACT_FILE_EXTENSION_FEATURE							= ".extr";
 	public static final String EXTRACT_FILE_EXTENSION_PLUGIN 							= ".extr";
 	public static final String EXTRACT_FILE_PREFIX_FEATURE 								= "EXTRACT-FEATURE-";
 	public static final String EXTRACT_FILE_PREFIX_PLUGIN 								= "EXTRACT-PLUGIN-";
-
+	
 	public static final String JAR_FILE_EXTENSION 										= ".jar";
-
-	public static final String MARKER_ADDON 											= "==";
-	public static final String MARKER_INTERIM 											= "====";
-	public static final String MARKER_TERMINATOR 										= "----";
-
-	public static final String PLUGIN_ALL_CLASS_PACKAGES 								= MARKER_ADDON + "All Class packages" 					+ MARKER_ADDON;
-	public static final String PLUGIN_ALL_INTERFACES_IMPLEMENTED_BY_ME 					 = MARKER_ADDON + "Interfaces Implemented "+ MARKER_ADDON;
+	
+	public static final String PLUGIN_ALL_CLASS_PACKAGES 								= MARKER_ADDON + "All Class packages " 						+ MARKER_ADDON;
+	public static final String PLUGIN_ALL_INHERITANCE_AND_INTERFACE_PAIRS   			= MARKER_ADDON + "All Inheritance AND Interface Impl Pairs Super Set "					+ MARKER_ADDON;
+	public static final String PLUGIN_ALL_INHERITANCE_HIERARCHIES 						= MARKER_ADDON + "All Inheritance Hierarchies "  	  		+ MARKER_ADDON;
+	public static final String PLUGIN_ALL_INHERITANCE_PAIRS 							= MARKER_ADDON + "All My Inheritance Pairs  "				+ MARKER_ADDON;
+	public static final String PLUGIN_ALL_INTERFACE_IMPLEMENTATION_LISTS 				= MARKER_ADDON + "All Interfaces Implementation Lists "		+ MARKER_ADDON;
+	public static final String PLUGIN_ALL_INTERFACE_IMPLEMENTATION_PAIRS 				= MARKER_ADDON + "All Interfaces Implementation Pairs "		+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_JAR_PACKAGES 									= MARKER_ADDON + "All Jar Packages" 						+ MARKER_ADDON;
-	public static final String PLUGIN_ALL_MY_METHOD_CALLS 								= MARKER_ADDON + "All Invokations" 						+ MARKER_ADDON;
+	public static final String PLUGIN_ALL_MY_METHOD_CALLS 								= MARKER_ADDON + "All Invokations" 							+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_MY_METHOD_CALLS_EXTERNAL 						= MARKER_ADDON + "All External Invokations" 				+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_MY_METHOD_CALLS_EXTERNAL_AND_NON_JAVA 		= MARKER_ADDON + "All External and non Java Invokations" 	+ MARKER_ADDON;
-	public static final String PLUGIN_ALL_MY_METHODS 									= MARKER_ADDON + "All My Methods" 						+ MARKER_ADDON;
+	public static final String PLUGIN_ALL_MY_METHODS 									= MARKER_ADDON + "All My Methods" 							+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_MY_METHODS_DEPRECATED 						= MARKER_ADDON + "All My Deprecated Methods" 				+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_MY_METHODS_PUBLIC 							= MARKER_ADDON + "All My Public Methods" 					+ MARKER_ADDON;
-	public static final String PLUGIN_ALL_MY_TYPES 										= MARKER_ADDON + "All My Classes (Types)" 				+ MARKER_ADDON;
+	public static final String PLUGIN_ALL_MY_TYPES 										= MARKER_ADDON + "All My Classes (Types)" 					+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_MY_TYPES_DEPRECATED 							= MARKER_ADDON + "All My Deprecated Classes" 				+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_MY_TYPES_PUBLIC 								= MARKER_ADDON + "All My Public Classes (Types)" 			+ MARKER_ADDON;
-	public static final String PLUGIN_ALL_SUPERCLASS_EXTENDED_BY_ME 					= MARKER_ADDON + "Super Class(es)  Extended"+ MARKER_ADDON;
-	public static final String PLUGIN_ALL_TYPES_DETECTED 								= MARKER_ADDON + "All Detected Types" 					+ MARKER_ADDON;
-
-	public static final String PLUGIN_ALL_TYPES_DETECTED_EXTERNAL 						= MARKER_ADDON + "All External Detected Types" 			+ MARKER_ADDON;
+	public static final String PLUGIN_ALL_TYPES_DETECTED 								= MARKER_ADDON + "All Detected Types" 						+ MARKER_ADDON;
+	public static final String PLUGIN_ALL_TYPES_DETECTED_EXTERNAL 						= MARKER_ADDON + "All External Detected Types" 				+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_TYPES_DETECTED_EXTERNAL_AND_NON_JAVA 			= MARKER_ADDON + "All External Non Java Detected Types" 	+ MARKER_ADDON;
-	public static final String PLUGIN_DEPENDENCY_ALL_FUNCTIONS  						= MARKER_ADDON + "All functions " 			+ MARKER_ADDON;
-	public static final String PLUGIN_DEPENDENCY_ALL_TYPES  							= MARKER_ADDON + "All types (classes) " 		+ MARKER_ADDON;
-	public static final String PLUGIN_DEPENDENCY_ELEMENT_SET_DELIM  					= "####";
-	public static final String PLUGIN_DEPENDENCY_EXPORTERS  							= MARKER_ADDON + "Exporters " 				+ MARKER_ADDON;
-	public static final String PLUGIN_DEPENDENCY_EXPORTERS_UNSATISFIED  				= MARKER_ADDON + "Generous EXPORTERS  UnSatisfied " 	+ MARKER_ADDON;
-	public static final String PLUGIN_DEPENDENCY_IMPORTERS  							= MARKER_ADDON + "Importers " 				+ MARKER_ADDON;
-	public static final String PLUGIN_DEPENDENCY_IMPORTERS_UNSATISFIED  				= MARKER_ADDON + "Poor Importers  UnSatisfied " 	+ MARKER_ADDON;
-	public static final String PLUGIN_ELEMENT_SUPERCLASS_INTERFACE_DELIM 				= " => ";
-
+	
+	public static final String PLUGIN_DEPENDENCY_ALL_FUNCTIONS  						= MARKER_ADDON + "All functions " 							+ MARKER_ADDON;
+	public static final String PLUGIN_DEPENDENCY_ALL_TYPES  							= MARKER_ADDON + "All types (classes) " 					+ MARKER_ADDON;
+	public static final String PLUGIN_DEPENDENCY_EXPORTERS  							= MARKER_ADDON + "Exporters " 								+ MARKER_ADDON;
+	public static final String PLUGIN_DEPENDENCY_EXPORTERS_UNSATISFIED  				= MARKER_ADDON + "Generous EXPORTERS  UnSatisfied " 		+ MARKER_ADDON;
+	public static final String PLUGIN_DEPENDENCY_IMPORTERS  							= MARKER_ADDON + "Importers " 								+ MARKER_ADDON;
+	public static final String PLUGIN_DEPENDENCY_IMPORTERS_UNSATISFIED  				= MARKER_ADDON + "Poor Importers  UnSatisfied " 			+ MARKER_ADDON;
+	
 	
 	//TODO Add support for features.
 }
