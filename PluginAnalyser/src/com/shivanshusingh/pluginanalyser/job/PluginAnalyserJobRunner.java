@@ -81,8 +81,9 @@ public class PluginAnalyserJobRunner {
 		String mirrorSiteDesinationPathPrefix = "/Users/singhsk/Developer/eclipse_plugins";
 
 		String mirrorSiteDesinationName = 
-				//"new_site6_____";
-				"__WorkingEclipseSite_features_and_plugins__";
+				"new_site6_____";
+//				"__WorkingEclipseSite_features_and_plugins__";
+				//"_plugin_sandbox";
 		
 		// +
 															// Util.getCurrentTimeString();
@@ -110,23 +111,23 @@ public class PluginAnalyserJobRunner {
 			
 			
 			String baseEclipseInstallationHome = eclipseHome;
-/*
+
 			if (!DownloadAndStagingRunner.downloadAndStageWithEclipseInstallation(eclipseHome, eclipseApp, equinoxAppName,
 					baseEclipseInstallationHome, updateSiteCollection, destinationDirectory, verbose, raw, eraseOld))
 
-	*/	/*	
+		/*	
 			  if (!DownloadAndStagingRunner.downloadAndStage(eclipseHome,
 			  eclipseApp, equinoxAppName, updateSiteCollection,
 			  destinationDirectory, verbose, raw, eraseOld))
 		*/	 
-	/*		{
+			{
 				Log.errln("XXXXXXX  " + "\n  Download and staging error for: " + "\n  " + destinationDirectory
 						+ "\n    cannot continue  with the analysis and data extraction." + "\n    ----"
 						+ "\n     You may want to check the logs at  :  " + "\n     " + eclipseHome + "configuration/  "
 						+ "\n    ---- " + "\nXXXXXXX");
 				Log.errln("But still  any  way   going on with the analysis for now ..............");
 			}
-	*/		long stage2 = System.currentTimeMillis();
+			long stage2 = System.currentTimeMillis();
 			Log.outln("Downloading and Staging for site configuration at  :  " + destinationDirectory + "  time: "
 					+ Util.getFormattedTime(stage2 - stage1));
 			Log.errln("Downloading and Staging for site configuration at  :  " + destinationDirectory + "  time: "

@@ -46,6 +46,12 @@ public class BundleAnalyser extends ManifestParser {
 	 */
 	public static void analyseAndRecordAllInformationFromBasePluginFolder(String pluginFolderPath, String outputLocation,
 			boolean eraseOld) throws IOException {
+		if(!Util.checkDirectory(new File(pluginFolderPath), true, true, true, false))
+		{
+			Log.errln("xxxx Error Accessing Plugins source base Directory for Plugin Analysis : " + pluginFolderPath
+					+ "\n Cannot continue with the analysis.");
+			return;
+		}
 		if (!Util.checkAndCreateDirectory(outputLocation)) {
 			Log.errln("xxxx Error Accessing/Creating Output Directory for Plugin Analysis Output at: " + outputLocation
 					+ "\n Cannot continue with the analysis.");
@@ -989,13 +995,13 @@ public class BundleAnalyser extends ManifestParser {
 	 * have showed up because there was an indirect call to them through
 	 * inherited methods or interfaces.
 	 * 
-	 * @param allMyMethods
-	 * @param allExternalInvokations
+	 * @param allMethodsSet
+	 * @param invokationsSet
 	 * @param allInheritanceHierarchies
 	 * @param allInterfaceImplLists
 	 * @return
 	 */
-	private static Set<String> getPruneableInvokations(Set<String> allMyMethods, Set<String> allExternalInvokations,
+	private static Set<String> getPruneableInvokations(Set<String> allMethodsSet, Set<String> invokationsSet,
 			Set<String> allInheritanceHierarchies, Set<String> allInterfaceImplLists) {
 		// // pruning at the plugin level to remove all external method
 		// invokations such that they may appear in the external invokations
@@ -1016,7 +1022,7 @@ public class BundleAnalyser extends ManifestParser {
 		 */
 
 		Set<String> invokationsToBeRemoved = new HashSet<String>();
-		for (String invokation : allExternalInvokations) {
+		for (String invokation : invokationsSet) {
 			// getting the class name of this invokation: first removing the
 			// return type and then the function name.
 
@@ -1144,8 +1150,10 @@ public class BundleAnalyser extends ManifestParser {
 
 				// make the new invokation string by replacing the class name
 				// with the new class name (entry)
-				String newInvokationEntry = invokation.replace(thisInvokationClass, entry.trim());
-
+				String newInvokationEntry = invokation.replace(thisInvokationClass+".", entry.trim()+".");
+				
+				//System.out.println("COMPARING: invokation: "+invokation+"\n    with: "+newInvokationEntry+"\n  entry was: "+entry);
+				
 				// now check if AllMyMethods (or maybe AllMyPlublicMethods) has
 				// anything like the newInvokationEntry. And if so then remove
 				// the original invokation from AllExternalInvokations and
@@ -1156,7 +1164,7 @@ public class BundleAnalyser extends ManifestParser {
 				// invokation did not show up in AllMyMethods or AllMyPublic
 				// Methods.
 
-				if (allMyMethods.contains(newInvokationEntry)) {
+				if (allMethodsSet.contains(newInvokationEntry)) {
 
 					// now storing the invokation to be removed to be removed in
 					// the next step. Cannot do it here as we might get a

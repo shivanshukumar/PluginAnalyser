@@ -124,7 +124,7 @@ public class DownloadAndStagingRunner {
 			try {
 				child.waitFor();
 			} catch (InterruptedException e) {
-				Log.err(e.getStackTrace().toString());
+				Log.err(Util.getStackTrace(e));
 				// e.printStackTrace();
 			}
 
