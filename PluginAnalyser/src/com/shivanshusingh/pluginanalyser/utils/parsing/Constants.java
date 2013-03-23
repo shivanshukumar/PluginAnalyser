@@ -32,6 +32,8 @@ public interface Constants {
 	public static final String EXTRACT_FILE_PREFIX_FEATURE 								= "EXTRACT-FEATURE-";
 	public static final String EXTRACT_FILE_PREFIX_PLUGIN 								= "EXTRACT-PLUGIN-";
 	
+	public static final String JAVA_LANG_OBJECT 									  	=   "java.lang.Object" ;
+	
 	public static final String JAR_FILE_EXTENSION 										= ".jar";
 	
 	public static final String PLUGIN_ALL_CLASS_PACKAGES 								= MARKER_ADDON + "All Class packages " 						+ MARKER_ADDON;
@@ -56,6 +58,8 @@ public interface Constants {
 	
 	public static final String PLUGIN_DEPENDENCY_ALL_FUNCTIONS  						= MARKER_ADDON + "All functions " 							+ MARKER_ADDON;
 	public static final String PLUGIN_DEPENDENCY_ALL_TYPES  							= MARKER_ADDON + "All types (classes) " 					+ MARKER_ADDON;
+	public static final String PLUGIN_DEPENDENCY_ALL_UNMATCHED_FUNCTION_IMPORTS 		= MARKER_ADDON + "All Un Matched Invokations" 				+ MARKER_ADDON;
+	public static final String PLUGIN_DEPENDENCY_ALL_UNMATCHED_TYPE_IMPORTS 			= MARKER_ADDON + "All Un Matched Types" 					+ MARKER_ADDON;
 	public static final String PLUGIN_DEPENDENCY_EXPORTERS  							= MARKER_ADDON + "Exporters " 								+ MARKER_ADDON;
 	public static final String PLUGIN_DEPENDENCY_EXPORTERS_UNSATISFIED  				= MARKER_ADDON + "Generous EXPORTERS  UnSatisfied " 		+ MARKER_ADDON;
 	public static final String PLUGIN_DEPENDENCY_IMPORTERS  							= MARKER_ADDON + "Importers " 								+ MARKER_ADDON;

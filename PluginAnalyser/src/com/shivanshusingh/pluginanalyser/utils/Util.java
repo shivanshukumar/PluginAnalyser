@@ -14,10 +14,10 @@ import org.apache.commons.io.FileUtils;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
 
 /**
- * the utility functions   useful in the project.
+ * the utility functions useful in the project.
  * 
  * @author Shivanshu Singh
- *
+ * 
  */
 public class Util {
 
@@ -52,13 +52,13 @@ public class Util {
 
 	/**
 	 * deletes all the files and folders recursively at the specified directory
-	 * location, EXCLUDing the directory location  itself.
+	 * location, EXCLUDing the directory location itself.
 	 * 
 	 * @param folder
-	 *            {@link File} handler for the directory location, all of its contents of  which  have to
-	 *            be  cleared   
-	 * @return {@link boolean} true or false depending upon whether the operation
-	 *         succeeded or not.
+	 *            {@link File} handler for the directory location, all of its
+	 *            contents of which have to be cleared
+	 * @return {@link boolean} true or false depending upon whether the
+	 *         operation succeeded or not.
 	 */
 	public static boolean clearFolder(File folder) {
 		boolean success = true;
@@ -67,7 +67,7 @@ public class Util {
 			if (files != null) { // some JVMs return null for empty dirs
 				for (File f : files) {
 					success = deleteTarget(f);
-					if(!success)
+					if (!success)
 						return false;
 				}
 			}
@@ -83,10 +83,10 @@ public class Util {
 	 * location, including the directory location.
 	 * 
 	 * @param handler
-	 *            {@link File} handler for the target, which has to
-	 *            be deleted along with all of its contents
-	 * @return {@link boolean} true or false depending upon whether the operation
-	 *         succeeded or not. 
+	 *            {@link File} handler for the target, which has to be deleted
+	 *            along with all of its contents
+	 * @return {@link boolean} true or false depending upon whether the
+	 *         operation succeeded or not.
 	 */
 	public static boolean deleteTarget(File handler) {
 		boolean success = true;
@@ -109,19 +109,21 @@ public class Util {
 
 		return success;
 	}
+
 	/**
 	 * gets the current timestamp in the format yyyy-MM-dd-HH-mm-ss-SSS
 	 * 
 	 * @return String
 	 */
 	public static String getCurrentTimeString() {
-		
+
 		return getCurrentTimeString("yyyy-MM-dd-HH-mm-ss-SSS");
 	}
 
 	/**
-	 * gets the current timestamp in the format  specified.
-	 * * @param format String containing the format of the timestamp wanted.
+	 * gets the current timestamp in the format specified. * @param format
+	 * String containing the format of the timestamp wanted.
+	 * 
 	 * @return String
 	 */
 	public static String getCurrentTimeString(String format) {
@@ -138,26 +140,21 @@ public class Util {
 	 * 
 	 * @return String
 	 */
-	public static String getFormattedTime(long  miliseconds ) {
-		
+	public static String getFormattedTime(long miliseconds) {
+
 		DecimalFormat form1 = new DecimalFormat("0");
 		DecimalFormat form2 = new DecimalFormat("00");
 		DecimalFormat form3 = new DecimalFormat("000");
-	      
-		String   formattedTime=""
-				//+	form2.format((long) miliseconds / (1000 * 60 * 60))+ " h : "
-				+	form2.format((long) miliseconds / (1000 * 60))+" m : "
-				+	form2.format((long) miliseconds / 1000)+" s : "
-				+	form3.format((long) miliseconds % 1000)+" ms"
-				;
-		
-		
-		
-		
+
+		String formattedTime = ""
+				// + form2.format((long) miliseconds / (1000 * 60 * 60))+
+				// " h : "
+				+ form2.format((long) miliseconds / (1000 * 60)) + " m : " + form2.format((long) miliseconds / 1000)
+				+ " s : " + form3.format((long) miliseconds % 1000) + " ms";
+
 		return formattedTime;
 	}
 
-	
 	/**
 	 * gets the path of the current temp directory to be used by the
 	 * application. All temporary files should be created in the directory
@@ -168,6 +165,7 @@ public class Util {
 	public static String getTEMP_DIR_PATH() {
 		return TEMP_DIR_PATH;
 	}
+
 	/**
 	 * gets a set of the absolute paths of all the files (recursively) at the
 	 * specified location
@@ -190,6 +188,7 @@ public class Util {
 		}
 		return fileSet;
 	}
+
 	/**
 	 * updates (and creates the directory structure if needed) the location of
 	 * the temporary directory to be used by the application.
@@ -207,62 +206,67 @@ public class Util {
 		return false;
 
 	}
-	
-	public static boolean checkDirectory(File directory, boolean isDirectory,boolean exists, boolean isReadable, boolean isWritable)
-	{
-		if(			
-				(isDirectory? 	directory.isDirectory()		:true)
-				&& (exists? 	directory.exists()			:true)
-				&& (isReadable? directory.canRead() 		:true)
-				&& (isWritable?	directory.canWrite() 		:true)
-				)
+
+	public static boolean checkDirectory(File directory, boolean isDirectory, boolean exists, boolean isReadable,
+			boolean isWritable) {
+		if ((isDirectory ? directory.isDirectory() : true) && (exists ? directory.exists() : true)
+				&& (isReadable ? directory.canRead() : true) && (isWritable ? directory.canWrite() : true))
 			return true;
-		
+
 		return false;
-		
-		
+
 	}
-	public static boolean checkFile(File file, boolean isFile,boolean exists, boolean isReadable, boolean isWritable)
-	{
-		if(			
-				(isFile? 		file.isFile()		:true)
-				&& (exists? 	file.exists()		:true)
-				&& (isReadable? file.canRead() 		:true)
-				&& (isWritable?	file.canWrite() 	:true)
-				)
+
+	public static boolean checkFile(File file, boolean isFile, boolean exists, boolean isReadable, boolean isWritable) {
+		if ((isFile ? file.isFile() : true) && (exists ? file.exists() : true) && (isReadable ? file.canRead() : true)
+				&& (isWritable ? file.canWrite() : true))
 			return true;
-		
+
 		return false;
-		
-		
+
 	}
 
 	/**
 	 * 
-	 *   copies all the contents (files and directories recursively) of the  srcDir to destDir. The destDir is created if it does not exist.
-	 *   example:  srcDir/x and destDir. copyDirectoryContents(srcDir, destDir) would result in: srcDir/x --> destDir/x
-	 *   
-	 *    @see FileUtils  .copyDirectory(File, File)
-	 *    @see FileUtils  .copyFile(File, File)
+	 * copies all the contents (files and directories recursively) of the srcDir
+	 * to destDir. The destDir is created if it does not exist. example:
+	 * srcDir/x and destDir. copyDirectoryContents(srcDir, destDir) would result
+	 * in: srcDir/x --> destDir/x
+	 * 
+	 * @see FileUtils .copyDirectory(File, File)
+	 * @see FileUtils .copyFile(File, File)
 	 * @param srcDir
 	 * @param destDir
 	 * @throws IOException
 	 */
-	public static void copyDirectoryContents(File srcDir, File destDir)
-			throws IOException {
+	public static void copyDirectoryContents(File srcDir, File destDir) throws IOException {
 		// copying all the features.
 		File[] entries = srcDir.listFiles();
-		if(null!=entries)
-		{
-			for(File entry:entries)
-			{
-				File destFeatureFile=new File(destDir.getPath()+"/"+entry.getName());
-				if(entry.isDirectory())
+		if (null != entries) {
+			for (File entry : entries) {
+				File destFeatureFile = new File(destDir.getPath() + "/" + entry.getName());
+				if (entry.isDirectory())
 					FileUtils.copyDirectory(entry, destFeatureFile);
-				else if(entry.isFile())
+				else if (entry.isFile())
 					FileUtils.copyFile(entry, destFeatureFile);
 			}
 		}
+	}
+
+	public static String getStackTrace(Exception e)
+	{
+		String separator = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\n";
+		String pre = "XXXX|";
+		String trace = "";
+		if (null != e) {
+			trace += separator + pre + " " + e.getClass().getCanonicalName() + "::\"" + e.getMessage() + "\"\n";
+			StackTraceElement[] elements = e.getStackTrace();
+			for (StackTraceElement element : elements) {
+				trace += pre + "\t@ " + element.toString() + "\n";
+			}
+			trace += separator;
+		}
+		return trace;
 	}
 
 }

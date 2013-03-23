@@ -1,9 +1,7 @@
 package com.shivanshusingh.pluginanalyser.comparison;
 
-import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.HashMap;
@@ -14,6 +12,7 @@ import java.util.Set;
 import com.shivanshusingh.pluginanalyser.utils.Util;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
 import com.shivanshusingh.pluginanalyser.utils.parsing.Constants;
+import com.shivanshusingh.pluginanalyser.utils.parsing.ParsingUtil;
 
 /**
  * @author Shivanshu Singh
@@ -92,11 +91,11 @@ public class DependencyFinder {
 						+ thisPluginExtractName + "====");
 
 				// restoring the functions information from the file.
-				Set<String> myMethodExports = restorePropertyFromExtract(entry, Constants.PLUGIN_ALL_MY_METHODS_PUBLIC);
-				Set<String> myMethodImports = restorePropertyFromExtract(entry,
+				Set<String> myMethodExports = ParsingUtil.restorePropertyFromExtract(entry, Constants.PLUGIN_ALL_MY_METHODS_PUBLIC);
+				Set<String> myMethodImports = ParsingUtil.restorePropertyFromExtract(entry,
 						Constants.PLUGIN_ALL_MY_METHOD_CALLS_EXTERNAL_AND_NON_JAVA);
-				Set<String> myTypeExports = restorePropertyFromExtract(entry, Constants.PLUGIN_ALL_MY_TYPES_PUBLIC);
-				Set<String> myTypeImports = restorePropertyFromExtract(entry,
+				Set<String> myTypeExports = ParsingUtil.restorePropertyFromExtract(entry, Constants.PLUGIN_ALL_MY_TYPES_PUBLIC);
+				Set<String> myTypeImports = ParsingUtil.restorePropertyFromExtract(entry,
 						Constants.PLUGIN_ALL_TYPES_DETECTED_EXTERNAL_AND_NON_JAVA);
 
 				// merging functions
@@ -157,6 +156,11 @@ public class DependencyFinder {
 	}
 
 	private static void writeData(String pluginDependencySetOutputLocationPath) throws IOException {
+		
+		Set<String> unmatchedFunctionImports=new  HashSet<String>();
+		Set<String> unmatchedTypeImports=new  HashSet<String>();
+		
+		
 		if (!Util.checkAndCreateDirectory(pluginDependencySetOutputLocationPath)) {
 			Log.errln("xxxx\n in writeData() in   DependencyFinder, the output location: "
 					+ pluginDependencySetOutputLocationPath + "  \n is not accessible, cannot record data.  \nxxxx");
@@ -208,6 +212,11 @@ public class DependencyFinder {
 					+ (1 < exp.size() ? " exporters!! PLURAL??" : " exporter") + " available ")
 					+ "\n");
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
+			
+			
+			// add to the unmatchedFunctionImports Set.
+			if(0==exp.size())
+			        unmatchedFunctionImports.add(key);
 
 			// all exporters whose exports were not needed by anyone
 			writer.write(Constants.PLUGIN_DEPENDENCY_EXPORTERS_UNSATISFIED + "\n");
@@ -220,10 +229,18 @@ public class DependencyFinder {
 			// terminating the key ( function name )
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 		}
+		writer.write(Constants.PLUGIN_DEPENDENCY_ALL_UNMATCHED_FUNCTION_IMPORTS + "\n");
+		for(String s:unmatchedFunctionImports)
+			writer.write(s+"\n");
+		writer.write("COUNT="+unmatchedFunctionImports.size()+"\n");
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 		// terminating the functions set
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 
+		
+		
+		
 		writer.close();
 		filewriter.close();
 
@@ -266,6 +283,10 @@ public class DependencyFinder {
 					+ "\n");
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
+			// add to the unmatchedTypeImports Set.
+			if(0==exp.size())
+				unmatchedTypeImports.add(key);
+
 			// all exporters whose exports were not needed by anyone.
 			writer.write(Constants.PLUGIN_DEPENDENCY_EXPORTERS_UNSATISFIED + "\n");
 			writer.write((0 == imp.size() ? true + ", " + exp.size()
@@ -277,42 +298,16 @@ public class DependencyFinder {
 			// terminating the key ( type /class name )
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 		}
+		writer.write(Constants.PLUGIN_DEPENDENCY_ALL_UNMATCHED_TYPE_IMPORTS + "\n");
+		for(String s:unmatchedTypeImports)
+			writer.write(s+"\n");
+		writer.write("COUNT="+unmatchedTypeImports.size()+"\n");
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 		// terminating the types set
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 		writer.close();
 		filewriter.close();
 
-	}
-
-	/**
-	 * @param entry
-	 * @param property
-	 * @return {@link Set}
-	 * @throws IOException
-	 */
-	private static Set<String> restorePropertyFromExtract(File entry, String property) throws IOException {
-
-		property = property.trim();
-		Set<String> result = new HashSet<String>();
-		BufferedReader br = new BufferedReader(new FileReader(entry));
-		String line = "";
-		while (null != (line = br.readLine())) {
-
-			line = line.replace("\n", "").trim();
-			if (property.equalsIgnoreCase(line)) {
-				// found the property.
-				// now push all the entries into the set.
-				while (null != (line = br.readLine())) {
-					line = line.replace("\n", "").trim();
-					if (Constants.MARKER_TERMINATOR.equalsIgnoreCase(line)) {
-						break;
-					}
-					result.add(line);
-				}
-				break;
-			}
-		}
-		return result;
 	}
 }

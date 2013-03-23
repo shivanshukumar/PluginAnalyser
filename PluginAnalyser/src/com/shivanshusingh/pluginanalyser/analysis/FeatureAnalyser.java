@@ -267,8 +267,8 @@ public class FeatureAnalyser {
 
 					// adding the import element to featureinfo;
 					String importElement = (null != importedFeature && !"".equals(importedFeature) ? "feature;"
-							+ importedFeature.trim().toLowerCase() + ";" : (null != importedPlugin
-							&& !"".equals(importedPlugin) ? "plugin;" + importedPlugin.trim().toLowerCase() + ";" : ""));
+							+ importedFeature.trim() + ";" : (null != importedPlugin
+							&& !"".equals(importedPlugin) ? "plugin;" + importedPlugin.trim() + ";" : ""));
 					importElement += (null != importElement && !"".equals(importElement) ? importedElementVersion.trim()
 							+ ";" + importedElementMatch + ";" : "");
 					if (null != importElement && !"".equals(importElement))
@@ -296,7 +296,7 @@ public class FeatureAnalyser {
 
 					// adding the plugin that this feature is made up of to the
 					// featureinformation.
-					featureInfo.addPlugin(eElement.getAttribute("id").trim().toLowerCase() + ";"
+					featureInfo.addPlugin(eElement.getAttribute("id").trim() + ";"
 							+ eElement.getAttribute("version").trim());
 				}
 			}
@@ -400,7 +400,7 @@ public class FeatureAnalyser {
 		// based approach.
 		outputLocation = (outputLocation + "/").trim().replaceAll("//", "/");
 
-		featureFileName = featureFileName.toLowerCase().trim();
+		featureFileName = featureFileName.trim();
 		if (featureFileName.endsWith(Constants.JAR_FILE_EXTENSION))
 			featureFileName = featureFileName
 					.substring(0, featureFileName.length() - Constants.JAR_FILE_EXTENSION.length());

@@ -218,7 +218,7 @@ public class DependencyVisitor extends ClassVisitor {
 
 		boolean startsWithExcludedType = false;
 		for (String s : excludedExternalTypePrefixes)
-			if (ownerclassName.toLowerCase().startsWith(s.toLowerCase())) {
+			if (ownerclassName.startsWith(s)) {
 				startsWithExcludedType = true;
 				break;
 			}
@@ -520,7 +520,7 @@ public class DependencyVisitor extends ClassVisitor {
 		allDetectedTypes.add(typeName);
 		boolean startsWithExcludedType = false;
 		for (String s : excludedExternalTypePrefixes)
-			if (typeName.toLowerCase().startsWith(s.toLowerCase())) {
+			if (typeName.startsWith(s)) {
 				startsWithExcludedType = true;
 				break;
 			}
