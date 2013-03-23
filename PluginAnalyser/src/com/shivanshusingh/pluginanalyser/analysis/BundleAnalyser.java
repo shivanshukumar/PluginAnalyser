@@ -644,7 +644,7 @@ public class BundleAnalyser extends ManifestParser {
 			entry += getInheritanceHeirarchy(key, Constants.DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE,
 					allTypeDependencies_SuperClassAndInterfaces);
 			if (null != entry && !"".equalsIgnoreCase(entry.trim()) && !key.trim().equalsIgnoreCase(entry.trim()))
-				allInheritanceHierarchies.add(key + Constants.DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE + entry);
+				allInheritanceHierarchies.add(entry);
 
 		}
 
