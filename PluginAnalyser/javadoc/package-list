@@ -1,7 +1,11 @@
 com.shivanshusingh.pluginanalyser.analysis
 com.shivanshusingh.pluginanalyser.comparison
+com.shivanshusingh.pluginanalyser.eclipse.marketplace
+com.shivanshusingh.pluginanalyser.eclipse.marketplace.crawling
+com.shivanshusingh.pluginanalyser.eclipse.marketplace.parsing
 com.shivanshusingh.pluginanalyser.job
 com.shivanshusingh.pluginanalyser.staging
+com.shivanshusingh.pluginanalyser.staging.crawling
 com.shivanshusingh.pluginanalyser.utils
 com.shivanshusingh.pluginanalyser.utils.http
 com.shivanshusingh.pluginanalyser.utils.logging
