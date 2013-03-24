@@ -13,3 +13,9 @@ See  PluginAnalyser/src/examples/
 
 
 Some background: <http://slidesha.re/ZtjrjL>
+
+
+Available at:
+GitHub: <http://shivanshukumar.github.com/PluginAnalyser/>
+BitBucket: <https://bitbucket.org/shivanshu/pluginanalyser>
+GoogleCode: <http://code.google.com/p/pluginanalyser/>
