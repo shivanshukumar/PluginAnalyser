@@ -46,8 +46,14 @@ public class EclipseMarketplaceCrawler implements SourceCrawler {
 	private static final String PROTOCOL = "http://";
 
 	private static final String SOLR_SEARCH_URI = "/api/p/search/apachesolr_search";
+	
+	private static final String UPDATE_SITE_FILE_EXTENTION = ".xml";
 
-	private static final String SOURCE = "marketplace.eclipse.org";
+	private static final String SOURCES[] = {
+		"marketplace.eclipse.org",
+//		"market.eclipsesource.com/yoxos",
+		
+		};
 
 	private String DEST_DIR_PATH = null;
 
@@ -140,7 +146,7 @@ public class EclipseMarketplaceCrawler implements SourceCrawler {
 		 * [node id] and try to see if any update API is available.
 		 * *********************************************
 		 */
-
+	for(String SOURCE:SOURCES)
 		for (int nodeId = startId; nodeId <= endId; nodeId++) {
 
 			boolean flag_wasRecorded = false;
@@ -220,7 +226,7 @@ public class EclipseMarketplaceCrawler implements SourceCrawler {
 			}
 			if (null != file) {
 				if (null != this.DEST_DIR_PATH && flag_wasRecorded) {
-					File newFile = new File(this.DEST_DIR_PATH + "/" + source.replaceAll("/", "-"));
+					File newFile = new File(this.DEST_DIR_PATH + "/" +SOURCE.replaceAll("/", "-")+"/"+ source.replaceAll("/", "-")+UPDATE_SITE_FILE_EXTENTION);
 					if (newFile.exists())
 						newFile.delete();
 					try {
