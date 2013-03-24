@@ -8,6 +8,8 @@ import com.shivanshusingh.pluginanalyser.analysis.AnalysisRunner;
 import com.shivanshusingh.pluginanalyser.comparison.DependencyFinder;
 import com.shivanshusingh.pluginanalyser.eclipse.marketplace.crawling.EclipseMarketplaceCrawler;
 import com.shivanshusingh.pluginanalyser.staging.DownloadAndStagingRunner;
+import com.shivanshusingh.pluginanalyser.staging.crawling.SourceCrawler;
+import com.shivanshusingh.pluginanalyser.staging.crawling.UpdateSiteInfo;
 import com.shivanshusingh.pluginanalyser.utils.Util;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
 
@@ -28,10 +30,21 @@ public class PluginAnalyserJobRunner {
 		///////////////////////////////////////////////////
 		//  		building the update site set from eclipse marketplace
 		
-		//EclipseMarketplaceCrawler ec=new EclipseMarketplaceCrawler();
-		//ec.crawl();
-		
-		
+
+//		SourceCrawler ec=new EclipseMarketplaceCrawler();
+//		SourceCrawler ec=new EclipseMarketplaceCrawler(0, 1000, "./_UPDATESITEDATA");
+//		
+//		ec.crawl();
+//		Set<UpdateSiteInfo> gotUpdateSites=  new HashSet();
+//		gotUpdateSites.addAll(ec.getSites());
+//		
+//		for(    UpdateSiteInfo updateSiteInfo:gotUpdateSites)
+//		{
+//			Log.outln("name="+    updateSiteInfo.getName());
+//			Log.outln("site="+    updateSiteInfo.getUpdateURL());
+//				
+//		}		
+		// TODO:  use the gotUpdateSites to pupulate the set of update sites to fetch here.
 		///////////////////////////////////////////////////
 		
 		

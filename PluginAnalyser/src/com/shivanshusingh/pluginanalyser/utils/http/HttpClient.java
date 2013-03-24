@@ -28,6 +28,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 
 import com.shivanshusingh.pluginanalyser.utils.Util;
+import com.shivanshusingh.pluginanalyser.utils.logging.Log;
 
 
 public class HttpClient {
@@ -37,12 +38,18 @@ public class HttpClient {
 	
 	public static HttpResponse get(String site, String suffix, Map<String, String> params) throws URISyntaxException {
 
-		System.out.println("GET=" + getBaseURI(site, suffix, params));
+		return	get( site,  suffix,  params, null) ;
+
+	}
+	public static HttpResponse get(String site, String suffix, Map<String, String> params, String mime) throws URISyntaxException {
+
+		Log.outln("GET=" + getBaseURI(site, suffix, params));
 		HttpGet request = new HttpGet(getBaseURI(site, suffix, params));
 		HttpResponse response = null;
-		response =makeRequest(request) ;
+		response =makeRequest(request, mime) ;
 		//handleResponse_print(response  );
 		return   response;
+		
 
 	}
 	public static boolean connect(String site) {
@@ -58,7 +65,7 @@ public class HttpClient {
 				return false;
 			}
 			if (!(response.getStatusLine().getStatusCode() == 200)) {
-				// System.out.println("could not get a response");
+				// Log.outln("could not get a response");
 				return false;
 			}
 			HttpEntity httpEntity = response.getEntity();
@@ -71,7 +78,7 @@ public class HttpClient {
 
 				String line = "";
 				while ((line = rd.readLine()) != null) {
-					System.out.println(line);
+					Log.outln(line);
 				}
 		} catch (NoHttpResponseException e2) {
 			// e2.printStackTrace();
@@ -93,7 +100,7 @@ public class HttpClient {
 	
 	public static HttpResponse post(String site, String suffix, Map<String, String> getParams,
 			Map<String, String> postParams) throws URISyntaxException {
-		System.out.println("POST=" + getBaseURI(site, suffix, getParams));
+		Log.outln("POST=" + getBaseURI(site, suffix, getParams));
 
 		HttpPost request = new HttpPost(getBaseURI(site, suffix, getParams));
 
@@ -166,36 +173,7 @@ public class HttpClient {
 	 */
 	public static void handleResponse_print(HttpResponse response) {
 		
-		if (null == response) {
-			System.out.println("could not get a response");
-			return;
-		}
-		if (!(response.getStatusLine().getStatusCode() == 200)) {
-			System.out.println("status of response = not ok = "        +response.getStatusLine().getStatusCode()  );
-			return;
-		}
-		HttpEntity httpEntity = response.getEntity();
-		// Get the response
-		BufferedReader rd;
-		String output = "";
-		try {
-			rd = new BufferedReader(new InputStreamReader(
-					httpEntity.getContent()));
-
-			String line = "";
-			while ((line = rd.readLine()) != null) {
-				output += line;
-				// System.out.println(line);
-			}
-			System.out.println(output);
-			
-
-		} 
-		 catch (IllegalStateException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		Log.outln(handleResponse_makeString(response));
 	}
 
 	private static URI getBaseURI(String site, String suffix, Map<String, String> params) throws URISyntaxException {
@@ -232,16 +210,15 @@ public class HttpClient {
 		File file = null;
 
 		if (null == response) {
-			System.out.println("could not get a response");
+			Log.outln("could not get a response");
 			return file;
 		}
 		if (!(response.getStatusLine().getStatusCode() == 200)) {
-			System.out.println("status of response = not ok = " + response.getStatusLine().getStatusCode());
+			Log.outln("status of response = not ok = " + response.getStatusLine().getStatusCode());
 			return file;
 		}
 
 		HttpEntity httpEntity = response.getEntity();
-		
 		// put the response in a file and return the file handler.
 		file = new File(fileName);
 
@@ -265,6 +242,45 @@ public class HttpClient {
 		}
 
 		return file;
+	}
+	
+	
+	public static String handleResponse_makeString(HttpResponse response) {
+		String output = "";
+		if (null == response) {
+			Log.outln("could not get a response");
+			return  output;
+		}
+		if (!(response.getStatusLine().getStatusCode() == 200)) {
+			Log.outln("status of response = not ok = "        +response.getStatusLine().getStatusCode()  );
+			return  output;
+		}
+		HttpEntity httpEntity = response.getEntity();
+		// Get the response
+		BufferedReader rd;
+		
+		try {
+			rd = new BufferedReader(new InputStreamReader(
+					httpEntity.getContent()));
+
+			String line = "";
+			while ((line = rd.readLine()) != null) {
+				output += line;
+				// Log.outln(line);
+			}
+			
+			
+
+		} 
+		 catch (IllegalStateException e) {
+			
+			e.printStackTrace();
+			 return"";
+		} catch (IOException e) {
+			e.printStackTrace();
+			return "";
+		}
+		return output;
 	}
 
 }

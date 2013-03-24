@@ -2,6 +2,8 @@ package com.shivanshusingh.pluginanalyser.utils;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -267,6 +269,21 @@ public class Util {
 			trace += separator;
 		}
 		return trace;
+	}
+
+	/**
+	 * 	returns {@code true}  if  {@code spec}  is a valid URL,  {@code false  }  otherwise.  
+	 * @param spec
+	 * @return  {@code true}  or  {@code false  } 
+	 *  
+	 */
+	public static boolean validURL(String spec) {
+		try {
+			java.net.URL url=new URL(spec  );
+		} catch (MalformedURLException e) {
+			return false;
+		}
+		return true;
 	}
 
 }
