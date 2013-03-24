@@ -6,8 +6,8 @@ import java.util.Set;
 
 import com.shivanshusingh.pluginanalyser.analysis.AnalysisRunner;
 import com.shivanshusingh.pluginanalyser.comparison.DependencyFinder;
+import com.shivanshusingh.pluginanalyser.eclipse.marketplace.crawling.EclipseMarketplaceCrawler;
 import com.shivanshusingh.pluginanalyser.staging.DownloadAndStagingRunner;
-import com.shivanshusingh.pluginanalyser.staging.EclipseMarketplaceCrawler;
 import com.shivanshusingh.pluginanalyser.utils.Util;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
 
@@ -138,7 +138,7 @@ public class PluginAnalyserJobRunner {
 			 */
 
 			String outputLocation = "./" + currOutpurDir + "/_OUTPUT";
-		AnalysisRunner.analyseAndRecord(destinationDirectory, outputLocation, true);
+			AnalysisRunner.analyseAndRecord(destinationDirectory, outputLocation, true);
 
 			// //////////////////////////////////////////////////////
 			// the dependency finder.

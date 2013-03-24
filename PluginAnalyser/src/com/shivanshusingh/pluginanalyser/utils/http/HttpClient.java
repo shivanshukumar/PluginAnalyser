@@ -1,6 +1,9 @@
 package com.shivanshusingh.pluginanalyser.utils.http;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
@@ -23,6 +26,9 @@ import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
+
+import com.shivanshusingh.pluginanalyser.utils.Util;
+
 
 public class HttpClient {
 	
@@ -159,6 +165,7 @@ public class HttpClient {
 	 * @param response
 	 */
 	public static void handleResponse_print(HttpResponse response) {
+		
 		if (null == response) {
 			System.out.println("could not get a response");
 			return;
@@ -212,6 +219,52 @@ public class HttpClient {
 				s="";
 			}
 		return new URIBuilder(site + (null!=suffix? suffix:"") + s).build();
+	}
+	
+	
+	public static File handleResponse_makeFile(HttpResponse response) {
+		String fileName = (
+					Util.getTEMP_DIR_PATH() +
+					"/pa-sks-tmp-" +
+					("" + Math.random()).replaceAll("\\.", "-")
+				).replaceAll("//", "/");
+		
+		File file = null;
+
+		if (null == response) {
+			System.out.println("could not get a response");
+			return file;
+		}
+		if (!(response.getStatusLine().getStatusCode() == 200)) {
+			System.out.println("status of response = not ok = " + response.getStatusLine().getStatusCode());
+			return file;
+		}
+
+		HttpEntity httpEntity = response.getEntity();
+		
+		// put the response in a file and return the file handler.
+		file = new File(fileName);
+
+		try {
+
+			BufferedWriter bufferedTempWriter = new BufferedWriter(new FileWriter(file));
+
+			BufferedReader bufferedTempReader = new BufferedReader(new InputStreamReader(httpEntity.getContent()));
+
+			int inread;
+			while ((inread = bufferedTempReader.read()) != -1) {
+				bufferedTempWriter.write(inread);
+			}
+			bufferedTempReader.close();
+			bufferedTempWriter.close();
+
+		} catch (IllegalStateException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		return file;
 	}
 
 }
