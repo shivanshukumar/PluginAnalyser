@@ -22,23 +22,22 @@ public class ExamplePluginAnalyserJobRunner {
 
 	public static void main(String[] args) {
 
-		
-	
-//		SourceCrawler ec=new EclipseMarketplaceCrawler();
-		SourceCrawler ec=new EclipseMarketplaceCrawler(1,500, "./_UPDATE-SITE-DATA");
-		ec.crawl();
-		Set<UpdateSiteInfo> gotUpdateSites=  new HashSet();
+		/*SourceCrawler ec = new EclipseMarketplaceCrawler();
+		// SourceCrawler ec=new EclipseMarketplaceCrawler(240001,250000,
+		// "./_UPDATE-SITE-DATA");
+		// ec.crawl();
+		ec.restoreFromBaseLocation("./_UPDATE-SITE-DATA");
+		Set<UpdateSiteInfo> gotUpdateSites = new HashSet();
 		gotUpdateSites.addAll(ec.getSites());
-		
-		for(    UpdateSiteInfo updateSiteInfo:gotUpdateSites)
-		{
-			Log.outln("name="+    updateSiteInfo.getName()+";\t site="+    updateSiteInfo.getUpdateURL());
-				
+
+		for (UpdateSiteInfo updateSiteInfo : gotUpdateSites) {
+			Log.outln("name=" + updateSiteInfo.getName() + ";\t site=" + updateSiteInfo.getUpdateURL());
+
 		}
-		
-//		PluginAnalyserJobRunner job = new PluginAnalyserJobRunner();
-//		job.run();
-	
+		Log.outln("" + gotUpdateSites.size());
+*/
+		 PluginAnalyserJobRunner job = new PluginAnalyserJobRunner();
+		 job.run();
 
 	}
 

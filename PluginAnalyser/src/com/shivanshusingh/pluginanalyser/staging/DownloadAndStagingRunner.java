@@ -4,9 +4,8 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Collection;
 import java.util.Set;
-
-import org.apache.commons.io.FileUtils;
 
 import com.shivanshusingh.pluginanalyser.utils.Util;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
@@ -18,8 +17,8 @@ import com.shivanshusingh.pluginanalyser.utils.logging.Log;
  * 
  */
 public class DownloadAndStagingRunner {
-	  private static String FEATURE_FOLDER_REL_PATH = "/features";
-	  private static     String PLUGIN_FOLDER_REL_PATH = "/plugins";
+	private static String FEATURE_FOLDER_REL_PATH = "/features";
+	private static String PLUGIN_FOLDER_REL_PATH = "/plugins";
 
 	/**
 	 * to download (mirror) a p2 repository / update site . Sets the stage for
@@ -52,14 +51,13 @@ public class DownloadAndStagingRunner {
 	 *            mirroring will be done.
 	 * @throws IOException
 	 */
-	public static boolean downloadAndStage(String eclipseHome,
-			String eclipseApp, String equinoxAppName,
-			Set<String> updateSiteURLCollection, String destinationDirectory,
-			boolean verbose, boolean raw, boolean eraseOld) throws IOException {
+	public static boolean downloadAndStage(String eclipseHome, String eclipseApp, String equinoxAppName,
+			Collection updateSiteURLCollection, String destinationDirectory, boolean verbose, boolean raw, boolean eraseOld)
+			throws IOException {
 
-		boolean flag_ErrorInSomeRepositoryDownload=false;
+		boolean flag_ErrorInSomeRepositoryDownload = false;
 		if (null == updateSiteURLCollection) {
-			// if the updatestitecollection   is null, return.
+			// if the updatestitecollection is null, return.
 			Log.errln("xxxx  The updateSiteUrlCollection specified is null . Cannot download and stage anything.");
 			Log.outln("xxxx  The updateSiteUrlCollection specified is null . Cannot download and stage anything.");
 
@@ -83,39 +81,35 @@ public class DownloadAndStagingRunner {
 
 		int totalSites = updateSiteURLCollection.size();
 
-		for (String updateSiteURL : updateSiteURLCollection) {
+		for (Object updateSiteURLElem : updateSiteURLCollection) {
 			sitesDone++;
-			updateSiteURL=updateSiteURL.trim();
-			// using the eclipse update manager from command line to get features  and plugin artifacts.
+			String updateSiteURL = ((String) updateSiteURLElem).trim();
+			// using the eclipse update manager from command line to get
+			// features and plugin artifacts.
 			// http://wiki.eclipse.org/Equinox_p2_Repository_Mirroring
-			String command = eclipseHome.trim()
-					+ "/"
+			String command = eclipseHome.trim() + "/"
 					+ eclipseApp.trim()
 					+
 					// (writeModeClean? " -writeMode clean" : "" ) +
-					(verbose ? " -verbose" : "") + (raw ? " -raw" : "")
-					+ " -nosplash" + " -includeOptional" + " -application "
-					+ equinoxAppName.trim() + " -source "
-					+ updateSiteURL + " -destination " + "file:"
+					(verbose ? " -verbose" : "") + (raw ? " -raw" : "") + " -nosplash" + " -includeOptional"
+					+ " -application " + equinoxAppName.trim() + " -source " + updateSiteURL + " -destination " + "file:"
 					+ destinationDirectory.trim();
 
-			Log.outln("Starting Download and Staging Process of " + sitesDone + " of "
-					+ totalSites +"  |  Source="  +updateSiteURL  );
-			Log.errln("Starting Download and Staging Process of " + sitesDone + " of "
-					+ totalSites +"  |  Source="  +updateSiteURL  );
-			
+			Log.outln("Starting Download and Staging Process of " + sitesDone + " of " + totalSites + "  |  Source="
+					+ updateSiteURL);
+			Log.errln("Starting Download and Staging Process of " + sitesDone + " of " + totalSites + "  |  Source="
+					+ updateSiteURL);
+
 			Log.outln("EXECUTING: " + command);
 			Process child = Runtime.getRuntime().exec(command);
 
-			BufferedReader br = new BufferedReader(new InputStreamReader(
-					child.getInputStream()));
+			BufferedReader br = new BufferedReader(new InputStreamReader(child.getInputStream()));
 			int inread;
 			while ((inread = br.read()) != -1) {
 				Log.out((char) inread);
 			}
 			br.close();
-			br = new BufferedReader(new InputStreamReader(
-					child.getErrorStream()));
+			br = new BufferedReader(new InputStreamReader(child.getErrorStream()));
 			while ((inread = br.read()) != -1) {
 				Log.err((char) inread);
 			}
@@ -129,27 +123,26 @@ public class DownloadAndStagingRunner {
 			}
 
 			int exitValue = child.exitValue();
-			Log.outln("Download and Staging Process of " + sitesDone + " of "
-					+ totalSites + " , exitvalue(0=success)=" + exitValue +"  |  Source="  +updateSiteURL  );
-			Log.errln("Download and Staging Process  " + sitesDone + " of "
-					+ totalSites + " , exitvalue(0=success)=" + exitValue +"  |  Source="  +updateSiteURL  );
+			Log.outln("Download and Staging Process of " + sitesDone + " of " + totalSites + " , exitvalue(0=success)="
+					+ exitValue + "  |  Source=" + updateSiteURL);
+			Log.errln("Download and Staging Process  " + sitesDone + " of " + totalSites + " , exitvalue(0=success)="
+					+ exitValue + "  |  Source=" + updateSiteURL);
 
 			child.destroy();
 
 			if (0 != exitValue) {
-				Log.outln("XXXXXXXX  \n Download and Staging Process for : "+ updateSiteURL
+				Log.outln("XXXXXXXX  \n Download and Staging Process for : " + updateSiteURL
 						+ "\n could not finish  properly, \n and the mirrored site may not be proper.  \nXXXXXXXXX");
-				Log.errln("XXXXXXXX  \n Download and Staging Process for : "	+ updateSiteURL
+				Log.errln("XXXXXXXX  \n Download and Staging Process for : " + updateSiteURL
 						+ "\n could not finish  properly, \n and the mirrored site may not be proper.  \nXXXXXXXXX");
-				flag_ErrorInSomeRepositoryDownload= true;
+				flag_ErrorInSomeRepositoryDownload = true;
 
 			} else {
-				Log.outln("=========  \n Download and Staging Process  for : \n "
-						+ updateSiteURL
+				Log.outln("=========  \n Download and Staging Process  for : \n " + updateSiteURL
 						+ "\n successfully completed \n========");
 			}
 		}
-		return   !flag_ErrorInSomeRepositoryDownload;
+		return !flag_ErrorInSomeRepositoryDownload;
 	}
 
 	/**
@@ -192,22 +185,15 @@ public class DownloadAndStagingRunner {
 	 * 
 	 * @throws IOException
 	 */
-	public static boolean downloadAndStageWithEclipseInstallation(
-			String eclipseHome,
-			String eclipseApp,
-			String equinoxAppName,
-			String baseEclipseInstallationHome,
-			Set<String> updateSiteURLCollection,
-			String destinationDirectory,
-			boolean verbose,
-			boolean raw,
-			 boolean eraseOld
+	public static boolean downloadAndStageWithEclipseInstallation(String eclipseHome, String eclipseApp,
+			String equinoxAppName, String baseEclipseInstallationHome, Collection updateSiteURLCollection,
+			String destinationDirectory, boolean verbose, boolean raw, boolean eraseOld
 
 	) throws IOException {
-		
+
 		Log.outln("========  Starting  Eclipse Base Installation Staging  ==========");
 		Log.errln("========  Starting  Eclipse Base Installation Staging  ==========");
-		
+
 		if (eraseOld) {
 			File f = new File(destinationDirectory);
 			if (f.exists()) {
@@ -220,93 +206,87 @@ public class DownloadAndStagingRunner {
 
 			}
 		}
-		
-		File srcDirectory = new File(baseEclipseInstallationHome);
-		
-		File srcFeatureDirectory = new File(baseEclipseInstallationHome
-				+ FEATURE_FOLDER_REL_PATH);
-		File srcPluginDirectory = new File(baseEclipseInstallationHome
-				+ PLUGIN_FOLDER_REL_PATH);
 
-		if (!Util.checkDirectory(srcDirectory, true, true, true,	false)) {
+		File srcDirectory = new File(baseEclipseInstallationHome);
+
+		File srcFeatureDirectory = new File(baseEclipseInstallationHome + FEATURE_FOLDER_REL_PATH);
+		File srcPluginDirectory = new File(baseEclipseInstallationHome + PLUGIN_FOLDER_REL_PATH);
+
+		if (!Util.checkDirectory(srcDirectory, true, true, true, false)) {
 
 			// this means that the directory does not exist or the specified
 			// file path does not pooint to a directory.
-			Log.errln("XXXXX  The specified directory:"
-					+ srcDirectory.getAbsolutePath()
+			Log.errln("XXXXX  The specified directory:" + srcDirectory.getAbsolutePath()
 					+ " is not a directory or does not exist or not readable.  ");
 			return false;
 		}
 
-		if (!Util.checkDirectory(srcFeatureDirectory, true,	true, true, false))
+		if (!Util.checkDirectory(srcFeatureDirectory, true, true, true, false))
 
 		{
 			// this means that the directory does not exist or the specified
 			// file path does not pooint to a directory.
-			Log.errln("XXXXX  The specified directory:"
-					+ srcFeatureDirectory.getAbsolutePath()
+			Log.errln("XXXXX  The specified directory:" + srcFeatureDirectory.getAbsolutePath()
 					+ " is not a directory or does not exist  or not readable  ");
 			return false;
 		}
-		if (!Util.checkDirectory(srcPluginDirectory, true,		true, true, false))
+		if (!Util.checkDirectory(srcPluginDirectory, true, true, true, false))
 
 		{
 			// this means that the directory does not exist or the specified
 			// file path does not pooint to a directory.
-			Log.errln("XXXXX  The specified directory:"
-					+ srcPluginDirectory.getAbsolutePath()
+			Log.errln("XXXXX  The specified directory:" + srcPluginDirectory.getAbsolutePath()
 					+ " is not a directory or does not exist or  not   readable. ");
 			return false;
 		}
-		
-		// checking if the destination directory already exists if not then create it,
-		
-		if(!Util.checkAndCreateDirectory(destinationDirectory))
-		{
-			Log.errln("XXXXX  The specified directory:"
-					+ destinationDirectory
+
+		// checking if the destination directory already exists if not then
+		// create it,
+
+		if (!Util.checkAndCreateDirectory(destinationDirectory)) {
+			Log.errln("XXXXX  The specified directory:" + destinationDirectory
 					+ " is not a directory or could not create it. ");
 			return false;
 		}
-		
-		// checking if the destination  features directory already exists if not then create it,
 
-		String destFeatureDirectoryPath = destinationDirectory+FEATURE_FOLDER_REL_PATH;
-		if(!Util.checkAndCreateDirectory(destFeatureDirectoryPath))
-		{
-			Log.errln("XXXXX  The specified directory:" + destFeatureDirectoryPath + " is not a directory or could not create it. ");
+		// checking if the destination features directory already exists if not
+		// then create it,
+
+		String destFeatureDirectoryPath = destinationDirectory + FEATURE_FOLDER_REL_PATH;
+		if (!Util.checkAndCreateDirectory(destFeatureDirectoryPath)) {
+			Log.errln("XXXXX  The specified directory:" + destFeatureDirectoryPath
+					+ " is not a directory or could not create it. ");
 			return false;
 		}
-		
-		// checking if the destination  plugin directory already exists if not then create it,
 
-		String destPluginDirectoryPath = destinationDirectory+PLUGIN_FOLDER_REL_PATH;
-		if(!Util.checkAndCreateDirectory(destPluginDirectoryPath))
-		{
-			Log.errln("XXXXX  The specified directory:" + destPluginDirectoryPath + " is not a directory or could not create it. ");
+		// checking if the destination plugin directory already exists if not
+		// then create it,
+
+		String destPluginDirectoryPath = destinationDirectory + PLUGIN_FOLDER_REL_PATH;
+		if (!Util.checkAndCreateDirectory(destPluginDirectoryPath)) {
+			Log.errln("XXXXX  The specified directory:" + destPluginDirectoryPath
+					+ " is not a directory or could not create it. ");
 			return false;
 		}
-		
-		try{
-		File destFeatureDirectory = new File(destFeatureDirectoryPath);
-		File destPluginDirectory = new File(destPluginDirectoryPath);
-		// copying all the features.
-		Util.copyDirectoryContents(srcFeatureDirectory, destFeatureDirectory);
-		// copying all the plugin.
-		Util.copyDirectoryContents(srcPluginDirectory, destPluginDirectory);
-		}catch(IOException e)
-		{
+
+		try {
+			File destFeatureDirectory = new File(destFeatureDirectoryPath);
+			File destPluginDirectory = new File(destPluginDirectoryPath);
+			// copying all the features.
+			Util.copyDirectoryContents(srcFeatureDirectory, destFeatureDirectory);
+			// copying all the plugin.
+			Util.copyDirectoryContents(srcPluginDirectory, destPluginDirectory);
+		} catch (IOException e) {
 			Log.errln("xxxx  could not stage the eclipse base installation,  Exit.  Error in copying featues and plugins . ");
 			Log.errln(e.getStackTrace().toString());
 			return false;
 		}
-	
+
 		Log.outln("========  Eclipse Base Installation Staging done, now Staging the Update Sites. ==========");
 		Log.errln("========  Eclipse Base Installation Staging done, now Staging the Update Sites. ==========");
-		
-		return  downloadAndStage(eclipseHome, eclipseApp, equinoxAppName,
-				updateSiteURLCollection, destinationDirectory, verbose, raw,
-				false);
+
+		return downloadAndStage(eclipseHome, eclipseApp, equinoxAppName, updateSiteURLCollection, destinationDirectory,
+				verbose, raw, false);
 	}
 
 }

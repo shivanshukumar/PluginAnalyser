@@ -30,5 +30,10 @@ public interface SourceCrawler {
 	 * @see SourceCrawler.getSites()
 	 */
 	public void crawl();
+	/**
+	 * restores the data from the  files at the specified  location to create or  refresh the siteURLs List. call getSites() after this to get the  updated Sites List.
+	 * @see SourceCrawler.getSites()
+	 */
+	public void restoreFromBaseLocation(String pathToBaseLocationDir);
 
 }

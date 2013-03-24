@@ -53,4 +53,9 @@ public class EclipseUpdateSiteInformation implements UpdateSiteInfo {
 	public String getName() {
 		return nodeName;
 	}
+
+	@Override
+	public String getId() {
+		return nodeId;
+	}
 }

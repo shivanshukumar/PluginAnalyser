@@ -12,6 +12,7 @@ import javax.xml.parsers.ParserConfigurationException;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.http.HttpResponse;
+import org.w3c.dom.DOMException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -46,20 +47,16 @@ public class EclipseMarketplaceCrawler implements SourceCrawler {
 	private static final String PROTOCOL = "http://";
 
 	private static final String SOLR_SEARCH_URI = "/api/p/search/apachesolr_search";
-	
+
 	private static final String UPDATE_SITE_FILE_EXTENTION = ".xml";
 
-	private static final String SOURCES[] = {
-		"marketplace.eclipse.org",
-//		"market.eclipsesource.com/yoxos",
-		
-		};
+	private static final String SOURCE = "marketplace.eclipse.org";
 
 	private String DEST_DIR_PATH = null;
 
 	private int endId = 1000;
 
-	private Map<String, EclipseUpdateSiteInformation> siteURLs;// =new
+	private Map<String, EclipseUpdateSiteInformation> updateSites;// =new
 	// HashSet<String>();
 
 	private int startId = 1;
@@ -135,18 +132,21 @@ public class EclipseMarketplaceCrawler implements SourceCrawler {
 		 * Also, there is a solr search API as well for more structured focussed
 		 * queries which can be used later on. See
 		 * http://wiki.eclipse.org/Marketplace/REST#Building_a_Catalog
-		 */
+		 *
+		
+		// TODO get a list of all nodes in the regular way so that only the  relevant nodeIDs can be queried instead of going brute force on this.
 
 		/*
 		 * Continuing from the above, ............
-		 * ********************************************** HOWEVER, ther is a
-		 * HACKY WAY to get a bunch of URLs, if just a bunch of update URLs are
-		 * all that we need. take the api :
-		 * http://marketplace.eclipse.org/node/[node id]/api/p and iterate over
-		 * [node id] and try to see if any update API is available.
+		 * **********************************************
+		 *  HOWEVER, ther is a HACKY WAY to get a bunch of URLs,
+		 *  if just a bunch of update URLs are all that we need.
+		 *  take the api :
+		 *  http://marketplace.eclipse.org/node/[node id]/api/p and iterate over
+		 *  [node id] and try to see if any update API is available.
 		 * *********************************************
 		 */
-	for(String SOURCE:SOURCES)
+
 		for (int nodeId = startId; nodeId <= endId; nodeId++) {
 
 			boolean flag_wasRecorded = false;
@@ -161,72 +161,11 @@ public class EclipseMarketplaceCrawler implements SourceCrawler {
 				continue;
 			}
 			File file = HttpClient.handleResponse_makeFile(httpResponse);
-			try {
-				if (null == file) {
-					// this means that there was no response from the server.
-					continue;
-				}
-				Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(file);
-				doc.normalizeDocument();
-
-				// checking if the entry that we got has any information in it,
-				// i.e. if any information for the said [node id] exists at all.
-				NodeList nodeList = doc.getElementsByTagName(Constants.NODE_ELEM);
-				if (null != nodeList && 1 <= nodeList.getLength()) {
-					// this means that there is something available and that a
-					// node for the given nodeId exists in the marketplace.
-
-					// there is only one node element, for sure as we asked for
-					// only one :)
-					Node nodeItem = nodeList.item(0);
-
-					if (null != nodeItem) {
-						Element nodeElem = (Element) nodeItem;
-
-						if (null != nodeElem.getTextContent() && 1 <= nodeElem.getTextContent().trim().length()) {
-
-							// Ahhhh, we finally have soemthing at hand, lets
-							// extract infotmation now.
-
-							// but still, lets check if there is any update site
-							// information present.
-							NodeList updateURLList = doc.getElementsByTagName(Constants.NODE_ELEM_UPDATE_URL);
-							if (null != updateURLList && 1 <= updateURLList.getLength()) {
-								Node nodeURLItem = updateURLList.item(0);
-								if (null != nodeURLItem) {
-									String updateSiteURL = ((Element) nodeURLItem).getTextContent();
-									// System.out.println("updateSiteURL="+updateSiteURL);
-									if (null != updateSiteURL && 1 <= updateSiteURL.trim().replace(PROTOCOL, "").length()
-											&& Util.validURL(updateSiteURL)) {
-										String gotNodeId = nodeElem.getAttribute(Constants.NODE_ELEM_NODE_ID).trim();
-										EclipseUpdateSiteInformation eusi = new EclipseUpdateSiteInformation();
-										if (this.siteURLs.containsKey(gotNodeId))
-											eusi = this.siteURLs.get(gotNodeId);
-										eusi.setNodeId(nodeElem.getAttribute(Constants.NODE_ELEM_NODE_ID).trim());
-										eusi.setNodeName(nodeElem.getAttribute(Constants.NODE_ELEM_NODE_NAME).trim());
-										eusi.setUpdateURL(updateSiteURL.trim());
-										this.siteURLs.put(gotNodeId, eusi);
-										flag_wasRecorded = true;
-										// System.out.println("OUTPUT+++++++========="
-										// + eusi.nodeId+eusi.nodeName +
-										// eusi.updateURL );
-									}
-								}
-							}
-						}
-					}
-				}
-
-			} catch (SAXException e) {
-				e.printStackTrace();
-			} catch (IOException e) {
-				e.printStackTrace();
-			} catch (ParserConfigurationException e) {
-				e.printStackTrace();
-			}
+			flag_wasRecorded = recordUpdateSite( file);
 			if (null != file) {
 				if (null != this.DEST_DIR_PATH && flag_wasRecorded) {
-					File newFile = new File(this.DEST_DIR_PATH + "/" +SOURCE.replaceAll("/", "-")+"/"+ source.replaceAll("/", "-")+UPDATE_SITE_FILE_EXTENTION);
+					File newFile = new File(this.DEST_DIR_PATH + "/" + SOURCE.replaceAll("/", "-") + "/"
+							+ source.replaceAll("/", "-") + UPDATE_SITE_FILE_EXTENTION);
 					if (newFile.exists())
 						newFile.delete();
 					try {
@@ -246,13 +185,89 @@ public class EclipseMarketplaceCrawler implements SourceCrawler {
 
 	}
 
+	/**
+	 * 
+	 * makes a record of the updateSite if it is possible / applicable in the {@link updateSites} Map.
+	 * @param file
+	 * @return {@code true} if a recording happened, {@code false} otherwise.
+	 * @throws DOMException
+	 */
+	private boolean recordUpdateSite( File file) throws DOMException {
+		
+		boolean flag_wasRecorded=false;
+		try {
+			if (null == file) {
+				// this means that there was no response from the server.
+				return false;
+			}
+			Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(file);
+			doc.normalizeDocument();
+
+			// checking if the entry that we got has any information in it,
+			// i.e. if any information for the said [node id] exists at all.
+			NodeList nodeList = doc.getElementsByTagName(Constants.NODE_ELEM);
+			if (null != nodeList && 1 <= nodeList.getLength()) {
+				// this means that there is something available and that a
+				// node for the given nodeId exists in the marketplace.
+
+				// there is only one node element, for sure as we asked for
+				// only one :)
+				Node nodeItem = nodeList.item(0);
+
+				if (null != nodeItem) {
+					Element nodeElem = (Element) nodeItem;
+
+					if (null != nodeElem.getTextContent() && 1 <= nodeElem.getTextContent().trim().length()) {
+
+						// Ahhhh, we finally have soemthing at hand, lets
+						// extract infotmation now.
+
+						// but still, lets check if there is any update site
+						// information present.
+						NodeList updateURLList = doc.getElementsByTagName(Constants.NODE_ELEM_UPDATE_URL);
+						if (null != updateURLList && 1 <= updateURLList.getLength()) {
+							Node nodeURLItem = updateURLList.item(0);
+							if (null != nodeURLItem) {
+								String updateSiteURL = ((Element) nodeURLItem).getTextContent();
+								// System.out.println("updateSiteURL="+updateSiteURL);
+								if (null != updateSiteURL && 1 <= updateSiteURL.trim().replace(PROTOCOL, "").length()
+										&& Util.validURL(updateSiteURL)) {
+									String gotNodeId = nodeElem.getAttribute(Constants.NODE_ELEM_NODE_ID).trim();
+									EclipseUpdateSiteInformation eusi = new EclipseUpdateSiteInformation();
+									if (this.updateSites.containsKey(gotNodeId))
+										eusi = this.updateSites.get(gotNodeId);
+									eusi.setNodeId(nodeElem.getAttribute(Constants.NODE_ELEM_NODE_ID).trim());
+									eusi.setNodeName(nodeElem.getAttribute(Constants.NODE_ELEM_NODE_NAME).trim());
+									eusi.setUpdateURL(updateSiteURL.trim());
+									this.updateSites.put(gotNodeId, eusi);
+									flag_wasRecorded = true;
+									// System.out.println("OUTPUT+++++++========="
+									// + eusi.nodeId+eusi.nodeName +
+									// eusi.updateURL );
+								}
+							}
+						}
+					}
+				}
+			}
+
+		} catch (SAXException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (ParserConfigurationException e) {
+			e.printStackTrace();
+		}
+		return flag_wasRecorded;
+	}
+
 	@Override
 	public Collection<EclipseUpdateSiteInformation> getSites() {
-		return siteURLs.values();
+		return updateSites.values();
 	}
 
 	private void initialize() {
-		siteURLs = new HashMap<String, EclipseUpdateSiteInformation>();
+		updateSites = new HashMap<String, EclipseUpdateSiteInformation>();
 
 	}
 
@@ -260,7 +275,7 @@ public class EclipseMarketplaceCrawler implements SourceCrawler {
 	 * @param destinationDirPath
 	 */
 	private void initialize(String destinationDirPath) {
-		siteURLs = new HashMap<String, EclipseUpdateSiteInformation>();
+		updateSites = new HashMap<String, EclipseUpdateSiteInformation>();
 		if (null != destinationDirPath && 1 <= destinationDirPath.trim().length())
 			this.DEST_DIR_PATH = destinationDirPath.trim();
 	}
@@ -274,4 +289,29 @@ public class EclipseMarketplaceCrawler implements SourceCrawler {
 		this.endId = endId;
 	}
 
+	@Override
+	public void restoreFromBaseLocation(String pathToBaseLocationDir) {
+		
+		pathToBaseLocationDir+="/" + SOURCE.replaceAll("/", "-") ;
+		File updateSiteExtractDirectory = new File(pathToBaseLocationDir);
+		Log.outln("==== Now Building the  Eclipse Marketplace UpdateSite Collection from source: " + updateSiteExtractDirectory.getAbsolutePath() + " ====");
+		Log.errln("==== Now Building the  Eclipse Marketplace UpdateSite Collection from source: " + updateSiteExtractDirectory.getAbsolutePath() + " ====");
+
+		if (!Util.checkDirectory(updateSiteExtractDirectory, true, true, true, false)) {
+			// the updateSites extracts source base directory is not accessible.
+			Log.errln("xxxx "+this.getClass().toString()+".restoreFromBaseLocation: \\\n the plugin dir: "
+					+ updateSiteExtractDirectory.getAbsolutePath()
+					+ "\n is not a directory or not readable or   does not exist. \nxxxx");
+			return;
+		}
+		File[] entries = updateSiteExtractDirectory.listFiles();
+		
+		for (File entry : entries) {
+		
+			if (Util.checkFile(entry, true, true, true, false)) {
+				recordUpdateSite(entry);
+				
+			}
+		}
+	}
 }

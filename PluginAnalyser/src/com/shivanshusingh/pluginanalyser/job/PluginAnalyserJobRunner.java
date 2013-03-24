@@ -1,7 +1,10 @@
 package com.shivanshusingh.pluginanalyser.job;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import com.shivanshusingh.pluginanalyser.analysis.AnalysisRunner;
@@ -14,6 +17,11 @@ import com.shivanshusingh.pluginanalyser.utils.Util;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
 
 /**
+ * 
+ * runs a complete job of getting update site URLs, downloading and staging,
+ * analysis and extract generation of the plugin and feature meta data and then
+ * dependency analysis and extract generation.
+ * 
  * @author Shivanshu Singh
  * 
  */
@@ -23,34 +31,35 @@ public class PluginAnalyserJobRunner {
 		long time1 = System.currentTimeMillis();
 
 		long stage1 = System.currentTimeMillis();
-		
-		
-		
-		
-		///////////////////////////////////////////////////
-		//  		building the update site set from eclipse marketplace
-		
 
-//		SourceCrawler ec=new EclipseMarketplaceCrawler();
-//		SourceCrawler ec=new EclipseMarketplaceCrawler(0, 1000, "./_UPDATESITEDATA");
-//		
-//		ec.crawl();
-//		Set<UpdateSiteInfo> gotUpdateSites=  new HashSet();
-//		gotUpdateSites.addAll(ec.getSites());
-//		
-//		for(    UpdateSiteInfo updateSiteInfo:gotUpdateSites)
-//		{
-//			Log.outln("name="+    updateSiteInfo.getName());
-//			Log.outln("site="+    updateSiteInfo.getUpdateURL());
-//				
-//		}		
-		// TODO:  use the gotUpdateSites to pupulate the set of update sites to fetch here.
-		///////////////////////////////////////////////////
-		
-		
-		
-		
-		
+		String mirrorSiteDesinationPathPrefix = "/Users/singhsk/Developer/eclipse_plugins";
+
+		String mirrorSiteDesinationName = "new_site6_____";
+		// "__WorkingEclipseSite_features_and_plugins__";
+		// "_plugin_sandbox";
+		// + Util.getCurrentTimeString();
+
+		mirrorSiteDesinationName = mirrorSiteDesinationName.replace("/", "-").replace(":", "-").replace(".", "-")
+				.replaceAll("-{1,}", "-");
+		String currOutpurDir = "_OUTPUT_" + mirrorSiteDesinationName
+		// + "_" + Util.getCurrentTimeString()
+		;
+
+		if (!Log.startLogger("./" + currOutpurDir + "/_LOGS")) {
+			Log.errln("Cannot start logging sorry. Please check the path provided or necessary permissions");
+		}
+		Util.setTEMP_DIR_PATH("./" + currOutpurDir + "/_TMP");
+
+		// ///////////////////////////////////////////////////
+		// //// getting the update site set from eclipse marketplace
+		SourceCrawler ec = new EclipseMarketplaceCrawler();
+		// SourceCrawler ec=new EclipseMarketplaceCrawler(0,
+		// 1000,"./_UPDATESITEDATA");
+		// ec.crawl();
+		Set<UpdateSiteInfo> gotUpdateSites = new HashSet();
+		// gotUpdateSites.addAll(ec.getSites());
+		// //////////////////////////////////////////////////////
+
 		String eclipseHome = "/Users/singhsk/Developer/eclipse_sandbox";// without
 																		// the
 																		// trailing
@@ -64,13 +73,13 @@ public class PluginAnalyserJobRunner {
 		// update site without the 'site.xml' at end.
 		Set<String> updateSiteCollection = new HashSet<String>();
 
-		 updateSiteCollection.add("http://download.eclipse.org/technology/dltk/updates/");
-		 updateSiteCollection.add("https://dl-ssl.google.com/android/eclipse");
+		updateSiteCollection.add("http://download.eclipse.org/technology/dltk/updates/");
+		updateSiteCollection.add("https://dl-ssl.google.com/android/eclipse");
 		/*
-		  updateSiteURLCollection.add(
-		  "https://dl-ssl.google.com/android/eclipse/m/");// erroneous case.
+		 * updateSiteURLCollection.add(
+		 * "https://dl-ssl.google.com/android/eclipse/m/");// erroneous case.
 		 */
-//		updateSiteCollection.add("http://download.aptana.com/studio3/plugin/install");
+		// updateSiteCollection.add("http://download.aptana.com/studio3/plugin/install");
 		updateSiteCollection.add("http://download.eclipse.org/egit/github/updates");
 		updateSiteCollection.add("http://download.eclipse.org/technology/m2e/releases/1.3/1.3.1.20130219-1424");
 		updateSiteCollection.add("http://www.apache.org/dist/ant/ivyde/updatesite");
@@ -78,33 +87,47 @@ public class PluginAnalyserJobRunner {
 		updateSiteCollection.add("http://goldenhammers.com/merclipse/update ");
 		updateSiteCollection.add("http://download.eclipse.org/technology/subversive/1.0/update-site-1.0.1/	");
 		updateSiteCollection.add("http://jd.benow.ca/jd-eclipse/update");
-//		updateSiteCollection.add("http://wwwiti.cs.uni-magdeburg.de/iti_db/research/featureide/deploy/");
-//		updateSiteCollection.add("http://openextern.googlecode.com/svn/trunk/openextern_update/");
-//		updateSiteCollection.add("http://update.eclemma.org/");
-//		updateSiteCollection.add("http://andrei.gmxhome.de/eclipse/");
-//		updateSiteCollection.add("http://download.eclipse.org/technology/m2e/milestones/1.4 ");
-//		updateSiteCollection.add("http://pmd.sf.net/eclipse");
-//		updateSiteCollection.add("http://findbugs.cs.umd.edu/eclipse/");
+		// updateSiteCollection.add("http://wwwiti.cs.uni-magdeburg.de/iti_db/research/featureide/deploy/");
+		// updateSiteCollection.add("http://openextern.googlecode.com/svn/trunk/openextern_update/");
+		// updateSiteCollection.add("http://update.eclemma.org/");
+		// updateSiteCollection.add("http://andrei.gmxhome.de/eclipse/");
+		// updateSiteCollection.add("http://download.eclipse.org/technology/m2e/milestones/1.4 ");
+		// updateSiteCollection.add("http://pmd.sf.net/eclipse");
+		// updateSiteCollection.add("http://findbugs.cs.umd.edu/eclipse/");
 		updateSiteCollection.add("						 http://eclipse-cs.sourceforge.net/update");
 		updateSiteCollection.add("						 http://download.eclipse.org/tools/pdt/updates/release");
 		updateSiteCollection.add("					 http://www.ne.jp/asahi/zigen/home/plugin/dbviewer/");
 		// add an eclipse site to club plugins with a base eclipse product.
-//		 updateSiteCollection .add("http://download.eclipse.org/releases/juno/");
+		// updateSiteCollection
+		// .add("http://download.eclipse.org/releases/juno/");
 
-		String mirrorSiteDesinationPathPrefix = "/Users/singhsk/Developer/eclipse_plugins";
+		// ///////////////////////////////////////////////////
+		// // building the updateSiteURLSet from updatesite extracts.
+		updateSiteCollection = new HashSet<String>();
+		List<String> xxxx = new ArrayList<String>();
 
-		String mirrorSiteDesinationName = 
-				"new_site6_____";
-//				"__WorkingEclipseSite_features_and_plugins__";
-				//"_plugin_sandbox";
-		
-		// +
-															// Util.getCurrentTimeString();
-		mirrorSiteDesinationName = mirrorSiteDesinationName.replace("/", "-").replace(":", "-").replace(".", "-")
-				.replaceAll("-{1,}", "-");
+		ec.restoreFromBaseLocation("./_UPDATE-SITE-DATA");
+		gotUpdateSites = new HashSet();
+		gotUpdateSites.addAll(ec.getSites());
+		for (UpdateSiteInfo updateSiteInfo : gotUpdateSites) {
+			// removing the trailing slash(/);
+			String updateSiteURL = updateSiteInfo.getUpdateURL();
+			if ("/".equalsIgnoreCase(updateSiteURL.substring(updateSiteURL.length() - 1)))
+				updateSiteURL = updateSiteURL.substring(0, updateSiteURL.length() - 1);
+
+			Log.outln("name=" + updateSiteInfo.getName() + ";\t site=" + updateSiteURL);
+			updateSiteCollection.add(updateSiteURL);
+
+		}
+
+		Log.outln("====Number of Update Sites=" + updateSiteCollection.size());
+		// //////////////////////////////////////////////////////////
 
 		// this is there the mirrored site would be available. It automatically
 		// gets created by p2.
+		List<String> updateSiteURLCollection_list = new ArrayList<String>(updateSiteCollection);
+		Collections.sort(updateSiteURLCollection_list);
+
 		String destinationDirectory = mirrorSiteDesinationPathPrefix + "/" + mirrorSiteDesinationName;
 		try {
 			boolean verbose = false, raw = true;
@@ -112,27 +135,19 @@ public class PluginAnalyserJobRunner {
 			// this way old mirror site can be complete removed first.
 			boolean eraseOld = false;
 
-			String currOutpurDir = "_OUTPUT_" + mirrorSiteDesinationName
-			// + "_" + Util.getCurrentTimeString()
-			;
+			// getting features from update sites
 
-			if (!Log.startLogger("./" + currOutpurDir + "/_LOGS")) {
-				Log.errln("Cannot start logging sorry. Please check the path provided or necessary permissions");
-			}
-			Util.setTEMP_DIR_PATH("./" + currOutpurDir + "/_TMP");
-			// getting features from an update site
-			
-			
 			String baseEclipseInstallationHome = eclipseHome;
+			if (!DownloadAndStagingRunner
+					.downloadAndStageWithEclipseInstallation(eclipseHome, eclipseApp, equinoxAppName,
+							baseEclipseInstallationHome, updateSiteURLCollection_list, destinationDirectory, verbose, raw,
+							eraseOld))
 
-			if (!DownloadAndStagingRunner.downloadAndStageWithEclipseInstallation(eclipseHome, eclipseApp, equinoxAppName,
-					baseEclipseInstallationHome, updateSiteCollection, destinationDirectory, verbose, raw, eraseOld))
-
-		/*	
-			  if (!DownloadAndStagingRunner.downloadAndStage(eclipseHome,
-			  eclipseApp, equinoxAppName, updateSiteCollection,
-			  destinationDirectory, verbose, raw, eraseOld))
-		*/	 
+			/*
+			 * if (!DownloadAndStagingRunner.downloadAndStage(eclipseHome,
+			 * eclipseApp, equinoxAppName, updateSiteURLCollection_list,
+			 * destinationDirectory, verbose, raw, eraseOld))
+			 */
 			{
 				Log.errln("XXXXXXX  " + "\n  Download and staging error for: " + "\n  " + destinationDirectory
 						+ "\n    cannot continue  with the analysis and data extraction." + "\n    ----"
