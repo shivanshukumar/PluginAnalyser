@@ -346,7 +346,7 @@ public class BundleAnalyser extends ManifestParser {
 				// nested jar.
 
 				Log.outln("====> " + name + " found");
-				 Log.outln(bundleInformation.getClasspathEntries().toString());
+				//Log.outln(bundleInformation.getClasspathEntries().toString());
 
 				// now check if this nested jar file is one of the Bundle
 				// classpath dependencies (lib jars)

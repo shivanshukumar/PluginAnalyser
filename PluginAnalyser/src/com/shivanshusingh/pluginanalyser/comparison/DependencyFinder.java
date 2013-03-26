@@ -189,9 +189,9 @@ public class DependencyFinder {
 				if (pluginExtractsDone % 200 == 0 || pluginExtractsDone == entriesLength) {
 					Log.outln("#### PluginExtractsMerged \t= " + pluginExtractsDone);
 
-					Log.outln("#### functions \t\tobjectSize= " + (double) (functions.toString().length() / (1024 * 1024))
+					Log.outln("#### functions \tobjectSize= " + (double) (functions.toString().length() / (1024 * 1024))
 							+ "MB");
-					Log.outln("#### types \t\t\tobjectSize= " + (types.toString().length() / (1024 * 1024)) + "MB");
+					Log.outln("#### types \t\tobjectSize= " + (types.toString().length() / (1024 * 1024)) + "MB");
 				}
 
 			}
