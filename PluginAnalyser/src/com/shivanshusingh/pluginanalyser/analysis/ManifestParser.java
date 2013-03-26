@@ -126,13 +126,14 @@ public class ManifestParser {
             throw new ParseException("No " + BUNDLE_SYMBOLIC_NAME + " in the manifest", 0);
         }
 
-        String description = new ManifestHeaderValue(mainAttributes.getValue(BUNDLE_DESCRIPTION))
+        //mine commented.
+       /* String description = new ManifestHeaderValue(mainAttributes.getValue(BUNDLE_DESCRIPTION))
                 .getSingleValue();
         if (description == null) {
             description = new ManifestHeaderValue(mainAttributes.getValue(BUNDLE_DESCRIPTION))
                     .getSingleValue();
         }
-
+*/
         String vBundle = new ManifestHeaderValue(mainAttributes.getValue(BUNDLE_VERSION))
                 .getSingleValue();
         Version version;
@@ -145,8 +146,9 @@ public class ManifestParser {
 
         BundleInfo bundleInfo = new BundleInfo(symbolicName, version);
 
-        bundleInfo.setDescription(description);
-
+        //mine commented
+  /*      bundleInfo.setDescription(description);
+*/
         List/* <String> */environments = new ManifestHeaderValue(
                 mainAttributes.getValue(BUNDLE_REQUIRED_EXECUTION_ENVIRONMENT)).getValues();
         bundleInfo.setExecutionEnvironments(environments);
@@ -189,6 +191,7 @@ public class ManifestParser {
 
         parseCapability(bundleInfo, mainAttributes, EXPORT_SERVICE, BundleInfo.SERVICE_TYPE);
 
+        // mine commented
         // handle Eclipse specific source attachement
        /* String eclipseSourceBundle = mainAttributes.getValue(ECLIPSE_SOURCE_BUNDLE);
         if (eclipseSourceBundle != null) {

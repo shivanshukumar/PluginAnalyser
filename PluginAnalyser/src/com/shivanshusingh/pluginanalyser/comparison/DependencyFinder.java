@@ -129,15 +129,30 @@ public class DependencyFinder {
 
 						if (considerBundleExportersOnly) {
 							flag_isExported = false;
-							String funcWithoutReturnType = s.split(" *")[1].trim();
+							String funcWithoutReturnType = s.split(" ")[1].trim();
 							for (String a : bundleExports) {
-								if (funcWithoutReturnType.startsWith(a.trim() + ".")) {
-									flag_isExported = true;
-									break;
+								a = a.trim();
+								if (1 <= a.length()) {
+									// getting the class / package name from the
+									// bundle export entry.
+									// getting split on ";" first.
+									String b = a;
+									a = a.split(";")[0].trim();
+									a = a.split(Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL)[0].trim();
+									if (1 < a.length()) {
+										// Log.outln("******** Checking if "+funcWithoutReturnType+" starts with "+a.trim() + ".\n  |  original invokation:"+s+"    original bundleExportEntry:"+b);
+										if (funcWithoutReturnType.startsWith(a.trim() + ".")) {
+											// Log.outln("************* YES DOES.");
+											flag_isExported = true;
+											break;
+										}
+									}
 								}
 							}
 						}
 						if (flag_isExported) {
+							// Log.outln("*********** adding to exports:"+thisPluginExtractName+
+							// "    for invokation: "+s);
 							impexp.addToExp(thisPluginExtractName);
 							functions.put(s, impexp);
 						}
@@ -172,8 +187,8 @@ public class DependencyFinder {
 				// System.out.println(types.keySet().toString());
 
 				if (pluginExtractsDone % 200 == 0 || pluginExtractsDone == entriesLength) {
-					Log.outln("#### PluginExtractsMerged \t= " +    pluginExtractsDone );
-					
+					Log.outln("#### PluginExtractsMerged \t= " + pluginExtractsDone);
+
 					Log.outln("#### functions \t\tobjectSize= " + (double) (functions.toString().length() / (1024 * 1024))
 							+ "MB");
 					Log.outln("#### types \t\t\tobjectSize= " + (types.toString().length() / (1024 * 1024)) + "MB");

@@ -66,6 +66,8 @@ public interface Constants {
 	public static final String PLUGIN_DEPENDENCY_IMPORTERS  							= MARKER_ADDON + "Importers " 								+ MARKER_ADDON;
 	public static final String PLUGIN_DEPENDENCY_IMPORTERS_UNSATISFIED  				= MARKER_ADDON + "Poor Importers  UnSatisfied " 			+ MARKER_ADDON;
 	
+	public static final String BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL 						= "(optional)";
+	
 	
 	//TODO Add support for features.
 }

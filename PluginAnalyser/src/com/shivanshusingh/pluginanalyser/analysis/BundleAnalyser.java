@@ -503,7 +503,7 @@ public class BundleAnalyser extends ManifestParser {
 		} catch (ParseException e) {
 			Log.outln("xxxx  NO Manifest found here or cannot parse that  or maybe theres nothing to parse inthis.    ");
 
-			// e.printStackTrace();
+			Log.errln(Util.getStackTrace(e));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -713,6 +713,7 @@ public class BundleAnalyser extends ManifestParser {
 			// Log.outln("Bundle Exports = " +
 			// bundleinfo.getExports().toString()); // Export-Package
 		}
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
 		writer.write(Constants.BUNDLE_IMPORTS + "\n ");
 		if (flag_bundleInfoExists) {
 			for (Object s : bundleinfo.getImports())
