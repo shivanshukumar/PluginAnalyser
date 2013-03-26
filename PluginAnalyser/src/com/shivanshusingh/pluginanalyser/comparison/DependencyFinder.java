@@ -33,8 +33,7 @@ public class DependencyFinder {
 	 * @param considerBundleExportersOnly
 	 *            true if only those exports to consider that are being
 	 *            explicitly being specified as exported by plugins in their
-	 *            plugin manifests. 
-	 *            CAUTION: Exercise caution In case the bundle
+	 *            plugin manifests. CAUTION: Exercise caution In case the bundle
 	 *            manifest information listing exported packages is missing,
 	 *            setting this to true in this case will essentially mean that
 	 *            the plugin has no exports whatsoever.
@@ -42,10 +41,13 @@ public class DependencyFinder {
 	 * @throws IOException
 	 */
 	public static void buildPluginDependencySuperSet(String pathToBasePluginExtractsDir,
-			String pathToPluginDependencyAnalysisOutputLocation, boolean considerBundleExportersOnly, boolean eraseOld) throws IOException {
+			String pathToPluginDependencyAnalysisOutputLocation, boolean considerBundleExportersOnly, boolean eraseOld)
+			throws IOException {
 
-		Log.outln("==== Now Building the  Plugin Dependency  Set from source: " + pathToBasePluginExtractsDir + " , considerBundleExportsOnly is "+considerBundleExportersOnly+" ====");
-		Log.errln("==== Now Building the  Plugin Dependency  Set from source: " + pathToBasePluginExtractsDir +" , considerBundleExportsOnly is "+considerBundleExportersOnly+ " ====");
+		Log.outln("==== Now Building the  Plugin Dependency  Set from source: " + pathToBasePluginExtractsDir
+				+ " , considerBundleExportsOnly is " + considerBundleExportersOnly + " ====");
+		Log.errln("==== Now Building the  Plugin Dependency  Set from source: " + pathToBasePluginExtractsDir
+				+ " , considerBundleExportsOnly is " + considerBundleExportersOnly + " ====");
 
 		long time1 = System.currentTimeMillis();
 
@@ -95,52 +97,49 @@ public class DependencyFinder {
 				if (thisPluginExtractName.toLowerCase().endsWith(Constants.EXTRACT_FILE_EXTENSION_PLUGIN))
 					thisPluginExtractName = thisPluginExtractName.substring(0, thisPluginExtractName.length()
 							- Constants.EXTRACT_FILE_EXTENSION_PLUGIN.length());
-//				Log.outln("==== Adding to DependencySet,  plugin " + pluginExtractsDone + " of " + entriesLength + " : "
-//						+ thisPluginExtractName + "====");
+				// Log.outln("==== Adding to DependencySet,  plugin " +
+				// pluginExtractsDone + " of " + entriesLength + " : "
+				// + thisPluginExtractName + "====");
 
 				// restoring the functions information from the file.
-				Set<String> bundleExports=new HashSet<String>();
-				if(considerBundleExportersOnly)
-				{
-					bundleExports=ParsingUtil.restorePropertyFromExtract(entry, Constants.BUNDLE_EXPORTS );
+				Set<String> bundleExports = new HashSet<String>();
+				if (considerBundleExportersOnly) {
+					bundleExports = ParsingUtil.restorePropertyFromExtract(entry, Constants.BUNDLE_EXPORTS);
 				}
-				
-				Set<String> myMethodExports = ParsingUtil.restorePropertyFromExtract(entry, Constants.PLUGIN_ALL_MY_METHODS_PUBLIC);
+
+				Set<String> myMethodExports = ParsingUtil.restorePropertyFromExtract(entry,
+						Constants.PLUGIN_ALL_MY_METHODS_PUBLIC);
 				Set<String> myMethodImports = ParsingUtil.restorePropertyFromExtract(entry,
 						Constants.PLUGIN_ALL_MY_METHOD_CALLS_EXTERNAL_AND_NON_JAVA);
-				Set<String> myTypeExports = ParsingUtil.restorePropertyFromExtract(entry, Constants.PLUGIN_ALL_MY_TYPES_PUBLIC);
+				Set<String> myTypeExports = ParsingUtil.restorePropertyFromExtract(entry,
+						Constants.PLUGIN_ALL_MY_TYPES_PUBLIC);
 				Set<String> myTypeImports = ParsingUtil.restorePropertyFromExtract(entry,
 						Constants.PLUGIN_ALL_TYPES_DETECTED_EXTERNAL_AND_NON_JAVA);
 
 				// merging functions
-				for (String s : myMethodExports) 
-				{
-					s=s.trim();
-					if(1<=s.length())
-					{
+				for (String s : myMethodExports) {
+					s = s.trim();
+					if (1 <= s.length()) {
 						ImpExp impexp = new ImpExp();
-						
+
 						if (functions.containsKey(s))
 							impexp = functions.get(s);
-						
-						boolean flag_isExported=true;
-						
-						if(considerBundleExportersOnly)
-						{
-							String funcWithoutReturnType=s.split(" *")[1].trim();
-							for(String a:bundleExports)
-							{
-								if(funcWithoutReturnType.startsWith(a.trim()+"."))
-								{
-									flag_isExported=true;
+
+						boolean flag_isExported = true;
+
+						if (considerBundleExportersOnly) {
+							flag_isExported = false;
+							String funcWithoutReturnType = s.split(" *")[1].trim();
+							for (String a : bundleExports) {
+								if (funcWithoutReturnType.startsWith(a.trim() + ".")) {
+									flag_isExported = true;
 									break;
 								}
 							}
 						}
-						if(flag_isExported)
-						{
+						if (flag_isExported) {
 							impexp.addToExp(thisPluginExtractName);
-						functions.put(s, impexp);
+							functions.put(s, impexp);
 						}
 					}
 				}
@@ -149,7 +148,7 @@ public class DependencyFinder {
 					ImpExp impexp = new ImpExp();
 					if (functions.containsKey(s))
 						impexp = functions.get(s);
-					
+
 					impexp.addToImp(thisPluginExtractName);
 					functions.put(s, impexp);
 				}
@@ -173,10 +172,11 @@ public class DependencyFinder {
 				// System.out.println(types.keySet().toString());
 
 				if (pluginExtractsDone % 200 == 0 || pluginExtractsDone == entriesLength) {
-					Log.outln("#### functions \tobjectSize= "
-							+ (double) (functions.toString().length() / (1024 * 1024)) + "MB");
-
-					Log.outln("#### types \tobjectSize= " + (types.toString().length() / (1024 * 1024)) + "MB");
+					Log.outln("#### PluginExtractsMerged \t= " +    pluginExtractsDone );
+					
+					Log.outln("#### functions \t\tobjectSize= " + (double) (functions.toString().length() / (1024 * 1024))
+							+ "MB");
+					Log.outln("#### types \t\t\tobjectSize= " + (types.toString().length() / (1024 * 1024)) + "MB");
 				}
 
 			}
@@ -195,11 +195,10 @@ public class DependencyFinder {
 	}
 
 	private static void writeData(String pluginDependencySetOutputLocationPath) throws IOException {
-		
-		Set<String> unmatchedFunctionImports=new  HashSet<String>();
-		Set<String> unmatchedTypeImports=new  HashSet<String>();
-		
-		
+
+		Set<String> unmatchedFunctionImports = new HashSet<String>();
+		Set<String> unmatchedTypeImports = new HashSet<String>();
+
 		if (!Util.checkAndCreateDirectory(pluginDependencySetOutputLocationPath)) {
 			Log.errln("xxxx\n in writeData() in   DependencyFinder, the output location: "
 					+ pluginDependencySetOutputLocationPath + "  \n is not accessible, cannot record data.  \nxxxx");
@@ -234,14 +233,14 @@ public class DependencyFinder {
 			// all importers
 			writer.write(Constants.PLUGIN_DEPENDENCY_IMPORTERS + "\n");
 			for (Object s : imp) {
-				writer.write((String)s + "\n");
+				writer.write((String) s + "\n");
 			}
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 			// all exporters
 			writer.write(Constants.PLUGIN_DEPENDENCY_EXPORTERS + "\n");
 			for (Object s : exp) {
-				writer.write((String)s + "\n");
+				writer.write((String) s + "\n");
 			}
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
@@ -251,11 +250,10 @@ public class DependencyFinder {
 					+ (1 < exp.size() ? " exporters!! PLURAL??" : " exporter") + " available ")
 					+ "\n");
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
-			
-			
+
 			// add to the unmatchedFunctionImports Set.
-			if(0==exp.size())
-			        unmatchedFunctionImports.add(key);
+			if (0 == exp.size())
+				unmatchedFunctionImports.add(key);
 
 			// all exporters whose exports were not needed by anyone
 			writer.write(Constants.PLUGIN_DEPENDENCY_EXPORTERS_UNSATISFIED + "\n");
@@ -269,17 +267,14 @@ public class DependencyFinder {
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 		}
 		writer.write(Constants.PLUGIN_DEPENDENCY_ALL_UNMATCHED_FUNCTION_IMPORTS + "\n");
-		for(String s:unmatchedFunctionImports)
-			writer.write(s+"\n");
-		writer.write("COUNT="+unmatchedFunctionImports.size()+"\n");
+		for (String s : unmatchedFunctionImports)
+			writer.write(s + "\n");
+		writer.write("COUNT=" + unmatchedFunctionImports.size() + "\n");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 		// terminating the functions set
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 
-		
-		
-		
 		writer.close();
 		filewriter.close();
 
@@ -298,21 +293,21 @@ public class DependencyFinder {
 			writer.write(key + "\n");
 
 			ImpExp impexp = types.get(key);
-			
+
 			Set imp = impexp.getImp();
 			Set exp = impexp.getExp();
 
 			// all importers
 			writer.write(Constants.PLUGIN_DEPENDENCY_IMPORTERS + "\n");
-			for (    Object s : imp) {
-				writer.write((String)s + "\n");
+			for (Object s : imp) {
+				writer.write((String) s + "\n");
 			}
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 			// all exporters
 			writer.write(Constants.PLUGIN_DEPENDENCY_EXPORTERS + "\n");
-			for (  Object s : exp) {
-				writer.write((String)s + "\n");
+			for (Object s : exp) {
+				writer.write((String) s + "\n");
 			}
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
@@ -324,7 +319,7 @@ public class DependencyFinder {
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 			// add to the unmatchedTypeImports Set.
-			if(0==exp.size())
+			if (0 == exp.size())
 				unmatchedTypeImports.add(key);
 
 			// all exporters whose exports were not needed by anyone.
@@ -339,9 +334,9 @@ public class DependencyFinder {
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 		}
 		writer.write(Constants.PLUGIN_DEPENDENCY_ALL_UNMATCHED_TYPE_IMPORTS + "\n");
-		for(String s:unmatchedTypeImports)
-			writer.write(s+"\n");
-		writer.write("COUNT="+unmatchedTypeImports.size()+"\n");
+		for (String s : unmatchedTypeImports)
+			writer.write(s + "\n");
+		writer.write("COUNT=" + unmatchedTypeImports.size() + "\n");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 		// terminating the types set

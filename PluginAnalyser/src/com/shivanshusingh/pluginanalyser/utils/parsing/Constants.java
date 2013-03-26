@@ -14,9 +14,10 @@ public interface Constants {
 	
 	public static final String BUNDLE_CLASSPATHENTRIES 									= MARKER_ADDON +  "Bundle ClassPathEntries"  			  +  MARKER_ADDON ;
 	public static final String BUNDLE_EXPORTS 											= MARKER_ADDON + "Bundle Exports"  						  +  MARKER_ADDON ;
-	public static final String BUNDLE_IMPORTS 											= MARKER_ADDON + "Bundle Imports"  						  +  MARKER_ADDON ;
+	public static final String BUNDLE_IMPORTS 											= MARKER_ADDON + "Bundle Package Imports"  				  +  MARKER_ADDON ;
 	public static final String BUNDLE_PLUGIN_XML 										= MARKER_ADDON + "Bundle Plugin.xml"  					  +  MARKER_ADDON ;
 	public static final String BUNDLE_REQUIREMENTS 										= MARKER_ADDON + "Bundle Requirements"  				  +  MARKER_ADDON ;
+	public static final String BUNDLE_REQUIRES 											= MARKER_ADDON + "Bundle Other BUNDLE Imports"  			+ MARKER_ADDON ;
 	public static final String BUNDLE_SYMBOLICNAME 										= MARKER_ADDON + "Symbolic Name"  						  +  MARKER_ADDON ;
 	public static final String BUNDLE_VERSION 											= MARKER_ADDON + "Version"  							  +  MARKER_ADDON ;
 	public static final String BUNDLE_VERSION_WITHOUT_QUALIFIER 						= MARKER_ADDON + "Version without qualifier"  			  +  MARKER_ADDON ;

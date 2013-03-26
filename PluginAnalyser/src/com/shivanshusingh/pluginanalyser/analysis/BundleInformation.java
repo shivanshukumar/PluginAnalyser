@@ -21,6 +21,7 @@ import org.apache.ivy.osgi.core.ManifestParser;
 import org.apache.ivy.osgi.util.Version;
 
 /**
+ * @deprecated
  * this contains the data from the MANIFEST.MF file of the plugin and  the plugin.xml data.
  * @author Shivanshu Singh
  * 
@@ -38,6 +39,9 @@ public class BundleInformation {
 
 	private Set<String> classpathEntries = new LinkedHashSet<String>();
 
+	/**
+	 * @deprecated
+	 */
 	public BundleInformation()  {
 		
 	}
@@ -47,17 +51,23 @@ public class BundleInformation {
 	}
 
 	/**
+	 * @deprecated
+	 *
 	 * @param ma {@link Manifest}
 	 * 
 	 */
 	public BundleInformation(Manifest ma) throws ParseException {
 		initializeBundleInformation(ma);
 	}
-	
+	/**
+	 * @deprecated
+	 */
 	public void addCapability(BundleCapability capability) {
 		bundleinfo.addCapability(capability);
 	}
-
+	/**
+	 * @deprecated
+	 */
 	private void addClasspathEntries() throws ParseException {
 		if (null != manifest) {
 			Attributes mainAttributes = manifest.getMainAttributes();
@@ -67,12 +77,16 @@ public class BundleInformation {
 		}
 
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public void addRequirement(BundleRequirement requirement) {
 		bundleinfo.addRequirement(requirement);
 
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public boolean equals(Object obj) {
 
 		if (this == obj) {
@@ -104,74 +118,102 @@ public class BundleInformation {
 
 		return true;
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public BundleInfo getBundleInfo() {
 		if(null!=bundleinfo)
 			return this.bundleinfo;
 		else
 			return null;
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public Set/* <BundleCapability> */getCapabilities() {
 		return bundleinfo.getCapabilities();
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public Set<String> getClasspathEntries() {
 		return classpathEntries;
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public String getDescription() {
 		return bundleinfo.getDescription();
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public String getDocumentation() {
 		return bundleinfo.getDocumentation();
 
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public List/* <String> */getExecutionEnvironments() {
 		return bundleinfo.getExecutionEnvironments();
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public Set/* <ExportPackage> */getExports() {
 		Set s = new HashSet();
 		if(null!=bundleinfo)
 			s=bundleinfo.getExports()    ;
 		return s;
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public String getId() {
 		return bundleinfo.getId();
 
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public Set/* <BundleRequirement> */getImports() {
 		Set s = new HashSet();
 		if(null!=bundleinfo)
 			s=bundleinfo.getImports();
 		return s;
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public String getLicense() {
 		return bundleinfo.getLicense();
 
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public String getPluginXml() {
 		return pluginXml;
 	}
 
-
+	/**
+	 * @deprecated
+	 */
 	public String getPresentationName() {
 		return bundleinfo.getPresentationName();
 
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public Version getRawVersion() {
 		return bundleinfo.getRawVersion();
 
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public Set/* <BundleRequirement> */getRequirements() {
 		Set s  =  new HashSet();
 		if(null!=bundleinfo)
@@ -179,37 +221,49 @@ public class BundleInformation {
 		return s;
 
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public Set/* <BundleRequirement> */getRequires() {
 		Set s = new HashSet();
 		if(null!=bundleinfo)
 			s=bundleinfo.getRequires();
 		return s;
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public Set/* <BundleCapability> */getServices() {
 		Set s = new HashSet();
 			if(null!=bundleinfo)
 				s=bundleinfo.getServices();
 		return s;
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public Integer getSize() {
 		return bundleinfo.getSize();
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public String getSymbolicName() {
 		if(null!=bundleinfo)
 			return bundleinfo.getSymbolicName();
 		else return "";
 
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public URI getUri() {
 		return bundleinfo.getUri();
 
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public Version getVersion() {
 		
 		Version v = null;
@@ -228,7 +282,9 @@ public class BundleInformation {
 		return s;
 		
 	}*/
-
+	/**
+	 * @deprecated
+	 */
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
@@ -241,6 +297,7 @@ public class BundleInformation {
 	}
 
 	/**
+	 * @deprecated
 	 * @param ma {@link Manifest}
 	 * @throws ParseException
 	 */
@@ -249,7 +306,9 @@ public class BundleInformation {
 		this.bundleinfo = ManifestParser.parseManifest(this.manifest);
 		addClasspathEntries();
 	}
-
+	/**
+	 * @deprecated
+	 */
 	private void parseAttribute(Attributes mainAttributes, String headerName)
 			throws ParseException {
 		ManifestHeaderValue elements = new ManifestHeaderValue(
@@ -267,49 +326,69 @@ public class BundleInformation {
 			}
 		}
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public void setDescription(String description) {
 
 		bundleinfo.setDescription(description);
 
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public void setDocumentation(String documentation) {
 		bundleinfo.setDocumentation(documentation);
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public void setExecutionEnvironments(List/* <String> */executionEnvironment) {
 		bundleinfo.setExecutionEnvironments(executionEnvironment);
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public void setId(String id) {
 		bundleinfo.setId(id);
 
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public void setLicense(String license) {
 		bundleinfo.setLicense(license);
 
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public void setPluginXml(String pluginXml) {
 		this.pluginXml = pluginXml;
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public void setPresentationName(String presentationName) {
 		bundleinfo.setPresentationName(presentationName);
 
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public void setSize(Integer size) {
 		bundleinfo.setSize(size);
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public void setUri(URI uri) {
 		bundleinfo.setUri(uri);
 
 	}
-
+	/**
+	 * @deprecated
+	 */
 	public String toString() {
 		StringBuffer builder = new StringBuffer();
 		builder.append("BundleInfo [executionEnvironments=");

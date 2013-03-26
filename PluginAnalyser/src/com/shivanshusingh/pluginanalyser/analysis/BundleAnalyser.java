@@ -23,7 +23,7 @@ import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 import java.util.jar.Manifest;
 
-import org.apache.ivy.osgi.core.ManifestParser;
+//import org.apache.ivy.osgi.core.ManifestParser;
 import org.objectweb.asm.ClassReader;
 
 import com.shivanshusingh.pluginanalyser.utils.Util;
@@ -112,7 +112,7 @@ public class BundleAnalyser extends ManifestParser {
 
 		try {
 			DependencyVisitor v = new DependencyVisitor();
-			BundleInformation bundleInformation = new BundleInformation();
+			BundleInfo bundleInformation = new BundleInfo();
 			String dirNameWithPathFull = pathPrefix + pluginDirName;
 
 			File folder = new File(dirNameWithPathFull);
@@ -140,11 +140,11 @@ public class BundleAnalyser extends ManifestParser {
 	 * @param folder
 	 * @return
 	 */
-	private static BundleInformation getBundleManifestAndMetaInformationFromDir(File folder) {
+	private static BundleInfo getBundleManifestAndMetaInformationFromDir(File folder) {
 		// recursively constructing a set of paths of all files in this plugin
 		// folder.
 		Set<String> dirFileList = Util.listFilesForFolder(folder);
-		BundleInformation bundleInformation = new BundleInformation();
+		BundleInfo bundleInformation = new BundleInfo();
 		// getting plugin meta-inf/manifest.mf manifest information
 
 		Iterator<String> en = dirFileList.iterator();
@@ -204,7 +204,7 @@ public class BundleAnalyser extends ManifestParser {
 
 		try {
 			DependencyVisitor v = new DependencyVisitor();
-			BundleInformation bundleInformation = new BundleInformation();
+			BundleInfo bundleInformation = new BundleInfo();
 			// ////////archive/////////////////////////////////
 			String jarFileNameWithPathFull = pathPrefix + pluginJarName;
 
@@ -249,9 +249,9 @@ public class BundleAnalyser extends ManifestParser {
 	 * @return
 	 * @throws IOException
 	 */
-	private static BundleInformation getBundleManifestAndMetaInformationFromJar(JarFile jarfileinstance) throws IOException {
+	private static BundleInfo getBundleManifestAndMetaInformationFromJar(JarFile jarfileinstance) throws IOException {
 
-		BundleInformation bundleInformation = new BundleInformation();
+		BundleInfo bundleInformation = new BundleInfo();
 		// getting plugin meta-inf/manifest.mf manifest information
 		Enumeration<? extends JarEntry> en = jarfileinstance.entries();
 
@@ -314,12 +314,12 @@ public class BundleAnalyser extends ManifestParser {
 	 * @param visitor
 	 *            {@link DependencyVisitor}
 	 * @param bundleInformation
-	 *            {@link BundleInformation}
+	 *            {@link BundleInfo}
 	 * @param jarfileinstance
 	 * @throws IOException
 	 */
 	private static void extractDependenciesAndExportsFromJarFile(DependencyVisitor visitor,
-			BundleInformation bundleInformation, JarFile jarfileinstance) throws IOException {
+			BundleInfo bundleInformation, JarFile jarfileinstance) throws IOException {
 
 		// // for zip files reading ///////////////
 		// ZipFile f = new ZipFile(jarFileNameWithPathFull.trim());
@@ -346,12 +346,13 @@ public class BundleAnalyser extends ManifestParser {
 				// nested jar.
 
 				Log.outln("====> " + name + " found");
-				// Log.outln(bundleInformation.getClasspathEntries().toString());
+				 Log.outln(bundleInformation.getClasspathEntries().toString());
 
 				// now check if this nested jar file is one of the Bundle
 				// classpath dependencies (lib jars)
 				if (null != bundleInformation) {
-					for (String libJarNameEnding : bundleInformation.getClasspathEntries()) {
+					for (Object libJarNameEndingObj : bundleInformation.getClasspathEntries()) {
+						String libJarNameEnding=(String)libJarNameEndingObj;
 						// Log.outln("CHECKING:"+name+": ends with:"+libJarNameEnding);
 						if (name.toLowerCase().endsWith(libJarNameEnding.toLowerCase())) {
 							// good news, the jar is present in the bundle
@@ -398,7 +399,7 @@ public class BundleAnalyser extends ManifestParser {
 	 * @throws IOException
 	 */
 	private static void extractDependenciesAndExportsFromDir(DependencyVisitor visitor,
-			BundleInformation bundleInformation, File folder) throws IOException {
+			BundleInfo bundleInformation, File folder) throws IOException {
 
 		Log.outln("==== Starting the Plugin_from_Dir : " + folder.getCanonicalPath() + " analysis ====");
 
@@ -424,12 +425,13 @@ public class BundleAnalyser extends ManifestParser {
 				// nested jar.
 
 				Log.outln("====> " + name + " found");
-				// Log.outln(bundleInformation.getClasspathEntries().toString());
+				 Log.outln(bundleInformation.getClasspathEntries().toString());
 
 				// now check if this nested jar file is one of the Bundle
 				// classpath dependencies (lib jars)
 				if (null != bundleInformation) {
-					for (String libJarNameEnding : bundleInformation.getClasspathEntries()) {
+					for (Object libJarNameEndingObj : bundleInformation.getClasspathEntries()) {
+						String libJarNameEnding=(String)libJarNameEndingObj;
 						// Log.outln("CHECKING:"+name+": ends with:"+libJarNameEnding);
 						if (name.toLowerCase().endsWith(libJarNameEnding.toLowerCase())) {
 							// good news, the jar is present in the bundle
@@ -471,11 +473,11 @@ public class BundleAnalyser extends ManifestParser {
 	 * @param manifest
 	 * @return
 	 */
-	@SuppressWarnings("unused")
-	private static BundleInformation extractManifestInformation(Manifest manifest) {
-		BundleInformation bundleinfo = null;
+	/*@SuppressWarnings("unused")
+	private static BundleInfo extractManifestInformation(Manifest manifest) {
+		BundleInfo bundleinfo = null;
 		try {
-			bundleinfo = new BundleInformation(manifest);
+			bundleinfo = new BundleInfo(manifest);
 			// extractBundleInfo(bundleinfo);
 
 		} catch (ParseException e) {
@@ -484,17 +486,17 @@ public class BundleAnalyser extends ManifestParser {
 		}
 		return bundleinfo;
 	}
-
+*/
 	/**
 	 * @param manifestStream
 	 * @return
 	 */
-	private static BundleInformation extractManifestInformation(InputStream manifestStream) {
-		BundleInformation bundleInformation = null;
+	private static BundleInfo extractManifestInformation(InputStream manifestStream) {
+		BundleInfo bundleInformation = null;
 
 		try {
 
-			bundleInformation = new BundleInformation(manifestStream);
+			bundleInformation =  com.shivanshusingh.pluginanalyser.analysis.ManifestParser.parseManifest(manifestStream);// new BundleInfo(manifestStream);
 
 			// extractBundleInfo(bundleInformation);
 
@@ -515,7 +517,7 @@ public class BundleAnalyser extends ManifestParser {
 	 * @param outputLocation
 	 * @throws IOException
 	 */
-	private static void writeData(DependencyVisitor v, BundleInformation bundleinfo, String pluginFileName,
+	private static void writeData(DependencyVisitor v, BundleInfo bundleinfo, String pluginFileName,
 			String outputLocation) throws IOException {
 
 		pluginFileName = pluginFileName.toLowerCase().trim();
@@ -623,8 +625,8 @@ public class BundleAnalyser extends ManifestParser {
 		for (String invokation : invokationCulprits) {
 			boolean x1 = allExternalInvokations.remove(invokation);
 			boolean x2 = allExternalNonJavaInvokations.remove(invokation);
-			Log.outln(x1 + "= remove  from AllExternalInvokations \t: " + invokation);
-			Log.outln(x2 + "= remove  from AllExternalAndNonJavaInvokations \t : " + invokation);
+//			Log.outln(x1 + "= remove  from AllExternalInvokations \t: " + invokation);
+//			Log.outln(x2 + "= remove  from AllExternalAndNonJavaInvokations \t : " + invokation);
 		}
 
 		// Pruning over.
@@ -691,7 +693,7 @@ public class BundleAnalyser extends ManifestParser {
 		// to bundleinfo.getRequirements() without any differences.
 
 		boolean flag_bundleInfoExists = true;
-		if (null == bundleinfo || null == bundleinfo.getBundleInfo())
+		if (null == bundleinfo )
 			flag_bundleInfoExists = false;
 
 		writer.write(Constants.BUNDLE_REQUIREMENTS + "\n");
@@ -711,6 +713,22 @@ public class BundleAnalyser extends ManifestParser {
 			// Log.outln("Bundle Exports = " +
 			// bundleinfo.getExports().toString()); // Export-Package
 		}
+		writer.write(Constants.BUNDLE_IMPORTS + "\n ");
+		if (flag_bundleInfoExists) {
+			for (Object s : bundleinfo.getImports())
+				writer.write(s.toString() + "\n");
+			// Log.outln("Bundle Imports = " +
+			// bundleinfo.getImports().toString());
+		}
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
+		writer.write(Constants.BUNDLE_REQUIRES + "\n ");
+		if (flag_bundleInfoExists) {
+			for (Object s : bundleinfo.getRequires())
+				writer.write(s.toString() + "\n");
+			// Log.outln("Bundle Imports = " +
+			// bundleinfo.getImports().toString());
+		}
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 		writer.write(Constants.BUNDLE_SYMBOLICNAME + "\n");
 		if (flag_bundleInfoExists) {
@@ -732,14 +750,6 @@ public class BundleAnalyser extends ManifestParser {
 					: "");
 			// Log.outln("Version without qualifier  = " +
 			// bundleinfo.getVersion().withoutQualifier().toString());
-		}
-		writer.write(Constants.MARKER_TERMINATOR + "\n");
-		writer.write(Constants.BUNDLE_IMPORTS + "\n ");
-		if (flag_bundleInfoExists) {
-			for (Object s : bundleinfo.getImports())
-				writer.write(s.toString() + "\n");
-			// Log.outln("Bundle Imports = " +
-			// bundleinfo.getImports().toString());
 		}
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 		writer.write(Constants.BUNDLE_CLASSPATHENTRIES + "\n");
@@ -1206,7 +1216,7 @@ public class BundleAnalyser extends ManifestParser {
 	 * @param bundleinfo
 	 */
 	@SuppressWarnings({ "unused", "unchecked" })
-	private static void extractBundleInfo(BundleInformation bundleinfo) {
+	private static void extractBundleInfo(BundleInfo bundleinfo) {
 		Set<String> bundleExports = new LinkedHashSet<String>(bundleinfo.getExports());
 		Set<String> bundleRequires = new LinkedHashSet<String>(bundleinfo.getRequires());
 
