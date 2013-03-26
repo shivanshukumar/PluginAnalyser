@@ -34,9 +34,10 @@ public class PluginAnalyserJobRunner {
 
 		String mirrorSiteDesinationPathPrefix = "/Users/singhsk/Developer/eclipse_plugins";
 
-		String mirrorSiteDesinationName = "new_site6_____";
-		// "__WorkingEclipseSite_features_and_plugins__";
-		// "_plugin_sandbox";
+		String mirrorSiteDesinationName = 
+//				"new_site6_____";
+//		 "__WorkingEclipseSite_features_and_plugins__";
+		 "_plugin_sandbox";
 		// + Util.getCurrentTimeString();
 
 		mirrorSiteDesinationName = mirrorSiteDesinationName.replace("/", "-").replace(":", "-").replace(".", "-")
@@ -143,11 +144,11 @@ public class PluginAnalyserJobRunner {
 							baseEclipseInstallationHome, updateSiteURLCollection_list, destinationDirectory, verbose, raw,
 							eraseOld))
 
-			/*
-			 * if (!DownloadAndStagingRunner.downloadAndStage(eclipseHome,
+			
+			/* * if (!DownloadAndStagingRunner.downloadAndStage(eclipseHome,
 			 * eclipseApp, equinoxAppName, updateSiteURLCollection_list,
 			 * destinationDirectory, verbose, raw, eraseOld))
-			 */
+			*/ 
 			{
 				Log.errln("XXXXXXX  " + "\n  Download and staging error for: " + "\n  " + destinationDirectory
 						+ "\n    cannot continue  with the analysis and data extraction." + "\n    ----"
@@ -166,7 +167,8 @@ public class PluginAnalyserJobRunner {
 			 */
 
 			String outputLocation = "./" + currOutpurDir + "/_OUTPUT";
-			AnalysisRunner.analyseAndRecord(destinationDirectory, outputLocation, true);
+			boolean eraseOldExtrcats=true;
+			AnalysisRunner.analyseAndRecord(destinationDirectory, outputLocation, eraseOldExtrcats);
 
 			// //////////////////////////////////////////////////////
 			// the dependency finder.
@@ -178,7 +180,9 @@ public class PluginAnalyserJobRunner {
 																							// the
 																							// trailing
 																							// slash(/)
-			DependencyFinder.buildPluginDependencySuperSet(pluginExtractsLocation, pluginextractAnalysisDestLocation, true);
+			boolean eraseoldDependenctSetExtrcats=true;
+			boolean considerBundleExportsOnly=true;
+			DependencyFinder.buildPluginDependencySuperSet(pluginExtractsLocation, pluginextractAnalysisDestLocation, true  , true);
 			// ///////////////////////////////////////////////////////////////////////////////////////////////
 			long time2 = System.currentTimeMillis();
 			Log.outln("Current Job for site configuration at  :  " + destinationDirectory + "  time: "

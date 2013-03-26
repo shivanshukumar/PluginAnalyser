@@ -30,14 +30,22 @@ public class DependencyFinder {
 	 * 
 	 * @param pathToBasePluginExtractsDir
 	 * @param pathToPluginDependencyAnalysisOutputLocation
+	 * @param considerBundleExportersOnly
+	 *            true if only those exports to consider that are being
+	 *            explicitly being specified as exported by plugins in their
+	 *            plugin manifests. 
+	 *            CAUTION: Exercise caution In case the bundle
+	 *            manifest information listing exported packages is missing,
+	 *            setting this to true in this case will essentially mean that
+	 *            the plugin has no exports whatsoever.
 	 * @param eraseOld
 	 * @throws IOException
 	 */
 	public static void buildPluginDependencySuperSet(String pathToBasePluginExtractsDir,
-			String pathToPluginDependencyAnalysisOutputLocation, boolean eraseOld) throws IOException {
+			String pathToPluginDependencyAnalysisOutputLocation, boolean considerBundleExportersOnly, boolean eraseOld) throws IOException {
 
-		Log.outln("==== Now Building the  Plugin Dependency  Set from source: " + pathToBasePluginExtractsDir + " ====");
-		Log.errln("==== Now Building the  Plugin Dependency  Set from source: " + pathToBasePluginExtractsDir + " ====");
+		Log.outln("==== Now Building the  Plugin Dependency  Set from source: " + pathToBasePluginExtractsDir + " , considerBundleExportsOnly is "+considerBundleExportersOnly+" ====");
+		Log.errln("==== Now Building the  Plugin Dependency  Set from source: " + pathToBasePluginExtractsDir +" , considerBundleExportsOnly is "+considerBundleExportersOnly+ " ====");
 
 		long time1 = System.currentTimeMillis();
 
@@ -87,10 +95,16 @@ public class DependencyFinder {
 				if (thisPluginExtractName.toLowerCase().endsWith(Constants.EXTRACT_FILE_EXTENSION_PLUGIN))
 					thisPluginExtractName = thisPluginExtractName.substring(0, thisPluginExtractName.length()
 							- Constants.EXTRACT_FILE_EXTENSION_PLUGIN.length());
-				Log.outln("==== Adding to DependencySet,  plugin " + pluginExtractsDone + " of " + entriesLength + " : "
-						+ thisPluginExtractName + "====");
+//				Log.outln("==== Adding to DependencySet,  plugin " + pluginExtractsDone + " of " + entriesLength + " : "
+//						+ thisPluginExtractName + "====");
 
 				// restoring the functions information from the file.
+				Set<String> bundleExports=new HashSet<String>();
+				if(considerBundleExportersOnly)
+				{
+					bundleExports=ParsingUtil.restorePropertyFromExtract(entry, Constants.BUNDLE_EXPORTS );
+				}
+				
 				Set<String> myMethodExports = ParsingUtil.restorePropertyFromExtract(entry, Constants.PLUGIN_ALL_MY_METHODS_PUBLIC);
 				Set<String> myMethodImports = ParsingUtil.restorePropertyFromExtract(entry,
 						Constants.PLUGIN_ALL_MY_METHOD_CALLS_EXTERNAL_AND_NON_JAVA);
@@ -99,19 +113,44 @@ public class DependencyFinder {
 						Constants.PLUGIN_ALL_TYPES_DETECTED_EXTERNAL_AND_NON_JAVA);
 
 				// merging functions
-				for (String s : myMethodExports) {
-					ImpExp impexp = new ImpExp();
-					if (functions.containsKey(s))
-						impexp = functions.get(s);
-					impexp.exp.add(thisPluginExtractName);
-					functions.put(s, impexp);
+				for (String s : myMethodExports) 
+				{
+					s=s.trim();
+					if(1<=s.length())
+					{
+						ImpExp impexp = new ImpExp();
+						
+						if (functions.containsKey(s))
+							impexp = functions.get(s);
+						
+						boolean flag_isExported=true;
+						
+						if(considerBundleExportersOnly)
+						{
+							String funcWithoutReturnType=s.split(" *")[1].trim();
+							for(String a:bundleExports)
+							{
+								if(funcWithoutReturnType.startsWith(a.trim()+"."))
+								{
+									flag_isExported=true;
+									break;
+								}
+							}
+						}
+						if(flag_isExported)
+						{
+							impexp.addToExp(thisPluginExtractName);
+						functions.put(s, impexp);
+						}
+					}
 				}
 
 				for (String s : myMethodImports) {
 					ImpExp impexp = new ImpExp();
 					if (functions.containsKey(s))
 						impexp = functions.get(s);
-					impexp.imp.add(thisPluginExtractName);
+					
+					impexp.addToImp(thisPluginExtractName);
 					functions.put(s, impexp);
 				}
 
@@ -120,7 +159,7 @@ public class DependencyFinder {
 					ImpExp impexp = new ImpExp();
 					if (types.containsKey(s))
 						impexp = types.get(s);
-					impexp.exp.add(thisPluginExtractName);
+					impexp.addToExp(thisPluginExtractName);
 					types.put(s, impexp);
 				}
 
@@ -128,7 +167,7 @@ public class DependencyFinder {
 					ImpExp impexp = new ImpExp();
 					if (types.containsKey(s))
 						impexp = types.get(s);
-					impexp.imp.add(thisPluginExtractName);
+					impexp.addToImp(thisPluginExtractName);
 					types.put(s, impexp);
 				}
 				// System.out.println(types.keySet().toString());
@@ -189,20 +228,20 @@ public class DependencyFinder {
 
 			ImpExp impexp = functions.get(key);
 
-			Set<String> imp = impexp.imp;
-			Set<String> exp = impexp.exp;
+			Set imp = impexp.getImp();
+			Set exp = impexp.getExp();
 
 			// all importers
 			writer.write(Constants.PLUGIN_DEPENDENCY_IMPORTERS + "\n");
-			for (String s : imp) {
-				writer.write(s + "\n");
+			for (Object s : imp) {
+				writer.write((String)s + "\n");
 			}
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 			// all exporters
 			writer.write(Constants.PLUGIN_DEPENDENCY_EXPORTERS + "\n");
-			for (String s : exp) {
-				writer.write(s + "\n");
+			for (Object s : exp) {
+				writer.write((String)s + "\n");
 			}
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
@@ -259,20 +298,21 @@ public class DependencyFinder {
 			writer.write(key + "\n");
 
 			ImpExp impexp = types.get(key);
-			Set<String> imp = impexp.imp;
-			Set<String> exp = impexp.exp;
+			
+			Set imp = impexp.getImp();
+			Set exp = impexp.getExp();
 
 			// all importers
 			writer.write(Constants.PLUGIN_DEPENDENCY_IMPORTERS + "\n");
-			for (String s : imp) {
-				writer.write(s + "\n");
+			for (    Object s : imp) {
+				writer.write((String)s + "\n");
 			}
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 			// all exporters
 			writer.write(Constants.PLUGIN_DEPENDENCY_EXPORTERS + "\n");
-			for (String s : exp) {
-				writer.write(s + "\n");
+			for (  Object s : exp) {
+				writer.write((String)s + "\n");
 			}
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 

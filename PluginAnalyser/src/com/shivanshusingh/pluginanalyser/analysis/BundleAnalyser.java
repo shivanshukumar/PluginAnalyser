@@ -617,15 +617,20 @@ public class BundleAnalyser extends ManifestParser {
 
 		// now finally removing the invokations. (actual pruning) at the plugin
 		// level.
+		Log.outln("====Now Pruning  for superClass and Interface function invokations at the plugin Level");
+		Log.errln("====Now Pruning  for superClass and Interface function invokations at the plugin Level");
+		
 		for (String invokation : invokationCulprits) {
-			System.out.println(allExternalInvokations.remove(invokation) + "= remove  from AllExternalInvokations \t: "
-					+ invokation);
-			System.out.println(allExternalNonJavaInvokations.remove(invokation)
-					+ "= remove  from AllExternalAndNonJavaInvokations : " + invokation);
+			boolean x1 = allExternalInvokations.remove(invokation);
+			boolean x2 = allExternalNonJavaInvokations.remove(invokation);
+			Log.outln(x1 + "= remove  from AllExternalInvokations \t: " + invokation);
+			Log.outln(x2 + "= remove  from AllExternalAndNonJavaInvokations \t : " + invokation);
 		}
 
 		// Pruning over.
-
+		Log.outln("====  Done, Pruning  for superClass and Interface function invokations at the plugin Level");
+		Log.errln("====  Done, Pruning  for superClass and Interface function invokations at the plugin Level");
+		
 		// ////////////////////////////////
 
 		List<String> allDetectedTypes_List = new ArrayList<String>(allDetectedTypes);
@@ -643,7 +648,7 @@ public class BundleAnalyser extends ManifestParser {
 
 		List<String> allMyClasses_List = new ArrayList<String>(allMyClasses);
 		List<String> allMyDeprecatedClasses_List = new ArrayList<String>(allMyDeprecatedClasses);
-		List<String> allMyDeprecatedPublicClasses_List = new ArrayList<String>(allMyDeprecatedClasses);
+		List<String> allMyDeprecatedPublicClasses_List = new ArrayList<String>(allMyDeprecatedPublicClasses);
 		List<String> allMyPublicClasses_List = new ArrayList<String>(allMyPublicClasses);
 
 		Map<String, Map<String, Integer>> globals = v.getGlobals();
@@ -1079,7 +1084,7 @@ public class BundleAnalyser extends ManifestParser {
 							String token = tokens[x];
 							if (!"".equalsIgnoreCase(token.trim())) 
 							{
-								System.out.println("Adding ctoken:+++++++++:" + token.trim());
+//								System.out.println("Adding ctoken:+++++++++:" + token.trim());
 								superClassAndInterfaceSuspects.add(token.trim());
 							}
 						}
@@ -1121,7 +1126,7 @@ public class BundleAnalyser extends ManifestParser {
 								{
 									if (!"".equalsIgnoreCase(i.trim())) 
 									{
-										System.out.println("Adding itoken:+++++++++:" + i.trim());
+//										System.out.println("Adding itoken:+++++++++:" + i.trim());
 		
 										superClassAndInterfaceSuspects.add(i.trim());
 									}
@@ -1170,7 +1175,7 @@ public class BundleAnalyser extends ManifestParser {
 					// the next step. Cannot do it here as we might get a
 					// concurrent modification exception as we are iterating
 					// over the same set that we have to remove from.
-					System.out.println("Marking for removal: " + invokation + "  because of: " + newInvokationEntry);
+//					System.out.println("Marking for removal: " + invokation + "  because of: " + newInvokationEntry);
 					invokationsToBeRemoved.add(invokation);
 
 				}
