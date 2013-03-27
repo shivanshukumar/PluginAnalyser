@@ -34,6 +34,10 @@ import java.util.jar.Manifest;
 import org.apache.ivy.osgi.core.BundleCapability;
 //import org.apache.ivy.osgi.core.BundleInfo;
 import com.shivanshusingh.pluginanalyser.analysis.BundleInfo;
+import com.shivanshusingh.pluginanalyser.utils.Util;
+import com.shivanshusingh.pluginanalyser.utils.logging.Log;
+import com.shivanshusingh.pluginanalyser.utils.parsing.Constants;
+
 import org.apache.ivy.osgi.core.BundleRequirement;
 import org.apache.ivy.osgi.core.ExportPackage;
 import org.apache.ivy.osgi.core.ManifestHeaderElement;
@@ -113,27 +117,21 @@ public class ManifestParser {
     public static BundleInfo parseManifest(Manifest manifest) throws ParseException {
         Attributes mainAttributes = manifest.getMainAttributes();
 
+        
+        BundleInfo bundleInfo = new BundleInfo();
         // Eclipse source bundle doesn't have it. Disable it until proven actually useful
         // String manifestVersion = mainAttributes.getValue(BUNDLE_MANIFEST_VERSION);
         // if (manifestVersion == null) {
         // // non OSGi manifest
         // throw new ParseException("No " + BUNDLE_MANIFEST_VERSION + " in the manifest", 0);
         // }
-
+        try {
         String symbolicName = new ManifestHeaderValue(mainAttributes.getValue(BUNDLE_SYMBOLIC_NAME))
                 .getSingleValue();
         if (symbolicName == null) {
             throw new ParseException("No " + BUNDLE_SYMBOLIC_NAME + " in the manifest", 0);
         }
 
-        //mine commented.
-       /* String description = new ManifestHeaderValue(mainAttributes.getValue(BUNDLE_DESCRIPTION))
-                .getSingleValue();
-        if (description == null) {
-            description = new ManifestHeaderValue(mainAttributes.getValue(BUNDLE_DESCRIPTION))
-                    .getSingleValue();
-        }
-*/
         String vBundle = new ManifestHeaderValue(mainAttributes.getValue(BUNDLE_VERSION))
                 .getSingleValue();
         Version version;
@@ -144,54 +142,102 @@ public class ManifestParser {
                     + vBundle + " (" + e.getMessage() + ")", 0);
         }
 
-        BundleInfo bundleInfo = new BundleInfo(symbolicName, version);
+        	//////////////////////////////////////////////////////////////
+			// ////////////// PLEASE READ THIS //////////////////////////
+        	////////////////////////////////////////////////////////////
+			// symbolic name and version *SHOULD* be treated as mandatory,
+			// without which, no further processing can take place. In such
+			// places we would have mark the plugin as non-considerable.
+			//
+			// However we are relaxing that for now. (see the catch block below
+			// and the checkError(e) function.
+			//
+			//
+			// so even if the plugin has no manifest (packages exported or such)
+			// information, and still provides public classes AND in case there
+			// are any invokations taking place to this code, then when we have
+			// checkBundleExportersOnly flag set to true in
+			// DependencyVisitor...BuildSuperSet..(), then in the final function
+			// dependency set, there would be some invokations that would not
+			// get satisfied and then we can trace back to say that HEY, the
+			// bundle manifest.mf was malformed so that is an error, which
+			// eclipse's manifest parser may overlook and be oversmart to
+			// recover partially correct specification!!.
 
-        //mine commented
-  /*      bundleInfo.setDescription(description);
+			bundleInfo = new BundleInfo(symbolicName, version);
+
+			// /////////////////////////////////////////////////////////////////
+			// /////////////////////////////////////////////////////////////////
+
+		} catch (ParseException e) {
+		checkError(e);
+		}
+  //mine commented.
+       /* String description = new ManifestHeaderValue(mainAttributes.getValue(BUNDLE_DESCRIPTION))
+                .getSingleValue();
+        if (description == null) {
+            description = new ManifestHeaderValue(mainAttributes.getValue(BUNDLE_DESCRIPTION))
+                    .getSingleValue();
+        }
+      bundleInfo.setDescription(description);
 */
+        try{
         List/* <String> */environments = new ManifestHeaderValue(
                 mainAttributes.getValue(BUNDLE_REQUIRED_EXECUTION_ENVIRONMENT)).getValues();
         bundleInfo.setExecutionEnvironments(environments);
+        }catch(ParseException e){checkError(e);}
 
+        
+       try{
         parseRequirement(bundleInfo, mainAttributes, REQUIRE_BUNDLE, BundleInfo.BUNDLE_TYPE,
             ATTR_BUNDLE_VERSION);
+       }catch(ParseException e){checkError(e);}
+        try{
         parseRequirement(bundleInfo, mainAttributes, IMPORT_PACKAGE, BundleInfo.PACKAGE_TYPE,
             ATTR_VERSION);
+        }catch(ParseException e){checkError(e);}
+        
+       /* try{
         parseRequirement(bundleInfo, mainAttributes, IMPORT_SERVICE, BundleInfo.SERVICE_TYPE,
             ATTR_VERSION);
+        }catch(ParseException e){checkError(e);}
+       */ 
+        try{
+	        ManifestHeaderValue exportElements = new ManifestHeaderValue(
+	                mainAttributes.getValue(EXPORT_PACKAGE));
+	        Iterator itExports = exportElements.getElements().iterator();
+	        while (itExports.hasNext()) {
+	            ManifestHeaderElement exportElement = (ManifestHeaderElement) itExports.next();
+	            String vExport = (String) exportElement.getAttributes().get(ATTR_VERSION);
+	            Version v = null;
+	            try {
+	                v = versionOf(vExport);
+	            } catch (NumberFormatException e) {
+	                throw new ParseException("The " + EXPORT_PACKAGE + " has an incorrect version: "
+	                        + vExport + " (" + e.getMessage() + ")", 0);
+	            }
+	
+	            Iterator itNames = exportElement.getValues().iterator();
+	            while (itNames.hasNext()) {
+	                String name = (String) itNames.next();
+	                ExportPackage export = new ExportPackage(name, v);
+	                String uses = (String) exportElement.getDirectives().get(ATTR_USE);
+	                if (uses != null) {
+	                    String[] split = uses.trim().split(",");
+	                    for (int i = 0; i < split.length; i++) {
+	                        export.addUse(split[i].trim());
+	                    }
+	                }
+	                bundleInfo.addCapability(export);
+	            }
+	        }
+        }catch(ParseException e){checkError(e);}
 
-        ManifestHeaderValue exportElements = new ManifestHeaderValue(
-                mainAttributes.getValue(EXPORT_PACKAGE));
-        Iterator itExports = exportElements.getElements().iterator();
-        while (itExports.hasNext()) {
-            ManifestHeaderElement exportElement = (ManifestHeaderElement) itExports.next();
-            String vExport = (String) exportElement.getAttributes().get(ATTR_VERSION);
-            Version v = null;
-            try {
-                v = versionOf(vExport);
-            } catch (NumberFormatException e) {
-                throw new ParseException("The " + EXPORT_PACKAGE + " has an incorrect version: "
-                        + vExport + " (" + e.getMessage() + ")", 0);
-            }
-
-            Iterator itNames = exportElement.getValues().iterator();
-            while (itNames.hasNext()) {
-                String name = (String) itNames.next();
-                ExportPackage export = new ExportPackage(name, v);
-                String uses = (String) exportElement.getDirectives().get(ATTR_USE);
-                if (uses != null) {
-                    String[] split = uses.trim().split(",");
-                    for (int i = 0; i < split.length; i++) {
-                        export.addUse(split[i].trim());
-                    }
-                }
-                bundleInfo.addCapability(export);
-            }
-        }
-
-        parseCapability(bundleInfo, mainAttributes, EXPORT_SERVICE, BundleInfo.SERVICE_TYPE);
-
-        // mine commented
+      /*  try{
+        	parseCapability(bundleInfo, mainAttributes, EXPORT_SERVICE, BundleInfo.SERVICE_TYPE);
+        }catch(ParseException e){checkError(e);}
+      
+        */
         // handle Eclipse specific source attachement
        /* String eclipseSourceBundle = mainAttributes.getValue(ECLIPSE_SOURCE_BUNDLE);
         if (eclipseSourceBundle != null) {
@@ -208,18 +254,34 @@ public class ManifestParser {
             }
         }*/
 
+        try{
         String bundleClasspath = mainAttributes.getValue(BUNDLE_CLASSPATH);
         if (bundleClasspath != null) {
             ManifestHeaderValue bundleClasspathValue = new ManifestHeaderValue(bundleClasspath);
             //Mine
             bundleInfo.setClasspathEntries(bundleClasspathValue.getValues());
         }
+        }catch(ParseException e){checkError(e);}
 
         return bundleInfo;
     }
 
-    private static void parseRequirement(BundleInfo bundleInfo, Attributes mainAttributes,
+    private static void checkError(ParseException e) throws ParseException {
+    	
+    	// checking if the error message is the one  for which the exception must be thrown
+    	String msg=e.getMessage();
+    	if(Constants.EXCEPTION_MSG_EARLY_END_OF_A_PARAMETER.equalsIgnoreCase(msg.trim()))
+    	{
+    		throw e;
+    	}
+    	Log.errln(Util.getStackTrace(e));
+    	Log.errln("XXXX HOWEVER IGNORING AND MOVING ON TO THE NEXT BUNDLE ELEMENT ....");
+		
+	}
+
+	private static void parseRequirement(BundleInfo bundleInfo, Attributes mainAttributes,
             String headerName, String type, String versionAttr) throws ParseException {
+    		
         ManifestHeaderValue elements = new ManifestHeaderValue(mainAttributes.getValue(headerName));
         Iterator itElement = elements.getElements().iterator();
         while (itElement.hasNext()) {

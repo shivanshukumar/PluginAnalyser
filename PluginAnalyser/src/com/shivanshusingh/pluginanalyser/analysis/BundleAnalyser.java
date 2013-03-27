@@ -470,15 +470,16 @@ public class BundleAnalyser extends ManifestParser {
 	}
 
 	/**
+	 * @deprecated
 	 * @param manifest
 	 * @return
 	 */
-	/*@SuppressWarnings("unused")
+	@SuppressWarnings("unused")
 	private static BundleInfo extractManifestInformation(Manifest manifest) {
 		BundleInfo bundleinfo = null;
 		try {
-			bundleinfo = new BundleInfo(manifest);
-			// extractBundleInfo(bundleinfo);
+			bundleinfo = com.shivanshusingh.pluginanalyser.analysis.ManifestParser.parseManifest(manifest);
+			
 
 		} catch (ParseException e) {
 			Log.outln("xxxx  NO Manifest found here or cannot parse that  or maybe theres nothing to parse inthis.  ");
@@ -486,7 +487,7 @@ public class BundleAnalyser extends ManifestParser {
 		}
 		return bundleinfo;
 	}
-*/
+
 	/**
 	 * @param manifestStream
 	 * @return
@@ -497,13 +498,14 @@ public class BundleAnalyser extends ManifestParser {
 		try {
 
 			bundleInformation =  com.shivanshusingh.pluginanalyser.analysis.ManifestParser.parseManifest(manifestStream);// new BundleInfo(manifestStream);
-
+			System.err.println("==== "+bundleInformation.toString());
 			// extractBundleInfo(bundleInformation);
 
 		} catch (ParseException e) {
 			Log.outln("xxxx  NO Manifest found here or cannot parse that  or maybe theres nothing to parse inthis.    ");
-
+			
 			Log.errln(Util.getStackTrace(e));
+			System.err.println("xxxx "+bundleInformation.toString());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

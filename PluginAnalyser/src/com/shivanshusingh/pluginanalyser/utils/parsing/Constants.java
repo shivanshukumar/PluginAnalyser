@@ -12,6 +12,8 @@ public interface Constants {
 	public static final String MARKER_INTERIM 											= "====";
 	public static final String MARKER_TERMINATOR 										= "----";
 	
+	public static final String BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL 						= "(optional)";
+
 	public static final String BUNDLE_CLASSPATHENTRIES 									= MARKER_ADDON +  "Bundle ClassPathEntries"  			  +  MARKER_ADDON ;
 	public static final String BUNDLE_EXPORTS 											= MARKER_ADDON + "Bundle Exports"  						  +  MARKER_ADDON ;
 	public static final String BUNDLE_IMPORTS 											= MARKER_ADDON + "Bundle Package Imports"  				  +  MARKER_ADDON ;
@@ -28,6 +30,8 @@ public interface Constants {
 	public static final String DEPENDENCY_SET_FILE_EXTENSION_PLUGIN 					= ".dpst";
 	public static final String DEPENDENCY_SET_FILE_PREFIX_PLUGIN 						= "DEPENDENCY-SET-PLUGIN-";
 	
+	public static final String EXCEPTION_MSG_EARLY_END_OF_A_PARAMETER = "Early end of a parameter";
+
 	public static final String EXTRACT_FILE_EXTENSION_FEATURE							= ".extr";
 	public static final String EXTRACT_FILE_EXTENSION_PLUGIN 							= ".extr";
 	public static final String EXTRACT_FILE_PREFIX_FEATURE 								= "EXTRACT-FEATURE-";
@@ -66,7 +70,6 @@ public interface Constants {
 	public static final String PLUGIN_DEPENDENCY_IMPORTERS  							= MARKER_ADDON + "Importers " 								+ MARKER_ADDON;
 	public static final String PLUGIN_DEPENDENCY_IMPORTERS_UNSATISFIED  				= MARKER_ADDON + "Poor Importers  UnSatisfied " 			+ MARKER_ADDON;
 	
-	public static final String BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL 						= "(optional)";
 	
 	
 	//TODO Add support for features.

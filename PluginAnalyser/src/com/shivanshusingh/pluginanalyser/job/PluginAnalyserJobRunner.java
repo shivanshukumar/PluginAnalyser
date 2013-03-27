@@ -34,8 +34,9 @@ public class PluginAnalyserJobRunner {
 
 		String mirrorSiteDesinationPathPrefix = "/Users/singhsk/Developer/eclipse_plugins";
 
-		String mirrorSiteDesinationName = 
-				"new_site6_____";
+		String mirrorSiteDesinationName =
+				"new_site2_____";
+//				"new_site6_____";
 //		 "__WorkingEclipseSite_features_and_plugins__";
 //		 "_plugin_sandbox";
 		// + Util.getCurrentTimeString();
@@ -138,17 +139,17 @@ public class PluginAnalyserJobRunner {
 
 			// getting features from update sites
 
-			String baseEclipseInstallationHome = eclipseHome;
+		/*	String baseEclipseInstallationHome = eclipseHome;
 			if (!DownloadAndStagingRunner
 					.downloadAndStageWithEclipseInstallation(eclipseHome, eclipseApp, equinoxAppName,
 							baseEclipseInstallationHome, updateSiteURLCollection_list, destinationDirectory, verbose, raw,
 							eraseOld))
 
 			
-			/* * if (!DownloadAndStagingRunner.downloadAndStage(eclipseHome,
+			 * if (!DownloadAndStagingRunner.downloadAndStage(eclipseHome,
 			 * eclipseApp, equinoxAppName, updateSiteURLCollection_list,
 			 * destinationDirectory, verbose, raw, eraseOld))
-			*/ 
+			 
 			{
 				Log.errln("XXXXXXX  " + "\n  Download and staging error for: " + "\n  " + destinationDirectory
 						+ "\n    cannot continue  with the analysis and data extraction." + "\n    ----"
@@ -161,7 +162,7 @@ public class PluginAnalyserJobRunner {
 					+ Util.getFormattedTime(stage2 - stage1));
 			Log.errln("Downloading and Staging for site configuration at  :  " + destinationDirectory + "  time: "
 					+ Util.getFormattedTime(stage2 - stage1));
-
+*/
 			/*
 			 * starting analysis ....
 			 */
@@ -181,7 +182,7 @@ public class PluginAnalyserJobRunner {
 																							// trailing
 																							// slash(/)
 			boolean eraseoldDependenctSetExtrcats=true;
-			boolean considerBundleExportsOnly=false;
+			boolean considerBundleExportsOnly=true;
 			DependencyFinder.buildPluginDependencySuperSet(pluginExtractsLocation, pluginextractAnalysisDestLocation, considerBundleExportsOnly  , eraseoldDependenctSetExtrcats);
 			// ///////////////////////////////////////////////////////////////////////////////////////////////
 			long time2 = System.currentTimeMillis();

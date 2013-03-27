@@ -76,9 +76,17 @@ public class BundleInfo {
 	public BundleInfo() {
         
     }
+	//mine
     public BundleInfo(String name, Version version) {
         this.symbolicName = name;
         this.version = version;
+    }
+    
+    //mine
+    
+    public void setSymbolicName(String symbolicName)
+    {
+    	this.symbolicName=symbolicName;
     }
 
     public String toString() {
