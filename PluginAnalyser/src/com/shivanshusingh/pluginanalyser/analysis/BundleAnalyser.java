@@ -483,6 +483,8 @@ public class BundleAnalyser extends ManifestParser {
 
 		} catch (ParseException e) {
 			Log.outln("xxxx  NO Manifest found here or cannot parse that  or maybe theres nothing to parse inthis.  ");
+			//TODO mark this plugin as not to be considered and this should not be analysed also  this whole plugin must be entirely ignored. the visitor is going to be empty i.e. with the top line of the extract saying that this was ignored because of malformed information inthe manifest file. Also, (OPTIONAL): a new  Extract file with IGNORED PLUGINS has to be created for usage later on.
+			
 			// e.printStackTrace();
 		}
 		return bundleinfo;
