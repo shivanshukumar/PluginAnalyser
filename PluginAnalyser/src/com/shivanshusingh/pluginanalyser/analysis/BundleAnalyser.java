@@ -476,14 +476,14 @@ public class BundleAnalyser extends ManifestParser {
 	 */
 	@SuppressWarnings("unused")
 	private static BundleInfo extractManifestInformation(Manifest manifest) {
-		BundleInfo bundleinfo = null;
+		BundleInfo bundleinfo = new BundleInfo();
 		try {
 			bundleinfo = com.shivanshusingh.pluginanalyser.analysis.ManifestParser.parseManifest(manifest);
 			
 
 		} catch (ParseException e) {
-			Log.outln("xxxx  NO Manifest found here or cannot parse that  or maybe theres nothing to parse inthis.  ");
-			//TODO mark this plugin as not to be considered and this should not be analysed also  this whole plugin must be entirely ignored. the visitor is going to be empty i.e. with the top line of the extract saying that this was ignored because of malformed information inthe manifest file. Also, (OPTIONAL): a new  Extract file with IGNORED PLUGINS has to be created for usage later on.
+			Log.outln("xxxx  NO Manifest found here or cannot parse that  or maybe theres nothing to parse inthis.    \n xxxx  Marking bundleInfo as to be IGNORED.");
+			bundleinfo.ignoreBundle=true;
 			
 			// e.printStackTrace();
 		}
@@ -495,16 +495,18 @@ public class BundleAnalyser extends ManifestParser {
 	 * @return
 	 */
 	private static BundleInfo extractManifestInformation(InputStream manifestStream) {
-		BundleInfo bundleInformation = null;
+		BundleInfo bundleInformation = new BundleInfo();
 
 		try {
 
 			bundleInformation =  com.shivanshusingh.pluginanalyser.analysis.ManifestParser.parseManifest(manifestStream);// new BundleInfo(manifestStream);
 			System.err.println("==== "+bundleInformation.toString());
+			//TODO mark this plugin as not to be considered and this should not be analysed also  this whole plugin must be entirely ignored. the visitor is going to be empty i.e. with the top line of the extract saying that this was ignored because of malformed information inthe manifest file. Also, (OPTIONAL): a new  Extract file with IGNORED PLUGINS has to be created for usage later on.
 			// extractBundleInfo(bundleInformation);
 
 		} catch (ParseException e) {
-			Log.outln("xxxx  NO Manifest found here or cannot parse that  or maybe theres nothing to parse inthis.    ");
+			Log.outln("xxxx  NO Manifest found here or cannot parse that  or maybe theres nothing to parse inthis.    \n xxxx  Marking bundleInfo as to be IGNORED.");
+			bundleInformation.ignoreBundle=true;
 			
 			Log.errln(Util.getStackTrace(e));
 			System.err.println("xxxx "+bundleInformation.toString());
@@ -697,9 +699,16 @@ public class BundleAnalyser extends ManifestParser {
 		// to bundleinfo.getRequirements() without any differences.
 
 		boolean flag_bundleInfoExists = true;
-		if (null == bundleinfo )
+		if (null == bundleinfo  )
 			flag_bundleInfoExists = false;
 
+		
+		writer.write(Constants.BUNDLE_IGNORE + "\n");
+		if (flag_bundleInfoExists) 
+			writer.write(bundleinfo.ignoreBundle + "\n");
+		
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
+		
 		writer.write(Constants.BUNDLE_REQUIREMENTS + "\n");
 		if (flag_bundleInfoExists) {
 
@@ -733,7 +742,6 @@ public class BundleAnalyser extends ManifestParser {
 			// Log.outln("Bundle Imports = " +
 			// bundleinfo.getImports().toString());
 		}
-		writer.write(Constants.MARKER_TERMINATOR + "\n");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 		writer.write(Constants.BUNDLE_SYMBOLICNAME + "\n");
 		if (flag_bundleInfoExists) {

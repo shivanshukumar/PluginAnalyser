@@ -16,6 +16,7 @@ public interface Constants {
 
 	public static final String BUNDLE_CLASSPATHENTRIES 									= MARKER_ADDON +  "Bundle ClassPathEntries"  			  +  MARKER_ADDON ;
 	public static final String BUNDLE_EXPORTS 											= MARKER_ADDON + "Bundle Exports"  						  +  MARKER_ADDON ;
+	public static final String BUNDLE_IGNORE 											= MARKER_ADDON + "IGNORE BUNDLE COZ MANIFEST(OR SOME PROPERTY OF IT) MALFORMED " 							+ MARKER_ADDON;
 	public static final String BUNDLE_IMPORTS 											= MARKER_ADDON + "Bundle Package Imports"  				  +  MARKER_ADDON ;
 	public static final String BUNDLE_PLUGIN_XML 										= MARKER_ADDON + "Bundle Plugin.xml"  					  +  MARKER_ADDON ;
 	public static final String BUNDLE_REQUIREMENTS 										= MARKER_ADDON + "Bundle Requirements"  				  +  MARKER_ADDON ;

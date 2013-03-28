@@ -45,6 +45,8 @@ public class BundleInfo {
 
     public static final String SERVICE_TYPE = "service";
 
+    public  boolean ignoreBundle=false;
+    
     private String symbolicName;
 
     private String presentationName;
