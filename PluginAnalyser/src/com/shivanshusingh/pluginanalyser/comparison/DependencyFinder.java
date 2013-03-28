@@ -21,6 +21,7 @@ import com.shivanshusingh.pluginanalyser.utils.parsing.ParsingUtil;
 public class DependencyFinder {
 
 	static Map<String, ImpExp> functions = new HashMap<String, ImpExp>();
+	static  Set<String>  pluginExtractsIgnored = new   HashSet  <String>    ();
 	static Map<String, ImpExp> types = new HashMap<String, ImpExp>();
 
 	/**
@@ -69,8 +70,8 @@ public class DependencyFinder {
 		if (eraseOld) {
 			Util.clearFolder(new File(pathToPluginDependencyAnalysisOutputLocation));
 		}
-		File[] entries = pluginExtractDirectory.listFiles();
-		int entriesLength = entries.length;
+		File[] pluginExtractEntries = pluginExtractDirectory.listFiles();
+		int entriesLength = pluginExtractEntries.length;
 		if (entriesLength < 2) {
 
 			Log.errln("XXXX  \n "
@@ -80,9 +81,9 @@ public class DependencyFinder {
 
 		long pluginExtractsDone = 0;
 
-		for (File entry : entries) {
+		for (File pluginExtract : pluginExtractEntries) {
 			pluginExtractsDone++;
-			if (Util.checkFile(entry, true, true, true, false)) {
+			if (Util.checkFile(pluginExtract, true, true, true, false)) {
 				/**
 				 * this is the name of the PluginExtract file, without the
 				 * extension. this is for obtaining the fully qualified plugin
@@ -90,7 +91,7 @@ public class DependencyFinder {
 				 * not in the pluginExtract file, cause because of an originally
 				 * missing manifest.mf file for thus plugin.
 				 */
-				String thisPluginExtractName = entry.getName().trim();
+				String thisPluginExtractName = pluginExtract.getName().trim();
 				int startingIndex = thisPluginExtractName.indexOf(Constants.EXTRACT_FILE_PREFIX_PLUGIN)
 						+ Constants.EXTRACT_FILE_PREFIX_PLUGIN.length();
 				thisPluginExtractName = thisPluginExtractName.substring(startingIndex);
@@ -102,18 +103,35 @@ public class DependencyFinder {
 				// + thisPluginExtractName + "====");
 
 				// restoring the functions information from the file.
+				
+				boolean ignorePluginExtract = false;
+				Set<String> ignoreBundleProperty = ParsingUtil.restorePropertyFromExtract(pluginExtract,
+						Constants.BUNDLE_IGNORE);
+				if (null != ignoreBundleProperty && 1 == ignoreBundleProperty.size())
+					ignorePluginExtract = ignoreBundleProperty.toString().toLowerCase().trim().contains("true");
+
+					//System.out.println("==== ignoreBundleProperty= "+ignoreBundleProperty.toString());
+				if(ignorePluginExtract)
+				{
+					Log.outln("==== "+thisPluginExtractName+" must be IGNORED");
+					Log.errln("==== "+thisPluginExtractName+" must be IGNORED");
+					pluginExtractsIgnored.add(thisPluginExtractName);
+					continue;
+				
+				}
+				
 				Set<String> bundleExports = new HashSet<String>();
 				if (considerBundleExportersOnly) {
-					bundleExports = ParsingUtil.restorePropertyFromExtract(entry, Constants.BUNDLE_EXPORTS);
+					bundleExports = ParsingUtil.restorePropertyFromExtract(pluginExtract, Constants.BUNDLE_EXPORTS);
 				}
 
-				Set<String> myMethodExports = ParsingUtil.restorePropertyFromExtract(entry,
+				Set<String> myMethodExports = ParsingUtil.restorePropertyFromExtract(pluginExtract,
 						Constants.PLUGIN_ALL_MY_METHODS_PUBLIC);
-				Set<String> myMethodImports = ParsingUtil.restorePropertyFromExtract(entry,
+				Set<String> myMethodImports = ParsingUtil.restorePropertyFromExtract(pluginExtract,
 						Constants.PLUGIN_ALL_MY_METHOD_CALLS_EXTERNAL_AND_NON_JAVA);
-				Set<String> myTypeExports = ParsingUtil.restorePropertyFromExtract(entry,
+				Set<String> myTypeExports = ParsingUtil.restorePropertyFromExtract(pluginExtract,
 						Constants.PLUGIN_ALL_MY_TYPES_PUBLIC);
-				Set<String> myTypeImports = ParsingUtil.restorePropertyFromExtract(entry,
+				Set<String> myTypeImports = ParsingUtil.restorePropertyFromExtract(pluginExtract,
 						Constants.PLUGIN_ALL_TYPES_DETECTED_EXTERNAL_AND_NON_JAVA);
 
 				// merging functions
@@ -286,6 +304,12 @@ public class DependencyFinder {
 			writer.write(s + "\n");
 		writer.write("COUNT=" + unmatchedFunctionImports.size() + "\n");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
+		
+		writer.write(Constants.PLUGIN_DEPENDENCY_ALL_IGNORED_PLUGINS + "\n");
+		for (String s : pluginExtractsIgnored)
+			writer.write(s + "\n");
+		writer.write("COUNT=" + pluginExtractsIgnored.size() + "\n");
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 		// terminating the functions set
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
@@ -352,6 +376,13 @@ public class DependencyFinder {
 		for (String s : unmatchedTypeImports)
 			writer.write(s + "\n");
 		writer.write("COUNT=" + unmatchedTypeImports.size() + "\n");
+		
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
+		
+		writer.write(Constants.PLUGIN_DEPENDENCY_ALL_IGNORED_PLUGINS + "\n");
+		for (String s : pluginExtractsIgnored)
+			writer.write(s + "\n");
+		writer.write("COUNT=" + pluginExtractsIgnored.size() + "\n");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 		// terminating the types set
