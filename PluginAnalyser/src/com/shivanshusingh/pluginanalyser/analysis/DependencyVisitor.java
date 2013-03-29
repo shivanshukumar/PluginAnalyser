@@ -44,6 +44,8 @@ public class DependencyVisitor extends ClassVisitor {
 	// mine
 	Set<String> allMyPublicClasses = new HashSet<String>();
 	// mine
+	Set<String> allMyProtectedClasses = new HashSet<String>();
+	// mine
 	Set<String> allInvokations = new HashSet<String>();
 	// mine
 	Set<String> allNonJavaInvokations = new HashSet<String>();
@@ -57,6 +59,9 @@ public class DependencyVisitor extends ClassVisitor {
 	Set<String> allMyDeprecatedMethods = new HashSet<String>();
 	// mine
 	Set<String> allMyPublicMethods = new HashSet<String>();
+	// mine
+	Set<String> allMyProtectedMethods = new HashSet<String>();
+		
 	// mine
 	Map<String, TypeDependency> allMyTypeDependencies = new HashMap<String, TypeDependency>();
 
@@ -195,6 +200,14 @@ public class DependencyVisitor extends ClassVisitor {
 		// if method access is public then this is a personal public function
 		if ((access & Opcodes.ACC_PUBLIC) != 0)
 			allMyPublicMethods.add(fnSignature);
+		
+		// if method access is protected then this is a personal protected function
+		if ((access & Opcodes.ACC_PROTECTED) != 0)
+		{//// for now adding them to public.... to see
+			allMyPublicMethods.add(fnSignature);
+			allMyProtectedMethods.add(fnSignature);
+		}
+				
 		// if method access is deprecated then this is a personal  deprecated function
 				if ((access & Opcodes.ACC_DEPRECATED) != 0)
 					allMyDeprecatedMethods.add(fnSignature);
@@ -240,6 +253,13 @@ public class DependencyVisitor extends ClassVisitor {
 		//mine- adding to public classes and no other.
 		if((access&Opcodes.ACC_PUBLIC)!=0)
 			allMyPublicClasses.add(Type.getObjectType(name).getClassName());
+		//mine- adding to protected or unspecified classes and no other.
+		if((access&Opcodes.ACC_PROTECTED)!=0)
+		{
+			//for now adding to public classes to see ....
+			allMyClasses.add(Type.getObjectType(name).getClassName());
+			allMyProtectedClasses.add(Type.getObjectType(name).getClassName());
+		}
 		// if class access is deprecated then this is a personal  deprecated   class
 		if ((access & Opcodes.ACC_DEPRECATED) != 0)
 			allMyDeprecatedClasses.add(Type.getObjectType(name).getClassName());
