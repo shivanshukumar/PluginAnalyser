@@ -12,6 +12,10 @@ import java.util.Set;
  */
 public class ImpExp {
 
+	
+	public Set<String> exporterSets=new HashSet<String>    ();
+	//public Set<Set> exporterSets = new HashSet<Set>();
+	
 	private Set exp = new HashSet();
 
 	private Set imp = new HashSet();

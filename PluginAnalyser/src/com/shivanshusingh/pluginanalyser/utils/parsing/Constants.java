@@ -72,6 +72,9 @@ public interface Constants {
 	public static final String PLUGIN_DEPENDENCY_IMPORTERS_UNSATISFIED  				= MARKER_ADDON + "Poor Importers  UnSatisfied " 			+ MARKER_ADDON;
 	
 	public static final String PLUGIN_DEPENDENCY_ALL_IGNORED_PLUGINS 					= MARKER_ADDON + "Plugins IGNORED  " 						+ MARKER_ADDON;
+	public static final String PLUGIN_DEPENDENCY_EXPORTERS_SETS = MARKER_ADDON +"EXPORTER SETS"+MARKER_ADDON ;
+	public static final String DELIM_PLUGIN_DEPENDENCY_TRANSITIVE_TYPE_FINAL = " ; ";
+	public static final String DELIM_PLUGIN_DEPENDENCY_TRANSITIVE_TYPE_INTERIM = " ====> ";
 	
 	
 	
