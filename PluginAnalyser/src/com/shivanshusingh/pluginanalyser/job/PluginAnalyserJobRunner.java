@@ -182,8 +182,9 @@ public class PluginAnalyserJobRunner {
 																							// trailing
 																							// slash(/)
 			boolean eraseoldDependenctSetExtrcats=true;
-			boolean considerBundleExportsOnly=true;
-			DependencyFinder.buildPluginDependencySuperSet(pluginExtractsLocation, pluginextractAnalysisDestLocation, considerBundleExportsOnly  , eraseoldDependenctSetExtrcats);
+			boolean considerBundleExportsOnly=false;
+			boolean  ignoreBundlesMarkedToBeIgnored=false;
+			DependencyFinder.buildPluginDependencySuperSet(pluginExtractsLocation, pluginextractAnalysisDestLocation, considerBundleExportsOnly  , ignoreBundlesMarkedToBeIgnored, eraseoldDependenctSetExtrcats);
 			// ///////////////////////////////////////////////////////////////////////////////////////////////
 			long time2 = System.currentTimeMillis();
 			Log.outln("Current Job for site configuration at  :  " + destinationDirectory + "  time: "

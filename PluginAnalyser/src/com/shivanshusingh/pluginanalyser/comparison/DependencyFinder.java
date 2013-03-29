@@ -45,11 +45,12 @@ public class DependencyFinder {
 	 *            manifest information listing exported packages is missing,
 	 *            setting this to true in this case will essentially mean that
 	 *            the plugin has no exports whatsoever.
+	 * @param ignoreBundlesMarkedToBeIgnored TODO
 	 * @param eraseOld
 	 * @throws IOException
 	 */
 	public static void buildPluginDependencySuperSet(String pathToBasePluginExtractsDir,
-			String pathToPluginDependencyAnalysisOutputLocation, boolean considerBundleExportersOnly, boolean eraseOld)
+			String pathToPluginDependencyAnalysisOutputLocation, boolean considerBundleExportersOnly, boolean ignoreBundlesMarkedToBeIgnored, boolean eraseOld)
 			throws IOException {
 
 		Log.outln("==== Now Building the  Plugin Dependency  Set from source: " + pathToBasePluginExtractsDir
@@ -114,9 +115,11 @@ public class DependencyFinder {
 				boolean ignorePluginExtract = false;
 				Set<String> ignoreBundleProperty = ParsingUtil.restorePropertyFromExtract(pluginExtract,
 						Constants.BUNDLE_IGNORE);
-				if (null != ignoreBundleProperty && 1 == ignoreBundleProperty.size())
-					ignorePluginExtract = ignoreBundleProperty.toString().toLowerCase().trim().contains("true");
-
+				if(ignoreBundlesMarkedToBeIgnored)
+				{
+					if (null != ignoreBundleProperty && 1 == ignoreBundleProperty.size())
+						ignorePluginExtract = ignoreBundleProperty.toString().toLowerCase().trim().contains("true");
+				}
 				// System.out.println("==== ignoreBundleProperty= "+ignoreBundleProperty.toString());
 				if (ignorePluginExtract) {
 					Log.outln("==== " + thisPluginExtractName + " must be IGNORED");
@@ -600,7 +603,9 @@ public class DependencyFinder {
 		BufferedWriter writer = new BufferedWriter(filewriter);
 
 		writer.write(Constants.PLUGIN_DEPENDENCY_ALL_FUNCTIONS + "\n");
+		Log.outln(Constants.PLUGIN_DEPENDENCY_ALL_FUNCTIONS + "\n");
 
+		long counter=0;
 		for (String key : functions.keySet()) {
 
 			writer.write(Constants.DELIM_PLUGIN_DEPENDENCY_ELEMENT_SET + "\n");
@@ -654,14 +659,20 @@ public class DependencyFinder {
 
 			// terminating the key ( function name )
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
+			counter++;
+			if(counter%500==0)
+				Log.outln("## functions written: "+counter);
 		}
 		writer.write(Constants.PLUGIN_DEPENDENCY_ALL_UNMATCHED_FUNCTION_IMPORTS + "\n");
-		for (String s : unmatchedFunctionImports)
+		Log.outln(Constants.PLUGIN_DEPENDENCY_ALL_UNMATCHED_FUNCTION_IMPORTS + "\n");
+	for (String s : unmatchedFunctionImports)
 			writer.write(s + "\n");
 		writer.write("COUNT=" + unmatchedFunctionImports.size() + "\n");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 		writer.write(Constants.PLUGIN_DEPENDENCY_ALL_IGNORED_PLUGINS + "\n");
+		Log.outln(Constants.PLUGIN_DEPENDENCY_ALL_IGNORED_PLUGINS + "\n");
+
 		for (String s : pluginExtractsIgnored)
 			writer.write(s + "\n");
 		writer.write("COUNT=" + pluginExtractsIgnored.size() + "\n");
@@ -679,6 +690,10 @@ public class DependencyFinder {
 		writer = new BufferedWriter(filewriter);
 
 		writer.write(Constants.PLUGIN_DEPENDENCY_ALL_TYPES + "\n");
+		
+		Log.outln(Constants.PLUGIN_DEPENDENCY_ALL_TYPES + "\n");
+
+		 counter=0;
 
 		for (String key : types.keySet()) {
 
@@ -733,8 +748,16 @@ public class DependencyFinder {
 
 			// terminating the key ( type /class name )
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
+			
+			counter++;
+			if(counter%500==0)
+				Log.outln("## types written: "+counter);
+		
 		}
+		
 		writer.write(Constants.PLUGIN_DEPENDENCY_ALL_UNMATCHED_TYPE_IMPORTS + "\n");
+		Log.outln(Constants.PLUGIN_DEPENDENCY_ALL_UNMATCHED_TYPE_IMPORTS + "\n");
+
 		for (String s : unmatchedTypeImports)
 			writer.write(s + "\n");
 		writer.write("COUNT=" + unmatchedTypeImports.size() + "\n");
@@ -742,6 +765,8 @@ public class DependencyFinder {
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 		writer.write(Constants.PLUGIN_DEPENDENCY_ALL_IGNORED_PLUGINS + "\n");
+		Log.outln(Constants.PLUGIN_DEPENDENCY_ALL_IGNORED_PLUGINS + "\n");
+
 		for (String s : pluginExtractsIgnored)
 			writer.write(s + "\n");
 		writer.write("COUNT=" + pluginExtractsIgnored.size() + "\n");
