@@ -13,8 +13,8 @@ import java.util.Set;
 public class ImpExp {
 
 	
-	public Set<String> exporterSets=new HashSet<String>    ();
-	//public Set<Set> exporterSets = new HashSet<Set>();
+	public Set<String> exporterSequences=new HashSet<String>();
+	//public Set<Set> exporterSequences = new HashSet<Set>();
 	
 	private Set exp = new HashSet();
 
@@ -43,4 +43,24 @@ public class ImpExp {
 	public void setImp(Set imp) {
 		this.imp = imp;
 	}
+	
+	@Override
+	public String toString()
+	{
+		StringBuffer   sb = new StringBuffer();
+		sb.append("[imp=[");
+		for(Object s:imp)
+			sb.append((String)s+",");
+		sb.append("],exp=[");
+		for(Object s:exp)
+			sb.append((String)s+",");
+		sb.append("],exporterSequences=[");
+		
+		for(String s:exporterSequences)
+			sb.append(s+",");
+		sb.append("]");
+		sb.append("]");
+		return sb.toString();
+	}
+	
 }

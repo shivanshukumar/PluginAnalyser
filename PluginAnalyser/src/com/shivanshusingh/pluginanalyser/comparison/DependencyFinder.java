@@ -28,7 +28,7 @@ public class DependencyFinder {
 	static Set<String> pluginExtractsIgnored = new HashSet<String>();
 	static Map<String, ImpExp> types = new HashMap<String, ImpExp>();
 
-	// sets of plugins 
+	// sets of plugins
 	static Map<String, PluginObject> plugins = new HashMap<String, PluginObject>();
 
 	/**
@@ -290,12 +290,19 @@ public class DependencyFinder {
 				}
 				// System.out.println(types.keySet().toString());
 
-				if (pluginExtractsDone % 200 == 0 || pluginExtractsDone == entriesLength) {
+				if (pluginExtractsDone % 250 == 0 || pluginExtractsDone == entriesLength) {
 					Log.outln("#### PluginExtractsMerged \t= " + pluginExtractsDone);
 
-					Log.outln("#### functions \tobjectSize= " + (double) (functions.toString().length() / (1024 * 1024))
-							+ "MB");
-					Log.outln("#### types \t\tobjectSize= " + (types.toString().length() / (1024 * 1024)) + "MB");
+					int functionsMemSize = functions.toString().length() / (1024 * 1024);
+					int typesMemSize = types.toString().length() / (1024 * 1024);
+					int pluginsMemSize = (plugins.toString().length() + po.toString().length()) / (1024 * 1024);
+
+					Log.outln("## functions \tobjectSize\t= " + functionsMemSize + "MB");
+					Log.outln("## types \t\tobjectSize\t= " + typesMemSize + "MB");
+					Log.outln("## plugins \tobjectSize\t= " + pluginsMemSize + "MB");
+					Log.outln("## TOTAL 3 \tobjectSize\t= " + (functionsMemSize + typesMemSize + pluginsMemSize) + "MB");
+					Log.outln("## time (merging) so far \t= "
+							+ Util.getFormattedTime(System.currentTimeMillis() - time1));
 				}
 
 				// adding the constructed object to the DependencyFinder.plugins
@@ -313,19 +320,22 @@ public class DependencyFinder {
 		for (Entry<String, PluginObject> entry : pluginEntrySet) {
 			PluginObject pluginObj = entry.getValue();
 			for (String imp : pluginObj.imports) {
-				String exporters = "";
-				exporters = findExporters(imp);
+				String exporterSequencesString = "";
+				exporterSequencesString = findExporters(imp);
 
 				// now if there were any transitive exporters, check for that
 				// and mark the import as satisfied.
 				Set<String> finalExporters = new HashSet<String>();
-				finalExporters = getFinalExporterInSeq(exporters);
+				finalExporters = getFinalExporterInSeq(exporterSequencesString);
+
+				Set<String> exporterSequences = new HashSet<String>();
+				exporterSequences = getExporterSequences(exporterSequencesString);
 
 				// recording the data in the functions or types objects.
 				if (functions.containsKey(imp)) {
 					ImpExp impexp = functions.get(imp);
 
-					impexp.exporterSets.add(exporters);
+					impexp.exporterSequences.addAll(exporterSequences);
 
 					for (String s : finalExporters) {
 						impexp.addToExp(s);
@@ -333,7 +343,9 @@ public class DependencyFinder {
 					functions.put(imp, impexp);
 				} else if (types.containsKey(imp)) {
 					ImpExp impexp = types.get(imp);
-					impexp.exporterSets.add(exporters);
+
+					impexp.exporterSequences.addAll(exporterSequences);
+
 					for (String s : finalExporters) {
 						impexp.addToExp(s);
 					}
@@ -354,22 +366,58 @@ public class DependencyFinder {
 
 	}
 
-	private static Set<String> getFinalExporterInSeq(String exporters) {
-
-		Set<String> finalExporters = new HashSet<String>();
-
-		String[] exporterSequences = exporters.split(Constants.DELIM_PLUGIN_DEPENDENCY_TRANSITIVE_TYPE_FINAL);
-		if (!exporters.equals(exporterSequences[0])) {
-			// this means that there were some finals.
-			for (int x = 0; x < exporterSequences.length; x++) {
-				String[] exporterElements = exporterSequences[x]
-						.split(Constants.DELIM_PLUGIN_DEPENDENCY_TRANSITIVE_TYPE_INTERIM);
-				String finalExporter = exporterElements[exporterElements.length - 1];
-				if (!finalExporter.contains(Constants.DELIM_PLUGIN_DEPENDENCY_TRANSITIVE_TYPE_INTERIM))
-					finalExporters.add(finalExporter.trim());
+	/**
+	 * 
+	 * gets a set of exporter sequences from the main exporterSequencesString
+	 * 
+	 * @param exporterSequencesString
+	 * @return {@link Set<{@link String}>}
+	 */
+	private static Set<String> getExporterSequences(String exporterSequencesString) {
+		Set<String> sequences = new HashSet<String>();
+		String[] exporterSequences = exporterSequencesString.split(Constants.DELIM_PLUGIN_DEPENDENCY_TRANSITIVE_TYPE_NEW);
+		if (null != exporterSequences && 1 <= exporterSequences.length) {
+			for (String s : exporterSequences) {
+				if (null != s && 1 <= s.length()) {
+					s = s.trim();
+					String s1 = s.replaceAll("[" + Constants.DELIM_PLUGIN_DEPENDENCY_TRANSITIVE_TYPE_END + "]+", "");
+					if (null != s1 && 1 <= s1.length() && null != s && 1 <= s.length())
+						sequences.add(s);
+				}
 			}
 		}
+		return sequences;
+	}
 
+	/**
+	 * gets the final elements in the exporter sequences, which were deemed to
+	 * satisfy an import. e.g. a====>b====>c;d====>e====>f====>g;h====>i====>
+	 * will result in the output being:[c, g] in the Set being returned, the
+	 * rest will be ignored.
+	 */
+	private static Set<String> getFinalExporterInSeq(String exportersSequences) {
+
+		Set<String> finalExporters = new HashSet<String>();
+		if (null != exportersSequences) {
+			exportersSequences = exportersSequences.replaceAll("[" + Constants.DELIM_PLUGIN_DEPENDENCY_TRANSITIVE_TYPE_NEW
+					+ "]+", "");
+			exportersSequences = exportersSequences.replaceAll("[" + Constants.DELIM_PLUGIN_DEPENDENCY_TRANSITIVE_TYPE_END
+					+ "]+", "");
+			if (1 <= exportersSequences.length()) {
+				String[] exporterSequences = exportersSequences
+						.split(Constants.DELIM_PLUGIN_DEPENDENCY_TRANSITIVE_TYPE_SUCCESS);
+				if (!exportersSequences.equals(exporterSequences[0])) {
+					// this means that there were some finals.
+					for (int x = 0; x < exporterSequences.length; x++) {
+						String[] exporterElements = exporterSequences[x]
+								.split(Constants.DELIM_PLUGIN_DEPENDENCY_TRANSITIVE_TYPE_INTERIM);
+						String finalExporter = exporterElements[exporterElements.length - 1];
+						if (!finalExporter.contains(Constants.DELIM_PLUGIN_DEPENDENCY_TRANSITIVE_TYPE_INTERIM))
+							finalExporters.add(finalExporter.trim());
+					}
+				}
+			}
+		}
 		return finalExporters;
 	}
 
@@ -427,31 +475,42 @@ public class DependencyFinder {
 			Set<PluginObject> targetPlugins = new HashSet<PluginObject>();
 			targetPlugins = getTargetPlugins(classname);
 			for (PluginObject targetPlugin : targetPlugins) {
-				if (targetPlugin.exports.contains(imp)) {
-					result += targetPlugin.name + Constants.DELIM_PLUGIN_DEPENDENCY_TRANSITIVE_TYPE_FINAL;
-					// System.out.println("result: "+result);
+				if (null != targetPlugin) {
+					if (null != targetPlugin.exports && targetPlugin.exports.contains(imp)) {
 
-				} else {
+						result += targetPlugin.name + Constants.DELIM_PLUGIN_DEPENDENCY_TRANSITIVE_TYPE_SUCCESS;
+						// System.out.println("result: "+result);
 
-					Set<String> superclasses = targetPlugin.superClassesAndInterfaces.get(classname);
-					for (String superclass : superclasses) {
-						String newImp = imp.replace(classname, superclass);
-						result += targetPlugin.name + Constants.DELIM_PLUGIN_DEPENDENCY_TRANSITIVE_TYPE_INTERIM
-								+ findExporters(newImp);
-						// System.out.println("result_branch: "+result);
+					} else {
+						if (null != targetPlugin.superClassesAndInterfaces) {
+							Set<String> superclasses = targetPlugin.superClassesAndInterfaces.get(classname);
+							for (String superclass : superclasses) {
+								String newImp = imp.replace(classname, superclass);
+								result += targetPlugin.name + Constants.DELIM_PLUGIN_DEPENDENCY_TRANSITIVE_TYPE_INTERIM
+										+ findExporters(newImp);
+								// System.out.println("result_branch: "+result);
+							}
+							/*
+							 * val superclasses =
+							 * targetPlugin.inheritance.getOrElse(classname,
+							 * Set())
+							 * 
+							 * for (superclass <- superclasses) result = result
+							 * ++ findExports((superclass, funname)).map(_ +
+							 * targetPlugin)
+							 */
+						}
 					}
-					/*
-					 * val superclasses =
-					 * targetPlugin.inheritance.getOrElse(classname, Set())
-					 * 
-					 * for (superclass <- superclasses) result = result ++
-					 * findExports((superclass, funname)).map(_ + targetPlugin)
-					 */}
+				}
 			}
-
 		}
 
-		return result;
+		return (result + Constants.DELIM_PLUGIN_DEPENDENCY_TRANSITIVE_TYPE_END + Constants.DELIM_PLUGIN_DEPENDENCY_TRANSITIVE_TYPE_NEW)
+				.replaceAll("[" + Constants.DELIM_PLUGIN_DEPENDENCY_TRANSITIVE_TYPE_NEW + "]+",
+						Constants.DELIM_PLUGIN_DEPENDENCY_TRANSITIVE_TYPE_NEW).replaceAll(
+						"[" + Constants.DELIM_PLUGIN_DEPENDENCY_TRANSITIVE_TYPE_END + "]+",
+						Constants.DELIM_PLUGIN_DEPENDENCY_TRANSITIVE_TYPE_END);
+
 	}
 
 	/**
@@ -588,7 +647,7 @@ public class DependencyFinder {
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 			writer.write(Constants.PLUGIN_DEPENDENCY_EXPORTERS_SETS + "\n");
-			for (String s : impexp.exporterSets) {
+			for (String s : impexp.exporterSequences) {
 				writer.write((String) s + "\n");
 			}
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
@@ -667,7 +726,7 @@ public class DependencyFinder {
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 			writer.write(Constants.PLUGIN_DEPENDENCY_EXPORTERS_SETS + "\n");
-			for (String s : impexp.exporterSets) {
+			for (String s : impexp.exporterSequences) {
 				writer.write((String) s + "\n");
 			}
 			writer.write(Constants.MARKER_TERMINATOR + "\n");

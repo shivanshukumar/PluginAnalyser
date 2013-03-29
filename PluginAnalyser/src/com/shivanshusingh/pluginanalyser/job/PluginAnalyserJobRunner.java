@@ -35,10 +35,10 @@ public class PluginAnalyserJobRunner {
 		String mirrorSiteDesinationPathPrefix = "/Users/singhsk/Developer/eclipse_plugins";
 
 		String mirrorSiteDesinationName =
-//				"new_site2_____";
+				"new_site2_____";
 //				"new_site6_____";
-		 "__WorkingEclipseSite_features_and_plugins__";
-	//	 "_plugin_sandbox";
+//		 "__WorkingEclipseSite_features_and_plugins__";
+//		 "_plugin_sandbox";
 		// + Util.getCurrentTimeString();
 
 		mirrorSiteDesinationName = mirrorSiteDesinationName.replace("/", "-").replace(":", "-").replace(".", "-")
