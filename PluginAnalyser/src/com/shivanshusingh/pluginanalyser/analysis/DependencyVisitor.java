@@ -18,11 +18,15 @@ import org.objectweb.asm.signature.SignatureReader;
 import org.objectweb.asm.signature.SignatureVisitor;
 
 //mine
-class  InvokeDynamicException extends Exception
-{
+class InvokeDynamicException extends Exception {
 	private static final long serialVersionUID = -930230783895227740L;
-	public InvokeDynamicException() {}
-	public InvokeDynamicException(String msg) {super(msg);}
+
+	public InvokeDynamicException() {
+	}
+
+	public InvokeDynamicException(String msg) {
+		super(msg);
+	}
 }
 
 public class DependencyVisitor extends ClassVisitor {
@@ -35,8 +39,8 @@ public class DependencyVisitor extends ClassVisitor {
 	 * urrent type or method owner is to be excluded from the exteral-non-java
 	 * or external - excluded types or methods sets.
 	 */
-	Set<String> excludedExternalTypePrefixes = new HashSet<String>(
-			Arrays.asList(new String[] { "java.", "javax.", "java/", "javax/" }));
+	Set<String> excludedExternalTypePrefixes = new HashSet<String>(Arrays.asList(new String[] { "java.", "javax.", "java/",
+			"javax/" }));
 	// mine
 	Set<String> allMyClasses = new HashSet<String>();
 	// mine
@@ -61,45 +65,42 @@ public class DependencyVisitor extends ClassVisitor {
 	Set<String> allMyPublicMethods = new HashSet<String>();
 	// mine
 	Set<String> allMyProtectedMethods = new HashSet<String>();
-		
+
 	// mine
 	Map<String, TypeDependency> allMyTypeDependencies = new HashMap<String, TypeDependency>();
 
-	
-	//mine
-		public Map<String, TypeDependency> getAllMyTypeDependencies() {
+	// mine
+	public Map<String, TypeDependency> getAllMyTypeDependencies() {
 		return allMyTypeDependencies;
 	}
 
-	//mine
+	// mine
 	public Set<String> getAllMyDeprecatedMethods() {
 		return allMyDeprecatedMethods;
 	}
-	
-			//  mine
+
+	// mine
 	public Set<String> getAllMyDeprecatedClasses() {
 		return allMyDeprecatedClasses;
 	}
 
-	
 	// mine
 	public Set<String> getAllMyDeprecatedPublicMethods() {
-		Set<String> tempSet= new HashSet  <String> ();
-		 for(Object s: allMyDeprecatedMethods)
-			 if  ( allMyPublicMethods.contains(s)  )
-				 tempSet.add((String) s);
+		Set<String> tempSet = new HashSet<String>();
+		for (Object s : allMyDeprecatedMethods)
+			if (allMyPublicMethods.contains(s))
+				tempSet.add((String) s);
 		return tempSet;
 	}
 
 	// mine
 	public Set<String> getAllMyDeprecatedPublicClasses() {
-		Set<String> tempSet= new HashSet  <String> ();
-		 for(Object s: allMyDeprecatedClasses)
-			 if  ( allMyPublicClasses.contains(s)  )
-				 tempSet.add((String) s);
+		Set<String> tempSet = new HashSet<String>();
+		for (Object s : allMyDeprecatedClasses)
+			if (allMyPublicClasses.contains(s))
+				tempSet.add((String) s);
 		return tempSet;
-	
-		
+
 	}
 
 	// mine
@@ -136,6 +137,7 @@ public class DependencyVisitor extends ClassVisitor {
 	public Set<String> getAllMyPublicClasses() {
 		return allMyPublicClasses;
 	}
+
 	// mine
 	public Set<String> getAllExternalMethodInvokations() {
 		Set<String> difference = new HashSet<String>(allInvokations);
@@ -187,9 +189,8 @@ public class DependencyVisitor extends ClassVisitor {
 	// mine
 	private void addMyMethod(int access, String name, String desc) {
 
-		String fnSignature =  Type.getReturnType(desc).getClassName() + " "
-				+ Type.getObjectType(currentClass).getClassName() + "." + name
-				+ " (";
+		String fnSignature = Type.getReturnType(desc).getClassName() + " "
+				+ Type.getObjectType(currentClass).getClassName() + "." + name + " (";
 		Type[] types = Type.getArgumentTypes(desc);
 		for (int i = 0; i < types.length; i++) {
 			fnSignature += types[i].getClassName() + ",";
@@ -200,17 +201,27 @@ public class DependencyVisitor extends ClassVisitor {
 		// if method access is public then this is a personal public function
 		if ((access & Opcodes.ACC_PUBLIC) != 0)
 			allMyPublicMethods.add(fnSignature);
-		
-		// if method access is protected then this is a personal protected function
-		if ((access & Opcodes.ACC_PROTECTED) != 0)
-		{//// for now adding them to public.... to see
+
+		// if method access is protected then this is a personal protected
+		// function
+		if ((access & Opcodes.ACC_PROTECTED) != 0) {// // for now adding them to
+													// public.... to see
 			allMyPublicMethods.add(fnSignature);
 			allMyProtectedMethods.add(fnSignature);
 		}
-				
-		// if method access is deprecated then this is a personal  deprecated function
-				if ((access & Opcodes.ACC_DEPRECATED) != 0)
-					allMyDeprecatedMethods.add(fnSignature);
+
+		// if method access is anything else than private then, also include it
+		// for now as a public function
+		boolean isPrivate=((access & Opcodes.ACC_PRIVATE) != 0)?true:false;
+		if (!isPrivate) {// // for now adding them to
+													// public.... to see
+			allMyPublicMethods.add(fnSignature);
+		}
+
+		// if method access is deprecated then this is a personal deprecated
+		// function
+		if ((access & Opcodes.ACC_DEPRECATED) != 0)
+			allMyDeprecatedMethods.add(fnSignature);
 
 	}
 
@@ -218,8 +229,7 @@ public class DependencyVisitor extends ClassVisitor {
 	private void addInvokation(String owner, String name, String desc) {
 		String ownerclassName = Type.getObjectType(owner).getClassName();
 
-		String fnSignature = Type.getReturnType(desc).getClassName() + " "
-				+ ownerclassName + "." + name + " (";
+		String fnSignature = Type.getReturnType(desc).getClassName() + " " + ownerclassName + "." + name + " (";
 		Type[] types = Type.getArgumentTypes(desc);
 		for (int i = 0; i < types.length; i++) {
 			fnSignature += types[i].getClassName() + ",";
@@ -243,58 +253,56 @@ public class DependencyVisitor extends ClassVisitor {
 	// ClassVisitor
 
 	@Override
-	public void visit(final int version, final int access, final String name,
-			final String signature, final String superName,
-			final String[] interfaces) {
+	public void visit(final int version, final int access, final String name, final String signature,
+			final String superName, final String[] interfaces) {
 
 		// mine - adding to MyClasses
-		String myFullyQualifiedClassName= Type.getObjectType(name).getClassName();
+		String myFullyQualifiedClassName = Type.getObjectType(name).getClassName();
 		allMyClasses.add(myFullyQualifiedClassName);
-		//mine- adding to public classes and no other.
-		if((access&Opcodes.ACC_PUBLIC)!=0)
+		// mine- adding to public classes and no other.
+		if ((access & Opcodes.ACC_PUBLIC) != 0)
 			allMyPublicClasses.add(Type.getObjectType(name).getClassName());
-		//mine- adding to protected or unspecified classes and no other.
-		if((access&Opcodes.ACC_PROTECTED)!=0)
-		{
-			//for now adding to public classes to see ....
+		// mine- adding to protected or unspecified classes and no other.
+		if ((access & Opcodes.ACC_PROTECTED) != 0) {
+			// for now adding to public classes to see ....
 			allMyClasses.add(Type.getObjectType(name).getClassName());
 			allMyProtectedClasses.add(Type.getObjectType(name).getClassName());
 		}
-		// if class access is deprecated then this is a personal  deprecated   class
+		// if method access is anything else than private then, also include it
+		// for now as a public class
+		boolean isPrivate=((access & Opcodes.ACC_PRIVATE) != 0)?true:false;
+		if (!isPrivate)
+		{// // for now adding them to
+													// public.... to see
+			allMyClasses.add(Type.getObjectType(name).getClassName());
+		}
+		// if class access is deprecated then this is a personal deprecated
+		// class
 		if ((access & Opcodes.ACC_DEPRECATED) != 0)
 			allMyDeprecatedClasses.add(Type.getObjectType(name).getClassName());
 
-		
-		
 		// adding all dependent types (super classes and interfaces)
-		if(null!=superName  &&  !"".equalsIgnoreCase(superName)  )
-		{
+		if (null != superName && !"".equalsIgnoreCase(superName)) {
 			// add superclass
-			TypeDependency typeDep= new TypeDependency();
-			if(allMyTypeDependencies.containsKey(myFullyQualifiedClassName))
-				typeDep= allMyTypeDependencies.get(myFullyQualifiedClassName);
-			typeDep.superClass=(Type.getObjectType(superName).getClassName());
+			TypeDependency typeDep = new TypeDependency();
+			if (allMyTypeDependencies.containsKey(myFullyQualifiedClassName))
+				typeDep = allMyTypeDependencies.get(myFullyQualifiedClassName);
+			typeDep.superClass = (Type.getObjectType(superName).getClassName());
 			allMyTypeDependencies.put(myFullyQualifiedClassName, typeDep);
 		}
-		
-		if(null!=interfaces &&  1<=interfaces.length  )
-		{
+
+		if (null != interfaces && 1 <= interfaces.length) {
 			// adding interfaces.
-			TypeDependency typeDep= new TypeDependency();
-			if(allMyTypeDependencies.containsKey(myFullyQualifiedClassName))
-				typeDep= allMyTypeDependencies.get(myFullyQualifiedClassName);
-			for(String s:interfaces)
-			{
-				if(null!=s  &&  !"".equalsIgnoreCase(s))
-				typeDep.interfaces.add(Type.getObjectType(s).getClassName());
+			TypeDependency typeDep = new TypeDependency();
+			if (allMyTypeDependencies.containsKey(myFullyQualifiedClassName))
+				typeDep = allMyTypeDependencies.get(myFullyQualifiedClassName);
+			for (String s : interfaces) {
+				if (null != s && !"".equalsIgnoreCase(s))
+					typeDep.interfaces.add(Type.getObjectType(s).getClassName());
 			}
 			allMyTypeDependencies.put(myFullyQualifiedClassName, typeDep);
 
-			
-
 		}
-		
-		
 
 		String p = getGroupKey(name);
 		current = groups.get(p);
@@ -315,15 +323,14 @@ public class DependencyVisitor extends ClassVisitor {
 	}
 
 	@Override
-	public AnnotationVisitor visitAnnotation(final String desc,
-			final boolean visible) {
+	public AnnotationVisitor visitAnnotation(final String desc, final boolean visible) {
 		addDesc(desc);
 		return new AnnotationDependencyVisitor();
 	}
 
 	@Override
-	public FieldVisitor visitField(final int access, final String name,
-			final String desc, final String signature, final Object value) {
+	public FieldVisitor visitField(final int access, final String name, final String desc, final String signature,
+			final Object value) {
 		if (signature == null) {
 			addDesc(desc);
 		} else {
@@ -336,8 +343,8 @@ public class DependencyVisitor extends ClassVisitor {
 	}
 
 	@Override
-	public MethodVisitor visitMethod(final int access, final String name,
-			final String desc, final String signature, final String[] exceptions) {
+	public MethodVisitor visitMethod(final int access, final String name, final String desc, final String signature,
+			final String[] exceptions) {
 		// Log.outln("=======\nThis Class MethodName="+name);
 
 		// mine - getting all
@@ -368,14 +375,12 @@ public class DependencyVisitor extends ClassVisitor {
 		}
 
 		@Override
-		public void visitEnum(final String name, final String desc,
-				final String value) {
+		public void visitEnum(final String name, final String desc, final String value) {
 			addDesc(desc);
 		}
 
 		@Override
-		public AnnotationVisitor visitAnnotation(final String name,
-				final String desc) {
+		public AnnotationVisitor visitAnnotation(final String name, final String desc) {
 			addDesc(desc);
 			return this;
 		}
@@ -411,15 +416,13 @@ public class DependencyVisitor extends ClassVisitor {
 		}
 
 		@Override
-		public AnnotationVisitor visitAnnotation(final String desc,
-				final boolean visible) {
+		public AnnotationVisitor visitAnnotation(final String desc, final boolean visible) {
 			addDesc(desc);
 			return new AnnotationDependencyVisitor();
 		}
 
 		@Override
-		public AnnotationVisitor visitParameterAnnotation(final int parameter,
-				final String desc, final boolean visible) {
+		public AnnotationVisitor visitParameterAnnotation(final int parameter, final String desc, final boolean visible) {
 			addDesc(desc);
 			return new AnnotationDependencyVisitor();
 		}
@@ -430,15 +433,13 @@ public class DependencyVisitor extends ClassVisitor {
 		}
 
 		@Override
-		public void visitFieldInsn(final int opcode, final String owner,
-				final String name, final String desc) {
+		public void visitFieldInsn(final int opcode, final String owner, final String name, final String desc) {
 			addInternalName(owner);
 			addDesc(desc);
 		}
 
 		@Override
-		public void visitMethodInsn(final int opcode, final String owner,
-				final String name, final String desc) {
+		public void visitMethodInsn(final int opcode, final String owner, final String name, final String desc) {
 
 			// mine //////// This is where we capture External Method Calls
 			// YAYYYYYYYYYYYYYYYYYYYYYYYY ///////////
@@ -453,10 +454,9 @@ public class DependencyVisitor extends ClassVisitor {
 		}
 
 		@Override
-		public void visitInvokeDynamicInsn(String name, String desc,
-				Handle bsm, Object... bsmArgs) {
-			
-			// ////// This is where we capture External  Dynamic Method Calls
+		public void visitInvokeDynamicInsn(String name, String desc, Handle bsm, Object... bsmArgs) {
+
+			// ////// This is where we capture External Dynamic Method Calls
 			// YAYYYYYYYYYYYYYYYYYYYYYYYY ///////////
 			// WE dont need to worry about this
 			try {
@@ -483,15 +483,13 @@ public class DependencyVisitor extends ClassVisitor {
 		}
 
 		@Override
-		public void visitLocalVariable(final String name, final String desc,
-				final String signature, final Label start, final Label end,
-				final int index) {
+		public void visitLocalVariable(final String name, final String desc, final String signature, final Label start,
+				final Label end, final int index) {
 			addTypeSignature(signature);
 		}
 
 		@Override
-		public void visitTryCatchBlock(final Label start, final Label end,
-				final Label handler, final String type) {
+		public void visitTryCatchBlock(final Label start, final Label end, final Label handler, final String type) {
 			if (type != null) {
 				addInternalName(type);
 			}
@@ -601,16 +599,14 @@ public class DependencyVisitor extends ClassVisitor {
 	private void addSignature(final String signature) {
 
 		if (signature != null) {
-			new SignatureReader(signature)
-					.accept(new SignatureDependencyVisitor());
+			new SignatureReader(signature).accept(new SignatureDependencyVisitor());
 		}
 	}
 
 	void addTypeSignature(final String signature) {
 		// Log.outln("__sig="+signature);
 		if (signature != null) {
-			new SignatureReader(signature)
-					.acceptType(new SignatureDependencyVisitor());
+			new SignatureReader(signature).acceptType(new SignatureDependencyVisitor());
 		}
 	}
 
