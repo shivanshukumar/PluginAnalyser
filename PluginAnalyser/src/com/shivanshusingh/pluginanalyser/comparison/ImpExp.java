@@ -13,8 +13,8 @@ import java.util.Set;
 public class ImpExp {
 
 	
-	public Set<Set<String>> satisfyingPluginsSets=new HashSet<Set<String>>();
-	//public Set<Set> satisfyingPluginsSets = new HashSet<Set>();
+//	public Set<Set<String>> satisfyingPluginsSets=new HashSet<Set<String>>();
+	public Set<Set> satisfyingPluginsSets = new HashSet<Set>();
 	
 	private Set exp = new HashSet();
 

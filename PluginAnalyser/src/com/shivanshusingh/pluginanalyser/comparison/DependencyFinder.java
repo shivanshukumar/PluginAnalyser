@@ -6,6 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
@@ -349,7 +350,7 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 			PluginObject pluginObj = entry.getValue();
 			for (String imp : pluginObj.imports) {
 				
-				Set<Set<String>> exporterPluginSets=new HashSet<Set<String>>();
+				Set<Set<String>> exporterPluginSets=new LinkedHashSet<Set<String>>();
 				// if the alsoConsiderInvokationSatisfactionProxies flag  parameter is true, then build a set of all invokations to be considered: original plus all its proxy invokations.
 				if(alsoConsiderInvokationSatisfactionProxies)
 				{
@@ -421,7 +422,7 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 	
 	private static Set<Set<String>> findExporters(String importEntry, Set<String> importEntryProxies, String ownerPluginName) {
 		
-		Set<Set<String>> result = new HashSet<Set<String>>();
+		Set<Set<String>> result = new LinkedHashSet<Set<String>>();
 		
 		//  first checking if the exporters   are available from the importEntry itself and there is no need to go for the proxies.
 		result=findExporters(importEntry);
@@ -445,18 +446,17 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 
 		for(String importEntryProxy:importEntryProxies)
 		{
-			Set<Set<String>> interimResult = new HashSet<Set<String>>();
+			Set<Set<String>> interimResult = new LinkedHashSet<Set<String>>();
 
-			interimResult=findExporters(importEntryProxy);
-			
-				for(Set<String> set: interimResult)
-				{
+			interimResult = findExporters(importEntryProxy);
+			if (interimResult.size() > 0)
+				for (Set<String> set : interimResult) {
 					if (set.size() > 0)
 						set.add(ownerPluginName);
 				}
-				result.addAll(interimResult);
-		
-		}
+			result.addAll(interimResult);
+
+	}
 		return result;
 	}
 	
@@ -472,7 +472,7 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 
 		if(imp.trim().equalsIgnoreCase("java.lang.String org.eclipse.wst.jsdt.internal.corext.refactoring.changes.PackageFragmentRootReorgChange.getName ()"))
 			System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
-		Set<Set<String>> result = new HashSet<Set<String>>();
+		Set<Set<String>> result = new LinkedHashSet<Set<String>>();
 		imp = imp.trim();
 		int impType = ParsingUtil.getEntryType(imp);
 		if (0 != impType) {
@@ -489,7 +489,7 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 				if (null != targetPlugin) {
 					if (null != targetPlugin.exports && targetPlugin.exports.contains(imp)) {
 
-						Set<String> newSet = new HashSet<String>();
+						Set<String> newSet = new LinkedHashSet<String>();
 						newSet.add(targetPlugin.name);
 						result.add(newSet);
 						// System.out.println("result: "+result);
@@ -561,8 +561,8 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 
 	private static void writeData(String pluginDependencySetOutputLocationPath) throws IOException {
 
-		Set<String> unmatchedFunctionImports = new HashSet<String>();
-		Set<String> unmatchedTypeImports = new HashSet<String>();
+		Set<String> unmatchedFunctionImports = new LinkedHashSet<String>();
+		Set<String> unmatchedTypeImports = new LinkedHashSet<String>();
 
 		if (!Util.checkAndCreateDirectory(pluginDependencySetOutputLocationPath)) {
 			Log.errln("xxxx\n in writeData() in   DependencyFinder, the output location: "
