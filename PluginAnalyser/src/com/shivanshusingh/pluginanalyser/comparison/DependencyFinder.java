@@ -49,12 +49,16 @@ public class DependencyFinder {
 	 *            true if you want the plugins marked as to be ignored in the
 	 *            Plugin Extracts, to be ignored when building the dependency,
 	 *            false if you would want them to be not ignored. extracts.
+	 * @param alsoConsiderInvokationSatisfactionProxies
+	 *            true if the invokation proxies should be considered as well
+	 *            when building the dependency set and checking if any of those
+	 *            can in turn satisfy some original invokation.
 	 * @param eraseOld
 	 * @throws IOException
 	 */
 	public static void buildPluginDependencySuperSet(String pathToBasePluginExtractsDir,
 			String pathToPluginDependencyAnalysisOutputLocation, boolean considerBundleExportersOnly,
-			boolean ignoreBundlesMarkedToBeIgnored, boolean eraseOld) throws IOException {
+			boolean ignoreBundlesMarkedToBeIgnored, boolean alsoConsiderInvokationSatisfactionProxies, boolean eraseOld) throws IOException {
 
 		Log.outln("==== Now Building the  Plugin Dependency  Set from source: " + pathToBasePluginExtractsDir
 				+ " , considerBundleExportsOnly is " + considerBundleExportersOnly + " ====");
@@ -149,6 +153,7 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 						Constants.PLUGIN_ALL_TYPES_DETECTED_EXTERNAL_AND_NON_JAVA);
 				Set<String> superClassesAndInterfacesSuperSet = ParsingUtil.restorePropertyFromExtract(pluginExtract,
 						Constants.PLUGIN_ALL_INHERITANCE_AND_INTERFACE_PAIRS);
+				Set<String>  myInvokationProxyPairs=ParsingUtil.restorePropertyFromExtract(pluginExtract,Constants.PLUGIN_ALL_INVOKATION_PROXY_PAIRS);
 
 				// //////////////////////////////////////////
 				// building DependencyFinder.plugins object
@@ -173,12 +178,27 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 					po.superClassesAndInterfaces.put(baseType, depTypes);
 
 				}
+				
+				// building the interfaceProxies Set
+				for (String pair : myInvokationProxyPairs) {
+					String[] pairElements = pair.split(Constants.DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE);
+					String invokationBase = pairElements[0].trim();
+					String invokationProxy = pairElements[1].trim();
+
+					Set<String> invokationProxies = new HashSet<String>();
+					if (po.invokationProxies.containsKey(invokationBase))
+						invokationProxies = po.invokationProxies.get(invokationBase);
+					invokationProxies.add(invokationProxy);
+					po.invokationProxies.put(invokationBase, invokationProxies);
+
+				}
 
 				// building the plugins object for imports. (combining type and
 				// function information together)
 
 				po.imports.addAll(myMethodImports);
 				po.imports.addAll(myTypeImports);
+			
 
 				// merging functions
 				for (String myMethodExport : myMethodExports) {
@@ -302,7 +322,7 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 					Log.outln("#### PluginExtractsMerged = " + pluginExtractsDone + " of " + entriesLength + "("
 							+ (float) (pluginExtractsDone * 100 / entriesLength) + "%)");
 
-					int functionsMemSize = functions.toString().length() / (1024 * 1024);
+				/*	int functionsMemSize = functions.toString().length() / (1024 * 1024);
 					int typesMemSize = types.toString().length() / (1024 * 1024);
 					int pluginsMemSize = (plugins.toString().length() + po.toString().length()) / (1024 * 1024);
 
@@ -310,7 +330,7 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 					Log.outln("## types \t\tobjectSize\t= " + typesMemSize + "MB");
 					Log.outln("## plugins \tobjectSize\t= " + pluginsMemSize + "MB");
 					Log.outln("## TOTAL 3 \tobjectSize\t= " + (functionsMemSize + typesMemSize + pluginsMemSize) + "MB");
-
+*/
 					Log.outln("## time (merging) so far \t= " + Util.getFormattedTime(System.currentTimeMillis() - time1));
 				}
 
@@ -328,16 +348,40 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 		for (Entry<String, PluginObject> entry : pluginEntrySet) {
 			PluginObject pluginObj = entry.getValue();
 			for (String imp : pluginObj.imports) {
-				Set<Set<String>> exporterPluginSets = findExporters(imp);
+				
+				Set<Set<String>> exporterPluginSets=new HashSet<Set<String>>();
+				// if the alsoConsiderInvokationSatisfactionProxies flag  parameter is true, then build a set of all invokations to be considered: original plus all its proxy invokations.
+				if(alsoConsiderInvokationSatisfactionProxies)
+				{
+						Set<String> allImpProxies=new HashSet<String>();
+						
+						Set<String> invokationProxies=pluginObj.invokationProxies.get(imp);
+						if(null!=invokationProxies && 1<=invokationProxies.size())
+						{
+							//Log.outln("$$$$"+invokationProxies.size()+" Proxies available for "+imp);
+							for(String invokationProxy:invokationProxies)
+							{
+								//Log.outln("$$$$  There are proxies available as well.: "+imp+" => "+invokationProxy);
+								allImpProxies.add(invokationProxy);
+							}
+						}
+						exporterPluginSets = findExporters(imp,allImpProxies,pluginObj.name);
+				}
+				else
+				{
+				
+				
+				 exporterPluginSets = findExporters(imp);
+				}
 
-				// now if there were any transitive exporters, check for that
+				// now if there were any  indirect /   transitive exporters, check for that 
 				// and mark the import as satisfied.
 
 				// recording the data in the functions or types objects.
 				if (functions.containsKey(imp)) {
 					ImpExp impexp = functions.get(imp);
 
-					impexp.exporterSets.addAll(exporterPluginSets);
+					impexp.satisfyingPluginsSets.addAll(exporterPluginSets);
 
 					if (1 <= exporterPluginSets.size())
 						impexp.addToExp(exporterPluginSets.toString());
@@ -346,7 +390,7 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 				} else if (types.containsKey(imp)) {
 					ImpExp impexp = types.get(imp);
 
-					impexp.exporterSets.addAll(exporterPluginSets);
+					impexp.satisfyingPluginsSets.addAll(exporterPluginSets);
 
 					if (1 <= exporterPluginSets.size())
 						impexp.addToExp(exporterPluginSets.toString());
@@ -374,6 +418,48 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 	 */
 	private static Map<String, Set<Set<String>>> exporterSetsCache = new HashMap<String, Set<Set<String>>>();
 
+	
+	private static Set<Set<String>> findExporters(String importEntry, Set<String> importEntryProxies, String ownerPluginName) {
+		
+		Set<Set<String>> result = new HashSet<Set<String>>();
+		
+		//  first checking if the exporters   are available from the importEntry itself and there is no need to go for the proxies.
+		result=findExporters(importEntry);
+		long counter=0;
+		for(Set<String> s: result)
+		{
+			if (null != s && 1 <= s.size())
+				counter++;
+		}
+
+		// so if the result would have any set in it, which in turn is not
+		// empty, the condition below will be true;
+		if (counter > 0)
+			return result;
+
+		// otherwise, try the proxies but then this means that we would need to
+		// include the plugin that owns the import entry in the result as the
+		// proxy is generated to go outside of the owner plugin from inside of
+		// the owner plugin and the dependency cannot be satisfied without the
+		// owner plugin in the mix.
+
+		for(String importEntryProxy:importEntryProxies)
+		{
+			Set<Set<String>> interimResult = new HashSet<Set<String>>();
+
+			interimResult=findExporters(importEntryProxy);
+			
+				for(Set<String> set: interimResult)
+				{
+					if (set.size() > 0)
+						set.add(ownerPluginName);
+				}
+				result.addAll(interimResult);
+		
+		}
+		return result;
+	}
+	
 	/**
 	 * recursively finds the exporter sets of the given imports.
 	 * 
@@ -408,7 +494,9 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 						result.add(newSet);
 						// System.out.println("result: "+result);
 
-					} else {
+					}
+										
+					else {
 						if (null != targetPlugin.superClassesAndInterfaces) {
 							Set<String> superclasses = targetPlugin.superClassesAndInterfaces.get(classname);
 							for (String superclass : superclasses) {
@@ -421,9 +509,8 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 								if (impTypeIsFunction) {
 									// it is a function, so get the class name.
 									String[] funcElements = ParsingUtil.separateFuncNameElements(imp);
-									funcElements[1] = superclass;// replace the
-																	// class
-																	// name.
+									// replace the  class name.
+									funcElements[1] = superclass;
 									// recnstruct
 									newImp = ParsingUtil.reconstructFuncSignature(funcElements);
 
@@ -544,8 +631,8 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 					+ "\n");
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
-			writer.write(Constants.PLUGIN_DEPENDENCY_EXPORTERS_SETS + "\n");
-			for (Set<String> s : impexp.exporterSets) {
+			writer.write(Constants.PLUGIN_DEPENDENCY_SATISFYING_PLUGINS_SETS + "\n");
+			for (Set<String> s : impexp.satisfyingPluginsSets) {
 				writer.write(s + "\n");
 			}
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
@@ -635,8 +722,8 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 					+ "\n");
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
-			writer.write(Constants.PLUGIN_DEPENDENCY_EXPORTERS_SETS + "\n");
-			for (Set<String> s : impexp.exporterSets) {
+			writer.write(Constants.PLUGIN_DEPENDENCY_SATISFYING_PLUGINS_SETS + "\n");
+			for (Set<String> s : impexp.satisfyingPluginsSets) {
 				writer.write(s + "\n");
 			}
 			writer.write(Constants.MARKER_TERMINATOR + "\n");

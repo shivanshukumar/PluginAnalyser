@@ -30,6 +30,7 @@ import com.shivanshusingh.pluginanalyser.utils.Util;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
 import com.shivanshusingh.pluginanalyser.utils.parsing.Constants;
 import com.shivanshusingh.pluginanalyser.utils.parsing.ParsingUtil;
+import com.sun.xml.internal.messaging.saaj.util.ParseUtil;
 
 /**
  * Analyzes the plugin / bundles.
@@ -47,8 +48,7 @@ public class BundleAnalyser extends ManifestParser {
 	 */
 	public static void analyseAndRecordAllInformationFromBasePluginFolder(String pluginFolderPath, String outputLocation,
 			boolean eraseOld) throws IOException {
-		if(!Util.checkDirectory(new File(pluginFolderPath), true, true, true, false))
-		{
+		if (!Util.checkDirectory(new File(pluginFolderPath), true, true, true, false)) {
 			Log.errln("xxxx Error Accessing Plugins source base Directory for Plugin Analysis : " + pluginFolderPath
 					+ "\n Cannot continue with the analysis.");
 			return;
@@ -319,8 +319,8 @@ public class BundleAnalyser extends ManifestParser {
 	 * @param jarfileinstance
 	 * @throws IOException
 	 */
-	private static void extractDependenciesAndExportsFromJarFile(DependencyVisitor visitor,
-			BundleInfo bundleInformation, JarFile jarfileinstance) throws IOException {
+	private static void extractDependenciesAndExportsFromJarFile(DependencyVisitor visitor, BundleInfo bundleInformation,
+			JarFile jarfileinstance) throws IOException {
 
 		// // for zip files reading ///////////////
 		// ZipFile f = new ZipFile(jarFileNameWithPathFull.trim());
@@ -347,13 +347,13 @@ public class BundleAnalyser extends ManifestParser {
 				// nested jar.
 
 				Log.outln("====> " + name + " found");
-				//Log.outln(bundleInformation.getClasspathEntries().toString());
+				// Log.outln(bundleInformation.getClasspathEntries().toString());
 
 				// now check if this nested jar file is one of the Bundle
 				// classpath dependencies (lib jars)
 				if (null != bundleInformation) {
 					for (Object libJarNameEndingObj : bundleInformation.getClasspathEntries()) {
-						String libJarNameEnding=(String)libJarNameEndingObj;
+						String libJarNameEnding = (String) libJarNameEndingObj;
 						// Log.outln("CHECKING:"+name+": ends with:"+libJarNameEnding);
 						if (name.toLowerCase().endsWith(libJarNameEnding.toLowerCase())) {
 							// good news, the jar is present in the bundle
@@ -399,8 +399,8 @@ public class BundleAnalyser extends ManifestParser {
 	 * @param folder
 	 * @throws IOException
 	 */
-	private static void extractDependenciesAndExportsFromDir(DependencyVisitor visitor,
-			BundleInfo bundleInformation, File folder) throws IOException {
+	private static void extractDependenciesAndExportsFromDir(DependencyVisitor visitor, BundleInfo bundleInformation,
+			File folder) throws IOException {
 
 		Log.outln("==== Starting the Plugin_from_Dir : " + folder.getCanonicalPath() + " analysis ====");
 
@@ -426,13 +426,13 @@ public class BundleAnalyser extends ManifestParser {
 				// nested jar.
 
 				Log.outln("====> " + name + " found");
-				 Log.outln(bundleInformation.getClasspathEntries().toString());
+				Log.outln(bundleInformation.getClasspathEntries().toString());
 
 				// now check if this nested jar file is one of the Bundle
 				// classpath dependencies (lib jars)
 				if (null != bundleInformation) {
 					for (Object libJarNameEndingObj : bundleInformation.getClasspathEntries()) {
-						String libJarNameEnding=(String)libJarNameEndingObj;
+						String libJarNameEnding = (String) libJarNameEndingObj;
 						// Log.outln("CHECKING:"+name+": ends with:"+libJarNameEnding);
 						if (name.toLowerCase().endsWith(libJarNameEnding.toLowerCase())) {
 							// good news, the jar is present in the bundle
@@ -480,12 +480,11 @@ public class BundleAnalyser extends ManifestParser {
 		BundleInfo bundleinfo = new BundleInfo();
 		try {
 			bundleinfo = com.shivanshusingh.pluginanalyser.analysis.ManifestParser.parseManifest(manifest);
-			
 
 		} catch (ParseException e) {
 			Log.outln("xxxx  NO Manifest found here or cannot parse that  or maybe theres nothing to parse inthis.    \n xxxx  Marking bundleInfo as to be IGNORED.");
-			bundleinfo.ignoreBundle=true;
-			
+			bundleinfo.ignoreBundle = true;
+
 			// e.printStackTrace();
 		}
 		return bundleinfo;
@@ -500,16 +499,17 @@ public class BundleAnalyser extends ManifestParser {
 
 		try {
 
-			bundleInformation =  com.shivanshusingh.pluginanalyser.analysis.ManifestParser.parseManifest(manifestStream);// new BundleInfo(manifestStream);
-			System.err.println("==== "+bundleInformation.toString());
+			bundleInformation = com.shivanshusingh.pluginanalyser.analysis.ManifestParser.parseManifest(manifestStream);// new
+																														// BundleInfo(manifestStream);
+			System.err.println("==== " + bundleInformation.toString());
 			// extractBundleInfo(bundleInformation);
 
 		} catch (ParseException e) {
 			Log.outln("xxxx  NO Manifest found here or cannot parse that  or maybe theres nothing to parse inthis.    \n xxxx  Marking bundleInfo as to be IGNORED.");
-			bundleInformation.ignoreBundle=true;
-			
+			bundleInformation.ignoreBundle = true;
+
 			Log.errln(Util.getStackTrace(e));
-			System.err.println("xxxx "+bundleInformation.toString());
+			System.err.println("xxxx " + bundleInformation.toString());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -523,8 +523,8 @@ public class BundleAnalyser extends ManifestParser {
 	 * @param outputLocation
 	 * @throws IOException
 	 */
-	private static void writeData(DependencyVisitor v, BundleInfo bundleinfo, String pluginFileName,
-			String outputLocation) throws IOException {
+	private static void writeData(DependencyVisitor v, BundleInfo bundleinfo, String pluginFileName, String outputLocation)
+			throws IOException {
 
 		pluginFileName = pluginFileName.toLowerCase().trim();
 		if (pluginFileName.endsWith(Constants.JAR_FILE_EXTENSION))
@@ -564,9 +564,9 @@ public class BundleAnalyser extends ManifestParser {
 		Set<String> allInterfaceImplPairs = new HashSet<String>();
 		Set<String> allInterfaceImplLists = new HashSet<String>();
 		Set<String> allInheritancePairsAndInterfaceImplPairsSuperSet = new HashSet<String>();
-		
-		Set<String> allInvokationProxyRecords=new HashSet<String>();
-		
+
+		Set<String> allInvokationProxyPairs = new HashSet<String>();
+
 		// towards getting a set of all classes so that the various sets can be
 		// built.
 		Set<String> classesKeySet = allTypeDependencies_SuperClassAndInterfaces.keySet();
@@ -622,40 +622,41 @@ public class BundleAnalyser extends ManifestParser {
 		}
 
 		// ///////////Pruning /////////////////////////////////////////
-		PluginPruningObject pluginPruningObject= new PluginPruningObject();
-		
-		
-		pluginPruningObject 		= getBundlePruningInfo(allMyMethods, allExternalInvokations,
-				allInheritanceHierarchies, allInterfaceImplLists);
+		PluginPruningObject pluginPruningObject = new PluginPruningObject();
 
-		//  building the allInvokationProxyRecords Set.
-		for (String invokation : pluginPruningObject.invokationProxies.keySet())
-		{
-			Set<String> invokationProxies=pluginPruningObject.invokationProxies.get(invokation);
-			if(null!=invokationProxies && 1<=invokationProxies.size())
-			{
-				String oneRecord=invokation+Constants.DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE;
-				for(String proxy:invokationProxies)
-					oneRecord+=proxy.trim()+";";
-				allInvokationProxyRecords.add(oneRecord);
+		pluginPruningObject = getBundlePruningInfo(allMyMethods, allExternalInvokations, allInheritanceHierarchies,
+				allInterfaceImplLists);
+
+		// building the allInvokationProxyRecords Set.
+		for (String invokation : pluginPruningObject.invokationProxies.keySet()) {
+			Set<String> invokationProxies = pluginPruningObject.invokationProxies.get(invokation);
+			if (null != invokationProxies && 1 <= invokationProxies.size()) {
+				
+				for (String proxy : invokationProxies) {
+					String oneRecord = invokation + Constants.DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE  + proxy.trim();
+					allInvokationProxyPairs.add(oneRecord);
+				}
 			}
 		}
 		// now finally removing the invokations. (actual pruning) at the plugin
 		// level.
 		Log.outln("====Now Pruning  for superClass and Interface function invokations at the plugin Level");
 		Log.errln("====Now Pruning  for superClass and Interface function invokations at the plugin Level");
-		
+
 		for (String invokation : pluginPruningObject.invokationsToBeRemoved) {
 			boolean x1 = allExternalInvokations.remove(invokation);
 			boolean x2 = allExternalNonJavaInvokations.remove(invokation);
-//			Log.outln(x1 + "= remove  from AllExternalInvokations \t: " + invokation);
-//			Log.outln(x2 + "= remove  from AllExternalAndNonJavaInvokations \t : " + invokation);
+			// Log.outln(x1 + "= remove  from AllExternalInvokations \t: " +
+			// invokation);
+			// Log.outln(x2 +
+			// "= remove  from AllExternalAndNonJavaInvokations \t : " +
+			// invokation);
 		}
 
 		// Pruning over.
 		Log.outln("====  Done, Pruning  for superClass and Interface function invokations at the plugin Level");
 		Log.errln("====  Done, Pruning  for superClass and Interface function invokations at the plugin Level");
-		
+
 		// ////////////////////////////////
 
 		List<String> allDetectedTypes_List = new ArrayList<String>(allDetectedTypes);
@@ -686,8 +687,8 @@ public class BundleAnalyser extends ManifestParser {
 		List<String> allInterfaceImplLists_List = new ArrayList<String>(allInterfaceImplLists);
 		List<String> allInheritancePairsAndInterfaceImplPairsSuperSet_List = new ArrayList<String>(
 				allInheritancePairsAndInterfaceImplPairsSuperSet);
-		List<String> allInvokationProxyRecords_List = new ArrayList<String>(allInvokationProxyRecords);
-		
+		List<String> allInvokationProxyPairs_List = new ArrayList<String>(allInvokationProxyPairs);
+
 		java.util.Collections.sort(allDetectedTypes_List);
 		java.util.Collections.sort(allMyMethods_List);
 		java.util.Collections.sort(allMyPublicMethods_List);
@@ -709,8 +710,8 @@ public class BundleAnalyser extends ManifestParser {
 		java.util.Collections.sort(allInterfaceImplPairs_List);
 		java.util.Collections.sort(allInterfaceImplLists_List);
 		java.util.Collections.sort(allInheritancePairsAndInterfaceImplPairsSuperSet_List);
-		java.util.Collections.sort(allInvokationProxyRecords_List);
-		
+		java.util.Collections.sort(allInvokationProxyPairs_List);
+
 		// /////////// BUNDLE MANIFEST ///////////////////
 		// java.util.Collections.sort(bundleRequirements);
 		// this is the set of other plugins that this plugin would depend on.
@@ -718,16 +719,15 @@ public class BundleAnalyser extends ManifestParser {
 		// to bundleinfo.getRequirements() without any differences.
 
 		boolean flag_bundleInfoExists = true;
-		if (null == bundleinfo  )
+		if (null == bundleinfo)
 			flag_bundleInfoExists = false;
 
-		
 		writer.write(Constants.BUNDLE_IGNORE + "\n");
-		if (flag_bundleInfoExists) 
+		if (flag_bundleInfoExists)
 			writer.write(bundleinfo.ignoreBundle + "\n");
-		
+
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
-		
+
 		writer.write(Constants.BUNDLE_REQUIREMENTS + "\n");
 		if (flag_bundleInfoExists) {
 
@@ -866,12 +866,11 @@ public class BundleAnalyser extends ManifestParser {
 			writer.write(s + "\n");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 
-		writer.write(Constants.PLUGIN_ALL_INVOKATION_PROXIES + "\n");
-		for(String s: allInvokationProxyRecords_List)
-			writer.write(s.trim()+"\n");
+		writer.write(Constants.PLUGIN_ALL_INVOKATION_PROXY_PAIRS + "\n");
+		for (String s : allInvokationProxyPairs_List)
+			writer.write(s.trim() + "\n");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 
-		
 		// ///////////////////////////////////////////////////////
 
 		writer.write(Constants.PLUGIN_ALL_MY_TYPES + "\n");
@@ -1041,78 +1040,69 @@ public class BundleAnalyser extends ManifestParser {
 		writer.close();
 		fwriter.close();
 	}
-
 	
+
 	private static PluginPruningObject getBundlePruningInfo(Set<String> allMethodsSet, Set<String> invokationsSet,
 			Set<String> allInheritanceHierarchies, Set<String> allInterfaceImplLists) {
-		
-		PluginPruningObject pruningObject=new PluginPruningObject()    ;
-		
+
+		PluginPruningObject pruningObject = new PluginPruningObject();
+
 		for (String invokation : invokationsSet) {
-			
-			String[] thisInvokationElements =  ParsingUtil.separateFuncNameElements(invokation);
+
+			String[] thisInvokationElements = ParsingUtil.separateFuncNameElements(invokation);
 			String thisInvokationClassname = thisInvokationElements[1];
 
 			// see if the current invokation can be satisifed through any of its
 			// inheritence hierarchy classes. If yes, add the invokation to be
 			// removed else create a proxy for this invokation that may be
 			// checkd for later on in DependencyFinder.
-	
-			for (String inheritanceHierarchy : allInheritanceHierarchies) 
-			{
-				if (inheritanceHierarchy.startsWith(thisInvokationClassname.trim())) 
-				{
+
+			for (String inheritanceHierarchy : allInheritanceHierarchies) {
+				if (inheritanceHierarchy.startsWith(thisInvokationClassname.trim())) {
 					// probably found the entry that we were looking for.
 
-					// System.out.println(thisInvokationClass+" >  (superClass) at the starting of?: "
-					// + entry);
-
-					String superclassNames[] = inheritanceHierarchy.split(Constants.DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE);
-					if (null!=superclassNames 
-							&& 1<=superclassNames.length 
-							&& thisInvokationClassname.trim().equals(superclassNames[0].trim())
-							) 
-					{
+					String superclassNames[] = inheritanceHierarchy
+							.split(Constants.DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE);
+					if (null != superclassNames && 1 <= superclassNames.length
+							&& 0==thisInvokationClassname.trim().compareTo(superclassNames[0].trim())) {
 						// yes surely found it. and there is going to be only
 						// one inheritance hierarchy that we would be interested
 						// in.
 
-						boolean flag_invokationIndirectlySatisfied=false;
-						for (int x = 1; x < superclassNames.length; x++) 
-						{
-							String superClassName = superclassNames[x];
-							if (!"".equalsIgnoreCase(superClassName.trim())) 
-							{
+						boolean flag_invokationIndirectlySatisfied = false;
+						for (int x = 1; x < superclassNames.length; x++) {
+							String superClassName = superclassNames[x].trim();
+							if (!"".equalsIgnoreCase(superClassName)) {
 								// constructing the new method signature.
-								String[]  newInvokationElements=thisInvokationElements;
-								newInvokationElements[1]=superClassName;
-								String newInvokation=ParsingUtil.reconstructFuncSignature(newInvokationElements);
-								
-								if (allMethodsSet.contains(newInvokation)) 
-								{
+								String[] newInvokationElements = thisInvokationElements;
+								newInvokationElements[1] = superClassName;
+								String newInvokation = ParsingUtil.reconstructFuncSignature(newInvokationElements);
+
+								if (allMethodsSet.contains(newInvokation)) {
 									pruningObject.invokationsToBeRemoved.add(invokation);
-									
-									flag_invokationIndirectlySatisfied=true;
+
+									flag_invokationIndirectlySatisfied = true;
 									break;
 								}
-								
+
 							}
 						}
-						
-						// if   invokation not satisfied through the internal   inheritance hierarchy, add the last element in the hierarchy as a potential proxy for satisfaction through other plugins.
 
-						if(!flag_invokationIndirectlySatisfied)
-						{
-							String superClassName = superclassNames[superclassNames.length-1].trim();
-							String[]  newInvokationElements=thisInvokationElements;
-							newInvokationElements[1]=superClassName;
-							String newInvokation=ParsingUtil.reconstructFuncSignature(newInvokationElements);
-							
-							if (1<=superClassName.length()) 
-							{
-								Set<String> proxySet=new HashSet<String>();
-								if(pruningObject.invokationProxies.containsKey(invokation))
-									proxySet=pruningObject.invokationProxies.get(invokation);
+						// if invokation not satisfied through the internal
+						// inheritance hierarchy, add the last element in the
+						// hierarchy as a potential proxy for satisfaction
+						// through other plugins.
+
+						if (!flag_invokationIndirectlySatisfied) {
+							String superClassName = superclassNames[superclassNames.length - 1].trim();
+							String[] newInvokationElements = ParsingUtil.separateFuncNameElements(invokation);
+							newInvokationElements[1] = superClassName;
+							String newInvokation = ParsingUtil.reconstructFuncSignature(newInvokationElements);
+
+							if (1 <= superClassName.length()) {
+								Set<String> proxySet = new HashSet<String>();
+								if (pruningObject.invokationProxies.containsKey(invokation))
+									proxySet = pruningObject.invokationProxies.get(invokation);
 								proxySet.add(newInvokation);
 								pruningObject.invokationProxies.put(invokation, proxySet);
 							}
@@ -1121,75 +1111,69 @@ public class BundleAnalyser extends ManifestParser {
 					}
 				}
 			}
-			for (String entry : allInterfaceImplLists) 
-			{
+			for (String entry : allInterfaceImplLists) {
 				// System.out.println(thisInvokationClass+" > (interface) at the starting of?: "
 				// + entry);
 
-				if (entry.startsWith(thisInvokationClassname.trim())) 
-				{
+				if (entry.startsWith(thisInvokationClassname.trim())) {
 					// probably found the entry that we were looking for.
 
 					// System.out.println(thisInvokationClass+" > (interface) at the starting of?: "
 					// + entry);
 
 					String tokens[] = entry.split(Constants.DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE);
-					if (thisInvokationClassname.trim().equals(tokens[0].trim())) 
-					{
+					if (0==thisInvokationClassname.trim().compareTo(tokens[0].trim())) {
 						// yes surely found it. and there is going to be only
 						// one interfaceImplList that we would be interested
 						// in.
-						boolean flag_invokationIndirectlySatisfied=false;
-						Set<String> thisInvokationClassAllInterfaceImplementSet=new HashSet<String>    ();
-						for (int x = 1; x < tokens.length; x++) 
-						{
+						boolean flag_invokationIndirectlySatisfied = false;
+						Set<String> thisInvokationClassAllInterfaceImplementSet = new HashSet<String>();
+						for (int x = 1; x < tokens.length; x++) {
 							// getting the list of interfaces implemented.
 							String token = tokens[x].trim();
-							if (!"".equalsIgnoreCase(token))
-							{
-								String[]  interfaces=token.split(";");
-								for(int y=0; y<interfaces.length;y++)
-								{
-									String interfaceImplemented =  interfaces[y].trim();  
-									if (!"".equalsIgnoreCase(interfaceImplemented)) 
-									{
-										// constructing the new method signature.
-										String[]  newInvokationElements=thisInvokationElements;
-										newInvokationElements[1]=interfaceImplemented;
-										String newInvokation=ParsingUtil.reconstructFuncSignature(newInvokationElements);
-										
-										//	checking for being satisfied.
-										if (allMethodsSet.contains(newInvokation)) 
-										{
+							if (!"".equalsIgnoreCase(token)) {
+								String[] interfaces = token.split(";");
+								for (int y = 0; y < interfaces.length; y++) {
+									String interfaceImplemented = interfaces[y].trim();
+									if (!"".equalsIgnoreCase(interfaceImplemented)) {
+										// constructing the new method
+										// signature.
+										String[] newInvokationElements = ParsingUtil.separateFuncNameElements(invokation);
+										newInvokationElements[1] = interfaceImplemented;
+										String newInvokation = ParsingUtil.reconstructFuncSignature(newInvokationElements);
+
+										// checking for being satisfied.
+										if (allMethodsSet.contains(newInvokation)) {
 											pruningObject.invokationsToBeRemoved.add(invokation);
-											
-											flag_invokationIndirectlySatisfied=true;
+
+											flag_invokationIndirectlySatisfied = true;
 											break;
-										}
-										else
-										{
+										} else {
 											thisInvokationClassAllInterfaceImplementSet.add(newInvokation);
 										}
 									}
 								}
 							}
-							if(flag_invokationIndirectlySatisfied)
+							if (flag_invokationIndirectlySatisfied)
 								break;
 						}
-						
 
-						// if   invokation not satisfied through the internal  interface implements,    them as a potential proxies for satisfaction through other plugins.
+						// if invokation not satisfied through the internal
+						// interface implements, them as a potential proxies for
+						// satisfaction through other plugins.
 
-						if(!flag_invokationIndirectlySatisfied)
-						{
-							for(String newInvokation: thisInvokationClassAllInterfaceImplementSet)
-							{
-								Set<String> proxySet=new HashSet<String>();
-								if(pruningObject.invokationProxies.containsKey(invokation))
-									proxySet=pruningObject.invokationProxies.get(invokation);
-								proxySet.add(newInvokation);
+						if (!flag_invokationIndirectlySatisfied) {
+							
+								Set<String> proxySet = new HashSet<String>();
+								if (pruningObject.invokationProxies.containsKey(invokation))
+									proxySet = pruningObject.invokationProxies.get(invokation);
+								for (String newInvokation : thisInvokationClassAllInterfaceImplementSet) 
+								{
+									proxySet.add(newInvokation);
+									Log.outln("==========  adding iproxy:"  +  invokation+" => "+ newInvokation);
+								}
 								pruningObject.invokationProxies.put(invokation, proxySet);
-							}
+							
 						}
 					}
 				}

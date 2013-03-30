@@ -48,7 +48,7 @@ public interface Constants {
 	public static final String PLUGIN_ALL_INHERITANCE_PAIRS 							= MARKER_ADDON + "All My Inheritance Pairs  "				+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_INTERFACE_IMPLEMENTATION_LISTS 				= MARKER_ADDON + "All Interfaces Implementation Lists "		+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_INTERFACE_IMPLEMENTATION_PAIRS 				= MARKER_ADDON + "All Interfaces Implementation Pairs "		+ MARKER_ADDON;
-	public static final String PLUGIN_ALL_INVOKATION_PROXIES 							= MARKER_ADDON + "All Invokation Satisfaction Potential Proxies"		+ MARKER_ADDON;
+	public static final String PLUGIN_ALL_INVOKATION_PROXY_PAIRS 						= MARKER_ADDON + "All Invokation Satisfaction Potential Proxy Pairs"		+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_JAR_PACKAGES 									= MARKER_ADDON + "All Jar Packages" 						+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_MY_METHOD_CALLS 								= MARKER_ADDON + "All Invokations" 							+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_MY_METHOD_CALLS_EXTERNAL 						= MARKER_ADDON + "All External Invokations" 				+ MARKER_ADDON;
@@ -64,16 +64,15 @@ public interface Constants {
 	public static final String PLUGIN_ALL_TYPES_DETECTED_EXTERNAL_AND_NON_JAVA 			= MARKER_ADDON + "All External Non Java Detected Types" 	+ MARKER_ADDON;
 	
 	public static final String PLUGIN_DEPENDENCY_ALL_FUNCTIONS  						= MARKER_ADDON + "All functions " 							+ MARKER_ADDON;
-	public static final String PLUGIN_DEPENDENCY_ALL_TYPES  							= MARKER_ADDON + "All types (classes) " 					+ MARKER_ADDON;
-	public static final String PLUGIN_DEPENDENCY_ALL_UNMATCHED_FUNCTION_IMPORTS 		= MARKER_ADDON + "All Un Matched Invokations" 				+ MARKER_ADDON;
-	public static final String PLUGIN_DEPENDENCY_ALL_UNMATCHED_TYPE_IMPORTS 			= MARKER_ADDON + "All Un Matched Types" 					+ MARKER_ADDON;
-	public static final String PLUGIN_DEPENDENCY_EXPORTERS  							= MARKER_ADDON + "Exporters " 								+ MARKER_ADDON;
-	public static final String PLUGIN_DEPENDENCY_EXPORTERS_UNSATISFIED  				= MARKER_ADDON + "Generous EXPORTERS  UnSatisfied " 		+ MARKER_ADDON;
-	public static final String PLUGIN_DEPENDENCY_IMPORTERS  							= MARKER_ADDON + "Importers " 								+ MARKER_ADDON;
-	public static final String PLUGIN_DEPENDENCY_IMPORTERS_UNSATISFIED  				= MARKER_ADDON + "Poor Importers  UnSatisfied " 			+ MARKER_ADDON;
-	
 	public static final String PLUGIN_DEPENDENCY_ALL_IGNORED_PLUGINS 					= MARKER_ADDON + "Plugins IGNORED  " 						+ MARKER_ADDON;
-	public static final String PLUGIN_DEPENDENCY_EXPORTERS_SETS 						= MARKER_ADDON + "EXPORTER SETS"								+ MARKER_ADDON;
+	public static final String PLUGIN_DEPENDENCY_ALL_TYPES  							= MARKER_ADDON + "All types (classes) " 					+ MARKER_ADDON;
+	public static final String PLUGIN_DEPENDENCY_ALL_UNMATCHED_FUNCTION_IMPORTS 		= MARKER_ADDON + "All UnMatched Invokations" 				+ MARKER_ADDON;
+	public static final String PLUGIN_DEPENDENCY_ALL_UNMATCHED_TYPE_IMPORTS 			= MARKER_ADDON + "All UnMatched Types" 						+ MARKER_ADDON;
+	public static final String PLUGIN_DEPENDENCY_EXPORTERS  							= MARKER_ADDON + "Exporters " 								+ MARKER_ADDON;
+	public static final String PLUGIN_DEPENDENCY_EXPORTERS_UNSATISFIED  				= MARKER_ADDON + "Exporters  UnSatisfied " 					+ MARKER_ADDON;
+	public static final String PLUGIN_DEPENDENCY_IMPORTERS  							= MARKER_ADDON + "Importers " 								+ MARKER_ADDON;
+	public static final String PLUGIN_DEPENDENCY_IMPORTERS_UNSATISFIED  				= MARKER_ADDON + "Importers  UnSatisfied " 					+ MARKER_ADDON;
+	public static final String PLUGIN_DEPENDENCY_SATISFYING_PLUGINS_SETS 				= MARKER_ADDON + "Satisfying Plugins SETS"					+ MARKER_ADDON;
 	
 	
 	//TODO Add support for features.
