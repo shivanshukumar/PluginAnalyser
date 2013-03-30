@@ -48,6 +48,7 @@ public interface Constants {
 	public static final String PLUGIN_ALL_INHERITANCE_PAIRS 							= MARKER_ADDON + "All My Inheritance Pairs  "				+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_INTERFACE_IMPLEMENTATION_LISTS 				= MARKER_ADDON + "All Interfaces Implementation Lists "		+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_INTERFACE_IMPLEMENTATION_PAIRS 				= MARKER_ADDON + "All Interfaces Implementation Pairs "		+ MARKER_ADDON;
+	public static final String PLUGIN_ALL_INVOKATION_PROXIES 							= MARKER_ADDON + "All Invokation Satisfaction Potential Proxies"		+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_JAR_PACKAGES 									= MARKER_ADDON + "All Jar Packages" 						+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_MY_METHOD_CALLS 								= MARKER_ADDON + "All Invokations" 							+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_MY_METHOD_CALLS_EXTERNAL 						= MARKER_ADDON + "All External Invokations" 				+ MARKER_ADDON;
@@ -72,7 +73,7 @@ public interface Constants {
 	public static final String PLUGIN_DEPENDENCY_IMPORTERS_UNSATISFIED  				= MARKER_ADDON + "Poor Importers  UnSatisfied " 			+ MARKER_ADDON;
 	
 	public static final String PLUGIN_DEPENDENCY_ALL_IGNORED_PLUGINS 					= MARKER_ADDON + "Plugins IGNORED  " 						+ MARKER_ADDON;
-	public static final String PLUGIN_DEPENDENCY_EXPORTERS_SETS 						= MARKER_ADDON +"EXPORTER SETS"								+MARKER_ADDON ;
+	public static final String PLUGIN_DEPENDENCY_EXPORTERS_SETS 						= MARKER_ADDON + "EXPORTER SETS"								+ MARKER_ADDON;
 	
 	
 	//TODO Add support for features.

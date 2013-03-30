@@ -46,4 +46,79 @@ public class ParsingUtil {
 		return result;
 	}
 
+	/**
+	 * separates the function class from function name. e.g. if the input is:
+	 * org.s.G com.x.A.foo () returned: classAndFuncName[0]=org.s.G
+	 * classAndFuncName[1]=com.x.A classAndFuncName[3]=foo ()
+	 * 
+	 * @param funcSignature
+	 * @return
+	 */
+	public static String[] separateFuncNameElements(String funcSignature) {
+		String[] classAndFuncName = new String[3];
+		String[] spaceSplits = funcSignature.split(" ");
+	
+		// returnType
+		classAndFuncName[0] = spaceSplits[0].trim();
+	
+		String[] dotSplits = spaceSplits[1].trim().split("\\.");
+	
+		// function name and parameters
+		classAndFuncName[2] = dotSplits[dotSplits.length - 1].trim() + " " + spaceSplits[2].trim();
+	
+		// class name
+		classAndFuncName[1] = dotSplits[0].trim();
+		for (int x = 1; x < dotSplits.length - 1; x++)
+			classAndFuncName[1] += "." + dotSplits[x].trim();
+	
+		return classAndFuncName;
+	}
+
+	/**
+	 * constructs a function signature from the  funcElements[] array where funcElements[0] is the return type funcElements[1] is the class and funcElements[2] is the function name only without class or return type but will the parameters part.
+	 * @param funcElements
+	 * @return
+	 */
+	public static String reconstructFuncSignature(String[] funcElements) {
+		String signature = "";
+		if (null != funcElements && 3 == funcElements.length) {
+			signature += funcElements[0].trim() + " " + funcElements[1].trim() + "." + funcElements[2].trim();
+		}
+		return signature;
+	}
+
+	/**
+	 * get the bundle property name from a bundle property entry by stripping any version or other information
+	 * 
+	 * @param bundleEntry
+	 * @return
+	 */
+	public static String getBundlePropertyNameFromBundleEntry(String bundleEntry) {
+		// getting the class / package name from the
+		// bundle export entry.
+		// getting split on ";" first.
+		bundleEntry = bundleEntry.split(";")[0].trim();
+		bundleEntry = bundleEntry.split(Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL)[0].trim();
+		return bundleEntry;
+	}
+
+	/**
+	 * return 1 is the input is a function entry , 2 in case of a type entry and
+	 * 0 otherwise.
+	 * 
+	 * @param imp
+	 * @return
+	 */
+	public static int getEntryType(String str) {
+		if (null == str || "".equalsIgnoreCase(str.trim()))
+			return 0;
+		str = str.trim();
+		String[] splits = str.split(" ");
+		if (splits.length >= 2)
+			return 1;
+		else
+	
+			return 2;
+	}
+
 }

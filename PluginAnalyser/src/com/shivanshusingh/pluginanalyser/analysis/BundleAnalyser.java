@@ -29,6 +29,7 @@ import org.objectweb.asm.ClassReader;
 import com.shivanshusingh.pluginanalyser.utils.Util;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
 import com.shivanshusingh.pluginanalyser.utils.parsing.Constants;
+import com.shivanshusingh.pluginanalyser.utils.parsing.ParsingUtil;
 
 /**
  * Analyzes the plugin / bundles.
@@ -563,7 +564,9 @@ public class BundleAnalyser extends ManifestParser {
 		Set<String> allInterfaceImplPairs = new HashSet<String>();
 		Set<String> allInterfaceImplLists = new HashSet<String>();
 		Set<String> allInheritancePairsAndInterfaceImplPairsSuperSet = new HashSet<String>();
-
+		
+		Set<String> allInvokationProxyRecords=new HashSet<String>();
+		
 		// towards getting a set of all classes so that the various sets can be
 		// built.
 		Set<String> classesKeySet = allTypeDependencies_SuperClassAndInterfaces.keySet();
@@ -619,15 +622,30 @@ public class BundleAnalyser extends ManifestParser {
 		}
 
 		// ///////////Pruning /////////////////////////////////////////
-		Set<String> invokationCulprits = getPruneableInvokations(allMyMethods, allExternalInvokations,
+		PluginPruningObject pluginPruningObject= new PluginPruningObject();
+		
+		
+		pluginPruningObject 		= getBundlePruningInfo(allMyMethods, allExternalInvokations,
 				allInheritanceHierarchies, allInterfaceImplLists);
 
+		//  building the allInvokationProxyRecords Set.
+		for (String invokation : pluginPruningObject.invokationProxies.keySet())
+		{
+			Set<String> invokationProxies=pluginPruningObject.invokationProxies.get(invokation);
+			if(null!=invokationProxies && 1<=invokationProxies.size())
+			{
+				String oneRecord=invokation+Constants.DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE;
+				for(String proxy:invokationProxies)
+					oneRecord+=proxy.trim()+";";
+				allInvokationProxyRecords.add(oneRecord);
+			}
+		}
 		// now finally removing the invokations. (actual pruning) at the plugin
 		// level.
 		Log.outln("====Now Pruning  for superClass and Interface function invokations at the plugin Level");
 		Log.errln("====Now Pruning  for superClass and Interface function invokations at the plugin Level");
 		
-		for (String invokation : invokationCulprits) {
+		for (String invokation : pluginPruningObject.invokationsToBeRemoved) {
 			boolean x1 = allExternalInvokations.remove(invokation);
 			boolean x2 = allExternalNonJavaInvokations.remove(invokation);
 //			Log.outln(x1 + "= remove  from AllExternalInvokations \t: " + invokation);
@@ -668,7 +686,8 @@ public class BundleAnalyser extends ManifestParser {
 		List<String> allInterfaceImplLists_List = new ArrayList<String>(allInterfaceImplLists);
 		List<String> allInheritancePairsAndInterfaceImplPairsSuperSet_List = new ArrayList<String>(
 				allInheritancePairsAndInterfaceImplPairsSuperSet);
-
+		List<String> allInvokationProxyRecords_List = new ArrayList<String>(allInvokationProxyRecords);
+		
 		java.util.Collections.sort(allDetectedTypes_List);
 		java.util.Collections.sort(allMyMethods_List);
 		java.util.Collections.sort(allMyPublicMethods_List);
@@ -690,7 +709,8 @@ public class BundleAnalyser extends ManifestParser {
 		java.util.Collections.sort(allInterfaceImplPairs_List);
 		java.util.Collections.sort(allInterfaceImplLists_List);
 		java.util.Collections.sort(allInheritancePairsAndInterfaceImplPairsSuperSet_List);
-
+		java.util.Collections.sort(allInvokationProxyRecords_List);
+		
 		// /////////// BUNDLE MANIFEST ///////////////////
 		// java.util.Collections.sort(bundleRequirements);
 		// this is the set of other plugins that this plugin would depend on.
@@ -846,6 +866,12 @@ public class BundleAnalyser extends ManifestParser {
 			writer.write(s + "\n");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 
+		writer.write(Constants.PLUGIN_ALL_INVOKATION_PROXIES + "\n");
+		for(String s: allInvokationProxyRecords_List)
+			writer.write(s.trim()+"\n");
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
+
+		
 		// ///////////////////////////////////////////////////////
 
 		writer.write(Constants.PLUGIN_ALL_MY_TYPES + "\n");
@@ -1016,113 +1042,91 @@ public class BundleAnalyser extends ManifestParser {
 		fwriter.close();
 	}
 
-	/**
-	 * 
-	 * gets a set of invokation signatures that need to be pruned as they might
-	 * have showed up because there was an indirect call to them through
-	 * inherited methods or interfaces.
-	 * 
-	 * @param allMethodsSet
-	 * @param invokationsSet
-	 * @param allInheritanceHierarchies
-	 * @param allInterfaceImplLists
-	 * @return
-	 */
-	private static Set<String> getPruneableInvokations(Set<String> allMethodsSet, Set<String> invokationsSet,
+	
+	private static PluginPruningObject getBundlePruningInfo(Set<String> allMethodsSet, Set<String> invokationsSet,
 			Set<String> allInheritanceHierarchies, Set<String> allInterfaceImplLists) {
-		// // pruning at the plugin level to remove all external method
-		// invokations such that they may appear in the external invokations
-		// list may be provided by some superclass or through an interface.
-
-		/*
-		 * all invokations ( external), see if a prefix for this one's class
-		 * exists in the inheritance and interface pairs.
-		 * 
-		 * For all those super class and interface matches, see whether the same
-		 * invokation is available in either the All Methods or All External
-		 * Methods, if so remove this method entry from Externals.
-		 * 
-		 * 
-		 * Maybe it is needed to compare the entire inheritance hierarchy .....
-		 * 
-		 * So get entries for this invokations from the class
-		 */
-
-		Set<String> invokationsToBeRemoved = new HashSet<String>();
+		
+		PluginPruningObject pruningObject=new PluginPruningObject()    ;
+		
 		for (String invokation : invokationsSet) {
-			// getting the class name of this invokation: first removing the
-			// return type and then the function name.
+			
+			String[] thisInvokationElements =  ParsingUtil.separateFuncNameElements(invokation);
+			String thisInvokationClassname = thisInvokationElements[1];
 
-			String[] invokationTokens = invokation.split(" ");
-
-			// invokationTokens[1] is the function name without the return type
-			// and without the parameter, but with the fully qualified name
-			// including the owner class.
-			String[] thisInvokationClassTokens = invokationTokens[1].split("\\.");
-			// just the function name without the owner class name with it would
-			// be thisInvokationClassTokens[last].
-			String thisInvokationFunction = thisInvokationClassTokens[thisInvokationClassTokens.length - 1];
-
-			// and so the rest would be the fully qualified class name of this
-			// function: thisInvokationClassTokens[0] to
-			// thisInvokationClassTokens[last-1].
-			String thisInvokationClass = thisInvokationClassTokens[0];
-			for (int x = 1; x < thisInvokationClassTokens.length - 1; x++) {
-				thisInvokationClass += "." + thisInvokationClassTokens[x].trim();
-
-			}
-
-			// System.out.println("checking for  invokation class token:++++++:"+thisInvokationClass);
-
-			// get the inheritance hierarchy classes and all interface impl
-			// sequences classes for all entries that start with this class in:
-			// allInheritanceHierarchies and allInterfaceImplLists
-			Set<String> superClassAndInterfaceSuspects = new HashSet<String>();
-
-			// initialize this set with java.lang.Object as everything comes
-			// from it.
-			// superClassAndInterfaceSuspects.add(Constants.JAVA_LANG_OBJECT);
-
-			for (String entry : allInheritanceHierarchies) 
+			// see if the current invokation can be satisifed through any of its
+			// inheritence hierarchy classes. If yes, add the invokation to be
+			// removed else create a proxy for this invokation that may be
+			// checkd for later on in DependencyFinder.
+	
+			for (String inheritanceHierarchy : allInheritanceHierarchies) 
 			{
-				// System.out.println(thisInvokationClass+" > (superClass) at the starting of?: "
-				// + entry);
-				if (entry.startsWith(thisInvokationClass.trim())) 
+				if (inheritanceHierarchy.startsWith(thisInvokationClassname.trim())) 
 				{
 					// probably found the entry that we were looking for.
 
 					// System.out.println(thisInvokationClass+" >  (superClass) at the starting of?: "
 					// + entry);
 
-					String tokens[] = entry.split(Constants.DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE);
-					if (thisInvokationClass.trim().equals(tokens[0].trim())) 
+					String superclassNames[] = inheritanceHierarchy.split(Constants.DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE);
+					if (null!=superclassNames 
+							&& 1<=superclassNames.length 
+							&& thisInvokationClassname.trim().equals(superclassNames[0].trim())
+							) 
 					{
 						// yes surely found it. and there is going to be only
 						// one inheritance hierarchy that we would be interested
 						// in.
 
-						for (int x = 1; x < tokens.length; x++) 
+						boolean flag_invokationIndirectlySatisfied=false;
+						for (int x = 1; x < superclassNames.length; x++) 
 						{
-							String token = tokens[x];
-							if (!"".equalsIgnoreCase(token.trim())) 
+							String superClassName = superclassNames[x];
+							if (!"".equalsIgnoreCase(superClassName.trim())) 
 							{
-//								System.out.println("Adding ctoken:+++++++++:" + token.trim());
-								superClassAndInterfaceSuspects.add(token.trim());
+								// constructing the new method signature.
+								String[]  newInvokationElements=thisInvokationElements;
+								newInvokationElements[1]=superClassName;
+								String newInvokation=ParsingUtil.reconstructFuncSignature(newInvokationElements);
+								
+								if (allMethodsSet.contains(newInvokation)) 
+								{
+									pruningObject.invokationsToBeRemoved.add(invokation);
+									
+									flag_invokationIndirectlySatisfied=true;
+									break;
+								}
+								
 							}
 						}
+						
+						// if   invokation not satisfied through the internal   inheritance hierarchy, add the last element in the hierarchy as a potential proxy for satisfaction through other plugins.
 
+						if(!flag_invokationIndirectlySatisfied)
+						{
+							String superClassName = superclassNames[superclassNames.length-1].trim();
+							String[]  newInvokationElements=thisInvokationElements;
+							newInvokationElements[1]=superClassName;
+							String newInvokation=ParsingUtil.reconstructFuncSignature(newInvokationElements);
+							
+							if (1<=superClassName.length()) 
+							{
+								Set<String> proxySet=new HashSet<String>();
+								if(pruningObject.invokationProxies.containsKey(invokation))
+									proxySet=pruningObject.invokationProxies.get(invokation);
+								proxySet.add(newInvokation);
+								pruningObject.invokationProxies.put(invokation, proxySet);
+							}
+						}
 						break;
 					}
-
 				}
-
 			}
 			for (String entry : allInterfaceImplLists) 
 			{
 				// System.out.println(thisInvokationClass+" > (interface) at the starting of?: "
 				// + entry);
 
-				if (entry.startsWith(thisInvokationClass.trim())) 
+				if (entry.startsWith(thisInvokationClassname.trim())) 
 				{
 					// probably found the entry that we were looking for.
 
@@ -1130,81 +1134,69 @@ public class BundleAnalyser extends ManifestParser {
 					// + entry);
 
 					String tokens[] = entry.split(Constants.DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE);
-					if (thisInvokationClass.trim().equals(tokens[0].trim())) 
+					if (thisInvokationClassname.trim().equals(tokens[0].trim())) 
 					{
 						// yes surely found it. and there is going to be only
 						// one interfaceImplList that we would be interested
 						// in.
+						boolean flag_invokationIndirectlySatisfied=false;
+						Set<String> thisInvokationClassAllInterfaceImplementSet=new HashSet<String>    ();
 						for (int x = 1; x < tokens.length; x++) 
 						{
 							// getting the list of interfaces implemented.
-							String token = tokens[x];
-							
-							
-							if (!"".equalsIgnoreCase(token.trim()))
+							String token = tokens[x].trim();
+							if (!"".equalsIgnoreCase(token))
 							{
 								String[]  interfaces=token.split(";");
-								for(String i  :  interfaces  )
+								for(int y=0; y<interfaces.length;y++)
 								{
-									if (!"".equalsIgnoreCase(i.trim())) 
+									String interfaceImplemented =  interfaces[y].trim();  
+									if (!"".equalsIgnoreCase(interfaceImplemented)) 
 									{
-//										System.out.println("Adding itoken:+++++++++:" + i.trim());
-		
-										superClassAndInterfaceSuspects.add(i.trim());
+										// constructing the new method signature.
+										String[]  newInvokationElements=thisInvokationElements;
+										newInvokationElements[1]=interfaceImplemented;
+										String newInvokation=ParsingUtil.reconstructFuncSignature(newInvokationElements);
+										
+										//	checking for being satisfied.
+										if (allMethodsSet.contains(newInvokation)) 
+										{
+											pruningObject.invokationsToBeRemoved.add(invokation);
+											
+											flag_invokationIndirectlySatisfied=true;
+											break;
+										}
+										else
+										{
+											thisInvokationClassAllInterfaceImplementSet.add(newInvokation);
+										}
 									}
 								}
 							}
+							if(flag_invokationIndirectlySatisfied)
+								break;
 						}
+						
 
-						break;
+						// if   invokation not satisfied through the internal  interface implements,    them as a potential proxies for satisfaction through other plugins.
+
+						if(!flag_invokationIndirectlySatisfied)
+						{
+							for(String newInvokation: thisInvokationClassAllInterfaceImplementSet)
+							{
+								Set<String> proxySet=new HashSet<String>();
+								if(pruningObject.invokationProxies.containsKey(invokation))
+									proxySet=pruningObject.invokationProxies.get(invokation);
+								proxySet.add(newInvokation);
+								pruningObject.invokationProxies.put(invokation, proxySet);
+							}
+						}
 					}
 				}
+				break;
 			}
-			/*
-			 * System.out.println("+++++++++++++++++++++");
-			 * 
-			 * for( String className:superClassAndInterfaceSuspects) {
-			 * System.out.println(className); } System.out.println(
-			 * "++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-			 */
-
-			// see if the AllMyMethods has any function call with the same stuff
-			// except being offered through any of the detected super classes or
-			// interfaces found through the process above and collected in the
-			// superClassAndInterfaceSuspects set.
-
-			for (String entry : superClassAndInterfaceSuspects) {
-
-				// make the new invokation string by replacing the class name
-				// with the new class name (entry)
-				String newInvokationEntry = invokation.replace(thisInvokationClass+".", entry.trim()+".");
-				
-				//System.out.println("COMPARING: invokation: "+invokation+"\n    with: "+newInvokationEntry+"\n  entry was: "+entry);
-				
-				// now check if AllMyMethods (or maybe AllMyPlublicMethods) has
-				// anything like the newInvokationEntry. And if so then remove
-				// the original invokation from AllExternalInvokations and
-				// AllExternalAndNonJavaInvokations as the original invokation
-				// wasnt external at all in the first place rather being called
-				// through a subclass or a class implementing the interface
-				// which was providing this method and thus the original
-				// invokation did not show up in AllMyMethods or AllMyPublic
-				// Methods.
-
-				if (allMethodsSet.contains(newInvokationEntry)) {
-
-					// now storing the invokation to be removed to be removed in
-					// the next step. Cannot do it here as we might get a
-					// concurrent modification exception as we are iterating
-					// over the same set that we have to remove from.
-//					System.out.println("Marking for removal: " + invokation + "  because of: " + newInvokationEntry);
-					invokationsToBeRemoved.add(invokation);
-
-				}
-			}
-
 		}
-		return invokationsToBeRemoved;
+		return pruningObject;
 	}
 
 	private static StringBuffer getInheritanceHeirarchy(String className, String delim,
@@ -1247,7 +1239,5 @@ public class BundleAnalyser extends ManifestParser {
 		Log.outln("Bundle Imports  = " + bundleinfo.getImports().toString());
 		Log.outln("Bundle ClassPathEntries  = " + bundleinfo.getClasspathEntries().toString());
 		Log.outln("Bundle hashcode  = " + bundleinfo.hashCode());
-
 	}
-
 }

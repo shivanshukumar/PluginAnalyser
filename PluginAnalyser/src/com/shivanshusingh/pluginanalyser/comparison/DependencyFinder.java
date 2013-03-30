@@ -114,7 +114,10 @@ public class DependencyFinder {
 				// + thisPluginExtractName + "====");
 
 				// restoring the functions information from the file.
-
+				
+				/*org.eclipse.wst.jsdt.internal.corext.refactoring.changes.PackageFragmentRootReorgChange.getName ()*/
+if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701"))
+	System.out.println("$$$$ adding  all the information ");
 				boolean ignorePluginExtract = false;
 				Set<String> ignoreBundleProperty = ParsingUtil.restorePropertyFromExtract(pluginExtract,
 						Constants.BUNDLE_IGNORE);
@@ -192,7 +195,7 @@ public class DependencyFinder {
 							flag_isExported = false;
 
 							// String funcClassName = s.split(" ")[1].trim();
-							String[] funcNameElements = separateFuncNameElements(myMethodExport);
+							String[] funcNameElements = ParsingUtil.separateFuncNameElements(myMethodExport);
 
 							String funcRetType = funcNameElements[0];
 							String funcClassName = funcNameElements[1];
@@ -202,7 +205,7 @@ public class DependencyFinder {
 								bundleExport = bundleExport.trim();
 								if (1 <= bundleExport.length()) {
 
-									bundleExport = getBundleExportNameFromBundleExportEntry(bundleExport);
+									bundleExport = ParsingUtil.getBundlePropertyNameFromBundleEntry(bundleExport);
 									if (1 < bundleExport.length()) {
 										// Log.outln("******** Checking if "+funcWithoutReturnType+" starts with "+a.trim()
 										// +
@@ -259,7 +262,7 @@ public class DependencyFinder {
 								bundleExport = bundleExport.trim();
 								if (1 <= bundleExport.length()) {
 
-									bundleExport = getBundleExportNameFromBundleExportEntry(bundleExport);
+									bundleExport = ParsingUtil.getBundlePropertyNameFromBundleEntry(bundleExport);
 									if (1 < bundleExport.length()) {
 
 										if (myTypeExport.startsWith(bundleExport.trim() + ".")) {
@@ -319,8 +322,7 @@ public class DependencyFinder {
 				// information to the DependencyFinder.plugins object /////////
 			}
 		}
-
-		// ///////// now doing the circular inter plugin dependency analysis.
+	Log.outln(" ///////// now doing the circular inter plugin dependency analysis    /////////    ")    ;
 
 		Set<Entry<String, PluginObject>> pluginEntrySet = plugins.entrySet();
 		for (Entry<String, PluginObject> entry : pluginEntrySet) {
@@ -367,25 +369,6 @@ public class DependencyFinder {
 	}
 
 	/**
-	 * return 1 is the input is a function entry , 2 in case of a type entry and
-	 * 0 otherwise.
-	 * 
-	 * @param imp
-	 * @return
-	 */
-	private static int getEntryType(String str) {
-		if (null == str || "".equalsIgnoreCase(str.trim()))
-			return 0;
-		str = str.trim();
-		String[] splits = str.split(" ");
-		if (splits.length >= 2)
-			return 1;
-		else
-
-			return 2;
-	}
-
-	/**
 	 * helper to store already traversed imports, helping DependencyFinder.
 	 * findExporters
 	 */
@@ -401,14 +384,16 @@ public class DependencyFinder {
 		// if(exporterSetsCache.containsKey(imp))
 		// return exporterSetsCache.get(imp);
 
+		if(imp.trim().equalsIgnoreCase("java.lang.String org.eclipse.wst.jsdt.internal.corext.refactoring.changes.PackageFragmentRootReorgChange.getName ()"))
+			System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
 		Set<Set<String>> result = new HashSet<Set<String>>();
 		imp = imp.trim();
-		int impType = getEntryType(imp);
+		int impType = ParsingUtil.getEntryType(imp);
 		if (0 != impType) {
 			String classname = imp;
 			if (1 == impType) {
 				// it is a function, so get the class name.
-				String[] funcElements = separateFuncNameElements(imp);
+				String[] funcElements = ParsingUtil.separateFuncNameElements(imp);
 				classname = funcElements[1];// class name.
 
 			}
@@ -431,16 +416,16 @@ public class DependencyFinder {
 								String newImp = imp.replace(classname, superclass);
 								// if imp is a functioninvokation, then replace
 								// just the class name with superclass name
-								boolean impTypeIsFunction = 1 == getEntryType(imp) ? true : false;
+								boolean impTypeIsFunction = 1 == ParsingUtil.getEntryType(imp) ? true : false;
 
 								if (impTypeIsFunction) {
 									// it is a function, so get the class name.
-									String[] funcElements = separateFuncNameElements(imp);
+									String[] funcElements = ParsingUtil.separateFuncNameElements(imp);
 									funcElements[1] = superclass;// replace the
 																	// class
 																	// name.
 									// recnstruct
-									newImp = reconstructFuncSignature(funcElements);
+									newImp = ParsingUtil.reconstructFuncSignature(funcElements);
 
 								}
 
@@ -485,55 +470,6 @@ public class DependencyFinder {
 
 		}
 		return result;
-	}
-
-	/**
-	 * @param bundleExport
-	 * @return
-	 */
-	private static String getBundleExportNameFromBundleExportEntry(String bundleExport) {
-		// getting the class / package name from the
-		// bundle export entry.
-		// getting split on ";" first.
-		bundleExport = bundleExport.split(";")[0].trim();
-		bundleExport = bundleExport.split(Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL)[0].trim();
-		return bundleExport;
-	}
-
-	private static String reconstructFuncSignature(String[] funcElements) {
-		String signature = "";
-		if (null != funcElements && 3 == funcElements.length) {
-			signature += funcElements[0].trim() + " " + funcElements[1].trim() + "." + funcElements[2].trim();
-		}
-		return signature;
-	}
-
-	/**
-	 * separates the function class from function name. e.g. if the input is:
-	 * org.s.G com.x.A.foo () returned: classAndFuncName[0]=org.s.G
-	 * classAndFuncName[1]=com.x.A classAndFuncName[3]=foo ()
-	 * 
-	 * @param funcSignature
-	 * @return
-	 */
-	private static String[] separateFuncNameElements(String funcSignature) {
-		String[] classAndFuncName = new String[3];
-		String[] spaceSplits = funcSignature.split(" ");
-
-		// returnType
-		classAndFuncName[0] = spaceSplits[0].trim();
-
-		String[] dotSplits = spaceSplits[1].trim().split("\\.");
-
-		// function name and parameters
-		classAndFuncName[2] = dotSplits[dotSplits.length - 1].trim() + " " + spaceSplits[2].trim();
-
-		// class name
-		classAndFuncName[1] = dotSplits[0].trim();
-		for (int x = 1; x < dotSplits.length - 1; x++)
-			classAndFuncName[1] += "." + dotSplits[x].trim();
-
-		return classAndFuncName;
 	}
 
 	private static void writeData(String pluginDependencySetOutputLocationPath) throws IOException {
