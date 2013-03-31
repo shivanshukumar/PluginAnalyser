@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="37320" name="Ateji PX for Java Free Edition" url="http://marketplace.eclipse.org/content/ateji-px-java-free-edition">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+      </categories>
+      <tags>
+        <tag id='214' name='concurrency' url='http://marketplace.eclipse.org/category/free-tagging/concurrency'/>
+        <tag id='217' name='parallel' url='http://marketplace.eclipse.org/category/free-tagging/parallel'/>
+        <tag id='465' name='Cloud' url='http://marketplace.eclipse.org/category/free-tagging/cloud'/>
+        <tag id='1325' name='thread' url='http://marketplace.eclipse.org/category/free-tagging/thread'/>
+        <tag id='1405' name='parallel programming' url='http://marketplace.eclipse.org/category/free-tagging/parallel-programming'/>
+      </tags>
+      
+      <owner>Patrick Viry</owner>
+      <favorited>2</favorited>
+      <installstotal>9</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Ateji PX for Java Free Edition makes parallel programming simple and intuitive. It provides a set of parallel extensions for Java that allow developers to easily boost their applications by parallelizing them on multi-core platforms and very soon on GPU & Grid.</p>
+<p>Ateji PX Free Edition offers all the benefits of Ateji PX Premium on a maximum of 4 cores and with one runtime license. </p>
+<p>Ateji PX was selected as <strong>Disruptive Technology at SC10 New Orleans</strong>.</p>
+<p>Ateji PX Free Edition is easily accessible to all Java application developers with minimal training. In short, it extends Java with a handful of cleverly chosen syntactic constructs, that make it possible to express within a single language a wide range of patterns, including</p>
+<p>-data-, task-, recursive- and speculative parallelism,<br />
+-on shared-memory or distributed architectures,<br />
+-paradigms such as data flow, stream programming, MapReduce and the Actor model </p>
+<p>All these examples are available in the Ateji PX distribution. It targets today multi-core systems. The grid/cloud and GPU version will be available soon. The ETA on the GPU solution is estimated to be September this year. Prototypes are already being used.</p>
+<p>Ateji PX Free Edition is designed as an extension of Java and comes integrated within Eclipse. This makes it compatible with existing source code, development tools and processes. Learning is especially easy : experience has shown that Java developers on their own were able to compile and run their first parallel programs within a couple of hours.</p>
+<p>Additional features include synchronous message-passing at the language level and very powerful parallel comprehension expressions ("parallel reductions" in OpenMP lingo). The language design makes it possible to statically guarantee properties such as the absence of data-races and deadlocks.</p>
+<p>For more information, please visit our website: <a href="http://www.ateji.com/px">www.ateji.com/px</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Ateji PX for Java Free Edition makes parallel programming simple and intuitive. It provides a set of parallel extensions for Java that allow developers to easily boost their applications by parallelizing them on multi-core platforms and very soon on GPU & Grid.</p>
+<p>Ateji PX Free Edition offers all the benefits of Ateji PX Premium on a maximum of 4 cores and with one runtime license. </p>
+<p>Ateji PX was selected as <strong>Disruptive Technology at SC10 New Orleans</strong>.</p>
+<p>Ateji PX Free Edition is easily accessible to all Java application developers with minimal training. In short, it extends Java with a handful of cleverly chosen syntactic constructs, that make it possible to express within a single language a wide range of patterns, including</p>
+<p>-data-, task-, recursive- and speculative parallelism,<br />
+-on shared-memory or distributed architectures,<br />
+-paradigms such as data flow, stream programming, MapReduce and the Actor model </p>
+<p>All these examples are available in the Ateji PX distribution. It targets today multi-core systems. The grid/cloud and GPU version will be available soon. The ETA on the GPU solution is estimated to be September this year. Prototypes are already being used.</p>
+<p>Ateji PX Free Edition is designed as an extension of Java and comes integrated within Eclipse. This makes it compatible with existing source code, development tools and processes. Learning is especially easy : experience has shown that Java developers on their own were able to compile and run their first parallel programs within a couple of hours.</p>
+<p>Additional features include synchronous message-passing at the language level and very powerful parallel comprehension expressions ("parallel reductions" in OpenMP lingo). The language design makes it possible to statically guarantee properties such as the absence of data-races and deadlocks.</p>
+<p>For more information, please visit our website: <a href="http://www.ateji.com/px">www.ateji.com/px</a></p>
+]]></body>
+      <created>1299663347</created>
+      <changed>1309951660</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.ateji.com/px]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/10x10sansSoustitre.png?itok=r404_btY]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Ateji%20Page%20screenshot%20red.png?itok=L6A43DQu]]></screenshot>
+      <version>1.2</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[ATEJI]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4.x, 3.5.x, 3.6.x (Helios) and 3.7.x (Indigo)]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://www.ateji.com/px/eclipse/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

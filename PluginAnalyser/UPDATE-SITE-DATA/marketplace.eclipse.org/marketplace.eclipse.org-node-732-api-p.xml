@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="732" name="Grep Console" url="http://marketplace.eclipse.org/content/grep-console">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='285' name='console' url='http://marketplace.eclipse.org/category/free-tagging/console'/>
+        <tag id='721' name='grep' url='http://marketplace.eclipse.org/category/free-tagging/grep'/>
+      </tags>
+      
+      <owner>Marian Schedenig</owner>
+      <favorited>52</favorited>
+      <installstotal>6500</installstotal>
+      <installsrecent>524</installsrecent>
+      <shortdescription><![CDATA[Grep Console allows you to define a series of regular expressions which will be tested against the console output. Each expression matching a line will affect the style of either the entire line or parts of it. For example, error messages could be set to show up with a red background, or integer values showing the state of a certain variable could be rendered in bold font.]]></shortdescription>
+      <body><![CDATA[Grep Console allows you to define a series of regular expressions which will be tested against the console output. Each expression matching a line will affect the style of either the entire line or parts of it. For example, error messages could be set to show up with a red background, or integer values showing the state of a certain variable could be rendered in bold font.]]></body>
+      <created>1216044082</created>
+      <changed>1361925998</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://marian.schedenig.name/projects/grep-console/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/grepconsole_marketplace.png?itok=rjPPGiIS]]></image>
+      <version>3.3</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Marian Schedenig]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7, 4.2]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://eclipse.schedenig.name]]></updateurl>
+<ius>
+<iu>name.schedenig.eclipse.grepconsole</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

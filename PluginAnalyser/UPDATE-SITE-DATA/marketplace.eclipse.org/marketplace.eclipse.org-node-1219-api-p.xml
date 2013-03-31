@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1219" name="Eclipse IAM" url="http://marketplace.eclipse.org/content/eclipse-iam">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='134' name='J2EE' url='http://marketplace.eclipse.org/category/free-tagging/j2ee'/>
+        <tag id='405' name='maven' url='http://marketplace.eclipse.org/category/free-tagging/maven'/>
+        <tag id='407' name='integration' url='http://marketplace.eclipse.org/category/free-tagging/integration'/>
+        <tag id='695' name='jee' url='http://marketplace.eclipse.org/category/free-tagging/jee'/>
+        <tag id='724' name='wtp' url='http://marketplace.eclipse.org/category/free-tagging/wtp'/>
+      </tags>
+      
+      <owner>Abel Muiño</owner>
+      <favorited>7</favorited>
+      <installstotal>7591</installstotal>
+      <installsrecent>121</installsrecent>
+      <shortdescription><![CDATA[<p>Eclipse Integration for Apache Maven (IAM) is both:</p>
+<ul><li>a solution providing first class, deep, integration of Maven in Eclipse for developers, and...</li>
+<li>a platform for solutions that take advantage of maven.</li>
+</ul><p>As exemplary solutions, the IAM project will develop integration layers for other popular eclipse projects such as JDT and WTP.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Eclipse Integration for Apache Maven (IAM) is both:</p>
+<ul><li>a solution providing first class, deep, integration of Maven in Eclipse for developers, and...</li>
+<li>a platform for solutions that take advantage of maven.</li>
+</ul><p>As exemplary solutions, the IAM project will develop integration layers for other popular eclipse projects such as JDT and WTP.</p>
+]]></body>
+      <created>1274198989</created>
+      <changed>1274202156</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.eclipse.org/iam/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version></version>
+      <license>EPL</license>
+      <companyname><![CDATA[Eclipse IAM project]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eclipse.org/forums/index.php?t=thread&frm_id=56]]></supporturl>
+      <updateurl><![CDATA[http://q4e.googlecode.com/svn/trunk/updatesite-iam/]]></updateurl>
+<ius>
+<iu>org.eclipse.iam.feature</iu>
+<iu>org.eclipse.iam.feature.wtp</iu>
+<iu>org.eclipse.iam.feature.teamsupport</iu>
+<iu>org.eclipse.iam.feature.help</iu>
+<iu>org.eclipse.iam.feature.editor</iu>
+<iu>org.eclipse.iam.feature.dependencyviewer</iu>
+</ius>
+    </node>
+    </marketplace>
+    

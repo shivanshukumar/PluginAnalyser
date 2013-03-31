@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="983" name="Run All Tests" url="http://marketplace.eclipse.org/content/run-all-tests">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+      </categories>
+            
+      <owner>ipreuss</owner>
+      <favorited>2</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Allows the execution of JUnit tests for several projects at once.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Allows the execution of JUnit tests for several projects at once.</p>
+]]></body>
+      <created>1249479291</created>
+      <changed>1259779290</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://sourceforge.net/projects/e-rat/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0.1</version>
+      <license>Other</license>
+      <companyname><![CDATA[Ilja Preuß]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[https://sourceforge.net/projects/e-rat/support]]></supporturl>
+      <updateurl><![CDATA[http://e-rat.sf.net/updatesite]]></updateurl>
+    </node>
+    </marketplace>
+    

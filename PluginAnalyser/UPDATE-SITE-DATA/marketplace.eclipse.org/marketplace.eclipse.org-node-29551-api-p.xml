@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="29551" name="CSV Edit" url="http://marketplace.eclipse.org/content/csv-edit">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+      </categories>
+      <tags>
+        <tag id='146' name='editor' url='http://marketplace.eclipse.org/category/free-tagging/editor'/>
+        <tag id='1565' name='csv' url='http://marketplace.eclipse.org/category/free-tagging/csv'/>
+      </tags>
+      
+      <owner>Frederic Henri</owner>
+      <favorited>2</favorited>
+      <installstotal>1984</installstotal>
+      <installsrecent>91</installsrecent>
+      <shortdescription><![CDATA[<p>If you are an eclipse user / developer and you have to manage csv file, the CSV Edit plugin is for you.</p>
+<p><b>Installation</b></p>
+<p>    * update-site</p>
+<p>      This is definitly the easiest and straightforward way to install the plugin -</p>
+<p>    * Install plugin</p>
+<p>      Download the plugin directly from the csvedit site which comes in a zip file<br />
+      unzip the file corresponding to your version into the eclipse/ directory of your eclipse installation and (re)start eclipse for the plugin to take effect.</p>
+<p><b>Features</b></p>
+<p>    You can choose to edit your files :</p>
+<p>    * From the source editor<br />
+      The source editor has been enhanced to help you differentiate your data from the different column using a color mechanism</p>
+<p>    * From a table view representing the csv data<br />
+      The table editing is definitly the added value of the plugin and allows a bunch of operation on your csv file among the following features</p>
+<p>    - Easy editing of data</p>
+<p>    - Insertion and deletion of table rows</p>
+<p>    - Insertion and deletion of table column</p>
+<p>    - Filtering of data</p>
+<p>    - Customize view with hidding/display of column to simplify the view</p>
+<p>    - Manage your column with moving/resizing columns</p>
+<p>    - Sorting data in column</p>
+<p>    - Manage your own CSV settings</p>
+<p><b>Contact</b></p>
+<p>    If you have any issue working with the plugin, you can contact the CSV Edit Team at</p>
+<p>              <a href="http://code.google.com/p/csvedit/issues/list">http://code.google.com/p/csvedit/issues/list</a></p>
+<p>    Please help us make CSV Edit a better product by providing any errors you face or any ideas that could make the plugin easier to work with</p>
+]]></shortdescription>
+      <body><![CDATA[<p>If you are an eclipse user / developer and you have to manage csv file, the CSV Edit plugin is for you.</p>
+<p><b>Installation</b></p>
+<p>    * update-site</p>
+<p>      This is definitly the easiest and straightforward way to install the plugin -</p>
+<p>    * Install plugin</p>
+<p>      Download the plugin directly from the csvedit site which comes in a zip file<br />
+      unzip the file corresponding to your version into the eclipse/ directory of your eclipse installation and (re)start eclipse for the plugin to take effect.</p>
+<p><b>Features</b></p>
+<p>    You can choose to edit your files :</p>
+<p>    * From the source editor<br />
+      The source editor has been enhanced to help you differentiate your data from the different column using a color mechanism</p>
+<p>    * From a table view representing the csv data<br />
+      The table editing is definitly the added value of the plugin and allows a bunch of operation on your csv file among the following features</p>
+<p>    - Easy editing of data</p>
+<p>    - Insertion and deletion of table rows</p>
+<p>    - Insertion and deletion of table column</p>
+<p>    - Filtering of data</p>
+<p>    - Customize view with hidding/display of column to simplify the view</p>
+<p>    - Manage your column with moving/resizing columns</p>
+<p>    - Sorting data in column</p>
+<p>    - Manage your own CSV settings</p>
+<p><b>Contact</b></p>
+<p>    If you have any issue working with the plugin, you can contact the CSV Edit Team at</p>
+<p>              <a href="http://code.google.com/p/csvedit/issues/list">http://code.google.com/p/csvedit/issues/list</a></p>
+<p>    Please help us make CSV Edit a better product by providing any errors you face or any ideas that could make the plugin easier to work with</p>
+]]></body>
+      <created>1295954275</created>
+      <changed>1306094993</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/csvedit/downloads/list]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_csvedit_110_80.png?itok=9bg6vuGs]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/csvedit_main.jpg?itok=OqsrXi-Q]]></screenshot>
+      <version>1.1.1</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[FHSolution]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[tested on 3.5, 3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://www.fhsolution.com/products/java-development/edit-csv-plugin]]></supporturl>
+      <updateurl><![CDATA[http://csvedit.googlecode.com/svn/trunk/csvedit.update]]></updateurl>
+<ius>
+<iu>org.fhsolution.eclipse.feature.csvedit</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

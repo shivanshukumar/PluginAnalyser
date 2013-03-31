@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="24993" name="Enerate" url="http://marketplace.eclipse.org/content/enerate">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+      </categories>
+            
+      <owner>Richard Lincoln</owner>
+      <favorited>0</favorited>
+      <installstotal>224</installstotal>
+      <installsrecent>5</installsrecent>
+      <shortdescription><![CDATA[<p>JET2 transforms for generating:</p>
+<p> - Python code<br />
+ - Python code with Traits<br />
+ - Google App Ehgine Python code<br />
+ - Spring Roo scripts<br />
+ - Java code</p>
+]]></shortdescription>
+      <body><![CDATA[<p>JET2 transforms for generating:</p>
+<p> - Python code<br />
+ - Python code with Traits<br />
+ - Google App Ehgine Python code<br />
+ - Spring Roo scripts<br />
+ - Java code</p>
+]]></body>
+      <created>1292771044</created>
+      <changed>1292856782</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://github.com/rwl/enerate]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Enerate-medium_0.png?itok=dPaYFjQB]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Enerate-context_menu.png?itok=XZTnvLid]]></screenshot>
+      <version></version>
+      <license>EPL</license>
+      <companyname><![CDATA[Richard Lincoln]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[https://github.com/rwl/enerate/issues]]></supporturl>
+      <updateurl><![CDATA[http://rwl.github.com/enerate/]]></updateurl>
+<ius>
+<iu>com.github.enerate.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

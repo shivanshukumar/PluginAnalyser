@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1097" name="P2 installation replication" url="http://marketplace.eclipse.org/content/p2-installation-replication">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+      </categories>
+      <tags>
+        <tag id='274' name='provisioning' url='http://marketplace.eclipse.org/category/free-tagging/provisioning'/>
+        <tag id='438' name='p2' url='http://marketplace.eclipse.org/category/free-tagging/p2'/>
+      </tags>
+      
+      <owner>kane zhu</owner>
+      <favorited>6</favorited>
+      <installstotal>450</installstotal>
+      <installsrecent>18</installsrecent>
+      <shortdescription><![CDATA[<b>This feature has been contributed to p2 itself, you can find it in Eclipse Indigo(3.7) M7+ now!</b> Note: the exported file is incompatible with previous versions.<br /><!--break-->
+It's a tool to help quickly replicate the p2 installation to other Eclipse instance. Eclipse provisioning goes into p2 world from Eclipse 3.4. The classical way to install features/plug-ins is NOT recommended that simply copy them into features/plugins folder. And p2 dev team don't consider it's necessary to support installing features/plugins into external folder. So there is a lot of manual efforts to 'replicate' the same plug-ins in different Eclipse instance, different workstations or different platforms.
+<br />
+This tool can help simplify the installing effort, just export/import the p2 installation to/from file like preference.
+<br />
+Currently this tool also supports importing from another existing Eclipse instance! 
+
+<pre>
+- <b>built-in feature since Eclipse Indigo(3.7) M7</b>
+
+- install it from online repository(recommended)
+
+    - For <a href="http://kane-toolkit.googlecode.com/svn/trunk/p2-replication/repository/3.5/">Eclipse Galileo</a>
+
+    - For <a href="http://kane-toolkit.googlecode.com/svn/trunk/p2-replication/repository/helios/">Helios</a>
+
+- download the <a href="http://code.google.com/p/kane-toolkit/downloads/list?can=1&q=p2&colspec=Filename+Summary+Uploaded+Size+DownloadCount">featured version</a>, then copy it into dropin folder of your Eclipse
+</pre>]]></shortdescription>
+      <body><![CDATA[<b>This feature has been contributed to p2 itself, you can find it in Eclipse Indigo(3.7) M7+ now!</b> Note: the exported file is incompatible with previous versions.<br /><!--break-->
+It's a tool to help quickly replicate the p2 installation to other Eclipse instance. Eclipse provisioning goes into p2 world from Eclipse 3.4. The classical way to install features/plug-ins is NOT recommended that simply copy them into features/plugins folder. And p2 dev team don't consider it's necessary to support installing features/plugins into external folder. So there is a lot of manual efforts to 'replicate' the same plug-ins in different Eclipse instance, different workstations or different platforms.
+<br />
+This tool can help simplify the installing effort, just export/import the p2 installation to/from file like preference.
+<br />
+Currently this tool also supports importing from another existing Eclipse instance! 
+
+<pre>
+- <b>built-in feature since Eclipse Indigo(3.7) M7</b>
+
+- install it from online repository(recommended)
+
+    - For <a href="http://kane-toolkit.googlecode.com/svn/trunk/p2-replication/repository/3.5/">Eclipse Galileo</a>
+
+    - For <a href="http://kane-toolkit.googlecode.com/svn/trunk/p2-replication/repository/helios/">Helios</a>
+
+- download the <a href="http://code.google.com/p/kane-toolkit/downloads/list?can=1&q=p2&colspec=Filename+Summary+Uploaded+Size+DownloadCount">featured version</a>, then copy it into dropin folder of your Eclipse
+</pre>]]></body>
+      <created>1261734110</created>
+      <changed>1303011326</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/kane-toolkit/wiki/P2Replication]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.2</version>
+      <license>EPL</license>
+      <companyname><![CDATA[kane.zhu@windriver.com]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5.x, 3.6 M6+]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/kane-toolkit/wiki/P2Replication]]></supporturl>
+      <updateurl><![CDATA[http://kane-toolkit.googlecode.com/svn/trunk/p2-replication/repository/helios/]]></updateurl>
+<ius>
+<iu>org.eclipse.equinox.p2.replication.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

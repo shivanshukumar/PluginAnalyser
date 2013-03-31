@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="22848" name="FeatureIDE" url="http://marketplace.eclipse.org/content/featureide">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='871' name='AspectJ' url='http://marketplace.eclipse.org/category/free-tagging/aspectj'/>
+        <tag id='1426' name='FeatureIDE' url='http://marketplace.eclipse.org/category/free-tagging/featureide'/>
+        <tag id='1427' name='feature model' url='http://marketplace.eclipse.org/category/free-tagging/feature-model'/>
+        <tag id='1428' name='feature modeling' url='http://marketplace.eclipse.org/category/free-tagging/feature-modeling'/>
+        <tag id='1429' name='AHEAD' url='http://marketplace.eclipse.org/category/free-tagging/ahead'/>
+      </tags>
+      
+      <owner>Thomas Thuem</owner>
+      <favorited>4</favorited>
+      <installstotal>739</installstotal>
+      <installsrecent>52</installsrecent>
+      <shortdescription><![CDATA[<p>FeatureIDE supports feature-oriented software development in eclipse.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>FeatureIDE supports feature-oriented software development in eclipse.</p>
+]]></body>
+      <created>1291454605</created>
+      <changed>1354613009</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://wwwiti.cs.uni-magdeburg.de/iti_db/research/featureide/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo1056.png?itok=AiYDvVo7]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/fme-fd-fmenu.jpg?itok=I_AcsYLR]]></screenshot>
+      <version>2.6.3</version>
+      <license>GPL</license>
+      <companyname><![CDATA[University of Magdeburg]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4, 3.5, 3.6, 3.7, 4.2]]></eclipseversion>
+      <supporturl><![CDATA[https://faracvs.cs.uni-magdeburg.de/projects/tthuem-FeatureIDE/]]></supporturl>
+      <updateurl><![CDATA[http://wwwiti.cs.uni-magdeburg.de/iti_db/research/featureide/deploy/]]></updateurl>
+<ius>
+<iu>de.ovgu.featureide</iu>
+<iu>de.ovgu.featureide.antenna</iu>
+<iu>de.ovgu.featureide.aspectj</iu>
+<iu>de.ovgu.featureide.deltaj</iu>
+<iu>de.ovgu.featureide.exampleprojects</iu>
+<iu>de.ovgu.featureide.featurecpp</iu>
+<iu>de.ovgu.featureide.featurehouse</iu>
+<iu>de.ovgu.featureide.featuremodeling</iu>
+<iu>de.ovgu.featureide.munge</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

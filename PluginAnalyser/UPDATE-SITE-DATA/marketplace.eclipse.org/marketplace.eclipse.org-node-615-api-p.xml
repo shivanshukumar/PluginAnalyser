@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="615" name="Modulipse" url="http://marketplace.eclipse.org/content/modulipse">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+            
+      <owner>José David Moreno Juárez</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Eclipse-based IDE for Modula-2.<br />
+Supported features include syntax highlighting, wizards, keyword completion, procedure folding, code templates, and error markers.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Eclipse-based IDE for Modula-2.<br />
+Supported features include syntax highlighting, wizards, keyword completion, procedure folding, code templates, and error markers.</p>
+]]></body>
+      <created>1198782071</created>
+      <changed>1259778908</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://sourceforge.net/projects/modulipse/]]></homepageurl>
+      <image><![CDATA[http://modulipse.sourceforge.net/m2logo-110x80.png]]></image>
+      <version>0.0.3</version>
+      <license>Free EPL</license>
+      <companyname><![CDATA[]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3]]></eclipseversion>
+      <supporturl><![CDATA[http://]]></supporturl>
+      <updateurl><![CDATA[http://modulipse.sourceforge.net/]]></updateurl>
+    </node>
+    </marketplace>
+    

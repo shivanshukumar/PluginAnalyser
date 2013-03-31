@@ -1,0 +1,507 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="68" name="WindowBuilder Pro GUI Designer" url="http://marketplace.eclipse.org/content/windowbuilder-pro-gui-designer">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+      <tags>
+        <tag id='82' name='free' url='http://marketplace.eclipse.org/category/free-tagging/free'/>
+        <tag id='330' name='Instantiations' url='http://marketplace.eclipse.org/category/free-tagging/instantiations'/>
+        <tag id='331' name='GUI Construction' url='http://marketplace.eclipse.org/category/free-tagging/gui-construction'/>
+        <tag id='566' name='google' url='http://marketplace.eclipse.org/category/free-tagging/google'/>
+        <tag id='1260' name='visual editor' url='http://marketplace.eclipse.org/category/free-tagging/visual-editor'/>
+      </tags>
+      
+      <owner>Mark Johnson</owner>
+      <favorited>112</favorited>
+      <installstotal>305</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><span style="FONT-FAMILY: Verdana"><strong><span style="FONT-SIZE: 10pt">WindowBuilder Pro (SWT Designer and Swing Designer) has been donated to the open source community through the Eclipse Foundation, and is in the process of becoming an Eclipse project. Read more on the Google code blog <a href="http://googlecode.blogspot.com/2010/12/windowbuilder-becomes-new-open-source.html">http://googlecode.blogspot.com/2010/12/windowbuilder-becomes-new-open-so...</a>.</span></strong></span></p>
+<p>To opt-in to receive emails about WindowBuilder Pro and other Google Developer Tools, please visit <a href="http://code.google.com/webtoolkit/tools/optin.html">http://code.google.com/webtoolkit/tools/optin.html</a>.</p>
+<p>WindowBuilder Pro (SWT/Swing/GWT Designer) is a powerful and easy to use bi-directional Java GUI designer that supports Eclipse SWT, Sun Swing and Google GWT technology. It is very easy to create Java GUI, Eclipse RCP and GWT/Ajax applications without spending a lot of time writing code to display simple forms. Supports the popular JGoodies FormLayout that enables creation of precise and flexible Swing form windows.</p>
+<table style="WIDTH: 100%; BORDER-COLLAPSE: collapse"><tbody><tr><td>
+<span style="FONT-FAMILY: Verdana"><span style="FONT-SIZE: 10pt">With WindowBuilder you can create complicated windows in minutes. Use the visual designer and Java code will be generated for you. You can easily add controls using drag-and-drop, add event handlers to your controls, change various properties of controls using a property editor and much more. You have complete freedom to change and refactor its generated code and see your changes immediately reflected in the visual designer. WindowBuilder's powerful parser can also <strong>reverse engineer</strong> code created by hand or by other popular GUI builders like JBuilder, NetBeans, VisualAge and the Eclipse VE.</span></span>
+</td>
+<td>  </td>
+<td>
+			</td></tr></tbody></table><p>XX</p>
+<p><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"><span style="TEXT-DECORATION: underline"><strong>FEATURES</strong></span></span><br /><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">WindowBuilder Pro offers many features common to SWT Designer, Swing Designer and GWT Designer, in addition to functionality specific to each. Refer to the following detail.	</span></p>
+<p><strong><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; TEXT-DECORATION: underline">Common Features</span></strong></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong>Convenience and Speed</strong></span></p>
+<ul><li>Reverse engineer hand-written code </li>
+<li>Supports user code refactoring </li>
+<li>Free-form code editing </li>
+<li>Visual Inheritance </li>
+<li>Custom widget support </li>
+<li>Palette Manager </li>
+<li>Embedded Composite support </li>
+<li>Custom Widget Templates </li>
+<li>Widget Morphing </li>
+<li>Leverage existing widgets using "Surround With” </li>
+<li>Layout Assistant </li>
+<li>Graphical Tab Order Editing </li>
+<li>Multi-Widget Select & Edit </li>
+<li>Marquee Select </li>
+<li>Align multiple widgets </li>
+<li>Replicate width and height </li>
+<li>Gradient Editor for CLabels </li>
+<li>Unlimited Undo/Redo </li>
+<li>Cut/Copy/Paste </li>
+<li>Sticky Mode for multi-widget add </li>
+<li>Show externalized strings </li>
+<li>Display labels in multiple locales </li>
+<li>Internationalization tools and wizards </li>
+<li>Auto-update resource bundles </li>
+<li>Control editor layout </li>
+</ul><p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong>Code Generation</strong> </span></p>
+<ul><li>Bi-Directional Code Generation (Round-trip Editing) </li>
+<li>Read and write almost any style </li>
+<li>Block mode (default) </li>
+<li>Flat mode </li>
+<li>Prefix component creation </li>
+<li>Share variables </li>
+<li>Control variable declaration </li>
+<li>Create event handler stubs </li>
+<li>Define default variable names </li>
+<li>Create unlimited customized widgets with UI Factories </li>
+<li>Use place holders for broken custom components </li>
+<li>Make selected widgets fields by default </li>
+<li>Make all widgets fields by default </li>
+<li>Event handlers as anonymous classes </li>
+<li>Event handlers as inner classes </li>
+<li>Implement listener interface in parent class </li>
+<li>Extend WindowBuilder Pro with Customization API </li>
+</ul><p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong>Platforms</strong></span></p>
+<p></p>
+
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"></span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"></span></p>
+<ul><li>Windows </li>
+<li>Linux/GTK </li>
+<li>Mac (limited, unsupported, SWT only) </li>
+</ul><p></p>
+<p><strong><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; TEXT-DECORATION: underline">SWT Features</span></strong><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"></span> </p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong>General Features</strong> </span></p>
+<ul><li>Support for Eclipse XML Window Toolkit (XWT)</li>
+<li>SWT/JFace Automatic Data Binding Wizard, with visual marker for model beans </li>
+<li>Supports All SWT widgets </li>
+<li>Nebula Widgets integrated in designer </li>
+<li>SWT Composite and Shell wizards </li>
+<li>SWT Project and Application wizards </li>
+<li>Free cell editing for GridLayout </li>
+<li>SWT_AWT support </li>
+<li>Dynamic FormLayout snap points </li>
+<li>Extract composite refactoring </li>
+<li>Gradient editor for Clabels </li>
+<li>Graphical support for ScrolledComposites </li>
+<li>Visual inheritance </li>
+</ul><p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong>JFace Support</strong></span></p>
+<ul><li>Supports all JFace viewers </li>
+<li>Wizards for wizard pages </li>
+<li>Dialogs and applications </li>
+</ul><p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong>RCP Support</strong></span><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"> </span></p>
+<ul><li>ViewPart and EditorPart wizards </li>
+<li>Perspective creation and editing </li>
+<li>Eclipse forms API support </li>
+<li>Eclipse PreferencePage wizard </li>
+<li>Create RCP components </li>
+<li>Support for Riena platform </li>
+<li>RCP Action support </li>
+</ul><p></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong>Supported Layout Managers</strong></span></span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"></span><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"></span></span></p>
+<ul><li>GroupLayout —<em> better than Matisse</em> </li>
+<li>Null/Absolute </li>
+<li>FillLayout </li>
+<li>RowLayout </li>
+<li>GridLayout </li>
+<li>FormLayout </li>
+<li>StackLayout </li>
+<li>Swing FlowLayout </li>
+<li>Swing BorderLayout </li>
+<li>Swing GridLayout </li>
+</ul><p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"></span></p>
+<p></p>
+
+<p><strong><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; TEXT-DECORATION: underline">Swing Features</span></strong><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"></span><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"> </span></p>
+<p><strong>Swing Wizards </strong></p>
+<ul><li>Swing JFrame </li>
+<li>Swing JDialog </li>
+<li>Swing JPanel </li>
+<li>Swing JApplet </li>
+<li>Swing JInternalFrame </li>
+<li>Swing Application </li>
+</ul><p><strong>Swing Data Binding</strong></p>
+<ul><li>JSR 295, Swing Data Binding support </li>
+<li>Visual marker for model beans </li>
+</ul><p><strong>Swing Layouts</strong></p>
+<ul><li>Graphical Layout Feedback </li>
+<li>Null/Absolute </li>
+<li>MIG Layout </li>
+<li>FlowLayout </li>
+<li>BorderLayout </li>
+<li>GridLayout </li>
+<li>CardLayout </li>
+<li>GridBagLayout </li>
+<li>BoxLayout / Struts & Glue </li>
+<li>SpringLayout </li>
+<li>JGoodies FormLayout </li>
+<li>Java 6 GroupLayout </li>
+</ul><p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"></span></p>
+<p><strong>Swing Containers</strong></p>
+<ul><li>JPanel </li>
+<li>JScrollPane </li>
+<li>JSpiltPane </li>
+<li>JTabbedPane </li>
+<li>JToolBar </li>
+<li>JDesktopPane </li>
+<li>JInternalFrame </li>
+</ul><p><strong>Swing Look and Feels</strong></p>
+<ul><li>Windows </li>
+<li>CDE/Motif </li>
+<li>Metal </li>
+<li>JGoodies Plastic </li>
+<li>JGoodies Plastic 3D </li>
+<li>JGoodies Plastic XP </li>
+<li>JGoodies Windows </li>
+<li>Liquid </li>
+<li>Kunststoff </li>
+</ul><p><strong>Swing Controls</strong></p>
+<ul><li>Support for custom / 3rd-party widgets </li>
+<li>JButton </li>
+<li>JCheckBox </li>
+<li>JRadioButton </li>
+<li>JToggleButton </li>
+<li>JLabel </li>
+<li>JTextField </li>
+<li>JPasswordField </li>
+<li>JTestArea </li>
+<li>JFormattedTextField </li>
+<li>JSlider </li>
+<li>JScrollBar </li>
+<li>JList </li>
+<li>JComboBox </li>
+<li>JSpinner </li>
+<li>JTree </li>
+<li>JTable </li>
+<li>JToolBar separator </li>
+<li>JSeparator </li>
+<li>JProgessBar </li>
+<li>JOptionPane </li>
+<li>JTestPane </li>
+<li>JEditorPane </li>
+<li>Action </li>
+<li>ButtonGroup </li>
+</ul><p><strong>Swing Menus</strong></p>
+<ul><li>Graphical menu editing </li>
+<li>JMenuBar </li>
+<li>JMenu </li>
+<li>JPopupMenu </li>
+<li>JMenuItem </li>
+<li>JCheckBoxMenuItem </li>
+<li>JRadioButtonMenuItem </li>
+<li>Menu separator
+									</li>
+</ul><p><strong>AWT Widgets</strong></p>
+<ul><li>ScrollPane </li>
+<li>Button </li>
+<li>Label </li>
+<li>Checkbox </li>
+<li>Choice </li>
+<li>List </li>
+<li>Scrollbar </li>
+<li>TextField </li>
+<li>TextArea
+									</li>
+</ul><p>
+
+</p><p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; TEXT-DECORATION: underline"><strong>GWT Features</strong></span><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; TEXT-DECORATION: underline"><br /></span></p>
+<ul><li>Lightning-fast round-trip editing to keep the designer and source in sync </li>
+<li>Extend your UI development with support for Smart GWT, Ext GWT (GXT) and GWT-Ext widget libraries </li>
+<li>WYSIWYG tools to easily:
+<ul><li>add event handlers to your controls </li>
+<li>modify various properties of controls using a property editor. </li>
+<li>change and refactor generated code and see it immediately in the visual designer </li>
+</ul></li>
+<li>Reverse-engineer code created by hand </li>
+<li>Ability to create and use Custom Composites </li>
+<li>Dynamic AbsolutePanel Snap Points </li>
+<li>Dynamic audit of disallowed Java </li>
+<li>Wizards to get you started, including:
+<ul><li>GWT Project and Module Wizards </li>
+<li>DialogBox and PopupPanel Wizards </li>
+<li>RemoteService Wizard </li>
+</ul></li>
+<li>Comprehensive CSS support:
+<ul><li>edit styles and properties within the designer </li>
+<li>display an exact rendering of how your screen will look in the browser </li>
+</ul></li>
+<li>Classes and methods </li>
+<li>Visual inheritance </li>
+<li>Graphical Grid, FlexTable and TabPanel support </li>
+<li>GWT application launching </li>
+<li>Easy build and deployment </li>
+<li>Internationalization support </li>
+<li>ImageBundle support </li>
+</ul><p></p>
+
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><span style="FONT-FAMILY: Verdana; COLOR: #ff0000; FONT-SIZE: 10pt; TEXT-DECORATION: underline"><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt; TEXT-DECORATION: underline"><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; TEXT-DECORATION: underline" class="bright"><span style="TEXT-DECORATION: underline"><strong>AWARDS AND ACKNOWLEDGEMENTS<br /></strong></span></span></span></span><span style="FONT-FAMILY: Verdana; COLOR: #ff0000; FONT-SIZE: 10pt"><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"><strong><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt" class="bright">Best Commercial Eclipse Developer Tool!</span> </strong>The Eclipse Foundation's annual Community Awards were announced at EclipseCon 2009. WindowBuilder was one of only three commercial products honored. </span></span></span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">"WindowBuilder delivers the kind of GUI building productivity that we use to have before we converted to Java. WindowBuilder not only dramatically improves productivity for design and maintenance, but it also enables us to significantly improve the look-and-feel of our GUIs without costing days of coding. Until discovering WindowBuilder, I had forgotten just how much fun and easy it can be building Java GUIs." --Sally Rich</span></p>
+<p></p>
+]]></shortdescription>
+      <body><![CDATA[<p><span style="FONT-FAMILY: Verdana"><strong><span style="FONT-SIZE: 10pt">WindowBuilder Pro (SWT Designer and Swing Designer) has been donated to the open source community through the Eclipse Foundation, and is in the process of becoming an Eclipse project. Read more on the Google code blog <a href="http://googlecode.blogspot.com/2010/12/windowbuilder-becomes-new-open-source.html">http://googlecode.blogspot.com/2010/12/windowbuilder-becomes-new-open-so...</a>.</span></strong></span></p>
+<p>To opt-in to receive emails about WindowBuilder Pro and other Google Developer Tools, please visit <a href="http://code.google.com/webtoolkit/tools/optin.html">http://code.google.com/webtoolkit/tools/optin.html</a>.</p>
+<p>WindowBuilder Pro (SWT/Swing/GWT Designer) is a powerful and easy to use bi-directional Java GUI designer that supports Eclipse SWT, Sun Swing and Google GWT technology. It is very easy to create Java GUI, Eclipse RCP and GWT/Ajax applications without spending a lot of time writing code to display simple forms. Supports the popular JGoodies FormLayout that enables creation of precise and flexible Swing form windows.</p>
+<table style="WIDTH: 100%; BORDER-COLLAPSE: collapse"><tbody><tr><td>
+<span style="FONT-FAMILY: Verdana"><span style="FONT-SIZE: 10pt">With WindowBuilder you can create complicated windows in minutes. Use the visual designer and Java code will be generated for you. You can easily add controls using drag-and-drop, add event handlers to your controls, change various properties of controls using a property editor and much more. You have complete freedom to change and refactor its generated code and see your changes immediately reflected in the visual designer. WindowBuilder's powerful parser can also <strong>reverse engineer</strong> code created by hand or by other popular GUI builders like JBuilder, NetBeans, VisualAge and the Eclipse VE.</span></span>
+</td>
+<td>  </td>
+<td>
+			</td></tr></tbody></table><p>XX</p>
+<p><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"><span style="TEXT-DECORATION: underline"><strong>FEATURES</strong></span></span><br /><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">WindowBuilder Pro offers many features common to SWT Designer, Swing Designer and GWT Designer, in addition to functionality specific to each. Refer to the following detail.	</span></p>
+<p><strong><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; TEXT-DECORATION: underline">Common Features</span></strong></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong>Convenience and Speed</strong></span></p>
+<ul><li>Reverse engineer hand-written code </li>
+<li>Supports user code refactoring </li>
+<li>Free-form code editing </li>
+<li>Visual Inheritance </li>
+<li>Custom widget support </li>
+<li>Palette Manager </li>
+<li>Embedded Composite support </li>
+<li>Custom Widget Templates </li>
+<li>Widget Morphing </li>
+<li>Leverage existing widgets using "Surround With” </li>
+<li>Layout Assistant </li>
+<li>Graphical Tab Order Editing </li>
+<li>Multi-Widget Select & Edit </li>
+<li>Marquee Select </li>
+<li>Align multiple widgets </li>
+<li>Replicate width and height </li>
+<li>Gradient Editor for CLabels </li>
+<li>Unlimited Undo/Redo </li>
+<li>Cut/Copy/Paste </li>
+<li>Sticky Mode for multi-widget add </li>
+<li>Show externalized strings </li>
+<li>Display labels in multiple locales </li>
+<li>Internationalization tools and wizards </li>
+<li>Auto-update resource bundles </li>
+<li>Control editor layout </li>
+</ul><p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong>Code Generation</strong> </span></p>
+<ul><li>Bi-Directional Code Generation (Round-trip Editing) </li>
+<li>Read and write almost any style </li>
+<li>Block mode (default) </li>
+<li>Flat mode </li>
+<li>Prefix component creation </li>
+<li>Share variables </li>
+<li>Control variable declaration </li>
+<li>Create event handler stubs </li>
+<li>Define default variable names </li>
+<li>Create unlimited customized widgets with UI Factories </li>
+<li>Use place holders for broken custom components </li>
+<li>Make selected widgets fields by default </li>
+<li>Make all widgets fields by default </li>
+<li>Event handlers as anonymous classes </li>
+<li>Event handlers as inner classes </li>
+<li>Implement listener interface in parent class </li>
+<li>Extend WindowBuilder Pro with Customization API </li>
+</ul><p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong>Platforms</strong></span></p>
+<p></p>
+
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"></span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"></span></p>
+<ul><li>Windows </li>
+<li>Linux/GTK </li>
+<li>Mac (limited, unsupported, SWT only) </li>
+</ul><p></p>
+<p><strong><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; TEXT-DECORATION: underline">SWT Features</span></strong><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"></span> </p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong>General Features</strong> </span></p>
+<ul><li>Support for Eclipse XML Window Toolkit (XWT)</li>
+<li>SWT/JFace Automatic Data Binding Wizard, with visual marker for model beans </li>
+<li>Supports All SWT widgets </li>
+<li>Nebula Widgets integrated in designer </li>
+<li>SWT Composite and Shell wizards </li>
+<li>SWT Project and Application wizards </li>
+<li>Free cell editing for GridLayout </li>
+<li>SWT_AWT support </li>
+<li>Dynamic FormLayout snap points </li>
+<li>Extract composite refactoring </li>
+<li>Gradient editor for Clabels </li>
+<li>Graphical support for ScrolledComposites </li>
+<li>Visual inheritance </li>
+</ul><p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong>JFace Support</strong></span></p>
+<ul><li>Supports all JFace viewers </li>
+<li>Wizards for wizard pages </li>
+<li>Dialogs and applications </li>
+</ul><p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong>RCP Support</strong></span><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"> </span></p>
+<ul><li>ViewPart and EditorPart wizards </li>
+<li>Perspective creation and editing </li>
+<li>Eclipse forms API support </li>
+<li>Eclipse PreferencePage wizard </li>
+<li>Create RCP components </li>
+<li>Support for Riena platform </li>
+<li>RCP Action support </li>
+</ul><p></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong>Supported Layout Managers</strong></span></span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"></span><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"></span></span></p>
+<ul><li>GroupLayout —<em> better than Matisse</em> </li>
+<li>Null/Absolute </li>
+<li>FillLayout </li>
+<li>RowLayout </li>
+<li>GridLayout </li>
+<li>FormLayout </li>
+<li>StackLayout </li>
+<li>Swing FlowLayout </li>
+<li>Swing BorderLayout </li>
+<li>Swing GridLayout </li>
+</ul><p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"></span></p>
+<p></p>
+
+<p><strong><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; TEXT-DECORATION: underline">Swing Features</span></strong><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"></span><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"> </span></p>
+<p><strong>Swing Wizards </strong></p>
+<ul><li>Swing JFrame </li>
+<li>Swing JDialog </li>
+<li>Swing JPanel </li>
+<li>Swing JApplet </li>
+<li>Swing JInternalFrame </li>
+<li>Swing Application </li>
+</ul><p><strong>Swing Data Binding</strong></p>
+<ul><li>JSR 295, Swing Data Binding support </li>
+<li>Visual marker for model beans </li>
+</ul><p><strong>Swing Layouts</strong></p>
+<ul><li>Graphical Layout Feedback </li>
+<li>Null/Absolute </li>
+<li>MIG Layout </li>
+<li>FlowLayout </li>
+<li>BorderLayout </li>
+<li>GridLayout </li>
+<li>CardLayout </li>
+<li>GridBagLayout </li>
+<li>BoxLayout / Struts & Glue </li>
+<li>SpringLayout </li>
+<li>JGoodies FormLayout </li>
+<li>Java 6 GroupLayout </li>
+</ul><p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"></span></p>
+<p><strong>Swing Containers</strong></p>
+<ul><li>JPanel </li>
+<li>JScrollPane </li>
+<li>JSpiltPane </li>
+<li>JTabbedPane </li>
+<li>JToolBar </li>
+<li>JDesktopPane </li>
+<li>JInternalFrame </li>
+</ul><p><strong>Swing Look and Feels</strong></p>
+<ul><li>Windows </li>
+<li>CDE/Motif </li>
+<li>Metal </li>
+<li>JGoodies Plastic </li>
+<li>JGoodies Plastic 3D </li>
+<li>JGoodies Plastic XP </li>
+<li>JGoodies Windows </li>
+<li>Liquid </li>
+<li>Kunststoff </li>
+</ul><p><strong>Swing Controls</strong></p>
+<ul><li>Support for custom / 3rd-party widgets </li>
+<li>JButton </li>
+<li>JCheckBox </li>
+<li>JRadioButton </li>
+<li>JToggleButton </li>
+<li>JLabel </li>
+<li>JTextField </li>
+<li>JPasswordField </li>
+<li>JTestArea </li>
+<li>JFormattedTextField </li>
+<li>JSlider </li>
+<li>JScrollBar </li>
+<li>JList </li>
+<li>JComboBox </li>
+<li>JSpinner </li>
+<li>JTree </li>
+<li>JTable </li>
+<li>JToolBar separator </li>
+<li>JSeparator </li>
+<li>JProgessBar </li>
+<li>JOptionPane </li>
+<li>JTestPane </li>
+<li>JEditorPane </li>
+<li>Action </li>
+<li>ButtonGroup </li>
+</ul><p><strong>Swing Menus</strong></p>
+<ul><li>Graphical menu editing </li>
+<li>JMenuBar </li>
+<li>JMenu </li>
+<li>JPopupMenu </li>
+<li>JMenuItem </li>
+<li>JCheckBoxMenuItem </li>
+<li>JRadioButtonMenuItem </li>
+<li>Menu separator
+									</li>
+</ul><p><strong>AWT Widgets</strong></p>
+<ul><li>ScrollPane </li>
+<li>Button </li>
+<li>Label </li>
+<li>Checkbox </li>
+<li>Choice </li>
+<li>List </li>
+<li>Scrollbar </li>
+<li>TextField </li>
+<li>TextArea
+									</li>
+</ul><p>
+
+</p><p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; TEXT-DECORATION: underline"><strong>GWT Features</strong></span><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; TEXT-DECORATION: underline"><br /></span></p>
+<ul><li>Lightning-fast round-trip editing to keep the designer and source in sync </li>
+<li>Extend your UI development with support for Smart GWT, Ext GWT (GXT) and GWT-Ext widget libraries </li>
+<li>WYSIWYG tools to easily:
+<ul><li>add event handlers to your controls </li>
+<li>modify various properties of controls using a property editor. </li>
+<li>change and refactor generated code and see it immediately in the visual designer </li>
+</ul></li>
+<li>Reverse-engineer code created by hand </li>
+<li>Ability to create and use Custom Composites </li>
+<li>Dynamic AbsolutePanel Snap Points </li>
+<li>Dynamic audit of disallowed Java </li>
+<li>Wizards to get you started, including:
+<ul><li>GWT Project and Module Wizards </li>
+<li>DialogBox and PopupPanel Wizards </li>
+<li>RemoteService Wizard </li>
+</ul></li>
+<li>Comprehensive CSS support:
+<ul><li>edit styles and properties within the designer </li>
+<li>display an exact rendering of how your screen will look in the browser </li>
+</ul></li>
+<li>Classes and methods </li>
+<li>Visual inheritance </li>
+<li>Graphical Grid, FlexTable and TabPanel support </li>
+<li>GWT application launching </li>
+<li>Easy build and deployment </li>
+<li>Internationalization support </li>
+<li>ImageBundle support </li>
+</ul><p></p>
+
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><span style="FONT-FAMILY: Verdana; COLOR: #ff0000; FONT-SIZE: 10pt; TEXT-DECORATION: underline"><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt; TEXT-DECORATION: underline"><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt; TEXT-DECORATION: underline" class="bright"><span style="TEXT-DECORATION: underline"><strong>AWARDS AND ACKNOWLEDGEMENTS<br /></strong></span></span></span></span><span style="FONT-FAMILY: Verdana; COLOR: #ff0000; FONT-SIZE: 10pt"><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"><strong><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt" class="bright">Best Commercial Eclipse Developer Tool!</span> </strong>The Eclipse Foundation's annual Community Awards were announced at EclipseCon 2009. WindowBuilder was one of only three commercial products honored. </span></span></span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">"WindowBuilder delivers the kind of GUI building productivity that we use to have before we converted to Java. WindowBuilder not only dramatically improves productivity for design and maintenance, but it also enables us to significantly improve the look-and-feel of our GUIs without costing days of coding. Until discovering WindowBuilder, I had forgotten just how much fun and easy it can be building Java GUIs." --Sally Rich</span></p>
+<p></p>
+]]></body>
+      <created>1076447821</created>
+      <changed>1292520531</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/webtoolkit/tools/download-wbpro.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/winbuilder.png?itok=PYi0KQzA]]></image>
+      <version>8.0</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[Google Inc]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4, 3.5 and 3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://forums.instantiations.com/]]></supporturl>
+      <updateurl><![CDATA[http://dl.google.com/eclipse/inst/d2wbpro/latest/3.6]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

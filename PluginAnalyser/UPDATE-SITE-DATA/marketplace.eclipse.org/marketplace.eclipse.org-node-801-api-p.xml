@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="801" name="WireframeSketcher Wireframing Tool" url="http://marketplace.eclipse.org/content/wireframesketcher">
+      <type>resource</type>
+      <categories>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='8' name='Graphics' url='http://marketplace.eclipse.org/taxonomy/term/8'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+      <tags>
+        <tag id='302' name='mockups' url='http://marketplace.eclipse.org/category/free-tagging/mockups'/>
+        <tag id='303' name='wireframes' url='http://marketplace.eclipse.org/category/free-tagging/wireframes'/>
+        <tag id='304' name='prototyping' url='http://marketplace.eclipse.org/category/free-tagging/prototyping'/>
+        <tag id='305' name='ui' url='http://marketplace.eclipse.org/category/free-tagging/ui'/>
+        <tag id='306' name='design' url='http://marketplace.eclipse.org/category/free-tagging/design'/>
+      </tags>
+      
+      <owner>Peter Severin</owner>
+      <favorited>65</favorited>
+      <installstotal>4772</installstotal>
+      <installsrecent>317</installsrecent>
+      <shortdescription><![CDATA[<p>WireframeSketcher is a rapid wireframing tool that helps quickly create wireframes, mockups and prototypes for desktop, web and mobile applications. It comes both as a plug-in for any Eclipse IDE and a standalone version. With WireframeSketcher users can quickly gather useful feedback from stakeholders, show off their proposals to clients, share their ideas with fellow developers and in the end build better software. Install the 14 days free trial and test it for yourself.</p>
+<h3>Some of the top features:</h3>
+<ul><li>Extensive library of built-in controls for any type of UI. Stencils for Android, iPhone, iPad apps and more are available.
+</li><li>Hand-drawn look for wireframes. Your stakeholders won't be distracted by little details and you can focus on what’s important. Clean look is also available.
+</li><li>Create interactive prototypes. Present your prototypes in full-screen mode and click-through to show how the application or website is supposed work. Export your prototype to clickable, high-quality PDF.
+</li><li>More than 200 wireframing icons. Icons come in vector format, work at any size, can be colored, rotated, and embedded in any text.
+</li><li>Use components to create your own reusable bits. Easy inheritance mechanism lets you modify component's instance without breaking the link to its origin.
+</li></ul><p>Download standalone version from our website: <a href="http://wireframesketcher.com/download.html">http://wireframesketcher.com/download.html</a>.</p>
+<p><img src="http://wireframesketcher.com/samples/Website.png" width="500" alt="Website wireframe created using WireframeSketcher" /></p>
+]]></shortdescription>
+      <body><![CDATA[<p>WireframeSketcher is a rapid wireframing tool that helps quickly create wireframes, mockups and prototypes for desktop, web and mobile applications. It comes both as a plug-in for any Eclipse IDE and a standalone version. With WireframeSketcher users can quickly gather useful feedback from stakeholders, show off their proposals to clients, share their ideas with fellow developers and in the end build better software. Install the 14 days free trial and test it for yourself.</p>
+<h3>Some of the top features:</h3>
+<ul><li>Extensive library of built-in controls for any type of UI. Stencils for Android, iPhone, iPad apps and more are available.
+</li><li>Hand-drawn look for wireframes. Your stakeholders won't be distracted by little details and you can focus on what’s important. Clean look is also available.
+</li><li>Create interactive prototypes. Present your prototypes in full-screen mode and click-through to show how the application or website is supposed work. Export your prototype to clickable, high-quality PDF.
+</li><li>More than 200 wireframing icons. Icons come in vector format, work at any size, can be colored, rotated, and embedded in any text.
+</li><li>Use components to create your own reusable bits. Easy inheritance mechanism lets you modify component's instance without breaking the link to its origin.
+</li></ul><p>Download standalone version from our website: <a href="http://wireframesketcher.com/download.html">http://wireframesketcher.com/download.html</a>.</p>
+<p><img src="http://wireframesketcher.com/samples/Website.png" width="500" alt="Website wireframe created using WireframeSketcher" /></p>
+]]></body>
+      <created>1225721753</created>
+      <changed>1363594777</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://wireframesketcher.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/sketch_80.png?itok=TSWzg7ap]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/WireframeSketcherWin7.png?itok=yZBXjmmO]]></screenshot>
+      <version>3.9.0</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[WireframeSketcher]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5, 3.6, 3.7, 3.8, 4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://wireframesketcher.com/support.html]]></supporturl>
+      <updateurl><![CDATA[http://wireframesketcher.com/updates]]></updateurl>
+<ius>
+<iu>com.wireframesketcher</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

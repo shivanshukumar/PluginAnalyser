@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="303" name="JBoss Drools" url="http://marketplace.eclipse.org/content/jboss-drools">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+      </categories>
+      <tags>
+        <tag id='557' name='Red Hat' url='http://marketplace.eclipse.org/category/free-tagging/red-hat'/>
+        <tag id='558' name='Drools' url='http://marketplace.eclipse.org/category/free-tagging/drools'/>
+        <tag id='706' name='BusinessRules' url='http://marketplace.eclipse.org/category/free-tagging/businessrules'/>
+      </tags>
+      
+      <owner>Brian Fitzpatrick</owner>
+      <favorited>4</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>A rule engine + tools</p>
+]]></shortdescription>
+      <body><![CDATA[<p>A rule engine + tools</p>
+]]></body>
+      <created>1163602610</created>
+      <changed>1273006623</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://labs.jboss.com/portal/jbossrules]]></homepageurl>
+      <image><![CDATA[http://labs.jboss.com/file-access/default/members/jbossrules/images/logo.png]]></image>
+      <version></version>
+      <license>Other</license>
+      <companyname><![CDATA[Red Hat, Inc.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.x]]></eclipseversion>
+      <supporturl><![CDATA[http://www.jboss.com/products/rules]]></supporturl>
+      <updateurl><![CDATA[http://anonsvn.labs.jboss.com/labs/jbossrules/updates/drools-ide-update/]]></updateurl>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="27025" name="Eclipse Color Theme" url="http://marketplace.eclipse.org/content/eclipse-color-theme">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='121' name='theme' url='http://marketplace.eclipse.org/category/free-tagging/theme'/>
+        <tag id='146' name='editor' url='http://marketplace.eclipse.org/category/free-tagging/editor'/>
+        <tag id='289' name='color' url='http://marketplace.eclipse.org/category/free-tagging/color'/>
+        <tag id='392' name='aa' url='http://marketplace.eclipse.org/category/free-tagging/aa'/>
+        <tag id='1514' name='themes' url='http://marketplace.eclipse.org/category/free-tagging/themes'/>
+      </tags>
+      
+      <owner>Felix H. Dahlke</owner>
+      <favorited>179</favorited>
+      <installstotal>167591</installstotal>
+      <installsrecent>14969</installsrecent>
+      <shortdescription><![CDATA[<p>Eclipse Color Theme makes it possible to switch color themes conveniently and without side effects.</p>
+<p>After the installation, go to <em>Window→Preferences→General→Appereance->Color Theme</em> to change the color theme.</p>
+<p><strong>Please note:</strong><br /><em>If you are using a version of the plugin lower than 0.6, please uninstall and reinstall it from the new location. Update site and plugin ID have changed.</em></p>
+<p>While Eclipse allows you to change the syntax coloring in great detail, there is no support for managing multiple color themes. It is possible to achieve that by importing and exporting preferences files, but this is inconvenient and likely to mess up your preferences. Furthermore, color themes have to be created for every single editor, a theme for the Java editor does not change the XML, JavaScript or any other editors. This plugin solves these issues by mapping a generic color theme format to specific preferences entries for each supported editor.</p>
+<p>Eclipse Color Theme currently supports the following editors:</p>
+<ul><li>Text</li>
+<li>Java</li>
+<li>Java properties</li>
+<li>XML</li>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>C++</li>
+<li>PHP</li>
+<li>Ant</li>
+<li>SQL</li>
+<li>Python</li>
+<li>JSP</li>
+<li>Perl</li>
+<li>Groovy</li>
+<li>FDT</li>
+<li>ActionScript/MXML (Adobe Flash Builder)</li>
+<li>Ruby</li>
+<li>Scala</li>
+<li>FreeMarker (JBoss Tools)</li>
+<li>PDE</li>
+<li>ColdFusion (CFEclipse)</li>
+<li>TCL</li>
+<li>BibTex/LaTeX (TeXlipse)</li>
+<li>R (StatET)</li>
+<li>Erlang (ErlIDE)</li>
+<li>haXe (eclihx)</li>
+<li>Clojure (Counterclockwise)</li>
+<li>Go (GoClipse)</li>
+</ul><p>Available themes:
+
+</p><li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=1">Oblivion</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=21">Obsidian</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=2">Zenburn</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=30">RecognEyes</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=4">Inkpot</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=3">Vibrant Ink</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=27">Tango</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=25">Havenjark</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=90">frontenddev</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=47">NightLion Aptana Theme</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=29">Schuss</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=91">Notepadd++ Like</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=66">Sublime Text 2</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=118">Wombat</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=68">Pastel</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=43">minimal</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=115">Gedit Original Oblivion</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=128">Black Pastel</a>
+</li><li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=32">Mr</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=52">Monokai</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=93">Roboticket</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=383">Sunburst</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=1004">Retta</a></li>
+
+
+<p>You can download additonal themes or create your own on <a href="http://eclipsecolorthemes.org">eclipsecolorthemes.org</a>.</p>
+<p>If you have a feature request such as support for another editor, create an issue or a pull request on <a href="http://github.com/eclipse-color-theme/eclipse-color-theme">GitHub</a>.</p>
+<p>If you like the plugin and feel generous, you could <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&item_name=For%20eclipsecolorthemes.org%20and%20the%20Eclipse%20Color%20Theme%20plugin&business=eclipsecolorthemes@gmail.com">make a donation</a>.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Eclipse Color Theme makes it possible to switch color themes conveniently and without side effects.</p>
+<p>After the installation, go to <em>Window→Preferences→General→Appereance->Color Theme</em> to change the color theme.</p>
+<p><strong>Please note:</strong><br /><em>If you are using a version of the plugin lower than 0.6, please uninstall and reinstall it from the new location. Update site and plugin ID have changed.</em></p>
+<p>While Eclipse allows you to change the syntax coloring in great detail, there is no support for managing multiple color themes. It is possible to achieve that by importing and exporting preferences files, but this is inconvenient and likely to mess up your preferences. Furthermore, color themes have to be created for every single editor, a theme for the Java editor does not change the XML, JavaScript or any other editors. This plugin solves these issues by mapping a generic color theme format to specific preferences entries for each supported editor.</p>
+<p>Eclipse Color Theme currently supports the following editors:</p>
+<ul><li>Text</li>
+<li>Java</li>
+<li>Java properties</li>
+<li>XML</li>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>C++</li>
+<li>PHP</li>
+<li>Ant</li>
+<li>SQL</li>
+<li>Python</li>
+<li>JSP</li>
+<li>Perl</li>
+<li>Groovy</li>
+<li>FDT</li>
+<li>ActionScript/MXML (Adobe Flash Builder)</li>
+<li>Ruby</li>
+<li>Scala</li>
+<li>FreeMarker (JBoss Tools)</li>
+<li>PDE</li>
+<li>ColdFusion (CFEclipse)</li>
+<li>TCL</li>
+<li>BibTex/LaTeX (TeXlipse)</li>
+<li>R (StatET)</li>
+<li>Erlang (ErlIDE)</li>
+<li>haXe (eclihx)</li>
+<li>Clojure (Counterclockwise)</li>
+<li>Go (GoClipse)</li>
+</ul><p>Available themes:
+
+</p><li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=1">Oblivion</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=21">Obsidian</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=2">Zenburn</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=30">RecognEyes</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=4">Inkpot</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=3">Vibrant Ink</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=27">Tango</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=25">Havenjark</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=90">frontenddev</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=47">NightLion Aptana Theme</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=29">Schuss</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=91">Notepadd++ Like</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=66">Sublime Text 2</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=118">Wombat</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=68">Pastel</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=43">minimal</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=115">Gedit Original Oblivion</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=128">Black Pastel</a>
+</li><li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=32">Mr</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=52">Monokai</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=93">Roboticket</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=383">Sunburst</a></li>
+<li><a href="http://www.eclipsecolorthemes.org/?view=theme&id=1004">Retta</a></li>
+
+
+<p>You can download additonal themes or create your own on <a href="http://eclipsecolorthemes.org">eclipsecolorthemes.org</a>.</p>
+<p>If you have a feature request such as support for another editor, create an issue or a pull request on <a href="http://github.com/eclipse-color-theme/eclipse-color-theme">GitHub</a>.</p>
+<p>If you like the plugin and feel generous, you could <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&item_name=For%20eclipsecolorthemes.org%20and%20the%20Eclipse%20Color%20Theme%20plugin&business=eclipsecolorthemes@gmail.com">make a donation</a>.</p>
+]]></body>
+      <created>1294489546</created>
+      <changed>1343107687</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://github.com/eclipse-color-theme/eclipse-color-theme]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/eclipse-color-theme-logo-mp%20%281%29.png?itok=hN5YDzZx]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/snapshot1.png?itok=_9ns9_Pt]]></screenshot>
+      <version>0.12.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Felix H. Dahlke and Roger Dudler]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5, 3.6, 3.7, 4.2]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://eclipse-color-theme.github.com/update]]></updateurl>
+<ius>
+<iu>com.github.eclipsecolortheme.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

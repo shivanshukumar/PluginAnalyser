@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1051" name="AppGen" url="http://marketplace.eclipse.org/content/appgen">
+      <type>resource</type>
+      <categories>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+      <tags>
+        <tag id='158' name='spring' url='http://marketplace.eclipse.org/category/free-tagging/spring'/>
+        <tag id='159' name='ibatis' url='http://marketplace.eclipse.org/category/free-tagging/ibatis'/>
+        <tag id='189' name='web' url='http://marketplace.eclipse.org/category/free-tagging/web'/>
+        <tag id='190' name='database' url='http://marketplace.eclipse.org/category/free-tagging/database'/>
+        <tag id='417' name='reverse engineering' url='http://marketplace.eclipse.org/category/free-tagging/reverse-engineering'/>
+      </tags>
+      
+      <owner>Byeong-kil Woo</owner>
+      <favorited>6</favorited>
+      <installstotal>1030</installstotal>
+      <installsrecent>19</installsrecent>
+      <shortdescription><![CDATA[<p>AppGen eclipse plugin generate full java web application source codes based on Spring and iBatis. You can set the XML configuration mapping file from a database schema quickly by conventions, and can edit it easily. (requires java 1.5 or higher, Data Tools Platform feature)</p>
+<p>
+<a href="http://appgen.sourceforge.net/image/appgen-editor.png" target="_blank"><img src="http://appgen.sourceforge.net/image/appgen-editor.png" width="525px" /></a>
+</p>
+<!--break--><p>This plugin requires java 1.5 eclipse runtime or higher.<br />
+This plugin tested under</p>
+<ul><li>Tomcat 6.0 runtime</li>
+<li>MySQL 5.1.37</li>
+<li>Oracle 9.2.0</li>
+<li>Maven 2.1.0</li>
+</ul><p>To generate source codes.</p>
+<ol><li> Use the eclipse update manager to install this plugin.<br />
+   URL: <a href="http://appgen.sourceforge.net/update">http://appgen.sourceforge.net/update</a> (This URL doesn't work in a browser.)<br />
+   Or manually...<br />
+   Download zip file at <a href="http://sourceforge.net/projects/appgen/files/">http://sourceforge.net/projects/appgen/files/</a> (net.sourceforge.appgen_xxx.zip).<br />
+   Copy the "plugins/net.sourceforge.appgen_xxx.jar" file to your eclipse plugins directory (ex: C:\eclipse3.x\plugins).<br />
+   Copy the "features/net.sourceforge.appgen.feature_xxx.jar" file to your eclipse features directory (ex: C:\eclipse3.x\features).</li>
+<li> Restart your eclipse.</li>
+<li> Open "File > New > Other..." menu.</li>
+<li> In "Select a wizard" dialog, select "AppGen > AppGen mapping file" and click "Next".</li>
+<li> In "New Appgen Mapping Data File" dialog, select a "container" and a "file name" and click "Finish".</li>
+<li> In the "Appgen Mapping Editor", Edit the "Connection info" and click the "Initialize entities from tables" button.<br />
+   You can modify the "Base name" of java class, "Field name" of java field name, ...<br />
+   Specially, if you write "AttachFile" at the "Field type", that field will represent a attach file's name<br />
+   and, generate source files to persist the attach file.</li>
+<li> Edit the "Output files dir", "Project package" and click the "Generate source files" button.</li>
+</ol><p>** Liberies required to compile and run the generated application.<br />
+   The Maven pom.xml file is generated to download the dependent liberaries.<br />
+   In Maven environment, "mvn" command will help to download dependent liberaries.<br />
+   Or manually...<br />
+   You can download dependent liberaries at <a href="http://sourceforge.net/projects/appgen/files/">http://sourceforge.net/projects/appgen/files/</a> (dependencies) also.</p>
+<p>Thanks.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>AppGen eclipse plugin generate full java web application source codes based on Spring and iBatis. You can set the XML configuration mapping file from a database schema quickly by conventions, and can edit it easily. (requires java 1.5 or higher, Data Tools Platform feature)</p>
+<p>
+<a href="http://appgen.sourceforge.net/image/appgen-editor.png" target="_blank"><img src="http://appgen.sourceforge.net/image/appgen-editor.png" width="525px" /></a>
+</p>
+<!--break--><p>This plugin requires java 1.5 eclipse runtime or higher.<br />
+This plugin tested under</p>
+<ul><li>Tomcat 6.0 runtime</li>
+<li>MySQL 5.1.37</li>
+<li>Oracle 9.2.0</li>
+<li>Maven 2.1.0</li>
+</ul><p>To generate source codes.</p>
+<ol><li> Use the eclipse update manager to install this plugin.<br />
+   URL: <a href="http://appgen.sourceforge.net/update">http://appgen.sourceforge.net/update</a> (This URL doesn't work in a browser.)<br />
+   Or manually...<br />
+   Download zip file at <a href="http://sourceforge.net/projects/appgen/files/">http://sourceforge.net/projects/appgen/files/</a> (net.sourceforge.appgen_xxx.zip).<br />
+   Copy the "plugins/net.sourceforge.appgen_xxx.jar" file to your eclipse plugins directory (ex: C:\eclipse3.x\plugins).<br />
+   Copy the "features/net.sourceforge.appgen.feature_xxx.jar" file to your eclipse features directory (ex: C:\eclipse3.x\features).</li>
+<li> Restart your eclipse.</li>
+<li> Open "File > New > Other..." menu.</li>
+<li> In "Select a wizard" dialog, select "AppGen > AppGen mapping file" and click "Next".</li>
+<li> In "New Appgen Mapping Data File" dialog, select a "container" and a "file name" and click "Finish".</li>
+<li> In the "Appgen Mapping Editor", Edit the "Connection info" and click the "Initialize entities from tables" button.<br />
+   You can modify the "Base name" of java class, "Field name" of java field name, ...<br />
+   Specially, if you write "AttachFile" at the "Field type", that field will represent a attach file's name<br />
+   and, generate source files to persist the attach file.</li>
+<li> Edit the "Output files dir", "Project package" and click the "Generate source files" button.</li>
+</ol><p>** Liberies required to compile and run the generated application.<br />
+   The Maven pom.xml file is generated to download the dependent liberaries.<br />
+   In Maven environment, "mvn" command will help to download dependent liberaries.<br />
+   Or manually...<br />
+   You can download dependent liberaries at <a href="http://sourceforge.net/projects/appgen/files/">http://sourceforge.net/projects/appgen/files/</a> (dependencies) also.</p>
+<p>Thanks.</p>
+]]></body>
+      <created>1258986337</created>
+      <changed>1358471254</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://sourceforge.net/projects/appgen/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/appgen-editor_0.png?itok=iYWKPRps]]></screenshot>
+      <version>1.2.0</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[AppGen]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4, 3.5, 3.6, 3.7, 3.8, 4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/appgen/]]></supporturl>
+      <updateurl><![CDATA[http://appgen.sourceforge.net/update]]></updateurl>
+<ius>
+<iu>net.sourceforge.appgen.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

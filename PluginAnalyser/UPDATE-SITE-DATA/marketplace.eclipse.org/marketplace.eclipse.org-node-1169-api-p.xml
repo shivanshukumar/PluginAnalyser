@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1169" name="Eclipse Runner" url="http://marketplace.eclipse.org/content/eclipse-runner">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='1948' name='run debug configuration launch start' url='http://marketplace.eclipse.org/category/free-tagging/run-debug-configuration-launch-start'/>
+      </tags>
+      
+      <owner>&amp;#321;ukasz Wachowicz</owner>
+      <favorited>18</favorited>
+      <installstotal>458</installstotal>
+      <installsrecent>17</installsrecent>
+      <shortdescription><![CDATA[<p>Eclipse Runner plugin extends capability of running launch configurations in Eclipse IDE. User gets a new "Runner" view, which allows to categorize and bookmark launch configurations in groups, run them directly from the view by double clicking on the launch configuration icon. It speeds up developement in projects containing many small java applications or many test suits.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Eclipse Runner plugin extends capability of running launch configurations in Eclipse IDE. User gets a new "Runner" view, which allows to categorize and bookmark launch configurations in groups, run them directly from the view by double clicking on the launch configuration icon. It speeds up developement in projects containing many small java applications or many test suits.</p>
+]]></body>
+      <created>1269897039</created>
+      <changed>1319314590</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/eclipserunnerplugin/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/eclipserunnerwide_0.gif?itok=HNF8yZ3y]]></image>
+      <version>1.3.0</version>
+      <license>Other Open Source</license>
+      <companyname><![CDATA[Eclipse Runner]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/eclipserunnerplugin/]]></supporturl>
+      <updateurl><![CDATA[http://eclipserunnerplugin.googlecode.com/svn/trunk/EclipseRunnerSite]]></updateurl>
+<ius>
+<iu>EclipseRunnerFeature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

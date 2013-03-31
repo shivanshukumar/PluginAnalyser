@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="804" name="ComixViewer" url="http://marketplace.eclipse.org/content/comixviewer">
+      <type>resource</type>
+      <categories>
+        <category id='7' name='Entertainment' url='http://marketplace.eclipse.org/taxonomy/term/7'/>
+      </categories>
+            
+      <owner>Mark Miller</owner>
+      <favorited>3</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Comix viewer is a simple plugin allowing a developer to view their favorite daily comic strips.<br />
+The plugin remembers the last comic viewed and allows for easy import and export of online comic profiles.<br />
+Source code available for download.<br />
+This hasn't been updated in over a year due to lack of time, but I am going to try and fit some time in in the next couple of months.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Comix viewer is a simple plugin allowing a developer to view their favorite daily comic strips.<br />
+The plugin remembers the last comic viewed and allows for easy import and export of online comic profiles.<br />
+Source code available for download.<br />
+This hasn't been updated in over a year due to lack of time, but I am going to try and fit some time in in the next couple of months.</p>
+]]></body>
+      <created>1225722447</created>
+      <changed>1293577180</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://sourceforge.net/projects/comixviewer/]]></homepageurl>
+      <image><![CDATA[http://www.oblivion.ch/rcp/comix/logo.png]]></image>
+      <version>1.0.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[oblivion.ch]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[https://sourceforge.net/projects/comixviewer/]]></supporturl>
+      <updateurl><![CDATA[http://www.oblivion.ch/rcp/update]]></updateurl>
+    </node>
+    </marketplace>
+    

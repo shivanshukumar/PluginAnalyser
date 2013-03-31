@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="697" name="Rinzo XML Editor" url="http://marketplace.eclipse.org/content/rinzo-xml-editor">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+      </categories>
+            
+      <owner>Claudio Cancinos</owner>
+      <favorited>20</favorited>
+      <installstotal>8242</installstotal>
+      <installsrecent>292</installsrecent>
+      <shortdescription><![CDATA[Rinzo is an Eclipse xml editor with the goal of make life simpler when dealing with xml files.<br />
+It has several features regarding xml edition such as:
+<ul><li>Autocompletion of tags and attributes. If the document has an associated DTD or Schema, autocompletion will propose tags and attributes defined in it.</li>
+  <li>Syntax coloring.</li>
+  <li>Background validation using the document DTD or Schema.</li>
+  <li>Background validation of well formed documents if no DTD or Schema defined.</li>
+  <li>DTD and Schema generation from a xml.</li>
+  <li>Namespace support.</li>
+  <li>XPath Viewer.</li>
+  <li>Quick Assist.</li>
+  <li>Refactoring Support.</li>
+  <li>And more...</li>
+</ul>
+But what makes this editor different is its ability to interact with java elements, which is very useful if you must edit a <i>web.xml</i>, <i>.hbm files</i>, <i>struts-config</i> or any other xml file where java elements must be handled in order to:
+<ul><li>Open a class defined in the xml.</li>
+  <li>Autocomplete class names.</li>
+  <li>Create a java class from a class name written in an xml.</li>
+</ul><br /><br />
+If you want to colaborate with the evolution of the project, please send bug reports and features request to <a href="http://sourceforge.net/tracker/?group_id=227708">http://sourceforge.net/tracker/?group_id=227708</a>
+<br /><br />]]></shortdescription>
+      <body><![CDATA[Rinzo is an Eclipse xml editor with the goal of make life simpler when dealing with xml files.<br />
+It has several features regarding xml edition such as:
+<ul><li>Autocompletion of tags and attributes. If the document has an associated DTD or Schema, autocompletion will propose tags and attributes defined in it.</li>
+  <li>Syntax coloring.</li>
+  <li>Background validation using the document DTD or Schema.</li>
+  <li>Background validation of well formed documents if no DTD or Schema defined.</li>
+  <li>DTD and Schema generation from a xml.</li>
+  <li>Namespace support.</li>
+  <li>XPath Viewer.</li>
+  <li>Quick Assist.</li>
+  <li>Refactoring Support.</li>
+  <li>And more...</li>
+</ul>
+But what makes this editor different is its ability to interact with java elements, which is very useful if you must edit a <i>web.xml</i>, <i>.hbm files</i>, <i>struts-config</i> or any other xml file where java elements must be handled in order to:
+<ul><li>Open a class defined in the xml.</li>
+  <li>Autocomplete class names.</li>
+  <li>Create a java class from a class name written in an xml.</li>
+</ul><br /><br />
+If you want to colaborate with the evolution of the project, please send bug reports and features request to <a href="http://sourceforge.net/tracker/?group_id=227708">http://sourceforge.net/tracker/?group_id=227708</a>
+<br /><br />]]></body>
+      <created>1211553546</created>
+      <changed>1358674593</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://editorxml.sourceforge.net]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.1.2</version>
+      <license>LGPL</license>
+      <companyname><![CDATA[Claudio Cancinos]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3.X and above]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/tracker/?group_id=227708]]></supporturl>
+      <updateurl><![CDATA[http://editorxml.sourceforge.net/updates/]]></updateurl>
+<ius>
+<iu>ar.com.tadp.xml.rinzo.core.feature</iu>
+<iu>ar.com.tadp.xml.rinzo.jdt.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="79382" name="Quick Bookmarks plugin" url="http://marketplace.eclipse.org/content/quick-bookmarks-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+      <tags>
+        <tag id='2070' name='Bookmarks' url='http://marketplace.eclipse.org/category/free-tagging/bookmarks'/>
+        <tag id='2071' name='Borland' url='http://marketplace.eclipse.org/category/free-tagging/borland'/>
+      </tags>
+      
+      <owner>Frits Jalvingh</owner>
+      <favorited>4</favorited>
+      <installstotal>1352</installstotal>
+      <installsrecent>111</installsrecent>
+      <shortdescription><![CDATA[<p>The "default" bookmark methods of Eclipse ask for a name and this is often not very useful. The code here adds bookmarks a la "Borland" and bookmarks a la "JCreator". The code has the following options which can all be bound/rebound with the keys dialog under the "Edit" category:</p>
+<p>* Add a numbered bookmark at the cursor: Alt+[digit]. This creates a quick bookmark with the specified number using a "single" keypress. Only one bookmark of the given number can be present in the workspace. Setting the same number bookmark again will clear the earlier instance.</p>
+<p>* Goto a numbered bookmark: Alt+Shift+[digit]. Moves to the bookmark as it was set using Alt+[digit].<br />
+* Toggle Bookmark: Ctrl+B. This drops an unnamed bookmark at the current location. Pressing Ctrl+B again releases the bookmark at that location again. This is often used with "Goto next bookmark" and "Goto previous bookmark".</p>
+<p>* Goto next bookmark in file: Ctrl+N. This locates the next bookmark in the current file and moves there.<br />
+* Goto previous bookmark in file: Ctrl+P. This locates the previous bookmark in the current file and moves there.warning: the Ctrl+P binding is a suggestion only; since Ctrl+P is currently assigned you must add your own key binding using Window -> Preferences -> General -> Keys.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The "default" bookmark methods of Eclipse ask for a name and this is often not very useful. The code here adds bookmarks a la "Borland" and bookmarks a la "JCreator". The code has the following options which can all be bound/rebound with the keys dialog under the "Edit" category:</p>
+<p>* Add a numbered bookmark at the cursor: Alt+[digit]. This creates a quick bookmark with the specified number using a "single" keypress. Only one bookmark of the given number can be present in the workspace. Setting the same number bookmark again will clear the earlier instance.</p>
+<p>* Goto a numbered bookmark: Alt+Shift+[digit]. Moves to the bookmark as it was set using Alt+[digit].<br />
+* Toggle Bookmark: Ctrl+B. This drops an unnamed bookmark at the current location. Pressing Ctrl+B again releases the bookmark at that location again. This is often used with "Goto next bookmark" and "Goto previous bookmark".</p>
+<p>* Goto next bookmark in file: Ctrl+N. This locates the next bookmark in the current file and moves there.<br />
+* Goto previous bookmark in file: Ctrl+P. This locates the previous bookmark in the current file and moves there.warning: the Ctrl+P binding is a suggestion only; since Ctrl+P is currently assigned you must add your own key binding using Window -> Preferences -> General -> Keys.</p>
+]]></body>
+      <created>1309722215</created>
+      <changed>1309877388</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://domui.org/wiki/bin/view/Documentation/EclipsePlugin]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.2.1</version>
+      <license>GPL</license>
+      <companyname><![CDATA[domui.org]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://bugzilla.domui.org/]]></supporturl>
+      <updateurl><![CDATA[http://www.domui.org/eclipse-updates/]]></updateurl>
+<ius>
+<iu>to.etc.eclipse.editor.bookmarks.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

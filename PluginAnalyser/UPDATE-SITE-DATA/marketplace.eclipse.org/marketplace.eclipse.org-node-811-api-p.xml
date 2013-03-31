@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="811" name="SQL Insert Script Generator" url="http://marketplace.eclipse.org/content/sql-insert-script-generator">
+      <type>resource</type>
+      <categories>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+      </categories>
+            
+      <owner>hotzst</owner>
+      <favorited>0</favorited>
+      <installstotal>724</installstotal>
+      <installsrecent>60</installsrecent>
+      <shortdescription><![CDATA[<p>This project aims to provide a plugin (ch.sahits.codegen.sql) for SQL Insert Script generation (Wizard). The generation is based on Eclipse DataTools Project. You define your databases in DTP and can select among them to drill down to the table you want so create an insert script for.<br />
+The plug-in stands under the Eclipse Public License - v 1.0.<br />
+For this application to work you will need to run your Eclipse with at least JVM 1.5 and Eclipse 3.5 with DTP.<br />
+If you find a bug or have a feature request please file a report at SourceForge.net<br />
+On the project page there are video tutorials available to make you comftable with the plug-in.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This project aims to provide a plugin (ch.sahits.codegen.sql) for SQL Insert Script generation (Wizard). The generation is based on Eclipse DataTools Project. You define your databases in DTP and can select among them to drill down to the table you want so create an insert script for.<br />
+The plug-in stands under the Eclipse Public License - v 1.0.<br />
+For this application to work you will need to run your Eclipse with at least JVM 1.5 and Eclipse 3.5 with DTP.<br />
+If you find a bug or have a feature request please file a report at SourceForge.net<br />
+On the project page there are video tutorials available to make you comftable with the plug-in.</p>
+]]></body>
+      <created>1226936848</created>
+      <changed>1273212168</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://sourceforge.net/project/platformdownload.php?group_id=215228]]></homepageurl>
+      <image><![CDATA[http://codegenjava.svn.sourceforge.net/viewvc/codegenjava/trunk/ch.sahits.codegen.sql/icons/pluginCentralLogo.png]]></image>
+      <version>2.1.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Sahits GmbH]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[https://sourceforge.net/apps/trac/codegenjava/newticket]]></supporturl>
+      <updateurl><![CDATA[http://www.sahits.ch/project/javacodegen/update/]]></updateurl>
+<ius>
+<iu>ch.sahits.codegen.sql</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

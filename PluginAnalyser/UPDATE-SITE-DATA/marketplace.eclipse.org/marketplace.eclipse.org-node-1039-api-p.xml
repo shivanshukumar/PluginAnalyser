@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1039" name="EditBox" url="http://marketplace.eclipse.org/content/editbox">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+      <tags>
+        <tag id='146' name='editor' url='http://marketplace.eclipse.org/category/free-tagging/editor'/>
+        <tag id='289' name='color' url='http://marketplace.eclipse.org/category/free-tagging/color'/>
+        <tag id='1115' name='block highlighting' url='http://marketplace.eclipse.org/category/free-tagging/block-highlighting'/>
+        <tag id='1150' name='syntax highlight' url='http://marketplace.eclipse.org/category/free-tagging/syntax-highlight'/>
+      </tags>
+      
+      <owner>Piotr</owner>
+      <favorited>17</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[Eclipse plugin for highlighting the background of the source code.
+While most of plugins highlight the syntax of the source code, EditBox highlights the selected block of the code (method, class, etc) by changing its background color and / or drawing border around it. It works with Java code as well as with indented text: markup and text files.
+
+In version 0.0.22 fixed bug with 'No background' setting.]]></shortdescription>
+      <body><![CDATA[Eclipse plugin for highlighting the background of the source code.
+While most of plugins highlight the syntax of the source code, EditBox highlights the selected block of the code (method, class, etc) by changing its background color and / or drawing border around it. It works with Java code as well as with indented text: markup and text files.
+
+In version 0.0.22 fixed bug with 'No background' setting.]]></body>
+      <created>1257785299</created>
+      <changed>1294786590</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://editbox.sourceforge.net]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/editbox-logo.png?itok=_KGqohTc]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/editbox-screen.png?itok=xFKSUbW-]]></screenshot>
+      <version>0.0.22</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Piotr Metel]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.2+]]></eclipseversion>
+      <supporturl><![CDATA[http://editbox.sourceforge.net]]></supporturl>
+      <updateurl><![CDATA[http://editbox.sourceforge.net/updates]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

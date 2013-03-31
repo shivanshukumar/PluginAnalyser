@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="38258" name="Zen Coding" url="http://marketplace.eclipse.org/content/zen-coding">
+      <type>resource</type>
+      <categories>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+      </categories>
+      <tags>
+        <tag id='202' name='html' url='http://marketplace.eclipse.org/category/free-tagging/html'/>
+        <tag id='280' name='xsl' url='http://marketplace.eclipse.org/category/free-tagging/xsl'/>
+        <tag id='521' name='xml' url='http://marketplace.eclipse.org/category/free-tagging/xml'/>
+        <tag id='694' name='CSS' url='http://marketplace.eclipse.org/category/free-tagging/css'/>
+        <tag id='1075' name='snippets' url='http://marketplace.eclipse.org/category/free-tagging/snippets'/>
+      </tags>
+      
+      <owner>Sergey</owner>
+      <favorited>5</favorited>
+      <installstotal>2840</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Zen Coding is an editor plugin for high-speed HTML, XML, XSL (or any other structured code format) coding and editing. The core of this plugin is a powerful abbreviation engine which allows you to expand expressions—similar to CSS selectors—into HTML code.</p>
+<p>More info: <a href="https://github.com/sergeche/zen-coding#readme">https://github.com/sergeche/zen-coding#readme</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Zen Coding is an editor plugin for high-speed HTML, XML, XSL (or any other structured code format) coding and editing. The core of this plugin is a powerful abbreviation engine which allows you to expand expressions—similar to CSS selectors—into HTML code.</p>
+<p>More info: <a href="https://github.com/sergeche/zen-coding#readme">https://github.com/sergeche/zen-coding#readme</a></p>
+]]></body>
+      <created>1300051037</created>
+      <changed>1300190125</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://github.com/sergeche/eclipse-zencoding#readme]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_8_0.png?itok=AWO1qYAL]]></image>
+      <version>0.7</version>
+      <license>Other Open Source</license>
+      <companyname><![CDATA[Sergey Chikuyonok]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[https://github.com/sergeche/eclipse-zencoding]]></supporturl>
+      <updateurl><![CDATA[http://zen-coding.ru/eclipse/updates/]]></updateurl>
+<ius>
+<iu>ru.zencoding.eclipse</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

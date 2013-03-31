@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="884" name="EMFText" url="http://marketplace.eclipse.org/content/emftext">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='2672' name='DSLs Textual Modeling Editors' url='http://marketplace.eclipse.org/category/free-tagging/dsls-textual-modeling-editors'/>
+      </tags>
+      
+      <owner>Mirko Seifert</owner>
+      <favorited>11</favorited>
+      <installstotal>761</installstotal>
+      <installsrecent>51</installsrecent>
+      <shortdescription><![CDATA[<p>EMFText is an Eclipse plug-in that allows you to define text syntax for languages described by an Ecore metamodel. EMFText enables developers to define textual Domain Specific Languages quickly and without the need to learn new technologies and concepts.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>EMFText is an Eclipse plug-in that allows you to define text syntax for languages described by an Ecore metamodel. EMFText enables developers to define textual Domain Specific Languages quickly and without the need to learn new technologies and concepts.</p>
+]]></body>
+      <created>1236608797</created>
+      <changed>1348485008</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.emftext.org]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/emftext_eclipse_marketplace_logo.gif?itok=AE1lNjN5]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/cs_error_reporting.png?itok=t47zL-UD]]></screenshot>
+      <version>1.4.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[DevBoost GmbH]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4+]]></eclipseversion>
+      <supporturl><![CDATA[http://www.emftext.org/index.php/EMFText_Contact]]></supporturl>
+      <updateurl><![CDATA[http://www.emftext.org/update/]]></updateurl>
+<ius>
+<iu>org.emftext.sdk</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

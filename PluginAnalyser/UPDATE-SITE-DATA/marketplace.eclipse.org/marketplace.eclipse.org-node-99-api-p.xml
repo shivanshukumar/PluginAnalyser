@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="99" name="Clay Mark II" url="http://marketplace.eclipse.org/content/clay-mark-ii">
+      <type>resource</type>
+      <categories>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+      </categories>
+      <tags>
+        <tag id='64' name='Modeling' url='http://marketplace.eclipse.org/category/free-tagging/modeling'/>
+        <tag id='190' name='database' url='http://marketplace.eclipse.org/category/free-tagging/database'/>
+        <tag id='1306' name='ER' url='http://marketplace.eclipse.org/category/free-tagging/er'/>
+        <tag id='1307' name='Azzurri Inc.' url='http://marketplace.eclipse.org/category/free-tagging/azzurri-inc'/>
+      </tags>
+      
+      <owner>Azzurri Inc.</owner>
+      <favorited>9</favorited>
+      <installstotal>1315</installstotal>
+      <installsrecent>26</installsrecent>
+      <shortdescription><![CDATA[*** Now on sale for outside of Japan!! ***
+Clay Mark II allows you to visually design, validate database models, and generate the SQL(DDL) code appropriate for your database.
+With license, additional features below are enabled.
+*Support for Oracle, DB2 and MS SQL Server
+*Reverse engineer from JDBC connection
+*Print, generate HTML reports, export a diagram as a JPEG image
+]]></shortdescription>
+      <body><![CDATA[*** Now on sale for outside of Japan!! ***
+Clay Mark II allows you to visually design, validate database models, and generate the SQL(DDL) code appropriate for your database.
+With license, additional features below are enabled.
+*Support for Oracle, DB2 and MS SQL Server
+*Reverse engineer from JDBC connection
+*Print, generate HTML reports, export a diagram as a JPEG image
+]]></body>
+      <created>1079153026</created>
+      <changed>1288603438</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.azzurri.co.jp/en/clay/index.html]]></homepageurl>
+      <image><![CDATA[http://www.azzurri.co.jp/en/clay/images/logo_plugincentral.jpg]]></image>
+      <version>2.0.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Azzurri Inc.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4, 3.5, 3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://www.azzurri.co.jp/en/clay/index.html]]></supporturl>
+      <updateurl><![CDATA[http://www.azzurri.co.jp/eclipse/plugins/]]></updateurl>
+<ius>
+<iu>jp.azzurri.clay</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

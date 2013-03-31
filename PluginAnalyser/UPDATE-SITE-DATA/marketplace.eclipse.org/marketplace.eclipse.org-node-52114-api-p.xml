@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="52114" name="JSnapshot" url="http://marketplace.eclipse.org/content/jsnapshot">
+      <type>resource</type>
+      <categories>
+        <category id='13' name='Profiling' url='http://marketplace.eclipse.org/taxonomy/term/13'/>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='37' name='Logging' url='http://marketplace.eclipse.org/category/categories/logging'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='283' name='log' url='http://marketplace.eclipse.org/category/free-tagging/log'/>
+        <tag id='327' name='eclipse' url='http://marketplace.eclipse.org/category/free-tagging/eclipse'/>
+        <tag id='432' name='test' url='http://marketplace.eclipse.org/category/free-tagging/test'/>
+        <tag id='755' name='tool' url='http://marketplace.eclipse.org/category/free-tagging/tool'/>
+      </tags>
+      
+      <owner>Ivan Sabinin</owner>
+      <favorited>4</favorited>
+      <installstotal>59</installstotal>
+      <installsrecent>3</installsrecent>
+      <shortdescription><![CDATA[<p>JSnapshot is an advanced java exception logging, monitoring and analysis tool. It traces thrown exceptions in real-time and logs a snapshot of call stack, variables and objects for every thrown exception. With this tool, developers can examine all of the exception details as if the application was stopped at the breakpoint in the debugger when exception happened. It has low performance overhead and can be used during application development, testing, production as well as at the customer’s site. JSnapshot helps even where common debuggers and other tools are not useful.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>JSnapshot is an advanced java exception logging, monitoring and analysis tool. It traces thrown exceptions in real-time and logs a snapshot of call stack, variables and objects for every thrown exception. With this tool, developers can examine all of the exception details as if the application was stopped at the breakpoint in the debugger when exception happened. It has low performance overhead and can be used during application development, testing, production as well as at the customer’s site. JSnapshot helps even where common debuggers and other tools are not useful.</p>
+]]></body>
+      <created>1305044304</created>
+      <changed>1312392388</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://jsnapshot.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo32.gif?itok=ud3TfuYl]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screenshot_9.png?itok=-H2y7nrJ]]></screenshot>
+      <version>1.0.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[JSnapshot]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4+]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://jsnapshot.com/update]]></updateurl>
+<ius>
+<iu>com.jsnapshot.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

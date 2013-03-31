@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1129" name="Eclipse/RDz COBOL CloneDR" url="http://marketplace.eclipse.org/content/eclipserdz-cobol-clonedr">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='13' name='Profiling' url='http://marketplace.eclipse.org/taxonomy/term/13'/>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+        <category id='39' name='Reporting' url='http://marketplace.eclipse.org/category/categories/reporting'/>
+      </categories>
+      <tags>
+        <tag id='2147' name='***' url='http://marketplace.eclipse.org/category/free-tagging-3'/>
+      </tags>
+      
+      <owner>krlooney</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The COBOL CloneDR identifies and displays code segments within a system that are identical or nearly identical (clones), supporting the consolidation of clones to reduce the size and increase the clarity and reliability of the source code.</p>
+<p>COBOL CloneDR Features</p>
+<p>Dialects: ANSI COBOL85, IBM VS COBOL II, IBM Enterprise, AS400. Other dialects can be accommodated.<br />
+Runs under Windows, not requiring mainframe execution platform<br />
+Works with arbitrary subsets of source code base<br />
+Can handles thousands of source files<br />
+Handles COPY and REPLACE preprocessor directives<br />
+Analysis can be parameterized by clone similarity threshold, clone size, maximum number of clone parameters, and other limits, allowing tailored use<br />
+Report characterizes each clone tuple by mass, number of instances, number of parameters, similarity ratio, language syntax category, length, and location, with each instance pictured<br />
+Produces a summary report in HTML including statistics sorted by various attributes and with links to HTML pages describing individual clones like this.<br />
+You can see a complete Clone Detection Report for a COBOL source code base of 77,000 lines that has 58% redundancy.</p>
+<p>Eclipse/RDz COBOL CloneDR User Interface</p>
+<p>For installations using the Rational Development for System Z (RDz) Environment, the CloneDR tool has an RDz-based, interactive GUI that supports:</p>
+<p>Browsing of diagnostic results in an expandable tree view<br />
+Tree view diagnostics linked and integrated with an LPEX COBOL editor<br />
+Visual display of selected clone tuples in source code with parameter fragments (differences) listed in tree view and highlighted in editor<br />
+Direct access to statistical summaries</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The COBOL CloneDR identifies and displays code segments within a system that are identical or nearly identical (clones), supporting the consolidation of clones to reduce the size and increase the clarity and reliability of the source code.</p>
+<p>COBOL CloneDR Features</p>
+<p>Dialects: ANSI COBOL85, IBM VS COBOL II, IBM Enterprise, AS400. Other dialects can be accommodated.<br />
+Runs under Windows, not requiring mainframe execution platform<br />
+Works with arbitrary subsets of source code base<br />
+Can handles thousands of source files<br />
+Handles COPY and REPLACE preprocessor directives<br />
+Analysis can be parameterized by clone similarity threshold, clone size, maximum number of clone parameters, and other limits, allowing tailored use<br />
+Report characterizes each clone tuple by mass, number of instances, number of parameters, similarity ratio, language syntax category, length, and location, with each instance pictured<br />
+Produces a summary report in HTML including statistics sorted by various attributes and with links to HTML pages describing individual clones like this.<br />
+You can see a complete Clone Detection Report for a COBOL source code base of 77,000 lines that has 58% redundancy.</p>
+<p>Eclipse/RDz COBOL CloneDR User Interface</p>
+<p>For installations using the Rational Development for System Z (RDz) Environment, the CloneDR tool has an RDz-based, interactive GUI that supports:</p>
+<p>Browsing of diagnostic results in an expandable tree view<br />
+Tree view diagnostics linked and integrated with an LPEX COBOL editor<br />
+Visual display of selected clone tuples in source code with parameter fragments (differences) listed in tree view and highlighted in editor<br />
+Direct access to statistical summaries</p>
+]]></body>
+      <created>1265043165</created>
+      <changed>1265043165</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.semanticdesigns.com/Products/Clone/COBOLCloneDR.html?Home=DropDown]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/SDLogo.png?itok=2aKIh8SK]]></image>
+      <version></version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Semantic Designs]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[RDz 7.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.semanticdesigns.com/Purchase/Terms.html#Support]]></supporturl>
+      <updateurl><![CDATA[http://www.semanticdesigns.com]]></updateurl>
+    </node>
+    </marketplace>
+    

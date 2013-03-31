@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="12455" name="Ec-CoFFEE" url="http://marketplace.eclipse.org/content/ec-coffee">
+      <type>resource</type>
+      <categories>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='30' name='Process' url='http://marketplace.eclipse.org/taxonomy/term/30'/>
+      </categories>
+      <tags>
+        <tag id='1218' name='Collaborative tools' url='http://marketplace.eclipse.org/category/free-tagging/collaborative-tools'/>
+        <tag id='1219' name='CSCW' url='http://marketplace.eclipse.org/category/free-tagging/cscw'/>
+        <tag id='1220' name='CSCL' url='http://marketplace.eclipse.org/category/free-tagging/cscl'/>
+      </tags>
+      
+      <owner>Vittorio Scarano</owner>
+      <favorited>0</favorited>
+      <installstotal>14</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Before installation, please read <a href="http://sourceforge.net/apps/trac/coffee-soft/wiki/Ec-CoFFEE_Release_5.0">http://sourceforge.net/apps/trac/coffee-soft/wiki/Ec-CoFFEE_Release_5.0</a> for pre-requisites.<br />
+Ec-CoFFEE plug-in is a set of synchronous collaboration tools for Eclipse that is built on the top of the CoFFEE framework (<a href="http://www.sourceforge.org/projects/coffee-soft">www.sourceforge.org/projects/coffee-soft</a>). The collaboration does not require a server, but (because of firewalls) is based on local area networks. Among the tools: threaded discussion tool, graphical tool, drawing tool, cowriter, internet explorer, document browser, XMind, positionometer (votation tool), chat, ....</p>
+<p>Ec-CoFFEE adds a new menu to the main menu bar, allowing the user (while using the traditional Eclipse functionalities to support the development of the software) to: </p>
+<p>- Launch a Server or a Client (pre-requisite to begin with the collaboration),<br />
+- launch a tool (only the server can launch the tool),<br />
+- load a discussion previously saved,<br />
+- stop the Server/Client (when the collaboration is over).</p>
+<p>When a tool is launched, it can be configured on-fly, by using the functionalities the tool itself exposes. A wide variety of different configurations can be obtained, such as anonimity of contributions, etc. for each tool.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Before installation, please read <a href="http://sourceforge.net/apps/trac/coffee-soft/wiki/Ec-CoFFEE_Release_5.0">http://sourceforge.net/apps/trac/coffee-soft/wiki/Ec-CoFFEE_Release_5.0</a> for pre-requisites.<br />
+Ec-CoFFEE plug-in is a set of synchronous collaboration tools for Eclipse that is built on the top of the CoFFEE framework (<a href="http://www.sourceforge.org/projects/coffee-soft">www.sourceforge.org/projects/coffee-soft</a>). The collaboration does not require a server, but (because of firewalls) is based on local area networks. Among the tools: threaded discussion tool, graphical tool, drawing tool, cowriter, internet explorer, document browser, XMind, positionometer (votation tool), chat, ....</p>
+<p>Ec-CoFFEE adds a new menu to the main menu bar, allowing the user (while using the traditional Eclipse functionalities to support the development of the software) to: </p>
+<p>- Launch a Server or a Client (pre-requisite to begin with the collaboration),<br />
+- launch a tool (only the server can launch the tool),<br />
+- load a discussion previously saved,<br />
+- stop the Server/Client (when the collaboration is over).</p>
+<p>When a tool is launched, it can be configured on-fly, by using the functionalities the tool itself exposes. A wide variety of different configurations can be obtained, such as anonimity of contributions, etc. for each tool.</p>
+]]></body>
+      <created>1284993291</created>
+      <changed>1285139999</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://sourceforge.net/apps/trac/coffee-soft/wiki/Ec-CoFFEE]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Logo100x80.jpg?itok=fHkJgra2]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Ec-CoFFEE_Overview.png?itok=9hgSv3mU]]></screenshot>
+      <version>5.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[ISISLab, Dip. di Informatica ed Appl., Università di Salerno (Italy)]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/apps/trac/coffee-soft/wiki/Ec-CoFFEE_Release_5.0]]></supporturl>
+      <updateurl><![CDATA[ftp://www.isislab.it/ec-coffee]]></updateurl>
+<ius>
+<iu>it.unisa.EcCoffee</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

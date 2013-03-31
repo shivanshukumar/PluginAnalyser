@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1071" name="SAP NetWeaver Server Adapter for Eclipse" url="http://marketplace.eclipse.org/content/sap-netweaver-server-adapter-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='1' name='Application Server' url='http://marketplace.eclipse.org/taxonomy/term/1'/>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='134' name='J2EE' url='http://marketplace.eclipse.org/category/free-tagging/j2ee'/>
+        <tag id='422' name='java ee' url='http://marketplace.eclipse.org/category/free-tagging/java-ee'/>
+        <tag id='423' name='sap' url='http://marketplace.eclipse.org/category/free-tagging/sap'/>
+        <tag id='424' name='netweaver' url='http://marketplace.eclipse.org/category/free-tagging/netweaver'/>
+      </tags>
+      
+      <owner>Kaloyan Raev</owner>
+      <favorited>4</favorited>
+      <installstotal>1167</installstotal>
+      <installsrecent>62</installsrecent>
+      <shortdescription><![CDATA[<p>The SAP NetWeaver Server Adapter for Eclipse plug-in implements a server runtime environment for the <a href="http://www.sdn.sap.com/irj/sdn/java">SAP NetWeaver Application Server</a>. It enables the development of Java EE applications for the SAP NetWeaver Application Server from within any IDE based on Eclipse WTP.</p>
+<p>New in version 0.7.2:</p>
+<ul><li>Several major bugs fixed regarding the publishing mechanism. <a href="http://sourceforge.net/apps/trac/sapnweclipse/query?status=closed&group=resolution&milestone=0.7.2">Details</a>.</li>
+</ul><p>Main features:</p>
+<ul><li>Supports Eclipse Europa and all later releases</li>
+<li>Supports SAP NetWeaver CE/PI 7.1 and all later releases</li>
+<li>Supports J2EE 1.4 and Java EE 5 applications</li>
+<li>Server lifecycle operations implemented</li>
+<ul><li>start, stop, restart</li>
+<li>enable debugging, disable debugging</li>
+</ul><li>Publish operations implemented:
+<ul><li>deploy and undeploy of EAR archives</li>
+<li>deploy and undeploy of standalone WAR archives</li>
+</ul></li>
+<li>Basic server editor capabilities</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>The SAP NetWeaver Server Adapter for Eclipse plug-in implements a server runtime environment for the <a href="http://www.sdn.sap.com/irj/sdn/java">SAP NetWeaver Application Server</a>. It enables the development of Java EE applications for the SAP NetWeaver Application Server from within any IDE based on Eclipse WTP.</p>
+<p>New in version 0.7.2:</p>
+<ul><li>Several major bugs fixed regarding the publishing mechanism. <a href="http://sourceforge.net/apps/trac/sapnweclipse/query?status=closed&group=resolution&milestone=0.7.2">Details</a>.</li>
+</ul><p>Main features:</p>
+<ul><li>Supports Eclipse Europa and all later releases</li>
+<li>Supports SAP NetWeaver CE/PI 7.1 and all later releases</li>
+<li>Supports J2EE 1.4 and Java EE 5 applications</li>
+<li>Server lifecycle operations implemented</li>
+<ul><li>start, stop, restart</li>
+<li>enable debugging, disable debugging</li>
+</ul><li>Publish operations implemented:
+<ul><li>deploy and undeploy of EAR archives</li>
+<li>deploy and undeploy of standalone WAR archives</li>
+</ul></li>
+<li>Basic server editor capabilities</li>
+</ul>]]></body>
+      <created>1260347507</created>
+      <changed>1277135207</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[https://sourceforge.net/projects/sapnweclipse/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/porta-logo.png?itok=2k42cYbq]]></image>
+      <version>0.7.2</version>
+      <license>EPL</license>
+      <companyname><![CDATA[SAP]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.2+]]></eclipseversion>
+      <supporturl><![CDATA[https://sourceforge.net/projects/sapnweclipse/support]]></supporturl>
+      <updateurl><![CDATA[http://master.dl.sourceforge.net/project/sapnweclipse/updates/]]></updateurl>
+<ius>
+<iu>com.sap.netweaver.porta.ide.eclipse.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

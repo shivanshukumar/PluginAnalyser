@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="152773" name="CloudBees Toolkit for Eclipse " url="http://marketplace.eclipse.org/content/cloudbees-toolkit-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='21' name='Web Services' url='http://marketplace.eclipse.org/taxonomy/term/21'/>
+        <category id='1967' name='Web, XML, Java EE and OSGi Enterprise Development' url='http://marketplace.eclipse.org/category/categories/web-xml-java-ee-and-osgi-enterprise-development'/>
+      </categories>
+      <tags>
+        <tag id='92' name='build' url='http://marketplace.eclipse.org/category/free-tagging/build'/>
+        <tag id='578' name='paas' url='http://marketplace.eclipse.org/category/free-tagging/paas'/>
+        <tag id='2335' name='jenkinsci' url='http://marketplace.eclipse.org/category/free-tagging/jenkinsci'/>
+        <tag id='2336' name='hudsonci' url='http://marketplace.eclipse.org/category/free-tagging/hudsonci'/>
+        <tag id='2337' name='java paas' url='http://marketplace.eclipse.org/category/free-tagging/java-paas'/>
+      </tags>
+      
+      <owner>Harpreet  </owner>
+      <favorited>5</favorited>
+      <installstotal>1943</installstotal>
+      <installsrecent>205</installsrecent>
+      <shortdescription><![CDATA[<p>Developers can work directly within their Eclipse environment to create and monitor build Jenkins (and Hudson) jobs on-premises and in the cloud (with CloudBees <a href="mailto:DEV@cloud">DEV@cloud</a>). </p>
+<p>Easily deploy Java web applications  to the CloudBees PaaS.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Developers can work directly within their Eclipse environment to create and monitor build Jenkins (and Hudson) jobs on-premises and in the cloud (with CloudBees <a href="mailto:DEV@cloud">DEV@cloud</a>). </p>
+<p>Easily deploy Java web applications  to the CloudBees PaaS.</p>
+]]></body>
+      <created>1321323226</created>
+      <changed>1346835224</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.cloudbees.com/eclipse-plugin.cb]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/CloudBees%20Logo_teal.jpg?itok=VrzyCd2a]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/EclipseToolkit.png?itok=gU89mL_F]]></screenshot>
+      <version>1.1.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[CloudBees]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6, 3.7]]></eclipseversion>
+      <supporturl><![CDATA[https://cloudbees.zendesk.com/home]]></supporturl>
+      <updateurl><![CDATA[http://eclipse.cloudbees.com]]></updateurl>
+<ius>
+<iu>com.cloudbees.eclipse</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

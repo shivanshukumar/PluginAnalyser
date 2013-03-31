@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="97312" name="utils4dal" url="http://marketplace.eclipse.org/content/utils4dal">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='36' name='Database Persistence' url='http://marketplace.eclipse.org/category/categories/database-persistence'/>
+        <category id='1964' name='Application Development Frameworks' url='http://marketplace.eclipse.org/category/categories/application-development-frameworks'/>
+        <category id='1974' name='Mobile and Device Development' url='http://marketplace.eclipse.org/category/categories/mobile-and-device-development'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='165' name='code generation' url='http://marketplace.eclipse.org/category/free-tagging/code-generation'/>
+        <tag id='373' name='JDBC' url='http://marketplace.eclipse.org/category/free-tagging/jdbc'/>
+        <tag id='408' name='android' url='http://marketplace.eclipse.org/category/free-tagging/android'/>
+        <tag id='519' name='dao' url='http://marketplace.eclipse.org/category/free-tagging/dao'/>
+      </tags>
+      
+      <owner>panedrone  </owner>
+      <favorited>2</favorited>
+      <installstotal>782</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This solution provides an easy way to build the data access layer for RDBMS.</p>
+<p>Screencast: <a href="http://sourceforge.net/projects/utils4dal/files/utils4dal-eclipse-ide.flv/download">utils4dal-eclipse-ide.flv</a> (5 min.; 27MB).</p>
+<p>Preconditions:</p>
+<ul><li>the database is accessible through JDBC</li>
+<li>database structure is ready to use (or partially ready), so<br />
+			there is possibility to execute/test required SQL statements at<br />
+			design time</li>
+</ul><p>Scenario:</p>
+<p>Provide SQL statements. For each SQL statement, provide XML instruction. For example:</p>
+<p></p>
+<p>For standard CRUD operations, provide only instructions: SQL statements are built automatically. For example:</p>
+<p></p>
+<p>Run the code generator and obtain java code.</p>
+<p>In XML instructions, you provide only minimal info like the names of generated classes and methods. The rest of info required for code generation is obtained from JDBC meta-data.</p>
+<p>Current version of code generator creates DTO and DAO classes. Resulting code does not contain any JDBC calls or JDBC-specific data types. It is completely framework-independent and can be used in </p>
+<p>- Java projects based on JDBC (Spring JDBC, Apache DbUtils, Groovy Sql)<br />
+- not-JDBC Java projects (Android)</p>
+<p>Tested with:</p>
+<p>PostgresSQL, MySQL, Oracle XE, H2, HSQLDB, Derby, SQL Server 2008, IBM DB2, IBM Informix, Firebird, SQLite, CUBRID.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This solution provides an easy way to build the data access layer for RDBMS.</p>
+<p>Screencast: <a href="http://sourceforge.net/projects/utils4dal/files/utils4dal-eclipse-ide.flv/download">utils4dal-eclipse-ide.flv</a> (5 min.; 27MB).</p>
+<p>Preconditions:</p>
+<ul><li>the database is accessible through JDBC</li>
+<li>database structure is ready to use (or partially ready), so<br />
+			there is possibility to execute/test required SQL statements at<br />
+			design time</li>
+</ul><p>Scenario:</p>
+<p>Provide SQL statements. For each SQL statement, provide XML instruction. For example:</p>
+<p></p>
+<p>For standard CRUD operations, provide only instructions: SQL statements are built automatically. For example:</p>
+<p></p>
+<p>Run the code generator and obtain java code.</p>
+<p>In XML instructions, you provide only minimal info like the names of generated classes and methods. The rest of info required for code generation is obtained from JDBC meta-data.</p>
+<p>Current version of code generator creates DTO and DAO classes. Resulting code does not contain any JDBC calls or JDBC-specific data types. It is completely framework-independent and can be used in </p>
+<p>- Java projects based on JDBC (Spring JDBC, Apache DbUtils, Groovy Sql)<br />
+- not-JDBC Java projects (Android)</p>
+<p>Tested with:</p>
+<p>PostgresSQL, MySQL, Oracle XE, H2, HSQLDB, Derby, SQL Server 2008, IBM DB2, IBM Informix, Firebird, SQLite, CUBRID.</p>
+]]></body>
+      <created>1312322721</created>
+      <changed>1343286096</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://utils4dal.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/utils4dal_0.png?itok=A6mPo15w]]></image>
+      <version>0.4.7</version>
+      <license>Other Open Source</license>
+      <companyname><![CDATA[.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7+]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/utils4dal/support]]></supporturl>
+      <updateurl><![CDATA[http://utils4dal.sourceforge.net/eclipse]]></updateurl>
+<ius>
+<iu>net.sourceforge.utils4dal.eclipse.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

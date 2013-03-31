@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1170" name="Eclipse Navigator Extension" url="http://marketplace.eclipse.org/content/eclipse-navigator-extension">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='402' name='shellmenu' url='http://marketplace.eclipse.org/category/free-tagging/shellmenu'/>
+        <tag id='403' name='contextmenu' url='http://marketplace.eclipse.org/category/free-tagging/contextmenu'/>
+        <tag id='404' name='copy path' url='http://marketplace.eclipse.org/category/free-tagging/copy-path'/>
+      </tags>
+      
+      <owner>nick tan</owner>
+      <favorited>2</favorited>
+      <installstotal>85</installstotal>
+      <installsrecent>12</installsrecent>
+      <shortdescription><![CDATA[<p># Add context menu action in "Package Explorer View", to call out the system context menu corresponding to the selected resource (win32/win64 OS only)</p>
+<p># Copy the resource's name/full path/parent path to clipboard. </p>
+<p># now support x64 os</p>
+<p># source codes moved to github: <a href="https://github.com/missedone/navigatorext">https://github.com/missedone/navigatorext</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p># Add context menu action in "Package Explorer View", to call out the system context menu corresponding to the selected resource (win32/win64 OS only)</p>
+<p># Copy the resource's name/full path/parent path to clipboard. </p>
+<p># now support x64 os</p>
+<p># source codes moved to github: <a href="https://github.com/missedone/navigatorext">https://github.com/missedone/navigatorext</a></p>
+]]></body>
+      <created>1269935774</created>
+      <changed>1340457140</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://github.com/missedone/navigatorext]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/systemshell.jpg?itok=S9rjstm8]]></screenshot>
+      <version>1.1.2</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Personal]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3~4.2]]></eclipseversion>
+      <supporturl><![CDATA[https://github.com/missedone/navigatorext]]></supporturl>
+      <updateurl><![CDATA[https://sourceforge.net/projects/bluetools/files/navigatorext/updatesite/nax_1.1.2.201201311435/]]></updateurl>
+<ius>
+<iu>com.googlecode.eclipse.navigatorext.features</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

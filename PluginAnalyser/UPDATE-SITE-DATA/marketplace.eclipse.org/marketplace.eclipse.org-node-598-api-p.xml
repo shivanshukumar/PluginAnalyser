@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="598" name="Round Trip Engineering Objects" url="http://marketplace.eclipse.org/content/round-trip-engineering-objects">
+      <type>resource</type>
+      <categories>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+      </categories>
+      <tags>
+        <tag id='174' name='MDA' url='http://marketplace.eclipse.org/category/free-tagging/mda'/>
+        <tag id='417' name='reverse engineering' url='http://marketplace.eclipse.org/category/free-tagging/reverse-engineering'/>
+        <tag id='709' name='round trip engineering' url='http://marketplace.eclipse.org/category/free-tagging/round-trip-engineering'/>
+        <tag id='710' name='model to code' url='http://marketplace.eclipse.org/category/free-tagging/model-code'/>
+        <tag id='711' name='mde' url='http://marketplace.eclipse.org/category/free-tagging/mde'/>
+      </tags>
+      
+      <owner>teiva</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Round Trip Engineering Objects. Round-trip Java Project sourc code into XOL (XML Object Language). Use XML technologies to read (and transform) your XOL into all sorts of stuff (code analysis, reporting, refactoring, code generation, model generation...)</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Round Trip Engineering Objects. Round-trip Java Project sourc code into XOL (XML Object Language). Use XML technologies to read (and transform) your XOL into all sorts of stuff (code analysis, reporting, refactoring, code generation, model generation...)</p>
+]]></body>
+      <created>1196693908</created>
+      <changed>1274085929</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://rteo.sf.net]]></homepageurl>
+      <image><![CDATA[http://rteo.sf.net/rsrc/skin/violet/logo-small-dark-154x75.png]]></image>
+      <version>0.9.6</version>
+      <license>LGPL</license>
+      <companyname><![CDATA[RTEO]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.2]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/forum/forum.php?forum_id=348488]]></supporturl>
+      <updateurl><![CDATA[http://rteo.sf.net/eclipse-update/site.xml]]></updateurl>
+    </node>
+    </marketplace>
+    

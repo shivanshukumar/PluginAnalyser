@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="726" name="Fast Code Eclipse Plugin" url="http://marketplace.eclipse.org/content/fast-code-eclipse-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+      </categories>
+            
+      <owner>Gautam  </owner>
+      <favorited>10</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Please see the release notes at <a href="http://www.3pintech.com/products/fast-code/releasenotes.htm">http://www.3pintech.com/products/fast-code/releasenotes.htm</a>.</p>
+<p>Templates can be used to create method.<br />
+New Templates have been added with database fields. It can generate sql for insert, update, select statements.<br />
+New create variable menu option have been added with lot more options.</p>
+<p>New templates have been added. Template import/export has been added. More details can be found<br />
+at the plugin website.</p>
+<p>Create New Classes have been added : one can create FooDao/FooDaoImpl just by typing foo. Also template functionality has been added. One can generate log/print statements, hql, etc. One can copy a class as well, e.g. from FooAction one can generate BarAction just by highlighting Foo and typing Ctl-Alt-Shift-C and typing bar.</p>
+<p>Junit Test profiles have been added.<br /><br /></p>
+<p>Spring 3 style method annotations are supported. Copy member has been extended to static imports as well. Junit 4 tests have been added. Also jumpt to junit has been added. Ability to put method in classes and automatically created in interface has been added. <br /><br /></p>
+<p>Released video tutorials : <a href="https://sourceforge.net/project/showfiles.php?group_id=229124&package_id=282385&release_id=635465">https://sourceforge.net/project/showfiles.php?group_id=229124&package_id...</a></p>
+<p>Added console message.<br />
+<br /></p>
+<p>Fast Code Eclipse Plugin helps write code faster. </p>
+<p><br /><br /></p>
+<p>You do not need to create similar classes manually. FooDAO to FooService, FooService to FooAction can be easily created with click of a mouse.</p>
+<p><br /><br /></p>
+<p>Also create one DAO to another with different name, e.g. FooDAO (with methods getFoo, saveFoo, etc) to BarDAO (with methods getBar, saveBar, etc).</p>
+<p><br /><br /></p>
+<p>No need to create the configuration (spring, tiles, doezer, struts-config, etc) files manually as well.</p>
+<p><br /><br /></p>
+<p>Easily navigate between similar classes.<br />
+<br /><br /></p>
+<p>Easily navigate from hibernate pojos to .hbm files.<br />
+In this release create similar can be execute from the editor as well as package explorer. Also create similar can be executed with any method or field selected.</p>
+<p><br /><br /></p>
+<p>One can right click on a class and add it as a spring bean into the class open in editor.</p>
+<p><br /><br /></p>
+<p>For more information please click on <a href="<a href="http://fast-code.sourceforge.net/documentation.htm">documentation</a>">http://fast-code.sourceforge.net/documentation.htm">documentation</a></a>.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Please see the release notes at <a href="http://www.3pintech.com/products/fast-code/releasenotes.htm">http://www.3pintech.com/products/fast-code/releasenotes.htm</a>.</p>
+<p>Templates can be used to create method.<br />
+New Templates have been added with database fields. It can generate sql for insert, update, select statements.<br />
+New create variable menu option have been added with lot more options.</p>
+<p>New templates have been added. Template import/export has been added. More details can be found<br />
+at the plugin website.</p>
+<p>Create New Classes have been added : one can create FooDao/FooDaoImpl just by typing foo. Also template functionality has been added. One can generate log/print statements, hql, etc. One can copy a class as well, e.g. from FooAction one can generate BarAction just by highlighting Foo and typing Ctl-Alt-Shift-C and typing bar.</p>
+<p>Junit Test profiles have been added.<br /><br /></p>
+<p>Spring 3 style method annotations are supported. Copy member has been extended to static imports as well. Junit 4 tests have been added. Also jumpt to junit has been added. Ability to put method in classes and automatically created in interface has been added. <br /><br /></p>
+<p>Released video tutorials : <a href="https://sourceforge.net/project/showfiles.php?group_id=229124&package_id=282385&release_id=635465">https://sourceforge.net/project/showfiles.php?group_id=229124&package_id...</a></p>
+<p>Added console message.<br />
+<br /></p>
+<p>Fast Code Eclipse Plugin helps write code faster. </p>
+<p><br /><br /></p>
+<p>You do not need to create similar classes manually. FooDAO to FooService, FooService to FooAction can be easily created with click of a mouse.</p>
+<p><br /><br /></p>
+<p>Also create one DAO to another with different name, e.g. FooDAO (with methods getFoo, saveFoo, etc) to BarDAO (with methods getBar, saveBar, etc).</p>
+<p><br /><br /></p>
+<p>No need to create the configuration (spring, tiles, doezer, struts-config, etc) files manually as well.</p>
+<p><br /><br /></p>
+<p>Easily navigate between similar classes.<br />
+<br /><br /></p>
+<p>Easily navigate from hibernate pojos to .hbm files.<br />
+In this release create similar can be execute from the editor as well as package explorer. Also create similar can be executed with any method or field selected.</p>
+<p><br /><br /></p>
+<p>One can right click on a class and add it as a spring bean into the class open in editor.</p>
+<p><br /><br /></p>
+<p>For more information please click on <a href="<a href="http://fast-code.sourceforge.net/documentation.htm">documentation</a>">http://fast-code.sourceforge.net/documentation.htm">documentation</a></a>.</p>
+]]></body>
+      <created>1215441330</created>
+      <changed>1358314428</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.3pintech.com/products/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.6.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[3Pin Technology, LLC]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.3 - 4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://fastcodejava.blogspot.com/]]></supporturl>
+      <updateurl><![CDATA[https://sourceforge.net/projects/fast-code/files/updates/java/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

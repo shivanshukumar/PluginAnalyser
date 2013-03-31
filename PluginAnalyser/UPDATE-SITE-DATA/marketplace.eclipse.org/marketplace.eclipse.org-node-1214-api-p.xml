@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1214" name="SSVChecker" url="http://marketplace.eclipse.org/content/ssvchecker">
+      <type>resource</type>
+      <categories>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+      </categories>
+            
+      <owner>erichapkido</owner>
+      <favorited>4</favorited>
+      <installstotal>170</installstotal>
+      <installsrecent>7</installsrecent>
+      <shortdescription><![CDATA[<p>SSVChecker (Static Security Vulnerability Checker) is the Eclipse plug-in tool developed to aid software developers in identifying potential security vulnerabilities during software development in a user-friendly, commonly used IDE. SSVChecker provides an interface in which software developers can execute any existing static analysis security vulnerability detection tool(s) and view the results from one or more these tools. </p>
+<p>SSVChecker provides software developers with the following unique features:</p>
+<p>Provides features not found in other security vulnerability detection tools (e.g., union and intersection of the results of multiple tools) that better aids developers in identifying potential security vulnerabilities.<br />
+Adapts to the results of user-performed analysis to prevent repeatedly reporting user-dismissed security vulnerabilities allowing developers to concentrate on those flagged security vulnerabilities that still warrant attention.<br />
+Operates on a user-friendly, generic framework allowing for the inclusion of future static security vulnerability detection tools.<br />
+With these features, SSVChecker provides an interface in which both novice and expert software developers can develop secure software applications with the assistance of detection tools that can flag potential security vulnerabilities, provide explanations of the security flaw and provide suggestions for removing the possible security vulnerability.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>SSVChecker (Static Security Vulnerability Checker) is the Eclipse plug-in tool developed to aid software developers in identifying potential security vulnerabilities during software development in a user-friendly, commonly used IDE. SSVChecker provides an interface in which software developers can execute any existing static analysis security vulnerability detection tool(s) and view the results from one or more these tools. </p>
+<p>SSVChecker provides software developers with the following unique features:</p>
+<p>Provides features not found in other security vulnerability detection tools (e.g., union and intersection of the results of multiple tools) that better aids developers in identifying potential security vulnerabilities.<br />
+Adapts to the results of user-performed analysis to prevent repeatedly reporting user-dismissed security vulnerabilities allowing developers to concentrate on those flagged security vulnerabilities that still warrant attention.<br />
+Operates on a user-friendly, generic framework allowing for the inclusion of future static security vulnerability detection tools.<br />
+With these features, SSVChecker provides an interface in which both novice and expert software developers can develop secure software applications with the assistance of detection tools that can flag potential security vulnerabilities, provide explanations of the security flaw and provide suggestions for removing the possible security vulnerability.</p>
+]]></body>
+      <created>1273980252</created>
+      <changed>1273980885</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://ssvchecker.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>0.1.2</version>
+      <license>GPL</license>
+      <companyname><![CDATA[Towson University]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://ssvchecker.sourceforge.net/update/]]></updateurl>
+<ius>
+<iu>SSVChecker</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

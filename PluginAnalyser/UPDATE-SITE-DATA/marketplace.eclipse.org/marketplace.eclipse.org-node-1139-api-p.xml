@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1139" name="Subversive - SVN Team Provider" url="http://marketplace.eclipse.org/content/subversive-svn-team-provider">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='1968' name='Collaboration' url='http://marketplace.eclipse.org/category/categories/collaboration'/>
+        <category id='38' name='Mylyn Connectors' url='http://marketplace.eclipse.org/category/categories/mylyn-connectors'/>
+        <category id='26' name='SCM' url='http://marketplace.eclipse.org/taxonomy/term/26'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='44' name='svn' url='http://marketplace.eclipse.org/category/free-tagging/svn'/>
+        <tag id='45' name='subversion' url='http://marketplace.eclipse.org/category/free-tagging/subversion'/>
+        <tag id='46' name='team provider' url='http://marketplace.eclipse.org/category/free-tagging/team-provider'/>
+        <tag id='369' name='scm' url='http://marketplace.eclipse.org/category/free-tagging/scm'/>
+      </tags>
+      
+      <owner>Igor Vinnykov</owner>
+      <favorited>137</favorited>
+      <installstotal>311488</installstotal>
+      <installsrecent>33240</installsrecent>
+      <shortdescription><![CDATA[<p>
+The Subversive project is aimed to integrate the Subversion (SVN) version control system with the Eclipse platform. Using the Subversive plug-in, you can work with projects stored in Subversion repositories directly from the Eclipse workbench in a way similar to work with other Eclipse version control providers, such as CVS and Git.
+</p>
+<p><b>Subversive Features</b></p>
+<p>
+Subversive plug-in provides access to Subversion repositories from the Eclipse workbench.
+</p>
+<ul><li>
+<p><b>Full-Scale SVN Client</b> - Subversive is designed to be used as a full-featured SVN client, so you can update, commit, merge changes, work with SVN properties, view change history and perform other operations with SVN directly from the Eclipse environment.</p>
+</li>
+<li>
+<p><b>Advanced SVN Features</b> - Subversive includes several features that extend functionality of the standard SVN client. In particular, Subversive can show the SVN repository content grouped by the logical structures of trunk, branch and tag and display changes on a visual revisions graph.</p>
+</li>
+<li>
+<p><b>Seamless Integration with Eclipse</b> - Subversive is an official Eclipse project and an integral part of Eclipse Simultaneous releases. The project follows all Eclipse guidelines and requirements to deliver a quality SVN team provider plug-in similar to CVS and Git implementations.</p>
+</li>
+<li>
+<p><b>Support of the Latest SVN Versions</b> - Subversive evolves together with the Subversion project to provide Eclipse users with the features that appeared in new versions of the SVN implementation. You can use the new SVN functionality in Eclipse by installing the Early Access version of Subversive.</p>
+</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>
+The Subversive project is aimed to integrate the Subversion (SVN) version control system with the Eclipse platform. Using the Subversive plug-in, you can work with projects stored in Subversion repositories directly from the Eclipse workbench in a way similar to work with other Eclipse version control providers, such as CVS and Git.
+</p>
+<p><b>Subversive Features</b></p>
+<p>
+Subversive plug-in provides access to Subversion repositories from the Eclipse workbench.
+</p>
+<ul><li>
+<p><b>Full-Scale SVN Client</b> - Subversive is designed to be used as a full-featured SVN client, so you can update, commit, merge changes, work with SVN properties, view change history and perform other operations with SVN directly from the Eclipse environment.</p>
+</li>
+<li>
+<p><b>Advanced SVN Features</b> - Subversive includes several features that extend functionality of the standard SVN client. In particular, Subversive can show the SVN repository content grouped by the logical structures of trunk, branch and tag and display changes on a visual revisions graph.</p>
+</li>
+<li>
+<p><b>Seamless Integration with Eclipse</b> - Subversive is an official Eclipse project and an integral part of Eclipse Simultaneous releases. The project follows all Eclipse guidelines and requirements to deliver a quality SVN team provider plug-in similar to CVS and Git implementations.</p>
+</li>
+<li>
+<p><b>Support of the Latest SVN Versions</b> - Subversive evolves together with the Subversion project to provide Eclipse users with the features that appeared in new versions of the SVN implementation. You can use the new SVN functionality in Eclipse by installing the Early Access version of Subversive.</p>
+</li>
+</ul>]]></body>
+      <created>1265734812</created>
+      <changed>1362422815</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.eclipse.org/subversive/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Subversive-logo-110-transparent.png?itok=ZZlgJAzx]]></image>
+      <version>1.0.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Eclipse.org]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.6+]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eclipse.org/subversive/support.php]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/technology/subversive/1.0/update-site-1.0.1/]]></updateurl>
+<ius>
+<iu>org.eclipse.team.svn</iu>
+<iu>org.eclipse.team.svn.mylyn</iu>
+<iu>org.eclipse.team.svn.resource.ignore.rules.jdt</iu>
+<iu>org.eclipse.team.svn.nl1</iu>
+<iu>org.eclipse.team.svn.source</iu>
+<iu>org.eclipse.team.svn.revision.graph</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

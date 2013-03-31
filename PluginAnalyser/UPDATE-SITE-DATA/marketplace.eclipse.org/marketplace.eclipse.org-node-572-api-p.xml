@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="572" name="Squish - The Automated Java GUI Testing Tool" url="http://marketplace.eclipse.org/content/squish-automated-java-gui-testing-tool">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='340' name='GUI Testing' url='http://marketplace.eclipse.org/category/free-tagging/gui-testing'/>
+        <tag id='1123' name='test automation' url='http://marketplace.eclipse.org/category/free-tagging/test-automation'/>
+      </tags>
+      
+      <owner>Reginald Stadlbauer</owner>
+      <favorited>4</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Squish is the leading automated GUI Testing tool for Eclipse/RCP and AWT/Swing based applications. Squish is fully integrated into the Eclipse environment.</p>
+<p>Squish works natively on Windows, Linux/Unix and Mac OS X and  offers a versatile testing framework for GUI applications with a choice of popular test scripting languages (Python, JavaScript, Perl, and Tcl), extended by Squish's own library of test-specific functions. Squish also provides open interfaces, several add-ons, integration with a variety of test management tools, a powerful IDE supporting the creation and debugging of tests, and a complete set of command line tools that support fully automated test runs.</p>
+<p>Squish is also ideal for use in organizations where a variety of GUI technologies are used, since in addition to Java SWT and<br />
+AWT/Swing, it also supports the automated testing of applications based on other GUI technologies, including Nokia's Qt,<br />
+Web/DOM/HTML/AJAX, native Windopws (MFC and .NET), Mac OS X Carbon/Cocoa, and others.</p>
+<p>More information at <a href="http://www.froglogic.com">http://www.froglogic.com</a>. Get a fully functional, free and supported evaluation at <a href="http://www.froglogic.com/evaluate">http://www.froglogic.com/evaluate</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Squish is the leading automated GUI Testing tool for Eclipse/RCP and AWT/Swing based applications. Squish is fully integrated into the Eclipse environment.</p>
+<p>Squish works natively on Windows, Linux/Unix and Mac OS X and  offers a versatile testing framework for GUI applications with a choice of popular test scripting languages (Python, JavaScript, Perl, and Tcl), extended by Squish's own library of test-specific functions. Squish also provides open interfaces, several add-ons, integration with a variety of test management tools, a powerful IDE supporting the creation and debugging of tests, and a complete set of command line tools that support fully automated test runs.</p>
+<p>Squish is also ideal for use in organizations where a variety of GUI technologies are used, since in addition to Java SWT and<br />
+AWT/Swing, it also supports the automated testing of applications based on other GUI technologies, including Nokia's Qt,<br />
+Web/DOM/HTML/AJAX, native Windopws (MFC and .NET), Mac OS X Carbon/Cocoa, and others.</p>
+<p>More information at <a href="http://www.froglogic.com">http://www.froglogic.com</a>. Get a fully functional, free and supported evaluation at <a href="http://www.froglogic.com/evaluate">http://www.froglogic.com/evaluate</a></p>
+]]></body>
+      <created>1193927410</created>
+      <changed>1282121816</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.froglogic.com/squish]]></homepageurl>
+      <image><![CDATA[http://www.froglogic.com/_shared/images/squish-headline.png]]></image>
+      <version>4.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[froglogic GmbH]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.1, 3.2, 3.3, 3.4,3.5,3.6]]></eclipseversion>
+      <supporturl><![CDATA[mailto:squish@froglogic.com]]></supporturl>
+      <updateurl><![CDATA[http://www.froglogic.com]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

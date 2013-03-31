@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="38503" name="ECF - Remote Services Indigo" url="http://marketplace.eclipse.org/content/ecf-remote-services-indigo">
+      <type>resource</type>
+      <categories>
+        <category id='1' name='Application Server' url='http://marketplace.eclipse.org/taxonomy/term/1'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='12' name='Network' url='http://marketplace.eclipse.org/taxonomy/term/12'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='21' name='Web Services' url='http://marketplace.eclipse.org/taxonomy/term/21'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='27' name='J2ME' url='http://marketplace.eclipse.org/taxonomy/term/27'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+      <tags>
+        <tag id='162' name='osgi' url='http://marketplace.eclipse.org/category/free-tagging/osgi'/>
+        <tag id='187' name='ECF' url='http://marketplace.eclipse.org/category/free-tagging/ecf'/>
+        <tag id='1707' name='Remote Services' url='http://marketplace.eclipse.org/category/free-tagging/remote-services'/>
+        <tag id='1708' name='Remote Services Admin' url='http://marketplace.eclipse.org/category/free-tagging/remote-services-admin'/>
+        <tag id='1709' name='Services' url='http://marketplace.eclipse.org/category/free-tagging/services'/>
+      </tags>
+      
+      <owner>Wim Jongman</owner>
+      <favorited>1</favorited>
+      <installstotal>596</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This feature provides the ECF Remote Services Target Components.  This is the set of bundles (API, examples, and providers), that allow OSGi frameworks to expose and access remote services.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This feature provides the ECF Remote Services Target Components.  This is the set of bundles (API, examples, and providers), that allow OSGi frameworks to expose and access remote services.</p>
+]]></body>
+      <created>1300180692</created>
+      <changed>1332259368</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[Eclipse Communications Framework - ECF]]></homepageurl>
+      <image><![CDATA[http://www.eclipse.org/artwork/images/eclipse_pos_logo_fc_sm.jpg]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/marketplace_1.png?itok=Z89aaqeG]]></screenshot>
+      <version>3.5.5</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Eclipse]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eclipse.org/ecf/downloads.php]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/rt/ecf/3.5.5/site.p2]]></updateurl>
+<ius>
+<iu>org.eclipse.ecf.remoteservice.sdk.feature.feature.group</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

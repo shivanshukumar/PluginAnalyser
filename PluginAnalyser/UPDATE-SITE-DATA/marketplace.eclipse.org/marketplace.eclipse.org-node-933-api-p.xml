@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="933" name="NXBridge Eclipse Plug-In for CA Endevor SCM" url="http://marketplace.eclipse.org/content/nxbridge-eclipse-plug-ca-endevor-scm">
+      <type>resource</type>
+      <categories>
+        <category id='26' name='SCM' url='http://marketplace.eclipse.org/taxonomy/term/26'/>
+      </categories>
+            
+      <owner>Francois Dansereau</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Nexio Technologies has announced the release of NXBridge Eclipse Plug-In for legacy integration. NXBridge will allow developers to use the Eclipse Integrated Development Environment (IDE), to directly access z/OS based Endevor libraries. Developers will have the full range of Endevor functions to browse listings, browse and retrieve, Endevor elements, and also be work in “project mode” by retrieving groups of elements for editing as an Endevor package. </p>
+]]></shortdescription>
+      <body><![CDATA[<p>Nexio Technologies has announced the release of NXBridge Eclipse Plug-In for legacy integration. NXBridge will allow developers to use the Eclipse Integrated Development Environment (IDE), to directly access z/OS based Endevor libraries. Developers will have the full range of Endevor functions to browse listings, browse and retrieve, Endevor elements, and also be work in “project mode” by retrieving groups of elements for editing as an Endevor package. </p>
+]]></body>
+      <created>1242314066</created>
+      <changed>1259779245</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.nexio.com/products/nxbridge]]></homepageurl>
+      <image><![CDATA[http://nexio.com/downfiles/pictures/NXBridge_100_80.gif]]></image>
+      <version>V1.0</version>
+      <license>Free for non-commercial use</license>
+      <companyname><![CDATA[Nexio Technologies]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://www.nexio.com/products/nxbridge]]></supporturl>
+      <updateurl><![CDATA[http://www.nexio.com/products/nxbridge]]></updateurl>
+    </node>
+    </marketplace>
+    

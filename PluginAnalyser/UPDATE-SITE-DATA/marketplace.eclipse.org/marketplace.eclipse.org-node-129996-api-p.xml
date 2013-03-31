@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="129996" name="Loggifier" url="http://marketplace.eclipse.org/content/loggifier">
+      <type>resource</type>
+      <categories>
+        <category id='1964' name='Application Development Frameworks' url='http://marketplace.eclipse.org/category/categories/application-development-frameworks'/>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+        <category id='1' name='Application Server' url='http://marketplace.eclipse.org/taxonomy/term/1'/>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='1972' name='General Purpose Tools' url='http://marketplace.eclipse.org/category/categories/general-purpose-tools'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='37' name='Logging' url='http://marketplace.eclipse.org/category/categories/logging'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='431' name='logging' url='http://marketplace.eclipse.org/category/free-tagging/logging'/>
+        <tag id='692' name='instrumentation' url='http://marketplace.eclipse.org/category/free-tagging/instrumentation'/>
+        <tag id='875' name='logger' url='http://marketplace.eclipse.org/category/free-tagging/logger'/>
+        <tag id='2246' name='java.util.logging' url='http://marketplace.eclipse.org/category/free-tagging/javautillogging'/>
+        <tag id='2247' name='injection' url='http://marketplace.eclipse.org/category/free-tagging/injection'/>
+      </tags>
+      
+      <owner>Arno Unkrig</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Inserts java.util.logging-based logging code into class files. Where and what is inserted is controlled by rules that can be specified through annotations and a project properties page.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Inserts java.util.logging-based logging code into class files. Where and what is inserted is controlled by rules that can be specified through annotations and a project properties page.</p>
+]]></body>
+      <created>1317726921</created>
+      <changed>1347883847</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://loggifier.unkrig.de]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/loggifier.jpg?itok=JECWNl_r]]></screenshot>
+      <version></version>
+      <license>BSD</license>
+      <companyname><![CDATA[Arno Unkrig]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://loggifier.unkrig.de/update]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

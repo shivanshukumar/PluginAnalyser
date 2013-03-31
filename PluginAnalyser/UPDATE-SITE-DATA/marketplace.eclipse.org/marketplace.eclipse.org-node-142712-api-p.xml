@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="142712" name="Antepedia Developer For Eclipse" url="http://marketplace.eclipse.org/content/antepedia-developer-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='39' name='Reporting' url='http://marketplace.eclipse.org/category/categories/reporting'/>
+        <category id='40' name='Search' url='http://marketplace.eclipse.org/category/categories/search'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='2290' name='License compliance' url='http://marketplace.eclipse.org/category/free-tagging/license-compliance'/>
+        <tag id='2291' name='security vulnerability; upgrade component' url='http://marketplace.eclipse.org/category/free-tagging/security-vulnerability-upgrade-component'/>
+      </tags>
+      
+      <owner>Antelink Antelink</owner>
+      <favorited>3</favorited>
+      <installstotal>115</installstotal>
+      <installsrecent>15</installsrecent>
+      <shortdescription><![CDATA[<p><strong>Release Note: Version 1.2.2 uses a deprecated Antepedia API. Please upgrade to 1.9+, or try <a href="http://www.antelink.com/product/antepedia-reporter.html">Antepedia Reporter 2.0</a></strong></p>
+<p>Thanks to Antepedia Developer for Eclipse:<br />
+> Stay aware of <strong>Updates & Security Issues</strong><br />
+> Enforce <strong>Open Source Licensing Policies</strong><br />
+> Customize and Manage <strong>Software Bill of Materials</strong></p>
+<p><strong>Antepedia Developer</strong> for Eclipse retrieves information about Licenses, Updates, and security vulnerabilities, while connecting to <a href="http://antepedia.com">Antepedia's Open Source knowledge base</a>. It can be enhanced with <a href="http://www.antelink.com/product/antepedia-reporter.html">Antepedia Reporter 2.0 Free Edition</a>.</p>
+<p>Our first goal is to save of our customers time by:<br />
+> considering that time consuming tasks should never have to be done twice.<br />
+> providing a scalable scanning algorithm above Antepedia.<br />
+> supporting de facto standard tools and formats like Apache Maven,  SPDX ,...<br />
+> building advanced GUI to ease information management.</p>
+<p><a href="http://antepedia.com">Antepedia's Open Source knowledge base</a> is home of the largest knowledge base of open source projects with more than 2,000,000 projects, downloaded from Maven Central Repository, GoogleCode, SourceForge, Maven Central Repository, RubyForge, OW2, etc. </p>
+<p><strong>Antepedia Developer</strong> for Eclipse is free, and can be connected to <a href="http://www.antelink.com/product/antepedia-reporter.html">Antepedia Reporter 2.0 Free Edition</a></p>
+<p><strong>Antepedia Reporter 2.0</strong> delivers an intelligent system for managing software bill of materials (BoM) by providing detailed information within the Antepedia Reporter Private Knowledge Base (custom fields definition, report generation, pre-filled BoM generation, ...). </p>
+<p>Antepedia Reporter enables the continuous management of open source throughout the software development lifecycle.</p>
+]]></shortdescription>
+      <body><![CDATA[<p><strong>Release Note: Version 1.2.2 uses a deprecated Antepedia API. Please upgrade to 1.9+, or try <a href="http://www.antelink.com/product/antepedia-reporter.html">Antepedia Reporter 2.0</a></strong></p>
+<p>Thanks to Antepedia Developer for Eclipse:<br />
+> Stay aware of <strong>Updates & Security Issues</strong><br />
+> Enforce <strong>Open Source Licensing Policies</strong><br />
+> Customize and Manage <strong>Software Bill of Materials</strong></p>
+<p><strong>Antepedia Developer</strong> for Eclipse retrieves information about Licenses, Updates, and security vulnerabilities, while connecting to <a href="http://antepedia.com">Antepedia's Open Source knowledge base</a>. It can be enhanced with <a href="http://www.antelink.com/product/antepedia-reporter.html">Antepedia Reporter 2.0 Free Edition</a>.</p>
+<p>Our first goal is to save of our customers time by:<br />
+> considering that time consuming tasks should never have to be done twice.<br />
+> providing a scalable scanning algorithm above Antepedia.<br />
+> supporting de facto standard tools and formats like Apache Maven,  SPDX ,...<br />
+> building advanced GUI to ease information management.</p>
+<p><a href="http://antepedia.com">Antepedia's Open Source knowledge base</a> is home of the largest knowledge base of open source projects with more than 2,000,000 projects, downloaded from Maven Central Repository, GoogleCode, SourceForge, Maven Central Repository, RubyForge, OW2, etc. </p>
+<p><strong>Antepedia Developer</strong> for Eclipse is free, and can be connected to <a href="http://www.antelink.com/product/antepedia-reporter.html">Antepedia Reporter 2.0 Free Edition</a></p>
+<p><strong>Antepedia Reporter 2.0</strong> delivers an intelligent system for managing software bill of materials (BoM) by providing detailed information within the Antepedia Reporter Private Knowledge Base (custom fields definition, report generation, pre-filled BoM generation, ...). </p>
+<p>Antepedia Reporter enables the continuous management of open source throughout the software development lifecycle.</p>
+]]></body>
+      <created>1319721035</created>
+      <changed>1350159650</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.antelink.com/product/antepedia-developer.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Logo_Antelink_RVB_80x37.jpg?itok=HmKmZupU]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/AntepediaForEclipse-results.png?itok=BVnHA9Ed]]></screenshot>
+      <version>1.9</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[Antelink]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5+]]></eclipseversion>
+      <supporturl><![CDATA[http://www.antelink.com/support.html]]></supporturl>
+      <updateurl><![CDATA[http://www.antelink.com/antelink_download/AntepediaDeveloper/updateSite]]></updateurl>
+<ius>
+<iu>com.antelink.antepedia.Antepedia4Eclipse</iu>
+<iu>com.antelink.antepedia.Antepedia4Eclipse.feature</iu>
+<iu>com.antelink.antepedia.Antepedia4Eclipse.feature.group</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

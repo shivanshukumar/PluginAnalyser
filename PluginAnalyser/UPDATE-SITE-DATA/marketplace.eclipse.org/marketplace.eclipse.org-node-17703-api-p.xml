@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="17703" name="Eclipse Advanced Browser" url="http://marketplace.eclipse.org/content/eclipse-advanced-browser">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='1334' name='Eclipse Browser' url='http://marketplace.eclipse.org/category/free-tagging/eclipse-browser'/>
+        <tag id='1335' name='Advanced Browser' url='http://marketplace.eclipse.org/category/free-tagging/advanced-browser'/>
+      </tags>
+      
+      <owner>Ramin Assisi</owner>
+      <favorited>6</favorited>
+      <installstotal>136</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Latest News: - New Toolbar, bug fixings - Tab Browsing now like in Firefox (with mouse button 2) - lot of bug fixings - This browser is now faster then Firefox!<br />
+Eclipse Advanced Browser extends the SWT Browser class. It is based on the Mozilla XULRunner Engine. No previous Mozilla/Firefox installation is required.<br />
+The product is a subset of the JOffice Suite and free of charge for the use within the Eclipse IDE.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Latest News: - New Toolbar, bug fixings - Tab Browsing now like in Firefox (with mouse button 2) - lot of bug fixings - This browser is now faster then Firefox!<br />
+Eclipse Advanced Browser extends the SWT Browser class. It is based on the Mozilla XULRunner Engine. No previous Mozilla/Firefox installation is required.<br />
+The product is a subset of the JOffice Suite and free of charge for the use within the Eclipse IDE.</p>
+]]></body>
+      <created>1288475630</created>
+      <changed>1291709335</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://joffice.eu/update_site/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screenshot_browser_1.png?itok=U6UCAXGW]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screenshot_browser_1_0.png?itok=lgmbb2kN]]></screenshot>
+      <version>1.0.6</version>
+      <license>Free for non-commerical use</license>
+      <companyname><![CDATA[JOffice Ltd.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://joffice.eu]]></supporturl>
+      <updateurl><![CDATA[http://joffice.eu/update_site/]]></updateurl>
+<ius>
+<iu>com.joffice.eu.browser.feature</iu>
+<iu>com.joffice.eu.core.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

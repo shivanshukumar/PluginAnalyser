@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1114" name="Twist" url="http://marketplace.eclipse.org/content/twist">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+      </categories>
+      <tags>
+        <tag id='70' name='BDD' url='http://marketplace.eclipse.org/category/free-tagging/bdd'/>
+        <tag id='192' name='testing' url='http://marketplace.eclipse.org/category/free-tagging/testing'/>
+        <tag id='193' name='automation' url='http://marketplace.eclipse.org/category/free-tagging/automation'/>
+        <tag id='194' name='QA' url='http://marketplace.eclipse.org/category/free-tagging/qa'/>
+        <tag id='195' name='DSL' url='http://marketplace.eclipse.org/category/free-tagging/dsl'/>
+      </tags>
+      
+      <owner>Kunnal</owner>
+      <favorited>2</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Twist is a revolutionary collaborative functional testing platform designed to help you deliver applications fully aligned with your business. It eliminates requirements mismatch as business users directly express intent in their domain language. Twist's IDE enables testers to map these expectations to tests and create automated test suites that evolve with application changes. Twist thus enables your team to deliver full, intended and tested business value the collaborative way.</p>
+<p>Twist allows business users to directly write business intent in plain English. It also gives testers full IDE support for the creation and evolution of even large test suites. Twist is test automation done right.</p>
+<p>Twist provides answers to:<br />
+-How do we ensure that we build what the client wants?<br />
+-How can we automate and reuse our tests?<br />
+-How can we not be forced to overhaul tests so often?</p>
+<p>Supported Operating Systems - Windows XP / Vista / 7 (32 bit) , Linux (32 bit or 64 bit) and Mac OS X Leopard ( 32 bit )<br />
+Memory requirements: 512MB minimum , 1 GB recommended<br />
+Hard disk space - 200 MB free hard disk space</p>
+<p><a href="http://www.thoughtworks-studios.com/agile-test-automation/features-benefits"> Know More </a> | <a href="http://www.thoughtworks-studios.com/user/register&destination=forms/form/twist/download"> Download Free Trial </a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Twist is a revolutionary collaborative functional testing platform designed to help you deliver applications fully aligned with your business. It eliminates requirements mismatch as business users directly express intent in their domain language. Twist's IDE enables testers to map these expectations to tests and create automated test suites that evolve with application changes. Twist thus enables your team to deliver full, intended and tested business value the collaborative way.</p>
+<p>Twist allows business users to directly write business intent in plain English. It also gives testers full IDE support for the creation and evolution of even large test suites. Twist is test automation done right.</p>
+<p>Twist provides answers to:<br />
+-How do we ensure that we build what the client wants?<br />
+-How can we automate and reuse our tests?<br />
+-How can we not be forced to overhaul tests so often?</p>
+<p>Supported Operating Systems - Windows XP / Vista / 7 (32 bit) , Linux (32 bit or 64 bit) and Mac OS X Leopard ( 32 bit )<br />
+Memory requirements: 512MB minimum , 1 GB recommended<br />
+Hard disk space - 200 MB free hard disk space</p>
+<p><a href="http://www.thoughtworks-studios.com/agile-test-automation/features-benefits"> Know More </a> | <a href="http://www.thoughtworks-studios.com/user/register&destination=forms/form/twist/download"> Download Free Trial </a></p>
+]]></body>
+      <created>1263892484</created>
+      <changed>1267811725</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.thoughtworks-studios.com/agile-test-automation]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/twist_logo.png?itok=fsnfagBN]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Twist01.png?itok=8XO-4WEm]]></screenshot>
+      <version>1.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[ThoughtWorks Studios]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.thoughtworks-studios.com/user/register&destination=forms/form/twist/support]]></supporturl>
+      <updateurl><![CDATA[http://twist.thoughtworks.com/update-site]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

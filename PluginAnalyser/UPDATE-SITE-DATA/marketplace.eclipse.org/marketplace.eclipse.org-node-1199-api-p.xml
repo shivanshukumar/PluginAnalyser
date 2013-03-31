@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1199" name="LongJump Eclipse Plug-In" url="http://marketplace.eclipse.org/content/longjump-eclipse-plug">
+      <type>resource</type>
+      <categories>
+        <category id='1' name='Application Server' url='http://marketplace.eclipse.org/taxonomy/term/1'/>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='21' name='Web Services' url='http://marketplace.eclipse.org/taxonomy/term/21'/>
+      </categories>
+      <tags>
+        <tag id='578' name='paas' url='http://marketplace.eclipse.org/category/free-tagging/paas'/>
+        <tag id='579' name='longjump' url='http://marketplace.eclipse.org/category/free-tagging/longjump'/>
+        <tag id='580' name='saas' url='http://marketplace.eclipse.org/category/free-tagging/saas'/>
+      </tags>
+      
+      <owner>derek</owner>
+      <favorited>4</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The LongJump Eclipse Plug-In is used to develop Classes, Components, Functions and Pages that are used in extending the <a href="http://www.longjump.com">LongJump Platform-as-a-Service (PaaS)</a>.</p>
+<p>The plug-in allows developers to:</p>
+<ul><li>Collaborate across multiple LongJump tenancies</li>
+<li>Organize code into projects</li>
+<li>Synchronizing code between LongJump and user's local development environment</li>
+<li>Create an LongJump elements</li>
+<li>Access the LongJump Function and Class Library</li>
+<li>View Template Variables for components and pages</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>The LongJump Eclipse Plug-In is used to develop Classes, Components, Functions and Pages that are used in extending the <a href="http://www.longjump.com">LongJump Platform-as-a-Service (PaaS)</a>.</p>
+<p>The plug-in allows developers to:</p>
+<ul><li>Collaborate across multiple LongJump tenancies</li>
+<li>Organize code into projects</li>
+<li>Synchronizing code between LongJump and user's local development environment</li>
+<li>Create an LongJump elements</li>
+<li>Access the LongJump Function and Class Library</li>
+<li>View Template Variables for components and pages</li>
+</ul>]]></body>
+      <created>1273101981</created>
+      <changed>1273102051</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.longjump.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/LongJump110x80.png?itok=QTpEq0VR]]></image>
+      <version></version>
+      <license>Other</license>
+      <companyname><![CDATA[LongJump]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4.x]]></eclipseversion>
+      <supporturl><![CDATA[http://lj.platformatyourservice.com/~platfor1/wiki/index.php?title=Eclipse_Plug-In]]></supporturl>
+      <updateurl><![CDATA[https://www.longjump.com/networking/RepositoryPublicDocDownload?id=a6e50855b68a443596414e25cf389886&cid=892085391&encode=application/octet-stream]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

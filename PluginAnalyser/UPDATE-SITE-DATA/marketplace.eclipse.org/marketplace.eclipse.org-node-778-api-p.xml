@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="778" name="GUIDins" url="http://marketplace.eclipse.org/content/guidins">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>Rainer</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>GUIDins inserts a newly generated GUID at the current cursor position in your current document.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>GUIDins inserts a newly generated GUID at the current cursor position in your current document.</p>
+]]></body>
+      <created>1222956272</created>
+      <changed>1284396202</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.backend-server.de/GUIDins]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Rainer Brang, Backend-Server GmbH & Co. KG]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[>3]]></eclipseversion>
+      <supporturl><![CDATA[http://]]></supporturl>
+      <updateurl><![CDATA[http://www.backend-server.de/GUIDins]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

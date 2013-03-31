@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="168" name="TOPCASED" url="http://marketplace.eclipse.org/content/topcased">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+      <tags>
+        <tag id='1117' name='AADL' url='http://marketplace.eclipse.org/category/free-tagging/aadl'/>
+        <tag id='1118' name='SAM' url='http://marketplace.eclipse.org/category/free-tagging/sam'/>
+      </tags>
+      
+      <owner>Pierre Gaufillet</owner>
+      <favorited>7</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>TOPCASED - Toolkit in OPen source for Critical Applications and SystEm Development - is a system/software engineering toolset based on Eclipse. It aims to provide the tools required to go from requirements analysis to implementation stages. It includes several graphical model editors : </p>
+<ul><li>UML, SysML
+</li><li>Structured Analysis Model (SAM)
+</li><li>AADL (Architecture Analysis and Design Language).
+</li><li>AUI (Abstract User Interfaces)
+</li></ul><p>All languages benefit from Requirements Management capabilities (link requirements to your model elements), OCL tools (for structural verification) and the document generators Gendoc I & II (allowing to generate easily docx/odt/... from your models). Some code generators/retro-engineering analyzers like UML2C/C2UML, SMUC (code generation from UML and SAM state machines), UML2Java/Java2UML, UML2Python are also available.<br />
+Topcased also includes graphical simulators for SAM and UML models, and gPM: a generic Changes Manager (a kind of completely configurable bugzilla). Some more experimental features like VHDL editor & checker are also available.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>TOPCASED - Toolkit in OPen source for Critical Applications and SystEm Development - is a system/software engineering toolset based on Eclipse. It aims to provide the tools required to go from requirements analysis to implementation stages. It includes several graphical model editors : </p>
+<ul><li>UML, SysML
+</li><li>Structured Analysis Model (SAM)
+</li><li>AADL (Architecture Analysis and Design Language).
+</li><li>AUI (Abstract User Interfaces)
+</li></ul><p>All languages benefit from Requirements Management capabilities (link requirements to your model elements), OCL tools (for structural verification) and the document generators Gendoc I & II (allowing to generate easily docx/odt/... from your models). Some code generators/retro-engineering analyzers like UML2C/C2UML, SMUC (code generation from UML and SAM state machines), UML2Java/Java2UML, UML2Python are also available.<br />
+Topcased also includes graphical simulators for SAM and UML models, and gPM: a generic Changes Manager (a kind of completely configurable bugzilla). Some more experimental features like VHDL editor & checker are also available.</p>
+]]></body>
+      <created>1129588592</created>
+      <changed>1306928123</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.topcased.org]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/topcased_120_0.gif?itok=r08Gxxlx]]></image>
+      <version>4.3.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[TOPCASED Consortium]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[Helios]]></eclipseversion>
+      <supporturl><![CDATA[http://lists.gforge.enseeiht.fr/mailman/listinfo/topcased-users]]></supporturl>
+      <updateurl><![CDATA[http://topcased-mm.gforge.enseeiht.fr/release/topcased4.3.0/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

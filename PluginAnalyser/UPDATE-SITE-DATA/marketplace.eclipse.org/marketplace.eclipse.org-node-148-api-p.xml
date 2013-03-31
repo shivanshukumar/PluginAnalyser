@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="148" name="LDAP Phone" url="http://marketplace.eclipse.org/content/ldap-phone">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>Daniel Hirscher</owner>
+      <favorited>0</favorited>
+      <installstotal>42</installstotal>
+      <installsrecent>4</installsrecent>
+      <shortdescription><![CDATA[<p>Access LDAP directory to get phone numbers.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Access LDAP directory to get phone numbers.</p>
+]]></body>
+      <created>1115723366</created>
+      <changed>1303413572</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://etinytools.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://etinytools.sourceforge.net/img/ldapphone-video.gif]]></image>
+      <version>1.3.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Daniel Hirscher]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6+]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://www.daniel-hirscher.de/eclipse]]></updateurl>
+<ius>
+<iu>de.hackerdan.ldapphone</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

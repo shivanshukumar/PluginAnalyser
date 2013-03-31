@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="153063" name="Draw2d Preview" url="http://marketplace.eclipse.org/content/draw2d-preview">
+      <type>resource</type>
+      <categories>
+        <category id='8' name='Graphics' url='http://marketplace.eclipse.org/taxonomy/term/8'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='1971' name='Modeling' url='http://marketplace.eclipse.org/category/categories/modeling'/>
+      </categories>
+      <tags>
+        <tag id='2343' name='draw2d GEF' url='http://marketplace.eclipse.org/category/free-tagging/draw2d-gef'/>
+      </tags>
+      
+      <owner>Mickael Istria</owner>
+      <favorited>2</favorited>
+      <installstotal>549</installstotal>
+      <installsrecent>39</installsrecent>
+      <shortdescription><![CDATA[<p>This small plugin is just an entry in the pop-up menu for classes that allow you to see a preview of a Draw2d class while you are editing it.<br />
+I saves you a lot of time when you are developping features: no more need to start a runtime platform to see the effect of your modifications.</p>
+<p>It is planned to be contributed as the first component of a "Tooling" subproject for Draw2d.</p>
+<p><img src="http://img249.imageshack.us/img249/4430/screenshotls.png" style="width:500px" /></p>
+<p>The project is currently <a href="https://github.com/mickaelistria/Draw2d-Preview">hosted at GitHub</a> <a href="https://github.com/mickaelistria/Draw2d-Preview#fork_box" style="font-style: italic">"Fork me, I'm famous"</a>.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This small plugin is just an entry in the pop-up menu for classes that allow you to see a preview of a Draw2d class while you are editing it.<br />
+I saves you a lot of time when you are developping features: no more need to start a runtime platform to see the effect of your modifications.</p>
+<p>It is planned to be contributed as the first component of a "Tooling" subproject for Draw2d.</p>
+<p><img src="http://img249.imageshack.us/img249/4430/screenshotls.png" style="width:500px" /></p>
+<p>The project is currently <a href="https://github.com/mickaelistria/Draw2d-Preview">hosted at GitHub</a> <a href="https://github.com/mickaelistria/Draw2d-Preview#fork_box" style="font-style: italic">"Fork me, I'm famous"</a>.</p>
+]]></body>
+      <created>1321365820</created>
+      <changed>1321373896</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://github.com/mickaelistria/Draw2d-Preview]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screenshot_12.png?itok=os61RVsq]]></screenshot>
+      <version>0.0.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[PetalsLink]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[https://github.com/mickaelistria/Draw2d-Preview]]></supporturl>
+      <updateurl><![CDATA[https://raw.github.com/mickaelistria/Draw2d-Preview/master/repository/built]]></updateurl>
+<ius>
+<iu>org.eclipse.draw2d.tooling</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

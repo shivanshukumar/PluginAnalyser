@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="6285" name="Classtemplater" url="http://marketplace.eclipse.org/content/classtemplater">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+      </categories>
+      <tags>
+        <tag id='1085' name='class template generate generator modeling' url='http://marketplace.eclipse.org/category/free-tagging/class-template-generate-generator-modeling'/>
+      </tags>
+      
+      <owner>Tibor Somodi</owner>
+      <favorited>2</favorited>
+      <installstotal>141</installstotal>
+      <installsrecent>3</installsrecent>
+      <shortdescription><![CDATA[<p>Class based code generator for Eclipse<br /><b>Features</b></p>
+<ul><li>save output to file automatically</li>
+<li>generate code based more than one classes with one step</li>
+<li>generate code based more than one templates with one step</li>
+<li>generate code based multiple classes and multiple templates with one step</li>
+<li>handwritten parts in generated code</li>
+<li>annotation support for base class, attributes and methods</li>
+<li><b>generate code based on selected attributes</b></li>
+<li><b>generate code based on selected methods</b></li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>Class based code generator for Eclipse<br /><b>Features</b></p>
+<ul><li>save output to file automatically</li>
+<li>generate code based more than one classes with one step</li>
+<li>generate code based more than one templates with one step</li>
+<li>generate code based multiple classes and multiple templates with one step</li>
+<li>handwritten parts in generated code</li>
+<li>annotation support for base class, attributes and methods</li>
+<li><b>generate code based on selected attributes</b></li>
+<li><b>generate code based on selected methods</b></li>
+</ul>]]></body>
+      <created>1280922848</created>
+      <changed>1284979196</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://classtemplater.inepex.com/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/icon_1.png?itok=vdWn2L3Z]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/overview_0.png?itok=H4rWRR20]]></screenshot>
+      <version></version>
+      <license>EPL</license>
+      <companyname><![CDATA[Inepex]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5, 3.6]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://classtemplater.inepex.com/]]></updateurl>
+<ius>
+<iu>com.inepex.classtemplater.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

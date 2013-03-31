@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="158701" name="Keshmesh" url="http://marketplace.eclipse.org/content/keshmesh">
+      <type>resource</type>
+      <categories>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+        <category id='1964' name='Application Development Frameworks' url='http://marketplace.eclipse.org/category/categories/application-development-frameworks'/>
+      </categories>
+      <tags>
+        <tag id='91' name='bug' url='http://marketplace.eclipse.org/category/free-tagging/bug'/>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='137' name='analysis' url='http://marketplace.eclipse.org/category/free-tagging/analysis'/>
+        <tag id='214' name='concurrency' url='http://marketplace.eclipse.org/category/free-tagging/concurrency'/>
+        <tag id='755' name='tool' url='http://marketplace.eclipse.org/category/free-tagging/tool'/>
+      </tags>
+      
+      <owner>Mohsen Vakilian</owner>
+      <favorited>1</favorited>
+      <installstotal>148</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Keshmesh (<a href="http://keshmesh.cs.illinois.edu">http://keshmesh.cs.illinois.edu</a>) is an interactive static analysis tool for detecting and fixing concurrency bug patterns in Java programs. Keshmesh looks for common bug patterns in concurrent Java programs and provides automated fixers for some of the bug patterns.</p>
+<p>Keshmesh uses FindBugs (<a href="http://findbugs.sf.net">http://findbugs.sf.net</a>) as its user interface but has a more powerful analysis engine that can reason about concurrency bug patterns that involve multiple methods and object aliases.</p>
+<p>Please visit <a href="http://keshmesh.cs.illinois.edu">http://keshmesh.cs.illinois.edu</a> to learn more about Keshmesh.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Keshmesh (<a href="http://keshmesh.cs.illinois.edu">http://keshmesh.cs.illinois.edu</a>) is an interactive static analysis tool for detecting and fixing concurrency bug patterns in Java programs. Keshmesh looks for common bug patterns in concurrent Java programs and provides automated fixers for some of the bug patterns.</p>
+<p>Keshmesh uses FindBugs (<a href="http://findbugs.sf.net">http://findbugs.sf.net</a>) as its user interface but has a more powerful analysis engine that can reason about concurrency bug patterns that involve multiple methods and object aliases.</p>
+<p>Please visit <a href="http://keshmesh.cs.illinois.edu">http://keshmesh.cs.illinois.edu</a> to learn more about Keshmesh.</p>
+]]></body>
+      <created>1322147662</created>
+      <changed>1325723046</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://keshmesh.cs.illinois.edu/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version></version>
+      <license>Other Open Source</license>
+      <companyname><![CDATA[University of Illinois]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.6, 3.7]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://keshmesh.cs.illinois.edu/updates]]></updateurl>
+<ius>
+<iu>edu.illinois.keshmesh</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

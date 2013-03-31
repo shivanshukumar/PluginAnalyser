@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="147689" name="The Open Problem Analysis Tool" url="http://marketplace.eclipse.org/content/open-problem-analysis-tool">
+      <type>resource</type>
+      <categories>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+        <category id='1971' name='Modeling' url='http://marketplace.eclipse.org/category/categories/modeling'/>
+      </categories>
+      <tags>
+        <tag id='2313' name='problem frames' url='http://marketplace.eclipse.org/category/free-tagging/problem-frames'/>
+        <tag id='2314' name='i*' url='http://marketplace.eclipse.org/category/free-tagging/i'/>
+        <tag id='2315' name='event calculus' url='http://marketplace.eclipse.org/category/free-tagging/event-calculus'/>
+        <tag id='2316' name='argumentation' url='http://marketplace.eclipse.org/category/free-tagging/argumentation'/>
+      </tags>
+      
+      <owner>Yijun Yu</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Problem Analysis Tool for the Open Requirements Engineering Lab supports modeling early requirements in the problem space using the original Problem Frames language created by Michael Jackson.  It also uses the Toulmin's style structure to support requirements satisfaction argumentation. Included are the OpenOME (University of Toronto) and ST-Tool (University of Trento) for i* goal-oriented modeling tools as well as an Event Calculus reasoner (Imperial College London).<br />
+-- <a href="http://sead1.open.ac.uk/openpf">http://sead1.open.ac.uk/openpf</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Problem Analysis Tool for the Open Requirements Engineering Lab supports modeling early requirements in the problem space using the original Problem Frames language created by Michael Jackson.  It also uses the Toulmin's style structure to support requirements satisfaction argumentation. Included are the OpenOME (University of Toronto) and ST-Tool (University of Trento) for i* goal-oriented modeling tools as well as an Event Calculus reasoner (Imperial College London).<br />
+-- <a href="http://sead1.open.ac.uk/openpf">http://sead1.open.ac.uk/openpf</a></p>
+]]></body>
+      <created>1320510836</created>
+      <changed>1320682865</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://sead1.open.ac.uk/openre]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[The Open University]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.6.2]]></eclipseversion>
+      <supporturl><![CDATA[http://computing-research.open.ac.uk/trac/openpf]]></supporturl>
+      <updateurl><![CDATA[http://sead1.open.ac.uk/openpf/update]]></updateurl>
+<ius>
+<iu>problem.feature</iu>
+<iu>core.feature</iu>
+<iu>argument.feature</iu>
+<iu>event.feature</iu>
+<iu>xtext.feature</iu>
+<iu>ontology.feature</iu>
+<iu>istar.feature</iu>
+<iu>it.unitn.disi.sistar.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

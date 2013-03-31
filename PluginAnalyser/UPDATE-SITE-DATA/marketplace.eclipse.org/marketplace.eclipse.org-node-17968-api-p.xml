@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="17968" name="JRipples" url="http://marketplace.eclipse.org/content/jripples">
+      <type>resource</type>
+      <categories>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='30' name='Process' url='http://marketplace.eclipse.org/taxonomy/term/30'/>
+        <category id='40' name='Search' url='http://marketplace.eclipse.org/category/categories/search'/>
+      </categories>
+      <tags>
+        <tag id='740' name='impact analysis' url='http://marketplace.eclipse.org/category/free-tagging/impact-analysis'/>
+        <tag id='1337' name='concept location' url='http://marketplace.eclipse.org/category/free-tagging/concept-location'/>
+        <tag id='1338' name='change propagation' url='http://marketplace.eclipse.org/category/free-tagging/change-propagation'/>
+        <tag id='1339' name='software change' url='http://marketplace.eclipse.org/category/free-tagging/software-change'/>
+      </tags>
+      
+      <owner>Radu Vanciu</owner>
+      <favorited>3</favorited>
+      <installstotal>147</installstotal>
+      <installsrecent>6</installsrecent>
+      <shortdescription><![CDATA[<p>JRipples helps programmers during software change. JRipples is based on the philosophy of “intelligent assistance”, which requires close cooperation between the programmer and the tool. The tool analyzes the program, keeps track of the inconsistencies, and automatically marks the components to be visited by the programmer. It frees the programmer to concentrate on important decisions, rather than on the minutiae of the IC process. The programmer selects, visits, comprehends, and/or modifies the components that appear in the backlog of things to do. The programmer attends to the tasks for which algorithms either do not exist or are difficult to implement, while JRipples covers the algorithmic tasks that are often difficult or error-prone for humans. This interaction allows the user to correct inaccuracies of the JRipples analysis in a timely fashion and avoid accumulation of the analysis error that is inevitable when the whole transitive closure of dependencies is computed.</p>
+<p>JRipples is a modular tool, and it provides a possibility of replacing its custom parts (e.g. different presentation modes, parsers, dependency graphs etc.). This gives the opportunity of tuning up JRipples for a task a programmer have in hand; it also eases JRipples integration and collaboration with other Software Engineering tools designed by different research groups.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>JRipples helps programmers during software change. JRipples is based on the philosophy of “intelligent assistance”, which requires close cooperation between the programmer and the tool. The tool analyzes the program, keeps track of the inconsistencies, and automatically marks the components to be visited by the programmer. It frees the programmer to concentrate on important decisions, rather than on the minutiae of the IC process. The programmer selects, visits, comprehends, and/or modifies the components that appear in the backlog of things to do. The programmer attends to the tasks for which algorithms either do not exist or are difficult to implement, while JRipples covers the algorithmic tasks that are often difficult or error-prone for humans. This interaction allows the user to correct inaccuracies of the JRipples analysis in a timely fashion and avoid accumulation of the analysis error that is inevitable when the whole transitive closure of dependencies is computed.</p>
+<p>JRipples is a modular tool, and it provides a possibility of replacing its custom parts (e.g. different presentation modes, parsers, dependency graphs etc.). This gives the opportunity of tuning up JRipples for a task a programmer have in hand; it also eases JRipples integration and collaboration with other Software Engineering tools designed by different research groups.</p>
+]]></body>
+      <created>1288643624</created>
+      <changed>1305663048</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://jripples.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://sourceforge.net/dbimage.php?id=116603]]></image>
+      <version></version>
+      <license>EPL</license>
+      <companyname><![CDATA[Wayne State University]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3, 3.4, 3.5, 3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://jripples.sourceforge.net/jripples/manual/toc.html]]></supporturl>
+      <updateurl><![CDATA[http://jripples.sourceforge.net/]]></updateurl>
+<ius>
+<iu>org.severe.JRipplesFeature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

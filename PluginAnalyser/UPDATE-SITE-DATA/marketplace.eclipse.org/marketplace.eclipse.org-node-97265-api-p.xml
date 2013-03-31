@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="97265" name="Full Screen enabler for Eclipse 3.6/3.7 on OSX Lion" url="http://marketplace.eclipse.org/content/full-screen-enabler-eclipse-3637-osx-lion">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='1972' name='General Purpose Tools' url='http://marketplace.eclipse.org/category/categories/general-purpose-tools'/>
+      </categories>
+      <tags>
+        <tag id='1380' name='fullscreen' url='http://marketplace.eclipse.org/category/free-tagging/fullscreen'/>
+        <tag id='2141' name='lion' url='http://marketplace.eclipse.org/category/free-tagging/lion'/>
+        <tag id='2142' name='osx' url='http://marketplace.eclipse.org/category/free-tagging/osx'/>
+        <tag id='2152' name='3.6' url='http://marketplace.eclipse.org/category/free-tagging/36'/>
+        <tag id='2153' name='3.7' url='http://marketplace.eclipse.org/category/free-tagging/37'/>
+      </tags>
+      
+      <owner>Alex Blewitt</owner>
+      <favorited>13</favorited>
+      <installstotal>4241</installstotal>
+      <installsrecent>42</installsrecent>
+      <shortdescription><![CDATA[<p>OSX Lion supports 'full screen' mode, in which all other windows are pushed to different desktops. Eclipse Indigo does not support this out of the box (yet) so this plugin will enable a full-screen icon to be shown at the top-right of the screen.</p>
+<p>The latest version adds ESC to move back to non-full-screen mode. You can also move the mouse to the top-right of the screen, the menu will re-appear and you can toggle the full-screen mode off. (Or use the Window - Toggle Full Screen menu item.)</p>
+<p>Note that this will only have any effect on OSX Lion systems. It will have no effect on pre-Lion systems and will not install on non-Mac platforms.</p>
+<p>Please send any comments to @alblue or via <a href="http://alblue.bandlem.com">http://alblue.bandlem.com</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>OSX Lion supports 'full screen' mode, in which all other windows are pushed to different desktops. Eclipse Indigo does not support this out of the box (yet) so this plugin will enable a full-screen icon to be shown at the top-right of the screen.</p>
+<p>The latest version adds ESC to move back to non-full-screen mode. You can also move the mouse to the top-right of the screen, the menu will re-appear and you can toggle the full-screen mode off. (Or use the Window - Toggle Full Screen menu item.)</p>
+<p>Note that this will only have any effect on OSX Lion systems. It will have no effect on pre-Lion systems and will not install on non-Mac platforms.</p>
+<p>Please send any comments to @alblue or via <a href="http://alblue.bandlem.com">http://alblue.bandlem.com</a></p>
+]]></body>
+      <created>1312318800</created>
+      <changed>1312585605</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://github.bandlem.com/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version></version>
+      <license>EPL</license>
+      <companyname><![CDATA[Bandlem Limited]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://github.bandlem.com/]]></updateurl>
+<ius>
+<iu>com.bandlem.eclipse.fullscreen.feature</iu>
+</ius>
+<platforms>
+<platform>Mac</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

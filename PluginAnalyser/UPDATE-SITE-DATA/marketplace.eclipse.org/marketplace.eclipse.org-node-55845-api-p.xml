@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="55845" name="Alloy 4 Eclipse" url="http://marketplace.eclipse.org/content/alloy-4-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+      </categories>
+      <tags>
+        <tag id='1939' name='formal methods' url='http://marketplace.eclipse.org/category/free-tagging/formal-methods'/>
+        <tag id='1940' name='model analysis' url='http://marketplace.eclipse.org/category/free-tagging/model-analysis'/>
+        <tag id='1941' name='alloy' url='http://marketplace.eclipse.org/category/free-tagging/alloy'/>
+      </tags>
+      
+      <owner>Daniel Le Berre</owner>
+      <favorited>0</favorited>
+      <installstotal>297</installstotal>
+      <installsrecent>13</installsrecent>
+      <shortdescription><![CDATA[<p>The aim of that plugin is to provide a first class Eclipse integration for the Alloy 4 specification language and tool developed at the MIT (<a href="http://alloy.mit.edu/">http://alloy.mit.edu/</a>). The release 0.3.x is based on Xtext (<a href="http://www.eclipse.org/Xtext/">http://www.eclipse.org/Xtext/</a>) and uses by default the SAT solver that ships with the Eclipse platform, Sat4j (<a href="http://www.sat4j.org/">http://www.sat4j.org/</a>).<br />
+The release 0.3.1 adds support for Xtext 2 to release 0.3.0 that was compatible only with Xtext 1.0.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The aim of that plugin is to provide a first class Eclipse integration for the Alloy 4 specification language and tool developed at the MIT (<a href="http://alloy.mit.edu/">http://alloy.mit.edu/</a>). The release 0.3.x is based on Xtext (<a href="http://www.eclipse.org/Xtext/">http://www.eclipse.org/Xtext/</a>) and uses by default the SAT solver that ships with the Eclipse platform, Sat4j (<a href="http://www.sat4j.org/">http://www.sat4j.org/</a>).<br />
+The release 0.3.1 adds support for Xtext 2 to release 0.3.0 that was compatible only with Xtext 1.0.</p>
+]]></body>
+      <created>1306222354</created>
+      <changed>1339130150</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/alloy4eclipse/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/a4e.png?itok=kltp-_HF]]></image>
+      <version>0.3.1</version>
+      <license>LGPL</license>
+      <companyname><![CDATA[CRIL-CNRS UMR 8188 Université d'Artois]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6+]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://alloy4eclipse.googlecode.com/svn/trunk/updatesite/]]></updateurl>
+<ius>
+<iu>fr.univartois.cril.alloy4xtext</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

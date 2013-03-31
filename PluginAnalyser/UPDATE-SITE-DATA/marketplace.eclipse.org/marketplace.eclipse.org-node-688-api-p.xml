@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="688" name="TextUML Toolkit" url="http://marketplace.eclipse.org/content/textuml-toolkit">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+      </categories>
+      <tags>
+        <tag id='51' name='IDE' url='http://marketplace.eclipse.org/category/free-tagging/ide'/>
+        <tag id='61' name='UML' url='http://marketplace.eclipse.org/category/free-tagging/uml'/>
+        <tag id='618' name='textual' url='http://marketplace.eclipse.org/category/free-tagging/textual'/>
+        <tag id='686' name='modeling tool' url='http://marketplace.eclipse.org/category/free-tagging/modeling-tool'/>
+      </tags>
+      
+      <owner>Rafael Chaves</owner>
+      <favorited>5</favorited>
+      <installstotal>2393</installstotal>
+      <installsrecent>23</installsrecent>
+      <shortdescription><![CDATA[<p>TextUML Toolkit is an <b>open-source IDE for UML</b> that lets you create models at the same speed you write code. By adopting <b>a textual notation</b>, the TextUML Toolkit provides benefits you will not get elsewhere:</p>
+<ul><li> <b>increased modeling productivity</b>
+</li>
+<li> the features you like in your favorite IDE: <b>instant validation, syntax highlighting, outline view, textual comparison</b>
+</li>
+<li> <b>live graphical visualization</b> of your model as class diagrams
+</li>
+<li> <b>compatible</b> with any tools that support <a href="http://wiki.eclipse.org/MDT-UML2-Tool-Compatibility">Eclipse UML2</a> models</li>
+</ul><p>
+Will you only believe it if you see it? <b><a href="http://sourceforge.net/apps/mediawiki/textuml/index.php?title=Install_Instructions" title="Install Instructions"> Download and install</a></b> the TextUML Toolkit (it is free!) and run through an <b>easy-to-follow <a href="http://sourceforge.net/apps/mediawiki/textuml/index.php?title=TextUML_Tutorial" title="TextUML Tutorial">  tutorial</a></b>. <b>Questions and problem reports</b> can be posted on the <b><a href="http://abstratt.com/forum">user forum</a></b> and <b><a href="http://abstratt.com/issues/">issue tracker</a></b>, respectively.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>TextUML Toolkit is an <b>open-source IDE for UML</b> that lets you create models at the same speed you write code. By adopting <b>a textual notation</b>, the TextUML Toolkit provides benefits you will not get elsewhere:</p>
+<ul><li> <b>increased modeling productivity</b>
+</li>
+<li> the features you like in your favorite IDE: <b>instant validation, syntax highlighting, outline view, textual comparison</b>
+</li>
+<li> <b>live graphical visualization</b> of your model as class diagrams
+</li>
+<li> <b>compatible</b> with any tools that support <a href="http://wiki.eclipse.org/MDT-UML2-Tool-Compatibility">Eclipse UML2</a> models</li>
+</ul><p>
+Will you only believe it if you see it? <b><a href="http://sourceforge.net/apps/mediawiki/textuml/index.php?title=Install_Instructions" title="Install Instructions"> Download and install</a></b> the TextUML Toolkit (it is free!) and run through an <b>easy-to-follow <a href="http://sourceforge.net/apps/mediawiki/textuml/index.php?title=TextUML_Tutorial" title="TextUML Tutorial">  tutorial</a></b>. <b>Questions and problem reports</b> can be posted on the <b><a href="http://abstratt.com/forum">user forum</a></b> and <b><a href="http://abstratt.com/issues/">issue tracker</a></b>, respectively.</p>
+]]></body>
+      <created>1210362868</created>
+      <changed>1352804316</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://abstratt.com/textuml/]]></homepageurl>
+      <image><![CDATA[http://abstratt.com/textuml/images/textuml_toolkit_epic.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/textumltoolkit.png?itok=qG3yxRi3]]></screenshot>
+      <version>1.9</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Abstratt Technologies and Contributors]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.8/4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://abstratt.com/forum/]]></supporturl>
+      <updateurl><![CDATA[jar:http://repository-textuml.forge.cloudbees.com/snapshot/com/abstratt/mdd/com.abstratt.mdd.oss.repository/1.9/com.abstratt.mdd.oss.repository-1.9.zip!/]]></updateurl>
+<ius>
+<iu>com.abstratt.mdd.frontend.toolkit.feature</iu>
+<iu>com.abstratt.eclipsegraphviz.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

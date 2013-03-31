@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1126" name="eclipse remote control" url="http://marketplace.eclipse.org/content/eclipse-remote-control">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='261' name='remote' url='http://marketplace.eclipse.org/category/free-tagging/remote'/>
+      </tags>
+      
+      <owner>Markus Pielmeier</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Eclipse plug-in project which adds remote control features to eclipse.<br />
+Commands can be sent via the eclipse remote control client to a<br />
+running eclipse instance.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Eclipse plug-in project which adds remote control features to eclipse.<br />
+Commands can be sent via the eclipse remote control client to a<br />
+running eclipse instance.</p>
+]]></body>
+      <created>1264762011</created>
+      <changed>1268386658</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://github.com/marook/eclipse-remote-control]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.1.0</version>
+      <license>GPL</license>
+      <companyname><![CDATA[Markus Pielmeier]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://github.com/marook/eclipse-remote-control/raw/master/workspaces/erc/update_site/site.xml]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

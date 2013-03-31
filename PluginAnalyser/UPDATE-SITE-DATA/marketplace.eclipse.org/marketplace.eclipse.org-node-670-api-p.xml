@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="670" name="ProjectKoach" url="http://marketplace.eclipse.org/content/projectkoach-0">
+      <type>resource</type>
+      <categories>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='30' name='Process' url='http://marketplace.eclipse.org/taxonomy/term/30'/>
+        <category id='1968' name='Collaboration' url='http://marketplace.eclipse.org/category/categories/collaboration'/>
+      </categories>
+      <tags>
+        <tag id='1197' name='Agile' url='http://marketplace.eclipse.org/category/free-tagging/agile'/>
+        <tag id='1605' name='process automation tool' url='http://marketplace.eclipse.org/category/free-tagging/process-automation-tool'/>
+        <tag id='1919' name='planning' url='http://marketplace.eclipse.org/category/free-tagging/planning'/>
+      </tags>
+      
+      <owner>Bjorn Gustafsson</owner>
+      <favorited>2</favorited>
+      <installstotal>163</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>ProjectKoach brings your whole agile process into Eclipse and gives you a wealth of powerful features to help you take your agile projects from start to finish without ever leaving your workspace.<br />
+Centered around a free-form, file-based requirements backlog and a visual iteration plan editor, ProjectKoach features complete support for, amongst other, the popular Scrum method, including point estimation, repeatable process patterns, and built-in progress charts that allow you to gauge your team’s productivity with burn-up, burn-down and velocity charts.<br />
+Integrated with Mylyn, you can import your team’s defects from your external bug tracker right into your iteration plans, so you can plan those together with your other backlog items.<br />
+Your project environment can include any mix of free basic and license-based Premium ProjectKoach installations for optimal team performance at the lowest possible cost.<br />
+ProjectKoach is available both as Eclipse plug-in and RCP application for all major platforms.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>ProjectKoach brings your whole agile process into Eclipse and gives you a wealth of powerful features to help you take your agile projects from start to finish without ever leaving your workspace.<br />
+Centered around a free-form, file-based requirements backlog and a visual iteration plan editor, ProjectKoach features complete support for, amongst other, the popular Scrum method, including point estimation, repeatable process patterns, and built-in progress charts that allow you to gauge your team’s productivity with burn-up, burn-down and velocity charts.<br />
+Integrated with Mylyn, you can import your team’s defects from your external bug tracker right into your iteration plans, so you can plan those together with your other backlog items.<br />
+Your project environment can include any mix of free basic and license-based Premium ProjectKoach installations for optimal team performance at the lowest possible cost.<br />
+ProjectKoach is available both as Eclipse plug-in and RCP application for all major platforms.</p>
+]]></body>
+      <created>1206627391</created>
+      <changed>1314837428</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.projectkoach.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/eclipse_marketplace_icon_plugin.gif?itok=AvtFKtif]]></image>
+      <version>2012</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[GOOD Software Inc, Canada]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5 (3.4 Win)]]></eclipseversion>
+      <supporturl><![CDATA[http://www.projectkoach.com]]></supporturl>
+      <updateurl><![CDATA[http://www.projectkoach.com/plugin/update]]></updateurl>
+<ius>
+<iu>ProjectKoach_plugin</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

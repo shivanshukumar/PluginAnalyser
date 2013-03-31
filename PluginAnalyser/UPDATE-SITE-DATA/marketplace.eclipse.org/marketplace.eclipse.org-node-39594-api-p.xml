@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="39594" name="MoreAnt" url="http://marketplace.eclipse.org/content/moreant">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='204' name='Ant' url='http://marketplace.eclipse.org/category/free-tagging/ant'/>
+      </tags>
+      
+      <owner>Vera Henneberger</owner>
+      <favorited>2</favorited>
+      <installstotal>766</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This plugin offers shortcuts for your favorite ANT targets. With this plugin you can run your target without using the mouse.</p>
+<p>Configure your favorite targets via the external tools configuration offered by eclipse itself and MoreAnt gives you a quick outline view for all of your favorites.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This plugin offers shortcuts for your favorite ANT targets. With this plugin you can run your target without using the mouse.</p>
+<p>Configure your favorite targets via the external tools configuration offered by eclipse itself and MoreAnt gives you a quick outline view for all of your favorites.</p>
+]]></body>
+      <created>1300736465</created>
+      <changed>1335294076</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/moreant/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/MoreAnt.png?itok=MqAg-JSs]]></image>
+      <version>0.2.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[-]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://vera-wahler.de/moreant-update/]]></updateurl>
+<ius>
+<iu>com.google.code.moreant.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

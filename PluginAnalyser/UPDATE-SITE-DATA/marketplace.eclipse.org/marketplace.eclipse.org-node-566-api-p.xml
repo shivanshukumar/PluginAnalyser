@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="566" name="GWT Tooling" url="http://marketplace.eclipse.org/content/gwt-tooling">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='162' name='osgi' url='http://marketplace.eclipse.org/category/free-tagging/osgi'/>
+        <tag id='227' name='Equinox and OSGi' url='http://marketplace.eclipse.org/category/free-tagging/equinox-and-osgi'/>
+        <tag id='536' name='GWT' url='http://marketplace.eclipse.org/category/free-tagging/gwt'/>
+        <tag id='762' name='compiler' url='http://marketplace.eclipse.org/category/free-tagging/compiler'/>
+      </tags>
+      
+      <owner>Gunnar Wagenknecht</owner>
+      <favorited>8</favorited>
+      <installstotal>9571</installstotal>
+      <installsrecent>459</installsrecent>
+      <shortdescription><![CDATA[<p>A set of Eclipse plug-ins to ease the development of Google Webtoolkit (GWT) applications with Eclipse. Released under the EPL. In contrast to the Google plug-ins GWT Tooling supports plain Java as well as PDE plug-in projects for Server-Side Eclipse / pure OSGi web development.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>A set of Eclipse plug-ins to ease the development of Google Webtoolkit (GWT) applications with Eclipse. Released under the EPL. In contrast to the Google plug-ins GWT Tooling supports plain Java as well as PDE plug-in projects for Server-Side Eclipse / pure OSGi web development.</p>
+]]></body>
+      <created>1193148655</created>
+      <changed>1275029721</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/gwt-tooling/]]></homepageurl>
+      <image><![CDATA[http://gwt-tooling.googlecode.com/svn/trunk/artwork/gwt-tooling-logo-110x80.jpg]]></image>
+      <version>2.0.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[EclipseGuru]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://groups.google.com/group/gwt-tooling/]]></supporturl>
+      <updateurl><![CDATA[http://eclipseguru.org/]]></updateurl>
+<ius>
+<iu>org.eclipseguru.gwt</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

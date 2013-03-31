@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1090" name="MercurialEclipse (was: HgEclipse)" url="http://marketplace.eclipse.org/content/mercurialeclipse-was-hgeclipse">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='26' name='SCM' url='http://marketplace.eclipse.org/taxonomy/term/26'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+      </categories>
+      <tags>
+        <tag id='166' name='mercurial' url='http://marketplace.eclipse.org/category/free-tagging/mercurial'/>
+        <tag id='167' name='distributed version control' url='http://marketplace.eclipse.org/category/free-tagging/distributed-version-control'/>
+        <tag id='168' name='distributed version control system' url='http://marketplace.eclipse.org/category/free-tagging/distributed-version-control-system'/>
+        <tag id='169' name='dvcs' url='http://marketplace.eclipse.org/category/free-tagging/dvcs'/>
+        <tag id='170' name='hg' url='http://marketplace.eclipse.org/category/free-tagging/hg'/>
+      </tags>
+      
+      <owner>Intland Software</owner>
+      <favorited>76</favorited>
+      <installstotal>35593</installstotal>
+      <installsrecent>607</installsrecent>
+      <shortdescription><![CDATA[<p>HgEclipse is a plugin providing support for the highly popular Mercurial distributed version control system within the Eclipse IDE.</p>
+<p>HgEclipse supports:</p>
+<ul><li>cloning repositories and importing them as Eclipse projects
+</li><li>push, pull and convenient syncronization
+</li><li>working with branches (branch, merge and rebase)
+</li><li>tags
+</li><li>undo (backout, rollback and strip)
+</li><li>diffs
+</li><li>histories
+</li><li>patches
+</li><li>Mercurial extensions (mqueue, transplant and such)
+</li></ul>]]></shortdescription>
+      <body><![CDATA[<p>HgEclipse is a plugin providing support for the highly popular Mercurial distributed version control system within the Eclipse IDE.</p>
+<p>HgEclipse supports:</p>
+<ul><li>cloning repositories and importing them as Eclipse projects
+</li><li>push, pull and convenient syncronization
+</li><li>working with branches (branch, merge and rebase)
+</li><li>tags
+</li><li>undo (backout, rollback and strip)
+</li><li>diffs
+</li><li>histories
+</li><li>patches
+</li><li>Mercurial extensions (mqueue, transplant and such)
+</li></ul>]]></body>
+      <created>1260879848</created>
+      <changed>1354218657</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://javaforge.com/project/HGE]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/hgeclipse-logo.jpg?itok=ZQHignS6]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/history.jpg?itok=FI5XO7TX]]></screenshot>
+      <version>1.8</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Intland Software]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4.x or newer]]></eclipseversion>
+      <supporturl><![CDATA[http://www.javaforge.com/project/HGE/tracker]]></supporturl>
+      <updateurl><![CDATA[http://cbes.javaforge.com/update]]></updateurl>
+<ius>
+<iu>mercurialeclipse</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

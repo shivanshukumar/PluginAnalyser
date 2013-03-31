@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="41889" name="Split Editor Plug-in" url="http://marketplace.eclipse.org/content/split-editor-plug">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+      <tags>
+        <tag id='146' name='editor' url='http://marketplace.eclipse.org/category/free-tagging/editor'/>
+        <tag id='327' name='eclipse' url='http://marketplace.eclipse.org/category/free-tagging/eclipse'/>
+        <tag id='1819' name='Split' url='http://marketplace.eclipse.org/category/free-tagging/split'/>
+        <tag id='2394' name='sandipchitale' url='http://marketplace.eclipse.org/category/free-tagging/sandipchitale'/>
+      </tags>
+      
+      <owner>Sandip Chitale</owner>
+      <favorited>10</favorited>
+      <installstotal>1224</installstotal>
+      <installsrecent>56</installsrecent>
+      <shortdescription><![CDATA[<p>This small plug-in allows you to split the selected editor horizontally or vertically with a single click. You may also create suitable keybindings using the General > Keys preferences page. The dropdown menu allows splitting with other editors in the stack.</p>
+<p>Changes:</p>
+<p>- Position the toolbar at the end of the Coolbar</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This small plug-in allows you to split the selected editor horizontally or vertically with a single click. You may also create suitable keybindings using the General > Keys preferences page. The dropdown menu allows splitting with other editors in the stack.</p>
+<p>Changes:</p>
+<p>- Position the toolbar at the end of the Coolbar</p>
+]]></body>
+      <created>1301550707</created>
+      <changed>1354423966</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://sandipchitale.blogspot.com/2011/03/one-click-editor-splitting-in-eclipse.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/spliteditortoolbar_0.png?itok=CxZgIYat]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/SplitEditor_0.png?itok=j9mbVyk4]]></screenshot>
+      <version>1.0.7</version>
+      <license>BSD</license>
+      <companyname><![CDATA[Sandip Chitale]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.4,3.5,3.6,3.7M6]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/sandipchitaleseclipseplugins/issues/list]]></supporturl>
+      <updateurl><![CDATA[http://sandipchitaleseclipseplugins.googlecode.com/svn/trunk/SplitEditorFeatureUpdateSite]]></updateurl>
+<ius>
+<iu>SplitEditorFeature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

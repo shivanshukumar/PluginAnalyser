@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1231" name="Advanced Methods Search" url="http://marketplace.eclipse.org/content/advanced-methods-search">
+      <type>resource</type>
+      <categories>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='40' name='Search' url='http://marketplace.eclipse.org/category/categories/search'/>
+        <category id='1964' name='Application Development Frameworks' url='http://marketplace.eclipse.org/category/categories/application-development-frameworks'/>
+      </categories>
+      <tags>
+        <tag id='2095' name='methods reuse' url='http://marketplace.eclipse.org/category/free-tagging/methods-reuse'/>
+        <tag id='2096' name='API search' url='http://marketplace.eclipse.org/category/free-tagging/api-search'/>
+        <tag id='2101' name='Navigating through the API jungle' url='http://marketplace.eclipse.org/category/free-tagging/navigating-through-api-jungle'/>
+      </tags>
+      
+      <owner>Daniel Ratiu</owner>
+      <favorited>5</favorited>
+      <installstotal>242</installstotal>
+      <installsrecent>7</installsrecent>
+      <shortdescription><![CDATA[<p>Search methods and chains of methods both in the Java and Scala sources as well as in the JARs loaded in the workspace based on their names, on their parameters (names and types), and on their return types. Enable programmers to navigate through the API jungle by incrementally navigating from a source object to a target object. This is an extension of the searching capabilities provided by eclipse JDT.</p>
+<p>Typical advanced searches address questions like:</p>
+<ul><li> I have an object representing a 'name', and I need an object  representing a 'file'. Give me all methods that take 'names' as one of their parameters and return 'files'.</li>
+<li> Give me methods chains of length N that lead me from a 'fileName' to an InputStream -- e.g. new FileInputStream(new File(fileName))</li>
+<li> Give me all methods that return objects of type 'IJavaProject'.</li>
+<li> Give me all static methods that return objects of type 'IWorkspace'.</li>
+</ul><p>Any feedback is highly welcomed! (<a href="mailto:ratiud@googlemail.com">ratiud@googlemail.com</a>)</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Search methods and chains of methods both in the Java and Scala sources as well as in the JARs loaded in the workspace based on their names, on their parameters (names and types), and on their return types. Enable programmers to navigate through the API jungle by incrementally navigating from a source object to a target object. This is an extension of the searching capabilities provided by eclipse JDT.</p>
+<p>Typical advanced searches address questions like:</p>
+<ul><li> I have an object representing a 'name', and I need an object  representing a 'file'. Give me all methods that take 'names' as one of their parameters and return 'files'.</li>
+<li> Give me methods chains of length N that lead me from a 'fileName' to an InputStream -- e.g. new FileInputStream(new File(fileName))</li>
+<li> Give me all methods that return objects of type 'IJavaProject'.</li>
+<li> Give me all static methods that return objects of type 'IWorkspace'.</li>
+</ul><p>Any feedback is highly welcomed! (<a href="mailto:ratiud@googlemail.com">ratiud@googlemail.com</a>)</p>
+]]></body>
+      <created>1275583892</created>
+      <changed>1313929345</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://www.assembla.com/spaces/iAnalyze/wiki]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Magnifier3.png?itok=0G5LhVwm]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/search.png?itok=NqyRJ6iR]]></screenshot>
+      <version>2.2</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Technische Universität München]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[Indigo, Helios]]></eclipseversion>
+      <supporturl><![CDATA[https://www.assembla.com/spaces/iAnalyze/wiki]]></supporturl>
+      <updateurl><![CDATA[http://www4.in.tum.de/~ratiu/software/eclipse_update/]]></updateurl>
+<ius>
+<iu>org.ian.methods_search.feature</iu>
+<iu>org.ian.scala.feature</iu>
+<iu>org.ian.ajdt.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

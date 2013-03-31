@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="53426" name="Turmeric SOA  - Eclipse Extras" url="http://marketplace.eclipse.org/content/turmeric-soa-eclipse-extras">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='21' name='Web Services' url='http://marketplace.eclipse.org/taxonomy/term/21'/>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+      </categories>
+      <tags>
+        <tag id='375' name='Web Services' url='http://marketplace.eclipse.org/category/free-tagging/web-services'/>
+        <tag id='509' name='SOA' url='http://marketplace.eclipse.org/category/free-tagging/soa'/>
+        <tag id='870' name='XML Schema' url='http://marketplace.eclipse.org/category/free-tagging/xml-schema'/>
+        <tag id='1912' name='Turmeric' url='http://marketplace.eclipse.org/category/free-tagging/turmeric'/>
+      </tags>
+      
+      <owner>Dave Carver</owner>
+      <favorited>1</favorited>
+      <installstotal>159</installstotal>
+      <installsrecent>11</installsrecent>
+      <shortdescription><![CDATA[<p>This feature adds additional editing support for the eBay Open Source <a href="https://www.ebayopensource.org/index.php/Turmeric/HomePage">Turmeric SOA</a> project's configuration files. Additonal support includes:</p>
+<p>* Content Assistance for all Configuration files, including GlobalServiceConfig, ServiceConfig, TypeLibraries, and ErrorLibrary.<br />
+* Hover Help with documentation for most elements.<br />
+* Makes a XML Catalog entry available to the WTP XML Catalog.</p>
+<p>Future work will provide more support for pipeline configuration, transport and service level handlers.</p>
+<p>The project is looking for contributions, please feel free to fork the project on github.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This feature adds additional editing support for the eBay Open Source <a href="https://www.ebayopensource.org/index.php/Turmeric/HomePage">Turmeric SOA</a> project's configuration files. Additonal support includes:</p>
+<p>* Content Assistance for all Configuration files, including GlobalServiceConfig, ServiceConfig, TypeLibraries, and ErrorLibrary.<br />
+* Hover Help with documentation for most elements.<br />
+* Makes a XML Catalog entry available to the WTP XML Catalog.</p>
+<p>Future work will provide more support for pipeline configuration, transport and service level handlers.</p>
+<p>The project is looking for contributions, please feel free to fork the project on github.</p>
+]]></body>
+      <created>1305396654</created>
+      <changed>1305579440</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://github.com/kingargyle/turmeric-eclipse-extras]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Silicon Software]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[https://github.com/kingargyle/turmeric-eclipse-extras]]></supporturl>
+      <updateurl><![CDATA[http://kingargyle.github.com/p2/turmeric-eclipse-extras/]]></updateurl>
+<ius>
+<iu>com.github.turmeric.eclipse.extras.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

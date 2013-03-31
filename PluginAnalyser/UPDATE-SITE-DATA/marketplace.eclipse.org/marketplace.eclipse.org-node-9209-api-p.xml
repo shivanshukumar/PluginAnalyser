@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="9209" name="P4Eclipse" url="http://marketplace.eclipse.org/content/p4eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='38' name='Mylyn Connectors' url='http://marketplace.eclipse.org/category/categories/mylyn-connectors'/>
+        <category id='26' name='SCM' url='http://marketplace.eclipse.org/taxonomy/term/26'/>
+      </categories>
+      <tags>
+        <tag id='98' name='perforce' url='http://marketplace.eclipse.org/category/free-tagging/perforce'/>
+      </tags>
+      
+      <owner>Doris Wong</owner>
+      <favorited>10</favorited>
+      <installstotal>10207</installstotal>
+      <installsrecent>841</installsrecent>
+      <shortdescription><![CDATA[<p>New in P4Eclipse 2012.3 is support for Eclipse 3.7, 3.8 and 4.2 with Perforce Streams and P4Sandbox, and the Mylyn 3.8 task management system.</p>
+<p>P4Eclipse, the Perforce Plug-in for Eclipse, seamlessly integrates the strengths of Perforce's software version management system with Eclipse's powerful IDE. Implemented as a pure Java solution, P4Eclipse provides a developer-oriented set of features from within the Eclipse Team framework that support a wide range of Agile and traditional development workflows.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>New in P4Eclipse 2012.3 is support for Eclipse 3.7, 3.8 and 4.2 with Perforce Streams and P4Sandbox, and the Mylyn 3.8 task management system.</p>
+<p>P4Eclipse, the Perforce Plug-in for Eclipse, seamlessly integrates the strengths of Perforce's software version management system with Eclipse's powerful IDE. Implemented as a pure Java solution, P4Eclipse provides a developer-oriented set of features from within the Eclipse Team framework that support a wide range of Agile and traditional development workflows.</p>
+]]></body>
+      <created>1283354708</created>
+      <changed>1349875583</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.perforce.com/eclipse]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/p4_icon.png?itok=ySm6_puz]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/p4eclipse.png?itok=YwLJE10g]]></screenshot>
+      <version>2012.3</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[Perforce Software]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[4.2, 3.8, 3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://www.perforce.com/support]]></supporturl>
+      <updateurl><![CDATA[http://www.perforce.com/downloads/http/p4-eclipse/install/4.2]]></updateurl>
+<ius>
+<iu>com.perforce.team.feature</iu>
+<iu>com.perforce.team.c.galileo.feature</iu>
+<iu>com.perforce.team.charts.feature</iu>
+<iu>com.perforce.team.folder.feature</iu>
+<iu>com.perforce.team.java.galileo.feature</iu>
+<iu>com.perforce.team.mergequest.feature</iu>
+<iu>com.perforce.team.mylyn.feature</iu>
+<iu>com.perforce.team.patch.feature</iu>
+<iu>com.perforce.team.search.feature</iu>
+<iu>com.perforce.team.python.helios.feature</iu>
+<iu>com.perforce.team.ruby.helios.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

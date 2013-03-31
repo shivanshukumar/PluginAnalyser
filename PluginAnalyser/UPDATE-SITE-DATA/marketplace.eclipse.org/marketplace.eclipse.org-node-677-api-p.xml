@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="677" name="SWTBot" url="http://marketplace.eclipse.org/content/swtbot">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+      </categories>
+      <tags>
+        <tag id='192' name='testing' url='http://marketplace.eclipse.org/category/free-tagging/testing'/>
+        <tag id='199' name='Test Driven Development' url='http://marketplace.eclipse.org/category/free-tagging/test-driven-development'/>
+        <tag id='340' name='GUI Testing' url='http://marketplace.eclipse.org/category/free-tagging/gui-testing'/>
+        <tag id='341' name='SWT UI Testing' url='http://marketplace.eclipse.org/category/free-tagging/swt-ui-testing'/>
+      </tags>
+      
+      <owner>Ketan Padegaonkar</owner>
+      <favorited>11</favorited>
+      <installstotal>1292</installstotal>
+      <installsrecent>45</installsrecent>
+      <shortdescription><![CDATA[<p>SWTBot is a UI testing tool for testing SWT and Eclipse applications. It provides a simple and extensible API that is very easy to read and manage.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>SWTBot is a UI testing tool for testing SWT and Eclipse applications. It provides a simple and extensible API that is very easy to read and manage.</p>
+]]></body>
+      <created>1207773310</created>
+      <changed>1270660041</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://eclipse.org/swtbot]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>2.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Ketan Padegaonkar]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[>= 3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://wiki.eclipse.org/SWTBot/Support]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/technology/swtbot/galileo/dev-build/update-site]]></updateurl>
+<ius>
+<iu>org.eclipse.swtbot</iu>
+<iu>org.eclipse.swtbot.eclipse</iu>
+<iu>org.eclipse.swtbot.eclipse.gef</iu>
+<iu>org.eclipse.swtbot.eclipse.test.junit3</iu>
+<iu>org.eclipse.swtbot.eclipse.test.junit4</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

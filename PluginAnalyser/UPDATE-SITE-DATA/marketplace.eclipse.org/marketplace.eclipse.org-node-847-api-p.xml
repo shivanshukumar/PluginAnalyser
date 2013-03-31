@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="847" name="Amazon WS Tools" url="http://marketplace.eclipse.org/content/amazon-ws-tools">
+      <type>resource</type>
+      <categories>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+      </categories>
+            
+      <owner>bbuffone</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><p>Amazon WS Tools allows IT administrations and developers to configure Amazon Cloud services through an easy to use GUI. Plugged directly into Eclipse or Aptana, developers can access the "Amazon WebService Perspective"</p></p>
+<p><p>jsLex's set of Eclipse views will give everyone the ability to work with the cloud environment by providing a set of professional tools that make managing the cloud simple; minimizing mistakes and speeding up use.</p></p>
+<p><p>Amazon Services that can be configured using the Amazon Services Management Tools are the following:</p></p>
+<p><ul><br />
+    <li>CloudFront</li><br />
+    <li>Simple DB</li><br />
+    <li>Simple Storage Service (S3)</li><br />
+    <li>Simple Queue Service (SQS)</li><br />
+    <li>Elastic Compute Cloud (3C2)</li><br />
+</ul></p>
+<p><p>Each Amazon Web Sevices has a corresponding view, editors and actions that make it easy to configure the service. </p></p>
+]]></shortdescription>
+      <body><![CDATA[<p><p>Amazon WS Tools allows IT administrations and developers to configure Amazon Cloud services through an easy to use GUI. Plugged directly into Eclipse or Aptana, developers can access the "Amazon WebService Perspective"</p></p>
+<p><p>jsLex's set of Eclipse views will give everyone the ability to work with the cloud environment by providing a set of professional tools that make managing the cloud simple; minimizing mistakes and speeding up use.</p></p>
+<p><p>Amazon Services that can be configured using the Amazon Services Management Tools are the following:</p></p>
+<p><ul><br />
+    <li>CloudFront</li><br />
+    <li>Simple DB</li><br />
+    <li>Simple Storage Service (S3)</li><br />
+    <li>Simple Queue Service (SQS)</li><br />
+    <li>Elastic Compute Cloud (3C2)</li><br />
+</ul></p>
+<p><p>Each Amazon Web Sevices has a corresponding view, editors and actions that make it easy to configure the service. </p></p>
+]]></body>
+      <created>1232649394</created>
+      <changed>1259779161</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.rockstarapps.com]]></homepageurl>
+      <image><![CDATA[http://cdn.rockstarapps.com/resources/images/amazon/amazonws-tools-small.jpg]]></image>
+      <version>1.2.11</version>
+      <license>Other</license>
+      <companyname><![CDATA[Rockstarapps.com]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.2+]]></eclipseversion>
+      <supporturl><![CDATA[http://www.rockstarapps.com/joomla-1.5.8/support/getting-help.html]]></supporturl>
+      <updateurl><![CDATA[http://www.rockstarapps.com/update-beta]]></updateurl>
+    </node>
+    </marketplace>
+    

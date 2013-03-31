@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="127456" name="BPMN Designer (Indigo version)" url="http://marketplace.eclipse.org/content/bpmn-designer-indigo-version">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+        <category id='30' name='Process' url='http://marketplace.eclipse.org/taxonomy/term/30'/>
+        <category id='1965' name='SOA Development' url='http://marketplace.eclipse.org/category/categories/soa-development'/>
+        <category id='1971' name='Modeling' url='http://marketplace.eclipse.org/category/categories/modeling'/>
+      </categories>
+      <tags>
+        <tag id='173' name='BPMN' url='http://marketplace.eclipse.org/category/free-tagging/bpmn'/>
+        <tag id='509' name='SOA' url='http://marketplace.eclipse.org/category/free-tagging/soa'/>
+        <tag id='1922' name='business process' url='http://marketplace.eclipse.org/category/free-tagging/business-process'/>
+        <tag id='2239' name='BPMN Designer' url='http://marketplace.eclipse.org/category/free-tagging/bpmn-designer'/>
+      </tags>
+      
+      <owner>Obeo  </owner>
+      <favorited>2</favorited>
+      <installstotal>654</installstotal>
+      <installsrecent>111</installsrecent>
+      <shortdescription><![CDATA[<p>BPMN is a language to describe Business Process.<br />
+The primary goal of BPMN is to provide a standard notation that is readily understandable by all business stakeholders. These business stakeholders include the business analysts who create and refine the processes, the technical developers responsible for implementing the processes, and the business managers who monitor and manage the processes. Consequently, BPMN is intended to serve as common language to bridge the communication gap that frequently occurs between business process design and implementation.<br />
+More info are available on <a href="http://en.wikipedia.org/wiki/Business_Process_Model_and_Notation">Wikipedia</a>.</p>
+<p>BPMN Designer is compatible with the version 2.0 of the OMG standard "Business Process Model and Notation".<br />
+It's based on the BPMN Domain Model of Eclipse Modeling <a href="http://www.eclipse.org/modeling/mdt/?project=bpmn2">MDT project</a>.</p>
+<p>The four basic categories of elements provides by the Business Process Diagram (BPD) of this Designer are as follows:</p>
+<ul><li>Flow Objects:  Events, Activities, Gateways </li>
+<li>Connecting Objects: Sequence Flow, Message Flow, Association </li>
+<li>Swim lanes:  Pool, Lane </li>
+<li>Artifacts:  Data Object, Group, Annotation </li>
+</ul><p><a href="http://marketplace.obeonetwork.com/module/bpmn"></a></p>
+<p>This designer is free (open-source with EPL license).<br />
+You can easily modify it with <a href="http://www.obeodesigner.com">Obeo Designer</a> <strong>to adapt each diagram to your needs</strong> or combine it to your own DSL. To start customizing this module, just <a href="http://www.obeodesigner.com/download">download a free trial version</a> of the architect edition and import the <a href="http://marketplace.obeonetwork.com/module/bpmn">source code</a> of  BPMN Designer from Github.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>BPMN is a language to describe Business Process.<br />
+The primary goal of BPMN is to provide a standard notation that is readily understandable by all business stakeholders. These business stakeholders include the business analysts who create and refine the processes, the technical developers responsible for implementing the processes, and the business managers who monitor and manage the processes. Consequently, BPMN is intended to serve as common language to bridge the communication gap that frequently occurs between business process design and implementation.<br />
+More info are available on <a href="http://en.wikipedia.org/wiki/Business_Process_Model_and_Notation">Wikipedia</a>.</p>
+<p>BPMN Designer is compatible with the version 2.0 of the OMG standard "Business Process Model and Notation".<br />
+It's based on the BPMN Domain Model of Eclipse Modeling <a href="http://www.eclipse.org/modeling/mdt/?project=bpmn2">MDT project</a>.</p>
+<p>The four basic categories of elements provides by the Business Process Diagram (BPD) of this Designer are as follows:</p>
+<ul><li>Flow Objects:  Events, Activities, Gateways </li>
+<li>Connecting Objects: Sequence Flow, Message Flow, Association </li>
+<li>Swim lanes:  Pool, Lane </li>
+<li>Artifacts:  Data Object, Group, Annotation </li>
+</ul><p><a href="http://marketplace.obeonetwork.com/module/bpmn"></a></p>
+<p>This designer is free (open-source with EPL license).<br />
+You can easily modify it with <a href="http://www.obeodesigner.com">Obeo Designer</a> <strong>to adapt each diagram to your needs</strong> or combine it to your own DSL. To start customizing this module, just <a href="http://www.obeodesigner.com/download">download a free trial version</a> of the architect edition and import the <a href="http://marketplace.obeonetwork.com/module/bpmn">source code</a> of  BPMN Designer from Github.</p>
+]]></body>
+      <created>1317287500</created>
+      <changed>1344496333</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://marketplace.obeonetwork.com/module/bpmn]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_ON-110x80_6.png?itok=t3OdpVEf]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/bpmn2-sample1.png?itok=_7LoyslT]]></screenshot>
+      <version>1.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Obeo]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://marketplace.obeonetwork.com/module/bpmn#community]]></supporturl>
+      <updateurl><![CDATA[http://marketplace.obeonetwork.com/updates/od6/]]></updateurl>
+<ius>
+<iu>org.obeonetwork.dsl.bpmn2.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

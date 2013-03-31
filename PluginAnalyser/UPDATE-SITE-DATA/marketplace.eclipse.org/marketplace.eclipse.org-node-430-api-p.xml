@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="430" name="ExploreFS" url="http://marketplace.eclipse.org/content/explorefs">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='328' name='plugin' url='http://marketplace.eclipse.org/category/free-tagging/plugin'/>
+        <tag id='1190' name='Explore' url='http://marketplace.eclipse.org/category/free-tagging/explore'/>
+        <tag id='2180' name='Finder' url='http://marketplace.eclipse.org/category/free-tagging/finder'/>
+      </tags>
+      
+      <owner>Markus Junginger</owner>
+      <favorited>39</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The only purpose of this tiny plugin (6K) is to open the folder in the native file manager containing the selected resource.  It adds "Open in File System" to the context menu of package explorer, resource navigator and any other view showing files or Java classes. It also finds the containing Jar file for classes. Windows, Mac OS X, and Linux are supported.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The only purpose of this tiny plugin (6K) is to open the folder in the native file manager containing the selected resource.  It adds "Open in File System" to the context menu of package explorer, resource navigator and any other view showing files or Java classes. It also finds the containing Jar file for classes. Windows, Mac OS X, and Linux are supported.</p>
+]]></body>
+      <created>1175496201</created>
+      <changed>1260918991</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://junginger.biz/eclipse/]]></homepageurl>
+      <image><![CDATA[http://www.junginger.biz/eclipse/ExploreFS-110x80.gif]]></image>
+      <version>1.0.0</version>
+      <license>Other</license>
+      <companyname><![CDATA[Markus Junginger]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2+]]></eclipseversion>
+      <supporturl><![CDATA[http://junginger.biz/eclipse/]]></supporturl>
+      <updateurl><![CDATA[http://junginger.biz/eclipse/]]></updateurl>
+    </node>
+    </marketplace>
+    

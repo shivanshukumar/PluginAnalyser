@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="678" name="Bytecode Visualizer" url="http://marketplace.eclipse.org/content/bytecode-visualizer">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='125' name='bytecode' url='http://marketplace.eclipse.org/category/free-tagging/bytecode'/>
+        <tag id='126' name='decompiler' url='http://marketplace.eclipse.org/category/free-tagging/decompiler'/>
+        <tag id='309' name='debugger' url='http://marketplace.eclipse.org/category/free-tagging/debugger'/>
+        <tag id='310' name='control flow graph' url='http://marketplace.eclipse.org/category/free-tagging/control-flow-graph'/>
+      </tags>
+      
+      <owner>Sergej Alekseev</owner>
+      <favorited>20</favorited>
+      <installstotal>3530</installstotal>
+      <installsrecent>315</installsrecent>
+      <shortdescription><![CDATA[<p><b>Bytecode Visualizer</b> is a tool used for visualizing and debugging Java byte code.<br />
+Features Overview:</p>
+<p><b>Bytecode Viewer</b></p>
+<ul><li>Signatures of classes, fields and methods rendered as in java source</li>
+<li>The opcodes of instructions represented by their mnemonics as specified in The Java Virtual Machine Specification</li>
+<li>Comments making it easy to understand the instructions and their parameters</li>
+<li>Easy-to-follow scope of exception handlers</li>
+<li>Line Number Table and Local Variable Table as a comment</li>
+<li>Two tabs for easy switching between bytecode and source code</li>
+</ul><p><b>Control Flow Graph</b> is drawn alongside of the bytecode, which helps to understand the execution paths of the given method.</p>
+<p><b>Class File Outline</b> is both ways synchronized with the Bytecode Viewer: by clicking the method in outline, the viewer scrolls to the given method and vice versa.</p>
+<p><b>Bytecode Debugger</b> for Instruction-by-Instruction debugging.</p>
+<ul><li>Breakpoints can be set by double clicking the left ruler of</li>
+<li>Works even for classes without Line Number Table</li>
+<li>Single Instruction Step is unique to this product</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p><b>Bytecode Visualizer</b> is a tool used for visualizing and debugging Java byte code.<br />
+Features Overview:</p>
+<p><b>Bytecode Viewer</b></p>
+<ul><li>Signatures of classes, fields and methods rendered as in java source</li>
+<li>The opcodes of instructions represented by their mnemonics as specified in The Java Virtual Machine Specification</li>
+<li>Comments making it easy to understand the instructions and their parameters</li>
+<li>Easy-to-follow scope of exception handlers</li>
+<li>Line Number Table and Local Variable Table as a comment</li>
+<li>Two tabs for easy switching between bytecode and source code</li>
+</ul><p><b>Control Flow Graph</b> is drawn alongside of the bytecode, which helps to understand the execution paths of the given method.</p>
+<p><b>Class File Outline</b> is both ways synchronized with the Bytecode Viewer: by clicking the method in outline, the viewer scrolls to the given method and vice versa.</p>
+<p><b>Bytecode Debugger</b> for Instruction-by-Instruction debugging.</p>
+<ul><li>Breakpoints can be set by double clicking the left ruler of</li>
+<li>Works even for classes without Line Number Table</li>
+<li>Single Instruction Step is unique to this product</li>
+</ul>]]></body>
+      <created>1208180108</created>
+      <changed>1361539699</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.drgarbage.com/bytecode-visualizer.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/20090123-bytecode-visualizer-110x80.png?itok=htCVDl33]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/20090114-bytecode-debugger-448x572_0.png?itok=MZxnP5Vj]]></screenshot>
+      <version>4.2.1</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[Dr. Garbage Community]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6, 3.7 and 4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://drgarbagetools.sourceforge.net]]></supporturl>
+      <updateurl><![CDATA[http://sourceforge.net/projects/drgarbagetools/files/eclipse/4.2/stable/]]></updateurl>
+<ius>
+<iu>com.drgarbage.bytecodevisualizer</iu>
+</ius>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="831" name="ECalculator" url="http://marketplace.eclipse.org/content/ecalculator">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+      </categories>
+      <tags>
+        <tag id='153' name='math' url='http://marketplace.eclipse.org/category/free-tagging/math'/>
+        <tag id='154' name='calculator' url='http://marketplace.eclipse.org/category/free-tagging/calculator'/>
+      </tags>
+      
+      <owner>Mario Fischer</owner>
+      <favorited>5</favorited>
+      <installstotal>243</installstotal>
+      <installsrecent>8</installsrecent>
+      <shortdescription><![CDATA[<p>A scientific calculator as eclipse-plugin. </p>
+<p>Features:</p>
+<p>- NEW: Custom keyboard shortcuts<br />
+- Integrated into the eclipse workbench.<br><br />
+- Standard, scientific and trigonometric calculation.<br />
+- Display of the calculation in base-n numbers (decimal, hexadecimal, binary)<br />
+- Uses arbitrary precision where applicable.<br />
+- Memory function for a number and the last calculated result.<br />
+- Enter arithmetic expressions naturally.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>A scientific calculator as eclipse-plugin. </p>
+<p>Features:</p>
+<p>- NEW: Custom keyboard shortcuts<br />
+- Integrated into the eclipse workbench.<br><br />
+- Standard, scientific and trigonometric calculation.<br />
+- Display of the calculation in base-n numbers (decimal, hexadecimal, binary)<br />
+- Uses arbitrary precision where applicable.<br />
+- Memory function for a number and the last calculated result.<br />
+- Enter arithmetic expressions naturally.</p>
+]]></body>
+      <created>1230909851</created>
+      <changed>1273166198</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.chipwreck.de/blog/software/ecalculator/]]></homepageurl>
+      <image><![CDATA[http://www.chipwreck.de/blog/wp-content/uploads/2009/02/ecalculator-screenshot.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/ecalculator-screenshot.png?itok=i2UV5R-i]]></screenshot>
+      <version>1.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Mario Fischer]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.1+]]></eclipseversion>
+      <supporturl><![CDATA[http://www.chipwreck.de/blog/software/ecalculator/]]></supporturl>
+      <updateurl><![CDATA[http://www.chipwreck.de/update/]]></updateurl>
+<ius>
+<iu>ECalculator.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

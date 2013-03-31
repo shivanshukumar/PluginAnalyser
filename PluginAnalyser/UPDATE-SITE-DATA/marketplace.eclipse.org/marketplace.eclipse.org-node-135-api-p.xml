@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="135" name="CodePro AnalytiX" url="http://marketplace.eclipse.org/content/codepro-analytix">
+      <type>resource</type>
+      <categories>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='1208' name='Static Code Analysis; Code Analyzer; Code Quality and Security Analysis; Instantiations; Google' url='http://marketplace.eclipse.org/category/free-tagging/static-code-analysis-code-analyzer-code-quality-and-security-analysis-instant-0'/>
+      </tags>
+      
+      <owner>Mark Johnson</owner>
+      <favorited>53</favorited>
+      <installstotal>69</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong>CodePro AnalytiX is now offered as a free download by Google. Please stay tuned for exciting new announcements coming soon on the Google Web Toolkit blog <a href="http://googlewebtoolkit.blogspot.com/">http://googlewebtoolkit.blogspot.com/</a>.</strong></span></p>
+<p>To opt-in to receive emails about CodePro AnalytiX and other Google Developer Tools, please visit <a href="http://code.google.com/webtoolkit/tools/optin.html">http://code.google.com/webtoolkit/tools/optin.html</a>.</p>
+<p>CodePro AnalytiX: Java Code Quality and Security Analyisis<br />
+			CodePro AnalytiX is the premier Java software testing tool for Eclipse developers who want to be active participants in improving the quality and security of the code they produce. CodePro AnalytiX seamlessly integrates into the Eclipse environment, using automated source code analysis to pinpoint quality issues and security vulnerabilities before code reaches QA, or worse, production! </p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">Helping developers reduce errors and decrease security vulnerabilities as they create code, CodePro AnalytiX offers concrete recommendations for fixing most issues. Discover why professional developers have chosen CodePro AnalytiX as the most useful, comprehensive, and easy-to-use Eclipse Java code review tool available. </span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">Deploy CodePro AnalytiX on developer desktops and/or seamlessly integrate it into a continuous or nightly software build system, ensuring high software quality throughout the development process.</span></p>
+<p></p>
+<p></p>
+
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong><span style="TEXT-DECORATION: underline">WHAT'S NEW</span><br /></strong>The latest version of CodePro AnalytiX offers support for Eclipse 3.6 and addresses a variety of items to enhance usability.</span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong><span style="TEXT-DECORATION: underline">FEATURES</span></strong></span></span></p>
+<ul><li><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong><span style="TEXT-DECORATION: underline"></span></strong></span></span><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">Static code analysis (1200+ audit rules, including 225 security audit rules to detect security vulnerabilities)</span> </li>
+<li><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">Defect detection, repair and reporting</span> </li>
+<li><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"></span><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">Auditing for Java, JSP, JSF, Struts, Hibernate and XML</span> </li>
+<li><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"></span><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">Advanced audit filtering</span> </li>
+<li><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"></span><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">Define, distribute and enforce quality standards across development teams with integrated team collaboration</span> </li>
+<li><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"></span><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">Automated JUnit test generation for both JUnit 3 and JUnit 4</span> </li>
+<li><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"></span><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">Mock Objects support</span> </li>
+<li><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"></span><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">JUnit Testing for Spring, Struts, JSF and EJB frameworks</span> </li>
+<li><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"></span><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">JUnit test editor</span> </li>
+<li><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"></span><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">Analysis and reporting for duplicate code, dead code and dependencies</span> </li>
+<li><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"></span><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">Code metrics with drilldown & triggers</span> </li>
+<li><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"></span><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">Code coverage analysis</span> </li>
+<li><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"></span><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">Powerful management reporting</span> </li>
+<li><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">Seamless integration with Eclipse, Rational, WebSphere and MyEclipse; supports Rational Application Developer v7.5</span> </li>
+</ul><p><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong><span style="TEXT-DECORATION: underline">ACKNOWLEDGEMENTS</span><br /></strong></span></span><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">"SAS has used Instantiations products for several years now and we have always been very pleased with the products themselves as well as the support that we have received. Instantiations is a world-class organization. Because our software is used to drive key business decisions, it's critical that we deliver high-quality software, and implementing CodePro AnalytiX has allowed us to automate the process of enforcing programming standards and best practices." <br />
+				--Rich Main, Director, Business Intelligence Reporting, SAS.</span></span></p>
+<p></p>]]></shortdescription>
+      <body><![CDATA[<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong>CodePro AnalytiX is now offered as a free download by Google. Please stay tuned for exciting new announcements coming soon on the Google Web Toolkit blog <a href="http://googlewebtoolkit.blogspot.com/">http://googlewebtoolkit.blogspot.com/</a>.</strong></span></p>
+<p>To opt-in to receive emails about CodePro AnalytiX and other Google Developer Tools, please visit <a href="http://code.google.com/webtoolkit/tools/optin.html">http://code.google.com/webtoolkit/tools/optin.html</a>.</p>
+<p>CodePro AnalytiX: Java Code Quality and Security Analyisis<br />
+			CodePro AnalytiX is the premier Java software testing tool for Eclipse developers who want to be active participants in improving the quality and security of the code they produce. CodePro AnalytiX seamlessly integrates into the Eclipse environment, using automated source code analysis to pinpoint quality issues and security vulnerabilities before code reaches QA, or worse, production! </p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">Helping developers reduce errors and decrease security vulnerabilities as they create code, CodePro AnalytiX offers concrete recommendations for fixing most issues. Discover why professional developers have chosen CodePro AnalytiX as the most useful, comprehensive, and easy-to-use Eclipse Java code review tool available. </span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">Deploy CodePro AnalytiX on developer desktops and/or seamlessly integrate it into a continuous or nightly software build system, ensuring high software quality throughout the development process.</span></p>
+<p></p>
+<p></p>
+
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong><span style="TEXT-DECORATION: underline">WHAT'S NEW</span><br /></strong>The latest version of CodePro AnalytiX offers support for Eclipse 3.6 and addresses a variety of items to enhance usability.</span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong><span style="TEXT-DECORATION: underline">FEATURES</span></strong></span></span></p>
+<ul><li><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong><span style="TEXT-DECORATION: underline"></span></strong></span></span><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">Static code analysis (1200+ audit rules, including 225 security audit rules to detect security vulnerabilities)</span> </li>
+<li><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">Defect detection, repair and reporting</span> </li>
+<li><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"></span><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">Auditing for Java, JSP, JSF, Struts, Hibernate and XML</span> </li>
+<li><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"></span><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">Advanced audit filtering</span> </li>
+<li><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"></span><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">Define, distribute and enforce quality standards across development teams with integrated team collaboration</span> </li>
+<li><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"></span><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">Automated JUnit test generation for both JUnit 3 and JUnit 4</span> </li>
+<li><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"></span><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">Mock Objects support</span> </li>
+<li><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"></span><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">JUnit Testing for Spring, Struts, JSF and EJB frameworks</span> </li>
+<li><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"></span><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">JUnit test editor</span> </li>
+<li><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"></span><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">Analysis and reporting for duplicate code, dead code and dependencies</span> </li>
+<li><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"></span><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">Code metrics with drilldown & triggers</span> </li>
+<li><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"></span><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">Code coverage analysis</span> </li>
+<li><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"></span><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">Powerful management reporting</span> </li>
+<li><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt">Seamless integration with Eclipse, Rational, WebSphere and MyEclipse; supports Rational Application Developer v7.5</span> </li>
+</ul><p><span style="FONT-FAMILY: Verdana; COLOR: #000000; FONT-SIZE: 10pt"><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong><span style="TEXT-DECORATION: underline">ACKNOWLEDGEMENTS</span><br /></strong></span></span><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">"SAS has used Instantiations products for several years now and we have always been very pleased with the products themselves as well as the support that we have received. Instantiations is a world-class organization. Because our software is used to drive key business decisions, it's critical that we deliver high-quality software, and implementing CodePro AnalytiX has allowed us to automate the process of enforcing programming standards and best practices." <br />
+				--Rich Main, Director, Business Intelligence Reporting, SAS.</span></span></p>
+<p></p>]]></body>
+      <created>1107285762</created>
+      <changed>1287167789</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/webtoolkit/tools/download-codepro.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/cpax.png?itok=kEN5eOVc]]></image>
+      <version>7.0</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[Google Inc]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.4, 3.5 and 3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://forums.instantiations.com/viewforum.php?f=7]]></supporturl>
+      <updateurl><![CDATA[http://dl.google.com/eclipse/inst/codepro/latest/3.6]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="973" name="M2Spring - Agile Spring 2.5 Application Generator" url="http://marketplace.eclipse.org/content/m2spring-agile-spring-25-application-generator">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+            
+      <owner>Harold Licari</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Building Spring Enterprise applications is now easier and faster than ever. With M2Spring™, experience the perfect combination of best of breed Model Driven technologies, MagicDraw™ UML® and BLU AGE® Agile Model Transformation, and dramatically enhance your productivity by easily modeling and automatically generating 100% of your Spring SOA applications, with advanced teamwork features. M2Spring is offering an integrated environment for UML models' elaboration, execution and automated transformation into Spring 2.5 applications (Struts / Spring / Hibernate). The M2Spring Generator is built-on Eclipse and powered by Blu Age.<br />
+Download a free 30-days trial here: <a href="http://www.model2code.com/m2spring-download.html">http://www.model2code.com/m2spring-download.html</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Building Spring Enterprise applications is now easier and faster than ever. With M2Spring™, experience the perfect combination of best of breed Model Driven technologies, MagicDraw™ UML® and BLU AGE® Agile Model Transformation, and dramatically enhance your productivity by easily modeling and automatically generating 100% of your Spring SOA applications, with advanced teamwork features. M2Spring is offering an integrated environment for UML models' elaboration, execution and automated transformation into Spring 2.5 applications (Struts / Spring / Hibernate). The M2Spring Generator is built-on Eclipse and powered by Blu Age.<br />
+Download a free 30-days trial here: <a href="http://www.model2code.com/m2spring-download.html">http://www.model2code.com/m2spring-download.html</a></p>
+]]></body>
+      <created>1248706052</created>
+      <changed>1274285184</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.model2code.com/m2spring.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/M2Spring.PNG?itok=k_GUwEqD]]></image>
+      <version>1.4.2</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[BLU AGE CORPORATION]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4 (Ganymede)]]></eclipseversion>
+      <supporturl><![CDATA[http://www.model2code.com/support.html]]></supporturl>
+      <updateurl><![CDATA[http://www.model2code.com/m2spring-download.html]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="22448" name="Advanced Prototyping tool - Justinmind Prototyper" url="http://marketplace.eclipse.org/content/advanced-prototyping-tool-justinmind-prototyper">
+      <type>resource</type>
+      <categories>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='8' name='Graphics' url='http://marketplace.eclipse.org/taxonomy/term/8'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='30' name='Process' url='http://marketplace.eclipse.org/taxonomy/term/30'/>
+        <category id='39' name='Reporting' url='http://marketplace.eclipse.org/category/categories/reporting'/>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+      <tags>
+        <tag id='303' name='wireframes' url='http://marketplace.eclipse.org/category/free-tagging/wireframes'/>
+        <tag id='624' name='wireframe' url='http://marketplace.eclipse.org/category/free-tagging/wireframe'/>
+        <tag id='781' name='requirements' url='http://marketplace.eclipse.org/category/free-tagging/requirements'/>
+        <tag id='1418' name='Mobile apps' url='http://marketplace.eclipse.org/category/free-tagging/mobile-apps'/>
+        <tag id='1566' name='software prototypes' url='http://marketplace.eclipse.org/category/free-tagging/software-prototypes'/>
+      </tags>
+      
+      <owner>Victor Conesa</owner>
+      <favorited>15</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Awarded Best RCP Application in the Eclipse Conference 2012 awards!</p>
+<p><img class="alignright size-full wp-image-2777" style="border-image: initial; border: 1px solid black;" title="awards2012_technology_winner" src="http://blog.justinmind.com/wp-content/uploads/2012/03/awards2012_technology_winner.png" alt="" width="150" height="200" /></p>
+<p><a href="http://www.justinmind.com/downloads/wireframe_tool ">Download it here http://www.justinmind.com/downloads/wireframe_tool  .</a> Define web and mobile applications with Rich Interactive Protoypes.</p>
+<iframe src="http://player.vimeo.com/video/47995747" width="500" height="290" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe><p>
+<b>Gestures Simulation</b><br />
+Add swipe, tap-and-hold, pinch, and rotate gestures in your wireframe and even simulate responsive design.</p>
+<p><b>Rich Interactive Wireframes</b><br />
+Create rich website wireframes without a single line of code. You can add dynamic content and advanced interactions to your user interface design.<a href="http://www.justinmind.com/features/interactions">Read more</a></p>
+<p><b>Publish and Get Feedback from Users</b><br />
+Your users and customers can comment on your wireframes using web annotations, saving you the time and expense of last minute changes and rework. <a href="http://www.justinmind.com/justinmind-usernote">Read more</a></p>
+<p><b>Data Simulation</b><br />
+Simulate the real behavior of forms and datagrids using dynamic lists, searches and validations in your user interface design. <a href="http://www.justinmind.com/features/data">Read more</a></p>
+<p><b>Usability Tests</b><br />
+Carry out usability tests with your wireframes. Meet customers and users expectations creating easy-to-use applications right from the start. <a href="http://www.justinmind.com/features/test">Read more</a></p>
+<p><b>HTML and Doc Export</b><br />
+Export your interactive wireframes to HTML. You can also export specification documents to MS-Word and OpenOffice. <a href="http://www.justinmind.com/features/html-docs/">Read more</a></p>
+<p><b>Quick and Easy to Use</b><br />
+Design your wireframe dragging and dropping all the elements and interactions you need. And to experience it, just click on the “simulate” button and your prototype will be up and running. <a href="http://www.justinmind.com/features/easy/">Read more</a></p>
+<p><a href="http://www.justinmind.com/features">See more features...</a></p>
+<p><a href="http://www.justinmind.com/justinmind-usernote">Try Usernote for FREE! </a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Awarded Best RCP Application in the Eclipse Conference 2012 awards!</p>
+<p><img class="alignright size-full wp-image-2777" style="border-image: initial; border: 1px solid black;" title="awards2012_technology_winner" src="http://blog.justinmind.com/wp-content/uploads/2012/03/awards2012_technology_winner.png" alt="" width="150" height="200" /></p>
+<p><a href="http://www.justinmind.com/downloads/wireframe_tool ">Download it here http://www.justinmind.com/downloads/wireframe_tool  .</a> Define web and mobile applications with Rich Interactive Protoypes.</p>
+<iframe src="http://player.vimeo.com/video/47995747" width="500" height="290" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe><p>
+<b>Gestures Simulation</b><br />
+Add swipe, tap-and-hold, pinch, and rotate gestures in your wireframe and even simulate responsive design.</p>
+<p><b>Rich Interactive Wireframes</b><br />
+Create rich website wireframes without a single line of code. You can add dynamic content and advanced interactions to your user interface design.<a href="http://www.justinmind.com/features/interactions">Read more</a></p>
+<p><b>Publish and Get Feedback from Users</b><br />
+Your users and customers can comment on your wireframes using web annotations, saving you the time and expense of last minute changes and rework. <a href="http://www.justinmind.com/justinmind-usernote">Read more</a></p>
+<p><b>Data Simulation</b><br />
+Simulate the real behavior of forms and datagrids using dynamic lists, searches and validations in your user interface design. <a href="http://www.justinmind.com/features/data">Read more</a></p>
+<p><b>Usability Tests</b><br />
+Carry out usability tests with your wireframes. Meet customers and users expectations creating easy-to-use applications right from the start. <a href="http://www.justinmind.com/features/test">Read more</a></p>
+<p><b>HTML and Doc Export</b><br />
+Export your interactive wireframes to HTML. You can also export specification documents to MS-Word and OpenOffice. <a href="http://www.justinmind.com/features/html-docs/">Read more</a></p>
+<p><b>Quick and Easy to Use</b><br />
+Design your wireframe dragging and dropping all the elements and interactions you need. And to experience it, just click on the “simulate” button and your prototype will be up and running. <a href="http://www.justinmind.com/features/easy/">Read more</a></p>
+<p><a href="http://www.justinmind.com/features">See more features...</a></p>
+<p><a href="http://www.justinmind.com/justinmind-usernote">Try Usernote for FREE! </a></p>
+]]></body>
+      <created>1291219985</created>
+      <changed>1352304970</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.justinmind.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Group_1.png?itok=eupKavGf]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Image_2.png?itok=MRzjpbK4]]></screenshot>
+      <version>5.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Justinmind]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://support.justinmind.com]]></supporturl>
+      <updateurl><![CDATA[http://www.justinmind.com/download]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

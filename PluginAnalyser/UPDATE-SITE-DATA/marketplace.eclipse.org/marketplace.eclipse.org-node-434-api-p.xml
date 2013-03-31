@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="434" name="RSSOwl - Powerful RSS / RDF / Atom News Feed Reader with Google Reader Synchronization" url="http://marketplace.eclipse.org/content/rssowl-powerful-rss-rdf-atom-news-feed-reader-google-reader-synchronization">
+      <type>resource</type>
+      <categories>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+      </categories>
+      <tags>
+        <tag id='2115' name='rss atom rdf feed reader export import opml rdf filter search rcp google reader synchronization' url='http://marketplace.eclipse.org/category/free-tagging/rss-atom-rdf-feed-reader-export-import-opml-rdf-filter-search-rcp-google-reade'/>
+      </tags>
+      
+      <owner>Benjamin Pasero</owner>
+      <favorited>6</favorited>
+      <installstotal>477</installstotal>
+      <installsrecent>10</installsrecent>
+      <shortdescription><![CDATA[RSS Owl is a powerful application to organize, search and read all your RSS, RDF & Atom news feeds in a comfortable way. Highlights are saved searches, google reader synchronization, clean-up, notification from tray, filters, fast fulltext search and a flexible & clean user interface.
+<!--break-->
+RSSOwl 2.0 is the next major release with a lot of new and exciting features. The idea to work on a completely new RSSOwl was born back in Summer 2005. At that time it became clear to me that it was very hard to catch up with the features of other readers without redesigning everything. I teamed up with another developer (Ismael) to work on RSSOwl 2 from scratch. Our main goal is to provide a newsreader that is powerful, easy to extend and easy to use. We chose the Eclipse Rich Client Platform as framework and db4o as powerful database to store all the news. In combination with the well-known full-text search engine Lucene, we are able to give you the best experience of reading, managing and seeing through all your news. 
+
+You can use RSSOwl both as standalone application or from your Eclipse installation.]]></shortdescription>
+      <body><![CDATA[RSS Owl is a powerful application to organize, search and read all your RSS, RDF & Atom news feeds in a comfortable way. Highlights are saved searches, google reader synchronization, clean-up, notification from tray, filters, fast fulltext search and a flexible & clean user interface.
+<!--break-->
+RSSOwl 2.0 is the next major release with a lot of new and exciting features. The idea to work on a completely new RSSOwl was born back in Summer 2005. At that time it became clear to me that it was very hard to catch up with the features of other readers without redesigning everything. I teamed up with another developer (Ismael) to work on RSSOwl 2 from scratch. Our main goal is to provide a newsreader that is powerful, easy to extend and easy to use. We chose the Eclipse Rich Client Platform as framework and db4o as powerful database to store all the news. In combination with the well-known full-text search engine Lucene, we are able to give you the best experience of reading, managing and seeing through all your news. 
+
+You can use RSSOwl both as standalone application or from your Eclipse installation.]]></body>
+      <created>1176124601</created>
+      <changed>1313255895</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.rssowl.org/]]></homepageurl>
+      <image><![CDATA[http://www.rssowl.org/images/rssowl.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/rssowl_big1.png?itok=89RqZkND]]></screenshot>
+      <version>2.1.2</version>
+      <license>EPL</license>
+      <companyname><![CDATA[RSSOwl]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4, 3.5, 3.6, 3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://www.rssowl.org/help]]></supporturl>
+      <updateurl><![CDATA[http://boreal.rssowl.org/update/eclipse/]]></updateurl>
+<ius>
+<iu>org.rssowl.eclipse</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

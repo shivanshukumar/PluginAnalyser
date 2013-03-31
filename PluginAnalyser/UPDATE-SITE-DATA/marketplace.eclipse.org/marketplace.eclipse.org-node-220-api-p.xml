@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="220" name="Kermeta" url="http://marketplace.eclipse.org/content/kermeta">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='1966' name='Programming Languages' url='http://marketplace.eclipse.org/category/categories/programming-languages'/>
+        <category id='1971' name='Modeling' url='http://marketplace.eclipse.org/category/categories/modeling'/>
+      </categories>
+      <tags>
+        <tag id='61' name='UML' url='http://marketplace.eclipse.org/category/free-tagging/uml'/>
+        <tag id='195' name='DSL' url='http://marketplace.eclipse.org/category/free-tagging/dsl'/>
+        <tag id='2307' name='Ecore' url='http://marketplace.eclipse.org/category/free-tagging/ecore'/>
+        <tag id='2308' name='MOF' url='http://marketplace.eclipse.org/category/free-tagging/mof'/>
+        <tag id='2309' name='executable metamodeling' url='http://marketplace.eclipse.org/category/free-tagging/executable-metamodeling'/>
+      </tags>
+      
+      <owner>Didier Vojtisek</owner>
+      <favorited>3</favorited>
+      <installstotal>366</installstotal>
+      <installsrecent>8</installsrecent>
+      <shortdescription><![CDATA[<p>Kermeta workbench is a powerful metaprogramming environment based on an model-oriented language optimized for metamodel engineering and DSL engineering.<br />
+Kermeta features a comprehensive environment for simplifying activities like :</p>
+<ul><li>specification of abstract syntax, static semantic (OCL) and dynamic semantics as well with connexion to the concrete syntax. (Ie. define the behavior of a metamodel)</li>
+<li>model and meta-model simulation and prototyping</li>
+<li>model transformation</li>
+<li>model checking</li>
+<li>aspect weaving</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>Kermeta workbench is a powerful metaprogramming environment based on an model-oriented language optimized for metamodel engineering and DSL engineering.<br />
+Kermeta features a comprehensive environment for simplifying activities like :</p>
+<ul><li>specification of abstract syntax, static semantic (OCL) and dynamic semantics as well with connexion to the concrete syntax. (Ie. define the behavior of a metamodel)</li>
+<li>model and meta-model simulation and prototyping</li>
+<li>model transformation</li>
+<li>model checking</li>
+<li>aspect weaving</li>
+</ul>]]></body>
+      <created>1149601038</created>
+      <changed>1320351231</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.kermeta.org]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_4_0.png?itok=vGUAKL2V]]></image>
+      <version>1.4.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[INRIA]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4+]]></eclipseversion>
+      <supporturl><![CDATA[http://gforge.inria.fr/projects/kermeta/]]></supporturl>
+      <updateurl><![CDATA[http://www.kermeta.org/update]]></updateurl>
+<ius>
+<iu>fr.irisa.triskell.kermeta</iu>
+<iu>fr.irisa.triskell.kermeta.ket.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="135157" name="Zephyr" url="http://marketplace.eclipse.org/content/zephyr">
+      <type>resource</type>
+      <categories>
+        <category id='8' name='Graphics' url='http://marketplace.eclipse.org/taxonomy/term/8'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='1972' name='General Purpose Tools' url='http://marketplace.eclipse.org/category/categories/general-purpose-tools'/>
+      </categories>
+            
+      <owner>Thomas Degris</owner>
+      <favorited>2</favorited>
+      <installstotal>66</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Zephyr is a library to visualize stream of data in real time.<br />
+Screenshots and videos on: <a href="http://zephyrplugins.github.com/">http://zephyrplugins.github.com/</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Zephyr is a library to visualize stream of data in real time.<br />
+Screenshots and videos on: <a href="http://zephyrplugins.github.com/">http://zephyrplugins.github.com/</a></p>
+]]></body>
+      <created>1318544838</created>
+      <changed>1341593081</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://zephyrplugins.github.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_small_0.png?itok=xUmE-PNB]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/ZephyrSimpleView.png?itok=TlTmMsZu]]></screenshot>
+      <version></version>
+      <license>EPL</license>
+      <companyname><![CDATA[INRIA]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://www.ualberta.ca/~degris/zephyr]]></updateurl>
+<ius>
+<iu>zephyr.feature.main</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

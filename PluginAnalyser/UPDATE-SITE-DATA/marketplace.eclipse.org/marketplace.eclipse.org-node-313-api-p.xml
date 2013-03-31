@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="313" name="Tracklipse for Track+ Issue Tracker" url="http://marketplace.eclipse.org/content/tracklipse-track-issue-tracker">
+      <type>resource</type>
+      <categories>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+      </categories>
+            
+      <owner>Jörg Friedrich</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[Tracklipse is an Eclipse plugin for the Track+ issue tracker. It provides a nice interface and enables developers to view their tasks, create new tasks including attachments, and edit existing tasks. 
+
+Tracklipse works via the Track+ SOAP web service interface. Therefore it is of no importance where the Track+ server is located.
+
+]]></shortdescription>
+      <body><![CDATA[Tracklipse is an Eclipse plugin for the Track+ issue tracker. It provides a nice interface and enables developers to view their tasks, create new tasks including attachments, and edit existing tasks. 
+
+Tracklipse works via the Track+ SOAP web service interface. Therefore it is of no importance where the Track+ server is located.
+
+]]></body>
+      <created>1164233268</created>
+      <changed>1272821855</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.trackplus.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>3.7.4</version>
+      <license>GPL</license>
+      <companyname><![CDATA[Trackplus]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4, 3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.trackplus.com/forum]]></supporturl>
+      <updateurl><![CDATA[http://www.trackplus.com/update-site/e3.4/tp37]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

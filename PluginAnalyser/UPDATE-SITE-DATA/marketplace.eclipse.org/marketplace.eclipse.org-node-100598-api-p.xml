@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="100598" name="protobuf-dt" url="http://marketplace.eclipse.org/content/protobuf-dt">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='1966' name='Programming Languages' url='http://marketplace.eclipse.org/category/categories/programming-languages'/>
+      </categories>
+      <tags>
+        <tag id='146' name='editor' url='http://marketplace.eclipse.org/category/free-tagging/editor'/>
+        <tag id='566' name='google' url='http://marketplace.eclipse.org/category/free-tagging/google'/>
+        <tag id='2083' name='Protocol buffers' url='http://marketplace.eclipse.org/category/free-tagging/protocol-buffers'/>
+      </tags>
+      
+      <owner>Alex Ruiz</owner>
+      <favorited>2</favorited>
+      <installstotal>1595</installstotal>
+      <installsrecent>127</installsrecent>
+      <shortdescription><![CDATA[<p><a target="blank" href="https://code.google.com/p/protobuf-dt/">Protobuf-dt</a> is a new Eclipse plug-in for editing <a target="blank" href="http://code.google.com/p/protobuf/">protocol buffer</a> descriptor files. It provides all the features you would expect from an IDE editor, such as <a target="blank" href="https://code.google.com/p/protobuf-dt/wiki/SyntaxHighlighting">syntax highlighting</a>, an <a target="blank" href="https://code.google.com/p/protobuf-dt/wiki/OutlineView">outline view</a>, <a target="blank" href="https://code.google.com/p/protobuf-dt/wiki/ContentAssist">content assist</a> and <a target="blank" href="https://code.google.com/p/protobuf-dt/wiki/OpenDeclaration">hyperlinking</a>.</p>
+<p>Protobuf-dt also provides protocol buffer-specific features like <a target="blank" href="https://code.google.com/p/protobuf-dt/wiki/NumericTagGeneration">automatic generation of numeric tags</a>, <a target="blank" href="https://code.google.com/p/protobuf-dt/wiki/JavadocLikeDocumentation">Javadoc-like documentation</a> and <a target="blank" href="https://code.google.com/p/protobuf-dt/wiki/IntegrationWithProtoc">integration with protoc</a>.</p>
+<p>This plug-in has been heavily tested by Google employees in many different projects through seven internal releases. For more information, please visit our <a target="blank" href="https://code.google.com/p/protobuf-dt/">project page</a>, join the mailing list and <a target="blank" href="https://code.google.com/p/protobuf-dt/source/checkout">download the code</a>.</p>
+]]></shortdescription>
+      <body><![CDATA[<p><a target="blank" href="https://code.google.com/p/protobuf-dt/">Protobuf-dt</a> is a new Eclipse plug-in for editing <a target="blank" href="http://code.google.com/p/protobuf/">protocol buffer</a> descriptor files. It provides all the features you would expect from an IDE editor, such as <a target="blank" href="https://code.google.com/p/protobuf-dt/wiki/SyntaxHighlighting">syntax highlighting</a>, an <a target="blank" href="https://code.google.com/p/protobuf-dt/wiki/OutlineView">outline view</a>, <a target="blank" href="https://code.google.com/p/protobuf-dt/wiki/ContentAssist">content assist</a> and <a target="blank" href="https://code.google.com/p/protobuf-dt/wiki/OpenDeclaration">hyperlinking</a>.</p>
+<p>Protobuf-dt also provides protocol buffer-specific features like <a target="blank" href="https://code.google.com/p/protobuf-dt/wiki/NumericTagGeneration">automatic generation of numeric tags</a>, <a target="blank" href="https://code.google.com/p/protobuf-dt/wiki/JavadocLikeDocumentation">Javadoc-like documentation</a> and <a target="blank" href="https://code.google.com/p/protobuf-dt/wiki/IntegrationWithProtoc">integration with protoc</a>.</p>
+<p>This plug-in has been heavily tested by Google employees in many different projects through seven internal releases. For more information, please visit our <a target="blank" href="https://code.google.com/p/protobuf-dt/">project page</a>, join the mailing list and <a target="blank" href="https://code.google.com/p/protobuf-dt/source/checkout">download the code</a>.</p>
+]]></body>
+      <created>1312814349</created>
+      <changed>1324075629</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/protobuf-dt/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/search-48.gif?itok=uljJJzZ5]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/editor.png?itok=pWfUNC7S]]></screenshot>
+      <version>1.1.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Google, Inc.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7 (Indigo)]]></eclipseversion>
+      <supporturl><![CDATA[http://groups.google.com/group/protobuf-dt]]></supporturl>
+      <updateurl><![CDATA[http://protobuf-dt.googlecode.com/git/update-site]]></updateurl>
+<ius>
+<iu>com.google.eclipse.protobuf</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

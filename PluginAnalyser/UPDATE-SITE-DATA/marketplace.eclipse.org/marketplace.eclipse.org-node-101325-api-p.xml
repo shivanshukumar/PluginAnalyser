@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="101325" name="Code Conjurer" url="http://marketplace.eclipse.org/content/code-conjurer">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='40' name='Search' url='http://marketplace.eclipse.org/category/categories/search'/>
+        <category id='1966' name='Programming Languages' url='http://marketplace.eclipse.org/category/categories/programming-languages'/>
+      </categories>
+      <tags>
+        <tag id='784' name='reuse' url='http://marketplace.eclipse.org/category/free-tagging/reuse'/>
+        <tag id='2163' name='software reuse' url='http://marketplace.eclipse.org/category/free-tagging/software-reuse'/>
+        <tag id='2164' name='copy&amp;paste programming' url='http://marketplace.eclipse.org/category/free-tagging/copypaste-programming'/>
+        <tag id='2165' name='software search' url='http://marketplace.eclipse.org/category/free-tagging/software-search'/>
+      </tags>
+      
+      <owner>Missing Name</owner>
+      <favorited>4</favorited>
+      <installstotal>219</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>IMPORTANT: Requires the latest Eclipse 3.7 Indigo and a user account at merobase.com (enter information in CC preferences).</p>
+<p>Code Conjurer is a software reuse tool developed at the chair for software engineering at the University of Mannheim.</p>
+<p>The Eclipse plug-in brings the power of the merobase.com software search engine to the popular Eclipse IDE. If enabled, a background agent monitors the programming activities of a Java developer and searches for appropriate reusable software artifacts that fit the current class under development.</p>
+<p>Since version 2.1 Code Conjurer supports (experimental) test-driven searches. More information on that is available at the project's website.</p>
+<p>Learn more at<br /><a href="http://www.code-conjurer.org">http://www.code-conjurer.org</a><br />
+or at<br /><a href="https://sourceforge.net/projects/codeconjurer/">https://sourceforge.net/projects/codeconjurer/</a></p>
+<p>IMPORTANT: Code Conjurer 2.x requires the latest Eclipse 3.7 Indigo release or later. It cannot be installed on outdated Eclipse 3.6 or earlier. Update your Eclipse before you try to install it.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>IMPORTANT: Requires the latest Eclipse 3.7 Indigo and a user account at merobase.com (enter information in CC preferences).</p>
+<p>Code Conjurer is a software reuse tool developed at the chair for software engineering at the University of Mannheim.</p>
+<p>The Eclipse plug-in brings the power of the merobase.com software search engine to the popular Eclipse IDE. If enabled, a background agent monitors the programming activities of a Java developer and searches for appropriate reusable software artifacts that fit the current class under development.</p>
+<p>Since version 2.1 Code Conjurer supports (experimental) test-driven searches. More information on that is available at the project's website.</p>
+<p>Learn more at<br /><a href="http://www.code-conjurer.org">http://www.code-conjurer.org</a><br />
+or at<br /><a href="https://sourceforge.net/projects/codeconjurer/">https://sourceforge.net/projects/codeconjurer/</a></p>
+<p>IMPORTANT: Code Conjurer 2.x requires the latest Eclipse 3.7 Indigo release or later. It cannot be installed on outdated Eclipse 3.6 or earlier. Update your Eclipse before you try to install it.</p>
+]]></body>
+      <created>1312905146</created>
+      <changed>1336168992</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.code-conjurer.org]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/cc_logo.png?itok=UK8T4OTX]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screenshot_gps_0.png?itok=Z4VWVm6Q]]></screenshot>
+      <version>2.1.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[University of Mannheim]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/tracker/?group_id=233067&atid=1088401]]></supporturl>
+      <updateurl><![CDATA[http://codeconjurer.sourceforge.net/eclipse-update/]]></updateurl>
+<ius>
+<iu>de.uni_mannheim.swt.codeconjurer</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

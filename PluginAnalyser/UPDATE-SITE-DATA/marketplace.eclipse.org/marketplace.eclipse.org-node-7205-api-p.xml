@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="7205" name="jACT-R IDE" url="http://marketplace.eclipse.org/content/jact-r-ide">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='1122' name='Artificial intelligence' url='http://marketplace.eclipse.org/category/free-tagging/artificial-intelligence'/>
+      </tags>
+      
+      <owner>Anthony Harrison</owner>
+      <favorited>0</favorited>
+      <installstotal>65</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Eclipse IDE integration for jACT-R, Java implementation of ACT-R (Anderson, 2007) cognitive architecture.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Eclipse IDE integration for jACT-R, Java implementation of ACT-R (Anderson, 2007) cognitive architecture.</p>
+]]></body>
+      <created>1282095499</created>
+      <changed>1283443290</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://jactr.org/]]></homepageurl>
+      <image><![CDATA[http://jactr.org/files/logo.gif]]></image>
+      <version></version>
+      <license>GPL</license>
+      <companyname><![CDATA[jactr.org]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://jactr.org/update/release/org.jactr.eclipse.update]]></updateurl>
+<ius>
+<iu>org.jactr.eclipse.feature</iu>
+<iu>org.jactr.eclipse.tools</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

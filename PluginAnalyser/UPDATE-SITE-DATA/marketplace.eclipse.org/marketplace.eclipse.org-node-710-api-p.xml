@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="710" name="JProbe" url="http://marketplace.eclipse.org/content/jprobe">
+      <type>resource</type>
+      <categories>
+        <category id='13' name='Profiling' url='http://marketplace.eclipse.org/taxonomy/term/13'/>
+      </categories>
+            
+      <owner>Emerald.Pinkerton</owner>
+      <favorited>2</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>JProbe is an enterprise-class Java profiler used for intelligent code performance analysis and diagnosis in development environments to enable faster delivery of high-quality, production-ready applications.</p>
+<p><p>JProbe also includes an Eclipse plug-in that provides intelligent code performance analysis and problem resolution directly within the Eclipse Java IDE.</p>
+<p>    <p>* <b>Memory Analysis</b>: Identify and resolve Java memory leaks and object cycling to ensure optimal program efficiency and stability.<br />
+    <br>* <b>Performance Analysis</b>: Identify and resolve Java bottlenecks and deadlocks to ensure optimal program performance and scalability.<br />
+    <br>* <b>Coverage Analysis</b>: Identify unexecuted lines of code during unit testing to ensure test coverage and program correctness.</p>
+<p>What's new in JProbe 8.3?</p>
+<p>The primary focus of this release is about usability – right from installation and licensing to configuration ready for use. We've significantly revamped the whole user experience which should get you up-and-running with JProbe in a lot less time.</p>
+<p>There are many demos which are ready to use out-of-the-box.</p>
+<p>JProbe 8.3 also brings to the Java developer the ability to view, classify and automatically optimize SQL statements executed via JDBC. SQL optimization is provided through the Quest SQL Optimizer for Oracle product (Windows OS only). <a href="http://www.quest.com/sql-optimizer-for-oracle/">http://www.quest.com/sql-optimizer-for-oracle/</a></p>
+<p>Alternatively, there is a specially priced bundle available which combines JProbe 8.3 with SQL Optimizer for Oracle which you can find out about here: <a href="http://www.quest.com/landing/?ID=4796">http://www.quest.com/landing/?ID=4796</a></p>
+<p>For more information on what's new in JProbe 8.3, please read the paper on our JProbe User Community: <a href="http://jprobe.inside.quest.com/index.jspa">http://jprobe.inside.quest.com/index.jspa</a> OR watch the video. </p>
+<p>To watch a general video on how JProbe can dramatically reduce your MTTR, please click this link: <a href="http://jprobe.inside.quest.com/shares/jprobe/resources/video/JProbe801a.wmv">http://jprobe.inside.quest.com/shares/jprobe/resources/video/JProbe801a.wmv</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>JProbe is an enterprise-class Java profiler used for intelligent code performance analysis and diagnosis in development environments to enable faster delivery of high-quality, production-ready applications.</p>
+<p><p>JProbe also includes an Eclipse plug-in that provides intelligent code performance analysis and problem resolution directly within the Eclipse Java IDE.</p>
+<p>    <p>* <b>Memory Analysis</b>: Identify and resolve Java memory leaks and object cycling to ensure optimal program efficiency and stability.<br />
+    <br>* <b>Performance Analysis</b>: Identify and resolve Java bottlenecks and deadlocks to ensure optimal program performance and scalability.<br />
+    <br>* <b>Coverage Analysis</b>: Identify unexecuted lines of code during unit testing to ensure test coverage and program correctness.</p>
+<p>What's new in JProbe 8.3?</p>
+<p>The primary focus of this release is about usability – right from installation and licensing to configuration ready for use. We've significantly revamped the whole user experience which should get you up-and-running with JProbe in a lot less time.</p>
+<p>There are many demos which are ready to use out-of-the-box.</p>
+<p>JProbe 8.3 also brings to the Java developer the ability to view, classify and automatically optimize SQL statements executed via JDBC. SQL optimization is provided through the Quest SQL Optimizer for Oracle product (Windows OS only). <a href="http://www.quest.com/sql-optimizer-for-oracle/">http://www.quest.com/sql-optimizer-for-oracle/</a></p>
+<p>Alternatively, there is a specially priced bundle available which combines JProbe 8.3 with SQL Optimizer for Oracle which you can find out about here: <a href="http://www.quest.com/landing/?ID=4796">http://www.quest.com/landing/?ID=4796</a></p>
+<p>For more information on what's new in JProbe 8.3, please read the paper on our JProbe User Community: <a href="http://jprobe.inside.quest.com/index.jspa">http://jprobe.inside.quest.com/index.jspa</a> OR watch the video. </p>
+<p>To watch a general video on how JProbe can dramatically reduce your MTTR, please click this link: <a href="http://jprobe.inside.quest.com/shares/jprobe/resources/video/JProbe801a.wmv">http://jprobe.inside.quest.com/shares/jprobe/resources/video/JProbe801a.wmv</a></p>
+]]></body>
+      <created>1213366569</created>
+      <changed>1281744538</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.quest.com/jprobe/]]></homepageurl>
+      <image><![CDATA[http://www.quest.com/jprobe/images/memory-analysis-eclipse-lg.jpg]]></image>
+      <version>8.3</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Quest Software]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4, 3.5 and 3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://support.quest.com]]></supporturl>
+      <updateurl><![CDATA[http://www.quest.com/jprobe/Eclipseupdate/35]]></updateurl>
+    </node>
+    </marketplace>
+    

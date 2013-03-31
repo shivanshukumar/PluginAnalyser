@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="246" name="JAutodoc" url="http://marketplace.eclipse.org/content/jautodoc">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='40' name='Search' url='http://marketplace.eclipse.org/category/categories/search'/>
+      </categories>
+      <tags>
+        <tag id='388' name='javadoc' url='http://marketplace.eclipse.org/category/free-tagging/javadoc'/>
+        <tag id='390' name='templates' url='http://marketplace.eclipse.org/category/free-tagging/templates'/>
+        <tag id='1112' name='file header' url='http://marketplace.eclipse.org/category/free-tagging/file-header'/>
+        <tag id='1113' name='velocity' url='http://marketplace.eclipse.org/category/free-tagging/velocity'/>
+      </tags>
+      
+      <owner>Martin Kesting</owner>
+      <favorited>34</favorited>
+      <installstotal>14529</installstotal>
+      <installsrecent>1013</installsrecent>
+      <shortdescription><![CDATA[<p>JAutodoc is an Eclipse  Plugin for automatically adding Javadoc and file headers to your source code. It optionally generates initial comments from element name by using Velocity  templates  for Javadoc and file headers. The main features are<br />
+    <ul><br />
+    <li>Complete, keep or replace existing Javadoc</li><br />
+    <li>Create initial comments from element name</li><br />
+    <li>Getter/Setter comments from related field comment</li><br />
+    <li>Add/Replace file headers</li><br />
+    <li>Velocity templates for Javadoc and headers</li><br />
+    <li>Ant Task for Eclipse</li><br />
+    <li>Support for Package Javadoc</li><br />
+    <li>Search for missing Javadoc and file headers</li><br />
+    </ul><br/></p>
+]]></shortdescription>
+      <body><![CDATA[<p>JAutodoc is an Eclipse  Plugin for automatically adding Javadoc and file headers to your source code. It optionally generates initial comments from element name by using Velocity  templates  for Javadoc and file headers. The main features are<br />
+    <ul><br />
+    <li>Complete, keep or replace existing Javadoc</li><br />
+    <li>Create initial comments from element name</li><br />
+    <li>Getter/Setter comments from related field comment</li><br />
+    <li>Add/Replace file headers</li><br />
+    <li>Velocity templates for Javadoc and headers</li><br />
+    <li>Ant Task for Eclipse</li><br />
+    <li>Support for Package Javadoc</li><br />
+    <li>Search for missing Javadoc and file headers</li><br />
+    </ul><br/></p>
+]]></body>
+      <created>1156169490</created>
+      <changed>1339069779</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://jautodoc.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://jautodoc.sourceforge.net/images/preferences_small.gif]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/preferences_3.gif?itok=zXA74BRd]]></screenshot>
+      <version>1.10.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Martin Kesting]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4+]]></eclipseversion>
+      <supporturl><![CDATA[https://sourceforge.net/projects/jautodoc/]]></supporturl>
+      <updateurl><![CDATA[http://jautodoc.sourceforge.net/update/]]></updateurl>
+<ius>
+<iu>net.sf.jautodoc.feature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

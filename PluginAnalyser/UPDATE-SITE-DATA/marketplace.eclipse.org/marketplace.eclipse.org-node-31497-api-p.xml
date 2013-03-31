@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="31497" name="TapiJI" url="http://marketplace.eclipse.org/content/tapiji">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='1353' name='localization' url='http://marketplace.eclipse.org/category/free-tagging/localization'/>
+        <tag id='1595' name='internationalization' url='http://marketplace.eclipse.org/category/free-tagging/internationalization'/>
+        <tag id='1596' name='tapiji' url='http://marketplace.eclipse.org/category/free-tagging/tapiji'/>
+      </tags>
+      
+      <owner>Martin Reiterer</owner>
+      <favorited>2</favorited>
+      <installstotal>16</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>TapiJI represents a set of smart tools that integrate into the Eclipse IDE for Java developers with the goal to reduce effort of Internationalization. This is accomplished by creating a productive environment for building multilingual applications. In practice, Internationalization based on the basic Java API is a tedious task and introduces additional complexity into development. For example, typical faults are: </p>
+<ul><li>The export of culture-neutral configuration strings</li>
+<li>The incomplete export of constant string literals</li>
+<li>To hard code constant string literals</li>
+<li>To build static format strings and</li>
+<li>To reuse externalized literals in different contexts</li>
+</ul><p>These problems are eliminated by making tasks of Internationalization transparent. Even developers with less experience in developing multilingual applications are permanently advised to ensure high and constant code quality. Hard coded cultural aspects as well as broken Internationalizations are reported to the problem view and can be immediately resolved with a rich set of quick fixes. </p>
+<p>At the current stage of development, assistance is especially implemented for the Eclipse integrated Java editor as well as the XHTML/JSF editor of the WTP project. But tooling-architecture is designed with openness in mind and so support can be easily extended to other editors too. Further contribution is provided by a separate Resource-Bundle editor. The traditional way of editing Resource-Bundles in Eclipse is the use of the Property-File editor. This editor is not particularly suitable since its primary focus is to edit configuration properties. It therefore is not aware of multi-lingual aspects of Resource-Bundles and doesn't consider aspects like: </p>
+<ul><li>Handling of none-ASCII characters</li>
+<li>Different text-directionalities</li>
+<li>The translation of long text-fragments</li>
+<li>Simultaneous loading and synchronization of multiple property files of a Resource-Bundle</li>
+</ul><p>The implemented editor is based on the Babel Messages Editor Resource-Bundle editor, which considers the whole Resource-Bundle as the object under modification instead of a single property file. Furthermore, a Resource-Bundle view adds rich functionality for browsing resources and directly comparing different languages. In parallel, RCP and RAP based stand-alone applications enable the translation of resources without the need of programming skills.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>TapiJI represents a set of smart tools that integrate into the Eclipse IDE for Java developers with the goal to reduce effort of Internationalization. This is accomplished by creating a productive environment for building multilingual applications. In practice, Internationalization based on the basic Java API is a tedious task and introduces additional complexity into development. For example, typical faults are: </p>
+<ul><li>The export of culture-neutral configuration strings</li>
+<li>The incomplete export of constant string literals</li>
+<li>To hard code constant string literals</li>
+<li>To build static format strings and</li>
+<li>To reuse externalized literals in different contexts</li>
+</ul><p>These problems are eliminated by making tasks of Internationalization transparent. Even developers with less experience in developing multilingual applications are permanently advised to ensure high and constant code quality. Hard coded cultural aspects as well as broken Internationalizations are reported to the problem view and can be immediately resolved with a rich set of quick fixes. </p>
+<p>At the current stage of development, assistance is especially implemented for the Eclipse integrated Java editor as well as the XHTML/JSF editor of the WTP project. But tooling-architecture is designed with openness in mind and so support can be easily extended to other editors too. Further contribution is provided by a separate Resource-Bundle editor. The traditional way of editing Resource-Bundles in Eclipse is the use of the Property-File editor. This editor is not particularly suitable since its primary focus is to edit configuration properties. It therefore is not aware of multi-lingual aspects of Resource-Bundles and doesn't consider aspects like: </p>
+<ul><li>Handling of none-ASCII characters</li>
+<li>Different text-directionalities</li>
+<li>The translation of long text-fragments</li>
+<li>Simultaneous loading and synchronization of multiple property files of a Resource-Bundle</li>
+</ul><p>The implemented editor is based on the Babel Messages Editor Resource-Bundle editor, which considers the whole Resource-Bundle as the object under modification instead of a single property file. Furthermore, a Resource-Bundle view adds rich functionality for browsing resources and directly comparing different languages. In parallel, RCP and RAP based stand-alone applications enable the translation of resources without the need of programming skills.</p>
+]]></body>
+      <created>1297000721</created>
+      <changed>1357243981</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/a/eclipselabs.org/p/tapiji/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/TapiJI_128.png?itok=hHOQ9QRf]]></image>
+      <version></version>
+      <license>BSD</license>
+      <companyname><![CDATA[Vienna University of Technology - Research Group for Industrial Software]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[>= 3.6]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://svn.codespot.com/a/eclipselabs.org/tapiji/update]]></updateurl>
+<ius>
+<iu>at.ac.tuwien.inso.eclpise.i18n.feature</iu>
+<iu>at.ac.tuwien.inso.eclipse.i18n.jsf.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

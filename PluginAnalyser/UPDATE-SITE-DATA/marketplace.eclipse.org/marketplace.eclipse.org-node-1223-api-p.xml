@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1223" name="ELT Desktop" url="http://marketplace.eclipse.org/content/elt-desktop-0">
+      <type>resource</type>
+      <categories>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='190' name='database' url='http://marketplace.eclipse.org/category/free-tagging/database'/>
+        <tag id='736' name='ELT' url='http://marketplace.eclipse.org/category/free-tagging/elt'/>
+        <tag id='737' name='transformation' url='http://marketplace.eclipse.org/category/free-tagging/transformation'/>
+        <tag id='738' name='in-database' url='http://marketplace.eclipse.org/category/free-tagging/database-0'/>
+        <tag id='739' name='dbms' url='http://marketplace.eclipse.org/category/free-tagging/dbms'/>
+      </tags>
+      
+      <owner>tau</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>ELT Desktop is a tool that helps to do complex data transformations inside your database. </p>
+<p>In ELT Desktop you simply define visually what you want to do. You create queries in an SQL-like syntax, put several jobs together into a Job Diagram (containing conditions, loops, etc.), generate valid SQL code and send it to the database. This provides you with:</p>
+<ul><li>full control over the SQL sent to the database</li>
+<li>no need for a powerful ETL-server, ELT Desktop can run on a notebook</li>
+<li>metadata information is not proprietary, it's extracted directly from SQL</li>
+<li>no unnecessary data movement between different servers</li>
+<li>full utilization of database performance</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>ELT Desktop is a tool that helps to do complex data transformations inside your database. </p>
+<p>In ELT Desktop you simply define visually what you want to do. You create queries in an SQL-like syntax, put several jobs together into a Job Diagram (containing conditions, loops, etc.), generate valid SQL code and send it to the database. This provides you with:</p>
+<ul><li>full control over the SQL sent to the database</li>
+<li>no need for a powerful ETL-server, ELT Desktop can run on a notebook</li>
+<li>metadata information is not proprietary, it's extracted directly from SQL</li>
+<li>no unnecessary data movement between different servers</li>
+<li>full utilization of database performance</li>
+</ul>]]></body>
+      <created>1274396852</created>
+      <changed>1290589718</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.eltdesktop.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_0.png?itok=NzDpfcOd]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screenshot.png?itok=6XeFmg78]]></screenshot>
+      <version>1.9 BETA</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[Taubkin Information Systems]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eltdesktop.com/forum]]></supporturl>
+      <updateurl><![CDATA[http://update.eltdesktop.com]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

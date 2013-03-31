@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="49960" name="Doorman Eclipse Plugin" url="http://marketplace.eclipse.org/content/doorman-eclipse-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='12' name='Network' url='http://marketplace.eclipse.org/taxonomy/term/12'/>
+      </categories>
+      <tags>
+        <tag id='1893' name='proxy' url='http://marketplace.eclipse.org/category/free-tagging/proxy'/>
+        <tag id='1894' name='http' url='http://marketplace.eclipse.org/category/free-tagging/http'/>
+      </tags>
+      
+      <owner>Kanatoko Anvil</owner>
+      <favorited>1</favorited>
+      <installstotal>150</installstotal>
+      <installsrecent>3</installsrecent>
+      <shortdescription><![CDATA[<p>Doorman Eclipse Plugin is a local HTTP/HTTPS proxy server tool for manual web application testing.<br />
+It can be used as a HTTP DEBUGGER. For web developers and web pen-testers.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Doorman Eclipse Plugin is a local HTTP/HTTPS proxy server tool for manual web application testing.<br />
+It can be used as a HTTP DEBUGGER. For web developers and web pen-testers.</p>
+]]></body>
+      <created>1304341488</created>
+      <changed>1322307336</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.jumperz.net/index.php?i=2&a=0&b=7]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/doorman4.png?itok=gYs9UAzN]]></screenshot>
+      <version>1.0.0</version>
+      <license>GPL</license>
+      <companyname><![CDATA[JUMPERZ.NET]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3]]></eclipseversion>
+      <supporturl><![CDATA[http://www.jumperz.net/index.php?i=2&a=0&b=7]]></supporturl>
+      <updateurl><![CDATA[http://www.jumperz.net/update/]]></updateurl>
+<ius>
+<iu>net.jumperz.app.MDoorman</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

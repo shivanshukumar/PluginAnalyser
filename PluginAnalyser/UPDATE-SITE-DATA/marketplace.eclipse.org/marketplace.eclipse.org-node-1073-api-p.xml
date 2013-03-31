@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1073" name="Xtext" url="http://marketplace.eclipse.org/content/xtext">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+      <tags>
+        <tag id='51' name='IDE' url='http://marketplace.eclipse.org/category/free-tagging/ide'/>
+        <tag id='195' name='DSL' url='http://marketplace.eclipse.org/category/free-tagging/dsl'/>
+        <tag id='196' name='Domain Specific Language' url='http://marketplace.eclipse.org/category/free-tagging/domain-specific-language'/>
+        <tag id='209' name='parser' url='http://marketplace.eclipse.org/category/free-tagging/parser'/>
+        <tag id='1103' name='languages' url='http://marketplace.eclipse.org/category/free-tagging/languages'/>
+      </tags>
+      
+      <owner>Sven Efftinge</owner>
+      <favorited>44</favorited>
+      <installstotal>11008</installstotal>
+      <installsrecent>412</installsrecent>
+      <shortdescription><![CDATA[<p>With Xtext you can easily create your own programming languages and domain-specific languages (DSLs). The framework supports the development of language infrastructures including compilers and interpreters as well as full blown Eclipse-based IDE integration. While Xtext equips you with a set of sensible defaults, you can tweak every single aspect of your language with Xtext's powerful APIs. A comprehensive documentation as well as the vivid community will help you getting started in no time. And if that is not enough you can buy trainings, consulting or support contracts delivered directly by the committers.</p>
+<p>The Xtext project is developed professionally, that is the core developers work full-time on it. Besides the comprehensive documentation, Xtext ships with several easy-to-consume examples demonstrating various aspects and customization points of the framework. Whenever you have a question, you'll get an answer in the forum which is driven by the ever growing community around Xtext. Furthermore, we offer professional support, build prototypes, review your language or will assist you with the implementation.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>With Xtext you can easily create your own programming languages and domain-specific languages (DSLs). The framework supports the development of language infrastructures including compilers and interpreters as well as full blown Eclipse-based IDE integration. While Xtext equips you with a set of sensible defaults, you can tweak every single aspect of your language with Xtext's powerful APIs. A comprehensive documentation as well as the vivid community will help you getting started in no time. And if that is not enough you can buy trainings, consulting or support contracts delivered directly by the committers.</p>
+<p>The Xtext project is developed professionally, that is the core developers work full-time on it. Besides the comprehensive documentation, Xtext ships with several easy-to-consume examples demonstrating various aspects and customization points of the framework. Whenever you have a question, you'll get an answer in the forum which is driven by the ever growing community around Xtext. Furthermore, we offer professional support, build prototypes, review your language or will assist you with the implementation.</p>
+]]></body>
+      <created>1260364596</created>
+      <changed>1345453568</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.eclipse.org/Xtext]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/xtext-logo-color-marketplace.png?itok=aoGeTXXa]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screenshot-xtext.png?itok=sGqpzhA5]]></screenshot>
+      <version>2.3.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[itemis]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eclipse.org/forums/index.php?t=thread&frm_id=27]]></supporturl>
+      <updateurl><![CDATA[http://download.itemis.com/updates/releases]]></updateurl>
+<ius>
+<iu>org.eclipse.xtext.sdk</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

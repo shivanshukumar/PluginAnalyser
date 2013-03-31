@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="28778" name="LLVM toolchain for Eclipse CDT" url="http://marketplace.eclipse.org/content/llvm-toolchain-eclipse-cdt">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+      </categories>
+      <tags>
+        <tag id='57' name='c' url='http://marketplace.eclipse.org/category/free-tagging/c'/>
+        <tag id='58' name='c++' url='http://marketplace.eclipse.org/category/free-tagging/c-0'/>
+        <tag id='59' name='cpp' url='http://marketplace.eclipse.org/category/free-tagging/cpp'/>
+        <tag id='762' name='compiler' url='http://marketplace.eclipse.org/category/free-tagging/compiler'/>
+        <tag id='1312' name='toolchain' url='http://marketplace.eclipse.org/category/free-tagging/toolchain'/>
+      </tags>
+      
+      <owner>Petri Tuononen</owner>
+      <favorited>6</favorited>
+      <installstotal>3878</installstotal>
+      <installsrecent>254</installsrecent>
+      <shortdescription><![CDATA[<h1>LLVM plugin for Eclipse CDT</h1>
+<p><a href="http://code.google.com/p/llvm4eclipsecdt/">llvm4eclipsecdt</a> provides LLVM toolchain support for Eclipse CDT. It can compile C and C++ program code with Clang or llvm-gcc front-ends using LLVM as a back-end.</p>
+<p>LLVM tools such as assembler, archiver, linker, static compiler (llc), JIT/Interpreter (lli) are featured and can be configured via graphical user interface (Project->Properties->C/C++ Build->Settings).</p>
+<p>Header paths, library search paths and library files can be added via LLVM preference page (Window -> Preferences -> LLVM).</p>
+<p>Plugin supports Linux, MacOSX and Windows with MinGW and Cygwin.<br />
+Eclipse 3.7 and CDT 8.0 or later.</p>
+<p><b>Note:</b><br />
+Currently builds C and C++ projects on Linux and C projects on Windows. Building C++ projects on Windows is on the way. Support for Mac OS X is included but no testing has been done. LLVM static linker and JIT doesn't show up on new project wizard yet. </p>
+<p><b>Does not yet work with LLVM 3.2. Works with older versions. This is, because llvm-ld (linker) tool was removed from 3.2.</b></p>
+<p><a href="http://llvm4eclipsecdt.googlecode.com/files/LLVM%20plugin%20for%20Eclipse%20CDT.pdf">Short presentation</a></p>
+<p><a href="http://llvm4eclipsecdt.googlecode.com/files/Benefits%20of%20the%20LLVM%20compiler%20infrastructure.pdf">Why LLVM? - The benefits of LLVM</a></p>
+<p><b>Important:</b><br />
+Plugin needs CDT 8.x (won't work with CDT 7.x).</p>
+]]></shortdescription>
+      <body><![CDATA[<h1>LLVM plugin for Eclipse CDT</h1>
+<p><a href="http://code.google.com/p/llvm4eclipsecdt/">llvm4eclipsecdt</a> provides LLVM toolchain support for Eclipse CDT. It can compile C and C++ program code with Clang or llvm-gcc front-ends using LLVM as a back-end.</p>
+<p>LLVM tools such as assembler, archiver, linker, static compiler (llc), JIT/Interpreter (lli) are featured and can be configured via graphical user interface (Project->Properties->C/C++ Build->Settings).</p>
+<p>Header paths, library search paths and library files can be added via LLVM preference page (Window -> Preferences -> LLVM).</p>
+<p>Plugin supports Linux, MacOSX and Windows with MinGW and Cygwin.<br />
+Eclipse 3.7 and CDT 8.0 or later.</p>
+<p><b>Note:</b><br />
+Currently builds C and C++ projects on Linux and C projects on Windows. Building C++ projects on Windows is on the way. Support for Mac OS X is included but no testing has been done. LLVM static linker and JIT doesn't show up on new project wizard yet. </p>
+<p><b>Does not yet work with LLVM 3.2. Works with older versions. This is, because llvm-ld (linker) tool was removed from 3.2.</b></p>
+<p><a href="http://llvm4eclipsecdt.googlecode.com/files/LLVM%20plugin%20for%20Eclipse%20CDT.pdf">Short presentation</a></p>
+<p><a href="http://llvm4eclipsecdt.googlecode.com/files/Benefits%20of%20the%20LLVM%20compiler%20infrastructure.pdf">Why LLVM? - The benefits of LLVM</a></p>
+<p><b>Important:</b><br />
+Plugin needs CDT 8.x (won't work with CDT 7.x).</p>
+]]></body>
+      <created>1295534869</created>
+      <changed>1360916708</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/llvm4eclipsecdt/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/DragonSmall.png?itok=DvqxWaFW]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Clang_C_release_build_verbose_0.png?itok=7G5-PxSC]]></screenshot>
+      <version>1.1.7</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Petri Tuononen]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.7.0]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/llvm4eclipsecdt/]]></supporturl>
+      <updateurl><![CDATA[http://petrituononen.com/llvm4eclipsecdt/update]]></updateurl>
+<ius>
+<iu>llvm4eclipsecdt</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

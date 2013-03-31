@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="987" name="ICEfaces (Ajax for Java EE) for Eclipse 3.5" url="http://marketplace.eclipse.org/content/icefaces-ajax-java-ee-eclipse-35">
+      <type>resource</type>
+      <categories>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+      </categories>
+            
+      <owner>kfyten</owner>
+      <favorited>3</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><p>ICEfaces is an integrated Ajax Java application framework that enables Java EE Ajax application developers to easily create and deploy thin-client rich Internet applications (RIA) in pure Java. ICEfaces is a fully featured product that enterprise developers can use to develop new or existing Java EE Ajax applications at no cost.</p><br />
+<p>ICEfaces leverages the entire standards-based Java EE ecosystem of tools and execution environments. Rich enterprise application features are developed in pure Java, and in a pure thin-client model. There are no Applets or proprietary browser plug-ins required. ICEfaces applications are JavaServer Faces (JSF) applications, so Java EE application development skills apply directly, and Java developers are isolated from doing any JavaScript related development.</p><br />
+<br><br />
+<p>This integration is comprised of three Eclipse feature plugins:<br />
+<ol><br />
+<li>ICEfaces Eclipse Tools - Core</li><br />
+<li>ICEfaces facelets Eclipse tooling</li><br />
+<li>JSF Facelets Tools Incubator</li><br />
+</ol></p><br />
+<p>This integration provides the following features:<br />
+<ol><br />
+<li>Installs ICEfaces, ICEfaces Facelets, and JSF Facelets Tools Incubator.</li><br />
+<li>Accesses a new ICEfaces Eclipse update site hosted on <a href="http://www.icefaces.org">www.icefaces.org</a> to provide a list of available ICEfaces runtime libraries for use with the integration.</li><br />
+<li>Adds ICEfaces, ICEfaces Facelets, and dependent libraries to JSF projects.</li><br />
+<li>Configures project web.xml and faces-config.xml files for ICEfaces.</li><br />
+<li>Provides ICEfaces/Facelets friendly JSP/JSPX page templates.</li><br />
+<li>Adds ICEfaces components to the Eclipse Visual JSF Page Designer (part of JSF-JSP Editor).</li><br />
+<li>Visual editing of JSF pages; Drag & drop components onto page, edit properties via properties editor, etc.</li><br />
+</ol></p><br />
+<p>Please read the included Readme.pdf document prior to using the integration.</p><br />
+<p>See <a href="<a href="http://www.icefaces.org"">http://www.icefaces.org"</a> target="_blank"><a href="http://www.icefaces.org</a>">www.icefaces.org</a></a> for more information, resources, tutorials, support, etc.</p></p>
+]]></shortdescription>
+      <body><![CDATA[<p><p>ICEfaces is an integrated Ajax Java application framework that enables Java EE Ajax application developers to easily create and deploy thin-client rich Internet applications (RIA) in pure Java. ICEfaces is a fully featured product that enterprise developers can use to develop new or existing Java EE Ajax applications at no cost.</p><br />
+<p>ICEfaces leverages the entire standards-based Java EE ecosystem of tools and execution environments. Rich enterprise application features are developed in pure Java, and in a pure thin-client model. There are no Applets or proprietary browser plug-ins required. ICEfaces applications are JavaServer Faces (JSF) applications, so Java EE application development skills apply directly, and Java developers are isolated from doing any JavaScript related development.</p><br />
+<br><br />
+<p>This integration is comprised of three Eclipse feature plugins:<br />
+<ol><br />
+<li>ICEfaces Eclipse Tools - Core</li><br />
+<li>ICEfaces facelets Eclipse tooling</li><br />
+<li>JSF Facelets Tools Incubator</li><br />
+</ol></p><br />
+<p>This integration provides the following features:<br />
+<ol><br />
+<li>Installs ICEfaces, ICEfaces Facelets, and JSF Facelets Tools Incubator.</li><br />
+<li>Accesses a new ICEfaces Eclipse update site hosted on <a href="http://www.icefaces.org">www.icefaces.org</a> to provide a list of available ICEfaces runtime libraries for use with the integration.</li><br />
+<li>Adds ICEfaces, ICEfaces Facelets, and dependent libraries to JSF projects.</li><br />
+<li>Configures project web.xml and faces-config.xml files for ICEfaces.</li><br />
+<li>Provides ICEfaces/Facelets friendly JSP/JSPX page templates.</li><br />
+<li>Adds ICEfaces components to the Eclipse Visual JSF Page Designer (part of JSF-JSP Editor).</li><br />
+<li>Visual editing of JSF pages; Drag & drop components onto page, edit properties via properties editor, etc.</li><br />
+</ol></p><br />
+<p>Please read the included Readme.pdf document prior to using the integration.</p><br />
+<p>See <a href="<a href="http://www.icefaces.org"">http://www.icefaces.org"</a> target="_blank"><a href="http://www.icefaces.org</a>">www.icefaces.org</a></a> for more information, resources, tutorials, support, etc.</p></p>
+]]></body>
+      <created>1250185482</created>
+      <changed>1259779293</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.icefaces.org/main/downloads/os-downloads.iface?category=Eclipse]]></homepageurl>
+      <image><![CDATA[http://www.icefaces.org/eclipse-tooling/icefaces-logo.png]]></image>
+      <version>1.8</version>
+      <license>Other</license>
+      <companyname><![CDATA[ICEsoft Technologies, Inc.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.icefaces.org/JForum/forums/show/13.page]]></supporturl>
+      <updateurl><![CDATA[http://www.icefaces.org/eclipse-updates/]]></updateurl>
+    </node>
+    </marketplace>
+    

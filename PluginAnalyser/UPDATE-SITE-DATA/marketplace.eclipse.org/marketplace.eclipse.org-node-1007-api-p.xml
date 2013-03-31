@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1007" name="Orc Eclipse Plug-in" url="http://marketplace.eclipse.org/content/orc-eclipse-plug">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+      </categories>
+      <tags>
+        <tag id='213' name='Orc' url='http://marketplace.eclipse.org/category/free-tagging/orc'/>
+        <tag id='214' name='concurrency' url='http://marketplace.eclipse.org/category/free-tagging/concurrency'/>
+        <tag id='215' name='orchestration' url='http://marketplace.eclipse.org/category/free-tagging/orchestration'/>
+        <tag id='216' name='language' url='http://marketplace.eclipse.org/category/free-tagging/language'/>
+        <tag id='217' name='parallel' url='http://marketplace.eclipse.org/category/free-tagging/parallel'/>
+      </tags>
+      
+      <owner>John Thywissen</owner>
+      <favorited>1</favorited>
+      <installstotal>24</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The Orc programing language is a novel language for distributed and concurrent programming which provides uniform access to computational services, including distributed communication and data manipulation, through "sites". Using simple concurrency primitives, the programmer orchestrates the invocation of sites to achieve a goal, while managing timeouts, priorities, and failures.</p>
+<p>The Orc plug-in contributes Orc programming language services to the Eclipse IDE.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The Orc programing language is a novel language for distributed and concurrent programming which provides uniform access to computational services, including distributed communication and data manipulation, through "sites". Using simple concurrency primitives, the programmer orchestrates the invocation of sites to achieve a goal, while managing timeouts, priorities, and failures.</p>
+<p>The Orc plug-in contributes Orc programming language services to the Eclipse IDE.</p>
+]]></body>
+      <created>1252674002</created>
+      <changed>1305467739</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://orc.csres.utexas.edu/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/orc-logo-110-80.png?itok=0YayjK8k]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Screen%20shot%202010-03-07%20at%2018.41.03.png?itok=BX13D-Z9]]></screenshot>
+      <version>2.0</version>
+      <license>BSD</license>
+      <companyname><![CDATA[The University of Texas at Austin]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4, 3.5, 3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://orc.csres.utexas.edu/documentation.shtml]]></supporturl>
+      <updateurl><![CDATA[http://orc.csres.utexas.edu/eclipse_updates/]]></updateurl>
+<ius>
+<iu>edu.utexas.cs.orc.orceclipse</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

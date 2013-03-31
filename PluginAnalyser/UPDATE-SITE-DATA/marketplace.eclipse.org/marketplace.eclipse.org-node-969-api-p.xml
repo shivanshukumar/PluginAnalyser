@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="969" name="i-net Doqua" url="http://marketplace.eclipse.org/content/i-net-doqua">
+      <type>resource</type>
+      <categories>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='37' name='Logging' url='http://marketplace.eclipse.org/category/categories/logging'/>
+        <category id='39' name='Reporting' url='http://marketplace.eclipse.org/category/categories/reporting'/>
+      </categories>
+      <tags>
+        <tag id='389' name='documentation' url='http://marketplace.eclipse.org/category/free-tagging/documentation'/>
+        <tag id='752' name='junit' url='http://marketplace.eclipse.org/category/free-tagging/junit'/>
+      </tags>
+      
+      <owner>i-net software</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>i-net Doqua supports documentation writer and developer likewise to keep track of inconsistency between your - or your companies - style guides and the actual documentation. The system integrates seamles as plugin into the Eclipse IDE and introduces a new perspektive and several views. Since i-net Doqua uses standard JUnit testcases to check the documentation - you can trigger checks using Hudson or similar Ant based systems.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>i-net Doqua supports documentation writer and developer likewise to keep track of inconsistency between your - or your companies - style guides and the actual documentation. The system integrates seamles as plugin into the Eclipse IDE and introduces a new perspektive and several views. Since i-net Doqua uses standard JUnit testcases to check the documentation - you can trigger checks using Hudson or similar Ant based systems.</p>
+]]></body>
+      <created>1246973732</created>
+      <changed>1287496531</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.inetsoftware.de/other-products/doqua]]></homepageurl>
+      <image><![CDATA[https://www.inetsoftware.de/_media/other-products/doqua-images/doqua-showcase-1.jpg]]></image>
+      <version>1.0.2</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[i-net software]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2+]]></eclipseversion>
+      <supporturl><![CDATA[https://www.inetsoftware.de/support/e-mail-support-accounts]]></supporturl>
+      <updateurl><![CDATA[http://www.inetsoftware.de/download/doqua/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

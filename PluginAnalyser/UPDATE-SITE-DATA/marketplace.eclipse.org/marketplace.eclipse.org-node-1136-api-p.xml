@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1136" name="SVEditor" url="http://marketplace.eclipse.org/content/sveditor">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+      </categories>
+      <tags>
+        <tag id='927' name='Verilog' url='http://marketplace.eclipse.org/category/free-tagging/verilog'/>
+        <tag id='928' name='SystemVerilog' url='http://marketplace.eclipse.org/category/free-tagging/systemverilog'/>
+        <tag id='1392' name='System Verilog' url='http://marketplace.eclipse.org/category/free-tagging/system-verilog'/>
+        <tag id='1393' name='HVL' url='http://marketplace.eclipse.org/category/free-tagging/hvl'/>
+        <tag id='929' name='UVM' url='http://marketplace.eclipse.org/category/free-tagging/uvm'/>
+      </tags>
+      
+      <owner>Matthew Ballance</owner>
+      <favorited>3</favorited>
+      <installstotal>923</installstotal>
+      <installsrecent>51</installsrecent>
+      <shortdescription><![CDATA[<p>SVEditor provides a development environment for SystemVerilog and Verilog files. It features syntax coloring, structure display, content assist, and source formatting.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>SVEditor provides a development environment for SystemVerilog and Verilog files. It features syntax coloring, structure display, content assist, and source formatting.</p>
+]]></body>
+      <created>1265592638</created>
+      <changed>1346356782</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://sveditor.sourceforge.net]]></homepageurl>
+      <image><![CDATA[http://sveditor.sourceforge.net/sv_file_outline.gif]]></image>
+      <version>0.9.9</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Matthew Ballance]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5,3.6,3.7,3.8]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/sveditor]]></supporturl>
+      <updateurl><![CDATA[http://sveditor.sourceforge.net/update]]></updateurl>
+<ius>
+<iu>net.sf.sveditor</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

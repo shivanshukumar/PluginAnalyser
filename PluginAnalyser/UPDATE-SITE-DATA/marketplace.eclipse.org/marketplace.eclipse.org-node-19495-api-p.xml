@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="19495" name="UML Lab Modeling IDE" url="http://marketplace.eclipse.org/content/uml-lab">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='1971' name='Modeling' url='http://marketplace.eclipse.org/category/categories/modeling'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+      </categories>
+      <tags>
+        <tag id='2168' name='agile modeling' url='http://marketplace.eclipse.org/category/free-tagging/agile-modeling'/>
+        <tag id='240' name='Class Diagram' url='http://marketplace.eclipse.org/category/free-tagging/class-diagram'/>
+        <tag id='165' name='code generation' url='http://marketplace.eclipse.org/category/free-tagging/code-generation'/>
+        <tag id='394' name='education' url='http://marketplace.eclipse.org/category/free-tagging/education'/>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+      </tags>
+      
+      <owner>Leif Geiger</owner>
+      <favorited>46</favorited>
+      <installstotal>14448</installstotal>
+      <installsrecent>264</installsrecent>
+      <shortdescription><![CDATA[<h2>UML Lab Modeling IDE</h2>
+<p>
+<br /><a href="http://www.uml-lab.com/uml-lab/eclipse/" target="umllab">UML Lab</a> is the first Modeling IDE to seamlessly combine modeling and programming with an intuitive UML diagram editor and <a href="http://www.uml-lab.com/uml-lab/features/roundtrip/" target="umllab">next-gen round-trip engineering</a>. Import your software project and get a nice overview via UML within seconds. Experience truly agile modeling and coding within your Eclipse IDE.
+</p>
+<a href="http://www.uml-lab.com/en/uml-lab/videos/round-trip-engineering-ng-video/" target="UML Lab Gallery"><img src="http://www.yatta.de/fileadmin/images/eclipse_marketplace/Round-Trip-Engineering_NG_embedded_in_Eclipse.png" border="0" alt="UML Lab in Action Video" /></a>
+
+<p>
+In short, <a href="http://www.uml-lab.com/uml-lab/eclipse/" target="umllab">UML Lab</a> helps you develop great software.
+</p>
+
+<h3>UML Lab Features for Eclipse Modeling</h3>
+<ul><li>Template-based Reverse- and Round-Trip-Engineering NG</li>
+<li>UML 2.3 class diagram editor with Xpand/Xtend integration</li>
+<li>Java templates with best practices and patterns included (POJO, JPA, JEE)</li>
+<li>Java 7 ready</li>
+<li>PHP templates including MySQL, Zend Framework and CakePHP support</li>
+<li>Model-based code validation (OCL)</li>
+<li>Navigation and model exploration</li>
+<li>Quick overview for any Mylyn task with Context Class Diagrams</li>
+<li>Task-focussed modeling with Mylyn and round-trip context synchronization</li>
+<li>XMI import/export (Rational Software Architect, TopCASED, Eclipse UML2)</li>
+<li>Diagram export (svg, png, jpg, bmp)</li>
+</ul><h3>Get UML Lab</h3>
+<p>
+Visit our <a href="http://www.uml-lab.com/uml-lab/eclipse/" target="umllab">website</a> for more information, pricing and to download a <a href="http://www.uml-lab.com/download/" target="umllab">FREE 30-Day Trial</a> of UML Lab. Annual licenses are available from EUR 199 including support and updates; <a href="http://www.uml-lab.com/academic/" target="umllab">Academic Licenses</a> are free.
+</p>
+
+<p align="center">
+<a href="http://www.uml-lab.com/download/" target="umllab"><img src="http://www.uml-lab.com/fileadmin/images/eclipse_marketplace/download.png" border="0" alt="DOWNLOAD NOW" /></a>
+</p>
+
+<h3>UML Lab Services for Eclipse</h3>
+<p>
+After our successful launch of <a href="http://www.uml-lab.com/services-for-eclipse/" target="umllab">UML Lab Services for Eclipse</a>, we now offer different UML Lab features as monthly software-as-a-service solutions. You only pay what you need, when you need it - true to our values »agile, simple and efficient.«
+</p>
+
+<h3>Contact us</h3>
+<p>
+Missing some information? Post your question in our <a href="http://www.forum.yatta.de/" target="umllab">forum</a> or <a href="http://www.yatta.de/kontakt/" target="umllab">contact us</a> and follow the latest Yatta News on <a href="http://twitter.com/YattaSolutions/" target="umllab">Twitter</a> and <a href="http://facebook.com/YattaSolutions/" target="umllab">Facebook</a>.
+</p>
+
+<p>
+Please note: Due to the Juno (e4) release, we have some compatibility issues with Eclipse Juno 4.2 under Mac OS X. We are working on a solution. For the time being, we suggest using UML Lab in Mac OS X only with Eclipse 3.7/3.8. Thank you for your understanding.
+</p>
+
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1032827109/?label=bomzCL3ymgIQ5eG-7AM&guid=ON&script=0" />]]></shortdescription>
+      <body><![CDATA[<h2>UML Lab Modeling IDE</h2>
+<p>
+<br /><a href="http://www.uml-lab.com/uml-lab/eclipse/" target="umllab">UML Lab</a> is the first Modeling IDE to seamlessly combine modeling and programming with an intuitive UML diagram editor and <a href="http://www.uml-lab.com/uml-lab/features/roundtrip/" target="umllab">next-gen round-trip engineering</a>. Import your software project and get a nice overview via UML within seconds. Experience truly agile modeling and coding within your Eclipse IDE.
+</p>
+<a href="http://www.uml-lab.com/en/uml-lab/videos/round-trip-engineering-ng-video/" target="UML Lab Gallery"><img src="http://www.yatta.de/fileadmin/images/eclipse_marketplace/Round-Trip-Engineering_NG_embedded_in_Eclipse.png" border="0" alt="UML Lab in Action Video" /></a>
+
+<p>
+In short, <a href="http://www.uml-lab.com/uml-lab/eclipse/" target="umllab">UML Lab</a> helps you develop great software.
+</p>
+
+<h3>UML Lab Features for Eclipse Modeling</h3>
+<ul><li>Template-based Reverse- and Round-Trip-Engineering NG</li>
+<li>UML 2.3 class diagram editor with Xpand/Xtend integration</li>
+<li>Java templates with best practices and patterns included (POJO, JPA, JEE)</li>
+<li>Java 7 ready</li>
+<li>PHP templates including MySQL, Zend Framework and CakePHP support</li>
+<li>Model-based code validation (OCL)</li>
+<li>Navigation and model exploration</li>
+<li>Quick overview for any Mylyn task with Context Class Diagrams</li>
+<li>Task-focussed modeling with Mylyn and round-trip context synchronization</li>
+<li>XMI import/export (Rational Software Architect, TopCASED, Eclipse UML2)</li>
+<li>Diagram export (svg, png, jpg, bmp)</li>
+</ul><h3>Get UML Lab</h3>
+<p>
+Visit our <a href="http://www.uml-lab.com/uml-lab/eclipse/" target="umllab">website</a> for more information, pricing and to download a <a href="http://www.uml-lab.com/download/" target="umllab">FREE 30-Day Trial</a> of UML Lab. Annual licenses are available from EUR 199 including support and updates; <a href="http://www.uml-lab.com/academic/" target="umllab">Academic Licenses</a> are free.
+</p>
+
+<p align="center">
+<a href="http://www.uml-lab.com/download/" target="umllab"><img src="http://www.uml-lab.com/fileadmin/images/eclipse_marketplace/download.png" border="0" alt="DOWNLOAD NOW" /></a>
+</p>
+
+<h3>UML Lab Services for Eclipse</h3>
+<p>
+After our successful launch of <a href="http://www.uml-lab.com/services-for-eclipse/" target="umllab">UML Lab Services for Eclipse</a>, we now offer different UML Lab features as monthly software-as-a-service solutions. You only pay what you need, when you need it - true to our values »agile, simple and efficient.«
+</p>
+
+<h3>Contact us</h3>
+<p>
+Missing some information? Post your question in our <a href="http://www.forum.yatta.de/" target="umllab">forum</a> or <a href="http://www.yatta.de/kontakt/" target="umllab">contact us</a> and follow the latest Yatta News on <a href="http://twitter.com/YattaSolutions/" target="umllab">Twitter</a> and <a href="http://facebook.com/YattaSolutions/" target="umllab">Facebook</a>.
+</p>
+
+<p>
+Please note: Due to the Juno (e4) release, we have some compatibility issues with Eclipse Juno 4.2 under Mac OS X. We are working on a solution. For the time being, we suggest using UML Lab in Mac OS X only with Eclipse 3.7/3.8. Thank you for your understanding.
+</p>
+
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1032827109/?label=bomzCL3ymgIQ5eG-7AM&guid=ON&script=0" />]]></body>
+      <created>1289484412</created>
+      <changed>1362152354</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.uml-lab.com/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Eclipse%20Marketplace%20Listing%20-%20Round-Trip-Engineering%20%282%29%20110x80.png?itok=HVACTeH2]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/01_roundtripNG_3.png?itok=k0GCP1rF]]></screenshot>
+      <version>1.5.3</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Yatta Solutions GmbH]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6.x; 3.7.x; 3.8.x; 4.2.x]]></eclipseversion>
+      <supporturl><![CDATA[http://www.yatta.de/support/]]></supporturl>
+      <updateurl><![CDATA[http://update.uml-lab.com/]]></updateurl>
+<ius>
+<iu>com.yattasolutions.umllab</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

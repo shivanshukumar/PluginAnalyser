@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="391" name="Faktor-IPS" url="http://marketplace.eclipse.org/content/faktor-ips">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='1971' name='Modeling' url='http://marketplace.eclipse.org/category/categories/modeling'/>
+      </categories>
+      <tags>
+        <tag id='1221' name='insurance' url='http://marketplace.eclipse.org/category/free-tagging/insurance'/>
+        <tag id='1222' name='product definition system' url='http://marketplace.eclipse.org/category/free-tagging/product-definition-system'/>
+        <tag id='1223' name='product server' url='http://marketplace.eclipse.org/category/free-tagging/product-server'/>
+        <tag id='1224' name='product engine' url='http://marketplace.eclipse.org/category/free-tagging/product-engine'/>
+        <tag id='1980' name='sap insurance' url='http://marketplace.eclipse.org/category/free-tagging/sap-insurance'/>
+      </tags>
+      
+      <owner>Jan Ortmann</owner>
+      <favorited>2</favorited>
+      <installstotal>29</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Faktor-IPS is a MDSD tool for the insurance industry. It provides a domain language to model insurance contracts and products. Based on Eclipse it provides an integration platform for both developers and business analysts. Business analysts can define new insurance products in a special product definition perspective. Faktor-IPS can be used as product system for SAP FS-PM.</p>
+<p>As a MDSD tool, it offers a thight integration between model and (generated) sourcecode. You can jump directly from the model to all generated sourcecode elements. It also allows to refactor the model and the sourcecode, generated or not, in one single step. </p>
+<p>Documentation is available in German and English.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Faktor-IPS is a MDSD tool for the insurance industry. It provides a domain language to model insurance contracts and products. Based on Eclipse it provides an integration platform for both developers and business analysts. Business analysts can define new insurance products in a special product definition perspective. Faktor-IPS can be used as product system for SAP FS-PM.</p>
+<p>As a MDSD tool, it offers a thight integration between model and (generated) sourcecode. You can jump directly from the model to all generated sourcecode elements. It also allows to refactor the model and the sourcecode, generated or not, in one single step. </p>
+<p>Documentation is available in German and English.</p>
+]]></body>
+      <created>1170946769</created>
+      <changed>1338389128</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.faktorzehn.org]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/faktorips-logo_0.png?itok=rQIHSBDA]]></image>
+      <version>3.7</version>
+      <license>Other Open Source</license>
+      <companyname><![CDATA[Faktor Zehn AG]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5, 3.6, 3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://www.faktorzehn.de/index.php?option=com_contact&Itemid=3]]></supporturl>
+      <updateurl><![CDATA[ http://update.faktorzehn.org/faktorips/v3_7]]></updateurl>
+<ius>
+<iu>org.faktorips.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

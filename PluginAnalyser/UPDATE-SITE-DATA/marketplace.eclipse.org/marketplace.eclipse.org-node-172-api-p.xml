@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="172" name="erlide - Erlang IDE" url="http://marketplace.eclipse.org/content/erlide-erlang-ide">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+      </categories>
+      <tags>
+        <tag id='619' name='erlang' url='http://marketplace.eclipse.org/category/free-tagging/erlang'/>
+      </tags>
+      
+      <owner>Vlad Dumitrescu</owner>
+      <favorited>6</favorited>
+      <installstotal>5685</installstotal>
+      <installsrecent>443</installsrecent>
+      <shortdescription><![CDATA[<p>Developing Erlang applications has never been easier!</p>
+<p>Features:</p>
+<p>* editor with syntax highlighting<br />
+* integrated builder<br />
+* integrated debugger<br />
+* console access to underlying Erlang node<br />
+* live expressions<br />
+* code completion<br />
+* documentation view (for the standard libraries)<br />
+and more, with even more to come really soon!</p>
+<p>Erlang version has to be R14B or later.<br />
+Java version has to be 1.6 or later.</p>
+<p>Older stable releases -- <a href="http://erlide.org/update_old">http://erlide.org/update_old</a><br />
+Beta releases -- <a href="http://erlide.org/update_beta">http://erlide.org/update_beta</a><br />
+Nightly releases (bleeding edge, may not work) -- <a href="http://erlide.org/update_nightly">http://erlide.org/update_nightly</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Developing Erlang applications has never been easier!</p>
+<p>Features:</p>
+<p>* editor with syntax highlighting<br />
+* integrated builder<br />
+* integrated debugger<br />
+* console access to underlying Erlang node<br />
+* live expressions<br />
+* code completion<br />
+* documentation view (for the standard libraries)<br />
+and more, with even more to come really soon!</p>
+<p>Erlang version has to be R14B or later.<br />
+Java version has to be 1.6 or later.</p>
+<p>Older stable releases -- <a href="http://erlide.org/update_old">http://erlide.org/update_old</a><br />
+Beta releases -- <a href="http://erlide.org/update_beta">http://erlide.org/update_beta</a><br />
+Nightly releases (bleeding edge, may not work) -- <a href="http://erlide.org/update_nightly">http://erlide.org/update_nightly</a></p>
+]]></body>
+      <created>1131986826</created>
+      <changed>1363080552</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://erlide.org]]></homepageurl>
+      <image><![CDATA[http://erlide.sourceforge.net/img/erlang110.gif]]></image>
+      <version>0.20.2</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Erlide project]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6+]]></eclipseversion>
+      <supporturl><![CDATA[https://www.assembla.com/spaces/erlide/support/tickets]]></supporturl>
+      <updateurl><![CDATA[http://erlide.org/update]]></updateurl>
+<ius>
+<iu>org.erlide</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

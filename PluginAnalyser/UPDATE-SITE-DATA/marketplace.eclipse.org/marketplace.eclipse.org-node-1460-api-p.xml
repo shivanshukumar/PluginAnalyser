@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1460" name="Elysium" url="http://marketplace.eclipse.org/content/elysium">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='905' name='lilypond' url='http://marketplace.eclipse.org/category/free-tagging/lilypond'/>
+        <tag id='906' name='music notation' url='http://marketplace.eclipse.org/category/free-tagging/music-notation'/>
+      </tags>
+      
+      <owner>Dénes Harmath</owner>
+      <favorited>0</favorited>
+      <installstotal>1146</installstotal>
+      <installsrecent>52</installsrecent>
+      <shortdescription><![CDATA[<p>LilyPond IDE for Eclipse</p>
+]]></shortdescription>
+      <body><![CDATA[<p>LilyPond IDE for Eclipse</p>
+]]></body>
+      <created>1277339789</created>
+      <changed>1331422733</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://elysium.thsoft.hu]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/110x80.png?itok=Uz6jF1Hj]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Application.png?itok=DT_ha8iH]]></screenshot>
+      <version></version>
+      <license>EPL</license>
+      <companyname><![CDATA[Open Source Community]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://groups.google.com/group/elysium-user]]></supporturl>
+      <updateurl><![CDATA[http://eclipse.thsoft.hu]]></updateurl>
+<ius>
+<iu>org.elysium.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

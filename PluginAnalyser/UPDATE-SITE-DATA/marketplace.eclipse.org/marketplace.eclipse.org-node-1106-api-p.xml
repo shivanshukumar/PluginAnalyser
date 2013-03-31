@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1106" name="threepio" url="http://marketplace.eclipse.org/content/threepio">
+      <type>resource</type>
+      <categories>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+      </categories>
+      <tags>
+        <tag id='190' name='database' url='http://marketplace.eclipse.org/category/free-tagging/database'/>
+        <tag id='347' name='multilingual' url='http://marketplace.eclipse.org/category/free-tagging/multilingual'/>
+        <tag id='348' name='dictionary' url='http://marketplace.eclipse.org/category/free-tagging/dictionary'/>
+        <tag id='349' name='search' url='http://marketplace.eclipse.org/category/free-tagging/search'/>
+      </tags>
+      
+      <owner>sergey  </owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Now supports StarDict ... Threepio it is not only multilingual dictionary - it is a enhanced database tool for any data might be introduced as pair key-value or source=destination. But it descend from dictionary so it is main purpose.<br />
+...In 2.2 version wos added support for stardict format - the most popular and famous format of dictionaries...<br />
+You may also to download and plug in xdxf dictionaries from <a href="http://xdxf.revdanica.com/down/">http://xdxf.revdanica.com/down/</a><br />
+You may to edit dictionaries(storages) or it articles(items), you may to create a new storages  and<br />
+new items and obtain very fast search by key. By default for store each of storage used<br />
+H2 database in the own folder and search will occur independently in own thread for each database. Thanks to datascooter you may to use almost any other RDBMS - Oracle, DB2, MSSQl, MySql, PostgreSql, Derby - all tables will be created automatically.  May be integrated into Eclipse IDE - just download plugins ...</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Now supports StarDict ... Threepio it is not only multilingual dictionary - it is a enhanced database tool for any data might be introduced as pair key-value or source=destination. But it descend from dictionary so it is main purpose.<br />
+...In 2.2 version wos added support for stardict format - the most popular and famous format of dictionaries...<br />
+You may also to download and plug in xdxf dictionaries from <a href="http://xdxf.revdanica.com/down/">http://xdxf.revdanica.com/down/</a><br />
+You may to edit dictionaries(storages) or it articles(items), you may to create a new storages  and<br />
+new items and obtain very fast search by key. By default for store each of storage used<br />
+H2 database in the own folder and search will occur independently in own thread for each database. Thanks to datascooter you may to use almost any other RDBMS - Oracle, DB2, MSSQl, MySql, PostgreSql, Derby - all tables will be created automatically.  May be integrated into Eclipse IDE - just download plugins ...</p>
+]]></body>
+      <created>1262810891</created>
+      <changed>1286722941</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://threepio.org]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Man48.gif?itok=lVfGhA2f]]></image>
+      <version>2.4</version>
+      <license>EPL</license>
+      <companyname><![CDATA[SUSoftware]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://threepio.org/contacts.php]]></supporturl>
+      <updateurl><![CDATA[http://threepio.org/update/]]></updateurl>
+<ius>
+<iu>org.threepio.feature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

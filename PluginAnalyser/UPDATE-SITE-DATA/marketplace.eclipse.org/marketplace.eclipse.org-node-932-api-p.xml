@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="932" name="FlatTree" url="http://marketplace.eclipse.org/content/flattree">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+            
+      <owner>sven</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>FlatTree is a Java library for reading and writing of flat files: CSV, FLR (fixed length record) or mixed structures. It features a tree-style processing API, adapters for SAX, Stax and XStream for transformation, data binding or serialization.</p>
+<p>The FlatTree Eclipse plugin offers convenient handling of flat files in your favorite IDE.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>FlatTree is a Java library for reading and writing of flat files: CSV, FLR (fixed length record) or mixed structures. It features a tree-style processing API, adapters for SAX, Stax and XStream for transformation, data binding or serialization.</p>
+<p>The FlatTree Eclipse plugin offers convenient handling of flat files in your favorite IDE.</p>
+]]></body>
+      <created>1242141447</created>
+      <changed>1259779244</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://flattree.sourceforge.net/eclipse/index.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>0.5.0</version>
+      <license>Free GPL</license>
+      <companyname><![CDATA[]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.2]]></eclipseversion>
+      <supporturl><![CDATA[http://]]></supporturl>
+      <updateurl><![CDATA[http://flattree.sourceforge.net/eclipse]]></updateurl>
+    </node>
+    </marketplace>
+    

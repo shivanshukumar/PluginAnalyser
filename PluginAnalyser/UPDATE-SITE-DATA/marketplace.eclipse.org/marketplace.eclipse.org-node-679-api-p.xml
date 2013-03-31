@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="679" name="Control Flow Graph Factory" url="http://marketplace.eclipse.org/content/control-flow-graph-factory">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='125' name='bytecode' url='http://marketplace.eclipse.org/category/free-tagging/bytecode'/>
+        <tag id='310' name='control flow graph' url='http://marketplace.eclipse.org/category/free-tagging/control-flow-graph'/>
+        <tag id='1060' name='graphviz' url='http://marketplace.eclipse.org/category/free-tagging/graphviz'/>
+        <tag id='1061' name='dot' url='http://marketplace.eclipse.org/category/free-tagging/dot'/>
+      </tags>
+      
+      <owner>Sergej Alekseev</owner>
+      <favorited>11</favorited>
+      <installstotal>1035</installstotal>
+      <installsrecent>65</installsrecent>
+      <shortdescription><![CDATA[<p><b>Control Flow Graph Factory</b> is an Eclipse plugin which generates control flow graphs from java bytecode, edit them and export to GraphXML, DOT or several image formats. The features of the Control Flow Graph Factory are:</p>
+<ul><li>Automatic generation of several types of control flow graphs from Java bytecode</li>
+<li> Editing of control flow graphs</li>
+<li>Multiple graph layout algorithms</li>
+<li>Export to GraphXML, DOT or several image formats.<br />
+The exported graphs in DOT format can be modified via simple DOT Editor directly in the eclipse workspace.
+</li>
+<li>Printing support</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p><b>Control Flow Graph Factory</b> is an Eclipse plugin which generates control flow graphs from java bytecode, edit them and export to GraphXML, DOT or several image formats. The features of the Control Flow Graph Factory are:</p>
+<ul><li>Automatic generation of several types of control flow graphs from Java bytecode</li>
+<li> Editing of control flow graphs</li>
+<li>Multiple graph layout algorithms</li>
+<li>Export to GraphXML, DOT or several image formats.<br />
+The exported graphs in DOT format can be modified via simple DOT Editor directly in the eclipse workspace.
+</li>
+<li>Printing support</li>
+</ul>]]></body>
+      <created>1208180135</created>
+      <changed>1347090097</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.drgarbage.com/control-flow-graph-factory.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/20090109-control-flow-graph-factory-at-work.png?itok=tAHH9z6V]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/20090806-cfgf-example-graphs.png?itok=mzvRRTwl]]></screenshot>
+      <version>4.2</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[Dr. Garbage Community]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6, 3.7 and 4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://drgarbagetools.sourceforge.net]]></supporturl>
+      <updateurl><![CDATA[http://sourceforge.net/projects/drgarbagetools/files/eclipse/4.2/stable/]]></updateurl>
+<ius>
+<iu>com.drgarbage.controlflowgraphfactory</iu>
+</ius>
+    </node>
+    </marketplace>
+    

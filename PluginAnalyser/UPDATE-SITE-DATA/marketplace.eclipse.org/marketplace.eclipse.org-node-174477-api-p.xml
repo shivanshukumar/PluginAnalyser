@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="174477" name="Properties Editor (Java i18n tool)" url="http://marketplace.eclipse.org/content/properties-editor-java-i18n-tool">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='1121' name='properties' url='http://marketplace.eclipse.org/category/free-tagging/properties'/>
+        <tag id='1170' name='i18n' url='http://marketplace.eclipse.org/category/free-tagging/i18n'/>
+        <tag id='1238' name='L10n' url='http://marketplace.eclipse.org/category/free-tagging/l10n'/>
+        <tag id='1353' name='localization' url='http://marketplace.eclipse.org/category/free-tagging/localization'/>
+        <tag id='1595' name='internationalization' url='http://marketplace.eclipse.org/category/free-tagging/internationalization'/>
+      </tags>
+      
+      <owner>Missing Name</owner>
+      <favorited>5</favorited>
+      <installstotal>3303</installstotal>
+      <installsrecent>18</installsrecent>
+      <shortdescription><![CDATA[<p>Properties Editor (Java i18n tool) is the tool for Java products internationalization for Windows, Mac OS and *nix. The editor has easy interface and ability of working with languages, different from english. Table data representation and no ASCII converting problems.</p>
+<p>This is Eclipse plugin version. Also available standalone version of this software.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Properties Editor (Java i18n tool) is the tool for Java products internationalization for Windows, Mac OS and *nix. The editor has easy interface and ability of working with languages, different from english. Table data representation and no ASCII converting problems.</p>
+<p>This is Eclipse plugin version. Also available standalone version of this software.</p>
+]]></body>
+      <created>1324656385</created>
+      <changed>1337711656</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://doksoft.com/soft/i18n/propeditor-plugin.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/doksoft_propeditor_eclipse_logo_0.png?itok=6Z1_i_QT]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/eclipse_plugin_0.png?itok=kluAROo9]]></screenshot>
+      <version>2.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[DOKSoft]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://doksoft.com/soft/i18n/plugin.html]]></supporturl>
+      <updateurl><![CDATA[http://doksoft.com/eclipse]]></updateurl>
+<ius>
+<iu>Properties_Editor_Feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

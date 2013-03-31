@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="3994" name="OpenChrom" url="http://marketplace.eclipse.org/content/openchrom">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+      </categories>
+      <tags>
+        <tag id='1029' name='baseline detection' url='http://marketplace.eclipse.org/category/free-tagging/baseline-detection'/>
+        <tag id='1030' name='peak detection' url='http://marketplace.eclipse.org/category/free-tagging/peak-detection'/>
+        <tag id='1031' name='peak integration' url='http://marketplace.eclipse.org/category/free-tagging/peak-integration'/>
+        <tag id='1032' name='peak identification' url='http://marketplace.eclipse.org/category/free-tagging/peak-identification'/>
+        <tag id='1033' name='mass spectrometric data filter' url='http://marketplace.eclipse.org/category/free-tagging/mass-spectrometric-data-filter'/>
+      </tags>
+      
+      <owner>Philip Wenig</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>OpenChrom is an open source software for chromatography and mass spectrometry, based on the Eclipse Rich Client Platform (RCP). Its focus is to handle analytical data from several chromatographic  systems (e.g. GC/MS, LC/MS, Py-GC/MS, HPLC-MS). OpenChrom is able to import binary and textual chromatographic data files, such as "*.D" chromatograms from Agilent Technologies or NetCDF. Moreover, it offers a nice graphical user interface and is available for various operating systems, e.g. Windows, Linux, Solaris  and Mac OSX. A basis set of methods to detect baselines, peaks and to integrate peaks in a chromatogram are implemented. Preprocessing steps, e.g. to remove certain mass fragments (m/z) such as nitrogen (28) or water (18), are supported by applying filter on the chromatogram or mass spectrum. Extensions are welcome, as OpenChrom is open source and uses a flexible approach, which allows others to implement their own methods, algorithms, filters, detectors or integrators. Therefore, OpenChrom shall be an efficiently system to process chromatographic and mass spectrometric data using an extensible and flexible plugin approach. OpenChrom is distributed under the Eclipse Public License 1.0 (EPL). Third-party libraries are separated into single bundles and are released under various OSI compatible licenses.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>OpenChrom is an open source software for chromatography and mass spectrometry, based on the Eclipse Rich Client Platform (RCP). Its focus is to handle analytical data from several chromatographic  systems (e.g. GC/MS, LC/MS, Py-GC/MS, HPLC-MS). OpenChrom is able to import binary and textual chromatographic data files, such as "*.D" chromatograms from Agilent Technologies or NetCDF. Moreover, it offers a nice graphical user interface and is available for various operating systems, e.g. Windows, Linux, Solaris  and Mac OSX. A basis set of methods to detect baselines, peaks and to integrate peaks in a chromatogram are implemented. Preprocessing steps, e.g. to remove certain mass fragments (m/z) such as nitrogen (28) or water (18), are supported by applying filter on the chromatogram or mass spectrum. Extensions are welcome, as OpenChrom is open source and uses a flexible approach, which allows others to implement their own methods, algorithms, filters, detectors or integrators. Therefore, OpenChrom shall be an efficiently system to process chromatographic and mass spectrometric data using an extensible and flexible plugin approach. OpenChrom is distributed under the Eclipse Public License 1.0 (EPL). Third-party libraries are separated into single bundles and are released under various OSI compatible licenses.</p>
+]]></body>
+      <created>1279048258</created>
+      <changed>1351711137</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.openchrom.net]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/openchrom_1.png?itok=5qwuJ2zl]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/OpenChrom.png?itok=BHRsv_42]]></screenshot>
+      <version>0.7.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Philip Wenig]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://www.openchrom.net/main/content/contact.php]]></supporturl>
+      <updateurl><![CDATA[http://www.openchrom.net/plugins/updates-eclipse/0.7.x]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="17667" name="COBOL Development Environment" url="http://marketplace.eclipse.org/content/cobol-development-environment">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='574' name='code' url='http://marketplace.eclipse.org/category/free-tagging/code'/>
+        <tag id='978' name='cobol' url='http://marketplace.eclipse.org/category/free-tagging/cobol'/>
+        <tag id='1333' name='OpenCOBOL' url='http://marketplace.eclipse.org/category/free-tagging/opencobol'/>
+        <tag id='1766' name='rancobol' url='http://marketplace.eclipse.org/category/free-tagging/rancobol'/>
+      </tags>
+      
+      <owner>sebastian.nerger</owner>
+      <favorited>4</favorited>
+      <installstotal>956</installstotal>
+      <installsrecent>35</installsrecent>
+      <shortdescription><![CDATA[<p>COBOL Development Environment</p>
+<p>An simple COBOL Development Environment (for OpenCOBOL) for all dinos.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>COBOL Development Environment</p>
+<p>An simple COBOL Development Environment (for OpenCOBOL) for all dinos.</p>
+]]></body>
+      <created>1288457238</created>
+      <changed>1290251009</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/a/eclipselabs.org/p/code/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/CODE-0.1.0.png?itok=W3xrXjAp]]></screenshot>
+      <version>0.1.3</version>
+      <license>Other Open Source</license>
+      <companyname><![CDATA[none]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://svn.codespot.com/a/eclipselabs.org/code/trunk/UpdateSite/]]></updateurl>
+<ius>
+<iu>CODE_Feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

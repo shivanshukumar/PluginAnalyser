@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="523" name="Xcarecrows 4 XML" url="http://marketplace.eclipse.org/content/xcarecrows-4-xml">
+      <type>resource</type>
+      <categories>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+      </categories>
+            
+      <owner>Sany Maamari</owner>
+      <favorited>5</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>
+Xcarecrows 4 XML is a simple though efficient graphical editor to perform the daily tasks required when working with XML documents.
+</p>
+<p>
+<b><u>Features</u></b>
+<br/>
+<ul>
+<li>a graphical XML documents, XML Schema and XML stylesheets editor</li>
+<li>a graphical XML tree comparator</li>
+<li>a built-in checker against XML schemas</li>
+<li>an XSL transformations tool kit</li>
+<li>an open, customizable, XML graphic layer</li>
+</ul>
+</p>
+<p>
+<b><u>Packaging</u></b>
+<br/>
+<ul>
+<li>Windows and Linux support (platform neutral Java)</li>
+<li>Standalone zip archive or online installation with Eclipse updater</li>
+<li>User documentation</li>
+<li>Installation guide</li>
+</ul>
+</p>
+<p>
+<b><u>Licensing</u></b>
+<br />
+Xcarecrows 4 XML is available under the Open Source
+<a href="<a href="http://www.apache.org/licenses/LICENSE-2.0"><b>Apache">http://www.apache.org/licenses/LICENSE-2.0"><b>Apache</a> License
+version 2</b></a>. The companion XML graphic toolkit is licensed
+under the <a href="<a href="http://www.eclipse.org/legal/epl-v10.html"><b>Eclipse">http://www.eclipse.org/legal/epl-v10.html"><b>Eclipse</a>
+Public License Version 1.0</b></a>.
+</p>
+<p>
+<b><u>Changes from version 1.3.7</u></b>
+<br/>
+<ul>
+<li>Open broken XML/XSL/XSD files in a text view so that the user can fix them</li>
+</ul>
+</p>
+<p>
+<b><u>Changes from version 1.3.6</u></b>
+<br/>
+<ul>
+<li>Fixed a bug where the dirty flag was not correctly set for multiple editors (Xcarecrows 4 XGT)</li>
+<li>The documentation includes the Xcarecrows 4 XGT Javadoc plugin</li>
+</ul>
+</p>
+<p>
+<b><u>Changes from version 1.3.5</u></b>
+<br/>
+<ul>
+<li>Fixed a bug where editing of namespace including XML files failed with some JRE</li>
+</ul>
+</p>
+<p>
+<b><u>Changes from version 1.3.4</u></b>
+<br/>
+<ul>
+<li>Multiple editor feature</li>
+<li>Audit of existing error messages</li>
+</ul>
+</p>
+<p>
+<b><u>Changes from version 1.3.2</u></b>
+<br/>
+<ul>
+<li>XML file renames are correctly detected in the navigator view</li>
+<li>Users are prompted for confirmation before removal of edited files</li>
+</ul>
+</p>
+<p>
+<b><u>Changes from version 1.3.1</u></b>
+<br/>
+<ul>
+<li>Fixed a bug in the UI of the XML comparator when no file is currently edited (updated to version 1.3.9 of Xcarecrows4XGT)</li>
+</ul>
+</p>]]></shortdescription>
+      <body><![CDATA[<p>
+Xcarecrows 4 XML is a simple though efficient graphical editor to perform the daily tasks required when working with XML documents.
+</p>
+<p>
+<b><u>Features</u></b>
+<br/>
+<ul>
+<li>a graphical XML documents, XML Schema and XML stylesheets editor</li>
+<li>a graphical XML tree comparator</li>
+<li>a built-in checker against XML schemas</li>
+<li>an XSL transformations tool kit</li>
+<li>an open, customizable, XML graphic layer</li>
+</ul>
+</p>
+<p>
+<b><u>Packaging</u></b>
+<br/>
+<ul>
+<li>Windows and Linux support (platform neutral Java)</li>
+<li>Standalone zip archive or online installation with Eclipse updater</li>
+<li>User documentation</li>
+<li>Installation guide</li>
+</ul>
+</p>
+<p>
+<b><u>Licensing</u></b>
+<br />
+Xcarecrows 4 XML is available under the Open Source
+<a href="<a href="http://www.apache.org/licenses/LICENSE-2.0"><b>Apache">http://www.apache.org/licenses/LICENSE-2.0"><b>Apache</a> License
+version 2</b></a>. The companion XML graphic toolkit is licensed
+under the <a href="<a href="http://www.eclipse.org/legal/epl-v10.html"><b>Eclipse">http://www.eclipse.org/legal/epl-v10.html"><b>Eclipse</a>
+Public License Version 1.0</b></a>.
+</p>
+<p>
+<b><u>Changes from version 1.3.7</u></b>
+<br/>
+<ul>
+<li>Open broken XML/XSL/XSD files in a text view so that the user can fix them</li>
+</ul>
+</p>
+<p>
+<b><u>Changes from version 1.3.6</u></b>
+<br/>
+<ul>
+<li>Fixed a bug where the dirty flag was not correctly set for multiple editors (Xcarecrows 4 XGT)</li>
+<li>The documentation includes the Xcarecrows 4 XGT Javadoc plugin</li>
+</ul>
+</p>
+<p>
+<b><u>Changes from version 1.3.5</u></b>
+<br/>
+<ul>
+<li>Fixed a bug where editing of namespace including XML files failed with some JRE</li>
+</ul>
+</p>
+<p>
+<b><u>Changes from version 1.3.4</u></b>
+<br/>
+<ul>
+<li>Multiple editor feature</li>
+<li>Audit of existing error messages</li>
+</ul>
+</p>
+<p>
+<b><u>Changes from version 1.3.2</u></b>
+<br/>
+<ul>
+<li>XML file renames are correctly detected in the navigator view</li>
+<li>Users are prompted for confirmation before removal of edited files</li>
+</ul>
+</p>
+<p>
+<b><u>Changes from version 1.3.1</u></b>
+<br/>
+<ul>
+<li>Fixed a bug in the UI of the XML comparator when no file is currently edited (updated to version 1.3.9 of Xcarecrows4XGT)</li>
+</ul>
+</p>]]></body>
+      <created>1186775655</created>
+      <changed>1315403759</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.xcarecrows.com/xcarecrows4xml.php]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/xcarecrows-xml.png?itok=KTOxCu8_]]></image>
+      <version>1.3.8</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[Cogenit]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2.x, 3.3.x]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/xcarecrows4xml]]></supporturl>
+      <updateurl><![CDATA[http://www.xcarecrows.com/eclipse/site.xml]]></updateurl>
+    </node>
+    </marketplace>
+    

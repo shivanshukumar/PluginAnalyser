@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="39322" name="Makumba" url="http://marketplace.eclipse.org/content/makumba">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+      <tags>
+        <tag id='195' name='DSL' url='http://marketplace.eclipse.org/category/free-tagging/dsl'/>
+        <tag id='1722' name='makumba' url='http://marketplace.eclipse.org/category/free-tagging/makumba'/>
+        <tag id='1723' name='jsp taglib' url='http://marketplace.eclipse.org/category/free-tagging/jsp-taglib'/>
+        <tag id='1724' name='web framework' url='http://marketplace.eclipse.org/category/free-tagging/web-framework'/>
+      </tags>
+      
+      <owner>filip.kis</owner>
+      <favorited>1</favorited>
+      <installstotal>250</installstotal>
+      <installsrecent>9</installsrecent>
+      <shortdescription><![CDATA[<p>This plugin provides support for developing applications using <strong>Makumba</strong> web development framework. Some of the features include: Makumba Data Definition editor, JSP content assistant, file wizards etc.</p>
+<p>More complete list of features includes:<br /><strong>Makumba Project</strong></p>
+<ul><li>Makumba Facet that installs required stuff for the project (adds makumba.jar, dataDefinition folder, required filter to web.xml, xtext nature etc.)</li>
+<li>Makumba Dynamic Web Project configuration for automatic install of required settings</li>
+<li>New MDD File wizard</li>
+<li>Builder that automatically validates mdds</li>
+</ul><p><strong>MDD Editor</strong></p>
+<ul><li>Syntax coloring</li>
+<li>Validation</li>
+<li>Content assist (CTRL + Space) with some templates (simple & complex fields, validation rules, functions etc.)</li>
+<li>Open declaration (CTRL Click or F3) for referenced fields/data definitions</li>
+<li>Find references (CTRL + Shift + G) for fields (looks only for references in other MDDs but not query fragments or JSPs)</li>
+<li>Rename field (SHIFT + ALT + R) for field names (looks only for references in other MDDs but not query fragments or JSPs)</li>
+<li>Outline view of the MDD</li>
+</ul><p><strong>JSP support</strong></p>
+<ul><li>New Makumba JSP File template</li>
+<li>Other makumba templates (currently makumba taglib directive)</li>
+<li>Content Assist for makumba tag attirbute values</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>This plugin provides support for developing applications using <strong>Makumba</strong> web development framework. Some of the features include: Makumba Data Definition editor, JSP content assistant, file wizards etc.</p>
+<p>More complete list of features includes:<br /><strong>Makumba Project</strong></p>
+<ul><li>Makumba Facet that installs required stuff for the project (adds makumba.jar, dataDefinition folder, required filter to web.xml, xtext nature etc.)</li>
+<li>Makumba Dynamic Web Project configuration for automatic install of required settings</li>
+<li>New MDD File wizard</li>
+<li>Builder that automatically validates mdds</li>
+</ul><p><strong>MDD Editor</strong></p>
+<ul><li>Syntax coloring</li>
+<li>Validation</li>
+<li>Content assist (CTRL + Space) with some templates (simple & complex fields, validation rules, functions etc.)</li>
+<li>Open declaration (CTRL Click or F3) for referenced fields/data definitions</li>
+<li>Find references (CTRL + Shift + G) for fields (looks only for references in other MDDs but not query fragments or JSPs)</li>
+<li>Rename field (SHIFT + ALT + R) for field names (looks only for references in other MDDs but not query fragments or JSPs)</li>
+<li>Outline view of the MDD</li>
+</ul><p><strong>JSP support</strong></p>
+<ul><li>New Makumba JSP File template</li>
+<li>Other makumba templates (currently makumba taglib directive)</li>
+<li>Content Assist for makumba tag attirbute values</li>
+</ul>]]></body>
+      <created>1300551645</created>
+      <changed>1300908843</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.makumba.org/page/Plugin]]></homepageurl>
+      <image><![CDATA[http://tools.makumba.org/eclipse/chrome/site/makumba-eclipse-logo.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/editor-4b.png?itok=bNaxsNoY]]></screenshot>
+      <version>1.0beta</version>
+      <license>EPL</license>
+      <companyname><![CDATA[makumba.org]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6+]]></eclipseversion>
+      <supporturl><![CDATA[http://tools.makumba.org/eclipse/]]></supporturl>
+      <updateurl><![CDATA[http://www.makumba.org/plugin/updates]]></updateurl>
+<ius>
+<iu>org.makumba.devel.eclipse.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

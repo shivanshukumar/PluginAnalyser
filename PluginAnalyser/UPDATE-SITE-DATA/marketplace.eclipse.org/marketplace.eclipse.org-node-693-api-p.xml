@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="693" name="jUCMNav" url="http://marketplace.eclipse.org/content/jucmnav">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+      </categories>
+            
+      <owner>jucmnav</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>jUCMNav is a graphical editor and an analysis and transformation tool for the User Requirements Notation (URN). URN is intended for the elicitation, analysis, specification, and validation of requirements. URN combines two complementary views: one for goals provided by the Goal-oriented Requirement Language (GRL) and one for scenarios provided by the Use Case Map (UCM) notation. The main applications areas include telecommunications systems, services, and business processes, but URN is generally suitable for describing most types of reactive systems and information systems. The range of applications is from business goals and requirements description to high-level design. The tool also contains report generators and transformations to Message Sequence Charts.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>jUCMNav is a graphical editor and an analysis and transformation tool for the User Requirements Notation (URN). URN is intended for the elicitation, analysis, specification, and validation of requirements. URN combines two complementary views: one for goals provided by the Goal-oriented Requirement Language (GRL) and one for scenarios provided by the Use Case Map (UCM) notation. The main applications areas include telecommunications systems, services, and business processes, but URN is generally suitable for describing most types of reactive systems and information systems. The range of applications is from business goals and requirements description to high-level design. The tool also contains report generators and transformations to Message Sequence Charts.</p>
+]]></body>
+      <created>1211398682</created>
+      <changed>1259779007</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://jucmnav.softwareengineering.ca/jucmnav/]]></homepageurl>
+      <image><![CDATA[http://www.site.uottawa.ca/~damyot/urn/jucmnav110x80.png]]></image>
+      <version>4.1.0</version>
+      <license>Free EPL</license>
+      <companyname><![CDATA[University of Ottawa]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://jucmnav.softwareengineering.ca/jucmnav/]]></supporturl>
+      <updateurl><![CDATA[http://jucmnav.softwareengineering.ca/jucmnav/updatesite/]]></updateurl>
+    </node>
+    </marketplace>
+    

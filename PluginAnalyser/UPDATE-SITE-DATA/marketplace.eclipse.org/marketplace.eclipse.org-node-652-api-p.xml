@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="652" name="MvnIndex" url="http://marketplace.eclipse.org/content/mvnindex">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+            
+      <owner>Lukas Krecan</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>MvnIndex Eclipse plugin's only goal is to simplify Maven POM dependencies editing. It provides code completition of groupId, artifactId and version in the POM. </p>
+]]></shortdescription>
+      <body><![CDATA[<p>MvnIndex Eclipse plugin's only goal is to simplify Maven POM dependencies editing. It provides code completition of groupId, artifactId and version in the POM. </p>
+]]></body>
+      <created>1204211640</created>
+      <changed>1274697461</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://mvnindex.org]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>0.2.6</version>
+      <license>LGPL</license>
+      <companyname><![CDATA[Lukáš Křečan]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.2, 3.3]]></eclipseversion>
+      <supporturl><![CDATA[http://mvnindex.org/]]></supporturl>
+      <updateurl><![CDATA[http://mvnindex.org/eclipse-site/]]></updateurl>
+    </node>
+    </marketplace>
+    

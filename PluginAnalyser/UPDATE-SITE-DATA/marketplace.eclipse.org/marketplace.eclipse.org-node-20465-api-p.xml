@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="20465" name="Easy Middle Button" url="http://marketplace.eclipse.org/content/easy-middle-button">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+      </categories>
+      <tags>
+        <tag id='573' name='tools' url='http://marketplace.eclipse.org/category/free-tagging/tools'/>
+        <tag id='614' name='productivity' url='http://marketplace.eclipse.org/category/free-tagging/productivity'/>
+        <tag id='1646' name='workbench' url='http://marketplace.eclipse.org/category/free-tagging/workbench'/>
+        <tag id='2724' name='middle button' url='http://marketplace.eclipse.org/category/free-tagging/middle-button'/>
+      </tags>
+      
+      <owner>Qing Ao</owner>
+      <favorited>6</favorited>
+      <installstotal>215</installstotal>
+      <installsrecent>6</installsrecent>
+      <shortdescription><![CDATA[<p>Use mouse's middle button to resize editors and views. Make an editor bigger or smaller just as in your mind. Say goodbye to sash aligning and dragging.</p>
+<p>Just 3 steps: 1. Press and hold middle button on an editor. 2. See the notification block. 3. Drag to resize the editor.</p>
+<p>Take a look at the screenshot animation.</p>
+<p>For more details, visit plugin's homepage: <a href="http://aodaren.com/easy-middle-button/">http://aodaren.com/easy-middle-button/</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Use mouse's middle button to resize editors and views. Make an editor bigger or smaller just as in your mind. Say goodbye to sash aligning and dragging.</p>
+<p>Just 3 steps: 1. Press and hold middle button on an editor. 2. See the notification block. 3. Drag to resize the editor.</p>
+<p>Take a look at the screenshot animation.</p>
+<p>For more details, visit plugin's homepage: <a href="http://aodaren.com/easy-middle-button/">http://aodaren.com/easy-middle-button/</a></p>
+]]></body>
+      <created>1290139887</created>
+      <changed>1342514044</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://aodaren.com/easy-middle-button/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/mouse.png?itok=CHc0TmoG]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Easy-Middle-Button_0.gif?itok=5VHLqqIA]]></screenshot>
+      <version>1.0.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[aodaren.com]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4-3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://groups.google.com/group/easy-middle-button]]></supporturl>
+      <updateurl><![CDATA[http://aodaren.com/ec-plugins/update]]></updateurl>
+<ius>
+<iu>com.aodaren.plugins.emb_feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

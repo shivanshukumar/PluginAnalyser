@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1207" name="Repository Manager Eclipse Plug-In" url="http://marketplace.eclipse.org/content/repository-manager-eclipse-plug">
+      <type>resource</type>
+      <categories>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+      </categories>
+      <tags>
+        <tag id='455' name='Repository' url='http://marketplace.eclipse.org/category/free-tagging/repository'/>
+        <tag id='649' name='SOA Software' url='http://marketplace.eclipse.org/category/free-tagging/soa-software'/>
+        <tag id='650' name='Repository Manager' url='http://marketplace.eclipse.org/category/free-tagging/repository-manager'/>
+      </tags>
+      
+      <owner>info</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The Repository Manager Plug-in allows Eclipse users to access Repository Manager.  Repository Manager is an advanced SDA repository offering governance capabilities including the ability to define and manage custom asset and artifact types, asset relationship management, and comprehensive asset federation.</p>
+<p>The Repository Manager Plug-in allows the users to search, inspect, subscribe, and discuss assets as well as viewing and importing artifacts within the IDE user interface. Additional extensions are optionally available during the install to take advantage of features offered by the Eclipse providers. Current extensions consist of:</p>
+<p>Repository Manager Plug-in for IBM Rational Application Developer</p>
+<p>In addition to the base plug-in capabilities available for all Eclipse IDEs, Repository Manager provides integration with the Rational Software Modeler (RSM) and Rational Software Architect (RSA) IDEs. </p>
+]]></shortdescription>
+      <body><![CDATA[<p>The Repository Manager Plug-in allows Eclipse users to access Repository Manager.  Repository Manager is an advanced SDA repository offering governance capabilities including the ability to define and manage custom asset and artifact types, asset relationship management, and comprehensive asset federation.</p>
+<p>The Repository Manager Plug-in allows the users to search, inspect, subscribe, and discuss assets as well as viewing and importing artifacts within the IDE user interface. Additional extensions are optionally available during the install to take advantage of features offered by the Eclipse providers. Current extensions consist of:</p>
+<p>Repository Manager Plug-in for IBM Rational Application Developer</p>
+<p>In addition to the base plug-in capabilities available for all Eclipse IDEs, Repository Manager provides integration with the Rational Software Modeler (RSM) and Rational Software Architect (RSA) IDEs. </p>
+]]></body>
+      <created>1273602062</created>
+      <changed>1273602062</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.soa.com/products/repository_manager/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/soa.jpg?itok=VrRrIiot]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/img_screen_rm.png?itok=3Z95pN2Z]]></screenshot>
+      <version>6.2</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[SOA Software]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.2]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://www.soa.com]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

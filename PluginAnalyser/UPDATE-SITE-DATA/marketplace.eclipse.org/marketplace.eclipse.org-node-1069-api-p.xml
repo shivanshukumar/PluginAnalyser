@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1069" name="Obeo Designer (Indigo version)" url="http://marketplace.eclipse.org/content/obeo-designer-indigo-version">
+      <type>resource</type>
+      <categories>
+        <category id='8' name='Graphics' url='http://marketplace.eclipse.org/taxonomy/term/8'/>
+        <category id='1971' name='Modeling' url='http://marketplace.eclipse.org/category/categories/modeling'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+      </categories>
+      <tags>
+        <tag id='165' name='code generation' url='http://marketplace.eclipse.org/category/free-tagging/code-generation'/>
+        <tag id='174' name='MDA' url='http://marketplace.eclipse.org/category/free-tagging/mda'/>
+        <tag id='195' name='DSL' url='http://marketplace.eclipse.org/category/free-tagging/dsl'/>
+        <tag id='461' name='Viewpoint' url='http://marketplace.eclipse.org/category/free-tagging/viewpoint'/>
+        <tag id='462' name='DSM' url='http://marketplace.eclipse.org/category/free-tagging/dsm'/>
+      </tags>
+      
+      <owner>Obeo  </owner>
+      <favorited>14</favorited>
+      <installstotal>462</installstotal>
+      <installsrecent>13</installsrecent>
+      <shortdescription><![CDATA[<p>Obeo Designer is an innovative solution to create and customize graphicals modelers and MDA studios!</p>
+<p>Obeo Designer provides a settings tool to create Domain Specific Modeling: </p>
+<ul><li>choose if you want to use your DSL, UML, BPMN or any other standard to store your models</li>
+<li>define what will be displayed, the graphical aspects, tool palettes and their associated behaviors, ...</li>
+<li>assemble these various representations in "viewpoints" dedicated for users actions (performance analysis, component design, policy control, ...)</li>
+<li>Add code generators, model transformations and validators</li>
+</ul><p>Obeo Designer is based on GMF, but it simplifies the creation of new designers with an interpreted engine.<br />
+You don't need anymore to be an Eclipse expert to create your own modeling environment and your own diagrams.</p>
+<p>Main customisable parts of Obeo Designer are:</p>
+<ul><li> Choose of serialised format for your models (EMF)</li>
+<li> Viewpoint customisation (dynamic GMF)</li>
+<li> Code generation (Acceleo)</li>
+<li> Models transformation(ATL)</li>
+<li> Code / models traceability and synchronisation (Obeo Traceability)</li>
+<li> Collaborative work (CDO and EMF Compare)</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>Obeo Designer is an innovative solution to create and customize graphicals modelers and MDA studios!</p>
+<p>Obeo Designer provides a settings tool to create Domain Specific Modeling: </p>
+<ul><li>choose if you want to use your DSL, UML, BPMN or any other standard to store your models</li>
+<li>define what will be displayed, the graphical aspects, tool palettes and their associated behaviors, ...</li>
+<li>assemble these various representations in "viewpoints" dedicated for users actions (performance analysis, component design, policy control, ...)</li>
+<li>Add code generators, model transformations and validators</li>
+</ul><p>Obeo Designer is based on GMF, but it simplifies the creation of new designers with an interpreted engine.<br />
+You don't need anymore to be an Eclipse expert to create your own modeling environment and your own diagrams.</p>
+<p>Main customisable parts of Obeo Designer are:</p>
+<ul><li> Choose of serialised format for your models (EMF)</li>
+<li> Viewpoint customisation (dynamic GMF)</li>
+<li> Code generation (Acceleo)</li>
+<li> Models transformation(ATL)</li>
+<li> Code / models traceability and synchronisation (Obeo Traceability)</li>
+<li> Collaborative work (CDO and EMF Compare)</li>
+</ul>]]></body>
+      <created>1260315933</created>
+      <changed>1358250548</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.obeodesigner.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logoOD5.0_110x80_7.png?itok=bcWOxNBS]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/timing_selection%5B1%5D.png?itok=havmQl8s]]></screenshot>
+      <version>6.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Obeo]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://www.obeodesigner.com/resources/community]]></supporturl>
+      <updateurl><![CDATA[http://www.obeo.fr/download/release/designer/6.0/latest/indigo/update]]></updateurl>
+<ius>
+<iu>fr.obeo.oo15oo.oo339oo</iu>
+<iu>fr.obeo.mda.license</iu>
+<iu>fr.obeo.dsl.feature.designer.architect.collab</iu>
+<iu>fr.obeo.dsl.feature.obeonetwork</iu>
+<iu>org.eclipse.emf.cdo.feature.patch</iu>
+<iu>org.eclipse.emf.cdo.server.feature.patch</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

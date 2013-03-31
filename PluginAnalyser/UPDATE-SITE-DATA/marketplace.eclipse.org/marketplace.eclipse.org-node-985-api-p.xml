@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="985" name="BlackBerry Java Plug-in for Eclipse" url="http://marketplace.eclipse.org/content/blackberry-java-plug-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+        <category id='27' name='J2ME' url='http://marketplace.eclipse.org/taxonomy/term/27'/>
+      </categories>
+      <tags>
+        <tag id='499' name='BJ' url='http://marketplace.eclipse.org/category/free-tagging/bj'/>
+        <tag id='991' name='Mobile' url='http://marketplace.eclipse.org/category/free-tagging/mobile'/>
+        <tag id='1418' name='Mobile apps' url='http://marketplace.eclipse.org/category/free-tagging/mobile-apps'/>
+        <tag id='1720' name='OK' url='http://marketplace.eclipse.org/category/free-tagging/ok'/>
+        <tag id='1853' name='blackberry' url='http://marketplace.eclipse.org/category/free-tagging/blackberry'/>
+      </tags>
+      
+      <owner>Adam Abramski</owner>
+      <favorited>10</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>For Java® developers who use the Eclipse™ Integrated Development Environment (IDE), the free BlackBerry JDE Plug-in for Eclipse offers a familiar way to build and test rich mobile applications optimized for BlackBerry smartphones.<br><br></p>
+<p>The BlackBerry JDE Plug-in for Eclipse: <br> <br></p>
+<p>* Enables you to write, test and compile Java® ME applications that run on BlackBerry smartphones<br><br />
+* Simulates the entire end-to-end online and offline user experience of a broad range of BlackBerry smartphones from your desktop<br><br />
+* Features the integration of key Java Specification Requests (JSRs), enabling you to take advantage of the latest Java ME developments in creating a superior mobile application<br><br />
+* Allows you to take advantage of the unique strengths of developing for the BlackBerry platform, including:<br><br />
+- Integration with native smartphone applications to provide users with a seamless BlackBerry experience<br><br />
+- Limiting the need to understand the complex connection transport protocols required for wireless application development<br><br />
+- Leveraging the BlackBerry solution’s push capabilities<br>For Java® developers who use the Eclipse™ Integrated Development Environment (IDE), the free BlackBerry JDE Plug-in for Eclipse offers a familiar way to build and test rich mobile applications optimized for BlackBerry smartphones.<br><br></p>
+<p>The BlackBerry JDE Plug-in for Eclipse: <br> <br></p>
+<p>* Enables you to write, test and compile Java® ME applications that run on BlackBerry smartphones<br><br />
+* Simulates the entire end-to-end online and offline user experience of a broad range of BlackBerry smartphones from your desktop<br><br />
+* Features the integration of key Java Specification Requests (JSRs), enabling you to take advantage of the latest Java ME developments in creating a superior mobile application<br><br />
+* Allows you to take advantage of the unique strengths of developing for the BlackBerry platform, including:<br><br />
+- Integration with native smartphone applications to provide users with a seamless BlackBerry experience<br><br />
+- Limiting the need to understand the complex connection transport protocols required for wireless application development<br><br />
+- Leveraging the BlackBerry solution’s push capabilities<br></p>
+]]></shortdescription>
+      <body><![CDATA[<p>For Java® developers who use the Eclipse™ Integrated Development Environment (IDE), the free BlackBerry JDE Plug-in for Eclipse offers a familiar way to build and test rich mobile applications optimized for BlackBerry smartphones.<br><br></p>
+<p>The BlackBerry JDE Plug-in for Eclipse: <br> <br></p>
+<p>* Enables you to write, test and compile Java® ME applications that run on BlackBerry smartphones<br><br />
+* Simulates the entire end-to-end online and offline user experience of a broad range of BlackBerry smartphones from your desktop<br><br />
+* Features the integration of key Java Specification Requests (JSRs), enabling you to take advantage of the latest Java ME developments in creating a superior mobile application<br><br />
+* Allows you to take advantage of the unique strengths of developing for the BlackBerry platform, including:<br><br />
+- Integration with native smartphone applications to provide users with a seamless BlackBerry experience<br><br />
+- Limiting the need to understand the complex connection transport protocols required for wireless application development<br><br />
+- Leveraging the BlackBerry solution’s push capabilities<br>For Java® developers who use the Eclipse™ Integrated Development Environment (IDE), the free BlackBerry JDE Plug-in for Eclipse offers a familiar way to build and test rich mobile applications optimized for BlackBerry smartphones.<br><br></p>
+<p>The BlackBerry JDE Plug-in for Eclipse: <br> <br></p>
+<p>* Enables you to write, test and compile Java® ME applications that run on BlackBerry smartphones<br><br />
+* Simulates the entire end-to-end online and offline user experience of a broad range of BlackBerry smartphones from your desktop<br><br />
+* Features the integration of key Java Specification Requests (JSRs), enabling you to take advantage of the latest Java ME developments in creating a superior mobile application<br><br />
+* Allows you to take advantage of the unique strengths of developing for the BlackBerry platform, including:<br><br />
+- Integration with native smartphone applications to provide users with a seamless BlackBerry experience<br><br />
+- Limiting the need to understand the complex connection transport protocols required for wireless application development<br><br />
+- Leveraging the BlackBerry solution’s push capabilities<br></p>
+]]></body>
+      <created>1250086111</created>
+      <changed>1260403812</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://na.blackberry.com/eng/developers/javaappdev/javaeclipseplug.jsp]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Eclipse_Java_highres.png?itok=XKfE32HQ]]></image>
+      <version>1.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Research In Motion]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4.0 and 3.4.1]]></eclipseversion>
+      <supporturl><![CDATA[http://supportforums.blackberry.com/rim/?category.id=BlackBerryDevelopment]]></supporturl>
+      <updateurl><![CDATA[http://www.blackberry.com/go/eclipseUpdate]]></updateurl>
+    </node>
+    </marketplace>
+    

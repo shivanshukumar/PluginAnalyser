@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="3411" name="EPIC - Eclipse Perl Integration" url="http://marketplace.eclipse.org/content/epic-eclipse-perl-integration">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='290' name='Perl' url='http://marketplace.eclipse.org/category/free-tagging/perl'/>
+        <tag id='1003' name='epic' url='http://marketplace.eclipse.org/category/free-tagging/epic'/>
+        <tag id='1004' name='e-p-i-c' url='http://marketplace.eclipse.org/category/free-tagging/e-p-i-c'/>
+      </tags>
+      
+      <owner>Todd Vierling</owner>
+      <favorited>20</favorited>
+      <installstotal>11215</installstotal>
+      <installsrecent>90</installsrecent>
+      <shortdescription><![CDATA[<p>EPIC is an open source Perl IDE (including editor and debugger) based on the Eclipse platform, compatible with Windows, Linux and Mac OS X. Whether you are into CGI scripting or full-fledged Perl projects with hundreds of modules, EPIC is the most feature-rich and extensible free Perl IDE available today, thanks to a seamless integration with all the major features and GUI conventions of Eclipse.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>EPIC is an open source Perl IDE (including editor and debugger) based on the Eclipse platform, compatible with Windows, Linux and Mac OS X. Whether you are into CGI scripting or full-fledged Perl projects with hundreds of modules, EPIC is the most feature-rich and extensible free Perl IDE available today, thanks to a seamless integration with all the major features and GUI conventions of Eclipse.</p>
+]]></body>
+      <created>1278607148</created>
+      <changed>1278607148</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.epic-ide.org/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/epic_small.jpg?itok=3uX0Z2jy]]></image>
+      <version>0.5</version>
+      <license>Other Open Source</license>
+      <companyname><![CDATA[epic-ide.org]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.1+]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/forum/?group_id=75859]]></supporturl>
+      <updateurl><![CDATA[http://e-p-i-c.sf.net/updates/]]></updateurl>
+<ius>
+<iu>org.epic.feature.main</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

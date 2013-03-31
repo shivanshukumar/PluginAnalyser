@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="547" name="eFace free edition - XAML for Java" url="http://marketplace.eclipse.org/content/eface-free-edition-xaml-java">
+      <type>resource</type>
+      <categories>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+      </categories>
+      <tags>
+        <tag id='473' name='SWT' url='http://marketplace.eclipse.org/category/free-tagging/swt'/>
+        <tag id='878' name='XAML' url='http://marketplace.eclipse.org/category/free-tagging/xaml'/>
+      </tags>
+      
+      <owner>Yves YANG</owner>
+      <favorited>4</favorited>
+      <installstotal>392</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><b><font color="#FF6600">e</font>Face</b> is the Worldwide First <b>XAML solution for Java</b>. It provides an unified programming model for building both rich client and Web application. It keeps insulation for applications from the technology/environment change such as Swing, SWT or Web/Ajax.</p>
+<p>It provides the following key benefits than the traditional programming solution: <ol><br />
+  <li><B>Rapid and domain-oriented (User Experience) development</b></a> </li><br />
+  <li><b>Cross-environment<br />
+  applications</b></a> </li><br />
+  <li><b>Insulation from technology change</b></a> </li><br />
+  <li><b>Ideal GUI component for MDD/MDA approach</b></a> </li><br />
+</ol><br />
+The release 1.0.2 provides an "out of the box" integration with Eclipse RCP. It  is a first solution to develop RCP based on XML GUI, without coding in Java.</p>
+<p><div align=center><img height=465 src="<a href="http://www.soyatec.com/eface/images/architecture.png"">http://www.soyatec.com/eface/images/architecture.png"</a> width="573"/></div></p>
+<p>More information can be found on the <a href="<a href="http://www.eclipseplugincentral.com/Web_Links-index-req-visit-lid-1001.html"><b><font">http://www.eclipseplugincentral.com/Web_Links-index-req-visit-lid-1001.h...</a> color="#FF6600">e</font>Face pages</b>.</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p><b><font color="#FF6600">e</font>Face</b> is the Worldwide First <b>XAML solution for Java</b>. It provides an unified programming model for building both rich client and Web application. It keeps insulation for applications from the technology/environment change such as Swing, SWT or Web/Ajax.</p>
+<p>It provides the following key benefits than the traditional programming solution: <ol><br />
+  <li><B>Rapid and domain-oriented (User Experience) development</b></a> </li><br />
+  <li><b>Cross-environment<br />
+  applications</b></a> </li><br />
+  <li><b>Insulation from technology change</b></a> </li><br />
+  <li><b>Ideal GUI component for MDD/MDA approach</b></a> </li><br />
+</ol><br />
+The release 1.0.2 provides an "out of the box" integration with Eclipse RCP. It  is a first solution to develop RCP based on XML GUI, without coding in Java.</p>
+<p><div align=center><img height=465 src="<a href="http://www.soyatec.com/eface/images/architecture.png"">http://www.soyatec.com/eface/images/architecture.png"</a> width="573"/></div></p>
+<p>More information can be found on the <a href="<a href="http://www.eclipseplugincentral.com/Web_Links-index-req-visit-lid-1001.html"><b><font">http://www.eclipseplugincentral.com/Web_Links-index-req-visit-lid-1001.h...</a> color="#FF6600">e</font>Face pages</b>.</a></p>
+]]></body>
+      <created>1190640850</created>
+      <changed>1277218961</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.soyatec.com]]></homepageurl>
+      <image><![CDATA[http://www.soyatec.com/eface/images/product_eface_110x80.png]]></image>
+      <version>1.2.4</version>
+      <license>Free for non-commerical use</license>
+      <companyname><![CDATA[Soyatec]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[Eclipse 3.3.x/Eclipse 3.4.0]]></eclipseversion>
+      <supporturl><![CDATA[http://www.soyatec.com/forum/]]></supporturl>
+      <updateurl><![CDATA[http://www.soyatec.com/update/]]></updateurl>
+<ius>
+<iu>com.soyatec.eface.core</iu>
+<iu>com.soyatec.eface.rcp</iu>
+<iu>com.soyatec.eface.tools.ui</iu>
+<iu>com.soyatec.eface.userdoc</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

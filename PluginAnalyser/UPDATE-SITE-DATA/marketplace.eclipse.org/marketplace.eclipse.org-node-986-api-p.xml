@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="986" name="BlackBerry Web Development Plug-in for Eclipse 1.0" url="http://marketplace.eclipse.org/content/blackberry-web-development-plug-eclipse-10">
+      <type>resource</type>
+      <categories>
+        <category id='13' name='Profiling' url='http://marketplace.eclipse.org/taxonomy/term/13'/>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+      </categories>
+      <tags>
+        <tag id='188' name='pdf viewer' url='http://marketplace.eclipse.org/category/free-tagging/pdf-viewer'/>
+      </tags>
+      
+      <owner>Adam Abramski</owner>
+      <favorited>2</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The BlackBerry® Web Development Plug-in for Eclipse™ is a brand new addition to the web development tooling products. This product is seamlessly integrated with Eclipse 3.4. It allows a web developer to debug browser-based applications and content for the BlackBerry Smartphone, as well as, to provide the ability to profile the code, and increase efficiency from using Eclipse in a manner familiar to the developer. The Eclipse plug-in also facilitates remote web development, debugging and profiling. Included with the plug in is a BlackBerry smartphone simulator to assist a web developer in immediately being able to test their content and "hit the ground running".<br><br></p>
+<p>Debugging<br><br />
+- Support for debugging web projects with the BlackBerry Smartphone Simulators<br><br />
+- Setting breakpoints on JavaScript® code<br><br />
+- Seamless integration into Debug, Variables and Expressions views<br><br></p>
+<p>Profiling<br><br />
+- Visibility into the content of XMLHttpRequest requests and response data<br><br />
+- Visibility into data traffic for web-based content, including elements such as images, CSS, JavaScript, and HTML<br><br />
+- Reporting on time-to-load for web-based content, including elements such as images, CSS, JavaScript, and HTML<br>The BlackBerry® Web Development Plug-in for Eclipse™ is a brand new addition to the web development tooling products. This product is seamlessly integrated with Eclipse 3.4. It allows a web developer to debug browser-based applications and content for the BlackBerry Smartphone, as well as, to provide the ability to profile the code, and increase efficiency from using Eclipse in a manner familiar to the developer. The Eclipse plug-in also facilitates remote web development, debugging and profiling. Included with the plug in is a BlackBerry smartphone simulator to assist a web developer in immediately being able to test their content and "hit the ground running".<br><br></p>
+<p>Debugging<br><br />
+- Support for debugging web projects with the BlackBerry Smartphone Simulators<br><br />
+- Setting breakpoints on JavaScript® code<br><br />
+- Seamless integration into Debug, Variables and Expressions views<br><br></p>
+<p>Profiling<br><br />
+- Visibility into the content of XMLHttpRequest requests and response data<br><br />
+- Visibility into data traffic for web-based content, including elements such as images, CSS, JavaScript, and HTML<br><br />
+- Reporting on time-to-load for web-based content, including elements such as images, CSS, JavaScript, and HTML<br></p>
+]]></shortdescription>
+      <body><![CDATA[<p>The BlackBerry® Web Development Plug-in for Eclipse™ is a brand new addition to the web development tooling products. This product is seamlessly integrated with Eclipse 3.4. It allows a web developer to debug browser-based applications and content for the BlackBerry Smartphone, as well as, to provide the ability to profile the code, and increase efficiency from using Eclipse in a manner familiar to the developer. The Eclipse plug-in also facilitates remote web development, debugging and profiling. Included with the plug in is a BlackBerry smartphone simulator to assist a web developer in immediately being able to test their content and "hit the ground running".<br><br></p>
+<p>Debugging<br><br />
+- Support for debugging web projects with the BlackBerry Smartphone Simulators<br><br />
+- Setting breakpoints on JavaScript® code<br><br />
+- Seamless integration into Debug, Variables and Expressions views<br><br></p>
+<p>Profiling<br><br />
+- Visibility into the content of XMLHttpRequest requests and response data<br><br />
+- Visibility into data traffic for web-based content, including elements such as images, CSS, JavaScript, and HTML<br><br />
+- Reporting on time-to-load for web-based content, including elements such as images, CSS, JavaScript, and HTML<br>The BlackBerry® Web Development Plug-in for Eclipse™ is a brand new addition to the web development tooling products. This product is seamlessly integrated with Eclipse 3.4. It allows a web developer to debug browser-based applications and content for the BlackBerry Smartphone, as well as, to provide the ability to profile the code, and increase efficiency from using Eclipse in a manner familiar to the developer. The Eclipse plug-in also facilitates remote web development, debugging and profiling. Included with the plug in is a BlackBerry smartphone simulator to assist a web developer in immediately being able to test their content and "hit the ground running".<br><br></p>
+<p>Debugging<br><br />
+- Support for debugging web projects with the BlackBerry Smartphone Simulators<br><br />
+- Setting breakpoints on JavaScript® code<br><br />
+- Seamless integration into Debug, Variables and Expressions views<br><br></p>
+<p>Profiling<br><br />
+- Visibility into the content of XMLHttpRequest requests and response data<br><br />
+- Visibility into data traffic for web-based content, including elements such as images, CSS, JavaScript, and HTML<br><br />
+- Reporting on time-to-load for web-based content, including elements such as images, CSS, JavaScript, and HTML<br></p>
+]]></body>
+      <created>1250086160</created>
+      <changed>1260403614</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.blackberry.com/developers/webeclipse]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Eclipse_Web_highres.png?itok=qUFMDHJn]]></image>
+      <version>1.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Research In Motion]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4.1]]></eclipseversion>
+      <supporturl><![CDATA[http://supportforums.blackberry.com/rim/board?board.id=browser_dev]]></supporturl>
+      <updateurl><![CDATA[http://www.blackberry.com/developers/webeclipse]]></updateurl>
+    </node>
+    </marketplace>
+    

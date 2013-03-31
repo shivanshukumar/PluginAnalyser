@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="2911" name="Ascape SDK and Agent Modeling Documentation" url="http://marketplace.eclipse.org/content/ascape-sdk-and-agent-modeling-documentation">
+      <type>resource</type>
+      <categories>
+        <category id='7' name='Entertainment' url='http://marketplace.eclipse.org/taxonomy/term/7'/>
+        <category id='8' name='Graphics' url='http://marketplace.eclipse.org/taxonomy/term/8'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+      </categories>
+      <tags>
+        <tag id='973' name='abm' url='http://marketplace.eclipse.org/category/free-tagging/abm'/>
+        <tag id='974' name='agents' url='http://marketplace.eclipse.org/category/free-tagging/agents'/>
+        <tag id='975' name='science' url='http://marketplace.eclipse.org/category/free-tagging/science'/>
+      </tags>
+      
+      <owner>Miles Parker</owner>
+      <favorited>0</favorited>
+      <installstotal>92</installstotal>
+      <installsrecent>5</installsrecent>
+      <shortdescription><![CDATA[<p>Ascape is an innovative tool for developing and exploring general-purpose agent-based models. Ascape includes extensive (and interactive) documentation that is designed to work with the Eclipse AMP environment as well as the original Swing based environment and Eclipse IDE tools. For models targeting SWT and the Eclipse platform itself you'll want to download the Eclipse AMP tools that you can also find on Marketplace.</p>
+<p>Ascape is designed to be flexible and powerful, but also approachable, easy to use and expressive. Models can be developed in Ascape using far less code than in other tools. Ascape models are easier to explore, and profound changes to the models can be made with minimal code changes. Ascape offers a broad array of modeling and visualization tools.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Ascape is an innovative tool for developing and exploring general-purpose agent-based models. Ascape includes extensive (and interactive) documentation that is designed to work with the Eclipse AMP environment as well as the original Swing based environment and Eclipse IDE tools. For models targeting SWT and the Eclipse platform itself you'll want to download the Eclipse AMP tools that you can also find on Marketplace.</p>
+<p>Ascape is designed to be flexible and powerful, but also approachable, easy to use and expressive. Models can be developed in Ascape using far less code than in other tools. Ascape models are easier to explore, and profound changes to the models can be made with minimal code changes. Ascape offers a broad array of modeling and visualization tools.</p>
+]]></body>
+      <created>1278384195</created>
+      <changed>1278384921</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://ascape.sourceforge.net]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/AscapeMP2.png?itok=1T9K5Yhl]]></image>
+      <version>5.6.0</version>
+      <license>BSD</license>
+      <companyname><![CDATA[Ascape]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[https://sourceforge.net/projects/ascape/forums/forum/731620]]></supporturl>
+      <updateurl><![CDATA[http://ascape.sourceforge.net/eclipse]]></updateurl>
+<ius>
+<iu>org.ascape.sdk</iu>
+<iu>org.ascape.doc</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

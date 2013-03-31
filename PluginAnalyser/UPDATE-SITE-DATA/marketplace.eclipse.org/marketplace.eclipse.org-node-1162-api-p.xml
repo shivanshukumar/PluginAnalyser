@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1162" name="Rabbit" url="http://marketplace.eclipse.org/content/rabbit">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='30' name='Process' url='http://marketplace.eclipse.org/taxonomy/term/30'/>
+      </categories>
+      <tags>
+        <tag id='254' name='rabbit' url='http://marketplace.eclipse.org/category/free-tagging/rabbit'/>
+        <tag id='255' name='cool' url='http://marketplace.eclipse.org/category/free-tagging/cool'/>
+        <tag id='256' name='process metrics' url='http://marketplace.eclipse.org/category/free-tagging/process-metrics'/>
+        <tag id='257' name='usage' url='http://marketplace.eclipse.org/category/free-tagging/usage'/>
+        <tag id='258' name='tracking' url='http://marketplace.eclipse.org/category/free-tagging/tracking'/>
+      </tags>
+      
+      <owner>Lae</owner>
+      <favorited>8</favorited>
+      <installstotal>430</installstotal>
+      <installsrecent>37</installsrecent>
+      <shortdescription><![CDATA[<p>Rabbit is a time tracking plug-in for Eclipse. It runs silently in the background to record how you spend your time within Eclipse and reports the data back to you whenever you want it to - in a useful way. Currently, it can tell you the following:</p>
+<p><strong>Commands</strong><br />
+How often you use each commands (cut, copy, paste etc), do you know which is your favorite?</p>
+<p><strong>Editors and Views</strong><br />
+Time spent using different tool within Eclipse, such as Java Editor, Outline view.</p>
+<p><strong>Perspectives</strong><br />
+Time spent using different perspectives.</p>
+<p><strong>Sessions</strong><br />
+Time spent using Eclipse.</p>
+<p><strong>Resources</strong><br />
+Time spent working on difference resources such as files, projects.</p>
+<p><strong>Java Elements</strong><br />
+Time spent working on Java elements such as classes, methods.</p>
+<p><strong>Launches</strong><br />
+Launches such application runs, debug runs etc, and the relevant files will be recorded too when you step into them using the during debugging.</p>
+<p><strong>Task</strong><br />
+Time spent working on tasks (tasks in Task List view) and resources.</p>
+<p>Rabbit is intelligent, it only records data when you are active with Eclipse, so leave Eclipse open and go out for launch if you like, Rabbit will be sleeping while you eat!</p>
+<p>The Rabbit view is where you can view the data in a graphical way, it also has a few useful features to help you see the data the way you want to, like grouping by dates, highlighting different types of elements with colors, and more.</p>
+<p>It's a fun thing to know what you've done, and it can reveal interesting things about you that you never knew.</p>
+<p><strong>Please go to <a href="http://code.google.com/p/rabbit-eclipse/">http://code.google.com/p/rabbit-eclipse/</a> for screenshots and more information.</strong></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Rabbit is a time tracking plug-in for Eclipse. It runs silently in the background to record how you spend your time within Eclipse and reports the data back to you whenever you want it to - in a useful way. Currently, it can tell you the following:</p>
+<p><strong>Commands</strong><br />
+How often you use each commands (cut, copy, paste etc), do you know which is your favorite?</p>
+<p><strong>Editors and Views</strong><br />
+Time spent using different tool within Eclipse, such as Java Editor, Outline view.</p>
+<p><strong>Perspectives</strong><br />
+Time spent using different perspectives.</p>
+<p><strong>Sessions</strong><br />
+Time spent using Eclipse.</p>
+<p><strong>Resources</strong><br />
+Time spent working on difference resources such as files, projects.</p>
+<p><strong>Java Elements</strong><br />
+Time spent working on Java elements such as classes, methods.</p>
+<p><strong>Launches</strong><br />
+Launches such application runs, debug runs etc, and the relevant files will be recorded too when you step into them using the during debugging.</p>
+<p><strong>Task</strong><br />
+Time spent working on tasks (tasks in Task List view) and resources.</p>
+<p>Rabbit is intelligent, it only records data when you are active with Eclipse, so leave Eclipse open and go out for launch if you like, Rabbit will be sleeping while you eat!</p>
+<p>The Rabbit view is where you can view the data in a graphical way, it also has a few useful features to help you see the data the way you want to, like grouping by dates, highlighting different types of elements with colors, and more.</p>
+<p>It's a fun thing to know what you've done, and it can reveal interesting things about you that you never knew.</p>
+<p><strong>Please go to <a href="http://code.google.com/p/rabbit-eclipse/">http://code.google.com/p/rabbit-eclipse/</a> for screenshots and more information.</strong></p>
+]]></body>
+      <created>1268352327</created>
+      <changed>1297497374</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/rabbit-eclipse/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/icon_0.png?itok=0mN-Z01T]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Rabbit%201.2%20win.PNG?itok=fNECm6TQ]]></screenshot>
+      <version>1.2.1</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[The Rabbit Eclipse Plug-in Project]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4, 3.5, 3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/rabbit-eclipse/]]></supporturl>
+      <updateurl><![CDATA[https://rabbit-eclipse.googlecode.com/svn/site/updatesite]]></updateurl>
+<ius>
+<iu>rabbit.feature</iu>
+<iu>rabbit.feature.jdt</iu>
+<iu>rabbit.feature.mylyn</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

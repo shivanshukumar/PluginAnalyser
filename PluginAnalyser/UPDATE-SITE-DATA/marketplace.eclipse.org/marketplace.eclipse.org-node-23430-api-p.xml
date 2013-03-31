@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="23430" name="ReviewMate" url="http://marketplace.eclipse.org/content/reviewmate">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='95' name='code review' url='http://marketplace.eclipse.org/category/free-tagging/code-review'/>
+        <tag id='1449' name='review' url='http://marketplace.eclipse.org/category/free-tagging/review'/>
+        <tag id='1450' name='peer review' url='http://marketplace.eclipse.org/category/free-tagging/peer-review'/>
+        <tag id='1451' name='reviews' url='http://marketplace.eclipse.org/category/free-tagging/reviews'/>
+        <tag id='1452' name='comment' url='http://marketplace.eclipse.org/category/free-tagging/comment'/>
+      </tags>
+      
+      <owner>Chris Gross</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>ReviewMate is the best way to record and manage code reviews.  </p>
+<p>ReviewMate provides a revolutionary interface that allows developers to comment on and discuss code while never having to leave to code.  Comments and discussions are displayed in the right margin.  No longer do developers have to switch back and forth between a form field and the code editor to add or edit comments.  With ReviewMate, you never have to leave the context of your code.</p>
+<p>See more at <a href="http://www.elementriver.com/reviewmate">www.elementriver.com/reviewmate.</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>ReviewMate is the best way to record and manage code reviews.  </p>
+<p>ReviewMate provides a revolutionary interface that allows developers to comment on and discuss code while never having to leave to code.  Comments and discussions are displayed in the right margin.  No longer do developers have to switch back and forth between a form field and the code editor to add or edit comments.  With ReviewMate, you never have to leave the context of your code.</p>
+<p>See more at <a href="http://www.elementriver.com/reviewmate">www.elementriver.com/reviewmate.</a></p>
+]]></body>
+      <created>1291818050</created>
+      <changed>1291822466</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.elementriver.com/reviewmate]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/RM_110x80.png?itok=jMAS58q_]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/reviewmate2.png?itok=sY9EhfWJ]]></screenshot>
+      <version></version>
+      <license>Commercial</license>
+      <companyname><![CDATA[ElementRiver]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://support.elementriver.com]]></supporturl>
+      <updateurl><![CDATA[http://updates.elementriver.com/reviewmate/v1]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

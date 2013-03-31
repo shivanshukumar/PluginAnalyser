@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="423" name="Cantata++ Unit/Integration testing for C/C++ and Java" url="http://marketplace.eclipse.org/content/cantata-unitintegration-testing-cc-and-java">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+      </categories>
+            
+      <owner>Matt Davis</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Cantata++ allows C/C++ and Java developers to efficiently perform unit and integration testing. An Eclipse 3.3 plug-in, Cantata++ offers a unique set of testing, coverage analysis and static analysis features.</p>
+<p>Unit / Integration Testing:</p>
+<p>Parsing source code - parameters and data with Stubs and Wrappers automatically generated into the test script.</p>
+<p>Structured Tests - in C/C++ or using JUnit. Option to do table-driven scripts, with further option to store data in .csv (spreadsheet) format.</p>
+<p>Automated Stubs - programmable dummy versions of external software.</p>
+<p>Automated Wrapping - programmable interceptions to the real external software (more flexible than Stubs).</p>
+<p>Checks for all standard and user-defined data types and exceptions.</p>
+<p>White/Black Box and full Object Oriented testing. </p>
+<p>Detailed results with tree views and drill-down for easy navigation to individual tests in XML and ASCII.</p>
+<p>Coverage Analysis:<br />
+Objective measure of how effective testing has been in executing the source code. </p>
+<p>Code coverage metrics in configurable RuleSets provided are:<br />
+- Entry points<br />
+- Call Returns<br />
+- Statements<br />
+- Basic Blocks<br />
+- Decisions (branches)<br />
+- Conditions<br />
+- MC/DC (for DO-178B)</p>
+<p>Coverage Checks - integrated into dynamic tests resulting in Pass/Fail for coverage requirements.</p>
+<p>Option for test coverage optimisation - pick the minimum set of test cases for maximum coverage. </p>
+<p>Test Java with JUnit tests with integrated coverage by test case for Entry-Points, Statements & Decisions.</p>
+<p>Coverage Trees for drill-down to annotated source, and results reported by individual syntax and test case.</p>
+<p>Static Analysis:<br />
+300+ source code metrics - used to help enforce code quality standards. </p>
+<p>Metrics reports in .csv format can be imported into spreadsheets for graphical and numerical analysis.</p>
+<p>Procedural metric counts and scientific metrics sets.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Cantata++ allows C/C++ and Java developers to efficiently perform unit and integration testing. An Eclipse 3.3 plug-in, Cantata++ offers a unique set of testing, coverage analysis and static analysis features.</p>
+<p>Unit / Integration Testing:</p>
+<p>Parsing source code - parameters and data with Stubs and Wrappers automatically generated into the test script.</p>
+<p>Structured Tests - in C/C++ or using JUnit. Option to do table-driven scripts, with further option to store data in .csv (spreadsheet) format.</p>
+<p>Automated Stubs - programmable dummy versions of external software.</p>
+<p>Automated Wrapping - programmable interceptions to the real external software (more flexible than Stubs).</p>
+<p>Checks for all standard and user-defined data types and exceptions.</p>
+<p>White/Black Box and full Object Oriented testing. </p>
+<p>Detailed results with tree views and drill-down for easy navigation to individual tests in XML and ASCII.</p>
+<p>Coverage Analysis:<br />
+Objective measure of how effective testing has been in executing the source code. </p>
+<p>Code coverage metrics in configurable RuleSets provided are:<br />
+- Entry points<br />
+- Call Returns<br />
+- Statements<br />
+- Basic Blocks<br />
+- Decisions (branches)<br />
+- Conditions<br />
+- MC/DC (for DO-178B)</p>
+<p>Coverage Checks - integrated into dynamic tests resulting in Pass/Fail for coverage requirements.</p>
+<p>Option for test coverage optimisation - pick the minimum set of test cases for maximum coverage. </p>
+<p>Test Java with JUnit tests with integrated coverage by test case for Entry-Points, Statements & Decisions.</p>
+<p>Coverage Trees for drill-down to annotated source, and results reported by individual syntax and test case.</p>
+<p>Static Analysis:<br />
+300+ source code metrics - used to help enforce code quality standards. </p>
+<p>Metrics reports in .csv format can be imported into spreadsheets for graphical and numerical analysis.</p>
+<p>Procedural metric counts and scientific metrics sets.</p>
+]]></body>
+      <created>1174487554</created>
+      <changed>1268062848</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.ipl.com/products/tools/pt400.uk.php]]></homepageurl>
+      <image><![CDATA[http://www.ipl.com/imgs/ProductsMicrometer01.png]]></image>
+      <version>5.3</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[IPL Information Processsing Limited]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://www.ipl.com/products/prodsupp/cantpp/ps400.uk.php]]></supporturl>
+      <updateurl><![CDATA[http://www.ipl.com/products/p0300.uk.php]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

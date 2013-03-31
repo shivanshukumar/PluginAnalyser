@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="4002" name="Net4j Signalling Platform" url="http://marketplace.eclipse.org/content/net4j-signalling-platform">
+      <type>resource</type>
+      <categories>
+        <category id='1' name='Application Server' url='http://marketplace.eclipse.org/taxonomy/term/1'/>
+        <category id='1968' name='Collaboration' url='http://marketplace.eclipse.org/category/categories/collaboration'/>
+        <category id='12' name='Network' url='http://marketplace.eclipse.org/taxonomy/term/12'/>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+      <tags>
+        <tag id='364' name='network' url='http://marketplace.eclipse.org/category/free-tagging/network'/>
+        <tag id='457' name='CDO' url='http://marketplace.eclipse.org/category/free-tagging/cdo'/>
+        <tag id='970' name='Asynchronous Remote Services' url='http://marketplace.eclipse.org/category/free-tagging/asynchronous-remote-services'/>
+        <tag id='1707' name='Remote Services' url='http://marketplace.eclipse.org/category/free-tagging/remote-services'/>
+        <tag id='2666' name='runtime' url='http://marketplace.eclipse.org/category/free-tagging/runtime'/>
+      </tags>
+      
+      <owner>Eike Stepper</owner>
+      <favorited>1</favorited>
+      <installstotal>444</installstotal>
+      <installsrecent>16</installsrecent>
+      <shortdescription><![CDATA[<p>The Net4j Signalling platform is an extensible client/server communications framework.</p>
+<p>Net4j eases the development of fast and maintainable application protocols that are independent of the physical transport medium. Transport protocols are pluggable and Net4j ships with support for TCP, HTTP and in-memory transport. The core of Net4j is a fast, asynchronous and non-blocking buffer multiplexing kernel, based on OSGi but also executable stand-alone.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The Net4j Signalling platform is an extensible client/server communications framework.</p>
+<p>Net4j eases the development of fast and maintainable application protocols that are independent of the physical transport medium. Transport protocols are pluggable and Net4j ships with support for TCP, HTTP and in-memory transport. The core of Net4j is a fast, asynchronous and non-blocking buffer multiplexing kernel, based on OSGi but also executable stand-alone.</p>
+]]></body>
+      <created>1279722981</created>
+      <changed>1349877500</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://wiki.eclipse.org/Net4j]]></homepageurl>
+      <image><![CDATA[http://www.eclipse.org/cdo/images/Logo-Net4j.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Net4j-Screenshot.png?itok=2pVKa-_t]]></screenshot>
+      <version>4.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Eclipse.org]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.8]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eclipse.org/newsportal/thread.php?group=eclipse.tools.emf]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/modeling/emf/cdo/updates/releases/4.1]]></updateurl>
+<ius>
+<iu>org.eclipse.net4j.sdk</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

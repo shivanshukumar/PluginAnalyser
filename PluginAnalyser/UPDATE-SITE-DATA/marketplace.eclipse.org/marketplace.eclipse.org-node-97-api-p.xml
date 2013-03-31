@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="97" name="EHEP - Eclipse Hex Editor Plugin" url="http://marketplace.eclipse.org/content/ehep-eclipse-hex-editor-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='1972' name='General Purpose Tools' url='http://marketplace.eclipse.org/category/categories/general-purpose-tools'/>
+      </categories>
+      <tags>
+        <tag id='2056' name='ehep' url='http://marketplace.eclipse.org/category/free-tagging/ehep'/>
+        <tag id='2057' name='hex editor' url='http://marketplace.eclipse.org/category/free-tagging/hex-editor'/>
+        <tag id='2058' name='binary files' url='http://marketplace.eclipse.org/category/free-tagging/binary-files'/>
+      </tags>
+      
+      <owner>Randallco</owner>
+      <favorited>9</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><FONT face=Arial>EHEP is an Eclipse plugin, which allows user to view or modify any file in hex mode. Plugin provides table with hex and character view of the file.<br><br>EHEP Update Site URL: <a href="http://ehep.sourceforge.net/update<br>EHEP">http://ehep.sourceforge.net/update<br>EHEP</a> RSS News URL: <a href="http://ehep.sourceforge.net/rss-ehep.xml</font>">http://ehep.sourceforge.net/rss-ehep.xml</font></a></p>
+]]></shortdescription>
+      <body><![CDATA[<p><FONT face=Arial>EHEP is an Eclipse plugin, which allows user to view or modify any file in hex mode. Plugin provides table with hex and character view of the file.<br><br>EHEP Update Site URL: <a href="http://ehep.sourceforge.net/update<br>EHEP">http://ehep.sourceforge.net/update<br>EHEP</a> RSS News URL: <a href="http://ehep.sourceforge.net/rss-ehep.xml</font>">http://ehep.sourceforge.net/rss-ehep.xml</font></a></p>
+]]></body>
+      <created>1079070877</created>
+      <changed>1309266883</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://ehep.sourceforge.net]]></homepageurl>
+      <image><![CDATA[http://ehep.sourceforge.net/images/ehep-splash-110x80.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/EHEP-1.0.0.png?itok=oTL2o4mB]]></screenshot>
+      <version>1.0.0</version>
+      <license>Free for non-commerical use</license>
+      <companyname><![CDATA[none]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[Eclipse 3.1 - 3.7 platform]]></eclipseversion>
+      <supporturl><![CDATA[https://sourceforge.net/projects/ehep/forums/forum/297952]]></supporturl>
+      <updateurl><![CDATA[http://ehep.sourceforge.net/update]]></updateurl>
+    </node>
+    </marketplace>
+    

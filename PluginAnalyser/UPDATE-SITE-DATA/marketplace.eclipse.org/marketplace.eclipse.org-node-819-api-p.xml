@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="819" name="Javascript Debug Toolkit" url="http://marketplace.eclipse.org/content/javascript-debug-toolkit">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+      <tags>
+        <tag id='754' name='a' url='http://marketplace.eclipse.org/category/free-tagging'/>
+        <tag id='1470' name='debugJS' url='http://marketplace.eclipse.org/category/free-tagging/debugjs'/>
+        <tag id='1978' name='JSDT' url='http://marketplace.eclipse.org/category/free-tagging/jsdt'/>
+      </tags>
+      
+      <owner>Zongwei Cao</owner>
+      <favorited>15</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Javascript Debug Toolkit is a open source eclipse plugin used to debug javascript cross browser&#65292;<br />
+Javascript Debug Toolkit can debug js in<br />
+ IE,<br />
+Firefox,<br />
+Safari,<br />
+Chrome,<br />
+Opera and so on.<br />
+The latest version is 2.2.0.<br />
+It also can debug javascript in mobile browser.<br />
+<img src="<a href="http://jsdt.googlecode.com/svn/wiki/resource/video/mobile.gif"></img>">http://jsdt.googlecode.com/svn/wiki/resource/video/mobile.gif"></img></a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Javascript Debug Toolkit is a open source eclipse plugin used to debug javascript cross browser&#65292;<br />
+Javascript Debug Toolkit can debug js in<br />
+ IE,<br />
+Firefox,<br />
+Safari,<br />
+Chrome,<br />
+Opera and so on.<br />
+The latest version is 2.2.0.<br />
+It also can debug javascript in mobile browser.<br />
+<img src="<a href="http://jsdt.googlecode.com/svn/wiki/resource/video/mobile.gif"></img>">http://jsdt.googlecode.com/svn/wiki/resource/video/mobile.gif"></img></a></p>
+]]></body>
+      <created>1227629361</created>
+      <changed>1264055626</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/jsdt/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>2.2.0</version>
+      <license>GPL</license>
+      <companyname><![CDATA[Primeton]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2 +]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/jsdt/]]></supporturl>
+      <updateurl><![CDATA[http://jsdt.googlecode.com/svn/trunk/org.ayound.js.debug.update]]></updateurl>
+    </node>
+    </marketplace>
+    

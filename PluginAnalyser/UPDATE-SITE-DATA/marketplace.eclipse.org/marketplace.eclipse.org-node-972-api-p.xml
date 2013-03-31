@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="972" name="MDTester" url="http://marketplace.eclipse.org/content/mdtester">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+      </categories>
+            
+      <owner>mdtester</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The MDTester application is a model-driven testing tool that can be used to design tests independently of the target execution platform. It provides a graphical domain-specific language (DSL) for all phases of test engineering from requirements to executable test scripts. The test model can be validated on their consistency and transformed into a test sripting or programming language for execution (JUnit, TTCN-3, PHP, ...). Traceability of test requirements to test cases is ensured. Test documentation can also be generated automatically based on the same test model.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The MDTester application is a model-driven testing tool that can be used to design tests independently of the target execution platform. It provides a graphical domain-specific language (DSL) for all phases of test engineering from requirements to executable test scripts. The test model can be validated on their consistency and transformed into a test sripting or programming language for execution (JUnit, TTCN-3, PHP, ...). Traceability of test requirements to test cases is ensured. Test documentation can also be generated automatically based on the same test model.</p>
+]]></body>
+      <created>1248705992</created>
+      <changed>1259779279</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.fokus.fraunhofer.de/go/utml]]></homepageurl>
+      <image><![CDATA[http://www.fokus.fraunhofer.de/distrib/motion/utml/figure/MDTester_110_80.gif]]></image>
+      <version>1.0.0</version>
+      <license>Free EPL</license>
+      <companyname><![CDATA[Fraunhofer Institute FOKUS]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://]]></supporturl>
+      <updateurl><![CDATA[http://www.fokus.fraunhofer.de/distrib/motion/utml/update]]></updateurl>
+    </node>
+    </marketplace>
+    

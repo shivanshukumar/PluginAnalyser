@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="96554" name="FlexFormatter" url="http://marketplace.eclipse.org/content/flexformatter">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='1966' name='Programming Languages' url='http://marketplace.eclipse.org/category/categories/programming-languages'/>
+      </categories>
+      <tags>
+        <tag id='535' name='Actionscript' url='http://marketplace.eclipse.org/category/free-tagging/actionscript'/>
+        <tag id='747' name='flex' url='http://marketplace.eclipse.org/category/free-tagging/flex'/>
+        <tag id='797' name='mxml' url='http://marketplace.eclipse.org/category/free-tagging/mxml'/>
+      </tags>
+      
+      <owner>Ernest Pasour</owner>
+      <favorited>2</favorited>
+      <installstotal>3542</installstotal>
+      <installsrecent>226</installsrecent>
+      <shortdescription><![CDATA[<p>A pretty-printer/code beautifier for actionscript and mxml files.  In addition to typical formatting options, this plugin provides some utilities for changing the order of methods, ordering mxml attributes, removing unused namespaces.</p>
+<p>This plugin does not require FlexBuilder/FlashBuilder to be installed.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>A pretty-printer/code beautifier for actionscript and mxml files.  In addition to typical formatting options, this plugin provides some utilities for changing the order of methods, ordering mxml attributes, removing unused namespaces.</p>
+<p>This plugin does not require FlexBuilder/FlashBuilder to be installed.</p>
+]]></body>
+      <created>1312143410</created>
+      <changed>1312293313</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://sourceforge.net/projects/flexformatter/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version></version>
+      <license>BSD</license>
+      <companyname><![CDATA[none]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3+]]></eclipseversion>
+      <supporturl><![CDATA[https://sourceforge.net/tracker/?group_id=248408&atid=1126569]]></supporturl>
+      <updateurl><![CDATA[http://flexformatter.googlecode.com/svn/trunk/FlexFormatter/FlexPrettyPrintCommandUpdateSite]]></updateurl>
+<ius>
+<iu>FlexPrettyPrintCommandFeature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

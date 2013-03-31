@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="898" name="Hasher" url="http://marketplace.eclipse.org/content/hasher">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>Geoffrey Fairchild</owner>
+      <favorited>4</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This plugin is used to generate the MD5, SHA-1, SHA-256, SHA-384, or SHA-512 hashes of one or more files in an Eclipse project. After installing this plugin, you'll have a new option on your right-click menu called Hasher. Select a hash algorithm, and voilà, you have your hash.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This plugin is used to generate the MD5, SHA-1, SHA-256, SHA-384, or SHA-512 hashes of one or more files in an Eclipse project. After installing this plugin, you'll have a new option on your right-click menu called Hasher. Select a hash algorithm, and voilà, you have your hash.</p>
+]]></body>
+      <created>1237919241</created>
+      <changed>1259779213</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.fangsoft.net/?page_id=56]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.1.0</version>
+      <license>Free GPL</license>
+      <companyname><![CDATA[FangSoft]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.x]]></eclipseversion>
+      <supporturl><![CDATA[http://www.fangsoft.net/?page_id=56]]></supporturl>
+      <updateurl><![CDATA[http://www.fangsoft.net/eclipse]]></updateurl>
+    </node>
+    </marketplace>
+    

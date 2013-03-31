@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="486" name="eDepend - Graphical Dependency Analysis Tool" url="http://marketplace.eclipse.org/content/edepend-graphical-dependency-analysis-tool">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+      </categories>
+      <tags>
+        <tag id='443' name='eDepend - graphical dependency analysis tool 3.4.0' url='http://marketplace.eclipse.org/category/free-tagging/edepend-graphical-dependency-analysis-tool-340'/>
+      </tags>
+      
+      <owner>Yves YANG</owner>
+      <favorited>6</favorited>
+      <installstotal>3157</installstotal>
+      <installsrecent>23</installsrecent>
+      <shortdescription><![CDATA[<p><P><b>eDepend</b> is a graphical, interactive and real-time dependency analysis solution for Java projects in Eclipse. It integrates a rich set of tools to effectively detect, display, navigate and analyze class/package/project dependencies.<br />
+</P><P>For a project leader, this tool helps you to control and supervise the quality of codes developed by your team or your subcontractors.</P><P>As quality engineer, it is an ideal tool to give you an overview and better understanding on the architecture of an existing project by analyzing the dependencies between its components. It can be used as an audit tool to measure the project quality. </P><P>For a developer, it can help you to keep the architecture simple and clear. It is a good valuable development tool to improve the maintenability.</P><P>Here are the highlights of the main features:<br />
+<li>True dependency detection based on byte-code analyze.</li><br />
+<li>Customizable dependency criteria.</li><br />
+<li>Display the dependency by level: class, package and project.</li><br />
+<li>Alive code inspection</li><br />
+<li>Cycle dependency detection</li><br />
+<li>Multiple presentation modes to display cycles</li><br />
+<li>Large project support</li><br />
+<li>...</li><br />
+</P><P>For more information, please visit our site web <a href="<a href="http://www.eclipseplugincentral.com/Web_Links-index-req-visit-lid-646.html">www.soyatec.com</a>.</P>">http://www.eclipseplugincentral.com/Web_Links-index-req-visit-lid-646.ht...</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p><P><b>eDepend</b> is a graphical, interactive and real-time dependency analysis solution for Java projects in Eclipse. It integrates a rich set of tools to effectively detect, display, navigate and analyze class/package/project dependencies.<br />
+</P><P>For a project leader, this tool helps you to control and supervise the quality of codes developed by your team or your subcontractors.</P><P>As quality engineer, it is an ideal tool to give you an overview and better understanding on the architecture of an existing project by analyzing the dependencies between its components. It can be used as an audit tool to measure the project quality. </P><P>For a developer, it can help you to keep the architecture simple and clear. It is a good valuable development tool to improve the maintenability.</P><P>Here are the highlights of the main features:<br />
+<li>True dependency detection based on byte-code analyze.</li><br />
+<li>Customizable dependency criteria.</li><br />
+<li>Display the dependency by level: class, package and project.</li><br />
+<li>Alive code inspection</li><br />
+<li>Cycle dependency detection</li><br />
+<li>Multiple presentation modes to display cycles</li><br />
+<li>Large project support</li><br />
+<li>...</li><br />
+</P><P>For more information, please visit our site web <a href="<a href="http://www.eclipseplugincentral.com/Web_Links-index-req-visit-lid-646.html">www.soyatec.com</a>.</P>">http://www.eclipseplugincentral.com/Web_Links-index-req-visit-lid-646.ht...</a></p>
+]]></body>
+      <created>1182196920</created>
+      <changed>1277218904</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.soyatec.com/]]></homepageurl>
+      <image><![CDATA[http://www.soyatec.com/euml2/images/eUML2_Studio_110x80.png]]></image>
+      <version>3.5.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Soyatec]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.4.x/3.5.x/3.6.x]]></eclipseversion>
+      <supporturl><![CDATA[http://www.soyatec.com/forum]]></supporturl>
+      <updateurl><![CDATA[http://www.soyatec.com/update/]]></updateurl>
+<ius>
+<iu>com.soyatec.edepend</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="756" name="NuGram IDE" url="http://marketplace.eclipse.org/content/nugram-ide">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+            
+      <owner>Dominique Boucher</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>NuGram IDE is an Eclipse plug-in that offers a complete development environment for speech recognition grammars. It supports W3C's SRGS ABNF grammar format and can convert grammars to other formats as well (GrXML, GSL). It can be used to author and tune static speech recognition grammars as well as dynamic grammars, in a unified environment.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>NuGram IDE is an Eclipse plug-in that offers a complete development environment for speech recognition grammars. It supports W3C's SRGS ABNF grammar format and can convert grammars to other formats as well (GrXML, GSL). It can be used to author and tune static speech recognition grammars as well as dynamic grammars, in a unified environment.</p>
+]]></body>
+      <created>1220450295</created>
+      <changed>1259779073</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://nugram.nuecho.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>2.0.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Nu Echo Inc.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3 and higher]]></eclipseversion>
+      <supporturl><![CDATA[http://nugram.nuecho.com/product_app/support]]></supporturl>
+      <updateurl><![CDATA[http://nugram.nuecho.com/update-site]]></updateurl>
+    </node>
+    </marketplace>
+    

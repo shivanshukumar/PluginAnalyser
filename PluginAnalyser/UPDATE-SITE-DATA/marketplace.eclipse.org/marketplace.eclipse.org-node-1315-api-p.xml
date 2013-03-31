@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1315" name="Fluent builder generator" url="http://marketplace.eclipse.org/content/fluent-builder-generator">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='850' name='fluent builder generator' url='http://marketplace.eclipse.org/category/free-tagging/fluent-builder-generator'/>
+      </tags>
+      
+      <owner>Jakub Janczak</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>A plugin that is going to change your way of creating Java objects, by leveraging the idea of fluent interfaces. By using it, You get:</p>
+<ul><li>ease of creating objects in one clean and readable method-chain</li>
+<li>clever collections support</li>
+<li>creation of complex object trees empowered by IDE's code completion </li>
+</ul><p>Fluent Builder is a variant of the Builder pattern that uses Fluent interface.</p>
+<p>Fluent builders are especially handy when instantiating data objects within unit tests. To see the benefit, compare following two examples:</p>
+<p>1. This code sample is a JUnit test method that uses fluent builder:</p>
+<p><code><br />
+@Test public void shouldFindByActorWithFluentBuilder() {<br />
+    // given<br />
+    List movies = Arrays.asList(<br />
+            MovieBuilder.movie().withTitle("Blade Runner")       // <- here's the builder used<br />
+                                .withAddedActor("Harrison Ford")<br />
+                                .withAddedActor("Rutger Hauer")<br />
+                        .build(),<br />
+            MovieBuilder.movie().withTitle("Star Wars")          // <- ... and also here<br />
+                                .withAddedActor("Carrie Fisher")<br />
+                                .withAddedActor("Harrison Ford")<br />
+                        .build());<br />
+    // when<br />
+    List < Movie> found = movieFinder.findByActor(movies, "Carrie Fisher");</code></p>
+<p>    // then<br />
+    assertEquals(1, found.size());<br />
+    assertEquals("Star Wars", found.get(0).getTitle());<br />
+}<br /></p>
+]]></shortdescription>
+      <body><![CDATA[<p>A plugin that is going to change your way of creating Java objects, by leveraging the idea of fluent interfaces. By using it, You get:</p>
+<ul><li>ease of creating objects in one clean and readable method-chain</li>
+<li>clever collections support</li>
+<li>creation of complex object trees empowered by IDE's code completion </li>
+</ul><p>Fluent Builder is a variant of the Builder pattern that uses Fluent interface.</p>
+<p>Fluent builders are especially handy when instantiating data objects within unit tests. To see the benefit, compare following two examples:</p>
+<p>1. This code sample is a JUnit test method that uses fluent builder:</p>
+<p><code><br />
+@Test public void shouldFindByActorWithFluentBuilder() {<br />
+    // given<br />
+    List movies = Arrays.asList(<br />
+            MovieBuilder.movie().withTitle("Blade Runner")       // <- here's the builder used<br />
+                                .withAddedActor("Harrison Ford")<br />
+                                .withAddedActor("Rutger Hauer")<br />
+                        .build(),<br />
+            MovieBuilder.movie().withTitle("Star Wars")          // <- ... and also here<br />
+                                .withAddedActor("Carrie Fisher")<br />
+                                .withAddedActor("Harrison Ford")<br />
+                        .build());<br />
+    // when<br />
+    List < Movie> found = movieFinder.findByActor(movies, "Carrie Fisher");</code></p>
+<p>    // then<br />
+    assertEquals(1, found.size());<br />
+    assertEquals("Star Wars", found.get(0).getTitle());<br />
+}<br /></p>
+]]></body>
+      <created>1276703679</created>
+      <changed>1276703981</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/fluent-builders-generator-eclipse-plugin/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_market.png?itok=Tkyzn5mo]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/usage2.png?itok=ZyKMch9N]]></screenshot>
+      <version>1.0.6</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Open Source]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[>= 3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/fluent-builders-generator-eclipse-plugin/w/list]]></supporturl>
+      <updateurl><![CDATA[http://fluent-builders-generator-eclipse-plugin.googlecode.com/svn/trunk/site/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

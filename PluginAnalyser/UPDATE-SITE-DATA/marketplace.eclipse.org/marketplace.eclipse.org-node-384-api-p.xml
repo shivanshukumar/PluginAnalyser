@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="384" name="J2EE Spider" url="http://marketplace.eclipse.org/content/j2ee-spider">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>Bruno Braga</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><table width="750" cellspacing="0" cellpadding="0" border="0" align="center"><br />
+	<tr><br />
+		<td><br />
+			<img src="<a href="http://www.j2eespider.org/images/banner/750_500/l1_1.jpg"">http://www.j2eespider.org/images/banner/750_500/l1_1.jpg"</a> border="0"><br />
+		</td><br />
+		<td><br />
+			<img src="<a href="http://www.j2eespider.org/images/banner/750_500/l1_2.jpg"">http://www.j2eespider.org/images/banner/750_500/l1_2.jpg"</a> border="0"><br />
+		</td><br />
+	</tr><br />
+	<tr><br />
+		<td><br />
+			<a href="<a href="http://www.j2eespider.org"">http://www.j2eespider.org"</a> target="blank" title="J2EE Spider web-site"><img src="<a href="http://www.j2eespider.org/images/banner/750_500/l2_1.jpg"">http://www.j2eespider.org/images/banner/750_500/l2_1.jpg"</a> border="0"></a><br />
+		</td><br />
+		<td><br />
+			<a href="<a href="http://sourceforge.net/project/showfiles.php?group_id=164478"">http://sourceforge.net/project/showfiles.php?group_id=164478"</a> target="blank" title="J2EE Spider download"><img src="<a href="http://www.j2eespider.org/images/banner/750_500/l2_2.jpg"">http://www.j2eespider.org/images/banner/750_500/l2_2.jpg"</a> border="0"></a><br />
+		</td><br />
+	</tr><br />
+	<tr><br />
+		<td><br />
+			<a href="<a href="http://downloads.sourceforge.net/j2eespider/spider_video-1.0.0-M1.zip?use_mirror=osdn"">http://downloads.sourceforge.net/j2eespider/spider_video-1.0.0-M1.zip?us...</a> target="blank" title="J2EE Spider video"><img src="<a href="http://www.j2eespider.org/images/banner/750_500/l3_1.jpg"">http://www.j2eespider.org/images/banner/750_500/l3_1.jpg"</a> border="0"></a><br />
+		</td><br />
+		<td><br />
+			<img src="<a href="http://www.j2eespider.org/images/banner/750_500/l3_2.jpg"">http://www.j2eespider.org/images/banner/750_500/l3_2.jpg"</a> border="0"><br />
+		</td><br />
+	</tr><br />
+</table></p>
+]]></shortdescription>
+      <body><![CDATA[<p><table width="750" cellspacing="0" cellpadding="0" border="0" align="center"><br />
+	<tr><br />
+		<td><br />
+			<img src="<a href="http://www.j2eespider.org/images/banner/750_500/l1_1.jpg"">http://www.j2eespider.org/images/banner/750_500/l1_1.jpg"</a> border="0"><br />
+		</td><br />
+		<td><br />
+			<img src="<a href="http://www.j2eespider.org/images/banner/750_500/l1_2.jpg"">http://www.j2eespider.org/images/banner/750_500/l1_2.jpg"</a> border="0"><br />
+		</td><br />
+	</tr><br />
+	<tr><br />
+		<td><br />
+			<a href="<a href="http://www.j2eespider.org"">http://www.j2eespider.org"</a> target="blank" title="J2EE Spider web-site"><img src="<a href="http://www.j2eespider.org/images/banner/750_500/l2_1.jpg"">http://www.j2eespider.org/images/banner/750_500/l2_1.jpg"</a> border="0"></a><br />
+		</td><br />
+		<td><br />
+			<a href="<a href="http://sourceforge.net/project/showfiles.php?group_id=164478"">http://sourceforge.net/project/showfiles.php?group_id=164478"</a> target="blank" title="J2EE Spider download"><img src="<a href="http://www.j2eespider.org/images/banner/750_500/l2_2.jpg"">http://www.j2eespider.org/images/banner/750_500/l2_2.jpg"</a> border="0"></a><br />
+		</td><br />
+	</tr><br />
+	<tr><br />
+		<td><br />
+			<a href="<a href="http://downloads.sourceforge.net/j2eespider/spider_video-1.0.0-M1.zip?use_mirror=osdn"">http://downloads.sourceforge.net/j2eespider/spider_video-1.0.0-M1.zip?us...</a> target="blank" title="J2EE Spider video"><img src="<a href="http://www.j2eespider.org/images/banner/750_500/l3_1.jpg"">http://www.j2eespider.org/images/banner/750_500/l3_1.jpg"</a> border="0"></a><br />
+		</td><br />
+		<td><br />
+			<img src="<a href="http://www.j2eespider.org/images/banner/750_500/l3_2.jpg"">http://www.j2eespider.org/images/banner/750_500/l3_2.jpg"</a> border="0"><br />
+		</td><br />
+	</tr><br />
+</table></p>
+]]></body>
+      <created>1170256955</created>
+      <changed>1260801632</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.j2eespider.org]]></homepageurl>
+      <image><![CDATA[http://www.j2eespider.org/images/screen/to_plugincentral.php]]></image>
+      <version>1.0.0-M3</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[J2EE Spider]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2, 3.3 and 3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://www.j2eespider.org/forum]]></supporturl>
+      <updateurl><![CDATA[http://www.j2eespider.org/update]]></updateurl>
+    </node>
+    </marketplace>
+    

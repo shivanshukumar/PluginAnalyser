@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1288" name="Storyboard Suite" url="http://marketplace.eclipse.org/content/storyboard-suite">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='8' name='Graphics' url='http://marketplace.eclipse.org/taxonomy/term/8'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+      <tags>
+        <tag id='305' name='ui' url='http://marketplace.eclipse.org/category/free-tagging/ui'/>
+        <tag id='836' name='GUI' url='http://marketplace.eclipse.org/category/free-tagging/gui'/>
+        <tag id='837' name='embedded user inerface' url='http://marketplace.eclipse.org/category/free-tagging/embedded-user-inerface'/>
+        <tag id='838' name='ui builder' url='http://marketplace.eclipse.org/category/free-tagging/ui-builder'/>
+        <tag id='839' name='embedded graphics' url='http://marketplace.eclipse.org/category/free-tagging/embedded-graphics'/>
+      </tags>
+      
+      <owner>Thomas Fletcher</owner>
+      <favorited>2</favorited>
+      <installstotal>149</installstotal>
+      <installsrecent>8</installsrecent>
+      <shortdescription><![CDATA[<p>The Crank Storyboard Suite enables the rapid design, development and deployment of embedded user interfaces.  It provides an Eclipse based visual screen design tool that uses images as control elements so that graphic designers can directly import and layout content.  A Model-View-Controller design separates system logic from user interface logic with Lua scripting providing necessary glue between the components.  </p>
+<p>The Crank Storyboard Suite, was architected for engineers by engineers. Storyboard enables UI<br />
+designers with no programming experience to drag-and-drop their UI designs and do this in parallel with, yet independently from, the engineers who are working on the coding.</p>
+<p>Storyboard simplifies the design process, saves valuable time, and leverages the core skills of each valued<br />
+member of the team.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The Crank Storyboard Suite enables the rapid design, development and deployment of embedded user interfaces.  It provides an Eclipse based visual screen design tool that uses images as control elements so that graphic designers can directly import and layout content.  A Model-View-Controller design separates system logic from user interface logic with Lua scripting providing necessary glue between the components.  </p>
+<p>The Crank Storyboard Suite, was architected for engineers by engineers. Storyboard enables UI<br />
+designers with no programming experience to drag-and-drop their UI designs and do this in parallel with, yet independently from, the engineers who are working on the coding.</p>
+<p>Storyboard simplifies the design process, saves valuable time, and leverages the core skills of each valued<br />
+member of the team.</p>
+]]></body>
+      <created>1276610237</created>
+      <changed>1276610237</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.cranksoftware.com/storyboard]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/CrankLogo.PNG?itok=taHXrIgh]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/storyboard.png?itok=WonpmiVm]]></screenshot>
+      <version>1.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Crank Software]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://www.cranksoftware.com/forums/]]></supporturl>
+      <updateurl><![CDATA[http://www.cranksoftware.com/cranksoftware/storyboard/updatesite]]></updateurl>
+<ius>
+<iu>com.crank.gdt.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1705" name="CFEclipse" url="http://marketplace.eclipse.org/content/cfeclipse">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+      </categories>
+      <tags>
+        <tag id='51' name='IDE' url='http://marketplace.eclipse.org/category/free-tagging/ide'/>
+        <tag id='146' name='editor' url='http://marketplace.eclipse.org/category/free-tagging/editor'/>
+        <tag id='743' name='sql' url='http://marketplace.eclipse.org/category/free-tagging/sql'/>
+        <tag id='793' name='adobe' url='http://marketplace.eclipse.org/category/free-tagging/adobe'/>
+        <tag id='916' name='cfml' url='http://marketplace.eclipse.org/category/free-tagging/cfml'/>
+      </tags>
+      
+      <owner>Mark Drew</owner>
+      <favorited>13</favorited>
+      <installstotal>4547</installstotal>
+      <installsrecent>126</installsrecent>
+      <shortdescription><![CDATA[<p>The goal of the CFEclipse project is to create a plugin for the Eclipse platform that provides a professional quality IDE for CFML developers. Currently the CFEclipse plugin is one of the top rated Eclipse plugins at Eclipse Plugin Central and is in use by developers across the globe. CFEclipse offers most of the features found in traditional CFML editors and quite a few more that they don't. As well as allowing developers to take advantage of the wealth of other Eclipse plugins, CFEclipse comes with a developer friendly price tag...  It's FREE!</p>
+<p>CFEclipse has a wealth of features to appeal to ColdFusion developers:<br />
+* CF Frameworks Explorer<br />
+* CFC method outline view<br />
+* Integrated task list<br />
+* Content outline for your CFML pages (filterable with XPath)<br />
+* Code & bracket highlighting<br />
+* Code folding<br />
+* HTML and CFML tag code completion<br />
+* Tag and function code insight (including data types)<br />
+* Dynamic Snippets for frequently used code<br />
+* Integrated tabbed web browser for quick previewing<br />
+* Problem view, parses your code to find problems<br />
+* A scribble pad for your ideas</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The goal of the CFEclipse project is to create a plugin for the Eclipse platform that provides a professional quality IDE for CFML developers. Currently the CFEclipse plugin is one of the top rated Eclipse plugins at Eclipse Plugin Central and is in use by developers across the globe. CFEclipse offers most of the features found in traditional CFML editors and quite a few more that they don't. As well as allowing developers to take advantage of the wealth of other Eclipse plugins, CFEclipse comes with a developer friendly price tag...  It's FREE!</p>
+<p>CFEclipse has a wealth of features to appeal to ColdFusion developers:<br />
+* CF Frameworks Explorer<br />
+* CFC method outline view<br />
+* Integrated task list<br />
+* Content outline for your CFML pages (filterable with XPath)<br />
+* Code & bracket highlighting<br />
+* Code folding<br />
+* HTML and CFML tag code completion<br />
+* Tag and function code insight (including data types)<br />
+* Dynamic Snippets for frequently used code<br />
+* Integrated tabbed web browser for quick previewing<br />
+* Problem view, parses your code to find problems<br />
+* A scribble pad for your ideas</p>
+]]></body>
+      <created>1277546384</created>
+      <changed>1306665766</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.cfeclipse.org]]></homepageurl>
+      <image><![CDATA[https://github.com/cfeclipse/cfeclipse/raw/master/org.cfeclipse.cfml/icons/icons/128x128.gif]]></image>
+      <version>1.4.x</version>
+      <license>Other Open Source</license>
+      <companyname><![CDATA[CFEclipse Project]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.cfeclipse.org]]></supporturl>
+      <updateurl><![CDATA[http://www.cfeclipse.org/update]]></updateurl>
+<ius>
+<iu>org.cfeclipse.cfml.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

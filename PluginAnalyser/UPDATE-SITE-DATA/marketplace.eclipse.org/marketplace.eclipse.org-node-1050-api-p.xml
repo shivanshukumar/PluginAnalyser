@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1050" name="DXL Editor" url="http://marketplace.eclipse.org/content/dxl-editor">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+      </categories>
+            
+      <owner>Sebastien Boucard</owner>
+      <favorited>3</favorited>
+      <installstotal>57</installstotal>
+      <installsrecent>13</installsrecent>
+      <shortdescription><![CDATA[<p>Going far beyond syntax highlighting, the DXL Editor is a real development environment for IBM Rational DOORS DXL language, built on the market-leading Eclipse platform, bringing its richness and power to provide a first-class environment for editing and executing your DXL scripts, on par with other first-class languages such as Java and C++.</p>
+<p>- Provides Code Completion for DXL keywords and function names<br />
+- Directly execute DXL scripts<br />
+- Direct Navigation to script errors<br />
+- Outline view of files for easy navigation</p>
+<p>DXL Editor is available for FREE!</p>
+<p>The Pro License (commercial) provides additional debug features and is especially suited for complex DXL programs. When improving efficiency and reducing your development time are the critical factors, the Pro License is the right choice!</p>
+<p>With debug features, you will be able to:<br />
+- Add breakpoints in your program<br />
+- Control execution with stop, resume, and step-by-step execution<br />
+- Inspect variables<br />
+- Inspect data</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Going far beyond syntax highlighting, the DXL Editor is a real development environment for IBM Rational DOORS DXL language, built on the market-leading Eclipse platform, bringing its richness and power to provide a first-class environment for editing and executing your DXL scripts, on par with other first-class languages such as Java and C++.</p>
+<p>- Provides Code Completion for DXL keywords and function names<br />
+- Directly execute DXL scripts<br />
+- Direct Navigation to script errors<br />
+- Outline view of files for easy navigation</p>
+<p>DXL Editor is available for FREE!</p>
+<p>The Pro License (commercial) provides additional debug features and is especially suited for complex DXL programs. When improving efficiency and reducing your development time are the critical factors, the Pro License is the right choice!</p>
+<p>With debug features, you will be able to:<br />
+- Add breakpoints in your program<br />
+- Control execution with stop, resume, and step-by-step execution<br />
+- Inspect variables<br />
+- Inspect data</p>
+]]></body>
+      <created>1258738898</created>
+      <changed>1350552188</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.sodius.com/dxl-editor]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/dxl_epic.png?itok=oCogTFWg]]></image>
+      <version>2.0</version>
+      <license>Other</license>
+      <companyname><![CDATA[SODIUS]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.4 and higher]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://download.sodius.com]]></updateurl>
+<ius>
+<iu>com.sodius.mdw.platform.doors.dxl.rcp</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="491" name="Agile/Iconix Roadmap - EPF rendering" url="http://marketplace.eclipse.org/content/agileiconix-roadmap-epf-rendering">
+      <type>resource</type>
+      <categories>
+        <category id='30' name='Process' url='http://marketplace.eclipse.org/taxonomy/term/30'/>
+      </categories>
+            
+      <owner>Charles Suscheck</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This plug-in from ICONIX delivers the "ICONIX Process Roadmap" as defined in the book Use Case Driven Object Modeling with UML - Theory and Practice (by Doug Rosenberg and Matt Stephens - Apress 2007) using the Eclipse Process Framework.  It is free and you can redistribute it.</p>
+<p>The plug in is described in the article Delivering the Agile/ICONIX Process via the Eclipse Process Framework by Chuck Suscheck and Doug Rosenberg and is available for download from the ICONIX website at <a href="http://www.iconixsw.com/ICONIX_EPF.zip">http://www.iconixsw.com/ICONIX_EPF.zip</a>.</p>
+<p>Here is a short excerpt from the article's introduction:<br />
+Java developers using the Eclipse environment can have a "pre-fabricated development process" delivered to them using the Eclipse Process Framework (EPF). Until recently, process options available in this format were mostly limited to a Unified/RUP option, and an eXtreme Programming (XP) option. Historically, each of these options has presented some challenges; full blown RUP is large and complex, requires tailoring, and can be difficult to learn, while XP offers little in the areas of analysis, design, and requirements management, focusing mostly on the coding and testing phases of development. </p>
+<p>With the release of Agile/ICONIX-EPF, developers now have an additional option, which offers the benefits of a minimalist, agile approach to development while retaining the benefits of a rigorous, robust, design-centric process. </p>
+<p>ICONIX Process, a minimalist yet rigorous approach that uses a UML core subset and reliably avoids analysis paralysis, has been in widespread use in industry for more than a decade.  More information about ICONIX Process is also available at <a href="http://www.iconixprocess.com">http://www.iconixprocess.com</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>This plug-in from ICONIX delivers the "ICONIX Process Roadmap" as defined in the book Use Case Driven Object Modeling with UML - Theory and Practice (by Doug Rosenberg and Matt Stephens - Apress 2007) using the Eclipse Process Framework.  It is free and you can redistribute it.</p>
+<p>The plug in is described in the article Delivering the Agile/ICONIX Process via the Eclipse Process Framework by Chuck Suscheck and Doug Rosenberg and is available for download from the ICONIX website at <a href="http://www.iconixsw.com/ICONIX_EPF.zip">http://www.iconixsw.com/ICONIX_EPF.zip</a>.</p>
+<p>Here is a short excerpt from the article's introduction:<br />
+Java developers using the Eclipse environment can have a "pre-fabricated development process" delivered to them using the Eclipse Process Framework (EPF). Until recently, process options available in this format were mostly limited to a Unified/RUP option, and an eXtreme Programming (XP) option. Historically, each of these options has presented some challenges; full blown RUP is large and complex, requires tailoring, and can be difficult to learn, while XP offers little in the areas of analysis, design, and requirements management, focusing mostly on the coding and testing phases of development. </p>
+<p>With the release of Agile/ICONIX-EPF, developers now have an additional option, which offers the benefits of a minimalist, agile approach to development while retaining the benefits of a rigorous, robust, design-centric process. </p>
+<p>ICONIX Process, a minimalist yet rigorous approach that uses a UML core subset and reliably avoids analysis paralysis, has been in widespread use in industry for more than a decade.  More information about ICONIX Process is also available at <a href="http://www.iconixprocess.com">http://www.iconixprocess.com</a></p>
+]]></body>
+      <created>1183046370</created>
+      <changed>1275445871</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.iconixsw.com/ICONIX_EPF.zip]]></homepageurl>
+      <image><![CDATA[http://www.iconixsw.com/iconix_logo.gif]]></image>
+      <version>1.1</version>
+      <license>Other</license>
+      <companyname><![CDATA[Iconix Software Engineering]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[any]]></eclipseversion>
+      <supporturl><![CDATA[http://www.iconixsw.com/EPFICONIXProcessRoadmap.html]]></supporturl>
+      <updateurl><![CDATA[http://www.iconixsw.com]]></updateurl>
+    </node>
+    </marketplace>
+    

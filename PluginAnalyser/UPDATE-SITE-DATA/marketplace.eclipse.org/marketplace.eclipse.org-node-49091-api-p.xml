@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="49091" name="Viable - Vim for Eclipse" url="http://marketplace.eclipse.org/content/viable-vim-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+      <tags>
+        <tag id='327' name='eclipse' url='http://marketplace.eclipse.org/category/free-tagging/eclipse'/>
+        <tag id='377' name='vim' url='http://marketplace.eclipse.org/category/free-tagging/vim'/>
+        <tag id='1387' name='vi' url='http://marketplace.eclipse.org/category/free-tagging/vi'/>
+        <tag id='1888' name='emulation' url='http://marketplace.eclipse.org/category/free-tagging/emulation'/>
+        <tag id='1896' name='viable' url='http://marketplace.eclipse.org/category/free-tagging/viable'/>
+      </tags>
+      
+      <owner>Matt G</owner>
+      <favorited>6</favorited>
+      <installstotal>2528</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><a href="http://viableplugin.com/">Viable</a> is an Eclipse plugin meant to provide the user with an interface as similar to Vi (specifically Vim) as possible while maintaining access to all the powerful features of Eclipse. It is absolutely free to try in its full featured form!</p>
+<p>Other than the usual features most Eclipse Vim plugins support, Viable also implements:</p>
+<ul><li>Visual block mode</li>
+<li>Improved command line</li>
+<li>Window splits and changing, both Horizontal and Vertical supported!</li>
+<li>Regular expression search and replacements</li>
+<li>External filters and commands</li>
+</ul><p>More information can be found on the <a href="http://viableplugin.com/">homepage</a>.</p>
+<p>Viable is free to try and costs 15.00CAD for a license that will remove annoying pop ups.</p>
+<p>If you are upgrading to 1.30.X from 1.29 make sure to remove 1.29 first as the upgrade is not compatible.</p>
+<p>Please report any errors you find in the bug report forum.</p>
+]]></shortdescription>
+      <body><![CDATA[<p><a href="http://viableplugin.com/">Viable</a> is an Eclipse plugin meant to provide the user with an interface as similar to Vi (specifically Vim) as possible while maintaining access to all the powerful features of Eclipse. It is absolutely free to try in its full featured form!</p>
+<p>Other than the usual features most Eclipse Vim plugins support, Viable also implements:</p>
+<ul><li>Visual block mode</li>
+<li>Improved command line</li>
+<li>Window splits and changing, both Horizontal and Vertical supported!</li>
+<li>Regular expression search and replacements</li>
+<li>External filters and commands</li>
+</ul><p>More information can be found on the <a href="http://viableplugin.com/">homepage</a>.</p>
+<p>Viable is free to try and costs 15.00CAD for a license that will remove annoying pop ups.</p>
+<p>If you are upgrading to 1.30.X from 1.29 make sure to remove 1.29 first as the upgrade is not compatible.</p>
+<p>Please report any errors you find in the bug report forum.</p>
+]]></body>
+      <created>1303984526</created>
+      <changed>1318487359</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://viableplugin.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/ViableLogo.png?itok=xLtajRiI]]></image>
+      <version>1.31.6</version>
+      <license>Other</license>
+      <companyname><![CDATA[Viable Plugin]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6+]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://viableplugin.com/update_site]]></updateurl>
+<ius>
+<iu>com.assembla.viable.feature</iu>
+<iu>com.assembla.viable.eclipse.cdt.feature</iu>
+<iu>com.assembla.viable.eclipse.jdt.feature</iu>
+<iu>com.assembla.viable.plugin.surround</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

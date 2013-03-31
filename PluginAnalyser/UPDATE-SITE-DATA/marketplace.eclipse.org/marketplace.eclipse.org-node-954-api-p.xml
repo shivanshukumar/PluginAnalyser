@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="954" name="Pliedit" url="http://marketplace.eclipse.org/content/pliedit">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+      </categories>
+      <tags>
+        <tag id='1335' name='Advanced Browser' url='http://marketplace.eclipse.org/category/free-tagging/advanced-browser'/>
+      </tags>
+      
+      <owner>Bill Fenlason</owner>
+      <favorited>2</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Pliedit is a language sensitive editor plugin for PL/I.  </p>
+<p>Dynamic statement level syntax error checking is provided, with messages placed in the Problems view.  </p>
+<p>Extensive colorization support is included.</p>
+<p>The full ANSI PL/I language (with IBM extensions) is supported.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Pliedit is a language sensitive editor plugin for PL/I.  </p>
+<p>Dynamic statement level syntax error checking is provided, with messages placed in the Problems view.  </p>
+<p>Extensive colorization support is included.</p>
+<p>The full ANSI PL/I language (with IBM extensions) is supported.</p>
+]]></body>
+      <created>1245072309</created>
+      <changed>1260552964</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://pliedit.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>0.0.4</version>
+      <license>Other</license>
+      <companyname><![CDATA[William Fenlason]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.2, 3.3, 3.4, 3.5 - pliedit.com]]></eclipseversion>
+      <supporturl><![CDATA[http://pliedit.com/bb]]></supporturl>
+      <updateurl><![CDATA[http://pliedit.com]]></updateurl>
+    </node>
+    </marketplace>
+    

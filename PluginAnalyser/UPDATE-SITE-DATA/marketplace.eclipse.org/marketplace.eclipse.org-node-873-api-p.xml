@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="873" name="AVR32 Studio" url="http://marketplace.eclipse.org/content/avr32-studio">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='688' name='AVR' url='http://marketplace.eclipse.org/category/free-tagging/avr'/>
+        <tag id='689' name='AVR32' url='http://marketplace.eclipse.org/category/free-tagging/avr32'/>
+        <tag id='690' name='embedded' url='http://marketplace.eclipse.org/category/free-tagging/embedded'/>
+        <tag id='1195' name='UC3' url='http://marketplace.eclipse.org/category/free-tagging/uc3'/>
+        <tag id='2616' name='Studio' url='http://marketplace.eclipse.org/category/free-tagging/studio'/>
+      </tags>
+      
+      <owner>Torkild U. Resheim</owner>
+      <favorited>6</favorited>
+      <installstotal>2174</installstotal>
+      <installsrecent>2</installsrecent>
+      <shortdescription><![CDATA[<p>
+AVR32 Studio is an integrated development environment (IDE) for developing AVR32 applications. AVR32 Studio provides a complete set of features including project management and version control integration (CVS); a C/C++ editor with syntax highlighting and code completion; a debugger supporting run control including source and instruction-level stepping and breakpoints; registers, memory and I/O views; and target configuration and management. AVR32 Studio is Built on Eclipse™, enabling easy integration with third party plugins for increased functionality.
+</p>
+<p>
+AVR32 Studio supports all of Atmel's AVR32 32-bit processors. AVR32 Studio supports development and debugging of both standalone (without an operating system) applications and Linux applications (for the AT32AP7 device family).
+</p>
+<p>
+All Atmel tools that support the AVR32 architecture, including the JTAGICE mkII, AVR ONE! and STK600, are supported by AVR32 Studio.<br />
+AVR32 Studio integrates with the GNU Toolchain for AVR32. The GNU C Compiler (GCC) is used for compiling C/C++ programs, while the GNU debugger (GDB) is used for debugging the application on target. Atmel's AVR32 utilities, avr32program and avr32gdbproxy, are used for deployment and debugging of standalone applications as well as target voltage and clock generator adjustments.
+</p>
+]]></shortdescription>
+      <body><![CDATA[<p>
+AVR32 Studio is an integrated development environment (IDE) for developing AVR32 applications. AVR32 Studio provides a complete set of features including project management and version control integration (CVS); a C/C++ editor with syntax highlighting and code completion; a debugger supporting run control including source and instruction-level stepping and breakpoints; registers, memory and I/O views; and target configuration and management. AVR32 Studio is Built on Eclipse™, enabling easy integration with third party plugins for increased functionality.
+</p>
+<p>
+AVR32 Studio supports all of Atmel's AVR32 32-bit processors. AVR32 Studio supports development and debugging of both standalone (without an operating system) applications and Linux applications (for the AT32AP7 device family).
+</p>
+<p>
+All Atmel tools that support the AVR32 architecture, including the JTAGICE mkII, AVR ONE! and STK600, are supported by AVR32 Studio.<br />
+AVR32 Studio integrates with the GNU Toolchain for AVR32. The GNU C Compiler (GCC) is used for compiling C/C++ programs, while the GNU debugger (GDB) is used for debugging the application on target. Atmel's AVR32 utilities, avr32program and avr32gdbproxy, are used for deployment and debugging of standalone applications as well as target voltage and clock generator adjustments.
+</p>
+]]></body>
+      <created>1236008277</created>
+      <changed>1354218607</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.atmel.com/dyn/products/tools_card.asp?tool_id=4116]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/uc3_open2_110x80.png?itok=26hiPhk4]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screenshot_0.jpg?itok=5dYkSJ2F]]></screenshot>
+      <version>2.6.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Atmel Corporation]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://]]></supporturl>
+      <updateurl><![CDATA[http://distribute.atmel.no/tools/avr32studio/releases/2.6.0.753]]></updateurl>
+<ius>
+<iu>com.atmel.avr32.core</iu>
+<iu>com.atmel.avr32.ide</iu>
+<iu>com.atmel.avr.toolchains</iu>
+<iu>com.atmel.avr.utilities</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

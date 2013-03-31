@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1205" name="Trackmylyn" url="http://marketplace.eclipse.org/content/trackmylyn">
+      <type>resource</type>
+      <categories>
+        <category id='38' name='Mylyn Connectors' url='http://marketplace.eclipse.org/category/categories/mylyn-connectors'/>
+      </categories>
+      <tags>
+        <tag id='631' name='Issue tracking' url='http://marketplace.eclipse.org/category/free-tagging/issue-tracking'/>
+        <tag id='632' name='Track+' url='http://marketplace.eclipse.org/category/free-tagging/track'/>
+        <tag id='633' name='project management' url='http://marketplace.eclipse.org/category/free-tagging/project-management'/>
+      </tags>
+      
+      <owner>Jörg Friedrich</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Trackmylyn is a connector for Eclipse Mylyn and permits you to work with the Track+ issue tracker and project management software directly from within Eclipse. You can create, view, and edit tasks, and attach Eclipse contexts as attachments to Track+ tasks.</p>
+<p>Trackmylyn permits you to use and define query filters, and you will have the same mask layout (issue attributes and positions on the screen) as in the web interface.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Trackmylyn is a connector for Eclipse Mylyn and permits you to work with the Track+ issue tracker and project management software directly from within Eclipse. You can create, view, and edit tasks, and attach Eclipse contexts as attachments to Track+ tasks.</p>
+<p>Trackmylyn permits you to use and define query filters, and you will have the same mask layout (issue attributes and positions on the screen) as in the web interface.</p>
+]]></body>
+      <created>1273498089</created>
+      <changed>1273498294</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.trackplus.com/mylyn.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/tracklogo.png?itok=QsQ37O-l]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Trackmylyn1.png?itok=HHj-tXls]]></screenshot>
+      <version>3.7</version>
+      <license>GPL</license>
+      <companyname><![CDATA[Trackplus]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.trackplus.com/forum]]></supporturl>
+      <updateurl><![CDATA[http://www.trackplus.com/update-site/e3.4/tp37]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

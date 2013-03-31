@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="663" name="Skyway Builder Community Edition" url="http://marketplace.eclipse.org/content/skyway-builder-community-edition">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>Niel Eyde</owner>
+      <favorited>10</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>As the open source version of <a target="_blank" href="http://www.skywayperspectives.org">Skyway Builder</a>, Community Edition (CE) provides code generation and scaffolding capabilities for developers looking to accelerate their delivery of Spring web applications. Key features include:</p>
+<ul><li>Open source licensing (GPL v3)</li>
+<li>Support for Spring MVC CRUD scaffolding, project bootstrapping and skeletal code generation - <a target="_blank" href="http://www.skywayperspectives.org/portal/web/guest/technology/community_edition/crud_scaffolding">More info</a></li>
+<li>Spring Web Flow project bootstrapping support and integrated graphical web flow editor - <a href="http://www.skywayperspectives.org/portal/web/guest/technology/community_edition/spring_web_flow" target="_blank">More info</a></li>
+<li>Project-level and artifact-level customization of code generation specifications</li>
+<li>Integration with existing Java code, data objects and Spring Beans</li>
+<li>Reverse engineering of database schemas into Spring DSL - <a href="http://www.skywayperspectives.org/portal/web/guest/technology/community_edition/database_reverse_engineering" target="_blank">More info</a></li>
+<li>Support for Eclipse-based and Apache Maven based project structures and build systems</li>
+<li>Runtime using Spring Framework 2.5 (w/ Hibernate JPA)</li>
+<li>EMF-based code generation engine that can be extended via Eclipse plug-in development</li>
+</ul><p><a href="http://www.skywayperspectives.org/portal/web/guest/downloads/overview" target="_blank">Download</a> Skyway Builder CE now!</p>
+]]></shortdescription>
+      <body><![CDATA[<p>As the open source version of <a target="_blank" href="http://www.skywayperspectives.org">Skyway Builder</a>, Community Edition (CE) provides code generation and scaffolding capabilities for developers looking to accelerate their delivery of Spring web applications. Key features include:</p>
+<ul><li>Open source licensing (GPL v3)</li>
+<li>Support for Spring MVC CRUD scaffolding, project bootstrapping and skeletal code generation - <a target="_blank" href="http://www.skywayperspectives.org/portal/web/guest/technology/community_edition/crud_scaffolding">More info</a></li>
+<li>Spring Web Flow project bootstrapping support and integrated graphical web flow editor - <a href="http://www.skywayperspectives.org/portal/web/guest/technology/community_edition/spring_web_flow" target="_blank">More info</a></li>
+<li>Project-level and artifact-level customization of code generation specifications</li>
+<li>Integration with existing Java code, data objects and Spring Beans</li>
+<li>Reverse engineering of database schemas into Spring DSL - <a href="http://www.skywayperspectives.org/portal/web/guest/technology/community_edition/database_reverse_engineering" target="_blank">More info</a></li>
+<li>Support for Eclipse-based and Apache Maven based project structures and build systems</li>
+<li>Runtime using Spring Framework 2.5 (w/ Hibernate JPA)</li>
+<li>EMF-based code generation engine that can be extended via Eclipse plug-in development</li>
+</ul><p><a href="http://www.skywayperspectives.org/portal/web/guest/downloads/overview" target="_blank">Download</a> Skyway Builder CE now!</p>
+]]></body>
+      <created>1205758864</created>
+      <changed>1264022529</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.skywayperspectives.org/portal/web/guest/builderce]]></homepageurl>
+      <image><![CDATA[http://www.skywayperspectives.org/images/skywayepic.jpg]]></image>
+      <version>6.3</version>
+      <license>GPL</license>
+      <companyname><![CDATA[Skyway Software]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4.x]]></eclipseversion>
+      <supporturl><![CDATA[http://www.skywayperspectives.org/portal/web/guest/support]]></supporturl>
+      <updateurl><![CDATA[http://downloads.skywayperspectives.org/builder/updates/]]></updateurl>
+    </node>
+    </marketplace>
+    

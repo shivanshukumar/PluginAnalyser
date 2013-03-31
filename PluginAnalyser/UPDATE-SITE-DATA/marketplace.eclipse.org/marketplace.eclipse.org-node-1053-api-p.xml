@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1053" name="MakeGood" url="http://marketplace.eclipse.org/content/makegood">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+      </categories>
+            
+      <owner>matsu_hide</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>MakeGood provides a test runner to run unit tests on PDT. MakeGood strongly supports Test Driven Development (TDD) by various features.</p>
+<p>Features</p>
+<p>* Runs tests from the PHP Explorer and Package Explorer.<br />
+* Runs tests from the PHP Editor.<br />
+* Can use the system include path when running tests.</p>
+<p>Requirements</p>
+<p>* PHP and Zend Debugger<br />
+* PDT 2.1.0 or greater<br />
+* Stagehand_TestRunner 2.9.0 or greater<br />
+* PHPUnit 3.4.1 or greater</p>
+]]></shortdescription>
+      <body><![CDATA[<p>MakeGood provides a test runner to run unit tests on PDT. MakeGood strongly supports Test Driven Development (TDD) by various features.</p>
+<p>Features</p>
+<p>* Runs tests from the PHP Explorer and Package Explorer.<br />
+* Runs tests from the PHP Editor.<br />
+* Can use the system include path when running tests.</p>
+<p>Requirements</p>
+<p>* PHP and Zend Debugger<br />
+* PDT 2.1.0 or greater<br />
+* Stagehand_TestRunner 2.9.0 or greater<br />
+* PHPUnit 3.4.1 or greater</p>
+]]></body>
+      <created>1259161270</created>
+      <changed>1259779387</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://redmine.piece-framework.com/wiki/makegood]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>0.1.0</version>
+      <license>Free EPL</license>
+      <companyname><![CDATA[Piece Project]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://redmine.piece-framework.com/projects/show/makegood]]></supporturl>
+      <updateurl><![CDATA[http://eclipse.piece-framework.com]]></updateurl>
+    </node>
+    </marketplace>
+    

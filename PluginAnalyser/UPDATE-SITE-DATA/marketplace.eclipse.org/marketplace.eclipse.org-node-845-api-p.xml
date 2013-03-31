@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="845" name="Java Source Helper" url="http://marketplace.eclipse.org/content/java-source-helper">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+            
+      <owner>rainlord</owner>
+      <favorited>8</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The Java Source Helper shows you the block of code related to a closing brace/bracket if it is currently out of visible range in the editor.<br />
+<p><br />
+When you put the cursor on a closing bracket (parenthesis, bracket or curly brace), it will check to see if the related starting code bracket is out of visible range in the Java editor (JDT). If it is, it will float a window at the very top of the editor that shows the code related to that starting block.<br />
+<p><br />
+This helps you figure out what closing bracket belongs to what part of the code without having to scroll or jump to the starting bracket of that code. This is especially useful in deeply nested code where you start losing track of what scope is related to which closing curly brace.<br />
+<p><br />
+The feature will be familiar to users of IntelliJ IDEA where there is a similar feature.<br />
+<p><br />
+<b>Version 0.2.4 fixes the following:</b><br><br />
+<ul><br />
+<li>Brackets inside comments are no longer mistaken for “matching” brackets</li><br />
+<li>If the starting bracket and end bracket were not in the same location, the connecting line would draw funny, now it draws a bend</li><br />
+<li>Preferences page moved to under Java then “Java Editor”. Search for helper if you can’t find it in the Preferences dialog.</li><br />
+</ul><br />
+<p><br />
+<b>Screenshot:</b><br><br />
+<img src="<a href="http://hexapixel.com/img/software/sourcehelper/ss/ss_whole.gif"><p>">http://hexapixel.com/img/software/sourcehelper/ss/ss_whole.gif"><p></a><br />
+If you find issues or have feature requests, please let me know via email!<br />
+<br><br></p>
+]]></shortdescription>
+      <body><![CDATA[<p>The Java Source Helper shows you the block of code related to a closing brace/bracket if it is currently out of visible range in the editor.<br />
+<p><br />
+When you put the cursor on a closing bracket (parenthesis, bracket or curly brace), it will check to see if the related starting code bracket is out of visible range in the Java editor (JDT). If it is, it will float a window at the very top of the editor that shows the code related to that starting block.<br />
+<p><br />
+This helps you figure out what closing bracket belongs to what part of the code without having to scroll or jump to the starting bracket of that code. This is especially useful in deeply nested code where you start losing track of what scope is related to which closing curly brace.<br />
+<p><br />
+The feature will be familiar to users of IntelliJ IDEA where there is a similar feature.<br />
+<p><br />
+<b>Version 0.2.4 fixes the following:</b><br><br />
+<ul><br />
+<li>Brackets inside comments are no longer mistaken for “matching” brackets</li><br />
+<li>If the starting bracket and end bracket were not in the same location, the connecting line would draw funny, now it draws a bend</li><br />
+<li>Preferences page moved to under Java then “Java Editor”. Search for helper if you can’t find it in the Preferences dialog.</li><br />
+</ul><br />
+<p><br />
+<b>Screenshot:</b><br><br />
+<img src="<a href="http://hexapixel.com/img/software/sourcehelper/ss/ss_whole.gif"><p>">http://hexapixel.com/img/software/sourcehelper/ss/ss_whole.gif"><p></a><br />
+If you find issues or have feature requests, please let me know via email!<br />
+<br><br></p>
+]]></body>
+      <created>1232476742</created>
+      <changed>1259779160</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.hexapixel.com/projects/sourcehelper]]></homepageurl>
+      <image><![CDATA[http://www.hexapixel.com/img/software/sourcehelper/plugin_image.gif]]></image>
+      <version>0.2.4</version>
+      <license>Free EPL</license>
+      <companyname><![CDATA[Hexapixel]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://www.hexapixel.com/contact]]></supporturl>
+      <updateurl><![CDATA[http://www.hexapixel.com/update]]></updateurl>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="169652" name="Uml to Java Generator (Eclipse 3.7 version)" url="http://marketplace.eclipse.org/content/uml-java-generator-eclipse-37-version">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='1971' name='Modeling' url='http://marketplace.eclipse.org/category/categories/modeling'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+      </categories>
+      <tags>
+        <tag id='61' name='UML' url='http://marketplace.eclipse.org/category/free-tagging/uml'/>
+        <tag id='82' name='free' url='http://marketplace.eclipse.org/category/free-tagging/free'/>
+        <tag id='165' name='code generation' url='http://marketplace.eclipse.org/category/free-tagging/code-generation'/>
+        <tag id='186' name='EMF' url='http://marketplace.eclipse.org/category/free-tagging/emf'/>
+        <tag id='440' name='code generator' url='http://marketplace.eclipse.org/category/free-tagging/code-generator'/>
+      </tags>
+      
+      <owner>Obeo  </owner>
+      <favorited>3</favorited>
+      <installstotal>6405</installstotal>
+      <installsrecent>395</installsrecent>
+      <shortdescription><![CDATA[<p>This generator allows you to produce Java source code from a UML model. This module uses the standard UML2 metamodel provided by Eclipse Foundation and as such is compatible with any UML tools using this standard like the <a href="http://marketplace.obeonetwork.com/module/uml">UML Designer</a>. It's based on the award winning code generation project, <a href="http://eclipse.org/acceleo/">Acceleo</a>. </p>
+<p>
+Created by the members of the Acceleo development team, this generator is highly integrated in Eclipse with a dedicated launch configuration to keep track and your generations. This generator also includes a builder that can be activated to monitor your project and generate your code if your UML model is modified, keeping your code synchronized with your model. This module also contains an integrated documentation.
+</p>
+<p>
+This generator is also customizable thanks to properties accessible in its launch configuration and, being based on Acceleo, you can also contribute dynamically to this generator to modify the generated code. This generator can also be used programmatically out of Eclipse from any Java application. This generator is not only free but open source and its source code is available on <a href="http://marketplace.obeonetwork.com/module/uml2java-generator">GitHub</a>.
+</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This generator allows you to produce Java source code from a UML model. This module uses the standard UML2 metamodel provided by Eclipse Foundation and as such is compatible with any UML tools using this standard like the <a href="http://marketplace.obeonetwork.com/module/uml">UML Designer</a>. It's based on the award winning code generation project, <a href="http://eclipse.org/acceleo/">Acceleo</a>. </p>
+<p>
+Created by the members of the Acceleo development team, this generator is highly integrated in Eclipse with a dedicated launch configuration to keep track and your generations. This generator also includes a builder that can be activated to monitor your project and generate your code if your UML model is modified, keeping your code synchronized with your model. This module also contains an integrated documentation.
+</p>
+<p>
+This generator is also customizable thanks to properties accessible in its launch configuration and, being based on Acceleo, you can also contribute dynamically to this generator to modify the generated code. This generator can also be used programmatically out of Eclipse from any Java application. This generator is not only free but open source and its source code is available on <a href="http://marketplace.obeonetwork.com/module/uml2java-generator">GitHub</a>.
+</p>
+]]></body>
+      <created>1323949937</created>
+      <changed>1364225054</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://marketplace.obeonetwork.com/module/uml2java-generator]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_ON-110x80_4_0.png?itok=au1X8S29]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/launch-configuration.png?itok=-irH50QO]]></screenshot>
+      <version>1.0.4</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Obeo Network]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7, 3.6, 3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://marketplace.obeonetwork.com/module/uml2java-generator#community]]></supporturl>
+      <updateurl><![CDATA[http://marketplace.obeonetwork.com/updates/od6/]]></updateurl>
+<ius>
+<iu>org.obeonetwork.pim.uml2.gen.java.feature.feature.group</iu>
+<iu>org.obeonetwork.pim.uml2.gen.java.ui.feature.feature.group</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

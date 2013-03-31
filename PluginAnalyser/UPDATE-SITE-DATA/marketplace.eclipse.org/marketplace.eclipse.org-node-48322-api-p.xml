@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="48322" name="Scala IDE for Eclipse (OBSOLETE)" url="http://marketplace.eclipse.org/content/scala-ide-eclipse-obsolete">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+      </categories>
+            
+      <owner>Todd Vierling</owner>
+      <favorited>5</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This package points to the Scala IDE update site for the current final Scala toolchain release (2.9.1 at this writing) and the beta version of the IDE (not nightly).</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This package points to the Scala IDE update site for the current final Scala toolchain release (2.9.1 at this writing) and the beta version of the IDE (not nightly).</p>
+]]></body>
+      <created>1303748534</created>
+      <changed>1341507656</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.scala-ide.org/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>2.0.0-beta</version>
+      <license>BSD</license>
+      <companyname><![CDATA[Assembla]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6, 3.7]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://download.scala-ide.org/releases-29/2.0.0-beta]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

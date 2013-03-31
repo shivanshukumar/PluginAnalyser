@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="162" name="Legacy Composer" url="http://marketplace.eclipse.org/content/legacy-composer">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>gtcummings</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Legacy Composer is the first legacy application integration solution built entirely on the open source Java development environment Eclipse SDK with a singular design goal to simplify the integration of complex legacy applications across the enterprise.</p>
+<p>Legacy Composer is a flexible solution for real-time, non-intrusive integration of all legacy applications.  It enables customers to easily develop, deploy and maintain access to their legacy systems and data by automatically transforming host application functionality into Legacy Business Objects - Java beans and web services - that can then be used in any integration solution. </p>
+<p>All components of Legacy Composer  have been designed for development within Eclipse and for deployment via server-based implementations.  Developers use the Legacy Composer Workbench which includes a recorder and various visual editors that efficiently capture host application functionality and data.  The Workbench is implemented as an Eclipse  plug-in and allows the developer full access to all the capabilities of the Eclipse SDK â€“ namely editors, debuggers, compilers, etc. </p>
+<p>As an Eclipse plug-in, Legacy Composer Workbench users also have seamless access to the Eclipse Web Tools Platform, which provides automated deployment wizards for Web Services, J2EE projects, Java projects and servlets.  </p>
+<p>The Eclipse Edition of Legacy Composer is an advanced, state-of-the art product that enables the most effective and efficient integration of all key legacy application transactions and data into any of the major enterprise systems used by large businesses today. </p>
+<p>The overall design goals of Legacy Composer are:</p>
+<p>    * Maximize the efficiency and effectiveness of legacy application integrations<br />
+    * Improve the process for rapid prototyping of legacy transactions<br />
+    * Facilitate complete testing of all integrations prior to production<br />
+    * Enable flexible and seamless deployments to any Service Oriented Architecture</p>
+<p>Features and Benefits</p>
+<p>    * Sophisticated Development Tools â€“ The development capabilities of the Legacy Composer Workbench provide the fastest, most efficient methods of converting legacy application functionality and data into reusable components and services. Tools such as a visual recorder and various process editors automate the design, testing and deployment of Legacy Business Objects.   </p>
+<p>    * Fast, Efficient and Scalable Runtime Environment â€“ Legacy Composerâ€™s server-based runtime is the most advanced and efficient legacy integration engine available providing superior performance that can easily scale to meet the largest integration demands.</p>
+<p>    * Complete Java IDE Infrastructure - Legacy Composer ships with the Eclipse SDK, providing a full-featured integrated environment for the development of any Java application.  The Eclipse SDK includes editors, wizards, builders and debuggers as well as code merging and re-factoring tools.  Legacy Composer developers design, build and deploy legacy integration solutions from within this environment, enabling Legacy Composer to be the fastest, most efficient and effective total integration solution available today.</p>
+<p>    * Plug-in Infrastructure â€“ Eclipse provides an extensible architecture via Plug-in functionality.  Plug-ins contribute significant functionality to the platform and are accessible from within the same environment.  Legacy Composer Workbench is a Plug-in and compliments the large and continuously growing community of other open source and commercial plug-ins.</p>
+<p>    * Web Tools Platform â€“The Eclipse Web Tools Platform extends the Eclipse SDK with tools for developing and deploying J2EE Web applications and Web Services.  Legacy Composer Workbench co-exists with the Web Tools Platform, providing enhanced flexibility of deployment options.  Legacy Composer developed solutions can be easily:</p>
+<p>          o converted and integrated into any J2EE application<br />
+          o deployed directly to any J2EE application server<br />
+          o converted to a Web Service<br />
+          o incorporated into any composite application<br />
+          o integrated into any portal  </p>
+<p>    * Platform Integration and Team Support â€“ Most large legacy integration projects require a number of developers working together.  Legacy Composer directly supports the team versioning and control functions provided by Eclipse enabling a team of developers to share projects and work collaboratively from within the same environment.</p>
+<p>    * Dynamic Update/Install/Field Service â€“ Legacy Composer developers with current maintenance can utilize the dynamic update capabilities provided by Eclipse to be assured of receiving all future updates without having to download and install separate components.</p>
+<p>In summary, Legacy Composer is a sophisticated, flexible, state-of-the-art integration solution that enables the most efficient and effective integration of all legacy transactions.  By being able to visually capture and programmatically integrate these transactions into any Service Oriented Architecture, customers will save substantial time and expense versus other alternatives - - as well as enabling these integrations to be easily maintained over the life of the project.</p>
+<p>Red Oakâ€™s Legacy Composer is the world's most advanced solution for legacy systems application integration. </p>
+]]></shortdescription>
+      <body><![CDATA[<p>Legacy Composer is the first legacy application integration solution built entirely on the open source Java development environment Eclipse SDK with a singular design goal to simplify the integration of complex legacy applications across the enterprise.</p>
+<p>Legacy Composer is a flexible solution for real-time, non-intrusive integration of all legacy applications.  It enables customers to easily develop, deploy and maintain access to their legacy systems and data by automatically transforming host application functionality into Legacy Business Objects - Java beans and web services - that can then be used in any integration solution. </p>
+<p>All components of Legacy Composer  have been designed for development within Eclipse and for deployment via server-based implementations.  Developers use the Legacy Composer Workbench which includes a recorder and various visual editors that efficiently capture host application functionality and data.  The Workbench is implemented as an Eclipse  plug-in and allows the developer full access to all the capabilities of the Eclipse SDK â€“ namely editors, debuggers, compilers, etc. </p>
+<p>As an Eclipse plug-in, Legacy Composer Workbench users also have seamless access to the Eclipse Web Tools Platform, which provides automated deployment wizards for Web Services, J2EE projects, Java projects and servlets.  </p>
+<p>The Eclipse Edition of Legacy Composer is an advanced, state-of-the art product that enables the most effective and efficient integration of all key legacy application transactions and data into any of the major enterprise systems used by large businesses today. </p>
+<p>The overall design goals of Legacy Composer are:</p>
+<p>    * Maximize the efficiency and effectiveness of legacy application integrations<br />
+    * Improve the process for rapid prototyping of legacy transactions<br />
+    * Facilitate complete testing of all integrations prior to production<br />
+    * Enable flexible and seamless deployments to any Service Oriented Architecture</p>
+<p>Features and Benefits</p>
+<p>    * Sophisticated Development Tools â€“ The development capabilities of the Legacy Composer Workbench provide the fastest, most efficient methods of converting legacy application functionality and data into reusable components and services. Tools such as a visual recorder and various process editors automate the design, testing and deployment of Legacy Business Objects.   </p>
+<p>    * Fast, Efficient and Scalable Runtime Environment â€“ Legacy Composerâ€™s server-based runtime is the most advanced and efficient legacy integration engine available providing superior performance that can easily scale to meet the largest integration demands.</p>
+<p>    * Complete Java IDE Infrastructure - Legacy Composer ships with the Eclipse SDK, providing a full-featured integrated environment for the development of any Java application.  The Eclipse SDK includes editors, wizards, builders and debuggers as well as code merging and re-factoring tools.  Legacy Composer developers design, build and deploy legacy integration solutions from within this environment, enabling Legacy Composer to be the fastest, most efficient and effective total integration solution available today.</p>
+<p>    * Plug-in Infrastructure â€“ Eclipse provides an extensible architecture via Plug-in functionality.  Plug-ins contribute significant functionality to the platform and are accessible from within the same environment.  Legacy Composer Workbench is a Plug-in and compliments the large and continuously growing community of other open source and commercial plug-ins.</p>
+<p>    * Web Tools Platform â€“The Eclipse Web Tools Platform extends the Eclipse SDK with tools for developing and deploying J2EE Web applications and Web Services.  Legacy Composer Workbench co-exists with the Web Tools Platform, providing enhanced flexibility of deployment options.  Legacy Composer developed solutions can be easily:</p>
+<p>          o converted and integrated into any J2EE application<br />
+          o deployed directly to any J2EE application server<br />
+          o converted to a Web Service<br />
+          o incorporated into any composite application<br />
+          o integrated into any portal  </p>
+<p>    * Platform Integration and Team Support â€“ Most large legacy integration projects require a number of developers working together.  Legacy Composer directly supports the team versioning and control functions provided by Eclipse enabling a team of developers to share projects and work collaboratively from within the same environment.</p>
+<p>    * Dynamic Update/Install/Field Service â€“ Legacy Composer developers with current maintenance can utilize the dynamic update capabilities provided by Eclipse to be assured of receiving all future updates without having to download and install separate components.</p>
+<p>In summary, Legacy Composer is a sophisticated, flexible, state-of-the-art integration solution that enables the most efficient and effective integration of all legacy transactions.  By being able to visually capture and programmatically integrate these transactions into any Service Oriented Architecture, customers will save substantial time and expense versus other alternatives - - as well as enabling these integrations to be easily maintained over the life of the project.</p>
+<p>Red Oakâ€™s Legacy Composer is the world's most advanced solution for legacy systems application integration. </p>
+]]></body>
+      <created>1128521597</created>
+      <changed>1259778528</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://redoaksw.com/products/legacycomposer.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Red Oak Software]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.0.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.redoaksw.com/support.html]]></supporturl>
+      <updateurl><![CDATA[http://www.redoaksw.com/]]></updateurl>
+    </node>
+    </marketplace>
+    

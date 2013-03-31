@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="858" name="JAM Circle" url="http://marketplace.eclipse.org/content/jam-circle">
+      <type>resource</type>
+      <categories>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+      </categories>
+      <tags>
+        <tag id='626' name='JRuby' url='http://marketplace.eclipse.org/category/free-tagging/jruby'/>
+        <tag id='627' name='GTD' url='http://marketplace.eclipse.org/category/free-tagging/gtd'/>
+        <tag id='628' name='Kanban' url='http://marketplace.eclipse.org/category/free-tagging/kanban'/>
+        <tag id='629' name='Rhino' url='http://marketplace.eclipse.org/category/free-tagging/rhino'/>
+        <tag id='1494' name='Card' url='http://marketplace.eclipse.org/category/free-tagging/card'/>
+      </tags>
+      
+      <owner>Hiroki Kondo</owner>
+      <favorited>0</favorited>
+      <installstotal>255</installstotal>
+      <installsrecent>10</installsrecent>
+      <shortdescription><![CDATA[<p>JAM Circle is a Card Application Platform on Eclipse RCP.Kanban is similar to sticky note.you can use it for GTD,Planning,Pull System using Kanban.It supports to send Card using XMPP and to define it's behavior using Script(JRuby and ECMAScript).</p>
+]]></shortdescription>
+      <body><![CDATA[<p>JAM Circle is a Card Application Platform on Eclipse RCP.Kanban is similar to sticky note.you can use it for GTD,Planning,Pull System using Kanban.It supports to send Card using XMPP and to define it's behavior using Script(JRuby and ECMAScript).</p>
+]]></body>
+      <created>1234193644</created>
+      <changed>1294110315</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://kompiro.org/jamcircle/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/jamcircle_logo.png?itok=UQvlOST4]]></image>
+      <version>0.9.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Personal Project]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5 3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://kompiro.org/jamcircle/]]></supporturl>
+      <updateurl><![CDATA[http://kompiro.org/jamcircle/release/p2]]></updateurl>
+<ius>
+<iu>org.kompiro.jamcircle.kanban</iu>
+<iu>org.kompiro.jamcircle.scripting</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

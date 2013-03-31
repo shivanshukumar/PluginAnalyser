@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="40934" name="Select Project" url="http://marketplace.eclipse.org/content/select-project">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+            
+      <owner>Peter Hendriks</owner>
+      <favorited>1</favorited>
+      <installstotal>86</installstotal>
+      <installsrecent>3</installsrecent>
+      <shortdescription><![CDATA[<p>Eclipse contains popular shortcuts for selecting types and resources (such as Ctrl+Shift+T). When working with many, many projects inside a single workspace, this plug-in adds a similar shortcut for projects as well. Type a few letters with wildcards and quickly select one or more projects. Great for navigating, grouping projects into working sets, or other batch operations on projects.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Eclipse contains popular shortcuts for selecting types and resources (such as Ctrl+Shift+T). When working with many, many projects inside a single workspace, this plug-in adds a similar shortcut for projects as well. Type a few letters with wildcards and quickly select one or more projects. Great for navigating, grouping projects into working sets, or other batch operations on projects.</p>
+]]></body>
+      <created>1301245189</created>
+      <changed>1302455947</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/a/eclipselabs.org/p/selectproject/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/product.png?itok=1CLlWukM]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screenshot_8.png?itok=2rDSJZ-X]]></screenshot>
+      <version>1.0.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Select Project @ EclipseLabs]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4-3.7]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[https://selectproject.eclipselabs.org.codespot.com/hg/updatesite/]]></updateurl>
+<ius>
+<iu>org.eclipselabs.selectproject.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

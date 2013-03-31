@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="951" name="CDT - MPLAB Microchip C18-C30 toolchain" url="http://marketplace.eclipse.org/content/cdt-mplab-microchip-c18-c30-toolchain">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='1185' name='hellow!' url='http://marketplace.eclipse.org/category/free-tagging/hellow-0'/>
+      </tags>
+      
+      <owner>agtsoft</owner>
+      <favorited>10</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>CDT - MPLAB Microchip C18-C30 toolchain</p>
+]]></shortdescription>
+      <body><![CDATA[<p>CDT - MPLAB Microchip C18-C30 toolchain</p>
+]]></body>
+      <created>1245072202</created>
+      <changed>1259779261</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[]]></homepageurl>
+      <image><![CDATA[http://agtsoft.homeip.net/images/a/ad/C30102.png]]></image>
+      <version>1.02</version>
+      <license>Other</license>
+      <companyname><![CDATA[agt{c}soft]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://agtsoft.homeip.net]]></supporturl>
+      <updateurl><![CDATA[http://agtsoft.ru/update]]></updateurl>
+    </node>
+    </marketplace>
+    

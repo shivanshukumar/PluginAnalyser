@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="728" name="CheckThread:  Static Analysis for Java Threading" url="http://marketplace.eclipse.org/content/checkthread-static-analysis-java-threading">
+      <type>resource</type>
+      <categories>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+      </categories>
+            
+      <owner>JoeNearBoston</owner>
+      <favorited>4</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>CheckThread provides a thread annotation library and a static analysis engine detecting concurrency bugs at compile time. Expressing your Java code's threading policy through Java annotations or XML will also improve documentation and maintainability. CheckThread will report thread confinement violations and race conditions within the Eclipse IDE. This project is open source under the MIT license. See <a href="http://www.checkthread.org">www.checkthread.org</a> for download and code examples.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>CheckThread provides a thread annotation library and a static analysis engine detecting concurrency bugs at compile time. Expressing your Java code's threading policy through Java annotations or XML will also improve documentation and maintainability. CheckThread will report thread confinement violations and race conditions within the Eclipse IDE. This project is open source under the MIT license. See <a href="http://www.checkthread.org">www.checkthread.org</a> for download and code examples.</p>
+]]></body>
+      <created>1215529700</created>
+      <changed>1259779044</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://checkthread.org/index.html]]></homepageurl>
+      <image><![CDATA[http://checkthread.org/screenshot.png]]></image>
+      <version>1.0.9</version>
+      <license>Other</license>
+      <companyname><![CDATA[CheckThread.org]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[Europa (3.3.2)]]></eclipseversion>
+      <supporturl><![CDATA[http://checkthread.org/forum.html]]></supporturl>
+      <updateurl><![CDATA[http://www.checkthread.org]]></updateurl>
+    </node>
+    </marketplace>
+    

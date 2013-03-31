@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="90" name="Eclipse Metrics" url="http://marketplace.eclipse.org/content/eclipse-metrics">
+      <type>resource</type>
+      <categories>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+      </categories>
+      <tags>
+        <tag id='469' name='Favorite' url='http://marketplace.eclipse.org/category/free-tagging/favorite'/>
+      </tags>
+      
+      <owner>Lance Walton</owner>
+      <favorited>16</favorited>
+      <installstotal>7921</installstotal>
+      <installsrecent>371</installsrecent>
+      <shortdescription><![CDATA[<p>This plug in calculates various metrics for your code during build cycles and warns you, via the Problems View, of 'range violations' for each metric. This allows you to stay continuously aware of the health of your code base. You can also export the metrics in different formats. The HTML export includes histograms of the metric values and a 'Management Dashboard' for a quick visual summary.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This plug in calculates various metrics for your code during build cycles and warns you, via the Problems View, of 'range violations' for each metric. This allows you to stay continuously aware of the health of your code base. You can also export the metrics in different formats. The HTML export includes histograms of the metric values and a 'Management Dashboard' for a quick visual summary.</p>
+]]></body>
+      <created>1077561761</created>
+      <changed>1291329224</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://eclipse-metrics.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>3.12.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[State Of Flow]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://eclipse-metrics.sourceforge.net/]]></supporturl>
+      <updateurl><![CDATA[http://www.stateofflow.com/UpdateSite]]></updateurl>
+<ius>
+<iu>com.stateofflow.eclipse.metrics.feature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

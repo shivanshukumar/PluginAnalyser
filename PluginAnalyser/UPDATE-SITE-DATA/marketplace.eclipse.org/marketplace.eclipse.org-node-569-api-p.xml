@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="569" name="PHP Class Generator" url="http://marketplace.eclipse.org/content/php-class-generator">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+      </categories>
+            
+      <owner>hotzst</owner>
+      <favorited>3</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The PHP class generator described below is integrated in the Java Code Generator at: <a href="http://www.sahits.ch/project/javacodegen/">http://www.sahits.ch/project/javacodegen/</a></p>
+<!--break--><p>PHP Class Generator can produce a PHP class based on an XML template and a database table.<br />
+Documentation on the XML file can be found at the project Home Page. The sources are also available there or from Sourceforge (<a href="http://sourceforge.net/projects/phpclgenerator/">http://sourceforge.net/projects/phpclgenerator/</a>). This project is only supported as part of the code generation project.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The PHP class generator described below is integrated in the Java Code Generator at: <a href="http://www.sahits.ch/project/javacodegen/">http://www.sahits.ch/project/javacodegen/</a></p>
+<!--break--><p>PHP Class Generator can produce a PHP class based on an XML template and a database table.<br />
+Documentation on the XML file can be found at the project Home Page. The sources are also available there or from Sourceforge (<a href="http://sourceforge.net/projects/phpclgenerator/">http://sourceforge.net/projects/phpclgenerator/</a>). This project is only supported as part of the code generation project.</p>
+]]></body>
+      <created>1193666451</created>
+      <changed>1262686318</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://phpclassgenerator.sahits.ch/]]></homepageurl>
+      <image><![CDATA[http://www.sahits.ch/pic/phpCodeGen110x80.gif]]></image>
+      <version>2.1.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[SAHITS]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[https://sourceforge.net/apps/trac/codegenjava/newticket]]></supporturl>
+      <updateurl><![CDATA[http://www.sahits.ch/project/javacodegen/update/]]></updateurl>
+    </node>
+    </marketplace>
+    

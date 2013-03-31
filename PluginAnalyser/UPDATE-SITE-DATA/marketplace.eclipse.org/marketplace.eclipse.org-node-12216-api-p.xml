@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="12216" name="Daily Dilbert - Show Dilbert Comic Strips" url="http://marketplace.eclipse.org/content/daily-dilbert-show-dilbert-comic-strips">
+      <type>resource</type>
+      <categories>
+        <category id='7' name='Entertainment' url='http://marketplace.eclipse.org/taxonomy/term/7'/>
+      </categories>
+      <tags>
+        <tag id='1215' name='Dilbert' url='http://marketplace.eclipse.org/category/free-tagging/dilbert'/>
+        <tag id='1216' name='Comic' url='http://marketplace.eclipse.org/category/free-tagging/comic'/>
+        <tag id='1217' name='wad&#039;n dad&#039;n' url='http://marketplace.eclipse.org/category/free-tagging/wadn-dadn'/>
+        <tag id='1226' name='Daily' url='http://marketplace.eclipse.org/category/free-tagging/daily'/>
+        <tag id='1227' name='Most Popular' url='http://marketplace.eclipse.org/category/free-tagging/most-popular'/>
+      </tags>
+      
+      <owner>Christian Schubert</owner>
+      <favorited>2</favorited>
+      <installstotal>113</installstotal>
+      <installsrecent>2</installsrecent>
+      <shortdescription><![CDATA[<p>Dilbert Comic Strips from RSS-Feeds "Strips" und "Most Popular" can be downloaded an shown in the Daily Dilbert view.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Dilbert Comic Strips from RSS-Feeds "Strips" und "Most Popular" can be downloaded an shown in the Daily Dilbert view.</p>
+]]></body>
+      <created>1284906794</created>
+      <changed>1285083057</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.wadndadn.de]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/wadndadn-Plugins-Logo.png?itok=MY0LhpN_]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Screenshot.png?itok=2yW8zjQq]]></screenshot>
+      <version>0.6.2</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[wad'n dad'n]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5+]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/wadndadnplugins/]]></supporturl>
+      <updateurl><![CDATA[http://update.wadndadn.de]]></updateurl>
+<ius>
+<iu>dailydilbert.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

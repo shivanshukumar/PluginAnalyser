@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="5345" name="SourceMate for Flash Builder 4" url="http://marketplace.eclipse.org/content/sourcemate-flash-builder-4">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='390' name='templates' url='http://marketplace.eclipse.org/category/free-tagging/templates'/>
+        <tag id='535' name='Actionscript' url='http://marketplace.eclipse.org/category/free-tagging/actionscript'/>
+        <tag id='747' name='flex' url='http://marketplace.eclipse.org/category/free-tagging/flex'/>
+        <tag id='748' name='Flash' url='http://marketplace.eclipse.org/category/free-tagging/flash'/>
+        <tag id='925' name='refactoring' url='http://marketplace.eclipse.org/category/free-tagging/refactoring'/>
+      </tags>
+      
+      <owner>Chris Gross</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>SourceMate is the new must-have companion tool for serious Flash and Flex developers.</p>
+<p>Features include code generation, refactoring, code templates (i.e. snippets), metadata tag support, and more.</p>
+<p>See more at <a href="http://www.elementriver.com/sourcemate">www.elementriver.com/sourcemate</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>SourceMate is the new must-have companion tool for serious Flash and Flex developers.</p>
+<p>Features include code generation, refactoring, code templates (i.e. snippets), metadata tag support, and more.</p>
+<p>See more at <a href="http://www.elementriver.com/sourcemate">www.elementriver.com/sourcemate</a></p>
+]]></body>
+      <created>1280415637</created>
+      <changed>1291818291</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.elementriver.com/sourcemate]]></homepageurl>
+      <image><![CDATA[http://services.elementriver.com/sourcemate/sourcemate110x80.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/extractinterface.png?itok=ziusxjLw]]></screenshot>
+      <version></version>
+      <license>Commercial</license>
+      <companyname><![CDATA[ElementRiver]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[Flash Builder 4]]></eclipseversion>
+      <supporturl><![CDATA[http://support.elementriver.com]]></supporturl>
+      <updateurl><![CDATA[http://updates.elementriver.com/sourcemate/v2]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

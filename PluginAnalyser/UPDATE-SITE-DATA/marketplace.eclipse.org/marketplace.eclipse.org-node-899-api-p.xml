@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="899" name="Google Clips Plug-in" url="http://marketplace.eclipse.org/content/google-clips-plug">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+            
+      <owner>Sandip Chitale</owner>
+      <favorited>3</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Haven't you always wished for web based, live clipboard that you could share between Eclipse instances running on different computers. May be even share it with your buddies. Your wait is over. All you need is the Google Clips Plug-in and a Google Docs account. Google Clips is a Eclipse Plug-in that implements a web based shared clipboard using a Google Spreadsheet. Just create a Google spreadsheet named CLIPBOARD to make the plug-in work out of the box. You can of course change the name of spreadsheet you want to use as clipboard using Preferences > General > Google Clips page. If you share a the spreadsheet with your buddy you can share the clipboard. </p>
+]]></shortdescription>
+      <body><![CDATA[<p>Haven't you always wished for web based, live clipboard that you could share between Eclipse instances running on different computers. May be even share it with your buddies. Your wait is over. All you need is the Google Clips Plug-in and a Google Docs account. Google Clips is a Eclipse Plug-in that implements a web based shared clipboard using a Google Spreadsheet. Just create a Google spreadsheet named CLIPBOARD to make the plug-in work out of the box. You can of course change the name of spreadsheet you want to use as clipboard using Preferences > General > Google Clips page. If you share a the spreadsheet with your buddy you can share the clipboard. </p>
+]]></body>
+      <created>1237919277</created>
+      <changed>1259779213</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/sandipchitaleseclipseplugins/]]></homepageurl>
+      <image><![CDATA[http://sandipchitaleseclipseplugins.googlecode.com/files/GoogleClips110x80.png]]></image>
+      <version>1.0.3</version>
+      <license>Other</license>
+      <companyname><![CDATA[Sandip Chitale]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.4+]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/sandipchitaleseclipseplugins/issues/list]]></supporturl>
+      <updateurl><![CDATA[http://sandipchitaleseclipseplugins.googlecode.com/svn/trunk/SandipChitalesEclipsePluginsUpdateSite/]]></updateurl>
+    </node>
+    </marketplace>
+    

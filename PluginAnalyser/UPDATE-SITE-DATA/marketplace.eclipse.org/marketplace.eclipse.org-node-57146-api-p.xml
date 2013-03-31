@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="57146" name="Show All Instances of selected Java Class or Interface " url="http://marketplace.eclipse.org/content/show-all-instances-selected-java-type">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='309' name='debugger' url='http://marketplace.eclipse.org/category/free-tagging/debugger'/>
+        <tag id='1957' name='all instances' url='http://marketplace.eclipse.org/category/free-tagging/all-instances'/>
+        <tag id='2394' name='sandipchitale' url='http://marketplace.eclipse.org/category/free-tagging/sandipchitale'/>
+      </tags>
+      
+      <owner>Sandip Chitale</owner>
+      <favorited>2</favorited>
+      <installstotal>283</installstotal>
+      <installsrecent>42</installsrecent>
+      <shortdescription><![CDATA[<p>New ! Now supports not showing instances of a class if the instance count is 0.<br />
+New ! Now supports showing all instances of objects whose class has annotations such as @Resource.<br />
+New ! Now supports showing all instances of objects implementing selected Java Interface.</p>
+<p>As mentioned in the Eclipse help Java Development User Guide Tips and tricks Debugging section, when debugging with JavaSE-1.6 you can see all instances of a particular class. You can invoke this functionality via the popup menu (All Instances...) of Variables view rows for reference type values or in the Java editor by positioning the cursor on or selecting a reference type expression. However it is not possible to see all instances of an arbitrary class. The All Instances plug-in adds this functionality.  It can be invoked using the:</p>
+<p>- Run > All Instances of Java Class...<br />
+- All Instances of Java Class... toolbar buttons in the Variables and Expressions views</p>
+<p>Once invoked it shows the customized Open Type dialog of JDT. Once you selects the class it adds the  Instances (count) expression to the Expressions view. It also adds the expressions for sub classes of the selected . You can further show hide inner and anonymous inner classes. If there are 0 instances and Show static fields preference is enabled expressions to show the values of the static fields of the classes are also added.</p>
+<p>In addition, an expression showing java.security.CodeSource info for the class is also added if that information is available.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>New ! Now supports not showing instances of a class if the instance count is 0.<br />
+New ! Now supports showing all instances of objects whose class has annotations such as @Resource.<br />
+New ! Now supports showing all instances of objects implementing selected Java Interface.</p>
+<p>As mentioned in the Eclipse help Java Development User Guide Tips and tricks Debugging section, when debugging with JavaSE-1.6 you can see all instances of a particular class. You can invoke this functionality via the popup menu (All Instances...) of Variables view rows for reference type values or in the Java editor by positioning the cursor on or selecting a reference type expression. However it is not possible to see all instances of an arbitrary class. The All Instances plug-in adds this functionality.  It can be invoked using the:</p>
+<p>- Run > All Instances of Java Class...<br />
+- All Instances of Java Class... toolbar buttons in the Variables and Expressions views</p>
+<p>Once invoked it shows the customized Open Type dialog of JDT. Once you selects the class it adds the  Instances (count) expression to the Expressions view. It also adds the expressions for sub classes of the selected . You can further show hide inner and anonymous inner classes. If there are 0 instances and Show static fields preference is enabled expressions to show the values of the static fields of the classes are also added.</p>
+<p>In addition, an expression showing java.security.CodeSource info for the class is also added if that information is available.</p>
+]]></body>
+      <created>1306723211</created>
+      <changed>1352509352</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://sandipchitale.blogspot.com/2011/05/eclipse-show-all-instances-of-selected.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_15.png?itok=N6FjOovh]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screenshot_11.png?itok=gCfcAQ-q]]></screenshot>
+      <version>1.0.20</version>
+      <license>BSD</license>
+      <companyname><![CDATA[Sandip Chitale]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.5.2,3.6,3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/sandipchitaleseclipseplugins/issues/list]]></supporturl>
+      <updateurl><![CDATA[http://sandipchitaleseclipseplugins.googlecode.com/svn/trunk/AllInstancesUpdateSite]]></updateurl>
+<ius>
+<iu>AllInstancesFeature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

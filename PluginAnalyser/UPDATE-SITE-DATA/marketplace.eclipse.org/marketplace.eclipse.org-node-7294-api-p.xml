@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="7294" name="JDT Quickfix Enhancement" url="http://marketplace.eclipse.org/content/jdt-quickfix-enhancement">
+      <type>resource</type>
+      <categories>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='27' name='J2ME' url='http://marketplace.eclipse.org/taxonomy/term/27'/>
+      </categories>
+      <tags>
+        <tag id='764' name='JDT' url='http://marketplace.eclipse.org/category/free-tagging/jdt'/>
+        <tag id='1127' name='Quickfix' url='http://marketplace.eclipse.org/category/free-tagging/quickfix'/>
+      </tags>
+      
+      <owner>kane zhu</owner>
+      <favorited>2</favorited>
+      <installstotal>854</installstotal>
+      <installsrecent>44</installsrecent>
+      <shortdescription><![CDATA[<p><strong>Introduction</strong></p>
+<p>It's a small tool to enhance the quick fix proposal of JDT.</p>
+<p>JDT is a powerful IDE to develop java application. However it's not so intelligent all the time. This tool do some enhancement on JDT to improve my productivity.</p>
+<p>All of features of this tool are based on my development favor. More intelligent feature might be implemented in future if I find I need one.</p>
+<p><strong>It has</strong></p>
+<li> Automatically add "\" to escape characters for string </li>
+<p>For example,</p>
+<p>Sometime I copy a path in my code from file explorer of Windows, the string looks like "C:\Documents and Settings\kzhu0\My Documents\helios\features\com.ibm.rational.clearcase.ccrc.tours.doc.feature.nl1_7.1.0.v200910291843".</p>
+<p>Character "\" used in path need be escaped, I have to fix them one by one in the long string. Now this tool can fix all of them in one mouse click. :)</p>
+]]></shortdescription>
+      <body><![CDATA[<p><strong>Introduction</strong></p>
+<p>It's a small tool to enhance the quick fix proposal of JDT.</p>
+<p>JDT is a powerful IDE to develop java application. However it's not so intelligent all the time. This tool do some enhancement on JDT to improve my productivity.</p>
+<p>All of features of this tool are based on my development favor. More intelligent feature might be implemented in future if I find I need one.</p>
+<p><strong>It has</strong></p>
+<li> Automatically add "\" to escape characters for string </li>
+<p>For example,</p>
+<p>Sometime I copy a path in my code from file explorer of Windows, the string looks like "C:\Documents and Settings\kzhu0\My Documents\helios\features\com.ibm.rational.clearcase.ccrc.tours.doc.feature.nl1_7.1.0.v200910291843".</p>
+<p>Character "\" used in path need be escaped, I have to fix them one by one in the long string. Now this tool can fix all of them in one mouse click. :)</p>
+]]></body>
+      <created>1282211547</created>
+      <changed>1282630304</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://code.google.com/p/kane-toolkit/wiki/JDTQuickFix]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>0.0.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Meng Xin Zhu]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[eclipse 3.4+]]></eclipseversion>
+      <supporturl><![CDATA[https://code.google.com/p/kane-toolkit/wiki/JDTQuickFix]]></supporturl>
+      <updateurl><![CDATA[http://kane-toolkit.googlecode.com/svn/trunk/jdt-quickfix/repository/]]></updateurl>
+<ius>
+<iu>org.eclipse.jdt.quickfix.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

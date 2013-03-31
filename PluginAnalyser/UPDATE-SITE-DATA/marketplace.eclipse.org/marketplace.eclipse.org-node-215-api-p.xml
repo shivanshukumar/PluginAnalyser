@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="215" name="Wicked Shell" url="http://marketplace.eclipse.org/content/wicked-shell">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='703' name='Shell' url='http://marketplace.eclipse.org/category/free-tagging/shell'/>
+      </tags>
+      
+      <owner>Stefan Reichert</owner>
+      <favorited>18</favorited>
+      <installstotal>3332</installstotal>
+      <installsrecent>150</installsrecent>
+      <shortdescription><![CDATA[Wicked Shell - A non-evil eclipse plugin providing an integrated shell. This plugin enables the use of the system shell directly from the eclipse IDE.
+
+It supports different shell types for Windows which are Cmd.exe, Cygwin's bash.exe and MSYS's sh.exe. Additionally, custom shell may be defined. Each shell is provided with command completion which can be adjusted via preferences page.]]></shortdescription>
+      <body><![CDATA[Wicked Shell - A non-evil eclipse plugin providing an integrated shell. This plugin enables the use of the system shell directly from the eclipse IDE.
+
+It supports different shell types for Windows which are Cmd.exe, Cygwin's bash.exe and MSYS's sh.exe. Additionally, custom shell may be defined. Each shell is provided with command completion which can be adjusted via preferences page.]]></body>
+      <created>1148910908</created>
+      <changed>1291710627</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.wickedshell.net]]></homepageurl>
+      <image><![CDATA[http://www.wickedshell.net/img/witch.jpg]]></image>
+      <version>2.0.6</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Stefan Reichert]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2+]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/wickedshell]]></supporturl>
+      <updateurl><![CDATA[http://www.wickedshell.net/updatesite]]></updateurl>
+<ius>
+<iu>net.sf.wickedshell.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

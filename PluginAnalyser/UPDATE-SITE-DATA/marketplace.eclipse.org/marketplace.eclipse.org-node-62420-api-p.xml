@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="62420" name="JasperWave" url="http://marketplace.eclipse.org/content/jasperwave">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='39' name='Reporting' url='http://marketplace.eclipse.org/category/categories/reporting'/>
+        <category id='1973' name='Business Intelligence, Reporting and Charting' url='http://marketplace.eclipse.org/category/categories/business-intelligence-reporting-and-charting'/>
+      </categories>
+      <tags>
+        <tag id='362' name='reporting' url='http://marketplace.eclipse.org/category/free-tagging/reporting'/>
+        <tag id='771' name='jasperreports' url='http://marketplace.eclipse.org/category/free-tagging/jasperreports'/>
+        <tag id='2001' name='jasperreports designer' url='http://marketplace.eclipse.org/category/free-tagging/jasperreports-designer'/>
+        <tag id='2002' name='jasperreports eclipse' url='http://marketplace.eclipse.org/category/free-tagging/jasperreports-eclipse'/>
+        <tag id='2003' name='report designer' url='http://marketplace.eclipse.org/category/free-tagging/report-designer'/>
+      </tags>
+      
+      <owner>JasperWave Team</owner>
+      <favorited>7</favorited>
+      <installstotal>1452</installstotal>
+      <installsrecent>4</installsrecent>
+      <shortdescription><![CDATA[<p>JasperWave Report Designer is a visual editor for JasperReports, the world's most popular open source reporting engine. 100% pure Java, built on the Eclipse Platform.</p>
+<p>The standalone application (RCP) and dropins folder can be downloaded here:<br /><a href="http://jasperwave.com/download.html">http://jasperwave.com/download.html</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>JasperWave Report Designer is a visual editor for JasperReports, the world's most popular open source reporting engine. 100% pure Java, built on the Eclipse Platform.</p>
+<p>The standalone application (RCP) and dropins folder can be downloaded here:<br /><a href="http://jasperwave.com/download.html">http://jasperwave.com/download.html</a></p>
+]]></body>
+      <created>1307701294</created>
+      <changed>1340088111</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://jasperwave.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Logo-GetSatisfaction_full_aspect_medium.png?itok=mbytrnqX]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/jasperwave_0_9_4.jpg?itok=FhtFdIEZ]]></screenshot>
+      <version>0.9.6</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[Bitrends LLC]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6, 3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://jasperwave.com/support.html]]></supporturl>
+      <updateurl><![CDATA[http://jasperwave.com/update-site]]></updateurl>
+<ius>
+<iu>com.jasperwave.designer</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

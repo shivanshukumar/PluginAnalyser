@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="269" name="SMODL Development Suite" url="http://marketplace.eclipse.org/content/smodl-development-suite">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='21' name='Web Services' url='http://marketplace.eclipse.org/taxonomy/term/21'/>
+      </categories>
+      <tags>
+        <tag id='509' name='SOA' url='http://marketplace.eclipse.org/category/free-tagging/soa'/>
+        <tag id='518' name='ajax' url='http://marketplace.eclipse.org/category/free-tagging/ajax'/>
+        <tag id='711' name='mde' url='http://marketplace.eclipse.org/category/free-tagging/mde'/>
+        <tag id='2168' name='agile modeling' url='http://marketplace.eclipse.org/category/free-tagging/agile-modeling'/>
+      </tags>
+      
+      <owner>Bjarne G. Herland</owner>
+      <favorited>2</favorited>
+      <installstotal>115</installstotal>
+      <installsrecent>2</installsrecent>
+      <shortdescription><![CDATA[<p>Smodl Development Suite facilitates fast, simple and agile model-driven SOA development. Design your model from scratch or reverse-engineer from existing code - your choice. Various artifacts, including WSDL and code, is automatically generated and kept in sync when the model changes.</p>
+<p>The concept of a "Smodl Service" is introduced, a powerful service capable of more than what is normally expected from a Web Service. The runtime-engine provided as part of Smodl Development Suite runs on different platforms, offering SOAP, XML-RPC and JSON-RPC bindings to the service as well as the possibility for introspection. The runtime-engine also enforces data-integrity if defined in the model.</p>
+<p>Smodl Development Suite generates among other things modules for MooTools, Dojo and Mozilla JetPack, with code for jQuery coming up! These powerful tools for rapid AJAX application development makes Smodl Development Suite the tool-of-choice for integrating rich client applications with Web Services!</p>
+<p>By installing the optional feature in Eclipse 3.6 ("Helios") EE or later, right-clicking on a Smodl Service brings up a simple wizard to generate and configure a Eclipse Dynamic Web Project, if this is your preferred way to develop your application.</p>
+<p>See <a href="http://www.smodl.org/release-notes.html">http://www.smodl.org/release-notes.html</a> for further details.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Smodl Development Suite facilitates fast, simple and agile model-driven SOA development. Design your model from scratch or reverse-engineer from existing code - your choice. Various artifacts, including WSDL and code, is automatically generated and kept in sync when the model changes.</p>
+<p>The concept of a "Smodl Service" is introduced, a powerful service capable of more than what is normally expected from a Web Service. The runtime-engine provided as part of Smodl Development Suite runs on different platforms, offering SOAP, XML-RPC and JSON-RPC bindings to the service as well as the possibility for introspection. The runtime-engine also enforces data-integrity if defined in the model.</p>
+<p>Smodl Development Suite generates among other things modules for MooTools, Dojo and Mozilla JetPack, with code for jQuery coming up! These powerful tools for rapid AJAX application development makes Smodl Development Suite the tool-of-choice for integrating rich client applications with Web Services!</p>
+<p>By installing the optional feature in Eclipse 3.6 ("Helios") EE or later, right-clicking on a Smodl Service brings up a simple wizard to generate and configure a Eclipse Dynamic Web Project, if this is your preferred way to develop your application.</p>
+<p>See <a href="http://www.smodl.org/release-notes.html">http://www.smodl.org/release-notes.html</a> for further details.</p>
+]]></body>
+      <created>1159794774</created>
+      <changed>1322747058</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.smodl.org/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_3.gif?itok=WbpIoFH8]]></image>
+      <version>1.5.0</version>
+      <license>Free for non-commerical use</license>
+      <companyname><![CDATA[RUnit Software AS]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.x]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://www.runitsoft.no/smodl/updates/]]></updateurl>
+<ius>
+<iu>com.runitsoft.smodl</iu>
+<iu>com.runitsoft.smodl.web.deployment</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="581" name="MagicDraw SysML plugin" url="http://marketplace.eclipse.org/content/magicdraw-sysml-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+      </categories>
+      <tags>
+        <tag id='64' name='Modeling' url='http://marketplace.eclipse.org/category/free-tagging/modeling'/>
+        <tag id='679' name='system modeling' url='http://marketplace.eclipse.org/category/free-tagging/system-modeling'/>
+        <tag id='680' name='SysML' url='http://marketplace.eclipse.org/category/free-tagging/sysml'/>
+      </tags>
+      
+      <owner>sauzuk</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The SysML plugin retains all capabilities of MagicDraw architecture modelling environment with System Engineer perspective. It includes SysML specific menus, toolbars, diagrams, specifications, user interface, reports, dependency matrices, validation suites, refactoring methods and more. SysML plugin supports all SysML diagrams, including Requirements, Block Definition, Internal Blocks, Parametric and others. With this plugin, MagicDraw adds support for additional specification, analysis, design, and validation of a broad range of systems and system integrations.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The SysML plugin retains all capabilities of MagicDraw architecture modelling environment with System Engineer perspective. It includes SysML specific menus, toolbars, diagrams, specifications, user interface, reports, dependency matrices, validation suites, refactoring methods and more. SysML plugin supports all SysML diagrams, including Requirements, Block Definition, Internal Blocks, Parametric and others. With this plugin, MagicDraw adds support for additional specification, analysis, design, and validation of a broad range of systems and system integrations.</p>
+]]></body>
+      <created>1194966652</created>
+      <changed>1273663564</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.magicdraw.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>16.8</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[No Magic, Inc.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.1 and later]]></eclipseversion>
+      <supporturl><![CDATA[http://www.magicdraw.com/http://www.magicdraw.com/support]]></supporturl>
+      <updateurl><![CDATA[http://www.nomagic.com]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

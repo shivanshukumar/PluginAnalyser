@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="116" name="QuickImage" url="http://marketplace.eclipse.org/content/quickimage">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='8' name='Graphics' url='http://marketplace.eclipse.org/taxonomy/term/8'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+      <tags>
+        <tag id='678' name='image viewer' url='http://marketplace.eclipse.org/category/free-tagging/image-viewer'/>
+      </tags>
+      
+      <owner>Per Salomonsson</owner>
+      <favorited>17</favorited>
+      <installstotal>2374</installstotal>
+      <installsrecent>158</installsrecent>
+      <shortdescription><![CDATA[<p>The QuickImage plugin provides an eclipse-editor for viewing images. You can browse images one by one, or all as thumbnails. Use the toolbar to navigate or by single- or double-clicking the images. By default QuickImage associates its editor with .gif .jpg .jpeg .png .bmp .ico</p>
+<p>Initial intention with the plugin was to use it with web projects etc, not for viewing large collections of huge images. There are better suited tools for that.</p>
+<p>Check <a href="http://psnet.nu/eclipse">http://psnet.nu/eclipse</a> for download, screenshots etc..</p>
+<p>Also available from MarketPlace.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The QuickImage plugin provides an eclipse-editor for viewing images. You can browse images one by one, or all as thumbnails. Use the toolbar to navigate or by single- or double-clicking the images. By default QuickImage associates its editor with .gif .jpg .jpeg .png .bmp .ico</p>
+<p>Initial intention with the plugin was to use it with web projects etc, not for viewing large collections of huge images. There are better suited tools for that.</p>
+<p>Check <a href="http://psnet.nu/eclipse">http://psnet.nu/eclipse</a> for download, screenshots etc..</p>
+<p>Also available from MarketPlace.</p>
+]]></body>
+      <created>1090410738</created>
+      <changed>1363477979</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://psnet.nu/eclipse/]]></homepageurl>
+      <image><![CDATA[http://psnet.nu/eclipse/quickimage/images/epc.jpg]]></image>
+      <version>1.0.3.2</version>
+      <license>EPL</license>
+      <companyname><![CDATA[psnet.nu]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.x - 4.x]]></eclipseversion>
+      <supporturl><![CDATA[http://psnet.nu/eclipse/]]></supporturl>
+      <updateurl><![CDATA[http://psnet.nu/eclipse/updates/]]></updateurl>
+<ius>
+<iu>nu.psnet.quickimage</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

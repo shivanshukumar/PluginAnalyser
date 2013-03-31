@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="822" name="CMakeBuilder" url="http://marketplace.eclipse.org/content/cmakebuilder">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+      </categories>
+            
+      <owner>Pascal Flamand</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>What is CMakeBuilder ?</p>
+<p>CMakeBuilder is an Eclipse plugin which enables you to create new or maintain existing CMake projects.<br />
+Why CMakeBuilder ?</p>
+<p>CMakeBuilder is a plugin for the well known Eclipse SDK. This tool is platform independent and runs on all environments that support Java™ Virtual Machine (VM).</p>
+<p>CMakeBuilder requires:</p>
+<p>    * Java™ Runtime Environment 1.5 or later<br />
+    * Eclipse 3.2 or higher to work (Ganymede, Galileo and Helios have been successfully tested).</p>
+<p>CMakeBuilder provides a user friendly interface to easily manage CMake-based projects.</p>
+<p>CMakeBuilder Features are :</p>
+<p>    * Advanced parser</p>
+<p>    * Advanced CMake outline</p>
+<p>    * CMakeBuilder perspective</p>
+<p>    * Symbol table and environment inspector</p>
+<p>    * CMake files editor with syntax highlighting</p>
+<p>    * Code assist</p>
+<p>    * Wizard oriented project management</p>
+<p>What is CMakeBuilder ?</p>
+<p>CMakeBuilder is an Eclipse plugin which enables you to create new or maintain existing CMake projects.<br />
+Why CMakeBuilder ?</p>
+<p>CMakeBuilder is a plugin for the well known Eclipse SDK. This tool is platform independent and runs on all environments that support Java™ Virtual Machine (VM).</p>
+<p>CMakeBuilder provides a user friendly interface to easily manage CMake-based projects.</p>
+<p>CMakeBuilder Features are :</p>
+<p>    * Advanced parser</p>
+<p>    * Advanced CMake outline</p>
+<p>    * CMakeBuilder perspective</p>
+<p>    * Symbol table and environment inspector</p>
+<p>    * CMake files editor with syntax highlighting</p>
+<p>    * Code assist</p>
+<p>    * Wizard oriented project management</p>
+]]></shortdescription>
+      <body><![CDATA[<p>What is CMakeBuilder ?</p>
+<p>CMakeBuilder is an Eclipse plugin which enables you to create new or maintain existing CMake projects.<br />
+Why CMakeBuilder ?</p>
+<p>CMakeBuilder is a plugin for the well known Eclipse SDK. This tool is platform independent and runs on all environments that support Java™ Virtual Machine (VM).</p>
+<p>CMakeBuilder requires:</p>
+<p>    * Java™ Runtime Environment 1.5 or later<br />
+    * Eclipse 3.2 or higher to work (Ganymede, Galileo and Helios have been successfully tested).</p>
+<p>CMakeBuilder provides a user friendly interface to easily manage CMake-based projects.</p>
+<p>CMakeBuilder Features are :</p>
+<p>    * Advanced parser</p>
+<p>    * Advanced CMake outline</p>
+<p>    * CMakeBuilder perspective</p>
+<p>    * Symbol table and environment inspector</p>
+<p>    * CMake files editor with syntax highlighting</p>
+<p>    * Code assist</p>
+<p>    * Wizard oriented project management</p>
+<p>What is CMakeBuilder ?</p>
+<p>CMakeBuilder is an Eclipse plugin which enables you to create new or maintain existing CMake projects.<br />
+Why CMakeBuilder ?</p>
+<p>CMakeBuilder is a plugin for the well known Eclipse SDK. This tool is platform independent and runs on all environments that support Java™ Virtual Machine (VM).</p>
+<p>CMakeBuilder provides a user friendly interface to easily manage CMake-based projects.</p>
+<p>CMakeBuilder Features are :</p>
+<p>    * Advanced parser</p>
+<p>    * Advanced CMake outline</p>
+<p>    * CMakeBuilder perspective</p>
+<p>    * Symbol table and environment inspector</p>
+<p>    * CMake files editor with syntax highlighting</p>
+<p>    * Code assist</p>
+<p>    * Wizard oriented project management</p>
+]]></body>
+      <created>1228141135</created>
+      <changed>1295453990</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.cmakebuilder.com]]></homepageurl>
+      <image><![CDATA[http://www.cmakebuilder.com/images/janua-small.gif]]></image>
+      <version>1.0.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Janua]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[Europa Ganymede]]></eclipseversion>
+      <supporturl><![CDATA[http://]]></supporturl>
+      <updateurl><![CDATA[http://www.cmakebuilder.com/update]]></updateurl>
+    </node>
+    </marketplace>
+    

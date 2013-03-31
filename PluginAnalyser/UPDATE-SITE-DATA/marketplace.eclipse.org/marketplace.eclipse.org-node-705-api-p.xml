@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="705" name="FastTrack Connector for Eclipse" url="http://marketplace.eclipse.org/content/fasttrack-connector-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+      </categories>
+            
+      <owner>rpalomo</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The Polarion FastTrack Connector for Eclipse enables Eclipse developers using  Subversion to link their commits to work items (bugs, change requests,ect.) managed in one of Polarion Softwares commercial lifecycle management solutions (e.g  Polarion Track & Wiki - all-in-on bug tracker, collaboration wiki, and VCS; see <a href="http://www.polarion.com/products/trackwiki/">www.polarion.com/products/trackwiki/</a>) enabling traceability from issues to source code, while keeping a simple interface to the Polarion portal without leaving the Eclipse IDE.</p>
+<p>Plugin has a commercial (i.e. non GPL, etc.) license but is free.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The Polarion FastTrack Connector for Eclipse enables Eclipse developers using  Subversion to link their commits to work items (bugs, change requests,ect.) managed in one of Polarion Softwares commercial lifecycle management solutions (e.g  Polarion Track & Wiki - all-in-on bug tracker, collaboration wiki, and VCS; see <a href="http://www.polarion.com/products/trackwiki/">www.polarion.com/products/trackwiki/</a>) enabling traceability from issues to source code, while keeping a simple interface to the Polarion portal without leaving the Eclipse IDE.</p>
+<p>Plugin has a commercial (i.e. non GPL, etc.) license but is free.</p>
+]]></body>
+      <created>1212780303</created>
+      <changed>1259779015</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.polarion.com/products/connectors/fasttrack_eclipse.php]]></homepageurl>
+      <image><![CDATA[http://www.polarion.com/img/logos/ftLogo_for_epic.png]]></image>
+      <version>0.9.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Polarion Software]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[Ganymede]]></eclipseversion>
+      <supporturl><![CDATA[http://forums.polarion.org/viewforum.php?f=9&sid=dfd4dbe4ab153e26351a9005af74cf81]]></supporturl>
+      <updateurl><![CDATA[http://downloads.polarion.com/downloads/fasttrackeclipse/Update-site-0.9.0.beta1.zip]]></updateurl>
+    </node>
+    </marketplace>
+    

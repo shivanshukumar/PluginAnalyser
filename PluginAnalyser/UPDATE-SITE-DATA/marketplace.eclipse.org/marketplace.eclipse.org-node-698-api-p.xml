@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="698" name=" Prolog Development Tools (ProDT)" url="http://marketplace.eclipse.org/content/prolog-development-tools-prodt">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+            
+      <owner>Claudio Cancinos</owner>
+      <favorited>5</favorited>
+      <installstotal>1825</installstotal>
+      <installsrecent>101</installsrecent>
+      <shortdescription><![CDATA[<p>Prolog Development Tools (ProDT) is a Prolog Integrated Development Environment (IDE) aiming to be as rich in functionality as the Eclipse's java IDE, giving the developer a single environment where it can control the development from code edition, test execution, debugging, and more...</p>
+<p>This project takes advantage of the Eclipse's projects to take advantage of its already existent features and its extensibility.</p>
+<p>Since v1.0.0 ProDT supports the following Prolog implementations:<br />
+* SWI-Prolog.<br />
+* XSB.<br />
+* B Prolog.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Prolog Development Tools (ProDT) is a Prolog Integrated Development Environment (IDE) aiming to be as rich in functionality as the Eclipse's java IDE, giving the developer a single environment where it can control the development from code edition, test execution, debugging, and more...</p>
+<p>This project takes advantage of the Eclipse's projects to take advantage of its already existent features and its extensibility.</p>
+<p>Since v1.0.0 ProDT supports the following Prolog implementations:<br />
+* SWI-Prolog.<br />
+* XSB.<br />
+* B Prolog.</p>
+]]></body>
+      <created>1211553676</created>
+      <changed>1291390449</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://prodevtools.sourceforge.net]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0.0</version>
+      <license>LGPL</license>
+      <companyname><![CDATA[Claudio Cancinos]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[https://sourceforge.net/tracker/?group_id=224366]]></supporturl>
+      <updateurl><![CDATA[http://prodevtools.sourceforge.net/updates/]]></updateurl>
+<ius>
+<iu>ar.com.tadp.prolog.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1166" name="qwickie" url="http://marketplace.eclipse.org/content/qwickie">
+      <type>resource</type>
+      <categories>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+      <tags>
+        <tag id='83' name='quick' url='http://marketplace.eclipse.org/category/free-tagging/quick'/>
+        <tag id='384' name='wicket' url='http://marketplace.eclipse.org/category/free-tagging/wicket'/>
+        <tag id='1623' name='qwickie' url='http://marketplace.eclipse.org/category/free-tagging/qwickie'/>
+        <tag id='1624' name='qwick' url='http://marketplace.eclipse.org/category/free-tagging/qwick'/>
+      </tags>
+      
+      <owner>count negative</owner>
+      <favorited>4</favorited>
+      <installstotal>4354</installstotal>
+      <installsrecent>221</installsrecent>
+      <shortdescription><![CDATA[<p>This is an eclipse plugin for the Java Webframework Wicket from apache.org<br />
+Features:</p>
+<p>    * Navigate from java code elements to the corresponding html element via wicket:id<br />
+    * Navigate from html wicket:message to properties/xml file<br />
+    * Show the corresponding html fragment from the java code element<br />
+    * Show the wicket:id line in the html file on mouse over<br />
+    * Rename HTML and properties (with variations) when renaming a wicketized java file (supertype Component)<br />
+    * Code assist for wicket:id (Ctrl-1) in Wicket Java files. e.g. new Label("")<br />
+    * Support for other wicket namespaces<br />
+    * Wizard for creating new Wicket WebPages</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This is an eclipse plugin for the Java Webframework Wicket from apache.org<br />
+Features:</p>
+<p>    * Navigate from java code elements to the corresponding html element via wicket:id<br />
+    * Navigate from html wicket:message to properties/xml file<br />
+    * Show the corresponding html fragment from the java code element<br />
+    * Show the wicket:id line in the html file on mouse over<br />
+    * Rename HTML and properties (with variations) when renaming a wicketized java file (supertype Component)<br />
+    * Code assist for wicket:id (Ctrl-1) in Wicket Java files. e.g. new Label("")<br />
+    * Support for other wicket namespaces<br />
+    * Wizard for creating new Wicket WebPages</p>
+]]></body>
+      <created>1269621368</created>
+      <changed>1362244566</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/qwickie/]]></homepageurl>
+      <image><![CDATA[http://code.google.com/p/qwickie/logo?cct=0]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screen_1.png?itok=nheXfdR7]]></screenshot>
+      <version>1.0.4</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[count.negative]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5,3.6,3.7,4.2]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://qwickie.googlecode.com/svn/trunk/qwickie.updatesite/]]></updateurl>
+<ius>
+<iu>qwickie.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="129611" name="Nuxeo IDE" url="http://marketplace.eclipse.org/content/nuxeo-ide">
+      <type>resource</type>
+      <categories>
+        <category id='1964' name='Application Development Frameworks' url='http://marketplace.eclipse.org/category/categories/application-development-frameworks'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='51' name='IDE' url='http://marketplace.eclipse.org/category/free-tagging/ide'/>
+        <tag id='2244' name='Content Management Framework' url='http://marketplace.eclipse.org/category/free-tagging/content-management-framework'/>
+        <tag id='2245' name='Content Repository' url='http://marketplace.eclipse.org/category/free-tagging/content-repository'/>
+      </tags>
+      
+      <owner>stephane lacoin</owner>
+      <favorited>3</favorited>
+      <installstotal>1460</installstotal>
+      <installsrecent>74</installsrecent>
+      <shortdescription><![CDATA[
+
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" /><title>Nuxeo IDE Eclipse Marketplace description</title><p>Nuxeo IDE is the Integrated Development
+Environment (IDE) for developers using the Nuxeo Platform a full-featured Open
+Source Content Management Platform to help developers build <a href="http://www.nuxeo.com/en/products/document-management">document
+management</a> solutions, <a href="http://www.nuxeo.com/en/products/case-management">case
+management</a> solutions, <a href="http://www.nuxeo.com/en/products/digital-asset-management">digital
+asset management</a> solutions, and business
+content applications.</p>
+
+<p>Nuxeo IDE enables developers to extend the
+Nuxeo Platform properly with new features written in Java, in a
+friendly environment that takes full advantage of the extensibility
+of the underlying Platform. Nuxeo IDE integrates smoothly with <a href="http://www.nuxeo.com/en/products/studio">Nuxeo
+Studio</a>, the customization environment
+for the Nuxeo Platform.</p>
+<p>The main features include
+</p><dl><dt>Hot Reload</dt><dd> no restart
+required to see changes live in a Nuxeo instance</dd>
+<dt>Templates and Wizards<dt></dt></dt><dd> to guide the creation of new plugins, including: content
+operations, content services, content converters, web apps, and
+user actions</dd>
+<dt>Deployment profiles<dt></dt></dt><dd> to
+quickly deploy and test on different environments or
+versions</dd>
+<dt>Code completion</dt><dd>
+for the content model, when bound to a Nuxeo Studio project;</dd>
+<dt>Automated dependency management</dt><dd> for Maven-based projects, enabling
+generation and management of pom.xml files</dd>
+<dt>Integration of Nuxeo Shell</dt> to facilitate development and
+debugging
+
+<p></p>
+<p>Nuxeo IDE was developed by the
+<a href="http://www.nuxeo.com">Nuxeo</a> team, is a
+free and open source tool provided under the Eclipse Public
+Licence. We invite community members to collaborate with us to
+improve the tool and take it to the next level.</p>
+<br /><br /><h1>Release Notes - Nuxeo ECM IDE - Version 1.1.10</h1>
+    
+<h2>        Sub-task
+</h2>
+<ul><li>[<a href="https://jira.nuxeo.com/browse/NXIDE-198">NXIDE-198</a>] -         Avoid eclipse project classpath removal when adding Nuxeo Nature
+</li>
+<li>[<a href="https://jira.nuxeo.com/browse/NXIDE-199">NXIDE-199</a>] -         Nuxeo Nature removal clean up
+</li>
+<li>[<a href="https://jira.nuxeo.com/browse/NXIDE-200">NXIDE-200</a>] -         Nuxeo plugin (webengine included) creation
+</li>
+<li>[<a href="https://jira.nuxeo.com/browse/NXIDE-201">NXIDE-201</a>] -         Make Nuxeo SDK browsable into Eclipse
+</li>
+<li>[<a href="https://jira.nuxeo.com/browse/NXIDE-202">NXIDE-202</a>] -         NXIDE Seam Project
+</li>
+<li>[<a href="https://jira.nuxeo.com/browse/NXIDE-215">NXIDE-215</a>] -         Nuxeo Plugin Creation - Export mode handled
+</li>
+</ul><h2>        Improvement
+</h2>
+<ul><li>[<a href="https://jira.nuxeo.com/browse/NXIDE-196">NXIDE-196</a>] -         Nuxeo IDE Java Project Architecture Initialization
+</li>
+<li>[<a href="https://jira.nuxeo.com/browse/NXIDE-203">NXIDE-203</a>] -         Deployment UI Panel improvement
+</li>
+</ul></dl>]]></shortdescription>
+      <body><![CDATA[
+
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" /><title>Nuxeo IDE Eclipse Marketplace description</title><p>Nuxeo IDE is the Integrated Development
+Environment (IDE) for developers using the Nuxeo Platform a full-featured Open
+Source Content Management Platform to help developers build <a href="http://www.nuxeo.com/en/products/document-management">document
+management</a> solutions, <a href="http://www.nuxeo.com/en/products/case-management">case
+management</a> solutions, <a href="http://www.nuxeo.com/en/products/digital-asset-management">digital
+asset management</a> solutions, and business
+content applications.</p>
+
+<p>Nuxeo IDE enables developers to extend the
+Nuxeo Platform properly with new features written in Java, in a
+friendly environment that takes full advantage of the extensibility
+of the underlying Platform. Nuxeo IDE integrates smoothly with <a href="http://www.nuxeo.com/en/products/studio">Nuxeo
+Studio</a>, the customization environment
+for the Nuxeo Platform.</p>
+<p>The main features include
+</p><dl><dt>Hot Reload</dt><dd> no restart
+required to see changes live in a Nuxeo instance</dd>
+<dt>Templates and Wizards<dt></dt></dt><dd> to guide the creation of new plugins, including: content
+operations, content services, content converters, web apps, and
+user actions</dd>
+<dt>Deployment profiles<dt></dt></dt><dd> to
+quickly deploy and test on different environments or
+versions</dd>
+<dt>Code completion</dt><dd>
+for the content model, when bound to a Nuxeo Studio project;</dd>
+<dt>Automated dependency management</dt><dd> for Maven-based projects, enabling
+generation and management of pom.xml files</dd>
+<dt>Integration of Nuxeo Shell</dt> to facilitate development and
+debugging
+
+<p></p>
+<p>Nuxeo IDE was developed by the
+<a href="http://www.nuxeo.com">Nuxeo</a> team, is a
+free and open source tool provided under the Eclipse Public
+Licence. We invite community members to collaborate with us to
+improve the tool and take it to the next level.</p>
+<br /><br /><h1>Release Notes - Nuxeo ECM IDE - Version 1.1.10</h1>
+    
+<h2>        Sub-task
+</h2>
+<ul><li>[<a href="https://jira.nuxeo.com/browse/NXIDE-198">NXIDE-198</a>] -         Avoid eclipse project classpath removal when adding Nuxeo Nature
+</li>
+<li>[<a href="https://jira.nuxeo.com/browse/NXIDE-199">NXIDE-199</a>] -         Nuxeo Nature removal clean up
+</li>
+<li>[<a href="https://jira.nuxeo.com/browse/NXIDE-200">NXIDE-200</a>] -         Nuxeo plugin (webengine included) creation
+</li>
+<li>[<a href="https://jira.nuxeo.com/browse/NXIDE-201">NXIDE-201</a>] -         Make Nuxeo SDK browsable into Eclipse
+</li>
+<li>[<a href="https://jira.nuxeo.com/browse/NXIDE-202">NXIDE-202</a>] -         NXIDE Seam Project
+</li>
+<li>[<a href="https://jira.nuxeo.com/browse/NXIDE-215">NXIDE-215</a>] -         Nuxeo Plugin Creation - Export mode handled
+</li>
+</ul><h2>        Improvement
+</h2>
+<ul><li>[<a href="https://jira.nuxeo.com/browse/NXIDE-196">NXIDE-196</a>] -         Nuxeo IDE Java Project Architecture Initialization
+</li>
+<li>[<a href="https://jira.nuxeo.com/browse/NXIDE-203">NXIDE-203</a>] -         Deployment UI Panel improvement
+</li>
+</ul></dl>]]></body>
+      <created>1317663228</created>
+      <changed>1353505461</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.nuxeo.com/en/nuxeoide]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/nuxeo_IDE_logo.png?itok=b41JVQHw]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/NxIDE_nuxeo_artifacts.png?itok=Mop7HW0S]]></screenshot>
+      <version>1.1.10</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Nuxeo]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[helios]]></eclipseversion>
+      <supporturl><![CDATA[http://answers.nuxeo.com]]></supporturl>
+      <updateurl><![CDATA[http://community.nuxeo.com/static/nuxeo-ide/stable/site/]]></updateurl>
+<ius>
+<iu>org.nuxeo.ide.sdk</iu>
+<iu>org.nuxeo.ide.shell</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

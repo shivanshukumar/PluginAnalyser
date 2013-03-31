@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="31498" name="AgileReview" url="http://marketplace.eclipse.org/content/agilereview">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='43' name='PHP' url='http://marketplace.eclipse.org/category/free-tagging/php'/>
+        <tag id='95' name='code review' url='http://marketplace.eclipse.org/category/free-tagging/code-review'/>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='521' name='xml' url='http://marketplace.eclipse.org/category/free-tagging/xml'/>
+        <tag id='719' name='commit comments' url='http://marketplace.eclipse.org/category/free-tagging/commit-comments'/>
+      </tags>
+      
+      <owner>Malte Brunnlieb</owner>
+      <favorited>7</favorited>
+      <installstotal>1059</installstotal>
+      <installsrecent>100</installsrecent>
+      <shortdescription><![CDATA[<p>AgileReview provides you with an easy possibility to do code reviews in your favorite IDE.<br />
+Code reviews are a powerful meaning for quality assurance, but switching between spreadsheets and code is very time consuming. With AgileReview you can comment and discuss code without leaving the IDE and more important: without leaving the code.</p>
+<p>Features of AgileReview:</p>
+<ul><li>
+<strong>Refactoring stability (within file):</strong> Comments stay at the code snipped which you intended to comment, even if the file is edited</li>
+<li><strong>Refactoring stability (outside file):</strong> Comments stay connected to the right file, even after moving or renaming viathe eclipse refactoring mechanism</li>
+<li><strong>Fight complexity:</strong> Close reviews to hide their comments or simply filter your comments by keywords</li>
+<li><strong>Generic language support:</strong> Built-in support for Java, XML and PHP, but it is easy to define your own language support via the preferences</li>
+<li><strong>Team support:</strong> Share your comments with other developers, using your favorite version management client - quite without conflicts.</li>
+<li><strong>Export metrics:</strong> Export data about your reviews to an Excel template, to do advanced analysis</li>
+</ul><ul><li><strong>Bug/Feature support:</strong> Four motivated developers, always eager to fix the bugs you find or consider your feature requests, see <a href="http://sourceforge.net/apps/mantisbt/agilereview/">bug/feature tracker</a></li>
+</ul><p>For more information see <a href="http://www.agilereview.org/quick-start/">quickstart</a> or visit our <a href="http://www.agilereview.org">homepage</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>AgileReview provides you with an easy possibility to do code reviews in your favorite IDE.<br />
+Code reviews are a powerful meaning for quality assurance, but switching between spreadsheets and code is very time consuming. With AgileReview you can comment and discuss code without leaving the IDE and more important: without leaving the code.</p>
+<p>Features of AgileReview:</p>
+<ul><li>
+<strong>Refactoring stability (within file):</strong> Comments stay at the code snipped which you intended to comment, even if the file is edited</li>
+<li><strong>Refactoring stability (outside file):</strong> Comments stay connected to the right file, even after moving or renaming viathe eclipse refactoring mechanism</li>
+<li><strong>Fight complexity:</strong> Close reviews to hide their comments or simply filter your comments by keywords</li>
+<li><strong>Generic language support:</strong> Built-in support for Java, XML and PHP, but it is easy to define your own language support via the preferences</li>
+<li><strong>Team support:</strong> Share your comments with other developers, using your favorite version management client - quite without conflicts.</li>
+<li><strong>Export metrics:</strong> Export data about your reviews to an Excel template, to do advanced analysis</li>
+</ul><ul><li><strong>Bug/Feature support:</strong> Four motivated developers, always eager to fix the bugs you find or consider your feature requests, see <a href="http://sourceforge.net/apps/mantisbt/agilereview/">bug/feature tracker</a></li>
+</ul><p>For more information see <a href="http://www.agilereview.org/quick-start/">quickstart</a> or visit our <a href="http://www.agilereview.org">homepage</a></p>
+]]></body>
+      <created>1297001875</created>
+      <changed>1348217220</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.agilereview.org/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Marketplace-Logo.png?itok=D15AFcXt]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Screenshot_2.png?itok=Jn4WqGzr]]></screenshot>
+      <version>0.8.3</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[AgileReview Team]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[>=3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.agilereview.org/support/]]></supporturl>
+      <updateurl><![CDATA[http://www.agilereview.org/update/]]></updateurl>
+<ius>
+<iu>de.tukl.cs.softech.agilereview.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="29000" name="iGROM" url="http://marketplace.eclipse.org/content/igrom">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+      </categories>
+      <tags>
+        <tag id='51' name='IDE' url='http://marketplace.eclipse.org/category/free-tagging/ide'/>
+        <tag id='1232' name='Development' url='http://marketplace.eclipse.org/category/free-tagging/development'/>
+        <tag id='1545' name='Answer Set Programming' url='http://marketplace.eclipse.org/category/free-tagging/answer-set-programming'/>
+        <tag id='1546' name='logic programming' url='http://marketplace.eclipse.org/category/free-tagging/logic-programming'/>
+      </tags>
+      
+      <owner>iGROM</owner>
+      <favorited>1</favorited>
+      <installstotal>16</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>iGROM is an Integrated Development Environment (IDE) for Answer Set Programs specifically (or, rather, currently) those written in DLV (and its frontends) and Smodels. It is also a framework to write such editors for such languages.</p>
+<p>Here are the feature highlights:<br />
+    * Based on the Eclipse platform - if you know it, you can just jump in, if you don't - it's easy to learn!<br />
+    * Freedom of choice - if you have no Eclipse installation, you can just download a stand-alone package and start coding. If you already use Eclipse, just install the plugins from our update site.<br />
+    * Programming support:<br />
+          o Organize your programs into projects - no more mess.<br />
+          o Syntax highlighting for DLV and its dialects,<br />
+          o Error detection for DLV and dialects - find out about syntax and semantic (safety etc.) problems as you type.<br />
+    * Testing, debugging and run support:<br />
+          o Register your interpreters, including defaults, simply in the preferences.<br />
+          o Create launch configurations with two clicks, and then save, edit, copy and share them - no more .bat and .sh files.<br />
+    * Use Eclipse's extension mechanisms. Want Subversion support, or some custom editor? No problem!</p>
+]]></shortdescription>
+      <body><![CDATA[<p>iGROM is an Integrated Development Environment (IDE) for Answer Set Programs specifically (or, rather, currently) those written in DLV (and its frontends) and Smodels. It is also a framework to write such editors for such languages.</p>
+<p>Here are the feature highlights:<br />
+    * Based on the Eclipse platform - if you know it, you can just jump in, if you don't - it's easy to learn!<br />
+    * Freedom of choice - if you have no Eclipse installation, you can just download a stand-alone package and start coding. If you already use Eclipse, just install the plugins from our update site.<br />
+    * Programming support:<br />
+          o Organize your programs into projects - no more mess.<br />
+          o Syntax highlighting for DLV and its dialects,<br />
+          o Error detection for DLV and dialects - find out about syntax and semantic (safety etc.) problems as you type.<br />
+    * Testing, debugging and run support:<br />
+          o Register your interpreters, including defaults, simply in the preferences.<br />
+          o Create launch configurations with two clicks, and then save, edit, copy and share them - no more .bat and .sh files.<br />
+    * Use Eclipse's extension mechanisms. Want Subversion support, or some custom editor? No problem!</p>
+]]></body>
+      <created>1295630787</created>
+      <changed>1295880512</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://igrom.sourceforge.net]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/alt_window_64.png?itok=Z_tGAiJq]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/launching.png?itok=M0qccQk5]]></screenshot>
+      <version>1.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[iGROM Developers]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5,3.6]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://igrom.sourceforge.net/updatesite]]></updateurl>
+<ius>
+<iu>at.ac.tuwien.kr.igrom.features.core</iu>
+<iu>at.ac.tuwien.kr.igrom.features.dlv</iu>
+<iu>at.ac.tuwien.kr.igrom.features.smodels</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

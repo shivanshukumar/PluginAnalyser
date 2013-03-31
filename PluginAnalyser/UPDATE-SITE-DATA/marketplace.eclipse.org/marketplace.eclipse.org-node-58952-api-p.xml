@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="58952" name="JSDT jQuery" url="http://marketplace.eclipse.org/content/jsdt-jquery">
+      <type>resource</type>
+      <categories>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='1967' name='Web, XML, Java EE and OSGi Enterprise Development' url='http://marketplace.eclipse.org/category/categories/web-xml-java-ee-and-osgi-enterprise-development'/>
+      </categories>
+      <tags>
+        <tag id='809' name='jquery' url='http://marketplace.eclipse.org/category/free-tagging/jquery'/>
+        <tag id='810' name='javascript' url='http://marketplace.eclipse.org/category/free-tagging/javascript'/>
+        <tag id='1978' name='JSDT' url='http://marketplace.eclipse.org/category/free-tagging/jsdt'/>
+        <tag id='2317' name='Plugins' url='http://marketplace.eclipse.org/category/free-tagging/plugins'/>
+      </tags>
+      
+      <owner>Philippe Marschall</owner>
+      <favorited>23</favorited>
+      <installstotal>29327</installstotal>
+      <installsrecent>2836</installsrecent>
+      <shortdescription><![CDATA[<p>A plugin for JDST (Eclipse JavaScript Development Tools) that adds jQuery autocompletion support.</p>
+<p>If you have trouble installing this plugin it's likely that you don't have Eclipse 3.7.</p>
+<p>This plugin is not affiliated with Eclipse, JSDT or jQuery.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>A plugin for JDST (Eclipse JavaScript Development Tools) that adds jQuery autocompletion support.</p>
+<p>If you have trouble installing this plugin it's likely that you don't have Eclipse 3.7.</p>
+<p>This plugin is not affiliated with Eclipse, JSDT or jQuery.</p>
+]]></body>
+      <created>1307264132</created>
+      <changed>1362047707</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/a/eclipselabs.org/p/jsdt-jquery/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.6.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Eclipse Labs JSDT jQuery]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.7, 3.8, 4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/a/eclipselabs.org/p/jsdt-jquery/issues/list]]></supporturl>
+      <updateurl><![CDATA[https://svn.codespot.com/a/eclipselabs.org/jsdt-jquery/updatesite]]></updateurl>
+<ius>
+<iu>org.eclipselabs.jsdt.jquery_feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

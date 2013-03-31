@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="15557" name="JBoss Tools (Helios)" url="http://marketplace.eclipse.org/content/jboss-tools-1">
+      <type>resource</type>
+      <categories>
+        <category id='1' name='Application Server' url='http://marketplace.eclipse.org/taxonomy/term/1'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='36' name='Database Persistence' url='http://marketplace.eclipse.org/category/categories/database-persistence'/>
+      </categories>
+      <tags>
+        <tag id='667' name='jpa' url='http://marketplace.eclipse.org/category/free-tagging/jpa'/>
+        <tag id='757' name='hibernate' url='http://marketplace.eclipse.org/category/free-tagging/hibernate'/>
+        <tag id='1020' name='JSF' url='http://marketplace.eclipse.org/category/free-tagging/jsf'/>
+        <tag id='1258' name='seam' url='http://marketplace.eclipse.org/category/free-tagging/seam'/>
+        <tag id='1259' name='cdi' url='http://marketplace.eclipse.org/category/free-tagging/cdi'/>
+      </tags>
+      
+      <owner>Max Rydahl Andersen</owner>
+      <favorited>58</favorited>
+      <installstotal>47025</installstotal>
+      <installsrecent>632</installsrecent>
+      <shortdescription><![CDATA[<p>JBoss Tools 3.2.x is an umbrella project for a set of Eclipse Helios plugins that supports JBoss and related technology; there are support for Hibernate, JBoss AS, JSF, (X)HTML, Seam, , JBoss Portal and more...</p>
+<p>This entry has majority of JBoss Tools but is not including the functionality that requires dependencies outside of Eclipse JEE. To get the full set which includes Maven, TPTP, Teiid, Savara integration and more, use the update site directly.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>JBoss Tools 3.2.x is an umbrella project for a set of Eclipse Helios plugins that supports JBoss and related technology; there are support for Hibernate, JBoss AS, JSF, (X)HTML, Seam, , JBoss Portal and more...</p>
+<p>This entry has majority of JBoss Tools but is not including the functionality that requires dependencies outside of Eclipse JEE. To get the full set which includes Maven, TPTP, Teiid, Savara integration and more, use the update site directly.</p>
+]]></body>
+      <created>1287174789</created>
+      <changed>1316434853</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://jboss.org/tools]]></homepageurl>
+      <image><![CDATA[http://design.jboss.org/jbosstools/logo/jbosstools_icon64.png]]></image>
+      <version>3.2.x</version>
+      <license>Other Open Source</license>
+      <companyname><![CDATA[Red Hat, Inc.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6.x]]></eclipseversion>
+      <supporturl><![CDATA[http://community.jboss.org/en/jbosstools?view=discussions]]></supporturl>
+      <updateurl><![CDATA[http://download.jboss.org/jbosstools/updates/stable/helios]]></updateurl>
+<ius>
+<iu>org.jboss.tools.richfaces.feature</iu>
+<iu>org.jboss.tools.seam.feature</iu>
+<iu>org.jboss.tools.cdi.feature</iu>
+<iu>org.jboss.tools.jmx.feature</iu>
+<iu>org.jboss.ide.eclipse.as.feature</iu>
+<iu>org.jboss.ide.eclipse.archives.feature</iu>
+<iu>org.hibernate.eclipse.feature</iu>
+<iu>org.jboss.ide.eclipse.freemarker.feature</iu>
+<iu>org.jboss.tools.ws.feature</iu>
+<iu>org.jboss.tools.portlet.feature</iu>
+<iu>org.jboss.tools.project.examples.feature</iu>
+<iu>org.jboss.tools.community.project.examples.feature</iu>
+<iu>org.jboss.tools.runtime.feature</iu>
+<iu>org.jboss.tools.runtime.core.feature</iu>
+<iu>org.jboss.tools.esb.feature</iu>
+<iu>org.jboss.tools.smooks.feature</iu>
+<iu>org.drools.eclipse.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

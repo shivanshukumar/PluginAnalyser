@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="187" name="QiQu - Code Generator Framework" url="http://marketplace.eclipse.org/content/qiqu-code-generator-framework">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+      </categories>
+      <tags>
+        <tag id='116' name='' url='http://marketplace.eclipse.org/taxonomy/term/116'/>
+        <tag id='979' name='Install New Software' url='http://marketplace.eclipse.org/category/free-tagging/install-new-software'/>
+      </tags>
+      
+      <owner>hj.wingeier</owner>
+      <favorited>2</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><P>QiQu is an open source framework to support the MDA and MDSD approach. It is based on the idea to transform an UML-model into source-code (such as Java, C#, Cobol etc.). With QiQu you can build your own domain-specific generators that transform your models into the code of your choice, respecting your architectural design.</P><P>You are not limited to any predefined transformation engines or cartridges, nor to any predefined transformation rules - with QiQu you are at liberty to do it the way it fits you and your business!</P><P>Since QiQu heavily relies on XML, you can not only convert from XMI (representing UML) to source-code, but from any XML-format into anything else. (XML, HTML, DDL-Scripts, Excel etc.). If the converting features of QiQu do not fit your demands, you can easily create additional functionality i.e. to write the result of your conversion into a database or to merge the information of a UML-Model with the result of a SQL-Query.<BR><BR>QiQu also uses the Velocity template engine and comes with its own Velocity editor (based on "veloedit"). It provides codeassist and a realtime preview.</p>
+]]></shortdescription>
+      <body><![CDATA[<p><P>QiQu is an open source framework to support the MDA and MDSD approach. It is based on the idea to transform an UML-model into source-code (such as Java, C#, Cobol etc.). With QiQu you can build your own domain-specific generators that transform your models into the code of your choice, respecting your architectural design.</P><P>You are not limited to any predefined transformation engines or cartridges, nor to any predefined transformation rules - with QiQu you are at liberty to do it the way it fits you and your business!</P><P>Since QiQu heavily relies on XML, you can not only convert from XMI (representing UML) to source-code, but from any XML-format into anything else. (XML, HTML, DDL-Scripts, Excel etc.). If the converting features of QiQu do not fit your demands, you can easily create additional functionality i.e. to write the result of your conversion into a database or to merge the information of a UML-Model with the result of a SQL-Query.<BR><BR>QiQu also uses the Velocity template engine and comes with its own Velocity editor (based on "veloedit"). It provides codeassist and a realtime preview.</p>
+]]></body>
+      <created>1140920829</created>
+      <changed>1261126131</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.QiQu.org]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/QiQuLogo.png?itok=pNW4w0h8]]></image>
+      <version>1.0.8</version>
+      <license>EPL</license>
+      <companyname><![CDATA[aloba ag]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.x.x]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/qiqu]]></supporturl>
+      <updateurl><![CDATA[http://www.aloba.ch/qiqu/update]]></updateurl>
+    </node>
+    </marketplace>
+    

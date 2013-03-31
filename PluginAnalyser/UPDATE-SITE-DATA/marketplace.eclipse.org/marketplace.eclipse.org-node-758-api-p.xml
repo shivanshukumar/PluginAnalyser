@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="758" name="Foglyn - Integrate FogBugz into Eclipse (via Mylyn)" url="http://marketplace.eclipse.org/content/foglyn-integrate-fogbugz-eclipse-mylyn">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='38' name='Mylyn Connectors' url='http://marketplace.eclipse.org/category/categories/mylyn-connectors'/>
+      </categories>
+      <tags>
+        <tag id='88' name='mylyn' url='http://marketplace.eclipse.org/category/free-tagging/mylyn'/>
+        <tag id='722' name='fogbugz' url='http://marketplace.eclipse.org/category/free-tagging/fogbugz'/>
+        <tag id='723' name='connector' url='http://marketplace.eclipse.org/category/free-tagging/connector'/>
+      </tags>
+      
+      <owner>Peter Stibrany</owner>
+      <favorited>3</favorited>
+      <installstotal>268</installstotal>
+      <installsrecent>19</installsrecent>
+      <shortdescription><![CDATA[<p>Foglyn is an Eclipse plugin which allows you to create, view, edit, assign, resolve or close your FogBugz cases directly from your favorite IDE.</p>
+<!--break--><p>Foglyn is a FogBugz connector for Mylyn. It supports FogBugz 6, FogBugz 7 (subcases, tags) and FogBugz 8.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Foglyn is an Eclipse plugin which allows you to create, view, edit, assign, resolve or close your FogBugz cases directly from your favorite IDE.</p>
+<!--break--><p>Foglyn is a FogBugz connector for Mylyn. It supports FogBugz 6, FogBugz 7 (subcases, tags) and FogBugz 8.</p>
+]]></body>
+      <created>1220882549</created>
+      <changed>1318244585</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.foglyn.com/]]></homepageurl>
+      <image><![CDATA[http://www.foglyn.com/foglyn.png]]></image>
+      <version>1.7</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Peter Štibraný]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5, 3.6, 3.7]]></eclipseversion>
+      <supporturl><![CDATA[mailto:support@foglyn.com]]></supporturl>
+      <updateurl><![CDATA[http://update.foglyn.com/stable/]]></updateurl>
+<ius>
+<iu>com.foglyn</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="38428" name="hunspell4eclipse" url="http://marketplace.eclipse.org/content/hunspell4eclipse-0">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='647' name='spelling' url='http://marketplace.eclipse.org/category/free-tagging/spelling'/>
+        <tag id='811' name='SpellChecking' url='http://marketplace.eclipse.org/category/free-tagging/spellchecking'/>
+      </tags>
+      
+      <owner>Lorand Somogyi</owner>
+      <favorited>5</favorited>
+      <installstotal>765</installstotal>
+      <installsrecent>33</installsrecent>
+      <shortdescription><![CDATA[<p>Hunspell4Eclipse is an Eclipse plug-in, that integrates Hunspell into Eclipse’s Spell Checking Service.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Hunspell4Eclipse is an Eclipse plug-in, that integrates Hunspell into Eclipse’s Spell Checking Service.</p>
+]]></body>
+      <created>1300133223</created>
+      <changed>1310382305</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/hunspell4eclipse/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>0.8.6</version>
+      <license>EPL</license>
+      <companyname><![CDATA[lorands.com]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.4, 3.5, 3.6, 3.7]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://hunspell4eclipse.googlecode.com/svn/trunk/com.lorands.hunspell4eclipse.updatesite]]></updateurl>
+<ius>
+<iu>com.lorands.hunspell4eclipse.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="909" name="Refal Plus Development Tools (RfpDT)" url="http://marketplace.eclipse.org/content/refal-plus-development-tools-rfpdt">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+      </categories>
+            
+      <owner>Sergei Romanenko</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Refal Plus Development Tools (RfpDT) is an IDE for developing programs written in Refal Plus, a functional programming language:</p>
+<p><a href="http://pat.keldysh.ru/~roman/org.refal.rfpdt.help.manual/">http://pat.keldysh.ru/~roman/org.refal.rfpdt.help.manual/</a></p>
+<p>RfpDT provide:</p>
+<p>* Syntax coloring<br />
+* Highlighting of matching brackets<br />
+* Automatic formatting<br />
+* Visualizing errors<br />
+* Running Refal programs<br />
+* Debugging</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Refal Plus Development Tools (RfpDT) is an IDE for developing programs written in Refal Plus, a functional programming language:</p>
+<p><a href="http://pat.keldysh.ru/~roman/org.refal.rfpdt.help.manual/">http://pat.keldysh.ru/~roman/org.refal.rfpdt.help.manual/</a></p>
+<p>RfpDT provide:</p>
+<p>* Syntax coloring<br />
+* Highlighting of matching brackets<br />
+* Automatic formatting<br />
+* Visualizing errors<br />
+* Running Refal programs<br />
+* Debugging</p>
+]]></body>
+      <created>1239023433</created>
+      <changed>1259779224</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://rfp.botik.ru/rfpdt]]></homepageurl>
+      <image><![CDATA[http://rfp.botik.ru/rfpdt/refal-plus-logo-2-110x80.png]]></image>
+      <version>1.1.19</version>
+      <license>Free for non-commercial use</license>
+      <companyname><![CDATA[The Program Systems Institute of RAS]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2]]></eclipseversion>
+      <supporturl><![CDATA[http://]]></supporturl>
+      <updateurl><![CDATA[http://rfp.botik.ru/eclipse/]]></updateurl>
+    </node>
+    </marketplace>
+    

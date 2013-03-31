@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="248" name="eUML2 free edition" url="http://marketplace.eclipse.org/content/euml2-free-edition">
+      <type>resource</type>
+      <categories>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+      </categories>
+      <tags>
+        <tag id='61' name='UML' url='http://marketplace.eclipse.org/category/free-tagging/uml'/>
+        <tag id='186' name='EMF' url='http://marketplace.eclipse.org/category/free-tagging/emf'/>
+        <tag id='1035' name='Free UML for Eclipse' url='http://marketplace.eclipse.org/category/free-tagging/free-uml-eclipse'/>
+        <tag id='1036' name='good' url='http://marketplace.eclipse.org/category/free-tagging/good'/>
+        <tag id='2469' name='xcv' url='http://marketplace.eclipse.org/category/free-tagging/xcv'/>
+      </tags>
+      
+      <owner>Yves YANG</owner>
+      <favorited>48</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><P><STRONG>eUML2 for Java</STRONG> is a powerful UML modeler designed for Java developper in Eclipse. The free edition can be used for commercial use. It supports the following features:</P><UL><LI><STRONG>CVS and Team Support</STRONG></LI><STRONG><LI><STRONG>Designed for large project with multiple and customizable model views</STRONG> </LI><LI>Helios Compliant</STRONG><br />
+<LI>Real-time code/model synchronization<br />
+<LI>UML2.1 compliant and support of OMG XMI<br />
+<LI>JDK 1.4 and 1.5 support </LI></UL><P>The commercial edition provides:</P><UL><LI>Advanced reversed engineering<br />
+<LI>Powerful true dependency analyze tools<br />
+<LI>UML Profile and MDD</LI><LI>Database tools </LI><LI>Customizable template support </LI></UL></p>
+]]></shortdescription>
+      <body><![CDATA[<p><P><STRONG>eUML2 for Java</STRONG> is a powerful UML modeler designed for Java developper in Eclipse. The free edition can be used for commercial use. It supports the following features:</P><UL><LI><STRONG>CVS and Team Support</STRONG></LI><STRONG><LI><STRONG>Designed for large project with multiple and customizable model views</STRONG> </LI><LI>Helios Compliant</STRONG><br />
+<LI>Real-time code/model synchronization<br />
+<LI>UML2.1 compliant and support of OMG XMI<br />
+<LI>JDK 1.4 and 1.5 support </LI></UL><P>The commercial edition provides:</P><UL><LI>Advanced reversed engineering<br />
+<LI>Powerful true dependency analyze tools<br />
+<LI>UML Profile and MDD</LI><LI>Database tools </LI><LI>Customizable template support </LI></UL></p>
+]]></body>
+      <created>1156434668</created>
+      <changed>1311019624</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.soyatec.com/]]></homepageurl>
+      <image><![CDATA[http://www.soyatec.com/euml2/images/product_euml2_110x80.png]]></image>
+      <version>3.7.1</version>
+      <license>Free for non-commerical use</license>
+      <companyname><![CDATA[Soyatec]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.5.x/3.6.x/3.7.x]]></eclipseversion>
+      <supporturl><![CDATA[http://www.soyatec.com/forum]]></supporturl>
+      <updateurl><![CDATA[http://www.soyatec.com/update]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1171" name="Android Configurator for M2E" url="http://marketplace.eclipse.org/content/android-configurator-m2e">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='1974' name='Mobile and Device Development' url='http://marketplace.eclipse.org/category/categories/mobile-and-device-development'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='92' name='build' url='http://marketplace.eclipse.org/category/free-tagging/build'/>
+        <tag id='135' name='deployment' url='http://marketplace.eclipse.org/category/free-tagging/deployment'/>
+        <tag id='405' name='maven' url='http://marketplace.eclipse.org/category/free-tagging/maven'/>
+        <tag id='407' name='integration' url='http://marketplace.eclipse.org/category/free-tagging/integration'/>
+        <tag id='408' name='android' url='http://marketplace.eclipse.org/category/free-tagging/android'/>
+      </tags>
+      
+      <owner>Ricardo Gladwell</owner>
+      <favorited>33</favorited>
+      <installstotal>21627</installstotal>
+      <installsrecent>1958</installsrecent>
+      <shortdescription><![CDATA[<p>The Android Configurator is an Maven Integration for Eclipse (m2e) plug-in that adds maven support for Android Developer Tools (ADT) and the Maven Android Plugin. It brings the power of Maven dependency management into the ADT. </p>]]></shortdescription>
+      <body><![CDATA[<p>The Android Configurator is an Maven Integration for Eclipse (m2e) plug-in that adds maven support for Android Developer Tools (ADT) and the Maven Android Plugin. It brings the power of Maven dependency management into the ADT. </p>]]></body>
+      <created>1269961651</created>
+      <changed>1346178663</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://rgladwell.github.com/m2e-android/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>0.4.2</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Ricardo Gladwell and Hugo Josefson ]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[https://github.com/rgladwell/m2e-android/issues]]></supporturl>
+      <updateurl><![CDATA[http://rgladwell.github.com/m2e-android/updates/]]></updateurl>
+<ius>
+<iu>me.gladwell.eclipse.m2e.android.feature</iu>
+<iu>com.android.ide.eclipse.adt</iu>
+<iu>org.eclipse.m2e.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

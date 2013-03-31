@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="161126" name="VaultClipse" url="http://marketplace.eclipse.org/content/vaultclipse">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+      </categories>
+      <tags>
+        <tag id='2360' name='Adobe CQ' url='http://marketplace.eclipse.org/category/free-tagging/adobe-cq'/>
+      </tags>
+      
+      <owner>Dan</owner>
+      <favorited>1</favorited>
+      <installstotal>729</installstotal>
+      <installsrecent>84</installsrecent>
+      <shortdescription><![CDATA[<p>VaultClipse is a plugin for Eclipse which allows users to directly import, export and merge content from Day CQ repositories through Eclipse.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>VaultClipse is a plugin for Eclipse which allows users to directly import, export and merge content from Day CQ repositories through Eclipse.</p>
+]]></body>
+      <created>1322577864</created>
+      <changed>1327004096</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://vaultclipse.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/vc-logo-large_0.png?itok=-luI5b50]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/export_wizard_0.png?itok=00pDYAIN]]></screenshot>
+      <version>0.2.4</version>
+      <license>GPL</license>
+      <companyname><![CDATA[Crown Partners LLC]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/vaultclipse/forums/forum/1764571]]></supporturl>
+      <updateurl><![CDATA[http://vaultclipse.sourceforge.net/update]]></updateurl>
+<ius>
+<iu>com.cp.vaultclipse.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="3407" name="EclipseLink SDK" url="http://marketplace.eclipse.org/content/eclipselink-sdk">
+      <type>resource</type>
+      <categories>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='36' name='Database Persistence' url='http://marketplace.eclipse.org/category/categories/database-persistence'/>
+      </categories>
+      <tags>
+        <tag id='667' name='jpa' url='http://marketplace.eclipse.org/category/free-tagging/jpa'/>
+        <tag id='999' name='eclipselink' url='http://marketplace.eclipse.org/category/free-tagging/eclipselink'/>
+        <tag id='1000' name='moxy' url='http://marketplace.eclipse.org/category/free-tagging/moxy'/>
+        <tag id='1001' name='sdo' url='http://marketplace.eclipse.org/category/free-tagging/sdo'/>
+        <tag id='1002' name='object relational' url='http://marketplace.eclipse.org/category/free-tagging/object-relational'/>
+      </tags>
+      
+      <owner>Todd Vierling</owner>
+      <favorited>1</favorited>
+      <installstotal>8111</installstotal>
+      <installsrecent>463</installsrecent>
+      <shortdescription><![CDATA[<p>The <a href="http://www.eclipse.org/eclipselink/">EclipseLink</a> SDK suite includes EclipseLink JPA, MOXy, and SDO, providing rich object-data mapping layers.  This package includes only the up-to-date SDKs (importable as Libraries), and does not include any special JDT support for inspecting mapping metadata.</p>
+<p>The Eclipse Foundation did not create or endorse this Marketplace listing; it was created by the author solely for convenience.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The <a href="http://www.eclipse.org/eclipselink/">EclipseLink</a> SDK suite includes EclipseLink JPA, MOXy, and SDO, providing rich object-data mapping layers.  This package includes only the up-to-date SDKs (importable as Libraries), and does not include any special JDT support for inspecting mapping metadata.</p>
+<p>The Eclipse Foundation did not create or endorse this Marketplace listing; it was created by the author solely for convenience.</p>
+]]></body>
+      <created>1278604432</created>
+      <changed>1278604432</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.eclipse.org/eclipselink/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version></version>
+      <license>Commercial</license>
+      <companyname><![CDATA[The Eclipse Foundation]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3, 3.4, 3.5, 3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://wiki.eclipse.org/EclipseLink]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/rt/eclipselink/updates/]]></updateurl>
+<ius>
+<iu>org.eclipse.persistence.sdk.feature.group</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

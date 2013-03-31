@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="385" name="OOEclipse" url="http://marketplace.eclipse.org/content/ooeclipse">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+            
+      <owner>Cedric Bosdonnat</owner>
+      <favorited>3</favorited>
+      <installstotal>431</installstotal>
+      <installsrecent>16</installsrecent>
+      <shortdescription><![CDATA[<p>OOEclipse is a set of plugins for the OpenOffice.org extensions developers. It brings UNO and OpenOffice.org specific wizards and tools on top of the existing language plugins. It currently supports only Java, but C++ support is on the way.</p>
+<!--break--><p>Below are some of its features:</p>
+<ul><li>OpenOffice.org extension creation wizard</li>
+<li>OXT export wizard</li>
+<li>UNO client project creation wizard</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>OOEclipse is a set of plugins for the OpenOffice.org extensions developers. It brings UNO and OpenOffice.org specific wizards and tools on top of the existing language plugins. It currently supports only Java, but C++ support is on the way.</p>
+<!--break--><p>Below are some of its features:</p>
+<ul><li>OpenOffice.org extension creation wizard</li>
+<li>OXT export wizard</li>
+<li>UNO client project creation wizard</li>
+</ul>]]></body>
+      <created>1170338459</created>
+      <changed>1273226075</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.ohloh.net/p/ooeclipse]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.1.0</version>
+      <license>LGPL</license>
+      <companyname><![CDATA[Go OpenOffice]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2.0]]></eclipseversion>
+      <supporturl><![CDATA[http://cedric.bosdonnat.free.fr/ooeclipseintegration]]></supporturl>
+      <updateurl><![CDATA[http://cedric.bosdonnat.free.fr/ooeclipseintegration]]></updateurl>
+<ius>
+<iu>org.openoffice.ide.eclipse.core</iu>
+<iu>org.openoffice.ide.eclipse.java</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

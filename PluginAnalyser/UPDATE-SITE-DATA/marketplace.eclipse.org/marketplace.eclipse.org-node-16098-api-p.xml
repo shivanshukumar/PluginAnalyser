@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="16098" name="Selenity - Selenium Grid Eclipse Plug-in" url="http://marketplace.eclipse.org/content/selenity-selenium-grid-eclipse-plug">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+      <tags>
+        <tag id='1276' name='selenity' url='http://marketplace.eclipse.org/category/free-tagging/selenity'/>
+        <tag id='1277' name='selenium' url='http://marketplace.eclipse.org/category/free-tagging/selenium'/>
+        <tag id='1278' name='selenium grid' url='http://marketplace.eclipse.org/category/free-tagging/selenium-grid'/>
+        <tag id='1279' name='selenium hub' url='http://marketplace.eclipse.org/category/free-tagging/selenium-hub'/>
+        <tag id='1280' name='selenium remote control' url='http://marketplace.eclipse.org/category/free-tagging/selenium-remote-control'/>
+      </tags>
+      
+      <owner>Evren Ozcan</owner>
+      <favorited>3</favorited>
+      <installstotal>83</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>A plugin for Selenium, It makes it really easy using Selenium Grid inside Eclipse and running your System Tests. (Also available as standalone application.)</p>
+<p>Features<br />
+1. Start/Stop Selenium Hub with desired settings<br />
+2. Supports up to 5 Selenium Remote Control<br />
+3. Custom Logging level both for Selenity and Selenium<br />
+4. Test launcher for simple tests, Can run many tests simultaneously.<br />
+   (Going to be a full custom test utility)</p>
+<p>Run<br />
+You can avail the view from Window->Show View->Other View->Cosmologic->Selenity</p>
+]]></shortdescription>
+      <body><![CDATA[<p>A plugin for Selenium, It makes it really easy using Selenium Grid inside Eclipse and running your System Tests. (Also available as standalone application.)</p>
+<p>Features<br />
+1. Start/Stop Selenium Hub with desired settings<br />
+2. Supports up to 5 Selenium Remote Control<br />
+3. Custom Logging level both for Selenity and Selenium<br />
+4. Test launcher for simple tests, Can run many tests simultaneously.<br />
+   (Going to be a full custom test utility)</p>
+<p>Run<br />
+You can avail the view from Window->Show View->Other View->Cosmologic->Selenity</p>
+]]></body>
+      <created>1287589235</created>
+      <changed>1327242302</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://sourceforge.net/projects/selenity/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/selenity-eclipse-logo_0.jpg?itok=m1ZajGjE]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/selenium-remote_0.jpg?itok=HVUOpVsu]]></screenshot>
+      <version>1.0.0</version>
+      <license>Free for non-commerical use</license>
+      <companyname><![CDATA[Cosmologic - Evren Ozcan]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.x.x]]></eclipseversion>
+      <supporturl><![CDATA[https://sourceforge.net/projects/selenity/]]></supporturl>
+      <updateurl><![CDATA[https://sourceforge.net/projects/selenity/files/]]></updateurl>
+<ius>
+<iu>net.cosmologic.selenity</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

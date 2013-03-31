@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="72441" name="InTrace" url="http://marketplace.eclipse.org/content/intrace">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='1883' name='debugging' url='http://marketplace.eclipse.org/category/free-tagging/debugging'/>
+        <tag id='2042' name='tracing' url='http://marketplace.eclipse.org/category/free-tagging/tracing'/>
+      </tags>
+      
+      <owner>Martin Robertson</owner>
+      <favorited>1</favorited>
+      <installstotal>130</installstotal>
+      <installsrecent>18</installsrecent>
+      <shortdescription><![CDATA[<p>InTrace is a tool which enables the tracing of program execution without recompilation. You can easily trace your own classes, library classes or system classes.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>InTrace is a tool which enables the tracing of program execution without recompilation. You can easily trace your own classes, library classes or system classes.</p>
+]]></body>
+      <created>1308958176</created>
+      <changed>1332029131</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://mchr3k.github.com/org.intrace/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/intrace-emarket.png?itok=rlQqAlWh]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/eclipse_active_0.jpg?itok=Jl5P2H4-]]></screenshot>
+      <version>0.18</version>
+      <license>EPL</license>
+      <companyname><![CDATA[mchr3k]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://intracesite.appspot.com/]]></updateurl>
+<ius>
+<iu>intrace.ecl.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

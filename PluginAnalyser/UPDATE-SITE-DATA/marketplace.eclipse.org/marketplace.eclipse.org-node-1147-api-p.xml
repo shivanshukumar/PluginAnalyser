@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1147" name="GitHub Mylyn Connector" url="http://marketplace.eclipse.org/content/github-mylyn-connector">
+      <type>resource</type>
+      <categories>
+        <category id='1968' name='Collaboration' url='http://marketplace.eclipse.org/category/categories/collaboration'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='38' name='Mylyn Connectors' url='http://marketplace.eclipse.org/category/categories/mylyn-connectors'/>
+      </categories>
+      <tags>
+        <tag id='88' name='mylyn' url='http://marketplace.eclipse.org/category/free-tagging/mylyn'/>
+        <tag id='97' name='git' url='http://marketplace.eclipse.org/category/free-tagging/git'/>
+        <tag id='1866' name='egit' url='http://marketplace.eclipse.org/category/free-tagging/egit'/>
+        <tag id='1868' name='github' url='http://marketplace.eclipse.org/category/free-tagging/github'/>
+      </tags>
+      
+      <owner>Kevin Sawicki</owner>
+      <favorited>42</favorited>
+      <installstotal>17001</installstotal>
+      <installsrecent>1100</installsrecent>
+      <shortdescription><![CDATA[<p>GitHub Mylyn Connector supports integrating Issue, Pull Requests, and Gists into the Mylyn Task List view.</p>
+<p>See <a href="http://wiki.eclipse.org/EGit/GitHub/UserGuide">http://wiki.eclipse.org/EGit/GitHub/UserGuide</a> for more information</p>
+]]></shortdescription>
+      <body><![CDATA[<p>GitHub Mylyn Connector supports integrating Issue, Pull Requests, and Gists into the Mylyn Task List view.</p>
+<p>See <a href="http://wiki.eclipse.org/EGit/GitHub/UserGuide">http://wiki.eclipse.org/EGit/GitHub/UserGuide</a> for more information</p>
+]]></body>
+      <created>1266295527</created>
+      <changed>1361945873</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.eclipse.org/egit/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/egit-github-marketplace-logo.png?itok=LEhh95c7]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Bildschirmfoto%202011-04-20%20um%2021.50.11.png?itok=2rCVKkTt]]></screenshot>
+      <version>2.3</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Eclipse.org]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7+]]></eclipseversion>
+      <supporturl><![CDATA[https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EGit&component=Mylyn&rep_platform=All&op_sys=All]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/egit/github/updates-2.3]]></updateurl>
+<ius>
+<iu>org.eclipse.mylyn.github.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

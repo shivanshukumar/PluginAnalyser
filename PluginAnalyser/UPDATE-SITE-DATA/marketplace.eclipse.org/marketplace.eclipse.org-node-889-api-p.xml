@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="889" name="Eclipse Code Recommenders (for e38/e42/e43)" url="http://marketplace.eclipse.org/content/eclipse-code-recommenders">
+      <type>resource</type>
+      <categories>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='40' name='Search' url='http://marketplace.eclipse.org/category/categories/search'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='957' name='code completion' url='http://marketplace.eclipse.org/category/free-tagging/code-completion'/>
+        <tag id='959' name='collective intelligence' url='http://marketplace.eclipse.org/category/free-tagging/collective-intelligence'/>
+        <tag id='960' name='ide2.0' url='http://marketplace.eclipse.org/category/free-tagging/ide20'/>
+        <tag id='961' name='examples search engine' url='http://marketplace.eclipse.org/category/free-tagging/examples-search-engine'/>
+        <tag id='962' name='extended javadocs' url='http://marketplace.eclipse.org/category/free-tagging/extended-javadocs'/>
+      </tags>
+      
+      <owner>Marcel Bruch</owner>
+      <favorited>69</favorited>
+      <installstotal>5287</installstotal>
+      <installsrecent>277</installsrecent>
+      <shortdescription><![CDATA[<p>Developers and CTOs know: Frequently changing teams and the “liberal” use of the latest and greatest technologies makes your burndown charts and project cost estimations burst within just a few weeks.</p>
+<p>To compensate for "brain drain" and to lower the entrance barrier, team leads plan a fair amount of their team's time for documenting software, doing reviews, and pair programming to evenly spread the knowledge about how to use APIs over the whole team - and to newcomers in particular.</p>
+<p>If done right, this is the best a team lead can do to make the team effective in the long run. But Code Recommenders thinks that there is more a team lead can do...</p>
+<p><strong>How much can an IDE predict what you will write in the next seconds?</strong></p>
+<p>At first glance, you might answer: nothing. Indeed, the information needed to complete the source code is primarily in the developer's brain. However, API designers typically have some expectations about how developers should use their APIs, i.e., they expect their clients to call certain methods at certain points in time and in particular order. The challenge to all newcomers is thus to learn about these implicit expectations and API usage rules fast enough to be of help for the team they joined.</p>
+<p>Eclipse Code Recommenders assists developers on learning how to use and extend new APIs by analyzing applications that successfully applied the framework before and re-integrating this knowledge back into your IDE as :</p>
+<p>* Intelligent Call Completion,<br />
+* Intelligent Method Overrrides Completion, and even<br />
+* Simple Code Snippets, and<br />
+* additional API documentation.</p>
+<p>Check <a href="http://eclipse.org/recommenders/documentation/usr.html">http://eclipse.org/recommenders/documentation/usr.html</a> for a feature overview.</p>
+<p>Please use the following update sites to get the latest RC features for Eclipse Juno:</p>
+<ul><li>Eclipse 4.2/3.8: <a href="http://download.eclipse.org/recommenders/updates/dev/e42/">http://download.eclipse.org/recommenders/updates/dev/e42/</a>
+</li><li>Eclipse 3.7 : <a href="http://download.eclipse.org/recommenders/updates/dev/e37/">http://download.eclipse.org/recommenders/updates/dev/e37/</a>
+</li></ul>]]></shortdescription>
+      <body><![CDATA[<p>Developers and CTOs know: Frequently changing teams and the “liberal” use of the latest and greatest technologies makes your burndown charts and project cost estimations burst within just a few weeks.</p>
+<p>To compensate for "brain drain" and to lower the entrance barrier, team leads plan a fair amount of their team's time for documenting software, doing reviews, and pair programming to evenly spread the knowledge about how to use APIs over the whole team - and to newcomers in particular.</p>
+<p>If done right, this is the best a team lead can do to make the team effective in the long run. But Code Recommenders thinks that there is more a team lead can do...</p>
+<p><strong>How much can an IDE predict what you will write in the next seconds?</strong></p>
+<p>At first glance, you might answer: nothing. Indeed, the information needed to complete the source code is primarily in the developer's brain. However, API designers typically have some expectations about how developers should use their APIs, i.e., they expect their clients to call certain methods at certain points in time and in particular order. The challenge to all newcomers is thus to learn about these implicit expectations and API usage rules fast enough to be of help for the team they joined.</p>
+<p>Eclipse Code Recommenders assists developers on learning how to use and extend new APIs by analyzing applications that successfully applied the framework before and re-integrating this knowledge back into your IDE as :</p>
+<p>* Intelligent Call Completion,<br />
+* Intelligent Method Overrrides Completion, and even<br />
+* Simple Code Snippets, and<br />
+* additional API documentation.</p>
+<p>Check <a href="http://eclipse.org/recommenders/documentation/usr.html">http://eclipse.org/recommenders/documentation/usr.html</a> for a feature overview.</p>
+<p>Please use the following update sites to get the latest RC features for Eclipse Juno:</p>
+<ul><li>Eclipse 4.2/3.8: <a href="http://download.eclipse.org/recommenders/updates/dev/e42/">http://download.eclipse.org/recommenders/updates/dev/e42/</a>
+</li><li>Eclipse 3.7 : <a href="http://download.eclipse.org/recommenders/updates/dev/e37/">http://download.eclipse.org/recommenders/updates/dev/e37/</a>
+</li></ul>]]></body>
+      <created>1236780130</created>
+      <changed>1358347253</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.eclipse.org/recommenders/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/code-recommenders-half-eclipse.jpg?itok=Dq0snYqu]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/recommenders-completion-on-field.png?itok=s2UkEqMz]]></screenshot>
+      <version>1.0.3</version>
+      <license>EPL</license>
+      <companyname><![CDATA[eclipse.org]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.8, 4.2, 4.3 --- 3.7-> separate site]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eclipse.org/forums/eclipse.recommenders]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/recommenders/updates/dev/e42]]></updateurl>
+<ius>
+<iu>org.eclipse.recommenders.feature.completion.rcp.intellig</iu>
+<iu>org.eclipse.recommenders.feature.completion.rcp.chain</iu>
+<iu>org.eclipse.recommenders.feature.completion.rcp.subwords</iu>
+<iu>org.eclipse.recommenders.feature.extdoc.rcp</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="149992" name="Artifactory Binaries Repository Manager " url="http://marketplace.eclipse.org/content/artifactory-binaries-repository-manager">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+      </categories>
+      <tags>
+        <tag id='93' name='continuous integration' url='http://marketplace.eclipse.org/category/free-tagging/continuous-integration'/>
+        <tag id='1472' name='ivy' url='http://marketplace.eclipse.org/category/free-tagging/ivy'/>
+        <tag id='2128' name='Maven repository' url='http://marketplace.eclipse.org/category/free-tagging/maven-repository'/>
+        <tag id='2324' name='gradle' url='http://marketplace.eclipse.org/category/free-tagging/gradle'/>
+      </tags>
+      
+      <owner>Shlomi Ben Haim</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Artifactory - P2 Repositories can be your single access point for all Eclipse® updates. Eclipse plugins proxying and hosting take advantage of Artifactory's exiting advanced caching and security controls.</p>
+<p>Artifactory supports advanced proxying and caching of P2 repositories, and P2 metadata aggregation (since Artifactory 2.4.0).<br />
+An Artifactory virtual repository can serve as a single point of distribution (single URL) for Eclipse, Tycho and any other P2 clients.<br />
+This virtual repository will aggregate P2 metadata and P2 artifacts from underlying standard Artifactory remote repositories. This gives you full visibility of the source of P2 artifacts, and allows powerful management of caching and security aspect for P2 content.</p>
+<p>In addition Artifactory 2.4.0 introduces the following new features and changes:</p>
+<p>1.YUM Repositories and RPM Provisioning - Artifactory can now act as a fully-featured YUM repository,<br />
+   including auto-updating repo metadata and RPM detailed view directly from the Artifactory UI.<br />
+2. Major Performance Improvements - in storage management, CPU and memory utilization and search<br />
+    speeds<br />
+3. Security is Fully Manageable via REST API<br />
+4. User Regexp Tokens in Repository Layouts - You can now add your own custom regexp-based tokens<br />
+    to repository layout definitions for better module identification.<br />
+5. New additions to the Artifactory Public API for User Plugins (move, copy, search, not downloaded<br />
+    since, etc.)</p>
+<p>Read more about Artifactory 2.4 release at JFrog's wiki - release announcement</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Artifactory - P2 Repositories can be your single access point for all Eclipse® updates. Eclipse plugins proxying and hosting take advantage of Artifactory's exiting advanced caching and security controls.</p>
+<p>Artifactory supports advanced proxying and caching of P2 repositories, and P2 metadata aggregation (since Artifactory 2.4.0).<br />
+An Artifactory virtual repository can serve as a single point of distribution (single URL) for Eclipse, Tycho and any other P2 clients.<br />
+This virtual repository will aggregate P2 metadata and P2 artifacts from underlying standard Artifactory remote repositories. This gives you full visibility of the source of P2 artifacts, and allows powerful management of caching and security aspect for P2 content.</p>
+<p>In addition Artifactory 2.4.0 introduces the following new features and changes:</p>
+<p>1.YUM Repositories and RPM Provisioning - Artifactory can now act as a fully-featured YUM repository,<br />
+   including auto-updating repo metadata and RPM detailed view directly from the Artifactory UI.<br />
+2. Major Performance Improvements - in storage management, CPU and memory utilization and search<br />
+    speeds<br />
+3. Security is Fully Manageable via REST API<br />
+4. User Regexp Tokens in Repository Layouts - You can now add your own custom regexp-based tokens<br />
+    to repository layout definitions for better module identification.<br />
+5. New additions to the Artifactory Public API for User Plugins (move, copy, search, not downloaded<br />
+    since, etc.)</p>
+<p>Read more about Artifactory 2.4 release at JFrog's wiki - release announcement</p>
+]]></body>
+      <created>1320873919</created>
+      <changed>1321280425</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.jfrog.com/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_1.jpg?itok=h8GscjhF]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screen%20cast.jpg?itok=EldBMFGl]]></screenshot>
+      <version>2.4.0</version>
+      <license>LGPL</license>
+      <companyname><![CDATA[JFrog ]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://www.jfrog.com/support.php]]></supporturl>
+      <updateurl><![CDATA[http://www.jfrog.com/download.php]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

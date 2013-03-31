@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="32537" name="eReviewBoard" url="http://marketplace.eclipse.org/content/ereviewboard">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='38' name='Mylyn Connectors' url='http://marketplace.eclipse.org/category/categories/mylyn-connectors'/>
+      </categories>
+            
+      <owner>Robert Munteanu</owner>
+      <favorited>4</favorited>
+      <installstotal>930</installstotal>
+      <installsrecent>52</installsrecent>
+      <shortdescription><![CDATA[<p>The ReviewBoard connector for Mylyn allows you to track your reviews from within Eclipse. It provides task list integration, a rich task editor and access to patches and screenshots.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The ReviewBoard connector for Mylyn allows you to track your reviews from within Eclipse. It provides task list integration, a rich task editor and access to patches and screenshots.</p>
+]]></body>
+      <created>1297463735</created>
+      <changed>1322413643</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://github.com/rombert/ereviewboard/wiki]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/reviewboard_logo.png?itok=7nxss4ry]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/ereviewboard-task-attributes.png?itok=FPv9QTlR]]></screenshot>
+      <version>0.11.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Robert Munteanu]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5,3.6,3.7]]></eclipseversion>
+      <supporturl><![CDATA[https://github.com/rombert/ereviewboard/issues]]></supporturl>
+      <updateurl><![CDATA[http://rombert.github.com/ereviewboard/update/]]></updateurl>
+<ius>
+<iu>org.review_board.ereviewboard</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

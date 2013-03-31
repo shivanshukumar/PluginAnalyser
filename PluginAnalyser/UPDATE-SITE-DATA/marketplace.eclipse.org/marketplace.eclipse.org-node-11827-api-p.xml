@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="11827" name="MOFScript Model Transformation Tool" url="http://marketplace.eclipse.org/content/mofscript-model-transformation-tool">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+      </categories>
+      <tags>
+        <tag id='61' name='UML' url='http://marketplace.eclipse.org/category/free-tagging/uml'/>
+        <tag id='164' name='model transformation' url='http://marketplace.eclipse.org/category/free-tagging/model-transformation'/>
+        <tag id='165' name='code generation' url='http://marketplace.eclipse.org/category/free-tagging/code-generation'/>
+        <tag id='184' name='traceability' url='http://marketplace.eclipse.org/category/free-tagging/traceability'/>
+        <tag id='186' name='EMF' url='http://marketplace.eclipse.org/category/free-tagging/emf'/>
+      </tags>
+      
+      <owner>Gøran K. Olsen</owner>
+      <favorited>0</favorited>
+      <installstotal>139</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>MOFScript is a tool for model to text transformation, e.g., to support generation of implementation code or documentation from models. Simple model to model transformation functionality is also supported. It provides a metamodel-independent language that allows to use any kind of metamodel and its instances for text generation or model to model transformation. Traceability links can be automatically generated from both. The MOFScript tool is based on EMF and Ecore as metamodel framework. </p>
+]]></shortdescription>
+      <body><![CDATA[<p>MOFScript is a tool for model to text transformation, e.g., to support generation of implementation code or documentation from models. Simple model to model transformation functionality is also supported. It provides a metamodel-independent language that allows to use any kind of metamodel and its instances for text generation or model to model transformation. Traceability links can be automatically generated from both. The MOFScript tool is based on EMF and Ecore as metamodel framework. </p>
+]]></body>
+      <created>1284725818</created>
+      <changed>1284743864</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.eclipse.org/gmt/mofscript/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/MOFScript_0.png?itok=V4ipD1Lt]]></image>
+      <version></version>
+      <license>EPL</license>
+      <companyname><![CDATA[SINTEF]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5, 3.6]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[ http://download.eclipse.org/modeling/gmt/mofscript/update/]]></updateurl>
+<ius>
+<iu>org.eclipse.mofscript</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

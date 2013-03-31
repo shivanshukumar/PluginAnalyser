@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="396" name="eclipse-jmx" url="http://marketplace.eclipse.org/content/eclipse-jmx">
+      <type>resource</type>
+      <categories>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+      </categories>
+      <tags>
+        <tag id='635' name='jmx management' url='http://marketplace.eclipse.org/category/free-tagging/jmx-management'/>
+      </tags>
+      
+      <owner>Jeff Mesnil</owner>
+      <favorited>2</favorited>
+      <installstotal>1272</installstotal>
+      <installsrecent>61</installsrecent>
+      <shortdescription><![CDATA[<p>eclipse-jmx is a plugin-in for Eclipse IDE which can be used to manage Java applications through JMX and its RMI Connector.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>eclipse-jmx is a plugin-in for Eclipse IDE which can be used to manage Java applications through JMX and its RMI Connector.</p>
+]]></body>
+      <created>1171401118</created>
+      <changed>1280938503</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/eclipse-jmx/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/eclipse-jmx_0.2.1.jpg?itok=cITbxkz2]]></screenshot>
+      <version>0.2.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[eclipse-jmx]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.2]]></eclipseversion>
+      <supporturl><![CDATA[http://groups.google.com/group/eclipse-jmx-dev]]></supporturl>
+      <updateurl><![CDATA[http://eclipse-jmx.googlecode.com/svn/trunk/net.jmesnil.jmx.update/]]></updateurl>
+<ius>
+<iu>net.jmesnil.jmx.feature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

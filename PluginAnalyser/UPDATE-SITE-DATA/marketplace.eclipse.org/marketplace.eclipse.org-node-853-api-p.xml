@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="853" name="JsLint Eclipse Plugin" url="http://marketplace.eclipse.org/content/jslint-eclipse-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+      </categories>
+            
+      <owner>bbuffone</owner>
+      <favorited>5</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><p>JsLint is a well-know JavaScript validation library developed by Douglas Crockford.  The library allows developer to validate JavaScript against a set of best practices that have been developed over the years.  RockstarApps has brought this functionality to Eclipse. JsLint can be easily activated by an Editor Action in any JavaScript file or from the "Navigator" view. The image below shows how to activate the JsLint validator from an Editor.</p></p>
+<p><h2>JsLint Activation</h2></p>
+<p><p>Users can activate the JsLint functionality from the any of the following places:</p></p>
+<p><ul><li>Right clicking with in an editor.  Select the [RockstarApps -> Validate with JsLint...] menu item. Validates the file being edited.<br />
+   </li><li>Right click on one or more JavaScript files in the "Navigator" view.<br />
+   <li><li>Right click on one or more Folders or a Project to validate all the JavaScript files contained with in the selected items.<br />
+</li><br />
+<li><li>Selecting a file in the Navigator and pressing "Ctrl+Shift+V" will activator the JsLint validation.<br />
+</li><br />
+</ul></p>
+<p><h2>Auto Validation</h2><br />
+<p>Users can configure an automatic validation when files are save by using the builder configuration properties.</p></p>
+<p><h2>External Defines</h2><br />
+<p>Users can specify external defines for all their files.</p></p>
+]]></shortdescription>
+      <body><![CDATA[<p><p>JsLint is a well-know JavaScript validation library developed by Douglas Crockford.  The library allows developer to validate JavaScript against a set of best practices that have been developed over the years.  RockstarApps has brought this functionality to Eclipse. JsLint can be easily activated by an Editor Action in any JavaScript file or from the "Navigator" view. The image below shows how to activate the JsLint validator from an Editor.</p></p>
+<p><h2>JsLint Activation</h2></p>
+<p><p>Users can activate the JsLint functionality from the any of the following places:</p></p>
+<p><ul><li>Right clicking with in an editor.  Select the [RockstarApps -> Validate with JsLint...] menu item. Validates the file being edited.<br />
+   </li><li>Right click on one or more JavaScript files in the "Navigator" view.<br />
+   <li><li>Right click on one or more Folders or a Project to validate all the JavaScript files contained with in the selected items.<br />
+</li><br />
+<li><li>Selecting a file in the Navigator and pressing "Ctrl+Shift+V" will activator the JsLint validation.<br />
+</li><br />
+</ul></p>
+<p><h2>Auto Validation</h2><br />
+<p>Users can configure an automatic validation when files are save by using the builder configuration properties.</p></p>
+<p><h2>External Defines</h2><br />
+<p>Users can specify external defines for all their files.</p></p>
+]]></body>
+      <created>1233673907</created>
+      <changed>1259779166</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.rockstarapps.com/joomla-1.5.8/products/jslint-eclipse-plugin.html]]></homepageurl>
+      <image><![CDATA[http://cdn.rockstarapps.com/resources/images/jsLex/jslint/jslint-editor-small.png]]></image>
+      <version>1.2.11</version>
+      <license>Other</license>
+      <companyname><![CDATA[Rockstarapps.com]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.2+]]></eclipseversion>
+      <supporturl><![CDATA[http://www.rockstarapps.com/joomla-1.5.8/support/getting-help.html]]></supporturl>
+      <updateurl><![CDATA[http://www.rockstarapps.com/update-beta]]></updateurl>
+    </node>
+    </marketplace>
+    

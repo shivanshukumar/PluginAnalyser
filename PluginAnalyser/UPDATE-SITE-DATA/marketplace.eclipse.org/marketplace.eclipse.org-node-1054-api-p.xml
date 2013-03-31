@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1054" name="JPA Explorer" url="http://marketplace.eclipse.org/content/jpa-explorer">
+      <type>resource</type>
+      <categories>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='36' name='Database Persistence' url='http://marketplace.eclipse.org/category/categories/database-persistence'/>
+      </categories>
+            
+      <owner>Dekel Yaacov</owner>
+      <favorited>5</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This plugin scans your eclipse workspace for JPA entities and lets you navigate in the entities against your database tables. </p>
+<p>•Flat/Hierarchical navigation display<br />
+•Fast workspace scanning for entities<br />
+•Named queries auto detection<br />
+•Support user custom queries<br />
+•Query results view and history<br />
+•Filtering<br />
+•Support all databases<br />
+•Entities inheritance</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This plugin scans your eclipse workspace for JPA entities and lets you navigate in the entities against your database tables. </p>
+<p>•Flat/Hierarchical navigation display<br />
+•Fast workspace scanning for entities<br />
+•Named queries auto detection<br />
+•Support user custom queries<br />
+•Query results view and history<br />
+•Filtering<br />
+•Support all databases<br />
+•Entities inheritance</p>
+]]></body>
+      <created>1259344306</created>
+      <changed>1260305878</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://jpaexplorer.sourceforge.net]]></homepageurl>
+      <image><![CDATA[http://jpaexplorer.sourceforge.net/img/foreclipse.jpg]]></image>
+      <version>1.0.0</version>
+      <license>Free for non-commerical use</license>
+      <companyname><![CDATA[Dekel Yaacov]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3.2+]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/tracker/?group_id=288578]]></supporturl>
+      <updateurl><![CDATA[http://jpaexplorer.sourceforge.net]]></updateurl>
+    </node>
+    </marketplace>
+    

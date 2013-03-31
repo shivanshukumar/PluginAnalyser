@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="132759" name="Workspace Badge Plug-in for Mac OS X" url="http://marketplace.eclipse.org/content/workspace-badge-plug-mac-os-x">
+      <type>resource</type>
+      <categories>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+      </categories>
+            
+      <owner>Neil Bartlett</owner>
+      <favorited>5</favorited>
+      <installstotal>138</installstotal>
+      <installsrecent>2</installsrecent>
+      <shortdescription><![CDATA[<p>Adds a workspace-specific badge to the Mac OS X dock icon. This helps to tell separate Eclipse instances apart when you have several open at the same time.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Adds a workspace-specific badge to the Mac OS X dock icon. This helps to tell separate Eclipse instances apart when you have several open at the same time.</p>
+]]></body>
+      <created>1318199774</created>
+      <changed>1318338108</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://njbartlett.name/2011/10/09/workspace-mac-badge.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/macbadge.png?itok=7dGgNuVE]]></image>
+      <version></version>
+      <license>Other Open Source</license>
+      <companyname><![CDATA[Neil Bartlett]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.7.0]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://macbadge-updates.s3.amazonaws.com/]]></updateurl>
+<ius>
+<iu>name.njbartlett.eclipse.macbadge.feature</iu>
+</ius>
+<platforms>
+<platform>Mac</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

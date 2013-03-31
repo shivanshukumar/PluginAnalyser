@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="273" name="Imixs Report Plugin" url="http://marketplace.eclipse.org/content/imixs-report-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+      </categories>
+            
+      <owner>Ralph Soika</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The Imixs Report Plugin allows the definition of Workflow Reports. Reports are used to define a dynamic queries from a set of Workitems to be aggregated into a report out from a Workflow System.<br />
+A report created with the Imixs Report Plugin can be synchronized with a running Imixs Workflow Instance like the Imixs JEE Workflow. Each report can be called easily by the Imixs REST service interface. The Imixs Report Plugin is part of the Imixs Worklfow Modeler Plugin.<br />
+The goal of the Imixs Workflow project is to provide an easy to use java based technology which focus on human based workflow. This means that the Imixs Workflow is typical used for Human-To-Human Workflows but it can also be used for technical business process management.<br />
+The goals of the Imixs Workflow Modeler project is to provide developers and users of a Workflow Management System with an easy tool to model a business process. The Eclipse based Modeler allows to model typical business cases and provides a Web Service Interface to update any Workflow Management System build on the Imixs Workflow API with model data.<br />
+The plug-in is freely available as an Open Source version and can be adapted to the individual requirements or expanded at any time through predefined extension points. The Imixs Workflow API can integrate the created WorkflowModels at any time to facilitate further processing. </p>
+]]></shortdescription>
+      <body><![CDATA[<p>The Imixs Report Plugin allows the definition of Workflow Reports. Reports are used to define a dynamic queries from a set of Workitems to be aggregated into a report out from a Workflow System.<br />
+A report created with the Imixs Report Plugin can be synchronized with a running Imixs Workflow Instance like the Imixs JEE Workflow. Each report can be called easily by the Imixs REST service interface. The Imixs Report Plugin is part of the Imixs Worklfow Modeler Plugin.<br />
+The goal of the Imixs Workflow project is to provide an easy to use java based technology which focus on human based workflow. This means that the Imixs Workflow is typical used for Human-To-Human Workflows but it can also be used for technical business process management.<br />
+The goals of the Imixs Workflow Modeler project is to provide developers and users of a Workflow Management System with an easy tool to model a business process. The Eclipse based Modeler allows to model typical business cases and provides a Web Service Interface to update any Workflow Management System build on the Imixs Workflow API with model data.<br />
+The plug-in is freely available as an Open Source version and can be adapted to the individual requirements or expanded at any time through predefined extension points. The Imixs Workflow API can integrate the created WorkflowModels at any time to facilitate further processing. </p>
+]]></body>
+      <created>1160663069</created>
+      <changed>1259778608</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://doc.imixs.org/modeler/]]></homepageurl>
+      <image><![CDATA[http://doc.imixs.org/modeler/images/report-01.png]]></image>
+      <version>1.0.1</version>
+      <license>Free GPL</license>
+      <companyname><![CDATA[Imixs Software Solutions GmbH]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[Eclipse 3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.imixs.org]]></supporturl>
+      <updateurl><![CDATA[http://www.imixs.org/org.imixs.eclipse.updatesite]]></updateurl>
+    </node>
+    </marketplace>
+    

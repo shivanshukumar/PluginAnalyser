@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1376" name="Google Plugin for Eclipse 3.7" url="http://marketplace.eclipse.org/content/google-plugin-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='1974' name='Mobile and Device Development' url='http://marketplace.eclipse.org/category/categories/mobile-and-device-development'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='21' name='Web Services' url='http://marketplace.eclipse.org/taxonomy/term/21'/>
+        <category id='1967' name='Web, XML, Java EE and OSGi Enterprise Development' url='http://marketplace.eclipse.org/category/categories/web-xml-java-ee-and-osgi-enterprise-development'/>
+      </categories>
+      <tags>
+        <tag id='536' name='GWT' url='http://marketplace.eclipse.org/category/free-tagging/gwt'/>
+        <tag id='566' name='google' url='http://marketplace.eclipse.org/category/free-tagging/google'/>
+        <tag id='880' name='google web toolkit' url='http://marketplace.eclipse.org/category/free-tagging/google-web-toolkit'/>
+        <tag id='881' name='app engine' url='http://marketplace.eclipse.org/category/free-tagging/app-engine'/>
+        <tag id='882' name='appengine' url='http://marketplace.eclipse.org/category/free-tagging/appengine'/>
+      </tags>
+      
+      <owner>Sachin Kotwani</owner>
+      <favorited>86</favorited>
+      <installstotal>44295</installstotal>
+      <installsrecent>397</installsrecent>
+      <shortdescription><![CDATA[<p>The Google Plugin for Eclipse is a set of software development tools that enables Java developers to quickly design, build, optimize, and deploy cloud-based applications. GPE assists developers in efficiently creating a rich user experience, generating high quality Ajax code using the Google Web Toolkit, optimizing performance with Speed Tracer, and effortlessly deploying applications to the Google cloud. These powerful tools remove tedium and free developers to focus on creating great application logic. GPE is the first suite of integrated development tools designed specifically for Eclipse Java developers to create fast, reliable and high quality applications for the Google Cloud.</p>
+<p>See the <a href="http://code.google.com/eclipse/docs/getting_started.html" target="_blank">Quick Start</a> guide to install the plugin and create your first web application. It lets you go from installing the plugin to deploying an Ajax "Hello World" in minutes. Here are just a few of the features the plugin provides to speed your development process:</p>
+<p><strong>Web Application Wizard</strong></p>
+<ul><li>Quickly create web applications that use GWT and/or App Engine. Your new application is fully-configured and ready to go</li>
+</ul><p><strong>Web Application Launch Configurations</strong></p>
+<ul><li>Run or debug your web application locally using fully-customizable launch configurations</li>
+</ul><p><strong>Support for Google App Engine</strong></p>
+<ul><li>Easy deployment to App Engine</li>
+<li>As-you-type validation ensures that your code is compatible with App Engine</li>
+<li>Build projects and 'enhance' JDO classes automatically without the need for Ant</li>
+</ul><p><strong><a href="https://developers.google.com/eclipse/docs/googleapis">Easy Discovery and Access to Google APIs</a></strong></p>
+<ul><li>Developers can easily integrate Google API client libraries to access services such as Calendar, Drive, YouTube, and Google+</li>
+</ul><p><strong><a href="https://developers.google.com/eclipse/docs/cloud_endpoints">Google Cloud Endpoints</a></strong></p>
+<ul><li>
+Supports creation of Cloud Endpoints, which provides simpler client access to App Engine backends
+</li>
+<li>
+Includes a wizard to create backend connected Android Apps with Google Cloud Messaging out-of-the-box
+</li>
+</ul><p><strong><a href="https://developers.google.com/eclipse/docs/cloudsql">Google Cloud SQL tooling</a></strong></p>
+<ul><li>Configure Cloud SQL/MySQL instances for local dev server and Cloud SQL instance for App Engine</li>
+<li>Integrate with Eclipse database development perspective and automatically add connections for configured SQL instances</li>
+<li>Auto-completion support for JDBC URLs of configured SQL instances</li>
+<li>JPA tooling for Cloud SQL </li>
+</ul><p><strong>Import Projects from Project Hosting</strong></p>
+<ul><li>A simple UI that makes importing Google-hosted projects into Eclipse very easy.</li>
+</ul><p><strong>Support for Google Web Toolkit</strong></p>
+<ul><li>Development Mode View: inspect your debugging logs and manage the GWT code server right from Eclipse</li>
+<li>UiBinder support: template editor with auto-completion, as-you-type validation of template and owner classes, and creation wizard</li>
+<li>Speed Tracer support: help you identify and fix performance problems in your web applications</li>
+<li>Recognition of inline JavaScript (JSNI): Java reference auto-completion, syntax highlighting, auto-indenting, Java Search and Refactoring integration</li>
+<li>Validation, quick fixes, and refactoring support to keep your RPC interfaces in sync</li>
+</ul><p><strong>Maven Support</strong></p>
+<ul><li>Compatibility with GWT and App Engine projects built with Maven</li>
+</ul><p><strong>GWT Designer Integration</strong></p>
+<ul><li>A powerful WYSIWYG Ajax user interface (UI) designer that makes it much easier to quickly build UIs.</li>
+</ul><p><strong>Update sites</strong></p>
+<ul><li>Eclipse 3.8/4.2 (Juno): <a href="http://dl.google.com/eclipse/plugin/4.2">http://dl.google.com/eclipse/plugin/4.2</a></li>
+<li>Eclipse 3.7 (Indigo): <a href="http://dl.google.com/eclipse/plugin/3.7">http://dl.google.com/eclipse/plugin/3.7</a></li>
+<li>Eclipse 3.6 (Helios): <a href="http://dl.google.com/eclipse/plugin/3.6">http://dl.google.com/eclipse/plugin/3.6</a></li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>The Google Plugin for Eclipse is a set of software development tools that enables Java developers to quickly design, build, optimize, and deploy cloud-based applications. GPE assists developers in efficiently creating a rich user experience, generating high quality Ajax code using the Google Web Toolkit, optimizing performance with Speed Tracer, and effortlessly deploying applications to the Google cloud. These powerful tools remove tedium and free developers to focus on creating great application logic. GPE is the first suite of integrated development tools designed specifically for Eclipse Java developers to create fast, reliable and high quality applications for the Google Cloud.</p>
+<p>See the <a href="http://code.google.com/eclipse/docs/getting_started.html" target="_blank">Quick Start</a> guide to install the plugin and create your first web application. It lets you go from installing the plugin to deploying an Ajax "Hello World" in minutes. Here are just a few of the features the plugin provides to speed your development process:</p>
+<p><strong>Web Application Wizard</strong></p>
+<ul><li>Quickly create web applications that use GWT and/or App Engine. Your new application is fully-configured and ready to go</li>
+</ul><p><strong>Web Application Launch Configurations</strong></p>
+<ul><li>Run or debug your web application locally using fully-customizable launch configurations</li>
+</ul><p><strong>Support for Google App Engine</strong></p>
+<ul><li>Easy deployment to App Engine</li>
+<li>As-you-type validation ensures that your code is compatible with App Engine</li>
+<li>Build projects and 'enhance' JDO classes automatically without the need for Ant</li>
+</ul><p><strong><a href="https://developers.google.com/eclipse/docs/googleapis">Easy Discovery and Access to Google APIs</a></strong></p>
+<ul><li>Developers can easily integrate Google API client libraries to access services such as Calendar, Drive, YouTube, and Google+</li>
+</ul><p><strong><a href="https://developers.google.com/eclipse/docs/cloud_endpoints">Google Cloud Endpoints</a></strong></p>
+<ul><li>
+Supports creation of Cloud Endpoints, which provides simpler client access to App Engine backends
+</li>
+<li>
+Includes a wizard to create backend connected Android Apps with Google Cloud Messaging out-of-the-box
+</li>
+</ul><p><strong><a href="https://developers.google.com/eclipse/docs/cloudsql">Google Cloud SQL tooling</a></strong></p>
+<ul><li>Configure Cloud SQL/MySQL instances for local dev server and Cloud SQL instance for App Engine</li>
+<li>Integrate with Eclipse database development perspective and automatically add connections for configured SQL instances</li>
+<li>Auto-completion support for JDBC URLs of configured SQL instances</li>
+<li>JPA tooling for Cloud SQL </li>
+</ul><p><strong>Import Projects from Project Hosting</strong></p>
+<ul><li>A simple UI that makes importing Google-hosted projects into Eclipse very easy.</li>
+</ul><p><strong>Support for Google Web Toolkit</strong></p>
+<ul><li>Development Mode View: inspect your debugging logs and manage the GWT code server right from Eclipse</li>
+<li>UiBinder support: template editor with auto-completion, as-you-type validation of template and owner classes, and creation wizard</li>
+<li>Speed Tracer support: help you identify and fix performance problems in your web applications</li>
+<li>Recognition of inline JavaScript (JSNI): Java reference auto-completion, syntax highlighting, auto-indenting, Java Search and Refactoring integration</li>
+<li>Validation, quick fixes, and refactoring support to keep your RPC interfaces in sync</li>
+</ul><p><strong>Maven Support</strong></p>
+<ul><li>Compatibility with GWT and App Engine projects built with Maven</li>
+</ul><p><strong>GWT Designer Integration</strong></p>
+<ul><li>A powerful WYSIWYG Ajax user interface (UI) designer that makes it much easier to quickly build UIs.</li>
+</ul><p><strong>Update sites</strong></p>
+<ul><li>Eclipse 3.8/4.2 (Juno): <a href="http://dl.google.com/eclipse/plugin/4.2">http://dl.google.com/eclipse/plugin/4.2</a></li>
+<li>Eclipse 3.7 (Indigo): <a href="http://dl.google.com/eclipse/plugin/3.7">http://dl.google.com/eclipse/plugin/3.7</a></li>
+<li>Eclipse 3.6 (Helios): <a href="http://dl.google.com/eclipse/plugin/3.6">http://dl.google.com/eclipse/plugin/3.6</a></li>
+</ul>]]></body>
+      <created>1277135611</created>
+      <changed>1360858290</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/eclipse]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/google-plugin3.png?itok=YnC8sKL1]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Screen%20shot%202012-05-04%20at%202.10.40%20PM.png?itok=qT_8sLZ6]]></screenshot>
+      <version></version>
+      <license>EPL</license>
+      <companyname><![CDATA[Google, Inc.]]></companyname>
+      <status></status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://dl.google.com/eclipse/plugin/3.7]]></updateurl>
+<ius>
+<iu>com.google.appengine.eclipse.sdkbundle.feature</iu>
+<iu>com.google.gdt.eclipse.suite.e37.feature</iu>
+<iu>com.google.gwt.eclipse.sdkbundle.feature</iu>
+<iu>com.google.gdt.eclipse.mobile.android.feature</iu>
+<iu>com.google.gdt.eclipse.designer.gpe.feature</iu>
+<iu>com.google.gdt.eclipse.designer.editor.feature</iu>
+<iu>com.google.gdt.eclipse.designer.hosted.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

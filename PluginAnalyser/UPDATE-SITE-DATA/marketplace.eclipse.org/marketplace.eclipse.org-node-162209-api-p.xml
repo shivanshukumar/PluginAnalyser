@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="162209" name="Close Views Eclipse Plugin" url="http://marketplace.eclipse.org/content/close-views-eclipse-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='327' name='eclipse' url='http://marketplace.eclipse.org/category/free-tagging/eclipse'/>
+        <tag id='2362' name='close' url='http://marketplace.eclipse.org/category/free-tagging/close'/>
+        <tag id='2363' name='views' url='http://marketplace.eclipse.org/category/free-tagging/views'/>
+      </tags>
+      
+      <owner>Sandip Chitale</owner>
+      <favorited>1</favorited>
+      <installstotal>33</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This feature provides commands related to closing views:</p>
+<p>- Window > Close (last active) View (Control+Shit+V on windows and linux, Command+Shift+V on Mac) - This closes the last active view. You can invoke this command successively to close previously active views.</p>
+<p>- Window > Close All Views in Tab  - This closes the views in the tab of last active view.</p>
+<p>- Window > Close Other Views  - This closes the other views except of last active view.</p>
+<p>- Window > Close All Views - As such this closes all the open views. If all the views are already closed it offers to reset the perspectives. If all the view are already closed the user is prompted to restore the perspective - sort of a toggle. This will restore all the views of the perspective to original positions. If you wish, you can set a keybinding for this in the Window > Preferences > Keys preferences page.</p>
+<p>When the above commands are invoked, if the workbench page was zoomed in i.e. any of the workbench part was maximized, it is first zoomed out and the user is prompted to confirm the whether or not to proceed with the action. The idea is that the user gets a chance to eyeball which view(s) will be affected by the action.</p>
+<p>NOTE: There is a Close Part command provided by workbench, which is somewhat like Close View command but it treats both views and editors the same way even though workbench does not otherwise treat the views and editors the same way.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This feature provides commands related to closing views:</p>
+<p>- Window > Close (last active) View (Control+Shit+V on windows and linux, Command+Shift+V on Mac) - This closes the last active view. You can invoke this command successively to close previously active views.</p>
+<p>- Window > Close All Views in Tab  - This closes the views in the tab of last active view.</p>
+<p>- Window > Close Other Views  - This closes the other views except of last active view.</p>
+<p>- Window > Close All Views - As such this closes all the open views. If all the views are already closed it offers to reset the perspectives. If all the view are already closed the user is prompted to restore the perspective - sort of a toggle. This will restore all the views of the perspective to original positions. If you wish, you can set a keybinding for this in the Window > Preferences > Keys preferences page.</p>
+<p>When the above commands are invoked, if the workbench page was zoomed in i.e. any of the workbench part was maximized, it is first zoomed out and the user is prompted to confirm the whether or not to proceed with the action. The idea is that the user gets a chance to eyeball which view(s) will be affected by the action.</p>
+<p>NOTE: There is a Close Part command provided by workbench, which is somewhat like Close View command but it treats both views and editors the same way even though workbench does not otherwise treat the views and editors the same way.</p>
+]]></body>
+      <created>1322731741</created>
+      <changed>1323153019</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://sandipchitale.blogspot.com/2011/12/close-views-eclipse-plug-in.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/closeviewslogo_0.png?itok=OzPPI8Tr]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/closeviews.png?itok=6wJFBp1B]]></screenshot>
+      <version>1.0.4</version>
+      <license>BSD</license>
+      <companyname><![CDATA[Sandip Chitale]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.5,3.6,3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/sandipchitaleseclipseplugins/issues/list]]></supporturl>
+      <updateurl><![CDATA[http://sandipchitaleseclipseplugins.googlecode.com/svn/trunk/CloseViewsFeatureUpdateSite/site.xml]]></updateurl>
+<ius>
+<iu>CloseViewsFeature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

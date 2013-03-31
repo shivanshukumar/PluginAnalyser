@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="26926" name="JPA Diagram Editor" url="http://marketplace.eclipse.org/content/jpa-diagram-editor">
+      <type>resource</type>
+      <categories>
+        <category id='36' name='Database Persistence' url='http://marketplace.eclipse.org/category/categories/database-persistence'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='667' name='jpa' url='http://marketplace.eclipse.org/category/free-tagging/jpa'/>
+        <tag id='2052' name='jpa diagram editor' url='http://marketplace.eclipse.org/category/free-tagging/jpa-diagram-editor'/>
+        <tag id='2053' name='graphiti' url='http://marketplace.eclipse.org/category/free-tagging/graphiti'/>
+      </tags>
+      
+      <owner>Kaloyan Raev</owner>
+      <favorited>10</favorited>
+      <installstotal>6028</installstotal>
+      <installsrecent>365</installsrecent>
+      <shortdescription><![CDATA[<p>The user may easily create a diagram (and the corresponding business model along with it) as part of any JPA-enabled project and may view and edit the model through this diagram.</p>
+<p>The power of the modern computers doesn't allow the developers to deprive the users of a smooth graphical UI. Why the user has to implement her own Java EE business model by writing Java source code, instead of just creating a cute, smooth diagram with just a few mouse clicks.</p>
+<p>Besides, if an user unfamiliar with an already created model wants to review it has to review every single JPA entity class and every relation attribute. What if this JPA entities are more than hundred in a project? It’s not uncommon in a real commercial project. What an ease it would be just to see a nice clean diagram! This way getting acquainted with the business model may become ten times faster.</p>
+<p>It would be much better if the user is not only able to see the business model, but also to be able to easily edit it directly through the diagram.</p>
+<p>Well, all this is provided by the JPA editor. The user may easily create a diagram (and the corresponding business model along with it) as part of any JPA-enabled project and may view and edit the model through this diagram. </p>
+<p>For quick on-boarding check the Getting Started tutorial: <a href="http://wiki.eclipse.org/JPA_Diagram_Editor_Project_Tutorial">http://wiki.eclipse.org/JPA_Diagram_Editor_Project_Tutorial</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>The user may easily create a diagram (and the corresponding business model along with it) as part of any JPA-enabled project and may view and edit the model through this diagram.</p>
+<p>The power of the modern computers doesn't allow the developers to deprive the users of a smooth graphical UI. Why the user has to implement her own Java EE business model by writing Java source code, instead of just creating a cute, smooth diagram with just a few mouse clicks.</p>
+<p>Besides, if an user unfamiliar with an already created model wants to review it has to review every single JPA entity class and every relation attribute. What if this JPA entities are more than hundred in a project? It’s not uncommon in a real commercial project. What an ease it would be just to see a nice clean diagram! This way getting acquainted with the business model may become ten times faster.</p>
+<p>It would be much better if the user is not only able to see the business model, but also to be able to easily edit it directly through the diagram.</p>
+<p>Well, all this is provided by the JPA editor. The user may easily create a diagram (and the corresponding business model along with it) as part of any JPA-enabled project and may view and edit the model through this diagram. </p>
+<p>For quick on-boarding check the Getting Started tutorial: <a href="http://wiki.eclipse.org/JPA_Diagram_Editor_Project_Tutorial">http://wiki.eclipse.org/JPA_Diagram_Editor_Project_Tutorial</a></p>
+]]></body>
+      <created>1294422276</created>
+      <changed>1351156135</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://wiki.eclipse.org/JPA_Diagram_Editor_Project]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/D1.jpg?itok=lKU03gF4]]></screenshot>
+      <version>1.1.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Eclipse.org]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[Juno]]></eclipseversion>
+      <supporturl><![CDATA[https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Dali JPA Tools&component=Diagram Editor]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/releases/juno]]></updateurl>
+<ius>
+<iu>org.eclipse.jpt.jpadiagrameditor.feature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

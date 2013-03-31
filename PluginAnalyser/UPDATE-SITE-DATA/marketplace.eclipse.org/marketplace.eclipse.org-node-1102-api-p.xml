@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1102" name="Package API Decorator" url="http://marketplace.eclipse.org/content/package-api-decorator">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+      </categories>
+            
+      <owner>hotzst</owner>
+      <favorited>4</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>API Decorator for Java files to indicate the visibility of the top level class of the file. The visibility is needed to make educated decisions on the overall API Design of packages.<br />
+Different decorating for normal Java projects an plug-in projects with help page inclusive.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>API Decorator for Java files to indicate the visibility of the top level class of the file. The visibility is needed to make educated decisions on the overall API Design of packages.<br />
+Different decorating for normal Java projects an plug-in projects with help page inclusive.</p>
+]]></body>
+      <created>1262344188</created>
+      <changed>1277135712</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://sourceforge.net/projects/sahitseclipse/]]></homepageurl>
+      <image><![CDATA[http://codegenjava.svn.sourceforge.net/viewvc/codegenjava/trunk/ch.sahits.codegen.sql/icons/pluginCentralLogo.png]]></image>
+      <version>1.1.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Sahits GmbH]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.2, 3.3, 3.4, 3.5]]></eclipseversion>
+      <supporturl><![CDATA[https://sourceforge.net/apps/trac/sahitseclipse/report/1]]></supporturl>
+      <updateurl><![CDATA[http://sahits.ch/project/eclipse/update]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

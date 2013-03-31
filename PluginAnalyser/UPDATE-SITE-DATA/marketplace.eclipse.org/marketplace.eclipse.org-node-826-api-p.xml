@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="826" name="JiraBuddy - Eclipse Plugin for JIRA" url="http://marketplace.eclipse.org/content/jirabuddy-eclipse-plugin-jira">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='89' name='JIRA' url='http://marketplace.eclipse.org/category/free-tagging/jira'/>
+        <tag id='2831' name='outdated' url='http://marketplace.eclipse.org/taxonomy/term/2831'/>
+        <tag id='2832' name='out of date' url='http://marketplace.eclipse.org/taxonomy/term/2832'/>
+        <tag id='116' name='' url='http://marketplace.eclipse.org/taxonomy/term/116'/>
+      </tags>
+      
+      <owner>Chris Diaz</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>JIRA Buddy is a Jira plug-in for Eclipse developed by PuguaSoft. It provides various features such as JIRA issue summary "hover" and opening JIRA tickets in the Eclipse web browser. For more information on JiraBuddy, check out the features page on the JiraBuddy website at <a href="http://www.jirabuddy.com">www.jirabuddy.com</a>.</p>
+<p>Unlike the Eclipse plugin being development by Atlassian and other parties, JiraBuddy isn't meant to be a full-fledged replacement to create or update JIRA bugs in Eclipse. Rather, JiraBuddy was created to add various enhancements within Eclipse in order to make JIRA more useful and helpful to developers.One of those features is the "Hover Info" which displays the JIRA issue information as a hover text when the cursor is placed over a JIRA issue key just like javadoc tooltips.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>JIRA Buddy is a Jira plug-in for Eclipse developed by PuguaSoft. It provides various features such as JIRA issue summary "hover" and opening JIRA tickets in the Eclipse web browser. For more information on JiraBuddy, check out the features page on the JiraBuddy website at <a href="http://www.jirabuddy.com">www.jirabuddy.com</a>.</p>
+<p>Unlike the Eclipse plugin being development by Atlassian and other parties, JiraBuddy isn't meant to be a full-fledged replacement to create or update JIRA bugs in Eclipse. Rather, JiraBuddy was created to add various enhancements within Eclipse in order to make JIRA more useful and helpful to developers.One of those features is the "Hover Info" which displays the JIRA issue information as a hover text when the cursor is placed over a JIRA issue key just like javadoc tooltips.</p>
+]]></body>
+      <created>1228746376</created>
+      <changed>1348242485</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.jirabuddy.com]]></homepageurl>
+      <image><![CDATA[http://www.jirabuddy.com/images/jira.jpg]]></image>
+      <version>1.0.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[PuguaSoft LLC]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4+ (some support for 3.3)]]></eclipseversion>
+      <supporturl><![CDATA[http://]]></supporturl>
+      <updateurl><![CDATA[http://www.jirabuddy.com/update_1.0.x]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

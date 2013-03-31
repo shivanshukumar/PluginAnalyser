@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="2298" name="JUnit Helper" url="http://marketplace.eclipse.org/content/junit-helper">
+      <type>resource</type>
+      <categories>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='192' name='testing' url='http://marketplace.eclipse.org/category/free-tagging/testing'/>
+        <tag id='197' name='TDD' url='http://marketplace.eclipse.org/category/free-tagging/tdd'/>
+        <tag id='432' name='test' url='http://marketplace.eclipse.org/category/free-tagging/test'/>
+        <tag id='752' name='junit' url='http://marketplace.eclipse.org/category/free-tagging/junit'/>
+        <tag id='1077' name='testng' url='http://marketplace.eclipse.org/category/free-tagging/testng'/>
+      </tags>
+      
+      <owner>Kazuhiro Sera</owner>
+      <favorited>19</favorited>
+      <installstotal>4714</installstotal>
+      <installsrecent>179</installsrecent>
+      <shortdescription><![CDATA[<p>"JUnit Helper" helps JUnit users to cover all tests for public, protected and package local methods by saving much labor to start writing new test cases.</p>
+<p>Eclipse plugin also has an advantage of making it easier to go back and forth between developing class and test class by "Alt + 8 "(test->dev) and "Alt +9"(dev->test).</p>
+]]></shortdescription>
+      <body><![CDATA[<p>"JUnit Helper" helps JUnit users to cover all tests for public, protected and package local methods by saving much labor to start writing new test cases.</p>
+<p>Eclipse plugin also has an advantage of making it easier to go back and forth between developing class and test class by "Alt + 8 "(test->dev) and "Alt +9"(dev->test).</p>
+]]></body>
+      <created>1277962953</created>
+      <changed>1352466009</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://junithelper.org/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/1277964269_zrTIP_0.png?itok=PJeypE0-]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/junithelper_create.png?itok=Qpa8b6kF]]></screenshot>
+      <version>1.12.0</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[Kazuhiro Sera]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3 or above]]></eclipseversion>
+      <supporturl><![CDATA[http://junithelper.org/]]></supporturl>
+      <updateurl><![CDATA[http://junithelper.org/eclipse/plugins/site.xml]]></updateurl>
+<ius>
+<iu>org.junithelper.plugin</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

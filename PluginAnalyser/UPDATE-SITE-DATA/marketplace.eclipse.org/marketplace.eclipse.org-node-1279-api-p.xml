@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1279" name="PMD Eclipse" url="http://marketplace.eclipse.org/content/pmd-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+      </categories>
+      <tags>
+        <tag id='469' name='Favorite' url='http://marketplace.eclipse.org/category/free-tagging/favorite'/>
+      </tags>
+      
+      <owner>Emmanuel LESNE</owner>
+      <favorited>97</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>PMD scans Java source code and looks for potential problems like:<br />
+    * Possible bugs - empty try/catch/finally/switch statements<br />
+    * Dead code - unused local variables, parameters and private methods<br />
+    * Suboptimal code - wasteful String/StringBuffer usage<br />
+    * Overcomplicated expressions - unnecessary if statements, for loops that could be while loops<br />
+    * Duplicate code - copied/pasted code means copied/pasted bugs</p>
+]]></shortdescription>
+      <body><![CDATA[<p>PMD scans Java source code and looks for potential problems like:<br />
+    * Possible bugs - empty try/catch/finally/switch statements<br />
+    * Dead code - unused local variables, parameters and private methods<br />
+    * Suboptimal code - wasteful String/StringBuffer usage<br />
+    * Overcomplicated expressions - unnecessary if statements, for loops that could be while loops<br />
+    * Duplicate code - copied/pasted code means copied/pasted bugs</p>
+]]></body>
+      <created>1276517312</created>
+      <changed>1346169085</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://pmd.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://pmd.sourceforge.net/images/pmd_logo_small.jpg]]></image>
+      <version></version>
+      <license>BSD</license>
+      <companyname><![CDATA[-]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[2+, 3+]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://pmd.sf.net/eclipse]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

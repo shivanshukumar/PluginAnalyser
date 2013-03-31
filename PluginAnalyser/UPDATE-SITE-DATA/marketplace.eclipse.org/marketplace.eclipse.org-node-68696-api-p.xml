@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="68696" name="PDE Plus" url="http://marketplace.eclipse.org/content/pde-plus">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='1972' name='General Purpose Tools' url='http://marketplace.eclipse.org/category/categories/general-purpose-tools'/>
+      </categories>
+      <tags>
+        <tag id='162' name='osgi' url='http://marketplace.eclipse.org/category/free-tagging/osgi'/>
+        <tag id='763' name='PDE' url='http://marketplace.eclipse.org/category/free-tagging/pde'/>
+        <tag id='1011' name='Eclipse PDE' url='http://marketplace.eclipse.org/category/free-tagging/eclipse-pde'/>
+        <tag id='2032' name='Patch' url='http://marketplace.eclipse.org/category/free-tagging/patch'/>
+      </tags>
+      
+      <owner>Gunnar Wagenknecht</owner>
+      <favorited>2</favorited>
+      <installstotal>412</installstotal>
+      <installsrecent>27</installsrecent>
+      <shortdescription><![CDATA[<p>Part of my day I'm working on some cool OSGi server stuff. While doing this I came across a few issues with PDE. Mostly they are around launching and self-hosting. PDE Plus is a patch for PDE that addresses a few.</p>
+<p>As with all my Open Source engagements, I just don't stop after reporting issues. I also take the time to analyze them and provide patches. Why? Well, it saves me a lot of time in the end because I don't need to live with workarounds. :)</p>
+<p>Here is a list of patches produced so far for Eclipse PDE 3.7.0 and included:</p>
+<ul><li><a>Bug 326059</a> - [launch] [patch] Add Eclipse Product launch configuration type for true product configuration launches</li>
+<li><a>Bug 315061</a> - [patch] Should read start levels from bundles.info of target platform when launching Eclipse application</li>
+<li><a>Bug 315039</a> - [patch] Eclipse launch configuration should inherit properties from target platform</li>
+<li><a>Bug 314619</a> - [patch] org.eclipse.equinox.app is not started when using Eclipse Application launcher</li>
+</ul><p>Now, thanks to Eclipse it's also possible to easily share these patches with you.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Part of my day I'm working on some cool OSGi server stuff. While doing this I came across a few issues with PDE. Mostly they are around launching and self-hosting. PDE Plus is a patch for PDE that addresses a few.</p>
+<p>As with all my Open Source engagements, I just don't stop after reporting issues. I also take the time to analyze them and provide patches. Why? Well, it saves me a lot of time in the end because I don't need to live with workarounds. :)</p>
+<p>Here is a list of patches produced so far for Eclipse PDE 3.7.0 and included:</p>
+<ul><li><a>Bug 326059</a> - [launch] [patch] Add Eclipse Product launch configuration type for true product configuration launches</li>
+<li><a>Bug 315061</a> - [patch] Should read start levels from bundles.info of target platform when launching Eclipse application</li>
+<li><a>Bug 315039</a> - [patch] Eclipse launch configuration should inherit properties from target platform</li>
+<li><a>Bug 314619</a> - [patch] org.eclipse.equinox.app is not started when using Eclipse Application launcher</li>
+</ul><p>Now, thanks to Eclipse it's also possible to easily share these patches with you.</p>
+]]></body>
+      <created>1308669876</created>
+      <changed>1308751945</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://wagenknecht.org/blog/archives/2010/07/some-pde-patches.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/pde-plus.png?itok=YGbnCzpE]]></screenshot>
+      <version></version>
+      <license>EPL</license>
+      <companyname><![CDATA[Gunnar Wagenknecht]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7.0]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://eclipseguru.org/]]></updateurl>
+<ius>
+<iu>org.eclipseguru.patches.pde</iu>
+</ius>
+    </node>
+    </marketplace>
+    

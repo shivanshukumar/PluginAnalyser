@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1075" name="XWT Designer" url="http://marketplace.eclipse.org/content/xwt-designer">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+            
+      <owner>Yves YANG</owner>
+      <favorited>2</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>XWT Designer is a new generation Visual editor based on declarative UI - XWT.  It is part of e4 project. It is defined for non software programmer.  </p>
+<p>Key features:<br />
+ - WYSIWYG edition<br />
+ - Support of SWT and JFace<br />
+ - Support of XML edition with the code completion<br />
+ - Tabbed Properties View<br />
+ - Tree view wth DnD support, copy/paste and Undo/Redo<br />
+ - Support All layouts<br />
+ - Data Binding edition</p>
+]]></shortdescription>
+      <body><![CDATA[<p>XWT Designer is a new generation Visual editor based on declarative UI - XWT.  It is part of e4 project. It is defined for non software programmer.  </p>
+<p>Key features:<br />
+ - WYSIWYG edition<br />
+ - Support of SWT and JFace<br />
+ - Support of XML edition with the code completion<br />
+ - Tabbed Properties View<br />
+ - Tree view wth DnD support, copy/paste and Undo/Redo<br />
+ - Support All layouts<br />
+ - Data Binding edition</p>
+]]></body>
+      <created>1260378080</created>
+      <changed>1260790337</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://wiki.eclipse.org/E4/XWT]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Soyatec]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5, 3.6]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://www.eclipse.org/e4]]></updateurl>
+    </node>
+    </marketplace>
+    

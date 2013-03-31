@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="47122" name="Turmeric SOA" url="http://marketplace.eclipse.org/content/turmeric-soa">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='21' name='Web Services' url='http://marketplace.eclipse.org/taxonomy/term/21'/>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+      </categories>
+      <tags>
+        <tag id='375' name='Web Services' url='http://marketplace.eclipse.org/category/free-tagging/web-services'/>
+        <tag id='509' name='SOA' url='http://marketplace.eclipse.org/category/free-tagging/soa'/>
+        <tag id='521' name='xml' url='http://marketplace.eclipse.org/category/free-tagging/xml'/>
+        <tag id='704' name='JSON' url='http://marketplace.eclipse.org/category/free-tagging/json'/>
+        <tag id='899' name='REST' url='http://marketplace.eclipse.org/category/free-tagging/rest'/>
+      </tags>
+      
+      <owner>Dave Carver</owner>
+      <favorited>0</favorited>
+      <installstotal>115</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Turmeric is a comprehensive, policy-driven SOA platform that you can use to develop, deploy, secure, run and monitor SOA services and consumers. It is a Java based platform, follows the standards (SOAP, XML, JSON, XACML, etc.), and supports WSDL (SOAP style - Doc Lit wrapped mode and REST style). It supports a variety of protocols and data formats. Eclipse plugins help with the development of services and consumers. Other important features include:</p>
+<ul><li>
+Various Quality of Service (QoS) features such as authentication, authorization, and rate limiting, which you control by defining respective policies.</li>
+<li>Monitoring capabilities.<br />
+A Repository Service that enables service registration and governance.</li>
+<li>The Type Library, which provides the ability to define and manage reusable schema type definitions across services, and hierarchically organizes them.</li>
+<p>The Error Library, another useful capability that lets you define and re-use error definitions across services.<br />
+Local binding, which lets you locally bind services to consumers as a deployment time option, for optimization, without loss of any generality or changing code.
+</p></ul><p>The Turmeric platform is highly extensible and customizable. For example, you can easily plug in additional protocol processors, data formats, handlers and various other capabilities. The platform is also highly optimized for large scale environments. eBay uses this platform internally, and most parts of it are now open source, including replacing functionality dependent on commercial products with an equivalent, first-version, open-source implementation, and changing package names to match the open-source spirit.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Turmeric is a comprehensive, policy-driven SOA platform that you can use to develop, deploy, secure, run and monitor SOA services and consumers. It is a Java based platform, follows the standards (SOAP, XML, JSON, XACML, etc.), and supports WSDL (SOAP style - Doc Lit wrapped mode and REST style). It supports a variety of protocols and data formats. Eclipse plugins help with the development of services and consumers. Other important features include:</p>
+<ul><li>
+Various Quality of Service (QoS) features such as authentication, authorization, and rate limiting, which you control by defining respective policies.</li>
+<li>Monitoring capabilities.<br />
+A Repository Service that enables service registration and governance.</li>
+<li>The Type Library, which provides the ability to define and manage reusable schema type definitions across services, and hierarchically organizes them.</li>
+<p>The Error Library, another useful capability that lets you define and re-use error definitions across services.<br />
+Local binding, which lets you locally bind services to consumers as a deployment time option, for optimization, without loss of any generality or changing code.
+</p></ul><p>The Turmeric platform is highly extensible and customizable. For example, you can easily plug in additional protocol processors, data formats, handlers and various other capabilities. The platform is also highly optimized for large scale environments. eBay uses this platform internally, and most parts of it are now open source, including replacing functionality dependent on commercial products with an equivalent, first-version, open-source implementation, and changing package names to match the open-source spirit.</p>
+]]></body>
+      <created>1303307547</created>
+      <changed>1326304573</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://www.ebayopensource.org/index.php/Turmeric/HomePage]]></homepageurl>
+      <image><![CDATA[https://www.ebayopensource.org/uploads/Turmeric/TurmericLogo.jpg]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/ConsumerFromWSDL.png?itok=y2FfDgTE]]></screenshot>
+      <version>1.1.0</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[eBay]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[https://www.ebayopensource.org/forum/index.php?t=thread&frm_id=2]]></supporturl>
+      <updateurl><![CDATA[https://www.ebayopensource.org/downloads/turmeric/turmeric-1.1.0/]]></updateurl>
+<ius>
+<iu>org.ebayopensource.turmeric.eclipse.core.feature</iu>
+<iu>org.ebayopensource.turmeric.eclipse.core.sdk.feature</iu>
+<iu>org.ebayopensource.turmeric.eclipse.utils.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

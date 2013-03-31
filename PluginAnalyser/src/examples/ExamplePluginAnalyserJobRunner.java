@@ -26,7 +26,7 @@ public class ExamplePluginAnalyserJobRunner {
 //		 SourceCrawler ec=new EclipseMarketplaceCrawler(     158915, 180100,
 //		 "./_UPDATE-SITE-DATA");
 //		 ec.crawl();
-//		ec.restoreFromBaseLocation("./_UPDATE-SITE-DATA");
+//		ec.restoreFromBaseLocation("./UPDATE-SITE-DATA");
 //		Set<UpdateSiteInfo> gotUpdateSites = new HashSet();
 //		gotUpdateSites.addAll(ec.getSites());
 //

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="946" name="F4E" url="http://marketplace.eclipse.org/content/f4e">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>yd</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>F4E is a Eclipse plug-in for the Fractal component model.<br />
+It has been created for beginners in order to facilitate softwares building with Fractal technologies.<br />
+It supports :<br />
+-editors for the Fractal ADL language<br />
+-file generation related to the Fraclet annotations<br />
+-console, Fractal Explorer and Fscript launchers</p>
+]]></shortdescription>
+      <body><![CDATA[<p>F4E is a Eclipse plug-in for the Fractal component model.<br />
+It has been created for beginners in order to facilitate softwares building with Fractal technologies.<br />
+It supports :<br />
+-editors for the Fractal ADL language<br />
+-file generation related to the Fraclet annotations<br />
+-console, Fractal Explorer and Fscript launchers</p>
+]]></body>
+      <created>1244467898</created>
+      <changed>1259779257</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://fractal.ow2.org/f4e/]]></homepageurl>
+      <image><![CDATA[http://fractal.ow2.org/f4e/images/F4E-plugin-mini.png]]></image>
+      <version>1.2.7</version>
+      <license>Free GPL</license>
+      <companyname><![CDATA[INRIA]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[>3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://forge.objectweb.org/tracker/?group_id=22]]></supporturl>
+      <updateurl><![CDATA[http://fractal.ow2.org/f4e/update-site]]></updateurl>
+    </node>
+    </marketplace>
+    

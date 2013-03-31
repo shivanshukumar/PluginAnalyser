@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="369" name="Markdown Text Editor" url="http://marketplace.eclipse.org/content/markdown-text-editor">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+      <tags>
+        <tag id='1005' name='text' url='http://marketplace.eclipse.org/category/free-tagging/text'/>
+        <tag id='1006' name='markdown' url='http://marketplace.eclipse.org/category/free-tagging/markdown'/>
+        <tag id='1007' name='text editor' url='http://marketplace.eclipse.org/category/free-tagging/text-editor'/>
+        <tag id='1008' name='structured text' url='http://marketplace.eclipse.org/category/free-tagging/structured-text'/>
+      </tags>
+      
+      <owner>Daniel Winterstein</owner>
+      <favorited>9</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Plugin adding Markdown text-editing support to Eclipse. Makes editing text files in Eclipse a lot better. Markdown is a simple and intuitive text format syntax that lets you get rich formatting with 'normal' text.</p>
+<p>Features: document outline, folded sections, preview, export-to-html, task tags, word-wrapping, paragraph formatting.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Plugin adding Markdown text-editing support to Eclipse. Makes editing text files in Eclipse a lot better. Markdown is a simple and intuitive text format syntax that lets you get rich formatting with 'normal' text.</p>
+<p>Features: document outline, folded sections, preview, export-to-html, task tags, word-wrapping, paragraph formatting.</p>
+]]></body>
+      <created>1169059136</created>
+      <changed>1278838516</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://winterwell.com/software/markdown-editor.php]]></homepageurl>
+      <image><![CDATA[http://www.winterwell.com/res/images/markdown_screenshot.thumbnail.gif]]></image>
+      <version>0.9.0</version>
+      <license>GPL</license>
+      <companyname><![CDATA[Winterwell Associates Ltd]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2]]></eclipseversion>
+      <supporturl><![CDATA[http://winterwell.com/software/markdown-editor.php]]></supporturl>
+      <updateurl><![CDATA[http://winterstein.me.uk/projects/tt-update-site/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

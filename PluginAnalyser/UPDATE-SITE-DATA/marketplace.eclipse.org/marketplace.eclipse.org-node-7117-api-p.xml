@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="7117" name="Properties Editor" url="http://marketplace.eclipse.org/content/properties-editor-0">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+      <tags>
+        <tag id='108' name='convert' url='http://marketplace.eclipse.org/category/free-tagging/convert'/>
+        <tag id='113' name='unicode' url='http://marketplace.eclipse.org/category/free-tagging/unicode'/>
+        <tag id='146' name='editor' url='http://marketplace.eclipse.org/category/free-tagging/editor'/>
+        <tag id='1120' name='property' url='http://marketplace.eclipse.org/category/free-tagging/property'/>
+        <tag id='1121' name='properties' url='http://marketplace.eclipse.org/category/free-tagging/properties'/>
+      </tags>
+      
+      <owner>Missing Name</owner>
+      <favorited>22</favorited>
+      <installstotal>17170</installstotal>
+      <installsrecent>1276</installsrecent>
+      <shortdescription><![CDATA[<p>This editor can directly edit property files written in Unicode reference characters, and saves the time and effort of converting into Unicode through native2ascii. In addition to the usual functions of an editor, the plugin is integrated with Eclipse. Files can be opened in the IDE and saved in Unicode. It can use by intuitive and simple operation.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This editor can directly edit property files written in Unicode reference characters, and saves the time and effort of converting into Unicode through native2ascii. In addition to the usual functions of an editor, the plugin is integrated with Eclipse. Files can be opened in the IDE and saved in Unicode. It can use by intuitive and simple operation.</p>
+]]></body>
+      <created>1282021091</created>
+      <changed>1282232530</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://propedit.sourceforge.jp/index_en.html]]></homepageurl>
+      <image><![CDATA[http://svn.sourceforge.jp/svnroot/propedit/trunk/PropertiesEditor/icons/pe_32.gif]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/a_0.jpg?itok=YzPam-N9]]></screenshot>
+      <version></version>
+      <license>GPL</license>
+      <companyname><![CDATA[Chomakichi]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[5.3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.jp/projects/propedit/]]></supporturl>
+      <updateurl><![CDATA[http://propedit.sourceforge.jp/eclipse/updates/]]></updateurl>
+<ius>
+<iu>jp.gr.java_conf.ussiy.app.propedit</iu>
+<iu>jp.gr.java_conf.ussiy.app.propedit.hyperlink</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

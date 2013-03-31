@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="169" name="EcSplorer" url="http://marketplace.eclipse.org/content/ecsplorer">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>Ali Mahdoui</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><P><STRONG>EcSplorer</STRONG> (Eclipse Simplified Explorer) is/has :<BR>- an exploring tool for the file system, <BR>- a tool for searching in the file system (grep and find), <BR>- an integrated FTP client (with direct editing option), <BR>- and a tool for executing batch processes<BR>with many many features...<BR>(min. requirements: Eclipse 3.2 and Java 1.5)</P></p>
+<p><p><br />
+<br/><br />
+EcSplorer is now ready for Eclipse Galileo.<br />
+</p></p>
+]]></shortdescription>
+      <body><![CDATA[<p><P><STRONG>EcSplorer</STRONG> (Eclipse Simplified Explorer) is/has :<BR>- an exploring tool for the file system, <BR>- a tool for searching in the file system (grep and find), <BR>- an integrated FTP client (with direct editing option), <BR>- and a tool for executing batch processes<BR>with many many features...<BR>(min. requirements: Eclipse 3.2 and Java 1.5)</P></p>
+<p><p><br />
+<br/><br />
+EcSplorer is now ready for Eclipse Galileo.<br />
+</p></p>
+]]></body>
+      <created>1129725536</created>
+      <changed>1259778532</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.byte-makers.com]]></homepageurl>
+      <image><![CDATA[http://www.byte-makers.com/images/ecsplorer/ecsplorer2.jpg]]></image>
+      <version>1.1.6</version>
+      <license>Free for non-commercial use</license>
+      <companyname><![CDATA[Byte Makers GmbH]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://www.byte-makers.com]]></supporturl>
+      <updateurl><![CDATA[http://www.byte-makers.com/ecsplorer/update]]></updateurl>
+    </node>
+    </marketplace>
+    

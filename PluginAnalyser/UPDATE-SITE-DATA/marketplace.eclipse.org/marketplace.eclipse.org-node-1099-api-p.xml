@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1099" name="FindBugs Eclipse Plugin" url="http://marketplace.eclipse.org/content/findbugs-eclipse-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='131' name='quality' url='http://marketplace.eclipse.org/category/free-tagging/quality'/>
+        <tag id='136' name='bugs' url='http://marketplace.eclipse.org/category/free-tagging/bugs'/>
+        <tag id='137' name='analysis' url='http://marketplace.eclipse.org/category/free-tagging/analysis'/>
+        <tag id='138' name='defects' url='http://marketplace.eclipse.org/category/free-tagging/defects'/>
+      </tags>
+      
+      <owner>Andrey Loskutov</owner>
+      <favorited>295</favorited>
+      <installstotal>108637</installstotal>
+      <installsrecent>7043</installsrecent>
+      <shortdescription><![CDATA[<p>FindBugs is a defect detection tool for Java that uses static analysis to look for more than 200 bug patterns, such as null pointer dereferences, infinite recursive loops, bad uses of the Java libraries and deadlocks. FindBugs can identify hundreds of serious defects in large applications (typically about 1 defect per 1000-2000 lines of non-commenting source statements). FindBugs is open source (LGPL), has been downloaded more than 500,000 times and is used by many major companies and financial institutions. </p>
+<p>FindBugs Eclipse Plugin integrates FindBugs seamlessly with the most popular Java IDE and allows to run FindBugs analysis incrementally on changed files or on demand per project. A quick plugin introduction is available at <a href="http://andrei.gmxhome.de/findbugs/index.html">http://andrei.gmxhome.de/findbugs/index.html</a>, and a short video demo <a href="http://youtu.be/1AJjwsuESno?hd=1">is available on YouTube</a>.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>FindBugs is a defect detection tool for Java that uses static analysis to look for more than 200 bug patterns, such as null pointer dereferences, infinite recursive loops, bad uses of the Java libraries and deadlocks. FindBugs can identify hundreds of serious defects in large applications (typically about 1 defect per 1000-2000 lines of non-commenting source statements). FindBugs is open source (LGPL), has been downloaded more than 500,000 times and is used by many major companies and financial institutions. </p>
+<p>FindBugs Eclipse Plugin integrates FindBugs seamlessly with the most popular Java IDE and allows to run FindBugs analysis incrementally on changed files or on demand per project. A quick plugin introduction is available at <a href="http://andrei.gmxhome.de/findbugs/index.html">http://andrei.gmxhome.de/findbugs/index.html</a>, and a short video demo <a href="http://youtu.be/1AJjwsuESno?hd=1">is available on YouTube</a>.</p>
+]]></body>
+      <created>1261927781</created>
+      <changed>1357586869</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://findbugs.sourceforge.net/index.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/findbugs.png?itok=4wbVvX6V]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/category_start.png?itok=YhVDvyDK]]></screenshot>
+      <version>2.0.2</version>
+      <license>LGPL</license>
+      <companyname><![CDATA[The University of Maryland]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6, 3.7, 3.8, 4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/findbugs/support]]></supporturl>
+      <updateurl><![CDATA[http://findbugs.cs.umd.edu/eclipse]]></updateurl>
+<ius>
+<iu>edu.umd.cs.findbugs.plugin.eclipse</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

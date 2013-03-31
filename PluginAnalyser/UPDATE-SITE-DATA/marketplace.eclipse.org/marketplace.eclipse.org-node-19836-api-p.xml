@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="19836" name="JVM Monitor" url="http://marketplace.eclipse.org/content/jvm-monitor">
+      <type>resource</type>
+      <categories>
+        <category id='13' name='Profiling' url='http://marketplace.eclipse.org/taxonomy/term/13'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='327' name='eclipse' url='http://marketplace.eclipse.org/category/free-tagging/eclipse'/>
+        <tag id='328' name='plugin' url='http://marketplace.eclipse.org/category/free-tagging/plugin'/>
+        <tag id='573' name='tools' url='http://marketplace.eclipse.org/category/free-tagging/tools'/>
+        <tag id='1356' name='monitor' url='http://marketplace.eclipse.org/category/free-tagging/monitor'/>
+      </tags>
+      
+      <owner>Yoshitaka  </owner>
+      <favorited>25</favorited>
+      <installstotal>14174</installstotal>
+      <installsrecent>901</installsrecent>
+      <shortdescription><![CDATA[<p>Java profiler integrated with Eclipse.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Java profiler integrated with Eclipse.</p>
+]]></body>
+      <created>1289699111</created>
+      <changed>1359820798</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.jvmmonitor.org]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/aa.png?itok=WMsRO0yV]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screenshots.png?itok=QyXj050V]]></screenshot>
+      <version>3.8.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[JVM Monitor project]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6.x, 3.7.x, 3.8.x, 4.2.x]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/a/eclipselabs.org/p/jvmmonitor/issues/list]]></supporturl>
+      <updateurl><![CDATA[http://www.jvmmonitor.org/updates/3.8]]></updateurl>
+<ius>
+<iu>org.jvmmonitor</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

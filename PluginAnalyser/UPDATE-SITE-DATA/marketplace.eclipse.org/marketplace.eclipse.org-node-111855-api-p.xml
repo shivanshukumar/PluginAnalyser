@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="111855" name="JDBC Drivers for Eclipse Scout" url="http://marketplace.eclipse.org/content/jdbc-drivers-eclipse-scout">
+      <type>resource</type>
+      <categories>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+        <category id='36' name='Database Persistence' url='http://marketplace.eclipse.org/category/categories/database-persistence'/>
+        <category id='1964' name='Application Development Frameworks' url='http://marketplace.eclipse.org/category/categories/application-development-frameworks'/>
+      </categories>
+      <tags>
+        <tag id='155' name='oracle' url='http://marketplace.eclipse.org/category/free-tagging/oracle'/>
+        <tag id='190' name='database' url='http://marketplace.eclipse.org/category/free-tagging/database'/>
+        <tag id='373' name='JDBC' url='http://marketplace.eclipse.org/category/free-tagging/jdbc'/>
+        <tag id='1296' name='mysql' url='http://marketplace.eclipse.org/category/free-tagging/mysql'/>
+        <tag id='1297' name='postgresql' url='http://marketplace.eclipse.org/category/free-tagging/postgresql'/>
+      </tags>
+      
+      <owner>Ken Lee</owner>
+      <favorited>2</favorited>
+      <installstotal>1200</installstotal>
+      <installsrecent>193</installsrecent>
+      <shortdescription><![CDATA[<p>If you are using Eclipse Scout and you want to connect to a database using the SqlService you need to include the JDBC driver in your application. Out of the box Eclipse Scout comes with the Apache Derby JDBC driver. With this feature you gain support for additional DBMS' such as Oracle, MySQL and PostgreSQL.</p>
+<p>For further information and instructions on how to use these drivers in your Eclipse Scout application refer to <a href="http://www.eclipse.org/scout/">http://www.eclipse.org/scout/</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>If you are using Eclipse Scout and you want to connect to a database using the SqlService you need to include the JDBC driver in your application. Out of the box Eclipse Scout comes with the Apache Derby JDBC driver. With this feature you gain support for additional DBMS' such as Oracle, MySQL and PostgreSQL.</p>
+<p>For further information and instructions on how to use these drivers in your Eclipse Scout application refer to <a href="http://www.eclipse.org/scout/">http://www.eclipse.org/scout/</a></p>
+]]></body>
+      <created>1314718068</created>
+      <changed>1340266024</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[https://tools.bsiag.com/marketplace/jdbc/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/ScoutIconLarge.png?itok=tZmT8fDM]]></image>
+      <version></version>
+      <license>Other</license>
+      <companyname><![CDATA[BSI Business Systems Integration]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.5, 3.6, 3.7, 3.8, 4.2]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[https://tools.bsiag.com/marketplace/jdbc/]]></updateurl>
+<ius>
+<iu>com.bsiag.scout.rt.server.jdbc.oracle11g2.feature</iu>
+<iu>com.bsiag.scout.rt.server.jdbc.mysql5117.feature</iu>
+<iu>com.bsiag.scout.rt.server.jdbc.postgres9.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

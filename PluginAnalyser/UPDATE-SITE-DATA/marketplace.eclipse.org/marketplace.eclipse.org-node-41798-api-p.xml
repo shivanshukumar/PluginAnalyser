@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="41798" name="WebIssues Connector For Mylyn" url="http://marketplace.eclipse.org/content/webissues-connector-mylyn">
+      <type>resource</type>
+      <categories>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='38' name='Mylyn Connectors' url='http://marketplace.eclipse.org/category/categories/mylyn-connectors'/>
+      </categories>
+            
+      <owner>Brett Smith</owner>
+      <favorited>0</favorited>
+      <installstotal>241</installstotal>
+      <installsrecent>12</installsrecent>
+      <shortdescription><![CDATA[<p>WebIssues is an open source, multi-platform system for issue tracking and team collaboration. It is easy to install and use but has many capabilities and is highly customizable.</p>
+<p>The WebIssues Connector For Mylyn provides Eclipse integration for accessing WebIssues task data. It builds on a reusable Java API library for accessing WebIssues servers. </p>
+<p>Tested on Webissues Server 0.9.x to 1.0.1.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>WebIssues is an open source, multi-platform system for issue tracking and team collaboration. It is easy to install and use but has many capabilities and is highly customizable.</p>
+<p>The WebIssues Connector For Mylyn provides Eclipse integration for accessing WebIssues task data. It builds on a reusable Java API library for accessing WebIssues servers. </p>
+<p>Tested on Webissues Server 0.9.x to 1.0.1.</p>
+]]></body>
+      <created>1301523584</created>
+      <changed>1327846167</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/a/eclipselabs.org/p/mylyn-webissues/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/wi.png?itok=X0NAvyWp]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/webissuesquery.png?itok=1yMul6FP]]></screenshot>
+      <version>0.16.3</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Brett Smith]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5+]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://svn.codespot.com/a/eclipselabs.org/mylyn-webissues/trunk/update-site]]></updateurl>
+<ius>
+<iu>net.sf.webissues</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

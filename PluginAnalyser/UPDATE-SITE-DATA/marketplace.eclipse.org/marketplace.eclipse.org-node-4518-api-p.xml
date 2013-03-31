@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="4518" name="Graphviz DOT for Zest (dot4zest)" url="http://marketplace.eclipse.org/content/graphviz-dot-zest-dot4zest">
+      <type>resource</type>
+      <categories>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='8' name='Graphics' url='http://marketplace.eclipse.org/taxonomy/term/8'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+      </categories>
+      <tags>
+        <tag id='1060' name='graphviz' url='http://marketplace.eclipse.org/category/free-tagging/graphviz'/>
+        <tag id='1061' name='dot' url='http://marketplace.eclipse.org/category/free-tagging/dot'/>
+        <tag id='1062' name='zest' url='http://marketplace.eclipse.org/category/free-tagging/zest'/>
+        <tag id='1063' name='dot4zest' url='http://marketplace.eclipse.org/category/free-tagging/dot4zest'/>
+      </tags>
+      
+      <owner>Fabian Steeg</owner>
+      <favorited>5</favorited>
+      <installstotal>1150</installstotal>
+      <installsrecent>44</installsrecent>
+      <shortdescription><![CDATA[<p>Graphviz DOT support for Zest: The Eclipse Visualization Toolkit</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Graphviz DOT support for Zest: The Eclipse Visualization Toolkit</p>
+]]></body>
+      <created>1279992799</created>
+      <changed>1344627353</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://wiki.eclipse.org/Graphviz_DOT_as_a_DSL_for_Zest]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Dot4ZestLogo.png?itok=rPhy6aFa]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Dot4ZestWikiText.png?itok=OCDiO-M4]]></screenshot>
+      <version>2.0.0-SNAPSHOT</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Fabian Steeg]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[Juno (3.8, 4.2)]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eclipse.org/forums/index.php?t=thread&frm_id=81]]></supporturl>
+      <updateurl><![CDATA[https://hudson.eclipse.org/hudson/job/gef-zest-integration/lastSuccessfulBuild/artifact/targetPlatform/]]></updateurl>
+<ius>
+<iu>org.eclipse.zest.sdk</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

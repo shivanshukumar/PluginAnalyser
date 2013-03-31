@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1228" name="MDConnect for DOORS" url="http://marketplace.eclipse.org/content/mdconnect-doors">
+      <type>resource</type>
+      <categories>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+      <tags>
+        <tag id='774' name='rational doors' url='http://marketplace.eclipse.org/category/free-tagging/rational-doors'/>
+        <tag id='775' name='sodius' url='http://marketplace.eclipse.org/category/free-tagging/sodius'/>
+        <tag id='781' name='requirements' url='http://marketplace.eclipse.org/category/free-tagging/requirements'/>
+      </tags>
+      
+      <owner>Philippe Faure</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>MDConnect for DOORS has been designed to facilitate access to DOORS objects in the market-leading Eclipse environment. Users can easily view, filter and search for DOORS items while working with other Eclipse-based applications.<br />
+MDConnect for DOORS is available for FREE from SODIUS’s website and is complemented by commercial extensions allowing DOORS to link with other applications.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>MDConnect for DOORS has been designed to facilitate access to DOORS objects in the market-leading Eclipse environment. Users can easily view, filter and search for DOORS items while working with other Eclipse-based applications.<br />
+MDConnect for DOORS is available for FREE from SODIUS’s website and is complemented by commercial extensions allowing DOORS to link with other applications.</p>
+]]></body>
+      <created>1275488490</created>
+      <changed>1275491534</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.dxleditor.com/mdconnect_for_doors]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/DOORSExplorer.png?itok=Lhfqzjyp]]></screenshot>
+      <version></version>
+      <license>Other</license>
+      <companyname><![CDATA[SODIUS]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://www.dxleditor.com/forum/mdconnect]]></supporturl>
+      <updateurl><![CDATA[http://download.mdworkbench.com]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

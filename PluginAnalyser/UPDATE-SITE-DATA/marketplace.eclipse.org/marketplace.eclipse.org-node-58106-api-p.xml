@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="58106" name="EMF Builder Generator (EBG)" url="http://marketplace.eclipse.org/content/emf-builder-generator-ebg">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='186' name='EMF' url='http://marketplace.eclipse.org/category/free-tagging/emf'/>
+        <tag id='327' name='eclipse' url='http://marketplace.eclipse.org/category/free-tagging/eclipse'/>
+        <tag id='1349' name='Xpand' url='http://marketplace.eclipse.org/category/free-tagging/xpand'/>
+        <tag id='1961' name='Builder Pattern' url='http://marketplace.eclipse.org/category/free-tagging/builder-pattern'/>
+      </tags>
+      
+      <owner>Siamak Haschemi</owner>
+      <favorited>0</favorited>
+      <installstotal>211</installstotal>
+      <installsrecent>11</installsrecent>
+      <shortdescription><![CDATA[<p>The EMF Builder Generator project helps with generating Java builders for EMF metamodels. The generated Java classes follow a fluent API. Builders are very useful to create test data, but can also be used to construct object graphs in production code.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The EMF Builder Generator project helps with generating Java builders for EMF metamodels. The generated Java classes follow a fluent API. Builders are very useful to create test data, but can also be used to construct object graphs in production code.</p>
+]]></body>
+      <created>1307097546</created>
+      <changed>1335295044</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://qyotta.de/redmine/projects/emfbuildergen]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/emfbuildergenerator_ui.png?itok=m2k9xaAK]]></screenshot>
+      <version>0.0.5</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Qyotta UG (haftungsbeschränkt)]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://qyotta.de/files/p2-repositories/EMFBuilderGenerator/]]></updateurl>
+<ius>
+<iu>de.qyotta.emfbuildergen.feature</iu>
+<iu>de.qyotta.emfbuildergen.feature.examples</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

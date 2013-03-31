@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="120" name="Project Set Plugin" url="http://marketplace.eclipse.org/content/project-set-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+      </categories>
+            
+      <owner>dbaumann</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This plugin provides support for project sets in eclipse.<BR><BR><br />
+<strong>Features:</strong><BR><br />
+<ul><br />
+  <li>full-featured project set editor </li><br />
+  <li>full compatibility to the eclipse 'Team Project Set' XML file format (*.psf) </li><br />
+  <li>recursive loading of dependent ProjectSets </li><br />
+  <li>conflict detection with Tasks and ProblemMarkers </li><br />
+  <li>support for defining preferred local directories to which the projects are loaded from the repository </li><br />
+  <li>each user can define values for path variables that can be used for the preferred local directories </li><br />
+  <li>ProjectSet editor exposes Team menu actions, i.e. for compare/replace etc. </li><br />
+  <li>ProjectSet editor can be used with and without dedicated ProjectSet project nature </li><br />
+  <li>leightweight adapter to repository provider via an extension point - no other repository provider dependence </li><br />
+  <li>adapter to CVS repository provider included </li><br />
+  <li>adapter to Subversion repository provider available (not included) </li><br />
+  <li>user documentation as Eclipse help </li><br />
+  <li>create working set from project set content</li><br />
+  <li>tested with eclipse 3.1.x and eclipse 3.2.x </li><br />
+</ul><br />
+<BR></p>
+]]></shortdescription>
+      <body><![CDATA[<p>This plugin provides support for project sets in eclipse.<BR><BR><br />
+<strong>Features:</strong><BR><br />
+<ul><br />
+  <li>full-featured project set editor </li><br />
+  <li>full compatibility to the eclipse 'Team Project Set' XML file format (*.psf) </li><br />
+  <li>recursive loading of dependent ProjectSets </li><br />
+  <li>conflict detection with Tasks and ProblemMarkers </li><br />
+  <li>support for defining preferred local directories to which the projects are loaded from the repository </li><br />
+  <li>each user can define values for path variables that can be used for the preferred local directories </li><br />
+  <li>ProjectSet editor exposes Team menu actions, i.e. for compare/replace etc. </li><br />
+  <li>ProjectSet editor can be used with and without dedicated ProjectSet project nature </li><br />
+  <li>leightweight adapter to repository provider via an extension point - no other repository provider dependence </li><br />
+  <li>adapter to CVS repository provider included </li><br />
+  <li>adapter to Subversion repository provider available (not included) </li><br />
+  <li>user documentation as Eclipse help </li><br />
+  <li>create working set from project set content</li><br />
+  <li>tested with eclipse 3.1.x and eclipse 3.2.x </li><br />
+</ul><br />
+<BR></p>
+]]></body>
+      <created>1092664740</created>
+      <changed>1259857566</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://vpms.de.csc.com/projectset/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>3.0.0</version>
+      <license>Other</license>
+      <companyname><![CDATA[CSC Technologies Deutschland GmbH]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2.x - 3.4.x]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://vpms.de.csc.com/projectset/update]]></updateurl>
+    </node>
+    </marketplace>
+    

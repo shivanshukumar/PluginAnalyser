@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="701" name="jsLex Website Optimizer" url="http://marketplace.eclipse.org/content/jslex-website-optimizer">
+      <type>resource</type>
+      <categories>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+            
+      <owner>bbuffone</owner>
+      <favorited>4</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><p>jsLex gives developers a set of tools that makes it possible to create highly optimized Web applications. Developers can access tools that focus on two areas of Web application performance.</p></p>
+<p><ul><li>Web Site Optimization - Instead of ant files and command lines, jsLex gives developers wizards that they can access via Eclipse and Aptana making tasks such as; JavaScript and CSS concatenation, creation of sprites and compression of JavaScript and CSS as simple as right clicking on a file.</li></p>
+<p><li>CSS Sprite Editor - Easily create sprites through the editor by grouping the images together into a single image.  The CSS will be automatically rewritten to utilize the images.</li></p>
+<p><li>JavaScript Profiling Tools - provides developers with a complete picture of the performance issues with-in their Ajax application. By auto injecting profiling markers with jsLex's ant task or Eclipse wizards, don't need to modify their code to track down bottlenecks, minimizing coding errors. </li><br />
+</ul></p>
+]]></shortdescription>
+      <body><![CDATA[<p><p>jsLex gives developers a set of tools that makes it possible to create highly optimized Web applications. Developers can access tools that focus on two areas of Web application performance.</p></p>
+<p><ul><li>Web Site Optimization - Instead of ant files and command lines, jsLex gives developers wizards that they can access via Eclipse and Aptana making tasks such as; JavaScript and CSS concatenation, creation of sprites and compression of JavaScript and CSS as simple as right clicking on a file.</li></p>
+<p><li>CSS Sprite Editor - Easily create sprites through the editor by grouping the images together into a single image.  The CSS will be automatically rewritten to utilize the images.</li></p>
+<p><li>JavaScript Profiling Tools - provides developers with a complete picture of the performance issues with-in their Ajax application. By auto injecting profiling markers with jsLex's ant task or Eclipse wizards, don't need to modify their code to track down bottlenecks, minimizing coding errors. </li><br />
+</ul></p>
+]]></body>
+      <created>1211912835</created>
+      <changed>1259779012</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.rockstarapps.com/joomla-1.5.8/products/css-a-javascript-optimization.html]]></homepageurl>
+      <image><![CDATA[http://www.rockstarapps.com/images/jsLex/jsLex/aptana-js-concat.jpg]]></image>
+      <version>1.2.11</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Rockstarapps.com]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.2 and up]]></eclipseversion>
+      <supporturl><![CDATA[http://www.rockstarapps.com/joomla-1.5.8/products/css-a-javascript-optimization.html]]></supporturl>
+      <updateurl><![CDATA[http://www.rockstarapps.com/update-beta]]></updateurl>
+    </node>
+    </marketplace>
+    

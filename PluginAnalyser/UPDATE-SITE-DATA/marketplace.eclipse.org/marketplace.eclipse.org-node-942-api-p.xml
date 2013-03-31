@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="942" name="ProGuardDT" url="http://marketplace.eclipse.org/content/proguarddt">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='27' name='J2ME' url='http://marketplace.eclipse.org/taxonomy/term/27'/>
+      </categories>
+      <tags>
+        <tag id='813' name='optimizer' url='http://marketplace.eclipse.org/category/free-tagging/optimizer'/>
+        <tag id='816' name='obfuscator' url='http://marketplace.eclipse.org/category/free-tagging/obfuscator'/>
+      </tags>
+      
+      <owner>Gerald Rosenberg</owner>
+      <favorited>5</favorited>
+      <installstotal>1025</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>
+<u>ProGuardDT:</u><br />
+Provides a forms-based editor for creating and managing ProGuard configurations directly from within Eclipse.
+</p>
+<p><a href="http://proguard.sourceforge.net">ProGuard</a> is a free Java class file shrinker, optimizer, obfuscator, and preverifier.  ProGuardDT supports seamless execution of ProGuard and ReTrace.
+</p>
+<p>
+ProGuardDT is project aware: the ProGuard library dependencies list can be dynamically generated directly from an identification of the participating Eclipse projects. Closely modeled after the Swing-based ProGuardGUI configuration management tool.
+</p>
+<p>
+Uses, and includes, ProGuard 4.5 (final)
+</p>
+]]></shortdescription>
+      <body><![CDATA[<p>
+<u>ProGuardDT:</u><br />
+Provides a forms-based editor for creating and managing ProGuard configurations directly from within Eclipse.
+</p>
+<p><a href="http://proguard.sourceforge.net">ProGuard</a> is a free Java class file shrinker, optimizer, obfuscator, and preverifier.  ProGuardDT supports seamless execution of ProGuard and ReTrace.
+</p>
+<p>
+ProGuardDT is project aware: the ProGuard library dependencies list can be dynamically generated directly from an identification of the participating Eclipse projects. Closely modeled after the Swing-based ProGuardGUI configuration management tool.
+</p>
+<p>
+Uses, and includes, ProGuard 4.5 (final)
+</p>
+]]></body>
+      <created>1243877990</created>
+      <changed>1276698383</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.certiv.net/projects/proguarddt.html]]></homepageurl>
+      <image><![CDATA[http://www.certiv.net/images/pen.gif]]></image>
+      <version>0.8.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Certiv Analytics]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.certiv.net/support.html]]></supporturl>
+      <updateurl><![CDATA[http://www.certiv.net/updates]]></updateurl>
+<ius>
+<iu>net.certiv.proguarddt.feature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

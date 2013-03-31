@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="419" name="Relations" url="http://marketplace.eclipse.org/content/relations">
+      <type>resource</type>
+      <categories>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+      </categories>
+            
+      <owner>benno.luthiger</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The <em>Relations</em> application is a tool for knowledge management. It is a combination of a personal Wiki and an electronic slip box.</p>
+<p>You can easily create items of three types (<em>terms</em>, <em>texts</em> and <em>persons</em>) and set them in relation to other items already entered, thus creating a rich context for your items.</p>
+<p>Relations is a <em>Rich Client Platform (RCP)</em> application based on the Eclipse platform.</p>
+<p><strong>Features:</strong></p>
+<ul class="disc"><li>Content is stored using three types of items: term items, text items and person items.</li>
+<li>The Relations application stores the content in a Derby database included in the out-of-the-box installation. A MySQL connector is included for that a MySQL database can be used as data store. The application can easily be extended to connect to other relational databases for storing the application's content.</li>
+<li>Full text search implemented using Lucene.</li>
+<li>Easy text formatting: text can be written <strong>bold</strong>, <em>italic </em>or underlined, lists can be unordered (bullet list) or ordered (numerical or with uppercase and lowercase letters respectively).</li>
+<li>Easy bookmarking of items possible.</li>
+<li>Content can be printed out to a text file or an <a href="http://www.openoffice.org/" target="_self">OpenOffice.org</a> document.</li>
+<li>Content stored in text items can be exported to a BibTEX file.</li>
+<li>The content can be exported to an XML file and imported to another Relations database.</li>
+<li>The content stored in the internal Derby database can be backuped. The<br />
+backup copy of the content can be used to restore the content state or<br />
+to import the content into another database catalog (of the same<br />
+Relations application or a Relations application installed on a<br />
+different computer).</li>
+<li>The application contains a complete set of key bindings, therefore, the application can be fully controlled using the keyboard.</li>
+<li>Content stored in text items can be formatted and exported as bibliographical lists. The bibliographical formatting is extensible and additional bibliographical formattings can easily be implemented.</li>
+<li>The Relations user interface is available in english and german. </li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>The <em>Relations</em> application is a tool for knowledge management. It is a combination of a personal Wiki and an electronic slip box.</p>
+<p>You can easily create items of three types (<em>terms</em>, <em>texts</em> and <em>persons</em>) and set them in relation to other items already entered, thus creating a rich context for your items.</p>
+<p>Relations is a <em>Rich Client Platform (RCP)</em> application based on the Eclipse platform.</p>
+<p><strong>Features:</strong></p>
+<ul class="disc"><li>Content is stored using three types of items: term items, text items and person items.</li>
+<li>The Relations application stores the content in a Derby database included in the out-of-the-box installation. A MySQL connector is included for that a MySQL database can be used as data store. The application can easily be extended to connect to other relational databases for storing the application's content.</li>
+<li>Full text search implemented using Lucene.</li>
+<li>Easy text formatting: text can be written <strong>bold</strong>, <em>italic </em>or underlined, lists can be unordered (bullet list) or ordered (numerical or with uppercase and lowercase letters respectively).</li>
+<li>Easy bookmarking of items possible.</li>
+<li>Content can be printed out to a text file or an <a href="http://www.openoffice.org/" target="_self">OpenOffice.org</a> document.</li>
+<li>Content stored in text items can be exported to a BibTEX file.</li>
+<li>The content can be exported to an XML file and imported to another Relations database.</li>
+<li>The content stored in the internal Derby database can be backuped. The<br />
+backup copy of the content can be used to restore the content state or<br />
+to import the content into another database catalog (of the same<br />
+Relations application or a Relations application installed on a<br />
+different computer).</li>
+<li>The application contains a complete set of key bindings, therefore, the application can be fully controlled using the keyboard.</li>
+<li>Content stored in text items can be formatted and exported as bibliographical lists. The bibliographical formatting is extensible and additional bibliographical formattings can easily be implemented.</li>
+<li>The Relations user interface is available in english and german. </li>
+</ul>]]></body>
+      <created>1173808783</created>
+      <changed>1260549080</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://sourceforge.net/projects/relations-rcp/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/RelationsLogo.gif?itok=OCxvjezF]]></image>
+      <version>1.2</version>
+      <license>GPL</license>
+      <companyname><![CDATA[RelationWare]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://lists.sourceforge.net/mailman/listinfo/relations-rcp-users]]></supporturl>
+      <updateurl><![CDATA[http://relations-rcp.sourceforge.net/updates/]]></updateurl>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1413" name="REST Client" url="http://marketplace.eclipse.org/content/rest-client">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='21' name='Web Services' url='http://marketplace.eclipse.org/taxonomy/term/21'/>
+      </categories>
+      <tags>
+        <tag id='82' name='free' url='http://marketplace.eclipse.org/category/free-tagging/free'/>
+        <tag id='896' name='REST client' url='http://marketplace.eclipse.org/category/free-tagging/rest-client'/>
+        <tag id='897' name='HTTP client' url='http://marketplace.eclipse.org/category/free-tagging/http-client'/>
+        <tag id='898' name='REST UI' url='http://marketplace.eclipse.org/category/free-tagging/rest-ui'/>
+        <tag id='899' name='REST' url='http://marketplace.eclipse.org/category/free-tagging/rest'/>
+      </tags>
+      
+      <owner>Yadu</owner>
+      <favorited>11</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Introduction<br />
+------------------<br />
+Feature rich rest client for developers to play with RESTful web services. It can be used to test any URL for following HTTP methods </p>
+<p>    * GET<br />
+    * POST<br />
+    * PUT<br />
+    * DELETE<br />
+    * HEAD<br />
+    * OPTIONS<br />
+    * TRACE </p>
+<p>Main Features<br />
+--------------------<br />
+   1. Simultaneous views of request, response and browser.<br />
+   2. Post raw data or file, text content or binary.<br />
+   3. Post params in either body or as part of URL (twitter style).<br />
+   4. Post multipart form data with same ease as of normal post.<br />
+   5. Handle response equally well even if it is binary e.g. image, pdf etc. No gibberish characters anymore.<br />
+   6. Play with headers and params.<br />
+   7. Indented XML/JSON views for better readability. </p>
+<p>Min. Requirement<br />
+-----------------------<br />
+    * Java 1.6<br />
+    * Eclipse 3.4 (for plugin)<br />
+    * HTTP 1.1 compatibility </p>
+<p>Run<br />
+-------<br />
+After installing eclipse plugin it can be found @ Window -> Show View -> Other -> REST Client -> RestClient Tool</p>
+<p>Note:- It warns about unsigned jar while running for the first time. This is because standard SWT distribution jar is bundled with OS specific libraries to interact with native look and feel widgets of OS i.e. it has few DLLs for windows. For more info visit <a href="http://www.eclipse.org/swt">http://www.eclipse.org/swt</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Introduction<br />
+------------------<br />
+Feature rich rest client for developers to play with RESTful web services. It can be used to test any URL for following HTTP methods </p>
+<p>    * GET<br />
+    * POST<br />
+    * PUT<br />
+    * DELETE<br />
+    * HEAD<br />
+    * OPTIONS<br />
+    * TRACE </p>
+<p>Main Features<br />
+--------------------<br />
+   1. Simultaneous views of request, response and browser.<br />
+   2. Post raw data or file, text content or binary.<br />
+   3. Post params in either body or as part of URL (twitter style).<br />
+   4. Post multipart form data with same ease as of normal post.<br />
+   5. Handle response equally well even if it is binary e.g. image, pdf etc. No gibberish characters anymore.<br />
+   6. Play with headers and params.<br />
+   7. Indented XML/JSON views for better readability. </p>
+<p>Min. Requirement<br />
+-----------------------<br />
+    * Java 1.6<br />
+    * Eclipse 3.4 (for plugin)<br />
+    * HTTP 1.1 compatibility </p>
+<p>Run<br />
+-------<br />
+After installing eclipse plugin it can be found @ Window -> Show View -> Other -> REST Client -> RestClient Tool</p>
+<p>Note:- It warns about unsigned jar while running for the first time. This is because standard SWT distribution jar is bundled with OS specific libraries to interact with native look and feel widgets of OS i.e. it has few DLLs for windows. For more info visit <a href="http://www.eclipse.org/swt">http://www.eclipse.org/swt</a></p>
+]]></body>
+      <created>1277305151</created>
+      <changed>1279912026</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/a/eclipselabs.org/p/restclient-tool/]]></homepageurl>
+      <image><![CDATA[http://img97.imageshack.us/img97/1817/logoia.gif]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screen_shot1.jpg?itok=i0UChe8x]]></screenshot>
+      <version>1.0.2</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Yadu]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[https://svn.codespot.com/a/eclipselabs.org/restclient-tool/trunk/eclipse/update/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

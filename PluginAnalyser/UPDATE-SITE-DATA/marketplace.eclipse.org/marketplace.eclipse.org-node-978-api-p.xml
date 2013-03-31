@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="978" name="Lack of Progress Bar plugin for Eclipse" url="http://marketplace.eclipse.org/content/lack-progress-bar-plugin-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='13' name='Profiling' url='http://marketplace.eclipse.org/taxonomy/term/13'/>
+      </categories>
+            
+      <owner>alex6152</owner>
+      <favorited>2</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Lack of Progress Bar (Lopb) is an Eclipse plugin that tracks how long developers wait for background jobs to complete. By benchmarking the performance of background jobs, Lopb provides developers with metrics on how much of their day was lost due to overhead introduced by the development tools and infrastructure that they depend on or access through their IDE.</p>
+<p>Lack of Progress Bar (Lopb) can be used for a variety of different purposes, but the primary use-case that we are targeting is to help development teams justify a request for new or improved development tools and infrastructure within their enterprises (i.e. ROI based on time savings). Such a justification based on tangible metrics is sometimes difficult to obtain. Lopb aims to solve that problem.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Lack of Progress Bar (Lopb) is an Eclipse plugin that tracks how long developers wait for background jobs to complete. By benchmarking the performance of background jobs, Lopb provides developers with metrics on how much of their day was lost due to overhead introduced by the development tools and infrastructure that they depend on or access through their IDE.</p>
+<p>Lack of Progress Bar (Lopb) can be used for a variety of different purposes, but the primary use-case that we are targeting is to help development teams justify a request for new or improved development tools and infrastructure within their enterprises (i.e. ROI based on time savings). Such a justification based on tangible metrics is sometimes difficult to obtain. Lopb aims to solve that problem.</p>
+]]></body>
+      <created>1249478346</created>
+      <changed>1259779286</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://lopb.org]]></homepageurl>
+      <image><![CDATA[http://lopb.sourceforge.net/logo110x80.png]]></image>
+      <version>0.4.1</version>
+      <license>Free EPL</license>
+      <companyname><![CDATA[Alex De Marco, Aaron Silinskas, Abhishek Nath]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.2]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/lopb/support]]></supporturl>
+      <updateurl><![CDATA[http://lopb.sourceforge.net/update]]></updateurl>
+    </node>
+    </marketplace>
+    

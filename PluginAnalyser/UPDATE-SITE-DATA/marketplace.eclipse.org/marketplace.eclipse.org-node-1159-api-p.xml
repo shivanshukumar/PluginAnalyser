@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1159" name="Source²" url="http://marketplace.eclipse.org/content/source%C2%B2">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+      <tags>
+        <tag id='140' name='cc' url='http://marketplace.eclipse.org/category/free-tagging/cc'/>
+        <tag id='141' name='clear' url='http://marketplace.eclipse.org/category/free-tagging/clear'/>
+        <tag id='142' name='case' url='http://marketplace.eclipse.org/category/free-tagging/case'/>
+        <tag id='143' name='annotate' url='http://marketplace.eclipse.org/category/free-tagging/annotate'/>
+        <tag id='145' name='oixx' url='http://marketplace.eclipse.org/category/free-tagging/oixx'/>
+      </tags>
+      
+      <owner>David Virdefors</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Provides a intuitive visual presentation based on an annotate report provided by the third party program cleartool used in IBM Rational Clear Case environments.</p>
+<p>Source² integrates with any text editor.</p>
+<p>Learn more at:<br /><a href="http://www.oixx.se/s2.php">www.oixx.se/s2.php</a></p>
+<p>Source Code at:<br /><a href="http://code.google.com/a/eclipselabs.org/p/sourcesource/">http://code.google.com/a/eclipselabs.org/p/sourcesource/</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Provides a intuitive visual presentation based on an annotate report provided by the third party program cleartool used in IBM Rational Clear Case environments.</p>
+<p>Source² integrates with any text editor.</p>
+<p>Learn more at:<br /><a href="http://www.oixx.se/s2.php">www.oixx.se/s2.php</a></p>
+<p>Source Code at:<br /><a href="http://code.google.com/a/eclipselabs.org/p/sourcesource/">http://code.google.com/a/eclipselabs.org/p/sourcesource/</a></p>
+]]></body>
+      <created>1267652113</created>
+      <changed>1287832928</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.oixx.se/s2.php]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/s2_logo_text3.png?itok=tHpM5fwk]]></image>
+      <version>1.6.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[David Virdefors - Purple Scout]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.3 or greater]]></eclipseversion>
+      <supporturl><![CDATA[http://oixx.se/contact.php]]></supporturl>
+      <updateurl><![CDATA[http://www.oixx.se/s2/]]></updateurl>
+    </node>
+    </marketplace>
+    

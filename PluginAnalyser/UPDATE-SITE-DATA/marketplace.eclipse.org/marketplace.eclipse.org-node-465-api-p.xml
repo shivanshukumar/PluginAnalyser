@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="465" name="Pluginbuilder" url="http://marketplace.eclipse.org/content/pluginbuilder">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+      </categories>
+            
+      <owner>mbarchfe</owner>
+      <favorited>2</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Pluginbuilder supports the build automation of Eclipse plug-ins.</p>
+<p>The recommended way to automate the building and testing of Eclipse plug-ins is the PDE (Plug-in Development Environment) build. The goal of this project is to assist the plug-in developer in the configuration and running of PDE builds. It features PDE necessities like map files but goes beyond that and wants to provide further build automation Best Practices like test automation, code coverage or code analysis.</p>
+<p>Pluginbuilder consists of two parts:</p>
+<p>    * An Eclipse plug-in allows to configure the build in the project's workspace and run the build locally<br />
+    * Then the configuration can be uploaded to the server platform where the build can be scheduled</p>
+<p>The plug-in provides a new project nature which comes with skeleton build files and an editor which allows to create and generate a complete PDE build configuration. </p>
+]]></shortdescription>
+      <body><![CDATA[<p>Pluginbuilder supports the build automation of Eclipse plug-ins.</p>
+<p>The recommended way to automate the building and testing of Eclipse plug-ins is the PDE (Plug-in Development Environment) build. The goal of this project is to assist the plug-in developer in the configuration and running of PDE builds. It features PDE necessities like map files but goes beyond that and wants to provide further build automation Best Practices like test automation, code coverage or code analysis.</p>
+<p>Pluginbuilder consists of two parts:</p>
+<p>    * An Eclipse plug-in allows to configure the build in the project's workspace and run the build locally<br />
+    * Then the configuration can be uploaded to the server platform where the build can be scheduled</p>
+<p>The plug-in provides a new project nature which comes with skeleton build files and an editor which allows to create and generate a complete PDE build configuration. </p>
+]]></body>
+      <created>1180359082</created>
+      <changed>1259778759</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.pluginbuilder.org]]></homepageurl>
+      <image><![CDATA[http://www.pluginbuilder.org/fileadmin/pb110x80.png]]></image>
+      <version>0.7.0</version>
+      <license>Free EPL</license>
+      <companyname><![CDATA[]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.3. - 3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://]]></supporturl>
+      <updateurl><![CDATA[http://self.pluginbuilder.org/releases/p2-updateSite/]]></updateurl>
+    </node>
+    </marketplace>
+    

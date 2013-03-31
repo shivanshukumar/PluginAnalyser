@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="132356" name="bzr-eclipse" url="http://marketplace.eclipse.org/content/bzr-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='1968' name='Collaboration' url='http://marketplace.eclipse.org/category/categories/collaboration'/>
+      </categories>
+      <tags>
+        <tag id='2265' name='bazaar' url='http://marketplace.eclipse.org/category/free-tagging/bazaar'/>
+        <tag id='2266' name='bzr' url='http://marketplace.eclipse.org/category/free-tagging/bzr'/>
+        <tag id='2267' name='bzr-eclipse' url='http://marketplace.eclipse.org/category/free-tagging/bzr-eclipse'/>
+      </tags>
+      
+      <owner>xaav</owner>
+      <favorited>1</favorited>
+      <installstotal>739</installstotal>
+      <installsrecent>3</installsrecent>
+      <shortdescription><![CDATA[<p>Support for Bazaar as a VCS in Eclipse</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Support for Bazaar as a VCS in Eclipse</p>
+]]></body>
+      <created>1318101473</created>
+      <changed>1318338108</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://launchpad.net/bzr-eclipse]]></homepageurl>
+      <image><![CDATA[https://launchpadlibrarian.net/8149441/bzr-eclipse_launchpad.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Team-menu.png?itok=WYfj0IWX]]></screenshot>
+      <version></version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Canonical]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[Helios]]></eclipseversion>
+      <supporturl><![CDATA[https://answers.launchpad.net/bzr-eclipse]]></supporturl>
+      <updateurl><![CDATA[http://verterok.com.ar/bzr-eclipse/update-site/]]></updateurl>
+<ius>
+<iu>org.vcs.bazaar.eclipse.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

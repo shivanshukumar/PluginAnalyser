@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="820" name="CMake Editor" url="http://marketplace.eclipse.org/content/cmake-editor">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+            
+      <owner>Mike Jackson</owner>
+      <favorited>9</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>CMake Editor used to add color coding and syntax completion for CMake files.</p>
+<p>The plug-in provides:</p>
+<p>* Syntax highlighting for CMake defined variables, User defined Variables, Properties and Reserved Words<br />
+* Preference Panel to set custom syntax highlighting colors<br />
+* Documentation updated to CMake version 2.8.2<br />
+* Support for keystroke code templates to insert often used cmake code<br />
+* Preference Panel to define custom keystroke code templates<br />
+* Keystroke short cuts to comment/uncomment blocks of code<br />
+* Basic hover support to show brief description of command or variable being hovered over.<br />
+* Ability to open any CMakeLists.txt file or .cmake file on the file system, just not in the workspace.<br />
+* Added preference to use either UPPERCASE or lowercase for CMake commands to better integrate with your current CMake files<br />
+* Searchable CMake Help system that allows the CMake user to search any of the supported CMake commands, properties or  variables </p>
+]]></shortdescription>
+      <body><![CDATA[<p>CMake Editor used to add color coding and syntax completion for CMake files.</p>
+<p>The plug-in provides:</p>
+<p>* Syntax highlighting for CMake defined variables, User defined Variables, Properties and Reserved Words<br />
+* Preference Panel to set custom syntax highlighting colors<br />
+* Documentation updated to CMake version 2.8.2<br />
+* Support for keystroke code templates to insert often used cmake code<br />
+* Preference Panel to define custom keystroke code templates<br />
+* Keystroke short cuts to comment/uncomment blocks of code<br />
+* Basic hover support to show brief description of command or variable being hovered over.<br />
+* Ability to open any CMakeLists.txt file or .cmake file on the file system, just not in the workspace.<br />
+* Added preference to use either UPPERCASE or lowercase for CMake commands to better integrate with your current CMake files<br />
+* Searchable CMake Help system that allows the CMake user to search any of the supported CMake commands, properties or  variables </p>
+]]></body>
+      <created>1227629509</created>
+      <changed>1319056656</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://cmakeed.sourceforge.net]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/CommandCompletion.png?itok=FqGM9ljm]]></screenshot>
+      <version>1.1.6</version>
+      <license>Other Open Source</license>
+      <companyname><![CDATA[BlueQuartz Software]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4 to 3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/tracker/?group_id=193949]]></supporturl>
+      <updateurl><![CDATA[http://cmakeed.sourceforge.net/eclipse/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

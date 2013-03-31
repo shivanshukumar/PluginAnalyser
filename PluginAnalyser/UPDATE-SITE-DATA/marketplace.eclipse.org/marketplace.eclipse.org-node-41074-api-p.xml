@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="41074" name="Javadoc As UML View" url="http://marketplace.eclipse.org/content/javadoc-uml-view">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+      </categories>
+      <tags>
+        <tag id='61' name='UML' url='http://marketplace.eclipse.org/category/free-tagging/uml'/>
+        <tag id='137' name='analysis' url='http://marketplace.eclipse.org/category/free-tagging/analysis'/>
+        <tag id='240' name='Class Diagram' url='http://marketplace.eclipse.org/category/free-tagging/class-diagram'/>
+        <tag id='243' name='source code analysis' url='http://marketplace.eclipse.org/category/free-tagging/source-code-analysis'/>
+        <tag id='262' name='diagram' url='http://marketplace.eclipse.org/category/free-tagging/diagram'/>
+      </tags>
+      
+      <owner>omnaest</owner>
+      <favorited>4</favorited>
+      <installstotal>3238</installstotal>
+      <installsrecent>70</installsrecent>
+      <shortdescription><![CDATA[<p>The Javadoc As UML plugin provides a new Eclipse view, which analyzes the active editor source code towards existing class references within Javadoc comments or references within the body of a class.<br />
+All of these references are investigated further to generate an UML diagram in real time. </p>
+<p>This diagram is useful for the structural analysis of a given code piece and for documentation purposes. </p>
+<p>The big advance of the plugin is, that the source of the UML model are the Javadoc comments. This leads to a reduced discrepance between the Javadoc and the UML diagram documentation, and it is very direct and very  fast.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The Javadoc As UML plugin provides a new Eclipse view, which analyzes the active editor source code towards existing class references within Javadoc comments or references within the body of a class.<br />
+All of these references are investigated further to generate an UML diagram in real time. </p>
+<p>This diagram is useful for the structural analysis of a given code piece and for documentation purposes. </p>
+<p>The big advance of the plugin is, that the source of the UML model are the Javadoc comments. This leads to a reduced discrepance between the Javadoc and the UML diagram documentation, and it is very direct and very  fast.</p>
+]]></body>
+      <created>1301317943</created>
+      <changed>1304703235</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/a/eclipselabs.org/p/javadocasumlview/]]></homepageurl>
+      <image><![CDATA[http://svn.codespot.com/a/eclipselabs.org/javadocasumlview/wiki/images/icon.png]]></image>
+      <version>0.2.2</version>
+      <license>EPL</license>
+      <companyname><![CDATA[-]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/a/eclipselabs.org/p/javadocasumlview/issues/list]]></supporturl>
+      <updateurl><![CDATA[http://svn.codespot.com/a/eclipselabs.org/javadocasumlview/update/]]></updateurl>
+<ius>
+<iu>JavaDocAsUmlViewerFeature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

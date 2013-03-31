@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1012" name="Glance" url="http://marketplace.eclipse.org/content/glance">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+      </categories>
+      <tags>
+        <tag id='515' name='highlight' url='http://marketplace.eclipse.org/category/free-tagging/highlight'/>
+        <tag id='2436' name='incremental search' url='http://marketplace.eclipse.org/category/free-tagging/incremental-search'/>
+      </tags>
+      
+      <owner>Yuri Strot</owner>
+      <favorited>30</favorited>
+      <installstotal>3398</installstotal>
+      <installsrecent>193</installsrecent>
+      <shortdescription><![CDATA[<p>Glance is about incremental text search with highlighting. That's what you can use in every modern browser and so miss in Eclipse. Glance is simple and powerful. And it works almost with any rich component which you can see inside your Eclipse.</p>
+<p>And even more:</p>
+<p>* it's fast and never blocks your text box<br />
+* it works in editors, views and dialogs; rich texts, tables and trees<br />
+* automatically update matches if content will be changed<br />
+* customizable search (from case sensitivity to regular expressions)<br />
+* can index trees to find hidden matches<br />
+* supports GEF/GMF!</p>
+<p>Just few shortcuts you need to remember:<br />
+* open: CTRL+CMD+F on Mac and CTRL+ALT+F on other platforms<br />
+* next match: ENTER; previous match: SHIFT+ENTER<br />
+* close: ESC</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Glance is about incremental text search with highlighting. That's what you can use in every modern browser and so miss in Eclipse. Glance is simple and powerful. And it works almost with any rich component which you can see inside your Eclipse.</p>
+<p>And even more:</p>
+<p>* it's fast and never blocks your text box<br />
+* it works in editors, views and dialogs; rich texts, tables and trees<br />
+* automatically update matches if content will be changed<br />
+* customizable search (from case sensitivity to regular expressions)<br />
+* can index trees to find hidden matches<br />
+* supports GEF/GMF!</p>
+<p>Just few shortcuts you need to remember:<br />
+* open: CTRL+CMD+F on Mac and CTRL+ALT+F on other platforms<br />
+* next match: ENTER; previous match: SHIFT+ENTER<br />
+* close: ESC</p>
+]]></body>
+      <created>1253556689</created>
+      <changed>1346929713</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://ystrot.github.com/glance/]]></homepageurl>
+      <image><![CDATA[http://lh5.ggpht.com/_TE8b5scLfRY/Sre9C2TansI/AAAAAAAAAGI/lHmeMizPQCQ/s800/title.jpg]]></image>
+      <version>1.1.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Yuri Strot]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4+]]></eclipseversion>
+      <supporturl><![CDATA[https://github.com/ystrot/glance/issues]]></supporturl>
+      <updateurl><![CDATA[http://eclipse-glance.googlecode.com/svn/site/]]></updateurl>
+<ius>
+<iu>com.xored.glance</iu>
+<iu>com.xored.glance.cvs</iu>
+<iu>com.xored.glance.gef</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

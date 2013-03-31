@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="893" name="Visual Swing for Eclipse" url="http://marketplace.eclipse.org/content/visual-swing-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+      </categories>
+      <tags>
+        <tag id='271' name='It will work' url='http://marketplace.eclipse.org/category/free-tagging/it-will-work'/>
+        <tag id='836' name='GUI' url='http://marketplace.eclipse.org/category/free-tagging/gui'/>
+        <tag id='2654' name='ưefw' url='http://marketplace.eclipse.org/category/free-tagging/%C6%B0efw'/>
+        <tag id='116' name='' url='http://marketplace.eclipse.org/taxonomy/term/116'/>
+      </tags>
+      
+      <owner>chenwmw</owner>
+      <favorited>18</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Visual Swing Designer for Eclipse is a GUI designer tool, which consists of a set of Eclipse Plug-ins. It aims to provide a swing visual designer for Eclipse for Java desktop developers.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Visual Swing Designer for Eclipse is a GUI designer tool, which consists of a set of Eclipse Plug-ins. It aims to provide a swing visual designer for Eclipse for Java desktop developers.</p>
+]]></body>
+      <created>1237211499</created>
+      <changed>1347556237</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://visualswing4eclipse.googlecode.com/]]></homepageurl>
+      <image><![CDATA[http://visualswing4eclipse.googlecode.com/svn/trunk/org.dyno.visual.swing.feature/logo.png]]></image>
+      <version>0.9.11</version>
+      <license>Free EPL</license>
+      <companyname><![CDATA[]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.3.x, 3.4.x]]></eclipseversion>
+      <supporturl><![CDATA[http://groups.google.com/group/visualswing4eclipse]]></supporturl>
+      <updateurl><![CDATA[http://visualswing4eclipse.googlecode.com/svn/trunk/org.dyno.visual.swing.site/]]></updateurl>
+    </node>
+    </marketplace>
+    

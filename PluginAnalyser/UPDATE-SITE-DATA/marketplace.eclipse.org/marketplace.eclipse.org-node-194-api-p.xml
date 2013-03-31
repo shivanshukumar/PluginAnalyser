@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="194" name="MoreUnit" url="http://marketplace.eclipse.org/content/moreunit">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+      </categories>
+      <tags>
+        <tag id='432' name='test' url='http://marketplace.eclipse.org/category/free-tagging/test'/>
+        <tag id='469' name='Favorite' url='http://marketplace.eclipse.org/category/free-tagging/favorite'/>
+        <tag id='752' name='junit' url='http://marketplace.eclipse.org/category/free-tagging/junit'/>
+        <tag id='1077' name='testng' url='http://marketplace.eclipse.org/category/free-tagging/testng'/>
+        <tag id='2674' name='mock' url='http://marketplace.eclipse.org/category/free-tagging/mock'/>
+      </tags>
+      
+      <owner>Vera Henneberger</owner>
+      <favorited>70</favorited>
+      <installstotal>9848</installstotal>
+      <installsrecent>863</installsrecent>
+      <shortdescription><![CDATA[MoreUnit is an Eclipse plugin that should assist you in writing more unit tests. It supports all programming languages (switching between tests and classes under tests...) and has specific support for Java (creating test stubs, mock support, decoration, refactoring support...).]]></shortdescription>
+      <body><![CDATA[MoreUnit is an Eclipse plugin that should assist you in writing more unit tests. It supports all programming languages (switching between tests and classes under tests...) and has specific support for Java (creating test stubs, mock support, decoration, refactoring support...).]]></body>
+      <created>1146539064</created>
+      <changed>1353869454</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://moreunit.sourceforge.net]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/moreunit-icon-110x80.png?itok=5FHau1BX]]></image>
+      <version>3.0.0.01</version>
+      <license>EPL</license>
+      <companyname><![CDATA[-]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[> 3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://moreunit.sourceforge.net]]></supporturl>
+      <updateurl><![CDATA[ http://moreunit.sourceforge.net/update-site/]]></updateurl>
+<ius>
+<iu>org.moreunit</iu>
+<iu>org.moreunit.mock</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="533" name="JNI Applications debugging" url="http://marketplace.eclipse.org/content/jni-applications-debugging">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>mariot.chauvin</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>With this plug-in, you can debug your JNI applications more easilly. It adds adds an entry in the Debug dialog, which allow you to launch a JNI debug session. After creating a new configuration with the correct settings, if you launch it, the JVM will be launched and gdb attached to its pid and the two targets will be displayed.</p>
+<p>Then you can follow the call of native functions into native code. For instance, regarding this Java line :</p>
+<p>new JNITest().native_doubleInt(42);</p>
+<p>If you choose to step into, then you will go into native code :</p>
+<p>JNIEXPORT jint JNICALL Java_JNITest_native_1doubleInt (JNIEnv *pEnv, jobject  obj, jint  value) {</p>
+<p>If you choose to step over, or step return, you will simply go on the next Java code line.</p>
+<p>The same behavior is available to follow java call from native code. For instance regarding this C line :</p>
+<p>(*pEnv)->CallVoidMethod(pEnv<br />
+,obj,mid);</p>
+<p>If you choose to step into, then you will go into the java method. Otherwise if you choose to step over, or step return, you will simply go on the next native code line.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>With this plug-in, you can debug your JNI applications more easilly. It adds adds an entry in the Debug dialog, which allow you to launch a JNI debug session. After creating a new configuration with the correct settings, if you launch it, the JVM will be launched and gdb attached to its pid and the two targets will be displayed.</p>
+<p>Then you can follow the call of native functions into native code. For instance, regarding this Java line :</p>
+<p>new JNITest().native_doubleInt(42);</p>
+<p>If you choose to step into, then you will go into native code :</p>
+<p>JNIEXPORT jint JNICALL Java_JNITest_native_1doubleInt (JNIEnv *pEnv, jobject  obj, jint  value) {</p>
+<p>If you choose to step over, or step return, you will simply go on the next Java code line.</p>
+<p>The same behavior is available to follow java call from native code. For instance regarding this C line :</p>
+<p>(*pEnv)->CallVoidMethod(pEnv<br />
+,obj,mid);</p>
+<p>If you choose to step into, then you will go into the java method. Otherwise if you choose to step over, or step return, you will simply go on the next native code line.</p>
+]]></body>
+      <created>1188482711</created>
+      <changed>1259778827</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://eclipse-soc-mariot.blogspot.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>0.0.2</version>
+      <license>Free EPL</license>
+      <companyname><![CDATA[]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.3]]></eclipseversion>
+      <supporturl><![CDATA[http://wiki.eclipse.org/index.php/Support_seamless_debugging_between_JDT_and_CDT#Documentation]]></supporturl>
+      <updateurl><![CDATA[http://eclipse-incub.svn.sourceforge.net/viewvc/*checkout*/eclipse-incub/jni_seamless_debugging/update-site/site.xml]]></updateurl>
+    </node>
+    </marketplace>
+    

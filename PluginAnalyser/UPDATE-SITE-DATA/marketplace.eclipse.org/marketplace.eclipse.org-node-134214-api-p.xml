@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="134214" name="DogGenDita" url="http://marketplace.eclipse.org/content/doggendita">
+      <type>resource</type>
+      <categories>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+      </categories>
+      <tags>
+        <tag id='207' name='dita' url='http://marketplace.eclipse.org/category/free-tagging/dita'/>
+      </tags>
+      
+      <owner>José Juan  scudero</owner>
+      <favorited>0</favorited>
+      <installstotal>43</installstotal>
+      <installsrecent>4</installsrecent>
+      <shortdescription><![CDATA[<p>Generate Data Base documentation to DITA Format.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Generate Data Base documentation to DITA Format.</p>
+]]></body>
+      <created>1318421060</created>
+      <changed>1318857536</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/a/eclipselabs.org/p/docgendita/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[RamsoNet]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4, 3.5, 3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/a/eclipselabs.org/p/docgendita/issues/list]]></supporturl>
+      <updateurl><![CDATA[http://www.ramso.net/p2]]></updateurl>
+<ius>
+<iu>net.ramso.dita</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

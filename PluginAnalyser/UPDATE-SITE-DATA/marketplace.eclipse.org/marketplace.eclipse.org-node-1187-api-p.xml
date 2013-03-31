@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1187" name="Amazon S3 Browser" url="http://marketplace.eclipse.org/content/amazon-s3-browser">
+      <type>resource</type>
+      <categories>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+        <category id='40' name='Search' url='http://marketplace.eclipse.org/category/categories/search'/>
+      </categories>
+      <tags>
+        <tag id='162' name='osgi' url='http://marketplace.eclipse.org/category/free-tagging/osgi'/>
+        <tag id='182' name='collaboration' url='http://marketplace.eclipse.org/category/free-tagging/collaboration'/>
+        <tag id='375' name='Web Services' url='http://marketplace.eclipse.org/category/free-tagging/web-services'/>
+        <tag id='468' name='MintJams' url='http://marketplace.eclipse.org/category/free-tagging/mintjams'/>
+        <tag id='581' name='Cloud Computing' url='http://marketplace.eclipse.org/category/free-tagging/cloud-computing'/>
+      </tags>
+      
+      <owner>Kenichi Fukuda</owner>
+      <favorited>3</favorited>
+      <installstotal>8</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>v1.3:<br />
+- Support for Full-Text search</p>
+<p>The Amazon S3 Browser is plug-in for the Eclipse IDE that makes it easier for Amazon S3 Users to manage files in Amazon S3 storage. Amazon S3 Browser lets you manage your files on cloud just as you would on your own local computer.</p>
+<p>Amazon S3 Browser is MintJams Cloud Desktop Tools family. MintJams Cloud Desktop Tools is Low-Cost, Easy-to-Use desktop application for online storage users.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>v1.3:<br />
+- Support for Full-Text search</p>
+<p>The Amazon S3 Browser is plug-in for the Eclipse IDE that makes it easier for Amazon S3 Users to manage files in Amazon S3 storage. Amazon S3 Browser lets you manage your files on cloud just as you would on your own local computer.</p>
+<p>Amazon S3 Browser is MintJams Cloud Desktop Tools family. MintJams Cloud Desktop Tools is Low-Cost, Easy-to-Use desktop application for online storage users.</p>
+]]></body>
+      <created>1271928401</created>
+      <changed>1285248786</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://sa.tries2go.com/static/cloud_desktop_tools/content_management/index.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/cdt-logo.gif?itok=T8QElhY3]]></image>
+      <version>1.3</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[MintJams Inc.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://twitter.com/mintjamsinc]]></supporturl>
+      <updateurl><![CDATA[http://www.mintjams.co.jp/updates/]]></updateurl>
+<ius>
+<iu>jp.co.mintjams.wdt.amazonaws.s3.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

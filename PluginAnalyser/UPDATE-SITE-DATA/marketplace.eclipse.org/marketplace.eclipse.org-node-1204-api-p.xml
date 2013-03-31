@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1204" name="Quick JUnit" url="http://marketplace.eclipse.org/content/quick-junit">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='197' name='TDD' url='http://marketplace.eclipse.org/category/free-tagging/tdd'/>
+        <tag id='752' name='junit' url='http://marketplace.eclipse.org/category/free-tagging/junit'/>
+        <tag id='1496' name='TestingPair' url='http://marketplace.eclipse.org/category/free-tagging/testingpair'/>
+        <tag id='1497' name='Mockito' url='http://marketplace.eclipse.org/category/free-tagging/mockito'/>
+      </tags>
+      
+      <owner>Hiroki Kondo</owner>
+      <favorited>13</favorited>
+      <installstotal>7351</installstotal>
+      <installsrecent>407</installsrecent>
+      <shortdescription><![CDATA[<p>Quick JUnit is a plugin for JUnit test on Eclipse.<br />
+The original idea is to change product code and test code using only one short cut key.<br />
+We call these set of pair(product code and testing code) are testing pair.<br />
+You can write the pair more smoothly.</p>
+<p>Quick JUnit's features are below.<br />
+- Enable to change testing pair when you use ‘Ctrl+9’.<br />
+- Enable to create new test class if there are no testing pair class when you use ‘Ctrl+9’.<br />
+- Enable to launch test more easy.Only one short cut key sequence (Ctrl+0).<br />
+- Enable to launch only one test method. If you want to launch only it, please locate your cursor on target test method’s range and push ‘Ctrl+0’<br />
+- Enable to launch debug test more easy.Only one short cut key sequence (Ctrl+Shift+0).</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Quick JUnit is a plugin for JUnit test on Eclipse.<br />
+The original idea is to change product code and test code using only one short cut key.<br />
+We call these set of pair(product code and testing code) are testing pair.<br />
+You can write the pair more smoothly.</p>
+<p>Quick JUnit's features are below.<br />
+- Enable to change testing pair when you use ‘Ctrl+9’.<br />
+- Enable to create new test class if there are no testing pair class when you use ‘Ctrl+9’.<br />
+- Enable to launch test more easy.Only one short cut key sequence (Ctrl+0).<br />
+- Enable to launch only one test method. If you want to launch only it, please locate your cursor on target test method’s range and push ‘Ctrl+0’<br />
+- Enable to launch debug test more easy.Only one short cut key sequence (Ctrl+Shift+0).</p>
+]]></body>
+      <created>1273332408</created>
+      <changed>1335366036</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://quick-junit.sourceforge.jp/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/quickjunit.png?itok=Jww7Fmq_]]></image>
+      <version>0.7.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Quick JUnit Project]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5 3.6 3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://github.com/kompiro/quick-junit/blob/master/README.textile]]></supporturl>
+      <updateurl><![CDATA[http://quick-junit.sourceforge.jp/updates/current/]]></updateurl>
+<ius>
+<iu>junit.extensions.eclipse.quick.feature</iu>
+<iu>junit.extensions.eclipse.quick.mock.feature</iu>
+<iu>junit.extensions.eclipse.quick.pde.feature</iu>
+<iu>junit.extensions.eclipse.quick.template.feature</iu>
+<iu>junit.extensions.eclipse.quick.notifications.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

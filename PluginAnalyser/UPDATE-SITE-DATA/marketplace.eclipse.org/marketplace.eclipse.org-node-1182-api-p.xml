@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1182" name="Feature Working Sets" url="http://marketplace.eclipse.org/content/feature-working-sets">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+      </categories>
+            
+      <owner>Mikkel Andersen</owner>
+      <favorited>3</favorited>
+      <installstotal>126</installstotal>
+      <installsrecent>7</installsrecent>
+      <shortdescription><![CDATA[<p>Generate Working Sets based on Eclipse Features (feature.xml)</p>
+<p>This feature will add a button, Generate Working Set based on Features, in the Project menu in your eclipse IDE. The button will remove all existing working sets that does not end with a dot (.) and then read the features you have in your target platform or as open projects and create working sets that match the content of those features ( This will only happen if you have the projects in your package explorer)</p>
+<p>This feature will also add a feature dependency viewer, that displays dependencies between features(using the zest framework) clicking on a feature will highlight the content of the feature.<br />
+This feature requires: Graphical Editing Framework Zest Visualization Toolkit update site: <a href="http://download.eclipse.org/tools/gef/updates/releases/">http://download.eclipse.org/tools/gef/updates/releases/</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Generate Working Sets based on Eclipse Features (feature.xml)</p>
+<p>This feature will add a button, Generate Working Set based on Features, in the Project menu in your eclipse IDE. The button will remove all existing working sets that does not end with a dot (.) and then read the features you have in your target platform or as open projects and create working sets that match the content of those features ( This will only happen if you have the projects in your package explorer)</p>
+<p>This feature will also add a feature dependency viewer, that displays dependencies between features(using the zest framework) clicking on a feature will highlight the content of the feature.<br />
+This feature requires: Graphical Editing Framework Zest Visualization Toolkit update site: <a href="http://download.eclipse.org/tools/gef/updates/releases/">http://download.eclipse.org/tools/gef/updates/releases/</a></p>
+]]></body>
+      <created>1271703922</created>
+      <changed>1288552600</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://plugination.org/?page_id=44]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Untitled.png?itok=W1CLf2aN]]></screenshot>
+      <version>1.0.8</version>
+      <license>EPL</license>
+      <companyname><![CDATA[plugination.org]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[from 3.4]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://svn.codespot.com/a/eclipselabs.org/plugination/updatesite/]]></updateurl>
+<ius>
+<iu>GenerateWorkingSetsFeature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

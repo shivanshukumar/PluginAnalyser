@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="142396" name="AspectJ Development Tools (Indigo)" url="http://marketplace.eclipse.org/content/aspectj-development-tools-indigo">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='146' name='editor' url='http://marketplace.eclipse.org/category/free-tagging/editor'/>
+        <tag id='196' name='Domain Specific Language' url='http://marketplace.eclipse.org/category/free-tagging/domain-specific-language'/>
+        <tag id='216' name='language' url='http://marketplace.eclipse.org/category/free-tagging/language'/>
+        <tag id='871' name='AspectJ' url='http://marketplace.eclipse.org/category/free-tagging/aspectj'/>
+        <tag id='1093' name='AOP' url='http://marketplace.eclipse.org/category/free-tagging/aop'/>
+      </tags>
+      
+      <owner>Andrew Eisenberg</owner>
+      <favorited>1</favorited>
+      <installstotal>7195</installstotal>
+      <installsrecent>280</installsrecent>
+      <shortdescription><![CDATA[<p>The AspectJ Development Tools (AJDT) project provides Eclipse platform based tool support for AspectJ. Our goal is to deliver a user experience that is consistent with the Java Development Tools (JDT) when working with AspectJ projects and resources.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The AspectJ Development Tools (AJDT) project provides Eclipse platform based tool support for AspectJ. Our goal is to deliver a user experience that is consistent with the Java Development Tools (JDT) when working with AspectJ projects and resources.</p>
+]]></body>
+      <created>1319660064</created>
+      <changed>1341428858</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://eclipse.org/ajdt]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>2.2.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[The Eclipse Foundation]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[Indigo]]></eclipseversion>
+      <supporturl><![CDATA[https://dev.eclipse.org/mailman/listinfo/ajdt-dev]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/tools/ajdt/37/update]]></updateurl>
+<ius>
+<iu>org.eclipse.ajdt</iu>
+<iu>org.eclipse.contribution.weaving</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

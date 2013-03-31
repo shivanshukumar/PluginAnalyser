@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1002" name="CloverETL Designer" url="http://marketplace.eclipse.org/content/cloveretl-designer">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>cyrilsochor</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>CloverETL Designer allows its users-developers to create and modify data transformations in graphical format.</p>
+<p>CloverETL Designer is a Graphical User Interface for CloverETL Engine - tool designed for Data collection, Data transformation, Data integration, etc.</p>
+<p>Such visual design essentially simplifies and streamlines the entire development process.</p>
+<p>The developer selects from a pallete of existing components and pastes them onto a worksheet. Then he interconnects them into graphical representation of a transformation graph. The graphical representation is then translated by CloverETL Designer into XML self-documenting code, which is subsequently executed by CloverETL Engine. The XML code is platform-independent.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>CloverETL Designer allows its users-developers to create and modify data transformations in graphical format.</p>
+<p>CloverETL Designer is a Graphical User Interface for CloverETL Engine - tool designed for Data collection, Data transformation, Data integration, etc.</p>
+<p>Such visual design essentially simplifies and streamlines the entire development process.</p>
+<p>The developer selects from a pallete of existing components and pastes them onto a worksheet. Then he interconnects them into graphical representation of a transformation graph. The graphical representation is then translated by CloverETL Designer into XML self-documenting code, which is subsequently executed by CloverETL Engine. The XML code is platform-independent.</p>
+]]></body>
+      <created>1252417804</created>
+      <changed>1259779308</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.cloveretl.com/clover-gui/]]></homepageurl>
+      <image><![CDATA[http://www.cloveretl.com/_img/logo_clover_110x80.gif]]></image>
+      <version>2.8</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Javlin, a.s.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://forum.cloveretl.org/]]></supporturl>
+      <updateurl><![CDATA[http://www.cloveretl.com/eval-update/]]></updateurl>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="67592" name="YUICompressor" url="http://marketplace.eclipse.org/content/yuicompressor">
+      <type>resource</type>
+      <categories>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+      <tags>
+        <tag id='694' name='CSS' url='http://marketplace.eclipse.org/category/free-tagging/css'/>
+        <tag id='810' name='javascript' url='http://marketplace.eclipse.org/category/free-tagging/javascript'/>
+        <tag id='2025' name='bitExpert' url='http://marketplace.eclipse.org/category/free-tagging/bitexpert'/>
+        <tag id='2026' name='yuicompressor' url='http://marketplace.eclipse.org/category/free-tagging/yuicompressor'/>
+        <tag id='2027' name='compression' url='http://marketplace.eclipse.org/category/free-tagging/compression'/>
+      </tags>
+      
+      <owner>Stephan Hochdoerfer</owner>
+      <favorited>5</favorited>
+      <installstotal>2106</installstotal>
+      <installsrecent>104</installsrecent>
+      <shortdescription><![CDATA[<p>The Eclipse YUICompressor plugin offers an integration of YUI Compressor (The Yahoo! JavaScript and CSS Compressor) into the Eclipse IDE. The plugin allows you to easily compress JS and CSS files from within your IDE.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The Eclipse YUICompressor plugin offers an integration of YUI Compressor (The Yahoo! JavaScript and CSS Compressor) into the Eclipse IDE. The plugin allows you to easily compress JS and CSS files from within your IDE.</p>
+]]></body>
+      <created>1308397990</created>
+      <changed>1346352753</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://blog.bitexpert.de/2011/02/24/eclipse-plugin-yuicompressor/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>0.0.4</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[bitExpert AG]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5, 3.6, 3.7]]></eclipseversion>
+      <supporturl><![CDATA[https://github.com/bitExpert/eclipse-yuicompressor/issues]]></supporturl>
+      <updateurl><![CDATA[http://update.bitexpert.de/eclipse/3.5/]]></updateurl>
+<ius>
+<iu>de.bitexpert.eclipse.yuicompressor.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

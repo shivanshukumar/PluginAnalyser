@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="9226" name="isCOBOL Integrated Development Environment (isCOBOL IDE) " url="http://marketplace.eclipse.org/content/iscobol-integrated-development-environment-iscobol-ide">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='51' name='IDE' url='http://marketplace.eclipse.org/category/free-tagging/ide'/>
+        <tag id='978' name='cobol' url='http://marketplace.eclipse.org/category/free-tagging/cobol'/>
+        <tag id='1155' name='Veryant' url='http://marketplace.eclipse.org/category/free-tagging/veryant'/>
+        <tag id='1156' name='isCOBOL' url='http://marketplace.eclipse.org/category/free-tagging/iscobol'/>
+        <tag id='1157' name='COBOL-to-Java' url='http://marketplace.eclipse.org/category/free-tagging/cobol-java'/>
+      </tags>
+      
+      <owner>info</owner>
+      <favorited>2</favorited>
+      <installstotal>568</installstotal>
+      <installsrecent>19</installsrecent>
+      <shortdescription><![CDATA[<p>The isCOBOL IDE includes a COBOL project explorer, source editor with syntax highlighting, dynamic syntax checking, screen designer, event paragraph editor, file designer, working-storage editor, linkage section editor, code content assist, project import wizards, code generator, builder, debugger with remote capability, and more, providing a single, flexible environment for all COBOL development tasks.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The isCOBOL IDE includes a COBOL project explorer, source editor with syntax highlighting, dynamic syntax checking, screen designer, event paragraph editor, file designer, working-storage editor, linkage section editor, code content assist, project import wizards, code generator, builder, debugger with remote capability, and more, providing a single, flexible environment for all COBOL development tasks.</p>
+]]></body>
+      <created>1283364247</created>
+      <changed>1283434641</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.veryant.com/products/cobol_ide.php]]></homepageurl>
+      <image><![CDATA[http://www.veryant.com/images/logo/newlogo.gif]]></image>
+      <version>2010</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Veryant]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.veryant.com/support/]]></supporturl>
+      <updateurl><![CDATA[http://support.veryant.it/eclipse]]></updateurl>
+<ius>
+<iu>com.iscobol.plugins.libraries</iu>
+<iu>com.iscobol.plugins.editor.IscobolEditor</iu>
+<iu>com.iscobol.plugins.screenpainter.IscobolScreenPainter</iu>
+<iu>com.iscobol.plugins.examples.IscobolExamples</iu>
+<iu>com.iscobol.plugins.webdirectlauncher</iu>
+<iu>com.iscobol.plugins.translator.UnikixTranslator.win32</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

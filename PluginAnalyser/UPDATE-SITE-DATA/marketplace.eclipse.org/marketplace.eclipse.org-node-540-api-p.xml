@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="540" name="HTTP4e - HTTP and REST Client for Eclipse" url="http://marketplace.eclipse.org/content/http4e-http-and-rest-client-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='12' name='Network' url='http://marketplace.eclipse.org/taxonomy/term/12'/>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='21' name='Web Services' url='http://marketplace.eclipse.org/taxonomy/term/21'/>
+      </categories>
+      <tags>
+        <tag id='896' name='REST client' url='http://marketplace.eclipse.org/category/free-tagging/rest-client'/>
+        <tag id='897' name='HTTP client' url='http://marketplace.eclipse.org/category/free-tagging/http-client'/>
+        <tag id='1263' name='restful client' url='http://marketplace.eclipse.org/category/free-tagging/restful-client'/>
+        <tag id='1264' name='eclipse http' url='http://marketplace.eclipse.org/category/free-tagging/eclipse-http'/>
+        <tag id='1265' name='eclipse rest' url='http://marketplace.eclipse.org/category/free-tagging/eclipse-rest'/>
+      </tags>
+      
+      <owner>Atanas Roussev</owner>
+      <favorited>8</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<span style="padding: 5px; color: rgb(0, 0, 0); background: none repeat scroll 0% 0% rgb(237, 248, 252); line-height: 150%; font-size: 14px;"><strong>HTTP4e</strong> is an <span style="color: rgb(23, 109, 162);">Eclipse plugin that helps you quickly build HTTP REST packets</span> enabling you to easily test and create REST Service and Web Service calls.</span>
+
+<p>A tool for Web Development, Web/Rest Services Development, Testing, HTTP hacking and tampering. </p>
+
+<div style="margin: 0 0 0 -15px;">
+<img src="http://www.ywebb.com/http4e/images/http-rest-client-eclipse-2.png" alt="HTTP4e, REST client, Eclipse plugin for HTTP and RESTful calls" title="HTTP4e, Eclipse plugin for HTTP and RESTful calls" /></div>
+
+<h2>About</h2>
+<p>Eclipse HTTP Client (HTTP4e)  is an Eclipse plugin for making HTTP and RESTful calls. Build with user experience in mind, it simplifies the developer/QA job of testing Web Services, REST, JSON and HTTP. It is a useful tool for your daily job of  HTTP header tampering and hacking.
+</p>
+
+<h2>The Features:</h2>
+<ul><li>Making/Replaying an HTTP call directly from Eclipse IDE</li>
+<li>Visual Editors for HTTP headers, parameters and body</li>
+<li>Tabbed browsing (allowing replaying different RESTful, HTTP calls on separate tabs)</li>
+<li>History support (persisting your valuable REST calls)</li>
+<li>One-click  HTTP code generation to Java, PHP, C#, Flex/ActionScript, Cocoa/Objective-C, Ruby, Python and Visual Basic</li>
+<li>One-click JMeter script generation</li>
+<li>Import and export HTTP4e replay script</li>
+<li>Export HTTP sessions as HTML report</li>
+<li>Import raw HTTP packets and Firefox’s Live HTTP headers</li>
+<li>Aesthetic UI, Code assist, Headers auto-suggest, Syntax coloring</li>
+<li>“Raw”, “Pretty”, “Hex”, “Browser” and “JSON” views</li>
+<li>Proxy Configuration</li>
+<li>BASIC and DIGEST Authentication</li>
+<li>SSL/HTTPS support</li>
+<li>Unicode UTF8 support</li>
+<li>HTTP tampering</li>
+<li>Tab renaming</li>
+<li>Available on Windows, MacOS X, Linux, Solaris</li>
+</ul><br />
+
+Visit HTTP4e, Eclipse REST Client Home at <a href="http://www.ywebb.com/http4e/" title="HTTP4e, Eclipse plugin for making HTTP and RESTful calls">http://www.ywebb.com/http4e/</a>.
+
+<br /><h2>Versions</h2>
+
+<h3>Version 4.0:</h3>
+<ul><li>Introducing Tab Rename option</li>
+<li>Introducing Parameterization of Headers and Params</li>
+</ul><h3>Version 3.0:</h3>
+<ul><li>Introducing @file abilities to load external payload to body by simply passing @/file/path</li>
+<li>Export HTTP sessions report as HTML</li>
+<li>Export and import HTTP4e replay script</li>
+<li>Importing raw HTTP packets</li>
+<li>Importing http packets directly from Firefox’s Live HTTPHeaders</li>
+<li>Enhancing tabs</li>
+<li>Fixing Pretty view XML formatting</li>
+<li>JMeterone click script generation</li>
+<li>PHP, Flex/ActionScript, Cocoa/Objective-C, Ruby, Pythonone click script generation</li>
+<li>C#, Visual Basic.NETone click script generation</li>
+<li>JavaScript, Prototype, jQuery one click script generation</li>
+<li>Apache HTTP Components 4.x one click code generation</li>
+</ul><h3>Version 2.x changes:</h3>
+<ul><li> Fixing Proxy Connections</li>
+  <li> Introducing BASIC and DIGEST Authentication</li>
+</ul><h3>Version 1.6.x changes:</h3>
+<ul><li>Fixing Linux Fonts</li>
+  <li>Adding UTF8 Unicode support</li>
+  <li>Fixing Mac OS/Linux persisting, thus you will not loose your HTTP call on Eclipse/Computer restart</li>
+</ul><h3>Version 1.5.x changes:</h3>
+<ul><li>Fixing Mac OS X 10.x Fonts</li>
+</ul><h3>Version 1.4.x changes:</h3>
+<ul><li>Introducing JSON View</li>
+  <li>Fixing SSL as HTTP4e is running https urls without any SSL preferences</li>
+  <li>Java one click code generation bug fixes</li>
+  <li>Persisting all views, thus on Eclipse close you don’t loose your HTTP call data</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<span style="padding: 5px; color: rgb(0, 0, 0); background: none repeat scroll 0% 0% rgb(237, 248, 252); line-height: 150%; font-size: 14px;"><strong>HTTP4e</strong> is an <span style="color: rgb(23, 109, 162);">Eclipse plugin that helps you quickly build HTTP REST packets</span> enabling you to easily test and create REST Service and Web Service calls.</span>
+
+<p>A tool for Web Development, Web/Rest Services Development, Testing, HTTP hacking and tampering. </p>
+
+<div style="margin: 0 0 0 -15px;">
+<img src="http://www.ywebb.com/http4e/images/http-rest-client-eclipse-2.png" alt="HTTP4e, REST client, Eclipse plugin for HTTP and RESTful calls" title="HTTP4e, Eclipse plugin for HTTP and RESTful calls" /></div>
+
+<h2>About</h2>
+<p>Eclipse HTTP Client (HTTP4e)  is an Eclipse plugin for making HTTP and RESTful calls. Build with user experience in mind, it simplifies the developer/QA job of testing Web Services, REST, JSON and HTTP. It is a useful tool for your daily job of  HTTP header tampering and hacking.
+</p>
+
+<h2>The Features:</h2>
+<ul><li>Making/Replaying an HTTP call directly from Eclipse IDE</li>
+<li>Visual Editors for HTTP headers, parameters and body</li>
+<li>Tabbed browsing (allowing replaying different RESTful, HTTP calls on separate tabs)</li>
+<li>History support (persisting your valuable REST calls)</li>
+<li>One-click  HTTP code generation to Java, PHP, C#, Flex/ActionScript, Cocoa/Objective-C, Ruby, Python and Visual Basic</li>
+<li>One-click JMeter script generation</li>
+<li>Import and export HTTP4e replay script</li>
+<li>Export HTTP sessions as HTML report</li>
+<li>Import raw HTTP packets and Firefox’s Live HTTP headers</li>
+<li>Aesthetic UI, Code assist, Headers auto-suggest, Syntax coloring</li>
+<li>“Raw”, “Pretty”, “Hex”, “Browser” and “JSON” views</li>
+<li>Proxy Configuration</li>
+<li>BASIC and DIGEST Authentication</li>
+<li>SSL/HTTPS support</li>
+<li>Unicode UTF8 support</li>
+<li>HTTP tampering</li>
+<li>Tab renaming</li>
+<li>Available on Windows, MacOS X, Linux, Solaris</li>
+</ul><br />
+
+Visit HTTP4e, Eclipse REST Client Home at <a href="http://www.ywebb.com/http4e/" title="HTTP4e, Eclipse plugin for making HTTP and RESTful calls">http://www.ywebb.com/http4e/</a>.
+
+<br /><h2>Versions</h2>
+
+<h3>Version 4.0:</h3>
+<ul><li>Introducing Tab Rename option</li>
+<li>Introducing Parameterization of Headers and Params</li>
+</ul><h3>Version 3.0:</h3>
+<ul><li>Introducing @file abilities to load external payload to body by simply passing @/file/path</li>
+<li>Export HTTP sessions report as HTML</li>
+<li>Export and import HTTP4e replay script</li>
+<li>Importing raw HTTP packets</li>
+<li>Importing http packets directly from Firefox’s Live HTTPHeaders</li>
+<li>Enhancing tabs</li>
+<li>Fixing Pretty view XML formatting</li>
+<li>JMeterone click script generation</li>
+<li>PHP, Flex/ActionScript, Cocoa/Objective-C, Ruby, Pythonone click script generation</li>
+<li>C#, Visual Basic.NETone click script generation</li>
+<li>JavaScript, Prototype, jQuery one click script generation</li>
+<li>Apache HTTP Components 4.x one click code generation</li>
+</ul><h3>Version 2.x changes:</h3>
+<ul><li> Fixing Proxy Connections</li>
+  <li> Introducing BASIC and DIGEST Authentication</li>
+</ul><h3>Version 1.6.x changes:</h3>
+<ul><li>Fixing Linux Fonts</li>
+  <li>Adding UTF8 Unicode support</li>
+  <li>Fixing Mac OS/Linux persisting, thus you will not loose your HTTP call on Eclipse/Computer restart</li>
+</ul><h3>Version 1.5.x changes:</h3>
+<ul><li>Fixing Mac OS X 10.x Fonts</li>
+</ul><h3>Version 1.4.x changes:</h3>
+<ul><li>Introducing JSON View</li>
+  <li>Fixing SSL as HTTP4e is running https urls without any SSL preferences</li>
+  <li>Java one click code generation bug fixes</li>
+  <li>Persisting all views, thus on Eclipse close you don’t loose your HTTP call data</li>
+</ul>]]></body>
+      <created>1189086698</created>
+      <changed>1287199269</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.ywebb.com/http4e/]]></homepageurl>
+      <image><![CDATA[http://www.ywebb.com/http4e/images/eclipseplugincentral2.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/http-rest-client-eclipse.png?itok=529Q93kl]]></screenshot>
+      <version>4.0.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[ywebb.com]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2, 3.3, 3.4, 3.5, 3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://www.ywebb.com/http4e/]]></supporturl>
+      <updateurl><![CDATA[http://www.ywebb.com/http4e/install/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

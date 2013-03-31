@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="70112" name="Jubula Automated Functional Testing Feature" url="http://marketplace.eclipse.org/content/jubula-automated-functional-testing-feature">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='341' name='SWT UI Testing' url='http://marketplace.eclipse.org/category/free-tagging/swt-ui-testing'/>
+        <tag id='342' name='Swing UI Testing' url='http://marketplace.eclipse.org/category/free-tagging/swing-ui-testing'/>
+        <tag id='1047' name='runtime testing' url='http://marketplace.eclipse.org/category/free-tagging/runtime-testing'/>
+        <tag id='2019' name='Jubula' url='http://marketplace.eclipse.org/category/free-tagging/jubula'/>
+      </tags>
+      
+      <owner>Achim Loerke</owner>
+      <favorited>3</favorited>
+      <installstotal>1297</installstotal>
+      <installsrecent>59</installsrecent>
+      <shortdescription><![CDATA[<p>Jubula provides automated functional GUI testing for Java and HTML applications. It is aimed at teams who want their automated tests to be written by test experts from the user perspective, without requiring any coding effort. Jubula tests incorporate best practices from software development to ensure long-term maintainability of the automated tests.</p>
+<p><strong>What's in the feature?</strong><br />
+This feature contains the Jubula core features, online documentation, an embedded AUT Agent, and offers the Swing and SWT/RCP/GEF toolkits. </p>
+<p>If you want to work with a database other than the embedded H2 database, then you will need to install the <a href="http://marketplace.eclipse.org/content/eclipse-jubula-database-drivers">Jubula Database drivers</a> from the Marketplace. </p>
+<p>To use the HTML toolkit, example applications and example tests, please use the <a href="http://marketplace.eclipse.org/content/jubula-automated-functional-testing-standalone-version">Jubula Standalone</a> installer. </p>
+<p>For complete information on the different packages, see the <a href="http://www.eclipse.org/jubula/download.php">Jubula download page</a>.</p>
+<p><strong>Training, Consulting and Support</strong><br />
+If you'd like training, consulting, support or coaching for Jubula and/or help with your test process, BREDEX's team of test experts will be happy to help you. More information is available on the <a href="http://www.bredex.de/web/index.php/training_guidancer_en.html">BREDEX website</a>.</p>
+<p><strong>GUIdancer and Jubula</strong><br /><a href="http://marketplace.eclipse.org/content/guidancer-0">GUIdancer</a> builds on Jubula to offer increased productivity and more comfort when writing and analyzing tests. Features exclusive to GUIdancer include:</p>
+<ul><li>iOS testing</li>
+<li>.NET testing</li>
+<li>Reporting via BIRT</li>
+<li>Code coverage for Java applications</li>
+<li>Mylyn integration</li>
+<li>A web dashboard for test result analysis</li>
+</ul><p>Further information is available on the <a href="http://www.guidancer.com">GUIdancer homepage</a>.</p>
+<p>A 30-day demo version can be downloaded from the <a href="https://cgi.bredex.de/GUIdancerShop/home.do?lang=en">GUIdancer website</a>.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Jubula provides automated functional GUI testing for Java and HTML applications. It is aimed at teams who want their automated tests to be written by test experts from the user perspective, without requiring any coding effort. Jubula tests incorporate best practices from software development to ensure long-term maintainability of the automated tests.</p>
+<p><strong>What's in the feature?</strong><br />
+This feature contains the Jubula core features, online documentation, an embedded AUT Agent, and offers the Swing and SWT/RCP/GEF toolkits. </p>
+<p>If you want to work with a database other than the embedded H2 database, then you will need to install the <a href="http://marketplace.eclipse.org/content/eclipse-jubula-database-drivers">Jubula Database drivers</a> from the Marketplace. </p>
+<p>To use the HTML toolkit, example applications and example tests, please use the <a href="http://marketplace.eclipse.org/content/jubula-automated-functional-testing-standalone-version">Jubula Standalone</a> installer. </p>
+<p>For complete information on the different packages, see the <a href="http://www.eclipse.org/jubula/download.php">Jubula download page</a>.</p>
+<p><strong>Training, Consulting and Support</strong><br />
+If you'd like training, consulting, support or coaching for Jubula and/or help with your test process, BREDEX's team of test experts will be happy to help you. More information is available on the <a href="http://www.bredex.de/web/index.php/training_guidancer_en.html">BREDEX website</a>.</p>
+<p><strong>GUIdancer and Jubula</strong><br /><a href="http://marketplace.eclipse.org/content/guidancer-0">GUIdancer</a> builds on Jubula to offer increased productivity and more comfort when writing and analyzing tests. Features exclusive to GUIdancer include:</p>
+<ul><li>iOS testing</li>
+<li>.NET testing</li>
+<li>Reporting via BIRT</li>
+<li>Code coverage for Java applications</li>
+<li>Mylyn integration</li>
+<li>A web dashboard for test result analysis</li>
+</ul><p>Further information is available on the <a href="http://www.guidancer.com">GUIdancer homepage</a>.</p>
+<p>A 30-day demo version can be downloaded from the <a href="https://cgi.bredex.de/GUIdancerShop/home.do?lang=en">GUIdancer website</a>.</p>
+]]></body>
+      <created>1308812036</created>
+      <changed>1363605944</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.eclipse.org/jubula]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/jubula_logo_edited-2_0.png?itok=YPjHZ7Zn]]></image>
+      <version>1.2.2</version>
+      <license>EPL</license>
+      <companyname><![CDATA[BREDEX GmbH]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.6.0 - 4.2.0]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eclipse.org/jubula/support.php]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/jubula/release/juno/]]></updateurl>
+<ius>
+<iu>org.eclipse.jubula.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

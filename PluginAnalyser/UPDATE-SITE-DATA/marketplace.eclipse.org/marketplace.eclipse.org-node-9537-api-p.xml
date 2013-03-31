@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="9537" name="NuSMV Tools" url="http://marketplace.eclipse.org/content/nusmv-tools">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='1181' name='nusmv' url='http://marketplace.eclipse.org/category/free-tagging/nusmv'/>
+        <tag id='1182' name='model checking' url='http://marketplace.eclipse.org/category/free-tagging/model-checking'/>
+        <tag id='1183' name='model checker' url='http://marketplace.eclipse.org/category/free-tagging/model-checker'/>
+      </tags>
+      
+      <owner>Siamak Haschemi</owner>
+      <favorited>1</favorited>
+      <installstotal>240</installstotal>
+      <installsrecent>14</installsrecent>
+      <shortdescription><![CDATA[<p>This project provides a set of tools for the model checker <a href="http://nusmv.fbk.eu/">NuSMV</a>.</p>
+<p>Following tools are contained, or will be contained in the near future:</p>
+<ul><li>Two metamodels based on the <a href="http://www.eclipse.org/modeling/emf">Eclipse Modeling Framework Project (EMF)</a>
+<ul><li>NuSMV input language</li>
+<li>NuSMV counterexample language </li>
+</ul></li>
+<li>Based on the input language metamodel, a rich Eclipse based editor for the NuSMV input language based on <a href="http://www.eclipse.org/Xtext">Xtext</a>
+<ul><li>A model analyzier</li>
+<li>An <a href="http://www.osgi.org/">OSGi</a> bundle containing a Java API to the NuSMV model checker itself, which allows to embed NuSMV in any Java application</li>
+</ul></li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>This project provides a set of tools for the model checker <a href="http://nusmv.fbk.eu/">NuSMV</a>.</p>
+<p>Following tools are contained, or will be contained in the near future:</p>
+<ul><li>Two metamodels based on the <a href="http://www.eclipse.org/modeling/emf">Eclipse Modeling Framework Project (EMF)</a>
+<ul><li>NuSMV input language</li>
+<li>NuSMV counterexample language </li>
+</ul></li>
+<li>Based on the input language metamodel, a rich Eclipse based editor for the NuSMV input language based on <a href="http://www.eclipse.org/Xtext">Xtext</a>
+<ul><li>A model analyzier</li>
+<li>An <a href="http://www.osgi.org/">OSGi</a> bundle containing a Java API to the NuSMV model checker itself, which allows to embed NuSMV in any Java application</li>
+</ul></li>
+</ul>]]></body>
+      <created>1283785966</created>
+      <changed>1333490910</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/a/eclipselabs.org/p/nusmv-tools/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_3.png?itok=AjsDyy2V]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/nusmv-tools-editor.png?itok=W1_N8J3w]]></screenshot>
+      <version>0.1.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Qyotta UG (haftungsbeschränkt)]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/a/eclipselabs.org/p/nusmv-tools/]]></supporturl>
+      <updateurl><![CDATA[http://qyotta.de/files/p2-repositories/nusmv-tools/]]></updateurl>
+<ius>
+<iu>org.eclipselabs.nusmvtools.counterexample.feature</iu>
+<iu>org.eclipselabs.nusmvtools.editor.feature</iu>
+<iu>org.eclipselabs.nusmvtools.nusmv4j.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

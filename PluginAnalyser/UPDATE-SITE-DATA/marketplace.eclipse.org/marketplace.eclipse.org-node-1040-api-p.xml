@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1040" name="mikeclipse" url="http://marketplace.eclipse.org/content/mikeclipse">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+      </categories>
+            
+      <owner>amleggett</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Mikeclipse provides features that make it easier for developers who use Eclipse to integrate their projects with the Mike (<a href="http://mikeci.com">http://mikeci.com</a>) platform.<br />
+<p><br />
+Mike’s simple, hosted continuous integration service enables Java development teams to collaborate more effectively. Don’t worry about managing your build and CI environment, let Mike do that.<br />
+</p><br />
+<p><br />
+The first release of the plug-in provides helpful wizards for accelerating the creation of new Eclipse Dynamic Web projects that can be built by Mike. Spring-MVC and Struts2 project types are supported.<br />
+</p><br />
+<p><br />
+You can view a video which demonstrates how the plug-in works at <a href="http://www.youtube.com/watch?v=qWRbc9DUMQU">http://www.youtube.com/watch?v=qWRbc9DUMQU</a>.<br />
+</p></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Mikeclipse provides features that make it easier for developers who use Eclipse to integrate their projects with the Mike (<a href="http://mikeci.com">http://mikeci.com</a>) platform.<br />
+<p><br />
+Mike’s simple, hosted continuous integration service enables Java development teams to collaborate more effectively. Don’t worry about managing your build and CI environment, let Mike do that.<br />
+</p><br />
+<p><br />
+The first release of the plug-in provides helpful wizards for accelerating the creation of new Eclipse Dynamic Web projects that can be built by Mike. Spring-MVC and Struts2 project types are supported.<br />
+</p><br />
+<p><br />
+You can view a video which demonstrates how the plug-in works at <a href="http://www.youtube.com/watch?v=qWRbc9DUMQU">http://www.youtube.com/watch?v=qWRbc9DUMQU</a>.<br />
+</p></p>
+]]></body>
+      <created>1257785340</created>
+      <changed>1259779365</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://mike.tenderapp.com/faqs/mike-eclipse-integration/mikeclipse]]></homepageurl>
+      <image><![CDATA[http://tools.mikeci.com/eclipse/mike-logo.gif]]></image>
+      <version>1.0.0</version>
+      <license>Other</license>
+      <companyname><![CDATA[mikeci.com]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.4.2, 3.5.x]]></eclipseversion>
+      <supporturl><![CDATA[https://mike.tenderapp.com/discussion/new]]></supporturl>
+      <updateurl><![CDATA[http://tools.mikeci.com/eclipse/update]]></updateurl>
+    </node>
+    </marketplace>
+    

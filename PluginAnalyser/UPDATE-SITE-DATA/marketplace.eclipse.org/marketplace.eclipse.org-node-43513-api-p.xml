@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="43513" name="Demoiselle Wizard Eclipse Plugin" url="http://marketplace.eclipse.org/content/demoiselle-wizard-eclipse-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+      </categories>
+      <tags>
+        <tag id='1836' name='demoiselle' url='http://marketplace.eclipse.org/category/free-tagging/demoiselle'/>
+      </tags>
+      
+      <owner>Emerson Saito</owner>
+      <favorited>1</favorited>
+      <installstotal>162</installstotal>
+      <installsrecent>20</installsrecent>
+      <shortdescription><![CDATA[<p>The Demoiselle Eclipse Plugin Wizard is a tool designed to support the development of JEE applications using the Framework Demoiselle. The Demoiselle Framework is an open source Java EE library designed to accelerate the development of transactional database Web applications.<br /><a href="http://demoiselle.sourceforge.net">http://demoiselle.sourceforge.net</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>The Demoiselle Eclipse Plugin Wizard is a tool designed to support the development of JEE applications using the Framework Demoiselle. The Demoiselle Framework is an open source Java EE library designed to accelerate the development of transactional database Web applications.<br /><a href="http://demoiselle.sourceforge.net">http://demoiselle.sourceforge.net</a></p>
+]]></body>
+      <created>1302118406</created>
+      <changed>1302528496</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://demoiselle.sourceforge.net/wizard]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo.jpg?itok=9ILobk_G]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/DemoiselleWizard.png?itok=cmXT5L5E]]></screenshot>
+      <version>1.1.3</version>
+      <license>GPL</license>
+      <companyname><![CDATA[SERPRO - Serviço Federal de Processamento de Dados]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://www.frameworkdemoiselle.gov.br]]></supporturl>
+      <updateurl><![CDATA[http://demoiselle.sourceforge.net/wizard/updatesite/]]></updateurl>
+<ius>
+<iu>br.gov.demoiselle.eclipse.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

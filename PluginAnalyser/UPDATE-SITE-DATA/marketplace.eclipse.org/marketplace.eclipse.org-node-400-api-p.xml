@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="400" name="Epsilon" url="http://marketplace.eclipse.org/content/epsilon">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+      </categories>
+      <tags>
+        <tag id='64' name='Modeling' url='http://marketplace.eclipse.org/category/free-tagging/modeling'/>
+        <tag id='164' name='model transformation' url='http://marketplace.eclipse.org/category/free-tagging/model-transformation'/>
+        <tag id='165' name='code generation' url='http://marketplace.eclipse.org/category/free-tagging/code-generation'/>
+        <tag id='186' name='EMF' url='http://marketplace.eclipse.org/category/free-tagging/emf'/>
+        <tag id='638' name='GMF' url='http://marketplace.eclipse.org/category/free-tagging/gmf'/>
+      </tags>
+      
+      <owner>Dimitris Kolovos</owner>
+      <favorited>6</favorited>
+      <installstotal>430</installstotal>
+      <installsrecent>39</installsrecent>
+      <shortdescription><![CDATA[<p>Epsilon is a family of languages and tools for code generation, model-to-model transformation, model validation, comparison, migration and refactoring that work out-of-the-box with EMF and other types of models.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Epsilon is a family of languages and tools for code generation, model-to-model transformation, model validation, comparison, migration and refactoring that work out-of-the-box with EMF and other types of models.</p>
+]]></body>
+      <created>1171894637</created>
+      <changed>1352234610</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.eclipse.org/epsilon]]></homepageurl>
+      <image><![CDATA[http://www.eclipse.org/epsilon/resources/epsilonlogo.110x80.png]]></image>
+      <version>1.0.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Eclipse.org]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5+]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eclipse.org/epsilon/forum]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/epsilon/updates/]]></updateurl>
+<ius>
+<iu>org.eclipse.epsilon.core.feature</iu>
+<iu>org.eclipse.epsilon.core.dt.feature</iu>
+<iu>org.eclipse.epsilon.eugenia.feature</iu>
+<iu>org.eclipse.epsilon.ewl.gmf.feature</iu>
+<iu>org.eclipse.epsilon.emf.dt.feature</iu>
+<iu>org.eclipse.epsilon.emf.feature</iu>
+<iu>org.eclipse.epsilon.evl.emf.validation.feature</iu>
+<iu>org.eclipse.epsilon.ewl.emf.feature</iu>
+<iu>org.eclipse.epsilon.hutn.dt.feature</iu>
+<iu>org.eclipse.epsilon.hutn.feature</iu>
+<iu>org.eclipse.epsilon.concordance.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

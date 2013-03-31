@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="56251" name="Run-Jetty-Run" url="http://marketplace.eclipse.org/content/run-jetty-run">
+      <type>resource</type>
+      <categories>
+        <category id='1' name='Application Server' url='http://marketplace.eclipse.org/taxonomy/term/1'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+      <tags>
+        <tag id='405' name='maven' url='http://marketplace.eclipse.org/category/free-tagging/maven'/>
+        <tag id='907' name='jetty' url='http://marketplace.eclipse.org/category/free-tagging/jetty'/>
+        <tag id='1942' name='Launcher' url='http://marketplace.eclipse.org/category/free-tagging/launcher'/>
+        <tag id='1943' name='Embbed Jetty' url='http://marketplace.eclipse.org/category/free-tagging/embbed-jetty'/>
+        <tag id='1944' name='JNDI' url='http://marketplace.eclipse.org/category/free-tagging/jndi'/>
+      </tags>
+      
+      <owner>Tony Wang</owner>
+      <favorited>7</favorited>
+      <installstotal>23784</installstotal>
+      <installsrecent>1763</installsrecent>
+      <shortdescription><![CDATA[<p>Our project home page<br /><a href="http://code.google.com/p/run-jetty-run/">http://code.google.com/p/run-jetty-run/</a></p>
+<p>Getting Start Guide<br /><a href="http://code.google.com/p/run-jetty-run/wiki/GettingStarted">http://code.google.com/p/run-jetty-run/wiki/GettingStarted</a></p>
+<p>Why this plugin?</p>
+<p>Because running a web application in Eclipse should be as simple as 'clicking run'. No additional setup required.</p>
+<p>Have fun!</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Our project home page<br /><a href="http://code.google.com/p/run-jetty-run/">http://code.google.com/p/run-jetty-run/</a></p>
+<p>Getting Start Guide<br /><a href="http://code.google.com/p/run-jetty-run/wiki/GettingStarted">http://code.google.com/p/run-jetty-run/wiki/GettingStarted</a></p>
+<p>Why this plugin?</p>
+<p>Because running a web application in Eclipse should be as simple as 'clicking run'. No additional setup required.</p>
+<p>Have fun!</p>
+]]></body>
+      <created>1306328957</created>
+      <changed>1331945416</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/run-jetty-run/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_9.png?itok=TAEQbBau]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/2011-05-25_2105.png?itok=E_yp4cYG]]></screenshot>
+      <version>1.3.3.201203161919</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[RunJettyRun]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5 - 3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/run-jetty-run/issues/list]]></supporturl>
+      <updateurl><![CDATA[http://run-jetty-run.googlecode.com/svn/trunk/updatesite]]></updateurl>
+<ius>
+<iu>runjettyrun_feature_support_jetty7</iu>
+<iu>runjettyrun_feature</iu>
+<iu>runjettyrun_feature_support_jetty8</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

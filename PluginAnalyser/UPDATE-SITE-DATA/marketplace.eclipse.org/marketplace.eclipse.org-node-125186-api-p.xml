@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="125186" name="wiiclipse" url="http://marketplace.eclipse.org/content/wiiclipse">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='1966' name='Programming Languages' url='http://marketplace.eclipse.org/category/categories/programming-languages'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='1013' name='Nintendo' url='http://marketplace.eclipse.org/category/free-tagging/nintendo'/>
+        <tag id='1014' name='GCC' url='http://marketplace.eclipse.org/category/free-tagging/gcc'/>
+        <tag id='1017' name='DevkitPro' url='http://marketplace.eclipse.org/category/free-tagging/devkitpro'/>
+        <tag id='1266' name='CDT' url='http://marketplace.eclipse.org/category/free-tagging/cdt'/>
+        <tag id='2216' name='devkitPPC' url='http://marketplace.eclipse.org/category/free-tagging/devkitppc'/>
+      </tags>
+      
+      <owner>Missing Name</owner>
+      <favorited>0</favorited>
+      <installstotal>74</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Eclipse plugin that integrates the devkitPPC toolchain into Eclipse CDT.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Eclipse plugin that integrates the devkitPPC toolchain into Eclipse CDT.</p>
+]]></body>
+      <created>1316949591</created>
+      <changed>1349877151</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://wiiclipse.github.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0.0</version>
+      <license>GPL</license>
+      <companyname><![CDATA[wiiclipse]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6+]]></eclipseversion>
+      <supporturl><![CDATA[http://wiiclipse.github.com]]></supporturl>
+      <updateurl><![CDATA[http://wiiclipse.github.com/update-site/]]></updateurl>
+<ius>
+<iu>com.github.wiiclipse</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

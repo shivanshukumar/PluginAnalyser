@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="927" name="Saros - Distributed Collaborative Editing and Pair Programming " url="http://marketplace.eclipse.org/content/saros-distributed-collaborative-editing-and-pair-programming">
+      <type>resource</type>
+      <categories>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+      </categories>
+      <tags>
+        <tag id='48' name='distributed pairprogramming' url='http://marketplace.eclipse.org/category/free-tagging/distributed-pairprogramming'/>
+        <tag id='49' name='distributed side-by-side programming' url='http://marketplace.eclipse.org/category/free-tagging/distributed-side-side-programming'/>
+        <tag id='50' name='shared editor' url='http://marketplace.eclipse.org/category/free-tagging/shared-editor'/>
+      </tags>
+      
+      <owner>Sandor Szuecs</owner>
+      <favorited>3</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>
+Saros is a Eclipse plugin for collaborative text editing that in particular targets distributed pair programming, but can support arbitrarily many participants at once. All members of a session have an identical copy of an Eclipse project and Saros keeps these copies in sync as editing progresses.
+</p>
+<p>
+One author ("driver" in pair programming lingo) can change any file and one or more "observers" can either set their Saros to automatically show them the author's activity ("follow mode") or can look around elsewhere in the same file or different files. Markers in everybody's viewport will indicate who is currently seeing what ("awareness information"). All participants can highlight text for others which will be shown in different colors according to participant.
+</p>
+<p>
+The role of being the driver of a session can be handed around among the participants. Concurrent editor by several drivers is supported as an experimental feature.
+</p>
+<p>
+Saros will automatically sync the contents of the Eclipse project from the initiator of a session ("host") to the other participants. Separate high-quality audio conferencing completes the collaboration scenario.
+</p>
+<p>
+Saros uses XMPP/Jabber for communication between session participants and optionally P2P data transfer using XMPP/Jingle.
+</p>
+<p>
+<a href="<a href="https://www.inf.fu-berlin.de/w/SE/DPPDemoVideo">Demo">https://www.inf.fu-berlin.de/w/SE/DPPDemoVideo">Demo</a> Video</a>
+</p>]]></shortdescription>
+      <body><![CDATA[<p>
+Saros is a Eclipse plugin for collaborative text editing that in particular targets distributed pair programming, but can support arbitrarily many participants at once. All members of a session have an identical copy of an Eclipse project and Saros keeps these copies in sync as editing progresses.
+</p>
+<p>
+One author ("driver" in pair programming lingo) can change any file and one or more "observers" can either set their Saros to automatically show them the author's activity ("follow mode") or can look around elsewhere in the same file or different files. Markers in everybody's viewport will indicate who is currently seeing what ("awareness information"). All participants can highlight text for others which will be shown in different colors according to participant.
+</p>
+<p>
+The role of being the driver of a session can be handed around among the participants. Concurrent editor by several drivers is supported as an experimental feature.
+</p>
+<p>
+Saros will automatically sync the contents of the Eclipse project from the initiator of a session ("host") to the other participants. Separate high-quality audio conferencing completes the collaboration scenario.
+</p>
+<p>
+Saros uses XMPP/Jabber for communication between session participants and optionally P2P data transfer using XMPP/Jingle.
+</p>
+<p>
+<a href="<a href="https://www.inf.fu-berlin.de/w/SE/DPPDemoVideo">Demo">https://www.inf.fu-berlin.de/w/SE/DPPDemoVideo">Demo</a> Video</a>
+</p>]]></body>
+      <created>1241705172</created>
+      <changed>1292767527</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.saros-project.org/]]></homepageurl>
+      <image><![CDATA[http://www.saros-project.org/wiki/pub/SE/DPP/saros-logo-110x80.png]]></image>
+      <version>10.11.26.r2744</version>
+      <license>GPL</license>
+      <companyname><![CDATA[Freie Universität Berlin]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5, 3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/tracker/?group_id=167540]]></supporturl>
+      <updateurl><![CDATA[http://dpp.sf.net/update]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

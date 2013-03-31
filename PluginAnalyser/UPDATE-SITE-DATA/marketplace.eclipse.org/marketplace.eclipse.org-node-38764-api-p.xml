@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="38764" name="PHPEclipse" url="http://marketplace.eclipse.org/content/phpeclipse">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='43' name='PHP' url='http://marketplace.eclipse.org/category/free-tagging/php'/>
+        <tag id='1647' name='phpide' url='http://marketplace.eclipse.org/category/free-tagging/phpide'/>
+        <tag id='1718' name='PHP   HTML' url='http://marketplace.eclipse.org/category/free-tagging/php-html-0'/>
+      </tags>
+      
+      <owner>Lance E Sloan</owner>
+      <favorited>10</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>PHPEclipse is an open-source alternative to PDT.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>PHPEclipse is an open-source alternative to PDT.</p>
+]]></body>
+      <created>1300300768</created>
+      <changed>1300473277</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.phpeclipse.com/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/eclipsebutton_med.png?itok=EDleJMkq]]></image>
+      <version>1.2.3</version>
+      <license>Other</license>
+      <companyname><![CDATA[PHPEclipse]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.phpeclipse.com/discussion]]></supporturl>
+      <updateurl><![CDATA[http://update.phpeclipse.net/update/stable/1.2.x]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

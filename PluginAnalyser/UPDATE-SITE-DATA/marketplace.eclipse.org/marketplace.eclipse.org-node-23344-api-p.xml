@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="23344" name="DB Importer" url="http://marketplace.eclipse.org/content/db-importer">
+      <type>resource</type>
+      <categories>
+        <category id='36' name='Database Persistence' url='http://marketplace.eclipse.org/category/categories/database-persistence'/>
+      </categories>
+      <tags>
+        <tag id='667' name='jpa' url='http://marketplace.eclipse.org/category/free-tagging/jpa'/>
+        <tag id='1448' name='reverse engineer database' url='http://marketplace.eclipse.org/category/free-tagging/reverse-engineer-database'/>
+      </tags>
+      
+      <owner>Lars Høidahl</owner>
+      <favorited>1</favorited>
+      <installstotal>590</installstotal>
+      <installsrecent>7</installsrecent>
+      <shortdescription><![CDATA[<p>DB Importer is an Eclipse plug-in that generates JPA classes for an existing database. It is free for non-commercial use.</p>
+
+<p>Version 2.0 has a new user interface and adds possibility to configure the generated code in the DB Importer editor.</p>
+
+<p>A script can be used  to configure many values at once or for more advanced configurations. For instance:
+</p><ul><li>Filter which tables to import.</li>
+<li>Determine whether to generate relations for foreign keys.</li>
+<li>Control generation of many-to-many relations from join tables.</li>
+<li>Configure class and variable names. For instance, a table name like "tb_person_account" can be converted to a class name "PersonAccount".</li>
+<li>Generate annotations such as @GeneratedId, @Version, etc.</li>
+<li>Check database design rules.</li>
+</ul><p>Here are some examples of code that can be generated:</p>
+
+<p><b>Generate @Version annotation on all fields with name "version"</b></p>
+<p>
+</p><pre>@Version
+private long version;
+</pre>
+
+
+<p><b>Generate @GeneratedValue(strategy=GenerationType.AUTO) on all PK fields</b></p>
+<p>
+</p><pre>@Id
+@GeneratedValue(strategy=GenerationType.AUTO)
+private long id;
+</pre>
+
+
+<p><b>Convert all tinyint SQL columns to Boolean or boolean Java types</b></p>
+<p>
+</p><pre>private boolean b;
+</pre>
+
+
+<p><b>Let some classes implement a certain interface</b></p>
+<p>
+</p><pre>@Entity
+class Person implements PersistentObject
+</pre>
+
+
+<p><b>Generate both relation and attribute for a field</b></p>
+<p>
+This can be useful with frameworks such as SmartGWT, which don't handle JPA relations very well.
+</p><pre>@ManyToOne(fetch=FetchType.LAZY)
+@JoinColumn(name="person_id", nullable=false,
+   insertable=false, updatable=false)
+private Person person;
+
+@Column(name="person_id")
+private long personId;
+</pre>
+
+
+<p><b>Generate ordered lists for some collections</b></p>
+<p>
+</p><pre>@OneToMany(mappedBy="messageList", fetch=FetchType.LAZY)
+@OrderBy(value="sortOrder")
+private List<message> messages = new ArrayList<message>();
+</message></message></pre>
+
+
+<p><b>Generate enum types instead of int for some fields</b></p>
+<pre>@Column(name="status", length=10)
+private Status status;
+</pre>
+
+
+<p><b>Generate metadata</b></p>
+<pre>public interface PersonMetadata {
+  String ID = "id";
+  String NAME = "name";
+}
+</pre>
+
+<p><b>Import unique constraints</b></p>
+<pre>@Entity
+@Table(name="messages", uniqueConstraints={
+   @UniqueConstraint(columnNames={"unique_code"})
+} )
+</pre>
+
+See <a href="http://objectgeneration.com/importdb.html">our home page</a> for how to do this in practice.]]></shortdescription>
+      <body><![CDATA[<p>DB Importer is an Eclipse plug-in that generates JPA classes for an existing database. It is free for non-commercial use.</p>
+
+<p>Version 2.0 has a new user interface and adds possibility to configure the generated code in the DB Importer editor.</p>
+
+<p>A script can be used  to configure many values at once or for more advanced configurations. For instance:
+</p><ul><li>Filter which tables to import.</li>
+<li>Determine whether to generate relations for foreign keys.</li>
+<li>Control generation of many-to-many relations from join tables.</li>
+<li>Configure class and variable names. For instance, a table name like "tb_person_account" can be converted to a class name "PersonAccount".</li>
+<li>Generate annotations such as @GeneratedId, @Version, etc.</li>
+<li>Check database design rules.</li>
+</ul><p>Here are some examples of code that can be generated:</p>
+
+<p><b>Generate @Version annotation on all fields with name "version"</b></p>
+<p>
+</p><pre>@Version
+private long version;
+</pre>
+
+
+<p><b>Generate @GeneratedValue(strategy=GenerationType.AUTO) on all PK fields</b></p>
+<p>
+</p><pre>@Id
+@GeneratedValue(strategy=GenerationType.AUTO)
+private long id;
+</pre>
+
+
+<p><b>Convert all tinyint SQL columns to Boolean or boolean Java types</b></p>
+<p>
+</p><pre>private boolean b;
+</pre>
+
+
+<p><b>Let some classes implement a certain interface</b></p>
+<p>
+</p><pre>@Entity
+class Person implements PersistentObject
+</pre>
+
+
+<p><b>Generate both relation and attribute for a field</b></p>
+<p>
+This can be useful with frameworks such as SmartGWT, which don't handle JPA relations very well.
+</p><pre>@ManyToOne(fetch=FetchType.LAZY)
+@JoinColumn(name="person_id", nullable=false,
+   insertable=false, updatable=false)
+private Person person;
+
+@Column(name="person_id")
+private long personId;
+</pre>
+
+
+<p><b>Generate ordered lists for some collections</b></p>
+<p>
+</p><pre>@OneToMany(mappedBy="messageList", fetch=FetchType.LAZY)
+@OrderBy(value="sortOrder")
+private List<message> messages = new ArrayList<message>();
+</message></message></pre>
+
+
+<p><b>Generate enum types instead of int for some fields</b></p>
+<pre>@Column(name="status", length=10)
+private Status status;
+</pre>
+
+
+<p><b>Generate metadata</b></p>
+<pre>public interface PersonMetadata {
+  String ID = "id";
+  String NAME = "name";
+}
+</pre>
+
+<p><b>Import unique constraints</b></p>
+<pre>@Entity
+@Table(name="messages", uniqueConstraints={
+   @UniqueConstraint(columnNames={"unique_code"})
+} )
+</pre>
+
+See <a href="http://objectgeneration.com/importdb.html">our home page</a> for how to do this in practice.]]></body>
+      <created>1291758318</created>
+      <changed>1305724643</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://objectgeneration.com/importdb.html]]></homepageurl>
+      <image><![CDATA[http://objectgeneration.com/logo-symbol.gif]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/importdb-classname.png?itok=eP7-dNM6]]></screenshot>
+      <version>2.0</version>
+      <license>Free for non-commerical use</license>
+      <companyname><![CDATA[Object Generation]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5, 3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://objectgeneration.com/forum/viewforum.php?f=12]]></supporturl>
+      <updateurl><![CDATA[http://objectgeneration.com/update]]></updateurl>
+<ius>
+<iu>com.objectgeneration.importdb_feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

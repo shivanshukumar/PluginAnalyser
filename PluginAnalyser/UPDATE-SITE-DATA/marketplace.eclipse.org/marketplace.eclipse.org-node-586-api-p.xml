@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="586" name="Eclipsemail" url="http://marketplace.eclipse.org/content/eclipsemail">
+      <type>resource</type>
+      <categories>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+      </categories>
+            
+      <owner>Mirko Raner</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Eclipsemail is an e-mail client for the Eclipse platform. It enables you to send and receive electronic mail from within your Eclipse workbench, without having to switch to another program, even without switching to another workbench perspective. Mail accounts are represented as special projects in the workspace. Eclipsemail is an open-source project and encourages developers to actively participate in its further development and improvement.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Eclipsemail is an e-mail client for the Eclipse platform. It enables you to send and receive electronic mail from within your Eclipse workbench, without having to switch to another program, even without switching to another workbench perspective. Mail accounts are represented as special projects in the workspace. Eclipsemail is an open-source project and encourages developers to actively participate in its further development and improvement.</p>
+]]></body>
+      <created>1195655912</created>
+      <changed>1262853799</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://eclipsemail.org/wiki/index.php/Welcome_to_Eclipsemail]]></homepageurl>
+      <image><![CDATA[http://eclipsemail.org/eclipsemail-110x80.png]]></image>
+      <version>1.0.54</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Mirko Raner, eclipsemail.org]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.1, 3.2, 3.3, 3.4, 3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://bugs.eclipsemail.org/cgi-bin/bugs/enter_bug.cgi?product=Eclipsemail]]></supporturl>
+      <updateurl><![CDATA[http://eclipsemail.org/update/]]></updateurl>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="926" name="Aptana Cloud Connect (v1.0) -- Eclipse Plugin for Cloud Hosting" url="http://marketplace.eclipse.org/content/aptana-cloud-connect-v10-eclipse-plugin-cloud-hosting">
+      <type>resource</type>
+      <categories>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+      </categories>
+            
+      <owner>khakman</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>If you are creating Web applications using Java, PHP or Rails, the Aptana Cloud Connect plugin for Eclipse lets you get all the benefits of scalable, on-demand Cloud hosting, with the ease of full IDE integration.</p>
+<p>Aptana Cloud Connect (v1.0) lets you:<br />
+* Instantly create Java, PHP, MySQL, and Ruby on Rails servers atop Cloud hosting infrastructure<br />
+* Scale your web and database servers in the Cloud up or down anytime<br />
+* Deploy your local Java (.war), PHP or Rails projects to your remote server</p>
+<p>It also includes:<br />
+* Remote database tools for exploring, querying, and working with your remote data<br />
+* Automatic server and application monitoring with dashboard and email notifications<br />
+* Hosted source repository (SVN or Git) for projects and team development<br />
+* Optional HTML, CSS, Ajax, JavaScript and other code editors that integrate with the remote server</p>
+<p>Try it out by adding Aptana Cloud Connect to your Eclipse 3.4 compatible IDE installation.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>If you are creating Web applications using Java, PHP or Rails, the Aptana Cloud Connect plugin for Eclipse lets you get all the benefits of scalable, on-demand Cloud hosting, with the ease of full IDE integration.</p>
+<p>Aptana Cloud Connect (v1.0) lets you:<br />
+* Instantly create Java, PHP, MySQL, and Ruby on Rails servers atop Cloud hosting infrastructure<br />
+* Scale your web and database servers in the Cloud up or down anytime<br />
+* Deploy your local Java (.war), PHP or Rails projects to your remote server</p>
+<p>It also includes:<br />
+* Remote database tools for exploring, querying, and working with your remote data<br />
+* Automatic server and application monitoring with dashboard and email notifications<br />
+* Hosted source repository (SVN or Git) for projects and team development<br />
+* Optional HTML, CSS, Ajax, JavaScript and other code editors that integrate with the remote server</p>
+<p>Try it out by adding Aptana Cloud Connect to your Eclipse 3.4 compatible IDE installation.</p>
+]]></body>
+      <created>1241704979</created>
+      <changed>1259779237</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.aptana.com/cloud]]></homepageurl>
+      <image><![CDATA[http://www.aptana.com/system/files/images/cloudconnect_for_eclipse.gif]]></image>
+      <version>1.0</version>
+      <license>Free GPL</license>
+      <companyname><![CDATA[Aptana, Inc.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://support.aptana.com]]></supporturl>
+      <updateurl><![CDATA[http://update.aptana.com/update/cloudconnect/]]></updateurl>
+    </node>
+    </marketplace>
+    

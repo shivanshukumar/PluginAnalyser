@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="67745" name="xMxmlCompiler" url="http://marketplace.eclipse.org/content/xmxmlcompiler">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='1966' name='Programming Languages' url='http://marketplace.eclipse.org/category/categories/programming-languages'/>
+      </categories>
+      <tags>
+        <tag id='747' name='flex' url='http://marketplace.eclipse.org/category/free-tagging/flex'/>
+        <tag id='748' name='Flash' url='http://marketplace.eclipse.org/category/free-tagging/flash'/>
+        <tag id='762' name='compiler' url='http://marketplace.eclipse.org/category/free-tagging/compiler'/>
+        <tag id='795' name='as3' url='http://marketplace.eclipse.org/category/free-tagging/as3'/>
+        <tag id='796' name='as' url='http://marketplace.eclipse.org/category/free-tagging-0'/>
+      </tags>
+      
+      <owner>xado2010</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This is a wrapper for the mxmlc , the cli compiler for flex. It gives you some features like autobuild on resource change event, visual selection of themes and management of swc libraries into classpath.<br />
+Coming soon adding of error and warning markers to the resources.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This is a wrapper for the mxmlc , the cli compiler for flex. It gives you some features like autobuild on resource change event, visual selection of themes and management of swc libraries into classpath.<br />
+Coming soon adding of error and warning markers to the resources.</p>
+]]></body>
+      <created>1308428582</created>
+      <changed>1315324681</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://sourceforge.net/projects/xmxmlcompiler]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_0.jpg?itok=XpmzjBwZ]]></image>
+      <version></version>
+      <license>Other Open Source</license>
+      <companyname><![CDATA[xado2010@gmail.com]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/xmxmlcompiler/support]]></supporturl>
+      <updateurl><![CDATA[http://xmxmlcompiler.sourceforge.net/update/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

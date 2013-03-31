@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="57110" name="Fonts Size" url="http://marketplace.eclipse.org/content/fonts-size">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+      <tags>
+        <tag id='1954' name='Fonts' url='http://marketplace.eclipse.org/category/free-tagging/fonts'/>
+      </tags>
+      
+      <owner>Guy Korland</owner>
+      <favorited>3</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Easily control editor's font size.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Easily control editor's font size.</p>
+]]></body>
+      <created>1306705463</created>
+      <changed>1306761194</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/eclipse-fonts/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/increase-font.gif?itok=NCM97zq-]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/fonts.jpg?itok=F_L2ukIO]]></screenshot>
+      <version>1.0.0</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[eclipse-fonts]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://eclipse-fonts.googlecode.com/svn/trunk/FontsUpdate/]]></updateurl>
+    </node>
+    </marketplace>
+    

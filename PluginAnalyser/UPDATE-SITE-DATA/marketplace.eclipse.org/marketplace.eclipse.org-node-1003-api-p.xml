@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1003" name="Remote Workspace Preferences Plug-in" url="http://marketplace.eclipse.org/content/remote-workspace-preferences-plug">
+      <type>resource</type>
+      <categories>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>Michael Pellaton</owner>
+      <favorited>9</favorited>
+      <installstotal>416</installstotal>
+      <installsrecent>19</installsrecent>
+      <shortdescription><![CDATA[<p>The Remote Workspace Preferences Plug-in provides functionality to import an Eclipse preference file (EPF) from a remote location accessible by HTTP. Besides that it is able to detect new or unconfigured Eclipse workspaces and a simple variable substitution mechanism allows for localization of the preferences.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The Remote Workspace Preferences Plug-in provides functionality to import an Eclipse preference file (EPF) from a remote location accessible by HTTP. Besides that it is able to detect new or unconfigured Eclipse workspaces and a simple variable substitution mechanism allows for localization of the preferences.</p>
+]]></body>
+      <created>1252606074</created>
+      <changed>1332875837</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://ete.kenai.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/wsconfig-logo-nobg_0.gif?itok=fCk6iyb0]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/ws-import.png?itok=JhffEJX5]]></screenshot>
+      <version>3.0.4</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Eclipse Team Etceteras Project]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://kenai.com/jira/browse/ETE]]></supporturl>
+      <updateurl><![CDATA[https://contrails.ch/ete/updatesite/]]></updateurl>
+<ius>
+<iu>ch.netcetera.eclipse.workspaceconfig.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

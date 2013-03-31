@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="31023" name="MinPSP Eclipse CDT Plugin" url="http://marketplace.eclipse.org/content/minpsp-eclipse-cdt-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+      <tags>
+        <tag id='1014' name='GCC' url='http://marketplace.eclipse.org/category/free-tagging/gcc'/>
+        <tag id='1266' name='CDT' url='http://marketplace.eclipse.org/category/free-tagging/cdt'/>
+        <tag id='1593' name='PlayStation' url='http://marketplace.eclipse.org/category/free-tagging/playstation'/>
+        <tag id='1594' name='MinPSP' url='http://marketplace.eclipse.org/category/free-tagging/minpsp'/>
+      </tags>
+      
+      <owner>Paulo Lopes</owner>
+      <favorited>0</favorited>
+      <installstotal>404</installstotal>
+      <installsrecent>22</installsrecent>
+      <shortdescription><![CDATA[<p>MinPSP Helper plugin for Eclipse CDT.</p>
+<p>With this plugin and the Homebrew PSP SDK Toolchain you can start making your own homebrew games for the PlayStation Portable.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>MinPSP Helper plugin for Eclipse CDT.</p>
+<p>With this plugin and the Homebrew PSP SDK Toolchain you can start making your own homebrew games for the PlayStation Portable.</p>
+]]></body>
+      <created>1296763691</created>
+      <changed>1296830360</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.jetdrone.com/post/1/25/new-minpsp-plugin-1.0.0]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0.0</version>
+      <license>GPL</license>
+      <companyname><![CDATA[jetDrone]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.jetdrone.com]]></supporturl>
+      <updateurl><![CDATA[http://www.jetdrone.com/static/eclipse/update]]></updateurl>
+<ius>
+<iu>MinPSP</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

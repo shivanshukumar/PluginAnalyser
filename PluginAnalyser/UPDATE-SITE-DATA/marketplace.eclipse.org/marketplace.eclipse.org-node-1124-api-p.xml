@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1124" name="Infinitest" url="http://marketplace.eclipse.org/content/infinitest">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+      </categories>
+      <tags>
+        <tag id='752' name='junit' url='http://marketplace.eclipse.org/category/free-tagging/junit'/>
+        <tag id='1951' name='continuous testing' url='http://marketplace.eclipse.org/category/free-tagging/continuous-testing'/>
+        <tag id='2606' name='unit tests' url='http://marketplace.eclipse.org/category/free-tagging/unit-tests'/>
+      </tags>
+      
+      <owner>David Gageot</owner>
+      <favorited>14</favorited>
+      <installstotal>2242</installstotal>
+      <installsrecent>323</installsrecent>
+      <shortdescription><![CDATA[<p>Infinitest is a continuous test runner for Java, and is valuable to developers using a unit testing tool called JUnit. Continuous testing is the practice of constantly running unit tests while developers make changes to source code. Kind of like a spellchecker, except that instead of looking for spelling errors like a regular spellchecker, or looking for syntax errors like many IDE's do, Infinitest constantly looks for logical errors and immediately identifies them. It does this by running an optimized set of unit tests every time a developer makes a change to source code. It's installed as a plugin to the Eclipse Java IDE, or alternatively, JetBrains IntelliJ IDEA. </p>
+<p>Infinitest requires either Eclipse 3.4 (or later). It requires Java 1.5 (or later).</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Infinitest is a continuous test runner for Java, and is valuable to developers using a unit testing tool called JUnit. Continuous testing is the practice of constantly running unit tests while developers make changes to source code. Kind of like a spellchecker, except that instead of looking for spelling errors like a regular spellchecker, or looking for syntax errors like many IDE's do, Infinitest constantly looks for logical errors and immediately identifies them. It does this by running an optimized set of unit tests every time a developer makes a change to source code. It's installed as a plugin to the Eclipse Java IDE, or alternatively, JetBrains IntelliJ IDEA. </p>
+<p>Infinitest requires either Eclipse 3.4 (or later). It requires Java 1.5 (or later).</p>
+]]></body>
+      <created>1264711473</created>
+      <changed>1337790699</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://infinitest.github.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/infinitestLogo_0.png?itok=9yOx2QiU]]></image>
+      <version>5.1</version>
+      <license>GPL</license>
+      <companyname><![CDATA[Open Source]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.4 or later]]></eclipseversion>
+      <supporturl><![CDATA[https://github.com/infinitest/infinitest/issues]]></supporturl>
+      <updateurl><![CDATA[http://infinitest.github.com]]></updateurl>
+<ius>
+<iu>org.infinitest.eclipse.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

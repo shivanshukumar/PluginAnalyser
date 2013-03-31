@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1046" name="Windows Azure Tools for Eclipse - PHP" url="http://marketplace.eclipse.org/content/windows-azure-tools-eclipse-php">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='43' name='PHP' url='http://marketplace.eclipse.org/category/free-tagging/php'/>
+        <tag id='581' name='Cloud Computing' url='http://marketplace.eclipse.org/category/free-tagging/cloud-computing'/>
+        <tag id='1229' name='Windows Azure' url='http://marketplace.eclipse.org/category/free-tagging/windows-azure'/>
+      </tags>
+      
+      <owner>Yves YANG</owner>
+      <favorited>2</favorited>
+      <installstotal>4492</installstotal>
+      <installsrecent>191</installsrecent>
+      <shortdescription><![CDATA[<p><p>The purpose of this project is the creation of a feature-rich open source PHP application development environment in Eclipse that enables  development and deployment of PHP applications for Windows Azure.  The windowsazure4e plug-in builds upon the PHP Development Toolkit (PDT) and integrates Web Tools Platform (WTP) to provide a complete toolkit for Windows Azure Web Application development. </p><br />
+<p>The windowsazure4e extensions offers an end-to-end Windows Azure development experience, including:</p><br />
+<ul><br />
+ <li><strong>Project Creation & Migration:</strong> The New Project Wizard creates a new PHP Web Application targeting Windows Azure. Existing PHP projects can be converted to Windows Azure projects (or vice-versa) using the migration tool. </li><br />
+<li><strong>Azure Project Structure & Management::</strong> The windowsazure4e plug-in creates the project artifacts that Windows Azure expects, including a Windows Azure Service project and a Web-role Project, as well as Windows Azure configuration and definition files. Project and Windows Azure settings are exposed via the properties window in Eclipse </li><br />
+<li><strong>Storage Explorer:</strong> As part of the plug-in, a Windows Azure Storage Explorer is provided within the Eclipse environment. The Storage Explorer allows easy management of Windows Azure Storage Accounts. In addition, it also provides a friendly user-interface for performing Create, Read, Update, and Delete (CRUD) operations on Blobs, Queues, and Tables. </li><br />
+<p>The Storage Explorer it built using the Windows Azure SDK for Java.</p><br />
+<li><strong>Azure Project Deployment:</strong> Once the PHP application for Windows Azure had been developed and tested locally on the Windows Azure Development Fabric, the application can be packaged up for Windows Azure deployment with a right-clicking on the target project from within Eclipse. </li><br />
+</ul><br />
+<p align="center"><a href="<a href="http://www.windowsazure4e.org/images/screenshots/storage_explorer.png"><img">http://www.windowsazure4e.org/images/screenshots/storage_explorer.png"><img</a> src="<a href="http://www.windowsazure4e.org/images/screenshots/storage_explorer_small.png"">http://www.windowsazure4e.org/images/screenshots/storage_explorer_small....</a> width="220" height="194" /></a> <a href="<a href="http://www.windowsazure4e.org/images/screenshots/run.png"><img">http://www.windowsazure4e.org/images/screenshots/run.png"><img</a> src="<a href="http://www.windowsazure4e.org/images/screenshots/run_small.png"">http://www.windowsazure4e.org/images/screenshots/run_small.png"</a> width="242" height="194" /></a></p></p>
+]]></shortdescription>
+      <body><![CDATA[<p><p>The purpose of this project is the creation of a feature-rich open source PHP application development environment in Eclipse that enables  development and deployment of PHP applications for Windows Azure.  The windowsazure4e plug-in builds upon the PHP Development Toolkit (PDT) and integrates Web Tools Platform (WTP) to provide a complete toolkit for Windows Azure Web Application development. </p><br />
+<p>The windowsazure4e extensions offers an end-to-end Windows Azure development experience, including:</p><br />
+<ul><br />
+ <li><strong>Project Creation & Migration:</strong> The New Project Wizard creates a new PHP Web Application targeting Windows Azure. Existing PHP projects can be converted to Windows Azure projects (or vice-versa) using the migration tool. </li><br />
+<li><strong>Azure Project Structure & Management::</strong> The windowsazure4e plug-in creates the project artifacts that Windows Azure expects, including a Windows Azure Service project and a Web-role Project, as well as Windows Azure configuration and definition files. Project and Windows Azure settings are exposed via the properties window in Eclipse </li><br />
+<li><strong>Storage Explorer:</strong> As part of the plug-in, a Windows Azure Storage Explorer is provided within the Eclipse environment. The Storage Explorer allows easy management of Windows Azure Storage Accounts. In addition, it also provides a friendly user-interface for performing Create, Read, Update, and Delete (CRUD) operations on Blobs, Queues, and Tables. </li><br />
+<p>The Storage Explorer it built using the Windows Azure SDK for Java.</p><br />
+<li><strong>Azure Project Deployment:</strong> Once the PHP application for Windows Azure had been developed and tested locally on the Windows Azure Development Fabric, the application can be packaged up for Windows Azure deployment with a right-clicking on the target project from within Eclipse. </li><br />
+</ul><br />
+<p align="center"><a href="<a href="http://www.windowsazure4e.org/images/screenshots/storage_explorer.png"><img">http://www.windowsazure4e.org/images/screenshots/storage_explorer.png"><img</a> src="<a href="http://www.windowsazure4e.org/images/screenshots/storage_explorer_small.png"">http://www.windowsazure4e.org/images/screenshots/storage_explorer_small....</a> width="220" height="194" /></a> <a href="<a href="http://www.windowsazure4e.org/images/screenshots/run.png"><img">http://www.windowsazure4e.org/images/screenshots/run.png"><img</a> src="<a href="http://www.windowsazure4e.org/images/screenshots/run_small.png"">http://www.windowsazure4e.org/images/screenshots/run_small.png"</a> width="242" height="194" /></a></p></p>
+]]></body>
+      <created>1258654317</created>
+      <changed>1285435586</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.windowsazure4e.org]]></homepageurl>
+      <image><![CDATA[http://www.windowsazure4e.org/images/windowsazure4e_small.png]]></image>
+      <version>2.0.0</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[Soyatec]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5.x/3.6.x]]></eclipseversion>
+      <supporturl><![CDATA[http://www.windowsazure4e.org/community/]]></supporturl>
+      <updateurl><![CDATA[http://www.windowsazure4e.org/update]]></updateurl>
+<ius>
+<iu>org.soyatec.windows.azure.pdt.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

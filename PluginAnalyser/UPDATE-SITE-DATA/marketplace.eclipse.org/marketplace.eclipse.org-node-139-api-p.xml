@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="139" name="TeXlipse" url="http://marketplace.eclipse.org/content/texlipse">
+      <type>resource</type>
+      <categories>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+      </categories>
+      <tags>
+        <tag id='419' name='tex' url='http://marketplace.eclipse.org/category/free-tagging/tex'/>
+        <tag id='420' name='latex' url='http://marketplace.eclipse.org/category/free-tagging/latex'/>
+      </tags>
+      
+      <owner>Kimmo Karlsson</owner>
+      <favorited>39</favorited>
+      <installstotal>13062</installstotal>
+      <installsrecent>635</installsrecent>
+      <shortdescription><![CDATA[<p>The TeXlipse plugin provides both LaTeX and BibTeX editors, a project creation wizard, and a complete user manual of the editor functions. Additional features include syntax highlighting, document outline, section folding, command completion, cite and ref completion, templates, builder integration, viewer integration with inverse search, and more. The plugin makes it possible for LaTeX documents to be edited and built like normal projects in the IDE, and the viewer support makes it easy to check the outcome.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The TeXlipse plugin provides both LaTeX and BibTeX editors, a project creation wizard, and a complete user manual of the editor functions. Additional features include syntax highlighting, document outline, section folding, command completion, cite and ref completion, templates, builder integration, viewer integration with inverse search, and more. The plugin makes it possible for LaTeX documents to be edited and built like normal projects in the IDE, and the viewer support makes it easy to check the outcome.</p>
+]]></body>
+      <created>1111359124</created>
+      <changed>1322766168</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://texlipse.sourceforge.net]]></homepageurl>
+      <image><![CDATA[http://texlipse.sourceforge.net/screenshots/bibref-screen-110x80.png]]></image>
+      <version>1.5.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Texlipse.sf.net community]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/texlipse/support]]></supporturl>
+      <updateurl><![CDATA[http://texlipse.sourceforge.net]]></updateurl>
+<ius>
+<iu>net.sourceforge.texlipse</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

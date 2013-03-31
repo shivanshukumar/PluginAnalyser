@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1041" name="BNM Eclipse plugin" url="http://marketplace.eclipse.org/content/bnm-eclipse-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+      </categories>
+            
+      <owner>Stefan Franke</owner>
+      <favorited>1</favorited>
+      <installstotal>39</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[BNM is not Maven.
+BNM is rather a prof of possible enhancements to Maven.
+This plugins provides Eclipse integration of BNM.
+
+0.1.0
+- easier project import and project creation
+- interleaved builder: opened projects are build by eclipse, required/dependent projects are build by BNM
+- way faster than Maven 3
+- enhanced version management
+
+V 0.0.5:
+- adds a deploy plugin implementation.
+]]></shortdescription>
+      <body><![CDATA[BNM is not Maven.
+BNM is rather a prof of possible enhancements to Maven.
+This plugins provides Eclipse integration of BNM.
+
+0.1.0
+- easier project import and project creation
+- interleaved builder: opened projects are build by eclipse, required/dependent projects are build by BNM
+- way faster than Maven 3
+- enhanced version management
+
+V 0.0.5:
+- adds a deploy plugin implementation.
+]]></body>
+      <created>1258035588</created>
+      <changed>1299793740</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.bebbosoft.de/java/bnm]]></homepageurl>
+      <image><![CDATA[http://www.bebbosoft.de/java/bnm/bnmversionx.png]]></image>
+      <version>0.1.0</version>
+      <license>GPL</license>
+      <companyname><![CDATA[BebboSoft F.Fischell & S.Franke GbR]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.4-]]></eclipseversion>
+      <supporturl><![CDATA[http://www.bebbosoft.de/bugs/]]></supporturl>
+      <updateurl><![CDATA[http://www.bebbosoft.de/plugins]]></updateurl>
+<ius>
+<iu>de.bb.tool.bnm.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

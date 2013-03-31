@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="55432" name="Google Code Search Plug-in" url="http://marketplace.eclipse.org/content/google-code-search-plug">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='40' name='Search' url='http://marketplace.eclipse.org/category/categories/search'/>
+      </categories>
+      <tags>
+        <tag id='570' name='code search' url='http://marketplace.eclipse.org/category/free-tagging/code-search'/>
+        <tag id='1423' name='Eclipde IDE' url='http://marketplace.eclipse.org/category/free-tagging/eclipde-ide'/>
+        <tag id='1556' name='developer tools' url='http://marketplace.eclipse.org/category/free-tagging/developer-tools'/>
+      </tags>
+      
+      <owner>Michael Spector</owner>
+      <favorited>4</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The aim of this project is to provide intuitive interface for searching public source code via Google Code Search directly from your Eclipse IDE.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The aim of this project is to provide intuitive interface for searching public source code via Google Code Search directly from your Eclipse IDE.</p>
+]]></body>
+      <created>1306067250</created>
+      <changed>1306653897</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/gcsearch/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/usage1.png?itok=UNDEYWdq]]></screenshot>
+      <version>1.0.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Michael Spector]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://gcsearch.googlecode.com/svn/trunk/update/]]></updateurl>
+    </node>
+    </marketplace>
+    

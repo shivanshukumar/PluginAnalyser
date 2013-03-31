@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="30823" name="AppLaud PhoneGap for Android with JSLint/JSHint" url="http://marketplace.eclipse.org/content/applaud-phonegap-android-jslintjshint">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+      <tags>
+        <tag id='408' name='android' url='http://marketplace.eclipse.org/category/free-tagging/android'/>
+        <tag id='810' name='javascript' url='http://marketplace.eclipse.org/category/free-tagging/javascript'/>
+        <tag id='991' name='Mobile' url='http://marketplace.eclipse.org/category/free-tagging/mobile'/>
+        <tag id='1636' name='JSLint' url='http://marketplace.eclipse.org/category/free-tagging/jslint'/>
+        <tag id='1637' name='PhoneGap' url='http://marketplace.eclipse.org/category/free-tagging/phonegap'/>
+      </tags>
+      
+      <owner>Paul Beusterien</owner>
+      <favorited>8</favorited>
+      <installstotal>6834</installstotal>
+      <installsrecent>549</installsrecent>
+      <shortdescription><![CDATA[<p>An Eclipse plugin to enable Web developers to easily create Android apps.  The plugin works with the Android Development Tools and the PhoneGap framework to provide a comprehensive IDE for Android development:</p>
+<ul><li>Project support for JavaScript, HTML and CSS files</li>
+<li>Built on Eclipse JSDT (JavaScript Development Tools)</li>
+<li>UI Framework Integration - currently jQuery Mobile and Sencha Touch</li>
+<li>Automatic build environment</li>
+<li>Easy target and emulator deployment</li>
+<li>Single environment for hybrid development when Java is desired</li>
+</ul><p>MDS 1.2 adds integrated JSLint/JSHint via the jslint4java feature </p>
+<p>The Android Development Tools are a prerequisite install available via <a href="https://dl-ssl.google.com/android/eclipse/">https://dl-ssl.google.com/android/eclipse/</a></p>
+<p>MDS 1.2 Release summary at <a href="http://bit.ly/fUGP5w">http://bit.ly/fUGP5w</a></p>
+<p>Mailing List at <a href="http://groups.google.com/group/eclipse-plugin-for-phonegap">http://groups.google.com/group/eclipse-plugin-for-phonegap</a><br />
+Code Headquarters at <a href="http://code.google.com/a/eclipselabs.org/p/mobile-web-development-with-phonegap/">http://code.google.com/a/eclipselabs.org/p/mobile-web-development-with-p...</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>An Eclipse plugin to enable Web developers to easily create Android apps.  The plugin works with the Android Development Tools and the PhoneGap framework to provide a comprehensive IDE for Android development:</p>
+<ul><li>Project support for JavaScript, HTML and CSS files</li>
+<li>Built on Eclipse JSDT (JavaScript Development Tools)</li>
+<li>UI Framework Integration - currently jQuery Mobile and Sencha Touch</li>
+<li>Automatic build environment</li>
+<li>Easy target and emulator deployment</li>
+<li>Single environment for hybrid development when Java is desired</li>
+</ul><p>MDS 1.2 adds integrated JSLint/JSHint via the jslint4java feature </p>
+<p>The Android Development Tools are a prerequisite install available via <a href="https://dl-ssl.google.com/android/eclipse/">https://dl-ssl.google.com/android/eclipse/</a></p>
+<p>MDS 1.2 Release summary at <a href="http://bit.ly/fUGP5w">http://bit.ly/fUGP5w</a></p>
+<p>Mailing List at <a href="http://groups.google.com/group/eclipse-plugin-for-phonegap">http://groups.google.com/group/eclipse-plugin-for-phonegap</a><br />
+Code Headquarters at <a href="http://code.google.com/a/eclipselabs.org/p/mobile-web-development-with-phonegap/">http://code.google.com/a/eclipselabs.org/p/mobile-web-development-with-p...</a></p>
+]]></body>
+      <created>1296670799</created>
+      <changed>1347942554</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.mobiledevelopersolutions.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/mdspgiconEMP2.png?itok=iFo91XFX]]></image>
+      <version>1.2</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Mobile Developer Solutions]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6.1, 3.6.2, 3.7.0, 3.7.1]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/a/eclipselabs.org/p/mobile-web-development-with-phonegap/issues/list]]></supporturl>
+      <updateurl><![CDATA[https://svn.codespot.com/a/eclipselabs.org/mobile-web-development-with-phonegap/tags/r1.2/download]]></updateurl>
+<ius>
+<iu>com.mds.phonegapForAndroid</iu>
+<iu>com.mds.jqm.license</iu>
+<iu>org.eclipse.wst.jsdt.feature</iu>
+<iu>com.mds.phonegap.license</iu>
+<iu>com.googlecode.jslint4java.eclipse.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

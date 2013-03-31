@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="773" name="Code Generator" url="http://marketplace.eclipse.org/content/code-generator">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+      </categories>
+            
+      <owner>hotzst</owner>
+      <favorited>3</favorited>
+      <installstotal>459</installstotal>
+      <installsrecent>7</installsrecent>
+      <shortdescription><![CDATA[<p>This plug-in can generate Java source classes and other code fragemnts based on an input file that is parsed (XML-Data model, create script, xhtml form, php ...) or direct via a database connection (Oracle, MySQL, SQL Server, ...).<br />
+For further details visit our website with JavaDoc, development statistics and various tutorials for the use of the plug-in as well as some hints for developers.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This plug-in can generate Java source classes and other code fragemnts based on an input file that is parsed (XML-Data model, create script, xhtml form, php ...) or direct via a database connection (Oracle, MySQL, SQL Server, ...).<br />
+For further details visit our website with JavaDoc, development statistics and various tutorials for the use of the plug-in as well as some hints for developers.</p>
+]]></body>
+      <created>1222198809</created>
+      <changed>1273211973</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.sahits.ch/project/javacodegen/]]></homepageurl>
+      <image><![CDATA[http://codegenjava.svn.sourceforge.net/viewvc/codegenjava/trunk/ch.sahits.codegen.java/icons/singleClassGenHeader.png]]></image>
+      <version>2.1.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Sahits GmbH]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[https://sourceforge.net/apps/trac/codegenjava/newticket]]></supporturl>
+      <updateurl><![CDATA[http://www.sahits.ch/project/javacodegen/update/ ]]></updateurl>
+<ius>
+<iu>ch.sahits.codegen.java</iu>
+<iu>ch.sahits.codegen.mysql</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

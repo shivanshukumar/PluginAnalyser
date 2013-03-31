@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="140077" name="Pdf4Eclipse" url="http://marketplace.eclipse.org/content/pdf4eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='1972' name='General Purpose Tools' url='http://marketplace.eclipse.org/category/categories/general-purpose-tools'/>
+      </categories>
+      <tags>
+        <tag id='188' name='pdf viewer' url='http://marketplace.eclipse.org/category/free-tagging/pdf-viewer'/>
+        <tag id='420' name='latex' url='http://marketplace.eclipse.org/category/free-tagging/latex'/>
+        <tag id='541' name='PDF' url='http://marketplace.eclipse.org/category/free-tagging/pdf'/>
+        <tag id='2289' name='SyncTeX' url='http://marketplace.eclipse.org/category/free-tagging/synctex'/>
+      </tags>
+      
+      <owner>Boris von Loesch</owner>
+      <favorited>6</favorited>
+      <installstotal>3073</installstotal>
+      <installsrecent>213</installsrecent>
+      <shortdescription><![CDATA[<p>Pdf4Eclipse is a pdf viewer plugin for Eclipse. One of its notable features is a complete integration of SyncTeX, which allows forward and inverse search in pdf files. Hence, it is perfectly suited to work as a viewer for documents created by <a href="http://texlipse.sf.net">TeXlipse</a>.</p>
+<p><strong>Features</strong></p>
+<ul><li>Two different pdf renderers to support of a wide range of pdf documents</li>
+<li>Bookmarks can be shown in the outline view</li>
+<li>Uses the look-and-feel of Eclipse</li>
+<li>Supports links in pdfs</li>
+<li>SyncTeX integration</li>
+<li>Automatically reload when pdf changes</li>
+<li>Written solely in Java</li>
+<li>Open-Source</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>Pdf4Eclipse is a pdf viewer plugin for Eclipse. One of its notable features is a complete integration of SyncTeX, which allows forward and inverse search in pdf files. Hence, it is perfectly suited to work as a viewer for documents created by <a href="http://texlipse.sf.net">TeXlipse</a>.</p>
+<p><strong>Features</strong></p>
+<ul><li>Two different pdf renderers to support of a wide range of pdf documents</li>
+<li>Bookmarks can be shown in the outline view</li>
+<li>Uses the look-and-feel of Eclipse</li>
+<li>Supports links in pdfs</li>
+<li>SyncTeX integration</li>
+<li>Automatically reload when pdf changes</li>
+<li>Written solely in Java</li>
+<li>Open-Source</li>
+</ul>]]></body>
+      <created>1319302119</created>
+      <changed>1334041940</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://borisvl.github.com/Pdf4Eclipse]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screenshotfdafsdd.png?itok=8l48_hle]]></screenshot>
+      <version>1.1.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[B. von Loesch]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[>= 3.5]]></eclipseversion>
+      <supporturl><![CDATA[https://github.com/Borisvl/Pdf4Eclipse]]></supporturl>
+      <updateurl><![CDATA[http://borisvl.github.com/Pdf4Eclipse]]></updateurl>
+<ius>
+<iu>de.vonloesch.pdf4eclipse</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

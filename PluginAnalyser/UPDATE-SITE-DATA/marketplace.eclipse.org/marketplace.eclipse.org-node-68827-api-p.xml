@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="68827" name="Azzyzt JEE Tools" url="http://marketplace.eclipse.org/content/azzyzt-jee-tools">
+      <type>resource</type>
+      <categories>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='21' name='Web Services' url='http://marketplace.eclipse.org/taxonomy/term/21'/>
+        <category id='1967' name='Web, XML, Java EE and OSGi Enterprise Development' url='http://marketplace.eclipse.org/category/categories/web-xml-java-ee-and-osgi-enterprise-development'/>
+      </categories>
+            
+      <owner>Andreas Manessinger</owner>
+      <favorited>1</favorited>
+      <installstotal>117</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Azzyzt JEE Tools is a set of Eclipse plugins for creating a so-called "azzyzted" project, and for creating code from a model. Azzyzt uses Java JPA entities as a model, and from that model it creates an enterprise application, ready to be deployed in a Java EE 6 application server like GlassFish 3, ready to be accessed via CORBA, SOAP, and REST. Thus the generated application is a set of Web services, providing all that you need in a typical CRUD application. Generated enterprise applications have separate source folders for generated and developer-supplied content. You can add your own functionality to a well-engineered base project. Azzyzt JEE Tools is not about user interfaces. It is expected that the generated application is accessed by a RIA frontend or by a fat client.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Azzyzt JEE Tools is a set of Eclipse plugins for creating a so-called "azzyzted" project, and for creating code from a model. Azzyzt uses Java JPA entities as a model, and from that model it creates an enterprise application, ready to be deployed in a Java EE 6 application server like GlassFish 3, ready to be accessed via CORBA, SOAP, and REST. Thus the generated application is a set of Web services, providing all that you need in a typical CRUD application. Generated enterprise applications have separate source folders for generated and developer-supplied content. You can add your own functionality to a well-engineered base project. Azzyzt JEE Tools is not about user interfaces. It is expected that the generated application is accessed by a RIA frontend or by a fat client.</p>
+]]></body>
+      <created>1308696589</created>
+      <changed>1337169340</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.azzyzt.org/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/azzyzt-64x64.png?itok=D12fDQJx]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/cookbook-02-generated-sources.png?itok=Dm4nuikW]]></screenshot>
+      <version>1.3.2</version>
+      <license>Other Open Source</license>
+      <companyname><![CDATA[Municipiality of Vienna, Austria]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5, 3.6, 3.7, 3.7.1, 3.7.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.azzyzt.org/]]></supporturl>
+      <updateurl><![CDATA[http://azzyzt.manessinger.com/azzyzt_generic/]]></updateurl>
+<ius>
+<iu>org.azzyzt.jee.mwe.generic.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

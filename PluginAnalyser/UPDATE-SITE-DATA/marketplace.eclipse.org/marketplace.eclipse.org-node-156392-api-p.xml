@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="156392" name="Nebula Widgets Q7 Add-On" url="http://marketplace.eclipse.org/content/nebula-widgets-q7-add">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+      </categories>
+      <tags>
+        <tag id='2241' name='automated testing' url='http://marketplace.eclipse.org/category/free-tagging/automated-testing'/>
+        <tag id='2348' name='q7 add-on' url='http://marketplace.eclipse.org/category/free-tagging/q7-add'/>
+      </tags>
+      
+      <owner>Ivan Inozemtsev</owner>
+      <favorited>0</favorited>
+      <installstotal>139</installstotal>
+      <installsrecent>14</installsrecent>
+      <shortdescription><![CDATA[<p>This add-on adds support for <a href="http://eclipse.org/nebula">Nebula Widgets</a> into  <a href="http://www.xored.com/q7">Q7 Platform</a>, providing set of high-level ECL commands and capture/replay support so that QA engineers can work with nebula widgets just as with ordinary SWT widgets.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This add-on adds support for <a href="http://eclipse.org/nebula">Nebula Widgets</a> into  <a href="http://www.xored.com/q7">Q7 Platform</a>, providing set of high-level ECL commands and capture/replay support so that QA engineers can work with nebula widgets just as with ordinary SWT widgets.</p>
+]]></body>
+      <created>1321866307</created>
+      <changed>1321892335</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.xored.com/q7/add-ons]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/nebula-l.png?itok=isi3DB4U]]></image>
+      <version>1.1.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[xored software, Inc.]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.5 - 3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://support.xored.com/categories/20011462-q7-functional-and-ui-testing]]></supporturl>
+      <updateurl><![CDATA[http://dl.xored.com/q7/repository]]></updateurl>
+<ius>
+<iu>com.xored.q7.module.nebula</iu>
+<iu>com.xored.q7.platform</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

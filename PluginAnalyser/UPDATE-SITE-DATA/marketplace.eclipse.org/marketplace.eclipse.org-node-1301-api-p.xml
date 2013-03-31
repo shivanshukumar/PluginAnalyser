@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1301" name="Liferay IDE" url="http://marketplace.eclipse.org/content/liferay-ide">
+      <type>resource</type>
+      <categories>
+        <category id='1' name='Application Server' url='http://marketplace.eclipse.org/taxonomy/term/1'/>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+      <tags>
+        <tag id='843' name='liferay' url='http://marketplace.eclipse.org/category/free-tagging/liferay'/>
+        <tag id='844' name='portlet' url='http://marketplace.eclipse.org/category/free-tagging/portlet'/>
+        <tag id='845' name='tomcat' url='http://marketplace.eclipse.org/category/free-tagging/tomcat'/>
+        <tag id='851' name='social' url='http://marketplace.eclipse.org/category/free-tagging/social'/>
+        <tag id='853' name='gadgets' url='http://marketplace.eclipse.org/category/free-tagging/gadgets'/>
+      </tags>
+      
+      <owner>Greg Amerson</owner>
+      <favorited>11</favorited>
+      <installstotal>17638</installstotal>
+      <installsrecent>1075</installsrecent>
+      <shortdescription><![CDATA[<p>Liferay IDE provides the best-of-breed eclipse tooling for <a href="http://www.liferay.com">Liferay Portal development platform</a> for versions 6.0 and 6.1.</p>
+<p>For more information on the latest release of the Liferay IDE see below:</p>
+<p><a href="http://www.liferay.com/web/gregory.amerson/blog/-/blogs/liferay-ide-1-6.0-released">http://www.liferay.com/web/gregory.amerson/blog/-/blogs/liferay-ide-1-6....</a></p>
+<p>Also the main documentation and community information about the Liferay IDE is located on the following page:</p>
+<p><a href="http://www.liferay.com/community/wiki/-/wiki/Main/Liferay+IDE">http://www.liferay.com/community/wiki/-/wiki/Main/Liferay+IDE</a></p>
+<p>The major features are listed below:</p>
+<ul><li>Supports Liferay Plug-ins SDK</li>
+<li>Supports Liferay Portal Tomcat bundle</li>
+<li>Supports Remote Liferay Servers for 6.1</li>
+<li>Create 5 types of Liferay plug-in projects</li>
+<ul><li>Portlet</li>
+<li>Hook</li>
+<li>Ext</li>
+<li>Layout Template</li>
+<li>Theme</li>
+</ul><li>Import/Convert existing plug-in SDKs project</li>
+<li>Runtime/Server support for Liferay Portal Tomcat</li>
+<ul><li>Hot (auto) deployment of plug-ins to Liferay</li>
+<li>Customized servers view for Liferay plug-in projects</li>
+</ul><li>New Liferay Portlet Wizard</li>
+<li>portlet.xml deployment descriptor validation</li>
+<li>New Liferay Hook wizard</li>
+<li>New Liferay Services wizard</li>
+<li>Enhanced liferay-plugin-packages editor</li>
+<li>Smart management of Liferay API classpath container</li>
+</ul><p>Portlet UI Frameworks</p>
+<ul><li>Liferay MVC Portlets</li>
+<li>JSF 2.0 Portlets</li>
+<li>Vaadin Portlets</li>
+</ul><p>Specialized editors</p>
+<ul><li>Portlet Application Config Editor</li>
+<li>Service Builder Config Editor</li>
+<li>Layout Template Visual Editor</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>Liferay IDE provides the best-of-breed eclipse tooling for <a href="http://www.liferay.com">Liferay Portal development platform</a> for versions 6.0 and 6.1.</p>
+<p>For more information on the latest release of the Liferay IDE see below:</p>
+<p><a href="http://www.liferay.com/web/gregory.amerson/blog/-/blogs/liferay-ide-1-6.0-released">http://www.liferay.com/web/gregory.amerson/blog/-/blogs/liferay-ide-1-6....</a></p>
+<p>Also the main documentation and community information about the Liferay IDE is located on the following page:</p>
+<p><a href="http://www.liferay.com/community/wiki/-/wiki/Main/Liferay+IDE">http://www.liferay.com/community/wiki/-/wiki/Main/Liferay+IDE</a></p>
+<p>The major features are listed below:</p>
+<ul><li>Supports Liferay Plug-ins SDK</li>
+<li>Supports Liferay Portal Tomcat bundle</li>
+<li>Supports Remote Liferay Servers for 6.1</li>
+<li>Create 5 types of Liferay plug-in projects</li>
+<ul><li>Portlet</li>
+<li>Hook</li>
+<li>Ext</li>
+<li>Layout Template</li>
+<li>Theme</li>
+</ul><li>Import/Convert existing plug-in SDKs project</li>
+<li>Runtime/Server support for Liferay Portal Tomcat</li>
+<ul><li>Hot (auto) deployment of plug-ins to Liferay</li>
+<li>Customized servers view for Liferay plug-in projects</li>
+</ul><li>New Liferay Portlet Wizard</li>
+<li>portlet.xml deployment descriptor validation</li>
+<li>New Liferay Hook wizard</li>
+<li>New Liferay Services wizard</li>
+<li>Enhanced liferay-plugin-packages editor</li>
+<li>Smart management of Liferay API classpath container</li>
+</ul><p>Portlet UI Frameworks</p>
+<ul><li>Liferay MVC Portlets</li>
+<li>JSF 2.0 Portlets</li>
+<li>Vaadin Portlets</li>
+</ul><p>Specialized editors</p>
+<ul><li>Portlet Application Config Editor</li>
+<li>Service Builder Config Editor</li>
+<li>Layout Template Visual Editor</li>
+</ul>]]></body>
+      <created>1276639003</created>
+      <changed>1363336609</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.liferay.com/community/liferay-projects/liferay-ide/overview]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/liferay_wiz.png?itok=rnjwz_Rj]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/liferay_ide_screenshot.gif?itok=PV45NjtM]]></screenshot>
+      <version>1.6.2</version>
+      <license>LGPL</license>
+      <companyname><![CDATA[Liferay, Inc]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.liferay.com/community/forums/-/message_boards/category/4627757]]></supporturl>
+      <updateurl><![CDATA[http://releases.liferay.com/tools/ide/eclipse/juno/stable/]]></updateurl>
+<ius>
+<iu>com.liferay.ide.eclipse.tools</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

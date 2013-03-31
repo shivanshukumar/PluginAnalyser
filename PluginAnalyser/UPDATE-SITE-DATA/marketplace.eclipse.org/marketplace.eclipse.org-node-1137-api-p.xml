@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1137" name="Portlet Tools" url="http://marketplace.eclipse.org/content/portlet-tools">
+      <type>resource</type>
+      <categories>
+        <category id='1' name='Application Server' url='http://marketplace.eclipse.org/taxonomy/term/1'/>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+            
+      <owner>fwiegerinck</owner>
+      <favorited>4</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>A set of plugins to add portlet (JSR 168 and JSR 286) support to Eclipse. It includes for both the JSR 168 and JSR 286, the API, XSD and TLDs. The current release, version 0.2.0, contains the following features:</p>
+<ul><li>Add support for several portlet specifications. JSR 168 and JSR 286 support is available at the same update site</li>
+<li>Configuration of the portlet specifications using WTP facets</li>
+<li>Classpath container to make the API part of the environment instead of dedicated project libraries. For WTP Facet projects the specification version is derived from the facet settings. Other projects can set the specification while adding or updating the classpath library.</li>
+<li>Web facet available for dynamic web projects (WTP extension)</li>
+<li>Integration of JSR 168 API, XSD and TLD (<a href="http://jcp.org/en/jsr/detail?id=168">http://jcp.org/en/jsr/detail?id=168</a>)</li>
+<li>Integration of JSR 286 API, XSD and TLD (<a href="http://jcp.org/en/jsr/detail?id=286">http://jcp.org/en/jsr/detail?id=286</a>)</li>
+<li>Integration into Project Explorer delivering an overview of the first-level elements of the portlet.xml</li>
+<li>Initial release of a Portlet Descriptor Editor allowing the user to edit the XML</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>A set of plugins to add portlet (JSR 168 and JSR 286) support to Eclipse. It includes for both the JSR 168 and JSR 286, the API, XSD and TLDs. The current release, version 0.2.0, contains the following features:</p>
+<ul><li>Add support for several portlet specifications. JSR 168 and JSR 286 support is available at the same update site</li>
+<li>Configuration of the portlet specifications using WTP facets</li>
+<li>Classpath container to make the API part of the environment instead of dedicated project libraries. For WTP Facet projects the specification version is derived from the facet settings. Other projects can set the specification while adding or updating the classpath library.</li>
+<li>Web facet available for dynamic web projects (WTP extension)</li>
+<li>Integration of JSR 168 API, XSD and TLD (<a href="http://jcp.org/en/jsr/detail?id=168">http://jcp.org/en/jsr/detail?id=168</a>)</li>
+<li>Integration of JSR 286 API, XSD and TLD (<a href="http://jcp.org/en/jsr/detail?id=286">http://jcp.org/en/jsr/detail?id=286</a>)</li>
+<li>Integration into Project Explorer delivering an overview of the first-level elements of the portlet.xml</li>
+<li>Initial release of a Portlet Descriptor Editor allowing the user to edit the XML</li>
+</ul>]]></body>
+      <created>1265715410</created>
+      <changed>1265715410</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://portlet-eclipse.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/plugin-icon-64.png?itok=u8dXLcaI]]></image>
+      <version>0.2</version>
+      <license>EPL</license>
+      <companyname><![CDATA[http://portlet-eclipse.sourceforge.net/]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5.1]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://portlet-eclipse.sourceforge.net/update]]></updateurl>
+    </node>
+    </marketplace>
+    

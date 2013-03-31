@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="47812" name="Find Bar for Eclipse" url="http://marketplace.eclipse.org/content/find-bar-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+      <tags>
+        <tag id='327' name='eclipse' url='http://marketplace.eclipse.org/category/free-tagging/eclipse'/>
+        <tag id='1875' name='Find Bar' url='http://marketplace.eclipse.org/category/free-tagging/find-bar'/>
+      </tags>
+      
+      <owner>Sandip Chitale</owner>
+      <favorited>6</favorited>
+      <installstotal>972</installstotal>
+      <installsrecent>32</installsrecent>
+      <shortdescription><![CDATA[<p>Usage:</p>
+<p>After installing the plug-in, go the Find/Replace Bar preferences page to enable the Find/Replace Bar.</p>
+<p>Features:</p>
+<p>What's new?</p>
+<p>- Show preceding and succeeding matches<br />
+- Show text matched with groups in regular expressions<br />
+  - The group match combo list automatically pops up if there<br />
+     are more than 1 matched groups</p>
+<p>Currently the Find/Replace Bar supports the following features:</p>
+<p>- Find as you type<br />
+- Find Next/Find Previous. Same key bindings as Eclipse<br />
+- Show the total number of occurrences in the document<br />
+- Case sensitive mode<br />
+- Whole word only mode<br />
+- Regular Expression mode<br />
+- Indicate illegal regular expression<br />
+- Show Find/Replace dialog by pressing CTRL+F on Windows and Linux and COMMAND+F on Mac<br />
+- Optionally override the standard Find/Replace Dialog of Eclipse. Control the override through preference page.<br />
+- Show Preferences button on the Find/Replace Bar<br />
+- Press CTRL+F on Windows and Linux and COMMAND+F on Mac to show the Find/Replace Bar<br />
+- Press ESCAPE to hide the Find/Replace bar<br />
+- Find/Replace Bar works with text editors inside a Multi page editor e.g. plugin.xml XML editor inside the Plug-in Manifest editor.<br />
+- Show the preceding and succeeding matches<br />
+- Show text matched with groups in regular expressions</p>
+<p>TODO</p>
+<p>- Full Replace/Find,Replace and Replace All support<br />
+- Find in selection<br />
+- Highlight current and other occurrences of the matched text<br />
+- Show current line number and column range of the match<br />
+- Make it work in Console and other views where Find/Replace dialog is applicable</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Usage:</p>
+<p>After installing the plug-in, go the Find/Replace Bar preferences page to enable the Find/Replace Bar.</p>
+<p>Features:</p>
+<p>What's new?</p>
+<p>- Show preceding and succeeding matches<br />
+- Show text matched with groups in regular expressions<br />
+  - The group match combo list automatically pops up if there<br />
+     are more than 1 matched groups</p>
+<p>Currently the Find/Replace Bar supports the following features:</p>
+<p>- Find as you type<br />
+- Find Next/Find Previous. Same key bindings as Eclipse<br />
+- Show the total number of occurrences in the document<br />
+- Case sensitive mode<br />
+- Whole word only mode<br />
+- Regular Expression mode<br />
+- Indicate illegal regular expression<br />
+- Show Find/Replace dialog by pressing CTRL+F on Windows and Linux and COMMAND+F on Mac<br />
+- Optionally override the standard Find/Replace Dialog of Eclipse. Control the override through preference page.<br />
+- Show Preferences button on the Find/Replace Bar<br />
+- Press CTRL+F on Windows and Linux and COMMAND+F on Mac to show the Find/Replace Bar<br />
+- Press ESCAPE to hide the Find/Replace bar<br />
+- Find/Replace Bar works with text editors inside a Multi page editor e.g. plugin.xml XML editor inside the Plug-in Manifest editor.<br />
+- Show the preceding and succeeding matches<br />
+- Show text matched with groups in regular expressions</p>
+<p>TODO</p>
+<p>- Full Replace/Find,Replace and Replace All support<br />
+- Find in selection<br />
+- Highlight current and other occurrences of the matched text<br />
+- Show current line number and column range of the match<br />
+- Make it work in Console and other views where Find/Replace dialog is applicable</p>
+]]></body>
+      <created>1303541683</created>
+      <changed>1305412741</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://sandipchitale.blogspot.com/2011/04/eclipse-findreplace-bar.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/FindReplaceBarLogo.png?itok=rnpq87dW]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/FindReplaceBar.png?itok=a57_P4pg]]></screenshot>
+      <version>1.0.17</version>
+      <license>BSD</license>
+      <companyname><![CDATA[Sandip Chitale]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.5.x,3.6.x]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/sandipchitaleseclipseplugins/issues/list]]></supporturl>
+      <updateurl><![CDATA[http://sandipchitaleseclipseplugins.googlecode.com/svn/trunk/FindReplaceBarUpdateSite/]]></updateurl>
+<ius>
+<iu>FindReplaceBarFeature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

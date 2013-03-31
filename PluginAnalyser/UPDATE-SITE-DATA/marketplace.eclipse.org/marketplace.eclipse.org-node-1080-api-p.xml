@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1080" name="Visual Rules Enterprise Platform" url="http://marketplace.eclipse.org/content/visual-rules-enterprise-platform">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+            
+      <owner>Innovations Software Technology</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Visual Rules is an especially intuitive and high-performance Business Rules Management System for creating and managing business rules. Business logic is modeled, tested, monitored and managed in a simple but powerful graphical interface. Visual Rules covers the complete rule management process. Via a uniquely comprehensive graphical modeling approach, Visual Rules provides an advanced collaboration platform for business analysts and IT.</p>
+<p>Visual Rules is designed for integration of rule management into applications and Eclipse-based platforms. </p>
+<p>Robust new features have been introduced in this version to enable the business with powerful new tools and functionality. In addition, Eclipse 3.5 is fully supported.</p>
+<p>Visual Rules Modeler<br />
+    * New wizard for importing MS Excel tables as Visual Rules decision tables<br />
+    * New wizard for extracting branches from huge flow rule sets as new flow rules including automatic analysis and generation of required data elements<br />
+    * Copy and move rule tests to other rules<br />
+    * Definition of meta data for rule models, rules, input/output data elements, constant data elements, structures and attributes; meta data also available during runtime<br />
+    * Display of rule model contents in project and rule explorer only within Visual Rules rule projects<br />
+    * Enhanced highlighting of rule comparison results<br />
+    * New filters for audit logs within Team Server Explorer<br />
+    * Sortable tables in the Properties view<br />
+    * Support of Eclipse 3.5</p>
+<p>Visual Rules Team Server<br />
+    * Management of locked resources via web console</p>
+<p>Visual Rules QA & Deployment Tools<br />
+    * Maven Packaging inserts *.vrmeta files automatically into the artifact</p>
+<p><a href="http://www.visual-rules.com/visual-rules-new-noteworthy.html" target="_blank"><strong>New & Noteworthy</strong></a> | <strong><a href="http://www.visual-rules.com/download-business-rules-management-system.html" target="_blank">Download </a></strong></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Visual Rules is an especially intuitive and high-performance Business Rules Management System for creating and managing business rules. Business logic is modeled, tested, monitored and managed in a simple but powerful graphical interface. Visual Rules covers the complete rule management process. Via a uniquely comprehensive graphical modeling approach, Visual Rules provides an advanced collaboration platform for business analysts and IT.</p>
+<p>Visual Rules is designed for integration of rule management into applications and Eclipse-based platforms. </p>
+<p>Robust new features have been introduced in this version to enable the business with powerful new tools and functionality. In addition, Eclipse 3.5 is fully supported.</p>
+<p>Visual Rules Modeler<br />
+    * New wizard for importing MS Excel tables as Visual Rules decision tables<br />
+    * New wizard for extracting branches from huge flow rule sets as new flow rules including automatic analysis and generation of required data elements<br />
+    * Copy and move rule tests to other rules<br />
+    * Definition of meta data for rule models, rules, input/output data elements, constant data elements, structures and attributes; meta data also available during runtime<br />
+    * Display of rule model contents in project and rule explorer only within Visual Rules rule projects<br />
+    * Enhanced highlighting of rule comparison results<br />
+    * New filters for audit logs within Team Server Explorer<br />
+    * Sortable tables in the Properties view<br />
+    * Support of Eclipse 3.5</p>
+<p>Visual Rules Team Server<br />
+    * Management of locked resources via web console</p>
+<p>Visual Rules QA & Deployment Tools<br />
+    * Maven Packaging inserts *.vrmeta files automatically into the artifact</p>
+<p><a href="http://www.visual-rules.com/visual-rules-new-noteworthy.html" target="_blank"><strong>New & Noteworthy</strong></a> | <strong><a href="http://www.visual-rules.com/download-business-rules-management-system.html" target="_blank">Download </a></strong></p>
+]]></body>
+      <created>1260450744</created>
+      <changed>1260461531</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.visual-rules.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/innovationsBG-RGB-171x107_0.gif?itok=67iKno_8]]></image>
+      <version>4.6</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Innovations Software Technologie]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.5 - 3.2]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://www.download-visual-rules.de/vr/update/]]></updateurl>
+    </node>
+    </marketplace>
+    

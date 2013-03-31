@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1049" name="Windows Azure Storage SDK for Java" url="http://marketplace.eclipse.org/content/windows-azure-storage-sdk-java">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='1229' name='Windows Azure' url='http://marketplace.eclipse.org/category/free-tagging/windows-azure'/>
+      </tags>
+      
+      <owner>Yves YANG</owner>
+      <favorited>1</favorited>
+      <installstotal>1242</installstotal>
+      <installsrecent>35</installsrecent>
+      <shortdescription><![CDATA[<p><p>As part of Microsoft's commitment to Interoperability, this open source project is an effort bridge Java developers to Windows Azure. This is an open source   project to provide software development kit for Windows Azure and Windows Azure   Storage - Blobs, Tables & Queues</p><br />
+<p><strong>Overview</strong></p><br />
+<ul><br />
+   <li>Enables Java developers to take advantage of the Microsoft Cloud Services Platform - Windows Azure.</li><br />
+  <li>Provides consistent programming model for Windows Azure Storage (Blobs, Tables & Queues)</li><br />
+</ul><br />
+ <p> <strong>Features</strong></p><br />
+<ul><br />
+<li>Java   classes for Windows Azure Blobs, Tables & Queues (for CRUD operations)</li><br />
+<li>Helper   Classes for HTTP transport, AuthN/AuthZ, REST & Error Management</li><br />
+<li>Manageability,   Instrumentation & Logging support</li><br />
+<li>Support   for storing Java sessions in Azure Table Storage</li><br />
+</ul><br />
+<p align="center"><br />
+<img width="314" height="280" src="<a href="http://www.windowsazure4j.org/images/winazure01.png"">http://www.windowsazure4j.org/images/winazure01.png"</a> alt="azure_platform.png" /></p><br />
+<p align="center"><br />
+<img src="<a href="http://www.windowsazure4j.org/images/winazure02.png"">http://www.windowsazure4j.org/images/winazure02.png"</a> alt="windows_azure" width="290" height="277" /></p></p>
+]]></shortdescription>
+      <body><![CDATA[<p><p>As part of Microsoft's commitment to Interoperability, this open source project is an effort bridge Java developers to Windows Azure. This is an open source   project to provide software development kit for Windows Azure and Windows Azure   Storage - Blobs, Tables & Queues</p><br />
+<p><strong>Overview</strong></p><br />
+<ul><br />
+   <li>Enables Java developers to take advantage of the Microsoft Cloud Services Platform - Windows Azure.</li><br />
+  <li>Provides consistent programming model for Windows Azure Storage (Blobs, Tables & Queues)</li><br />
+</ul><br />
+ <p> <strong>Features</strong></p><br />
+<ul><br />
+<li>Java   classes for Windows Azure Blobs, Tables & Queues (for CRUD operations)</li><br />
+<li>Helper   Classes for HTTP transport, AuthN/AuthZ, REST & Error Management</li><br />
+<li>Manageability,   Instrumentation & Logging support</li><br />
+<li>Support   for storing Java sessions in Azure Table Storage</li><br />
+</ul><br />
+<p align="center"><br />
+<img width="314" height="280" src="<a href="http://www.windowsazure4j.org/images/winazure01.png"">http://www.windowsazure4j.org/images/winazure01.png"</a> alt="azure_platform.png" /></p><br />
+<p align="center"><br />
+<img src="<a href="http://www.windowsazure4j.org/images/winazure02.png"">http://www.windowsazure4j.org/images/winazure02.png"</a> alt="windows_azure" width="290" height="277" /></p></p>
+]]></body>
+      <created>1258734543</created>
+      <changed>1311019776</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.windowsazure4j.org/]]></homepageurl>
+      <image><![CDATA[http://www.windowsazure4j.org/images/windowsazure4j_small.png]]></image>
+      <version>2.0.2</version>
+      <license>Other</license>
+      <companyname><![CDATA[Soyatec]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5.x/3.6.x/3.7.x]]></eclipseversion>
+      <supporturl><![CDATA[http://www.windowsazure4j.org/community/]]></supporturl>
+      <updateurl><![CDATA[http://www.windowsazure4e.org/update/]]></updateurl>
+<ius>
+<iu>org.soyatec.windows.azure.java.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

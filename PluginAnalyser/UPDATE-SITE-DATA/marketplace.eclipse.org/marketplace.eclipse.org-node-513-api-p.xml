@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="513" name="EMF compare : model comparison and merge" url="http://marketplace.eclipse.org/content/emf-compare-model-comparison-and-merge">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+      </categories>
+            
+      <owner>Obeo  </owner>
+      <favorited>13</favorited>
+      <installstotal>2663</installstotal>
+      <installsrecent>71</installsrecent>
+      <shortdescription><![CDATA[<p>EMF Compare brings model comparison to the EMF framework, this tool provides generic support for any kind of metamodel in order to compare and merge models. The objectives of this component are to provide a stable and efficient generic implementation of model comparison and to provide an extensible framework for specific needs.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>EMF Compare brings model comparison to the EMF framework, this tool provides generic support for any kind of metamodel in order to compare and merge models. The objectives of this component are to provide a stable and efficient generic implementation of model comparison and to provide an extensible framework for specific needs.</p>
+]]></body>
+      <created>1185887293</created>
+      <changed>1325867695</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.eclipse.org/modeling/emf/?project=compare#compare]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.2.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Obeo]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2.x , 3.3.x, 3.4.x, 3.5.x,3.6.x , 3.7.x]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/releases/indigo]]></updateurl>
+<ius>
+<iu>org.eclipse.emf.compare.sdk</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

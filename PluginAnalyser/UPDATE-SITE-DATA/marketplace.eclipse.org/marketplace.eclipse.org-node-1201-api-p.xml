@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1201" name="OSGi Management Console" url="http://marketplace.eclipse.org/content/osgi-management-console">
+      <type>resource</type>
+      <categories>
+        <category id='1' name='Application Server' url='http://marketplace.eclipse.org/taxonomy/term/1'/>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+      <tags>
+        <tag id='162' name='osgi' url='http://marketplace.eclipse.org/category/free-tagging/osgi'/>
+        <tag id='468' name='MintJams' url='http://marketplace.eclipse.org/category/free-tagging/mintjams'/>
+      </tags>
+      
+      <owner>Kenichi Fukuda</owner>
+      <favorited>5</favorited>
+      <installstotal>142</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The OSGi Management Console is plug-in for the Eclipse IDE that makes it easier for developers to manage Web applications using Managed Web Applications.</p>
+<p>Supported Managed Web Application Runtime:<br />
+v2.2.0</p>
+<p>Managed Web Application Runtime downloadable at:<br /><a href="http://sourceforge.net/projects/morpho/files/Managed%20Web%20Application%20Runtime/">http://sourceforge.net/projects/morpho/files/Managed%20Web%20Application...</a></p>
+<p>Managed Web Application Tomcat7 Bundle:<br /><a href="http://sourceforge.net/projects/morpho/files/Managed%20Web%20Application%20Runtime/mwa-2.2.0-tomcat7-bundle.zip/download">http://sourceforge.net/projects/morpho/files/Managed%20Web%20Application...</a></p>
+<p>The Managed Web Application Tomcat7 Bundle OSGi management server is available at <a href="http://localhost:8001/">http://localhost:8001/</a>, use admin/admin to login.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The OSGi Management Console is plug-in for the Eclipse IDE that makes it easier for developers to manage Web applications using Managed Web Applications.</p>
+<p>Supported Managed Web Application Runtime:<br />
+v2.2.0</p>
+<p>Managed Web Application Runtime downloadable at:<br /><a href="http://sourceforge.net/projects/morpho/files/Managed%20Web%20Application%20Runtime/">http://sourceforge.net/projects/morpho/files/Managed%20Web%20Application...</a></p>
+<p>Managed Web Application Tomcat7 Bundle:<br /><a href="http://sourceforge.net/projects/morpho/files/Managed%20Web%20Application%20Runtime/mwa-2.2.0-tomcat7-bundle.zip/download">http://sourceforge.net/projects/morpho/files/Managed%20Web%20Application...</a></p>
+<p>The Managed Web Application Tomcat7 Bundle OSGi management server is available at <a href="http://localhost:8001/">http://localhost:8001/</a>, use admin/admin to login.</p>
+]]></body>
+      <created>1273118363</created>
+      <changed>1310456361</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://morpho.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screenshot_3.jpg?itok=Y4iLRZND]]></screenshot>
+      <version>1.2.0</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[MintJams Inc.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7, 3.6, 3.5]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://www.mintjams.co.jp/updates/]]></updateurl>
+<ius>
+<iu>jp.co.mintjams.osgi.runtime.console.ui.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

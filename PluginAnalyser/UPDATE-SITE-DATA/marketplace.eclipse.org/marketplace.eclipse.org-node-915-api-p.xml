@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="915" name="JNorm" url="http://marketplace.eclipse.org/content/jnorm">
+      <type>resource</type>
+      <categories>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+      </categories>
+            
+      <owner>andrei_oleinik</owner>
+      <favorited>4</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>JNorm is a static java code analysis tool. It detects areas of code which could be replaced by functions from existing open source libraries. This can help to make the code more robust, readable and maintainable.</p>
+<p>Just a quick response to the comments below (before documentation has been improved):</p>
+<p>In JNorm view you can find two menu items : "Show details" and "Locate in source".  When you click on "Show details" it gives a suggestion on code refactoring. "Locate in source" takes you to the place where problem occurs.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>JNorm is a static java code analysis tool. It detects areas of code which could be replaced by functions from existing open source libraries. This can help to make the code more robust, readable and maintainable.</p>
+<p>Just a quick response to the comments below (before documentation has been improved):</p>
+<p>In JNorm view you can find two menu items : "Show details" and "Locate in source".  When you click on "Show details" it gives a suggestion on code refactoring. "Locate in source" takes you to the place where problem occurs.</p>
+]]></body>
+      <created>1239023760</created>
+      <changed>1259779229</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.jnorm.org/eclipse]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>0.0.7</version>
+      <license>Free GPL</license>
+      <companyname><![CDATA[JNorm]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3, 3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/jnorm]]></supporturl>
+      <updateurl><![CDATA[http://jnorm.sourceforge.net/eclipse]]></updateurl>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="849" name="Universal Information System (UIS)" url="http://marketplace.eclipse.org/content/universal-information-system-uis">
+      <type>resource</type>
+      <categories>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+      </categories>
+            
+      <owner>Miro</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Universal Information System (UIS) is the new generation of integrated software for Enterprise Resource Management (ERM) that provides the features and functionalities to build your Enterprise Resource Planning (ERP), Material Requirement Planning (MRP), Customer Relationship Management (CRM), Supply Chain Management (SCM) and Product Lifecycle Management (PLM) in a single package. With your in house JAVA knowledge, UIS is also highly extensible.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Universal Information System (UIS) is the new generation of integrated software for Enterprise Resource Management (ERM) that provides the features and functionalities to build your Enterprise Resource Planning (ERP), Material Requirement Planning (MRP), Customer Relationship Management (CRM), Supply Chain Management (SCM) and Product Lifecycle Management (PLM) in a single package. With your in house JAVA knowledge, UIS is also highly extensible.</p>
+]]></body>
+      <created>1233001682</created>
+      <changed>1288796565</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.swissimpact.com/uis]]></homepageurl>
+      <image><![CDATA[http://www.swissimpact.com/uis/media/plugin-image.jpg]]></image>
+      <version>1.6</version>
+      <license>Free for non-commerical use</license>
+      <companyname><![CDATA[Swiss Impact Ltd.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5.0]]></eclipseversion>
+      <supporturl><![CDATA[http://www.swissimpact.com/uis]]></supporturl>
+      <updateurl><![CDATA[http://www.swissimpact.com/uis/en/install_en.html]]></updateurl>
+    </node>
+    </marketplace>
+    

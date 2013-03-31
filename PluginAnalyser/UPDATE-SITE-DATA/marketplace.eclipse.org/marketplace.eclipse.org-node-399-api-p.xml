@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="399" name="eUML2 Studio edition" url="http://marketplace.eclipse.org/content/euml2-studio-edition">
+      <type>resource</type>
+      <categories>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+      </categories>
+      <tags>
+        <tag id='2534' name='GOOG' url='http://marketplace.eclipse.org/category/free-tagging/goog'/>
+      </tags>
+      
+      <owner>Yves YANG</owner>
+      <favorited>12</favorited>
+      <installstotal>23664</installstotal>
+      <installsrecent>235</installsrecent>
+      <shortdescription><![CDATA[<p><P><STRONG>eUML2 for Java</STRONG> is a powerful UML modeler designed for Java developper in Eclipse to support <STRONG>huge-size projects</STRONG> and the collaboration of <STRONG>large team</STRONG>. It is a native Eclipse integration based on all Eclipse's frameworks such as  EMF, GEF, GMF and UML2. Soyatec's goal is to promote Eclipse solutions, contribute the Java world and finallly provide an user-friendly and powerful tool to improve the productivity and software quality</P>This edition provides the following advanced features that are not available in the Free Edition:<UL><LI><STRONG>Advanced reversed engineering</STRONG> to detect the Collection and Map element type, reverse relationship and cardinality, etc.</LI><LI><STRONG>Sequence diagram generation</STRONG> from Java source codes.</LI> <LI><STRONG>Powerful true dependency analyze tools</STRONG> help quickly to audit and improve the software quality. It provides the dependency diagram with the cycle dependency detection in all levels: project/plugin, package and class.</LI><LI><STRONG>UML Profile and MDD</STRONG> extends the modeling capability</LI><LI><STRONG>EclipseDatabase</STRONG> provides a rich tool set for diagram data modeling, Reverse/forward, Generate DDL to SQL files using Torque Mapping, OJB resource and Hibertnate.</LI><LI><STRONG>Customizable template support</STRONG> allows user to change the code generation </LI></UL><P>Academic organizations and open source projects can apply the free license. The evalution license is bundled within the product. </P>Please visit our web <a href="<a href="http://www.eclipseplugincentral.com/Web_Links-index-req-visit-lid-646.html">http://www.soyatec.com</a>">http://www.eclipseplugincentral.com/Web_Links-index-req-visit-lid-646.ht...</a>   for more information about the features, license, pricing and support policies.</p>
+]]></shortdescription>
+      <body><![CDATA[<p><P><STRONG>eUML2 for Java</STRONG> is a powerful UML modeler designed for Java developper in Eclipse to support <STRONG>huge-size projects</STRONG> and the collaboration of <STRONG>large team</STRONG>. It is a native Eclipse integration based on all Eclipse's frameworks such as  EMF, GEF, GMF and UML2. Soyatec's goal is to promote Eclipse solutions, contribute the Java world and finallly provide an user-friendly and powerful tool to improve the productivity and software quality</P>This edition provides the following advanced features that are not available in the Free Edition:<UL><LI><STRONG>Advanced reversed engineering</STRONG> to detect the Collection and Map element type, reverse relationship and cardinality, etc.</LI><LI><STRONG>Sequence diagram generation</STRONG> from Java source codes.</LI> <LI><STRONG>Powerful true dependency analyze tools</STRONG> help quickly to audit and improve the software quality. It provides the dependency diagram with the cycle dependency detection in all levels: project/plugin, package and class.</LI><LI><STRONG>UML Profile and MDD</STRONG> extends the modeling capability</LI><LI><STRONG>EclipseDatabase</STRONG> provides a rich tool set for diagram data modeling, Reverse/forward, Generate DDL to SQL files using Torque Mapping, OJB resource and Hibertnate.</LI><LI><STRONG>Customizable template support</STRONG> allows user to change the code generation </LI></UL><P>Academic organizations and open source projects can apply the free license. The evalution license is bundled within the product. </P>Please visit our web <a href="<a href="http://www.eclipseplugincentral.com/Web_Links-index-req-visit-lid-646.html">http://www.soyatec.com</a>">http://www.eclipseplugincentral.com/Web_Links-index-req-visit-lid-646.ht...</a>   for more information about the features, license, pricing and support policies.</p>
+]]></body>
+      <created>1171894557</created>
+      <changed>1311019674</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.soyatec.com/]]></homepageurl>
+      <image><![CDATA[http://www.soyatec.com/euml2/images/eUML2_Studio_110x80.png]]></image>
+      <version>3.7.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Soyatec]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.5.x/3.6.x/3.7.x/]]></eclipseversion>
+      <supporturl><![CDATA[http://www.soyatec.com/support/]]></supporturl>
+      <updateurl><![CDATA[http://www.soyatec.com/update]]></updateurl>
+<ius>
+<iu>com.soyatec.euml2.studio</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

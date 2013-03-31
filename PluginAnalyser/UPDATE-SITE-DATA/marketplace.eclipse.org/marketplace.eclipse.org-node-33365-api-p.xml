@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="33365" name="CUDA Plugin (Galileo)" url="http://marketplace.eclipse.org/content/cuda-plugin-galileo">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+      </categories>
+      <tags>
+        <tag id='1557' name='Fixstars' url='http://marketplace.eclipse.org/category/free-tagging/fixstars'/>
+        <tag id='1558' name='CUDA' url='http://marketplace.eclipse.org/category/free-tagging/cuda'/>
+      </tags>
+      
+      <owner>Fixstars Corporation</owner>
+      <favorited>0</favorited>
+      <installstotal>30</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Eclipse CUDA plugin. Galileo (3.5.2) version.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Eclipse CUDA plugin. Galileo (3.5.2) version.</p>
+]]></body>
+      <created>1297877921</created>
+      <changed>1297960910</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://ydl.net/eclipse_cuda_plugin/galileo]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Fixstars Corporation]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.5.2]]></eclipseversion>
+      <supporturl><![CDATA[http://ydl.net/eclipse_cuda_plugin/galileo]]></supporturl>
+      <updateurl><![CDATA[http://ydl.net/eclipse_cuda_plugin/galileo]]></updateurl>
+<ius>
+<iu>Cuda_Galileo</iu>
+</ius>
+<platforms>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

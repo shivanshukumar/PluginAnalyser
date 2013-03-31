@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="57052" name="Sureassert UC" url="http://marketplace.eclipse.org/content/sureassert-uc">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+      <tags>
+        <tag id='93' name='continuous integration' url='http://marketplace.eclipse.org/category/free-tagging/continuous-integration'/>
+        <tag id='193' name='automation' url='http://marketplace.eclipse.org/category/free-tagging/automation'/>
+        <tag id='199' name='Test Driven Development' url='http://marketplace.eclipse.org/category/free-tagging/test-driven-development'/>
+        <tag id='445' name='code coverage' url='http://marketplace.eclipse.org/category/free-tagging/code-coverage'/>
+        <tag id='1048' name='contracts' url='http://marketplace.eclipse.org/category/free-tagging/contracts'/>
+      </tags>
+      
+      <owner>Nathan Dolan</owner>
+      <favorited>3</favorited>
+      <installstotal>71</installstotal>
+      <installsrecent>3</installsrecent>
+      <shortdescription><![CDATA[<p>Sureassert UC is a free integrated Java unit testing solution for Eclipse.  It presents a simple, quick approach to testing method contracts and offers many innovative features.</p>
+<!--break--><p>Sureassert UC for Eclipse offers:</p>
+<ul><li><strong><a title="Exemplars" href="http://www.sureassert.com/uc/features/use-cases/">Exemplars</a></strong> – <em>declarative automatic code contract enforcement without test code</em></li>
+<li><strong><a title="Automatic Continuous Testing" href="http://www.sureassert.com/uc/features/automatic-continuous-testing/">Automatic Continuous Testing</a></strong></li>
+<li><strong><a title="Real-Time Continuous Test Coverage Reporting" href="http://www.sureassert.com/uc/features/real-time-continuous-test-coverage-reporting/">Real-Time Continuous Test Coverage Reporting</a></strong></li>
+<li><strong><a title="Declarative Stubbing" href="http://www.sureassert.com/uc/features/declarative-stubbing/">Declarative Stubbing</a></strong> <em>of Classes, Methods and Individual Code Statements</em></li>
+<li><strong><a title="Comprehensive JUnit integration" href="http://www.sureassert.com/uc/features/comprehensive-junit-integration/">Comprehensive JUnit integration</a></strong></li>
+</ul><p>Our driving principal is to provide the tooling required to maximize the benefits of both <em>Contract-First Design </em>and<em> Test Driven Development</em><em></em>.  Sureassert UC amalgamates these concepts by treating unit tests as part of the declared contract of every method and running them automatically.  Sureassert Exemplars offer <em>true</em> unit testing capability by isolating the functionality of a single method and enforcing its contract.  <em></em>The tool also provides integration with JUnit, allowing bespoke (coded) tests to be run within the Sureassert testing context; leveraging the tool's stubbing, coverage reporting and automated execution capabilities.</p>
+<p>Sureassert UC is unique in providing these features with <em>no coding required: </em> no API, configuration files or scripts.  The UC engine generates and executes tests and stubbed code based on the suite of class, method and field-level annotations provided by the tool.  It does this totally automatically by plugging into the Eclipse incremental build process.</p>
+<p>Software constructed using Sureassert UC benefits from:</p>
+<ul><li><strong>Increased quality</strong> driven by facilitating a more methodical contract-first approach, and enforcement of contracts and coverage thresholds during development, in real-time</li>
+<li><strong>Reduced time to market </strong>resulting from less time writing test code, integrated stubbing and reduced overhead of <em>design for testability</em></li>
+<li><strong>Simplification</strong><em> </em>– no configuration files, APIs or test classes... using Sureassert UC is easy!</li>
+</ul><p>The Sureassert UC Eclipse Engine is available feature-complete for free download and is compatible with Eclipse versions 3.4 and above.</p>
+<p>It is <strong>totally free of charge</strong> for developing your personal or commercial applications.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Sureassert UC is a free integrated Java unit testing solution for Eclipse.  It presents a simple, quick approach to testing method contracts and offers many innovative features.</p>
+<!--break--><p>Sureassert UC for Eclipse offers:</p>
+<ul><li><strong><a title="Exemplars" href="http://www.sureassert.com/uc/features/use-cases/">Exemplars</a></strong> – <em>declarative automatic code contract enforcement without test code</em></li>
+<li><strong><a title="Automatic Continuous Testing" href="http://www.sureassert.com/uc/features/automatic-continuous-testing/">Automatic Continuous Testing</a></strong></li>
+<li><strong><a title="Real-Time Continuous Test Coverage Reporting" href="http://www.sureassert.com/uc/features/real-time-continuous-test-coverage-reporting/">Real-Time Continuous Test Coverage Reporting</a></strong></li>
+<li><strong><a title="Declarative Stubbing" href="http://www.sureassert.com/uc/features/declarative-stubbing/">Declarative Stubbing</a></strong> <em>of Classes, Methods and Individual Code Statements</em></li>
+<li><strong><a title="Comprehensive JUnit integration" href="http://www.sureassert.com/uc/features/comprehensive-junit-integration/">Comprehensive JUnit integration</a></strong></li>
+</ul><p>Our driving principal is to provide the tooling required to maximize the benefits of both <em>Contract-First Design </em>and<em> Test Driven Development</em><em></em>.  Sureassert UC amalgamates these concepts by treating unit tests as part of the declared contract of every method and running them automatically.  Sureassert Exemplars offer <em>true</em> unit testing capability by isolating the functionality of a single method and enforcing its contract.  <em></em>The tool also provides integration with JUnit, allowing bespoke (coded) tests to be run within the Sureassert testing context; leveraging the tool's stubbing, coverage reporting and automated execution capabilities.</p>
+<p>Sureassert UC is unique in providing these features with <em>no coding required: </em> no API, configuration files or scripts.  The UC engine generates and executes tests and stubbed code based on the suite of class, method and field-level annotations provided by the tool.  It does this totally automatically by plugging into the Eclipse incremental build process.</p>
+<p>Software constructed using Sureassert UC benefits from:</p>
+<ul><li><strong>Increased quality</strong> driven by facilitating a more methodical contract-first approach, and enforcement of contracts and coverage thresholds during development, in real-time</li>
+<li><strong>Reduced time to market </strong>resulting from less time writing test code, integrated stubbing and reduced overhead of <em>design for testability</em></li>
+<li><strong>Simplification</strong><em> </em>– no configuration files, APIs or test classes... using Sureassert UC is easy!</li>
+</ul><p>The Sureassert UC Eclipse Engine is available feature-complete for free download and is compatible with Eclipse versions 3.4 and above.</p>
+<p>It is <strong>totally free of charge</strong> for developing your personal or commercial applications.</p>
+]]></body>
+      <created>1306665908</created>
+      <changed>1341750020</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.sureassert.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/small_logo.png?itok=4qcDaort]]></image>
+      <version>2.0.0</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[Sureassert]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4+]]></eclipseversion>
+      <supporturl><![CDATA[http://www.sureassert.com/support]]></supporturl>
+      <updateurl><![CDATA[http://www.sureassert.com/updates]]></updateurl>
+<ius>
+<iu>com.sureassert.uc.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

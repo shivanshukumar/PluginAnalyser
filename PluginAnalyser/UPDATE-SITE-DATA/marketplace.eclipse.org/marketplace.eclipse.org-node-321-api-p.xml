@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="321" name="Tea Timer" url="http://marketplace.eclipse.org/content/tea-timer">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>Daniel Hirscher</owner>
+      <favorited>1</favorited>
+      <installstotal>43</installstotal>
+      <installsrecent>1</installsrecent>
+      <shortdescription><![CDATA[<p>A reminder when the tea is ready.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>A reminder when the tea is ready.</p>
+]]></body>
+      <created>1164642901</created>
+      <changed>1303376323</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://etinytools.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://etinytools.sourceforge.net/img/tea-video.gif]]></image>
+      <version>1.2.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Daniel Hirscher]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6+]]></eclipseversion>
+      <supporturl><![CDATA[http://]]></supporturl>
+      <updateurl><![CDATA[http://www.daniel-hirscher.de/eclipse]]></updateurl>
+<ius>
+<iu>de.hackerdan.teatime</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

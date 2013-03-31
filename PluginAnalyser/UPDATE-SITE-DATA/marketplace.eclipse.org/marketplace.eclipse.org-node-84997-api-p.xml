@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="84997" name="Java Source Attacher" url="http://marketplace.eclipse.org/content/java-source-attacher">
+      <type>resource</type>
+      <categories>
+        <category id='1972' name='General Purpose Tools' url='http://marketplace.eclipse.org/category/categories/general-purpose-tools'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='1967' name='Web, XML, Java EE and OSGi Enterprise Development' url='http://marketplace.eclipse.org/category/categories/web-xml-java-ee-and-osgi-enterprise-development'/>
+      </categories>
+      <tags>
+        <tag id='96' name='source code' url='http://marketplace.eclipse.org/category/free-tagging/source-code'/>
+        <tag id='408' name='android' url='http://marketplace.eclipse.org/category/free-tagging/android'/>
+        <tag id='1883' name='debugging' url='http://marketplace.eclipse.org/category/free-tagging/debugging'/>
+        <tag id='2127' name='Java libraries' url='http://marketplace.eclipse.org/category/free-tagging/java-libraries'/>
+        <tag id='2128' name='Maven repository' url='http://marketplace.eclipse.org/category/free-tagging/maven-repository'/>
+      </tags>
+      
+      <owner>Thai Ha</owner>
+      <favorited>19</favorited>
+      <installstotal>2042</installstotal>
+      <installsrecent>197</installsrecent>
+      <shortdescription><![CDATA[<p>Open source libraries are very popular in Java world. Nowadays Java/J2EE/Android developers often work with Java-based projects which using a lot of open source Java libraries. </p>
+<p>One issue with using open source Java libraries is how to find documentation/source code for these open source libraries fast and easly? It is tedious and time consuming to search for the source code, download and attach source code packages to the libraries. If your project has 40 libraries, how long will it take to find source code for all libraries?</p>
+<p>The solution is to use this Eclipse plugin to do the task for you with only one mouse click. This Eclipse plugin will help to find source code for open source Java libraries automatically from Internet. Just right click on a Java library, choose the menu item "Attach Java Source" and wait. The source code for the library will be found and attached to the Java library in several seconds. </p>
+<p><strong>Install plugin:</strong><br />
+- Use Update site URL: <a href="http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/">http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/</a><br />
+- Or download offline: download plugin from <a href="http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/plugins/org.freejava.javasourceattacher_1.2.3.jar">http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/plugin...</a> and save it to eclipse/dropins/ folder</p>
+<p><strong>Note for Android developers:</strong><br />
+- When programming Android projects using Google ADT plugin, the jar files inside libs folder will be added as libraries automatically but Eclipse will not allow change source code path for these libraries. This plugin can attach source code for Android libraries and will help Android developers in coding / debugging.</p>
+<p><strong>Usage:</strong><br />
+Right click on a Java library of a Java-based project and choose the menu item "Attach Java Source" and wait for the source code to be downloaded/attached to the library automatically (you will see a background job is running on Eclipse status bar).</p>
+<p><strong>Features:</strong><br />
+- Find source code for Java libraries using all popular Java repositories on Internet (Like Maven Central repository, Nexus-based repositories, Eclipse P2 repositories, ...)<br />
+- (NEW) Now Eclipse plugin developers can use this plugin to find source code for Eclipse plugins using Eclipse P2 repository. Please provide feedback if you are plugin developer.<br />
+- The plugin also uses a special cloud-based search service designed for the plugin. This search service contains information about all Apache Java projects. This means source code for any Apache Java-based library will be found.<br />
+- If source code  for a Java library  cannot be found, the user can help the community by  providing the URL for the source code archive (in Zip or Jar file  format) and the source code will be found next time! You are helping youself and others when providing information about source code for a library! </p>
+<p><strong>Compatibility:</strong><br />
+Tested with Eclipse 3.5 to 3.8 (but should also work with 4.x).</p>
+<p><strong>Requirements:</strong><br />
+- JDK 5+<br />
+- Eclipse 3.5+<br />
+- An Internet connection (to search and download source code)</p>
+<p>You might also like the plugins:<br />
+- <a href="http://marketplace.eclipse.org/content/java-examples-search">Java Examples Search</a> to find example code from Eclipse.<br />
+- <a href="http://marketplace.eclipse.org/content/java-dependency-viewer">Java Dependency Viewer</a> to view your class dependencies and package dependencies visually.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Open source libraries are very popular in Java world. Nowadays Java/J2EE/Android developers often work with Java-based projects which using a lot of open source Java libraries. </p>
+<p>One issue with using open source Java libraries is how to find documentation/source code for these open source libraries fast and easly? It is tedious and time consuming to search for the source code, download and attach source code packages to the libraries. If your project has 40 libraries, how long will it take to find source code for all libraries?</p>
+<p>The solution is to use this Eclipse plugin to do the task for you with only one mouse click. This Eclipse plugin will help to find source code for open source Java libraries automatically from Internet. Just right click on a Java library, choose the menu item "Attach Java Source" and wait. The source code for the library will be found and attached to the Java library in several seconds. </p>
+<p><strong>Install plugin:</strong><br />
+- Use Update site URL: <a href="http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/">http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/</a><br />
+- Or download offline: download plugin from <a href="http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/plugins/org.freejava.javasourceattacher_1.2.3.jar">http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/plugin...</a> and save it to eclipse/dropins/ folder</p>
+<p><strong>Note for Android developers:</strong><br />
+- When programming Android projects using Google ADT plugin, the jar files inside libs folder will be added as libraries automatically but Eclipse will not allow change source code path for these libraries. This plugin can attach source code for Android libraries and will help Android developers in coding / debugging.</p>
+<p><strong>Usage:</strong><br />
+Right click on a Java library of a Java-based project and choose the menu item "Attach Java Source" and wait for the source code to be downloaded/attached to the library automatically (you will see a background job is running on Eclipse status bar).</p>
+<p><strong>Features:</strong><br />
+- Find source code for Java libraries using all popular Java repositories on Internet (Like Maven Central repository, Nexus-based repositories, Eclipse P2 repositories, ...)<br />
+- (NEW) Now Eclipse plugin developers can use this plugin to find source code for Eclipse plugins using Eclipse P2 repository. Please provide feedback if you are plugin developer.<br />
+- The plugin also uses a special cloud-based search service designed for the plugin. This search service contains information about all Apache Java projects. This means source code for any Apache Java-based library will be found.<br />
+- If source code  for a Java library  cannot be found, the user can help the community by  providing the URL for the source code archive (in Zip or Jar file  format) and the source code will be found next time! You are helping youself and others when providing information about source code for a library! </p>
+<p><strong>Compatibility:</strong><br />
+Tested with Eclipse 3.5 to 3.8 (but should also work with 4.x).</p>
+<p><strong>Requirements:</strong><br />
+- JDK 5+<br />
+- Eclipse 3.5+<br />
+- An Internet connection (to search and download source code)</p>
+<p>You might also like the plugins:<br />
+- <a href="http://marketplace.eclipse.org/content/java-examples-search">Java Examples Search</a> to find example code from Eclipse.<br />
+- <a href="http://marketplace.eclipse.org/content/java-dependency-viewer">Java Dependency Viewer</a> to view your class dependencies and package dependencies visually.</p>
+]]></body>
+      <created>1310437316</created>
+      <changed>1361498228</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/a/eclipselabs.org/p/free-plugins]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_0.GIF?itok=39fb192n]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screenshot.GIF?itok=JmMl0sUA]]></screenshot>
+      <version>1.2.3</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[Thai Ha]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5, 3.6, 3.7, 3.8, 4.x]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/]]></updateurl>
+<ius>
+<iu>org.freejava.javasourceattacher.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

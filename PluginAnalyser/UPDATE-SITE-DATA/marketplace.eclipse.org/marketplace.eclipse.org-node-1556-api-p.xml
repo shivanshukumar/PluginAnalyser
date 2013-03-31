@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1556" name="VClipse" url="http://marketplace.eclipse.org/content/vclipse">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='51' name='IDE' url='http://marketplace.eclipse.org/category/free-tagging/ide'/>
+        <tag id='423' name='sap' url='http://marketplace.eclipse.org/category/free-tagging/sap'/>
+        <tag id='910' name='variant configuration' url='http://marketplace.eclipse.org/category/free-tagging/variant-configuration'/>
+      </tags>
+      
+      <owner>Tim Geisler</owner>
+      <favorited>0</favorited>
+      <installstotal>22</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>VClipse is an Eclipse-based integrated development environment (IDE) for product modeling for the SAP Variant Configurator (VC). VClipse supports the specification of objects and dependencies in a textual domain specific language calld VCML. This enables the use of standard text comparison tools and version control systems in the model development process.</p>
+<p>VClipse offers two interfaces SAP systems. The VC objects and dependencies can be transferred to or retrieved from a SAP system using SAP's remote function calls (RFC). Furthermore, the VC objects and dependencies can be transferred using product data replication (PDR) via IDocs.</p>
+<p>VClipse is implemented using the Xtext framework and the Java Pretty Printer Library.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>VClipse is an Eclipse-based integrated development environment (IDE) for product modeling for the SAP Variant Configurator (VC). VClipse supports the specification of objects and dependencies in a textual domain specific language calld VCML. This enables the use of standard text comparison tools and version control systems in the model development process.</p>
+<p>VClipse offers two interfaces SAP systems. The VC objects and dependencies can be transferred to or retrieved from a SAP system using SAP's remote function calls (RFC). Furthermore, the VC objects and dependencies can be transferred using product data replication (PDR) via IDocs.</p>
+<p>VClipse is implemented using the Xtext framework and the Java Pretty Printer Library.</p>
+]]></body>
+      <created>1277390134</created>
+      <changed>1277390134</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.vclipse.org]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>0.1.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[webXcerpt Software GmbH]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[Helios]]></eclipseversion>
+      <supporturl><![CDATA[http://www.vclipse.org]]></supporturl>
+      <updateurl><![CDATA[https://hg.codespot.com/a/eclipselabs.org/vclipse/update]]></updateurl>
+<ius>
+<iu>org.vclipse.vcml_feature</iu>
+<iu>org.vclipse.idoc_feature</iu>
+<iu>org.vclipse.vcml2idoc_feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

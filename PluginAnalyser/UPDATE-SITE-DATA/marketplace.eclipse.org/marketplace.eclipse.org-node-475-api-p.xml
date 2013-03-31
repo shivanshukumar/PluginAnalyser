@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="475" name="Simplifide Vhdl, Verilog, and SystemVerilog IDE" url="http://marketplace.eclipse.org/content/simplifide-vhdl-verilog-and-systemverilog-ide">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>Andy Wagner</owner>
+      <favorited>8</favorited>
+      <installstotal>747</installstotal>
+      <installsrecent>11</installsrecent>
+      <shortdescription><![CDATA[<p>SimplifIDE is an Integrated Design Environment for hardware designers which brings the ease of software development to hardware languages. The editor contains most of the features which are standard for software languages targetted to hardware designers. The features includes the list below and many more.  </p>
+<ul><li>Easy Navigation through Chip and Source Hierarchies using Hyperlinks</li>
+<li>Hierarchical Chip Views</li>
+<li>Code Completion</li>
+<li>Code Folding, Templates, and other Standard Editting Features</li>
+<li>Customizable Text Hovers</li>
+<li>Support for Emacs "Auto" Methods</li>
+<li>Variety of Refactoring Methods to Simplify Changes like Renaming Object, and Hierarchical Changes</li>
+</ul><p>SimplifIDE currently fully supports VHDL and Verilog with basic support for SystemVerilog.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>SimplifIDE is an Integrated Design Environment for hardware designers which brings the ease of software development to hardware languages. The editor contains most of the features which are standard for software languages targetted to hardware designers. The features includes the list below and many more.  </p>
+<ul><li>Easy Navigation through Chip and Source Hierarchies using Hyperlinks</li>
+<li>Hierarchical Chip Views</li>
+<li>Code Completion</li>
+<li>Code Folding, Templates, and other Standard Editting Features</li>
+<li>Customizable Text Hovers</li>
+<li>Support for Emacs "Auto" Methods</li>
+<li>Variety of Refactoring Methods to Simplify Changes like Renaming Object, and Hierarchical Changes</li>
+</ul><p>SimplifIDE currently fully supports VHDL and Verilog with basic support for SystemVerilog.</p>
+]]></body>
+      <created>1181653457</created>
+      <changed>1352571878</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://simplifide.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/SimplifideScale.png?itok=5irOMWwc]]></image>
+      <version>1.3.0</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[SimplifIDE]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5+]]></eclipseversion>
+      <supporturl><![CDATA[http://simplifide.com/drupal/support]]></supporturl>
+      <updateurl><![CDATA[http://simplifide.com/html/updates]]></updateurl>
+<ius>
+<iu>com.simplifide.features</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

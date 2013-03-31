@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="41022" name="MAT" url="http://marketplace.eclipse.org/content/mat">
+      <type>resource</type>
+      <categories>
+        <category id='13' name='Profiling' url='http://marketplace.eclipse.org/taxonomy/term/13'/>
+      </categories>
+            
+      <owner>Missing Name</owner>
+      <favorited>12</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Memory Analyzer (MAT)<br />
+The Eclipse Memory Analyzer is a fast and feature-rich Java heap analyzer that helps you find memory leaks and reduce memory consumption.</p>
+<p>Use the Memory Analyzer to analyze productive heap dumps with hundreds of millions of objects, quickly calculate the retained sizes of objects, see who is preventing the Garbage Collector from collecting objects, run a report to automatically extract leak suspects.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Memory Analyzer (MAT)<br />
+The Eclipse Memory Analyzer is a fast and feature-rich Java heap analyzer that helps you find memory leaks and reduce memory consumption.</p>
+<p>Use the Memory Analyzer to analyze productive heap dumps with hundreds of millions of objects, quickly calculate the retained sizes of objects, see who is preventing the Garbage Collector from collecting objects, run a report to automatically extract leak suspects.</p>
+]]></body>
+      <created>1301298292</created>
+      <changed>1301325143</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://download.eclipse.org/mat/1.0/update-site/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Eclipse]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6+]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/mat/1.0/update-site/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

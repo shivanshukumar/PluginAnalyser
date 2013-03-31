@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="846" name="Harbor Lights" url="http://marketplace.eclipse.org/content/harbor-lights">
+      <type>resource</type>
+      <categories>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+      </categories>
+      <tags>
+        <tag id='1478' name='risk management' url='http://marketplace.eclipse.org/category/free-tagging/risk-management'/>
+        <tag id='1479' name='technical proposal' url='http://marketplace.eclipse.org/category/free-tagging/technical-proposal'/>
+        <tag id='1480' name='budget solution' url='http://marketplace.eclipse.org/category/free-tagging/budget-solution'/>
+      </tags>
+      
+      <owner>julia</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Project managers, proposal writers or designers can use Harbor Lights to investigate different project implementations to reduce cost and risk.  Harbor Lights uses technology developed at NASA where the designers were previously employed. There are five types of characteristics of projects that can be optimized - objectives, implementation items, risks, mitigations and performance.  The performance evaluations use software "experiments" where multiple simulation runs are performed with different parameter values and relative performance metrics recovered.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Project managers, proposal writers or designers can use Harbor Lights to investigate different project implementations to reduce cost and risk.  Harbor Lights uses technology developed at NASA where the designers were previously employed. There are five types of characteristics of projects that can be optimized - objectives, implementation items, risks, mitigations and performance.  The performance evaluations use software "experiments" where multiple simulation runs are performed with different parameter values and relative performance metrics recovered.</p>
+]]></body>
+      <created>1232649223</created>
+      <changed>1294155013</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.harbor-consulting.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Harbor Consulting]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[europa]]></eclipseversion>
+      <supporturl><![CDATA[http://]]></supporturl>
+      <updateurl><![CDATA[http://www.harbor-consulting.com/downlink]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

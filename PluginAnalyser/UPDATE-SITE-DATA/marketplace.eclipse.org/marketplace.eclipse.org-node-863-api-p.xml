@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="863" name="Fishbolt: Eclipse UI integration with the hibernate model" url="http://marketplace.eclipse.org/content/fishbolt-eclipse-ui-integration-hibernate-model">
+      <type>resource</type>
+      <categories>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+      </categories>
+            
+      <owner>Arseniy</owner>
+      <favorited>3</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The project gives ability to easily and quickly develop user interfaces for domain data models (including hibernate based model) using Eclipse UI components. The plug-in supports both simple SWT components like input fields, combo boxes, lists, etc. and complex JFace components like editors, wizards, tables, trees, etc.</p>
+<p>In addition to the plug-in, Fishbolt offers some more Eclipse plug-ins (model and its integration with the plugin and etc) that form together a multi-tiered application framework based on the Eclipse platform. For more details refer to Eclipse platform integration. </p>
+<p>See also an example at <a href="http://fishbolt.org/eclipse/org.fishbolt.model.hibernate.annotations/doc/plugin.article.en.html">http://fishbolt.org/eclipse/org.fishbolt.model.hibernate.annotations/doc...</a></p>
+<p>The new version is coming soon and it will be opened</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The project gives ability to easily and quickly develop user interfaces for domain data models (including hibernate based model) using Eclipse UI components. The plug-in supports both simple SWT components like input fields, combo boxes, lists, etc. and complex JFace components like editors, wizards, tables, trees, etc.</p>
+<p>In addition to the plug-in, Fishbolt offers some more Eclipse plug-ins (model and its integration with the plugin and etc) that form together a multi-tiered application framework based on the Eclipse platform. For more details refer to Eclipse platform integration. </p>
+<p>See also an example at <a href="http://fishbolt.org/eclipse/org.fishbolt.model.hibernate.annotations/doc/plugin.article.en.html">http://fishbolt.org/eclipse/org.fishbolt.model.hibernate.annotations/doc...</a></p>
+<p>The new version is coming soon and it will be opened</p>
+]]></body>
+      <created>1234881585</created>
+      <changed>1295386399</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://fishbolt.org/eclipse/org.fishbolt.model.eclipse/doc/plugin.article.en.html]]></homepageurl>
+      <image><![CDATA[http://fishbolt.org/img/eclipse_update_120.jpg]]></image>
+      <version>1/0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[fishbolt]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://fishbolt.org]]></supporturl>
+      <updateurl><![CDATA[http://fishbolt.org/eclipse/update]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

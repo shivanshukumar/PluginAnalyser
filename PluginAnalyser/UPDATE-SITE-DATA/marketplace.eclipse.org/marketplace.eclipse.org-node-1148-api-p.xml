@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1148" name="Sculptor" url="http://marketplace.eclipse.org/content/sculptor">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+            
+      <owner>Patrik Nordwall</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Sculptor is an open source productivity tool that applies the concepts from Domain-Driven Design and Domain Specific Languages. You express your design intent in a textual specification, from which Sculptor generates high quality Java code and configuration.</p>
+<p>The generated code is based on well-known frameworks, such as JPA, Hibernate, Spring Framework, Google App Engine, Spring Web Flow, JSF, RCP, Smartclient and Java EE. Sculptor takes care of the technical details, the tedious repetitive work, and let you focus on delivering more business value - and have more fun.</p>
+<p>The DSL and the code generation drives the development and is not a one time shot. The application can be developed incrementally with an efficient round trip loop.</p>
+<p>Sculptor is useful when developing typical enterprise or web applications that benefit from a rich and persistent domain model. Sculptor also provides a sophisticated CRUD GUI for administrative sections of the application or to serve as a scaffolding for your manually created pages.</p>
+<p>The tool is based on Xtext/Xpand/MWE generator framework at Eclipse.org.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Sculptor is an open source productivity tool that applies the concepts from Domain-Driven Design and Domain Specific Languages. You express your design intent in a textual specification, from which Sculptor generates high quality Java code and configuration.</p>
+<p>The generated code is based on well-known frameworks, such as JPA, Hibernate, Spring Framework, Google App Engine, Spring Web Flow, JSF, RCP, Smartclient and Java EE. Sculptor takes care of the technical details, the tedious repetitive work, and let you focus on delivering more business value - and have more fun.</p>
+<p>The DSL and the code generation drives the development and is not a one time shot. The application can be developed incrementally with an efficient round trip loop.</p>
+<p>Sculptor is useful when developing typical enterprise or web applications that benefit from a rich and persistent domain model. Sculptor also provides a sophisticated CRUD GUI for administrative sections of the application or to serve as a scaffolding for your manually created pages.</p>
+<p>The tool is based on Xtext/Xpand/MWE generator framework at Eclipse.org.</p>
+]]></body>
+      <created>1266352626</created>
+      <changed>1266352626</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://fornax-platform.org/cp/x/aAQ]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/sculptor-logo.jpg?itok=dDqU4Ge_]]></image>
+      <version>1.8.0</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[Fornax Sculptor]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://old.nabble.com/Fornax-Platform-f17564.html]]></supporturl>
+      <updateurl><![CDATA[http://fornax-platform.org/updatesite/]]></updateurl>
+    </node>
+    </marketplace>
+    

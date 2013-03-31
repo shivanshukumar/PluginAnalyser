@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="977" name="ASN.1 Development Tools" url="http://marketplace.eclipse.org/content/asn1-development-tools">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='51' name='IDE' url='http://marketplace.eclipse.org/category/free-tagging/ide'/>
+        <tag id='146' name='editor' url='http://marketplace.eclipse.org/category/free-tagging/editor'/>
+        <tag id='542' name='ASN.1' url='http://marketplace.eclipse.org/category/free-tagging/asn1'/>
+      </tags>
+      
+      <owner>Zhi-Ren Hu</owner>
+      <favorited>0</favorited>
+      <installstotal>2</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The ASN.1 Development Tools(ADT) is a collection of plugins developed for the Eclipse platform that together make an IDE for the development of ASN.1 protocol specifications.  The ADT allow editing, syntax checking of ASN.1 files. Contribution to the asnCompiler extension point can automatically generate C/C++/Java/other language code from ASN.1 files.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The ASN.1 Development Tools(ADT) is a collection of plugins developed for the Eclipse platform that together make an IDE for the development of ASN.1 protocol specifications.  The ADT allow editing, syntax checking of ASN.1 files. Contribution to the asnCompiler extension point can automatically generate C/C++/Java/other language code from ASN.1 files.</p>
+]]></body>
+      <created>1249478303</created>
+      <changed>1274440963</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.asnlab.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_1.png?itok=a5TSDrWz]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/ASN.1%20Syntax%20Editor%20in%20Eclipse_0.jpg?itok=qtrly6gS]]></screenshot>
+      <version>3.14</version>
+      <license>EPL</license>
+      <companyname><![CDATA[ASN Lab]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://www.asnlab.com/support.html]]></supporturl>
+      <updateurl><![CDATA[http://updates.asnlab.com/adt/]]></updateurl>
+<ius>
+<iu>com.asnlab.adt</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="821" name="Clips Eclipse Plug-in" url="http://marketplace.eclipse.org/content/clips-eclipse-plug">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+      <tags>
+        <tag id='1191' name='multi clipboard' url='http://marketplace.eclipse.org/category/free-tagging/multi-clipboard'/>
+      </tags>
+      
+      <owner>Sandip Chitale</owner>
+      <favorited>2</favorited>
+      <installstotal>144</installstotal>
+      <installsrecent>6</installsrecent>
+      <shortdescription><![CDATA[<p>This plug-in supports cut/copy/paste and management of multiple snippets of text.</p>
+<p>    * Commands<br />
+          o Copy text selected in text editor as a clip Alt+Shift+X Alt+Shift+C<br />
+          o Cut text selected in text editor as a clip Alt+Shift+X Alt+Shift+X<br />
+          o Copy Clipboard text content as a clip Alt+Shift+X Alt+Shift+B<br />
+          o Paste clip in active text editor Alt+Shift+X Alt+Shift+V. The pasted text is left selected. If this command is invoked again within ~1 sec the successive clips are pasted.<br />
+          o Rotate Clips Up Alt+Shift+X Alt+Shift+9<br />
+          o Rotate Clips Down Alt+Shift+X Alt+Shift+0<br />
+    * Clips View - Shows the list of clips<br />
+    * Clips View Actions<br />
+          o Paste first selected clip in the active text editor<br />
+          o Remove selected clips<br />
+          o Remove All clips<br />
+          o Rotate Clips Up<br />
+          o Rotate Clips Down<br />
+          o Move Clip Up<br />
+          o Move Clip Down<br />
+    * Clips preferences page<br />
+          o Automatically create clips after Cut or Copy commands<br />
+          o Number of clips to store </p>
+]]></shortdescription>
+      <body><![CDATA[<p>This plug-in supports cut/copy/paste and management of multiple snippets of text.</p>
+<p>    * Commands<br />
+          o Copy text selected in text editor as a clip Alt+Shift+X Alt+Shift+C<br />
+          o Cut text selected in text editor as a clip Alt+Shift+X Alt+Shift+X<br />
+          o Copy Clipboard text content as a clip Alt+Shift+X Alt+Shift+B<br />
+          o Paste clip in active text editor Alt+Shift+X Alt+Shift+V. The pasted text is left selected. If this command is invoked again within ~1 sec the successive clips are pasted.<br />
+          o Rotate Clips Up Alt+Shift+X Alt+Shift+9<br />
+          o Rotate Clips Down Alt+Shift+X Alt+Shift+0<br />
+    * Clips View - Shows the list of clips<br />
+    * Clips View Actions<br />
+          o Paste first selected clip in the active text editor<br />
+          o Remove selected clips<br />
+          o Remove All clips<br />
+          o Rotate Clips Up<br />
+          o Rotate Clips Down<br />
+          o Move Clip Up<br />
+          o Move Clip Down<br />
+    * Clips preferences page<br />
+          o Automatically create clips after Cut or Copy commands<br />
+          o Number of clips to store </p>
+]]></body>
+      <created>1228141087</created>
+      <changed>1284269617</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/clipseclipseplugin/]]></homepageurl>
+      <image><![CDATA[http://clipseclipseplugin.googlecode.com/files/ClipsView.png]]></image>
+      <version>1.0.21</version>
+      <license>Other</license>
+      <companyname><![CDATA[Sandip V. Chitale]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.2 and above]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/clipseclipseplugin/issues/list]]></supporturl>
+      <updateurl><![CDATA[http://clipseclipseplugin.googlecode.com/svn/trunk/ClipsUpdateSite/]]></updateurl>
+<ius>
+<iu>ClipsFeature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

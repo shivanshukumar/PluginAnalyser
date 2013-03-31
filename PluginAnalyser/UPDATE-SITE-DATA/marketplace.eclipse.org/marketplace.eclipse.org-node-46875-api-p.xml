@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="46875" name="VJET JavaScript IDE" url="http://marketplace.eclipse.org/content/vjet-javascript-ide">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+      <tags>
+        <tag id='2953' name='javascript ide jQuery Mobile NodeJs Dojo EcmaScript HTML5 Canvas' url='http://marketplace.eclipse.org/taxonomy/term/2953'/>
+      </tags>
+      
+      <owner>Justin Early</owner>
+      <favorited>23</favorited>
+      <installstotal>18887</installstotal>
+      <installsrecent>1843</installsrecent>
+      <shortdescription><![CDATA[<p>VJET is now @ Eclipse! </p>
+<p>Updated 3/20/2013</p>
+<p>VJET JavaScript IDE is an Eclipse plugin that provides a fully integrated development environment for JavaScript - from authoring, to execution/test, and debugging. </p>
+<p>A quick walk through page is available here:<br />
+<a href="http://prezi.com/f9y2xzu2kol2/vjet-javascript-ide-quick-tour/">http://prezi.com/f9y2xzu2kol2/vjet-javascript-ide-quick-tour/</a></p>
+<p>If you are switching from the ebayopensource version of VJET you need to read this:<br />
+<a href="http://wiki.eclipse.org/VJET/SwitchingFromEbayOpenSourceVJET">http://wiki.eclipse.org/VJET/SwitchingFromEbayOpenSourceVJET</a></p>
+<p>A few example screen shots<br />
+NodeJS support screenshots - <a href="http://wiki.eclipse.org/VJET/NodeJS">http://wiki.eclipse.org/VJET/NodeJS</a><br />
+JQuery examples - <a href="http://forum.jquery.com/topic/using-jquery-try-vjet-javascript-ide">http://forum.jquery.com/topic/using-jquery-try-vjet-javascript-ide</a></p>
+<p>To get the library examples to work you need to import the existing projects:<br />
+<a href="http://wiki.eclipse.org/VJET/Importing_VJET_JavaScript_Type_Libraries">http://wiki.eclipse.org/VJET/Importing_VJET_JavaScript_Type_Libraries</a></p>
+<p>Have a question please see this page:<br />
+<a href="http://www.eclipse.org/forums/eclipse.vjet">http://www.eclipse.org/forums/eclipse.vjet</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>VJET is now @ Eclipse! </p>
+<p>Updated 3/20/2013</p>
+<p>VJET JavaScript IDE is an Eclipse plugin that provides a fully integrated development environment for JavaScript - from authoring, to execution/test, and debugging. </p>
+<p>A quick walk through page is available here:<br />
+<a href="http://prezi.com/f9y2xzu2kol2/vjet-javascript-ide-quick-tour/">http://prezi.com/f9y2xzu2kol2/vjet-javascript-ide-quick-tour/</a></p>
+<p>If you are switching from the ebayopensource version of VJET you need to read this:<br />
+<a href="http://wiki.eclipse.org/VJET/SwitchingFromEbayOpenSourceVJET">http://wiki.eclipse.org/VJET/SwitchingFromEbayOpenSourceVJET</a></p>
+<p>A few example screen shots<br />
+NodeJS support screenshots - <a href="http://wiki.eclipse.org/VJET/NodeJS">http://wiki.eclipse.org/VJET/NodeJS</a><br />
+JQuery examples - <a href="http://forum.jquery.com/topic/using-jquery-try-vjet-javascript-ide">http://forum.jquery.com/topic/using-jquery-try-vjet-javascript-ide</a></p>
+<p>To get the library examples to work you need to import the existing projects:<br />
+<a href="http://wiki.eclipse.org/VJET/Importing_VJET_JavaScript_Type_Libraries">http://wiki.eclipse.org/VJET/Importing_VJET_JavaScript_Type_Libraries</a></p>
+<p>Have a question please see this page:<br />
+<a href="http://www.eclipse.org/forums/eclipse.vjet">http://www.eclipse.org/forums/eclipse.vjet</a></p>
+]]></body>
+      <created>1303248285</created>
+      <changed>1363800760</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[https://www.eclipse.org/vjet]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/vjet_small_icon_marketplace_1.png?itok=YvVtrXAQ]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/help_hover3.gif?itok=ms_iQiRC]]></screenshot>
+      <version>0.10.0 (Incubation)</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Avantsoft]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eclipse.org/forums/eclipse.vjet]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/vjet/updates-0.10/]]></updateurl>
+<ius>
+<iu>org.eclipse.vjet.js.ide.feature.group</iu>
+<iu>org.eclipse.vjet.codegen.feature.group</iu>
+<iu>org.eclipse.vjet.vsf.domkit.feature.group</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

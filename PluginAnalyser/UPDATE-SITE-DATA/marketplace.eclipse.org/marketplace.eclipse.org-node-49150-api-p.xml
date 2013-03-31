@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="49150" name="Reuseware" url="http://marketplace.eclipse.org/content/reuseware">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+      </categories>
+            
+      <owner>Jendrik Johannes</owner>
+      <favorited>4</favorited>
+      <installstotal>32</installstotal>
+      <installsrecent>2</installsrecent>
+      <shortdescription><![CDATA[<p>Reuseware is a software composition framework founded on the concepts of Invasive Software Composition (ISC) for developing new software modularization techniques and integrating them into software languages. The tooling of Reuseware is integrated with Eclipse and the Eclipse Modeling Framework and thus supports arbitrary software languages that are defined by Ecore metamodels.</p>
+<!--break--><p>Reuseware supports the latest advances in ISC research which include support for universal ISC, graph fragments and model-driven development with multi-dimensional separation of concerns (for related publications visit <a href="http://reuseware.org/index.php/Reuseware_Publications">http://reuseware.org/index.php/Reuseware_Publications</a>). Reuseware is part of the Dresden Open Software Toolbox (DropsBox). It can be combined with other DropsBox tools such as EMFText (emftext.org) to define modularization support for textual DSLs or JaMoPP (jamopp.org) to develop new modularization concepts for Java. Furthermore, it integrates well with other Eclipse-based tools such as graphical and textual editors.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Reuseware is a software composition framework founded on the concepts of Invasive Software Composition (ISC) for developing new software modularization techniques and integrating them into software languages. The tooling of Reuseware is integrated with Eclipse and the Eclipse Modeling Framework and thus supports arbitrary software languages that are defined by Ecore metamodels.</p>
+<!--break--><p>Reuseware supports the latest advances in ISC research which include support for universal ISC, graph fragments and model-driven development with multi-dimensional separation of concerns (for related publications visit <a href="http://reuseware.org/index.php/Reuseware_Publications">http://reuseware.org/index.php/Reuseware_Publications</a>). Reuseware is part of the Dresden Open Software Toolbox (DropsBox). It can be combined with other DropsBox tools such as EMFText (emftext.org) to define modularization support for textual DSLs or JaMoPP (jamopp.org) to develop new modularization concepts for Java. Furthermore, it integrates well with other Eclipse-based tools such as graphical and textual editors.</p>
+]]></body>
+      <created>1304001537</created>
+      <changed>1345821785</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.reuseware.org]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/reuseware_logo_marketplace.png?itok=X01h6Dde]]></image>
+      <version>1.0.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[DevBoost GmbH]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.8 / 4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.reuseware.org/index.php/Reuseware_Contact]]></supporturl>
+      <updateurl><![CDATA[http://www.reuseware.org/update]]></updateurl>
+<ius>
+<iu>org.reuseware.sokan</iu>
+<iu>org.reuseware.coconut</iu>
+<iu>org.reuseware.comogen</iu>
+<iu>org.reuseware.lacome</iu>
+<iu>org.reuseware.support.opendocument</iu>
+<iu>org.reuseware.support.topcased</iu>
+<iu>org.reuseware.application.taipan</iu>
+<iu>org.reuseware.application.cim</iu>
+<iu>org.reuseware.application.cbse</iu>
+<iu>org.reuseware.application.swt2</iu>
+<iu>org.reuseware.application.classweaving</iu>
+<iu>org.reuseware.application.reusejava</iu>
+<iu>org.reuseware.application.reuseuml</iu>
+<iu>org.reuseware.application.uml2java</iu>
+<iu>org.reuseware.application.ticketshop</iu>
+<iu>org.reuseware.application.eclipsemagazin</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

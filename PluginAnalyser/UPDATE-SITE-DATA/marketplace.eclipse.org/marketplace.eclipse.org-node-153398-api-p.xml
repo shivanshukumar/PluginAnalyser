@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="153398" name="Robots – An Eclipse Plug-in Game" url="http://marketplace.eclipse.org/content/robots-%E2%80%93-eclipse-plug-game">
+      <type>resource</type>
+      <categories>
+        <category id='7' name='Entertainment' url='http://marketplace.eclipse.org/taxonomy/term/7'/>
+      </categories>
+      <tags>
+        <tag id='2044' name='game' url='http://marketplace.eclipse.org/category/free-tagging/game'/>
+        <tag id='2344' name='robot' url='http://marketplace.eclipse.org/category/free-tagging/robot'/>
+      </tags>
+      
+      <owner>yanbasic  </owner>
+      <favorited>2</favorited>
+      <installstotal>37</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><strong>Quite</strong> similar with a traditional <a title="Robots (computer game)" href="http://en.wikipedia.org/wiki/Robots_%28computer_game%29" target="_blank">Linux robot game</a>, with a simple teleport, implements by Eclipse plug-in. You can create your own robots by extending 'robot' extension point.</p>
+]]></shortdescription>
+      <body><![CDATA[<p><strong>Quite</strong> similar with a traditional <a title="Robots (computer game)" href="http://en.wikipedia.org/wiki/Robots_%28computer_game%29" target="_blank">Linux robot game</a>, with a simple teleport, implements by Eclipse plug-in. You can create your own robots by extending 'robot' extension point.</p>
+]]></body>
+      <created>1321417154</created>
+      <changed>1349877365</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://yanbasic.us18.idczk.net/?p=17]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/robots.gif?itok=cTEKBb3r]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/1_0.png?itok=jf_JgFez]]></screenshot>
+      <version></version>
+      <license>EPL</license>
+      <companyname><![CDATA[osgix]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://yanbasic.us18.idczk.net/?p=17]]></supporturl>
+      <updateurl><![CDATA[http://yanbasic.us18.idczk.net/robot2]]></updateurl>
+<ius>
+<iu>com.osgix.game.robot_feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

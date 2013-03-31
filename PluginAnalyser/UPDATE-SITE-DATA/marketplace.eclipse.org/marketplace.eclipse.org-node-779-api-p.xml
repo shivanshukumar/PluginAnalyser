@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="779" name="SWT/XML" url="http://marketplace.eclipse.org/content/swtxml">
+      <type>resource</type>
+      <categories>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+      </categories>
+            
+      <owner>Ralf Ebert</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>SWT/XML is a lightweight markup language for describing Eclipse SWT / RCP user interfaces. It includes an Eclipse Web Tools based IDE editor plug-in for convenient editing of SWT markup files. It's easy to learn and to use as it provides a 1:1 mapping from SWT widget classes to XML tags.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>SWT/XML is a lightweight markup language for describing Eclipse SWT / RCP user interfaces. It includes an Eclipse Web Tools based IDE editor plug-in for convenient editing of SWT markup files. It's easy to learn and to use as it provides a 1:1 mapping from SWT widget classes to XML tags.</p>
+]]></body>
+      <created>1222956319</created>
+      <changed>1296484762</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/swtxml/]]></homepageurl>
+      <image><![CDATA[http://swtxml.googlecode.com/svn/trunk/img/swtxml_110x80.png]]></image>
+      <version>0.0.7</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Ralf Ebert]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.3]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/swtxml/issues/list]]></supporturl>
+      <updateurl><![CDATA[http://www.swtxml.com/updates/]]></updateurl>
+    </node>
+    </marketplace>
+    

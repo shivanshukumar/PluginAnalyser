@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="857" name="More Clipboard" url="http://marketplace.eclipse.org/content/more-clipboard">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='112' name='clipboard' url='http://marketplace.eclipse.org/category/free-tagging/clipboard'/>
+      </tags>
+      
+      <owner>Mikhail Barg</owner>
+      <favorited>19</favorited>
+      <installstotal>1316</installstotal>
+      <installsrecent>61</installsrecent>
+      <shortdescription><![CDATA[<p>More Clipboard keeps track of the latest entries copied/cut into clipboard buffer and allows quick pasting from the popup list by pressing a hotkey. Inspired by Multi Clipboard plugin for Eclipse and Visual Assist for MS VS. </p>
+]]></shortdescription>
+      <body><![CDATA[<p>More Clipboard keeps track of the latest entries copied/cut into clipboard buffer and allows quick pasting from the popup list by pressing a hotkey. Inspired by Multi Clipboard plugin for Eclipse and Visual Assist for MS VS. </p>
+]]></body>
+      <created>1234193317</created>
+      <changed>1322204232</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://moreclipboard.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://sourceforge.net/dbimage.php?id=203999]]></image>
+      <version>1.1.6</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Mikhail Barg]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4 and greater]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/forum/forum.php?forum_id=913972]]></supporturl>
+      <updateurl><![CDATA[http://moreclipboard.sourceforge.net/updates/]]></updateurl>
+<ius>
+<iu>moreclipboard.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

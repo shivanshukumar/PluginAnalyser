@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="777" name="CallGraph Viewer" url="http://marketplace.eclipse.org/content/callgraph-viewer">
+      <type>resource</type>
+      <categories>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='40' name='Search' url='http://marketplace.eclipse.org/category/categories/search'/>
+      </categories>
+            
+      <owner>Gerald Rosenberg</owner>
+      <favorited>18</favorited>
+      <installstotal>1676</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>
+<u>CallGraph:</u><br />
+A graphical explorer for call and class hierarchies.  Designed to help understand complex relations in larger scale applications.
+</p>
+<p>
+Implemented as a view plugin for Eclipse. Leverages the internal platform Call Hierarchy and Search mechanisms.  Uses Zest to display a graphical representation of the caller/callee relations between methods (including constructors and internal classes) and super/subclass relations between classes and interfaces.
+</p>
+]]></shortdescription>
+      <body><![CDATA[<p>
+<u>CallGraph:</u><br />
+A graphical explorer for call and class hierarchies.  Designed to help understand complex relations in larger scale applications.
+</p>
+<p>
+Implemented as a view plugin for Eclipse. Leverages the internal platform Call Hierarchy and Search mechanisms.  Uses Zest to display a graphical representation of the caller/callee relations between methods (including constructors and internal classes) and super/subclass relations between classes and interfaces.
+</p>
+]]></body>
+      <created>1222696795</created>
+      <changed>1276698490</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.certiv.net/]]></homepageurl>
+      <image><![CDATA[http://www.certiv.net/images/pen.gif]]></image>
+      <version>0.9.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Certiv Analytics]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4 & 3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.certiv.net/support.html]]></supporturl>
+      <updateurl><![CDATA[http://www.certiv.net/updates]]></updateurl>
+<ius>
+<iu>net.certiv.callgraph.feature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

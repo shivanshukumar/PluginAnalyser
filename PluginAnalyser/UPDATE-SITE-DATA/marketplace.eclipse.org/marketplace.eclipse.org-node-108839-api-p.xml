@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="108839" name="JBenchX Java Unit Benchmarking Framework" url="http://marketplace.eclipse.org/content/jbenchx-java-unit-benchmarking-framework">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='589' name='Framework' url='http://marketplace.eclipse.org/category/free-tagging/framework'/>
+        <tag id='700' name='performance testing' url='http://marketplace.eclipse.org/category/free-tagging/performance-testing'/>
+        <tag id='701' name='performance' url='http://marketplace.eclipse.org/category/free-tagging/performance'/>
+        <tag id='2177' name='Benchmark' url='http://marketplace.eclipse.org/category/free-tagging/benchmark'/>
+      </tags>
+      
+      <owner>Micha Riser</owner>
+      <favorited>1</favorited>
+      <installstotal>177</installstotal>
+      <installsrecent>11</installsrecent>
+      <shortdescription><![CDATA[JBenchX is a Unit Benchmarking Framework for Java(tm). It aims at micro-benchmarking your classes as easily as you create tests for your classes with the well-known JUnit framework. This is the Eclipse plug-in providing support for launching benchmarks directly from within Eclipse.
+<p>
+<strong>Important Note:</strong>
+Before you can write JBenchX bechmarks in Eclipse you need to add the JBenchX library to the classpath! You can do this easily by opening the Properties of your project, selecting the Java Build Path page, chosing the Libraries tab and adding the JBenchX libraries with the "Add Library..." command.
+</p><p>
+Example Benchmark to test how long it takes to generate a truly random integer:
+
+</p><pre>
+import java.security.*;
+
+import org.jbenchx.annotations.*;
+
+public class Example {
+  
+  private SecureRandom fRandom;
+
+  public Example() throws Exception {
+    fRandom = SecureRandom.getInstance("SHA1PRNG");
+  }
+  
+  @Bench
+  public int random() {
+    return fRandom.nextInt();
+  }
+  
+}
+</pre>]]></shortdescription>
+      <body><![CDATA[JBenchX is a Unit Benchmarking Framework for Java(tm). It aims at micro-benchmarking your classes as easily as you create tests for your classes with the well-known JUnit framework. This is the Eclipse plug-in providing support for launching benchmarks directly from within Eclipse.
+<p>
+<strong>Important Note:</strong>
+Before you can write JBenchX bechmarks in Eclipse you need to add the JBenchX library to the classpath! You can do this easily by opening the Properties of your project, selecting the Java Build Path page, chosing the Libraries tab and adding the JBenchX libraries with the "Add Library..." command.
+</p><p>
+Example Benchmark to test how long it takes to generate a truly random integer:
+
+</p><pre>
+import java.security.*;
+
+import org.jbenchx.annotations.*;
+
+public class Example {
+  
+  private SecureRandom fRandom;
+
+  public Example() throws Exception {
+    fRandom = SecureRandom.getInstance("SHA1PRNG");
+  }
+  
+  @Bench
+  public int random() {
+    return fRandom.nextInt();
+  }
+  
+}
+</pre>]]></body>
+      <created>1314133945</created>
+      <changed>1319989644</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://iquadrat.github.com/jbenchx/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/JB_eclipse_marketplace.png?itok=Mf8Kfok4]]></image>
+      <version>0.3.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Micha Riser]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6, 3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://iquadrat.github.com/jbenchx/]]></supporturl>
+      <updateurl><![CDATA[http://iquadrat.github.com/jbenchx/updates]]></updateurl>
+<ius>
+<iu>org.jbenchx.eclipse</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

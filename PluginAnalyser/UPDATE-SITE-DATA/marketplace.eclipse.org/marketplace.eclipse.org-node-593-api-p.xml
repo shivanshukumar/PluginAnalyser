@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="593" name="JDeodorant" url="http://marketplace.eclipse.org/content/jdeodorant">
+      <type>resource</type>
+      <categories>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+      </categories>
+            
+      <owner>Tsantalis Nikolaos</owner>
+      <favorited>34</favorited>
+      <installstotal>2864</installstotal>
+      <installsrecent>330</installsrecent>
+      <shortdescription><![CDATA[<p> JDeodorant is an Eclipse plug-in that identifies design problems in software, known as bad smells, and resolves them by applying appropriate refactorings. </p>
+<p> JDeodorant employs employs a variety of novel methods and techniques in order to identify code smells and suggest the appropriate refactorings that resolve them.</p>
+<p>For the moment, the tool identifies four kinds of bad smells, namely <strong>Feature Envy</strong>, <strong>Type Checking</strong>, <strong>Long Method</strong> and <strong>God Class</strong>. </p>
+<p>
+Feature Envy problems are resolved by appropriate <em>Move Method</em> refactorings.</p>
+<p>Type Checking problems are resolved by appropriate <em>Replace Conditional with Polymorphism</em> and <em>Replace Type code with State/Strategy</em> refactorings.</p>
+<p>Long Method problems are resolved by appropriate <em>Extract Method</em> refactorings. </p>
+<p>God Class problems are resolved by appropriate <em>Extract Class</em> refactorings.
+</p>
+<p> The tool is the outcome of the research performed in the <a target="_blank" href="http://users.encs.concordia.ca/~nikolaos/">Department of Computer Science and Software Engineering</a> at Concordia University, Canada and the<br /><a target="_blank" href="http://csse.uom.gr/">Computational Systems and Software Engineering Lab</a> at the Department of Applied Informatics, University of Macedonia, Thessaloniki, Greece. </p>
+<p>JDeodorant encompasses a number of innovative features: </p>
+<ul><li>Transformation of expert knowledge to fully automated processes</li>
+<li>Pre-Evaluation of the effect for each suggested solution</li>
+<li>User guidance in comprehending the design problems</li>
+<li>User friendliness (one-click approach in improving design quality)</li>
+</ul><p><strong>Latest features:</strong></p>
+<ul><li>
+[28/02/2013] Fixed a bug in the construction of control flow graphs. Many thanks to <strong>Danny Verloop</strong> (TU Delft) for reporting the problem.
+</li>
+<li>
+[06/11/2012] JDeodorant was updated to support <strong>Union Types</strong> introduced in Java 7. Union types are mainly used in the new <strong>Multicatch</strong> feature.
+</li>
+<li>
+[04/11/2012] JDeodorant was updated to support the <strong>Java Language Specification 4</strong> (Java 7). This affected the construction of Control Flow and Program Dependence graphs, since try statements may declare resources in JLS 4. More details can be found at the <a target="_blank" href="http://java.uom.gr/~jdeodorant/index.php?option=com_content&view=article&id=71">JDeodorant ChangeLog</a>.
+</li>
+<li>
+[26/10/2012] Alias analysis in the detection of Extract Method refactoring opportunities (Long method code smell) caused in some cases an infinite recursion. The new implementation of alias analysis improves significantly the performance. This is an <strong>important</strong> update.
+</li>
+<li>
+[09/10/2012] The exclusion of classes containing method with @Test annotations from the analysis may cause NullPointer exceptions (such a case was found in JUnit). As a result, test methods are not excluded from the analysis.
+</li>
+<li>[28/02/2012] Created a Standalone version of JDeodorant for the detection of refactoring opportunities from Eclipse applications.<br />
+The results of Type Checking bad smell are now reported in a tree view and are grouped per inheritance hierarchy or named constants.
+</li>
+<li>[16/11/2011] Added a new precondition for Move Method refactoring. The variable (parameter or field of target class type) through which the moved method will be invoked must not be assigned within the body of the candidate method to be moved.
+</li>
+<li>[04/09/2011] Fixed the unnecessary importing of nested types in all implemented refactorings.
+</li>
+<li>[22/04/2011] Several improvements in the identification process and presentation of Extract Class refactoring opportunities.<br />
+The application of the Extract Class Refactoring has been improved to handle the extraction of static members and the proper initialization of final fields in the extracted class when they are initialized inside constructors.<br />
+More details can be found at the <a target="_blank" href="http://java.uom.gr/~jdeodorant/index.php?option=com_content&view=article&id=71">JDeodorant ChangeLog</a>.
+</li>
+<li>[15/03/2011] Added a user option in the input pages of the Move Method and Extract Class refactorings allowing to keep delegates to the public moved methods.
+</li>
+<li>[12/03/2011] Extract Class Refactoring has been implemented from scratch and several bugs have been fixed.<br />
+Added user rating support for the identified Extract Class refactoring opportunities.
+</li>
+<li>[09/01/2011] Try/catch blocks and throw statements are handled according to the approach proposed by Allen & Horwitz (2003).<br />
+Added a rule for the preservation of output dependences.
+<p>M. Allen, and S. Horwitz, "Slicing Java Programs that Throw and Catch Exceptions", ACM SIGPLAN Workshop on Partial Evaluation and semantics-based Program Manipulation, pp. 44-54, 2003.</p></li>
+<li>[25/12/2010] The unlabeled break and continue statements within the body of loops and the break statements within the body of switch statements are handled according to the augmented program dependence graph (APDG) approach proposed by Ball & Horwitz (1993), Kumar & Horwitz (2002).
+<p>T. Ball, and S. Horwitz, "Slicing Programs with Arbitrary Control Flow", First International Workshop on Automated and Algorithmic Debugging, pp. 206-222, 1993.<br />
+S. Kumar, and S. Horwitz, "Better Slicing of Programs with Jumps and Switches", Fifth International Conference on Fundamental Approaches to Software Engineering, pp. 96-112, 2002.</p></li>
+<li>[02/12/2010] Fixed a variety of problems related with the Type checking code smell.</li>
+<li>[08/11/2010] Added functionality allowing the user to rate each identified refactoring opportunity with a rating ranging from 0 to 5 stars. The ratings provided by the users will help JDeodorant team to improve the ranking mechanism that sorts the identified refactoring opportunities.</li>
+<li>[27/08/2010] Added support for code smell evolution analysis throughout successive versions of a given Java project. Just select an identified refactoring opportunity from the table view and click on "Evolution Analysis" button. JDeodorant will automatically analyze the evolution of the corresponding code smell in the relevant project versions loaded in the workspace. Eventually, JDeodorant will present a table showing the changes regarding the severity of the code smell among the successive project versions. Watch out the <a target="_blank" href="http://java.uom.gr/~jdeodorant/webcasts/FeatureEnvyEvolution/FeatureEnvyEvolution.html">screencast</a> showing the evolution analysis for a Feature Envy code smell.</li>
+<li>[12/07/2010] Added an Update Site for JDeodorant.</li>
+<li>[11/07/2010] The tool supports the identification of Extract Class refactoring opportunities for the decomposition of "God" classes. This feature is the outcome of a joint research effort with the <a target="_blank" href="http://ssrg.cs.ualberta.ca/">SSRG Lab</a> at the Department of Computing Science, University of Alberta.</li>
+<li>[01/07/2010] The speed of slice computation when constructing unions of slices has been <strong>significantly improved</strong>.</li>
+<li>[15/06/2010] A flexible calculator for slice-based cohesion metrics. Just right-click on a method from Package Explorer and click on "Slice-based Cohesion Metrics..." from the menu. The calculator will automatically compute the slices for all the variables which are declared within the body of the selected method and visually present its slice profile. The user can enable/disable any variable from the slice profile. The statements which are common to all enabled slices are highlighted in green color. The slice-based cohesion metrics (<strong>overlap</strong>, <strong>tightness</strong>, <strong>coverage</strong>) are dynamically re-calculated after each modification of the slice profile. See the screenshots for details.
+</li></ul>]]></shortdescription>
+      <body><![CDATA[<p> JDeodorant is an Eclipse plug-in that identifies design problems in software, known as bad smells, and resolves them by applying appropriate refactorings. </p>
+<p> JDeodorant employs employs a variety of novel methods and techniques in order to identify code smells and suggest the appropriate refactorings that resolve them.</p>
+<p>For the moment, the tool identifies four kinds of bad smells, namely <strong>Feature Envy</strong>, <strong>Type Checking</strong>, <strong>Long Method</strong> and <strong>God Class</strong>. </p>
+<p>
+Feature Envy problems are resolved by appropriate <em>Move Method</em> refactorings.</p>
+<p>Type Checking problems are resolved by appropriate <em>Replace Conditional with Polymorphism</em> and <em>Replace Type code with State/Strategy</em> refactorings.</p>
+<p>Long Method problems are resolved by appropriate <em>Extract Method</em> refactorings. </p>
+<p>God Class problems are resolved by appropriate <em>Extract Class</em> refactorings.
+</p>
+<p> The tool is the outcome of the research performed in the <a target="_blank" href="http://users.encs.concordia.ca/~nikolaos/">Department of Computer Science and Software Engineering</a> at Concordia University, Canada and the<br /><a target="_blank" href="http://csse.uom.gr/">Computational Systems and Software Engineering Lab</a> at the Department of Applied Informatics, University of Macedonia, Thessaloniki, Greece. </p>
+<p>JDeodorant encompasses a number of innovative features: </p>
+<ul><li>Transformation of expert knowledge to fully automated processes</li>
+<li>Pre-Evaluation of the effect for each suggested solution</li>
+<li>User guidance in comprehending the design problems</li>
+<li>User friendliness (one-click approach in improving design quality)</li>
+</ul><p><strong>Latest features:</strong></p>
+<ul><li>
+[28/02/2013] Fixed a bug in the construction of control flow graphs. Many thanks to <strong>Danny Verloop</strong> (TU Delft) for reporting the problem.
+</li>
+<li>
+[06/11/2012] JDeodorant was updated to support <strong>Union Types</strong> introduced in Java 7. Union types are mainly used in the new <strong>Multicatch</strong> feature.
+</li>
+<li>
+[04/11/2012] JDeodorant was updated to support the <strong>Java Language Specification 4</strong> (Java 7). This affected the construction of Control Flow and Program Dependence graphs, since try statements may declare resources in JLS 4. More details can be found at the <a target="_blank" href="http://java.uom.gr/~jdeodorant/index.php?option=com_content&view=article&id=71">JDeodorant ChangeLog</a>.
+</li>
+<li>
+[26/10/2012] Alias analysis in the detection of Extract Method refactoring opportunities (Long method code smell) caused in some cases an infinite recursion. The new implementation of alias analysis improves significantly the performance. This is an <strong>important</strong> update.
+</li>
+<li>
+[09/10/2012] The exclusion of classes containing method with @Test annotations from the analysis may cause NullPointer exceptions (such a case was found in JUnit). As a result, test methods are not excluded from the analysis.
+</li>
+<li>[28/02/2012] Created a Standalone version of JDeodorant for the detection of refactoring opportunities from Eclipse applications.<br />
+The results of Type Checking bad smell are now reported in a tree view and are grouped per inheritance hierarchy or named constants.
+</li>
+<li>[16/11/2011] Added a new precondition for Move Method refactoring. The variable (parameter or field of target class type) through which the moved method will be invoked must not be assigned within the body of the candidate method to be moved.
+</li>
+<li>[04/09/2011] Fixed the unnecessary importing of nested types in all implemented refactorings.
+</li>
+<li>[22/04/2011] Several improvements in the identification process and presentation of Extract Class refactoring opportunities.<br />
+The application of the Extract Class Refactoring has been improved to handle the extraction of static members and the proper initialization of final fields in the extracted class when they are initialized inside constructors.<br />
+More details can be found at the <a target="_blank" href="http://java.uom.gr/~jdeodorant/index.php?option=com_content&view=article&id=71">JDeodorant ChangeLog</a>.
+</li>
+<li>[15/03/2011] Added a user option in the input pages of the Move Method and Extract Class refactorings allowing to keep delegates to the public moved methods.
+</li>
+<li>[12/03/2011] Extract Class Refactoring has been implemented from scratch and several bugs have been fixed.<br />
+Added user rating support for the identified Extract Class refactoring opportunities.
+</li>
+<li>[09/01/2011] Try/catch blocks and throw statements are handled according to the approach proposed by Allen & Horwitz (2003).<br />
+Added a rule for the preservation of output dependences.
+<p>M. Allen, and S. Horwitz, "Slicing Java Programs that Throw and Catch Exceptions", ACM SIGPLAN Workshop on Partial Evaluation and semantics-based Program Manipulation, pp. 44-54, 2003.</p></li>
+<li>[25/12/2010] The unlabeled break and continue statements within the body of loops and the break statements within the body of switch statements are handled according to the augmented program dependence graph (APDG) approach proposed by Ball & Horwitz (1993), Kumar & Horwitz (2002).
+<p>T. Ball, and S. Horwitz, "Slicing Programs with Arbitrary Control Flow", First International Workshop on Automated and Algorithmic Debugging, pp. 206-222, 1993.<br />
+S. Kumar, and S. Horwitz, "Better Slicing of Programs with Jumps and Switches", Fifth International Conference on Fundamental Approaches to Software Engineering, pp. 96-112, 2002.</p></li>
+<li>[02/12/2010] Fixed a variety of problems related with the Type checking code smell.</li>
+<li>[08/11/2010] Added functionality allowing the user to rate each identified refactoring opportunity with a rating ranging from 0 to 5 stars. The ratings provided by the users will help JDeodorant team to improve the ranking mechanism that sorts the identified refactoring opportunities.</li>
+<li>[27/08/2010] Added support for code smell evolution analysis throughout successive versions of a given Java project. Just select an identified refactoring opportunity from the table view and click on "Evolution Analysis" button. JDeodorant will automatically analyze the evolution of the corresponding code smell in the relevant project versions loaded in the workspace. Eventually, JDeodorant will present a table showing the changes regarding the severity of the code smell among the successive project versions. Watch out the <a target="_blank" href="http://java.uom.gr/~jdeodorant/webcasts/FeatureEnvyEvolution/FeatureEnvyEvolution.html">screencast</a> showing the evolution analysis for a Feature Envy code smell.</li>
+<li>[12/07/2010] Added an Update Site for JDeodorant.</li>
+<li>[11/07/2010] The tool supports the identification of Extract Class refactoring opportunities for the decomposition of "God" classes. This feature is the outcome of a joint research effort with the <a target="_blank" href="http://ssrg.cs.ualberta.ca/">SSRG Lab</a> at the Department of Computing Science, University of Alberta.</li>
+<li>[01/07/2010] The speed of slice computation when constructing unions of slices has been <strong>significantly improved</strong>.</li>
+<li>[15/06/2010] A flexible calculator for slice-based cohesion metrics. Just right-click on a method from Package Explorer and click on "Slice-based Cohesion Metrics..." from the menu. The calculator will automatically compute the slices for all the variables which are declared within the body of the selected method and visually present its slice profile. The user can enable/disable any variable from the slice profile. The statements which are common to all enabled slices are highlighted in green color. The slice-based cohesion metrics (<strong>overlap</strong>, <strong>tightness</strong>, <strong>coverage</strong>) are dynamically re-calculated after each modification of the slice profile. See the screenshots for details.
+</li></ul>]]></body>
+      <created>1196264038</created>
+      <changed>1362084383</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://java.uom.gr/~jdeodorant/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/JDeodorantLogo.gif?itok=XiC4eHPR]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/7-1-2010%207-19-08%20PM.png?itok=1u9R1sOn]]></screenshot>
+      <version>5.0.4</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Department of Computer Science & Software Engineering, Concordia University]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7.x, 3.8.x, 4.2.x]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://java.uom.gr/~jdeodorant/update/]]></updateurl>
+<ius>
+<iu>gr.uom.java.jdeodorant</iu>
+</ius>
+    </node>
+    </marketplace>
+    

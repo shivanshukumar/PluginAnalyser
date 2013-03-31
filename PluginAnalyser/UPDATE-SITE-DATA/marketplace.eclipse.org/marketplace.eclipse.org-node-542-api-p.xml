@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="542" name="Classpath Checker" url="http://marketplace.eclipse.org/content/classpath-checker">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+      </categories>
+            
+      <owner>Pascal Emily</owner>
+      <favorited>9</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><ol>The Classpath Checker eclipse plugin <b>detects classpath inconsistencies</b> in Java<br />
+projects.<br/><br/><u>That means it is able to:</u><br />
+<li><br />
+Detect if a jar file is missing in your classpath. In case a class in your classpath depends on other classes that are not present in the classpath, the plugin warns you and gives you the missing class names.<br />
+</li><br />
+<li>Detect if you have some duplicated<br />
+classes in all your jar files. In case of duplicated classes, this<br />
+plugin warns you. If there are version conflicts in the duplicated<br />
+classes, it helps you to determine which is the wrong Jar to remove from<br />
+your classpath.</li><br />
+<br><br />
+More information available at: <a href="<a href="http://classpathchecker.free.fr">http://classpathchecker.free.fr</a>">http://classpathchecker.free.fr">http://classpathchecker.free.fr</a></a><br />
+</ol></p>
+]]></shortdescription>
+      <body><![CDATA[<p><ol>The Classpath Checker eclipse plugin <b>detects classpath inconsistencies</b> in Java<br />
+projects.<br/><br/><u>That means it is able to:</u><br />
+<li><br />
+Detect if a jar file is missing in your classpath. In case a class in your classpath depends on other classes that are not present in the classpath, the plugin warns you and gives you the missing class names.<br />
+</li><br />
+<li>Detect if you have some duplicated<br />
+classes in all your jar files. In case of duplicated classes, this<br />
+plugin warns you. If there are version conflicts in the duplicated<br />
+classes, it helps you to determine which is the wrong Jar to remove from<br />
+your classpath.</li><br />
+<br><br />
+More information available at: <a href="<a href="http://classpathchecker.free.fr">http://classpathchecker.free.fr</a>">http://classpathchecker.free.fr">http://classpathchecker.free.fr</a></a><br />
+</ol></p>
+]]></body>
+      <created>1189792095</created>
+      <changed>1295278253</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://classpathchecker.free.fr/index.html]]></homepageurl>
+      <image><![CDATA[http://classpathchecker.free.fr/images/classpathCheckerImg.gif]]></image>
+      <version>1.4.3</version>
+      <license>Other</license>
+      <companyname><![CDATA[Classpath Checker]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3 (Europa), 3.4 (Ganymede)]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://classpathchecker.free.fr/update-site]]></updateurl>
+    </node>
+    </marketplace>
+    

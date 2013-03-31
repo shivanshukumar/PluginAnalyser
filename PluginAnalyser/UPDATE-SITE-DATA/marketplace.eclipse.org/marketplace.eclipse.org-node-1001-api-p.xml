@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1001" name="contextmenu" url="http://marketplace.eclipse.org/content/contextmenu">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='1110' name='explorer' url='http://marketplace.eclipse.org/category/free-tagging/explorer'/>
+        <tag id='2272' name='context' url='http://marketplace.eclipse.org/category/free-tagging/context'/>
+        <tag id='2273' name='menu' url='http://marketplace.eclipse.org/category/free-tagging/menu'/>
+        <tag id='2280' name='file manager' url='http://marketplace.eclipse.org/category/free-tagging/file-manager'/>
+      </tags>
+      
+      <owner>Richard Hoefter</owner>
+      <favorited>7</favorited>
+      <installstotal>484</installstotal>
+      <installsrecent>26</installsrecent>
+      <shortdescription><![CDATA[This small plugin allows you to open the original Windows Explorer context menu directly from Eclipse.
+
+<p>It adds a context menu item called "Context Menu..." to the Package Explorer context menu.
+
+</p><p>The context menu application is configurable, so also very useful for Linux.
+<!--break-->
+</p><form action="https://www.paypal.com/cgi-bin/webscr" method="post" style="padding:20px;">
+              <fieldset><legend>PayPal</legend>
+              <p>Find contextmenu useful?<br />
+              Please donate to help support its ongoing development and maintenance. Thank you!</p>
+                  <input type="hidden" name="cmd" value="_donations" /><input type="hidden" name="business" value="richard.hoefter@web.de" /><input type="hidden" name="lc" value="US" /><input type="hidden" name="item_name" value="contextmenu" />
+                  Amount:
+                  <select name="amount"><option value="5.00">5</option><option value="10.00">10</option><option value="15.00">15</option><option value="">Choose</option></select>
+                  Currency:
+                  <select name="currency_code"><option>EUR</option><option>USD</option></select><input type="hidden" name="no_note" value="0" /><input type="hidden" name="cn" value="contextmenu donation" /><input type="hidden" name="no_shipping" value="1" /><input type="submit" name="submit" value="Donate" /></fieldset></form>]]></shortdescription>
+      <body><![CDATA[This small plugin allows you to open the original Windows Explorer context menu directly from Eclipse.
+
+<p>It adds a context menu item called "Context Menu..." to the Package Explorer context menu.
+
+</p><p>The context menu application is configurable, so also very useful for Linux.
+<!--break-->
+</p><form action="https://www.paypal.com/cgi-bin/webscr" method="post" style="padding:20px;">
+              <fieldset><legend>PayPal</legend>
+              <p>Find contextmenu useful?<br />
+              Please donate to help support its ongoing development and maintenance. Thank you!</p>
+                  <input type="hidden" name="cmd" value="_donations" /><input type="hidden" name="business" value="richard.hoefter@web.de" /><input type="hidden" name="lc" value="US" /><input type="hidden" name="item_name" value="contextmenu" />
+                  Amount:
+                  <select name="amount"><option value="5.00">5</option><option value="10.00">10</option><option value="15.00">15</option><option value="">Choose</option></select>
+                  Currency:
+                  <select name="currency_code"><option>EUR</option><option>USD</option></select><input type="hidden" name="no_note" value="0" /><input type="hidden" name="cn" value="contextmenu donation" /><input type="hidden" name="no_shipping" value="1" /><input type="submit" name="submit" value="Donate" /></fieldset></form>]]></body>
+      <created>1252417752</created>
+      <changed>1323721962</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://timealias.bplaced.net/ContextMenuPlugin/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.2.4</version>
+      <license>EPL</license>
+      <companyname><![CDATA[contextmenu]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[2.0 - 4.2]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://timealias.bplaced.net/ContextMenuPlugin/update/]]></updateurl>
+<ius>
+<iu>contextmenu.feature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

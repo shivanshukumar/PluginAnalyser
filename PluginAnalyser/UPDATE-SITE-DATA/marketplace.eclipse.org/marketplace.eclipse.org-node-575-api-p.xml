@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="575" name="Aquarius Orm Studio" url="http://marketplace.eclipse.org/content/aquarius-orm-studio">
+      <type>resource</type>
+      <categories>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+        <category id='8' name='Graphics' url='http://marketplace.eclipse.org/taxonomy/term/8'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='36' name='Database Persistence' url='http://marketplace.eclipse.org/category/categories/database-persistence'/>
+      </categories>
+      <tags>
+        <tag id='911' name='database gef model orm' url='http://marketplace.eclipse.org/category/free-tagging/database-gef-model-orm'/>
+      </tags>
+      
+      <owner>wanglei</owner>
+      <favorited>4</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>It support eclipse 3.2,3.3,3.4,3.5.<br />
+<br><br />
+The following issues lists the features:<br><br />
+<ul><br />
+  <li>Database Modeling(Table,View,Procedure and other models are<br />
+supported,the ddl about table will be generated automatically) </li><br />
+  <li>Database Reverse Engineering(Table,View,Procedure will be<br />
+imported from the exist database) </li><br />
+  <li>Multi database platforms are supported,including the most<br />
+popular Oracle, DB2, MySql, MsSql, Sybase, PostgreSql and so on. </li><br />
+  <li>It also can generate test data for table which can bring<br />
+convenience to the developers. </li><br />
+  <li>ORM Support is a very import<br />
+feature,Hibernate3,OJB,IBatis,even OpenJPA are included. </li><br />
+  <li>Native Language Support,including<br />
+chinese(Simpled,traditional for TW and HK), english and japanese<br />
+(thanks the excellent translation from Judy.Chang) </li><br />
+  <li>The documents about the database model can be generated in<br />
+html formats. </li><br />
+  <li>Support template to generate mutli kind files.</li><br />
+</ul></p>
+]]></shortdescription>
+      <body><![CDATA[<p>It support eclipse 3.2,3.3,3.4,3.5.<br />
+<br><br />
+The following issues lists the features:<br><br />
+<ul><br />
+  <li>Database Modeling(Table,View,Procedure and other models are<br />
+supported,the ddl about table will be generated automatically) </li><br />
+  <li>Database Reverse Engineering(Table,View,Procedure will be<br />
+imported from the exist database) </li><br />
+  <li>Multi database platforms are supported,including the most<br />
+popular Oracle, DB2, MySql, MsSql, Sybase, PostgreSql and so on. </li><br />
+  <li>It also can generate test data for table which can bring<br />
+convenience to the developers. </li><br />
+  <li>ORM Support is a very import<br />
+feature,Hibernate3,OJB,IBatis,even OpenJPA are included. </li><br />
+  <li>Native Language Support,including<br />
+chinese(Simpled,traditional for TW and HK), english and japanese<br />
+(thanks the excellent translation from Judy.Chang) </li><br />
+  <li>The documents about the database model can be generated in<br />
+html formats. </li><br />
+  <li>Support template to generate mutli kind files.</li><br />
+</ul></p>
+]]></body>
+      <created>1194270740</created>
+      <changed>1277437852</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://188.138.31.61/~aquatool/nl/en/US/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/main.png?itok=2Xd8B_6S]]></screenshot>
+      <version>0.1.2</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Aquarius Team]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2,3.3,3.4,3.5,3.6]]></eclipseversion>
+      <supporturl><![CDATA[mailto:wl_95421@yahoo.com.cn]]></supporturl>
+      <updateurl><![CDATA[http://188.138.31.61/~aquatool/nl/download/update]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

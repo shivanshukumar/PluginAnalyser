@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="150" name="Checkstyle Plug-in" url="http://marketplace.eclipse.org/content/checkstyle-plug">
+      <type>resource</type>
+      <categories>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+      </categories>
+      <tags>
+        <tag id='211' name='static analysis' url='http://marketplace.eclipse.org/category/free-tagging/static-analysis'/>
+        <tag id='469' name='Favorite' url='http://marketplace.eclipse.org/category/free-tagging/favorite'/>
+        <tag id='487' name='validator' url='http://marketplace.eclipse.org/category/free-tagging/validator'/>
+        <tag id='1458' name='coding style' url='http://marketplace.eclipse.org/category/free-tagging/coding-style'/>
+      </tags>
+      
+      <owner>Lars  ödderitzsch</owner>
+      <favorited>187</favorited>
+      <installstotal>63703</installstotal>
+      <installsrecent>4054</installsrecent>
+      <shortdescription><![CDATA[The eclipse-cs Checkstyle plug-in integrates the well-known source code analyzer Checkstyle into today's leading IDE - Eclipse.
+Checkstyle is a development tool to help you ensure that your Java code adheres to a set of coding standards. Checkstyle does this by inspecting your Java source code and pointing out items that deviate from a defined set of coding rules.
+
+With the Checkstyle Eclipse plug-in your code is constantly inspected for problems. Within the Eclipse workbench you are notified of problems via the Eclipse Problems View and source code annotations just as you would see with compiler errors or warnings.
+A comfortable Check Configuration Editor helps you create and maintain your audit rule configurations.
+Using filters and file sets you are able to define which files get checked and which don't.]]></shortdescription>
+      <body><![CDATA[The eclipse-cs Checkstyle plug-in integrates the well-known source code analyzer Checkstyle into today's leading IDE - Eclipse.
+Checkstyle is a development tool to help you ensure that your Java code adheres to a set of coding standards. Checkstyle does this by inspecting your Java source code and pointing out items that deviate from a defined set of coding rules.
+
+With the Checkstyle Eclipse plug-in your code is constantly inspected for problems. Within the Eclipse workbench you are notified of problems via the Eclipse Problems View and source code annotations just as you would see with compiler errors or warnings.
+A comfortable Check Configuration Editor helps you create and maintain your audit rule configurations.
+Using filters and file sets you are able to define which files get checked and which don't.]]></body>
+      <created>1117155812</created>
+      <changed>1348391986</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://eclipse-cs.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/eclipse-cs-little.png?itok=3d7X1_JX]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/eclipsecs0000.png?itok=0d9_kxFt]]></screenshot>
+      <version>5.6.0</version>
+      <license>LGPL</license>
+      <companyname><![CDATA[David Schneider, Lars Koedderitzsch]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6.x-4.2.x]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/forum/?group_id=80344]]></supporturl>
+      <updateurl><![CDATA[http://eclipse-cs.sourceforge.net/update/]]></updateurl>
+<ius>
+<iu>net.sf.eclipsecs</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

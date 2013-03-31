@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="35808" name="Eclipse Icon Archive Tool" url="http://marketplace.eclipse.org/content/eclipse-icon-archive-tool">
+      <type>resource</type>
+      <categories>
+        <category id='8' name='Graphics' url='http://marketplace.eclipse.org/taxonomy/term/8'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+      </categories>
+      <tags>
+        <tag id='328' name='plugin' url='http://marketplace.eclipse.org/category/free-tagging/plugin'/>
+        <tag id='1399' name='image' url='http://marketplace.eclipse.org/category/free-tagging/image'/>
+        <tag id='1653' name='icon' url='http://marketplace.eclipse.org/category/free-tagging/icon'/>
+        <tag id='1654' name='plug-in' url='http://marketplace.eclipse.org/category/free-tagging/plug-0'/>
+      </tags>
+      
+      <owner>Bruce Green</owner>
+      <favorited>8</favorited>
+      <installstotal>316</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The Eclipse Icon Archive Tool provides quick access to thousands of Eclipse icons. Browse and search tools make finding icons quick and easy. The export feature lets you save icons for use in your own projects.
+</p><p>
+The icons originate from the following Eclipse projects:
+</p><ul><li>The Eclipse Platform</li>
+<li>Tools</li>
+<li>Web Tools Platform</li>
+<li>BIRT</li>
+<li>Technology</li>
+<li>Runtime</li>
+<li>TPTP</li>
+<li>DSDP</li>
+<li>Data Tools</li>
+<li>STP SOA tools</li>
+<li>Modeling</li>
+<li>Mylyn</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>The Eclipse Icon Archive Tool provides quick access to thousands of Eclipse icons. Browse and search tools make finding icons quick and easy. The export feature lets you save icons for use in your own projects.
+</p><p>
+The icons originate from the following Eclipse projects:
+</p><ul><li>The Eclipse Platform</li>
+<li>Tools</li>
+<li>Web Tools Platform</li>
+<li>BIRT</li>
+<li>Technology</li>
+<li>Runtime</li>
+<li>TPTP</li>
+<li>DSDP</li>
+<li>Data Tools</li>
+<li>STP SOA tools</li>
+<li>Modeling</li>
+<li>Mylyn</li>
+</ul>]]></body>
+      <created>1298992064</created>
+      <changed>1300646368</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/bwgz-org/downloads/list]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screenshot_7.png?itok=10m27jgx]]></screenshot>
+      <version>1.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[bwgz.org]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5 and above]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/bwgz-org]]></supporturl>
+      <updateurl><![CDATA[http://cloud.bwgz.org/org.bwgz.eclipse.icon.archive.update/site.xml]]></updateurl>
+<ius>
+<iu>org.bwgz.eclipse.icon.archive</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="86" name="EclipseME" url="http://marketplace.eclipse.org/content/eclipseme">
+      <type>resource</type>
+      <categories>
+        <category id='27' name='J2ME' url='http://marketplace.eclipse.org/taxonomy/term/27'/>
+      </categories>
+      <tags>
+        <tag id='2485' name='http:/%2Feclipseme.sourceforge.net/eclipseme_epic.png' url='http://marketplace.eclipse.org/category/free-tagging/http2feclipsemesourceforgeneteclipsemeepicpng'/>
+      </tags>
+      
+      <owner>Craig Setera</owner>
+      <favorited>3</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>NOTE: The EclipseME is now the official base for the Eclipse Mobile Tools for Java Project.  All EclipseME functionality, plus more is now available directly from the Eclipse Mobile Tools for Java project.  See <a href="http://www.eclipse.org/mtj/">http://www.eclipse.org/mtj/</a> for more information.</p>
+<p>EclipseME is an Eclipse plugin to help develop J2ME MIDlets. EclipseME does the "grunt work" of connecting Wireless Toolkits to the Eclipse development environment, allowing you to focus on developing your application.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>NOTE: The EclipseME is now the official base for the Eclipse Mobile Tools for Java Project.  All EclipseME functionality, plus more is now available directly from the Eclipse Mobile Tools for Java project.  See <a href="http://www.eclipse.org/mtj/">http://www.eclipse.org/mtj/</a> for more information.</p>
+<p>EclipseME is an Eclipse plugin to help develop J2ME MIDlets. EclipseME does the "grunt work" of connecting Wireless Toolkits to the Eclipse development environment, allowing you to focus on developing your application.</p>
+]]></body>
+      <created>1077048339</created>
+      <changed>1307716865</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://eclipseme.org]]></homepageurl>
+      <image><![CDATA[http://eclipseme.sourceforge.net/eclipseme_epic.png]]></image>
+      <version>1.7.5</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Craig Setera]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eclipse.org/forums/index.php?t=thread&frm_id=6]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/mtj/updates/1.1.2/stable]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1161" name="Mylyn Trac Connector" url="http://marketplace.eclipse.org/content/mylyn-trac-connector">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='38' name='Mylyn Connectors' url='http://marketplace.eclipse.org/category/categories/mylyn-connectors'/>
+      </categories>
+            
+      <owner>Steffen Pingel</owner>
+      <favorited>15</favorited>
+      <installstotal>3711</installstotal>
+      <installsrecent>119</installsrecent>
+      <shortdescription><![CDATA[<p>Trac is an enhanced wiki and issue tracking system for software development projects. Trac uses a minimalistic approach to web-based software project management.</p>
+<p>The Mylyn Trac Connector provides Eclipse integration for accessing Trac issues including offline editing and access to attachments. Connection to the repository is supported through Trac's XML-RPC Plugin (recommended) or through the web-interface (limited).</p>
+<p>Supported Trac versions: 0.11, 0.12.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Trac is an enhanced wiki and issue tracking system for software development projects. Trac uses a minimalistic approach to web-based software project management.</p>
+<p>The Mylyn Trac Connector provides Eclipse integration for accessing Trac issues including offline editing and access to attachments. Connection to the repository is supported through Trac's XML-RPC Plugin (recommended) or through the web-interface (limited).</p>
+<p>Supported Trac versions: 0.11, 0.12.</p>
+]]></body>
+      <created>1268173508</created>
+      <changed>1340980263</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://eclipse.org/mylyn/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/trac64.png?itok=dIbdMULj]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/trac-screenshot-320x240.png?itok=JF2Kbqn3]]></screenshot>
+      <version>3.8</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Steffen Pingel]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7,3.8,4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://eclipse.org/mylyn/support/]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/mylyn/releases/latest]]></updateurl>
+<ius>
+<iu>org.eclipse.mylyn.trac_feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

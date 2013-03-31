@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="144" name="TTworkbench" url="http://marketplace.eclipse.org/content/ttworkbench">
+      <type>resource</type>
+      <categories>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='21' name='Web Services' url='http://marketplace.eclipse.org/taxonomy/term/21'/>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='1964' name='Application Development Frameworks' url='http://marketplace.eclipse.org/category/categories/application-development-frameworks'/>
+        <category id='1966' name='Programming Languages' url='http://marketplace.eclipse.org/category/categories/programming-languages'/>
+      </categories>
+      <tags>
+        <tag id='297' name='SIP' url='http://marketplace.eclipse.org/category/free-tagging/sip'/>
+        <tag id='509' name='SOA' url='http://marketplace.eclipse.org/category/free-tagging/soa'/>
+        <tag id='521' name='xml' url='http://marketplace.eclipse.org/category/free-tagging/xml'/>
+        <tag id='542' name='ASN.1' url='http://marketplace.eclipse.org/category/free-tagging/asn1'/>
+        <tag id='743' name='sql' url='http://marketplace.eclipse.org/category/free-tagging/sql'/>
+      </tags>
+      
+      <owner>john</owner>
+      <favorited>4</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[TTworkbench is the full-featured integrated test development and execution environment (IDE), perfectly suited for any kind of test automation project. This technology-independent tool can be deployed for testing products and services in a wide range of different industry sectors.
+
+TTworkbench includes the full range of features needed for test specification, execution and analysis. Apart from text-based TTCN-3 test specification, TTworkbench also offers the option of graphic definition of test cases.
+
+For supporting test automation methods, TTworkbench significantly reduces costs and ensures optimal quality throughout the whole of the test cycle.]]></shortdescription>
+      <body><![CDATA[TTworkbench is the full-featured integrated test development and execution environment (IDE), perfectly suited for any kind of test automation project. This technology-independent tool can be deployed for testing products and services in a wide range of different industry sectors.
+
+TTworkbench includes the full range of features needed for test specification, execution and analysis. Apart from text-based TTCN-3 test specification, TTworkbench also offers the option of graphic definition of test cases.
+
+For supporting test automation methods, TTworkbench significantly reduces costs and ensures optimal quality throughout the whole of the test cycle.]]></body>
+      <created>1114729775</created>
+      <changed>1339999574</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.testingtech.com/products/ttworkbench.php]]></homepageurl>
+      <image><![CDATA[http://www.testingtech.com/download/logos/TTwb_eclipse.jpg]]></image>
+      <version>14</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Testing Technologies IST GmbH]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.7.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.testingtech.com/support/downloads.php]]></supporturl>
+      <updateurl><![CDATA[http://www.testingtech.com/support/downloads.php]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

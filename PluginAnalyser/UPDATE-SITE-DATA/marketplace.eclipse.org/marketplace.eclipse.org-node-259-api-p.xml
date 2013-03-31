@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="259" name="Topcased Ecore Editor" url="http://marketplace.eclipse.org/content/topcased-ecore-editor">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+      </categories>
+            
+      <owner>Pierre Gaufillet</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><b>Discontinued and replaced by ECORE Tools</b></p>
+<p>The Topcased Ecore Editor provides a graphical editor to quickly edit your ecore models.<br><br />
+Features of the Ecore editor :<br><br />
+<ul><br />
+  <li>validation framework to check your model</li><br />
+  <li>complete tabbed properties view to edit graphical or model informations, extended metadata...</li><br />
+ <li>multi-diagram support</li><br />
+  <li>SVG, PNG, JPEG, GIF export</li><br />
+  <li>recreate a diagram from your existing ecore models</li><br />
+  <li>use the registered packages</li><br />
+  <li>...and more, see our web site and try this great editor !</li><br />
+</ul></p>
+]]></shortdescription>
+      <body><![CDATA[<p><b>Discontinued and replaced by ECORE Tools</b></p>
+<p>The Topcased Ecore Editor provides a graphical editor to quickly edit your ecore models.<br><br />
+Features of the Ecore editor :<br><br />
+<ul><br />
+  <li>validation framework to check your model</li><br />
+  <li>complete tabbed properties view to edit graphical or model informations, extended metadata...</li><br />
+ <li>multi-diagram support</li><br />
+  <li>SVG, PNG, JPEG, GIF export</li><br />
+  <li>recreate a diagram from your existing ecore models</li><br />
+  <li>use the registered packages</li><br />
+  <li>...and more, see our web site and try this great editor !</li><br />
+</ul></p>
+]]></body>
+      <created>1158673673</created>
+      <changed>1264088078</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://topcased-mm.gforge.enseeiht.fr/website/modeling/ecore/index.html]]></homepageurl>
+      <image><![CDATA[http://topcased-mm.gforge.enseeiht.fr/website/modeling/ecore/images/screenshots/thumbnails/familyTreeMetamodel_thumb.jpg]]></image>
+      <version>1.3.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[TOPCASED]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.3]]></eclipseversion>
+      <supporturl><![CDATA[http://lists.gforge.enseeiht.fr/mailman/listinfo/topcased-users]]></supporturl>
+      <updateurl><![CDATA[http://topcased-mm.gforge.enseeiht.fr/release/update-site3.3/]]></updateurl>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="88025" name="MyLV" url="http://marketplace.eclipse.org/content/mylv">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='37' name='Logging' url='http://marketplace.eclipse.org/category/categories/logging'/>
+        <category id='1972' name='General Purpose Tools' url='http://marketplace.eclipse.org/category/categories/general-purpose-tools'/>
+      </categories>
+      <tags>
+        <tag id='429' name='log viewer' url='http://marketplace.eclipse.org/category/free-tagging/log-viewer'/>
+        <tag id='430' name='log analysis' url='http://marketplace.eclipse.org/category/free-tagging/log-analysis'/>
+      </tags>
+      
+      <owner>Matej Naglić</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><b>MyLV</b> - an Eclipse Plugin for working with logs directly from your Eclipse IDE. The main idea of MyLV is that you should be able to browse, view, search and perform other actions on your logs without leaving Eclipse.</p>
+<p><b>Features:</b></p>
+<ul><li>Browse both local and remote logs (SSH and SMB)</li>
+<li>Search the logs for a specficic word or phrase</li>
+<li>Ctrl+Click on a line in an exception stack trace when viewing the log to open the source file containing that line and quickly jump there.</li>
+</ul><p>Currently in beta. I'd be grateful if you report any bugs you find!</p>
+<p>Installation instructions:</p>
+<p>Install it the usual way via the provided update site, or follow instructions on<br /><a href="http://sourceforge.net/projects/mylv/forums/forum/1798972/topic/4697378">http://sourceforge.net/projects/mylv/forums/forum/1798972/topic/4697378</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p><b>MyLV</b> - an Eclipse Plugin for working with logs directly from your Eclipse IDE. The main idea of MyLV is that you should be able to browse, view, search and perform other actions on your logs without leaving Eclipse.</p>
+<p><b>Features:</b></p>
+<ul><li>Browse both local and remote logs (SSH and SMB)</li>
+<li>Search the logs for a specficic word or phrase</li>
+<li>Ctrl+Click on a line in an exception stack trace when viewing the log to open the source file containing that line and quickly jump there.</li>
+</ul><p>Currently in beta. I'd be grateful if you report any bugs you find!</p>
+<p>Installation instructions:</p>
+<p>Install it the usual way via the provided update site, or follow instructions on<br /><a href="http://sourceforge.net/projects/mylv/forums/forum/1798972/topic/4697378">http://sourceforge.net/projects/mylv/forums/forum/1798972/topic/4697378</a></p>
+]]></body>
+      <created>1310821586</created>
+      <changed>1315567626</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://sourceforge.net/projects/mylv/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo-MyLV.png?itok=4qhdC5qd]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Search1.png?itok=FLdtm70Y]]></screenshot>
+      <version>1.0</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[Matej Naglić]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://mylv.sourceforge.net/update/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

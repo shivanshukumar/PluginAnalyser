@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="72" name="Genady's RMI Plugin for Eclipse" url="http://marketplace.eclipse.org/content/genadys-rmi-plugin-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='12' name='Network' url='http://marketplace.eclipse.org/taxonomy/term/12'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>Genady Beryozkin</owner>
+      <favorited>4</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Genady's RMI Plug-in for Eclipse is the comprehensive solution for developing RMI applications. Apart from the <b>automatic generation of RMI stubs</b>, the RMI Plugin makes it simple to configure application's <b>launch Java VM parameters</b> such as security policy and the <b>codebase</b>.</p>
+<!--break--><p>The <b>RMI Registry Inspector</b> analyzes the RMI registry contents in real-time and can call individual methods on the registered objects!<br />
+When it comes to debugging and monitoring, the <b>RMI Spy</b> will tell you all about application's RMI activity, including call time and data transfer measurement, call highlighting and displaying the actual values of the remote calls.</p>
+<p>The RMI Plug-in also features two sample RMI projects. Just create and run.</p>
+<p>Website: <a href="http://www.genady.net/rmi/v20/">http://www.genady.net/rmi/v20/</a><br />
+Version: v2.1.0 for Eclipse 3.4 and v2.0.7 for Eclipse 3.3<br />
+License: commercial, free for personal use.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Genady's RMI Plug-in for Eclipse is the comprehensive solution for developing RMI applications. Apart from the <b>automatic generation of RMI stubs</b>, the RMI Plugin makes it simple to configure application's <b>launch Java VM parameters</b> such as security policy and the <b>codebase</b>.</p>
+<!--break--><p>The <b>RMI Registry Inspector</b> analyzes the RMI registry contents in real-time and can call individual methods on the registered objects!<br />
+When it comes to debugging and monitoring, the <b>RMI Spy</b> will tell you all about application's RMI activity, including call time and data transfer measurement, call highlighting and displaying the actual values of the remote calls.</p>
+<p>The RMI Plug-in also features two sample RMI projects. Just create and run.</p>
+<p>Website: <a href="http://www.genady.net/rmi/v20/">http://www.genady.net/rmi/v20/</a><br />
+Version: v2.1.0 for Eclipse 3.4 and v2.0.7 for Eclipse 3.3<br />
+License: commercial, free for personal use.</p>
+]]></body>
+      <created>1075854334</created>
+      <changed>1259965961</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.genady.net/rmi/v20/]]></homepageurl>
+      <image><![CDATA[http://www.genady.net/rmi/images/eclipseplugincentral.png]]></image>
+      <version>2.0.7</version>
+      <license>Other</license>
+      <companyname><![CDATA[genady.net]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.0.x - 3.4.x]]></eclipseversion>
+      <supporturl><![CDATA[http://www.genady.net/rmi/v20/support.html]]></supporturl>
+      <updateurl><![CDATA[http://www.genady.net/rmi/v20/install_e33/]]></updateurl>
+    </node>
+    </marketplace>
+    

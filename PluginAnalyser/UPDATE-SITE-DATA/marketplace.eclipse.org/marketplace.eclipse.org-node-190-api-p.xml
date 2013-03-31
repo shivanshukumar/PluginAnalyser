@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="190" name="RMBench Relational Modeller" url="http://marketplace.eclipse.org/content/rmbench-relational-modeller">
+      <type>resource</type>
+      <categories>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+      </categories>
+      <tags>
+        <tag id='563' name='database sql entity modelling' url='http://marketplace.eclipse.org/category/free-tagging/database-sql-entity-modelling'/>
+      </tags>
+      
+      <owner>Christian Sell</owner>
+      <favorited>3</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>RMBench Relational Modeller is designed to be a one-stop Eclipse-integrated solution for grapically modelling relational databases. Databases can be reverse-engineered via JDBC, SQL can be generated from the model and executed directly from within the workbench.</p>
+<p>Among the many unique features is the ability to compare a model against an existing database and view the changes in a structure view and as ALTER statements simultaneously. A model can also be exported to a HTML/Javascript site.</p>
+<p>RMBench has recently been released under EPL and is now free for any kind of use</p>
+]]></shortdescription>
+      <body><![CDATA[<p>RMBench Relational Modeller is designed to be a one-stop Eclipse-integrated solution for grapically modelling relational databases. Databases can be reverse-engineered via JDBC, SQL can be generated from the model and executed directly from within the workbench.</p>
+<p>Among the many unique features is the ability to compare a model against an existing database and view the changes in a structure view and as ALTER statements simultaneously. A model can also be exported to a HTML/Javascript site.</p>
+<p>RMBench has recently been released under EPL and is now free for any kind of use</p>
+]]></body>
+      <created>1144240651</created>
+      <changed>1309163722</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/rmbench/]]></homepageurl>
+      <image><![CDATA[http://rmbench.de/update/RMBench.png]]></image>
+      <version>1.0.7beta</version>
+      <license>EPL</license>
+      <companyname><![CDATA[ByteRefinery]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6+]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/rmbench/]]></supporturl>
+      <updateurl><![CDATA[http://rmbench.googlecode.com/svn/trunk/RMBench.update/]]></updateurl>
+    </node>
+    </marketplace>
+    

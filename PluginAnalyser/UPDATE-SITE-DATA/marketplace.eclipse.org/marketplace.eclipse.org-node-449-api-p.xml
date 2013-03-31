@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="449" name="JUnit Factory" url="http://marketplace.eclipse.org/content/junit-factory">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+      </categories>
+            
+      <owner>kevlaw</owner>
+      <favorited>2</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>JUnit Factory is an experimental test generation service from Agitar. Send us Java code, and JUnit Factory will send back JUnit tests that characterizes your codeï¿½s behavior. Free.</p>
+<p>JUnit Factory generated over one million JUnit tests for thousands of users in more than 100 countries in 2007 and is a finalist for this year's Jolt Award for best testing product. If we win, we'll put the trophy with the three Jolt Awards won by it's commercial big brothers, Agitator and AgitarOne. Hmmm...Jolt Cola!</p>
+<p>The JUnit Factory plug-in includes an enhanced JUnit Runner that provides code coverage information.JUnit Factory is an experimental test generation service from Agitar. Send us Java code, and JUnit Factory will send back JUnit tests that characterizes your codeï¿½s behavior. Free.</p>
+<p>JUnit Factory generated over one million JUnit tests for thousands of users in more than 100 countries in 2007 and is a finalist for this year's Jolt Award for best testing product. If we win, we'll put the trophy with the three Jolt Awards won by it's commercial big brothers, Agitator and AgitarOne. Hmmm...Jolt Cola!</p>
+<p>The JUnit Factory plug-in includes an enhanced JUnit Runner that provides code coverage information.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>JUnit Factory is an experimental test generation service from Agitar. Send us Java code, and JUnit Factory will send back JUnit tests that characterizes your codeï¿½s behavior. Free.</p>
+<p>JUnit Factory generated over one million JUnit tests for thousands of users in more than 100 countries in 2007 and is a finalist for this year's Jolt Award for best testing product. If we win, we'll put the trophy with the three Jolt Awards won by it's commercial big brothers, Agitator and AgitarOne. Hmmm...Jolt Cola!</p>
+<p>The JUnit Factory plug-in includes an enhanced JUnit Runner that provides code coverage information.JUnit Factory is an experimental test generation service from Agitar. Send us Java code, and JUnit Factory will send back JUnit tests that characterizes your codeï¿½s behavior. Free.</p>
+<p>JUnit Factory generated over one million JUnit tests for thousands of users in more than 100 countries in 2007 and is a finalist for this year's Jolt Award for best testing product. If we win, we'll put the trophy with the three Jolt Awards won by it's commercial big brothers, Agitator and AgitarOne. Hmmm...Jolt Cola!</p>
+<p>The JUnit Factory plug-in includes an enhanced JUnit Runner that provides code coverage information.</p>
+]]></body>
+      <created>1178298482</created>
+      <changed>1259942160</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.junitfactory.com]]></homepageurl>
+      <image><![CDATA[http://www.junitfactory.com/images/banner110-80.png]]></image>
+      <version>2.2</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Agitar Software]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.x]]></eclipseversion>
+      <supporturl><![CDATA[http://forums.agitar.com/agitar?category.id=junitfactory]]></supporturl>
+      <updateurl><![CDATA[http://www.junitfactory.com/update/]]></updateurl>
+    </node>
+    </marketplace>
+    

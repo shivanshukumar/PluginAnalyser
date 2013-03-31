@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="37357" name="JClockWork" url="http://marketplace.eclipse.org/content/jclockwork">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='1686' name='bean mapping' url='http://marketplace.eclipse.org/category/free-tagging/bean-mapping'/>
+      </tags>
+      
+      <owner>Carl Frendo</owner>
+      <favorited>1</favorited>
+      <installstotal>143</installstotal>
+      <installsrecent>7</installsrecent>
+      <shortdescription><![CDATA[<p>This eclipse plugin project was created to reduce the time-consuming process of creating code manually to assign property values of one java bean to another. Using a simple interface this plugin will allow users to add mappings between the two beans. On a click of a button code will be generated that maps properties to each other based on the user's selections.</p>
+<p><a>Supported features</a></p>
+<li><a>Nested bean support and collections/array of beans</a></li>
+<p>   Mappings can vary between array to collection or vice versa, array or collection to<br />
+   nested bean and nested bean to array or collection.</p>
+<li><a>Type conversions(supported conversions are)</a></li>
+<p>  String to date, Date to String, String to char, Char to string, String to int,<br />
+  Int to string</p>
+<li><a>Custom converter</a></li>
+<p>  Converts a bean type to a user specified type using a pattern.</p>
+<li><a>Bean property merge</a></li>
+<p>  Merge any number of bean properties into one property located in the target Java bean.</p>
+<li><a>Create your own converter classes</a></li>
+<p>  Since this project is open-source one can easily write converter classes in Java.</p>
+<li><a>Checks for nulls and empty strings</a></li>
+<p>  Places conditionals in the generated code that skips mapping of empty strings or null values.</p>
+<p><a>Features for future versions</a></p>
+<li><a>XMLBeans mapping </a></li>
+<p>  The possibility of generating Java code mapping bean properties from XMLBeans sources.</p>
+<p><a>Project news</a></p>
+<li>Released version 0.9.6. Click <a href="http://code.google.com/a/eclipselabs.org/p/jclockwork/wiki/Release096">here</a> for more details</li>
+<li>Released version 0.9.5. Click <a href="http://code.google.com/a/eclipselabs.org/p/jclockwork/wiki/Release095">here</a> for more details</li>
+<li>Released version 0.9.4. Click <a href="http://code.google.com/a/eclipselabs.org/p/jclockwork/wiki/Release094">here</a> for more details</li>
+<li>Released version 0.9.3. Click <a href="http://code.google.com/a/eclipselabs.org/p/jclockwork/wiki/Release093">here</a> for more details</li>
+<li>Released version 0.9.2. Click <a href="http://code.google.com/a/eclipselabs.org/p/jclockwork/wiki/Release092">here</a> for more details</li>
+]]></shortdescription>
+      <body><![CDATA[<p>This eclipse plugin project was created to reduce the time-consuming process of creating code manually to assign property values of one java bean to another. Using a simple interface this plugin will allow users to add mappings between the two beans. On a click of a button code will be generated that maps properties to each other based on the user's selections.</p>
+<p><a>Supported features</a></p>
+<li><a>Nested bean support and collections/array of beans</a></li>
+<p>   Mappings can vary between array to collection or vice versa, array or collection to<br />
+   nested bean and nested bean to array or collection.</p>
+<li><a>Type conversions(supported conversions are)</a></li>
+<p>  String to date, Date to String, String to char, Char to string, String to int,<br />
+  Int to string</p>
+<li><a>Custom converter</a></li>
+<p>  Converts a bean type to a user specified type using a pattern.</p>
+<li><a>Bean property merge</a></li>
+<p>  Merge any number of bean properties into one property located in the target Java bean.</p>
+<li><a>Create your own converter classes</a></li>
+<p>  Since this project is open-source one can easily write converter classes in Java.</p>
+<li><a>Checks for nulls and empty strings</a></li>
+<p>  Places conditionals in the generated code that skips mapping of empty strings or null values.</p>
+<p><a>Features for future versions</a></p>
+<li><a>XMLBeans mapping </a></li>
+<p>  The possibility of generating Java code mapping bean properties from XMLBeans sources.</p>
+<p><a>Project news</a></p>
+<li>Released version 0.9.6. Click <a href="http://code.google.com/a/eclipselabs.org/p/jclockwork/wiki/Release096">here</a> for more details</li>
+<li>Released version 0.9.5. Click <a href="http://code.google.com/a/eclipselabs.org/p/jclockwork/wiki/Release095">here</a> for more details</li>
+<li>Released version 0.9.4. Click <a href="http://code.google.com/a/eclipselabs.org/p/jclockwork/wiki/Release094">here</a> for more details</li>
+<li>Released version 0.9.3. Click <a href="http://code.google.com/a/eclipselabs.org/p/jclockwork/wiki/Release093">here</a> for more details</li>
+<li>Released version 0.9.2. Click <a href="http://code.google.com/a/eclipselabs.org/p/jclockwork/wiki/Release092">here</a> for more details</li>
+]]></body>
+      <created>1299678482</created>
+      <changed>1316079694</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/a/eclipselabs.org/p/jclockwork/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/ClockWork_Single.png?itok=tXoK5Y0w]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Screenshot_0.png?itok=zcW2CC9-]]></screenshot>
+      <version>0.9.6</version>
+      <license>EPL</license>
+      <companyname><![CDATA[SouthEdge Software and Consultancy ]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/a/eclipselabs.org/p/jclockwork/issues/list]]></supporturl>
+      <updateurl><![CDATA[http://www.southedge.com.mt/update-site]]></updateurl>
+<ius>
+<iu>mt.com.southedge.jclockwork.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

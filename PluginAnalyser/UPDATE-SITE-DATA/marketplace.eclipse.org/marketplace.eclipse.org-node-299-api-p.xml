@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="299" name="SmartInspect" url="http://marketplace.eclipse.org/content/smartinspect">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>dg</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>SmartInspect is an advanced logging tool for debugging and monitoring .NET, Java and Delphi applications. It helps you to identify bugs, find solutions to customer problems and gives you a clear understanding of how your software works in different environments and under different circumstances.</p>
+<p>SmartInspect assists you even where regular debuggers fail: It is possible to easily debug distributed systems, multi-threaded applications, software on production systems and inspect software that runs at your customer's place.</p>
+<p>Please note that SmartInspect currently does not offer an actual Eclipse plugin, but the SmartInspect setup generates library files for easy integration with the Eclipse IDE.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>SmartInspect is an advanced logging tool for debugging and monitoring .NET, Java and Delphi applications. It helps you to identify bugs, find solutions to customer problems and gives you a clear understanding of how your software works in different environments and under different circumstances.</p>
+<p>SmartInspect assists you even where regular debuggers fail: It is possible to easily debug distributed systems, multi-threaded applications, software on production systems and inspect software that runs at your customer's place.</p>
+<p>Please note that SmartInspect currently does not offer an actual Eclipse plugin, but the SmartInspect setup generates library files for easy integration with the Eclipse IDE.</p>
+]]></body>
+      <created>1163086711</created>
+      <changed>1279721175</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.gurock.com/smartinspect/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>3.x</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Gurock Software GmbH]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.0, 3.1, 3.2 and higher]]></eclipseversion>
+      <supporturl><![CDATA[http://www.gurock.com/support/]]></supporturl>
+      <updateurl><![CDATA[http://www.gurock.com/smartinspect/whatsnew/]]></updateurl>
+    </node>
+    </marketplace>
+    

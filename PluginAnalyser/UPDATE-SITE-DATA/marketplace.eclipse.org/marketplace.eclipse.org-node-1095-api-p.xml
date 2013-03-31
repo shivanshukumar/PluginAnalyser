@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1095" name="Xeproc" url="http://marketplace.eclipse.org/content/xeproc">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+      </categories>
+            
+      <owner>thierry</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Xeproc is a dedicated DSL for modeling Document Processing as XML pipelines in Eclipse 3.5.1 The Xeproc EMF model and Xeproc Designer are available under the Eclipse Public License.</p>
+<p>Installation prerequisites:</p>
+<p>    * Eclipse 3.5.1 and Modeling tools,<br />
+    * JDK1.6<br />
+    * Optional: Ajax Toolkit Framework.</p>
+<p>Xeproc Designer is delivered with user documentation included in the download.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Xeproc is a dedicated DSL for modeling Document Processing as XML pipelines in Eclipse 3.5.1 The Xeproc EMF model and Xeproc Designer are available under the Eclipse Public License.</p>
+<p>Installation prerequisites:</p>
+<p>    * Eclipse 3.5.1 and Modeling tools,<br />
+    * JDK1.6<br />
+    * Optional: Ajax Toolkit Framework.</p>
+<p>Xeproc Designer is delivered with user documentation included in the download.</p>
+]]></body>
+      <created>1261385725</created>
+      <changed>1261385725</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.xrce.xerox.com/Xeproc]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Xerox]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.5.1]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://xeproc.xrce.xerox.com/designer/update/site.xml]]></updateurl>
+    </node>
+    </marketplace>
+    

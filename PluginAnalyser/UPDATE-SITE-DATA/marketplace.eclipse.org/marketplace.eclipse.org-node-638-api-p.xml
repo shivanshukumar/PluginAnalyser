@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="638" name="Gengetopt Eclipse" url="http://marketplace.eclipse.org/content/gengetopt-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+      <tags>
+        <tag id='636' name='gengetopt' url='http://marketplace.eclipse.org/category/free-tagging/gengetopt'/>
+      </tags>
+      
+      <owner>Lorenzo Bettini</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Gengetopt Eclipse is an Eclipse plugin providing an editor for GNU Gengetopt input files.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Gengetopt Eclipse is an Eclipse plugin providing an editor for GNU Gengetopt input files.</p>
+]]></body>
+      <created>1201876854</created>
+      <changed>1273525329</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://ggoeclipse.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://ggoeclipse.sourceforge.net/gengetopt_eclipse.png]]></image>
+      <version></version>
+      <license>GPL</license>
+      <companyname><![CDATA[Lorenzo Bettini]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.x]]></eclipseversion>
+      <supporturl><![CDATA[https://sourceforge.net/projects/ggoeclipse/forums]]></supporturl>
+      <updateurl><![CDATA[http://ggoeclipse.sf.net/update]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

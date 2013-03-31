@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="118278" name="SN Toolbar" url="http://marketplace.eclipse.org/content/sn-toolbar">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='146' name='editor' url='http://marketplace.eclipse.org/category/free-tagging/editor'/>
+        <tag id='202' name='html' url='http://marketplace.eclipse.org/category/free-tagging/html'/>
+        <tag id='849' name='source' url='http://marketplace.eclipse.org/category/free-tagging/source'/>
+        <tag id='2202' name='toolbar' url='http://marketplace.eclipse.org/category/free-tagging/toolbar'/>
+        <tag id='2203' name='actions' url='http://marketplace.eclipse.org/category/free-tagging/actions'/>
+      </tags>
+      
+      <owner>Goran Aleksic</owner>
+      <favorited>1</favorited>
+      <installstotal>270</installstotal>
+      <installsrecent>15</installsrecent>
+      <shortdescription><![CDATA[<p>This is very basic plugin, it is Eclipse HTML toolbar for source code editing.</p>
+<p>It works as any other toolbar in HTML source editors - select part of text, and click on tag. <del>There is no configuration.</del></p>
+<p><img src="http://www.specihost.com/eclipse/sn_toolbar/web/sn-toolbar-screenshot-5.png" alt="SN Toolbar" /></p>
+<hr /><dt>2011-10-05</dt>
+<dd>v 1.1.5 - More attribute variants for block tags. Preference page. BBCode is off by default.</dd>
+<dt>2011-09-17</dt>
+<dd>v 1.1.0 - New compact concept, new tags. BBCode added.</dd>
+<dt>2011-09-12</dt>
+<dd>v 1.0.2</dd>
+<dt>2011-09-10</dt>
+<dd>v 1.0.0</dd>
+<hr /><dl><dt>Install / update</dt>
+<dd><b><a href="http://www.specihost.com/eclipse/sn_toolbar/">http://www.specihost.com/eclipse/sn_toolbar/</a></b></dd>
+<dd>
+<ol><li>Inside Eclipse select Help -> <b>Install New Software</b>...</li>
+<li>Add a new site using the url above to the Eclipse Update Manager.</li>
+<li>Select <b>SN Toolbar</b> and click next, next...</li>
+<li>Reboot Eclipse and - enjoy clicking.</li>
+</ol><p><a href="http://marketplace.eclipse.org/updatesite/help?url=http://www.specihost.com/eclipse/sn_toolbar/" title="marketplace.eclipse.org">More info</a> about installation and update.</p></dd>
+</dl>]]></shortdescription>
+      <body><![CDATA[<p>This is very basic plugin, it is Eclipse HTML toolbar for source code editing.</p>
+<p>It works as any other toolbar in HTML source editors - select part of text, and click on tag. <del>There is no configuration.</del></p>
+<p><img src="http://www.specihost.com/eclipse/sn_toolbar/web/sn-toolbar-screenshot-5.png" alt="SN Toolbar" /></p>
+<hr /><dt>2011-10-05</dt>
+<dd>v 1.1.5 - More attribute variants for block tags. Preference page. BBCode is off by default.</dd>
+<dt>2011-09-17</dt>
+<dd>v 1.1.0 - New compact concept, new tags. BBCode added.</dd>
+<dt>2011-09-12</dt>
+<dd>v 1.0.2</dd>
+<dt>2011-09-10</dt>
+<dd>v 1.0.0</dd>
+<hr /><dl><dt>Install / update</dt>
+<dd><b><a href="http://www.specihost.com/eclipse/sn_toolbar/">http://www.specihost.com/eclipse/sn_toolbar/</a></b></dd>
+<dd>
+<ol><li>Inside Eclipse select Help -> <b>Install New Software</b>...</li>
+<li>Add a new site using the url above to the Eclipse Update Manager.</li>
+<li>Select <b>SN Toolbar</b> and click next, next...</li>
+<li>Reboot Eclipse and - enjoy clicking.</li>
+</ol><p><a href="http://marketplace.eclipse.org/updatesite/help?url=http://www.specihost.com/eclipse/sn_toolbar/" title="marketplace.eclipse.org">More info</a> about installation and update.</p></dd>
+</dl>]]></body>
+      <created>1315847355</created>
+      <changed>1317843616</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.specihost.com/eclipse/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/sn-toolbar-logo.png?itok=nFS6fTuU]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/sn-toolbar-screenshot-2.png?itok=jlhZ-TZR]]></screenshot>
+      <version>1.1.5</version>
+      <license>GPL</license>
+      <companyname><![CDATA[Specihost Networks]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5, 3.6, 3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://www.specihost.com/eclipse/]]></supporturl>
+      <updateurl><![CDATA[http://www.specihost.com/eclipse/sn_toolbar/]]></updateurl>
+<ius>
+<iu>com.specihost.SNToolbarFeature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

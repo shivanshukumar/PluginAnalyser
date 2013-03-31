@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="54752" name="MASH" url="http://marketplace.eclipse.org/content/mash">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='1926' name='MASH' url='http://marketplace.eclipse.org/category/free-tagging/mash'/>
+        <tag id='1927' name='plug-ins composition' url='http://marketplace.eclipse.org/category/free-tagging/plug-ins-composition'/>
+        <tag id='1928' name='task based plug-in' url='http://marketplace.eclipse.org/category/free-tagging/task-based-plug'/>
+      </tags>
+      
+      <owner>Fabrizio Pastore</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The majority of IDEs implement a concept of plug-in that nicely supports the integration of tools within the IDEs. Plug-ins dramatically simplify the structural integration of multiple tools, but provide little support to the design of the dynamic of the integration, which must be entirely coded by programmers from plug-ins’ API.</p>
+<p>Manually integrating plug-ins is costly, complex and requires a deep understanding of the underlying environment. The implementation of tools as plug-ins and the integration of the results produced by different plug-ins are still difficult, expensive and error-prone activities.</p>
+<p>In our vision, IDE users must be able to execute plug-ins and integrate their results by designing workflows that can be persisted, executed and re-used in other workflows. MASH is an Eclipse plug-in prototype that enables users to compose the features provided by different plug-ins at runtime, by drawing a workflow in the Eclipse workspace. MASH is released under the Open Source MIT license.</p>
+<p>MASH reuses and extends JOpera, a workflow engine built as an Eclipse plug-in.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The majority of IDEs implement a concept of plug-in that nicely supports the integration of tools within the IDEs. Plug-ins dramatically simplify the structural integration of multiple tools, but provide little support to the design of the dynamic of the integration, which must be entirely coded by programmers from plug-ins’ API.</p>
+<p>Manually integrating plug-ins is costly, complex and requires a deep understanding of the underlying environment. The implementation of tools as plug-ins and the integration of the results produced by different plug-ins are still difficult, expensive and error-prone activities.</p>
+<p>In our vision, IDE users must be able to execute plug-ins and integrate their results by designing workflows that can be persisted, executed and re-used in other workflows. MASH is an Eclipse plug-in prototype that enables users to compose the features provided by different plug-ins at runtime, by drawing a workflow in the Eclipse workspace. MASH is released under the Open Source MIT license.</p>
+<p>MASH reuses and extends JOpera, a workflow engine built as an Eclipse plug-in.</p>
+]]></body>
+      <created>1305814030</created>
+      <changed>1306341686</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.lta.disco.unimib.it/tools/mash/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>0.0.11</version>
+      <license>Other Open Source</license>
+      <companyname><![CDATA[University of Milano Bicocca - Testing and Analysis Laboratory]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://www.lta.disco.unimib.it/downloads/eclipseUpdates/]]></updateurl>
+<ius>
+<iu>it.unimib.disco.lta.eclipse.mash.feature - 0.0.11.201105191054</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

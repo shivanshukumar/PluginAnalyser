@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1191" name="codeBeamer Eclipse Studio" url="http://marketplace.eclipse.org/content/codebeamer-eclipse-studio">
+      <type>resource</type>
+      <categories>
+        <category id='38' name='Mylyn Connectors' url='http://marketplace.eclipse.org/category/categories/mylyn-connectors'/>
+        <category id='26' name='SCM' url='http://marketplace.eclipse.org/taxonomy/term/26'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+      </categories>
+      <tags>
+        <tag id='45' name='subversion' url='http://marketplace.eclipse.org/category/free-tagging/subversion'/>
+        <tag id='88' name='mylyn' url='http://marketplace.eclipse.org/category/free-tagging/mylyn'/>
+        <tag id='166' name='mercurial' url='http://marketplace.eclipse.org/category/free-tagging/mercurial'/>
+        <tag id='167' name='distributed version control' url='http://marketplace.eclipse.org/category/free-tagging/distributed-version-control'/>
+        <tag id='168' name='distributed version control system' url='http://marketplace.eclipse.org/category/free-tagging/distributed-version-control-system'/>
+      </tags>
+      
+      <owner>Intland Software</owner>
+      <favorited>3</favorited>
+      <installstotal>747</installstotal>
+      <installsrecent>11</installsrecent>
+      <shortdescription><![CDATA[<p>codeBeamer Eclipse Studio (CBES) gives reflectivity and mobility to <a href="http://www.intland.com/products/main.html">codeBeamer</a> users. You can create and edit tasks, bugs, requirements, edit and commit code quickly without leaving Eclipse. You can do it online and offline.</p>
+<p>With CBES, all these artifacts can accessed from a single development environment. You can now take full advantage of the <a href="http://en.wikipedia.org/wiki/Task-focused_interface">task-focused</a> work provided by Tasktop, work faster with increased productivity, reduce the information overload, and focus only on what is relevant for your current tasks.</p>
+<p>You are no longer locked to your task repository and SCM network access. Even while off-line, you can continue working on the code, create and modify tasks, requirements, bugs, and you can synchronize with your trackers and version control repositories as soon as the network access is re-established.</p>
+<p>CBES's task list also provides sophisticated task scheduling.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>codeBeamer Eclipse Studio (CBES) gives reflectivity and mobility to <a href="http://www.intland.com/products/main.html">codeBeamer</a> users. You can create and edit tasks, bugs, requirements, edit and commit code quickly without leaving Eclipse. You can do it online and offline.</p>
+<p>With CBES, all these artifacts can accessed from a single development environment. You can now take full advantage of the <a href="http://en.wikipedia.org/wiki/Task-focused_interface">task-focused</a> work provided by Tasktop, work faster with increased productivity, reduce the information overload, and focus only on what is relevant for your current tasks.</p>
+<p>You are no longer locked to your task repository and SCM network access. Even while off-line, you can continue working on the code, create and modify tasks, requirements, bugs, and you can synchronize with your trackers and version control repositories as soon as the network access is re-established.</p>
+<p>CBES's task list also provides sophisticated task scheduling.</p>
+]]></body>
+      <created>1272440464</created>
+      <changed>1354218692</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.javaforge.com/project/CBES]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/cbes-logo.jpg?itok=JoQbt3_7]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/editing-issues_0.jpg?itok=NDHk9a5P]]></screenshot>
+      <version>2.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Intland Software]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4.x or newer]]></eclipseversion>
+      <supporturl><![CDATA[http://javaforge.com/project/CBES/tracker]]></supporturl>
+      <updateurl><![CDATA[http://cbes.javaforge.com/update]]></updateurl>
+<ius>
+<iu>org.codebeamer.eclipse.mylyn_feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

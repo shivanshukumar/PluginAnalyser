@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="601" name="XAware Designer 5" url="http://marketplace.eclipse.org/content/xaware-designer-5">
+      <type>resource</type>
+      <categories>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+      </categories>
+            
+      <owner>kpoplin</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The XAware project was created to provide real time data integration with a service-oriented flavor.  XAware makes other tools and frameworks much more productive by hiding data complexity behind "XML views".  XML views span any number of data sources, and can read data, write data, or transfer data between sets of sources, all within a distributed transaction.  XAware 5 includes 2 main components: the XAware Engine, and the Eclipse-based Designer which allows you to easily build, test and debug XML views.  </p>
+]]></shortdescription>
+      <body><![CDATA[<p>The XAware project was created to provide real time data integration with a service-oriented flavor.  XAware makes other tools and frameworks much more productive by hiding data complexity behind "XML views".  XML views span any number of data sources, and can read data, write data, or transfer data between sets of sources, all within a distributed transaction.  XAware 5 includes 2 main components: the XAware Engine, and the Eclipse-based Designer which allows you to easily build, test and debug XML views.  </p>
+]]></body>
+      <created>1197043735</created>
+      <changed>1259778897</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.xaware.org]]></homepageurl>
+      <image><![CDATA[http://downloads.xaware.org/plugin.jpg]]></image>
+      <version>5.4 GA</version>
+      <license>Free GPL</license>
+      <companyname><![CDATA[XAware]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4.1]]></eclipseversion>
+      <supporturl><![CDATA[http://www.xaware.org]]></supporturl>
+      <updateurl><![CDATA[http://downloads.xaware.org/updatesite]]></updateurl>
+    </node>
+    </marketplace>
+    

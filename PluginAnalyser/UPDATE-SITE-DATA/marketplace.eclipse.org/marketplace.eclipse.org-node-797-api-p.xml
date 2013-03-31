@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="797" name="Multi-File History" url="http://marketplace.eclipse.org/content/multi-file-history">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+      </categories>
+            
+      <owner>Sung Ahn Kim</owner>
+      <favorited>8</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Provide the way to see change orders among resources. With this plug-in, you can easily trace the changes you made. See <a href="http://pragmatic.kr/25">http://pragmatic.kr/25</a>.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Provide the way to see change orders among resources. With this plug-in, you can easily trace the changes you made. See <a href="http://pragmatic.kr/25">http://pragmatic.kr/25</a>.</p>
+]]></body>
+      <created>1225129644</created>
+      <changed>1262656864</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://pragmatic.kr/25]]></homepageurl>
+      <image><![CDATA[http://pragmatic.springnote.com/pages/1989336/attachments/892098]]></image>
+      <version>1.0.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Pragmatic.kr]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3 or above]]></eclipseversion>
+      <supporturl><![CDATA[http://pragmatic.kr/25]]></supporturl>
+      <updateurl><![CDATA[http://update.pragmatic.kr]]></updateurl>
+    </node>
+    </marketplace>
+    

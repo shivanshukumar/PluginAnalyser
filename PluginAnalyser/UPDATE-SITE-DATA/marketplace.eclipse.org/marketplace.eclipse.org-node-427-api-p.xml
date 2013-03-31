@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="427" name="GlobalTester" url="http://marketplace.eclipse.org/content/globaltester">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='192' name='testing' url='http://marketplace.eclipse.org/category/free-tagging/testing'/>
+        <tag id='2301' name='smart card' url='http://marketplace.eclipse.org/category/free-tagging/smart-card'/>
+        <tag id='2302' name='chip card' url='http://marketplace.eclipse.org/category/free-tagging/chip-card'/>
+        <tag id='2303' name='global platform' url='http://marketplace.eclipse.org/category/free-tagging/global-platform'/>
+        <tag id='2304' name='PACE' url='http://marketplace.eclipse.org/category/free-tagging/pace'/>
+      </tags>
+      
+      <owner>Holger Funke</owner>
+      <favorited>3</favorited>
+      <installstotal>3</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>GlobalTester is a tool based on several open standards like Eclipse, GlobalPlatform, OpenSCDP and JavaScript to test Smart Cards. <br /><br />
+GlobalTester is delivered as a plug-in for the popular Eclipse platform and allows the execution of a set of test scripts structured with XML and defined using JavaScript. It is based upon the CardContact Smart Card Shell and supports the Global Platform standards. <br /><br />
+GlobalTester is provided as Open Source software licensed under the GPL and supports operating systems like Windows XP and newer. <br /><br />
+In the event of a test suite failing, the user is immediately directed to the relevant entry in the log file and also has direct access to the appropriate test case. This reduces the time required to search for the problem area. Test cases, including<br />
+detailed descriptions, can be viewed directly as XML source or formatted per style sheet to enhance readability. <br /><br />
+The comprehensive reports provided are archived automatically, providing clear documentation of the test outcome. Reports can be viewed in raw text format as well as HTML. <br /><br />
+GlobalTester can be used to create and maintain and execute individual test scripts using the Eclipse IDE. By supporting the Eclipse plug-in based framework users can take full advantage of the features of this platform. For example, any integrated<br />
+XML editor can be used to create and edit test scripts. Existing test scripts can be used as a foundation if required to reduce development time.<br />
+Above and beyond the comprehensive documentation of test results provided by GlobalTester, adoption to user individual diagnosis tools is available on request.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>GlobalTester is a tool based on several open standards like Eclipse, GlobalPlatform, OpenSCDP and JavaScript to test Smart Cards. <br /><br />
+GlobalTester is delivered as a plug-in for the popular Eclipse platform and allows the execution of a set of test scripts structured with XML and defined using JavaScript. It is based upon the CardContact Smart Card Shell and supports the Global Platform standards. <br /><br />
+GlobalTester is provided as Open Source software licensed under the GPL and supports operating systems like Windows XP and newer. <br /><br />
+In the event of a test suite failing, the user is immediately directed to the relevant entry in the log file and also has direct access to the appropriate test case. This reduces the time required to search for the problem area. Test cases, including<br />
+detailed descriptions, can be viewed directly as XML source or formatted per style sheet to enhance readability. <br /><br />
+The comprehensive reports provided are archived automatically, providing clear documentation of the test outcome. Reports can be viewed in raw text format as well as HTML. <br /><br />
+GlobalTester can be used to create and maintain and execute individual test scripts using the Eclipse IDE. By supporting the Eclipse plug-in based framework users can take full advantage of the features of this platform. For example, any integrated<br />
+XML editor can be used to create and edit test scripts. Existing test scripts can be used as a foundation if required to reduce development time.<br />
+Above and beyond the comprehensive documentation of test results provided by GlobalTester, adoption to user individual diagnosis tools is available on request.</p>
+]]></body>
+      <created>1175095921</created>
+      <changed>1338470752</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.globaltester.org]]></homepageurl>
+      <image><![CDATA[http://www.globaltester.org/sites/globaltester.org/files/Logo_GT.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/GT3_Screenshot.png?itok=b4xHrXCO]]></screenshot>
+      <version>3.0.0</version>
+      <license>GPL</license>
+      <companyname><![CDATA[HJP Consulting GmbH]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6 and higher]]></eclipseversion>
+      <supporturl><![CDATA[http://www.globaltester.org]]></supporturl>
+      <updateurl><![CDATA[http://www.globaltester.org/globaltester/updates]]></updateurl>
+<ius>
+<iu>org.globaltester.rcp.product</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

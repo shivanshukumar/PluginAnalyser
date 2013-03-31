@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="573" name="CDO Model Repository" url="http://marketplace.eclipse.org/content/cdo-model-repository">
+      <type>resource</type>
+      <categories>
+        <category id='1' name='Application Server' url='http://marketplace.eclipse.org/taxonomy/term/1'/>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='12' name='Network' url='http://marketplace.eclipse.org/taxonomy/term/12'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+        <category id='36' name='Database Persistence' url='http://marketplace.eclipse.org/category/categories/database-persistence'/>
+      </categories>
+      <tags>
+        <tag id='2665' name='CDO Net4j EMFStore EMF Repository Versioning Branching Modeling Distributed Shared Models' url='http://marketplace.eclipse.org/category/free-tagging/cdo-net4j-emfstore-emf-repository-versioning-branching-modeling-distributed-sh'/>
+      </tags>
+      
+      <owner>Eike Stepper</owner>
+      <favorited>3</favorited>
+      <installstotal>331</installstotal>
+      <installsrecent>5</installsrecent>
+      <shortdescription><![CDATA[<p>The CDO (Connected Data Objects) Model Repository is a distributed shared model framework for EMF models and meta models. CDO is also a model runtime environment with a focus on orthogonal aspects like model scalability, transactionality, persistence, distribution, queries and more.</p>
+<p>CDO has a 3-tier architecture supporting EMF-based client applications, featuring a central model repository server and leveraging different types of pluggable data storage back-ends like relational databases, object databases and file systems. The default client/server communication protocol is implemented with the Net4j Signalling Platform. </p>
+]]></shortdescription>
+      <body><![CDATA[<p>The CDO (Connected Data Objects) Model Repository is a distributed shared model framework for EMF models and meta models. CDO is also a model runtime environment with a focus on orthogonal aspects like model scalability, transactionality, persistence, distribution, queries and more.</p>
+<p>CDO has a 3-tier architecture supporting EMF-based client applications, featuring a central model repository server and leveraging different types of pluggable data storage back-ends like relational databases, object databases and file systems. The default client/server communication protocol is implemented with the Net4j Signalling Platform. </p>
+]]></body>
+      <created>1194010282</created>
+      <changed>1340816917</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.eclipse.org/cdo]]></homepageurl>
+      <image><![CDATA[http://www.eclipse.org/cdo/images/Logo-CDO.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/CDOOverview.png?itok=45Rk8itJ]]></screenshot>
+      <version>4.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Eclipse.org]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.8]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eclipse.org/newsportal/thread.php?group=eclipse.tools.emf]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/modeling/emf/cdo/updates/releases/4.1]]></updateurl>
+<ius>
+<iu>org.eclipse.emf.cdo.sdk</iu>
+<iu>org.eclipse.emf.cdo.dawn.sdk</iu>
+<iu>org.eclipse.emf.cdo.server.hibernate</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

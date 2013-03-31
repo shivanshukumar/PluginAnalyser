@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="113218" name="Lazy Android" url="http://marketplace.eclipse.org/content/lazy-android">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+        <category id='1964' name='Application Development Frameworks' url='http://marketplace.eclipse.org/category/categories/application-development-frameworks'/>
+        <category id='1969' name='Linux Tools' url='http://marketplace.eclipse.org/category/categories/linux-tools'/>
+        <category id='1972' name='General Purpose Tools' url='http://marketplace.eclipse.org/category/categories/general-purpose-tools'/>
+        <category id='1974' name='Mobile and Device Development' url='http://marketplace.eclipse.org/category/categories/mobile-and-device-development'/>
+      </categories>
+      <tags>
+        <tag id='408' name='android' url='http://marketplace.eclipse.org/category/free-tagging/android'/>
+        <tag id='2194' name='www.ryangmattison.com' url='http://marketplace.eclipse.org/category/free-tagging/wwwryangmattisoncom'/>
+        <tag id='2195' name='Calculate a Surface Normal' url='http://marketplace.eclipse.org/category/free-tagging/calculate-surface-normal'/>
+        <tag id='2196' name='Ryan Mattison' url='http://marketplace.eclipse.org/category/free-tagging/ryan-mattison'/>
+      </tags>
+      
+      <owner>Ryan Mattison</owner>
+      <favorited>6</favorited>
+      <installstotal>1675</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><a href="http://youtu.be/2t0c-x7HFJw">http://youtu.be/2t0c-x7HFJw</a></p>
+<p>Right click an android XML layout, go to Fast Layout -> Generate Activity.  It'll generate those tedious findViewById declarations.  For the layout below, it produces:</p>
+<p>/**********DECLARES*************/<br />
+private EditText addmanualname;<br />
+private EditText addmanualnumber;<br />
+private EditText addmanualemail;<br />
+private EditText addmanualmessage;<br />
+private EditText addmanualaddress;<br />
+private Button addmanualcontinueButton;<br />
+private Button addmanualbackButton;<br />
+/**********INITIALIZES*************/<br />
+addmanualname = (EditText) findViewById(R.id.addmanualname);<br />
+addmanualnumber = (EditText) findViewById(R.id.addmanualnumber);<br />
+addmanualemail = (EditText) findViewById(R.id.addmanualemail);<br />
+addmanualmessage = (EditText) findViewById(R.id.addmanualmessage);<br />
+addmanualaddress = (EditText) findViewById(R.id.addmanualaddress);<br />
+addmanualcontinueButton = (Button) findViewById(R.id.addmanualcontinueButton);<br />
+addmanualbackButton = (Button) findViewById(R.id.addmanualbackButton);</p>
+<p><?xml version="1.0" encoding="utf-8"?></p>
+]]></shortdescription>
+      <body><![CDATA[<p><a href="http://youtu.be/2t0c-x7HFJw">http://youtu.be/2t0c-x7HFJw</a></p>
+<p>Right click an android XML layout, go to Fast Layout -> Generate Activity.  It'll generate those tedious findViewById declarations.  For the layout below, it produces:</p>
+<p>/**********DECLARES*************/<br />
+private EditText addmanualname;<br />
+private EditText addmanualnumber;<br />
+private EditText addmanualemail;<br />
+private EditText addmanualmessage;<br />
+private EditText addmanualaddress;<br />
+private Button addmanualcontinueButton;<br />
+private Button addmanualbackButton;<br />
+/**********INITIALIZES*************/<br />
+addmanualname = (EditText) findViewById(R.id.addmanualname);<br />
+addmanualnumber = (EditText) findViewById(R.id.addmanualnumber);<br />
+addmanualemail = (EditText) findViewById(R.id.addmanualemail);<br />
+addmanualmessage = (EditText) findViewById(R.id.addmanualmessage);<br />
+addmanualaddress = (EditText) findViewById(R.id.addmanualaddress);<br />
+addmanualcontinueButton = (Button) findViewById(R.id.addmanualcontinueButton);<br />
+addmanualbackButton = (Button) findViewById(R.id.addmanualbackButton);</p>
+<p><?xml version="1.0" encoding="utf-8"?></p>
+]]></body>
+      <created>1314934290</created>
+      <changed>1316226125</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.ryangmattison.com/page/Lazy-Android.aspx]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/globe_trans.png?itok=jtnpeoqr]]></image>
+      <version>1.0.0.61</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[Calculating a Surface Normal Blog]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[INDIGO]]></eclipseversion>
+      <supporturl><![CDATA[https://code.google.com/p/android-rad-tools/]]></supporturl>
+      <updateurl><![CDATA[http://www.ryangmattison.com/LazyAndroidUpdateSite]]></updateurl>
+<ius>
+<iu>LazyAndroidFeature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="955" name="FullScreen mode" url="http://marketplace.eclipse.org/content/fullscreen-mode">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='1659' name='GunaTag' url='http://marketplace.eclipse.org/category/free-tagging/gunatag'/>
+      </tags>
+      
+      <owner>MichaelScharf</owner>
+      <favorited>20</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The plugin adds a FullScreen command to the Windows menu and a Keybinding M3+F11 which in on windows Alt+F11. It allows you to simply toggle between full screen mode and normal mode. <img src="<a href="http://scharf.gr/eclipse/fullscreen/update/images/WindowNotFullscreen.gif">">http://scharf.gr/eclipse/fullscreen/update/images/WindowNotFullscreen.gif"></a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>The plugin adds a FullScreen command to the Windows menu and a Keybinding M3+F11 which in on windows Alt+F11. It allows you to simply toggle between full screen mode and normal mode. <img src="<a href="http://scharf.gr/eclipse/fullscreen/update/images/WindowNotFullscreen.gif">">http://scharf.gr/eclipse/fullscreen/update/images/WindowNotFullscreen.gif"></a></p>
+]]></body>
+      <created>1245072346</created>
+      <changed>1259779264</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://scharf.gr/eclipse/fullscreen/update/]]></homepageurl>
+      <image><![CDATA[http://scharf.gr/eclipse/fullscreen/update/images/FullscreenLogo.gif]]></image>
+      <version>1.0</version>
+      <license>Free EPL</license>
+      <companyname><![CDATA[Michael Scharf]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4+]]></eclipseversion>
+      <supporturl><![CDATA[http://michaelscharf.blogspot.com/2009/06/every-pixel-counts-new-eclipse.html]]></supporturl>
+      <updateurl><![CDATA[http://scharf.gr/eclipse/fullscreen/update/]]></updateurl>
+    </node>
+    </marketplace>
+    

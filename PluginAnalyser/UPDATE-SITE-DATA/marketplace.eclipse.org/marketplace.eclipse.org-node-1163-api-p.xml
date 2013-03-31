@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1163" name="Sourcecode Visualizer" url="http://marketplace.eclipse.org/content/sourcecode-visualizer">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='1966' name='Programming Languages' url='http://marketplace.eclipse.org/category/categories/programming-languages'/>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='125' name='bytecode' url='http://marketplace.eclipse.org/category/free-tagging/bytecode'/>
+        <tag id='310' name='control flow graph' url='http://marketplace.eclipse.org/category/free-tagging/control-flow-graph'/>
+        <tag id='311' name='visualizer' url='http://marketplace.eclipse.org/category/free-tagging/visualizer'/>
+      </tags>
+      
+      <owner>Sergej Alekseev</owner>
+      <favorited>17</favorited>
+      <installstotal>1116</installstotal>
+      <installsrecent>62</installsrecent>
+      <shortdescription><![CDATA[<p><b>Sourcecode Visualizer</b> is an Eclipse plugin for visualizing Java sourcecode. It draws a control flow graph alongside of Java source code. It is an indispensable tool for sourcecode review. Its 3 basic components are:</p>
+<ul><li>Sourcecode Editor</li>
+<li>Controlflow Graph Panel</li>
+<li>Synchronization of control flow graph and sourcecode editor</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p><b>Sourcecode Visualizer</b> is an Eclipse plugin for visualizing Java sourcecode. It draws a control flow graph alongside of Java source code. It is an indispensable tool for sourcecode review. Its 3 basic components are:</p>
+<ul><li>Sourcecode Editor</li>
+<li>Controlflow Graph Panel</li>
+<li>Synchronization of control flow graph and sourcecode editor</li>
+</ul>]]></body>
+      <created>1268734224</created>
+      <changed>1347172803</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.drgarbage.com/sourcecode-visualizer.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/20090109-sourcecode-visualizer-at-work.png?itok=jzq3f6fu]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/20080406-sourecode-visualizer-example01.png?itok=sHTa0-6M]]></screenshot>
+      <version>4.2</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[Dr. Garbage Community]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6, 3.7 and 4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://drgarbagetools.sourceforge.net]]></supporturl>
+      <updateurl><![CDATA[http://sourceforge.net/projects/drgarbagetools/files/eclipse/4.2/stable/]]></updateurl>
+<ius>
+<iu>com.drgarbage.sourcecodevisualizer</iu>
+</ius>
+    </node>
+    </marketplace>
+    

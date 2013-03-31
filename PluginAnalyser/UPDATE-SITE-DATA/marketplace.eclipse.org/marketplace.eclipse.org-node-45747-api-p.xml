@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="45747" name="EDepChk" url="http://marketplace.eclipse.org/content/edepchk">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>Peter Arrenbrecht</owner>
+      <favorited>3</favorited>
+      <installstotal>125</installstotal>
+      <installsrecent>4</installsrecent>
+      <shortdescription><![CDATA[<p>Integrates <a href="http://code.google.com/p/jdepchk/">JDepChk</a>, the JVM class file dependency checker, directly into Eclipse. Highlights:</p>
+<ul><li>Smart highlighting of error locations (uses Eclipse's code search).
+</li><li>Fast incremental builder. Overhead is negligible.
+</li><li>Configured through per-project config file.
+</li></ul><p>JDepChk is a dependency checker for Java virtual machine (JVM) class files. It can be used for any code that runs on the JVM. Highlights:</p>
+<ul><li>Specify components and dependencies using high-level rules.
+</li><li>Transitive dependencies (if B extends A, users of B inherit A).
+</li><li>Regular expression matchers and include/exclude lists.
+</li><li>Check for accesses to entire classes or individual members.
+</li><li>Multiple rule sets loadable from different files.
+</li><li>Very fast. Based on a stripped-down version of ASM's class reader.
+</li><li>Processes class files one by one (unlike some other such tools).
+</li></ul><p>JDepChk was directly inspired by Macker, but is a lot faster and easier to use in typical scenarios (due to component-oriented rules).</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Integrates <a href="http://code.google.com/p/jdepchk/">JDepChk</a>, the JVM class file dependency checker, directly into Eclipse. Highlights:</p>
+<ul><li>Smart highlighting of error locations (uses Eclipse's code search).
+</li><li>Fast incremental builder. Overhead is negligible.
+</li><li>Configured through per-project config file.
+</li></ul><p>JDepChk is a dependency checker for Java virtual machine (JVM) class files. It can be used for any code that runs on the JVM. Highlights:</p>
+<ul><li>Specify components and dependencies using high-level rules.
+</li><li>Transitive dependencies (if B extends A, users of B inherit A).
+</li><li>Regular expression matchers and include/exclude lists.
+</li><li>Check for accesses to entire classes or individual members.
+</li><li>Multiple rule sets loadable from different files.
+</li><li>Very fast. Based on a stripped-down version of ASM's class reader.
+</li><li>Processes class files one by one (unlike some other such tools).
+</li></ul><p>JDepChk was directly inspired by Macker, but is a lot faster and easier to use in typical scenarios (due to component-oriented rules).</p>
+]]></body>
+      <created>1302856689</created>
+      <changed>1302885796</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/a/eclipselabs.org/p/edepchk/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0.0</version>
+      <license>BSD</license>
+      <companyname><![CDATA[parren.ch]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[Helios]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/a/eclipselabs.org/p/edepchk/issues/list]]></supporturl>
+      <updateurl><![CDATA[http://edepchk.eclipselabs.org.codespot.com/hg.update-site/site.xml]]></updateurl>
+<ius>
+<iu>ch.parren.edepchk</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

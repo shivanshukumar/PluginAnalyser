@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="160" name="OpenRules" url="http://marketplace.eclipse.org/content/openrules">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+        <category id='30' name='Process' url='http://marketplace.eclipse.org/taxonomy/term/30'/>
+      </categories>
+      <tags>
+        <tag id='382' name='business rules management' url='http://marketplace.eclipse.org/category/free-tagging/business-rules-management'/>
+        <tag id='1530' name='decision model' url='http://marketplace.eclipse.org/category/free-tagging/decision-model'/>
+      </tags>
+      
+      <owner>Jacob Feldman</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>OpenRules is an open source full-scale Business Decision Management System that is based on commonly used tools such Eclipse IDE, Java, and MS Excel or Google Docs. OpenRules includes an Eclipse plug-in that makes OpenRules projects a natural part of the Eclipse development environment. OpenRules integrates business rules with machine learning and optimization technologies. OpenRules, Inc. offers methodology, practical tools and services that enable business analysts to work in concert with software developers to create and maintain Rules-based Web applications with complex business and presentation logic. The release 6 allows business analysts to create and execute decision models with no coding. See <a href="http://www.openrules.com">www.openrules.com</a>.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>OpenRules is an open source full-scale Business Decision Management System that is based on commonly used tools such Eclipse IDE, Java, and MS Excel or Google Docs. OpenRules includes an Eclipse plug-in that makes OpenRules projects a natural part of the Eclipse development environment. OpenRules integrates business rules with machine learning and optimization technologies. OpenRules, Inc. offers methodology, practical tools and services that enable business analysts to work in concert with software developers to create and maintain Rules-based Web applications with complex business and presentation logic. The release 6 allows business analysts to create and execute decision models with no coding. See <a href="http://www.openrules.com">www.openrules.com</a>.</p>
+]]></body>
+      <created>1127584951</created>
+      <changed>1327696902</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://openrules.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/LogoOpenRules.jpg?itok=n8roDfJd]]></image>
+      <version>6.1.3</version>
+      <license>GPL</license>
+      <companyname><![CDATA[OpenRules, Inc.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5 and above]]></eclipseversion>
+      <supporturl><![CDATA[http://openrules.com/support.htm]]></supporturl>
+      <updateurl><![CDATA[http://openrules.com/licensing.htm]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

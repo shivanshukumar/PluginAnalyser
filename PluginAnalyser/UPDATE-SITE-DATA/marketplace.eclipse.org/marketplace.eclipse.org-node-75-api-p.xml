@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="75" name="EclipseWiki Editor" url="http://marketplace.eclipse.org/content/eclipsewiki-editor">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+      <tags>
+        <tag id='247' name='sds' url='http://marketplace.eclipse.org/category/free-tagging/sds'/>
+      </tags>
+      
+      <owner>Channing Walton</owner>
+      <favorited>4</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This Eclipse plugin is a simple personal or project Wiki. </p>
+<p><h1>Requirements</h1><br />
+Eclipse 3.2 or later and a <b>Java 5 runtime</b>.</p>
+<p><h1><br />
+      Features<br />
+    </h1><br />
+	<ul><br />
+      <li><br />
+        Link to local Wiki documents<br />
+      </li><br />
+      <li><br />
+        Link to resources in the Eclipse workspace and plugins<br />
+      </li><br />
+      <li>Link to Java source code in the current project simply path typing the fully qualified name of a class<br />
+      </li><br />
+	  <li><br />
+        Link to urls<br />
+      </li><br />
+	  <li><br />
+        Exclude words from being links by providing a list in a file called <i>wiki.exclude</i><br />
+      </li><br />
+      <li><br />
+        Define common prefixes to any website, Wiki, Eclipse resource, and more using a local <i>WikiSpace</i><br />
+      </li><br />
+	  <li><br />
+		Export your wiki including all the linked Eclipse resources (Java source is converted to HTML using the excellent <a href="<a href="http://www.java2html.de/">Java2Html</a>">http://www.java2html.de/">Java2Html</a></a>)<br />
+	  </li><br />
+      <li><br />
+      	The multipage editor has a browser view to make reading easier and a syntax view to help editing.<br />
+		The are three <i>renderers</i> to choose from depending on your chosen wiki markup:<br />
+      	<a href="<a href="http://twiki.org">TWiki</a>">http://twiki.org">TWiki</a></a>, <a href="<a href="http://www.snipsnap.org">SnipSnap</a>">http://www.snipsnap.org">SnipSnap</a></a> and <a href="<a href="http://c2.com/cgi/wiki">Ward's">http://c2.com/cgi/wiki">Ward's</a> Wiki</a>.<br />
+      </li><br />
+      <li><br />
+        Syntax colouring for links<br />
+      </li><br />
+      <li><br />
+        Completion for eclipse resources, local wiki documents, WikiSpace links and Java types in the same project<br />
+      </li><br />
+      <li><br />
+        Hover text and previews on links<br />
+      </li><br />
+	  <li><br />
+        An Outline that guesses what the headings in your document are<br />
+      </li><br />
+     <li><br />
+        Embed other wiki documents, eclipse resources and Java code in Wiki documents.<br />
+      </li><br />
+    </ul></p>
+<p>The global WikiSpace can be overridden in folders containing Wiki documents so that it can be shared with the rest of your team with the Wiki. </p>
+<p>You can also export your wiki including all the linked Eclipse resources to form a completely self-contained snapshot of your Wiki. (Java source is converted to HTML using the excellent Java2Html) </p>
+]]></shortdescription>
+      <body><![CDATA[<p>This Eclipse plugin is a simple personal or project Wiki. </p>
+<p><h1>Requirements</h1><br />
+Eclipse 3.2 or later and a <b>Java 5 runtime</b>.</p>
+<p><h1><br />
+      Features<br />
+    </h1><br />
+	<ul><br />
+      <li><br />
+        Link to local Wiki documents<br />
+      </li><br />
+      <li><br />
+        Link to resources in the Eclipse workspace and plugins<br />
+      </li><br />
+      <li>Link to Java source code in the current project simply path typing the fully qualified name of a class<br />
+      </li><br />
+	  <li><br />
+        Link to urls<br />
+      </li><br />
+	  <li><br />
+        Exclude words from being links by providing a list in a file called <i>wiki.exclude</i><br />
+      </li><br />
+      <li><br />
+        Define common prefixes to any website, Wiki, Eclipse resource, and more using a local <i>WikiSpace</i><br />
+      </li><br />
+	  <li><br />
+		Export your wiki including all the linked Eclipse resources (Java source is converted to HTML using the excellent <a href="<a href="http://www.java2html.de/">Java2Html</a>">http://www.java2html.de/">Java2Html</a></a>)<br />
+	  </li><br />
+      <li><br />
+      	The multipage editor has a browser view to make reading easier and a syntax view to help editing.<br />
+		The are three <i>renderers</i> to choose from depending on your chosen wiki markup:<br />
+      	<a href="<a href="http://twiki.org">TWiki</a>">http://twiki.org">TWiki</a></a>, <a href="<a href="http://www.snipsnap.org">SnipSnap</a>">http://www.snipsnap.org">SnipSnap</a></a> and <a href="<a href="http://c2.com/cgi/wiki">Ward's">http://c2.com/cgi/wiki">Ward's</a> Wiki</a>.<br />
+      </li><br />
+      <li><br />
+        Syntax colouring for links<br />
+      </li><br />
+      <li><br />
+        Completion for eclipse resources, local wiki documents, WikiSpace links and Java types in the same project<br />
+      </li><br />
+      <li><br />
+        Hover text and previews on links<br />
+      </li><br />
+	  <li><br />
+        An Outline that guesses what the headings in your document are<br />
+      </li><br />
+     <li><br />
+        Embed other wiki documents, eclipse resources and Java code in Wiki documents.<br />
+      </li><br />
+    </ul></p>
+<p>The global WikiSpace can be overridden in folders containing Wiki documents so that it can be shared with the rest of your team with the Wiki. </p>
+<p>You can also export your wiki including all the linked Eclipse resources to form a completely self-contained snapshot of your Wiki. (Java source is converted to HTML using the excellent Java2Html) </p>
+]]></body>
+      <created>1077803829</created>
+      <changed>1273867309</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://eclipsewiki.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>2.7.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[SourceForge]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3.x-3.5.x]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/eclipsewiki/]]></supporturl>
+      <updateurl><![CDATA[http://www.stateofflow.com/UpdateSite]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="818" name="Eclipse Notepad Plugin" url="http://marketplace.eclipse.org/content/eclipse-notepad-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='116' name='' url='http://marketplace.eclipse.org/taxonomy/term/116'/>
+        <tag id='2200' name='notepad' url='http://marketplace.eclipse.org/category/free-tagging/notepad'/>
+      </tags>
+      
+      <owner>jgesser</owner>
+      <favorited>12</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This plugin has the simple objective to let developers write small notes.<br />
+The notes are stored inside the workspace metadata.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This plugin has the simple objective to let developers write small notes.<br />
+The notes are stored inside the workspace metadata.</p>
+]]></body>
+      <created>1227548366</created>
+      <changed>1259779130</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://eclipsenotepad.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://sourceforge.net/dbimage.php?id=199580]]></image>
+      <version>1.0.5</version>
+      <license>Free EPL</license>
+      <companyname><![CDATA[Júlio Vilmar Gesser]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3]]></eclipseversion>
+      <supporturl><![CDATA[https://sourceforge.net/projects/eclipsenotepad/]]></supporturl>
+      <updateurl><![CDATA[http://eclipsenotepad.sourceforge.net/updates/]]></updateurl>
+    </node>
+    </marketplace>
+    

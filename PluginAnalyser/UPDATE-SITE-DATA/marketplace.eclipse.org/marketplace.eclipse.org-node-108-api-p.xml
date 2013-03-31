@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="108" name="Eclipse CORBA Plugin" url="http://marketplace.eclipse.org/content/eclipse-corba-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>Michael Houston</owner>
+      <favorited>2</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>An Eclipse plugin to provide a syntax-colouring editor for CORBA IDL files.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>An Eclipse plugin to provide a syntax-colouring editor for CORBA IDL files.</p>
+]]></body>
+      <created>1086954483</created>
+      <changed>1259854364</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://eclipsecorba.sourceforge.net]]></homepageurl>
+      <image><![CDATA[http://eclipsecorba.sourceforge.net/images/screenshot3.png]]></image>
+      <version>0.7.0</version>
+      <license>GPL</license>
+      <companyname><![CDATA[N/A]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.2+]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/tracker/?group_id=111345&atid=659406]]></supporturl>
+      <updateurl><![CDATA[http://eclipsecorba.sourceforge.net/update/]]></updateurl>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="4249" name="Graphrex" url="http://marketplace.eclipse.org/content/graphrex">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='8' name='Graphics' url='http://marketplace.eclipse.org/taxonomy/term/8'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='47' name='visualization' url='http://marketplace.eclipse.org/category/free-tagging/visualization'/>
+        <tag id='288' name='regex' url='http://marketplace.eclipse.org/category/free-tagging/regex'/>
+        <tag id='328' name='plugin' url='http://marketplace.eclipse.org/category/free-tagging/plugin'/>
+        <tag id='1054' name='regexp' url='http://marketplace.eclipse.org/category/free-tagging/regexp'/>
+        <tag id='1055' name='Croton Research' url='http://marketplace.eclipse.org/category/free-tagging/croton-research'/>
+      </tags>
+      
+      <owner>Alan  </owner>
+      <favorited>6</favorited>
+      <installstotal>1376</installstotal>
+      <installsrecent>6</installsrecent>
+      <shortdescription><![CDATA[Version 0.5.4 of Graphrex, the regular expression visualization and testing tool, fixes a bug that caused FileNotFound errors on Linux.
+<!--break-->
+Version 0.5 includes improved graphics, wizards to import and export regular expressions from and to Java String format, and other enhancements. As always, Graphrex's unique graphical approach to visualization helps you to understand, test and document the structure and flow of your regular expression. Graphrex is a free plugin that creates a diagram of the structure of Java regular expressions. The diagram enables you to explore all the constructs of a regular expression, including alternatives, characters and strings, character sets, repetition operators like ?, * and + and others. Flow lines show the order in which matches will be attempted, and help you to distinguish between different types of greed (greedy, reluctant/lazy and possessive). Where character sets are constructed with operators (union, intersection and negation) the diagram makes clear what is going on and enables you to inspect the character set that is created by each operation.
+A structured outline view is also provided. The outline view and the graphical view are linked so that a construct selected in one is also selected in the other.
+A diagram can be exported or printed and used to document your regular expression.]]></shortdescription>
+      <body><![CDATA[Version 0.5.4 of Graphrex, the regular expression visualization and testing tool, fixes a bug that caused FileNotFound errors on Linux.
+<!--break-->
+Version 0.5 includes improved graphics, wizards to import and export regular expressions from and to Java String format, and other enhancements. As always, Graphrex's unique graphical approach to visualization helps you to understand, test and document the structure and flow of your regular expression. Graphrex is a free plugin that creates a diagram of the structure of Java regular expressions. The diagram enables you to explore all the constructs of a regular expression, including alternatives, characters and strings, character sets, repetition operators like ?, * and + and others. Flow lines show the order in which matches will be attempted, and help you to distinguish between different types of greed (greedy, reluctant/lazy and possessive). Where character sets are constructed with operators (union, intersection and negation) the diagram makes clear what is going on and enables you to inspect the character set that is created by each operation.
+A structured outline view is also provided. The outline view and the graphical view are linked so that a construct selected in one is also selected in the other.
+A diagram can be exported or printed and used to document your regular expression.]]></body>
+      <created>1279830536</created>
+      <changed>1333737887</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://crotonresearch.com/graphrex]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/GRLogo_220_160.png?itok=scHKPbBF]]></image>
+      <version>0.5.4</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[Croton Research]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5+]]></eclipseversion>
+      <supporturl><![CDATA[http://crotonresearch.com/forum]]></supporturl>
+      <updateurl><![CDATA[http://crotonresearch.com/download_files/graphrex/update-site]]></updateurl>
+<ius>
+<iu>com.crotonresearch.graphrex</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

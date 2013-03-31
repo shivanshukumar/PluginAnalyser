@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="949" name="YEdit" url="http://marketplace.eclipse.org/content/yedit">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+      <tags>
+        <tag id='146' name='editor' url='http://marketplace.eclipse.org/category/free-tagging/editor'/>
+        <tag id='1368' name='yaml' url='http://marketplace.eclipse.org/category/free-tagging/yaml'/>
+      </tags>
+      
+      <owner>oyseoyse</owner>
+      <favorited>10</favorited>
+      <installstotal>5434</installstotal>
+      <installsrecent>383</installsrecent>
+      <shortdescription><![CDATA[<p>YEdit is an Eclipse editor for editing YAML files.</p>
+<p>It has the following features:<br />
+  * Syntax highlighting<br />
+  * Syntax checking<br />
+  * Content outline<br />
+  * Templates<br />
+  * Various text editing support like auto-indenting and toggling of comments.<br />
+  * Symfony compatibility mode (experimental).</p>
+]]></shortdescription>
+      <body><![CDATA[<p>YEdit is an Eclipse editor for editing YAML files.</p>
+<p>It has the following features:<br />
+  * Syntax highlighting<br />
+  * Syntax checking<br />
+  * Content outline<br />
+  * Templates<br />
+  * Various text editing support like auto-indenting and toggling of comments.<br />
+  * Symfony compatibility mode (experimental).</p>
+]]></body>
+      <created>1245072125</created>
+      <changed>1311063840</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/yedit/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>0.0.11</version>
+      <license>EPL</license>
+      <companyname><![CDATA[-]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4, 3.5, 3.6 & 3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://]]></supporturl>
+      <updateurl><![CDATA[http://dadacoalition.org/yedit]]></updateurl>
+<ius>
+<iu>org.dadacoalition.yedit</iu>
+</ius>
+    </node>
+    </marketplace>
+    

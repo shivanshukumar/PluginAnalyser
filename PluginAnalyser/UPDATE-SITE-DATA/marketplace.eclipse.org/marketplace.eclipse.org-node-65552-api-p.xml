@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="65552" name="Risk Analysis Designer (Indigo version)" url="http://marketplace.eclipse.org/content/risk-analysis-designer-helios-version">
+      <type>resource</type>
+      <categories>
+        <category id='1971' name='Modeling' url='http://marketplace.eclipse.org/category/categories/modeling'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='30' name='Process' url='http://marketplace.eclipse.org/taxonomy/term/30'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+      <tags>
+        <tag id='680' name='SysML' url='http://marketplace.eclipse.org/category/free-tagging/sysml'/>
+        <tag id='2225' name='system engineering' url='http://marketplace.eclipse.org/category/free-tagging/system-engineering'/>
+        <tag id='2228' name='safety' url='http://marketplace.eclipse.org/category/free-tagging/safety'/>
+        <tag id='2229' name='risk analysis' url='http://marketplace.eclipse.org/category/free-tagging/risk-analysis'/>
+        <tag id='2663' name='iso26262' url='http://marketplace.eclipse.org/category/free-tagging/iso26262'/>
+      </tags>
+      
+      <owner>Obeo  </owner>
+      <favorited>2</favorited>
+      <installstotal>84</installstotal>
+      <installsrecent>11</installsrecent>
+      <shortdescription><![CDATA[<p>Nowadays, risk evaluations of large embedded systems is a noteworthy activity in a global engineering process. It should actually interoperate with the system design and produce a large amount of coherent documentation. In order to alleviate this problems, the key idea of this work is to <strong>combine safety and design</strong> viewpoints.</p>
+<p>This safety viewpoint allows safety engineers to describe :</p>
+<ul><li>Preliminary Hazard analyses</li>
+<li>Fault tree analyses</li>
+</ul><p>
+Those analyses interoperate with SysML models.
+</p>
+<p>
+The language can be configured with a library to target several safety certification standards: </p>
+<ul><li>ISO26262 for automotive</li>
+<li>DO178C for aerospatial</li>
+<li>EN 50126, EN 50128, EN 50129 for train</li>
+<li>...</li>
+</ul><p>
+This module is composed of several diagrams:</p>
+<ul><li>Tabular PHA</li>
+<li>Graphical PHA</li>
+<li>Graphical PHA with SysML</li>
+<li>Fault Tree</li>
+<li>Tolerable Rate analysis layer</li>
+<li>SIL analysis layer</li>
+<li>Impacts analysis</li>
+<li>Safety libraries</li>
+</ul><p><a href="http://marketplace.obeonetwork.com/module/risk-analysis"><br /><img src="http://dl.dropbox.com/u/22228046/Marketplace/risk-analysis/safety_faulttree_accident.png" width="500" /></a></p>
+<!--break--><p>
+You can also generates safety validation check by creating your generators to Altarica or XFTA.
+</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Nowadays, risk evaluations of large embedded systems is a noteworthy activity in a global engineering process. It should actually interoperate with the system design and produce a large amount of coherent documentation. In order to alleviate this problems, the key idea of this work is to <strong>combine safety and design</strong> viewpoints.</p>
+<p>This safety viewpoint allows safety engineers to describe :</p>
+<ul><li>Preliminary Hazard analyses</li>
+<li>Fault tree analyses</li>
+</ul><p>
+Those analyses interoperate with SysML models.
+</p>
+<p>
+The language can be configured with a library to target several safety certification standards: </p>
+<ul><li>ISO26262 for automotive</li>
+<li>DO178C for aerospatial</li>
+<li>EN 50126, EN 50128, EN 50129 for train</li>
+<li>...</li>
+</ul><p>
+This module is composed of several diagrams:</p>
+<ul><li>Tabular PHA</li>
+<li>Graphical PHA</li>
+<li>Graphical PHA with SysML</li>
+<li>Fault Tree</li>
+<li>Tolerable Rate analysis layer</li>
+<li>SIL analysis layer</li>
+<li>Impacts analysis</li>
+<li>Safety libraries</li>
+</ul><p><a href="http://marketplace.obeonetwork.com/module/risk-analysis"><br /><img src="http://dl.dropbox.com/u/22228046/Marketplace/risk-analysis/safety_faulttree_accident.png" width="500" /></a></p>
+<!--break--><p>
+You can also generates safety validation check by creating your generators to Altarica or XFTA.
+</p>
+]]></body>
+      <created>1308131797</created>
+      <changed>1346416705</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://marketplace.obeonetwork.com/module/risk-analysis]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_ON-110x80_0.png?itok=SyjdEodX]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/safety_faulttree_accident_small.png?itok=oAZTqMtA]]></screenshot>
+      <version>1.1.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Obeo Network]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://marketplace.obeonetwork.com/module/risk-analysis#community]]></supporturl>
+      <updateurl><![CDATA[http://marketplace.obeonetwork.com/updates/od6/]]></updateurl>
+<ius>
+<iu>fr.obeo.dsl.safety.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="331" name="EasyEclipse for C and C++" url="http://marketplace.eclipse.org/content/easyeclipse-c-and-c">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+      </categories>
+      <tags>
+        <tag id='332' name='Ajax UI Construction' url='http://marketplace.eclipse.org/category/free-tagging/ajax-ui-construction'/>
+        <tag id='371' name='molt bo' url='http://marketplace.eclipse.org/category/free-tagging/molt-bo'/>
+      </tags>
+      
+      <owner>pombredanne</owner>
+      <favorited>6</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>EasyEclipse Mobile Java is a bare-bones Eclipse distro for experienced C and C++ developers who are new to Eclipse. EasyEclipse for C and C++ is all you need to start developing C and C++ code with Eclipse.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>EasyEclipse Mobile Java is a bare-bones Eclipse distro for experienced C and C++ developers who are new to Eclipse. EasyEclipse for C and C++ is all you need to start developing C and C++ code with Eclipse.</p>
+]]></body>
+      <created>1164900429</created>
+      <changed>1259942736</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.easyeclipse.org/site/distributions/cplusplus.html]]></homepageurl>
+      <image><![CDATA[http://www.easyeclipse.org/images/easyeclipse-epic-logo-110x80.png]]></image>
+      <version>1.3.1.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[nexB Inc.]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.3.1]]></eclipseversion>
+      <supporturl><![CDATA[http://www.easyeclipse.org/site/help/index.html]]></supporturl>
+      <updateurl><![CDATA[http://www.easyeclipse.org/site/distributions/cplusplus.html]]></updateurl>
+    </node>
+    </marketplace>
+    

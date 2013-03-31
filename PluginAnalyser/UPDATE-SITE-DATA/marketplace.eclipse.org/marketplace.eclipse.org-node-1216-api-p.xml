@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1216" name="SpryTest" url="http://marketplace.eclipse.org/content/sprytest">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='712' name='Unit Testing' url='http://marketplace.eclipse.org/category/free-tagging/unit-testing'/>
+        <tag id='752' name='junit' url='http://marketplace.eclipse.org/category/free-tagging/junit'/>
+        <tag id='1200' name='coverage' url='http://marketplace.eclipse.org/category/free-tagging/coverage'/>
+        <tag id='1638' name='developer testing' url='http://marketplace.eclipse.org/category/free-tagging/developer-testing'/>
+      </tags>
+      
+      <owner>Umesh</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Sprytest is a UI based testing engine that can significantly simplify and accelerate unit test creation and maintenance efforts. Creating test data, configuring mocks for external dependencies and configuring test assertions can be done in a fraction of the time using SpryTest.  It helps Java developers to also create a safety net to detect unintended behavior changes (regressions), making it easier to isolate and fix problems.</p>
+<!--break--><p>Some of the key features of SpryTest are:</p>
+<p>    * Eclipse based unit testing software. Interactive and simple to use<br />
+    * Easily convert to standard JUnit tests. No need to write JUnit tests manually anymore<br />
+    * Built-in Code Coverage showing the entire path of execution<br />
+    * Powerful API-level end-to-end regression testing capability<br />
+    * Quickly create powerful Test Assertions<br />
+    * Seamless test case-source code synchronization</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Sprytest is a UI based testing engine that can significantly simplify and accelerate unit test creation and maintenance efforts. Creating test data, configuring mocks for external dependencies and configuring test assertions can be done in a fraction of the time using SpryTest.  It helps Java developers to also create a safety net to detect unintended behavior changes (regressions), making it easier to isolate and fix problems.</p>
+<!--break--><p>Some of the key features of SpryTest are:</p>
+<p>    * Eclipse based unit testing software. Interactive and simple to use<br />
+    * Easily convert to standard JUnit tests. No need to write JUnit tests manually anymore<br />
+    * Built-in Code Coverage showing the entire path of execution<br />
+    * Powerful API-level end-to-end regression testing capability<br />
+    * Quickly create powerful Test Assertions<br />
+    * Seamless test case-source code synchronization</p>
+]]></body>
+      <created>1274162723</created>
+      <changed>1298542921</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.sprystone.com/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/companylogo.gif?itok=f9-joRlu]]></image>
+      <version>2.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Sprystone Software]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4 or later]]></eclipseversion>
+      <supporturl><![CDATA[http://www.sprystone.com/spryweb/html/support.jsp]]></supporturl>
+      <updateurl><![CDATA[http://www.sprystone.com/sprytest/eclipse/update]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="634" name="Synergy ALM" url="http://marketplace.eclipse.org/content/synergy-alm">
+      <type>resource</type>
+      <categories>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+      </categories>
+            
+      <owner>yanlin wang</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Synergy ALM (Agile Life-Cycle Management) is an eclipse team plugin that is designed to better serve agile development process and relief developer from process overhead.</p>
+<p>The main feature of the software is to automatically correlate Perforce change list with task tracking systems: Bugzilla, Trac, RallyDev etc. bidirectionally </p>
+<p>Get trial license for 30 days free usage <a href="http://creativepioneer.com/org.yanlin.license.web/trialLicense.jsp">http://creativepioneer.com/org.yanlin.license.web/trialLicense.jsp</a> </p>
+]]></shortdescription>
+      <body><![CDATA[<p>Synergy ALM (Agile Life-Cycle Management) is an eclipse team plugin that is designed to better serve agile development process and relief developer from process overhead.</p>
+<p>The main feature of the software is to automatically correlate Perforce change list with task tracking systems: Bugzilla, Trac, RallyDev etc. bidirectionally </p>
+<p>Get trial license for 30 days free usage <a href="http://creativepioneer.com/org.yanlin.license.web/trialLicense.jsp">http://creativepioneer.com/org.yanlin.license.web/trialLicense.jsp</a> </p>
+]]></body>
+      <created>1201184452</created>
+      <changed>1275585043</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.creativepioneer.com/SynergyAlm.html]]></homepageurl>
+      <image><![CDATA[http://www.creativepioneer.com/alm/yanlin_in.jpg]]></image>
+      <version>1.2.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Yanlin Wang]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eclipseplugincentral.com/PNphpBB2-viewforum-f-144.html]]></supporturl>
+      <updateurl><![CDATA[http://www.creativepioneer.com/alm]]></updateurl>
+    </node>
+    </marketplace>
+    

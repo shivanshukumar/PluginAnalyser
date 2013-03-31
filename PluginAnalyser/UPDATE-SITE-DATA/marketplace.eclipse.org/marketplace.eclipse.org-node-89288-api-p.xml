@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="89288" name="Eclipse Todo Editor" url="http://marketplace.eclipse.org/content/eclipse-todo-editor">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='1972' name='General Purpose Tools' url='http://marketplace.eclipse.org/category/categories/general-purpose-tools'/>
+      </categories>
+      <tags>
+        <tag id='90' name='issue' url='http://marketplace.eclipse.org/category/free-tagging/issue'/>
+        <tag id='258' name='tracking' url='http://marketplace.eclipse.org/category/free-tagging/tracking'/>
+        <tag id='611' name='task' url='http://marketplace.eclipse.org/category/free-tagging/task'/>
+        <tag id='2118' name='todo' url='http://marketplace.eclipse.org/category/free-tagging/todo'/>
+      </tags>
+      
+      <owner>Sebastian Benz</owner>
+      <favorited>6</favorited>
+      <installstotal>746</installstotal>
+      <installsrecent>49</installsrecent>
+      <shortdescription><![CDATA[<p>Manage your todos in an easy to use text editor with syntax highlighting and code completion. Effectively structure and query your todo lists using projects and custom tags. The editor's syntax is based on <a href="http://www.hogbaysoftware.com/products/taskpaper">Taskpaper</a>, a great todo editor for the Mac. <a href="http://sebastianbenz.de/a-simple-text-based-todo-editor-for-eclipse">Learn more.</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Manage your todos in an easy to use text editor with syntax highlighting and code completion. Effectively structure and query your todo lists using projects and custom tags. The editor's syntax is based on <a href="http://www.hogbaysoftware.com/products/taskpaper">Taskpaper</a>, a great todo editor for the Mac. <a href="http://sebastianbenz.de/a-simple-text-based-todo-editor-for-eclipse">Learn more.</a></p>
+]]></body>
+      <created>1311030177</created>
+      <changed>1324422069</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://github.com/sebastianbenz/eclipse-task-editor]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/marktplace.png?itok=cNFSrEpD]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/RcpApplication.png?itok=2UYDlEDW]]></screenshot>
+      <version>1.1.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Sebastian Benz]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[Indigo]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://sebastianbenz.github.com/eclipse-task-editor/updates]]></updateurl>
+<ius>
+<iu>de.sebastianbenz.task</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="8068" name="Jaspersoft Studio" url="http://marketplace.eclipse.org/content/jaspersoft-studio">
+      <type>resource</type>
+      <categories>
+        <category id='1973' name='Business Intelligence, Reporting and Charting' url='http://marketplace.eclipse.org/category/categories/business-intelligence-reporting-and-charting'/>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+        <category id='1970' name='Database Development' url='http://marketplace.eclipse.org/category/categories/database-development'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='8' name='Graphics' url='http://marketplace.eclipse.org/taxonomy/term/8'/>
+        <category id='39' name='Reporting' url='http://marketplace.eclipse.org/category/categories/reporting'/>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='362' name='reporting' url='http://marketplace.eclipse.org/category/free-tagging/reporting'/>
+        <tag id='771' name='jasperreports' url='http://marketplace.eclipse.org/category/free-tagging/jasperreports'/>
+        <tag id='1145' name='Jaspersoft Corp.' url='http://marketplace.eclipse.org/category/free-tagging/jaspersoft-corp'/>
+        <tag id='2004' name='Eclipse reporting' url='http://marketplace.eclipse.org/category/free-tagging/eclipse-reporting'/>
+      </tags>
+      
+      <owner>Giulio Toffoli</owner>
+      <favorited>38</favorited>
+      <installstotal>13479</installstotal>
+      <installsrecent>925</installsrecent>
+      <shortdescription><![CDATA[<p>Jaspersoft Studio is an intuitive and powerful open source report designer for JasperReports. A full rewrite of iReport on top of Eclipse RCP and it is available as RCP application and as plugin for Eclipse IDE.</p>
+<!--break--><p>
+Jaspersoft Studio allows to create very sophisticated layouts containing charts, images, subreports, crosstabs and much more. Access your data through JDBC, JavaBeans, XML, Hibernate, CSV, and custom sources. Then publish your reports as PDF, RTF, XML, XLS, CSV, HTML, XHTML, text, DOCX, or OpenOffice.</p>
+<p><img src="http://marketplace.eclipse.org/sites/default/files/1_0.jpg" border="0" /></p>
+<p>Jaspersoft Studio<br />
+The standalone version can be downloaded here:</p>
+<p><a href="http://community.jaspersoft.com/project/jaspersoft-studio/releases">http://community.jaspersoft.com/project/jaspersoft-studio/releases</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Jaspersoft Studio is an intuitive and powerful open source report designer for JasperReports. A full rewrite of iReport on top of Eclipse RCP and it is available as RCP application and as plugin for Eclipse IDE.</p>
+<!--break--><p>
+Jaspersoft Studio allows to create very sophisticated layouts containing charts, images, subreports, crosstabs and much more. Access your data through JDBC, JavaBeans, XML, Hibernate, CSV, and custom sources. Then publish your reports as PDF, RTF, XML, XLS, CSV, HTML, XHTML, text, DOCX, or OpenOffice.</p>
+<p><img src="http://marketplace.eclipse.org/sites/default/files/1_0.jpg" border="0" /></p>
+<p>Jaspersoft Studio<br />
+The standalone version can be downloaded here:</p>
+<p><a href="http://community.jaspersoft.com/project/jaspersoft-studio/releases">http://community.jaspersoft.com/project/jaspersoft-studio/releases</a></p>
+]]></body>
+      <created>1283175292</created>
+      <changed>1362762240</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://community.jaspersoft.com/project/jaspersoft-studio]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_mini.png?itok=6s8zrYBs]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screenshot_3.png?itok=5p1RYyL1]]></screenshot>
+      <version>2.0.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Jaspersoft Corporation]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6,3.7,3.8,4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://community.jaspersoft.com/project/jaspersoft-studio]]></supporturl>
+      <updateurl><![CDATA[http://jasperstudio.sourceforge.net/updates/]]></updateurl>
+<ius>
+<iu>com.jaspersoft.studio.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

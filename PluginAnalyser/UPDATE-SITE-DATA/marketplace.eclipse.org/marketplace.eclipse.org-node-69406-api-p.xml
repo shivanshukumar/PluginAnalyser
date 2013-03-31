@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="69406" name="Google Search + Utility Plugin" url="http://marketplace.eclipse.org/content/google-search-utility-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='1972' name='General Purpose Tools' url='http://marketplace.eclipse.org/category/categories/general-purpose-tools'/>
+      </categories>
+      <tags>
+        <tag id='327' name='eclipse' url='http://marketplace.eclipse.org/category/free-tagging/eclipse'/>
+        <tag id='2037' name='Google Search' url='http://marketplace.eclipse.org/category/free-tagging/google-search'/>
+        <tag id='2038' name='Folder Explorer' url='http://marketplace.eclipse.org/category/free-tagging/folder-explorer'/>
+      </tags>
+      
+      <owner>Devi Vara Prasad Bandaru</owner>
+      <favorited>3</favorited>
+      <installstotal>603</installstotal>
+      <installsrecent>5</installsrecent>
+      <shortdescription><![CDATA[<p>Google Search + Utility Plugin is a small eclipse based plugin which integrates features like google search engine and other small utilities into eclipse. </p>
+<p>Google Search (Alt+G) :<br />
+ This feature presents the google content proposal in popup dialog.  On hitting enter all the search results will be displayed in the browser. Use (Ctrl+M) instead of enter, to navigate directly to the top most search result.</p>
+<p>Open Location (Alt + L):<br />
+This feature allows users to open the file location representing the resource selection in explorer views or text selection(file path) in dialogs or editors. All the recently opened locations will be persisted in the workspace and user can switch to the previous options using the popup provide for opening the locations.  Path field in the popup provides current directory children as content proposals.</p>
+<p>Use Cases:<br />
+1. Open the location of the source file in project explorer.<br />
+2. Open the location specified in preferences page (Ex: Installed JRE Location).<br />
+3. Quickly access the favorite folders using the history displayed in the dialog.</p>
+<p>Icon Viewer:<br />
+This feature helps to view icons present in workspace folders.  To preview the icons click on the Show Icon Viewer action from toolbar and select an image or folder containing image from any of the eclipse views like project explorer,  package explorer, team synchronize view etc..</p>
+<p>Note: The browse resource location feature requires JRE1.6 and above.</p>
+<p>Installation:<br />
+1.Click on the home link to download the plugin.<br />
+2. Alternatively use the update site to directly install from eclipse</p>
+<p>New: Open location feature displays favorites and recent documents in windows<br />
+Icon Viewer to preview icons in workspace.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Google Search + Utility Plugin is a small eclipse based plugin which integrates features like google search engine and other small utilities into eclipse. </p>
+<p>Google Search (Alt+G) :<br />
+ This feature presents the google content proposal in popup dialog.  On hitting enter all the search results will be displayed in the browser. Use (Ctrl+M) instead of enter, to navigate directly to the top most search result.</p>
+<p>Open Location (Alt + L):<br />
+This feature allows users to open the file location representing the resource selection in explorer views or text selection(file path) in dialogs or editors. All the recently opened locations will be persisted in the workspace and user can switch to the previous options using the popup provide for opening the locations.  Path field in the popup provides current directory children as content proposals.</p>
+<p>Use Cases:<br />
+1. Open the location of the source file in project explorer.<br />
+2. Open the location specified in preferences page (Ex: Installed JRE Location).<br />
+3. Quickly access the favorite folders using the history displayed in the dialog.</p>
+<p>Icon Viewer:<br />
+This feature helps to view icons present in workspace folders.  To preview the icons click on the Show Icon Viewer action from toolbar and select an image or folder containing image from any of the eclipse views like project explorer,  package explorer, team synchronize view etc..</p>
+<p>Note: The browse resource location feature requires JRE1.6 and above.</p>
+<p>Installation:<br />
+1.Click on the home link to download the plugin.<br />
+2. Alternatively use the update site to directly install from eclipse</p>
+<p>New: Open location feature displays favorites and recent documents in windows<br />
+Icon Viewer to preview icons in workspace.</p>
+]]></body>
+      <created>1308763971</created>
+      <changed>1358160480</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://cricket-score-notifier.googlecode.com/svn/update-site/GoogleSearchUpdateSite/plugins/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/google_128.png?itok=PqnzT8Eh]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/GoogleSearch1.jpg?itok=nJsrySZt]]></screenshot>
+      <version></version>
+      <license>Free for non-commerical use</license>
+      <companyname><![CDATA[Prasad]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://cricket-score-notifier.googlecode.com/svn/update-site/GoogleSearchUpdateSite/]]></updateurl>
+<ius>
+<iu>GoogleSearchFeature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

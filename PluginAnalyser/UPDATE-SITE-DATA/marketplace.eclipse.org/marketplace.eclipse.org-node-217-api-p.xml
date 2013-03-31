@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="217" name="soapui-eclipse-plugin" url="http://marketplace.eclipse.org/content/soapui-eclipse-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='21' name='Web Services' url='http://marketplace.eclipse.org/taxonomy/term/21'/>
+      </categories>
+      <tags>
+        <tag id='244' name='soap' url='http://marketplace.eclipse.org/category/free-tagging/soap'/>
+        <tag id='2204' name='http:/%2Fwww.soapui.org/eclipse/update' url='http://marketplace.eclipse.org/category/free-tagging/http2fwwwsoapuiorgeclipseupdate'/>
+      </tags>
+      
+      <owner>Ole Matzura</owner>
+      <favorited>30</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>soapUI is a desktop application for inspecting, invoking, mocking and testing (functional and load) of SOAP/WSDL and REST/EADL based Web Services over HTTP. It is mainly aimed at developers/testers providing and/or consuming web services (java, .net, etc). </p>
+<p>The soapui-eclipse-plugin supports all features available in soapUI and also add a few eclipse-specific ones;<br />
+- a soapUI Nature that displays an integrated soapUI project in the Project Explorer and simplifies code-generation wizards<br />
+- a soapUI Perspective</p>
+]]></shortdescription>
+      <body><![CDATA[<p>soapUI is a desktop application for inspecting, invoking, mocking and testing (functional and load) of SOAP/WSDL and REST/EADL based Web Services over HTTP. It is mainly aimed at developers/testers providing and/or consuming web services (java, .net, etc). </p>
+<p>The soapui-eclipse-plugin supports all features available in soapUI and also add a few eclipse-specific ones;<br />
+- a soapUI Nature that displays an integrated soapUI project in the Project Explorer and simplifies code-generation wizards<br />
+- a soapUI Perspective</p>
+]]></body>
+      <created>1148911041</created>
+      <changed>1259778567</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.soapui.org/eclipse/index.html]]></homepageurl>
+      <image><![CDATA[http://www.soapui.org/images/EviwareLogo.gif]]></image>
+      <version>3.0</version>
+      <license>Free LGPL</license>
+      <companyname><![CDATA[eviware]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4+]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eviware.com/forum]]></supporturl>
+      <updateurl><![CDATA[http://www.soapui.org/eclipse/update]]></updateurl>
+    </node>
+    </marketplace>
+    

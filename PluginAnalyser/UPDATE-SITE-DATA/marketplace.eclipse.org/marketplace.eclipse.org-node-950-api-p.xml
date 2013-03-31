@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="950" name="Atlassian Connector for Eclipse" url="http://marketplace.eclipse.org/content/atlassian-connector-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='38' name='Mylyn Connectors' url='http://marketplace.eclipse.org/category/categories/mylyn-connectors'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='51' name='IDE' url='http://marketplace.eclipse.org/category/free-tagging/ide'/>
+        <tag id='88' name='mylyn' url='http://marketplace.eclipse.org/category/free-tagging/mylyn'/>
+        <tag id='89' name='JIRA' url='http://marketplace.eclipse.org/category/free-tagging/jira'/>
+        <tag id='90' name='issue' url='http://marketplace.eclipse.org/category/free-tagging/issue'/>
+        <tag id='91' name='bug' url='http://marketplace.eclipse.org/category/free-tagging/bug'/>
+      </tags>
+      
+      <owner>Atlassian  </owner>
+      <favorited>62</favorited>
+      <installstotal>26276</installstotal>
+      <installsrecent>1257</installsrecent>
+      <shortdescription><![CDATA[<p>The Atlassian Connector for Eclipse allows you to manage JIRA issues and Bamboo builds without leaving the IDE.  It is built on top of the Mylyn task interface.</p>
+<p>Atlassian Connector for Eclipse is an open source project sponsored by Atlassian.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The Atlassian Connector for Eclipse allows you to manage JIRA issues and Bamboo builds without leaving the IDE.  It is built on top of the Mylyn task interface.</p>
+<p>Atlassian Connector for Eclipse is an open source project sponsored by Atlassian.</p>
+]]></body>
+      <created>1245072172</created>
+      <changed>1355834973</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.atlassian.com/software/ideconnector/eclipse.jsp?src=eclipsemarketplace]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/128atlassian.png?itok=1xtsaEQ9]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/jira.png?itok=oqwU_SC1]]></screenshot>
+      <version>3.0.7</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Atlassian]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6+]]></eclipseversion>
+      <supporturl><![CDATA[https://answers.atlassian.com/tags/eclipse/]]></supporturl>
+      <updateurl><![CDATA[http://update.atlassian.com/atlassian-eclipse-plugin/e3.8]]></updateurl>
+<ius>
+<iu>com.atlassian.connector.eclipse</iu>
+<iu>com.atlassian.connector.eclipse.jira</iu>
+<iu>com.atlassian.connector.eclipse.bamboo</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

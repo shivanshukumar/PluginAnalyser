@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="151873" name="Agile Pseudocode Development Tool" url="http://marketplace.eclipse.org/content/agile-pseudocode-development-tool">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='1964' name='Application Development Frameworks' url='http://marketplace.eclipse.org/category/categories/application-development-frameworks'/>
+      </categories>
+      <tags>
+        <tag id='43' name='PHP' url='http://marketplace.eclipse.org/category/free-tagging/php'/>
+        <tag id='306' name='design' url='http://marketplace.eclipse.org/category/free-tagging/design'/>
+        <tag id='389' name='documentation' url='http://marketplace.eclipse.org/category/free-tagging/documentation'/>
+        <tag id='394' name='education' url='http://marketplace.eclipse.org/category/free-tagging/education'/>
+        <tag id='810' name='javascript' url='http://marketplace.eclipse.org/category/free-tagging/javascript'/>
+      </tags>
+      
+      <owner>Giorgio Natili</owner>
+      <favorited>3</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Envision - Agile Pseudocode Development Tool (APDT) speeds up planning and application modeling. The tool helps decrease the gap between developers and non-technical guys on a project, so you can make sure that the software will match the customers expectations. In order to make the modeling phase of a project compelling, we tried avoiding any formality (e.g. UML rules and syntax) and left as much liberty as possible in a way models can be created. Many developers find modeling and planning time wasting, however, with Envision APDT you can export a model in your preferred programming language:</p>
+<p>- Java<br />
+- ActionScript<br />
+- PHP<br />
+- JavaScript<br />
+- haXe</p>
+<p> Envision APDT makes each planning phase output a useful blueprint, which can be used later for coding and documenting.<br />
+In the  1.1 version it's now possible to get more information in the model overview panel such as author, last change date, creation date, etc. and to add and save text in the window at the bottom of the view.<br />
+The 1.1 version contains a pretty well integrated help.<br />
+Since the release 1.1.2 the plugin generate haXe source code and is compliant also with FDT, an Eclipse based IDE for Flash and haXe developers.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Envision - Agile Pseudocode Development Tool (APDT) speeds up planning and application modeling. The tool helps decrease the gap between developers and non-technical guys on a project, so you can make sure that the software will match the customers expectations. In order to make the modeling phase of a project compelling, we tried avoiding any formality (e.g. UML rules and syntax) and left as much liberty as possible in a way models can be created. Many developers find modeling and planning time wasting, however, with Envision APDT you can export a model in your preferred programming language:</p>
+<p>- Java<br />
+- ActionScript<br />
+- PHP<br />
+- JavaScript<br />
+- haXe</p>
+<p> Envision APDT makes each planning phase output a useful blueprint, which can be used later for coding and documenting.<br />
+In the  1.1 version it's now possible to get more information in the model overview panel such as author, last change date, creation date, etc. and to add and save text in the window at the bottom of the view.<br />
+The 1.1 version contains a pretty well integrated help.<br />
+Since the release 1.1.2 the plugin generate haXe source code and is compliant also with FDT, an Eclipse based IDE for Flash and haXe developers.</p>
+]]></body>
+      <created>1321198834</created>
+      <changed>1331839936</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.envision-apdt.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/badge_envision2.png?itok=cqhXnV__]]></image>
+      <version>1.1.2</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[GNstudio s.r.l.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5, 3.6, 3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://www.envision-apdt.com/support]]></supporturl>
+      <updateurl><![CDATA[http://apdt.gnstudio.biz/updatesite/1.0/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

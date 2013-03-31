@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="908" name="Thrfit For Eclipse" url="http://marketplace.eclipse.org/content/thrfit-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+      </categories>
+            
+      <owner>Alno</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Eclipse plugin, providing editing capabilities for thrift service files.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Eclipse plugin, providing editing capabilities for thrift service files.</p>
+]]></body>
+      <created>1239023389</created>
+      <changed>1259779221</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://thrift4eclipse.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>0.0.2</version>
+      <license>Other</license>
+      <companyname><![CDATA[]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://]]></supporturl>
+      <updateurl><![CDATA[http://thrift4eclipse.sourceforge.net/updatesite/]]></updateurl>
+    </node>
+    </marketplace>
+    

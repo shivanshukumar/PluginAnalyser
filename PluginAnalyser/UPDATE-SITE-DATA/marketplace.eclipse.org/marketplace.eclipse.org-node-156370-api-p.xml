@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="156370" name="Q7 Test Development Environment Add-on" url="http://marketplace.eclipse.org/content/q7-test-development-environment-add">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='2241' name='automated testing' url='http://marketplace.eclipse.org/category/free-tagging/automated-testing'/>
+        <tag id='2347' name='test management' url='http://marketplace.eclipse.org/category/free-tagging/test-management'/>
+        <tag id='2348' name='q7 add-on' url='http://marketplace.eclipse.org/category/free-tagging/q7-add'/>
+      </tags>
+      
+      <owner>Ivan Inozemtsev</owner>
+      <favorited>0</favorited>
+      <installstotal>112</installstotal>
+      <installsrecent>10</installsrecent>
+      <shortdescription><![CDATA[<p>This add-on turns <a href="http://www.xored.com/q7">Q7 Platform</a> into a development environment for your functional tests</p>
+<ul><li>Modify captured test case scripts to use custom commands or powerful regex selectors/assertions</li>
+<li>Connect to applications-under-development launched from Eclipse</li>
+<li>USe global search/replace to modify all test codebase</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>This add-on turns <a href="http://www.xored.com/q7">Q7 Platform</a> into a development environment for your functional tests</p>
+<ul><li>Modify captured test case scripts to use custom commands or powerful regex selectors/assertions</li>
+<li>Connect to applications-under-development launched from Eclipse</li>
+<li>USe global search/replace to modify all test codebase</li>
+</ul>]]></body>
+      <created>1321865210</created>
+      <changed>1321892339</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.xored.com/q7]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/ecl-l.png?itok=CPTaG42p]]></image>
+      <version>1.1.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[xored Software, Inc]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5 - 3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://support.xored.com/categories/20011462-q7-functional-and-ui-testing]]></supporturl>
+      <updateurl><![CDATA[http://dl.xored.com/q7/repository]]></updateurl>
+<ius>
+<iu>com.xored.q7.module.ide</iu>
+<iu>com.xored.q7.platform</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

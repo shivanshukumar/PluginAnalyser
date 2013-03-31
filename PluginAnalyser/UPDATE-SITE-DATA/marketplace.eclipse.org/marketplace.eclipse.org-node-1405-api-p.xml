@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1405" name="Eclipse Communications Framework - ECF" url="http://marketplace.eclipse.org/content/eclipse-communications-framework-ecf">
+      <type>resource</type>
+      <categories>
+        <category id='1' name='Application Server' url='http://marketplace.eclipse.org/taxonomy/term/1'/>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='12' name='Network' url='http://marketplace.eclipse.org/taxonomy/term/12'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='21' name='Web Services' url='http://marketplace.eclipse.org/taxonomy/term/21'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='27' name='J2ME' url='http://marketplace.eclipse.org/taxonomy/term/27'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+        <category id='1964' name='Application Development Frameworks' url='http://marketplace.eclipse.org/category/categories/application-development-frameworks'/>
+        <category id='1968' name='Collaboration' url='http://marketplace.eclipse.org/category/categories/collaboration'/>
+      </categories>
+      <tags>
+        <tag id='187' name='ECF' url='http://marketplace.eclipse.org/category/free-tagging/ecf'/>
+        <tag id='425' name='server' url='http://marketplace.eclipse.org/category/free-tagging/server'/>
+        <tag id='894' name='Communications' url='http://marketplace.eclipse.org/category/free-tagging/communications'/>
+        <tag id='968' name='OSGI Remote Services' url='http://marketplace.eclipse.org/category/free-tagging/osgi-remote-services'/>
+        <tag id='969' name='Messaging' url='http://marketplace.eclipse.org/category/free-tagging/messaging'/>
+      </tags>
+      
+      <owner>Wim Jongman</owner>
+      <favorited>12</favorited>
+      <installstotal>3110</installstotal>
+      <installsrecent>82</installsrecent>
+      <shortdescription><![CDATA[<p>ECF is a framework for building distributed servers, applications, and tools. It provides a modular implementation of the OSGi Remote Services standard and implements the OSGi RSA Specification. ECF 3.5.6 also supports REST-based and SOAP-based remote services and asynchronous messaging for remote services.</p>
+<p>See the ECF Wiki for examples, tutorials, other documentation, as well as plans and efforts currently underway for future releases.</p>
+<p><a href="http://www.eclipse.org/ecf">http://www.eclipse.org/ecf</a><br /><a href="http://wiki.eclipse.org/EIG:Integrators_Guide">http://wiki.eclipse.org/EIG:Integrators_Guide</a><br /><a href="http://wiki.eclipse.org/EUG:Users_Guide">http://wiki.eclipse.org/EUG:Users_Guide</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>ECF is a framework for building distributed servers, applications, and tools. It provides a modular implementation of the OSGi Remote Services standard and implements the OSGi RSA Specification. ECF 3.5.6 also supports REST-based and SOAP-based remote services and asynchronous messaging for remote services.</p>
+<p>See the ECF Wiki for examples, tutorials, other documentation, as well as plans and efforts currently underway for future releases.</p>
+<p><a href="http://www.eclipse.org/ecf">http://www.eclipse.org/ecf</a><br /><a href="http://wiki.eclipse.org/EIG:Integrators_Guide">http://wiki.eclipse.org/EIG:Integrators_Guide</a><br /><a href="http://wiki.eclipse.org/EUG:Users_Guide">http://wiki.eclipse.org/EUG:Users_Guide</a></p>
+]]></body>
+      <created>1277298140</created>
+      <changed>1341348544</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.eclipse.org/ecf]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/eclipselogo110x80.png?itok=ReF6M93c]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/marketplace_0.png?itok=QypvLDCt]]></screenshot>
+      <version>3.5.6</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Eclipse]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[4.2.0]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eclipse.org/ecf/downloads.php]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/rt/ecf/3.5.6/site.p2]]></updateurl>
+<ius>
+<iu>org.eclipse.ecf.core.feature.group</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

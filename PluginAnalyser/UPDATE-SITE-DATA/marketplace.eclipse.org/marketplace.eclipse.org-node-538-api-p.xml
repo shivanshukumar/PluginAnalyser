@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="538" name="Eclipse ARM Development Tools - ArmDT" url="http://marketplace.eclipse.org/content/eclipse-arm-development-tools-armdt">
+      <type>resource</type>
+      <categories>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+      <tags>
+        <tag id='327' name='eclipse' url='http://marketplace.eclipse.org/category/free-tagging/eclipse'/>
+        <tag id='573' name='tools' url='http://marketplace.eclipse.org/category/free-tagging/tools'/>
+        <tag id='1015' name='Arm' url='http://marketplace.eclipse.org/category/free-tagging/arm'/>
+        <tag id='1232' name='Development' url='http://marketplace.eclipse.org/category/free-tagging/development'/>
+        <tag id='2615' name='ArmDT' url='http://marketplace.eclipse.org/category/free-tagging/armdt'/>
+      </tags>
+      
+      <owner>Richie.H</owner>
+      <favorited>2</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>FREE Arm Development Tools, support ARM Cortex-M3 CPUs, including project management, compiler, debugger etc. consist of many plugins based on Eclipse framework.<p></p>
+<p>Features  <br><br />
+ - Free download and use<br><br />
+ - Eclipse Integrated Development Environment <br><br />
+ - Support Luminary Cortex-M3 Series CPUs such as LM3S811/818/102/2950/6965 etc. <br><br />
+ - GNU toolchain for Cortex-M3 <br><br />
+ - Includes project management, builder and debugger<br><br />
+ - Source-level, Assembly-level and Alternate-level Debugging<br><br />
+ - Support JTAG cable with LPT or USB, anyone can make by himself or low-cost to order  <p><br />
+Please Download and Unzip one file: <b><a href="http://www.emedt.com/eclipse/armdt-allinone.zip</b>">http://www.emedt.com/eclipse/armdt-allinone.zip</b></a>, ArmDT will work normal.<br><br />
+Here is a screen shot of ArmDT debugger: <a src=<a href="http://www.emedt.com/forum/upload/debugger-armdt.gif>Debgging">http://www.emedt.com/forum/upload/debugger-armdt.gif>Debgging</a> Cortex-M3</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>FREE Arm Development Tools, support ARM Cortex-M3 CPUs, including project management, compiler, debugger etc. consist of many plugins based on Eclipse framework.<p></p>
+<p>Features  <br><br />
+ - Free download and use<br><br />
+ - Eclipse Integrated Development Environment <br><br />
+ - Support Luminary Cortex-M3 Series CPUs such as LM3S811/818/102/2950/6965 etc. <br><br />
+ - GNU toolchain for Cortex-M3 <br><br />
+ - Includes project management, builder and debugger<br><br />
+ - Source-level, Assembly-level and Alternate-level Debugging<br><br />
+ - Support JTAG cable with LPT or USB, anyone can make by himself or low-cost to order  <p><br />
+Please Download and Unzip one file: <b><a href="http://www.emedt.com/eclipse/armdt-allinone.zip</b>">http://www.emedt.com/eclipse/armdt-allinone.zip</b></a>, ArmDT will work normal.<br><br />
+Here is a screen shot of ArmDT debugger: <a src=<a href="http://www.emedt.com/forum/upload/debugger-armdt.gif>Debgging">http://www.emedt.com/forum/upload/debugger-armdt.gif>Debgging</a> Cortex-M3</a></p>
+]]></body>
+      <created>1189017313</created>
+      <changed>1259778835</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.emedt.com/armdt]]></homepageurl>
+      <image><![CDATA[http://www.emedt.com/images/bdt/bdt-lg.gif]]></image>
+      <version>1.0.2</version>
+      <license>Other</license>
+      <companyname><![CDATA[EMEDT.COM]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.3]]></eclipseversion>
+      <supporturl><![CDATA[http://www.emedt.com/forum]]></supporturl>
+      <updateurl><![CDATA[http://www.emedt.com/eclipse/armdt]]></updateurl>
+    </node>
+    </marketplace>
+    

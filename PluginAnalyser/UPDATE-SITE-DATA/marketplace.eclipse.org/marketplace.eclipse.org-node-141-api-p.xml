@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="141" name="RSS View" url="http://marketplace.eclipse.org/content/rss-view">
+      <type>resource</type>
+      <categories>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='7' name='Entertainment' url='http://marketplace.eclipse.org/taxonomy/term/7'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+      </categories>
+            
+      <owner>Markus Junginger</owner>
+      <favorited>5</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>RSS View is an RSS/Atom reader whose compact UI is designed to integrate into Eclipse and coexist with your workbench. You have everything at one place. RSS View may also improve your development process by integrating your bug tracker, development forum or wiki directly in your IDE. Features include grouping and filtering news feed items, offline feeds, and several customizations.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>RSS View is an RSS/Atom reader whose compact UI is designed to integrate into Eclipse and coexist with your workbench. You have everything at one place. RSS View may also improve your development process by integrating your bug tracker, development forum or wiki directly in your IDE. Features include grouping and filtering news feed items, offline feeds, and several customizations.</p>
+]]></body>
+      <created>1113172392</created>
+      <changed>1260918792</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.junginger.biz/eclipse]]></homepageurl>
+      <image><![CDATA[http://www.junginger.biz/eclipse/rss-view-1-4-110x80.gif]]></image>
+      <version>1.4.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Markus Junginger]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2+]]></eclipseversion>
+      <supporturl><![CDATA[http://www.junginger.biz/eclipse/rss-view-documentation.html]]></supporturl>
+      <updateurl><![CDATA[http://www.junginger.biz/eclipse/]]></updateurl>
+    </node>
+    </marketplace>
+    

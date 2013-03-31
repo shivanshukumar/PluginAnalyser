@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="101" name="Log4E" url="http://marketplace.eclipse.org/content/log4e">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='37' name='Logging' url='http://marketplace.eclipse.org/category/categories/logging'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='431' name='logging' url='http://marketplace.eclipse.org/category/free-tagging/logging'/>
+        <tag id='165' name='code generation' url='http://marketplace.eclipse.org/category/free-tagging/code-generation'/>
+        <tag id='2419' name='log4j' url='http://marketplace.eclipse.org/category/free-tagging/log4j'/>
+        <tag id='2702' name='slf4j' url='http://marketplace.eclipse.org/category/free-tagging/slf4j'/>
+        <tag id='2823' name='Jakarta Commons Logging' url='http://marketplace.eclipse.org/taxonomy/term/2823'/>
+      </tags>
+      
+      <owner>Jan-Friedrich Mutter</owner>
+      <favorited>33</favorited>
+      <installstotal>1900</installstotal>
+      <installsrecent>59</installsrecent>
+      <shortdescription><![CDATA[Log4E is an Eclipse Plugin which helps you to set up your logger easily in Java Projects. It assists you in several tasks: logger declaration, logger Insertions at certain method entries, substitution of System out's, modification of already existing logger statements. 
+Log4E has active support for Log4j, SLF4J, Commons Logging and JDK 1.4 Logging. By defining your own templates you might be able to adapt your own logger to the Plugin.]]></shortdescription>
+      <body><![CDATA[Log4E is an Eclipse Plugin which helps you to set up your logger easily in Java Projects. It assists you in several tasks: logger declaration, logger Insertions at certain method entries, substitution of System out's, modification of already existing logger statements. 
+Log4E has active support for Log4j, SLF4J, Commons Logging and JDK 1.4 Logging. By defining your own templates you might be able to adapt your own logger to the Plugin.]]></body>
+      <created>1083706443</created>
+      <changed>1351375213</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://log4e.jayefem.de]]></homepageurl>
+      <image><![CDATA[http://log4e.jayefem.de/images/log4e-logo_110x80.gif]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/ScreenShot%20092%20.jpg?itok=rLFYbvNy]]></screenshot>
+      <version>1.4.2</version>
+      <license>Other</license>
+      <companyname><![CDATA[Jan-Friedrich Mutter]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.x]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://log4e.jayefem.de/update]]></updateurl>
+<ius>
+<iu>de.jayefem.log4e</iu>
+</ius>
+    </node>
+    </marketplace>
+    

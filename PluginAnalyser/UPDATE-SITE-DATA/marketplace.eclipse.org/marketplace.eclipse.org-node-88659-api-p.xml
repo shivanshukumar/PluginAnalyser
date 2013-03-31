@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="88659" name="ERO - Eclipse Resource Organizer" url="http://marketplace.eclipse.org/content/ero-eclipse-resource-organizer">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='1972' name='General Purpose Tools' url='http://marketplace.eclipse.org/category/categories/general-purpose-tools'/>
+      </categories>
+            
+      <owner>eroplugin</owner>
+      <favorited>2</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The ERO (Eclipse Resource Organizer) 'Open Editors' plugin adds<br />
+a new view to the eclipse platform that allows the user to organize<br />
+open editors into 'groups'. In addition, the plugin allows the<br />
+user to 'colorize' entries displayed in the view based on ANT style<br />
+filter criteria.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The ERO (Eclipse Resource Organizer) 'Open Editors' plugin adds<br />
+a new view to the eclipse platform that allows the user to organize<br />
+open editors into 'groups'. In addition, the plugin allows the<br />
+user to 'colorize' entries displayed in the view based on ANT style<br />
+filter criteria.</p>
+]]></body>
+      <created>1310945209</created>
+      <changed>1311170196</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.eroplugin.blogspot.com/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/viewModified.png?itok=vGVMqlf9]]></screenshot>
+      <version>1.0.7</version>
+      <license>Other</license>
+      <companyname><![CDATA[ERO]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.4 (and higher)]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eroplugin.blogspot.com/]]></supporturl>
+      <updateurl><![CDATA[http://www.popularjava.com/ERO/UPDATE/plugins/com.popularjava.ero.openeditors.plugin_1.0.7.jar]]></updateurl>
+<ius>
+<iu>com.popularjava.ero.openeditors.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

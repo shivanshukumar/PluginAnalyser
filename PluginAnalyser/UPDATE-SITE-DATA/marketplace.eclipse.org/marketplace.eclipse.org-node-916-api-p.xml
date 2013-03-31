@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="916" name="Totality (Vim modes)" url="http://marketplace.eclipse.org/content/totality-vim-modes">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+            
+      <owner>goj</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Totality is Vim compatibility brought to Eclipse IDE. It thrives to give you the finger-feel and modal power of Vim and power of Eclipse IDE at the same time.</p>
+<p>Totality not an Eclipse editor. It integrates with existing editors (such as JDT's Java editor or CDT's C/C++ editor) allowing you to utilize all their language-specific power.</p>
+<p>Totality is an Open Source project licensed under terms of GNU GPL 3.0.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Totality is Vim compatibility brought to Eclipse IDE. It thrives to give you the finger-feel and modal power of Vim and power of Eclipse IDE at the same time.</p>
+<p>Totality not an Eclipse editor. It integrates with existing editors (such as JDT's Java editor or CDT's C/C++ editor) allowing you to utilize all their language-specific power.</p>
+<p>Totality is an Open Source project licensed under terms of GNU GPL 3.0.</p>
+]]></body>
+      <created>1239023871</created>
+      <changed>1259779230</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.assembla.com/spaces/totality]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>0.1</version>
+      <license>Free GPL</license>
+      <companyname><![CDATA[Krzysztof Goj]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://totality.dontexist.org/update-site/site.xml]]></updateurl>
+    </node>
+    </marketplace>
+    

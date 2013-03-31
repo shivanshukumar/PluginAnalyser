@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="751" name="Oracle Enterprise Pack for Eclipse Juno" url="http://marketplace.eclipse.org/content/oracle-enterprise-pack-eclipse-juno">
+      <type>resource</type>
+      <categories>
+        <category id='1' name='Application Server' url='http://marketplace.eclipse.org/taxonomy/term/1'/>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+        <category id='36' name='Database Persistence' url='http://marketplace.eclipse.org/category/categories/database-persistence'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='1967' name='Web, XML, Java EE and OSGi Enterprise Development' url='http://marketplace.eclipse.org/category/categories/web-xml-java-ee-and-osgi-enterprise-development'/>
+      </categories>
+      <tags>
+        <tag id='155' name='oracle' url='http://marketplace.eclipse.org/category/free-tagging/oracle'/>
+        <tag id='2974' name='Sun' url='http://marketplace.eclipse.org/taxonomy/term/2974'/>
+        <tag id='470' name='OEPE' url='http://marketplace.eclipse.org/category/free-tagging/oepe'/>
+        <tag id='422' name='java ee' url='http://marketplace.eclipse.org/category/free-tagging/java-ee'/>
+        <tag id='134' name='J2EE' url='http://marketplace.eclipse.org/category/free-tagging/j2ee'/>
+      </tags>
+      
+      <owner>Konstantin Komissarchik</owner>
+      <favorited>54</favorited>
+      <installstotal>18834</installstotal>
+      <installsrecent>511</installsrecent>
+      <shortdescription><![CDATA[<p>Oracle Enterprise Pack for Eclipse (OEPE) is a bundle of tools covering a wide range of Oracle technologies.</p>
+
+<ul><li>Oracle ADF Tools</li>
+    <li>Oracle Cloud Tools</li>
+    <li>Oracle Coherence Tools</li>
+    <li>Oracle Database Tools</li>
+    <li>Oracle WebLogic Server Tools</li>
+    <li>GlassFish Tools</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>Oracle Enterprise Pack for Eclipse (OEPE) is a bundle of tools covering a wide range of Oracle technologies.</p>
+
+<ul><li>Oracle ADF Tools</li>
+    <li>Oracle Cloud Tools</li>
+    <li>Oracle Coherence Tools</li>
+    <li>Oracle Database Tools</li>
+    <li>Oracle WebLogic Server Tools</li>
+    <li>GlassFish Tools</li>
+</ul>]]></body>
+      <created>1219681752</created>
+      <changed>1363186324</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.oracle.com/technetwork/developer-tools/eclipse/overview/index.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/OracleMarketplaceLogo_14.png?itok=QELynSiQ]]></image>
+      <version></version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[Oracle Corporation]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.8.x and 4.2.x]]></eclipseversion>
+      <supporturl><![CDATA[http://forums.oracle.com/forums/forum.jspa?forumID=578]]></supporturl>
+      <updateurl><![CDATA[http://download.oracle.com/otn_software/oepe/juno]]></updateurl>
+<ius>
+<iu>oracle.eclipse.tools.juno.oepe.product.feature.group</iu>
+</ius>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="787" name="SvnAdmin" url="http://marketplace.eclipse.org/content/svnadmin">
+      <type>resource</type>
+      <categories>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='26' name='SCM' url='http://marketplace.eclipse.org/taxonomy/term/26'/>
+      </categories>
+            
+      <owner>Francisco  ortázar</owner>
+      <favorited>4</favorited>
+      <installstotal>9035</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[SvnAdmin is a Subversion administration tool for Eclipse. It is provided as an Eclipse plug-in, and it supports the following features:
+
+    * User administration
+    * Repository administration
+    * User-repository association
+    * User permission management
+
+The aim of the tool is to allow (small) developer teams or individuals to manage several Subversion servers remotely, without any knowledge of Subversion administrative tools and without leaving the development environment (the IDE). During development new projects are created and developers may want to have a repository available for them as soon as possible. Having such a tool integrated in the IDE makes the administration of users and repositories more agile.]]></shortdescription>
+      <body><![CDATA[SvnAdmin is a Subversion administration tool for Eclipse. It is provided as an Eclipse plug-in, and it supports the following features:
+
+    * User administration
+    * Repository administration
+    * User-repository association
+    * User permission management
+
+The aim of the tool is to allow (small) developer teams or individuals to manage several Subversion servers remotely, without any knowledge of Subversion administrative tools and without leaving the development environment (the IDE). During development new projects are created and developers may want to have a repository available for them as soon as possible. Having such a tool integrated in the IDE makes the administration of users and repositories more agile.]]></body>
+      <created>1224171098</created>
+      <changed>1273778932</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://sourceforge.net/projects/esvnadmin/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>0.9.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[sidelab]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.3, 3.4, 3.5, 3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/forum/forum.php?forum_id=874093]]></supporturl>
+      <updateurl><![CDATA[http://www.gavab.es/downloads/svnadmin/]]></updateurl>
+<ius>
+<iu>es.gavab.svnadmin</iu>
+</ius>
+    </node>
+    </marketplace>
+    

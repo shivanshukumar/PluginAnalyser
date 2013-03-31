@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="16365" name="Gendoc2" url="http://marketplace.eclipse.org/content/gendoc2">
+      <type>resource</type>
+      <categories>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+      </categories>
+      <tags>
+        <tag id='186' name='EMF' url='http://marketplace.eclipse.org/category/free-tagging/emf'/>
+        <tag id='1236' name='m2t' url='http://marketplace.eclipse.org/category/free-tagging/m2t'/>
+        <tag id='1287' name='word' url='http://marketplace.eclipse.org/category/free-tagging/word'/>
+        <tag id='1288' name='openoffice' url='http://marketplace.eclipse.org/category/free-tagging/openoffice'/>
+        <tag id='1289' name='docx' url='http://marketplace.eclipse.org/category/free-tagging/docx'/>
+      </tags>
+      
+      <owner>Anne HAUGOMMARD</owner>
+      <favorited>6</favorited>
+      <installstotal>145</installstotal>
+      <installsrecent>4</installsrecent>
+      <shortdescription><![CDATA[<p>TOPCASED Gendoc2 is an innovative solution to generate documents from EMF models, compatible with OpenOffice (.odt) and Office 2007(.docx) documents,<br />
+available on the following update site :<br /><a href="http://topcased-gendoc.gforge.enseeiht.fr/releases/1.7.0/">http://topcased-gendoc.gforge.enseeiht.fr/releases/1.7.0/</a></p>
+<p>Tutorial at : <a href="http://gforge.enseeiht.fr/docman/view.php/102/4797/TPC_GenDoc2_v1.7.0_tutorial.pdf">http://gforge.enseeiht.fr/docman/view.php/102/4797/TPC_GenDoc2_v1.7.0_tu...</a></p>
+<p>For example, you can generate completely your Specification document from your UML models. </p>
+<p>Inside a .docx or .odt document template, you can :<br />
+    * reference your EMF models<br />
+    * write static parts<br />
+    * write M2T Acceleo scripts for dynamic parts directly inside your template<br />
+         (For advanced usage, you can create your custom Acceleo services and reference them inside external bundles)<br />
+    * use styles inside your scripts parts that will be kept after generation</p>
+<p>Inside your generated document, the scripts are replaced by model content, and can contain :<br />
+    * formatted text<br />
+    * images<br />
+    * tables<br />
+    * rich text content ( add specific Rich text feature)</p>
+<p>The generation can be launched in Batch mode (add batch mode feature)</p>
+<p>You can also use gendoc2 with TOPCASED models, GMF models, EPF models, PAPYRUS Models.</p>
+<p>For more information on Gendoc2, have a look at : <a href="http://eclipseatos.blogspot.com/search/label/Gendoc2">http://eclipseatos.blogspot.com/search/label/Gendoc2</a></p>
+<p>Flash presentations are available at :<br /><a href="http://gforge.enseeiht.fr/docman/view.php/102/3893/tutorial1.zip">http://gforge.enseeiht.fr/docman/view.php/102/3893/tutorial1.zip</a><br /><a href="http://gforge.enseeiht.fr/docman/view.php/102/3894/tutorial2.zip">http://gforge.enseeiht.fr/docman/view.php/102/3894/tutorial2.zip</a><br /><a href="http://gforge.enseeiht.fr/docman/view.php/102/3895/tutorial3.zip">http://gforge.enseeiht.fr/docman/view.php/102/3895/tutorial3.zip</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>TOPCASED Gendoc2 is an innovative solution to generate documents from EMF models, compatible with OpenOffice (.odt) and Office 2007(.docx) documents,<br />
+available on the following update site :<br /><a href="http://topcased-gendoc.gforge.enseeiht.fr/releases/1.7.0/">http://topcased-gendoc.gforge.enseeiht.fr/releases/1.7.0/</a></p>
+<p>Tutorial at : <a href="http://gforge.enseeiht.fr/docman/view.php/102/4797/TPC_GenDoc2_v1.7.0_tutorial.pdf">http://gforge.enseeiht.fr/docman/view.php/102/4797/TPC_GenDoc2_v1.7.0_tu...</a></p>
+<p>For example, you can generate completely your Specification document from your UML models. </p>
+<p>Inside a .docx or .odt document template, you can :<br />
+    * reference your EMF models<br />
+    * write static parts<br />
+    * write M2T Acceleo scripts for dynamic parts directly inside your template<br />
+         (For advanced usage, you can create your custom Acceleo services and reference them inside external bundles)<br />
+    * use styles inside your scripts parts that will be kept after generation</p>
+<p>Inside your generated document, the scripts are replaced by model content, and can contain :<br />
+    * formatted text<br />
+    * images<br />
+    * tables<br />
+    * rich text content ( add specific Rich text feature)</p>
+<p>The generation can be launched in Batch mode (add batch mode feature)</p>
+<p>You can also use gendoc2 with TOPCASED models, GMF models, EPF models, PAPYRUS Models.</p>
+<p>For more information on Gendoc2, have a look at : <a href="http://eclipseatos.blogspot.com/search/label/Gendoc2">http://eclipseatos.blogspot.com/search/label/Gendoc2</a></p>
+<p>Flash presentations are available at :<br /><a href="http://gforge.enseeiht.fr/docman/view.php/102/3893/tutorial1.zip">http://gforge.enseeiht.fr/docman/view.php/102/3893/tutorial1.zip</a><br /><a href="http://gforge.enseeiht.fr/docman/view.php/102/3894/tutorial2.zip">http://gforge.enseeiht.fr/docman/view.php/102/3894/tutorial2.zip</a><br /><a href="http://gforge.enseeiht.fr/docman/view.php/102/3895/tutorial3.zip">http://gforge.enseeiht.fr/docman/view.php/102/3895/tutorial3.zip</a></p>
+]]></body>
+      <created>1287741347</created>
+      <changed>1358430976</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://gforge.enseeiht.fr/docman/view.php/102/4797/TPC_GenDoc2_v1.7.0_tutorial.pdf]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Gendoc2_logo_small.jpg?itok=Oog1vpy7]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Gendoc.gif?itok=2GbIpkCI]]></screenshot>
+      <version>v1.7.0 (compatible with Indigo)</version>
+      <license>EPL</license>
+      <companyname><![CDATA[TOPCASED]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://gforge.enseeiht.fr/docman/view.php/52/4324/C2-Atos.pdf]]></supporturl>
+      <updateurl><![CDATA[http://topcased-gendoc.gforge.enseeiht.fr/releases/1.7.0/]]></updateurl>
+<ius>
+<iu>org.topcased.gendoc2.standalone.feature</iu>
+<iu>org.topcased.documentimporter</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

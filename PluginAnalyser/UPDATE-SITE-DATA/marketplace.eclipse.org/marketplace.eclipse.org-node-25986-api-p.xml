@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="25986" name="FindNPE" url="http://marketplace.eclipse.org/content/findnpe">
+      <type>resource</type>
+      <categories>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='211' name='static analysis' url='http://marketplace.eclipse.org/category/free-tagging/static-analysis'/>
+        <tag id='1483' name='npe' url='http://marketplace.eclipse.org/category/free-tagging/npe'/>
+        <tag id='1484' name='nullpointer' url='http://marketplace.eclipse.org/category/free-tagging/nullpointer'/>
+        <tag id='1485' name='nullpointerexception' url='http://marketplace.eclipse.org/category/free-tagging/nullpointerexception'/>
+        <tag id='1486' name='java bugs' url='http://marketplace.eclipse.org/category/free-tagging/java-bugs'/>
+      </tags>
+      
+      <owner>inspat</owner>
+      <favorited>5</favorited>
+      <installstotal>69</installstotal>
+      <installsrecent>1</installsrecent>
+      <shortdescription><![CDATA[FindNPE is a NPE detection tool for Java/Eclipse that statically identifies potential null pointer dereferences in Java code. FindNPE offers 3 annotations (@NonNull, @CanBeNull and @NonNullByDefault) so that programmers can specify for any variable whether it is allowed/forbidden to be null (design by contract). Thus, NPE detection can be very precise. 
+
+FindNPE integrates seamlessly into Eclipse's Java compiler (JDT), it is not required to be triggered manually. Thus, the Problems view is actually the main interface of FindNPE to the programmer, reporting any NPE hazards or violations against nullibility contracts stated by annotations. For each reported problem, normally several solution proposals are offered.
+
+In a bundle called PingPong, FindNPE is delivered with two other Java tools, which are independent of each other.]]></shortdescription>
+      <body><![CDATA[FindNPE is a NPE detection tool for Java/Eclipse that statically identifies potential null pointer dereferences in Java code. FindNPE offers 3 annotations (@NonNull, @CanBeNull and @NonNullByDefault) so that programmers can specify for any variable whether it is allowed/forbidden to be null (design by contract). Thus, NPE detection can be very precise. 
+
+FindNPE integrates seamlessly into Eclipse's Java compiler (JDT), it is not required to be triggered manually. Thus, the Problems view is actually the main interface of FindNPE to the programmer, reporting any NPE hazards or violations against nullibility contracts stated by annotations. For each reported problem, normally several solution proposals are offered.
+
+In a bundle called PingPong, FindNPE is delivered with two other Java tools, which are independent of each other.]]></body>
+      <created>1293565084</created>
+      <changed>1294154155</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://findnpe.kiegeland.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screenshot.gif?itok=zQMCOjPY]]></screenshot>
+      <version>1.0.0</version>
+      <license>Free for non-commerical use</license>
+      <companyname><![CDATA[JJKPP]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://findnpe.kiegeland.com/contact.html]]></supporturl>
+      <updateurl><![CDATA[http://findnpe.kiegeland.com/3.6/update]]></updateurl>
+<ius>
+<iu>pingpong.findnpe.feature</iu>
+<iu>pingpong.debugutils.feature</iu>
+<iu>pingpong.firstfix.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

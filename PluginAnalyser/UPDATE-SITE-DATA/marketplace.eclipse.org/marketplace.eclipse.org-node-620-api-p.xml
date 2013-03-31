@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="620" name="AVR Eclipse Plugin" url="http://marketplace.eclipse.org/content/avr-eclipse-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+      <tags>
+        <tag id='688' name='AVR' url='http://marketplace.eclipse.org/category/free-tagging/avr'/>
+        <tag id='690' name='embedded' url='http://marketplace.eclipse.org/category/free-tagging/embedded'/>
+        <tag id='935' name='Atmel' url='http://marketplace.eclipse.org/category/free-tagging/atmel'/>
+      </tags>
+      
+      <owner>Thomas Holland</owner>
+      <favorited>11</favorited>
+      <installstotal>7692</installstotal>
+      <installsrecent>320</installsrecent>
+      <shortdescription><![CDATA[<p>This Eclipse Plugin provides some tools and settings for developing C programs for the ATMEL AVR series of embedded processors with the Eclipse IDE. It is open source and freely available under the terms of the GNU General Public Licence (GPL)</p>
+<p>
+The plugin provides the following main functions on top of the CDT features:</p>
+<ul>
+<li>Selection of a target processor</li>
+<li>Custom managed build tools for the AVR-GCC toolchain incl.</li>
+<li>Creating the hex dump image files needed for downloading to an AVR processor</li>
+<li>Upload of the project to a target processor</li>
+<li>Graphical editor for Fuse- and Lockbits</li>
+<li>A viewer showing some information about the selected AVR processor</li>
+<li>Full integration in CDT</li>
+</ul>
+<p>
+It has been successfully tested with Windows, Linux and Mac OS X and should work with on any other platform supporting the AVR-GCC toolchain.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This Eclipse Plugin provides some tools and settings for developing C programs for the ATMEL AVR series of embedded processors with the Eclipse IDE. It is open source and freely available under the terms of the GNU General Public Licence (GPL)</p>
+<p>
+The plugin provides the following main functions on top of the CDT features:</p>
+<ul>
+<li>Selection of a target processor</li>
+<li>Custom managed build tools for the AVR-GCC toolchain incl.</li>
+<li>Creating the hex dump image files needed for downloading to an AVR processor</li>
+<li>Upload of the project to a target processor</li>
+<li>Graphical editor for Fuse- and Lockbits</li>
+<li>A viewer showing some information about the selected AVR processor</li>
+<li>Full integration in CDT</li>
+</ul>
+<p>
+It has been successfully tested with Windows, Linux and Mac OS X and should work with on any other platform supporting the AVR-GCC toolchain.</p>
+]]></body>
+      <created>1199292266</created>
+      <changed>1323713916</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://avr-eclipse.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/WikiLogo_0.png?itok=872mlCTh]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/AVREclipse-Debugging-Screenshot.png?itok=efcWRDm_]]></screenshot>
+      <version>2.3.4</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Thomas Holland]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5, 3.6, 3.7]]></eclipseversion>
+      <supporturl><![CDATA[https://sourceforge.net/tracker/?group_id=189165]]></supporturl>
+      <updateurl><![CDATA[http://avr-eclipse.sourceforge.net/updatesite/]]></updateurl>
+<ius>
+<iu>de.innot.avreclipse</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1130" name="isCOBOL Integrated Development Environment (isCOBOL IDE)" url="http://marketplace.eclipse.org/content/iscobol-integrated-development-environment-iscobol-ide-0">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='1619' name='cb1' url='http://marketplace.eclipse.org/category/free-tagging/cb1'/>
+      </tags>
+      
+      <owner>info</owner>
+      <favorited>5</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The isCOBOL IDE includes a COBOL source editor, complete with COBOL syntax highlighting, compiling, and project handling, providing a single, flexible environment for all COBOL development tasks associated with the isCOBOL Application Platform Suite (isCOBOL APS).</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The isCOBOL IDE includes a COBOL source editor, complete with COBOL syntax highlighting, compiling, and project handling, providing a single, flexible environment for all COBOL development tasks associated with the isCOBOL Application Platform Suite (isCOBOL APS).</p>
+]]></body>
+      <created>1265067440</created>
+      <changed>1265067440</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.veryant.com/products/cobol_ide.php]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>2009.2.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Veryant]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.veryant.com/support/]]></supporturl>
+      <updateurl><![CDATA[http://support.veryant.it/eclipse]]></updateurl>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="97032" name="CodingSpectator for Eclipse Indigo" url="http://marketplace.eclipse.org/content/codingspectator-eclipse-indigo">
+      <type>resource</type>
+      <categories>
+        <category id='1964' name='Application Development Frameworks' url='http://marketplace.eclipse.org/category/categories/application-development-frameworks'/>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+        <category id='1' name='Application Server' url='http://marketplace.eclipse.org/taxonomy/term/1'/>
+        <category id='42' name='BIRT' url='http://marketplace.eclipse.org/category/categories/birt'/>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='1973' name='Business Intelligence, Reporting and Charting' url='http://marketplace.eclipse.org/category/categories/business-intelligence-reporting-and-charting'/>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='1968' name='Collaboration' url='http://marketplace.eclipse.org/category/categories/collaboration'/>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+        <category id='1970' name='Database Development' url='http://marketplace.eclipse.org/category/categories/database-development'/>
+        <category id='36' name='Database Persistence' url='http://marketplace.eclipse.org/category/categories/database-persistence'/>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='1963' name='EclipseRT Target Platform Components' url='http://marketplace.eclipse.org/category/categories/eclipsert-target-platform-components'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='7' name='Entertainment' url='http://marketplace.eclipse.org/taxonomy/term/7'/>
+        <category id='1972' name='General Purpose Tools' url='http://marketplace.eclipse.org/category/categories/general-purpose-tools'/>
+        <category id='8' name='Graphics' url='http://marketplace.eclipse.org/taxonomy/term/8'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='27' name='J2ME' url='http://marketplace.eclipse.org/taxonomy/term/27'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='1969' name='Linux Tools' url='http://marketplace.eclipse.org/category/categories/linux-tools'/>
+        <category id='37' name='Logging' url='http://marketplace.eclipse.org/category/categories/logging'/>
+        <category id='1974' name='Mobile and Device Development' url='http://marketplace.eclipse.org/category/categories/mobile-and-device-development'/>
+        <category id='1971' name='Modeling' url='http://marketplace.eclipse.org/category/categories/modeling'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='38' name='Mylyn Connectors' url='http://marketplace.eclipse.org/category/categories/mylyn-connectors'/>
+        <category id='12' name='Network' url='http://marketplace.eclipse.org/taxonomy/term/12'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='30' name='Process' url='http://marketplace.eclipse.org/taxonomy/term/30'/>
+        <category id='13' name='Profiling' url='http://marketplace.eclipse.org/taxonomy/term/13'/>
+        <category id='1966' name='Programming Languages' url='http://marketplace.eclipse.org/category/categories/programming-languages'/>
+        <category id='39' name='Reporting' url='http://marketplace.eclipse.org/category/categories/reporting'/>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+        <category id='26' name='SCM' url='http://marketplace.eclipse.org/taxonomy/term/26'/>
+        <category id='40' name='Search' url='http://marketplace.eclipse.org/category/categories/search'/>
+        <category id='1965' name='SOA Development' url='http://marketplace.eclipse.org/category/categories/soa-development'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='21' name='Web Services' url='http://marketplace.eclipse.org/taxonomy/term/21'/>
+        <category id='1967' name='Web, XML, Java EE and OSGi Enterprise Development' url='http://marketplace.eclipse.org/category/categories/web-xml-java-ee-and-osgi-enterprise-development'/>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+      </categories>
+      <tags>
+        <tag id='732' name='data' url='http://marketplace.eclipse.org/category/free-tagging/data'/>
+        <tag id='2020' name='empirical' url='http://marketplace.eclipse.org/category/free-tagging/empirical'/>
+        <tag id='2021' name='research' url='http://marketplace.eclipse.org/category/free-tagging/research'/>
+        <tag id='2022' name='study' url='http://marketplace.eclipse.org/category/free-tagging/study'/>
+        <tag id='2023' name='collection' url='http://marketplace.eclipse.org/category/free-tagging/collection'/>
+      </tags>
+      
+      <owner>Mohsen Vakilian</owner>
+      <favorited>2</favorited>
+      <installstotal>123</installstotal>
+      <installsrecent>7</installsrecent>
+      <shortdescription><![CDATA[<p>CodingSpectator is a platform for collecting Eclipse usage data.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>CodingSpectator is a platform for collecting Eclipse usage data.</p>
+]]></body>
+      <created>1312295553</created>
+      <changed>1359679018</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://codingspectator.cs.illinois.edu]]></homepageurl>
+      <image><![CDATA[http://codingspectator.cs.illinois.edu/sites/default/files/figures/codingspectator-screenshot.png]]></image>
+      <version>1.0.0</version>
+      <license>Other Open Source</license>
+      <companyname><![CDATA[University of Illinois]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7.0]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://codingspectator.cs.illinois.edu/updates/indigo]]></updateurl>
+<ius>
+<iu>edu.illinois.codingspectator</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

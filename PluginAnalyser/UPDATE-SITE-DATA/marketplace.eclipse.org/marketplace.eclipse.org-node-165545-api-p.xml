@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="165545" name="Olive" url="http://marketplace.eclipse.org/content/olive">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='40' name='Search' url='http://marketplace.eclipse.org/category/categories/search'/>
+        <category id='1972' name='General Purpose Tools' url='http://marketplace.eclipse.org/category/categories/general-purpose-tools'/>
+      </categories>
+      <tags>
+        <tag id='597' name='Context menu' url='http://marketplace.eclipse.org/category/free-tagging/context-menu'/>
+        <tag id='2203' name='actions' url='http://marketplace.eclipse.org/category/free-tagging/actions'/>
+        <tag id='2373' name='command launcher' url='http://marketplace.eclipse.org/category/free-tagging/command-launcher'/>
+      </tags>
+      
+      <owner>Intooitus srl</owner>
+      <favorited>1</favorited>
+      <installstotal>37</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Olive is a nifty little command launcher for the eclipse Java IDE. The operating principle is the same as the one behind several application launchers out there, but olive works within eclipse. Just type "CTRL+SHIFT+L" ("CMD+SHIFT+L" on OS X) and start typing in the name of the command or wizard that you need.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Olive is a nifty little command launcher for the eclipse Java IDE. The operating principle is the same as the one behind several application launchers out there, but olive works within eclipse. Just type "CTRL+SHIFT+L" ("CMD+SHIFT+L" on OS X) and start typing in the name of the command or wizard that you need.</p>
+]]></body>
+      <created>1323271651</created>
+      <changed>1323785334</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.intooitus.com/products/olive]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/olive_0.png?itok=HNgX41_1]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/olive-scr1.png?itok=KcIgWCer]]></screenshot>
+      <version>1.0.0</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[Intooitus]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.7.0]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://www.intooitus.com/olive]]></updateurl>
+<ius>
+<iu>com.intooitus.olive.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

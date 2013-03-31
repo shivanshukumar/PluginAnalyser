@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="264" name="EclEmma Java Code Coverage" url="http://marketplace.eclipse.org/content/eclemma-java-code-coverage">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+      </categories>
+      <tags>
+        <tag id='131' name='quality' url='http://marketplace.eclipse.org/category/free-tagging/quality'/>
+        <tag id='210' name='metrics' url='http://marketplace.eclipse.org/category/free-tagging/metrics'/>
+        <tag id='445' name='code coverage' url='http://marketplace.eclipse.org/category/free-tagging/code-coverage'/>
+      </tags>
+      
+      <owner>Marc R. Hoffmann</owner>
+      <favorited>143</favorited>
+      <installstotal>73728</installstotal>
+      <installsrecent>5023</installsrecent>
+      <shortdescription><![CDATA[<p>
+EclEmma is a free Java code coverage tool for Eclipse, available under the Eclipse Public License. It brings code coverage analysis directly into the Eclipse workbench:
+</p>
+
+<ul><li>Fast develop/test cycle: Launches from within the workbench like JUnit test runs can directly be analyzed for code coverage.</li>
+  <li>Rich coverage analysis: Coverage results are immediately summarized and highlighted in the Java source code editors.</li>
+  <li>Non-invasive: EclEmma does not require modifying your projects or performing any other setup.</li>
+</ul><p>
+Since version 2.0 EclEmma is based on the <a href="http://www.eclemma.org/jacoco">JaCoCo</a> code coverage library. The Eclipse integration has its focus on supporting the individual developer in an highly interactive way. For automated builds please refer to <a href="http://www.eclemma.org/jacoco/trunk/doc">JaCoCo documentation</a> for integrations with other tools.
+</p>]]></shortdescription>
+      <body><![CDATA[<p>
+EclEmma is a free Java code coverage tool for Eclipse, available under the Eclipse Public License. It brings code coverage analysis directly into the Eclipse workbench:
+</p>
+
+<ul><li>Fast develop/test cycle: Launches from within the workbench like JUnit test runs can directly be analyzed for code coverage.</li>
+  <li>Rich coverage analysis: Coverage results are immediately summarized and highlighted in the Java source code editors.</li>
+  <li>Non-invasive: EclEmma does not require modifying your projects or performing any other setup.</li>
+</ul><p>
+Since version 2.0 EclEmma is based on the <a href="http://www.eclemma.org/jacoco">JaCoCo</a> code coverage library. The Eclipse integration has its focus on supporting the individual developer in an highly interactive way. For automated builds please refer to <a href="http://www.eclemma.org/jacoco/trunk/doc">JaCoCo documentation</a> for integrations with other tools.
+</p>]]></body>
+      <created>1158851376</created>
+      <changed>1351330513</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.eclemma.org/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/eclemma110_80.gif?itok=gEoIzfu-]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screen_0.png?itok=IMw2H7i_]]></screenshot>
+      <version>2.2.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Mountainminds GmbH & Co. KG]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5, 3.6, 3.7, 3.8, 4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eclemma.org/support.html]]></supporturl>
+      <updateurl><![CDATA[http://update.eclemma.org/]]></updateurl>
+<ius>
+<iu>com.mountainminds.eclemma.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

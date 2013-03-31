@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="30247" name="Applitude" url="http://marketplace.eclipse.org/content/applitude">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='195' name='DSL' url='http://marketplace.eclipse.org/category/free-tagging/dsl'/>
+        <tag id='991' name='Mobile' url='http://marketplace.eclipse.org/category/free-tagging/mobile'/>
+        <tag id='1212' name='DSLs' url='http://marketplace.eclipse.org/category/free-tagging/dsls'/>
+        <tag id='1373' name='iPhone' url='http://marketplace.eclipse.org/category/free-tagging/iphone'/>
+        <tag id='1418' name='Mobile apps' url='http://marketplace.eclipse.org/category/free-tagging/mobile-apps'/>
+      </tags>
+      
+      <owner>Ralf Ebert</owner>
+      <favorited>0</favorited>
+      <installstotal>329</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>applitude is an Objective C runtime framework and a Xtext domain-specific language for iPhone application development. It is an extended, iPhone-only version of the <a href="http://code.google.com/p/applause/">Applause</a> project.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>applitude is an Objective C runtime framework and a Xtext domain-specific language for iPhone application development. It is an extended, iPhone-only version of the <a href="http://code.google.com/p/applause/">Applause</a> project.</p>
+]]></body>
+      <created>1296344564</created>
+      <changed>1297259338</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://applitude.org/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/applitude_110x80.png?itok=5zQNx-n-]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/demo.png?itok=A2B4uwzo]]></screenshot>
+      <version>0.3.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Ralf Ebert]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://applitude.org/p2/]]></updateurl>
+<ius>
+<iu>org.applitude.feature</iu>
+</ius>
+<platforms>
+<platform>Mac</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

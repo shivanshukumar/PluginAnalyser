@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1227" name="Eclipse Translator" url="http://marketplace.eclipse.org/content/eclipse-translator">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='2576' name='Translator' url='http://marketplace.eclipse.org/category/free-tagging/translator'/>
+      </tags>
+      
+      <owner>Thomas Schindl</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[]]></shortdescription>
+      <body><![CDATA[]]></body>
+      <created>1275230166</created>
+      <changed>1275230166</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/a/eclipselabs.org/p/eclipse-translator-view/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/translateview.png?itok=qntuqa0L]]></screenshot>
+      <version></version>
+      <license>EPL</license>
+      <companyname><![CDATA[BestSolution.at]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://svn.codespot.com/a/eclipselabs.org/eclipse-translator-view/trunk/releng/at.bestsolution.translate.updatesite/]]></updateurl>
+    </node>
+    </marketplace>
+    

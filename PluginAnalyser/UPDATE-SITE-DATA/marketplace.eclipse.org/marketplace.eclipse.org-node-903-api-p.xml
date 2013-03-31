@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="903" name="Reverse Text Selection Plug-in" url="http://marketplace.eclipse.org/content/reverse-text-selection-plug">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+            
+      <owner>Sandip Chitale</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The Reverse Text Selection Plug-in implements a simple command - Reverse Text Selection - to move the text caret to the other end of the selection in a text editor. Repeated invocation of the command bounces the caret from one end of selection to the other while keeping the selection intact. This enables you to extend/contract the selection in either direction. The default key binding for the Reverse Text Selection command is Alt+Shift+/. You can change the key binding using Preferences > General > Keys page.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The Reverse Text Selection Plug-in implements a simple command - Reverse Text Selection - to move the text caret to the other end of the selection in a text editor. Repeated invocation of the command bounces the caret from one end of selection to the other while keeping the selection intact. This enables you to extend/contract the selection in either direction. The default key binding for the Reverse Text Selection command is Alt+Shift+/. You can change the key binding using Preferences > General > Keys page.</p>
+]]></body>
+      <created>1237919977</created>
+      <changed>1259779216</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/sandipchitaleseclipseplugins/]]></homepageurl>
+      <image><![CDATA[http://sandipchitaleseclipseplugins.googlecode.com/files/reversetextselection110x80.png]]></image>
+      <version>1.0.1</version>
+      <license>Other</license>
+      <companyname><![CDATA[Sandip V. Chitale]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[Eclipse 3.4+]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/sandipchitaleseclipseplugins/issues/list]]></supporturl>
+      <updateurl><![CDATA[http://sandipchitaleseclipseplugins.googlecode.com/svn/trunk/SandipChitalesEclipsePluginsUpdateSite/]]></updateurl>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1035" name="EFactory" url="http://marketplace.eclipse.org/content/efactory">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+      </categories>
+            
+      <owner>Sebastian Benz</owner>
+      <favorited>2</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>EFactory is a generic textual modeling language for EMF models. EFactory is an alternative to the standard tree-based EMF editors. EFactory is a generic EMF editor that provides all the advantages of a textual language. EFactory can be used to instantiate any EMF based model including Ecore itself. Models defined using EFactory integrate seamlessly into existing environments by being compatible on EMF resource level. For example, it is possible to reference an Ecore model that is defined using EFactory from an Ecore model that is defined using a graphical Ecore editor. </p>
+]]></shortdescription>
+      <body><![CDATA[<p>EFactory is a generic textual modeling language for EMF models. EFactory is an alternative to the standard tree-based EMF editors. EFactory is a generic EMF editor that provides all the advantages of a textual language. EFactory can be used to instantiate any EMF based model including Ecore itself. Models defined using EFactory integrate seamlessly into existing environments by being compatible on EMF resource level. For example, it is possible to reference an Ecore model that is defined using EFactory from an Ecore model that is defined using a graphical Ecore editor. </p>
+]]></body>
+      <created>1257193411</created>
+      <changed>1267734915</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/efactory/]]></homepageurl>
+      <image><![CDATA[<img src="http://efactory.googlecode.com/svn/trunk/com.googlecode.efactory.help/images/EfactoryScreenshotSmall.jpg"/>]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/EfactoryScreenshot.png?itok=3wgq20Co]]></screenshot>
+      <version>0.7.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Sebastian Benz]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/efactory/wiki/Documentation?tm=6]]></supporturl>
+      <updateurl><![CDATA[http://sebastianbenz.de/efactory/releases/]]></updateurl>
+    </node>
+    </marketplace>
+    

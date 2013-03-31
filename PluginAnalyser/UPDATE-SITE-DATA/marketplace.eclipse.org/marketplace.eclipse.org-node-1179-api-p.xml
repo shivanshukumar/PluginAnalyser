@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1179" name="eCobertura" url="http://marketplace.eclipse.org/content/ecobertura">
+      <type>resource</type>
+      <categories>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='210' name='metrics' url='http://marketplace.eclipse.org/category/free-tagging/metrics'/>
+        <tag id='445' name='code coverage' url='http://marketplace.eclipse.org/category/free-tagging/code-coverage'/>
+        <tag id='1186' name='Couverture de test' url='http://marketplace.eclipse.org/category/free-tagging/couverture-de-test'/>
+        <tag id='1187' name='cobertura' url='http://marketplace.eclipse.org/category/free-tagging/cobertura'/>
+        <tag id='1188' name='plugin eclipse' url='http://marketplace.eclipse.org/category/free-tagging/plugin-eclipse'/>
+      </tags>
+      
+      <owner>Joachim Hofer</owner>
+      <favorited>21</favorited>
+      <installstotal>11791</installstotal>
+      <installsrecent>861</installsrecent>
+      <shortdescription><![CDATA[<p>eCobertura is a free Eclipse plugin for Cobertura - a Java code coverage reporting tool.</p>
+<p>eCobertura enables you to <b>launch your applications or tests</b> in Cobertura-covered mode directly from <b>within Eclipse</b>. View your source files <b>colored</b> according to the coverage results. <b>Browse</b> through the detailed coverage results in a tree view.</p>
+<p>This plugin is based on Cobertura because Cobertura is able to measure <b>branch coverage</b>.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>eCobertura is a free Eclipse plugin for Cobertura - a Java code coverage reporting tool.</p>
+<p>eCobertura enables you to <b>launch your applications or tests</b> in Cobertura-covered mode directly from <b>within Eclipse</b>. View your source files <b>colored</b> according to the coverage results. <b>Browse</b> through the detailed coverage results in a tree view.</p>
+<p>This plugin is based on Cobertura because Cobertura is able to measure <b>branch coverage</b>.</p>
+]]></body>
+      <created>1271518004</created>
+      <changed>1304797832</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://ecobertura.johoop.de]]></homepageurl>
+      <image><![CDATA[http://ecobertura.johoop.de/screenshot_ecobertura_01_small.jpg]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screenshot_ecobertura_01.png?itok=nUVI6H0Y]]></screenshot>
+      <version>0.9.8</version>
+      <license>EPL</license>
+      <companyname><![CDATA[-none-]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://ecobertura.johoop.de]]></supporturl>
+      <updateurl><![CDATA[http://ecobertura.johoop.de/update]]></updateurl>
+<ius>
+<iu>ecobertura</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

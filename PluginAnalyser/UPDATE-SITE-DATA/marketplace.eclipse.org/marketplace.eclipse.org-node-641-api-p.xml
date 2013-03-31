@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="641" name="Tasktop Pro" url="http://marketplace.eclipse.org/content/tasktop-pro">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+        <category id='38' name='Mylyn Connectors' url='http://marketplace.eclipse.org/category/categories/mylyn-connectors'/>
+      </categories>
+      <tags>
+        <tag id='88' name='mylyn' url='http://marketplace.eclipse.org/category/free-tagging/mylyn'/>
+        <tag id='89' name='JIRA' url='http://marketplace.eclipse.org/category/free-tagging/jira'/>
+        <tag id='98' name='perforce' url='http://marketplace.eclipse.org/category/free-tagging/perforce'/>
+        <tag id='99' name='clearcase' url='http://marketplace.eclipse.org/category/free-tagging/clearcase'/>
+        <tag id='368' name='collabnet' url='http://marketplace.eclipse.org/category/free-tagging/collabnet'/>
+      </tags>
+      
+      <owner>Wesley Coelho</owner>
+      <favorited>19</favorited>
+      <installstotal>1829</installstotal>
+      <installsrecent>53</installsrecent>
+      <shortdescription><![CDATA[<p>Tasktop Pro is the enterprise-ready product built on Eclipse Mylyn with more connectors and advanced productivity features. Tasktop provides integrated access to more than 50 issue, defect and project management systems from within a personal task list in Eclipse. </p>
+<p>The task-focused interface monitors your programming activity to create a “task context” that focuses your workspace on only the relevant code for the task at hand. This enables one-click multitasking and interruption recovery and results in dramatic productivity gains.<br /><br /><br /><br /></p>
+<p><b>Tasktop Certified Connectors</b></p>
+<table bgcolor="#e7eef6"><tr><td width="5"> </td>
+<td width="120">
+<b>Mylyn</b>
+    </td>
+<td width="160">
+<b>Tasktop Pro</b>
+    </td>
+<td>
+<b>Tasktop Enterprise </b>
+    </td>
+</tr><tr><td width="5"> </td>
+<td>
+Bugzilla
+    </td>
+<td>
+VersionOne
+    </td>
+<td>
+HP Quality Center and ALM
+    </td>
+</tr><tr><td width="5"> </td>
+<td>
+JIRA
+    </td>
+<td>
+ThoughtWorks
+    </td>
+<td>
+IBM Rational Team Concert
+    </td>
+</tr><tr><td width="5"> </td>
+<td>
+Mantis
+    </td>
+<td>
+ScrumWorks Pro
+    </td>
+<td>
+Microsoft Team Foundation Server
+    </td>
+</tr><tr><td width="5"> </td>
+<td>
+Trac
+    </td>
+<td>
+Outlook
+    </td>
+<td>
+IBM Rational ClearQuest
+    </td>
+</tr><tr><td width="5"> </td>
+<td>
+Rally
+    </td>
+<td>
+Google Apps
+    </td>
+<td>
+Plus all of Pro
+    </td>
+</tr><tr><td width="5"> </td>
+<td>
+TeamForge
+    </td>
+<td>
+Firefox
+    </td>
+<td>
+</td>
+</tr><tr><td width="5"> </td>
+<td>
+Perforce
+    </td>
+<td>
+Plus all of Mylyn
+    </td>
+<td>
+</td>
+</tr></table><p><br /><br /><b>Tasktop Pro Productivity Features</b></p>
+<table><tr><td valign="top">
+<img src="http://tasktop.com/assets/images/icons/greenBullet_icon.gif" /></td>
+<td>
+<b>Time Tracking</b> - Save time by automatically tracking time spent on each task. Time can be reported and adjusted as needed before uploading to the server.
+  </td>
+</tr><tr><td valign="top">
+<img src="http://tasktop.com/assets/images/icons/greenBullet_icon.gif" /></td>
+<td>
+<b>Cross-repository Interoperability</b> - Use multiple defect and project management systems side by side. Tasktop Pro provides faciliteis to create and navigate relationships between artifacts on different servers and move items from one system to another.
+  </td>
+</tr><tr><td valign="top">
+<img src="http://tasktop.com/assets/images/icons/greenBullet_icon.gif" /></td>
+<td>
+<b>Focused Web Browsing & Documents</b> - Web pages and local documents are automatically captured in the context of the relevant task so there's no need to bookmark or remember where you save documents.
+  </td>
+</tr><tr><td valign="top">
+<img src="http://tasktop.com/assets/images/icons/greenBullet_icon.gif" /></td>
+<td>
+<b>Email Integration</b> - Send email messages to your task list in Eclipse so you can track them as to do items while capturing context and tracking time spent.
+  </td>
+</tr><tr><td valign="top">
+<img src="http://tasktop.com/assets/images/icons/greenBullet_icon.gif" /></td>
+<td>
+<b>Integrated Tutorials</b> - Take a step by step tour from the basics to advanced productivity features as you configure Tasktop and begin working task-focused.
+  </td>
+</tr></table><p><br /><br /><br /></p>
+<p><b>Screenshots</b></p>
+<table><tr><td>
+<img src="http://tasktop.com/assets/images/screenshots/Marketplace-task-list.jpg" /></td>
+</tr><tr><td>
+Task list and embedded task-focused web browser
+  </td>
+</tr></table><p><br /></p>
+<table><tr><td>
+<img src="http://tasktop.com/assets/images/screenshots/Marketplace-time-tracking.jpg" /></td>
+</tr><tr><td>
+Time tracking reports and charts
+</td>
+</tr></table><p><br /></p>
+<p><a href="http://tasktop.com/support/download/feature_matrix.php">View the feature matrix</a><br /><br /><a href="http://tasktop.com/download">Try Tasktop Pro free for 30 days</a><br /><br /><a href="http://tasktop.com/about/contactus/">Contact Tasktop Technologies</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Tasktop Pro is the enterprise-ready product built on Eclipse Mylyn with more connectors and advanced productivity features. Tasktop provides integrated access to more than 50 issue, defect and project management systems from within a personal task list in Eclipse. </p>
+<p>The task-focused interface monitors your programming activity to create a “task context” that focuses your workspace on only the relevant code for the task at hand. This enables one-click multitasking and interruption recovery and results in dramatic productivity gains.<br /><br /><br /><br /></p>
+<p><b>Tasktop Certified Connectors</b></p>
+<table bgcolor="#e7eef6"><tr><td width="5"> </td>
+<td width="120">
+<b>Mylyn</b>
+    </td>
+<td width="160">
+<b>Tasktop Pro</b>
+    </td>
+<td>
+<b>Tasktop Enterprise </b>
+    </td>
+</tr><tr><td width="5"> </td>
+<td>
+Bugzilla
+    </td>
+<td>
+VersionOne
+    </td>
+<td>
+HP Quality Center and ALM
+    </td>
+</tr><tr><td width="5"> </td>
+<td>
+JIRA
+    </td>
+<td>
+ThoughtWorks
+    </td>
+<td>
+IBM Rational Team Concert
+    </td>
+</tr><tr><td width="5"> </td>
+<td>
+Mantis
+    </td>
+<td>
+ScrumWorks Pro
+    </td>
+<td>
+Microsoft Team Foundation Server
+    </td>
+</tr><tr><td width="5"> </td>
+<td>
+Trac
+    </td>
+<td>
+Outlook
+    </td>
+<td>
+IBM Rational ClearQuest
+    </td>
+</tr><tr><td width="5"> </td>
+<td>
+Rally
+    </td>
+<td>
+Google Apps
+    </td>
+<td>
+Plus all of Pro
+    </td>
+</tr><tr><td width="5"> </td>
+<td>
+TeamForge
+    </td>
+<td>
+Firefox
+    </td>
+<td>
+</td>
+</tr><tr><td width="5"> </td>
+<td>
+Perforce
+    </td>
+<td>
+Plus all of Mylyn
+    </td>
+<td>
+</td>
+</tr></table><p><br /><br /><b>Tasktop Pro Productivity Features</b></p>
+<table><tr><td valign="top">
+<img src="http://tasktop.com/assets/images/icons/greenBullet_icon.gif" /></td>
+<td>
+<b>Time Tracking</b> - Save time by automatically tracking time spent on each task. Time can be reported and adjusted as needed before uploading to the server.
+  </td>
+</tr><tr><td valign="top">
+<img src="http://tasktop.com/assets/images/icons/greenBullet_icon.gif" /></td>
+<td>
+<b>Cross-repository Interoperability</b> - Use multiple defect and project management systems side by side. Tasktop Pro provides faciliteis to create and navigate relationships between artifacts on different servers and move items from one system to another.
+  </td>
+</tr><tr><td valign="top">
+<img src="http://tasktop.com/assets/images/icons/greenBullet_icon.gif" /></td>
+<td>
+<b>Focused Web Browsing & Documents</b> - Web pages and local documents are automatically captured in the context of the relevant task so there's no need to bookmark or remember where you save documents.
+  </td>
+</tr><tr><td valign="top">
+<img src="http://tasktop.com/assets/images/icons/greenBullet_icon.gif" /></td>
+<td>
+<b>Email Integration</b> - Send email messages to your task list in Eclipse so you can track them as to do items while capturing context and tracking time spent.
+  </td>
+</tr><tr><td valign="top">
+<img src="http://tasktop.com/assets/images/icons/greenBullet_icon.gif" /></td>
+<td>
+<b>Integrated Tutorials</b> - Take a step by step tour from the basics to advanced productivity features as you configure Tasktop and begin working task-focused.
+  </td>
+</tr></table><p><br /><br /><br /></p>
+<p><b>Screenshots</b></p>
+<table><tr><td>
+<img src="http://tasktop.com/assets/images/screenshots/Marketplace-task-list.jpg" /></td>
+</tr><tr><td>
+Task list and embedded task-focused web browser
+  </td>
+</tr></table><p><br /></p>
+<table><tr><td>
+<img src="http://tasktop.com/assets/images/screenshots/Marketplace-time-tracking.jpg" /></td>
+</tr><tr><td>
+Time tracking reports and charts
+</td>
+</tr></table><p><br /></p>
+<p><a href="http://tasktop.com/support/download/feature_matrix.php">View the feature matrix</a><br /><br /><a href="http://tasktop.com/download">Try Tasktop Pro free for 30 days</a><br /><br /><a href="http://tasktop.com/about/contactus/">Contact Tasktop Technologies</a></p>
+]]></body>
+      <created>1202480513</created>
+      <changed>1300812989</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://tasktop.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/button_logo_110px.jpg?itok=HcT18WjY]]></image>
+      <version>2.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Tasktop Technologies Inc.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4, 3.5, 3.6]]></eclipseversion>
+      <supporturl><![CDATA[https://tasktop.com/support/overview/]]></supporturl>
+      <updateurl><![CDATA[http://tasktop.com/downloads/discovery/update]]></updateurl>
+<ius>
+<iu>com.tasktop.client.pro</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

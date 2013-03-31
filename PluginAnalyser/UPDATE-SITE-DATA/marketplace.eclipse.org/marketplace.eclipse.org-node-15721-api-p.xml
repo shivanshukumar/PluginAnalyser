@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="15721" name="Make Targeter" url="http://marketplace.eclipse.org/content/make-targeter">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+      <tags>
+        <tag id='1266' name='CDT' url='http://marketplace.eclipse.org/category/free-tagging/cdt'/>
+        <tag id='1267' name='make' url='http://marketplace.eclipse.org/category/free-tagging/make'/>
+        <tag id='1268' name='makefile' url='http://marketplace.eclipse.org/category/free-tagging/makefile'/>
+        <tag id='1269' name='target' url='http://marketplace.eclipse.org/category/free-tagging/target'/>
+      </tags>
+      
+      <owner>Mikhail Barg</owner>
+      <favorited>4</favorited>
+      <installstotal>677</installstotal>
+      <installsrecent>12</installsrecent>
+      <shortdescription><![CDATA[<p>Make Targeter aims to help creating and building C/C++ make targets for projects where lots of build options are available in makefile.<br />
+Make Targeter provides a view that allows visual target and options selection and a set of convenient actions like putting the configured target string to the project settings.<br />
+The contents of view is based on a simple xml file.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Make Targeter aims to help creating and building C/C++ make targets for projects where lots of build options are available in makefile.<br />
+Make Targeter provides a view that allows visual target and options selection and a set of convenient actions like putting the configured target string to the project settings.<br />
+The contents of view is based on a simple xml file.</p>
+]]></body>
+      <created>1287391275</created>
+      <changed>1330017457</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://maketargeter.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/main_scaled.gif?itok=StHECN9q]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/maketergeter_1.2.1.png?itok=aa53MS81]]></screenshot>
+      <version>1.2.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Mikhail Barg]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.4 and greater]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/maketargeter/forums/forum/988421]]></supporturl>
+      <updateurl><![CDATA[http://maketargeter.sourceforge.net/updates/]]></updateurl>
+<ius>
+<iu>maketargeter.feature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

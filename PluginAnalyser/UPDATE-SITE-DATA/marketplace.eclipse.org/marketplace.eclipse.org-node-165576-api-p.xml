@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="165576" name="DS-5 Community Edition" url="http://marketplace.eclipse.org/content/ds-5-community-edition">
+      <type>resource</type>
+      <categories>
+        <category id='1972' name='General Purpose Tools' url='http://marketplace.eclipse.org/category/categories/general-purpose-tools'/>
+        <category id='1969' name='Linux Tools' url='http://marketplace.eclipse.org/category/categories/linux-tools'/>
+        <category id='1974' name='Mobile and Device Development' url='http://marketplace.eclipse.org/category/categories/mobile-and-device-development'/>
+        <category id='1966' name='Programming Languages' url='http://marketplace.eclipse.org/category/categories/programming-languages'/>
+      </categories>
+      <tags>
+        <tag id='2374' name='arm cortex cortex-A8 cortex-A15 android' url='http://marketplace.eclipse.org/category/free-tagging/arm-cortex-cortex-a8-cortex-a15-android'/>
+      </tags>
+      
+      <owner>Hobson Bullman</owner>
+      <favorited>1</favorited>
+      <installstotal>567</installstotal>
+      <installsrecent>67</installsrecent>
+      <shortdescription><![CDATA[<p>DS-5™ Community Edition: The Perfect Companion For The Android NDK</p>
+<p>ARM Development Studio 5 (DS-5™) Community Edition takes Android native development tools to the next level. Conveniently distributed as plug-in for Eclipse, DS-5 CE completes the serious app developer toolkit with a comprehensive C, C++ and Assembly graphical debugger that builds on the Android Debug Bridge (adb), a software performance profiler and system analyzer, and a complete set of resources to guide you through your development cycle.</p>
+<p>Free to use by small businesses and individuals.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>DS-5™ Community Edition: The Perfect Companion For The Android NDK</p>
+<p>ARM Development Studio 5 (DS-5™) Community Edition takes Android native development tools to the next level. Conveniently distributed as plug-in for Eclipse, DS-5 CE completes the serious app developer toolkit with a comprehensive C, C++ and Assembly graphical debugger that builds on the Android Debug Bridge (adb), a software performance profiler and system analyzer, and a complete set of resources to guide you through your development cycle.</p>
+<p>Free to use by small businesses and individuals.</p>
+]]></body>
+      <created>1323273635</created>
+      <changed>1346160752</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.arm.com/products/tools/software-tools/ds-5/community-edition/index.php]]></homepageurl>
+      <image><![CDATA[http://www.arm.com/images/droid_working.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/streamline_2.jpg?itok=Ve3OF3iM]]></screenshot>
+      <version></version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[ARM]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7 32 bit]]></eclipseversion>
+      <supporturl><![CDATA[http://forums.arm.com/index.php?/forum/3-arm-tech/]]></supporturl>
+      <updateurl><![CDATA[http://tools.arm.com/eclipse]]></updateurl>
+<ius>
+<iu>com.arm.ds.community.feature.feature.group</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

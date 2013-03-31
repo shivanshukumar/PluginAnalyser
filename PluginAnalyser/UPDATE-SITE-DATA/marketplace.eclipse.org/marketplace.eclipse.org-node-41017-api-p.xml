@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="41017" name="Veloeclipse" url="http://marketplace.eclipse.org/content/veloeclipse">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+      <tags>
+        <tag id='116' name='' url='http://marketplace.eclipse.org/taxonomy/term/116'/>
+        <tag id='1113' name='velocity' url='http://marketplace.eclipse.org/category/free-tagging/velocity'/>
+      </tags>
+      
+      <owner>Missing Name</owner>
+      <favorited>7</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Veloeclipse is a HTML/XML/JSP/Velocity Editor for Eclipse</p>
+<p>Features:<br />
+Smart indentation of velocity directives ( on pressing return or when using tabs)<br />
+XML support<br />
+Jtidy integration<br />
+code folding<br />
+code Formatting<br />
+Smart indentation of html tags( on pressing return or when using tabs)<br />
+Syntax highlighting for both html and velocity<br />
+Autocompletion and Content assist for tags,directives and references (Ctrl + space in html attribute values or when opening or closing tags)<br />
+jumping to statring tag/directive when hovering on the closing tag/directive and then pressing Ctrl+Alt+ mouseclick<br />
+opening html definitions on tags when pressing Ctrl+Alt+ mouseclick<br />
+Tested on Eclipse 3.3 and 3.4<br />
+Supports Velocity 1.6</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Veloeclipse is a HTML/XML/JSP/Velocity Editor for Eclipse</p>
+<p>Features:<br />
+Smart indentation of velocity directives ( on pressing return or when using tabs)<br />
+XML support<br />
+Jtidy integration<br />
+code folding<br />
+code Formatting<br />
+Smart indentation of html tags( on pressing return or when using tabs)<br />
+Syntax highlighting for both html and velocity<br />
+Autocompletion and Content assist for tags,directives and references (Ctrl + space in html attribute values or when opening or closing tags)<br />
+jumping to statring tag/directive when hovering on the closing tag/directive and then pressing Ctrl+Alt+ mouseclick<br />
+opening html definitions on tags when pressing Ctrl+Alt+ mouseclick<br />
+Tested on Eclipse 3.3 and 3.4<br />
+Supports Velocity 1.6</p>
+]]></body>
+      <created>1301296292</created>
+      <changed>1301325143</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/veloeclipse/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>2.0.8</version>
+      <license>GPL</license>
+      <companyname><![CDATA[veloeclipse]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3+]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://veloeclipse.googlecode.com/svn/trunk/update/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="22937" name="Feature Explorer View" url="http://marketplace.eclipse.org/content/feature-explorer-view">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='763' name='PDE' url='http://marketplace.eclipse.org/category/free-tagging/pde'/>
+        <tag id='1440' name='View' url='http://marketplace.eclipse.org/category/free-tagging/view'/>
+        <tag id='1441' name='Feature' url='http://marketplace.eclipse.org/category/free-tagging/feature'/>
+      </tags>
+      
+      <owner>Wim Jongman</owner>
+      <favorited>5</favorited>
+      <installstotal>564</installstotal>
+      <installsrecent>17</installsrecent>
+      <shortdescription><![CDATA[<p>This view explores Features. It enables you to quickly search your target platform to find the feature where the plugin you need is located.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This view explores Features. It enables you to quickly search your target platform to find the feature where the plugin you need is located.</p>
+]]></body>
+      <created>1291498603</created>
+      <changed>1324552560</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/a/eclipselabs.org/p/featureexplorer/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/remainlogo2.png?itok=66js74xk]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/2010-12-04_2213.png?itok=dqXoRbcc]]></screenshot>
+      <version>1.0.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Remain Software]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.6, 3.7, 3.8]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/a/eclipselabs.org/p/featureexplorer/issues/list]]></supporturl>
+      <updateurl><![CDATA[http://svn.codespot.com/a/eclipselabs.org/featureexplorer/updatesite/]]></updateurl>
+<ius>
+<iu>com.remainsoftware.featureexplorer.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

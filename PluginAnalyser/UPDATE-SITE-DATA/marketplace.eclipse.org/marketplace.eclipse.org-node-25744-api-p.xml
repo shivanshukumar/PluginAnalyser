@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="25744" name="Equinox Advanced Configurator" url="http://marketplace.eclipse.org/content/equinox-advanced-configurator">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+      </categories>
+      <tags>
+        <tag id='438' name='p2' url='http://marketplace.eclipse.org/category/free-tagging/p2'/>
+        <tag id='804' name='Equinox' url='http://marketplace.eclipse.org/category/free-tagging/equinox'/>
+        <tag id='1476' name='p2 enhancement' url='http://marketplace.eclipse.org/category/free-tagging/p2-enhancement'/>
+        <tag id='1477' name='bundles management' url='http://marketplace.eclipse.org/category/free-tagging/bundles-management'/>
+      </tags>
+      
+      <owner>kane zhu</owner>
+      <favorited>2</favorited>
+      <installstotal>1389</installstotal>
+      <installsrecent>87</installsrecent>
+      <shortdescription><![CDATA[<p>The provisioning and installation management of Eclipse have been into the period of p2. P2 is an intelligent tool to install new plug-ins, update the plug-ins to latest version and manage the dependencies among the different plug-ins. However the eclipse would be heavier and low performance after installing a lot of plug-ins to extend its capability. There is no a good way to configurate eclipse running with different policies to satisfy the different development requirement of users. For example, users want to the eclipse only have C++ development kit and git when doing c/c++ code development. Vice versa, the eclipse only has JDT and Clearcase plug-ins when doing Java development. Loading less plug-ins would improve the performance of eclipse and avoid the conflict among different plug-ins.</p>
+<p>So Advanced Configurator is an enhancement implementation of bundle manager comparing to the default bundles management of Eclipse(the internal name is simple configurator). This tool is intended to provide a flexible and configurable way to run the single eclipse instance with enabling different plug-ins.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The provisioning and installation management of Eclipse have been into the period of p2. P2 is an intelligent tool to install new plug-ins, update the plug-ins to latest version and manage the dependencies among the different plug-ins. However the eclipse would be heavier and low performance after installing a lot of plug-ins to extend its capability. There is no a good way to configurate eclipse running with different policies to satisfy the different development requirement of users. For example, users want to the eclipse only have C++ development kit and git when doing c/c++ code development. Vice versa, the eclipse only has JDT and Clearcase plug-ins when doing Java development. Loading less plug-ins would improve the performance of eclipse and avoid the conflict among different plug-ins.</p>
+<p>So Advanced Configurator is an enhancement implementation of bundle manager comparing to the default bundles management of Eclipse(the internal name is simple configurator). This tool is intended to provide a flexible and configurable way to run the single eclipse instance with enabling different plug-ins.</p>
+]]></body>
+      <created>1293440403</created>
+      <changed>1294154155</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/kane-toolkit/wiki/AdvancedConfigurator]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/main_0.png?itok=wrCqR0CC]]></screenshot>
+      <version>0.5</version>
+      <license>EPL</license>
+      <companyname><![CDATA[kane.zhu@windriver.com]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/kane-toolkit/wiki/AdvancedConfigurator]]></supporturl>
+      <updateurl><![CDATA[http://kane-toolkit.googlecode.com/svn/trunk/equinox-advancedconfigurator/advanced-repository/]]></updateurl>
+<ius>
+<iu>org.eclipse.equinox.advancedconfigurator.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

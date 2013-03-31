@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1196" name="Spagic" url="http://marketplace.eclipse.org/content/spagic">
+      <type>resource</type>
+      <categories>
+        <category id='1' name='Application Server' url='http://marketplace.eclipse.org/taxonomy/term/1'/>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='13' name='Profiling' url='http://marketplace.eclipse.org/taxonomy/term/13'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='21' name='Web Services' url='http://marketplace.eclipse.org/taxonomy/term/21'/>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+        <category id='30' name='Process' url='http://marketplace.eclipse.org/taxonomy/term/30'/>
+      </categories>
+      <tags>
+        <tag id='85' name='bpm' url='http://marketplace.eclipse.org/category/free-tagging/bpm'/>
+        <tag id='162' name='osgi' url='http://marketplace.eclipse.org/category/free-tagging/osgi'/>
+        <tag id='435' name='1' url='http://marketplace.eclipse.org/category/free-tagging/1'/>
+        <tag id='500' name='open source' url='http://marketplace.eclipse.org/category/free-tagging/open-source'/>
+        <tag id='508' name='Spagic' url='http://marketplace.eclipse.org/category/free-tagging/spagic'/>
+      </tags>
+      
+      <owner>CKlein</owner>
+      <favorited>4</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Spagic is the free/open source enterprise level platform, supporting the governance of middleware services and the development of SOA applications through highly modular and configurable Universal Middleware.<br />
+The Universal Middleware model offers a new development process which gives real answers to the increasing complexity of the architectural specifications, to reusability and to the management of the lifecycle of the various components.<br />
+Spagic offers a complete range of tools supporting the governance of SOA projects: modelling support tools, services definition, realization of forms to support users’ activities, deploy control, connectors, BPM engines, infrastructural services and containers and a monitoring environment.<br />
+Spagic is supported by Engineering Group, an IT global player and Italy’s largest operator in the IT services market.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Spagic is the free/open source enterprise level platform, supporting the governance of middleware services and the development of SOA applications through highly modular and configurable Universal Middleware.<br />
+The Universal Middleware model offers a new development process which gives real answers to the increasing complexity of the architectural specifications, to reusability and to the management of the lifecycle of the various components.<br />
+Spagic offers a complete range of tools supporting the governance of SOA projects: modelling support tools, services definition, realization of forms to support users’ activities, deploy control, connectors, BPM engines, infrastructural services and containers and a monitoring environment.<br />
+Spagic is supported by Engineering Group, an IT global player and Italy’s largest operator in the IT services market.</p>
+]]></body>
+      <created>1272962227</created>
+      <changed>1272973736</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[htto://www.spagic.org/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Spagic.png?itok=czaFecnt]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/SpagicScreenshot1.jpg?itok=oCxKAiM9]]></screenshot>
+      <version>3</version>
+      <license>LGPL</license>
+      <companyname><![CDATA[Engineering Group]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.spagoworld.org/xwiki/bin/view/Spagic/Support]]></supporturl>
+      <updateurl><![CDATA[http://forge.ow2.org/projects/spagic ]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

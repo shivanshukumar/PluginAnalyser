@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="6780" name="OpenL Tablets" url="http://marketplace.eclipse.org/content/openl-tablets">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+      </categories>
+      <tags>
+        <tag id='378' name='business rules' url='http://marketplace.eclipse.org/category/free-tagging/business-rules'/>
+        <tag id='379' name='rules engine' url='http://marketplace.eclipse.org/category/free-tagging/rules-engine'/>
+        <tag id='382' name='business rules management' url='http://marketplace.eclipse.org/category/free-tagging/business-rules-management'/>
+        <tag id='383' name='enterprise platform' url='http://marketplace.eclipse.org/category/free-tagging/enterprise-platform'/>
+      </tags>
+      
+      <owner>OpenL Tablets</owner>
+      <favorited>3</favorited>
+      <installstotal>128</installstotal>
+      <installsrecent>2</installsrecent>
+      <shortdescription><![CDATA[<p>OpenL Tablets is full-fledged open source Business Rules Management System (BRMS). Its business friendly approach to rules authoring and management allows keeping executable business rules as close as humanly possible to the original source and to maintain them by Business Analysts.</p>
+<p>OpenL Tablets tools check all data, syntax and type errors while authoring. The product includes advanced features such as gap validation, what if analysis, etc. Find out more at our site <a href="http://openl-tablets.sourceforge.net/">http://openl-tablets.sourceforge.net/</a></p>
+<p>OpenL Tablets Eclipse update site allows checking errors in rules and their reporting in problems view, creating new projects from templates, exploring demos and tutorials, starting Web Interface editing environment from within Eclipse.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>OpenL Tablets is full-fledged open source Business Rules Management System (BRMS). Its business friendly approach to rules authoring and management allows keeping executable business rules as close as humanly possible to the original source and to maintain them by Business Analysts.</p>
+<p>OpenL Tablets tools check all data, syntax and type errors while authoring. The product includes advanced features such as gap validation, what if analysis, etc. Find out more at our site <a href="http://openl-tablets.sourceforge.net/">http://openl-tablets.sourceforge.net/</a></p>
+<p>OpenL Tablets Eclipse update site allows checking errors in rules and their reporting in problems view, creating new projects from templates, exploring demos and tutorials, starting Web Interface editing environment from within Eclipse.</p>
+]]></body>
+      <created>1281534226</created>
+      <changed>1353489723</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://openl-tablets.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_110x80.png?itok=MOLInGTK]]></image>
+      <version>5.9.4</version>
+      <license>LGPL</license>
+      <companyname><![CDATA[OpenL Tablets]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3 - 4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://openl-tablets.sourceforge.net/]]></supporturl>
+      <updateurl><![CDATA[http://openl-tablets.sourceforge.net/eclipse-site]]></updateurl>
+<ius>
+<iu>org.openl.rules.all.eclipse.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

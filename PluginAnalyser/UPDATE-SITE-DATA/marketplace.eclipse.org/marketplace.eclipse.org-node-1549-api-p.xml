@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1549" name="TestNG for Eclipse" url="http://marketplace.eclipse.org/content/testng-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+      </categories>
+      <tags>
+        <tag id='909' name='testng junit testing unit integration functional selenium' url='http://marketplace.eclipse.org/category/free-tagging/testng-junit-testing-unit-integration-functional-selenium'/>
+      </tags>
+      
+      <owner>Cedric Beust</owner>
+      <favorited>31</favorited>
+      <installstotal>38973</installstotal>
+      <installsrecent>3171</installsrecent>
+      <shortdescription><![CDATA[<p>TestNG plug-in for Eclipse.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>TestNG plug-in for Eclipse.</p>
+]]></body>
+      <created>1277387503</created>
+      <changed>1277387896</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://testng.org]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/testng-eclipse.png?itok=m2qIwb_V]]></screenshot>
+      <version></version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[Cédric Beust]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4 3.5 3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://groups.google.com/group/testng-users/]]></supporturl>
+      <updateurl><![CDATA[http://beust.com/eclipse]]></updateurl>
+<ius>
+<iu>org.testng.eclipse</iu>
+</ius>
+    </node>
+    </marketplace>
+    

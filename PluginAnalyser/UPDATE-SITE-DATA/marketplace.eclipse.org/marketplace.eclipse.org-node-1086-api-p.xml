@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1086" name="JDBCWizard " url="http://marketplace.eclipse.org/content/jdbcwizard">
+      <type>resource</type>
+      <categories>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+        <category id='21' name='Web Services' url='http://marketplace.eclipse.org/taxonomy/term/21'/>
+        <category id='36' name='Database Persistence' url='http://marketplace.eclipse.org/category/categories/database-persistence'/>
+        <category id='1970' name='Database Development' url='http://marketplace.eclipse.org/category/categories/database-development'/>
+      </categories>
+      <tags>
+        <tag id='155' name='oracle' url='http://marketplace.eclipse.org/category/free-tagging/oracle'/>
+        <tag id='193' name='automation' url='http://marketplace.eclipse.org/category/free-tagging/automation'/>
+        <tag id='373' name='JDBC' url='http://marketplace.eclipse.org/category/free-tagging/jdbc'/>
+        <tag id='375' name='Web Services' url='http://marketplace.eclipse.org/category/free-tagging/web-services'/>
+        <tag id='376' name='PL SQL' url='http://marketplace.eclipse.org/category/free-tagging/pl-sql'/>
+      </tags>
+      
+      <owner>David Rolfe</owner>
+      <favorited>3</favorited>
+      <installstotal>141</installstotal>
+      <installsrecent>2</installsrecent>
+      <shortdescription><![CDATA[<p><strong>JDBCWizard - We generate Oracle JDBC calls so you don't have to!</strong></p>
+<p>JDBCWizard enables you to create Web Services for your existing Oracle database with minimal effort. JDBCWizard works for both PL/SQL procedures and SQL statements. JDBCWizard is designed specifically for Oracle and hides the complexity associated with real world PL/SQL that involves records and arrays.</p>
+<p>You don't need to know how PL/SQL works or how to get it to work with JDBC to create fully functional JSR181 compliant Java Web Services.</p>
+<!--break--><p><strong>Why Use JDBCWizard to create your Oracle web services?</strong></p>
+<p><strong>Problem:</strong> Creating database web services is non-trivial.</p>
+<p>The glue code that sits between your database and your web service engine will represent the bulk of your web service conversation effort. Not only that, it will need to be maintained as long as the underlying database exists. Creating this code may require more work than it took to create the database it uses.</p>
+<p><strong>Solution:</strong> JDBCWizard generates this code for you with minimal effort</p>
+<p><strong>Problem:</strong> Simply sticking a Java Data Access Object layer on top of Oracle does not give you web services.</p>
+<p>Most existing systems will have business logic that is expressed with SQL statements. In such cases having access to the database schema is not enough - outside knowledge on how the data should be interpreted is required to turn the raw data stored in potentially hundreds of tables into valid business information. You can't simply issue 'dumb' SQL statements. You have to use ones that were carefully written by someone else.</p>
+<p><strong>Solution:</strong> JDBCWizard writes Java to run your key SQL statements as Java web services</p>
+<p><strong>Problem:</strong> Most existing systems will use lots of arcane PL/SQL, which you may not know much about.</p>
+<p>PL/SQL is used in Oracle for pretty much any problem that can't be solved with a single SQL statement. But PL/SQL is an 3GL based on ADA. It makes extensive use of records and arrays as parameters and these can be hard to access using Java as JDBC doesn't really understand all of them. More importantly none of your developers will know all the details of this or want to learn them.</p>
+<p><strong>Solution:</strong> JDBCWizard can create Java services for your PL/SQL wthout you having to understand the details of JDBC and PL/SQL</p>
+<p><strong>Problem:</strong> Most PL/SQL procedures were never designed with JDBC in mind</p>
+<p>PL/SQL handles parameters totally differently from Java, and as a result the code to call a procedure as a service can be amazingly complicated and verbose</p>
+<p><strong>Solution:</strong> JDBCWizard creates all the Java classes you need to create PL/SQL web services without you having to waste time coding them yourself</p>
+]]></shortdescription>
+      <body><![CDATA[<p><strong>JDBCWizard - We generate Oracle JDBC calls so you don't have to!</strong></p>
+<p>JDBCWizard enables you to create Web Services for your existing Oracle database with minimal effort. JDBCWizard works for both PL/SQL procedures and SQL statements. JDBCWizard is designed specifically for Oracle and hides the complexity associated with real world PL/SQL that involves records and arrays.</p>
+<p>You don't need to know how PL/SQL works or how to get it to work with JDBC to create fully functional JSR181 compliant Java Web Services.</p>
+<!--break--><p><strong>Why Use JDBCWizard to create your Oracle web services?</strong></p>
+<p><strong>Problem:</strong> Creating database web services is non-trivial.</p>
+<p>The glue code that sits between your database and your web service engine will represent the bulk of your web service conversation effort. Not only that, it will need to be maintained as long as the underlying database exists. Creating this code may require more work than it took to create the database it uses.</p>
+<p><strong>Solution:</strong> JDBCWizard generates this code for you with minimal effort</p>
+<p><strong>Problem:</strong> Simply sticking a Java Data Access Object layer on top of Oracle does not give you web services.</p>
+<p>Most existing systems will have business logic that is expressed with SQL statements. In such cases having access to the database schema is not enough - outside knowledge on how the data should be interpreted is required to turn the raw data stored in potentially hundreds of tables into valid business information. You can't simply issue 'dumb' SQL statements. You have to use ones that were carefully written by someone else.</p>
+<p><strong>Solution:</strong> JDBCWizard writes Java to run your key SQL statements as Java web services</p>
+<p><strong>Problem:</strong> Most existing systems will use lots of arcane PL/SQL, which you may not know much about.</p>
+<p>PL/SQL is used in Oracle for pretty much any problem that can't be solved with a single SQL statement. But PL/SQL is an 3GL based on ADA. It makes extensive use of records and arrays as parameters and these can be hard to access using Java as JDBC doesn't really understand all of them. More importantly none of your developers will know all the details of this or want to learn them.</p>
+<p><strong>Solution:</strong> JDBCWizard can create Java services for your PL/SQL wthout you having to understand the details of JDBC and PL/SQL</p>
+<p><strong>Problem:</strong> Most PL/SQL procedures were never designed with JDBC in mind</p>
+<p>PL/SQL handles parameters totally differently from Java, and as a result the code to call a procedure as a service can be amazingly complicated and verbose</p>
+<p><strong>Solution:</strong> JDBCWizard creates all the Java classes you need to create PL/SQL web services without you having to waste time coding them yourself</p>
+]]></body>
+      <created>1260810660</created>
+      <changed>1309341907</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.orindasoft.com/public/features.php4]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/orindabuild4.gif?itok=xVp6DdS2]]></image>
+      <version>6</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Orinda Software Ltd]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3,3.4,3.5,3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://supportblog.orindasoft.com/]]></supporturl>
+      <updateurl><![CDATA[http://www.orindasoft.com/public/ec35]]></updateurl>
+<ius>
+<iu>JDBCWizard_EC35_Feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

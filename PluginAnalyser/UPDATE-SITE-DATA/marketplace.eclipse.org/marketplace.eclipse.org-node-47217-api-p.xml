@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="47217" name="ANTXR" url="http://marketplace.eclipse.org/content/antxr">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='873' name='Parsing' url='http://marketplace.eclipse.org/category/free-tagging/parsing'/>
+        <tag id='1867' name='antxr' url='http://marketplace.eclipse.org/category/free-tagging/antxr'/>
+      </tags>
+      
+      <owner>Scott Stanchfield</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>XML Parsing using an ANTLR-based grammar specification. Create grammars to parse an XML document!</p>
+<p>See <a href="http://javadude.com/tools/antxr/">http://javadude.com/tools/antxr/</a> for more details</p>
+]]></shortdescription>
+      <body><![CDATA[<p>XML Parsing using an ANTLR-based grammar specification. Create grammars to parse an XML document!</p>
+<p>See <a href="http://javadude.com/tools/antxr/">http://javadude.com/tools/antxr/</a> for more details</p>
+]]></body>
+      <created>1303330664</created>
+      <changed>1315834096</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://javadude.com/tools/antxr]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>2.1.9</version>
+      <license>EPL</license>
+      <companyname><![CDATA[JavaDude.com]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.0]]></eclipseversion>
+      <supporturl><![CDATA[http://javadude.com/tools/antxr/]]></supporturl>
+      <updateurl><![CDATA[http://javadude.googlecode.com/svn/trunk/com.javadude.updatesite]]></updateurl>
+<ius>
+<iu>com.javadude.antxr.feature_2.1.9.jar</iu>
+</ius>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="20208" name="Workspace Preferences Transferrer" url="http://marketplace.eclipse.org/content/workspace-preferences-transferrer">
+      <type>resource</type>
+      <categories>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='1370' name='preferences' url='http://marketplace.eclipse.org/category/free-tagging/preferences'/>
+        <tag id='1371' name='workspace' url='http://marketplace.eclipse.org/category/free-tagging/workspace'/>
+        <tag id='1372' name='transfer' url='http://marketplace.eclipse.org/category/free-tagging/transfer'/>
+      </tags>
+      
+      <owner>Michael Pellaton</owner>
+      <favorited>8</favorited>
+      <installstotal>661</installstotal>
+      <installsrecent>52</installsrecent>
+      <shortdescription><![CDATA[<p>Extends the <code>File > Switch Workspace…</code> command with the option to transfer all preferences from the current workspace to the other one.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Extends the <code>File > Switch Workspace…</code> command with the option to transfer all preferences from the current workspace to the other one.</p>
+]]></body>
+      <created>1289997674</created>
+      <changed>1329030011</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/a/eclipselabs.org/p/wsprefs-transferrer]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/ete-xprefs-mp.png?itok=dfN7-SEJ]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/wsprefs.png?itok=L2JBL6D0]]></screenshot>
+      <version>3.0.3</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Eclipse Labs Workspace Preferences Transferrer]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5.0]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://svn.codespot.com/a/eclipselabs.org/wsprefs-transferrer/updatesite]]></updateurl>
+<ius>
+<iu>org.eclipselabs.wsprefs.transferrer.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

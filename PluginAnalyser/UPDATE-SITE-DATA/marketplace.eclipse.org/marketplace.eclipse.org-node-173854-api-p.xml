@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="173854" name="mBProfiler" url="http://marketplace.eclipse.org/content/mbprofiler-0">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='13' name='Profiling' url='http://marketplace.eclipse.org/taxonomy/term/13'/>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='1964' name='Application Development Frameworks' url='http://marketplace.eclipse.org/category/categories/application-development-frameworks'/>
+      </categories>
+      <tags>
+        <tag id='2387' name='Eclipse-based embedded Java Profiling and Source Code Optimization Tool' url='http://marketplace.eclipse.org/category/free-tagging/eclipse-based-embedded-java-profiling-and-source-code-optimization-tool'/>
+      </tags>
+      
+      <owner>Thomas Forst</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>ProSyst mBProfiler is a source code optimization tool for embedded Java projects and enables developers to tune up their Java programs increasing enormously their productivity and the quality of the delivered software.<br />
+The main features of mBProfiler are:<br />
+•	Memory profiling with class, object, and call tree views<br />
+•	Memory hot spots<br />
+•	Heap allocation information<br />
+•	CPU profiling in timing and sampling mode<br />
+•	CPU call tree view and hot spots<br />
+•	Tracking the stack traces of the active threads and the monitors they use<br />
+•	Visual representation of the VM work loads by different parameters<br />
+•	Source code reference<br />
+•	Garbage collection during profiling<br />
+•	Local and remote profiling<br />
+•	Saving and exporting the profiling information for further examination</p>
+<p>The key benefits of mBProfiler are:<br />
+•	Only Java profiler offering such features for embedded development<br />
+•	Unique architecture with minimal memory overhead in profiling mode on the target system<br />
+•	Support of a wide range of JVMs, embedded operating systems, and processors<br />
+•	Easily extensible with support for additional platforms on request</p>
+]]></shortdescription>
+      <body><![CDATA[<p>ProSyst mBProfiler is a source code optimization tool for embedded Java projects and enables developers to tune up their Java programs increasing enormously their productivity and the quality of the delivered software.<br />
+The main features of mBProfiler are:<br />
+•	Memory profiling with class, object, and call tree views<br />
+•	Memory hot spots<br />
+•	Heap allocation information<br />
+•	CPU profiling in timing and sampling mode<br />
+•	CPU call tree view and hot spots<br />
+•	Tracking the stack traces of the active threads and the monitors they use<br />
+•	Visual representation of the VM work loads by different parameters<br />
+•	Source code reference<br />
+•	Garbage collection during profiling<br />
+•	Local and remote profiling<br />
+•	Saving and exporting the profiling information for further examination</p>
+<p>The key benefits of mBProfiler are:<br />
+•	Only Java profiler offering such features for embedded development<br />
+•	Unique architecture with minimal memory overhead in profiling mode on the target system<br />
+•	Support of a wide range of JVMs, embedded operating systems, and processors<br />
+•	Easily extensible with support for additional platforms on request</p>
+]]></body>
+      <created>1324562752</created>
+      <changed>1324659170</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.prosyst.com/index.php/de/html/content/131/mBProfiler/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/ProSyst-Logo%20klein%20%28GIF%29.gif?itok=jHcIO5Bt]]></image>
+      <version>6.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[ProSyst Software GmbH]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[Indigo 3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://dz.prosyst.com/pdoc/introduction_mbprofiler.html]]></supporturl>
+      <updateurl><![CDATA[https://dz.prosyst.com/download/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

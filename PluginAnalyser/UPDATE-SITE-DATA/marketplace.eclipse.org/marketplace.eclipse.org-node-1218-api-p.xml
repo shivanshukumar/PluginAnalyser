@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1218" name="Commit 2.0" url="http://marketplace.eclipse.org/content/commit-20">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='26' name='SCM' url='http://marketplace.eclipse.org/taxonomy/term/26'/>
+      </categories>
+      <tags>
+        <tag id='47' name='visualization' url='http://marketplace.eclipse.org/category/free-tagging/visualization'/>
+        <tag id='369' name='scm' url='http://marketplace.eclipse.org/category/free-tagging/scm'/>
+        <tag id='455' name='Repository' url='http://marketplace.eclipse.org/category/free-tagging/repository'/>
+        <tag id='460' name='Subclipse' url='http://marketplace.eclipse.org/category/free-tagging/subclipse'/>
+        <tag id='717' name='software evolution' url='http://marketplace.eclipse.org/category/free-tagging/software-evolution'/>
+      </tags>
+      
+      <owner>Roberto Minelli</owner>
+      <favorited>7</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Widely adopted versioning systems allow developers to write comments at commit time to describe the changes that they have performed. The current limitation is that such comments can only be textual. For example documenting a commit that involves multiple files is difficult: The developer needs to write a text that describes all the modifications. Non descriptive or, even worst, blank comments make hard the work of researchers mining software repositories to understand code evolution.</p>
+<p>We have ported a prototype for Smalltalk to a mainstream IDE (Eclipse). Commit 2.0 tackles the problem of the limited support for documenting software changes at commit time, by enriching commit comments with software visualization and floating annotations. Our approach generates interactive visualizations of the changes where the user can insert annotations in the context to which they pertain.</p>
+<p>It requires Subclipse.<br />
+Please install it through the update site: <a href="http://subclipse.tigris.org/update_1.6.x">http://subclipse.tigris.org/update_1.6.x</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Widely adopted versioning systems allow developers to write comments at commit time to describe the changes that they have performed. The current limitation is that such comments can only be textual. For example documenting a commit that involves multiple files is difficult: The developer needs to write a text that describes all the modifications. Non descriptive or, even worst, blank comments make hard the work of researchers mining software repositories to understand code evolution.</p>
+<p>We have ported a prototype for Smalltalk to a mainstream IDE (Eclipse). Commit 2.0 tackles the problem of the limited support for documenting software changes at commit time, by enriching commit comments with software visualization and floating annotations. Our approach generates interactive visualizations of the changes where the user can insert annotations in the context to which they pertain.</p>
+<p>It requires Subclipse.<br />
+Please install it through the update site: <a href="http://subclipse.tigris.org/update_1.6.x">http://subclipse.tigris.org/update_1.6.x</a></p>
+]]></body>
+      <created>1274195018</created>
+      <changed>1277135555</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://commit20.inf.usi.ch]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/comm20logo.png?itok=lQlzXqSi]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/ME-coarse-ann.png?itok=LiiDBKnb]]></screenshot>
+      <version>(v1.0.1.3)</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[Università della Svizzera Italiana]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://commit20.inf.usi.ch/aboutme.html]]></supporturl>
+      <updateurl><![CDATA[http://commit20.inf.usi.ch/update/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

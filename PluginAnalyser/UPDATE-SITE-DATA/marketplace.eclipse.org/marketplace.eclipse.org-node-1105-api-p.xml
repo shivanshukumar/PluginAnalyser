@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1105" name="Hudson Status" url="http://marketplace.eclipse.org/content/hudson-status">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>Devon Carew</owner>
+      <favorited>11</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This plugin displays an icon in the application's status bar showing the status of a Hudson build server. If projects are failing the icon changes and the failing projects are listing in the tooltip. It's a very simple green light / red light status of your build.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This plugin displays an icon in the application's status bar showing the status of a Hudson build server. If projects are failing the icon changes and the failing projects are listing in the tooltip. It's a very simple green light / red light status of your build.</p>
+]]></body>
+      <created>1262807934</created>
+      <changed>1262887862</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/eclipse-plugin-potpourri/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.2.5</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[Eclipse Plugin Potpourri]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://eclipse-plugin-potpourri.googlecode.com/svn/trunk/org.dcarew.updatesite/]]></updateurl>
+    </node>
+    </marketplace>
+    

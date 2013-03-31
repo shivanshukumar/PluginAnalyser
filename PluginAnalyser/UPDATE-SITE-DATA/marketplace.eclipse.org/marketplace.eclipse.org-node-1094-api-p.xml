@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1094" name="UML 2 Plugin for Eclipse" url="http://marketplace.eclipse.org/content/uml-2-plugin-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+      </categories>
+      <tags>
+        <tag id='637' name='s' url='http://marketplace.eclipse.org/category/free-tagging/s'/>
+        <tag id='2065' name='UML 2' url='http://marketplace.eclipse.org/category/free-tagging/uml-2'/>
+        <tag id='2066' name='UML 2 Plugin' url='http://marketplace.eclipse.org/category/free-tagging/uml-2-plugin'/>
+        <tag id='2404' name='uml2' url='http://marketplace.eclipse.org/category/free-tagging/uml2'/>
+      </tags>
+      
+      <owner>Jason O'Keefe</owner>
+      <favorited>23</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p></p>
+
+<td valign="top" style="font-color: #eeeeee;">
+<h1>MyEclipse UML 2 plugin<br /></h1>
+<p><br /></p>
+<p></p><table border="0" cellpadding="10" cellspacing="0"><tbody><tr><td colspan="2" nowrap="nowrap">
+<hr /></td>
+</tr><tr><td valign="top" align="left">
+<p>MyEclipse's standalone UML 2 module delivers a polished UML2 tooling experience. The module is installable on any Eclipse Classic install by utilizing the MyEclipse update site and following the prompts. <br /></p>
+<p>1. Be sure Eclipse "Classic" is installed. <br /></p>
+<p>2. Start Eclipse > Select Help > Software Updates > Available Software Tab > Add Site > Enter this URL <a href="http://downloads.myeclipseide.com/downloads/products/eworkbench/helios/enterprise-earlyaccess">http://downloads.myeclipseide.com/downloads/products/eworkbench/helios/e...</a> <br /></p>
+<p>3. From there you just "Next" your way through the wizard and MyEclipse will be installed for you.<br /><br /></p><hr /><br /><p>With support for Drag-and-Drop reverse engineering, Import and Export of XMI 2.1 & 2.0 files, Rational EMX file support and advanced diagram layout, MyEclipse provides all the UML2 modeling support you'll need for your projects. The UML2 feature set can be installed from the Dashboard (Help > Manage MyEclipse Plug-ins...) within MyEclipse.
+							</p>
+<p>
+								<a href="http://www.myeclipseide.com/modules/ContentExpress/img_repository/docs/80/uml2_fe.png" target="_blank"><img alt="" src="http://www.myeclipseide.com/modules/ContentExpress/img_repository/docs/80/uml2_fe.png" width="187" height="147" border="0" /></a>
+							</p>
+<p>
+								UML2 models and diagrams can automatically be generated from JAR<br />
+								and XMI files.
+							</p>
+<p>
+								<a href="http://www.myeclipseide.com/modules/ContentExpress/img_repository/docs/80/uml2_re_jars.png" target="_blank"><img alt="" src="http://www.myeclipseide.com/modules/ContentExpress/img_repository/docs/80/uml2_re_jars.png" width="191" height="70" border="0" /></a>
+							</p>
+<p>
+								Export all diagrams in your UML2 model easily using the<br /><em>Export All Diagrams... </em> context menu action. You can select diagrams to be exported in the resulting wizard.
+							</p>
+<p>
+								<a href="http://www.myeclipseide.com/modules/ContentExpress/img_repository/docs/80/uml2_export_diagrams.png" target="_blank><img alt=" src="http://www.myeclipseide.com/modules/ContentExpress/img_repository/docs/80/uml2_export_diagrams.png" border="0" width="222" height="160"></a>
+							</p>
+<p>
+								<a href="http://www.myeclipseide.com/modules/ContentExpress/img_repository/docs/80/uml2_export_diagrams_wizard.png" target="_blank"><img alt="" src="http://www.myeclipseide.com/modules/ContentExpress/img_repository/docs/80/uml2_export_diagrams_wizard.png" width="170" height="145" /></a>
+							</p>
+<p>Automatic generation of UML2 Sequence Diagrams from Java Source code is now supported:</p>
+<p><a href="http://www.myeclipseide.com/modules/ContentExpress/img_repository/docs/80/GenSequenceDiagramAction.jpg" target="_blank"><img alt="" src="http://www.myeclipseide.com/modules/ContentExpress/img_repository/docs/80/GenSequenceDiagramAction.jpg" width="251" height="77" /></a></p>
+<p></p>
+<p><a href="http://www.myeclipseide.com/modules/ContentExpress/img_repository/docs/80/SequenceDiagram.jpg" target="_blank"><img alt="" src="http://www.myeclipseide.com/modules/ContentExpress/img_repository/docs/80/SequenceDiagram.jpg" width="227" height="175" /></a>
+								</p>
+</td>
+</tr></tbody></table></td>]]></shortdescription>
+      <body><![CDATA[<p></p>
+
+<td valign="top" style="font-color: #eeeeee;">
+<h1>MyEclipse UML 2 plugin<br /></h1>
+<p><br /></p>
+<p></p><table border="0" cellpadding="10" cellspacing="0"><tbody><tr><td colspan="2" nowrap="nowrap">
+<hr /></td>
+</tr><tr><td valign="top" align="left">
+<p>MyEclipse's standalone UML 2 module delivers a polished UML2 tooling experience. The module is installable on any Eclipse Classic install by utilizing the MyEclipse update site and following the prompts. <br /></p>
+<p>1. Be sure Eclipse "Classic" is installed. <br /></p>
+<p>2. Start Eclipse > Select Help > Software Updates > Available Software Tab > Add Site > Enter this URL <a href="http://downloads.myeclipseide.com/downloads/products/eworkbench/helios/enterprise-earlyaccess">http://downloads.myeclipseide.com/downloads/products/eworkbench/helios/e...</a> <br /></p>
+<p>3. From there you just "Next" your way through the wizard and MyEclipse will be installed for you.<br /><br /></p><hr /><br /><p>With support for Drag-and-Drop reverse engineering, Import and Export of XMI 2.1 & 2.0 files, Rational EMX file support and advanced diagram layout, MyEclipse provides all the UML2 modeling support you'll need for your projects. The UML2 feature set can be installed from the Dashboard (Help > Manage MyEclipse Plug-ins...) within MyEclipse.
+							</p>
+<p>
+								<a href="http://www.myeclipseide.com/modules/ContentExpress/img_repository/docs/80/uml2_fe.png" target="_blank"><img alt="" src="http://www.myeclipseide.com/modules/ContentExpress/img_repository/docs/80/uml2_fe.png" width="187" height="147" border="0" /></a>
+							</p>
+<p>
+								UML2 models and diagrams can automatically be generated from JAR<br />
+								and XMI files.
+							</p>
+<p>
+								<a href="http://www.myeclipseide.com/modules/ContentExpress/img_repository/docs/80/uml2_re_jars.png" target="_blank"><img alt="" src="http://www.myeclipseide.com/modules/ContentExpress/img_repository/docs/80/uml2_re_jars.png" width="191" height="70" border="0" /></a>
+							</p>
+<p>
+								Export all diagrams in your UML2 model easily using the<br /><em>Export All Diagrams... </em> context menu action. You can select diagrams to be exported in the resulting wizard.
+							</p>
+<p>
+								<a href="http://www.myeclipseide.com/modules/ContentExpress/img_repository/docs/80/uml2_export_diagrams.png" target="_blank><img alt=" src="http://www.myeclipseide.com/modules/ContentExpress/img_repository/docs/80/uml2_export_diagrams.png" border="0" width="222" height="160"></a>
+							</p>
+<p>
+								<a href="http://www.myeclipseide.com/modules/ContentExpress/img_repository/docs/80/uml2_export_diagrams_wizard.png" target="_blank"><img alt="" src="http://www.myeclipseide.com/modules/ContentExpress/img_repository/docs/80/uml2_export_diagrams_wizard.png" width="170" height="145" /></a>
+							</p>
+<p>Automatic generation of UML2 Sequence Diagrams from Java Source code is now supported:</p>
+<p><a href="http://www.myeclipseide.com/modules/ContentExpress/img_repository/docs/80/GenSequenceDiagramAction.jpg" target="_blank"><img alt="" src="http://www.myeclipseide.com/modules/ContentExpress/img_repository/docs/80/GenSequenceDiagramAction.jpg" width="251" height="77" /></a></p>
+<p></p>
+<p><a href="http://www.myeclipseide.com/modules/ContentExpress/img_repository/docs/80/SequenceDiagram.jpg" target="_blank"><img alt="" src="http://www.myeclipseide.com/modules/ContentExpress/img_repository/docs/80/SequenceDiagram.jpg" width="227" height="175" /></a>
+								</p>
+</td>
+</tr></tbody></table></td>]]></body>
+      <created>1261166192</created>
+      <changed>1354564747</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.myeclipseide.com/htmlpages-func-display-pid-442.html]]></homepageurl>
+      <image><![CDATA[http://www.myeclipseide.com/images/features/uml2.jpg]]></image>
+      <version>10.7</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Genuitec, LLC]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6.1/3.7.x]]></eclipseversion>
+      <supporturl><![CDATA[http://www.myeclipseide.com/module-htmlpages-display-pid-8.html]]></supporturl>
+      <updateurl><![CDATA[http://downloads.myeclipseide.com/downloads/products/eworkbench/helios/enterprise-earlyaccess]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

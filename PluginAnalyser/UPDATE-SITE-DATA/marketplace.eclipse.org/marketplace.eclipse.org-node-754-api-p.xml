@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="754" name="Path Tools" url="http://marketplace.eclipse.org/content/path-tools">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='1058' name='desktop integration' url='http://marketplace.eclipse.org/category/free-tagging/desktop-integration'/>
+        <tag id='2366' name='path tools' url='http://marketplace.eclipse.org/category/free-tagging/path-tools'/>
+      </tags>
+      
+      <owner>Sandip Chitale</owner>
+      <favorited>40</favorited>
+      <installstotal>2598</installstotal>
+      <installsrecent>228</installsrecent>
+      <shortdescription><![CDATA[<p>What is new?<br />
+     * Added support for Copy Path, Explore and Command Line Shell actions to local resources in RSE (Needs RSE)<br />
+     * Added Copy SVN URL for resources in SVN based projects (Needs Subclipse)<br />
+     * Fixed Issue 14 in pathtools: Path Tools update breaks launchers using Indigo RC1<br />
+     * Make the PathTools variables as Eclipse substitution variables.<br />
+     * Allow use of other Eclipse substitution variables such as ${eclipse_home} in PathTools commands. Interesting things are possible using the ${string_prompt} or ${folder_prompt} etc.<br />
+     * The PathTool commands now work for Text Editor tabs of Multipage editors such as Plug-in Manifest editor.</p>
+<p>The PathTools plug-in adds the following actions to Eclipse.</p>
+<p>    * CopyPath - this action copies the fully qualified path of selected folders and files into the Clipboard. Copy Paths action is now a drop down and allows you to copy paths in all different formats. The last used format is remembered and used. The action's drop down allows copying paths of other well known places.</p>
+<p>    * Explore - this action opens the selected folder or the folder containing the selected file in the OS file explorer.  The user can configure the exact command that is used to launch the file explorer. The action's drop down allows exploring other well known places.</p>
+<p>    * Command Line Shell - this action opens a command line shell window at the selected folder or the folder containing the selected file. The action's drop down allows opening a command line shell window at other well known folders.</p>
+<p>    * Open in external editor... - this action opens the selected folder or file using the selected external editor.  The user can configure the exact command that is used to launch the external editor</p>
+<p>    * Custom actions pull down menu. This custom actions can be defined in Path Tools preferences page. You can specify display label, wildcard pattern and command to execute. The display label is used as the label for menu items.  The wildcard pattern is used to match file name to determine applicable commands.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>What is new?<br />
+     * Added support for Copy Path, Explore and Command Line Shell actions to local resources in RSE (Needs RSE)<br />
+     * Added Copy SVN URL for resources in SVN based projects (Needs Subclipse)<br />
+     * Fixed Issue 14 in pathtools: Path Tools update breaks launchers using Indigo RC1<br />
+     * Make the PathTools variables as Eclipse substitution variables.<br />
+     * Allow use of other Eclipse substitution variables such as ${eclipse_home} in PathTools commands. Interesting things are possible using the ${string_prompt} or ${folder_prompt} etc.<br />
+     * The PathTool commands now work for Text Editor tabs of Multipage editors such as Plug-in Manifest editor.</p>
+<p>The PathTools plug-in adds the following actions to Eclipse.</p>
+<p>    * CopyPath - this action copies the fully qualified path of selected folders and files into the Clipboard. Copy Paths action is now a drop down and allows you to copy paths in all different formats. The last used format is remembered and used. The action's drop down allows copying paths of other well known places.</p>
+<p>    * Explore - this action opens the selected folder or the folder containing the selected file in the OS file explorer.  The user can configure the exact command that is used to launch the file explorer. The action's drop down allows exploring other well known places.</p>
+<p>    * Command Line Shell - this action opens a command line shell window at the selected folder or the folder containing the selected file. The action's drop down allows opening a command line shell window at other well known folders.</p>
+<p>    * Open in external editor... - this action opens the selected folder or file using the selected external editor.  The user can configure the exact command that is used to launch the external editor</p>
+<p>    * Custom actions pull down menu. This custom actions can be defined in Path Tools preferences page. You can specify display label, wildcard pattern and command to execute. The display label is used as the label for menu items.  The wildcard pattern is used to match file name to determine applicable commands.</p>
+]]></body>
+      <created>1219859043</created>
+      <changed>1323026298</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/pathtools/]]></homepageurl>
+      <image><![CDATA[http://pathtools.googlecode.com/files/PathToolsToolbar110x80.3.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/PathToolsPreferencesPage.png?itok=Mb8IID96]]></screenshot>
+      <version>1.0.64</version>
+      <license>BSD</license>
+      <companyname><![CDATA[Sandip V. Chitale]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.7.1,3.7,3.6,3.5,3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/pathtools/issues/list]]></supporturl>
+      <updateurl><![CDATA[http://pathtools.googlecode.com/svn/trunk/PathToolsUpdateSite]]></updateurl>
+<ius>
+<iu>PathToolsFeature</iu>
+<iu>PathToolsSubclipseFeature</iu>
+<iu>PathToolsRSEFeature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

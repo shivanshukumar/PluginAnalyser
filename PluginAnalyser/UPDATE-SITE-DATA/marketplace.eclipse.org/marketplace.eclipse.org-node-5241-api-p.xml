@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="5241" name="Drupal for Eclipse PDT" url="http://marketplace.eclipse.org/content/drupal-eclipse-pdt">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+      <tags>
+        <tag id='43' name='PHP' url='http://marketplace.eclipse.org/category/free-tagging/php'/>
+        <tag id='121' name='theme' url='http://marketplace.eclipse.org/category/free-tagging/theme'/>
+        <tag id='250' name='simpletest' url='http://marketplace.eclipse.org/category/free-tagging/simpletest'/>
+        <tag id='251' name='pdt' url='http://marketplace.eclipse.org/category/free-tagging/pdt'/>
+        <tag id='809' name='jquery' url='http://marketplace.eclipse.org/category/free-tagging/jquery'/>
+      </tags>
+      
+      <owner>Chris Charlton</owner>
+      <favorited>10</favorited>
+      <installstotal>2313</installstotal>
+      <installsrecent>35</installsrecent>
+      <shortdescription><![CDATA[<p>Enhances PDT for use with Drupal development. The goal of this plug-in is to provide common configuration enhancements, and later development productivity features for Drupal/PHP developers.</p>
+<p><strong>Current Feature:</strong></p>
+<ul><li>Adds new Drupal content-types under PHP for Drupal file types like *.module, *.install, *.theme, etc.</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>Enhances PDT for use with Drupal development. The goal of this plug-in is to provide common configuration enhancements, and later development productivity features for Drupal/PHP developers.</p>
+<p><strong>Current Feature:</strong></p>
+<ul><li>Adds new Drupal content-types under PHP for Drupal file types like *.module, *.install, *.theme, etc.</li>
+</ul>]]></body>
+      <created>1280382870</created>
+      <changed>1280417468</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://xtnd.us/eclipse/install]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Drupal_Eclipse_PDT_icon_simple.png?itok=TqlEOik0]]></image>
+      <version>0.2.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[XTND.US]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.3, 3.4, 3.5, 3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://xtnd.us]]></supporturl>
+      <updateurl><![CDATA[http://xtnd.us/downloads/eclipse]]></updateurl>
+<ius>
+<iu>Drupal_for_Eclipse_PDT</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

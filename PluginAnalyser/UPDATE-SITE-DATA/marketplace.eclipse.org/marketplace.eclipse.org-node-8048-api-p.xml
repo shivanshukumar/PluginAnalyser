@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="8048" name="SEA-QL: Java Code Search Engine" url="http://marketplace.eclipse.org/content/sea-ql-java-code-search-engine">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='40' name='Search' url='http://marketplace.eclipse.org/category/categories/search'/>
+      </categories>
+      <tags>
+        <tag id='784' name='reuse' url='http://marketplace.eclipse.org/category/free-tagging/reuse'/>
+        <tag id='1143' name='Source code search' url='http://marketplace.eclipse.org/category/free-tagging/source-code-search'/>
+        <tag id='1146' name='maintenance' url='http://marketplace.eclipse.org/category/free-tagging/maintenance'/>
+      </tags>
+      
+      <owner>Alex Antonau</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The primary function of the SEA-QL is the fast and accurate search of Java-related software engineering artifacts using their properties and relations. </p>
+<p>SEA-QL’s unparalleled artifact search capability allows developers to save time and resources when searching through source code.</p>
+<p>* Quick: Find lists artifacts in seconds, not hours or days.<br />
+* Precise: Find exactly what you are looking for by defining search scope as generally or as detailed as you like.<br />
+* Flexible: Whether you are searching for a list of literals or projects, SEA-QL is the right tool to use.<br />
+* Scalable: SEA-QL can be used easily on programs with thousands or millions of lines of code.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The primary function of the SEA-QL is the fast and accurate search of Java-related software engineering artifacts using their properties and relations. </p>
+<p>SEA-QL’s unparalleled artifact search capability allows developers to save time and resources when searching through source code.</p>
+<p>* Quick: Find lists artifacts in seconds, not hours or days.<br />
+* Precise: Find exactly what you are looking for by defining search scope as generally or as detailed as you like.<br />
+* Flexible: Whether you are searching for a list of literals or projects, SEA-QL is the right tool to use.<br />
+* Scalable: SEA-QL can be used easily on programs with thousands or millions of lines of code.</p>
+]]></body>
+      <created>1283156211</created>
+      <changed>1336088269</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.seambase.com/products.htm]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/artifacts.png?itok=ufny30xJ]]></screenshot>
+      <version>1.0</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[Seambase]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.4,3.5,3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://groups.google.com/group/seaql-beta]]></supporturl>
+      <updateurl><![CDATA[http://www.seambase.com/download/sea-ql-eclipse-1.0-beta/]]></updateurl>
+    </node>
+    </marketplace>
+    

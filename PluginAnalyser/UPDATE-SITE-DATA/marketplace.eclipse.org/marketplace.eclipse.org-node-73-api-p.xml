@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="73" name="Eclipse-games" url="http://marketplace.eclipse.org/content/eclipse-games">
+      <type>resource</type>
+      <categories>
+        <category id='7' name='Entertainment' url='http://marketplace.eclipse.org/taxonomy/term/7'/>
+      </categories>
+      <tags>
+        <tag id='750' name='games funny entertainment' url='http://marketplace.eclipse.org/category/free-tagging/games-funny-entertainment'/>
+      </tags>
+      
+      <owner>Chemi</owner>
+      <favorited>3</favorited>
+      <installstotal>132</installstotal>
+      <installsrecent>1</installsrecent>
+      <shortdescription><![CDATA[Several games plugins for Eclipse IDE including minesweeper, snake and sokoban.]]></shortdescription>
+      <body><![CDATA[Several games plugins for Eclipse IDE including minesweeper, snake and sokoban.]]></body>
+      <created>1076014654</created>
+      <changed>1287402121</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://eclipse-games.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://eclipse-games.sourceforge.net/eclipse-games.jpg]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Capture.gif?itok=YDRvEZgp]]></screenshot>
+      <version>3.2</version>
+      <license>Other Open Source</license>
+      <companyname><![CDATA[Chemi Co.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.1.x, 3.2.x, 3.3.x, 3.4.x, 3.5.x and 3.6.x]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/forum/?group_id=87170]]></supporturl>
+      <updateurl><![CDATA[http://eclipse-games.sourceforge.net/update]]></updateurl>
+<ius>
+<iu>es.org.chemi.games.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

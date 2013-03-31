@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="680" name="CodeDrive" url="http://marketplace.eclipse.org/content/codedrive">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='51' name='IDE' url='http://marketplace.eclipse.org/category/free-tagging/ide'/>
+        <tag id='535' name='Actionscript' url='http://marketplace.eclipse.org/category/free-tagging/actionscript'/>
+        <tag id='748' name='Flash' url='http://marketplace.eclipse.org/category/free-tagging/flash'/>
+      </tags>
+      
+      <owner>Slava Uskov</owner>
+      <favorited>1</favorited>
+      <installstotal>8</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[CodeDrive is a new smart IDE for professional Flash development. CodeDrive is based on Eclipse platform and gives you complete coding comfort with intelligent code completion, smart search and source code management. You can develop Flash applications in ActionScript 2.0 faster with CodeDrive. CodeDrive supports building of .swf files through Adobe Flash software or own internal builder.
+
+Features
+	
+Coding:
+
+Intelligent Code Completion
+Code templates
+Smart Search
+Class Wizard
+Interface Wizard
+Project Wizard
+Package Wizard
+
+Building:
+	
+Fast ActionScript Compiler
+Fast Flash Publisher
+Resource Management
+
+Testing:
+	
+Flash console
+Integrated Flash Player 
+]]></shortdescription>
+      <body><![CDATA[CodeDrive is a new smart IDE for professional Flash development. CodeDrive is based on Eclipse platform and gives you complete coding comfort with intelligent code completion, smart search and source code management. You can develop Flash applications in ActionScript 2.0 faster with CodeDrive. CodeDrive supports building of .swf files through Adobe Flash software or own internal builder.
+
+Features
+	
+Coding:
+
+Intelligent Code Completion
+Code templates
+Smart Search
+Class Wizard
+Interface Wizard
+Project Wizard
+Package Wizard
+
+Building:
+	
+Fast ActionScript Compiler
+Fast Flash Publisher
+Resource Management
+
+Testing:
+	
+Flash console
+Integrated Flash Player 
+]]></body>
+      <created>1208958392</created>
+      <changed>1274712498</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.codedrive.com]]></homepageurl>
+      <image><![CDATA[http://www.codedrive.com/images/cd_logo_epic.jpg]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screenshot_1_large.jpg?itok=DYFOmKs5]]></screenshot>
+      <version>1.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[iSpring Solutions, Inc.]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.codedrive.com]]></supporturl>
+      <updateurl><![CDATA[http://www.codedrive.com/update]]></updateurl>
+<ius>
+<iu>net.cpslabs.codedrive.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

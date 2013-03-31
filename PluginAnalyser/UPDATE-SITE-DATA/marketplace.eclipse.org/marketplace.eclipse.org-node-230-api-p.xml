@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="230" name="Tribix - Extended Emitters for BIRT" url="http://marketplace.eclipse.org/content/tribix-extended-emitters-birt">
+      <type>resource</type>
+      <categories>
+        <category id='39' name='Reporting' url='http://marketplace.eclipse.org/category/categories/reporting'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>Shawn Q.</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Tribix - Extended emitters for BIRT(Business Intelligence and Reporting Tools) proivdes a set of extended emitters for BIRT. </p>
+]]></shortdescription>
+      <body><![CDATA[<p>Tribix - Extended emitters for BIRT(Business Intelligence and Reporting Tools) proivdes a set of extended emitters for BIRT. </p>
+]]></body>
+      <created>1151336472</created>
+      <changed>1362786890</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://sourceforge.net/projects/tribix/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/71805.jpg?itok=67qLtQuC]]></screenshot>
+      <version>2.5.0</version>
+      <license>LGPL</license>
+      <companyname><![CDATA[uguess.org]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.1+]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/tribix/]]></supporturl>
+      <updateurl><![CDATA[http://tribix.sourceforge.net/update]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

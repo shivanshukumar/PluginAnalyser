@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="165" name="Spket IDE" url="http://marketplace.eclipse.org/content/spket-ide">
+      <type>resource</type>
+      <categories>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+      </categories>
+      <tags>
+        <tag id='2538' name='woow' url='http://marketplace.eclipse.org/category/free-tagging/woow'/>
+      </tags>
+      
+      <owner>Eric Suen</owner>
+      <favorited>16</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Spket IDE is powerful toolkit for JavaScript, XUL/XBL, Laszlo, Flex, SVG, Silverlight and Yahoo! Widget development.<br />
+<br><br><br />
+<h5>It has following features:</h5><br />
+<ul><br />
+<li>JavaScript profile viewer</li><br />
+<li>JavaScript Debugger for IE</li><br />
+<li>JavaScript formatter</li><br />
+<li>Code completion for JavaScript and XML</li><br />
+<li>Syntax highlighting for JavaScript and XML</li><br />
+<li>Code folding for JavaScript and XML</li><br />
+<li>Open declaraction</li><br />
+<li>Content outline</li><br />
+<li>JavaScript Profile for Ext JS, jQuery, qooxdoo, Firefox 1.5/2.0, Laszlo, SVG, Silverlight and Yahoo! Widget development</li><br />
+</ul><br />
+<br><br><br />
+<h5>What's new:</h5><br />
+<ul><br />
+<li>Spket text editor was added, which support CSS/HTML/PHP/Yaml and other languages.</li><br />
+<li>A plugin for YUI Compressor was added, which support multi files and JSBuilder format.</li><br />
+<li>Custom code folding for region was added.</li><br />
+<li>Code assist for Ext now support Ext.Direct, Ext.override and superclass property.</li><br />
+<li>Minor bugfixes and feature enhancements.</li><br />
+</ul></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Spket IDE is powerful toolkit for JavaScript, XUL/XBL, Laszlo, Flex, SVG, Silverlight and Yahoo! Widget development.<br />
+<br><br><br />
+<h5>It has following features:</h5><br />
+<ul><br />
+<li>JavaScript profile viewer</li><br />
+<li>JavaScript Debugger for IE</li><br />
+<li>JavaScript formatter</li><br />
+<li>Code completion for JavaScript and XML</li><br />
+<li>Syntax highlighting for JavaScript and XML</li><br />
+<li>Code folding for JavaScript and XML</li><br />
+<li>Open declaraction</li><br />
+<li>Content outline</li><br />
+<li>JavaScript Profile for Ext JS, jQuery, qooxdoo, Firefox 1.5/2.0, Laszlo, SVG, Silverlight and Yahoo! Widget development</li><br />
+</ul><br />
+<br><br><br />
+<h5>What's new:</h5><br />
+<ul><br />
+<li>Spket text editor was added, which support CSS/HTML/PHP/Yaml and other languages.</li><br />
+<li>A plugin for YUI Compressor was added, which support multi files and JSBuilder format.</li><br />
+<li>Custom code folding for region was added.</li><br />
+<li>Code assist for Ext now support Ext.Direct, Ext.override and superclass property.</li><br />
+<li>Minor bugfixes and feature enhancements.</li><br />
+</ul></p>
+]]></body>
+      <created>1129339892</created>
+      <changed>1259778529</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.spket.com/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.6.18</version>
+      <license>Free for non-commercial use</license>
+      <companyname><![CDATA[spket.com]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2.x, 3.3.x,3.4.x]]></eclipseversion>
+      <supporturl><![CDATA[http://www.spket.com/support.html]]></supporturl>
+      <updateurl><![CDATA[http://www.spket.com/update/]]></updateurl>
+    </node>
+    </marketplace>
+    

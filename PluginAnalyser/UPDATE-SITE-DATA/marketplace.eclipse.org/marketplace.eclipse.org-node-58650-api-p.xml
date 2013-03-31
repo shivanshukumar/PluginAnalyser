@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="58650" name="ExEdit" url="http://marketplace.eclipse.org/content/exedit">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+      <tags>
+        <tag id='1975' name='vi ex' url='http://marketplace.eclipse.org/category/free-tagging/vi-ex'/>
+      </tags>
+      
+      <owner>Kanatoko Anvil</owner>
+      <favorited>0</favorited>
+      <installstotal>159</installstotal>
+      <installsrecent>9</installsrecent>
+      <shortdescription><![CDATA[<p>ExEdit is an Eclipse plugin for executing "ex commands" inside Eclipse.<br />
+"ex(/usr/bin/ex)" is a line editor known as a part of the vi/vim editor.</p>
+<p>For example, "3,5d" means "delete from line 3 to line 5".</p>
+]]></shortdescription>
+      <body><![CDATA[<p>ExEdit is an Eclipse plugin for executing "ex commands" inside Eclipse.<br />
+"ex(/usr/bin/ex)" is a line editor known as a part of the vi/vim editor.</p>
+<p>For example, "3,5d" means "delete from line 3 to line 5".</p>
+]]></body>
+      <created>1307190888</created>
+      <changed>1307369426</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.jumperz.net/index.php?i=2&a=0&b=8]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0.0</version>
+      <license>GPL</license>
+      <companyname><![CDATA[JUMPERZ.NET]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3]]></eclipseversion>
+      <supporturl><![CDATA[http://www.jumperz.net/index.php?i=2&a=0&b=8]]></supporturl>
+      <updateurl><![CDATA[http://www.jumperz.net/update/]]></updateurl>
+<ius>
+<iu>net.jumperz.app.MExEdit</iu>
+</ius>
+    </node>
+    </marketplace>
+    

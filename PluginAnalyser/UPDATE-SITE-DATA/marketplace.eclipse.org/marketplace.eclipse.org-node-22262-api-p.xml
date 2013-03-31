@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="22262" name="Ateji PX for Java" url="http://marketplace.eclipse.org/content/ateji-px-java">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+      </categories>
+      <tags>
+        <tag id='214' name='concurrency' url='http://marketplace.eclipse.org/category/free-tagging/concurrency'/>
+        <tag id='217' name='parallel' url='http://marketplace.eclipse.org/category/free-tagging/parallel'/>
+        <tag id='465' name='Cloud' url='http://marketplace.eclipse.org/category/free-tagging/cloud'/>
+        <tag id='1325' name='thread' url='http://marketplace.eclipse.org/category/free-tagging/thread'/>
+        <tag id='1405' name='parallel programming' url='http://marketplace.eclipse.org/category/free-tagging/parallel-programming'/>
+      </tags>
+      
+      <owner>Patrick Viry</owner>
+      <favorited>2</favorited>
+      <installstotal>14</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Ateji PX for Java makes parallel programming simple and intuitive. It provides a set of parallel extensions for Java that allow developers to easily boost their applications by parallelizing them on multicore platforms and very soon on GPU & Grid. </p>
+<p>Ateji PX was selected as Disruptive Technology at SC10 New Orleans</p>
+<p>Ateji PX is easily accessible to all Java application developers with minimal training. In short, it extends Java with a handful of cleverly chosen syntactic constructs, that make it possible to express within a single language a wide range of patterns, including</p>
+<p>-data-, task-, recursive- and speculative parallelism,<br />
+-on shared-memory or distributed architectures,<br />
+-paradigms such as data flow, stream programming, MapReduce and the Actor model </p>
+<p>All these examples are available in the Ateji PX distribution. It targets today multicore systems. The grid/cloud and GPU version will be available soon. The ETA on the GPU solution is estimated to be september this year. Prototypes are already being used.</p>
+<p>Ateji PX is designed as an extension of Java and comes integrated within Eclipse. This makes it compatible with existing source code, development tools and processes. Learning is especially easy : experience has shown that Java developers on their own were able to compile and run their first parallel programs within a couple of hours.</p>
+<p>Additional features include synchronous message-passing at the language level and very powerful parallel comprehension expressions ("parallel reductions" in OpenMP lingo). The language design makes it possible to statically guarantee properties such as the absence of data-races and deadlocks.</p>
+<p>For more information, please visit our website: <a href="http://www.ateji.com/px">www.ateji.com/px</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Ateji PX for Java makes parallel programming simple and intuitive. It provides a set of parallel extensions for Java that allow developers to easily boost their applications by parallelizing them on multicore platforms and very soon on GPU & Grid. </p>
+<p>Ateji PX was selected as Disruptive Technology at SC10 New Orleans</p>
+<p>Ateji PX is easily accessible to all Java application developers with minimal training. In short, it extends Java with a handful of cleverly chosen syntactic constructs, that make it possible to express within a single language a wide range of patterns, including</p>
+<p>-data-, task-, recursive- and speculative parallelism,<br />
+-on shared-memory or distributed architectures,<br />
+-paradigms such as data flow, stream programming, MapReduce and the Actor model </p>
+<p>All these examples are available in the Ateji PX distribution. It targets today multicore systems. The grid/cloud and GPU version will be available soon. The ETA on the GPU solution is estimated to be september this year. Prototypes are already being used.</p>
+<p>Ateji PX is designed as an extension of Java and comes integrated within Eclipse. This makes it compatible with existing source code, development tools and processes. Learning is especially easy : experience has shown that Java developers on their own were able to compile and run their first parallel programs within a couple of hours.</p>
+<p>Additional features include synchronous message-passing at the language level and very powerful parallel comprehension expressions ("parallel reductions" in OpenMP lingo). The language design makes it possible to statically guarantee properties such as the absence of data-races and deadlocks.</p>
+<p>For more information, please visit our website: <a href="http://www.ateji.com/px">www.ateji.com/px</a></p>
+]]></body>
+      <created>1291124128</created>
+      <changed>1309951380</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.ateji.com/px]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/BoomerangSeul.png?itok=OtdGsHJy]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Ateji%20PX%20Eclipse%20Integration.png?itok=AITMLekV]]></screenshot>
+      <version>1.2</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[Ateji]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4.x (Ganymede), 3.5.x (Galileo), 3.6.x (Helios) and 3.7.x (Indigo)]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://www.ateji.com/px/eclipse/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

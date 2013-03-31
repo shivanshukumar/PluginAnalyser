@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="979" name="Subclipse" url="http://marketplace.eclipse.org/content/subclipse">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='38' name='Mylyn Connectors' url='http://marketplace.eclipse.org/category/categories/mylyn-connectors'/>
+        <category id='26' name='SCM' url='http://marketplace.eclipse.org/taxonomy/term/26'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='44' name='svn' url='http://marketplace.eclipse.org/category/free-tagging/svn'/>
+        <tag id='45' name='subversion' url='http://marketplace.eclipse.org/category/free-tagging/subversion'/>
+        <tag id='46' name='team provider' url='http://marketplace.eclipse.org/category/free-tagging/team-provider'/>
+        <tag id='88' name='mylyn' url='http://marketplace.eclipse.org/category/free-tagging/mylyn'/>
+        <tag id='370' name='alm' url='http://marketplace.eclipse.org/category/free-tagging/alm'/>
+      </tags>
+      
+      <owner>Mark Phippard</owner>
+      <favorited>366</favorited>
+      <installstotal>344199</installstotal>
+      <installsrecent>27310</installsrecent>
+      <shortdescription><![CDATA[<p>An Eclipse Team Provider plug-in providing support for Subversion within the Eclipse IDE.  Developed and maintained by Subversion core committers, Subclipse is always in synch with the latest Subversion features and releases.</p>
+<p>Subclipse includes the CollabNet Merge Client originally developed as part of the <a href="http://marketplace.eclipse.org/content/collabnet-desktop-eclipse-edition">CollabNet Desktop - Eclipse Edition</a>.  The CollabNet Merge Client provides powerful graphical merge capabilities that leverages the merge tracking functionality that was added as part of the Subversion 1.5 release.</p>
+<p>Subclipse includes an optional Mylyn connector that enables Mylyn to create automatic changesets based on the tasks you are working on.  It also enables links to tasks when viewing history of Subversion commits.</p>
+<p>Finally, Subclipse includes a powerful revision graph feature that is built with Eclipse GEF/Draw2D.  This allows you to visualize commits and merges across Subversion branches.</p>
+<p><a href="http://subclipse.tigris.org/servlets/ProjectProcess?pageID=rr1TIx">Subclipse Screenshots on tigris.org</a></p>
+<p>Need a Subversion server, too? Checkout <a href="http://www.open.collab.net/downloads/subversion?cid=empsvn">CollabNet Subversion Edge</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>An Eclipse Team Provider plug-in providing support for Subversion within the Eclipse IDE.  Developed and maintained by Subversion core committers, Subclipse is always in synch with the latest Subversion features and releases.</p>
+<p>Subclipse includes the CollabNet Merge Client originally developed as part of the <a href="http://marketplace.eclipse.org/content/collabnet-desktop-eclipse-edition">CollabNet Desktop - Eclipse Edition</a>.  The CollabNet Merge Client provides powerful graphical merge capabilities that leverages the merge tracking functionality that was added as part of the Subversion 1.5 release.</p>
+<p>Subclipse includes an optional Mylyn connector that enables Mylyn to create automatic changesets based on the tasks you are working on.  It also enables links to tasks when viewing history of Subversion commits.</p>
+<p>Finally, Subclipse includes a powerful revision graph feature that is built with Eclipse GEF/Draw2D.  This allows you to visualize commits and merges across Subversion branches.</p>
+<p><a href="http://subclipse.tigris.org/servlets/ProjectProcess?pageID=rr1TIx">Subclipse Screenshots on tigris.org</a></p>
+<p>Need a Subversion server, too? Checkout <a href="http://www.open.collab.net/downloads/subversion?cid=empsvn">CollabNet Subversion Edge</a></p>
+]]></body>
+      <created>1249478432</created>
+      <changed>1357766935</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://subclipse.tigris.org/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/cn_svn.png?itok=tXiy-wAZ]]></image>
+      <version>1.8.18</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Subclipse Project]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://subclipse.tigris.org/ds/viewForumSummary.do?dsForumId=1047]]></supporturl>
+      <updateurl><![CDATA[http://subclipse.tigris.org/update_1.8.x]]></updateurl>
+<ius>
+<iu>org.tigris.subversion.subclipse.feature.group</iu>
+<iu>org.tigris.subversion.clientadapter.feature.feature.group</iu>
+<iu>org.tigris.subversion.clientadapter.javahl.feature.feature.group</iu>
+<iu>com.collabnet.subversion.merge.feature.feature.group</iu>
+<iu>org.tigris.subversion.subclipse.graph.feature.feature.group</iu>
+<iu>org.tigris.subversion.subclipse.mylyn.feature.group</iu>
+<iu>org.tigris.subversion.clientadapter.svnkit.feature.feature.group</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

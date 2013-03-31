@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="790" name="eclipse4SL - Eclipse Tools for Silverlight" url="http://marketplace.eclipse.org/content/eclipse4sl-eclipse-tools-silverlight">
+      <type>resource</type>
+      <categories>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+            
+      <owner>Yves YANG</owner>
+      <favorited>2</favorited>
+      <installstotal>1381</installstotal>
+      <installsrecent>42</installsrecent>
+      <shortdescription><![CDATA[<p><p>It is an Eclipse development platform that enable Java developers to use the Eclipse platform to create applications that run on the Microsoft Silverlight runtime platform. Specifically, the project will be an Eclipse plug-in that works with the Eclipse IDE/RCP to provide both a Silverlight development  environment and greater interoperability between Silverlight and Java, to facilitate the integration of Silverlight-based applications into Java-based web sites and services.</p><br />
+<ul><br />
+  <li><strong>Increased Interoperability:</strong> Eclipse will contain functionality that will help Java Developers build  Silverlight applications that work better with Java Web Services using  REST, SOAP, JSON and other standards.</li><br />
+  <li><strong>Silverlight Project System and Silverlight Compiler:</strong> Eclipse will contain both an advanced project system for creating  Silverlight applications and media experiences as well as a compiler  for packaging Silverlight applications for deployment.</li><br />
+  <li><strong>XAML Editor & Preview with code hinting and code completion:</strong> Eclipse will contain an advanced, standards-compliant XAML editor with  code hinting and code hinting features which helps detect and correct  coding errors.</li><br />
+  <li><strong>Full compatibility with Microsoft's Development and Design Tools:</strong> The XAML and Silverlight projects created by Eclipse will be fully  supported by both Microsoft Visual Studio and Microsoft Expression  Studio tools. </li><br />
+</ul><br />
+<p align="center"><a href="<a href="http://www.eclipse4sl.org/images/About_xaml.png"><img">http://www.eclipse4sl.org/images/About_xaml.png"><img</a> src="<a href="http://www.eclipse4sl.org/images//About_xaml_small.png"">http://www.eclipse4sl.org/images//About_xaml_small.png"</a> width="220" height="194" /></a> <a href="<a href="http://www.eclipse4sl.org/images/About_project.png"><img">http://www.eclipse4sl.org/images/About_project.png"><img</a> src="<a href="http://www.eclipse4sl.org/images//About_project_small.png"">http://www.eclipse4sl.org/images//About_project_small.png"</a> width="242" height="194" /></a></p></p>
+]]></shortdescription>
+      <body><![CDATA[<p><p>It is an Eclipse development platform that enable Java developers to use the Eclipse platform to create applications that run on the Microsoft Silverlight runtime platform. Specifically, the project will be an Eclipse plug-in that works with the Eclipse IDE/RCP to provide both a Silverlight development  environment and greater interoperability between Silverlight and Java, to facilitate the integration of Silverlight-based applications into Java-based web sites and services.</p><br />
+<ul><br />
+  <li><strong>Increased Interoperability:</strong> Eclipse will contain functionality that will help Java Developers build  Silverlight applications that work better with Java Web Services using  REST, SOAP, JSON and other standards.</li><br />
+  <li><strong>Silverlight Project System and Silverlight Compiler:</strong> Eclipse will contain both an advanced project system for creating  Silverlight applications and media experiences as well as a compiler  for packaging Silverlight applications for deployment.</li><br />
+  <li><strong>XAML Editor & Preview with code hinting and code completion:</strong> Eclipse will contain an advanced, standards-compliant XAML editor with  code hinting and code hinting features which helps detect and correct  coding errors.</li><br />
+  <li><strong>Full compatibility with Microsoft's Development and Design Tools:</strong> The XAML and Silverlight projects created by Eclipse will be fully  supported by both Microsoft Visual Studio and Microsoft Expression  Studio tools. </li><br />
+</ul><br />
+<p align="center"><a href="<a href="http://www.eclipse4sl.org/images/About_xaml.png"><img">http://www.eclipse4sl.org/images/About_xaml.png"><img</a> src="<a href="http://www.eclipse4sl.org/images//About_xaml_small.png"">http://www.eclipse4sl.org/images//About_xaml_small.png"</a> width="220" height="194" /></a> <a href="<a href="http://www.eclipse4sl.org/images/About_project.png"><img">http://www.eclipse4sl.org/images/About_project.png"><img</a> src="<a href="http://www.eclipse4sl.org/images//About_project_small.png"">http://www.eclipse4sl.org/images//About_project_small.png"</a> width="242" height="194" /></a></p></p>
+]]></body>
+      <created>1224171247</created>
+      <changed>1277196160</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.eclipse4sl.org]]></homepageurl>
+      <image><![CDATA[http://www.eclipse4sl.org/images/eclipse4SL_110x80.png]]></image>
+      <version>1.0.0.M2_200902</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Soyatec]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eclipse4sl.org/community/]]></supporturl>
+      <updateurl><![CDATA[http://www.eclipse4sl.org/update/]]></updateurl>
+<ius>
+<iu>org.soyatec.eclipse4sl</iu>
+<iu>org.soyatec.eclipse4sl.utils_features</iu>
+</ius>
+    </node>
+    </marketplace>
+    

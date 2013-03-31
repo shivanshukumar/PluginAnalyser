@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="832" name="Tane Eclipse Refactorings" url="http://marketplace.eclipse.org/content/tane-eclipse-refactorings">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='925' name='refactoring' url='http://marketplace.eclipse.org/category/free-tagging/refactoring'/>
+        <tag id='1855' name='hide delegate' url='http://marketplace.eclipse.org/category/free-tagging/hide-delegate'/>
+        <tag id='1856' name='unify declarations' url='http://marketplace.eclipse.org/category/free-tagging/unify-declarations'/>
+        <tag id='1857' name='reduce scope' url='http://marketplace.eclipse.org/category/free-tagging/reduce-scope'/>
+      </tags>
+      
+      <owner>Lance Walton</owner>
+      <favorited>2</favorited>
+      <installstotal>254</installstotal>
+      <installsrecent>17</installsrecent>
+      <shortdescription><![CDATA[<p><p>Eclipse provides some very good refactorings. Some codebases that <a href="<a href="http://www.stateofflow.com"">http://www.stateofflow.com"</a> title="State Of Flow home page">we</a> have ‘inherited’ have needed more than the set of refactorings provided by Eclipse, so we decided to write those that we thought would be most beneficial.</p></p>
+<p><p>Tane is at an early stage of development. We have only implemented three refactoring and the UI is a bit rough around the edges, but the refactorings work and are useful. If you are interested in contributing, either with more refactorings or by improving the work we’ve started, please <a href="<a href="http://groups.google.com/group/tane-eclipse-refactorings"">http://groups.google.com/group/tane-eclipse-refactorings"</a> title="Tane discussion group">get in touch</a>.</p></p>
+<p><p>To install Tane, please use the update site – <a href="<a href="http://www.stateofflow.com/UpdateSite">http://www.stateofflow.com/UpdateSite</a>">http://www.stateofflow.com/UpdateSite">http://www.stateofflow.com/Update...</a> – or download the plugin from <a href="<a href="http://code.google.com/p/tane/">Google">http://code.google.com/p/tane/">Google</a> Code</a>. Also visit Google Code for feature requests, bug reports, etc.</p></p>
+<p><p>Tane (pronounced ‘Tah-ney’) is a Polynesian god who lets light into the world every morning by lifting up a corner of the dark sky.</p></p>
+]]></shortdescription>
+      <body><![CDATA[<p><p>Eclipse provides some very good refactorings. Some codebases that <a href="<a href="http://www.stateofflow.com"">http://www.stateofflow.com"</a> title="State Of Flow home page">we</a> have ‘inherited’ have needed more than the set of refactorings provided by Eclipse, so we decided to write those that we thought would be most beneficial.</p></p>
+<p><p>Tane is at an early stage of development. We have only implemented three refactoring and the UI is a bit rough around the edges, but the refactorings work and are useful. If you are interested in contributing, either with more refactorings or by improving the work we’ve started, please <a href="<a href="http://groups.google.com/group/tane-eclipse-refactorings"">http://groups.google.com/group/tane-eclipse-refactorings"</a> title="Tane discussion group">get in touch</a>.</p></p>
+<p><p>To install Tane, please use the update site – <a href="<a href="http://www.stateofflow.com/UpdateSite">http://www.stateofflow.com/UpdateSite</a>">http://www.stateofflow.com/UpdateSite">http://www.stateofflow.com/Update...</a> – or download the plugin from <a href="<a href="http://code.google.com/p/tane/">Google">http://code.google.com/p/tane/">Google</a> Code</a>. Also visit Google Code for feature requests, bug reports, etc.</p></p>
+<p><p>Tane (pronounced ‘Tah-ney’) is a Polynesian god who lets light into the world every morning by lifting up a corner of the dark sky.</p></p>
+]]></body>
+      <created>1230909939</created>
+      <changed>1302993471</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/tane/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.1.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[State Of Flow]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/tane/issues/list]]></supporturl>
+      <updateurl><![CDATA[http://www.stateofflow.com/UpdateSite]]></updateurl>
+<ius>
+<iu>com.stateofflow.eclipse.tane.feature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

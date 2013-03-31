@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="213" name="Beyond CVS" url="http://marketplace.eclipse.org/content/beyond-cvs">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+      </categories>
+      <tags>
+        <tag id='44' name='svn' url='http://marketplace.eclipse.org/category/free-tagging/svn'/>
+        <tag id='111' name='compare' url='http://marketplace.eclipse.org/category/free-tagging/compare'/>
+        <tag id='493' name='cvs' url='http://marketplace.eclipse.org/category/free-tagging/cvs'/>
+      </tags>
+      
+      <owner>Chris Callendar</owner>
+      <favorited>9</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This Eclipse plug-in enables the use of Beyond Compare (externally) to compare files and folders. You can also compare a file to a previous revision in CVS/SVN or in your Local History. It also allows you to open up Putty and WinSCP from inside Eclipse.</p>
+<p>It adds extra actions to the package explorer context menu under the 'Compare With...' menu as well as some toolbar buttons.  </p>
+<p>There is also a separate Commit action under the 'Team' menu which allows you to revert, refresh, or compare (using Beyond Compare) the files being committed to the latest head revison.</p>
+<p>Supports both Subversion plug-ins: Subclipse and Subversive.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This Eclipse plug-in enables the use of Beyond Compare (externally) to compare files and folders. You can also compare a file to a previous revision in CVS/SVN or in your Local History. It also allows you to open up Putty and WinSCP from inside Eclipse.</p>
+<p>It adds extra actions to the package explorer context menu under the 'Compare With...' menu as well as some toolbar buttons.  </p>
+<p>There is also a separate Commit action under the 'Team' menu which allows you to revert, refresh, or compare (using Beyond Compare) the files being committed to the latest head revison.</p>
+<p>Supports both Subversion plug-ins: Subclipse and Subversive.</p>
+]]></body>
+      <created>1148046454</created>
+      <changed>1273016905</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://sourceforge.net/projects/beyondcvs/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/beyondcvs110x80.png?itok=pfY3BSHz]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/compare_menu.png?itok=rKhq4b84]]></screenshot>
+      <version>0.8.9</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Chris Callendar, Nick Boldt]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.2, 3.3, 3.4, 3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/beyondcvs/]]></supporturl>
+      <updateurl><![CDATA[http://beyondcvs.sourceforge.net/update/0.8.x/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

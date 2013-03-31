@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="9409" name="Eclipse NetRexx" url="http://marketplace.eclipse.org/content/eclipse-netrexx">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='1966' name='Programming Languages' url='http://marketplace.eclipse.org/category/categories/programming-languages'/>
+      </categories>
+            
+      <owner>Bill Fenlason</owner>
+      <favorited>1</favorited>
+      <installstotal>117</installstotal>
+      <installsrecent>6</installsrecent>
+      <shortdescription><![CDATA[Eclipse NetRexx version 2.0.3 (Alpha) is now available.
+
+The NetRexx editor provides full dynamic syntax and semantic error checking.
+
+Extensive syntax coloring options are provided.
+
+An outline view is provided.
+
+NetRexx programs may be run interpretively, translated to Java or compiled to java classes via one-click menu selection or keyboard shortcut.]]></shortdescription>
+      <body><![CDATA[Eclipse NetRexx version 2.0.3 (Alpha) is now available.
+
+The NetRexx editor provides full dynamic syntax and semantic error checking.
+
+Extensive syntax coloring options are provided.
+
+An outline view is provided.
+
+NetRexx programs may be run interpretively, translated to Java or compiled to java classes via one-click menu selection or keyboard shortcut.]]></body>
+      <created>1283546098</created>
+      <changed>1317687629</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://sourceforge.net/projects/eclipsenetrexx/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>2.0.3</version>
+      <license>EPL</license>
+      <companyname><![CDATA[None]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.4.2,3.5,3.6,3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/eclipsenetrexx/forums]]></supporturl>
+      <updateurl><![CDATA[http://sourceforge.net/projects/eclipsenetrexx/files/update/]]></updateurl>
+<ius>
+<iu>eclipsenetrexxfeature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

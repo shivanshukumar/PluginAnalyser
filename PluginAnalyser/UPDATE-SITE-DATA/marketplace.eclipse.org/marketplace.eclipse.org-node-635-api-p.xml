@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="635" name="Annotate Add-On for the IBM Rational ClearCase SCM Adapter" url="http://marketplace.eclipse.org/content/annotate-add-ibm-rational-clearcase-scm-adapter">
+      <type>resource</type>
+      <categories>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='26' name='SCM' url='http://marketplace.eclipse.org/taxonomy/term/26'/>
+      </categories>
+      <tags>
+        <tag id='201' name='clearcase cleartool annotate' url='http://marketplace.eclipse.org/category/free-tagging/clearcase-cleartool-annotate'/>
+      </tags>
+      
+      <owner>Stephan Mühlstrasser</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The "Annotate Add-On for the IBM Rational ClearCase SCM Adapter" extends the ClearCase Eclipse plugin with the "annotate" feature.</p>
+<p>Version 2 is released. New features are:</p>
+<p>- A ClearCase history view is displayed together with the annotated source<br />
+- From the ClearCase history view any version of the annotated element can be opened</p>
+<p>A functionally limited demo version can be installed from the "Update Site URL" in this entry. A fully functional time-limited evaluation version can be downloaded after registration.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The "Annotate Add-On for the IBM Rational ClearCase SCM Adapter" extends the ClearCase Eclipse plugin with the "annotate" feature.</p>
+<p>Version 2 is released. New features are:</p>
+<p>- A ClearCase history view is displayed together with the annotated source<br />
+- From the ClearCase history view any version of the annotated element can be opened</p>
+<p>A functionally limited demo version can be installed from the "Update Site URL" in this entry. A fully functional time-limited evaluation version can be downloaded after registration.</p>
+]]></body>
+      <created>1201295210</created>
+      <changed>1267901675</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.pluginsmithy.com/m/en/products/annotate-plugin.html]]></homepageurl>
+      <image><![CDATA[http://www.pluginsmithy.com/pluginsmithy_logo.png]]></image>
+      <version>2.0.3</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Plugin Smithy Software]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2 or newer]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://www.pluginsmithy.com/demo_update_site]]></updateurl>
+    </node>
+    </marketplace>
+    

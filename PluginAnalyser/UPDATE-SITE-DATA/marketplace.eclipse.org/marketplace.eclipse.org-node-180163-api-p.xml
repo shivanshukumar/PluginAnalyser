@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="180163" name="Elastic COBOL" url="http://marketplace.eclipse.org/content/elastic-cobol">
+      <type>resource</type>
+      <categories>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='21' name='Web Services' url='http://marketplace.eclipse.org/taxonomy/term/21'/>
+        <category id='1966' name='Programming Languages' url='http://marketplace.eclipse.org/category/categories/programming-languages'/>
+        <category id='1967' name='Web, XML, Java EE and OSGi Enterprise Development' url='http://marketplace.eclipse.org/category/categories/web-xml-java-ee-and-osgi-enterprise-development'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='398' name='enterprise' url='http://marketplace.eclipse.org/category/free-tagging/enterprise'/>
+        <tag id='501' name='IT' url='http://marketplace.eclipse.org/category/free-tagging/it'/>
+        <tag id='578' name='paas' url='http://marketplace.eclipse.org/category/free-tagging/paas'/>
+        <tag id='978' name='cobol' url='http://marketplace.eclipse.org/category/free-tagging/cobol'/>
+      </tags>
+      
+      <owner>mark haynie</owner>
+      <favorited>3</favorited>
+      <installstotal>248</installstotal>
+      <installsrecent>6</installsrecent>
+      <shortdescription><![CDATA[<p><strong>COBOL for Everyone -- Get your FREE cloud IDE in minutes</strong></p>
+<p>With <a href="http://heirloomcomputing.com">Heirloom Computing’s</a> <a href="http://elasticcobol.com">Elastic COBOL PaaS</a>, a cloud-hosted Eclipse IDE environment, developers in any location can provision a development or deployment platform on the cloud within minutes. Heirloom’s Elastic COBOL is a high-quality cost-effective platform that erases major commercial and technical barriers that exist with outdated solutions, so that your high-value trusted business applications can fully & seamlessly participate in contemporary software stacks & cloud computing platforms.</p>
+<p><a href="http://elasticcobol.com">Elastic COBOL</a> is also available for installation on Windows, Linux & UNIX platforms.</p>
+<p><strong>KEY FEATURES:</strong></p>
+<p><em>ACCESS YOUR CODE FROM ANYWHERE:</em> With your IDE hosted in the cloud you get the same highly productive development environment without the need to install & configure Elastic COBOL locally. Simply get access to your IDE and projects from any web browser.</p>
+<p><em>SUBSCRIPTION PRICING:</em> Move beyond outdated pricing plans to flexible subscription plans that best fit the needs of your business. No long term contracts. No annual maintenance fees. Pay for software when you need it, not when you don't.</p>
+<p><em>WORLD-CLASS ECLIPSE IDE PLATFORM:</em> Elastic COBOL enhances the outstanding open-source Eclipse IDE framework to provide a truly world-class multi-language application development platform. Choose from Elastic COBOL for Windows, UNIX, Linux or the cloud.</p>
+<p><em>ENHANCED DEBUGGING SCENARIOS:</em> Debug locally, debug remotely, debug live applications running on a Java platform or in the cloud. Examine data via "hover over". Use sophisticated breakpoints such as "conditional", "hit count" and "watchpoint".</p>
+<p><em>COBOL/CICS APPS TO JAVA SOURCE-CODE:</em> The Elastic COBOL compiler supports 15 dialects and uses a patented process to produce Java source-code that is a faithful representation of the COBOL business logic; including support for EXEC CICS, SQL, HTML & JAVA.</p>
+<p><em>DEPLOY TO A STRATEGIC PLATFORM:</em> With Elastic COBOL, COBOL/CICS applications are natively deployed to the blazing fast Java Enterprise platform. There is no need to use (and pay extra for) a proprietary transaction engine to run your enterprise applications.</p>
+<p><em>FLEXIBLE DATA ACCESS OPTIONS:</em> In addition to support for native COBOL file-systems, Elastic COBOL includes data transparencies that enable RDBMS access via COBOL syntax and CICS commands. Connect to your database via your JDBC driver.</p>
+<p><em>DELIVER SaaS SOLUTIONS: Deploy directly to Java "Platform as a Service" cloud solutions (such as Amazon Beanstalk, dotCloud & Cloudbees), and access your applications via a browser to deliver SaaS solutions to your customers.</em></p>
+]]></shortdescription>
+      <body><![CDATA[<p><strong>COBOL for Everyone -- Get your FREE cloud IDE in minutes</strong></p>
+<p>With <a href="http://heirloomcomputing.com">Heirloom Computing’s</a> <a href="http://elasticcobol.com">Elastic COBOL PaaS</a>, a cloud-hosted Eclipse IDE environment, developers in any location can provision a development or deployment platform on the cloud within minutes. Heirloom’s Elastic COBOL is a high-quality cost-effective platform that erases major commercial and technical barriers that exist with outdated solutions, so that your high-value trusted business applications can fully & seamlessly participate in contemporary software stacks & cloud computing platforms.</p>
+<p><a href="http://elasticcobol.com">Elastic COBOL</a> is also available for installation on Windows, Linux & UNIX platforms.</p>
+<p><strong>KEY FEATURES:</strong></p>
+<p><em>ACCESS YOUR CODE FROM ANYWHERE:</em> With your IDE hosted in the cloud you get the same highly productive development environment without the need to install & configure Elastic COBOL locally. Simply get access to your IDE and projects from any web browser.</p>
+<p><em>SUBSCRIPTION PRICING:</em> Move beyond outdated pricing plans to flexible subscription plans that best fit the needs of your business. No long term contracts. No annual maintenance fees. Pay for software when you need it, not when you don't.</p>
+<p><em>WORLD-CLASS ECLIPSE IDE PLATFORM:</em> Elastic COBOL enhances the outstanding open-source Eclipse IDE framework to provide a truly world-class multi-language application development platform. Choose from Elastic COBOL for Windows, UNIX, Linux or the cloud.</p>
+<p><em>ENHANCED DEBUGGING SCENARIOS:</em> Debug locally, debug remotely, debug live applications running on a Java platform or in the cloud. Examine data via "hover over". Use sophisticated breakpoints such as "conditional", "hit count" and "watchpoint".</p>
+<p><em>COBOL/CICS APPS TO JAVA SOURCE-CODE:</em> The Elastic COBOL compiler supports 15 dialects and uses a patented process to produce Java source-code that is a faithful representation of the COBOL business logic; including support for EXEC CICS, SQL, HTML & JAVA.</p>
+<p><em>DEPLOY TO A STRATEGIC PLATFORM:</em> With Elastic COBOL, COBOL/CICS applications are natively deployed to the blazing fast Java Enterprise platform. There is no need to use (and pay extra for) a proprietary transaction engine to run your enterprise applications.</p>
+<p><em>FLEXIBLE DATA ACCESS OPTIONS:</em> In addition to support for native COBOL file-systems, Elastic COBOL includes data transparencies that enable RDBMS access via COBOL syntax and CICS commands. Connect to your database via your JDBC driver.</p>
+<p><em>DELIVER SaaS SOLUTIONS: Deploy directly to Java "Platform as a Service" cloud solutions (such as Amazon Beanstalk, dotCloud & Cloudbees), and access your applications via a browser to deliver SaaS solutions to your customers.</em></p>
+]]></body>
+      <created>1325793359</created>
+      <changed>1325795126</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://elasticcobol.com/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/eclogo4_0.png?itok=KrkcZxP3]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/elasticcobol-screenshot.jpg?itok=v1fB-GZK]]></screenshot>
+      <version>11.12.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Heirloom Computing]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[Indigo]]></eclipseversion>
+      <supporturl><![CDATA[https://www.elasticcobol.com/index.php/support/]]></supporturl>
+      <updateurl><![CDATA[http://elasticcobol.com/downloads/updates]]></updateurl>
+<ius>
+<iu>com.heirloomcomputing.elastic_cobol_developer</iu>
+<iu>com.heirloomcomputing.elastic_cobol_enterprise_developer</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

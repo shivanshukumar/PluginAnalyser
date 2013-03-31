@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="865" name="Floggy: Persistence for JME" url="http://marketplace.eclipse.org/content/floggy-persistence-jme">
+      <type>resource</type>
+      <categories>
+        <category id='27' name='J2ME' url='http://marketplace.eclipse.org/taxonomy/term/27'/>
+      </categories>
+      <tags>
+        <tag id='190' name='database' url='http://marketplace.eclipse.org/category/free-tagging/database'/>
+        <tag id='943' name='rms' url='http://marketplace.eclipse.org/category/free-tagging/rms'/>
+        <tag id='944' name='record' url='http://marketplace.eclipse.org/category/free-tagging/record'/>
+        <tag id='945' name='store' url='http://marketplace.eclipse.org/category/free-tagging/store'/>
+        <tag id='1255' name='persistence' url='http://marketplace.eclipse.org/category/free-tagging/persistence'/>
+      </tags>
+      
+      <owner>Thiago Leão Moreira</owner>
+      <favorited>1</favorited>
+      <installstotal>199</installstotal>
+      <installsrecent>10</installsrecent>
+      <shortdescription><![CDATA[<p>Floggy is a free object persistence framework for J2ME/MIDP applications. The main goal of this framework is to abstract the data persistence details from the developer, reducing the development and maintenance effort. Now you don't need to write thousands of lines of persistence code anymore. Floggy will do the dirty work for you! </p>
+]]></shortdescription>
+      <body><![CDATA[<p>Floggy is a free object persistence framework for J2ME/MIDP applications. The main goal of this framework is to abstract the data persistence details from the developer, reducing the development and maintenance effort. Now you don't need to write thousands of lines of persistence code anymore. Floggy will do the dirty work for you! </p>
+]]></body>
+      <created>1234881824</created>
+      <changed>1297220223</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.floggy.org]]></homepageurl>
+      <image><![CDATA[http://floggy.sourceforge.net/images/logo-small.png]]></image>
+      <version>1.4.0</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[Floggy Open Source Group]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3.+]]></eclipseversion>
+      <supporturl><![CDATA[http://floggy.sourceforge.net/howtogethelp.html]]></supporturl>
+      <updateurl><![CDATA[http://floggy.sourceforge.net/eclipse/]]></updateurl>
+<ius>
+<iu>net.sourceforge.floggy.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

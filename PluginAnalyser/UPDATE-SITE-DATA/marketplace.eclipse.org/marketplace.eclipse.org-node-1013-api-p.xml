@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1013" name="Eclipse-Subversion Plugin integrated with a total ALM solution - Easy!Flow" url="http://marketplace.eclipse.org/content/eclipse-subversion-plugin-integrated-total-alm-solution-easyflow">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='21' name='Web Services' url='http://marketplace.eclipse.org/taxonomy/term/21'/>
+        <category id='26' name='SCM' url='http://marketplace.eclipse.org/taxonomy/term/26'/>
+        <category id='27' name='J2ME' url='http://marketplace.eclipse.org/taxonomy/term/27'/>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+        <category id='30' name='Process' url='http://marketplace.eclipse.org/taxonomy/term/30'/>
+        <category id='38' name='Mylyn Connectors' url='http://marketplace.eclipse.org/category/categories/mylyn-connectors'/>
+      </categories>
+            
+      <owner>Larry Yang</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This plugin can be used as an eclipse subversion plugin, further more, it is tightly integrated with Easy!Flow - a total Application Lifecycle Management (ALM) solution. With this plugin and Easy!Flow server, team members can finish all their collaborative development activities (including source code control, requirement management, defect tracking, project management, document control, dashboard monitor, SQA report, etc.) within the eclipse IDE.</p>
+<p>Easy!Flow also provides a web based portal and stand alone SCM Client.</p>
+<p>For more detailed info, please visit the site <a href="http://www.ez-sw.com">http://www.ez-sw.com</a></p>
+<p>*************************************************************<br />
+*FREE DOWNLOAD!*</p>
+<p>Total ALM solution Easy!Flow FREE download for small teams is now available. Support is included. Download and try it for FREE now. Visit <a href="http://www.ez-sw.com/Easy_Flow_Detail.html">http://www.ez-sw.com/Easy_Flow_Detail.html</a> </p>
+<p>*************************************************************</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This plugin can be used as an eclipse subversion plugin, further more, it is tightly integrated with Easy!Flow - a total Application Lifecycle Management (ALM) solution. With this plugin and Easy!Flow server, team members can finish all their collaborative development activities (including source code control, requirement management, defect tracking, project management, document control, dashboard monitor, SQA report, etc.) within the eclipse IDE.</p>
+<p>Easy!Flow also provides a web based portal and stand alone SCM Client.</p>
+<p>For more detailed info, please visit the site <a href="http://www.ez-sw.com">http://www.ez-sw.com</a></p>
+<p>*************************************************************<br />
+*FREE DOWNLOAD!*</p>
+<p>Total ALM solution Easy!Flow FREE download for small teams is now available. Support is included. Download and try it for FREE now. Visit <a href="http://www.ez-sw.com/Easy_Flow_Detail.html">http://www.ez-sw.com/Easy_Flow_Detail.html</a> </p>
+<p>*************************************************************</p>
+]]></body>
+      <created>1253798836</created>
+      <changed>1271722294</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.ez-sw.com/scmclient/eclipse/update]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/skype%201.jpg?itok=3eok76i3]]></image>
+      <version>10.1</version>
+      <license>Other</license>
+      <companyname><![CDATA[Easy! Software LLC]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2 and later]]></eclipseversion>
+      <supporturl><![CDATA[http://www.ez-sw.com/Contact_Us.html]]></supporturl>
+      <updateurl><![CDATA[http://www.ez-sw.com/scmclient/eclipse/update]]></updateurl>
+    </node>
+    </marketplace>
+    

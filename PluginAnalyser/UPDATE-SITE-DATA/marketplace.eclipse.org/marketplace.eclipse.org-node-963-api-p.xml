@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="963" name="ERMaster" url="http://marketplace.eclipse.org/content/ermaster">
+      <type>resource</type>
+      <categories>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+      </categories>
+            
+      <owner>nakajima</owner>
+      <favorited>14</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>ERMaster is GUI editor for ER diagram.<br><br />
+It is operated as Eclipse plug-in.<br><br />
+Making ER diagram, the print of ER diagram, and the DDL output from ER diagram, etc. can be done graphical.<br><br />
+Moreover, import, the group management, and the historical management, etc. from DB are supported. <br></p>
+]]></shortdescription>
+      <body><![CDATA[<p>ERMaster is GUI editor for ER diagram.<br><br />
+It is operated as Eclipse plug-in.<br><br />
+Making ER diagram, the print of ER diagram, and the DDL output from ER diagram, etc. can be done graphical.<br><br />
+Moreover, import, the group management, and the historical management, etc. from DB are supported. <br></p>
+]]></body>
+      <created>1246286701</created>
+      <changed>1259779272</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://ermaster.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://ermaster.sourceforge.net/screenshot.jpg]]></image>
+      <version>1.0.0</version>
+      <license>Other</license>
+      <companyname><![CDATA[]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.3]]></eclipseversion>
+      <supporturl><![CDATA[http://]]></supporturl>
+      <updateurl><![CDATA[http://ermaster.sourceforge.net/update-site/]]></updateurl>
+    </node>
+    </marketplace>
+    

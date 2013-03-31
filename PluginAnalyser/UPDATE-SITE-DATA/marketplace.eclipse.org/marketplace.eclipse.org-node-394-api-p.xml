@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="394" name="HiberObjects" url="http://marketplace.eclipse.org/content/hiberobjects">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+        <category id='36' name='Database Persistence' url='http://marketplace.eclipse.org/category/categories/database-persistence'/>
+      </categories>
+      <tags>
+        <tag id='667' name='jpa' url='http://marketplace.eclipse.org/category/free-tagging/jpa'/>
+        <tag id='757' name='hibernate' url='http://marketplace.eclipse.org/category/free-tagging/hibernate'/>
+      </tags>
+      
+      <owner>Lars Høidahl</owner>
+      <favorited>1</favorited>
+      <installstotal>1732</installstotal>
+      <installsrecent>43</installsrecent>
+      <shortdescription><![CDATA[<p>HiberObjects makes it easy to design and unit test code for JPA, Hibernate and GWT services.</p>
+<p>HiberObjects can generate model classes for Grails from UML class diagrams.<br />
+This results in a combination of UML domain modeling and agile web development;<br />
+Design the model in class diagrams, and implement the view and controllers in Groovy.</p>
+<p>Java code and JPA annotations or Hibernate mapping files are generated from class diagrams.<br />
+If the default generated annotations are not sufficient, they can be designed as tags.</p>
+<p>Sequence diagrams can be used to design object collaborations, classes and operations.</p>
+<p>Object diagrams can be used to design objects that will be stored in the database before running unit tests.</p>
+<p>Features:</p>
+<ul><li>Project Wizard. Can add Hibernate and HSQLDB libraries to project.</li>
+<li>Class diagrams.</li>
+<li>Sequence diagrams.</li>
+<li>Object diagrams.</li>
+<li>Design Hibernate or JPA queries.</li>
+<li>Run unit tests with HSQLDB database.</li>
+<li>Build classes with Groovy scripts.</li>
+</ul><p>Code Generation:</p>
+<ul><li>EJB3 Entity Beans with annotations.</li>
+<li>.hbm.xml files for Hibernate.</li>
+<li>GWT services with normal and asynchronous interface (GWT 1.4 or GWT 1.5).</li>
+<li>Unit tests. Populate the database with designed objects before testing.</li>
+<li>Data Access Objects.</li>
+<li>Java Beans. Can generate Property change support.</li>
+<li>Interfaces</li>
+<li>Configuration files for Hibernate or JPA.</li>
+<li>Data Transfer Objects for Google Web Toolkit 1.4.</li>
+<li>XML schema for classes.</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>HiberObjects makes it easy to design and unit test code for JPA, Hibernate and GWT services.</p>
+<p>HiberObjects can generate model classes for Grails from UML class diagrams.<br />
+This results in a combination of UML domain modeling and agile web development;<br />
+Design the model in class diagrams, and implement the view and controllers in Groovy.</p>
+<p>Java code and JPA annotations or Hibernate mapping files are generated from class diagrams.<br />
+If the default generated annotations are not sufficient, they can be designed as tags.</p>
+<p>Sequence diagrams can be used to design object collaborations, classes and operations.</p>
+<p>Object diagrams can be used to design objects that will be stored in the database before running unit tests.</p>
+<p>Features:</p>
+<ul><li>Project Wizard. Can add Hibernate and HSQLDB libraries to project.</li>
+<li>Class diagrams.</li>
+<li>Sequence diagrams.</li>
+<li>Object diagrams.</li>
+<li>Design Hibernate or JPA queries.</li>
+<li>Run unit tests with HSQLDB database.</li>
+<li>Build classes with Groovy scripts.</li>
+</ul><p>Code Generation:</p>
+<ul><li>EJB3 Entity Beans with annotations.</li>
+<li>.hbm.xml files for Hibernate.</li>
+<li>GWT services with normal and asynchronous interface (GWT 1.4 or GWT 1.5).</li>
+<li>Unit tests. Populate the database with designed objects before testing.</li>
+<li>Data Access Objects.</li>
+<li>Java Beans. Can generate Property change support.</li>
+<li>Interfaces</li>
+<li>Configuration files for Hibernate or JPA.</li>
+<li>Data Transfer Objects for Google Web Toolkit 1.4.</li>
+<li>XML schema for classes.</li>
+</ul>]]></body>
+      <created>1171379129</created>
+      <changed>1291759566</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://objectgeneration.com/eclipse/]]></homepageurl>
+      <image><![CDATA[http://objectgeneration.com/logo-symbol.gif]]></image>
+      <version>2.1.7</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Object Generation]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4 / 3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://objectgeneration.com/forum/]]></supporturl>
+      <updateurl><![CDATA[http://objectgeneration.com/update]]></updateurl>
+<ius>
+<iu>com.objectgeneration.hiberobjects_feature</iu>
+<iu>com.objectgeneration.hibernate_feature</iu>
+<iu>com.objectgeneration.groovy_feature</iu>
+<iu>com.objectgeneration.hsqldb_feature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

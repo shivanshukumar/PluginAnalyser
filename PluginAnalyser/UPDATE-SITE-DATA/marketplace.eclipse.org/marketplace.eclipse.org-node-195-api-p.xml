@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="195" name="Acceleo" url="http://marketplace.eclipse.org/content/acceleo">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='61' name='UML' url='http://marketplace.eclipse.org/category/free-tagging/uml'/>
+        <tag id='64' name='Modeling' url='http://marketplace.eclipse.org/category/free-tagging/modeling'/>
+        <tag id='82' name='free' url='http://marketplace.eclipse.org/category/free-tagging/free'/>
+        <tag id='165' name='code generation' url='http://marketplace.eclipse.org/category/free-tagging/code-generation'/>
+        <tag id='174' name='MDA' url='http://marketplace.eclipse.org/category/free-tagging/mda'/>
+      </tags>
+      
+      <owner>Obeo  </owner>
+      <favorited>27</favorited>
+      <installstotal>2660</installstotal>
+      <installsrecent>171</installsrecent>
+      <shortdescription><![CDATA[<p><b>Acceleo</b> is a pragmatic implementation of the Object Management Group (OMG) MOF Model to Text Language (MTL) standard. You do not need to be an expert to start using the plug-ins and create your first code generator : using the provided example projects and the powerful completion feature of the Acceleo editor, it is very easy to get started and understand the basic principles.</p>
+<p>Acceleo is the result of several man-years of R&D started in the French company Obeo. Junction between the OMG MTL standard, its team's experience with industrial code generation and the latest research advances into the M2T field, it offers outstanding advantages : High ability to customize, Interoperability, Easy kick off, Traceability Management, and many more!</p>
+]]></shortdescription>
+      <body><![CDATA[<p><b>Acceleo</b> is a pragmatic implementation of the Object Management Group (OMG) MOF Model to Text Language (MTL) standard. You do not need to be an expert to start using the plug-ins and create your first code generator : using the provided example projects and the powerful completion feature of the Acceleo editor, it is very easy to get started and understand the basic principles.</p>
+<p>Acceleo is the result of several man-years of R&D started in the French company Obeo. Junction between the OMG MTL standard, its team's experience with industrial code generation and the latest research advances into the M2T field, it offers outstanding advantages : High ability to customize, Interoperability, Easy kick off, Traceability Management, and many more!</p>
+]]></body>
+      <created>1146583977</created>
+      <changed>1345204639</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.eclipse.org/acceleo/]]></homepageurl>
+      <image><![CDATA[http://www.acceleo.org/images/acceleo/logo_acceleo_110_80.jpg]]></image>
+      <version>3.3.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Obeo]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[4.2, 3.7, 3.6, 3.5, and 3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eclipse.org/acceleo/support/]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/modeling/m2t/acceleo/updates/releases/3.3]]></updateurl>
+<ius>
+<iu>org.eclipse.acceleo.sdk</iu>
+<iu>org.eclipse.acceleo</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

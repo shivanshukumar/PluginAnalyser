@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="654" name="LWJGL Plugin" url="http://marketplace.eclipse.org/content/lwjgl-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='8' name='Graphics' url='http://marketplace.eclipse.org/taxonomy/term/8'/>
+      </categories>
+            
+      <owner>Jens von Pilgrim</owner>
+      <favorited>5</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The Lightweight Java Game Library (LWJGL) is a Java library wrapping OpenGL and OpenAL. It comes with some JARs and native libraries.<br />
+This plugin only installes the LWJGL jars, native libraries, sources and documentation, so that it is easy to develop plugins using LWJGL. It does not provide any support for developing standalone LWJGL based Java applications (e.g. no LWJGL launch configuration is provided). If you develop an Eclipse plugin using LWJGL, you only have to add the LWJGL plugin to the list of required plugins, i.e. you don't have to care about native library paths anymore. Javadoc and sources are registered in order to be available without further configuration.<br />
+Note that using LWJGL with Eclipse is easy since it can be used inside an SWT GLCanvas, see <a href="http://www.eclipse.org/swt/opengl/">http://www.eclipse.org/swt/opengl/</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>The Lightweight Java Game Library (LWJGL) is a Java library wrapping OpenGL and OpenAL. It comes with some JARs and native libraries.<br />
+This plugin only installes the LWJGL jars, native libraries, sources and documentation, so that it is easy to develop plugins using LWJGL. It does not provide any support for developing standalone LWJGL based Java applications (e.g. no LWJGL launch configuration is provided). If you develop an Eclipse plugin using LWJGL, you only have to add the LWJGL plugin to the list of required plugins, i.e. you don't have to care about native library paths anymore. Javadoc and sources are registered in order to be available without further configuration.<br />
+Note that using LWJGL with Eclipse is easy since it can be used inside an SWT GLCanvas, see <a href="http://www.eclipse.org/swt/opengl/">http://www.eclipse.org/swt/opengl/</a></p>
+]]></body>
+      <created>1204211757</created>
+      <changed>1324563404</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://lwjgl.org]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/LWJGLPluginThumb110.png?itok=--tZLrxB]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/LWJGL%20plugin.png?itok=QfncJsDH]]></screenshot>
+      <version>2.8.2</version>
+      <license>BSD</license>
+      <companyname><![CDATA[lwjgl.org]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.x]]></eclipseversion>
+      <supporturl><![CDATA[http://lwjgl.org/forum/index.php/topic,2785.0.html]]></supporturl>
+      <updateurl><![CDATA[http://lwjgl.org/update/]]></updateurl>
+    </node>
+    </marketplace>
+    

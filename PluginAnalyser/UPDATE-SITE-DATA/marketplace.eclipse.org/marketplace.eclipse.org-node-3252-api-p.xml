@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="3252" name="Aster Data Developer Express plug-in for Eclipse" url="http://marketplace.eclipse.org/content/aster-data-developer-express-plug-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='992' name='aster data' url='http://marketplace.eclipse.org/category/free-tagging/aster-data'/>
+        <tag id='993' name='ncluster' url='http://marketplace.eclipse.org/category/free-tagging/ncluster'/>
+        <tag id='994' name='mapreduce' url='http://marketplace.eclipse.org/category/free-tagging/mapreduce'/>
+        <tag id='995' name='sql-mapreduce' url='http://marketplace.eclipse.org/category/free-tagging/sql-mapreduce'/>
+        <tag id='996' name='sql-mr' url='http://marketplace.eclipse.org/category/free-tagging/sql-mr'/>
+      </tags>
+      
+      <owner>Aster Data</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Aster Data Developer Express provides an integrated set of tools for development of SQL and MapReduce analytics for Aster Data nCluster, a massively parallel database with an integrated analytics engine. </p>
+<p>The Aster Data Developer Express plug-in for Eclipse enables developers to easily create new analytic application projects with the help of an intuitive set of wizards, immediately test their applications on their desktop, and push down their applications into the nCluster database with a single click.  </p>
+<p>Using Developer Express, analysts can significantly reduce the complexity and time needed to create advanced analytic applications so that they can more rapidly deliver deeper and richer analytic insights from their data.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Aster Data Developer Express provides an integrated set of tools for development of SQL and MapReduce analytics for Aster Data nCluster, a massively parallel database with an integrated analytics engine. </p>
+<p>The Aster Data Developer Express plug-in for Eclipse enables developers to easily create new analytic application projects with the help of an intuitive set of wizards, immediately test their applications on their desktop, and push down their applications into the nCluster database with a single click.  </p>
+<p>Using Developer Express, analysts can significantly reduce the complexity and time needed to create advanced analytic applications so that they can more rapidly deliver deeper and richer analytic insights from their data.</p>
+]]></body>
+      <created>1278532727</created>
+      <changed>1307126236</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.asterdata.com/resources/assets/ds_Aster_Data_Developer_Express.pdf]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo.png?itok=Ub5G9w9B]]></image>
+      <version></version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[Aster Data]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5.1]]></eclipseversion>
+      <supporturl><![CDATA[http://www.asterdata.com/services/index.php]]></supporturl>
+      <updateurl><![CDATA[http://www.asterdata.com/download_developer_express/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

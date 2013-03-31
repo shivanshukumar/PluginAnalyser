@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="47914" name="Design Pattern Recognizer" url="http://marketplace.eclipse.org/content/design-pattern-recognizer">
+      <type>resource</type>
+      <categories>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+      </categories>
+      <tags>
+        <tag id='473' name='SWT' url='http://marketplace.eclipse.org/category/free-tagging/swt'/>
+        <tag id='1877' name='DPD' url='http://marketplace.eclipse.org/category/free-tagging/dpd'/>
+        <tag id='1878' name='design patterns detection' url='http://marketplace.eclipse.org/category/free-tagging/design-patterns-detection'/>
+        <tag id='1879' name='AST' url='http://marketplace.eclipse.org/category/free-tagging/ast'/>
+      </tags>
+      
+      <owner>Lubomir Elko</owner>
+      <favorited>2</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This plug-in demonstrates method proposed in the diploma project "Design patterns recognition in existing software" developed on FIIT SUT in Bratislava (The Slovak Republic). The goal of this project was to achieve design patterns recognition in minimal possible time. We focused on five GoF design patterns (complete and also incomplete instances) and their identification in implementation phase of software development. As You can try, plug-in confirms an usage of design pattern or draws attention to its inaccurate implementation. And therefore, DP-Recognizer plug-in presents the helper, that assists the programmer with implementation.<br />
+For further details please see: <a href="http://lubes.yweb.sk/projects/dprecognizer/">http://lubes.yweb.sk/projects/dprecognizer/</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>This plug-in demonstrates method proposed in the diploma project "Design patterns recognition in existing software" developed on FIIT SUT in Bratislava (The Slovak Republic). The goal of this project was to achieve design patterns recognition in minimal possible time. We focused on five GoF design patterns (complete and also incomplete instances) and their identification in implementation phase of software development. As You can try, plug-in confirms an usage of design pattern or draws attention to its inaccurate implementation. And therefore, DP-Recognizer plug-in presents the helper, that assists the programmer with implementation.<br />
+For further details please see: <a href="http://lubes.yweb.sk/projects/dprecognizer/">http://lubes.yweb.sk/projects/dprecognizer/</a></p>
+]]></body>
+      <created>1303586022</created>
+      <changed>1306759434</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://lubes.yweb.sk/projects/dprecognizer/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/dpr_plugin_logo_1.png?itok=YHl5aL9f]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/web_screenshot_1.png?itok=_Se-vA2B]]></screenshot>
+      <version>0.4.4</version>
+      <license>GPL</license>
+      <companyname><![CDATA[FIIT SUT in Bratislava]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://lubes.yweb.sk/projects/dprecognizer/update/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

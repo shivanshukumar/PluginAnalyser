@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1077" name="MakeGood" url="http://marketplace.eclipse.org/content/makegood-0">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+      </categories>
+            
+      <owner>matsufuji</owner>
+      <favorited>4</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>
+  MakeGood provides a test runner to run unit tests on <a href="http://eclipse.org/pdt/" target="_blank">Eclipse PDT</a>. MakeGood strongly supports <a href="http://en.wikipedia.org/wiki/Test-driven_development" target="_blank">Test Driven Development</a> (TDD) by various features.
+</p>
+<p>
+  <img src="http://redmine.piece-framework.com/attachments/104/makegood-result-view-en-550.png" /></p>
+<p>
+  Click <a href="http://redmine.piece-framework.com/attachments/91/makegood-result-view-en.png" target="_blank">here</a> to see the original size.
+</p>
+<h2>Features</h2>
+<ul><li>Runs tests from the PHP Explorer and Package Explorer.</li>
+<li>Runs tests from the PHP Editor.</li>
+<li>Can use the system include path when running tests.</li>
+<li>Supports <a href="http://www.phpunit.de/" target="_blank">PHPUnit</a> and <a href="http://simpletest.org/" target="_blank">SimpleTest</a>.</li>
+</ul><h2>Requirements</h2>
+<ul><li><a href="http://www.php.net/" target="_blank">PHP</a> and Zend Debugger</li>
+<li><a href="http://eclipse.org/" target="_blank">Eclipse</a> 3.5.0 or greater</li>
+<li><a href="http://eclipse.org/pdt/" target="_blank">PDT</a> 2.1.0 or greater</li>
+<li><a href="http://redmine.piece-framework.com/projects/show/stagehand-testrunner" target="_blank">Stagehand_TestRunner</a> 2.10.0 or greater</li>
+<li>(optional) <a href="http://www.phpunit.de/" target="_blank">PHPUnit</a> 3.4.1 or greater</li>
+<li>(optional) <a href="http://simpletest.org/" target="_blank">SimpleTest</a> 1.0.1 or greater</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>
+  MakeGood provides a test runner to run unit tests on <a href="http://eclipse.org/pdt/" target="_blank">Eclipse PDT</a>. MakeGood strongly supports <a href="http://en.wikipedia.org/wiki/Test-driven_development" target="_blank">Test Driven Development</a> (TDD) by various features.
+</p>
+<p>
+  <img src="http://redmine.piece-framework.com/attachments/104/makegood-result-view-en-550.png" /></p>
+<p>
+  Click <a href="http://redmine.piece-framework.com/attachments/91/makegood-result-view-en.png" target="_blank">here</a> to see the original size.
+</p>
+<h2>Features</h2>
+<ul><li>Runs tests from the PHP Explorer and Package Explorer.</li>
+<li>Runs tests from the PHP Editor.</li>
+<li>Can use the system include path when running tests.</li>
+<li>Supports <a href="http://www.phpunit.de/" target="_blank">PHPUnit</a> and <a href="http://simpletest.org/" target="_blank">SimpleTest</a>.</li>
+</ul><h2>Requirements</h2>
+<ul><li><a href="http://www.php.net/" target="_blank">PHP</a> and Zend Debugger</li>
+<li><a href="http://eclipse.org/" target="_blank">Eclipse</a> 3.5.0 or greater</li>
+<li><a href="http://eclipse.org/pdt/" target="_blank">PDT</a> 2.1.0 or greater</li>
+<li><a href="http://redmine.piece-framework.com/projects/show/stagehand-testrunner" target="_blank">Stagehand_TestRunner</a> 2.10.0 or greater</li>
+<li>(optional) <a href="http://www.phpunit.de/" target="_blank">PHPUnit</a> 3.4.1 or greater</li>
+<li>(optional) <a href="http://simpletest.org/" target="_blank">SimpleTest</a> 1.0.1 or greater</li>
+</ul>]]></body>
+      <created>1260428597</created>
+      <changed>1261717840</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://redmine.piece-framework.com/wiki/makegood]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>0.2.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Piece Project]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://redmine.piece-framework.com/projects/makegood/boards]]></supporturl>
+      <updateurl><![CDATA[http://eclipse.piece-framework.com]]></updateurl>
+    </node>
+    </marketplace>
+    

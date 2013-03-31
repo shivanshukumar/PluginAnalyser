@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1202" name="Open with Eclipse" url="http://marketplace.eclipse.org/content/open-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='596' name='Windows' url='http://marketplace.eclipse.org/category/free-tagging/windows'/>
+        <tag id='597' name='Context menu' url='http://marketplace.eclipse.org/category/free-tagging/context-menu'/>
+      </tags>
+      
+      <owner>Holger Voormann</owner>
+      <favorited>4</favorited>
+      <installstotal>87</installstotal>
+      <installsrecent>4</installsrecent>
+      <shortdescription><![CDATA[<p>Adds "Open with Eclipse" to the Windows file context/right-click menu</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Adds "Open with Eclipse" to the Windows file context/right-click menu</p>
+]]></body>
+      <created>1273155267</created>
+      <changed>1307371372</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://openwitheclipse.sf.net/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/open_with_eclipse__.gif?itok=6EjPphwb]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/owe_server2008R2_.png?itok=9w7L-VsT]]></screenshot>
+      <version>1.0.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Holger Voormann]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[Eclipse 3.6 M5+]]></eclipseversion>
+      <supporturl><![CDATA[http://www.agilantis.de/]]></supporturl>
+      <updateurl><![CDATA[http://openwitheclipse.sf.net/update]]></updateurl>
+<ius>
+<iu>de.agilantis.open_with_eclipse.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

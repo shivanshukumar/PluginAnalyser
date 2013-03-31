@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="123680" name="AdbConnect" url="http://marketplace.eclipse.org/content/adbconnect">
+      <type>resource</type>
+      <categories>
+        <category id='1974' name='Mobile and Device Development' url='http://marketplace.eclipse.org/category/categories/mobile-and-device-development'/>
+      </categories>
+      <tags>
+        <tag id='261' name='remote' url='http://marketplace.eclipse.org/category/free-tagging/remote'/>
+        <tag id='327' name='eclipse' url='http://marketplace.eclipse.org/category/free-tagging/eclipse'/>
+        <tag id='408' name='android' url='http://marketplace.eclipse.org/category/free-tagging/android'/>
+        <tag id='2213' name='adb' url='http://marketplace.eclipse.org/category/free-tagging/adb'/>
+        <tag id='2214' name='wifi' url='http://marketplace.eclipse.org/category/free-tagging/wifi'/>
+      </tags>
+      
+      <owner>Dev PPareit</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Eclipse plug-in to remote adb to an android device.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Eclipse plug-in to remote adb to an android device.</p>
+]]></body>
+      <created>1316673155</created>
+      <changed>1316794704</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://ppareit.github.com/AdbConnect/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/icon_2.png?itok=dV6tvRh3]]></image>
+      <version></version>
+      <license>GPL</license>
+      <companyname><![CDATA[PPareit.Dev]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://ppareit.github.com/AdbConnect/]]></updateurl>
+    </node>
+    </marketplace>
+    

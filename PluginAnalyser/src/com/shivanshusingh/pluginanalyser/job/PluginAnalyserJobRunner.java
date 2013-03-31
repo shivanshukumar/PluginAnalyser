@@ -112,7 +112,7 @@ public class PluginAnalyserJobRunner {
 		/*		updateSiteCollection = new HashSet<String>();
 		List<String> xxxx = new ArrayList<String>();
 
-		ec.restoreFromBaseLocation("./_UPDATE-SITE-DATA");
+		ec.restoreFromBaseLocation("./UPDATE-SITE-DATA");
 		gotUpdateSites = new HashSet();
 		gotUpdateSites.addAll(ec.getSites());
 		for (UpdateSiteInfo updateSiteInfo : gotUpdateSites) {

@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="646" name="a tool for eclipse (T4Eclipse)" url="http://marketplace.eclipse.org/content/tool-eclipse-t4eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='1024' name='analyze eclipse' url='http://marketplace.eclipse.org/category/free-tagging/analyze-eclipse'/>
+      </tags>
+      
+      <owner>Ben Xu</owner>
+      <favorited>2</favorited>
+      <installstotal>172</installstotal>
+      <installsrecent>3</installsrecent>
+      <shortdescription><![CDATA[<p><img src="http://t4eclipse.googlecode.com/svn/pics/bigT4Eclipse2.GIF" /><br /></p>
+<h2><b>Version 1.2.1 released</b></h2>
+<p>install from update site: <a href="http://t4eclipse.googlecode.com/svn/update_site/">http://t4eclipse.googlecode.com/svn/update_site/</a>
+ </p>
+<p>T4Eclipse introduction and user guide:<a href="http://code.google.com/p/t4eclipse/downloads/detail?name=using%20T4eclipse%20to%20analyze%20eclipse%20.ppt&can=2&q=#makechanges" rel="nofollow" target="_blank">Download</a> </p>
+<p>Or read online PPT document at<br />
+docstor: </p>
+<p><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.docstoc.com%2Fdocs%2Fdocument-preview.aspx%3Fdoc_id%3D47410964&sa=D&sntz=1&usg=AFrqEze-1lF6nNAglJ-4xtGRXg0YDO-zfQ" rel="nofollow" target="_blank"><img src="http://t4eclipse.googlecode.com/svn/pics/T4EclipsePPT.JPG" /></a> </p>
+<h3><a name="TOC-Version-1.2.1-release-note" id="TOC-Version-1.2.1-release-note"></a>Version 1.2.1 release note</h3>
+<ul><li>add toolbar analyzer to analyze<br />
+ view toolbar actions </li>
+<li>change plug-in dependency to depend on<br />
+only two basic "org.eclipse.ui" and "org.eclipse.core.runtime" plug-ins </li>
+</ul><p><br /></p>
+<h3><a name="TOC-About-T4Eclipse" id="TOC-About-T4Eclipse"></a>About T4Eclipse</h3>
+<div>T4Eclipse is created to quickly get the answers for the questions in the following pictures: (see the above ppt file for more information)</div>
+<div><br /></div>
+<div>
+<div style="display: block; text-align: left;"><a href="http://t4eclipse.googlecode.com/svn/pics/question/Picture1.png" imageanchor="1"><img src="http://t4eclipse.googlecode.com/svn/pics/question/Picture1.png" border="0" /></a></div>
+<div style="display: block; text-align: left;">
+<div style="display: block; text-align: left;"><a href="http://t4eclipse.googlecode.com/svn/pics/question//Picture2.png" imageanchor="1"><img src="http://t4eclipse.googlecode.com/svn/pics/question//Picture2.png" border="0" /></a></div>
+<p><br /></p></div>
+<div style="display: block; text-align: left;"><br /></div>
+<div style="display: block; text-align: left;">
+<div style="display: block; text-align: left;"><a href="http://t4eclipse.googlecode.com/svn/pics/question/Picture3.png" imageanchor="1"><img src="http://t4eclipse.googlecode.com/svn/pics/question/Picture3.png" border="0" /></a></div>
+<p><br /></p></div>
+<p><br /></p></div>
+<div>
+<br /><br /><h4><font>NEW Version 1.2.0 is released for eclipse 3.5 and 3.6 ! T4Eclipse is the best  existing tool to analyze eclipse UI for all kinds of eclipse based application. T4Eclispe can quickly find most of all implementation class for eclipse UI. for exp, view/editor/wizard/dialog/preference/menu action/...</font></h4>
+
+<h4><font> please see the<a class="adt" href="http://marketplace.eclipse.org/content/tool-eclipse-t4eclipse/screenshots">screenshots</a> to get a quick view!</font></h4>
+<p>T4Eclipse is a tool for eclipse plug-in developers to analysis eclipse<br /><br />
+plug-ins.<br /><br /><br /><br />
+Currently,T4Eclipse provides the following functions:<br /><br />
+* list all wizard/preference/view/editor/perspective/menu/toolbar in a table<br /><br />
+* provide method to find the java class for above eclipse components<br /><br />
+* provide method to view all SWT controls in a tree table for  the focused eclipse view/editor<br /><br />
+* analysis the above swt contorl by check its field value or invoke its methods<br /><br />
+* list the java class for each opened Dialog in eclipse<br /><br />
+* list all path id in eclipse main menu,so you can add menuitem in the right place <br /><br />
+* a menu analyzer to check menu action class in all eclipse view/editor (can not find all action for any menu now, but most action can be found)</p>
+</div>]]></shortdescription>
+      <body><![CDATA[<p><img src="http://t4eclipse.googlecode.com/svn/pics/bigT4Eclipse2.GIF" /><br /></p>
+<h2><b>Version 1.2.1 released</b></h2>
+<p>install from update site: <a href="http://t4eclipse.googlecode.com/svn/update_site/">http://t4eclipse.googlecode.com/svn/update_site/</a>
+ </p>
+<p>T4Eclipse introduction and user guide:<a href="http://code.google.com/p/t4eclipse/downloads/detail?name=using%20T4eclipse%20to%20analyze%20eclipse%20.ppt&can=2&q=#makechanges" rel="nofollow" target="_blank">Download</a> </p>
+<p>Or read online PPT document at<br />
+docstor: </p>
+<p><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.docstoc.com%2Fdocs%2Fdocument-preview.aspx%3Fdoc_id%3D47410964&sa=D&sntz=1&usg=AFrqEze-1lF6nNAglJ-4xtGRXg0YDO-zfQ" rel="nofollow" target="_blank"><img src="http://t4eclipse.googlecode.com/svn/pics/T4EclipsePPT.JPG" /></a> </p>
+<h3><a name="TOC-Version-1.2.1-release-note" id="TOC-Version-1.2.1-release-note"></a>Version 1.2.1 release note</h3>
+<ul><li>add toolbar analyzer to analyze<br />
+ view toolbar actions </li>
+<li>change plug-in dependency to depend on<br />
+only two basic "org.eclipse.ui" and "org.eclipse.core.runtime" plug-ins </li>
+</ul><p><br /></p>
+<h3><a name="TOC-About-T4Eclipse" id="TOC-About-T4Eclipse"></a>About T4Eclipse</h3>
+<div>T4Eclipse is created to quickly get the answers for the questions in the following pictures: (see the above ppt file for more information)</div>
+<div><br /></div>
+<div>
+<div style="display: block; text-align: left;"><a href="http://t4eclipse.googlecode.com/svn/pics/question/Picture1.png" imageanchor="1"><img src="http://t4eclipse.googlecode.com/svn/pics/question/Picture1.png" border="0" /></a></div>
+<div style="display: block; text-align: left;">
+<div style="display: block; text-align: left;"><a href="http://t4eclipse.googlecode.com/svn/pics/question//Picture2.png" imageanchor="1"><img src="http://t4eclipse.googlecode.com/svn/pics/question//Picture2.png" border="0" /></a></div>
+<p><br /></p></div>
+<div style="display: block; text-align: left;"><br /></div>
+<div style="display: block; text-align: left;">
+<div style="display: block; text-align: left;"><a href="http://t4eclipse.googlecode.com/svn/pics/question/Picture3.png" imageanchor="1"><img src="http://t4eclipse.googlecode.com/svn/pics/question/Picture3.png" border="0" /></a></div>
+<p><br /></p></div>
+<p><br /></p></div>
+<div>
+<br /><br /><h4><font>NEW Version 1.2.0 is released for eclipse 3.5 and 3.6 ! T4Eclipse is the best  existing tool to analyze eclipse UI for all kinds of eclipse based application. T4Eclispe can quickly find most of all implementation class for eclipse UI. for exp, view/editor/wizard/dialog/preference/menu action/...</font></h4>
+
+<h4><font> please see the<a class="adt" href="http://marketplace.eclipse.org/content/tool-eclipse-t4eclipse/screenshots">screenshots</a> to get a quick view!</font></h4>
+<p>T4Eclipse is a tool for eclipse plug-in developers to analysis eclipse<br /><br />
+plug-ins.<br /><br /><br /><br />
+Currently,T4Eclipse provides the following functions:<br /><br />
+* list all wizard/preference/view/editor/perspective/menu/toolbar in a table<br /><br />
+* provide method to find the java class for above eclipse components<br /><br />
+* provide method to view all SWT controls in a tree table for  the focused eclipse view/editor<br /><br />
+* analysis the above swt contorl by check its field value or invoke its methods<br /><br />
+* list the java class for each opened Dialog in eclipse<br /><br />
+* list all path id in eclipse main menu,so you can add menuitem in the right place <br /><br />
+* a menu analyzer to check menu action class in all eclipse view/editor (can not find all action for any menu now, but most action can be found)</p>
+</div>]]></body>
+      <created>1203002389</created>
+      <changed>1279514039</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/t4eclipse/]]></homepageurl>
+      <image><![CDATA[http://t4eclipse.googlecode.com/svn/pics/t4.gif]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/T4Eclipse_all_view.PNG?itok=1WBdM3vJ]]></screenshot>
+      <version>1.2.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Ben Xu]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[eclipse 3.3.x - 3.6.x]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/t4eclipse/]]></supporturl>
+      <updateurl><![CDATA[http://t4eclipse.googlecode.com/svn/update_site/]]></updateurl>
+<ius>
+<iu>com.google.code.t4eclipse.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

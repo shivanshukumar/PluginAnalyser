@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="158915" name="Logging code Cleanup for Eclipse" url="http://marketplace.eclipse.org/content/logging-code-cleanup-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>Andrey Pavlenko</owner>
+      <favorited>4</favorited>
+      <installstotal>488</installstotal>
+      <installsrecent>44</installsrecent>
+      <shortdescription><![CDATA[<p>Logging code Cleanup plugin for Eclipse is an extension of the <a href="http://help.eclipse.org/indigo/index.jsp?topic=%2Forg.eclipse.jdt.doc.isv%2Freference%2Fextension-points%2Forg_eclipse_jdt_ui_cleanUps.html">Eclipse Cleaun Ups</a> which detects invocations of logging methods with compound arguments (requiring computation before method call) and prefixes them with corresponding if statements.</p>
+<p>For example, the code:<br />
+    log.debug("Me: " + this) </p>
+<p>is replaced with:<br />
+    if (log.isDebugEnabled()) log.debug("Me: " + this)</p>
+<p>The following logging frameworks are supported by this plugin:</p>
+<p>Java Util Logging<br />
+Log4j<br />
+SLF4J</p>
+<p>Besides, the plugin provides extension point which allows to extend it to other frameworks.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Logging code Cleanup plugin for Eclipse is an extension of the <a href="http://help.eclipse.org/indigo/index.jsp?topic=%2Forg.eclipse.jdt.doc.isv%2Freference%2Fextension-points%2Forg_eclipse_jdt_ui_cleanUps.html">Eclipse Cleaun Ups</a> which detects invocations of logging methods with compound arguments (requiring computation before method call) and prefixes them with corresponding if statements.</p>
+<p>For example, the code:<br />
+    log.debug("Me: " + this) </p>
+<p>is replaced with:<br />
+    if (log.isDebugEnabled()) log.debug("Me: " + this)</p>
+<p>The following logging frameworks are supported by this plugin:</p>
+<p>Java Util Logging<br />
+Log4j<br />
+SLF4J</p>
+<p>Besides, the plugin provides extension point which allows to extend it to other frameworks.</p>
+]]></body>
+      <created>1322173993</created>
+      <changed>1322412063</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/lce/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/configuration.png?itok=GIUYp0vv]]></screenshot>
+      <version>1.0.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Andrey Pavlenko]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5.+]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://site.lce.googlecode.com/git/update/]]></updateurl>
+<ius>
+<iu>com.googlecode.lce.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

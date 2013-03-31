@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="603" name="MP3tunes MP3 Locker Service Integration" url="http://marketplace.eclipse.org/content/mp3tunes-mp3-locker-service-integration">
+      <type>resource</type>
+      <categories>
+        <category id='7' name='Entertainment' url='http://marketplace.eclipse.org/taxonomy/term/7'/>
+      </categories>
+            
+      <owner>ABSo</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The MP3tunes Eclipse plug-in provides a way to browse a MP3tunes Locker account from within the Eclipse platform. See also <a href="http://www.mp3tunes.com">http://www.mp3tunes.com</a> for details on the MP3tunes Locker service</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The MP3tunes Eclipse plug-in provides a way to browse a MP3tunes Locker account from within the Eclipse platform. See also <a href="http://www.mp3tunes.com">http://www.mp3tunes.com</a> for details on the MP3tunes Locker service</p>
+]]></body>
+      <created>1197297341</created>
+      <changed>1273000338</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://abso.freehostia.com]]></homepageurl>
+      <image><![CDATA[http://abso.freehostia.com/mp3tunes/demo/images/MP3tunes.png]]></image>
+      <version>1.1.1</version>
+      <license>Other</license>
+      <companyname><![CDATA[ABSo]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2]]></eclipseversion>
+      <supporturl><![CDATA[http://]]></supporturl>
+      <updateurl><![CDATA[http://abso.freehostia.com/mp3tunes/update/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

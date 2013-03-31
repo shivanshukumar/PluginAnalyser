@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="614" name="Brlouk eclipse modeling tools" url="http://marketplace.eclipse.org/content/brlouk-eclipse-modeling-tools">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+      </categories>
+            
+      <owner>loukil brahim</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>BEM provides a complete environment domain model tool for Software Architecture to define DSL’s and reuse models.</p>
+<p>BEM allows you to design your domain model in easiest way with re-use of registered models. You can create multi view parts of your domain model in order to help you to mange complexity.<br />
+Using the Semantic Visual Validator, you can check graphically your model and avoid mistakes.</p>
+<p>To take advantage of Java framework and code generation that EMF provides, BEM helps you to reuse every Java model Element existed in you project.<br />
+The refactoring feature added in version 0.8 allows you to modify your model without affecting the diagram behavior.</p>
+<p>Finally, BEM supports generic types and provides all you need to use generics and then generate good quality code.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>BEM provides a complete environment domain model tool for Software Architecture to define DSL’s and reuse models.</p>
+<p>BEM allows you to design your domain model in easiest way with re-use of registered models. You can create multi view parts of your domain model in order to help you to mange complexity.<br />
+Using the Semantic Visual Validator, you can check graphically your model and avoid mistakes.</p>
+<p>To take advantage of Java framework and code generation that EMF provides, BEM helps you to reuse every Java model Element existed in you project.<br />
+The refactoring feature added in version 0.8 allows you to modify your model without affecting the diagram behavior.</p>
+<p>Finally, BEM supports generic types and provides all you need to use generics and then generate good quality code.</p>
+]]></body>
+      <created>1198177781</created>
+      <changed>1307126574</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://brlouk.teamsoftsuite.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/BEM_v0.9.png?itok=FdbYuGAB]]></screenshot>
+      <version>0.9</version>
+      <license>Free for non-commerical use</license>
+      <companyname><![CDATA[Brahim Khalil Loukil]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://brlouk.teamsoftsuite.com]]></supporturl>
+      <updateurl><![CDATA[http://www.teamsoftsuite.com/MySites/brlouk/Downloads/BEM/com.brlouk.bem.updateSite_0.9.0.v20080304/site.xml]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

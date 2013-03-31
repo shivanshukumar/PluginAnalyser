@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="661" name="Unnecessary Code Detector" url="http://marketplace.eclipse.org/content/unnecessary-code-detector">
+      <type>resource</type>
+      <categories>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+      </categories>
+      <tags>
+        <tag id='103' name='find unused code' url='http://marketplace.eclipse.org/category/free-tagging/find-unused-code'/>
+        <tag id='104' name='find dead code' url='http://marketplace.eclipse.org/category/free-tagging/find-dead-code'/>
+        <tag id='105' name='Source Code Analyzer' url='http://marketplace.eclipse.org/category/free-tagging/source-code-analyzer'/>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='107' name='check visibility' url='http://marketplace.eclipse.org/category/free-tagging/check-visibility'/>
+      </tags>
+      
+      <owner>Joerg Spieler</owner>
+      <favorited>45</favorited>
+      <installstotal>5195</installstotal>
+      <installsrecent>251</installsrecent>
+      <shortdescription><![CDATA[<p>UCDetector (Unnecessary Code Detector) is a eclipse PlugIn tool to find unnecessary (dead) public java code.<br />
+For example public classes, methods or fields which have no references.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>UCDetector (Unnecessary Code Detector) is a eclipse PlugIn tool to find unnecessary (dead) public java code.<br />
+For example public classes, methods or fields which have no references.</p>
+]]></body>
+      <created>1205417522</created>
+      <changed>1333664819</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.ucdetector.org/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/ucd_110x80_0.png?itok=zGaoi-gk]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/markers.png?itok=Pa6jVw-8]]></screenshot>
+      <version>1.10.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Joerg Spieler]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4, 3.5, 3.6, 3.7, 3.8]]></eclipseversion>
+      <supporturl><![CDATA[http://www.ucdetector.org/]]></supporturl>
+      <updateurl><![CDATA[http://ucdetector.sourceforge.net/update/]]></updateurl>
+<ius>
+<iu>org.ucdetector.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

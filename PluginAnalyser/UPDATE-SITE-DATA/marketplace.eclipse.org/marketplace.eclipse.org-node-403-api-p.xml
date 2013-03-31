@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="403" name="Mylyn Mantis Connector" url="http://marketplace.eclipse.org/content/mylyn-mantis-connector">
+      <type>resource</type>
+      <categories>
+        <category id='38' name='Mylyn Connectors' url='http://marketplace.eclipse.org/category/categories/mylyn-connectors'/>
+      </categories>
+      <tags>
+        <tag id='88' name='mylyn' url='http://marketplace.eclipse.org/category/free-tagging/mylyn'/>
+        <tag id='1192' name='mantisbt' url='http://marketplace.eclipse.org/category/free-tagging/mantisbt'/>
+        <tag id='1487' name='mantis' url='http://marketplace.eclipse.org/category/free-tagging/mantis'/>
+      </tags>
+      
+      <owner>Chris Hane</owner>
+      <favorited>10</favorited>
+      <installstotal>2668</installstotal>
+      <installsrecent>119</installsrecent>
+      <shortdescription><![CDATA[<p>The Mylyn connector for MantisBT allows you to manage your bugs<br />
+straight from Eclipse.<br /><br />Supported features include:<br />- creating and updating tasks<br />- synchronizing<br />- tasks<br />- commenting<br />- uploading and downloading attachments</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The Mylyn connector for MantisBT allows you to manage your bugs<br />
+straight from Eclipse.<br /><br />Supported features include:<br />- creating and updating tasks<br />- synchronizing<br />- tasks<br />- commenting<br />- uploading and downloading attachments</p>
+]]></body>
+      <created>1172161630</created>
+      <changed>1293032847</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://sourceforge.net/apps/mediawiki/mylyn-mantis/index.php?title=Main_Page]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/mylyn-mantis-eclipse-marketplace.jpg?itok=V9q40RqV]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/mylyn-mantis-task-editor.jpg?itok=S12IdPVu]]></screenshot>
+      <version>3.1.5</version>
+      <license>EPL</license>
+      <companyname><![CDATA[IT Software Solutions, Inc]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4, 3.5, 3.6]]></eclipseversion>
+      <supporturl><![CDATA[https://sourceforge.net/apps/phpbb/mylyn-mantis/]]></supporturl>
+      <updateurl><![CDATA[http://mylyn-mantis.sourceforge.net/eclipse/update]]></updateurl>
+<ius>
+<iu>com.itsolut.mantis_feature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

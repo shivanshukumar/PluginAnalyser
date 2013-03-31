@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="181" name="XMLEspresso XML Editor Eclipse Plugin" url="http://marketplace.eclipse.org/content/xmlespresso-xml-editor-eclipse-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+      </categories>
+      <tags>
+        <tag id='146' name='editor' url='http://marketplace.eclipse.org/category/free-tagging/editor'/>
+        <tag id='521' name='xml' url='http://marketplace.eclipse.org/category/free-tagging/xml'/>
+        <tag id='1305' name='schema' url='http://marketplace.eclipse.org/category/free-tagging/schema'/>
+      </tags>
+      
+      <owner>Ajay Vohra</owner>
+      <favorited>0</favorited>
+      <installstotal>2216</installstotal>
+      <installsrecent>328</installsrecent>
+      <shortdescription><![CDATA[<p>XMLEspresso 8.0.0 is a full featured editor for creating and maintaining XML documents. Its important features include: </p>
+<p>-- It supports Standalone, Document Type Definition (DTD) and W3C XML Schema</p>
+<p>-- XML document is guided by the underlying grammar</p>
+<p>-- When no XML Schema or DTD is specified, the editor dynamically generates a grammar based on the current content</p>
+<p>-- XML document can be validated against its DTD or W3C XML Schema</p>
+<p>-- Advaced XPath search is available</p>
+<p>-- XML documents can be transformed using XSLT transformations</p>
+<p>-- XML content assist makes it easy to edit in Source view</p>
+<p>-- Deisgn view makes it easy to add new elements, attributes and edit content</p>
+]]></shortdescription>
+      <body><![CDATA[<p>XMLEspresso 8.0.0 is a full featured editor for creating and maintaining XML documents. Its important features include: </p>
+<p>-- It supports Standalone, Document Type Definition (DTD) and W3C XML Schema</p>
+<p>-- XML document is guided by the underlying grammar</p>
+<p>-- When no XML Schema or DTD is specified, the editor dynamically generates a grammar based on the current content</p>
+<p>-- XML document can be validated against its DTD or W3C XML Schema</p>
+<p>-- Advaced XPath search is available</p>
+<p>-- XML documents can be transformed using XSLT transformations</p>
+<p>-- XML content assist makes it easy to edit in Source view</p>
+<p>-- Deisgn view makes it easy to add new elements, attributes and edit content</p>
+]]></body>
+      <created>1138548073</created>
+      <changed>1337469896</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.nubean.com/products.html]]></homepageurl>
+      <image><![CDATA[http://www.nubean.com/images/plugin-icon.png]]></image>
+      <version>8.0.0</version>
+      <license>LGPL</license>
+      <companyname><![CDATA[NuBean LLC]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://www.nubean.com/support.html]]></supporturl>
+      <updateurl><![CDATA[http://www.nubean.com/eclipse/site/]]></updateurl>
+<ius>
+<iu>com.nubean.xmlespresso</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

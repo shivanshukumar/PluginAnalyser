@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="178" name="Imixs Workflow Modeler" url="http://marketplace.eclipse.org/content/imixs-workflow-modeler">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+      </categories>
+      <tags>
+        <tag id='85' name='bpm' url='http://marketplace.eclipse.org/category/free-tagging/bpm'/>
+        <tag id='86' name='workflow' url='http://marketplace.eclipse.org/category/free-tagging/workflow'/>
+        <tag id='422' name='java ee' url='http://marketplace.eclipse.org/category/free-tagging/java-ee'/>
+        <tag id='491' name='GlassFish' url='http://marketplace.eclipse.org/category/free-tagging/glassfish'/>
+        <tag id='695' name='jee' url='http://marketplace.eclipse.org/category/free-tagging/jee'/>
+      </tags>
+      
+      <owner>Ralph Soika</owner>
+      <favorited>2</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[The Imixs Workflow Modeler is a graphical tool for creating workflow models based on the Imixs Workflow Project. The Imixs Workflow project is an open source project that relieved the construction of business process management systems (BPMS).
+
+Workflow models can be managed independently from the application logic. Models can be synchronized to a workflow application by the Imixs Model Web Service through this plugin. This allows fast, transparent and an easy maintenance of business processes. The Imixs Workflow Modeler is provided as an Eclipse plug-in and profits from all advantages offered by the Eclipse IDE.
+The goal of the Imixs Workflow project is to provide an easy to use Java based technology which focus on human-to-human BPM solutions. 
+The goals of the Imixs Workflow Modeler project is to provide developers and users of a BPM System with an easy and extendible tool to model a business process. The Eclipse based Modeler allows to model typical business cases and provides a Web Service Interface to update any Workflow Management System build on the Imixs Workflow API with model data.
+The plug-in is freely available as an Open Source version and can be adapted to the individual requirements or expanded at any time through predefined extension points. The Imixs Workflow API can integrate the created WorkflowModels at any time to facilitate further processing. ]]></shortdescription>
+      <body><![CDATA[The Imixs Workflow Modeler is a graphical tool for creating workflow models based on the Imixs Workflow Project. The Imixs Workflow project is an open source project that relieved the construction of business process management systems (BPMS).
+
+Workflow models can be managed independently from the application logic. Models can be synchronized to a workflow application by the Imixs Model Web Service through this plugin. This allows fast, transparent and an easy maintenance of business processes. The Imixs Workflow Modeler is provided as an Eclipse plug-in and profits from all advantages offered by the Eclipse IDE.
+The goal of the Imixs Workflow project is to provide an easy to use Java based technology which focus on human-to-human BPM solutions. 
+The goals of the Imixs Workflow Modeler project is to provide developers and users of a BPM System with an easy and extendible tool to model a business process. The Eclipse based Modeler allows to model typical business cases and provides a Web Service Interface to update any Workflow Management System build on the Imixs Workflow API with model data.
+The plug-in is freely available as an Open Source version and can be adapted to the individual requirements or expanded at any time through predefined extension points. The Imixs Workflow API can integrate the created WorkflowModels at any time to facilitate further processing. ]]></body>
+      <created>1135010324</created>
+      <changed>1279785614</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://doc.imixs.org/modeler/]]></homepageurl>
+      <image><![CDATA[http://doc.imixs.org/modeler/images/image_small_02.gif]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/image_small_02.gif?itok=ut1aykWz]]></screenshot>
+      <version>2.3.1</version>
+      <license>GPL</license>
+      <companyname><![CDATA[Imixs Software Solutions GmbH]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.imixs.org]]></supporturl>
+      <updateurl><![CDATA[http://www.imixs.org/org.imixs.eclipse.updatesite]]></updateurl>
+    </node>
+    </marketplace>
+    

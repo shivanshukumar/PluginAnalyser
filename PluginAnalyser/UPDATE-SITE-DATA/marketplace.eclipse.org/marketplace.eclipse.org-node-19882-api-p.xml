@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="19882" name="ModelGoon UML4Java" url="http://marketplace.eclipse.org/content/modelgoon-uml4java">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+      </categories>
+      <tags>
+        <tag id='61' name='UML' url='http://marketplace.eclipse.org/category/free-tagging/uml'/>
+        <tag id='177' name='Roundtrip' url='http://marketplace.eclipse.org/category/free-tagging/roundtrip'/>
+        <tag id='240' name='Class Diagram' url='http://marketplace.eclipse.org/category/free-tagging/class-diagram'/>
+        <tag id='242' name='code analysis' url='http://marketplace.eclipse.org/category/free-tagging/code-analysis'/>
+        <tag id='417' name='reverse engineering' url='http://marketplace.eclipse.org/category/free-tagging/reverse-engineering'/>
+      </tags>
+      
+      <owner>Riana Ralambomanana</owner>
+      <favorited>26</favorited>
+      <installstotal>4718</installstotal>
+      <installsrecent>57</installsrecent>
+      <shortdescription><![CDATA[<p><strong>ModelGoon</strong> brings new points of view of a Java project. Thanks to its tight connection and interaction with the Eclipse Java Development Tools <strong>JDT</strong>. <strong>ModelGoon</strong> provides also round-trip features on Class Diagrams actually as beta.</p>
+<p>ModelGoon provides actually four diagrams which are built and synchronized directly from the sources of a Java Project:</p>
+<ul><li><strong>Package Dependencies Diagram</strong> : shows the dependencies between packages and highlights circular dependencies. Each dependency line can also display the involved classes.</li>
+<li><strong>Class Diagram</strong> : shows a structural view of user selected classes and allows the user to navigate from the diagram's elements to the corresponding Java element in the source code. Semantics, such as composition or aggregation can also be added to associations.</li>
+<li><strong>Interaction Diagram</strong> : based on the UML communication diagram, shows overall interactions between objects in order to check responsibilities affectations.</li>
+<li><strong>Sequence Diagram</strong> : A high detailed dynamic diagram which is built from a user selected method. Handles most of the statements available in the Java language : if, while, switch/case, for, enhanced for loop, exceptions throwing / catching…</li>
+</ul><p>ModelGoon is tightly connected to the Eclipse's JDT, thus the java code is the model. This is why diagrams created with ModelGoon always reflect the application's source code. ModelGoon is a lightweight tool (depends only on GEF) , and doesn't pollute the sources with annotation or proprietary comments.</p>
+<p>At its current state, ModelGoon can be used for documentation purposes or for figuring out the static and dynamic structure of an existing application.</p>
+<p>For more informations please visit its homepage.</p>
+]]></shortdescription>
+      <body><![CDATA[<p><strong>ModelGoon</strong> brings new points of view of a Java project. Thanks to its tight connection and interaction with the Eclipse Java Development Tools <strong>JDT</strong>. <strong>ModelGoon</strong> provides also round-trip features on Class Diagrams actually as beta.</p>
+<p>ModelGoon provides actually four diagrams which are built and synchronized directly from the sources of a Java Project:</p>
+<ul><li><strong>Package Dependencies Diagram</strong> : shows the dependencies between packages and highlights circular dependencies. Each dependency line can also display the involved classes.</li>
+<li><strong>Class Diagram</strong> : shows a structural view of user selected classes and allows the user to navigate from the diagram's elements to the corresponding Java element in the source code. Semantics, such as composition or aggregation can also be added to associations.</li>
+<li><strong>Interaction Diagram</strong> : based on the UML communication diagram, shows overall interactions between objects in order to check responsibilities affectations.</li>
+<li><strong>Sequence Diagram</strong> : A high detailed dynamic diagram which is built from a user selected method. Handles most of the statements available in the Java language : if, while, switch/case, for, enhanced for loop, exceptions throwing / catching…</li>
+</ul><p>ModelGoon is tightly connected to the Eclipse's JDT, thus the java code is the model. This is why diagrams created with ModelGoon always reflect the application's source code. ModelGoon is a lightweight tool (depends only on GEF) , and doesn't pollute the sources with annotation or proprietary comments.</p>
+<p>At its current state, ModelGoon can be used for documentation purposes or for figuring out the static and dynamic structure of an existing application.</p>
+<p>For more informations please visit its homepage.</p>
+]]></body>
+      <created>1289756583</created>
+      <changed>1303072681</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.modelgoon.org]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_5.png?itok=L-FPeahV]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Diagram.png?itok=H1FTZxs2]]></screenshot>
+      <version>4.4.1</version>
+      <license>Other Open Source</license>
+      <companyname><![CDATA[ModelGoon]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5-3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://www.modelgoon.org/?page_id=75]]></supporturl>
+      <updateurl><![CDATA[http://www.modelgoon.org/update]]></updateurl>
+<ius>
+<iu>org.modelgoon</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

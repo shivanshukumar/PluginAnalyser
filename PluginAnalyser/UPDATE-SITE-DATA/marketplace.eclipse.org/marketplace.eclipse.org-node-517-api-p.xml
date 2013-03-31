@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="517" name="CoViewManager" url="http://marketplace.eclipse.org/content/coviewmanager">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+      </categories>
+            
+      <owner>jponczak</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>CoViewManager lets you determine how to measure the testability of your code by looking at specific, industry proven metrics. </p>
+<p>CoViewManager comes with 9 metrics that you can choose from. Use one or use them all - it's up to you. For example, it is well known that methods with more than 10 logical paths are harder to test and maintain than methods with fewer paths. With CoViewManager, you set the threshold for Paths to a number (like '10') and the severity level (like 'Error'). When a developer adds the 11th path, flags are immediately raised. The developer can either simplify their code or add a Javadoc explanation as to why it is necessary to have 11 paths.</p>
+<p>Version 4.1 provides support for Eclipse 3.5 and some bug fixes.</p>
+<p>Version 4.0 introduces provides a 'code grade' capability that makes it easy to pinpoint untestable areas in your code. We are not a vendor that passes judgment on your code - the grade is based on your metric selection and threshold values.</p>
+<p>We also introduced a 1 year Community Edition for FREE and a 1 year Premium Edition for only $9.99!</p>
+]]></shortdescription>
+      <body><![CDATA[<p>CoViewManager lets you determine how to measure the testability of your code by looking at specific, industry proven metrics. </p>
+<p>CoViewManager comes with 9 metrics that you can choose from. Use one or use them all - it's up to you. For example, it is well known that methods with more than 10 logical paths are harder to test and maintain than methods with fewer paths. With CoViewManager, you set the threshold for Paths to a number (like '10') and the severity level (like 'Error'). When a developer adds the 11th path, flags are immediately raised. The developer can either simplify their code or add a Javadoc explanation as to why it is necessary to have 11 paths.</p>
+<p>Version 4.1 provides support for Eclipse 3.5 and some bug fixes.</p>
+<p>Version 4.0 introduces provides a 'code grade' capability that makes it easy to pinpoint untestable areas in your code. We are not a vendor that passes judgment on your code - the grade is based on your metric selection and threshold values.</p>
+<p>We also introduced a 1 year Community Edition for FREE and a 1 year Premium Edition for only $9.99!</p>
+]]></body>
+      <created>1186060808</created>
+      <changed>1259778813</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.codign.com/products.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>4.1</version>
+      <license>Free for non-commercial use</license>
+      <companyname><![CDATA[Codign Software]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2, 3.3, 3.4, 3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.codign.com/forums]]></supporturl>
+      <updateurl><![CDATA[http://www.codign.com/updates]]></updateurl>
+    </node>
+    </marketplace>
+    

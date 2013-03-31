@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="209" name="JadClipse" url="http://marketplace.eclipse.org/content/jadclipse">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+      </categories>
+      <tags>
+        <tag id='1456' name='JadClipse3.4.0' url='http://marketplace.eclipse.org/category/free-tagging/jadclipse340'/>
+        <tag id='2607' name='bbkj' url='http://marketplace.eclipse.org/category/free-tagging/bbkj'/>
+        <tag id='2627' name='&lt;a href=&#039;http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=209&#039; title=&#039;Drag and dr' url='http://marketplace.eclipse.org/category/free-tagging-5'/>
+        <tag id='116' name='' url='http://marketplace.eclipse.org/taxonomy/term/116'/>
+      </tags>
+      
+      <owner>Johann Gyger</owner>
+      <favorited>76</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>JadClipse is a plug-in that seamlessly integrates Jad (the fast Java decompiler) with Eclipse.</p>
+<p>Normally, when opening a class file the Class File Viewer will show a brief API outline of the class. If you install this plug-in, however, the Class File Viewer will be replaced with the JadClipse Class File Viewer that shows the decompiled source of the class. This task is accomplished by decompiling the corresponding class file in the background using Jad. Normal Java syntax highlighting as well as the Outline View are supported.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>JadClipse is a plug-in that seamlessly integrates Jad (the fast Java decompiler) with Eclipse.</p>
+<p>Normally, when opening a class file the Class File Viewer will show a brief API outline of the class. If you install this plug-in, however, the Class File Viewer will be replaced with the JadClipse Class File Viewer that shows the decompiled source of the class. This task is accomplished by decompiling the corresponding class file in the background using Jad. Normal Java syntax highlighting as well as the Outline View are supported.</p>
+]]></body>
+      <created>1147876122</created>
+      <changed>1346424153</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://jadclipse.sourceforge.net]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>3.4.0</version>
+      <license>Free EPL</license>
+      <companyname><![CDATA[]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.x]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/tracker/?atid=427343&group_id=40205&func=browse]]></supporturl>
+      <updateurl><![CDATA[http://jadclipse.sf.net/update]]></updateurl>
+    </node>
+    </marketplace>
+    

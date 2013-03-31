@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="350" name="Web Search" url="http://marketplace.eclipse.org/content/web-search">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='40' name='Search' url='http://marketplace.eclipse.org/category/categories/search'/>
+      </categories>
+      <tags>
+        <tag id='349' name='search' url='http://marketplace.eclipse.org/category/free-tagging/search'/>
+        <tag id='566' name='google' url='http://marketplace.eclipse.org/category/free-tagging/google'/>
+        <tag id='569' name='bing' url='http://marketplace.eclipse.org/category/free-tagging/bing'/>
+        <tag id='1824' name='stack overflow' url='http://marketplace.eclipse.org/category/free-tagging/stack-overflow'/>
+        <tag id='1825' name='findjar' url='http://marketplace.eclipse.org/category/free-tagging/findjar'/>
+      </tags>
+      
+      <owner>Amin Ahmad</owner>
+      <favorited>2</favorited>
+      <installstotal>174</installstotal>
+      <installsrecent>2</installsrecent>
+      <shortdescription><![CDATA[The Web Search plugin for Eclipse allows you to search for selected text using
+	  a variety of search engines and services, including 
+	  <a href="http://www.google.com">Google</a>, 
+	  <a href="http://www.google.com/codesearch">Google Code Search</a>, 
+	  <a href="http://www.bing.com/">Bing</a>, 
+	  <a href="http://findjar.com">FindJar</a>, 
+	  and <a href="http://stackoverflow.com">Stack Overflow</a>. The search engines
+	  can be accessed from the workbench search menu or the context menu any time 
+	  text can be extracted from the current selection. Furthermore, the plugin 
+	  intelligently handles searching for selected Java artifacts. For example, if
+	  a compilation unit is selected and is searched on Google Code Search, the 
+	  Web Search plugin will automatically add language tags to the query and strip
+	  off the file extension (.java).
+	  ]]></shortdescription>
+      <body><![CDATA[The Web Search plugin for Eclipse allows you to search for selected text using
+	  a variety of search engines and services, including 
+	  <a href="http://www.google.com">Google</a>, 
+	  <a href="http://www.google.com/codesearch">Google Code Search</a>, 
+	  <a href="http://www.bing.com/">Bing</a>, 
+	  <a href="http://findjar.com">FindJar</a>, 
+	  and <a href="http://stackoverflow.com">Stack Overflow</a>. The search engines
+	  can be accessed from the workbench search menu or the context menu any time 
+	  text can be extracted from the current selection. Furthermore, the plugin 
+	  intelligently handles searching for selected Java artifacts. For example, if
+	  a compilation unit is selected and is searched on Google Code Search, the 
+	  Web Search plugin will automatically add language tags to the query and strip
+	  off the file extension (.java).
+	  ]]></body>
+      <created>1167244499</created>
+      <changed>1301853531</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.ahmadsoft.org/websearch/]]></homepageurl>
+      <image><![CDATA[http://www.ahmadsoft.org/images/websearch-thumb.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/websearch-context2.png?itok=p1VTLn8S]]></screenshot>
+      <version>1.1.0</version>
+      <license>GPL</license>
+      <companyname><![CDATA[Ahmadsoft.org]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3+]]></eclipseversion>
+      <supporturl><![CDATA[http://www.ahmadsoft.org/contact.html]]></supporturl>
+      <updateurl><![CDATA[http://www.ahmadsoft.org/update]]></updateurl>
+<ius>
+<iu>org.ahmadsoft.websearch.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="336" name="JFormDesigner - Swing GUI Designer" url="http://marketplace.eclipse.org/content/jformdesigner-swing-gui-designer">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+      </categories>
+      <tags>
+        <tag id='331' name='GUI Construction' url='http://marketplace.eclipse.org/category/free-tagging/gui-construction'/>
+        <tag id='335' name='Swing UI Construction' url='http://marketplace.eclipse.org/category/free-tagging/swing-ui-construction'/>
+        <tag id='836' name='GUI' url='http://marketplace.eclipse.org/category/free-tagging/gui'/>
+      </tags>
+      
+      <owner>Karl Tauber</owner>
+      <favorited>31</favorited>
+      <installstotal>13445</installstotal>
+      <installsrecent>178</installsrecent>
+      <shortdescription><![CDATA[<p>JFormDesigner is a professional <strong>GUI designer</strong> for Java Swing user interfaces. Its outstanding support for <strong>JGoodies FormLayout</strong>, GroupLayout (<strong>Free Design</strong>), TableLayout and GridBagLayout makes it easy to <strong>create professional looking forms</strong>.</p>
+
+
+<h3>New in JFormDesigner 5.1</h3>
+
+<ul><li>NetBeans plug-in</li>
+  <li>Java 7 support</li>
+  <li>JGoodies Forms 1.4 and 1.5 support</li>
+  <li>GroupLayout design improved</li>
+  <li>JFDML persistence format for .jfd form files</li>
+  <li>Palette improved</li>
+  <li>Batch convert forms</li>
+  <li>NetBeans 7.1 form conversion</li>
+  <li>and more...</li> 
+</ul><h3>Key Features</h3>
+
+<ul><li>
+	<strong>Easy and intuitive to use, powerful and productive:</strong> JFormDesigner provides an easy-to-use but powerful user interface. Even non-programmers can use it, which makes it also ideal for prototyping.
+  </li>
+  <li>
+    <strong>GroupLayout support</strong> brings the "<strong>Free Design</strong>" paradigm to JFormDesigner (as in NetBeans GUI Builder; formerly Project Matisse). You can lay out your forms by simply placing components where you want them. Visual guidelines suggest optimal spacing, alignment and resizing of components. This makes it easy to design professional-looking GUIs.
+  </li>
+  <li>
+	<strong>JGoodies FormLayout and Clearthought's TableLayout support:</strong> These well-known open-source layout managers allow you to design high quality forms. JFormDesigner provides excellent support for them.
+  </li>
+  <li>
+	<strong>Advanced GridBagLayout support</strong> allows the specification of horizontal and vertical gaps (as in TableLayout). This makes it very easy to design forms with consistent gaps using GridBagLayout. No longer wrestling with GridBagConstraints.insets.
+  </li>
+  <li>
+	<strong>Column and row headers</strong> (for grid based layout managers) show the structure of the layout (including column/row indices, alignment, growing, grouping) and allow you to insert or delete columns/rows and change column/row properties. It's also possible to drag and drop columns/rows (incl. contained components and gaps). This allows you to swap columns or move rows in seconds.
+  </li>
+  <li>
+	<strong>IDE plug-ins and stand-alone application:</strong> JFormDesigner is available as IDE plug-ins for <strong>Eclipse</strong>, <strong>NetBeans</strong>, <strong>IntelliJ IDEA</strong> and <strong>JBuilder</strong> and as stand-alone application.
+  </li>
+  <li>
+	<strong>Localization support:</strong> Localizing forms using properties files has never been easier. Specify a resource bundle name and a prefix for keys when creating a new form and then forget about it. JFormDesigner automatically puts all strings into the specified resource bundle (auto-externalizing).
+  </li>
+  <li>
+	<strong style="color: red">NEW</strong>
+	<strong>Beans Binding (JSR 295) support:</strong> Using Beans Binding (JSR 295) helps you
+to keep UI state and model in sync. It drastically reduces the amount of listener code that is usually necessary.
+  </li>
+  <li>
+	<strong style="color: red">NEW</strong>
+	<strong>BeanInfo Annotations:</strong> The <code>@BeanInfo</code> and <code>@PropertyDesc</code>
+annotations make it very easy to specify BeanInfo information directly in the custom component. Its no longer necessary to implement extra BeanInfo classes. This drastically reduces time and code needed to create BeanInfo information.
+  </li>
+  <li>
+	<strong>Java code generator or runtime library:</strong> Either let JFormDesigner generate Java source code for your forms (the default) or use the open-source (BSD license) runtime library to load JFormDesigner XML files at runtime. Your choice.
+  </li>
+  <li>
+	<strong>Generation of nested classes:</strong> The Java code generator is able to generate and update nested classes. You can specify a class name for each component in your form. This allows you to organize your source code in an object-oriented way.
+  </li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>JFormDesigner is a professional <strong>GUI designer</strong> for Java Swing user interfaces. Its outstanding support for <strong>JGoodies FormLayout</strong>, GroupLayout (<strong>Free Design</strong>), TableLayout and GridBagLayout makes it easy to <strong>create professional looking forms</strong>.</p>
+
+
+<h3>New in JFormDesigner 5.1</h3>
+
+<ul><li>NetBeans plug-in</li>
+  <li>Java 7 support</li>
+  <li>JGoodies Forms 1.4 and 1.5 support</li>
+  <li>GroupLayout design improved</li>
+  <li>JFDML persistence format for .jfd form files</li>
+  <li>Palette improved</li>
+  <li>Batch convert forms</li>
+  <li>NetBeans 7.1 form conversion</li>
+  <li>and more...</li> 
+</ul><h3>Key Features</h3>
+
+<ul><li>
+	<strong>Easy and intuitive to use, powerful and productive:</strong> JFormDesigner provides an easy-to-use but powerful user interface. Even non-programmers can use it, which makes it also ideal for prototyping.
+  </li>
+  <li>
+    <strong>GroupLayout support</strong> brings the "<strong>Free Design</strong>" paradigm to JFormDesigner (as in NetBeans GUI Builder; formerly Project Matisse). You can lay out your forms by simply placing components where you want them. Visual guidelines suggest optimal spacing, alignment and resizing of components. This makes it easy to design professional-looking GUIs.
+  </li>
+  <li>
+	<strong>JGoodies FormLayout and Clearthought's TableLayout support:</strong> These well-known open-source layout managers allow you to design high quality forms. JFormDesigner provides excellent support for them.
+  </li>
+  <li>
+	<strong>Advanced GridBagLayout support</strong> allows the specification of horizontal and vertical gaps (as in TableLayout). This makes it very easy to design forms with consistent gaps using GridBagLayout. No longer wrestling with GridBagConstraints.insets.
+  </li>
+  <li>
+	<strong>Column and row headers</strong> (for grid based layout managers) show the structure of the layout (including column/row indices, alignment, growing, grouping) and allow you to insert or delete columns/rows and change column/row properties. It's also possible to drag and drop columns/rows (incl. contained components and gaps). This allows you to swap columns or move rows in seconds.
+  </li>
+  <li>
+	<strong>IDE plug-ins and stand-alone application:</strong> JFormDesigner is available as IDE plug-ins for <strong>Eclipse</strong>, <strong>NetBeans</strong>, <strong>IntelliJ IDEA</strong> and <strong>JBuilder</strong> and as stand-alone application.
+  </li>
+  <li>
+	<strong>Localization support:</strong> Localizing forms using properties files has never been easier. Specify a resource bundle name and a prefix for keys when creating a new form and then forget about it. JFormDesigner automatically puts all strings into the specified resource bundle (auto-externalizing).
+  </li>
+  <li>
+	<strong style="color: red">NEW</strong>
+	<strong>Beans Binding (JSR 295) support:</strong> Using Beans Binding (JSR 295) helps you
+to keep UI state and model in sync. It drastically reduces the amount of listener code that is usually necessary.
+  </li>
+  <li>
+	<strong style="color: red">NEW</strong>
+	<strong>BeanInfo Annotations:</strong> The <code>@BeanInfo</code> and <code>@PropertyDesc</code>
+annotations make it very easy to specify BeanInfo information directly in the custom component. Its no longer necessary to implement extra BeanInfo classes. This drastically reduces time and code needed to create BeanInfo information.
+  </li>
+  <li>
+	<strong>Java code generator or runtime library:</strong> Either let JFormDesigner generate Java source code for your forms (the default) or use the open-source (BSD license) runtime library to load JFormDesigner XML files at runtime. Your choice.
+  </li>
+  <li>
+	<strong>Generation of nested classes:</strong> The Java code generator is able to generate and update nested classes. You can specify a class name for each component in your form. This allows you to organize your source code in an object-oriented way.
+  </li>
+</ul>]]></body>
+      <created>1165330541</created>
+      <changed>1345738306</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.formdev.com/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/epic_0.png?itok=GQS2Fkl7]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/eclipse_plugin.png?itok=nWtem1BZ]]></screenshot>
+      <version>5.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[FormDev Software GmbH]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2 - 3.8, 4.0 - 4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.formdev.com/]]></supporturl>
+      <updateurl><![CDATA[http://download.formdev.com/jformdesigner/eclipse/]]></updateurl>
+<ius>
+<iu>com.jformdesigner</iu>
+</ius>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="556" name="OcaIDE" url="http://marketplace.eclipse.org/content/ocaide">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+            
+      <owner>Nicolas Bros</owner>
+      <favorited>10</favorited>
+      <installstotal>427</installstotal>
+      <installsrecent>9</installsrecent>
+      <shortdescription><![CDATA[<p>An Open Source plug-in for O'Caml development under Eclipse.</p>
+<!--break--><p>Supports many advanced features:</p>
+<ul><li> Source editor for modules (ml files), interfaces (mli files), parsers (mly files) and lexers (mll files)
+</li><li> Syntax coloring (colors and styles are configurable)
+</li><li> Automatic indentation while typing in the editor (configurable in the preferences)
+</li><li> A customizable integrated code formatter, and an interface to the camlp4 formatter (through an AST printer)
+</li><li> Completion
+</li><li> Library browser, both for the standard library and user libraries
+</li><li> Integrated debugger (a graphical interface to the O'Caml text-mode debugger), with remote debugging support and script file support
+</li><li> Highlighting of matching delimiters
+</li><li> Integrated toplevel
+</li><li> Creation of custom toplevels
+</li><li> Camlp4 pre-processing
+</li><li> An O'Caml perspective inside of Eclipse
+</li><li> Shortcuts to the O'Caml elements in Eclipse
+</li><li> Building of O'Caml projects (with ocamlbuild, with hand-written makefile, with OcamlMakefile or managed by the IDE)
+</li><li> Importation and exportation of O'Caml projects
+</li><li> Launching of O'Caml executables with parameters, and interactive console
+</li><li> Outline and Quick Outline
+</li><li> Displays the inferred type of elements in the editor and outline
+</li><li> Descriptive popups on O'Caml definitions
+</li><li> Help on expected parameters for functions, exceptions and constructors
+</li><li> Configurable shortcuts
+</li><li> Configurable paths for all the tools (and the paths are automatically detected)
+</li><li> On demand makefile generation
+</li><li> Automatic interface generation
+</li><li> Hyperlinks for jumping to the definition of an element (variable, type constructor...)
+</li><li> Error markers in the editor, editor's margin, Navigator view and Problems view
+</li><li> Editable code templates
+</li><li> Automatic detection of project paths
+</li><li> Commenting and uncommenting of code blocks
+</li><li> Spell checking of comments and documentation comments
+</li><li> Switch between module/interface
+</li><li> Convert files between revised syntax and standard syntax (with Camlp4)
+</li></ul>]]></shortdescription>
+      <body><![CDATA[<p>An Open Source plug-in for O'Caml development under Eclipse.</p>
+<!--break--><p>Supports many advanced features:</p>
+<ul><li> Source editor for modules (ml files), interfaces (mli files), parsers (mly files) and lexers (mll files)
+</li><li> Syntax coloring (colors and styles are configurable)
+</li><li> Automatic indentation while typing in the editor (configurable in the preferences)
+</li><li> A customizable integrated code formatter, and an interface to the camlp4 formatter (through an AST printer)
+</li><li> Completion
+</li><li> Library browser, both for the standard library and user libraries
+</li><li> Integrated debugger (a graphical interface to the O'Caml text-mode debugger), with remote debugging support and script file support
+</li><li> Highlighting of matching delimiters
+</li><li> Integrated toplevel
+</li><li> Creation of custom toplevels
+</li><li> Camlp4 pre-processing
+</li><li> An O'Caml perspective inside of Eclipse
+</li><li> Shortcuts to the O'Caml elements in Eclipse
+</li><li> Building of O'Caml projects (with ocamlbuild, with hand-written makefile, with OcamlMakefile or managed by the IDE)
+</li><li> Importation and exportation of O'Caml projects
+</li><li> Launching of O'Caml executables with parameters, and interactive console
+</li><li> Outline and Quick Outline
+</li><li> Displays the inferred type of elements in the editor and outline
+</li><li> Descriptive popups on O'Caml definitions
+</li><li> Help on expected parameters for functions, exceptions and constructors
+</li><li> Configurable shortcuts
+</li><li> Configurable paths for all the tools (and the paths are automatically detected)
+</li><li> On demand makefile generation
+</li><li> Automatic interface generation
+</li><li> Hyperlinks for jumping to the definition of an element (variable, type constructor...)
+</li><li> Error markers in the editor, editor's margin, Navigator view and Problems view
+</li><li> Editable code templates
+</li><li> Automatic detection of project paths
+</li><li> Commenting and uncommenting of code blocks
+</li><li> Spell checking of comments and documentation comments
+</li><li> Switch between module/interface
+</li><li> Convert files between revised syntax and standard syntax (with Camlp4)
+</li></ul>]]></body>
+      <created>1191937027</created>
+      <changed>1305368178</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.algo-prog.info/ocaide/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_4.gif?itok=tiuVcM5K]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/ocaide_screenshot.png?itok=jtM4_wLm]]></screenshot>
+      <version>1.2.9</version>
+      <license>Other Open Source</license>
+      <companyname><![CDATA[Nicolas Bros]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://www.algo-prog.info/ocaide/forum/]]></supporturl>
+      <updateurl><![CDATA[http://www.algo-prog.info/ocaide/]]></updateurl>
+<ius>
+<iu>OcaIDEFeature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

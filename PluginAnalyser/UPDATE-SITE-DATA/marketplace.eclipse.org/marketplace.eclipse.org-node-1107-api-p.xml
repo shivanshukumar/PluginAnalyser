@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1107" name="Eclipse Multi-Touch" url="http://marketplace.eclipse.org/content/eclipse-multi-touch">
+      <type>resource</type>
+      <categories>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+      </categories>
+            
+      <owner>Mirko Raner</owner>
+      <favorited>1</favorited>
+      <installstotal>111</installstotal>
+      <installsrecent>9</installsrecent>
+      <shortdescription><![CDATA[<p>Eclipse Multi-Touch enables Multi-Touch gestures inside the Eclipse Workbench. By default, Eclipse only supports basic Multi-Touch gestures such as two-finger scrolling. Eclipse Multi-Touch adds three-finger swipes for navigation and other gestures.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Eclipse Multi-Touch enables Multi-Touch gestures inside the Eclipse Workbench. By default, Eclipse only supports basic Multi-Touch gestures such as two-finger scrolling. Eclipse Multi-Touch adds three-finger swipes for navigation and other gestures.</p>
+]]></body>
+      <created>1262854345</created>
+      <changed>1287175031</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://eclipsemultitch.sourceforge.net]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/eclipsemultitouch-text.png?itok=684w5pPG]]></image>
+      <version>1.0.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Mirko Raner]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5, 3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/eclipsemultitch/support]]></supporturl>
+      <updateurl><![CDATA[http://eclipsemultitch.sourceforge.net]]></updateurl>
+<ius>
+<iu>net.sf.eclipsemultitouch</iu>
+</ius>
+<platforms>
+<platform>Mac</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

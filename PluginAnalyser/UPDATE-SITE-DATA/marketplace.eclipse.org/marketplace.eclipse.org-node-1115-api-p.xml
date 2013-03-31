@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1115" name="ceno" url="http://marketplace.eclipse.org/content/ceno">
+      <type>resource</type>
+      <categories>
+        <category id='12' name='Network' url='http://marketplace.eclipse.org/taxonomy/term/12'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='1968' name='Collaboration' url='http://marketplace.eclipse.org/category/categories/collaboration'/>
+      </categories>
+      <tags>
+        <tag id='1249' name='activity' url='http://marketplace.eclipse.org/category/free-tagging/activity'/>
+        <tag id='1344' name='team' url='http://marketplace.eclipse.org/category/free-tagging/team'/>
+        <tag id='1345' name='workspace awareness' url='http://marketplace.eclipse.org/category/free-tagging/workspace-awareness'/>
+        <tag id='1346' name='groupware' url='http://marketplace.eclipse.org/category/free-tagging/groupware'/>
+      </tags>
+      
+      <owner>Andre Albert</owner>
+      <favorited>1</favorited>
+      <installstotal>31</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>ceno is a set of eclipse plugins aimed to support collaborative work by the means of "Workspace Awareness". The main idea is to prevent concurrent modifications of a resource that is opened on multiple eclipse workbenches.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>ceno is a set of eclipse plugins aimed to support collaborative work by the means of "Workspace Awareness". The main idea is to prevent concurrent modifications of a resource that is opened on multiple eclipse workbenches.</p>
+]]></body>
+      <created>1263975914</created>
+      <changed>1326670081</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://ceno.sourceforge.net]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/ceno-logo.png?itok=FPWM9x_V]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screen.jpg?itok=IzL-2rpd]]></screenshot>
+      <version>0.1.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[ceno Community]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5.0]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/ceno/support]]></supporturl>
+      <updateurl><![CDATA[http://ceno.sourceforge.net/releases]]></updateurl>
+<ius>
+<iu>org.ceno.feature</iu>
+<iu>org.ceno.feature.3rdparty</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

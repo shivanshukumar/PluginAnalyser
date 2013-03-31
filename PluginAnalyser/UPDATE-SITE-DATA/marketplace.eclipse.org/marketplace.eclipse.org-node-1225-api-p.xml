@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1225" name="Testful" url="http://marketplace.eclipse.org/content/testful">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+      </categories>
+            
+      <owner>Matteo</owner>
+      <favorited>1</favorited>
+      <installstotal>99</installstotal>
+      <installsrecent>2</installsrecent>
+      <shortdescription><![CDATA[<p>Testful is an evolutionary testing framework for Java programs.</p>
+<p>It is based on the idea of search-based testing, working both at class and method level. The former puts objects in useful states, used by the latter to exercise the uncovered parts of the class.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Testful is an evolutionary testing framework for Java programs.</p>
+<p>It is based on the idea of search-based testing, working both at class and method level. The former puts objects in useful states, used by the latter to exercise the uncovered parts of the class.</p>
+]]></body>
+      <created>1274866477</created>
+      <changed>1274866635</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/testful]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/testful%20white.png?itok=jFIxpSb8]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/testful.png?itok=SMyA6KdE]]></screenshot>
+      <version>1.1.2</version>
+      <license>GPL</license>
+      <companyname><![CDATA[Testful]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.5.0]]></eclipseversion>
+      <supporturl><![CDATA[http://groups.google.com/group/testful-user]]></supporturl>
+      <updateurl><![CDATA[http://testful.sourceforge.net/updateSite/]]></updateurl>
+<ius>
+<iu>testful</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

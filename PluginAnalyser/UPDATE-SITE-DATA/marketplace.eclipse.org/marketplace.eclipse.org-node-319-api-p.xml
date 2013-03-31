@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="319" name="Apache Directory Studio" url="http://marketplace.eclipse.org/content/apache-directory-studio">
+      <type>resource</type>
+      <categories>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+        <category id='12' name='Network' url='http://marketplace.eclipse.org/taxonomy/term/12'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+      </categories>
+      <tags>
+        <tag id='932' name='LDAP' url='http://marketplace.eclipse.org/category/free-tagging/ldap'/>
+        <tag id='933' name='Directory' url='http://marketplace.eclipse.org/category/free-tagging/directory'/>
+        <tag id='934' name='LDIF' url='http://marketplace.eclipse.org/category/free-tagging/ldif'/>
+      </tags>
+      
+      <owner>Stefan Seelmann</owner>
+      <favorited>19</favorited>
+      <installstotal>7081</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Apache Directory Studio (formerly known as LDAP Studio) is a complete directory tooling platform intended to be used with any LDAP server however it is particularly designed for use with the Apache Directory Server.</p>
+<p>The following plugins are available: </p>
+<ul><li>LDAP Browser Plugin</li>
+<li>LDIF Editor Plugin</li>
+<li>Schema Editor Plugin</li>
+<li>Plugin to start Apache Directory Server within Studio</li>
+<li>a Plugin for configuring Apache Directory Server</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>Apache Directory Studio (formerly known as LDAP Studio) is a complete directory tooling platform intended to be used with any LDAP server however it is particularly designed for use with the Apache Directory Server.</p>
+<p>The following plugins are available: </p>
+<ul><li>LDAP Browser Plugin</li>
+<li>LDIF Editor Plugin</li>
+<li>Schema Editor Plugin</li>
+<li>Plugin to start Apache Directory Server within Studio</li>
+<li>a Plugin for configuring Apache Directory Server</li>
+</ul>]]></body>
+      <created>1164642707</created>
+      <changed>1277654452</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://directory.apache.org/studio/]]></homepageurl>
+      <image><![CDATA[http://directory.apache.org/studio/screenshots.data/ldapstudio_eclipseplugincentral.png]]></image>
+      <version>1.5.3</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[Apache Software Foundation]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3 and later]]></eclipseversion>
+      <supporturl><![CDATA[http://directory.apache.org/community%26resources/mailing-lists-and-irc.html]]></supporturl>
+      <updateurl><![CDATA[http://directory.apache.org/studio/update/1.x/]]></updateurl>
+<ius>
+<iu>org.apache.directory.studio.ldapbrowser.feature</iu>
+<iu>org.apache.directory.studio.ldifeditor.feature</iu>
+<iu>org.apache.directory.studio.schemaeditor.feature</iu>
+<iu>org.apache.directory.studio.apacheds.feature</iu>
+<iu>org.apache.directory.studio.apacheds.configuration.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

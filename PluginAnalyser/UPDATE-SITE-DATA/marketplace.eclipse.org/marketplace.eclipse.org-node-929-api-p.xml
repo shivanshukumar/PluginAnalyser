@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="929" name="Image Library" url="http://marketplace.eclipse.org/content/image-library">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>Pavel Petrochenko</owner>
+      <favorited>7</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Image Library plugin helps crawling images from target platform and workspace. It allows to view images, expand/collaps all operations, copy image to clipboard and paste it into the workspace, zoom level configuration, drag image to any view containing file lists, filter images by the filename. There is Image Hovering feature that displays a tooltip with the content of image file with the dimensions. This feature is available in 'Package Explorer', 'Resource Navigator' as well as in other views and dialogs.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Image Library plugin helps crawling images from target platform and workspace. It allows to view images, expand/collaps all operations, copy image to clipboard and paste it into the workspace, zoom level configuration, drag image to any view containing file lists, filter images by the filename. There is Image Hovering feature that displays a tooltip with the content of image file with the dimensions. This feature is available in 'Package Explorer', 'Resource Navigator' as well as in other views and dialogs.</p>
+]]></body>
+      <created>1241707160</created>
+      <changed>1259779242</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://onpositive.com/pictureviewer]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0</version>
+      <license>Free EPL</license>
+      <companyname><![CDATA[OnPositive Technologies]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[]]></eclipseversion>
+      <supporturl><![CDATA[http://]]></supporturl>
+      <updateurl><![CDATA[http://www.onpositive.com/pictureviewer/chrome/site/picture_viewer/]]></updateurl>
+    </node>
+    </marketplace>
+    

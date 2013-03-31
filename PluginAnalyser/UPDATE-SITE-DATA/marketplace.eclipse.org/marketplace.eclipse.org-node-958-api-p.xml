@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="958" name="Debug Visualisation for Eclipse" url="http://marketplace.eclipse.org/content/debug-visualisation-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+      </categories>
+      <tags>
+        <tag id='47' name='visualization' url='http://marketplace.eclipse.org/category/free-tagging/visualization'/>
+        <tag id='309' name='debugger' url='http://marketplace.eclipse.org/category/free-tagging/debugger'/>
+        <tag id='1108' name='graph' url='http://marketplace.eclipse.org/category/free-tagging/graph'/>
+        <tag id='1109' name='object' url='http://marketplace.eclipse.org/category/free-tagging/object'/>
+      </tags>
+      
+      <owner>Zoltan Ujhelyi</owner>
+      <favorited>25</favorited>
+      <installstotal>1791</installstotal>
+      <installsrecent>45</installsrecent>
+      <shortdescription><![CDATA[<p>This project consists of a View for the eclipse platform, which provides a better structural view for variables in debug mode. It can help the developer to get a overview image of the structures in memory using the Zest framework. The view provides graph-like visualisation of variables in debug, which is useful in analyzing complex data structures.</p>
+<!--break--><p>Features:</p>
+<ul><li>Automatic layout of graph</li>
+<li>Automatic filtering of nodes</li>
+<li>Hiding specific nodes</li>
+<li>Drill-in to show only a part of the graph</li>
+<li>Extension points to enable users to provide better functionalities</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>This project consists of a View for the eclipse platform, which provides a better structural view for variables in debug mode. It can help the developer to get a overview image of the structures in memory using the Zest framework. The view provides graph-like visualisation of variables in debug, which is useful in analyzing complex data structures.</p>
+<!--break--><p>Features:</p>
+<ul><li>Automatic layout of graph</li>
+<li>Automatic filtering of nodes</li>
+<li>Hiding specific nodes</li>
+<li>Drill-in to show only a part of the graph</li>
+<li>Extension points to enable users to provide better functionalities</li>
+</ul>]]></body>
+      <created>1245682869</created>
+      <changed>1349195020</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/a/eclipselabs.org/p/debugvisualisation/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/dvlogo.png?itok=lQkEq12I]]></image>
+      <version>0.8.2</version>
+      <license>EPL</license>
+      <companyname><![CDATA[cubussapiens.hu]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/a/eclipselabs.org/p/debugvisualisation/issues]]></supporturl>
+      <updateurl><![CDATA[http://eclipse.cubussapiens.hu/]]></updateurl>
+<ius>
+<iu>hu.cubussapiens.debugvisualisation.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

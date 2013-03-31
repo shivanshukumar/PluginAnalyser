@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="73996" name="ASN.1 Editor plugin for Eclipse" url="http://marketplace.eclipse.org/content/asn1-editor-plugin-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='12' name='Network' url='http://marketplace.eclipse.org/taxonomy/term/12'/>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='1966' name='Programming Languages' url='http://marketplace.eclipse.org/category/categories/programming-languages'/>
+      </categories>
+      <tags>
+        <tag id='542' name='ASN.1' url='http://marketplace.eclipse.org/category/free-tagging/asn1'/>
+        <tag id='2047' name='ASN' url='http://marketplace.eclipse.org/category/free-tagging/asn'/>
+        <tag id='2048' name='Abstract Syntax Notation One' url='http://marketplace.eclipse.org/category/free-tagging/abstract-syntax-notation-one'/>
+        <tag id='2049' name='BER' url='http://marketplace.eclipse.org/category/free-tagging/ber'/>
+        <tag id='2050' name='ITU-T X.680' url='http://marketplace.eclipse.org/category/free-tagging/itu-t-x680'/>
+      </tags>
+      
+      <owner>Bogdan</owner>
+      <favorited>3</favorited>
+      <installstotal>448</installstotal>
+      <installsrecent>24</installsrecent>
+      <shortdescription><![CDATA[<p>The ASN.1 Editor project provides an Eclipse editor plugin for the <a href="http://www.asn1.org">ASN.1 (Abstract Syntax Notation One)</a> formal language.</p>
+<p>It presents an outline page, syntax highlighting, compare view, content assist, goto declaration under cursor, bracket matching, problem markers.<br />
+The BER Dump View was added in order to simplify the analysis of ASN.1 encoded messages.</p>
+<p>Current released version is 1.1.2<br />
+Brand new features:</p>
+<ul><li>Overall stability improvements</li>
+<li>Improved compatibility with older and newer Eclipse versions</li>
+<li>Overall refactoring including model and error handling</li>
+<li>Navigate to declaration under cursor (CTRL + click and also F3) works also for imported declarations</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>The ASN.1 Editor project provides an Eclipse editor plugin for the <a href="http://www.asn1.org">ASN.1 (Abstract Syntax Notation One)</a> formal language.</p>
+<p>It presents an outline page, syntax highlighting, compare view, content assist, goto declaration under cursor, bracket matching, problem markers.<br />
+The BER Dump View was added in order to simplify the analysis of ASN.1 encoded messages.</p>
+<p>Current released version is 1.1.2<br />
+Brand new features:</p>
+<ul><li>Overall stability improvements</li>
+<li>Improved compatibility with older and newer Eclipse versions</li>
+<li>Overall refactoring including model and error handling</li>
+<li>Navigate to declaration under cursor (CTRL + click and also F3) works also for imported declarations</li>
+</ul>]]></body>
+      <created>1309160983</created>
+      <changed>1309784981</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[asneditor.sourceforge.net]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/asn1.png?itok=kt4Z2rVA]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/workbench.png?itok=53Fr-pbK]]></screenshot>
+      <version>1.1.2</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Bogdan Stanca]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.4, 3.5, 3.6, 3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/forum/forum.php?forum_id=448642]]></supporturl>
+      <updateurl><![CDATA[http://asneditor.sourceforge.net/updates]]></updateurl>
+<ius>
+<iu>net.sourceforge.asneditor</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

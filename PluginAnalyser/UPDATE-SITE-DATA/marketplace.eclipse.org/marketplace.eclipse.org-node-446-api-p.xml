@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="446" name="CAL Eclipse Plug-in" url="http://marketplace.eclipse.org/content/cal-eclipse-plug">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+      </categories>
+            
+      <owner>bilic</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The CAL Eclipse Plug-in provides IDE support for CAL: a general purpose, lazy, strongly-typed, functional language that compiles directly to Java virtual machine bytecodes. CAL can use any Java class, method, field or constructor. CAL is part of the Open Quark Framework for Java  <<a href="http://labs.businessobjects.com/cal/>">http://labs.businessobjects.com/cal/></a>. Open Quark's Java APIs allow clients to programmatically create and call CAL functions. This enables logic best expressed in CAL, such as domain specific languages and data transformations, to be combined with regular object-oriented Java application logic.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The CAL Eclipse Plug-in provides IDE support for CAL: a general purpose, lazy, strongly-typed, functional language that compiles directly to Java virtual machine bytecodes. CAL can use any Java class, method, field or constructor. CAL is part of the Open Quark Framework for Java  <<a href="http://labs.businessobjects.com/cal/>">http://labs.businessobjects.com/cal/></a>. Open Quark's Java APIs allow clients to programmatically create and call CAL functions. This enables logic best expressed in CAL, such as domain specific languages and data transformations, to be combined with regular object-oriented Java application logic.</p>
+]]></body>
+      <created>1177540774</created>
+      <changed>1259942229</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://labs.businessobjects.com/cal/]]></homepageurl>
+      <image><![CDATA[http://resources.businessobjects.com/labs/cal/cal_logo_110x80.jpg]]></image>
+      <version>1.7.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Business Objects]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3]]></eclipseversion>
+      <supporturl><![CDATA[http://groups.google.com/group/cal_language]]></supporturl>
+      <updateurl><![CDATA[http://resources.businessobjects.com/labs/cal/cal_eclipse_update/site.xml]]></updateurl>
+    </node>
+    </marketplace>
+    

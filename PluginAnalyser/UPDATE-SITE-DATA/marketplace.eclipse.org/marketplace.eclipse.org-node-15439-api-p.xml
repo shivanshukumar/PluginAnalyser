@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="15439" name="Jamon" url="http://marketplace.eclipse.org/content/jamon">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+      <tags>
+        <tag id='1254' name='jamon' url='http://marketplace.eclipse.org/category/free-tagging/jamon'/>
+      </tags>
+      
+      <owner>Ian Robertson</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Eclipse features to support working with Jamon templates.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Eclipse features to support working with Jamon templates.</p>
+]]></body>
+      <created>1287076516</created>
+      <changed>1287151960</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.jamon.org/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version></version>
+      <license>Other Open Source</license>
+      <companyname><![CDATA[Jamon.org]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4-3.6]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://www.jamon.org/eclipse/updates]]></updateurl>
+<ius>
+<iu>jamon</iu>
+<iu>Jamon Processor Feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

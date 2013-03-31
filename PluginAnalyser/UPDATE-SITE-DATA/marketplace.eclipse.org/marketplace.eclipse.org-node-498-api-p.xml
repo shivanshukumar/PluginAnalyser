@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="498" name="Flexess Security Modeler" url="http://marketplace.eclipse.org/content/flexess-security-modeler">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='561' name='security' url='http://marketplace.eclipse.org/category/free-tagging/security'/>
+        <tag id='562' name='access' url='http://marketplace.eclipse.org/category/free-tagging/access'/>
+      </tags>
+      
+      <owner>Stanislav Spiridonov</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The goal of the Flexess project is to provide an extensible security framework for Java applications. The name Flexess comes from: FLEXible accESS. Flexess is a component-based product, which adds to the application access management capabilities. The solution allows to separate security aspects from the main application logic. The product provides the entire infrastructure starting from a tool, which allows creating an application security model to the administrative web application, which manages the assignments of the different access privileges to the users. </p>
+]]></shortdescription>
+      <body><![CDATA[<p>The goal of the Flexess project is to provide an extensible security framework for Java applications. The name Flexess comes from: FLEXible accESS. Flexess is a component-based product, which adds to the application access management capabilities. The solution allows to separate security aspects from the main application logic. The product provides the entire infrastructure starting from a tool, which allows creating an application security model to the administrative web application, which manages the assignments of the different access privileges to the users. </p>
+]]></body>
+      <created>1184075105</created>
+      <changed>1273040646</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.jresearchsoft.com/Flexess/Overview.html]]></homepageurl>
+      <image><![CDATA[http://www.jresearchsoft.com/docroot/jrsite/images/logo-flexess.jpg]]></image>
+      <version>1.0.0.1978 </version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Jresearch Software s.r.o.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.jresearchsoft.com/site/forum/ShowForum.do?fid=36]]></supporturl>
+      <updateurl><![CDATA[http://www.jresearchsoft.com/update/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1233" name="Twikle" url="http://marketplace.eclipse.org/content/twikle">
+      <type>resource</type>
+      <categories>
+        <category id='7' name='Entertainment' url='http://marketplace.eclipse.org/taxonomy/term/7'/>
+        <category id='12' name='Network' url='http://marketplace.eclipse.org/taxonomy/term/12'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+      </categories>
+      <tags>
+        <tag id='789' name='twitter' url='http://marketplace.eclipse.org/category/free-tagging/twitter'/>
+        <tag id='790' name='social network' url='http://marketplace.eclipse.org/category/free-tagging/social-network'/>
+      </tags>
+      
+      <owner>Christian Klaproth</owner>
+      <favorited>2</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<h3 style="font-family: sans-serif; color: #440022; font-size: 18pt;">Twikle Plugin</h3>
+<p align="left">Twikle - Twitter Klient for Eclipse - is a plugin that integrates Twitter with your favourite development environment. Best used as a fast view, Twikle lets you keep an eye on your timeline at work.</p>
+<h3 style="font-family: sans-serif; color: #440022; font-size: 18pt;">Features</h3>
+<ul><li>Look and feel of Twitter website</li>
+<li>Uses account color information</li>
+<li>Display "reply-to" status inplace (first level)</li>
+<li>Proxy support</li>
+<li>Edit tweets (delete and tweet), "detweet" :)</li>
+<li>Allows copy and paste of tweets' text</li>
+<li>Open tweeted urls in system browser</li>
+<li>Chat window (ConversationTab)</li>
+<li>Local (offline) history of tweets</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<h3 style="font-family: sans-serif; color: #440022; font-size: 18pt;">Twikle Plugin</h3>
+<p align="left">Twikle - Twitter Klient for Eclipse - is a plugin that integrates Twitter with your favourite development environment. Best used as a fast view, Twikle lets you keep an eye on your timeline at work.</p>
+<h3 style="font-family: sans-serif; color: #440022; font-size: 18pt;">Features</h3>
+<ul><li>Look and feel of Twitter website</li>
+<li>Uses account color information</li>
+<li>Display "reply-to" status inplace (first level)</li>
+<li>Proxy support</li>
+<li>Edit tweets (delete and tweet), "detweet" :)</li>
+<li>Allows copy and paste of tweets' text</li>
+<li>Open tweeted urls in system browser</li>
+<li>Chat window (ConversationTab)</li>
+<li>Local (offline) history of tweets</li>
+</ul>]]></body>
+      <created>1275984937</created>
+      <changed>1278011296</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.creative-mindworks.de/twikle]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/eclipse_market.png?itok=dEihRfBV]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/twikle_screenshot.png?itok=WOMf_3hB]]></screenshot>
+      <version>0.9.4</version>
+      <license>Free for non-commerical use</license>
+      <companyname><![CDATA[creative-mindworks.de Christian Klaproth]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://twitter.com/Twikledee]]></supporturl>
+      <updateurl><![CDATA[http://www.creative-mindworks.de/twikle]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="15560" name="Hibernate Tools (Indigo)" url="http://marketplace.eclipse.org/content/hibernate-tools-0">
+      <type>resource</type>
+      <categories>
+        <category id='36' name='Database Persistence' url='http://marketplace.eclipse.org/category/categories/database-persistence'/>
+      </categories>
+      <tags>
+        <tag id='667' name='jpa' url='http://marketplace.eclipse.org/category/free-tagging/jpa'/>
+        <tag id='757' name='hibernate' url='http://marketplace.eclipse.org/category/free-tagging/hibernate'/>
+        <tag id='1255' name='persistence' url='http://marketplace.eclipse.org/category/free-tagging/persistence'/>
+      </tags>
+      
+      <owner>Max Rydahl Andersen</owner>
+      <favorited>24</favorited>
+      <installstotal>26772</installstotal>
+      <installsrecent>1956</installsrecent>
+      <shortdescription><![CDATA[<p>The Hibernate Tools has a set of views and wizards to help during Hibernate development. Compatible with Hibernate 3.x and 4.x.</p>
+<p>Some highlights: </p>
+<p>* configurable reverse engineering<br />
+* hibernate.cfg.xml wizard<br />
+* Hibernate HQL Editor with code completion<br />
+* Query execution and result<br />
+* Show generated SQL as you type<br />
+* hbm.xml code completion support ...and more</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The Hibernate Tools has a set of views and wizards to help during Hibernate development. Compatible with Hibernate 3.x and 4.x.</p>
+<p>Some highlights: </p>
+<p>* configurable reverse engineering<br />
+* hibernate.cfg.xml wizard<br />
+* Hibernate HQL Editor with code completion<br />
+* Query execution and result<br />
+* Show generated SQL as you type<br />
+* hbm.xml code completion support ...and more</p>
+]]></body>
+      <created>1287176403</created>
+      <changed>1340380215</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://jboss.org/tools]]></homepageurl>
+      <image><![CDATA[http://www.hibernate.org/tpl/hibernate3/img/hibernate_icon.gif]]></image>
+      <version>3.4.x</version>
+      <license>LGPL</license>
+      <companyname><![CDATA[Red Hat, Inc.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[<b style="color:red">3.7.2 ONLY</b> - <a href=http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/indigosr2>upgrade to the latest Indigo SR2</a> before installing JBoss Tools.]]></eclipseversion>
+      <supporturl><![CDATA[http://community.jboss.org/en/jbosstools?view=discussions]]></supporturl>
+      <updateurl><![CDATA[http://download.jboss.org/jbosstools/updates/stable/indigo/]]></updateurl>
+<ius>
+<iu>org.hibernate.eclipse.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

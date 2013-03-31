@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="268" name="CubicTest" url="http://marketplace.eclipse.org/content/cubictest">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+      </categories>
+      <tags>
+        <tag id='340' name='GUI Testing' url='http://marketplace.eclipse.org/category/free-tagging/gui-testing'/>
+        <tag id='432' name='test' url='http://marketplace.eclipse.org/category/free-tagging/test'/>
+      </tags>
+      
+      <owner>Stein Kåre Skytteren</owner>
+      <favorited>2</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>CubicTest is an open source Eclipse plugin that tries to make testing web applications easier to design, understand and run for nontechnical as well as technical users. CubicTest uses a graphical user interface to let users model tests instead of writing test scripts. The tool focuses on enabling test driven development of web applications, but also supports testing of existing web applications. The goal is to make it possible to replace a detailed requirements specification and manual test scripts with tests designed in CubicTest.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>CubicTest is an open source Eclipse plugin that tries to make testing web applications easier to design, understand and run for nontechnical as well as technical users. CubicTest uses a graphical user interface to let users model tests instead of writing test scripts. The tool focuses on enabling test driven development of web applications, but also supports testing of existing web applications. The goal is to make it possible to replace a detailed requirements specification and manual test scripts with tests designed in CubicTest.</p>
+]]></body>
+      <created>1159536074</created>
+      <changed>1275989860</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.cubictest.org]]></homepageurl>
+      <image><![CDATA[http://groups.google.com/group/cubictest-users/icon?v=1&hl=no]]></image>
+      <version>2.0.3</version>
+      <license>EPL</license>
+      <companyname><![CDATA[CubicTest]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://groups.google.com/group/cubictest-users]]></supporturl>
+      <updateurl><![CDATA[http://www.cubictest.org/update]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

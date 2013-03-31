@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1160" name="Jindent - Source Code Formatter for Java/C/C++" url="http://marketplace.eclipse.org/content/jindent-source-code-formatter-javacc">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='150' name='source code formatter' url='http://marketplace.eclipse.org/category/free-tagging/source-code-formatter'/>
+        <tag id='151' name='Java formatter' url='http://marketplace.eclipse.org/category/free-tagging/java-formatter'/>
+        <tag id='1270' name='C++ formatter' url='http://marketplace.eclipse.org/category/free-tagging/c-formatter'/>
+        <tag id='1272' name='java beautifier' url='http://marketplace.eclipse.org/category/free-tagging/java-beautifier'/>
+        <tag id='1273' name='C++ beautifier' url='http://marketplace.eclipse.org/category/free-tagging/c-beautifier'/>
+      </tags>
+      
+      <owner>TAndree  </owner>
+      <favorited>3</favorited>
+      <installstotal>1463</installstotal>
+      <installsrecent>21</installsrecent>
+      <shortdescription><![CDATA[<p><b>Jindent</b> is a powerful <b>source code formatter</b> for <b>Java</b>, <b>C</b> and <b>C++</b>.</p>
+<p>Jindent empowers you to transform any foreign Java/C/C++ source code to meet your preferred coding style or any common code convention.</p>
+<div>
+<b>Jindent's formatting features cover:</b>
+<ul><li>Support for <b>Java 7</b> and <b>C/C++</b></li>
+<li>Intelligent line wrapping</li>
+<li>Scope related indentation</li>
+<li>Brace style transformation</li>
+<li>Insertion of parantheses and braces</li>
+<li>Blank line and white space formatting</li>
+<li>Semantic source code separation</li>
+<li>Sorting of source code elements</li>
+<li>Insertion and substitution of header and footer</li>
+<li>Conversion between character and end-of-line encodings</li>
+<li>Javadoc validation, formatting and template-driven generation</li>
+<li>More than <b>300 settings</b> for each <b>Java</b> and <b>C/C++</b> programming languages</li>
+</ul></div>
+<div>
+<b>Jindent plugins available for the most common IDEs:</b>
+<ul><li>Eclipse</li>
+<li>Netbeans</li>
+<li>JDeveloper</li>
+<li>IntelliJ IDEA</li>
+<li>JBuilder</li>
+</ul></div>
+<div>
+<p>
+<b>Jindent is the leading commercial solution</b> among all Java source code formatter tools and has proven its functionality and stability worldwide.</p>
+<p></p>
+<p>
+More than <b>1000 companies</b> and organizations are utilizing Jindent to achieve better source code quality.
+</p>
+<p>
+Our customers' domains include:
+</p>
+<ul><li>
+Software development, banking, stock market, logistics, insurance, automotive, aviation and semi-conductor, etc.
+</li>
+<li>
+Public authorities, military and educational institutions
+</li></ul></div>
+<p></p><div>
+<a href="http://www.jindent.com/products/source-code-formatter-for-java-c-cpp/overview">Read more...</a>
+</div>
+
+]]></shortdescription>
+      <body><![CDATA[<p><b>Jindent</b> is a powerful <b>source code formatter</b> for <b>Java</b>, <b>C</b> and <b>C++</b>.</p>
+<p>Jindent empowers you to transform any foreign Java/C/C++ source code to meet your preferred coding style or any common code convention.</p>
+<div>
+<b>Jindent's formatting features cover:</b>
+<ul><li>Support for <b>Java 7</b> and <b>C/C++</b></li>
+<li>Intelligent line wrapping</li>
+<li>Scope related indentation</li>
+<li>Brace style transformation</li>
+<li>Insertion of parantheses and braces</li>
+<li>Blank line and white space formatting</li>
+<li>Semantic source code separation</li>
+<li>Sorting of source code elements</li>
+<li>Insertion and substitution of header and footer</li>
+<li>Conversion between character and end-of-line encodings</li>
+<li>Javadoc validation, formatting and template-driven generation</li>
+<li>More than <b>300 settings</b> for each <b>Java</b> and <b>C/C++</b> programming languages</li>
+</ul></div>
+<div>
+<b>Jindent plugins available for the most common IDEs:</b>
+<ul><li>Eclipse</li>
+<li>Netbeans</li>
+<li>JDeveloper</li>
+<li>IntelliJ IDEA</li>
+<li>JBuilder</li>
+</ul></div>
+<div>
+<p>
+<b>Jindent is the leading commercial solution</b> among all Java source code formatter tools and has proven its functionality and stability worldwide.</p>
+<p></p>
+<p>
+More than <b>1000 companies</b> and organizations are utilizing Jindent to achieve better source code quality.
+</p>
+<p>
+Our customers' domains include:
+</p>
+<ul><li>
+Software development, banking, stock market, logistics, insurance, automotive, aviation and semi-conductor, etc.
+</li>
+<li>
+Public authorities, military and educational institutions
+</li></ul></div>
+<p></p><div>
+<a href="http://www.jindent.com/products/source-code-formatter-for-java-c-cpp/overview">Read more...</a>
+</div>
+
+]]></body>
+      <created>1267652657</created>
+      <changed>1346336989</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.jindent.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/box-small.jpg?itok=p-tAAy0-]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/jindent-customizer-java-sorting_0.png?itok=uT4P5h9l]]></screenshot>
+      <version>4.2.4</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Newforms - Software Development]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.1 - 4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.jindent.com/company/contact]]></supporturl>
+      <updateurl><![CDATA[http://downloads.jindent.com/plugins/eclipse/3.x/]]></updateurl>
+<ius>
+<iu>jindent.plugin.eclipse</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

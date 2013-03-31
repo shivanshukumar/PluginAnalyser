@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="28523" name="Pivotal Tracker Mylyn Connector" url="http://marketplace.eclipse.org/content/pivotal-tracker-mylyn-connector">
+      <type>resource</type>
+      <categories>
+        <category id='38' name='Mylyn Connectors' url='http://marketplace.eclipse.org/category/categories/mylyn-connectors'/>
+      </categories>
+      <tags>
+        <tag id='88' name='mylyn' url='http://marketplace.eclipse.org/category/free-tagging/mylyn'/>
+        <tag id='1532' name='pivotal tracker' url='http://marketplace.eclipse.org/category/free-tagging/pivotal-tracker'/>
+      </tags>
+      
+      <owner>Tony  </owner>
+      <favorited>4</favorited>
+      <installstotal>753</installstotal>
+      <installsrecent>68</installsrecent>
+      <shortdescription><![CDATA[<p>NOTE: Update site URL for Juno is <a href="http://ptmylyn.teamunify.com/juno">http://ptmylyn.teamunify.com/juno</a> for now.</p>
+<p>This is a Mylyn Connector for Pivotal Tracker. It allows one to work with pivotal tracker via Eclipse, and features the following functionality:</p>
+<p>- Story editing in eclipse<br />
+- Story Reordering<br />
+- Tasks within a story<br />
+- Context attach/retrieve<br />
+- SVN branch/switch based on story ID (optional feature). Requires subclipse.</p>
+<p>This project is managed at:</p>
+<p><a href="https://www.pivotaltracker.com/projects/201525">https://www.pivotaltracker.com/projects/201525</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>NOTE: Update site URL for Juno is <a href="http://ptmylyn.teamunify.com/juno">http://ptmylyn.teamunify.com/juno</a> for now.</p>
+<p>This is a Mylyn Connector for Pivotal Tracker. It allows one to work with pivotal tracker via Eclipse, and features the following functionality:</p>
+<p>- Story editing in eclipse<br />
+- Story Reordering<br />
+- Tasks within a story<br />
+- Context attach/retrieve<br />
+- SVN branch/switch based on story ID (optional feature). Requires subclipse.</p>
+<p>This project is managed at:</p>
+<p><a href="https://www.pivotaltracker.com/projects/201525">https://www.pivotaltracker.com/projects/201525</a></p>
+]]></body>
+      <created>1295463713</created>
+      <changed>1350517533</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://ptmylyn.teamunify.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0.17</version>
+      <license>LGPL</license>
+      <companyname><![CDATA[TeamUnify, LLC]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://ptmylyn.teamunify.com]]></updateurl>
+<ius>
+<iu>com.teamunify.eclipse.mylyn.pivotaltracker</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

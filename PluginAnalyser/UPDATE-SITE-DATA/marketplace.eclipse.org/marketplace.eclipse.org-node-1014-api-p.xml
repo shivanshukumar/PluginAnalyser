@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1014" name="JUnitLaunchFixer" url="http://marketplace.eclipse.org/content/junitlaunchfixer">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+      </categories>
+      <tags>
+        <tag id='192' name='testing' url='http://marketplace.eclipse.org/category/free-tagging/testing'/>
+        <tag id='752' name='junit' url='http://marketplace.eclipse.org/category/free-tagging/junit'/>
+        <tag id='1096' name='heap' url='http://marketplace.eclipse.org/category/free-tagging/heap'/>
+      </tags>
+      
+      <owner>Joey Gibson</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This plugin will automatically add a user-specified max heap setting to all new JUnit launchers. It also supports one-time scanning and updating of existing launchers.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This plugin will automatically add a user-specified max heap setting to all new JUnit launchers. It also supports one-time scanning and updating of existing launchers.</p>
+]]></body>
+      <created>1254169144</created>
+      <changed>1259779325</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/junitlaunchfixer/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0.3</version>
+      <license>Free EPL</license>
+      <companyname><![CDATA[joeygibson.com]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3, 3.4, 3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://]]></supporturl>
+      <updateurl><![CDATA[http://junitlaunchfixer.googlecode.com/svn/trunk/JUnitLaunchFixer-update-site/]]></updateurl>
+    </node>
+    </marketplace>
+    

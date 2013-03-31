@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="850" name="Lambda4jdt " url="http://marketplace.eclipse.org/content/lambda4jdt">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='593' name='functional programming' url='http://marketplace.eclipse.org/category/free-tagging/functional-programming'/>
+        <tag id='764' name='JDT' url='http://marketplace.eclipse.org/category/free-tagging/jdt'/>
+        <tag id='2578' name='folding' url='http://marketplace.eclipse.org/category/free-tagging/folding'/>
+      </tags>
+      
+      <owner>Eugene Lucash</owner>
+      <favorited>0</favorited>
+      <installstotal>80</installstotal>
+      <installsrecent>8</installsrecent>
+      <shortdescription><![CDATA[<p>lambda4jdt<br />
+2012 version of lambda4jdt. Eclipse plugin to fold anonymous inner classes as lambdas in Java Editor.</p>
+<p>* Support for Eclipse Indigo SR2 3.7.2<br />
+* Remove need for marker comment, simplify to one-size fits all<br />
+* No further development planned, no features, no Juno support etc</p>
+<p>Install plugins and then goto Preferences->Java->Editor->Folding, select folding to use "Lambda4jdt Folding". Any newly opened Java editor will pickup lambda4jdt.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>lambda4jdt<br />
+2012 version of lambda4jdt. Eclipse plugin to fold anonymous inner classes as lambdas in Java Editor.</p>
+<p>* Support for Eclipse Indigo SR2 3.7.2<br />
+* Remove need for marker comment, simplify to one-size fits all<br />
+* No further development planned, no features, no Juno support etc</p>
+<p>Install plugins and then goto Preferences->Java->Editor->Folding, select folding to use "Lambda4jdt Folding". Any newly opened Java editor will pickup lambda4jdt.</p>
+]]></body>
+      <created>1233327541</created>
+      <changed>1337383536</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://github.com/elucash/lambda4jdt]]></homepageurl>
+      <image><![CDATA[http://lambda4jdt.googlecode.com/files/epiclogo.gif]]></image>
+      <version>0.9</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Eugene Lucash]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.7.2]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[https://github.com/elucash/lambda4jdt/raw/master/com.github.elucash.lambda4jdt.site/]]></updateurl>
+<ius>
+<iu>com.github.elucash.lambda4jdt.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

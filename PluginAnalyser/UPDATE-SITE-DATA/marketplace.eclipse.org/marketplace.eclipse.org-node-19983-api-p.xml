@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="19983" name="CloudTran Transaction Manager for Cloud Apps" url="http://marketplace.eclipse.org/content/cloudtran-transaction-manager-cloud-apps">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+        <category id='36' name='Database Persistence' url='http://marketplace.eclipse.org/category/categories/database-persistence'/>
+      </categories>
+      <tags>
+        <tag id='190' name='database' url='http://marketplace.eclipse.org/category/free-tagging/database'/>
+        <tag id='357' name='grid' url='http://marketplace.eclipse.org/category/free-tagging/grid'/>
+        <tag id='1364' name='transaction manager' url='http://marketplace.eclipse.org/category/free-tagging/transaction-manager'/>
+        <tag id='1365' name='transaction processing' url='http://marketplace.eclipse.org/category/free-tagging/transaction-processing'/>
+        <tag id='1366' name='transactions' url='http://marketplace.eclipse.org/category/free-tagging/transactions'/>
+      </tags>
+      
+      <owner>AJ Brown</owner>
+      <favorited>1</favorited>
+      <installstotal>9</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>CloudTran is the premiere developer of transaction management software for cloud computing. We make it possible to run mission-critical OLTP applications in public, private, and hybrid clouds by adding ACID transactions to data grids and distributed persistant data stores.  </p>
+<p>While there are a significant number of infrastructure technologies to help speed the performance of mostly-read, web-based applications, the same can not be said for applications that require quick inserts and updates to data. Solutions like online games and web publishing need to process millions of transactions each hour, and a delay in processing will almost always lead to the loss of a customer.</p>
+<p>CloudTran provides a platform for high-speed, low-cost data-oriented (OLTP) applications. Primarily an infrastructure layer for managing transactions in cloud computing environments, CloudTran includes a design & development environment based on Eclipse.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>CloudTran is the premiere developer of transaction management software for cloud computing. We make it possible to run mission-critical OLTP applications in public, private, and hybrid clouds by adding ACID transactions to data grids and distributed persistant data stores.  </p>
+<p>While there are a significant number of infrastructure technologies to help speed the performance of mostly-read, web-based applications, the same can not be said for applications that require quick inserts and updates to data. Solutions like online games and web publishing need to process millions of transactions each hour, and a delay in processing will almost always lead to the loss of a customer.</p>
+<p>CloudTran provides a platform for high-speed, low-cost data-oriented (OLTP) applications. Primarily an infrastructure layer for managing transactions in cloud computing environments, CloudTran includes a design & development environment based on Eclipse.</p>
+]]></body>
+      <created>1289844739</created>
+      <changed>1289930458</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.CloudTran.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logoForEclipse.png?itok=S2zhFMI4]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/CloudTranModel.png?itok=vYuw280I]]></screenshot>
+      <version>1.2.1</version>
+      <license>Free for non-commerical use</license>
+      <companyname><![CDATA[CloudTran]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6.1]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://www.CloudTran.com/downloads/site]]></updateurl>
+<ius>
+<iu>com.cloudtran.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

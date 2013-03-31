@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="589" name="JCrypTool" url="http://marketplace.eclipse.org/content/jcryptool">
+      <type>resource</type>
+      <categories>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+      </categories>
+      <tags>
+        <tag id='385' name='e-learning' url='http://marketplace.eclipse.org/category/free-tagging/e-learning'/>
+        <tag id='386' name='cryptography' url='http://marketplace.eclipse.org/category/free-tagging/cryptography'/>
+      </tags>
+      
+      <owner>Dominik Schadow</owner>
+      <favorited>3</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>JCrypTool is the Java and Eclipse Rich Client Platform based cryptography e-learning platform. Developed as an open-source project, it enables students, teachers, developers, and anyone else interested in cryptography to apply and analyze cryptographic algorithms in a modern, easy-to-use application. Its aim is to create a new form of e-learning by not just encouraging users to learn about cryptography and apply the algorithms themselves, but also to develop their own cryptographic plug-ins and extend the JCrypTool platform in new directions. JCrypTool already includes a wealth of cryptographic mechanisms including classic, symmetric, and asymmetric encryption, hash functions, analysis tools, visualizations and crypto games.</p>
+<!--break--><p>JCrypTool is bundled with the advanced cryptographic libraries BouncyCastle and FlexiProvider; other libraries can be easily added to the project. FlexiProvider is the initial default provider, but users can freely change to a different default provider. A fall-through functionality searches top-down for an implementation of any given cryptographic algorithm so that even a specialized provider with only a small subset of algorithms can be selected as the default.</p>
+<p>Visit the JCrypTool Core Project on GitHub for the source code (available via Git), developer documentation, wiki and further information about the project. For our cryptographic plug-ins visit the JCrypTool Crypto Project. Our wiki is a good place for new developers to get started and to find additional information, such as our release schedule and a huge list of project ideas.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>JCrypTool is the Java and Eclipse Rich Client Platform based cryptography e-learning platform. Developed as an open-source project, it enables students, teachers, developers, and anyone else interested in cryptography to apply and analyze cryptographic algorithms in a modern, easy-to-use application. Its aim is to create a new form of e-learning by not just encouraging users to learn about cryptography and apply the algorithms themselves, but also to develop their own cryptographic plug-ins and extend the JCrypTool platform in new directions. JCrypTool already includes a wealth of cryptographic mechanisms including classic, symmetric, and asymmetric encryption, hash functions, analysis tools, visualizations and crypto games.</p>
+<!--break--><p>JCrypTool is bundled with the advanced cryptographic libraries BouncyCastle and FlexiProvider; other libraries can be easily added to the project. FlexiProvider is the initial default provider, but users can freely change to a different default provider. A fall-through functionality searches top-down for an implementation of any given cryptographic algorithm so that even a specialized provider with only a small subset of algorithms can be selected as the default.</p>
+<p>Visit the JCrypTool Core Project on GitHub for the source code (available via Git), developer documentation, wiki and further information about the project. For our cryptographic plug-ins visit the JCrypTool Crypto Project. Our wiki is a good place for new developers to get started and to find additional information, such as our release schedule and a huge list of project ideas.</p>
+]]></body>
+      <created>1196088815</created>
+      <changed>1343055085</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://github.com/jcryptool]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/icon.png?itok=cZPKZ3rj]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Default-Perspective.png?itok=CjWf7PxX]]></screenshot>
+      <version>0.9.7</version>
+      <license>EPL</license>
+      <companyname><![CDATA[none]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.7.2]]></eclipseversion>
+      <supporturl><![CDATA[http://groups.google.com/group/jcryptool-users]]></supporturl>
+      <updateurl><![CDATA[http://www.cryptool.org/jct/update]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

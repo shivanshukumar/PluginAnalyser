@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="192" name="Design and Verification Tools - E, SystemVerilog, VHDL" url="http://marketplace.eclipse.org/content/design-and-verification-tools-e-systemverilog-vhdl">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+      </categories>
+      <tags>
+        <tag id='53' name='ide for hardware' url='http://marketplace.eclipse.org/category/free-tagging/ide-hardware'/>
+        <tag id='325' name='VHDL' url='http://marketplace.eclipse.org/category/free-tagging/vhdl'/>
+        <tag id='927' name='Verilog' url='http://marketplace.eclipse.org/category/free-tagging/verilog'/>
+        <tag id='928' name='SystemVerilog' url='http://marketplace.eclipse.org/category/free-tagging/systemverilog'/>
+        <tag id='929' name='UVM' url='http://marketplace.eclipse.org/category/free-tagging/uvm'/>
+      </tags>
+      
+      <owner>etools  </owner>
+      <favorited>6</favorited>
+      <installstotal>635</installstotal>
+      <installsrecent>18</installsrecent>
+      <shortdescription><![CDATA[<p>The Design and Verification Tools (DVT) plugin is a powerful and modern, yet easy to use programming environment for the e language, SystemVerilog and VHDL. It enables faster and smarter code development and simplifies legacy code maintenance for novices and experts alike. </p>
+<p>The DVT plug-in is similar to well-known programming tools like VisualC and IntelliJ. A unified window combines the smart editor with the syntax checker, linter, class browser, methodology compliance checking, task tracking, dynamic UML diagrams, and more.</p>
+<p>Engineers can use the editor's hyper-links, auto-complete, in-line documentation, semantic search, and smart-log viewer features. Therefore, they do not have to switch out from the editor to the simulator, browser or console and can stay focused on their code writing or verification work. As a result, the speed and quality of code development increase significantly.</p>
+<p>You can read more in the <a href="http://www.dvteclipse.com/datasheet/DVT_Datasheet_L20110606.pdf">DVT Datasheet</a>.</p>
+<p>The complete feature matrix may be found at <a href="http://www.dvteclipse.com/features.html">DVT Features</a>.</p>
+<p>Snapshots:<br />
+- <a href="http://www.dvteclipse.com/help.html?documentation/e/Tips_and_Tricks.html">e Language</a><br />
+- <a href="http://www.dvteclipse.com/help.html?documentation/sv/Tips_and_Tricks.html">SystemVerilog</a><br />
+- <a href="http://www.dvteclipse.com/help.html?documentation/vhdl/Tips_and_Tricks.html">VHDL</a></p>
+<p>Demo Movies:<br />
+- <a href="http://www.dvteclipse.com/demo_movies.html">Demo Movies</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>The Design and Verification Tools (DVT) plugin is a powerful and modern, yet easy to use programming environment for the e language, SystemVerilog and VHDL. It enables faster and smarter code development and simplifies legacy code maintenance for novices and experts alike. </p>
+<p>The DVT plug-in is similar to well-known programming tools like VisualC and IntelliJ. A unified window combines the smart editor with the syntax checker, linter, class browser, methodology compliance checking, task tracking, dynamic UML diagrams, and more.</p>
+<p>Engineers can use the editor's hyper-links, auto-complete, in-line documentation, semantic search, and smart-log viewer features. Therefore, they do not have to switch out from the editor to the simulator, browser or console and can stay focused on their code writing or verification work. As a result, the speed and quality of code development increase significantly.</p>
+<p>You can read more in the <a href="http://www.dvteclipse.com/datasheet/DVT_Datasheet_L20110606.pdf">DVT Datasheet</a>.</p>
+<p>The complete feature matrix may be found at <a href="http://www.dvteclipse.com/features.html">DVT Features</a>.</p>
+<p>Snapshots:<br />
+- <a href="http://www.dvteclipse.com/help.html?documentation/e/Tips_and_Tricks.html">e Language</a><br />
+- <a href="http://www.dvteclipse.com/help.html?documentation/sv/Tips_and_Tricks.html">SystemVerilog</a><br />
+- <a href="http://www.dvteclipse.com/help.html?documentation/vhdl/Tips_and_Tricks.html">VHDL</a></p>
+<p>Demo Movies:<br />
+- <a href="http://www.dvteclipse.com/demo_movies.html">Demo Movies</a></p>
+]]></body>
+      <created>1145448018</created>
+      <changed>1363021887</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.dvteclipse.com/]]></homepageurl>
+      <image><![CDATA[http://www.dvteclipse.com/dvt_epc.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/exploring_an_OVM_based_environment.png?itok=yWA20unW]]></screenshot>
+      <version>3.2.21</version>
+      <license>Other</license>
+      <companyname><![CDATA[AMIQ]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6, 3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://www.dvteclipse.com/help.html]]></supporturl>
+      <updateurl><![CDATA[http://www.dvteclipse.com/update]]></updateurl>
+<ius>
+<iu>ro.amiq.dvt.feature</iu>
+<iu>ro.amiq.dvt.extensions.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="959" name="Zowie.fractals: An Eclipse Mandelbrot Plugin" url="http://marketplace.eclipse.org/content/zowiefractals-eclipse-mandelbrot-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='8' name='Graphics' url='http://marketplace.eclipse.org/taxonomy/term/8'/>
+      </categories>
+            
+      <owner>treacleminer</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Zowie.Fractals is a plugin for the popular Eclipse IDE that lets the user explore the set of complex numbers in the Mandelbrot set. When rendered visually these can be quite distracting, and even pretty.</p>
+<p>FEATURES<br />
+•Intuitive mouse usage: zoom in out with the scroll wheel, rubber band with the left button, and pan with the middle button.<br />
+•Load & save your work as PNG files<br />
+•Change the number of iterations<br />
+•Full editor history integration</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Zowie.Fractals is a plugin for the popular Eclipse IDE that lets the user explore the set of complex numbers in the Mandelbrot set. When rendered visually these can be quite distracting, and even pretty.</p>
+<p>FEATURES<br />
+•Intuitive mouse usage: zoom in out with the scroll wheel, rubber band with the left button, and pan with the middle button.<br />
+•Load & save your work as PNG files<br />
+•Change the number of iterations<br />
+•Full editor history integration</p>
+]]></body>
+      <created>1245682908</created>
+      <changed>1259779269</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://eclipse-fractal.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://s.fsdn.com/fm/screenshots/a1/2a/a12a647b0db5e49cdb093e524f0e4720_thumb.png?1245665097]]></image>
+      <version>2009.5.1</version>
+      <license>Free GPL</license>
+      <companyname><![CDATA[Martin Cowie]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2.2 and upwards]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://www.zowie.org.uk/Zowie.Toys/]]></updateurl>
+    </node>
+    </marketplace>
+    

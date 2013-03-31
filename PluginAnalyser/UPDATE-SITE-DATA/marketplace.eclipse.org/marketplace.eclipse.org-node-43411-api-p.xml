@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="43411" name="SOA Designer (Indigo version)" url="http://marketplace.eclipse.org/content/soa-designer-indigo-version">
+      <type>resource</type>
+      <categories>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='1965' name='SOA Development' url='http://marketplace.eclipse.org/category/categories/soa-development'/>
+        <category id='21' name='Web Services' url='http://marketplace.eclipse.org/taxonomy/term/21'/>
+      </categories>
+      <tags>
+        <tag id='64' name='Modeling' url='http://marketplace.eclipse.org/category/free-tagging/modeling'/>
+        <tag id='195' name='DSL' url='http://marketplace.eclipse.org/category/free-tagging/dsl'/>
+        <tag id='509' name='SOA' url='http://marketplace.eclipse.org/category/free-tagging/soa'/>
+        <tag id='520' name='service' url='http://marketplace.eclipse.org/category/free-tagging/service'/>
+        <tag id='1831' name='component' url='http://marketplace.eclipse.org/category/free-tagging/component'/>
+      </tags>
+      
+      <owner>Obeo  </owner>
+      <favorited>3</favorited>
+      <installstotal>435</installstotal>
+      <installsrecent>34</installsrecent>
+      <shortdescription><![CDATA[<p><b>SOA Designer</b> allows the modeling of service layer by focusing on the description of Component, Service, Contract used in the SOA paradigm.</p>
+<p>
+This module uses a dedicated SOA metamodel provided by Obeo Network community and it implements the following diagrams:</p>
+<ul><li>SOA Diagram</li>
+<li>Component Contract Diagam</li>
+<li>DTO View</li>
+<li>DTO / Entity Binding</li>
+</ul><p><a href="http://marketplace.obeonetwork.com/module/soa"><br /><img src="http://dl.dropbox.com/u/22228046/Marketplace/soa/soa2.png" width="400" /><br /><img src="http://dl.dropbox.com/u/22228046/Marketplace/soa/soa1.png" width="400" /><br /></a>
+</p>
+<!--break--><p>
+This modeling tool can be used in conjunction with other designers: </p>
+<ul><li><a href="http://marketplace.obeonetwork.com/module/cinematic">Cinematc Designer</a> for UI cinematic</li>
+<li><a href="http://marketplace.obeonetwork.com/module/entity">Entity Designer</a> for domain model</li>
+<li><a href="http://marketplace.obeonetwork.com/module/graal">Graal Designer</a> for UI interaction (entry specifications from business specifiers)</li>
+</ul><p>
+You can also generates your application with your own generators or apply this ready-to-use Spring generator: <a href="http://marketplace.obeonetwork.com/module/javaee-generators">Acceleo JavaEE Generators</a>.
+</p>
+<p>
+This designer is free (open-source with EPL license).<br />
+You can easily modify it with <a href="http://www.obeodesigner.com">Obeo Designer</a> <strong>to adapt each diagram to your needs</strong> or combine it to your own DSL. To start customizing this module, just <a href="http://www.obeodesigner.com/download">download a free trial version</a> of the architect edition and import the <a href="http://marketplace.obeonetwork.com/module/soa">source code</a> of SOA Designer from Github.
+</p>
+]]></shortdescription>
+      <body><![CDATA[<p><b>SOA Designer</b> allows the modeling of service layer by focusing on the description of Component, Service, Contract used in the SOA paradigm.</p>
+<p>
+This module uses a dedicated SOA metamodel provided by Obeo Network community and it implements the following diagrams:</p>
+<ul><li>SOA Diagram</li>
+<li>Component Contract Diagam</li>
+<li>DTO View</li>
+<li>DTO / Entity Binding</li>
+</ul><p><a href="http://marketplace.obeonetwork.com/module/soa"><br /><img src="http://dl.dropbox.com/u/22228046/Marketplace/soa/soa2.png" width="400" /><br /><img src="http://dl.dropbox.com/u/22228046/Marketplace/soa/soa1.png" width="400" /><br /></a>
+</p>
+<!--break--><p>
+This modeling tool can be used in conjunction with other designers: </p>
+<ul><li><a href="http://marketplace.obeonetwork.com/module/cinematic">Cinematc Designer</a> for UI cinematic</li>
+<li><a href="http://marketplace.obeonetwork.com/module/entity">Entity Designer</a> for domain model</li>
+<li><a href="http://marketplace.obeonetwork.com/module/graal">Graal Designer</a> for UI interaction (entry specifications from business specifiers)</li>
+</ul><p>
+You can also generates your application with your own generators or apply this ready-to-use Spring generator: <a href="http://marketplace.obeonetwork.com/module/javaee-generators">Acceleo JavaEE Generators</a>.
+</p>
+<p>
+This designer is free (open-source with EPL license).<br />
+You can easily modify it with <a href="http://www.obeodesigner.com">Obeo Designer</a> <strong>to adapt each diagram to your needs</strong> or combine it to your own DSL. To start customizing this module, just <a href="http://www.obeodesigner.com/download">download a free trial version</a> of the architect edition and import the <a href="http://marketplace.obeonetwork.com/module/soa">source code</a> of SOA Designer from Github.
+</p>
+]]></body>
+      <created>1302094792</created>
+      <changed>1351071938</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://marketplace.obeonetwork.com/module/soa]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_ON-110x80_10.png?itok=R1333Msd]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/soa-main-image.png?itok=Bhu54Ku3]]></screenshot>
+      <version>2.3</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Obeo Network]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7.2]]></eclipseversion>
+      <supporturl><![CDATA[http://marketplace.obeonetwork.com/module/soa#community]]></supporturl>
+      <updateurl><![CDATA[http://marketplace.obeonetwork.com/updates/od6/]]></updateurl>
+<ius>
+<iu>org.obeonetwork.dsl.feature.is</iu>
+<iu>org.obeonetwork.dsl.feature.is.design</iu>
+<iu>fr.obeo.mda.license.feature.group</iu>
+<iu>org.obeonetwork.dsl.feature.soa</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

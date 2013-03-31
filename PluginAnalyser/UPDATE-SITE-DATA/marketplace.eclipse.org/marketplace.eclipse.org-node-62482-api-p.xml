@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="62482" name="Pkg-config support for Eclipse CDT" url="http://marketplace.eclipse.org/content/pkg-config-support-eclipse-cdt">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+      </categories>
+      <tags>
+        <tag id='2000' name='pkg-config' url='http://marketplace.eclipse.org/category/free-tagging/pkg-config'/>
+      </tags>
+      
+      <owner>Petri Tuononen</owner>
+      <favorited>6</favorited>
+      <installstotal>2913</installstotal>
+      <installsrecent>269</installsrecent>
+      <shortdescription><![CDATA[<p>
+Provides automation of configuration needed for projects using pkg-config, such as GTK+ and gtkmm. Pkg-config utility outputs the necessary options needed to build a given package(s) that can be passed as compiler options.
+</p>
+<p>
+Pkg-config support will set compiler and linker flags automatically that GCC needs to build selected packages - specifically includes, libraries, and some other GCC flags.
+</p>
+<h4>Cross platform support</h4>
+<p>Project can be held in a version control system and even if the packages have been selected in Linux, pulling the project in Windows will automatically update the flags (file-system paths etc).</p>
+<h4>Cross compilation environment support</h4>
+<p>Pkg-config plugin configuration is now per-project configuration rather than a global configuration. Path to the pkg-config binary can be set per-project.</p>
+<h2>UI Features</h2>
+<h4>Property page</h4>
+<p> Used to select packages and set pkg-config configurations. </p>
+<h2>Requirements</h2>
+<p>   * Pkg-config utility installed<br />
+   * Libraries you need (e.g. gtk+, gtkmm)<br />
+   * For Windows: MinGW or Cygwin<br />
+   * <b>CDT 8.0</b> and Eclipse 3.7.x (Indigo)<br /></p>
+<h4>Development site</h4>
+<p><a href="http://code.google.com/p/pkg-config-support-for-eclipse-cdt/">http://code.google.com/p/pkg-config-support-for-eclipse-cdt/</a><br /></p>
+<h4>Mailing list</h4>
+<p><a href="http://groups.google.com/group/pkg-config-support-for-eclipse-cdt">http://groups.google.com/group/pkg-config-support-for-eclipse-cdt</a><br /><br /><a href="mailto:pkg-config-support-for-eclipse-cdt@googlegroups.com">pkg-config-support-for-eclipse-cdt@googlegroups.com</a><br /><br />
+Note:<br /><b>If you are having problems installing it is most probably because of not having CDT 8.0 or above.</b></p>
+<p>
+Windows users: Do not install Gtk+ or Gtkmm in a path containing spaces, because pkg-config does not support spaces in paths.
+</p>
+]]></shortdescription>
+      <body><![CDATA[<p>
+Provides automation of configuration needed for projects using pkg-config, such as GTK+ and gtkmm. Pkg-config utility outputs the necessary options needed to build a given package(s) that can be passed as compiler options.
+</p>
+<p>
+Pkg-config support will set compiler and linker flags automatically that GCC needs to build selected packages - specifically includes, libraries, and some other GCC flags.
+</p>
+<h4>Cross platform support</h4>
+<p>Project can be held in a version control system and even if the packages have been selected in Linux, pulling the project in Windows will automatically update the flags (file-system paths etc).</p>
+<h4>Cross compilation environment support</h4>
+<p>Pkg-config plugin configuration is now per-project configuration rather than a global configuration. Path to the pkg-config binary can be set per-project.</p>
+<h2>UI Features</h2>
+<h4>Property page</h4>
+<p> Used to select packages and set pkg-config configurations. </p>
+<h2>Requirements</h2>
+<p>   * Pkg-config utility installed<br />
+   * Libraries you need (e.g. gtk+, gtkmm)<br />
+   * For Windows: MinGW or Cygwin<br />
+   * <b>CDT 8.0</b> and Eclipse 3.7.x (Indigo)<br /></p>
+<h4>Development site</h4>
+<p><a href="http://code.google.com/p/pkg-config-support-for-eclipse-cdt/">http://code.google.com/p/pkg-config-support-for-eclipse-cdt/</a><br /></p>
+<h4>Mailing list</h4>
+<p><a href="http://groups.google.com/group/pkg-config-support-for-eclipse-cdt">http://groups.google.com/group/pkg-config-support-for-eclipse-cdt</a><br /><br /><a href="mailto:pkg-config-support-for-eclipse-cdt@googlegroups.com">pkg-config-support-for-eclipse-cdt@googlegroups.com</a><br /><br />
+Note:<br /><b>If you are having problems installing it is most probably because of not having CDT 8.0 or above.</b></p>
+<p>
+Windows users: Do not install Gtk+ or Gtkmm in a path containing spaces, because pkg-config does not support spaces in paths.
+</p>
+]]></body>
+      <created>1307706809</created>
+      <changed>1355975356</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/pkg-config-support-for-eclipse-cdt/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_2.jpg?itok=Y2_L5R5G]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/PropertyPage.png?itok=ulESoAE4]]></screenshot>
+      <version>0.8.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Petri Tuononen]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7.0]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/pkg-config-support-for-eclipse-cdt/]]></supporturl>
+      <updateurl><![CDATA[http://petrituononen.com/pkg-config-support-for-eclipse-cdt/update]]></updateurl>
+<ius>
+<iu>org.eclipse.cdt.managedbuilder.pkgconfig</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

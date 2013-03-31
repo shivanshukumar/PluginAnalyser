@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="293" name="Canoo Eclipse IDE Integration Plug-in for UltraLightClient" url="http://marketplace.eclipse.org/content/canoo-eclipse-ide-integration-plug-ultralightclient">
+      <type>resource</type>
+      <categories>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+      </categories>
+            
+      <owner>Canno AG</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Dedicated wizards help in creating new UltraLightClient projects in Eclipse, automatically linking all necessary libraries and defining a clean structure. In addition, this free plug-in streamlines the export procedure to deploy a productive application as servlet, with client access options as applet or as Java Web Start application.<br />
+The plug-in source code and documentation is available at the UltraLightClient Community website (<a href="http://ulc-community.canoo.com">http://ulc-community.canoo.com</a>)</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Dedicated wizards help in creating new UltraLightClient projects in Eclipse, automatically linking all necessary libraries and defining a clean structure. In addition, this free plug-in streamlines the export procedure to deploy a productive application as servlet, with client access options as applet or as Java Web Start application.<br />
+The plug-in source code and documentation is available at the UltraLightClient Community website (<a href="http://ulc-community.canoo.com">http://ulc-community.canoo.com</a>)</p>
+]]></body>
+      <created>1162922933</created>
+      <changed>1274202276</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://ulc-community.canoo.com/snipsnap/space/Contributions/Integration+Snippets/Eclipse+IDE+Integration]]></homepageurl>
+      <image><![CDATA[http://ulc-community.canoo.com/snipsnap/space/Contributions/Integration+Snippets/Eclipse+IDE+Integration/ulcextensions2.jpg]]></image>
+      <version>3.0.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Canoo]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2]]></eclipseversion>
+      <supporturl><![CDATA[http://lists.canoo.com/mailman/listinfo/ulc-developer]]></supporturl>
+      <updateurl><![CDATA[http://update.canoo.com/eclipse]]></updateurl>
+    </node>
+    </marketplace>
+    

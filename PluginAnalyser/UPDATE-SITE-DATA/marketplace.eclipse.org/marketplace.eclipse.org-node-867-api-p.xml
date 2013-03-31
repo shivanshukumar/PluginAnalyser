@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="867" name="GlassFish Tools for Juno" url="http://marketplace.eclipse.org/content/glassfish-java-ee-application-server-plugin-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='1' name='Application Server' url='http://marketplace.eclipse.org/taxonomy/term/1'/>
+      </categories>
+      <tags>
+        <tag id='155' name='oracle' url='http://marketplace.eclipse.org/category/free-tagging/oracle'/>
+        <tag id='2974' name='Sun' url='http://marketplace.eclipse.org/taxonomy/term/2974'/>
+        <tag id='470' name='OEPE' url='http://marketplace.eclipse.org/category/free-tagging/oepe'/>
+        <tag id='422' name='java ee' url='http://marketplace.eclipse.org/category/free-tagging/java-ee'/>
+        <tag id='491' name='GlassFish' url='http://marketplace.eclipse.org/category/free-tagging/glassfish'/>
+      </tags>
+      
+      <owner>Konstantin Komissarchik</owner>
+      <favorited>28</favorited>
+      <installstotal>47698</installstotal>
+      <installsrecent>1973</installsrecent>
+      <shortdescription><![CDATA[<p>Tools for developing applications for GlassFish.</p>
+<ul><li>Integrates with Eclipse Web Tools.</li>
+<li>Supports GlassFish 3.1, 3.0 and 2.1.</li>
+</ul><p>These features are also part of <a href="http://www.oracle.com/technetwork/developer-tools/eclipse/overview/index.html">Oracle Enterprise Pack for Eclipse (OEPE)</a>.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Tools for developing applications for GlassFish.</p>
+<ul><li>Integrates with Eclipse Web Tools.</li>
+<li>Supports GlassFish 3.1, 3.0 and 2.1.</li>
+</ul><p>These features are also part of <a href="http://www.oracle.com/technetwork/developer-tools/eclipse/overview/index.html">Oracle Enterprise Pack for Eclipse (OEPE)</a>.</p>
+]]></body>
+      <created>1235148611</created>
+      <changed>1362682235</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.oracle.com/technetwork/developer-tools/eclipse/overview/index.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/GlassFish_logo.png?itok=K4NgWSy5]]></image>
+      <version></version>
+      <license>EPL</license>
+      <companyname><![CDATA[Oracle]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.8.x and 4.2.x]]></eclipseversion>
+      <supporturl><![CDATA[https://forums.oracle.com/forums/forum.jspa?forumID=578]]></supporturl>
+      <updateurl><![CDATA[http://download.oracle.com/otn_software/oepe/juno]]></updateurl>
+<ius>
+<iu>oracle.eclipse.tools.juno.glassfish</iu>
+</ius>
+    </node>
+    </marketplace>
+    

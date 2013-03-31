@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="925" name="KoutraXform" url="http://marketplace.eclipse.org/content/koutraxform">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>salagator</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>KoutraXform is an application that allows the transformation of any kind of data to any other kind of data. It is also a framework for providing the building blocks that allow such transformations.</p>
+<p>In order to accomplish its aim, KoutraXform Designer is an Eclipse plug-in and GEF based application that allows the user to design a pipeline that describes the transformation. The user does this by graphically building up a pipeline consisting of the building blocks supplied by the KoutraXform runtime. The user can then run the pipeline that they have build up through the UI locally, or on a cluster of cooperating KoutraXform nodes.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>KoutraXform is an application that allows the transformation of any kind of data to any other kind of data. It is also a framework for providing the building blocks that allow such transformations.</p>
+<p>In order to accomplish its aim, KoutraXform Designer is an Eclipse plug-in and GEF based application that allows the user to design a pipeline that describes the transformation. The user does this by graphically building up a pipeline consisting of the building blocks supplied by the KoutraXform runtime. The user can then run the pipeline that they have build up through the UI locally, or on a cluster of cooperating KoutraXform nodes.</p>
+]]></body>
+      <created>1240841262</created>
+      <changed>1259779236</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.koutra.com/KoutraXform/info.html]]></homepageurl>
+      <image><![CDATA[http://www.koutra.com/KoutraXform/processAlt.jpg]]></image>
+      <version>1.0.1</version>
+      <license>Free EPL</license>
+      <companyname><![CDATA[Koutra Inc.]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://www.koutra.com/KoutraXform/info.html]]></supporturl>
+      <updateurl><![CDATA[http://www.koutra.com/dist.proc/update]]></updateurl>
+    </node>
+    </marketplace>
+    

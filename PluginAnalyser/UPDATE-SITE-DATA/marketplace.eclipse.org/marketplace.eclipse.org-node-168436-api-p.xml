@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="168436" name="MultiProperties" url="http://marketplace.eclipse.org/content/multiproperties">
+      <type>resource</type>
+      <categories>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='146' name='editor' url='http://marketplace.eclipse.org/category/free-tagging/editor'/>
+        <tag id='366' name='properties file' url='http://marketplace.eclipse.org/category/free-tagging/properties-file'/>
+        <tag id='1121' name='properties' url='http://marketplace.eclipse.org/category/free-tagging/properties'/>
+        <tag id='1170' name='i18n' url='http://marketplace.eclipse.org/category/free-tagging/i18n'/>
+      </tags>
+      
+      <owner>Krisztián Zsolt Sallai</owner>
+      <favorited>8</favorited>
+      <installstotal>1480</installstotal>
+      <installsrecent>182</installsrecent>
+      <shortdescription><![CDATA[<p><strong>MultiProperties Editor</strong> is an Eclipse plugin for editing multiple key-value based files with similar content. This kind of file format can be <a href="http://docs.oracle.com/javase/tutorial/essential/environment/properties.html">Properties</a> for example in Java programming language, which is frequently used for <a href="http://docs.oracle.com/javase/tutorial/i18n/resbundle/propfile.html">backing a ResourceBundle</a>.</p>
+<p>However the plugin is not limited to support only <a href="http://docs.oracle.com/javase/tutorial/essential/environment/properties.html">Properties</a> files. Instead it stores everything in one XML file, including the list of keys, all of the values, descriptions and meta information. When the editor saves its content into the XML file, it also saves different kind of output files with help of handlers.</p>
+<p>Since the handlers are used through standard Eclipse extension point, not just the already available handlers can be used. You can also implement your own handler which produces your own output format, for example you can produce SQL files instead of <a href="http://docs.oracle.com/javase/tutorial/essential/environment/properties.html">Properties</a> files.</p>
+<p><strong>New Text File handler is available by the project. See <a href="http://code.google.com/a/eclipselabs.org/p/multiproperties/wiki/HandlersImporters">available handlers and importers</a></strong></p>
+]]></shortdescription>
+      <body><![CDATA[<p><strong>MultiProperties Editor</strong> is an Eclipse plugin for editing multiple key-value based files with similar content. This kind of file format can be <a href="http://docs.oracle.com/javase/tutorial/essential/environment/properties.html">Properties</a> for example in Java programming language, which is frequently used for <a href="http://docs.oracle.com/javase/tutorial/i18n/resbundle/propfile.html">backing a ResourceBundle</a>.</p>
+<p>However the plugin is not limited to support only <a href="http://docs.oracle.com/javase/tutorial/essential/environment/properties.html">Properties</a> files. Instead it stores everything in one XML file, including the list of keys, all of the values, descriptions and meta information. When the editor saves its content into the XML file, it also saves different kind of output files with help of handlers.</p>
+<p>Since the handlers are used through standard Eclipse extension point, not just the already available handlers can be used. You can also implement your own handler which produces your own output format, for example you can produce SQL files instead of <a href="http://docs.oracle.com/javase/tutorial/essential/environment/properties.html">Properties</a> files.</p>
+<p><strong>New Text File handler is available by the project. See <a href="http://code.google.com/a/eclipselabs.org/p/multiproperties/wiki/HandlersImporters">available handlers and importers</a></strong></p>
+]]></body>
+      <created>1323779808</created>
+      <changed>1352895995</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/a/eclipselabs.org/p/multiproperties/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_5.gif?itok=wy8Q2sCu]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screenshot1_2.jpg?itok=_T7b2Fij]]></screenshot>
+      <version>1.2.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[skzs]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://svn.codespot.com/a/eclipselabs.org/multiproperties/trunk/hu.skzs.multiproperties.updatesite/]]></updateurl>
+<ius>
+<iu>hu.skzs.multiproperties</iu>
+<iu>hu.skzs.multiproperties.handler.java</iu>
+<iu>hu.skzs.multiproperties.handler.text</iu>
+</ius>
+    </node>
+    </marketplace>
+    

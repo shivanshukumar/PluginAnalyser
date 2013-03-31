@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="89461" name="Code Conversion(GB,UTF)" url="http://marketplace.eclipse.org/content/code-conversiongbutf">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='2119' name='encode gbk utf' url='http://marketplace.eclipse.org/category/free-tagging/encode-gbk-utf'/>
+      </tags>
+      
+      <owner>Yongjing Tao</owner>
+      <favorited>2</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This small plugin is used for chinese programmer change the encode of the source-file. In the windows platform the default encode is GBK, and in the linux the default encode is UTF-8. It is very messy to change the encode of IDE. This plugin can change the GBK source file to UTF-8, and change UTF-8 source-file to GBK. It can recognize the encode of file automacticly.</p>
+<p>这个小的编码转换插件是用于解决eclipse下跨平台开发的中文文件编码问题，在windows平台下默认的编码为GBK，而在linux下面默认为UTF-8，如果遗留的代码没有按照统一的格式编写，那么文件中的中文部分将无法识别。本插件的主要功能是识别文件编码，将GBK编码转换为UTF-8，也可以将UTF-8转换为GBK。</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This small plugin is used for chinese programmer change the encode of the source-file. In the windows platform the default encode is GBK, and in the linux the default encode is UTF-8. It is very messy to change the encode of IDE. This plugin can change the GBK source file to UTF-8, and change UTF-8 source-file to GBK. It can recognize the encode of file automacticly.</p>
+<p>这个小的编码转换插件是用于解决eclipse下跨平台开发的中文文件编码问题，在windows平台下默认的编码为GBK，而在linux下面默认为UTF-8，如果遗留的代码没有按照统一的格式编写，那么文件中的中文部分将无法识别。本插件的主要功能是识别文件编码，将GBK编码转换为UTF-8，也可以将UTF-8转换为GBK。</p>
+]]></body>
+      <created>1311060134</created>
+      <changed>1311170196</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://seg.nju.edu.cn/people/~tyj/CCE_Update/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/cce.png?itok=1WgOvERB]]></screenshot>
+      <version>1.0</version>
+      <license>GPL</license>
+      <companyname><![CDATA[Software Engineering Group, Department of Computer Science & Technology, Nanjing University]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://seg.nju.edu.cn/people/~tyj/CCE_Update/]]></updateurl>
+    </node>
+    </marketplace>
+    

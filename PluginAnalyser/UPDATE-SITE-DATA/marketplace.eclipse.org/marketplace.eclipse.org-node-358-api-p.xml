@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="358" name="NDS Managedbuilder" url="http://marketplace.eclipse.org/content/nds-managedbuilder">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+      </categories>
+      <tags>
+        <tag id='58' name='c++' url='http://marketplace.eclipse.org/category/free-tagging/c-0'/>
+        <tag id='1013' name='Nintendo' url='http://marketplace.eclipse.org/category/free-tagging/nintendo'/>
+        <tag id='1014' name='GCC' url='http://marketplace.eclipse.org/category/free-tagging/gcc'/>
+        <tag id='1015' name='Arm' url='http://marketplace.eclipse.org/category/free-tagging/arm'/>
+        <tag id='1016' name='NDS' url='http://marketplace.eclipse.org/category/free-tagging/nds'/>
+      </tags>
+      
+      <owner>Enrico Ehrich</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Eclipse CDT plugin for C/C++ development for the Nintendo DS target system. It supports DevkitPro compiler/debugger.</p>
+<p>    * easy to use managed build system based on the GNU toolchain<br />
+    * supports C and C++ projects, also ASM Programming<br />
+    * different project types<br />
+          o NDS ROM - ARM9 Sources + NDS Tool<br />
+          o NDS ARM7 Code - ARM7 Sources + ObjCopy<br />
+          o NDS ARM7 Library - generates a static link lib<br />
+          o NDS ARM9 Library - generates a static link lib<br />
+    * includes ObjCopy and NDS-Tool in the toolchain<br />
+    * integrate the ARM gdb debug server </p>
+<p>Update: Works also with Eclipse Helios</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Eclipse CDT plugin for C/C++ development for the Nintendo DS target system. It supports DevkitPro compiler/debugger.</p>
+<p>    * easy to use managed build system based on the GNU toolchain<br />
+    * supports C and C++ projects, also ASM Programming<br />
+    * different project types<br />
+          o NDS ROM - ARM9 Sources + NDS Tool<br />
+          o NDS ARM7 Code - ARM7 Sources + ObjCopy<br />
+          o NDS ARM7 Library - generates a static link lib<br />
+          o NDS ARM9 Library - generates a static link lib<br />
+    * includes ObjCopy and NDS-Tool in the toolchain<br />
+    * integrate the ARM gdb debug server </p>
+<p>Update: Works also with Eclipse Helios</p>
+]]></body>
+      <created>1168015945</created>
+      <changed>1278686893</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://snipah.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>2.0.1</version>
+      <license>LGPL</license>
+      <companyname><![CDATA[Scarab]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4.0]]></eclipseversion>
+      <supporturl><![CDATA[http://]]></supporturl>
+      <updateurl><![CDATA[http://dev.snipah.com/nds/updater]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

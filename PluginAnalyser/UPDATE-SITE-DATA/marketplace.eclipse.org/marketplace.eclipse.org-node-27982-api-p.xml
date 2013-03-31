@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="27982" name="Aptana radrails" url="http://marketplace.eclipse.org/content/aptana-radrails">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='1180' name='Ruby' url='http://marketplace.eclipse.org/category/free-tagging/ruby'/>
+      </tags>
+      
+      <owner>Missing Name</owner>
+      <favorited>5</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[]]></shortdescription>
+      <body><![CDATA[]]></body>
+      <created>1295132754</created>
+      <changed>1295276910</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://aptana.com/products/radrails]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>2</version>
+      <license>Other</license>
+      <companyname><![CDATA[Aptana]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5, 3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://aptana.com/images/generic/aptana-logo.png]]></supporturl>
+      <updateurl><![CDATA[http://download.aptana.com/tools/radrails/plugin/install/radrails-bundle]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

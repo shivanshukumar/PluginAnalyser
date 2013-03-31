@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="905" name="PowerShell Junkie" url="http://marketplace.eclipse.org/content/powershell-junkie">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='564' name='powershell' url='http://marketplace.eclipse.org/category/free-tagging/powershell'/>
+      </tags>
+      
+      <owner>Amin Ahmad</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>PowerShell Junkie adds PowerShell support to the Eclipse IDE. It supports:<br />
+<ol><br />
+  <li>Integration of PowerShell scripts into the workbench.<br />
+  <li>Dynamic script loading.<br />
+  <li>Configurable script paths and scan intervals.<br />
+  <li>"Open PowerShell here..." functionality within explorer and navigator views.<br />
+</ol></p>
+<p>Requires Eclipse 3.3, Java 5, and Microsoft operating system.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>PowerShell Junkie adds PowerShell support to the Eclipse IDE. It supports:<br />
+<ol><br />
+  <li>Integration of PowerShell scripts into the workbench.<br />
+  <li>Dynamic script loading.<br />
+  <li>Configurable script paths and scan intervals.<br />
+  <li>"Open PowerShell here..." functionality within explorer and navigator views.<br />
+</ol></p>
+<p>Requires Eclipse 3.3, Java 5, and Microsoft operating system.</p>
+]]></body>
+      <created>1237920086</created>
+      <changed>1273079955</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://ahmadsoft.org/powershelljunkie/index.html]]></homepageurl>
+      <image><![CDATA[http://ahmadsoft.org/powershelljunkie/thumb.png]]></image>
+      <version>1.0.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Ahmadsoft]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3+]]></eclipseversion>
+      <supporturl><![CDATA[http://ahmadsoft.org/contact.html]]></supporturl>
+      <updateurl><![CDATA[http://ahmadsoft.org/update]]></updateurl>
+    </node>
+    </marketplace>
+    

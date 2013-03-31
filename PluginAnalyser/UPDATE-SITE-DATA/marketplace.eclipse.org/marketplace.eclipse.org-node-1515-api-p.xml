@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1515" name="WebLauncher" url="http://marketplace.eclipse.org/content/weblauncher">
+      <type>resource</type>
+      <categories>
+        <category id='1' name='Application Server' url='http://marketplace.eclipse.org/taxonomy/term/1'/>
+      </categories>
+      <tags>
+        <tag id='845' name='tomcat' url='http://marketplace.eclipse.org/category/free-tagging/tomcat'/>
+        <tag id='907' name='jetty' url='http://marketplace.eclipse.org/category/free-tagging/jetty'/>
+        <tag id='908' name='SDLoader' url='http://marketplace.eclipse.org/category/free-tagging/sdloader'/>
+      </tags>
+      
+      <owner>taichi</owner>
+      <favorited>2</favorited>
+      <installstotal>4639</installstotal>
+      <installsrecent>83</installsrecent>
+      <shortdescription><![CDATA[<p>WebLauncher  is Launching Plugin for Web Container.</p>
+<p>WebLauncher includes some of Web Container, so you needless to download servers.<br />
+ * Apache Tomcat(6.0.x , 5.5.x) is most popular Web Container.<br />
+ * Jetty6 is fuctional and alternative Web Container.<br />
+ * SDLoader is simple Web Container.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>WebLauncher  is Launching Plugin for Web Container.</p>
+<p>WebLauncher includes some of Web Container, so you needless to download servers.<br />
+ * Apache Tomcat(6.0.x , 5.5.x) is most popular Web Container.<br />
+ * Jetty6 is fuctional and alternative Web Container.<br />
+ * SDLoader is simple Web Container.</p>
+]]></body>
+      <created>1277370524</created>
+      <changed>1277970189</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/werkzeugkasten/wiki/WebLauncher]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>0.0.27</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[handwerkszeug.org]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.4 or higher ]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://werkzeugkasten.googlecode.com/svn/trunk/werkzeugkasten.update/]]></updateurl>
+<ius>
+<iu>werkzeugkasten.weblauncher.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

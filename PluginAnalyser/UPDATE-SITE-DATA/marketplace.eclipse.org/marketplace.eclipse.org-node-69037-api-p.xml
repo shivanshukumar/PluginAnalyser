@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="69037" name="AST View" url="http://marketplace.eclipse.org/content/ast-view">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='1966' name='Programming Languages' url='http://marketplace.eclipse.org/category/categories/programming-languages'/>
+      </categories>
+      <tags>
+        <tag id='764' name='JDT' url='http://marketplace.eclipse.org/category/free-tagging/jdt'/>
+      </tags>
+      
+      <owner>Deepak Azad</owner>
+      <favorited>9</favorited>
+      <installstotal>774</installstotal>
+      <installsrecent>49</installsrecent>
+      <shortdescription><![CDATA[<p>This plug-in from the Eclipse JDT UI team provides a view to visualize the AST (abstract syntax tree) of a Java file open in the editor. Navigate from text selection to AST nodes and from nodes to selections. Show bindings and compare them.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This plug-in from the Eclipse JDT UI team provides a view to visualize the AST (abstract syntax tree) of a Java file open in the editor. Navigate from text selection to AST nodes and from nodes to selections. Show bindings and compare them.</p>
+]]></body>
+      <created>1308741928</created>
+      <changed>1308840681</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.eclipse.org/jdt/ui/astview/index.php]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/view.gif?itok=DBVXGQB5]]></screenshot>
+      <version></version>
+      <license>EPL</license>
+      <companyname><![CDATA[Eclipse JDT UI team]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.0 and higher]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://www.eclipse.org/jdt/ui/update-site]]></updateurl>
+<ius>
+<iu>org.eclipse.jdt.astview.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

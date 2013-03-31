@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="967" name="eclipse diagram tools" url="http://marketplace.eclipse.org/content/eclipse-diagram-tools">
+      <type>resource</type>
+      <categories>
+        <category id='8' name='Graphics' url='http://marketplace.eclipse.org/taxonomy/term/8'/>
+      </categories>
+      <tags>
+        <tag id='262' name='diagram' url='http://marketplace.eclipse.org/category/free-tagging/diagram'/>
+        <tag id='263' name='architecture' url='http://marketplace.eclipse.org/category/free-tagging/architecture'/>
+      </tags>
+      
+      <owner>Markus Pielmeier</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This Eclipse Diagram Tools project supplies Eclipse plug-ins which allow you to create miscellaneous diagrams within Eclipse.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This Eclipse Diagram Tools project supplies Eclipse plug-ins which allow you to create miscellaneous diagrams within Eclipse.</p>
+]]></body>
+      <created>1246973379</created>
+      <changed>1268386833</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/eclipsediagramtools/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.1</version>
+      <license>GPL</license>
+      <companyname><![CDATA[Markus Pielmeier]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/eclipsediagramtools/]]></supporturl>
+      <updateurl><![CDATA[http://eclipsediagramtools.googlecode.com/svn/trunk/workspaces/edt/edt.update_site/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

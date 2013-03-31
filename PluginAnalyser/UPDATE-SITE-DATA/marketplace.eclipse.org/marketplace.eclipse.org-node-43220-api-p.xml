@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="43220" name="UML Designer (Indigo  version)" url="http://marketplace.eclipse.org/content/uml-designer-indigo-version">
+      <type>resource</type>
+      <categories>
+        <category id='1971' name='Modeling' url='http://marketplace.eclipse.org/category/categories/modeling'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+      </categories>
+      <tags>
+        <tag id='61' name='UML' url='http://marketplace.eclipse.org/category/free-tagging/uml'/>
+        <tag id='64' name='Modeling' url='http://marketplace.eclipse.org/category/free-tagging/modeling'/>
+        <tag id='82' name='free' url='http://marketplace.eclipse.org/category/free-tagging/free'/>
+        <tag id='186' name='EMF' url='http://marketplace.eclipse.org/category/free-tagging/emf'/>
+        <tag id='195' name='DSL' url='http://marketplace.eclipse.org/category/free-tagging/dsl'/>
+      </tags>
+      
+      <owner>Obeo  </owner>
+      <favorited>11</favorited>
+      <installstotal>15165</installstotal>
+      <installsrecent>595</installsrecent>
+      <shortdescription><![CDATA[<p><b>UML Designer</b> is a graphical tool to edit and vizualize UML 2.1 models.</p>
+
+<p>It uses the standard UML2 metamodel provided by Eclipse Foundation and it implements the following generic UML diagrams:
+</p><ul><li>Package Hierarchy</li>
+<li>Class Diagam</li>
+<li>Component Diagram</li>
+<li>Object Diagram</li>
+<li>Composite Structure</li>
+<li>Use Case Diagram</li>
+<li>Activity Diagram</li>
+<li>State Machine</li>
+<li>Sequence Diagram</li>
+</ul><p>For those seeking to generate code from their UML diagrams, the UML Designer is compatible with the free <a href="http://marketplace.obeonetwork.com/module/uml2java-generator">UML to Java code generator</a>.</p>
+<p>
+As it is based on Obeo Designer, it provides an easy way to combine UML with domain specific modelling. You can extend the provided diagram definitions and seamlessly work on both UML and DSL models at the same time.
+</p>
+
+
+<a href="http://marketplace.obeonetwork.com/module/uml">
+<img src="https://github.com/ObeoNetwork/UML-Modeling/raw/fe3ee7f989727866f0cdf60c1902693eb8670093/plugins/org.obeonetwork.dsl.uml2.design.doc/doc/features/agency_pics/entities.jpg" width="500" /><br /><img src="https://github.com/ObeoNetwork/UML-Modeling/raw/fe3ee7f989727866f0cdf60c1902693eb8670093/plugins/org.obeonetwork.dsl.uml2.design.doc/doc/features/agency_pics/system%20use%20cases.jpg" width="500" /></a>
+<br /><!--break--><p>
+This designer is free (open-source with EPL license).<br /></p>
+<p>
+You can easily modify it with <a href="http://www.obeodesigner.com">Obeo Designer</a> <strong>to adapt each diagram to your needs</strong> or combine it to your own DSL. To start customizing this module, just <a href="http://www.obeodesigner.com/download">download an evaluation version</a> of the architect edition and import the <a href="http://marketplace.obeonetwork.com/module/uml">source code</a> of UML Designer from Github.
+</p>
+
+<p>
+More detail  <a href="http://marketplace.obeonetwork.com/module/uml">Here.</a>
+</p>
+<p>
+If you have any feedback, tell us <a href="http://www.obeonetwork.com/group/uml-designer">on the forum.</a>
+</p>]]></shortdescription>
+      <body><![CDATA[<p><b>UML Designer</b> is a graphical tool to edit and vizualize UML 2.1 models.</p>
+
+<p>It uses the standard UML2 metamodel provided by Eclipse Foundation and it implements the following generic UML diagrams:
+</p><ul><li>Package Hierarchy</li>
+<li>Class Diagam</li>
+<li>Component Diagram</li>
+<li>Object Diagram</li>
+<li>Composite Structure</li>
+<li>Use Case Diagram</li>
+<li>Activity Diagram</li>
+<li>State Machine</li>
+<li>Sequence Diagram</li>
+</ul><p>For those seeking to generate code from their UML diagrams, the UML Designer is compatible with the free <a href="http://marketplace.obeonetwork.com/module/uml2java-generator">UML to Java code generator</a>.</p>
+<p>
+As it is based on Obeo Designer, it provides an easy way to combine UML with domain specific modelling. You can extend the provided diagram definitions and seamlessly work on both UML and DSL models at the same time.
+</p>
+
+
+<a href="http://marketplace.obeonetwork.com/module/uml">
+<img src="https://github.com/ObeoNetwork/UML-Modeling/raw/fe3ee7f989727866f0cdf60c1902693eb8670093/plugins/org.obeonetwork.dsl.uml2.design.doc/doc/features/agency_pics/entities.jpg" width="500" /><br /><img src="https://github.com/ObeoNetwork/UML-Modeling/raw/fe3ee7f989727866f0cdf60c1902693eb8670093/plugins/org.obeonetwork.dsl.uml2.design.doc/doc/features/agency_pics/system%20use%20cases.jpg" width="500" /></a>
+<br /><!--break--><p>
+This designer is free (open-source with EPL license).<br /></p>
+<p>
+You can easily modify it with <a href="http://www.obeodesigner.com">Obeo Designer</a> <strong>to adapt each diagram to your needs</strong> or combine it to your own DSL. To start customizing this module, just <a href="http://www.obeodesigner.com/download">download an evaluation version</a> of the architect edition and import the <a href="http://marketplace.obeonetwork.com/module/uml">source code</a> of UML Designer from Github.
+</p>
+
+<p>
+More detail  <a href="http://marketplace.obeonetwork.com/module/uml">Here.</a>
+</p>
+<p>
+If you have any feedback, tell us <a href="http://www.obeonetwork.com/group/uml-designer">on the forum.</a>
+</p>]]></body>
+      <created>1302035778</created>
+      <changed>1355231944</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://marketplace.obeonetwork.com/module/uml]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_ON-110x80_4.png?itok=N2hMSkhC]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/entities.jpg?itok=wdDqLAx9]]></screenshot>
+      <version>1.5</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Obeo Network]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://www.obeonetwork.com/group/uml-designer]]></supporturl>
+      <updateurl><![CDATA[http://marketplace.obeonetwork.com/updates/od6/]]></updateurl>
+<ius>
+<iu>org.obeonetwork.dsl.feature.uml2</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="740" name="EzSNMP UDP Agent" url="http://marketplace.eclipse.org/content/ezsnmp-udp-agent">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='12' name='Network' url='http://marketplace.eclipse.org/taxonomy/term/12'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+      <tags>
+        <tag id='231' name='SNMP' url='http://marketplace.eclipse.org/category/free-tagging/snmp'/>
+        <tag id='233' name='snmp client' url='http://marketplace.eclipse.org/category/free-tagging/snmp-client'/>
+        <tag id='237' name='snmp browser' url='http://marketplace.eclipse.org/category/free-tagging/snmp-browser'/>
+      </tags>
+      
+      <owner>MrCompiler  </owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The EzSNMP UDP Agent Desktop is a standalone SNMP agent application based on the Eclipse Rich Client Platform and the SNMP4J Object Oriented Agent software. It is a rapid prototyping tool for the development of new SNMP enabled devices written entirely in the Java programming language and fully integrated into the Eclipse development environment.</p>
+<p>The EzSNMP UDP Agent receives CSV format driver messages and exposes them via the SNMP ifTable and related tables. The EzSNMP Agent supports dynamic registration and de-registration of channels and can generate standard defined traps including coldStart and warmStat plus the Link Up/Down traps based on driver messages. In addition the EzSNMP agent supports a number of well defined traps in the 'experimental' name space that can be used to propagate driver event data to a remote manager.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The EzSNMP UDP Agent Desktop is a standalone SNMP agent application based on the Eclipse Rich Client Platform and the SNMP4J Object Oriented Agent software. It is a rapid prototyping tool for the development of new SNMP enabled devices written entirely in the Java programming language and fully integrated into the Eclipse development environment.</p>
+<p>The EzSNMP UDP Agent receives CSV format driver messages and exposes them via the SNMP ifTable and related tables. The EzSNMP Agent supports dynamic registration and de-registration of channels and can generate standard defined traps including coldStart and warmStat plus the Link Up/Down traps based on driver messages. In addition the EzSNMP agent supports a number of well defined traps in the 'experimental' name space that can be used to propagate driver event data to a remote manager.</p>
+]]></body>
+      <created>1217254090</created>
+      <changed>1279592253</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://update.mrcompiler.com/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>0.1.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[MrCompiler.Com]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.2]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://update.mrcompiler.com]]></updateurl>
+    </node>
+    </marketplace>
+    

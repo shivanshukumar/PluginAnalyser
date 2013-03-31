@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="398" name="CodeCollaborator" url="http://marketplace.eclipse.org/content/codecollaborator">
+      <type>resource</type>
+      <categories>
+        <category id='1968' name='Collaboration' url='http://marketplace.eclipse.org/category/categories/collaboration'/>
+        <category id='38' name='Mylyn Connectors' url='http://marketplace.eclipse.org/category/categories/mylyn-connectors'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='44' name='svn' url='http://marketplace.eclipse.org/category/free-tagging/svn'/>
+        <tag id='95' name='code review' url='http://marketplace.eclipse.org/category/free-tagging/code-review'/>
+        <tag id='97' name='git' url='http://marketplace.eclipse.org/category/free-tagging/git'/>
+        <tag id='98' name='perforce' url='http://marketplace.eclipse.org/category/free-tagging/perforce'/>
+        <tag id='99' name='clearcase' url='http://marketplace.eclipse.org/category/free-tagging/clearcase'/>
+      </tags>
+      
+      <owner>Deb Cobb</owner>
+      <favorited>5</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><strong>Easy source code review without leaving your Eclipse perspective!</strong> </p>
+<p>Join the thousands of developers worldwide who perform more effective code reviews in 75% less time without leaving Eclipse! <strong>CodeCollaborator</strong> is changing the way developers review code.  And they can do it in a fraction of the time needed with formal reviews— eliminating Fagan-style meetings, code print-outs, manually-generated “diffs,” and the other painful tasks that developers hate.  CodeCollaborator simplifies and expedites code review so teams can find bugs early in the development lifecycle, before the product reaches customers or even QA, while the bugs are the least expensive to fix.  </p>
+<p>Remove the tedium from peer code reviews, automate manual processes, and promote collaboration among reviewers. CodeCollaborator helps developers create high quality software faster.</p>
+<p><strong>Save time</strong></p>
+<ul><li>Start reviews effortlessly —CodeCollaborator packages file changes and sends e-mail notifications
+</li><li>Track defects automatically —Comments, defects and version control files stay linked together
+</li><li>Use automated and custom workflows —allow for quick or very strict review processes… and everything in between</li></ul><p></p>
+<p><strong>Make code review productive and painless</strong></p>
+<ul><li>Benefit from a full-featured review tool purpose-built to make code reviews efficient
+</li><li>Create threaded, contextual conversations that act like newsgroups when users perform reviews asynchronously and like instant messaging when they want to review code at the same time
+</li><li>Work the way you want—Web-based, rich-client and CLI clients, plus an Eclipse plug-in and Visual Studio add-in
+</li><li>Supports your environment with integrations to Eclipse, Visual Studio, and 16 version control systems including Subversion, ClearCase Remote Client, Perforce, and Git</li></ul><p></p>
+<p><strong>Keep management happy</strong></p>
+<ul><li>Gain insight into the state of reviews instantly —collects metrics, maintains an audit trail and provides customizable reports
+</li><li>Support disparate teams—complete peer code reviews with team members next door or remotely, regardless of what development methodology they follow or SCM they use</li></ul><p></p>
+<p></p>
+<p><strong>Would you like to improve the quality of your code?</strong></p>
+<p> You can begin by updating your existing Eclipse plug-in and then downloading a free trial of CodeCollaborator.<br /><a href="http://eclipse.smartbearsoftware.com/7.0">Update your existing Eclipse plug-in.</a><br /><a href="http://www2.smartbear.com/DevCCPRCTrials_CC-Trials.html?src=Advertisement&srcdet=2012Q4-Eclipse-CC-textad">Start your free 30 day trial of CodeCollaborator.</a><br /><br />
+Need to review code and technical documents?  <a href="http://smartbear.com/products/software-development/embedded-systems-peer-review">Take a closer look at PeerReview Complete.</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p><strong>Easy source code review without leaving your Eclipse perspective!</strong> </p>
+<p>Join the thousands of developers worldwide who perform more effective code reviews in 75% less time without leaving Eclipse! <strong>CodeCollaborator</strong> is changing the way developers review code.  And they can do it in a fraction of the time needed with formal reviews— eliminating Fagan-style meetings, code print-outs, manually-generated “diffs,” and the other painful tasks that developers hate.  CodeCollaborator simplifies and expedites code review so teams can find bugs early in the development lifecycle, before the product reaches customers or even QA, while the bugs are the least expensive to fix.  </p>
+<p>Remove the tedium from peer code reviews, automate manual processes, and promote collaboration among reviewers. CodeCollaborator helps developers create high quality software faster.</p>
+<p><strong>Save time</strong></p>
+<ul><li>Start reviews effortlessly —CodeCollaborator packages file changes and sends e-mail notifications
+</li><li>Track defects automatically —Comments, defects and version control files stay linked together
+</li><li>Use automated and custom workflows —allow for quick or very strict review processes… and everything in between</li></ul><p></p>
+<p><strong>Make code review productive and painless</strong></p>
+<ul><li>Benefit from a full-featured review tool purpose-built to make code reviews efficient
+</li><li>Create threaded, contextual conversations that act like newsgroups when users perform reviews asynchronously and like instant messaging when they want to review code at the same time
+</li><li>Work the way you want—Web-based, rich-client and CLI clients, plus an Eclipse plug-in and Visual Studio add-in
+</li><li>Supports your environment with integrations to Eclipse, Visual Studio, and 16 version control systems including Subversion, ClearCase Remote Client, Perforce, and Git</li></ul><p></p>
+<p><strong>Keep management happy</strong></p>
+<ul><li>Gain insight into the state of reviews instantly —collects metrics, maintains an audit trail and provides customizable reports
+</li><li>Support disparate teams—complete peer code reviews with team members next door or remotely, regardless of what development methodology they follow or SCM they use</li></ul><p></p>
+<p></p>
+<p><strong>Would you like to improve the quality of your code?</strong></p>
+<p> You can begin by updating your existing Eclipse plug-in and then downloading a free trial of CodeCollaborator.<br /><a href="http://eclipse.smartbearsoftware.com/7.0">Update your existing Eclipse plug-in.</a><br /><a href="http://www2.smartbear.com/DevCCPRCTrials_CC-Trials.html?src=Advertisement&srcdet=2012Q4-Eclipse-CC-textad">Start your free 30 day trial of CodeCollaborator.</a><br /><br />
+Need to review code and technical documents?  <a href="http://smartbear.com/products/software-development/embedded-systems-peer-review">Take a closer look at PeerReview Complete.</a></p>
+]]></body>
+      <created>1171574946</created>
+      <changed>1352998172</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://smartbear.com/products/software-development/code-review]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Regulatory%20Compliance.jpg?itok=5dpqVcPR]]></screenshot>
+      <version>7</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[SmartBear Software]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.x]]></eclipseversion>
+      <supporturl><![CDATA[http://support.smartbear.com/]]></supporturl>
+      <updateurl><![CDATA[http://eclipse.smartbearsoftware.com/7.0]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="47467" name="JavaBean Annotations" url="http://marketplace.eclipse.org/content/javabean-annotations">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='165' name='code generation' url='http://marketplace.eclipse.org/category/free-tagging/code-generation'/>
+        <tag id='1121' name='properties' url='http://marketplace.eclipse.org/category/free-tagging/properties'/>
+        <tag id='1869' name='annotations' url='http://marketplace.eclipse.org/category/free-tagging/annotations'/>
+        <tag id='1870' name='javabean' url='http://marketplace.eclipse.org/category/free-tagging/javabean'/>
+      </tags>
+      
+      <owner>Scott Stanchfield</owner>
+      <favorited>3</favorited>
+      <installstotal>349</installstotal>
+      <installsrecent>20</installsrecent>
+      <shortdescription><![CDATA[<p>The JavaDude Annotations are Java 5/6 annotations and annotation processors that generate some of the tedious code you need in your day-to-day programming. Using these annotations, you can generate: </p><p></p><table class="wikitable"><tr><td style="border: 1px solid #ccc; padding: 5px;"> Properties </td><td style="border: 1px solid #ccc; padding: 5px;"> fields with is/get/set accessor/mutator methods, optionally firing PropertyChangeEvents when their value has been changed. </td></tr><tr><td style="border: 1px solid #ccc; padding: 5px;"> Observer Pattern </td><td style="border: 1px solid #ccc; padding: 5px;"> code to track and manage added observer/listener objects (defined by their listener interfaces) and fire events to those objects. </td></tr><tr><td style="border: 1px solid #ccc; padding: 5px;"> Prototype Pattern </td><td style="border: 1px solid #ccc; padding: 5px;"> the java clone() method. hashCode() / equals() / toString() - basic implementations of these methods using properties that have been defined for the bean. </td></tr><tr><td style="border: 1px solid #ccc; padding: 5px;"> Delegation </td><td style="border: 1px solid #ccc; padding: 5px;"> generation of delegation methods. All methods in named interfaces will delegate to a specified implementation class or bean property. </td></tr><tr><td style="border: 1px solid #ccc; padding: 5px;"> Null Object Pattern </td><td style="border: 1px solid #ccc; padding: 5px;"> all methods in named interfaces will perform "null" operations; void methods do nothing, while non-void methods return null, false, or 0. </td></tr><tr><td style="border: 1px solid #ccc; padding: 5px;"> Interface Extraction </td><td style="border: 1px solid #ccc; padding: 5px;"> an interface will be generated for all public methods in a class, or just those that are explicitly tagged for export. </td></tr><tr><td style="border: 1px solid #ccc; padding: 5px;"> Default Method Parameters </td><td style="border: 1px solid #ccc; padding: 5px;"> method overloads are generated to provide default parameter values </td></tr></table>]]></shortdescription>
+      <body><![CDATA[<p>The JavaDude Annotations are Java 5/6 annotations and annotation processors that generate some of the tedious code you need in your day-to-day programming. Using these annotations, you can generate: </p><p></p><table class="wikitable"><tr><td style="border: 1px solid #ccc; padding: 5px;"> Properties </td><td style="border: 1px solid #ccc; padding: 5px;"> fields with is/get/set accessor/mutator methods, optionally firing PropertyChangeEvents when their value has been changed. </td></tr><tr><td style="border: 1px solid #ccc; padding: 5px;"> Observer Pattern </td><td style="border: 1px solid #ccc; padding: 5px;"> code to track and manage added observer/listener objects (defined by their listener interfaces) and fire events to those objects. </td></tr><tr><td style="border: 1px solid #ccc; padding: 5px;"> Prototype Pattern </td><td style="border: 1px solid #ccc; padding: 5px;"> the java clone() method. hashCode() / equals() / toString() - basic implementations of these methods using properties that have been defined for the bean. </td></tr><tr><td style="border: 1px solid #ccc; padding: 5px;"> Delegation </td><td style="border: 1px solid #ccc; padding: 5px;"> generation of delegation methods. All methods in named interfaces will delegate to a specified implementation class or bean property. </td></tr><tr><td style="border: 1px solid #ccc; padding: 5px;"> Null Object Pattern </td><td style="border: 1px solid #ccc; padding: 5px;"> all methods in named interfaces will perform "null" operations; void methods do nothing, while non-void methods return null, false, or 0. </td></tr><tr><td style="border: 1px solid #ccc; padding: 5px;"> Interface Extraction </td><td style="border: 1px solid #ccc; padding: 5px;"> an interface will be generated for all public methods in a class, or just those that are explicitly tagged for export. </td></tr><tr><td style="border: 1px solid #ccc; padding: 5px;"> Default Method Parameters </td><td style="border: 1px solid #ccc; padding: 5px;"> method overloads are generated to provide default parameter values </td></tr></table>]]></body>
+      <created>1303411573</created>
+      <changed>1315834219</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/javadude/wiki/Annotations]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>2.1.6</version>
+      <license>EPL</license>
+      <companyname><![CDATA[JavaDude.com]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.0]]></eclipseversion>
+      <supporturl><![CDATA[http://javadude.googlecode.com/hg/com.javadude.updatesite]]></supporturl>
+      <updateurl><![CDATA[http://javadude.googlecode.com/svn/trunk/com.javadude.updatesite]]></updateurl>
+<ius>
+<iu>com.javadude.annotation.feature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

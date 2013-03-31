@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="570" name="Textile-J" url="http://marketplace.eclipse.org/content/textile-j">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+      </categories>
+            
+      <owner>David Green</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Textile-J provides a PDF add-on for Mylyn WikiText.  With Textile-J, users of Mylyn WikiText can generate PDF output from wiki markup.</p>
+<p>Mylyn WikiText originated from the Textile-J project.  Please see the <a href="http://marketplace.eclipse.org/content/mylyn-wikitext-lightweight-markup-editing-tools-and-framework">WikiText market entry</a> for details on Mylyn WikiText.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Textile-J provides a PDF add-on for Mylyn WikiText.  With Textile-J, users of Mylyn WikiText can generate PDF output from wiki markup.</p>
+<p>Mylyn WikiText originated from the Textile-J project.  Please see the <a href="http://marketplace.eclipse.org/content/mylyn-wikitext-lightweight-markup-editing-tools-and-framework">WikiText market entry</a> for details on Mylyn WikiText.</p>
+]]></body>
+      <created>1193666492</created>
+      <changed>1341494857</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://textile-j.dev.java.net]]></homepageurl>
+      <image><![CDATA[https://textile-j.dev.java.net/source/browse/*checkout*/textile-j/trunk/java/net.java.textilej.ui.editor/icons/editor-icon.gif?rev=68]]></image>
+      <version>2.2.837</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[http://textile-j.dev.java.net]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3, 3.4]]></eclipseversion>
+      <supporturl><![CDATA[https://textile-j.dev.java.net/servlets/ProjectIssues]]></supporturl>
+      <updateurl><![CDATA[https://textile-j.dev.java.net/builds/wikitext/site]]></updateurl>
+    </node>
+    </marketplace>
+    

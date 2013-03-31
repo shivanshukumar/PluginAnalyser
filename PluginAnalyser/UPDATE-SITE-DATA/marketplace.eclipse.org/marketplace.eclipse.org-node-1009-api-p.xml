@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1009" name="bind CDT rebuild indexes &amp; renumerate TODOs records" url="http://marketplace.eclipse.org/content/bind-cdt-rebuild-indexes-renumerate-todos-records">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+            
+      <owner>agtsoft</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>1. Bind CDT rebuild indexes (Ctrl-R)<br />
+2. Renumerate (float2int in source code) TODOs records in Tasks View.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>1. Bind CDT rebuild indexes (Ctrl-R)<br />
+2. Renumerate (float2int in source code) TODOs records in Tasks View.</p>
+]]></body>
+      <created>1252937290</created>
+      <changed>1259779316</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://agtsoft.ru/update]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0.0</version>
+      <license>Other</license>
+      <companyname><![CDATA[agt{c}soft]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.5.0]]></eclipseversion>
+      <supporturl><![CDATA[http://agtsoft.homeip.net]]></supporturl>
+      <updateurl><![CDATA[http://agtsoft.ru/update]]></updateurl>
+    </node>
+    </marketplace>
+    

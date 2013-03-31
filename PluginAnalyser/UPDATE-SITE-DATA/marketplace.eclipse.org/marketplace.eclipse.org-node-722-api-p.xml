@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="722" name="OptimJ" url="http://marketplace.eclipse.org/content/optimj">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+      </categories>
+      <tags>
+        <tag id='64' name='Modeling' url='http://marketplace.eclipse.org/category/free-tagging/modeling'/>
+        <tag id='216' name='language' url='http://marketplace.eclipse.org/category/free-tagging/language'/>
+        <tag id='787' name='optimization' url='http://marketplace.eclipse.org/category/free-tagging/optimization'/>
+        <tag id='788' name='operations research' url='http://marketplace.eclipse.org/category/free-tagging/operations-research'/>
+        <tag id='1666' name='mathematical modeling' url='http://marketplace.eclipse.org/category/free-tagging/mathematical-modeling'/>
+      </tags>
+      
+      <owner>Patrick Viry</owner>
+      <favorited>3</favorited>
+      <installstotal>22</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>OptimJ is a Java based algebraic modelling language for operations research. (OR)</p>
+<p>OptimJ models are directly compatible with Java source code, existing Java libraries such as database access, Excel connection or graphical interfaces. OptimJ is compatible with development tools such as Eclipse, CVS, JUnit or JavaDoc. </p>
+<p>OptimJ is available for free. It comes with the following solver links: lp_solve, GLPK, LP or MPS file formats, Gurobi, Mosek, IBM ILOG CPLEX.</p>
+<p>For more information, please visit our website: <a href="http://www.ateji.com/optimj/index.html">www.ateji.com/optimj/index.html</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>OptimJ is a Java based algebraic modelling language for operations research. (OR)</p>
+<p>OptimJ models are directly compatible with Java source code, existing Java libraries such as database access, Excel connection or graphical interfaces. OptimJ is compatible with development tools such as Eclipse, CVS, JUnit or JavaDoc. </p>
+<p>OptimJ is available for free. It comes with the following solver links: lp_solve, GLPK, LP or MPS file formats, Gurobi, Mosek, IBM ILOG CPLEX.</p>
+<p>For more information, please visit our website: <a href="http://www.ateji.com/optimj/index.html">www.ateji.com/optimj/index.html</a></p>
+]]></body>
+      <created>1214843867</created>
+      <changed>1317726433</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.ateji.com/optimj.html]]></homepageurl>
+      <image><![CDATA[http://www.ateji.com/images/logo.jpg]]></image>
+      <version>1.3</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[ATEJI]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.4.x (Ganymede), 3.5.x (Galileo), 3.6.x (Helios) or 3.7.x (Indigo)]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://www.ateji.com/optimj/eclipse]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

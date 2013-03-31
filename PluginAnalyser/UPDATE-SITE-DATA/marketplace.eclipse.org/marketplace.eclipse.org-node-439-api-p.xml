@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="439" name="Task Tag Decorator" url="http://marketplace.eclipse.org/content/task-tag-decorator">
+      <type>resource</type>
+      <categories>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+      </categories>
+            
+      <owner>Pavel Krupets</owner>
+      <favorited>8</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>In large projects there are a lot of task tags like TODO, FIXME, etc. and Eclipse provides only plain list of all these task tags which I think is difficult to use. "Task Tag Decorator" plugin is a simple plugin which can decorate "Package Explorer" view with icons or text decorations.</p>
+<p>Supported Plug-ins:<br />
+- JDT<br />
+- CDT<br />
+- DLTK based plug-ins (Eclipse PHP, Ruby, JavaScript, Tcl). See <a href="http://wiki.eclipse.org/DLTK_Based_Projects">http://wiki.eclipse.org/DLTK_Based_Projects</a> for more info<br />
+- Any plug-in which uses Eclipse Resources API (only basic decoration)</p>
+]]></shortdescription>
+      <body><![CDATA[<p>In large projects there are a lot of task tags like TODO, FIXME, etc. and Eclipse provides only plain list of all these task tags which I think is difficult to use. "Task Tag Decorator" plugin is a simple plugin which can decorate "Package Explorer" view with icons or text decorations.</p>
+<p>Supported Plug-ins:<br />
+- JDT<br />
+- CDT<br />
+- DLTK based plug-ins (Eclipse PHP, Ruby, JavaScript, Tcl). See <a href="http://wiki.eclipse.org/DLTK_Based_Projects">http://wiki.eclipse.org/DLTK_Based_Projects</a> for more info<br />
+- Any plug-in which uses Eclipse Resources API (only basic decoration)</p>
+]]></body>
+      <created>1176734266</created>
+      <changed>1303965009</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.krupets.com/index.php?option=com_content&view=article&id=11&Itemid=11]]></homepageurl>
+      <image><![CDATA[http://www.krupets.com/fun/images/ttd-screenshot_01_small.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screenshot_1.png?itok=xMdg8ify]]></screenshot>
+      <version>3.1.1</version>
+      <license>LGPL</license>
+      <companyname><![CDATA[Pavel Krupets]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/tracker/?group_id=208561&atid=1006189]]></supporturl>
+      <updateurl><![CDATA[http://www.krupets.com/ttd/update]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

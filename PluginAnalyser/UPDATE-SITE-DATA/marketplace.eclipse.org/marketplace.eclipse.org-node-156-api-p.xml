@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="156" name="Spring IDE" url="http://marketplace.eclipse.org/content/spring-ide">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='134' name='J2EE' url='http://marketplace.eclipse.org/category/free-tagging/j2ee'/>
+        <tag id='158' name='spring' url='http://marketplace.eclipse.org/category/free-tagging/spring'/>
+        <tag id='465' name='Cloud' url='http://marketplace.eclipse.org/category/free-tagging/cloud'/>
+        <tag id='695' name='jee' url='http://marketplace.eclipse.org/category/free-tagging/jee'/>
+        <tag id='2773' name='spring ide 3.0.0' url='http://marketplace.eclipse.org/category/free-tagging/spring-ide-300'/>
+      </tags>
+      
+      <owner>Martin Lippert</owner>
+      <favorited>129</favorited>
+      <installstotal>91102</installstotal>
+      <installsrecent>3237</installsrecent>
+      <shortdescription><![CDATA[<p><a href="http://springide.org/">Spring IDE</a> is a set of plugins which are adding support for the popular J2EE application framework <a href="http://springframework.org/">Spring Framework</a> to the Eclipse platform.
+</p>
+<p><strong>Features:</strong></p>
+<ul><li>Project nature which adds support of Spring projects</li>
+<li>Incremental builders validating Spring bean config files</li>
+<li>Image decorator which decorates all Spring projects, their config files and all Java classes which are used by these config files</li>
+<li>View which displays all Spring projects and their Spring-related artifacts</li>
+<li>Textual and graphical editors for Spring configuration files</li>
+<li>Extension of Eclipse's search facility to search for Spring artifacts</li>
+<li>Support for refactorings of Spring config files</li>
+<li>Wizards for creating new Spring projects and config files</li>
+<li>Support for Spring 2.0 name spaces</li>
+<li>Support for Spring AOP</li>
+<li>Support for Spring Web Flow</li>
+<li>Support for Spring JavaConfig</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p><a href="http://springide.org/">Spring IDE</a> is a set of plugins which are adding support for the popular J2EE application framework <a href="http://springframework.org/">Spring Framework</a> to the Eclipse platform.
+</p>
+<p><strong>Features:</strong></p>
+<ul><li>Project nature which adds support of Spring projects</li>
+<li>Incremental builders validating Spring bean config files</li>
+<li>Image decorator which decorates all Spring projects, their config files and all Java classes which are used by these config files</li>
+<li>View which displays all Spring projects and their Spring-related artifacts</li>
+<li>Textual and graphical editors for Spring configuration files</li>
+<li>Extension of Eclipse's search facility to search for Spring artifacts</li>
+<li>Support for refactorings of Spring config files</li>
+<li>Wizards for creating new Spring projects and config files</li>
+<li>Support for Spring 2.0 name spaces</li>
+<li>Support for Spring AOP</li>
+<li>Support for Spring Web Flow</li>
+<li>Support for Spring JavaConfig</li>
+</ul>]]></body>
+      <created>1122334516</created>
+      <changed>1363002030</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://springide.org]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/springide_logo_small.jpg?itok=MNovvxQZ]]></image>
+      <version>3.2.0.RELEASE</version>
+      <license>EPL</license>
+      <companyname><![CDATA[SpringSource, a division of VMware, Inc.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[Eclipse 3.7, 3.8, 4.2, 4.3]]></eclipseversion>
+      <supporturl><![CDATA[http://forum.springframework.org/forumdisplay.php?f=32]]></supporturl>
+      <updateurl><![CDATA[http://dist.springsource.com/release/TOOLS/update/e3.7/]]></updateurl>
+<ius>
+<iu>org.springframework.ide.eclipse.feature</iu>
+<iu>org.springframework.ide.eclipse.aop.feature</iu>
+<iu>org.springframework.ide.eclipse.osgi.feature</iu>
+<iu>org.springframework.ide.eclipse.security.feature</iu>
+<iu>org.springframework.ide.eclipse.webflow.feature</iu>
+<iu>org.springframework.ide.eclipse.batch.feature</iu>
+<iu>org.springframework.ide.eclipse.integration.feature</iu>
+<iu>org.springframework.ide.eclipse.autowire.feature</iu>
+<iu>org.springframework.ide.eclipse.data.feature</iu>
+<iu>org.springframework.ide.eclipse.roo.feature</iu>
+<iu>org.springframework.ide.eclipse.maven.feature</iu>
+<iu>org.springframework.ide.eclipse.uaa.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

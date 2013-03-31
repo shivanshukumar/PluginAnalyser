@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="47857" name="Template Toolkit Editor" url="http://marketplace.eclipse.org/content/template-toolkit-editor">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+      <tags>
+        <tag id='1876' name='template toolkit' url='http://marketplace.eclipse.org/category/free-tagging/template-toolkit'/>
+      </tags>
+      
+      <owner>Alexander</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[]]></shortdescription>
+      <body><![CDATA[]]></body>
+      <created>1303558541</created>
+      <changed>1303740425</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://perleclipse.com/TTEditor]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version></version>
+      <license>Other Open Source</license>
+      <companyname><![CDATA[1]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[*]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://perleclipse.com/TTEditor/UpdateSite/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="25353" name="Apache IvyDE™" url="http://marketplace.eclipse.org/content/apache-ivyde%E2%84%A2">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+      <tags>
+        <tag id='1471' name='apache' url='http://marketplace.eclipse.org/category/free-tagging/apache'/>
+        <tag id='1472' name='ivy' url='http://marketplace.eclipse.org/category/free-tagging/ivy'/>
+        <tag id='1473' name='ivyde' url='http://marketplace.eclipse.org/category/free-tagging/ivyde'/>
+      </tags>
+      
+      <owner>Nicolas  Lalevée</owner>
+      <favorited>24</favorited>
+      <installstotal>17993</installstotal>
+      <installsrecent>1412</installsrecent>
+      <shortdescription><![CDATA[<p>Apache IvyDE™ is the Eclipse plugin which integrates Apache Ivy's dependency management into Eclipse.</p>
+<p>It lets you manage your dependencies declared in an ivy.xml in your Java Eclipse projects, or any other kind of project which needs dependency management. A summary of the features it provides follows:</p>
+<p>Managed classpath container: automatic downloads, access to the Ivy "resolve" task from your IDE, and a feature allowing you to develop interdependent multi-module applications in one workspace.</p>
+<ul><li>Ivy XML files editor: creation wizard, html preview and completion for Ivy XML tags, attributes, and attribute values.</li>
+<li>Ivy settings files editor: completion for XML tags, attributes, and attribute values.</li>
+<li>Ivy console: presents every log from Ivy to assist in debugging a failing resolve.</li>
+<li>Reverse Dependency Explorer: helps you work with conflicting dependencies amongst several projects.</li>
+</ul><p>Apache IvyDE can be also used with other plugins like WTP and Apache Ant.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Apache IvyDE™ is the Eclipse plugin which integrates Apache Ivy's dependency management into Eclipse.</p>
+<p>It lets you manage your dependencies declared in an ivy.xml in your Java Eclipse projects, or any other kind of project which needs dependency management. A summary of the features it provides follows:</p>
+<p>Managed classpath container: automatic downloads, access to the Ivy "resolve" task from your IDE, and a feature allowing you to develop interdependent multi-module applications in one workspace.</p>
+<ul><li>Ivy XML files editor: creation wizard, html preview and completion for Ivy XML tags, attributes, and attribute values.</li>
+<li>Ivy settings files editor: completion for XML tags, attributes, and attribute values.</li>
+<li>Ivy console: presents every log from Ivy to assist in debugging a failing resolve.</li>
+<li>Reverse Dependency Explorer: helps you work with conflicting dependencies amongst several projects.</li>
+</ul><p>Apache IvyDE can be also used with other plugins like WTP and Apache Ant.</p>
+]]></body>
+      <created>1293039090</created>
+      <changed>1293121844</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://ant.apache.org/ivy/ivyde]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_7.png?itok=okDrQuNZ]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/cp_node_1.jpg?itok=nchgaxG8]]></screenshot>
+      <version></version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[Apache Software Foundation]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://www.apache.org/dist/ant/ivyde/updatesite]]></updateurl>
+<ius>
+<iu>org.apache.ivy.feature</iu>
+<iu>org.apache.ivyde.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

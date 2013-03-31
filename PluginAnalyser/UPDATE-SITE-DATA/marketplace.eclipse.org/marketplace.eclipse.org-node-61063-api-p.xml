@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="61063" name="ReST Editor" url="http://marketplace.eclipse.org/content/rest-editor">
+      <type>resource</type>
+      <categories>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+      <tags>
+        <tag id='899' name='REST' url='http://marketplace.eclipse.org/category/free-tagging/rest'/>
+        <tag id='1983' name='restructuredtext' url='http://marketplace.eclipse.org/category/free-tagging/restructuredtext'/>
+      </tags>
+      
+      <owner>Thomas Calmant</owner>
+      <favorited>5</favorited>
+      <installstotal>2418</installstotal>
+      <installsrecent>185</installsrecent>
+      <shortdescription><![CDATA[<p>ReST Editor is an Eclipse plug-in providing support to edit reStructuredText files</p>
+<p>ReST Editor is an Eclipse plug-in providing support to edit reStructuredText files, released under Eclipse Public License 1.0.</p>
+<p>reStructuredText is a markup language that can be transformed in various output formats with tools like Sphinx documentation generator, rst2pdf, rst2beamer, ...</p>
+<p>More information here : <a href="http://resteditor.sourceforge.net/">http://resteditor.sourceforge.net/</a></p>
+<p>Features :</p>
+<ul><li>Syntax coloring</li>
+<li>Source normalization (sections, grid tables)</li>
+<li>Line wrapping (Hard and Soft)</li>
+<li>Run configuration (runs the Makefile or make.bat)</li>
+<li>Sphinx project wizard (like sphinx-quickstart)</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>ReST Editor is an Eclipse plug-in providing support to edit reStructuredText files</p>
+<p>ReST Editor is an Eclipse plug-in providing support to edit reStructuredText files, released under Eclipse Public License 1.0.</p>
+<p>reStructuredText is a markup language that can be transformed in various output formats with tools like Sphinx documentation generator, rst2pdf, rst2beamer, ...</p>
+<p>More information here : <a href="http://resteditor.sourceforge.net/">http://resteditor.sourceforge.net/</a></p>
+<p>Features :</p>
+<ul><li>Syntax coloring</li>
+<li>Source normalization (sections, grid tables)</li>
+<li>Line wrapping (Hard and Soft)</li>
+<li>Run configuration (runs the Makefile or make.bat)</li>
+<li>Sphinx project wizard (like sphinx-quickstart)</li>
+</ul>]]></body>
+      <created>1307547081</created>
+      <changed>1307639405</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://resteditor.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0.5</version>
+      <license>EPL</license>
+      <companyname><![CDATA[isandlaTech]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[https://sourceforge.net/tracker/?group_id=554338]]></supporturl>
+      <updateurl><![CDATA[http://resteditor.sourceforge.net/eclipse/]]></updateurl>
+<ius>
+<iu>org.psem2m.eclipse.rest.editor</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

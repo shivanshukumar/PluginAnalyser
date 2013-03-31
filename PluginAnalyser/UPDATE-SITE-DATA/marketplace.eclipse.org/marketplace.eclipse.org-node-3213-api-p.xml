@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="3213" name="Mobile Tools for Java" url="http://marketplace.eclipse.org/content/mobile-tools-java">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='27' name='J2ME' url='http://marketplace.eclipse.org/taxonomy/term/27'/>
+      </categories>
+      <tags>
+        <tag id='989' name='MIDP' url='http://marketplace.eclipse.org/category/free-tagging/midp'/>
+        <tag id='990' name='CLDC' url='http://marketplace.eclipse.org/category/free-tagging/cldc'/>
+        <tag id='991' name='Mobile' url='http://marketplace.eclipse.org/category/free-tagging/mobile'/>
+        <tag id='1119' name='j2me' url='http://marketplace.eclipse.org/category/free-tagging/j2me'/>
+      </tags>
+      
+      <owner>Gustavo de Paula</owner>
+      <favorited>7</favorited>
+      <installstotal>1572</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Mobile Tools for the Java Platform project creates tools and frameworks to extend eclipse platform to support mobile device Java application development.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Mobile Tools for the Java Platform project creates tools and frameworks to extend eclipse platform to support mobile device Java application development.</p>
+]]></body>
+      <created>1278523433</created>
+      <changed>1278588544</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.eclipse.org/dsdp/mtj/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/newclass_wiz_M.png?itok=B0GwgOJ6]]></image>
+      <version>1.1.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Eclipse.org]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eclipse.org/forums/eclipse.dsdp.mtj]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/dsdp/mtj/updates/1.1.0/stable]]></updateurl>
+<ius>
+<iu>org.eclipse.mtj</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

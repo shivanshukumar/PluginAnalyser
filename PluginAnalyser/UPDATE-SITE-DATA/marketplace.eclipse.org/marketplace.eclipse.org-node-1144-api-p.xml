@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1144" name="Simplemodel" url="http://marketplace.eclipse.org/content/simplemodel">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+            
+      <owner>Faruk Can KAYA</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Simplemodel is a java code generator for eclipse users which allows them to create models in a more efficient and faster way. You may simply generate fields, getters and setters. Or use more advanced features such as property and vetoable change supports, thread synchronization. Or take advance of indexes. It is easy to use, easy to learn.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Simplemodel is a java code generator for eclipse users which allows them to create models in a more efficient and faster way. You may simply generate fields, getters and setters. Or use more advanced features such as property and vetoable change supports, thread synchronization. Or take advance of indexes. It is easy to use, easy to learn.</p>
+]]></body>
+      <created>1266004091</created>
+      <changed>1278051440</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.simplemodel.net]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/SimpleMode110x48l.png?itok=BYBBlXZo]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/showcase.jpg?itok=j4q3tAN5]]></screenshot>
+      <version>0.5.0.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[simplemodel]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.simplemodel.net/index.php?option=com_content&view=article&id=20&Itemid=63]]></supporturl>
+      <updateurl><![CDATA[http://www.simplemodel.net/updates/]]></updateurl>
+<ius>
+<iu>net.simplemodel</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

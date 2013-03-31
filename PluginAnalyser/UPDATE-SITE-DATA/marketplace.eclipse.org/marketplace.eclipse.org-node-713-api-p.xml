@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="713" name="SCA Tools" url="http://marketplace.eclipse.org/content/sca-tools">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>Obeo  </owner>
+      <favorited>7</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The SCA Tools plugin provides a set of tools for the Service Component Architecture (SCA) set of standards: the SCA Composite Designer, a graphical (GMF) development environment for the construction of composite applications, an XML Editor for composite and componentType files, a launcher to run and debug SCA Java projects on SCA platforms from Eclipse,...</p>
+<p>Have a look to our website: <a href="http://www.eclipse.org/stp/sca/index.php">http://www.eclipse.org/stp/sca/index.php</a><br />
+and our wiki: <a href="http://wiki.eclipse.org/STP/SCA_Project">http://wiki.eclipse.org/STP/SCA_Project</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>The SCA Tools plugin provides a set of tools for the Service Component Architecture (SCA) set of standards: the SCA Composite Designer, a graphical (GMF) development environment for the construction of composite applications, an XML Editor for composite and componentType files, a launcher to run and debug SCA Java projects on SCA platforms from Eclipse,...</p>
+<p>Have a look to our website: <a href="http://www.eclipse.org/stp/sca/index.php">http://www.eclipse.org/stp/sca/index.php</a><br />
+and our wiki: <a href="http://wiki.eclipse.org/STP/SCA_Project">http://wiki.eclipse.org/STP/SCA_Project</a></p>
+]]></body>
+      <created>1213893649</created>
+      <changed>1294763159</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.eclipse.org/stp/sca/index.php]]></homepageurl>
+      <image><![CDATA[http://www.eclipse.org/stp/sca/screenshots/composite.png]]></image>
+      <version>2.0.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Obeo]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4, 3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://wiki.eclipse.org/STP/SCA_Project]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/releases/galileo/]]></updateurl>
+    </node>
+    </marketplace>
+    

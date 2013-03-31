@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="27373" name="Extended Editing Framework" url="http://marketplace.eclipse.org/content/extended-editing-framework">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+      </categories>
+      <tags>
+        <tag id='186' name='EMF' url='http://marketplace.eclipse.org/category/free-tagging/emf'/>
+        <tag id='331' name='GUI Construction' url='http://marketplace.eclipse.org/category/free-tagging/gui-construction'/>
+        <tag id='1121' name='properties' url='http://marketplace.eclipse.org/category/free-tagging/properties'/>
+        <tag id='1292' name='acceleo' url='http://marketplace.eclipse.org/category/free-tagging/acceleo'/>
+      </tags>
+      
+      <owner>Obeo  </owner>
+      <favorited>5</favorited>
+      <installstotal>611</installstotal>
+      <installsrecent>19</installsrecent>
+      <shortdescription><![CDATA[<p>EEF provides a generative component and runtime infrastructure for developing advanced components to ease the EMF based model editing. It is composed of three parts:</p>
+<ul><li>A runtime containing a set of advanced widgets and a generic and extensible MVC architecture
+</li>
+<li>Standard metamodels allowing the definition of models that will parameterize the actual editing components that are to be generated</li>
+<li>An Acceleo module generating a standard architecture extending the framework's runtime. </li>
+</ul><p>The generated elements can be integrated in any SWT/JFace components to ease the EMF model based editing.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>EEF provides a generative component and runtime infrastructure for developing advanced components to ease the EMF based model editing. It is composed of three parts:</p>
+<ul><li>A runtime containing a set of advanced widgets and a generic and extensible MVC architecture
+</li>
+<li>Standard metamodels allowing the definition of models that will parameterize the actual editing components that are to be generated</li>
+<li>An Acceleo module generating a standard architecture extending the framework's runtime. </li>
+</ul><p>The generated elements can be integrated in any SWT/JFace components to ease the EMF model based editing.</p>
+]]></body>
+      <created>1294755708</created>
+      <changed>1314187215</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.eclipse.org/modeling/emft/?project=eef]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/eefv2.png?itok=Cqr8dxlk]]></image>
+      <version>1.0.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Obeo]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3 3.4 3.5 3.6 3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://www.obeo.fr]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/modeling/emft/eef/updates/releases/1.0]]></updateurl>
+<ius>
+<iu>org.eclipse.emf.eef.runtime</iu>
+<iu>org.eclipse.emf.eef.edt</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

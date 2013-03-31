@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="39738" name="MDT: Magik Development Tools Professional Edition" url="http://marketplace.eclipse.org/content/mdt-magik-development-tools-professional-edition">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='981' name='MDT' url='http://marketplace.eclipse.org/category/free-tagging/mdt'/>
+        <tag id='1734' name='Smallworld' url='http://marketplace.eclipse.org/category/free-tagging/smallworld'/>
+        <tag id='1735' name='GIS' url='http://marketplace.eclipse.org/category/free-tagging/gis'/>
+        <tag id='1736' name='Magik' url='http://marketplace.eclipse.org/category/free-tagging/magik'/>
+        <tag id='1765' name='CST' url='http://marketplace.eclipse.org/category/free-tagging/cst'/>
+      </tags>
+      
+      <owner>MDT Team</owner>
+      <favorited>2</favorited>
+      <installstotal>101</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><strong>MDT Professional Edition</strong> is a flexible and intuitive Integrated Development Environment (IDE) for GE Smallworld™ GIS developers. MDT provides many useful features for developers writing in Magik language. This Eclipse based suite is a powerful combination of existing approaches and modern programming features like: advanced code visualization, edition and navigation, support for team work, extensibility using Eclipse plug-ins and integrated debugger. MDT proves to significantly accelerate the software development process.</p>
+<p>In version 3.0 we have added the support for <strong>MUnits 3</strong>, a first running version of <strong>UML 2 Modeler</strong> and <strong>Mylyn Context Connector</strong> for easier task management (all installed separately as plug-ins)</p>
+<p>Along with the release of version 3.2 we have introduced another dedicated plug-in, called <strong>MStyle</strong>. A tool for Quality Assurance performing automated code quality checks against a set of re-definable rules</p>
+<!--break-->
+<p>For more info about MDT features and functionalities check out the <a href="http://www.mdt.net/index.php/features.html">Features</a> page.</p>
+
+<p>We recommend going through our simple <a href="http://www.mdt.net/index.php/tutorials.html">Tutorial videos</a> in order to get familiar with MDT basic functionalities.</p>
+
+<p>In case of any questions or problems write at <a href="mailto:support@mdt.net">support@mdt.net</a>.</p>]]></shortdescription>
+      <body><![CDATA[<p><strong>MDT Professional Edition</strong> is a flexible and intuitive Integrated Development Environment (IDE) for GE Smallworld™ GIS developers. MDT provides many useful features for developers writing in Magik language. This Eclipse based suite is a powerful combination of existing approaches and modern programming features like: advanced code visualization, edition and navigation, support for team work, extensibility using Eclipse plug-ins and integrated debugger. MDT proves to significantly accelerate the software development process.</p>
+<p>In version 3.0 we have added the support for <strong>MUnits 3</strong>, a first running version of <strong>UML 2 Modeler</strong> and <strong>Mylyn Context Connector</strong> for easier task management (all installed separately as plug-ins)</p>
+<p>Along with the release of version 3.2 we have introduced another dedicated plug-in, called <strong>MStyle</strong>. A tool for Quality Assurance performing automated code quality checks against a set of re-definable rules</p>
+<!--break-->
+<p>For more info about MDT features and functionalities check out the <a href="http://www.mdt.net/index.php/features.html">Features</a> page.</p>
+
+<p>We recommend going through our simple <a href="http://www.mdt.net/index.php/tutorials.html">Tutorial videos</a> in order to get familiar with MDT basic functionalities.</p>
+
+<p>In case of any questions or problems write at <a href="mailto:support@mdt.net">support@mdt.net</a>.</p>]]></body>
+      <created>1300795065</created>
+      <changed>1363613437</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.mdt.net/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/110x80_mdt_0.png?itok=DYBsNIRU]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/magik_development_perspective.PNG?itok=U1lotOkJ]]></screenshot>
+      <version>3.3</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[ASTEC]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6, 3.7, 3.8, 4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.mdt.net/index.php/contact.html]]></supporturl>
+      <updateurl><![CDATA[http://www.mdt.net/pe/updates]]></updateurl>
+<ius>
+<iu>pl.com.astec.mdt</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

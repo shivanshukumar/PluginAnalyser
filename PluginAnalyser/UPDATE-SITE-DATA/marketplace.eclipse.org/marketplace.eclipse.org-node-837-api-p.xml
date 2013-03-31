@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="837" name="TimeSquare" url="http://marketplace.eclipse.org/content/timesquare">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+      </categories>
+      <tags>
+        <tag id='60' name='CCSL' url='http://marketplace.eclipse.org/category/free-tagging/ccsl'/>
+        <tag id='61' name='UML' url='http://marketplace.eclipse.org/category/free-tagging/uml'/>
+        <tag id='62' name='Papyrus' url='http://marketplace.eclipse.org/category/free-tagging/papyrus'/>
+        <tag id='63' name='Kermeta' url='http://marketplace.eclipse.org/category/free-tagging/kermeta'/>
+        <tag id='64' name='Modeling' url='http://marketplace.eclipse.org/category/free-tagging/modeling'/>
+      </tags>
+      
+      <owner>TimeSquare  </owner>
+      <favorited>8</favorited>
+      <installstotal>290</installstotal>
+      <installsrecent>8</installsrecent>
+      <shortdescription><![CDATA[<p>TimeSquare is a software environment for modeling and analyzing timed systems. It supports an implementation of the Time Model introduced in the MARTE UML profile, and its companion Clock Constraint Specification Language (CCSL).</p>
+<p>TimeSquare has four main functionalities:</p>
+<p>    * 1. interactive clock-related specifications, through dialog boxes,<br />
+    * 2. clock constraint checking,<br />
+    * 3. generation of a consistent temporal structure, using a Boolean solver,<br />
+    * 4. displaying and exploring waveforms, written in the IEEE standard VCD format.</p>
+<!--break-->]]></shortdescription>
+      <body><![CDATA[<p>TimeSquare is a software environment for modeling and analyzing timed systems. It supports an implementation of the Time Model introduced in the MARTE UML profile, and its companion Clock Constraint Specification Language (CCSL).</p>
+<p>TimeSquare has four main functionalities:</p>
+<p>    * 1. interactive clock-related specifications, through dialog boxes,<br />
+    * 2. clock constraint checking,<br />
+    * 3. generation of a consistent temporal structure, using a Boolean solver,<br />
+    * 4. displaying and exploring waveforms, written in the IEEE standard VCD format.</p>
+<!--break-->]]></body>
+      <created>1231533500</created>
+      <changed>1315379394</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://timesquare.inria.fr/]]></homepageurl>
+      <image><![CDATA[http://www-sop.inria.fr/aoste/dev/time_square/img/tsq2.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/eclipseRunPapyrusVCD.jpeg.jpg?itok=yNaw2Tp5]]></screenshot>
+      <version>1.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Aoste INRIA / I3S]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://timesquare.inria.fr/]]></supporturl>
+      <updateurl><![CDATA[http://timesquare.inria.fr/update_site/]]></updateurl>
+<ius>
+<iu>fr.inria.aoste.timesquare.feature.feature.group</iu>
+<iu>fr.inria.aoste.timesquare.core.feature.feature.group</iu>
+<iu>fr.inria.aoste.timesquare.backend.papyrusmodelanimator.feature.feature.group</iu>
+<iu>fr.inria.aoste.timesquare.backend.power.feature.feature.group</iu>
+<iu>fr.inria.aoste.timesquare.backend.vcd.feature.feature.group</iu>
+<iu>fr.inria.aoste.trace.feature.feature.group</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

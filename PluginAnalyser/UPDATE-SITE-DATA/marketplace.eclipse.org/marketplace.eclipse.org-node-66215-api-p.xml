@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="66215" name="Eclipse Jubula Database Drivers" url="http://marketplace.eclipse.org/content/eclipse-jubula-database-drivers">
+      <type>resource</type>
+      <categories>
+        <category id='36' name='Database Persistence' url='http://marketplace.eclipse.org/category/categories/database-persistence'/>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+      </categories>
+      <tags>
+        <tag id='2017' name='Database Driver' url='http://marketplace.eclipse.org/category/free-tagging/database-driver'/>
+        <tag id='2018' name='Database Connector' url='http://marketplace.eclipse.org/category/free-tagging/database-connector'/>
+        <tag id='2019' name='Jubula' url='http://marketplace.eclipse.org/category/free-tagging/jubula'/>
+      </tags>
+      
+      <owner>Achim Loerke</owner>
+      <favorited>3</favorited>
+      <installstotal>813</installstotal>
+      <installsrecent>25</installsrecent>
+      <shortdescription><![CDATA[<p>If you are using the <a href="http://marketplace.eclipse.org/content/jubula-automated-functional-testing-feature">Jubula feature</a> within Eclipse or are are working with the "Eclipse for Testers" package you have to install this feature to make additional database drivers and configuration settings available.</p>
+<p>In addition to the standard H2 embedded database you can use Oracle, MySQL and Postgres with this feature.</p>
+<p>Please be aware that BREDEX tests Jubula and GUIdancer with Oracle. The drivers for MySQL and Postgres are added with the status 'unsupported'. We have performed a basic test with Jubula and GUIdancer against these databases and know that there are customers that use them, but we do not include them in our regression tests.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>If you are using the <a href="http://marketplace.eclipse.org/content/jubula-automated-functional-testing-feature">Jubula feature</a> within Eclipse or are are working with the "Eclipse for Testers" package you have to install this feature to make additional database drivers and configuration settings available.</p>
+<p>In addition to the standard H2 embedded database you can use Oracle, MySQL and Postgres with this feature.</p>
+<p>Please be aware that BREDEX tests Jubula and GUIdancer with Oracle. The drivers for MySQL and Postgres are added with the status 'unsupported'. We have performed a basic test with Jubula and GUIdancer against these databases and know that there are customers that use them, but we do not include them in our regression tests.</p>
+]]></body>
+      <created>1308210462</created>
+      <changed>1354261019</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.eclipse.org/jubula]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/jubula_logo_edited-2.png?itok=_5yz6bUm]]></image>
+      <version>2.0</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[BREDEX GmbH]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.7-4.3]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eclipse.org/jubula/support.php]]></supporturl>
+      <updateurl><![CDATA[http://update.bredex.de/jubula]]></updateurl>
+<ius>
+<iu>com.bredexsw.jubula.client.core.driver.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

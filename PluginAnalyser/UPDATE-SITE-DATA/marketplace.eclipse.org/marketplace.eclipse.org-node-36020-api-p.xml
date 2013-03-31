@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="36020" name="Zest" url="http://marketplace.eclipse.org/content/zest">
+      <type>resource</type>
+      <categories>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='8' name='Graphics' url='http://marketplace.eclipse.org/taxonomy/term/8'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+      </categories>
+      <tags>
+        <tag id='47' name='visualization' url='http://marketplace.eclipse.org/category/free-tagging/visualization'/>
+        <tag id='651' name='GEF' url='http://marketplace.eclipse.org/category/free-tagging/gef'/>
+        <tag id='1060' name='graphviz' url='http://marketplace.eclipse.org/category/free-tagging/graphviz'/>
+        <tag id='1061' name='dot' url='http://marketplace.eclipse.org/category/free-tagging/dot'/>
+        <tag id='1062' name='zest' url='http://marketplace.eclipse.org/category/free-tagging/zest'/>
+      </tags>
+      
+      <owner>Fabian Steeg</owner>
+      <favorited>5</favorited>
+      <installstotal>2559</installstotal>
+      <installsrecent>159</installsrecent>
+      <shortdescription><![CDATA[<p>Zest - The Eclipse Visualization Toolkit, 2.0.0-SNAPSHOT for Juno (3.8 and 4.2)</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Zest - The Eclipse Visualization Toolkit, 2.0.0-SNAPSHOT for Juno (3.8 and 4.2)</p>
+]]></body>
+      <created>1299076773</created>
+      <changed>1344627209</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://wiki.eclipse.org/Zest]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/zest-logo-shadow-plain-small.png?itok=sqZBMOOf]]></image>
+      <version>2.0.0-SNAPSHOT</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Eclipse Foundation]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[Juno (3.8, 4.2)]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eclipse.org/forums/index.php?t=thread&frm_id=81]]></supporturl>
+      <updateurl><![CDATA[https://hudson.eclipse.org/hudson/job/gef-zest-integration/lastSuccessfulBuild/artifact/targetPlatform/]]></updateurl>
+<ius>
+<iu>org.eclipse.zest.sdk</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

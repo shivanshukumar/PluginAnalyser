@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="44695" name="Mylyn-PHPReport integration" url="http://marketplace.eclipse.org/content/mylyn-phpreport-integration">
+      <type>resource</type>
+      <categories>
+        <category id='38' name='Mylyn Connectors' url='http://marketplace.eclipse.org/category/categories/mylyn-connectors'/>
+      </categories>
+            
+      <owner>Alexandre Mazari</owner>
+      <favorited>0</favorited>
+      <installstotal>155</installstotal>
+      <installsrecent>8</installsrecent>
+      <shortdescription><![CDATA[]]></shortdescription>
+      <body><![CDATA[]]></body>
+      <created>1302529162</created>
+      <changed>1302634744</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://billetvert.blogspot.com/2011/04/push-your-eclipse-mylyn-activity-to.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>0.1</version>
+      <license>GPL</license>
+      <companyname><![CDATA[Igalia]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://people.igalia.com/amazari/mylyn-phpreport-latest/]]></updateurl>
+<ius>
+<iu>com.igalia.phpreport.mylyn.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

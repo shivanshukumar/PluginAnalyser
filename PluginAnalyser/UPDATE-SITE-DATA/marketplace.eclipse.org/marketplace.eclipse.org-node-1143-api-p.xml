@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1143" name="My RSE Extensions" url="http://marketplace.eclipse.org/content/my-rse-extensions">
+      <type>resource</type>
+      <categories>
+        <category id='12' name='Network' url='http://marketplace.eclipse.org/taxonomy/term/12'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='620' name='RSE' url='http://marketplace.eclipse.org/category/free-tagging/rse'/>
+      </tags>
+      
+      <owner>Tsoi Yat Shing</owner>
+      <favorited>1</favorited>
+      <installstotal>2385</installstotal>
+      <installsrecent>79</installsrecent>
+      <shortdescription><![CDATA[<p>My RSE Extensions add some features to the Remote System Explorer.</p>
+<p>This Eclipse plugin adds the following features to the Remote System Explorer:</p>
+<ul><li>Allow you to open a file by providing a file path.</li>
+<li>Allow you to save the paths of the selected files/directories to the clipboard.</li>
+<li>Allow you to backup/restore a file/directory.</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>My RSE Extensions add some features to the Remote System Explorer.</p>
+<p>This Eclipse plugin adds the following features to the Remote System Explorer:</p>
+<ul><li>Allow you to open a file by providing a file path.</li>
+<li>Allow you to save the paths of the selected files/directories to the clipboard.</li>
+<li>Allow you to backup/restore a file/directory.</li>
+</ul>]]></body>
+      <created>1265979834</created>
+      <changed>1273230171</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://myrseextensions.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://sourceforge.net/dbimage.php?id=251041]]></image>
+      <version>1.0.2</version>
+      <license>EPL</license>
+      <companyname><![CDATA[N/A]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/myrseextensions/support]]></supporturl>
+      <updateurl><![CDATA[http://myrseextensions.sourceforge.net/update/]]></updateurl>
+<ius>
+<iu>tsoiyatshing.myrseextensions.feature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="44303" name="TextEditor Grep" url="http://marketplace.eclipse.org/content/texteditor-grep">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='146' name='editor' url='http://marketplace.eclipse.org/category/free-tagging/editor'/>
+        <tag id='721' name='grep' url='http://marketplace.eclipse.org/category/free-tagging/grep'/>
+      </tags>
+      
+      <owner>Fabrizio Iannetti</owner>
+      <favorited>6</favorited>
+      <installstotal>411</installstotal>
+      <installsrecent>4</installsrecent>
+      <shortdescription><![CDATA[<p>This plugin contributes a view that allows to enter a regular expression, used to produce a grep-like output (shown in the view) of the current text editor.</p>
+<p>The view shows the original line numbers and when the cursor is moved in the grep output, the cursor in the text editor is moved to the matching line.</p>
+<p>Any editor that subclasses the AbstractTextEditor should be supported.</p>
+<p>The current version can optionally link to the current editor (press the double link icon in the view), in this mode the grep is refreshed whenever an editor is activated.</p>
+<p>Key bindings:<br />
+* when in an editor press CTRL+ALT+G (CMD+ALT+G) to open/activate the grep view<br />
+* TAB to move from grep result to grep text box and vice versa<br />
+* CTRL+F in grep result opens an incremental search box</p>
+<p>inside the search box:<br />
+ * ESC closes the find bar, arrow down searches forwards, arrow up backwards<br />
+ * search is always case insensitive and incremental (find as you type)</p>
+<p>History:</p>
+<p>1.0.1 : fixed highlight of matches in grep view.</p>
+<p>1.0.2 : added 2 options (selectable via the view's menu):<br />
+ * case sensitivity during grep<br />
+ * show multiple matches on a line, the grep operation normally finds only the first match on a line, if this option is set, the regular expression is searched again on the same line </p>
+<p>1.1.0 : added simple find bar in grep view:<br />
+ * can be activated via the edit->find menu or ctrl+F (implements standard find)<br />
+ * opens a firefox-like search bar at the bottom of the view</p>
+<p>1.2.0 : added history for grep expressions:<br />
+ * the grep expression box is now a combo listing the previously used ones<br />
+ * Edit history menu option in the view drop down menu to edit the history</p>
+<p>1.2.1 : much faster for long files with many matches:<br />
+ * changed Document implementation.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This plugin contributes a view that allows to enter a regular expression, used to produce a grep-like output (shown in the view) of the current text editor.</p>
+<p>The view shows the original line numbers and when the cursor is moved in the grep output, the cursor in the text editor is moved to the matching line.</p>
+<p>Any editor that subclasses the AbstractTextEditor should be supported.</p>
+<p>The current version can optionally link to the current editor (press the double link icon in the view), in this mode the grep is refreshed whenever an editor is activated.</p>
+<p>Key bindings:<br />
+* when in an editor press CTRL+ALT+G (CMD+ALT+G) to open/activate the grep view<br />
+* TAB to move from grep result to grep text box and vice versa<br />
+* CTRL+F in grep result opens an incremental search box</p>
+<p>inside the search box:<br />
+ * ESC closes the find bar, arrow down searches forwards, arrow up backwards<br />
+ * search is always case insensitive and incremental (find as you type)</p>
+<p>History:</p>
+<p>1.0.1 : fixed highlight of matches in grep view.</p>
+<p>1.0.2 : added 2 options (selectable via the view's menu):<br />
+ * case sensitivity during grep<br />
+ * show multiple matches on a line, the grep operation normally finds only the first match on a line, if this option is set, the regular expression is searched again on the same line </p>
+<p>1.1.0 : added simple find bar in grep view:<br />
+ * can be activated via the edit->find menu or ctrl+F (implements standard find)<br />
+ * opens a firefox-like search bar at the bottom of the view</p>
+<p>1.2.0 : added history for grep expressions:<br />
+ * the grep expression box is now a combo listing the previously used ones<br />
+ * Edit history menu option in the view drop down menu to edit the history</p>
+<p>1.2.1 : much faster for long files with many matches:<br />
+ * changed Document implementation.</p>
+]]></body>
+      <created>1302362279</created>
+      <changed>1343245476</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://github.com/fabrizioiannetti/fabeclipse]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/textedgrep-findbar.png?itok=RDYmnK3T]]></screenshot>
+      <version>1.2.1</version>
+      <license>Other</license>
+      <companyname><![CDATA[Fabrizio Iannetti]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5 3.6 3.7]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://github.com/fabrizioiannetti/fabeclipse/raw/master/com.github.fabeclipse.update]]></updateurl>
+<ius>
+<iu>com.github.fabeclipse.textedgrep_feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

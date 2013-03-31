@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1220" name="Bndtools" url="http://marketplace.eclipse.org/content/bndtools">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='162' name='osgi' url='http://marketplace.eclipse.org/category/free-tagging/osgi'/>
+        <tag id='727' name='bnd' url='http://marketplace.eclipse.org/category/free-tagging/bnd'/>
+      </tags>
+      
+      <owner>Neil Bartlett</owner>
+      <favorited>9</favorited>
+      <installstotal>6136</installstotal>
+      <installsrecent>447</installsrecent>
+      <shortdescription><![CDATA[<p>Bndtools is an Eclipse-based development environment for OSGi bundles and applications that focuses on:</p>
+<ul><li>ease of use and a rapid development lifecycle;</li>
+<li>encouraging OSGi best practices;</li>
+<li>producing accurate bundle metadata to maximise re-usability;</li>
+<li>integration with offline build tools and users of other IDEs.</li>
+</ul><p>Bndtools is based on <a href="http://www.aqute.biz/Code/Bnd">Bnd</a>, the powerful bundle tool created by Peter Kriens.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Bndtools is an Eclipse-based development environment for OSGi bundles and applications that focuses on:</p>
+<ul><li>ease of use and a rapid development lifecycle;</li>
+<li>encouraging OSGi best practices;</li>
+<li>producing accurate bundle metadata to maximise re-usability;</li>
+<li>integration with offline build tools and users of other IDEs.</li>
+</ul><p>Bndtools is based on <a href="http://www.aqute.biz/Code/Bnd">Bnd</a>, the powerful bundle tool created by Peter Kriens.</p>
+]]></body>
+      <created>1274238677</created>
+      <changed>1359984841</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://bndtools.org/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/bndtools_text%2Blogo_110x80.png?itok=Hmo-mCCd]]></image>
+      <version>2.0.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Neil Bartlett and others]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5+]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://bndtools-updates.s3.amazonaws.com/]]></updateurl>
+<ius>
+<iu>bndtools.main.feature</iu>
+<iu>bndtools.jarviewer.feature</iu>
+<iu>bndtools.ace.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="659" name="HiberObjects Import DB Pro" url="http://marketplace.eclipse.org/content/hiberobjects-import-db-pro">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='36' name='Database Persistence' url='http://marketplace.eclipse.org/category/categories/database-persistence'/>
+      </categories>
+      <tags>
+        <tag id='61' name='UML' url='http://marketplace.eclipse.org/category/free-tagging/uml'/>
+        <tag id='667' name='jpa' url='http://marketplace.eclipse.org/category/free-tagging/jpa'/>
+        <tag id='757' name='hibernate' url='http://marketplace.eclipse.org/category/free-tagging/hibernate'/>
+        <tag id='1448' name='reverse engineer database' url='http://marketplace.eclipse.org/category/free-tagging/reverse-engineer-database'/>
+      </tags>
+      
+      <owner>Lars Høidahl</owner>
+      <favorited>1</favorited>
+      <installstotal>210</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Do you need to map an existing database to JPA or Hibernate classes?</p>
+<p>Do you need to configure how to map tables and columns to classes, attributes and associations?</p>
+<p>Instead of mapping every table and column explicitly, use HiberObjects to automate this repetitive task.</p>
+<p>For instance:</p>
+<ul><li>Map tables name like my_table to Java classes like MyTable.</li>
+<li>Map foreign keys to Java attributes or associations.</li>
+<li>Map columns that are referenced by name to associations. This is useful in databases that don't have foreign keys, but use naming conventions to join tables.</li>
+<li>Map N-M relations to many-to-many associations.</li>
+</ul><p>A Groovy script gives full control of all aspects how to map database tables and columns to Java. This script can be reused for other similar databases.</p>
+<p>The script is configured in a wizard where it is easy to make modifications and preview the results.</p>
+<p>The generated classes can for instance be used by GWT or Grails applications.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Do you need to map an existing database to JPA or Hibernate classes?</p>
+<p>Do you need to configure how to map tables and columns to classes, attributes and associations?</p>
+<p>Instead of mapping every table and column explicitly, use HiberObjects to automate this repetitive task.</p>
+<p>For instance:</p>
+<ul><li>Map tables name like my_table to Java classes like MyTable.</li>
+<li>Map foreign keys to Java attributes or associations.</li>
+<li>Map columns that are referenced by name to associations. This is useful in databases that don't have foreign keys, but use naming conventions to join tables.</li>
+<li>Map N-M relations to many-to-many associations.</li>
+</ul><p>A Groovy script gives full control of all aspects how to map database tables and columns to Java. This script can be reused for other similar databases.</p>
+<p>The script is configured in a wizard where it is easy to make modifications and preview the results.</p>
+<p>The generated classes can for instance be used by GWT or Grails applications.</p>
+]]></body>
+      <created>1205263130</created>
+      <changed>1291759358</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://objectgeneration.com/eclipse/10-Import%20from%20Database.html]]></homepageurl>
+      <image><![CDATA[http://objectgeneration.com/logo-symbol.gif]]></image>
+      <version>2.1.7</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Object Generation AB]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5, 3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://objectgeneration.com/forum/]]></supporturl>
+      <updateurl><![CDATA[http://objectgeneration.com/update]]></updateurl>
+<ius>
+<iu>com.objectgeneration.hiberobjects_feature</iu>
+<iu>com.objectgeneration.hiberobjects_pro_feature</iu>
+<iu>com.objectgeneration.hibernate_feature</iu>
+<iu>com.objectgeneration.groovy_feature</iu>
+<iu>com.objectgeneration.hsqldb_feature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

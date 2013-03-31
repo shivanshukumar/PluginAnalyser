@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="174444" name="Bracketeer for C/C++ (CDT)" url="http://marketplace.eclipse.org/content/bracketeer-cc-cdt">
+      <type>resource</type>
+      <categories>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='57' name='c' url='http://marketplace.eclipse.org/category/free-tagging/c'/>
+        <tag id='515' name='highlight' url='http://marketplace.eclipse.org/category/free-tagging/highlight'/>
+        <tag id='1266' name='CDT' url='http://marketplace.eclipse.org/category/free-tagging/cdt'/>
+        <tag id='1452' name='comment' url='http://marketplace.eclipse.org/category/free-tagging/comment'/>
+        <tag id='2388' name='bracket' url='http://marketplace.eclipse.org/category/free-tagging/bracket'/>
+      </tags>
+      
+      <owner>Gil Barash</owner>
+      <favorited>15</favorited>
+      <installstotal>7655</installstotal>
+      <installsrecent>472</installsrecent>
+      <shortdescription><![CDATA[<p>Bracketeer will show you all you need to know about the brackets in your code (highlight brackets, show information about closing brackets, etc...)</p>
+<p>This solution will extend the C/C++ (CDT) editor.</p>
+<p><strong>Features:</strong></p>
+<ul><li>Coloring the brackets surrounding the cursor & brackets which have no match.</li>
+<li>Showing automatic comments on brackets closing: loops, functions, etc...</li>
+<li>Highly customizable.</li>
+</ul><p><strong>Examples:</strong></p>
+<ul><li>Hints:</li>
+<p>Have you ever found yourself mesmerized by this block of code:<br /><code><br />
+        break;<br />
+      }<br />
+    }<br />
+  }<br />
+}<br /></code></p>
+<p>Would life be easier if it looked like this?<br /><code><br />
+        break;<br />
+      } // if(a==1)<br />
+    } // switch(b)<br />
+  } //void foo(a,b,c)<br />
+} // MyClass<br /></code></p>
+<li>Surrounding brackets:</li>
+<p>And what about this?<br /><code><br />
+if(((a == 1) && (b == 2)) || ((c == 3) && ((d == 4) || (e == 5))))<br /></code></p>
+<p>Once you put the cursor somewhere in this statement, the brackets surrounding your cursor would be highlighted.</p>
+</ul><p><strong>Current supported editors:</strong></p>
+<ul><li><a href="http://marketplace.eclipse.org/content/bracketeer-java-jdt">JDT (java)</a></li>
+<li>CDT (C/C++) </li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>Bracketeer will show you all you need to know about the brackets in your code (highlight brackets, show information about closing brackets, etc...)</p>
+<p>This solution will extend the C/C++ (CDT) editor.</p>
+<p><strong>Features:</strong></p>
+<ul><li>Coloring the brackets surrounding the cursor & brackets which have no match.</li>
+<li>Showing automatic comments on brackets closing: loops, functions, etc...</li>
+<li>Highly customizable.</li>
+</ul><p><strong>Examples:</strong></p>
+<ul><li>Hints:</li>
+<p>Have you ever found yourself mesmerized by this block of code:<br /><code><br />
+        break;<br />
+      }<br />
+    }<br />
+  }<br />
+}<br /></code></p>
+<p>Would life be easier if it looked like this?<br /><code><br />
+        break;<br />
+      } // if(a==1)<br />
+    } // switch(b)<br />
+  } //void foo(a,b,c)<br />
+} // MyClass<br /></code></p>
+<li>Surrounding brackets:</li>
+<p>And what about this?<br /><code><br />
+if(((a == 1) && (b == 2)) || ((c == 3) && ((d == 4) || (e == 5))))<br /></code></p>
+<p>Once you put the cursor somewhere in this statement, the brackets surrounding your cursor would be highlighted.</p>
+</ul><p><strong>Current supported editors:</strong></p>
+<ul><li><a href="http://marketplace.eclipse.org/content/bracketeer-java-jdt">JDT (java)</a></li>
+<li>CDT (C/C++) </li>
+</ul>]]></body>
+      <created>1324651016</created>
+      <changed>1345973082</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://github.com/chookapp/Bracketeer]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/bigScr.jpg?itok=grgLMU3T]]></screenshot>
+      <version></version>
+      <license>EPL</license>
+      <companyname><![CDATA[Chookapp]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.7, 3.7.1, 4.2]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://chookapp.github.com/ChookappUpdateSite/]]></updateurl>
+<ius>
+<iu>com.chookapp.org.Bracketeer</iu>
+<iu>com.chookapp.org.BracketeerCDT</iu>
+</ius>
+    </node>
+    </marketplace>
+    

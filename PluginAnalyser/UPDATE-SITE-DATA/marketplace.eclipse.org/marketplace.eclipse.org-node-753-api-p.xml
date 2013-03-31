@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="753" name="Treaty " url="http://marketplace.eclipse.org/content/treaty">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+      <tags>
+        <tag id='1046' name='designbycontract' url='http://marketplace.eclipse.org/category/free-tagging/designbycontract'/>
+        <tag id='1047' name='runtime testing' url='http://marketplace.eclipse.org/category/free-tagging/runtime-testing'/>
+        <tag id='1048' name='contracts' url='http://marketplace.eclipse.org/category/free-tagging/contracts'/>
+        <tag id='1049' name='semantics' url='http://marketplace.eclipse.org/category/free-tagging/semantics'/>
+        <tag id='1050' name='circleofblame' url='http://marketplace.eclipse.org/category/free-tagging/circleofblame'/>
+      </tags>
+      
+      <owner>jens.dietrich</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Treaty is a pluggable contract framework for Eclipse and similar dynamic component models. Contracts describe the responsibilities of collaborating components. Treaty supports contracts between arbitrary resource types (e.g., Java interfaces and Java classes, DTDs and XML instances ..), complex contracts (using boolean logic), and contracts that are only instantiated when components start collaborating (e.g., when a component requests a service or resource from another component via the extension registry). Semantic and quality of service contracts are supported through the use of a modified version of JUnit - test cases are written against interfaces, and instantiated at runtime using dependency injection and then executed. </p>
+<p>It turns out that by using contracts many problems that occur in complex, plugin-based applications can be prevented. See<br /><a href="http://www-ist.massey.ac.nz/jbdietrich/treaty/treatyout/index.html">http://www-ist.massey.ac.nz/jbdietrich/treaty/treatyout/index.html</a> for the results of a case study where we annotated existing Eclipse extension points with contracts, and then verified Eclipse against those contracts. </p>
+<p>Treaty includes several views to visualise contracts, and a simple same application consisting of several plugins.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Treaty is a pluggable contract framework for Eclipse and similar dynamic component models. Contracts describe the responsibilities of collaborating components. Treaty supports contracts between arbitrary resource types (e.g., Java interfaces and Java classes, DTDs and XML instances ..), complex contracts (using boolean logic), and contracts that are only instantiated when components start collaborating (e.g., when a component requests a service or resource from another component via the extension registry). Semantic and quality of service contracts are supported through the use of a modified version of JUnit - test cases are written against interfaces, and instantiated at runtime using dependency injection and then executed. </p>
+<p>It turns out that by using contracts many problems that occur in complex, plugin-based applications can be prevented. See<br /><a href="http://www-ist.massey.ac.nz/jbdietrich/treaty/treatyout/index.html">http://www-ist.massey.ac.nz/jbdietrich/treaty/treatyout/index.html</a> for the results of a case study where we annotated existing Eclipse extension points with contracts, and then verified Eclipse against those contracts. </p>
+<p>Treaty includes several views to visualise contracts, and a simple same application consisting of several plugins.</p>
+]]></body>
+      <created>1219847268</created>
+      <changed>1279748625</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/treaty/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0.22</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Jens Dietrich, Massey University NZ]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://treaty.googlecode.com/svn/trunk/treaty-eclipse-updatesite/site.xml]]></updateurl>
+    </node>
+    </marketplace>
+    

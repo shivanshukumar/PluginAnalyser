@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="28122" name="Mongrel" url="http://marketplace.eclipse.org/content/mongrel">
+      <type>resource</type>
+      <categories>
+        <category id='1' name='Application Server' url='http://marketplace.eclipse.org/taxonomy/term/1'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='248' name='tomcatplugin' url='http://marketplace.eclipse.org/category/free-tagging/tomcatplugin'/>
+        <tag id='328' name='plugin' url='http://marketplace.eclipse.org/category/free-tagging/plugin'/>
+        <tag id='845' name='tomcat' url='http://marketplace.eclipse.org/category/free-tagging/tomcat'/>
+      </tags>
+      
+      <owner>Jochen Wiedmann</owner>
+      <favorited>6</favorited>
+      <installstotal>11767</installstotal>
+      <installsrecent>536</installsrecent>
+      <shortdescription><![CDATA[<p>Mongrel is an Eclipse plugin for running Tomcat (including the ability to debug Tomcat applications, or Tomcat itself) from within Eclipse. This is basically the former Sysdeo Tomcat Launchner Plugin, with added support for Tomcat 7. As the Sysdeo plugin seems to be no longer supported (at least, I received no<br />
+response for several mails over the last years) and the original code was available under the BSD license, I grabbed the existing stuff and created an ASL 2.0 licensed project on SourceForge.net, which I intend to maintain, at least for my own<br />
+purposes.</p>
+<p>Features:<br />
+- Starting, stopping and restarting Tomcat upto 3.x-7.x<br />
+- Registering Tomcat process to Eclipse debugger<br />
+- Creating a WAR project (wizard can update server.xml file)<br />
+- Adding Java Projects to Tomcat classpath<br />
+- Setting Tomcat JVM parameters, classpath and bootclasspath<br />
+- Exporting a Tomcat project to a WAR File<br />
+- Successor of the Sysdeo Tomcat Launcher Plugin</p>
+<p>If you are interested in the plugin, the update site is:</p>
+<p>  <a href="http://mongrel.sf.net/updates">http://mongrel.sf.net/updates</a></p>
+<p>If you are interested in the projects source code, visit</p>
+<p>  <a href="https://sourceforge.net/scm/?type=git&group_id=395088">https://sourceforge.net/scm/?type=git&group_id=395088</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Mongrel is an Eclipse plugin for running Tomcat (including the ability to debug Tomcat applications, or Tomcat itself) from within Eclipse. This is basically the former Sysdeo Tomcat Launchner Plugin, with added support for Tomcat 7. As the Sysdeo plugin seems to be no longer supported (at least, I received no<br />
+response for several mails over the last years) and the original code was available under the BSD license, I grabbed the existing stuff and created an ASL 2.0 licensed project on SourceForge.net, which I intend to maintain, at least for my own<br />
+purposes.</p>
+<p>Features:<br />
+- Starting, stopping and restarting Tomcat upto 3.x-7.x<br />
+- Registering Tomcat process to Eclipse debugger<br />
+- Creating a WAR project (wizard can update server.xml file)<br />
+- Adding Java Projects to Tomcat classpath<br />
+- Setting Tomcat JVM parameters, classpath and bootclasspath<br />
+- Exporting a Tomcat project to a WAR File<br />
+- Successor of the Sysdeo Tomcat Launcher Plugin</p>
+<p>If you are interested in the plugin, the update site is:</p>
+<p>  <a href="http://mongrel.sf.net/updates">http://mongrel.sf.net/updates</a></p>
+<p>If you are interested in the projects source code, visit</p>
+<p>  <a href="https://sourceforge.net/scm/?type=git&group_id=395088">https://sourceforge.net/scm/?type=git&group_id=395088</a></p>
+]]></body>
+      <created>1295256737</created>
+      <changed>1295625419</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://mongrel.sf.net]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0.0</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[Jochen Wiedmann]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[https://sourceforge.net/projects/mongrel/support]]></supporturl>
+      <updateurl><![CDATA[http://mongrel.sf.net/updates]]></updateurl>
+<ius>
+<iu>net.sf.mongrel.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

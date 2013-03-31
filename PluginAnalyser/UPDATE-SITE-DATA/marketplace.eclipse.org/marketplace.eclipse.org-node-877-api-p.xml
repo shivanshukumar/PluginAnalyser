@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="877" name="RCER - SAP R/3 Connector for Eclipse (RCP) Applications" url="http://marketplace.eclipse.org/content/rcer-sap-r3-connector-eclipse-rcp-applications">
+      <type>resource</type>
+      <categories>
+        <category id='1' name='Application Server' url='http://marketplace.eclipse.org/taxonomy/term/1'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+            
+      <owner>eclipse</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>RCER is a set of plug-ins that facilitates the task of connecting an Eclipse-based application to a SAP R/3 system. More specifically, RCER contains the following ready-to-use functions:<br />
+- import wizard to generate the plug-ins and fragments required to wrap up the SAP Java Connector (JCo)<br />
+- connection data management, including storage and a preferences page to edit the connection data<br />
+- login dialog and connection status display<br />
+- handling of multiple connections simultaneously<br />
+- generic wrapper for RFC_READ_TABLE to access database tables and views comfortably<br />
+- RFC mapping language that facilitates the tedious task of writing classes to perform remote function calls (RFC)</p>
+<p>Note that although the name contains RCP (the second 'R'), RCER is also usable for IDE plug-ins. </p>
+]]></shortdescription>
+      <body><![CDATA[<p>RCER is a set of plug-ins that facilitates the task of connecting an Eclipse-based application to a SAP R/3 system. More specifically, RCER contains the following ready-to-use functions:<br />
+- import wizard to generate the plug-ins and fragments required to wrap up the SAP Java Connector (JCo)<br />
+- connection data management, including storage and a preferences page to edit the connection data<br />
+- login dialog and connection status display<br />
+- handling of multiple connections simultaneously<br />
+- generic wrapper for RFC_READ_TABLE to access database tables and views comfortably<br />
+- RFC mapping language that facilitates the tedious task of writing classes to perform remote function calls (RFC)</p>
+<p>Note that although the name contains RCP (the second 'R'), RCER is also usable for IDE plug-ins. </p>
+]]></body>
+      <created>1236008647</created>
+      <changed>1260219049</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://rcer.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version></version>
+      <license>EPL</license>
+      <companyname><![CDATA[none]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/tracker/?group_id=244035]]></supporturl>
+      <updateurl><![CDATA[http://rcer.sourceforge.net/update-site/]]></updateurl>
+    </node>
+    </marketplace>
+    

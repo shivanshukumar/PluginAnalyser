@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="5677" name="Architexa for Eclipse 3.x" url="http://marketplace.eclipse.org/content/architexa">
+      <type>resource</type>
+      <categories>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='40' name='Search' url='http://marketplace.eclipse.org/category/categories/search'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+      </categories>
+      <tags>
+        <tag id='395' name='UML sketches' url='http://marketplace.eclipse.org/category/free-tagging/uml-sketches'/>
+        <tag id='479' name='Fast UML' url='http://marketplace.eclipse.org/category/free-tagging/fast-uml'/>
+        <tag id='634' name='code exploration' url='http://marketplace.eclipse.org/category/free-tagging/code-exploration'/>
+        <tag id='939' name='code maintenance' url='http://marketplace.eclipse.org/category/free-tagging/code-maintenance'/>
+        <tag id='1076' name='code discovery' url='http://marketplace.eclipse.org/category/free-tagging/code-discovery'/>
+      </tags>
+      
+      <owner>Vineet Sinha</owner>
+      <favorited>20</favorited>
+      <installstotal>1387</installstotal>
+      <installsrecent>36</installsrecent>
+      <shortdescription><![CDATA[<p><strong>Too Much Code?</strong> Architexa makes it easy for you to examine your code!</p>
+<p>The tool suite helps build useful diagrams to help developers <strong>Quickly Understand Code</strong> and <strong>Document In Seconds</strong>. Unlike typical UML/modeling tools, Architexa is designed to be code-centric - around your needs. Developers can easily:</p>
+<p>
+- Make sense of your code with quick visualizations of key components.<br /><br />
+- Take advantage of powerful interactive exploration of the diagrams.<br /><br />
+- Document code architecture and share discussions with team members.<br /><br />
+Watch a <a href="http://www.architexa.com/learn-more/videos/intro/video">short 3-minute overview video</a> for an introduction to the powerful capabilities offered.</p>
+<p>Get high level overviews quickly using <b>Layered Diagrams</b>:<img src="http://www.architexa.com/images/homepage_lay_clip.png" /></p>
+<p>Examine various code relationships in one place with <b>Class Diagrams</b>:<img src="http://www.architexa.com/images/homepage_class_clip.png" /></p>
+<p> Understand code behavior and logic using <b>Sequence Diagrams</b>:<img src="http://www.architexa.com/images/homepage_seq_clip.png" /></p>
+<p>Download Architexa to <a href="http://www.architexa.com/start/index">easily understand and document your code</a> with a free, 30 day trial.</p>
+]]></shortdescription>
+      <body><![CDATA[<p><strong>Too Much Code?</strong> Architexa makes it easy for you to examine your code!</p>
+<p>The tool suite helps build useful diagrams to help developers <strong>Quickly Understand Code</strong> and <strong>Document In Seconds</strong>. Unlike typical UML/modeling tools, Architexa is designed to be code-centric - around your needs. Developers can easily:</p>
+<p>
+- Make sense of your code with quick visualizations of key components.<br /><br />
+- Take advantage of powerful interactive exploration of the diagrams.<br /><br />
+- Document code architecture and share discussions with team members.<br /><br />
+Watch a <a href="http://www.architexa.com/learn-more/videos/intro/video">short 3-minute overview video</a> for an introduction to the powerful capabilities offered.</p>
+<p>Get high level overviews quickly using <b>Layered Diagrams</b>:<img src="http://www.architexa.com/images/homepage_lay_clip.png" /></p>
+<p>Examine various code relationships in one place with <b>Class Diagrams</b>:<img src="http://www.architexa.com/images/homepage_class_clip.png" /></p>
+<p> Understand code behavior and logic using <b>Sequence Diagrams</b>:<img src="http://www.architexa.com/images/homepage_seq_clip.png" /></p>
+<p>Download Architexa to <a href="http://www.architexa.com/start/index">easily understand and document your code</a> with a free, 30 day trial.</p>
+]]></body>
+      <created>1280554553</created>
+      <changed>1361286264</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.architexa.com]]></homepageurl>
+      <image><![CDATA[http://www.architexa.com/images/logo-icon.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/class.png?itok=R4NxFoqG]]></screenshot>
+      <version>(v2.5)</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[Architexa]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2-3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://www.architexa.com/support/index]]></supporturl>
+      <updateurl><![CDATA[http://update.architexa.com/client]]></updateurl>
+<ius>
+<iu>com.architexa.rse</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="854" name="Firedoclipse" url="http://marketplace.eclipse.org/content/firedoclipse">
+      <type>resource</type>
+      <categories>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+      </categories>
+            
+      <owner>maxg</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Integrates Eclipse and Firefox to help you access full, browsable online documentation for entities in Java, JavaScript, HTML, and Ant.</p>
+<p>Hold down a (customizable) modifier key and click a keyword in Eclipse to bring up the documentation web page for that keyword in a Firefox tab. The page can be browsed, searched, etc. with all the usual Firefox features.</p>
+<p>Requires Firefox 3+. Visit the plugin home page to install the Firedoclipse extension in Firefox.</p>
+<p>Firedoclipse is free software under the X11 (aka MIT) License.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Integrates Eclipse and Firefox to help you access full, browsable online documentation for entities in Java, JavaScript, HTML, and Ant.</p>
+<p>Hold down a (customizable) modifier key and click a keyword in Eclipse to bring up the documentation web page for that keyword in a Firefox tab. The page can be browsed, searched, etc. with all the usual Firefox features.</p>
+<p>Requires Firefox 3+. Visit the plugin home page to install the Firedoclipse extension in Firefox.</p>
+<p>Firedoclipse is free software under the X11 (aka MIT) License.</p>
+]]></body>
+      <created>1233673955</created>
+      <changed>1259779167</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://people.csail.mit.edu/maxg/uid/firedoclipse]]></homepageurl>
+      <image><![CDATA[http://people.csail.mit.edu/maxg/uid/firedoclipse/firedoclipse.png]]></image>
+      <version>1.0.4</version>
+      <license>Other</license>
+      <companyname><![CDATA[MIT CSAIL UID Group]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.4+]]></eclipseversion>
+      <supporturl><![CDATA[http://people.csail.mit.edu/maxg/uid/firedoclipse/faq]]></supporturl>
+      <updateurl><![CDATA[http://people.csail.mit.edu/maxg/uid/firedoclipse]]></updateurl>
+    </node>
+    </marketplace>
+    

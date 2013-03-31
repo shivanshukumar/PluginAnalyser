@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="88" name="JDepend4Eclipse" url="http://marketplace.eclipse.org/content/jdepend4eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='128' name='jdepend' url='http://marketplace.eclipse.org/category/free-tagging/jdepend'/>
+        <tag id='129' name='dependencies' url='http://marketplace.eclipse.org/category/free-tagging/dependencies'/>
+        <tag id='130' name='packages' url='http://marketplace.eclipse.org/category/free-tagging/packages'/>
+        <tag id='131' name='quality' url='http://marketplace.eclipse.org/category/free-tagging/quality'/>
+      </tags>
+      
+      <owner>Andrey Loskutov</owner>
+      <favorited>37</favorited>
+      <installstotal>4309</installstotal>
+      <installsrecent>230</installsrecent>
+      <shortdescription><![CDATA[<p>JDepend4Eclipse plugin for Eclipse is a wrapper for running JDepend from within Eclipse.</p>
+<p>- What is JDepend? (from <a href="http://www.clarkware.com">www.clarkware.com</a>):</p>
+<p>JDepend traverses a set of Java class and source file directories and generates design quality metrics for each Java package. JDepend allows you to automatically measure the quality of a design in terms of its extensibility, reusability, and maintainability to effectively manage and control package dependencies. Package dependency cycles are reported along with the hierarchical paths of packages participating in package dependency cycles.</p>
+<p>The tool helps greatly by refactoring old & huge source code repositories with cyclic package dependencies between packages.</p>
+<p>My other plugins on EPIC:</p>
+<ul><li><a href="http://marketplace.eclipse.org/content/anyedit-tools">AnyEdit Tools</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/bytecode-outline">Bytecode Outline</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/extended-vs-presentation">Extended VS Presentation</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/filesync">FileSync</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/data-hierarchy">Data Hierarchy</a>
+</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>JDepend4Eclipse plugin for Eclipse is a wrapper for running JDepend from within Eclipse.</p>
+<p>- What is JDepend? (from <a href="http://www.clarkware.com">www.clarkware.com</a>):</p>
+<p>JDepend traverses a set of Java class and source file directories and generates design quality metrics for each Java package. JDepend allows you to automatically measure the quality of a design in terms of its extensibility, reusability, and maintainability to effectively manage and control package dependencies. Package dependency cycles are reported along with the hierarchical paths of packages participating in package dependency cycles.</p>
+<p>The tool helps greatly by refactoring old & huge source code repositories with cyclic package dependencies between packages.</p>
+<p>My other plugins on EPIC:</p>
+<ul><li><a href="http://marketplace.eclipse.org/content/anyedit-tools">AnyEdit Tools</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/bytecode-outline">Bytecode Outline</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/extended-vs-presentation">Extended VS Presentation</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/filesync">FileSync</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/data-hierarchy">Data Hierarchy</a>
+</li>
+</ul>]]></body>
+      <created>1077153032</created>
+      <changed>1312720216</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://andrei.gmxhome.de/jdepend4eclipse/index.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/jdepend_med_1.gif?itok=WPjFiAlJ]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/jdepend_perspective.gif?itok=6GvozPJM]]></screenshot>
+      <version>1.2.3</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Andrey Loskutov]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7]]></eclipseversion>
+      <supporturl><![CDATA[mailto:loskutov@gmx.de]]></supporturl>
+      <updateurl><![CDATA[http://andrei.gmxhome.de/eclipse/]]></updateurl>
+<ius>
+<iu>JDepend4Eclipse</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

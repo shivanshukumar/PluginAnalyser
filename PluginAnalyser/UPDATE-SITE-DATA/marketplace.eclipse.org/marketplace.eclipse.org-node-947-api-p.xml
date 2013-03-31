@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="947" name="WinRun4J Launcher for Eclipse" url="http://marketplace.eclipse.org/content/winrun4j-launcher-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+      </categories>
+            
+      <owner>poidasmith</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The eclipse plugin for WinRun4J provides a deep level of integration of the launcher within the Eclipse IDE. It has the following features:</p>
+<p>    * Launch any Java Application with WinRun4J (via right-click or launch configuration)<br />
+    * Export your Java Application as a single Windows Executable (with necessary jars embedded)<br />
+    * Provides improved windows integration from Eclipse (eg. JNI access to Registry). </p>
+]]></shortdescription>
+      <body><![CDATA[<p>The eclipse plugin for WinRun4J provides a deep level of integration of the launcher within the Eclipse IDE. It has the following features:</p>
+<p>    * Launch any Java Application with WinRun4J (via right-click or launch configuration)<br />
+    * Export your Java Application as a single Windows Executable (with necessary jars embedded)<br />
+    * Provides improved windows integration from Eclipse (eg. JNI access to Registry). </p>
+]]></body>
+      <created>1244467938</created>
+      <changed>1259779258</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://winrun4j.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://winrun4j.sourceforge.net/WinRun4J-logobig.gif]]></image>
+      <version>0.1.0</version>
+      <license>Free CPL</license>
+      <companyname><![CDATA[]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://winrun4j.sourceforge.net/eclipseplugin.html]]></supporturl>
+      <updateurl><![CDATA[http://winrun4j.sourceforge.net/]]></updateurl>
+    </node>
+    </marketplace>
+    

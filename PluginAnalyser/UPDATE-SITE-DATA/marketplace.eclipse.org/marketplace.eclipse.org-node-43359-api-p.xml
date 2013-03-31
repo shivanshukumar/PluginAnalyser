@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="43359" name="Cinematic Designer (Indigo version)" url="http://marketplace.eclipse.org/content/cinematic-designer-indigo-version">
+      <type>resource</type>
+      <categories>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='1971' name='Modeling' url='http://marketplace.eclipse.org/category/categories/modeling'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+      <tags>
+        <tag id='64' name='Modeling' url='http://marketplace.eclipse.org/category/free-tagging/modeling'/>
+        <tag id='195' name='DSL' url='http://marketplace.eclipse.org/category/free-tagging/dsl'/>
+        <tag id='305' name='ui' url='http://marketplace.eclipse.org/category/free-tagging/ui'/>
+        <tag id='364' name='network' url='http://marketplace.eclipse.org/category/free-tagging/network'/>
+        <tag id='836' name='GUI' url='http://marketplace.eclipse.org/category/free-tagging/gui'/>
+      </tags>
+      
+      <owner>Obeo  </owner>
+      <favorited>3</favorited>
+      <installstotal>178</installstotal>
+      <installsrecent>18</installsrecent>
+      <shortdescription><![CDATA[<p><b>Cinematic Designer</b> allows the modeling of UI navigation by focusing on the description of Scenario, Flow, Transitions, Actions / Events, and the content of each screens with Widgets.</p>
+<p>
+This module uses a dedicated Cinematic metamodel provided by Obeo Network community and it implements the following diagrams:</p>
+<ul><li>Package Diagram overview</li>
+<li>Flow Diagram</li>
+<li>UI Structure</li>
+<li>Lays to activate View Containers or Flow Events</li>
+</ul><p><a href="http://marketplace.obeonetwork.com/module/cinematic"><br /><img src="http://dl.dropbox.com/u/22228046/Marketplace/cinematic/Checkout%20Flow%20Diagram.jpg" width="500px" /><br /></a>
+</p>
+<!--break--><p>
+This modeling tool can be used in conjunction with other designers: </p>
+<ul><li><a href="http://marketplace.obeonetwork.com/module/soa">SOA Designer</a> for services</li>
+<li><a href="http://marketplace.obeonetwork.com/module/entity">Entity Designer</a> for domain model</li>
+<li><a href="http://marketplace.obeonetwork.com/module/graal">Graal Designer</a> for UI interaction (entry specifications from business specifiers)</li>
+</ul><p>
+You can also generates your application with your own generators or apply this ready-to-use webapp generator: <a href="http://marketplace.obeonetwork.com/module/javaee-generators">Acceleo JavaEE Generators</a>.
+</p>
+<p>This designer is free (open-source with EPL license).<br />
+You can easily modify it with <a href="http://www.obeodesigner.com">Obeo Designer</a> <strong>to adapt each diagram to your needs</strong> or combine it to your own DSL. To start customizing this module, just <a href="http://www.obeodesigner.com/download">download</a> a free trial version of the architect edition and import the <a href="http://marketplace.obeonetwork.com/module/cinematic">source code</a> of Cinematic Designer from Github.</p>
+<p>More details  <a href="http://marketplace.obeonetwork.com/module/cinematic">Here.</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p><b>Cinematic Designer</b> allows the modeling of UI navigation by focusing on the description of Scenario, Flow, Transitions, Actions / Events, and the content of each screens with Widgets.</p>
+<p>
+This module uses a dedicated Cinematic metamodel provided by Obeo Network community and it implements the following diagrams:</p>
+<ul><li>Package Diagram overview</li>
+<li>Flow Diagram</li>
+<li>UI Structure</li>
+<li>Lays to activate View Containers or Flow Events</li>
+</ul><p><a href="http://marketplace.obeonetwork.com/module/cinematic"><br /><img src="http://dl.dropbox.com/u/22228046/Marketplace/cinematic/Checkout%20Flow%20Diagram.jpg" width="500px" /><br /></a>
+</p>
+<!--break--><p>
+This modeling tool can be used in conjunction with other designers: </p>
+<ul><li><a href="http://marketplace.obeonetwork.com/module/soa">SOA Designer</a> for services</li>
+<li><a href="http://marketplace.obeonetwork.com/module/entity">Entity Designer</a> for domain model</li>
+<li><a href="http://marketplace.obeonetwork.com/module/graal">Graal Designer</a> for UI interaction (entry specifications from business specifiers)</li>
+</ul><p>
+You can also generates your application with your own generators or apply this ready-to-use webapp generator: <a href="http://marketplace.obeonetwork.com/module/javaee-generators">Acceleo JavaEE Generators</a>.
+</p>
+<p>This designer is free (open-source with EPL license).<br />
+You can easily modify it with <a href="http://www.obeodesigner.com">Obeo Designer</a> <strong>to adapt each diagram to your needs</strong> or combine it to your own DSL. To start customizing this module, just <a href="http://www.obeodesigner.com/download">download</a> a free trial version of the architect edition and import the <a href="http://marketplace.obeonetwork.com/module/cinematic">source code</a> of Cinematic Designer from Github.</p>
+<p>More details  <a href="http://marketplace.obeonetwork.com/module/cinematic">Here.</a></p>
+]]></body>
+      <created>1302084169</created>
+      <changed>1352121043</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://marketplace.obeonetwork.com/module/cinematic]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_ON-110x80_9.png?itok=AOxJK9kr]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Checkout%20Flow%20Diagram_small.jpg?itok=l8By5yN2]]></screenshot>
+      <version>3.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Obeo Network]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7.2]]></eclipseversion>
+      <supporturl><![CDATA[http://marketplace.obeonetwork.com/module/cinematic#community]]></supporturl>
+      <updateurl><![CDATA[http://marketplace.obeonetwork.com/updates/od6/]]></updateurl>
+<ius>
+<iu>org.obeonetwork.dsl.cinematic.design.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="100055" name="mybatiseditor" url="http://marketplace.eclipse.org/content/mybatiseditor">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='1964' name='Application Development Frameworks' url='http://marketplace.eclipse.org/category/categories/application-development-frameworks'/>
+        <category id='1966' name='Programming Languages' url='http://marketplace.eclipse.org/category/categories/programming-languages'/>
+        <category id='1970' name='Database Development' url='http://marketplace.eclipse.org/category/categories/database-development'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='159' name='ibatis' url='http://marketplace.eclipse.org/category/free-tagging/ibatis'/>
+        <tag id='521' name='xml' url='http://marketplace.eclipse.org/category/free-tagging/xml'/>
+        <tag id='2160' name='mybatis' url='http://marketplace.eclipse.org/category/free-tagging/mybatis'/>
+      </tags>
+      
+      <owner>Peter Hendriks</owner>
+      <favorited>3</favorited>
+      <installstotal>4599</installstotal>
+      <installsrecent>407</installsrecent>
+      <shortdescription><![CDATA[<p>MyBatis (formerly known as iBatis) is a popular database access framework. MyBatis can be configured using XML configuration files. The EclipseLabs MyBatis Editor plug-in adds extra support for this in Eclipse.</p>
+<p>MyBatis Editor requires no configuration, adds no memory- or build-time overhead, and assumes all SQL Mapper configuration files in the same Eclipse project are related. It recognizes both iBatis 2 and MyBatis configuration syntax. It provides:</p>
+<ul><li>Inclusion of MyBatis/iBatis DTD files in the Eclipse XML catalog for faster validation.</li>
+<li>Ctrl-click/F3 navigation in XML files to declaring elements, such as includes, resultmaps and parametermaps.</li>
+<li>A separate view to show the resolved declaration of a selected MyBatis element, especially useful when using a lot of includes.</li>
+<li>Navigate from a Java Mapper interface to the corresponding XML.</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>MyBatis (formerly known as iBatis) is a popular database access framework. MyBatis can be configured using XML configuration files. The EclipseLabs MyBatis Editor plug-in adds extra support for this in Eclipse.</p>
+<p>MyBatis Editor requires no configuration, adds no memory- or build-time overhead, and assumes all SQL Mapper configuration files in the same Eclipse project are related. It recognizes both iBatis 2 and MyBatis configuration syntax. It provides:</p>
+<ul><li>Inclusion of MyBatis/iBatis DTD files in the Eclipse XML catalog for faster validation.</li>
+<li>Ctrl-click/F3 navigation in XML files to declaring elements, such as includes, resultmaps and parametermaps.</li>
+<li>A separate view to show the resolved declaration of a selected MyBatis element, especially useful when using a lot of includes.</li>
+<li>Navigate from a Java Mapper interface to the corresponding XML.</li>
+</ul>]]></body>
+      <created>1312734671</created>
+      <changed>1341604258</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/a/eclipselabs.org/p/mybatiseditor/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/mybatisdeclaration.png?itok=9zb_vAHg]]></screenshot>
+      <version>1.1.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[EclipseLabs MyBatis Editor project]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6-4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/a/eclipselabs.org/p/mybatiseditor/]]></supporturl>
+      <updateurl><![CDATA[http://mybatiseditor.eclipselabs.org.codespot.com/git/org.eclipselabs.mybatiseditor.updatesite]]></updateurl>
+<ius>
+<iu>org.eclipselabs.mybatiseditor.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

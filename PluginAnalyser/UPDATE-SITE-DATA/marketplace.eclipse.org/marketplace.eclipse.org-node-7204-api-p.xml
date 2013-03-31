@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="7204" name="jACT-R Core" url="http://marketplace.eclipse.org/content/jact-r-core">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+      </categories>
+      <tags>
+        <tag id='1122' name='Artificial intelligence' url='http://marketplace.eclipse.org/category/free-tagging/artificial-intelligence'/>
+      </tags>
+      
+      <owner>Anthony Harrison</owner>
+      <favorited>0</favorited>
+      <installstotal>89</installstotal>
+      <installsrecent>2</installsrecent>
+      <shortdescription><![CDATA[<p>Java native implementation of the ACT-R (Anderson, 2007) cognitive architecture and support code. The IDE integration is available as a separate "product."</p>
+<p>For most recent versions, check the update sites "update/stable" and "update/unstable"</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Java native implementation of the ACT-R (Anderson, 2007) cognitive architecture and support code. The IDE integration is available as a separate "product."</p>
+<p>For most recent versions, check the update sites "update/stable" and "update/unstable"</p>
+]]></body>
+      <created>1282095340</created>
+      <changed>1329330270</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://jactr.org/]]></homepageurl>
+      <image><![CDATA[http://jactr.org/files/logo.gif]]></image>
+      <version></version>
+      <license>LGPL</license>
+      <companyname><![CDATA[jactr.org]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://jactr.org/]]></supporturl>
+      <updateurl><![CDATA[http://jactr.org/update/release/org.jactr.update]]></updateurl>
+<ius>
+<iu>org.commonreality.core.feature</iu>
+<iu>org.jactr.core.feature</iu>
+<iu>org.jactr.io.feature</iu>
+<iu>org.jactr.support.feature</iu>
+<iu>org.jactr.tools.feature</iu>
+<iu>org.jactr.modules.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

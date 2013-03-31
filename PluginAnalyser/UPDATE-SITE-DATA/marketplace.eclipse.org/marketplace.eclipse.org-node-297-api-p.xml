@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="297" name="Canoo Eclipse Visual Editor Plug-in for UltraLightClient" url="http://marketplace.eclipse.org/content/canoo-eclipse-visual-editor-plug-ultralightclient">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+            
+      <owner>Canno AG</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Build Rich Internet Applications visually using the ULC Visual Editor for Eclipse. ULC Visual Editor is a drag-and-drop user interface designer for UltraLightClient (<a href="http://www.canoo.com/ulc/">http://www.canoo.com/ulc/</a>) and Eclipse 3.1. </p>
+<p>UltraLightClient is a library to build J2EE compliant Rich Internet Applications (RIA) in Java. ULC handles the split between client and server, rendering the UI with a Swing-based presentation engine at runtime. Attach event listeners to the server-side peer components, thereby creating a scalable client/server application as easily as a stand-alone Swing application.</p>
+<p>The ULC Editor is based on the Eclipse Visual Editor framework and supports the same functions as the corresponding editor for Swing. The editor supports most ULC widgets, layouts, direct editing of text and title properties, and events on ULC widgets. Use the new visual class wizard to easily create reusable ULC user interface components and application - an added benefit for rapid prototyping and large-scale GUI design.</p>
+<p>Features:</p>
+<p>- Palette of ULC Containers, Components and Menus</p>
+<p>- WSYWIG Editor</p>
+<p>- Drag & Drop design of ULC GUIs</p>
+<p>- Create nested Composites and Panels</p>
+<p>- View and manipulate the Java Bean composition hierarchy</p>
+<p>- Edit properties and layout attributes through the property editor</p>
+<p>- Code generation similar to Eclipse Visual Editor</p>
+<p>- Multi-Level Undo and Redo</p>
+<p>- Seamless Eclipse Integration</p>
+<p>- Eclipse-Based Help and Tutorial</p>
+<p>- Look and feel and Operation similar to Eclipse Visual Editor</p>
+<p>- Receive immediate feedback on user interface and application using the ULC Application wizard or Integration plug-in</p>
+<p>- Reverse engineering of hand-written code in a given format</p>
+<p>System Requirements:</p>
+<p>- Eclipse 3.1 (<a href="http://www.eclipse.org">http://www.eclipse.org</a>)</p>
+<p>- Eclipse Visual Editor 1.1.0.1 (<a href="http://www.eclipse.org/vep">http://www.eclipse.org/vep</a>)</p>
+<p>- Canoo ULC 6.1.1 (<a href="http://www.canoo.com/ulc/">http://www.canoo.com/ulc/</a>)</p>
+<p>- JRE 1.3.1 or higher</p>
+<p>Platforms:</p>
+<p>- Windows</p>
+<p>- Linux</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Build Rich Internet Applications visually using the ULC Visual Editor for Eclipse. ULC Visual Editor is a drag-and-drop user interface designer for UltraLightClient (<a href="http://www.canoo.com/ulc/">http://www.canoo.com/ulc/</a>) and Eclipse 3.1. </p>
+<p>UltraLightClient is a library to build J2EE compliant Rich Internet Applications (RIA) in Java. ULC handles the split between client and server, rendering the UI with a Swing-based presentation engine at runtime. Attach event listeners to the server-side peer components, thereby creating a scalable client/server application as easily as a stand-alone Swing application.</p>
+<p>The ULC Editor is based on the Eclipse Visual Editor framework and supports the same functions as the corresponding editor for Swing. The editor supports most ULC widgets, layouts, direct editing of text and title properties, and events on ULC widgets. Use the new visual class wizard to easily create reusable ULC user interface components and application - an added benefit for rapid prototyping and large-scale GUI design.</p>
+<p>Features:</p>
+<p>- Palette of ULC Containers, Components and Menus</p>
+<p>- WSYWIG Editor</p>
+<p>- Drag & Drop design of ULC GUIs</p>
+<p>- Create nested Composites and Panels</p>
+<p>- View and manipulate the Java Bean composition hierarchy</p>
+<p>- Edit properties and layout attributes through the property editor</p>
+<p>- Code generation similar to Eclipse Visual Editor</p>
+<p>- Multi-Level Undo and Redo</p>
+<p>- Seamless Eclipse Integration</p>
+<p>- Eclipse-Based Help and Tutorial</p>
+<p>- Look and feel and Operation similar to Eclipse Visual Editor</p>
+<p>- Receive immediate feedback on user interface and application using the ULC Application wizard or Integration plug-in</p>
+<p>- Reverse engineering of hand-written code in a given format</p>
+<p>System Requirements:</p>
+<p>- Eclipse 3.1 (<a href="http://www.eclipse.org">http://www.eclipse.org</a>)</p>
+<p>- Eclipse Visual Editor 1.1.0.1 (<a href="http://www.eclipse.org/vep">http://www.eclipse.org/vep</a>)</p>
+<p>- Canoo ULC 6.1.1 (<a href="http://www.canoo.com/ulc/">http://www.canoo.com/ulc/</a>)</p>
+<p>- JRE 1.3.1 or higher</p>
+<p>Platforms:</p>
+<p>- Windows</p>
+<p>- Linux</p>
+]]></body>
+      <created>1163086438</created>
+      <changed>1273675186</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.canoo.com/ulc/products/ulcvisualeditor.html]]></homepageurl>
+      <image><![CDATA[http://www.canoo.com/ulc/images/fullscreenshot.gif]]></image>
+      <version>5.1.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Canoo Engineering AG]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.1]]></eclipseversion>
+      <supporturl><![CDATA[http://www.canoo.com/ulc/developerzone/mailinglists.html]]></supporturl>
+      <updateurl><![CDATA[http://update.canoo.com/eclipse]]></updateurl>
+    </node>
+    </marketplace>
+    

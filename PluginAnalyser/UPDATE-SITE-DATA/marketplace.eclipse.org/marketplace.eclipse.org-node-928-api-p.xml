@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="928" name="Data Hierarchy" url="http://marketplace.eclipse.org/content/data-hierarchy">
+      <type>resource</type>
+      <categories>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='47' name='visualization' url='http://marketplace.eclipse.org/category/free-tagging/visualization'/>
+        <tag id='95' name='code review' url='http://marketplace.eclipse.org/category/free-tagging/code-review'/>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='123' name='data hierarchy' url='http://marketplace.eclipse.org/category/free-tagging/data-hierarchy'/>
+        <tag id='242' name='code analysis' url='http://marketplace.eclipse.org/category/free-tagging/code-analysis'/>
+      </tags>
+      
+      <owner>Andrey Loskutov</owner>
+      <favorited>23</favorited>
+      <installstotal>1057</installstotal>
+      <installsrecent>39</installsrecent>
+      <shortdescription><![CDATA[<p>The question I very often have is: which objects (recursively) are loaded in memory if a particular object is created?</p>
+<p>If you know the Call Hierarchy plugin, you will find the Data Hierarchy very similar. It searches selected Java classes for declared fields, and starting with the found "Data" it recursively looks for fields which are declared on found classes ("Hierarchy"). At the end you can see kind of "Data Hierarchy" tree.</p>
+<!--break--><p>Please note, that the plugin can not detect reflection based data, data inside non-generic collections, data which is stored as "Object" etc. </p>
+<p>This is a very rough estimation of the real data hierarchy, but works perfectly for a quick walk over the data structures/dependencies for code reviews. Note: for a full and precise analysis you have to use profiler!</p>
+<p>Additionally plugin allows to restrict the search for static fields only.</p>
+<p><b>My other plugins on EPIC</b>:</p>
+<ul><li><a href="http://marketplace.eclipse.org/content/anyedit-tools">AnyEdit Tools</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/bytecode-outline">Bytecode Outline</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/extended-vs-presentation">Extended VS Presentation</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/filesync">FileSync</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/jdepend4eclipse">JDepend4Eclipse</a>
+</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>The question I very often have is: which objects (recursively) are loaded in memory if a particular object is created?</p>
+<p>If you know the Call Hierarchy plugin, you will find the Data Hierarchy very similar. It searches selected Java classes for declared fields, and starting with the found "Data" it recursively looks for fields which are declared on found classes ("Hierarchy"). At the end you can see kind of "Data Hierarchy" tree.</p>
+<!--break--><p>Please note, that the plugin can not detect reflection based data, data inside non-generic collections, data which is stored as "Object" etc. </p>
+<p>This is a very rough estimation of the real data hierarchy, but works perfectly for a quick walk over the data structures/dependencies for code reviews. Note: for a full and precise analysis you have to use profiler!</p>
+<p>Additionally plugin allows to restrict the search for static fields only.</p>
+<p><b>My other plugins on EPIC</b>:</p>
+<ul><li><a href="http://marketplace.eclipse.org/content/anyedit-tools">AnyEdit Tools</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/bytecode-outline">Bytecode Outline</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/extended-vs-presentation">Extended VS Presentation</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/filesync">FileSync</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/jdepend4eclipse">JDepend4Eclipse</a>
+</li>
+</ul>]]></body>
+      <created>1241705217</created>
+      <changed>1312720615</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://andrei.gmxhome.de/datahierarchy/index.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/data_hierarchy_med.gif?itok=7zHikkeF]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/data_hierarchy_view.png?itok=8hMnnTOG]]></screenshot>
+      <version>1.0.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Andrey Loskutov]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5, 3.6, 3.7]]></eclipseversion>
+      <supporturl><![CDATA[mailto:loskutov@gmx.de]]></supporturl>
+      <updateurl><![CDATA[http://andrei.gmxhome.de/eclipse/]]></updateurl>
+<ius>
+<iu>DataHierarchy</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

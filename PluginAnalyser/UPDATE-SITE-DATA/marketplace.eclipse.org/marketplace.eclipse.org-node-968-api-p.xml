@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="968" name="Eclipse Source Viewer Service Plugin" url="http://marketplace.eclipse.org/content/eclipse-source-viewer-service-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>ivotripunovic</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Modern Java IDEs such as Eclipse feature state-of-the-art Java source code viewing capabilities which third-party programs (such as other standalone software development tools) may want to exploit. This project aims to address this lack of external editor controllability for one particular IDE by specifying the requirements for a new plugin for the targetted IDE. Developed for CollectionSpy (<a href="<a href="http://www.collectionspy.com">www.collectionspy.com</a>">http://www.collectionspy.com">www.collectionspy.com</a></a>), but it is not dependent on it.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Modern Java IDEs such as Eclipse feature state-of-the-art Java source code viewing capabilities which third-party programs (such as other standalone software development tools) may want to exploit. This project aims to address this lack of external editor controllability for one particular IDE by specifying the requirements for a new plugin for the targetted IDE. Developed for CollectionSpy (<a href="<a href="http://www.collectionspy.com">www.collectionspy.com</a>">http://www.collectionspy.com">www.collectionspy.com</a></a>), but it is not dependent on it.</p>
+]]></body>
+      <created>1246973440</created>
+      <changed>1259779276</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://sourceforge.net/projects/eclipsvsplugin]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1</version>
+      <license>Free GPL</license>
+      <companyname><![CDATA[Software Pearls]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3, 3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://]]></supporturl>
+      <updateurl><![CDATA[http://eclipsvsplugin.sourceforge.net/update-site]]></updateurl>
+    </node>
+    </marketplace>
+    

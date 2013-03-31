@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="33051" name="Euklas" url="http://marketplace.eclipse.org/content/euklas">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='1620' name='JavaScript; Static Code Analysis; Code Analyzer; Code Integration; Copy&amp;Paste;' url='http://marketplace.eclipse.org/category/free-tagging/javascript-static-code-analysis-code-analyzer-code-integration-copypaste'/>
+      </tags>
+      
+      <owner>cdoerner</owner>
+      <favorited>0</favorited>
+      <installstotal>387</installstotal>
+      <installsrecent>8</installsrecent>
+      <shortdescription><![CDATA[<p>Euklas (Eclipse Users' Keystrokes Lessened by Attaching from Samples) enhances Eclipse's JavaScript editor by highlighting errors in the source code, providing quick fixes, and explanations. The provided support is especially useful for errors that have been introduced by copying and pasting example code.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Euklas (Eclipse Users' Keystrokes Lessened by Attaching from Samples) enhances Eclipse's JavaScript editor by highlighting errors in the source code, providing quick fixes, and explanations. The provided support is especially useful for errors that have been introduced by copying and pasting example code.</p>
+]]></body>
+      <created>1297742376</created>
+      <changed>1297799293</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.cs.cmu.edu/~euklas/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/euklas.png?itok=IJG1hUEd]]></screenshot>
+      <version>0.5.7</version>
+      <license>BSD</license>
+      <companyname><![CDATA[Carnegie Mellon University]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.6.1]]></eclipseversion>
+      <supporturl><![CDATA[http://www.cs.cmu.edu/~euklas]]></supporturl>
+      <updateurl><![CDATA[http://www.cs.cmu.edu/~euklas]]></updateurl>
+<ius>
+<iu>edu.cmu.cs.euklas.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

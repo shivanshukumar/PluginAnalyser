@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="161997" name="GraniteDS Eclipse Tools" url="http://marketplace.eclipse.org/content/graniteds-eclipse-tools">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='1964' name='Application Development Frameworks' url='http://marketplace.eclipse.org/category/categories/application-development-frameworks'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='165' name='code generation' url='http://marketplace.eclipse.org/category/free-tagging/code-generation'/>
+        <tag id='535' name='Actionscript' url='http://marketplace.eclipse.org/category/free-tagging/actionscript'/>
+        <tag id='747' name='flex' url='http://marketplace.eclipse.org/category/free-tagging/flex'/>
+        <tag id='1634' name='graniteds' url='http://marketplace.eclipse.org/category/free-tagging/graniteds'/>
+      </tags>
+      
+      <owner>Franck Wolff</owner>
+      <favorited>2</favorited>
+      <installstotal>889</installstotal>
+      <installsrecent>40</installsrecent>
+      <shortdescription><![CDATA[<p>The GraniteDS Eclipse Tools are a set of plugins that help working with Flex / Java EE applications and the GraniteDS framework.<br />
+It currently features two plugins :<br />
+- The gas3 code generator that allows easy generation of ActionScript 3 classes from a Java data model and services<br />
+- The project wizard that allows easy creation of new projects using the GraniteDS framework and a complete Flex / Java technology stack</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The GraniteDS Eclipse Tools are a set of plugins that help working with Flex / Java EE applications and the GraniteDS framework.<br />
+It currently features two plugins :<br />
+- The gas3 code generator that allows easy generation of ActionScript 3 classes from a Java data model and services<br />
+- The project wizard that allows easy creation of new projects using the GraniteDS framework and a complete Flex / Java technology stack</p>
+]]></body>
+      <created>1322695200</created>
+      <changed>1322783126</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.graniteds.org]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/graniteds_logo_eclipsemarketplace.png?itok=Zju3ngnV]]></image>
+      <version>2.3.0.GA</version>
+      <license>LGPL</license>
+      <companyname><![CDATA[Granite Data Services]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4+]]></eclipseversion>
+      <supporturl><![CDATA[https://groups.google.com/forum/#!forum/graniteds]]></supporturl>
+      <updateurl><![CDATA[http://www.graniteds.org/public/update-site/]]></updateurl>
+<ius>
+<iu>org.granite.builder</iu>
+<iu>org.granite.wizard</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

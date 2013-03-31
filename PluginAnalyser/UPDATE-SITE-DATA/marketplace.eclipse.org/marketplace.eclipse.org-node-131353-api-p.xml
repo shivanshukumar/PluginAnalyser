@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="131353" name="IBM® WebSphere® Application Server V8.5 Liberty Profile Developer Tools" url="http://marketplace.eclipse.org/content/ibm-websphere-application-server-v85-liberty-profile-developer-tools">
+      <type>resource</type>
+      <categories>
+        <category id='1964' name='Application Development Frameworks' url='http://marketplace.eclipse.org/category/categories/application-development-frameworks'/>
+        <category id='1' name='Application Server' url='http://marketplace.eclipse.org/taxonomy/term/1'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='1974' name='Mobile and Device Development' url='http://marketplace.eclipse.org/category/categories/mobile-and-device-development'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='21' name='Web Services' url='http://marketplace.eclipse.org/taxonomy/term/21'/>
+        <category id='1967' name='Web, XML, Java EE and OSGi Enterprise Development' url='http://marketplace.eclipse.org/category/categories/web-xml-java-ee-and-osgi-enterprise-development'/>
+      </categories>
+      <tags>
+        <tag id='2255' name='WebSphere' url='http://marketplace.eclipse.org/category/free-tagging/websphere'/>
+        <tag id='2257' name='Liberty' url='http://marketplace.eclipse.org/category/free-tagging/liberty'/>
+        <tag id='2235' name='ibm' url='http://marketplace.eclipse.org/category/free-tagging/ibm'/>
+        <tag id='422' name='java ee' url='http://marketplace.eclipse.org/category/free-tagging/java-ee'/>
+        <tag id='162' name='osgi' url='http://marketplace.eclipse.org/category/free-tagging/osgi'/>
+      </tags>
+      
+      <owner>Eric D. Peters</owner>
+      <favorited>15</favorited>
+      <installstotal>7465</installstotal>
+      <installsrecent>589</installsrecent>
+      <shortdescription><![CDATA[<p>*V8.5.1* You can use IBM® WebSphere® Application Server V8.5 Liberty Profile Developer Tools to build and deploy Java™ EE, OSGi, and Web 2.0 applications to the WebSphere Application Server V8.5 Liberty Profile. Tools are provided for managing the server, publishing to a local or remote server, and controlling incremental publishing. Also included is Rich Page Editor, a WYSIWYG editor that you can use to edit HTML files, add Dojo and jQuery widgets to HTML pages, and create and edit web pages for mobile devices. For more information about installing this version of the tools, see <a href="https://www.ibm.com/developerworks/mydeveloperworks/blogs/wasdev/entry/download?lang=en">https://www.ibm.com/developerworks/mydeveloperworks/blogs/wasdev/entry/d...</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>*V8.5.1* You can use IBM® WebSphere® Application Server V8.5 Liberty Profile Developer Tools to build and deploy Java™ EE, OSGi, and Web 2.0 applications to the WebSphere Application Server V8.5 Liberty Profile. Tools are provided for managing the server, publishing to a local or remote server, and controlling incremental publishing. Also included is Rich Page Editor, a WYSIWYG editor that you can use to edit HTML files, add Dojo and jQuery widgets to HTML pages, and create and edit web pages for mobile devices. For more information about installing this version of the tools, see <a href="https://www.ibm.com/developerworks/mydeveloperworks/blogs/wasdev/entry/download?lang=en">https://www.ibm.com/developerworks/mydeveloperworks/blogs/wasdev/entry/d...</a></p>
+]]></body>
+      <created>1317930274</created>
+      <changed>1360946286</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://wasdev.net]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/was.png?itok=PindZyNN]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/liberty.png?itok=Vv9h2PIA]]></screenshot>
+      <version>V8.5.1</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[IBM]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6.2, 3.7.2, 3.8.1, 4.2.1]]></eclipseversion>
+      <supporturl><![CDATA[http://www.ibm.com/developerworks/forums/forum.jspa?forumID=2666]]></supporturl>
+      <updateurl><![CDATA[http://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/V8.5/]]></updateurl>
+<ius>
+<iu>com.ibm.websphere.wdt.server.tools</iu>
+<iu>com.ibm.osgi.wdt.feature</iu>
+<iu>com.ibm.wdt.webtools.top.feature</iu>
+<iu>com.ibm.wdt.webtools.dojo.library.distributions.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

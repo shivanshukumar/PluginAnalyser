@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="907" name="AWS Toolkit for Eclipse" url="http://marketplace.eclipse.org/content/aws-toolkit-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+      </categories>
+            
+      <owner>Amazon Web Services</owner>
+      <favorited>7</favorited>
+      <installstotal>6586</installstotal>
+      <installsrecent>519</installsrecent>
+      <shortdescription><![CDATA[<p>The AWS Toolkit for Eclipse is an open source plug-in for the Eclipse Java IDE that makes it easier for developers to develop, debug, and deploy Java applications using Amazon Web Services. With the AWS Toolkit for Eclipse, you"ll be able to get started faster and be more productive when building AWS applications.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The AWS Toolkit for Eclipse is an open source plug-in for the Eclipse Java IDE that makes it easier for developers to develop, debug, and deploy Java applications using Amazon Web Services. With the AWS Toolkit for Eclipse, you"ll be able to get started faster and be more productive when building AWS applications.</p>
+]]></body>
+      <created>1239023351</created>
+      <changed>1357328035</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://aws.amazon.com/eclipse]]></homepageurl>
+      <image><![CDATA[http://media.amazonwebservices.com/aws-box-logo-for-eclipse.jpg]]></image>
+      <version>2.0</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[Amazon Web Services]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5 and later]]></eclipseversion>
+      <supporturl><![CDATA[http://developer.amazonwebservices.com/connect/forum.jspa?forumID=53]]></supporturl>
+      <updateurl><![CDATA[http://aws.amazon.com/eclipse/site.xml]]></updateurl>
+<ius>
+<iu>com.amazonaws.eclipse.sdk.feature</iu>
+<iu>com.amazonaws.eclipse.elasticbeanstalk.feature</iu>
+<iu>com.amazonaws.eclipse.ec2</iu>
+<iu>com.amazonaws.eclipse.datatools.enablement.simpledb.feature</iu>
+<iu>com.amazonaws.eclipse.dynamodb.feature</iu>
+<iu>com.amazonaws.eclipse.rds.feature</iu>
+<iu>com.amazonaws.eclipse.cloudformation.feature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="993" name="XLr8 Editor" url="http://marketplace.eclipse.org/content/xlr8-editor">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+      <tags>
+        <tag id='1102' name='Universe Unidata XLr8 U2' url='http://marketplace.eclipse.org/category/free-tagging/universe-unidata-xlr8-u2'/>
+      </tags>
+      
+      <owner>daverch</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This editor works for IBM databases Universe and Unidata versions 9.6 or higher and 6.0 version or higher.  In addition to be able to edit program files, you can edit data files as well.  Any version control system such as CVS, Subversion, Perforce or GIT can be used for you source code control.  There are utilities to copy all source code from the database to local allowing you to use Search, local version control and code comparisons.  Compile errors are shown line by line as well as a problem window that allow clicking to each line number.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This editor works for IBM databases Universe and Unidata versions 9.6 or higher and 6.0 version or higher.  In addition to be able to edit program files, you can edit data files as well.  Any version control system such as CVS, Subversion, Perforce or GIT can be used for you source code control.  There are utilities to copy all source code from the database to local allowing you to use Search, local version control and code comparisons.  Compile errors are shown line by line as well as a problem window that allow clicking to each line number.</p>
+]]></body>
+      <created>1251123752</created>
+      <changed>1259779300</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.u2logic.com/]]></homepageurl>
+      <image><![CDATA[http://www.u2logic.com/images/XLr8_logo_45X19.gif]]></image>
+      <version>2.5.2</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[U2logic, Inc.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://groups.google.com/group/xlr8]]></supporturl>
+      <updateurl><![CDATA[http://www.u2logic.com/update]]></updateurl>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1078" name="Ant Utility" url="http://marketplace.eclipse.org/content/ant-utility">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='13' name='Profiling' url='http://marketplace.eclipse.org/taxonomy/term/13'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='92' name='build' url='http://marketplace.eclipse.org/category/free-tagging/build'/>
+        <tag id='204' name='Ant' url='http://marketplace.eclipse.org/category/free-tagging/ant'/>
+        <tag id='560' name='profiling' url='http://marketplace.eclipse.org/category/free-tagging/profiling'/>
+      </tags>
+      
+      <owner>David Green</owner>
+      <favorited>3</favorited>
+      <installstotal>605</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Ant Utility integrates lightweight build analysis tooling into the Eclipse IDE.  With Ant Utility you can discover why your builds are taking too long, and exactly which tasks and targets are taking the most time in your build.  More <a href="http://greensopinion.blogspot.com/2009/12/ant-build-analysis-gets-facelift.html">details are available here</a>.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Ant Utility integrates lightweight build analysis tooling into the Eclipse IDE.  With Ant Utility you can discover why your builds are taking too long, and exactly which tasks and targets are taking the most time in your build.  More <a href="http://greensopinion.blogspot.com/2009/12/ant-build-analysis-gets-facelift.html">details are available here</a>.</p>
+]]></body>
+      <created>1260429434</created>
+      <changed>1341494768</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://antutility.dev.java.net]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[David Green]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[https://antutility.dev.java.net]]></supporturl>
+      <updateurl><![CDATA[https://antutility.dev.java.net/site/]]></updateurl>
+<ius>
+<iu>net.java.dev.antutility_feature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

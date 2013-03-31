@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="483" name="Cute C++ Unit Testing Easier" url="http://marketplace.eclipse.org/content/cute-c-unit-testing-easier">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+      </categories>
+      <tags>
+        <tag id='58' name='c++' url='http://marketplace.eclipse.org/category/free-tagging/c-0'/>
+        <tag id='712' name='Unit Testing' url='http://marketplace.eclipse.org/category/free-tagging/unit-testing'/>
+        <tag id='2041' name='unit c/c++' url='http://marketplace.eclipse.org/category/free-tagging/unit-cc'/>
+      </tags>
+      
+      <owner>Thomas Corbat</owner>
+      <favorited>9</favorited>
+      <installstotal>5270</installstotal>
+      <installsrecent>204</installsrecent>
+      <shortdescription><![CDATA[<p>Automated unit testing supports high quality of program code, even under inevitable change and refactoring. As a side effect, unit tested code often has a better structure. Java developers are used to unit testing because of JUnit and its tight integration into IDEs like Eclipse. C++ programmers lacked the tool support for easy-to-use unit testing, even though the language's complexity asks for it.<br />
+Refactoring and simplifying C++ code without tests is very hard. No longer!<br />
+IFS created a simple to use CUTE (C++ Unit Testing Easier) and integrated it into Eclipse CDT similar to JUnit.<br />
+<ul><br />
+<li>wizard creating test frame</li><br />
+<li>test navigator with green/red bar</li><br />
+<li>diff-viewer for failing tests</li><br />
+<li>coverage analysis </li><br />
+<li>code stub generation for test-driven development </li><br />
+</ul><br />
+Please visit our update site for additional features.<br />
+Note: The current release requires Eclipse Indigo and the latest CDT release (8.0.1). For those interested in earlier releases (Eclipse Helios) visit: <a href="http://cute-test.com/updatesite/helios">Helios Updatesite</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Automated unit testing supports high quality of program code, even under inevitable change and refactoring. As a side effect, unit tested code often has a better structure. Java developers are used to unit testing because of JUnit and its tight integration into IDEs like Eclipse. C++ programmers lacked the tool support for easy-to-use unit testing, even though the language's complexity asks for it.<br />
+Refactoring and simplifying C++ code without tests is very hard. No longer!<br />
+IFS created a simple to use CUTE (C++ Unit Testing Easier) and integrated it into Eclipse CDT similar to JUnit.<br />
+<ul><br />
+<li>wizard creating test frame</li><br />
+<li>test navigator with green/red bar</li><br />
+<li>diff-viewer for failing tests</li><br />
+<li>coverage analysis </li><br />
+<li>code stub generation for test-driven development </li><br />
+</ul><br />
+Please visit our update site for additional features.<br />
+Note: The current release requires Eclipse Indigo and the latest CDT release (8.0.1). For those interested in earlier releases (Eclipse Helios) visit: <a href="http://cute-test.com/updatesite/helios">Helios Updatesite</a></p>
+]]></body>
+      <created>1181918504</created>
+      <changed>1326718917</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.cute-test.com/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/res_logo_mp.png?itok=oo_8P3H9]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/CuteResultsOK.png?itok=QMoBoT0C]]></screenshot>
+      <version>4.3</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[IFS Institute for Software]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://www.cute-test.com/]]></supporturl>
+      <updateurl><![CDATA[http://www.cute-test.com/updatesite]]></updateurl>
+<ius>
+<iu>ch.hsr.ifs.cute</iu>
+<iu>ch.hsr.ifs.cute.headers.1_7.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

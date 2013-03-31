@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="231" name="Pydev Extensions" url="http://marketplace.eclipse.org/content/pydev-extensions">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+            
+      <owner>Fabio Zadrozny</owner>
+      <favorited>5</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Pydev Extensions is now merged with Pydev, and its once closed source code has become open source. Thus, there is no more Pydev Extensions, only the open source Pydev, with all the capabilities of Pydev Extensions incorporated.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Pydev Extensions is now merged with Pydev, and its once closed source code has become open source. Thus, there is no more Pydev Extensions, only the open source Pydev, with all the capabilities of Pydev Extensions incorporated.</p>
+]]></body>
+      <created>1151517137</created>
+      <changed>1260365474</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://pydev.org/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/pydev_banner_110_80_0.png?itok=BBqzsO1c]]></image>
+      <version>1.5.2</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Aptana]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.2, 3.3, 3.4, 3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://pydev.org/manual.html]]></supporturl>
+      <updateurl><![CDATA[http://pydev.org/updates]]></updateurl>
+    </node>
+    </marketplace>
+    

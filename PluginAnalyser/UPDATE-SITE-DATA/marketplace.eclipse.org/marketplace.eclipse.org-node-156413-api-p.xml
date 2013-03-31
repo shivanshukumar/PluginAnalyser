@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="156413" name="Q7 Image Recognition Add-on" url="http://marketplace.eclipse.org/content/q7-image-recognition-add">
+      <type>resource</type>
+      <categories>
+        <category id='8' name='Graphics' url='http://marketplace.eclipse.org/taxonomy/term/8'/>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+      </categories>
+      <tags>
+        <tag id='1600' name='OCR' url='http://marketplace.eclipse.org/category/free-tagging/ocr'/>
+        <tag id='2241' name='automated testing' url='http://marketplace.eclipse.org/category/free-tagging/automated-testing'/>
+        <tag id='2348' name='q7 add-on' url='http://marketplace.eclipse.org/category/free-tagging/q7-add'/>
+      </tags>
+      
+      <owner>Ivan Inozemtsev</owner>
+      <favorited>0</favorited>
+      <installstotal>19</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This add-on adds image search and optical character recognition functions to <a href="http://www.xored.com/q7">Q7 Platform</a>.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This add-on adds image search and optical character recognition functions to <a href="http://www.xored.com/q7">Q7 Platform</a>.</p>
+]]></body>
+      <created>1321868251</created>
+      <changed>1321892334</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.xored.com/q7/add-ons]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/img-l.png?itok=qYo2_3VZ]]></image>
+      <version>1.1.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[xored software, Inc.]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5 - 3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://support.xored.com/categories/20011462-q7-functional-and-ui-testing]]></supporturl>
+      <updateurl><![CDATA[http://dl.xored.com/q7/repository]]></updateurl>
+<ius>
+<iu>com.xored.q7.module.imagerec</iu>
+<iu>com.xored.q7.platform</iu>
+</ius>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="11349" name="PROGMATE DOCs" url="http://marketplace.eclipse.org/content/progmate-docs">
+      <type>resource</type>
+      <categories>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+        <category id='30' name='Process' url='http://marketplace.eclipse.org/taxonomy/term/30'/>
+      </categories>
+      <tags>
+        <tag id='1202' name='DMS' url='http://marketplace.eclipse.org/category/free-tagging/dms'/>
+        <tag id='1203' name='document management' url='http://marketplace.eclipse.org/category/free-tagging/document-management'/>
+        <tag id='1204' name='document archive' url='http://marketplace.eclipse.org/category/free-tagging/document-archive'/>
+        <tag id='1205' name='document workflow system' url='http://marketplace.eclipse.org/category/free-tagging/document-workflow-system'/>
+      </tags>
+      
+      <owner>PROGMATE</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[PROGMATE DOCs is a new generation system that organizes documentation in every company. Documents contain information necessary for your company to function in a proper way. If you want to have an easy access to these documents, know where they are all the time, and make work with documentation easier and faster it is time for you to use 21st century solution! PROGMATE DOCs in a very practical way solves creation, management and documents organization problems. Moreover, the system enables coordination of all processes connected with working on documents and guarantees stability no matter how intense the usage of the system is. PROGMATE DOCs is an example of an overall approach to a problem that gives a chance for a detailed analysis of various aspects of document management. Elements that create PROGMATE DOCs:
+
+Document Management - manages documentation and makes information search easier
+Waiting Room - coordinates channels through which documents come in the system
+Warehouse - manages paper versions of the documents
+Integration - delivers data from other systems
+Process - streamlines and speeds up documentation workflow
+
+The system was created for users, so thanks to intuitive solutions it does not require complex IT knowledge. Software is available in various languages.]]></shortdescription>
+      <body><![CDATA[PROGMATE DOCs is a new generation system that organizes documentation in every company. Documents contain information necessary for your company to function in a proper way. If you want to have an easy access to these documents, know where they are all the time, and make work with documentation easier and faster it is time for you to use 21st century solution! PROGMATE DOCs in a very practical way solves creation, management and documents organization problems. Moreover, the system enables coordination of all processes connected with working on documents and guarantees stability no matter how intense the usage of the system is. PROGMATE DOCs is an example of an overall approach to a problem that gives a chance for a detailed analysis of various aspects of document management. Elements that create PROGMATE DOCs:
+
+Document Management - manages documentation and makes information search easier
+Waiting Room - coordinates channels through which documents come in the system
+Warehouse - manages paper versions of the documents
+Integration - delivers data from other systems
+Process - streamlines and speeds up documentation workflow
+
+The system was created for users, so thanks to intuitive solutions it does not require complex IT knowledge. Software is available in various languages.]]></body>
+      <created>1284549119</created>
+      <changed>1284982163</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.progmate.pl/en/products/home]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/progmatedocs2.jpg?itok=Yz9HEx4F]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/PROGMATE_DOCs_screenshot.jpg?itok=_j2nbGc8]]></screenshot>
+      <version></version>
+      <license>Commercial</license>
+      <companyname><![CDATA[PROGMATE]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://www.progmate.pl/en/intro/home]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

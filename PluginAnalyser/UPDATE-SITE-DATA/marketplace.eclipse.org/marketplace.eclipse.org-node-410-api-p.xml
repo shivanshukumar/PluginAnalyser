@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="410" name="Illatis StepIn - Debugger for MySQL procedures" url="http://marketplace.eclipse.org/content/illatis-stepin-debugger-mysql-procedures">
+      <type>resource</type>
+      <categories>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+      </categories>
+      <tags>
+        <tag id='856' name='art1' url='http://marketplace.eclipse.org/category/free-tagging/art1'/>
+      </tags>
+      
+      <owner>Illatis Support</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Illatis StepIn is debugger for MySQL stored procedures and functions with Eclipse based IDE. Illatis StepIn is available both as a stand-alone application and as a set of Eclipse plug-ins. For more information on StepIn, please visit us at: <a href="http://www.illatis.com/product/product.php">http://www.illatis.com/product/product.php</a>.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Illatis StepIn is debugger for MySQL stored procedures and functions with Eclipse based IDE. Illatis StepIn is available both as a stand-alone application and as a set of Eclipse plug-ins. For more information on StepIn, please visit us at: <a href="http://www.illatis.com/product/product.php">http://www.illatis.com/product/product.php</a>.</p>
+]]></body>
+      <created>1172786895</created>
+      <changed>1259876336</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.illatis.com/product/product.php]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.4</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Illatis]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://www.illatis.com/home/contact.php]]></supporturl>
+      <updateurl><![CDATA[https://secure.illatis.com/orders/checklicense.php]]></updateurl>
+    </node>
+    </marketplace>
+    

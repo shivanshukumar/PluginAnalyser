@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1052" name="EGI - Workstation-Based EMS/SPI 4GL Provider" url="http://marketplace.eclipse.org/content/egi-workstation-based-emsspi-4gl-provider">
+      <type>resource</type>
+      <categories>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+      </categories>
+            
+      <owner>Randall Becker</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>EGI by Nexbridge brings the Event Management Service (EMS) and the Subsystem Programmatic Interface (SPI) for HP NonStop Servers to the desktop. Developers can easily build EMS C++ and Java class structures for complex event logging needs through the ECLIPSE workbench. EGI frees the developer from the hassle of writing DDL and compiling dictionaries on the NonStop. It's also a Pure Java product so there's no requirement to use JNI or compiled libraries for off-platform logging. Working with the separately available SPIBRIDGE product, managing applications through SPI has never been easier.</p>
+<p>Key Features and Benefits:<br />
+* Executes as an ECLIPSE plug-in on any platform supported by ECLIPSE<br />
+* Events can be logged from Java, C++, or off-platform.<br />
+* SPI commands can be issue to any subsystem from Windows or UNIX.<br />
+* Platform independent development facility<br />
+* Platform independent execution<br />
+* Simple interface for developers<br />
+* NLS support available - currently English and French</p>
+]]></shortdescription>
+      <body><![CDATA[<p>EGI by Nexbridge brings the Event Management Service (EMS) and the Subsystem Programmatic Interface (SPI) for HP NonStop Servers to the desktop. Developers can easily build EMS C++ and Java class structures for complex event logging needs through the ECLIPSE workbench. EGI frees the developer from the hassle of writing DDL and compiling dictionaries on the NonStop. It's also a Pure Java product so there's no requirement to use JNI or compiled libraries for off-platform logging. Working with the separately available SPIBRIDGE product, managing applications through SPI has never been easier.</p>
+<p>Key Features and Benefits:<br />
+* Executes as an ECLIPSE plug-in on any platform supported by ECLIPSE<br />
+* Events can be logged from Java, C++, or off-platform.<br />
+* SPI commands can be issue to any subsystem from Windows or UNIX.<br />
+* Platform independent development facility<br />
+* Platform independent execution<br />
+* Simple interface for developers<br />
+* NLS support available - currently English and French</p>
+]]></body>
+      <created>1259161209</created>
+      <changed>1291993545</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.nexbridge.com/Products/Egi]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>2.4.7</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Nexbridge Inc.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4,3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://]]></supporturl>
+      <updateurl><![CDATA[http://www.nexbridge.com/Eclipse/Ganymede]]></updateurl>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="276" name="MaintainJ" url="http://marketplace.eclipse.org/content/maintainj">
+      <type>resource</type>
+      <categories>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='417' name='reverse engineering' url='http://marketplace.eclipse.org/category/free-tagging/reverse-engineering'/>
+        <tag id='740' name='impact analysis' url='http://marketplace.eclipse.org/category/free-tagging/impact-analysis'/>
+        <tag id='1883' name='debugging' url='http://marketplace.eclipse.org/category/free-tagging/debugging'/>
+        <tag id='2199' name='generate sequence diagrams' url='http://marketplace.eclipse.org/category/free-tagging/generate-sequence-diagrams'/>
+        <tag id='2206' name='generate documentation' url='http://marketplace.eclipse.org/category/free-tagging/generate-documentation'/>
+      </tags>
+      
+      <owner>Choudary Kothapalli</owner>
+      <favorited>2</favorited>
+      <installstotal>625</installstotal>
+      <installsrecent>12</installsrecent>
+      <shortdescription><![CDATA[<p><em><a href="http://www.maintainj.com">MaintainJ</a></em> generates the runtime sequence diagrams for a use case. MaintainJ generated diagrams are dynamic, easy to explore and help Java developers to understand, debug, document and performance tune Java applications. </p>
+<p><b><a href="http://www.eclipse.org/org/press-release/20120326_awardwinners.php">MaintainJ is the winner of the Best Modeling Product award at Eclipse Community Awards 2012</a></b></p>
+<p>Please check the <em><a href="http://maintainj.com/userGuide.jsp?param=overviewDemo">demo video</a></em> (3 minutes).</p>
+<p>The above demo is recorded on a sample application with 8000 Java classes, 260 JSPs and 600 XML configuration files. The sample application runs on Tomcat and MySQL and uses Spring, Hibernate and many other Java frameworks.</p>
+<p>MaintainJ V4 allows users to quickly find the methods that take longer response times in a use case and helps users to optimize those methods.</p>
+<p>MaintainJ 3.6 allows exporting class hierarchy to UML models, shows the call response time in Outline view and adds support for JRE 1.7.</p>
+<p>MaintainJ 3.5 allows users to export the diagrams into UML2 models that can be imported into other UML2 compliant tools like Rational Software Architect. It also adds the ability to apply predefined filters on the diagrams.</p>
+<p>MaintainJ 3.3 adds <a href="www.maintainj.com/userGuide.jsp?param=uml#impactAnalysis">Runtime Dependency Analysis</a> feature to the tool.</p>
+<p>MaintainJ 3.2 is a major enhancement release with the following features:</p>
+<ol><li><b>Shows Call context</b> - In the sequence diagram when the mouse is hovered over a call, the tooltip shows the call context - the call argument and the return value. Response time and more details of the call context can be seen in the 'Properties View'.
+</li><li><b>Displays runtime SQL</b> - MaintainJ captures the actual runtime SQL statements going to the database with parameters populated regardless of the JDBC framework used. These database calls are shown in the sequence diagram along with the response time for each database hit.
+</li><li><b>Supports multi-JVM applications</b> - Users can trace applications running on multiple JVMs and see the end-to-end call flow in a single sequence diagram. For example, when an application calls a web service running in a different JVM, the call flow across JVMs is shown in a single sequence diagram. The calls in each JVM can be seen in a different color on the same diagram.
+</li><li><b>Enhanced Outline View</b> - The sequence diagram's 'Outline View' shows all the classes and calls in the use case. It is enhanced to select and delete multiple packages, classes or calls at one go. An option to filter out all getter and setter methods has been added to the sequence diagram.
+</li><li><b>JSP calls</b> - The calls to JSP(s) in a use case are shown in the sequence diagrams. If one JSP includes multiple JSPs, the runtime calls to the inner JSPs are displayed as well.
+</li></ol><p>Enterprise Java applications are difficult to understand and change because the business logic is distributed between the multiple components. A typical enterprise application contains all the following components. </p>
+<ul><li>Java classes
+</li><li>JSPs
+</li><li>configuration XML files
+</li><li>portal configurations (configuration of portlets and pages in portal servers)
+</li><li>business rule engines and their configuration files
+</li><li>multi-JVM applications (to fulfill a user request, the control flows through multiple JVM's)
+</li></ul><p>All these components interact at runtime in a complex manner and it is very difficult to understand the end-to-end call flow for a particular use case. MaintainJ cuts through the complexity involved in understanding by generating easy to read dynamic sequence diagrams for a use case.</p>
+]]></shortdescription>
+      <body><![CDATA[<p><em><a href="http://www.maintainj.com">MaintainJ</a></em> generates the runtime sequence diagrams for a use case. MaintainJ generated diagrams are dynamic, easy to explore and help Java developers to understand, debug, document and performance tune Java applications. </p>
+<p><b><a href="http://www.eclipse.org/org/press-release/20120326_awardwinners.php">MaintainJ is the winner of the Best Modeling Product award at Eclipse Community Awards 2012</a></b></p>
+<p>Please check the <em><a href="http://maintainj.com/userGuide.jsp?param=overviewDemo">demo video</a></em> (3 minutes).</p>
+<p>The above demo is recorded on a sample application with 8000 Java classes, 260 JSPs and 600 XML configuration files. The sample application runs on Tomcat and MySQL and uses Spring, Hibernate and many other Java frameworks.</p>
+<p>MaintainJ V4 allows users to quickly find the methods that take longer response times in a use case and helps users to optimize those methods.</p>
+<p>MaintainJ 3.6 allows exporting class hierarchy to UML models, shows the call response time in Outline view and adds support for JRE 1.7.</p>
+<p>MaintainJ 3.5 allows users to export the diagrams into UML2 models that can be imported into other UML2 compliant tools like Rational Software Architect. It also adds the ability to apply predefined filters on the diagrams.</p>
+<p>MaintainJ 3.3 adds <a href="www.maintainj.com/userGuide.jsp?param=uml#impactAnalysis">Runtime Dependency Analysis</a> feature to the tool.</p>
+<p>MaintainJ 3.2 is a major enhancement release with the following features:</p>
+<ol><li><b>Shows Call context</b> - In the sequence diagram when the mouse is hovered over a call, the tooltip shows the call context - the call argument and the return value. Response time and more details of the call context can be seen in the 'Properties View'.
+</li><li><b>Displays runtime SQL</b> - MaintainJ captures the actual runtime SQL statements going to the database with parameters populated regardless of the JDBC framework used. These database calls are shown in the sequence diagram along with the response time for each database hit.
+</li><li><b>Supports multi-JVM applications</b> - Users can trace applications running on multiple JVMs and see the end-to-end call flow in a single sequence diagram. For example, when an application calls a web service running in a different JVM, the call flow across JVMs is shown in a single sequence diagram. The calls in each JVM can be seen in a different color on the same diagram.
+</li><li><b>Enhanced Outline View</b> - The sequence diagram's 'Outline View' shows all the classes and calls in the use case. It is enhanced to select and delete multiple packages, classes or calls at one go. An option to filter out all getter and setter methods has been added to the sequence diagram.
+</li><li><b>JSP calls</b> - The calls to JSP(s) in a use case are shown in the sequence diagrams. If one JSP includes multiple JSPs, the runtime calls to the inner JSPs are displayed as well.
+</li></ol><p>Enterprise Java applications are difficult to understand and change because the business logic is distributed between the multiple components. A typical enterprise application contains all the following components. </p>
+<ul><li>Java classes
+</li><li>JSPs
+</li><li>configuration XML files
+</li><li>portal configurations (configuration of portlets and pages in portal servers)
+</li><li>business rule engines and their configuration files
+</li><li>multi-JVM applications (to fulfill a user request, the control flows through multiple JVM's)
+</li></ul><p>All these components interact at runtime in a complex manner and it is very difficult to understand the end-to-end call flow for a particular use case. MaintainJ cuts through the complexity involved in understanding by generating easy to read dynamic sequence diagrams for a use case.</p>
+]]></body>
+      <created>1161180922</created>
+      <changed>1335884107</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.maintainj.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/mnj110By30.jpg?itok=0Haw8NjW]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/sampleSequence1_0.png?itok=33RRHL-7]]></screenshot>
+      <version>4.0.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[MaintainJ Inc.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2 or later]]></eclipseversion>
+      <supporturl><![CDATA[http://www.maintainj.com/smf/]]></supporturl>
+      <updateurl><![CDATA[http://www.maintainj.com/updates/4.0.0]]></updateurl>
+<ius>
+<iu>com.maintainj.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

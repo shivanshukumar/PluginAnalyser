@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="177521" name="Code Clips " url="http://marketplace.eclipse.org/content/code-clips">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='2394' name='sandipchitale' url='http://marketplace.eclipse.org/category/free-tagging/sandipchitale'/>
+        <tag id='2397' name='code clips' url='http://marketplace.eclipse.org/category/free-tagging/code-clips'/>
+        <tag id='2398' name='tab completion' url='http://marketplace.eclipse.org/category/free-tagging/tab-completion'/>
+      </tags>
+      
+      <owner>Sandip Chitale</owner>
+      <favorited>4</favorited>
+      <installstotal>133</installstotal>
+      <installsrecent>1</installsrecent>
+      <shortdescription><![CDATA[<p>This feature allows creation of Code Clips and associate abbreviations with it. The abbreviations can be expanded using TAB. Read details here: <a href="http://sandipchitale.blogspot.com/2011/12/code-clips-eclipse-plug-in.html">http://sandipchitale.blogspot.com/2011/12/code-clips-eclipse-plug-in.html</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>This feature allows creation of Code Clips and associate abbreviations with it. The abbreviations can be expanded using TAB. Read details here: <a href="http://sandipchitale.blogspot.com/2011/12/code-clips-eclipse-plug-in.html">http://sandipchitale.blogspot.com/2011/12/code-clips-eclipse-plug-in.html</a></p>
+]]></body>
+      <created>1325319101</created>
+      <changed>1325755597</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://sandipchitale.blogspot.com/2011/12/code-clips-eclipse-plug-in.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0.3</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Sandip V. Chitale]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.5,3.6,3.7,3.7.1]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/sandipchitaleseclipseplugins/issues/list]]></supporturl>
+      <updateurl><![CDATA[http://sandipchitaleseclipseplugins.googlecode.com/svn/trunk/CodeClipsUpdateSite]]></updateurl>
+<ius>
+<iu>CodeClipsFeature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

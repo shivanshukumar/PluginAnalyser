@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="5778" name="Axdt" url="http://marketplace.eclipse.org/content/axdt">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='747' name='flex' url='http://marketplace.eclipse.org/category/free-tagging/flex'/>
+        <tag id='795' name='as3' url='http://marketplace.eclipse.org/category/free-tagging/as3'/>
+        <tag id='796' name='as' url='http://marketplace.eclipse.org/category/free-tagging-0'/>
+        <tag id='797' name='mxml' url='http://marketplace.eclipse.org/category/free-tagging/mxml'/>
+        <tag id='1079' name='asdoc' url='http://marketplace.eclipse.org/category/free-tagging/asdoc'/>
+      </tags>
+      
+      <owner>Martin Schnabel</owner>
+      <favorited>5</favorited>
+      <installstotal>3942</installstotal>
+      <installsrecent>19</installsrecent>
+      <shortdescription><![CDATA[<p>Axdt is an ActionScript3 IDE that utilizes the opensource Adobe Flex4 SDK.</p>
+<p>Axdt is based on Eclipse Xtext.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Axdt is an ActionScript3 IDE that utilizes the opensource Adobe Flex4 SDK.</p>
+<p>Axdt is based on Eclipse Xtext.</p>
+]]></body>
+      <created>1280655279</created>
+      <changed>1297095307</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://new.axdt.org/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/asdt.big_.png?itok=HJ4mCsap]]></image>
+      <version>0.0.82</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Martin Schnabel <mb0@mb0.org> - Freelancer]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5,3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://new.axdt.org/newticket]]></supporturl>
+      <updateurl><![CDATA[http://svn.codespot.com/a/eclipselabs.org/axdt/trunk/site/]]></updateurl>
+<ius>
+<iu>org.axdt.as3.feature</iu>
+<iu>org.axdt.asdoc.feature</iu>
+<iu>org.axdt.avm.feature</iu>
+<iu>org.axdt.core.feature</iu>
+<iu>org.axdt.flex4.feature</iu>
+<iu>org.axdt.mxml.feature</iu>
+<iu>org.axdt.swc.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

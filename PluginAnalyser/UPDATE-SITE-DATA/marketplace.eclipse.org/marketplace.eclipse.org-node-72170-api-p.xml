@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="72170" name="columns4eclipse" url="http://marketplace.eclipse.org/content/columns4eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+            
+      <owner>Miguel Angel Rojas Gonzalez</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Columns Plug-in for Eclipse defines the concept of 'Column' and some functions of this editable component. Functions such as copy, paste, cut, fill, lowercase, uppercase, search and replace are provided.</p>
+<p>New Features: Column Preview, Column History, Paste Line as Column and Paste Column as Parameters</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Columns Plug-in for Eclipse defines the concept of 'Column' and some functions of this editable component. Functions such as copy, paste, cut, fill, lowercase, uppercase, search and replace are provided.</p>
+<p>New Features: Column Preview, Column History, Paste Line as Column and Paste Column as Parameters</p>
+]]></body>
+      <created>1308936516</created>
+      <changed>1309184918</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://columns4eclipse.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/main.logo_.png?itok=zVGCMDDx]]></screenshot>
+      <version>3.7.0</version>
+      <license>Other Open Source</license>
+      <companyname><![CDATA[PhD Student]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7.0]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://columns4eclipse.sourceforge.net/updates]]></updateurl>
+<ius>
+<iu>Copy, Paste, Cut, Delete, Fill, Lower and Upper case</iu>
+<iu>Special paste</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

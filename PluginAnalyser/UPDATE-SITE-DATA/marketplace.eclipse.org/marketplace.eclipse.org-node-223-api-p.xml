@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="223" name="Pedeto" url="http://marketplace.eclipse.org/content/pedeto">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+      </categories>
+            
+      <owner>G&amp;H Softwareentwicklung GmbH</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Pedeto is a plugin for Eclipse that provides a fully featured IDE for Perl<br />
+It features full Eclipse integration, content assist, background syntax checking, code folding, syntax highlighting, debugger and much more.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Pedeto is a plugin for Eclipse that provides a fully featured IDE for Perl<br />
+It features full Eclipse integration, content assist, background syntax checking, code folding, syntax highlighting, debugger and much more.</p>
+]]></body>
+      <created>1150469528</created>
+      <changed>1260259285</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.guh-software.de/pedeto_en.html]]></homepageurl>
+      <image><![CDATA[http://www.guh-software.de/images/pedeto1_small.gif]]></image>
+      <version>1.0.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[G&H Softwareentwicklung GmbH]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.1+]]></eclipseversion>
+      <supporturl><![CDATA[http://www.guh-software.de/pedeto_feedback_en.html]]></supporturl>
+      <updateurl><![CDATA[http://www.guh-software.de/eclipse]]></updateurl>
+    </node>
+    </marketplace>
+    

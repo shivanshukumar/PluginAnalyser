@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="5889" name="Refactory" url="http://marketplace.eclipse.org/content/refactory">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+      </categories>
+      <tags>
+        <tag id='196' name='Domain Specific Language' url='http://marketplace.eclipse.org/category/free-tagging/domain-specific-language'/>
+        <tag id='640' name='model refactoring' url='http://marketplace.eclipse.org/category/free-tagging/model-refactoring'/>
+        <tag id='1082' name='generic' url='http://marketplace.eclipse.org/category/free-tagging/generic'/>
+        <tag id='1083' name='metamodel' url='http://marketplace.eclipse.org/category/free-tagging/metamodel'/>
+      </tags>
+      
+      <owner>Jan Reimann</owner>
+      <favorited>8</favorited>
+      <installstotal>263</installstotal>
+      <installsrecent>3</installsrecent>
+      <shortdescription><![CDATA[<p>Refactory is a set of Eclipse plugins for creating refactorings for arbitrary models. It consists of a SDK to define new generic refactorings which then can be reused for any metamodel you like. Furthermore, Refactory consists of a runtime to invoke and interpret the refactorings on a concrete model instance. The invocation integrates into the Eclipse Language Toolkit (LTK) so that refactorings can be used via right-click in a familiar way.<br />
+As examples, Ecore and UML2 refactorings are included. With this tool one can quickly build many refactorings for your custom DSLs and metamodels. For more information visit <a href="http://www.modelrefactoring.org">http://www.modelrefactoring.org</a>.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Refactory is a set of Eclipse plugins for creating refactorings for arbitrary models. It consists of a SDK to define new generic refactorings which then can be reused for any metamodel you like. Furthermore, Refactory consists of a runtime to invoke and interpret the refactorings on a concrete model instance. The invocation integrates into the Eclipse Language Toolkit (LTK) so that refactorings can be used via right-click in a familiar way.<br />
+As examples, Ecore and UML2 refactorings are included. With this tool one can quickly build many refactorings for your custom DSLs and metamodels. For more information visit <a href="http://www.modelrefactoring.org">http://www.modelrefactoring.org</a>.</p>
+]]></body>
+      <created>1280747048</created>
+      <changed>1349877385</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.modelrefactoring.org]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/refactory_marketplace_logo1.png?itok=0604EiRZ]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screenshot_2.png?itok=jWPGlUWc]]></screenshot>
+      <version>0.9.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[TU Dresden]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5+]]></eclipseversion>
+      <supporturl><![CDATA[http://www.modelrefactoring.org/index.php/Refactoring_Contact]]></supporturl>
+      <updateurl><![CDATA[http://www.emftext.org/update]]></updateurl>
+<ius>
+<iu>org.emftext.refactoring.sdk</iu>
+<iu>org.emftext.refactoring.runtime</iu>
+<iu>org.emftext.refactoring.genericrefactorings</iu>
+<iu>org.emftext.refactoring.indexconnector.sokan</iu>
+<iu>org.emftext.refactoring.mappings.ecore</iu>
+<iu>org.emftext.refactoring.editorconnector.emftext</iu>
+<iu>org.emftext.language.refactoring.roles.refactoring</iu>
+<iu>org.emftext.refactoring.editorconnector.gmf</iu>
+<iu>org.emftext.refactoring.editorconnector.xtext</iu>
+<iu>org.emftext.refactoring.codegen</iu>
+<iu>org.emftext.refactoring.mappings.uml2</iu>
+</ius>
+    </node>
+    </marketplace>
+    

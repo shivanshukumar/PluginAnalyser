@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="862" name="OpenSocial Development Environment" url="http://marketplace.eclipse.org/content/opensocial-development-environment">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+            
+      <owner>Yoichiro Tanaka</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>OSDE is the Eclipse Plug-in for developing OpenSocial application. When you want to develop and test a social application, you must use some SNS(ex. orkut.com, myspace.com, hi5.com and etc.). The method of using some SNS may give you a strong limitation. For example, you must make friends for testing your social application, must find some SNS supported many functions, and the server of the SNS must be running stablity.</p>
+<p>OSDE is able to provide the individual SNS for you. In this small SNS, you can make some person's profiles, social graph, groups, and most test data. These test data will be used in your OpenSocial application. In addition, OSDE provides some views for listing people, appdata, activities, and etc. in your eclipse. By using these views, you will be able to control most test data and testing your application. </p>
+]]></shortdescription>
+      <body><![CDATA[<p>OSDE is the Eclipse Plug-in for developing OpenSocial application. When you want to develop and test a social application, you must use some SNS(ex. orkut.com, myspace.com, hi5.com and etc.). The method of using some SNS may give you a strong limitation. For example, you must make friends for testing your social application, must find some SNS supported many functions, and the server of the SNS must be running stablity.</p>
+<p>OSDE is able to provide the individual SNS for you. In this small SNS, you can make some person's profiles, social graph, groups, and most test data. These test data will be used in your OpenSocial application. In addition, OSDE provides some views for listing people, appdata, activities, and etc. in your eclipse. By using these views, you will be able to control most test data and testing your application. </p>
+]]></body>
+      <created>1234881398</created>
+      <changed>1294849212</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/opensocial-development-environment/]]></homepageurl>
+      <image><![CDATA[http://www.eisbahn.jp/opensocial/osde.gif]]></image>
+      <version>1.0.0</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[OpenSocial Development Environment]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://groups.google.com/group/opensocial-development-environment]]></supporturl>
+      <updateurl><![CDATA[http://www.eisbahn.jp/eclipse/update-site/site.xml]]></updateurl>
+    </node>
+    </marketplace>
+    

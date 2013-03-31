@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1048" name="Eclipse Metrics plugin (Continued)" url="http://marketplace.eclipse.org/content/eclipse-metrics-plugin-continued">
+      <type>resource</type>
+      <categories>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+      </categories>
+            
+      <owner>gboissier</owner>
+      <favorited>24</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Provide metrics calculation and dependency analyzer plugin for the Eclipse platform. Measure metrics with avg and std deviation and detect cycles in package and type dependencies. Continuation of work from <a href="http://sourceforge.net/projects/metrics">http://sourceforge.net/projects/metrics</a>.</p>
+<p>Computes : NORM (number of overridden methods), NOF (number of attributes), NSC (Number of Children), NOC (number of classes), MLOC (method lines of code), NOM (number of methods), NBD (nested block depth), DIT (depht of inheritance tree),  NOP (number of packages), CA (afferent coupling) NOI (number of interfaces) VG (McCabe cyclomatic complexity), TLOC (total lines of code), RMI (instability), PAR (number of parameters), LCOM (lack of cohesion of methods), CE (efferent coupling), NSM (number of static methods), RMD (normalized distance), RMA (Abstractness), SIX (Specialization Index), WMC (weighted methods per class), NSF (number of static attributes)</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Provide metrics calculation and dependency analyzer plugin for the Eclipse platform. Measure metrics with avg and std deviation and detect cycles in package and type dependencies. Continuation of work from <a href="http://sourceforge.net/projects/metrics">http://sourceforge.net/projects/metrics</a>.</p>
+<p>Computes : NORM (number of overridden methods), NOF (number of attributes), NSC (Number of Children), NOC (number of classes), MLOC (method lines of code), NOM (number of methods), NBD (nested block depth), DIT (depht of inheritance tree),  NOP (number of packages), CA (afferent coupling) NOI (number of interfaces) VG (McCabe cyclomatic complexity), TLOC (total lines of code), RMI (instability), PAR (number of parameters), LCOM (lack of cohesion of methods), CE (efferent coupling), NSM (number of static methods), RMD (normalized distance), RMA (Abstractness), SIX (Specialization Index), WMC (weighted methods per class), NSF (number of static attributes)</p>
+]]></body>
+      <created>1258654505</created>
+      <changed>1259779377</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://metrics2.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.3.8</version>
+      <license>Free EPL</license>
+      <companyname><![CDATA[]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4, 3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/metrics2/]]></supporturl>
+      <updateurl><![CDATA[http://metrics2.sourceforge.net/update/]]></updateurl>
+    </node>
+    </marketplace>
+    

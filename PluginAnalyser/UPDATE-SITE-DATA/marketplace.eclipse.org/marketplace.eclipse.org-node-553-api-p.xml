@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="553" name="DBViewer Plugin" url="http://marketplace.eclipse.org/content/dbviewer-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+      </categories>
+      <tags>
+        <tag id='617' name='DataBase DBViewer ZIGEN' url='http://marketplace.eclipse.org/category/free-tagging/database-dbviewer-zigen'/>
+      </tags>
+      
+      <owner>ZIGEN</owner>
+      <favorited>26</favorited>
+      <installstotal>5728</installstotal>
+      <installsrecent>346</installsrecent>
+      <shortdescription><![CDATA[<p>DBViewer Plugin is an Eclipse Plugin as a Database Front end .It connects with various Databases by way of JDBC Driver.<br />
+SourceForge.JP<br /><a href="http://sourceforge.jp/projects/dbviewer">http://sourceforge.jp/projects/dbviewer</a><br />
+BugTracking<br /><a href="http://sourceforge.jp/projects/dbviewer/tracker/">http://sourceforge.jp/projects/dbviewer/tracker/</a><br />
+UpdateSite<br /><a href="http://www.ne.jp/asahi/zigen/home/plugin/dbviewer/">http://www.ne.jp/asahi/zigen/home/plugin/dbviewer/</a></p>
+<p>------------------------------------------------------------------<br />
+DBViewer Plugin for Eclipse V1.2.1.20100421<br />
+------------------------------------------------------------------</p>
+<p>New features /improvement<br />
+---------------------------</p>
+<p>It came to be able to use the pager function with all DB.<br />
+It came to be able to use the pager function for the query result.<br />
+The Timestamp type is corrected as displayed at the Nano second (Only DB2).<br />
+It is correctly displayed. When you omit the constraint name(Only Oracle).</p>
+<p>Bug Fix<br />
+---------------------------</p>
+<p>The problem that was not able to be right-clicked as a table edit editor was corrected.<br />
+There is a problem that the label is not correctly displayed under English-language environments.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>DBViewer Plugin is an Eclipse Plugin as a Database Front end .It connects with various Databases by way of JDBC Driver.<br />
+SourceForge.JP<br /><a href="http://sourceforge.jp/projects/dbviewer">http://sourceforge.jp/projects/dbviewer</a><br />
+BugTracking<br /><a href="http://sourceforge.jp/projects/dbviewer/tracker/">http://sourceforge.jp/projects/dbviewer/tracker/</a><br />
+UpdateSite<br /><a href="http://www.ne.jp/asahi/zigen/home/plugin/dbviewer/">http://www.ne.jp/asahi/zigen/home/plugin/dbviewer/</a></p>
+<p>------------------------------------------------------------------<br />
+DBViewer Plugin for Eclipse V1.2.1.20100421<br />
+------------------------------------------------------------------</p>
+<p>New features /improvement<br />
+---------------------------</p>
+<p>It came to be able to use the pager function with all DB.<br />
+It came to be able to use the pager function for the query result.<br />
+The Timestamp type is corrected as displayed at the Nano second (Only DB2).<br />
+It is correctly displayed. When you omit the constraint name(Only Oracle).</p>
+<p>Bug Fix<br />
+---------------------------</p>
+<p>The problem that was not able to be right-clicked as a table edit editor was corrected.<br />
+There is a problem that the label is not correctly displayed under English-language environments.</p>
+]]></body>
+      <created>1191594519</created>
+      <changed>1286886420</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.ne.jp/asahi/zigen/home/plugin/dbviewer/about_en.html]]></homepageurl>
+      <image><![CDATA[http://www.ne.jp/asahi/zigen/home/plugin/dbviewer/image/perspective.gif]]></image>
+      <version>1.2.2.v20101009</version>
+      <license>EPL</license>
+      <companyname><![CDATA[ZIGEN]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2.x, 3.3.x, 3.4.x, 3.5.x]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.jp/projects/dbviewer/tracker/]]></supporturl>
+      <updateurl><![CDATA[http://www.ne.jp/asahi/zigen/home/plugin/dbviewer/]]></updateurl>
+<ius>
+<iu>zigen.plugin.future</iu>
+</ius>
+    </node>
+    </marketplace>
+    

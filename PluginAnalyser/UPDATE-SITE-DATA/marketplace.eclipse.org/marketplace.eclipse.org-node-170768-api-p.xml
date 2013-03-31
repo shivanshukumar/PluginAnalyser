@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="170768" name="Java Examples Search" url="http://marketplace.eclipse.org/content/java-examples-search">
+      <type>resource</type>
+      <categories>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='21' name='Web Services' url='http://marketplace.eclipse.org/taxonomy/term/21'/>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+        <category id='40' name='Search' url='http://marketplace.eclipse.org/category/categories/search'/>
+        <category id='1964' name='Application Development Frameworks' url='http://marketplace.eclipse.org/category/categories/application-development-frameworks'/>
+        <category id='1966' name='Programming Languages' url='http://marketplace.eclipse.org/category/categories/programming-languages'/>
+        <category id='1967' name='Web, XML, Java EE and OSGi Enterprise Development' url='http://marketplace.eclipse.org/category/categories/web-xml-java-ee-and-osgi-enterprise-development'/>
+        <category id='1972' name='General Purpose Tools' url='http://marketplace.eclipse.org/category/categories/general-purpose-tools'/>
+      </categories>
+            
+      <owner>Thai Ha</owner>
+      <favorited>1</favorited>
+      <installstotal>1120</installstotal>
+      <installsrecent>70</installsrecent>
+      <shortdescription><![CDATA[<p>When developing Java applications, there are times when you need to search for a Java code snippet to do a common task like reading file content,  looping over a Collection, parsing an XML file etc. This plugin is to help you to do that easily. Just think about this plugin as something like MSDN for Java.</p>
+<p><strong>Install plugin:</strong><br />
+- Use Update site URL: <a href="http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/">http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/</a><br />
+- Or download offline: download plugin from <a href="http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/plugins/org.freejava.javaexamplessearch_1.0.0.jar">http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/plugins/org.freejava.javaexamplessearch_1.0.0.jar</a> and save it to eclipse/dropins/ folder</p>
+<p><strong>Usage:</strong><br />
+- Install the plugin<br />
+- Use menu item  FreeJava Tools/Java Examples Search to open a Search dialog<br />
+- Enter your keywords and click OK<br />
+- A search result window will be opened with results</p>
+<p><strong>Compatibility:</strong><br />
+- Tested with Eclipse 3.6 to 3.7 but it should run well on older versions of Eclipse</p>
+<p><strong>Requirements:</strong><br />
+- Eclipse IDE 3.6 or later<br />
+- Internet connection to use Google Custom Search</p>
+<p>You might also like the plugins:<br />
+- <a href="http://marketplace.eclipse.org/content/java-source-attacher">Java Source Attacher</a> to find source code for open source Java libraries.<br />
+- <a href="http://marketplace.eclipse.org/content/java-dependency-viewer">Java Dependency Viewer</a> to view your class dependencies and package dependencies visually.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>When developing Java applications, there are times when you need to search for a Java code snippet to do a common task like reading file content,  looping over a Collection, parsing an XML file etc. This plugin is to help you to do that easily. Just think about this plugin as something like MSDN for Java.</p>
+<p><strong>Install plugin:</strong><br />
+- Use Update site URL: <a href="http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/">http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/</a><br />
+- Or download offline: download plugin from <a href="http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/plugins/org.freejava.javaexamplessearch_1.0.0.jar">http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/plugins/org.freejava.javaexamplessearch_1.0.0.jar</a> and save it to eclipse/dropins/ folder</p>
+<p><strong>Usage:</strong><br />
+- Install the plugin<br />
+- Use menu item  FreeJava Tools/Java Examples Search to open a Search dialog<br />
+- Enter your keywords and click OK<br />
+- A search result window will be opened with results</p>
+<p><strong>Compatibility:</strong><br />
+- Tested with Eclipse 3.6 to 3.7 but it should run well on older versions of Eclipse</p>
+<p><strong>Requirements:</strong><br />
+- Eclipse IDE 3.6 or later<br />
+- Internet connection to use Google Custom Search</p>
+<p>You might also like the plugins:<br />
+- <a href="http://marketplace.eclipse.org/content/java-source-attacher">Java Source Attacher</a> to find source code for open source Java libraries.<br />
+- <a href="http://marketplace.eclipse.org/content/java-dependency-viewer">Java Dependency Viewer</a> to view your class dependencies and package dependencies visually.</p>
+]]></body>
+      <created>1324094858</created>
+      <changed>1326173949</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/a/eclipselabs.org/p/free-plugins/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.1</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[Thai Ha]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/a/eclipselabs.org/p/free-plugins/issues/list]]></supporturl>
+      <updateurl><![CDATA[http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/]]></updateurl>
+<ius>
+<iu>org.freejava.javaexamplessearch.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="186" name="Eclipse Platform Extensions" url="http://marketplace.eclipse.org/content/eclipse-platform-extensions">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+            
+      <owner>Archimedes Trajano</owner>
+      <favorited>5</favorited>
+      <installstotal>298</installstotal>
+      <installsrecent>3</installsrecent>
+      <shortdescription><![CDATA[Provides some extra functionality to the IDE:
+* GC
+* Copy file name to clipboard
+* Copy fully qualified name to clipboard
+* Open folder in explorer
+* Open folder in command prompt
+* Open folder in navigator]]></shortdescription>
+      <body><![CDATA[Provides some extra functionality to the IDE:
+* GC
+* Copy file name to clipboard
+* Copy fully qualified name to clipboard
+* Open folder in explorer
+* Open folder in command prompt
+* Open folder in navigator]]></body>
+      <created>1140557336</created>
+      <changed>1289052703</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://opensource.trajano.net/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>3.6.1.1</version>
+      <license>Other Open Source</license>
+      <companyname><![CDATA[trajano.net]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.1 and above]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://opensource.trajano.net/]]></updateurl>
+<ius>
+<iu>net.trajano.eclipse.platform</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

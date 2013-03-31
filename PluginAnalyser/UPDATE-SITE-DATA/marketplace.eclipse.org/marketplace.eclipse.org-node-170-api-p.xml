@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="170" name="Hibernate Tools (Helios)" url="http://marketplace.eclipse.org/content/hibernate-tools-helios">
+      <type>resource</type>
+      <categories>
+        <category id='36' name='Database Persistence' url='http://marketplace.eclipse.org/category/categories/database-persistence'/>
+      </categories>
+      <tags>
+        <tag id='667' name='jpa' url='http://marketplace.eclipse.org/category/free-tagging/jpa'/>
+        <tag id='757' name='hibernate' url='http://marketplace.eclipse.org/category/free-tagging/hibernate'/>
+        <tag id='1255' name='persistence' url='http://marketplace.eclipse.org/category/free-tagging/persistence'/>
+        <tag id='1256' name='hql' url='http://marketplace.eclipse.org/category/free-tagging/hql'/>
+        <tag id='116' name='' url='http://marketplace.eclipse.org/taxonomy/term/116'/>
+      </tags>
+      
+      <owner>Max Rydahl Andersen</owner>
+      <favorited>49</favorited>
+      <installstotal>4164</installstotal>
+      <installsrecent>270</installsrecent>
+      <shortdescription><![CDATA[The Hibernate Tools 3.4 has a set of views and wizards to help during Hibernate development. 
+
+Some highlights: 
+
+* configurable reverse engineering 
+* hibernate.cfg.xml wizard 
+* Hibernate HQL Editor with code completion 
+* Query execution and result 
+* Show generated SQL as you type 
+* hbm.xml code completion support ...and more]]></shortdescription>
+      <body><![CDATA[The Hibernate Tools 3.4 has a set of views and wizards to help during Hibernate development. 
+
+Some highlights: 
+
+* configurable reverse engineering 
+* hibernate.cfg.xml wizard 
+* Hibernate HQL Editor with code completion 
+* Query execution and result 
+* Show generated SQL as you type 
+* hbm.xml code completion support ...and more]]></body>
+      <created>1129995396</created>
+      <changed>1348737795</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://jboss.org/tools]]></homepageurl>
+      <image><![CDATA[http://www.hibernate.org/tpl/hibernate3/img/hibernate_icon.gif]]></image>
+      <version>3.4.x</version>
+      <license>LGPL</license>
+      <companyname><![CDATA[Red Hat, Inc.]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[<b style="color:red">3.6.2 ONLY</b> - <a href=http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/heliossr2>upgrade to the latest Helios SR2</a> before installing JBoss Tools.]]></eclipseversion>
+      <supporturl><![CDATA[http://community.jboss.org/en/jbosstools?view=discussions]]></supporturl>
+      <updateurl><![CDATA[http://download.jboss.org/jbosstools/updates/stable/helios/]]></updateurl>
+<ius>
+<iu>org.hibernate.eclipse.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="673" name="Alveole Studio MVC Web Project" url="http://marketplace.eclipse.org/content/alveole-studio-mvc-web-project">
+      <type>resource</type>
+      <categories>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+            
+      <owner>sylvain.ribeyron</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This is a visual plugin to build Web projects based on MVC frameworks such as struts2. This plugin supports struts 2 but could be extended to other MVC frameworks.<br />
+This may be seen as an eclipse plugin for Struts2.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This is a visual plugin to build Web projects based on MVC frameworks such as struts2. This plugin supports struts 2 but could be extended to other MVC frameworks.<br />
+This may be seen as an eclipse plugin for Struts2.</p>
+]]></body>
+      <created>1207060864</created>
+      <changed>1293017576</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://mvcwebproject.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>0.5.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Alveole Studio]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.2,3.3,3.4]]></eclipseversion>
+      <supporturl><![CDATA[https://sourceforge.net/forum/?group_id=222318]]></supporturl>
+      <updateurl><![CDATA[http://mvcwebproject.sourceforge.net/update/]]></updateurl>
+    </node>
+    </marketplace>
+    

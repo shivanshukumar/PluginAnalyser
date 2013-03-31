@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1082" name="SafiWorkshop (Saflet Designer)" url="http://marketplace.eclipse.org/content/safiworkshop-saflet-designer">
+      <type>resource</type>
+      <categories>
+        <category id='1' name='Application Server' url='http://marketplace.eclipse.org/taxonomy/term/1'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+      </categories>
+      <tags>
+        <tag id='292' name='IVR' url='http://marketplace.eclipse.org/category/free-tagging/ivr'/>
+        <tag id='1519' name='asterisk' url='http://marketplace.eclipse.org/category/free-tagging/asterisk'/>
+        <tag id='1520' name='Safi Systems' url='http://marketplace.eclipse.org/category/free-tagging/safi-systems'/>
+      </tags>
+      
+      <owner>Eric Erickson</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<h2><a href="index.cfm?pageMode=productdetails&product_id=8">SafiWorkshop</a></h2>
+<p>SafiWorkshop is a revolutionary logic flow and IVR designer that is used for creating flow applications (called Saflets) that are ran on a centralized server engine: SafiServer.  With SafiWorkshop (and SafiServer) you can design, test, debug and deploy advanced call routing applications from a single, unified development environment. SafiWorkshop also includes a prompt recorder/importer for managing IVR prompts and a fully featured SQL query editor.<br /></p>
+<div align="center">
+<a href="http://www.safisystems.com/images/screenshots/ss_04.jpg"><br /><img src="http://www.safisystems.com/images/screenshots/ss_04_thumb.jpg" alt="Highslide JS" title="SafiWorkshop" /></a><a href="http://www.safisystems.com/images/screenshots/ss_05.jpg"><br /><img src="http://www.safisystems.com/images/screenshots/ss_05_thumb.jpg" alt="Highslide JS" title="SafiWorkshop" /></a><a href="http://www.safisystems.com/images/screenshots/ss_03.jpg"><br /><img src="images/screenshots/ss_03_thumb.jpg" /></a><a href="http://www.safisystems.com/images/screenshots/ss_02.jpg"><br /><img src="http://www.safisystems.com/images/screenshots/ss_02_thumb.jpg" /></a><a href="http://www.safisystems.com/images/screenshots/ss_01.jpg"><br /><img src="http://www.safisystems.com/images/screenshots/ss_01_thumb.jpg" /></a>
+</div>
+]]></shortdescription>
+      <body><![CDATA[<h2><a href="index.cfm?pageMode=productdetails&product_id=8">SafiWorkshop</a></h2>
+<p>SafiWorkshop is a revolutionary logic flow and IVR designer that is used for creating flow applications (called Saflets) that are ran on a centralized server engine: SafiServer.  With SafiWorkshop (and SafiServer) you can design, test, debug and deploy advanced call routing applications from a single, unified development environment. SafiWorkshop also includes a prompt recorder/importer for managing IVR prompts and a fully featured SQL query editor.<br /></p>
+<div align="center">
+<a href="http://www.safisystems.com/images/screenshots/ss_04.jpg"><br /><img src="http://www.safisystems.com/images/screenshots/ss_04_thumb.jpg" alt="Highslide JS" title="SafiWorkshop" /></a><a href="http://www.safisystems.com/images/screenshots/ss_05.jpg"><br /><img src="http://www.safisystems.com/images/screenshots/ss_05_thumb.jpg" alt="Highslide JS" title="SafiWorkshop" /></a><a href="http://www.safisystems.com/images/screenshots/ss_03.jpg"><br /><img src="images/screenshots/ss_03_thumb.jpg" /></a><a href="http://www.safisystems.com/images/screenshots/ss_02.jpg"><br /><img src="http://www.safisystems.com/images/screenshots/ss_02_thumb.jpg" /></a><a href="http://www.safisystems.com/images/screenshots/ss_01.jpg"><br /><img src="http://www.safisystems.com/images/screenshots/ss_01_thumb.jpg" /></a>
+</div>
+]]></body>
+      <created>1260575896</created>
+      <changed>1294776438</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.safisystems.com/index.cfm?pageMode=productdetails&product_id=8]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/workshoplogo.jpg?itok=ytmyeu67]]></image>
+      <version>1.2.5</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[Safi Systems LLC]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.safisystems.com/index.cfm?pageMode=forums]]></supporturl>
+      <updateurl><![CDATA[http://updates.safisystems.com/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

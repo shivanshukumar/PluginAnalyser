@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1336" name="EGit - Git Team Provider" url="http://marketplace.eclipse.org/content/egit-git-team-provider">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='26' name='SCM' url='http://marketplace.eclipse.org/taxonomy/term/26'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+      </categories>
+      <tags>
+        <tag id='97' name='git' url='http://marketplace.eclipse.org/category/free-tagging/git'/>
+        <tag id='169' name='dvcs' url='http://marketplace.eclipse.org/category/free-tagging/dvcs'/>
+        <tag id='369' name='scm' url='http://marketplace.eclipse.org/category/free-tagging/scm'/>
+        <tag id='1213' name='vcs' url='http://marketplace.eclipse.org/category/free-tagging/vcs'/>
+        <tag id='1868' name='github' url='http://marketplace.eclipse.org/category/free-tagging/github'/>
+      </tags>
+      
+      <owner>Chris Aniszczyk</owner>
+      <favorited>288</favorited>
+      <installstotal>197767</installstotal>
+      <installsrecent>18995</installsrecent>
+      <shortdescription><![CDATA[<p>EGit is an Eclipse Team provider for the Git version control system. Git is a distributed SCM, which means every developer has a full copy of all history of every revision of the code, making queries against the history very fast and versatile. The EGit project is implementing Eclipse tooling on top of the JGit Java implementation of Git.</p>
+<p>To get started, check out our user guide: <a href="http://wiki.eclipse.org/EGit/User_Guide">http://wiki.eclipse.org/EGit/User_Guide</a></p>
+<p>If you have any questions, please use our support forum: <a href="http://www.eclipse.org/forums/index.php?t=thread&frm_id=48">http://www.eclipse.org/forums/index.php?t=thread&frm_id=48</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>EGit is an Eclipse Team provider for the Git version control system. Git is a distributed SCM, which means every developer has a full copy of all history of every revision of the code, making queries against the history very fast and versatile. The EGit project is implementing Eclipse tooling on top of the JGit Java implementation of Git.</p>
+<p>To get started, check out our user guide: <a href="http://wiki.eclipse.org/EGit/User_Guide">http://wiki.eclipse.org/EGit/User_Guide</a></p>
+<p>If you have any questions, please use our support forum: <a href="http://www.eclipse.org/forums/index.php?t=thread&frm_id=48">http://www.eclipse.org/forums/index.php?t=thread&frm_id=48</a></p>
+]]></body>
+      <created>1276893026</created>
+      <changed>1361413094</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://eclipse.org/egit]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/egit2.png?itok=K7c8g8N8]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/egitwizard.png?itok=jhradRMa]]></screenshot>
+      <version>2.3.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Eclipse.org]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eclipse.org/forums/index.php?t=thread&frm_id=48]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/egit/updates-2.3]]></updateurl>
+<ius>
+<iu>org.eclipse.egit</iu>
+<iu>org.eclipse.jgit</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

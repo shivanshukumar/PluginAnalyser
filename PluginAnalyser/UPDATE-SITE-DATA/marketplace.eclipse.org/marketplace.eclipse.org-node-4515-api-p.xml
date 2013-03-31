@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="4515" name="TC Algorithm Plugin" url="http://marketplace.eclipse.org/content/tc-algorithm-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='1059' name='topcoder' url='http://marketplace.eclipse.org/category/free-tagging/topcoder'/>
+      </tags>
+      
+      <owner>Fabian Steeg</owner>
+      <favorited>0</favorited>
+      <installstotal>86</installstotal>
+      <installsrecent>4</installsrecent>
+      <shortdescription><![CDATA[<p>Generates a solution stub and JUnit tests from a TopCoder algorithm competition problem statement</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Generates a solution stub and JUnit tests from a TopCoder algorithm competition problem statement</p>
+]]></body>
+      <created>1279991533</created>
+      <changed>1280150094</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://wp.me/pwKJk-1O]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/tc-plugin-logo.png?itok=z6zkXxbT]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/tc-plugin.png?itok=HItgoPFO]]></screenshot>
+      <version>0.2.4</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Fabian Steeg]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5, 3.6, 4.0]]></eclipseversion>
+      <supporturl><![CDATA[http://fsteeg.wordpress.com/2007/09/26/topcoder-algorithm-competition-eclipse-plug-in/#comment-form]]></supporturl>
+      <updateurl><![CDATA[http://quui.de/updates/]]></updateurl>
+<ius>
+<iu>com.quui.features.tc</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

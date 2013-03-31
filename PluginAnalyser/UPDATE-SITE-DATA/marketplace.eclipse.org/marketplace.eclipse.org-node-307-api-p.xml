@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="307" name="PDF viewer" url="http://marketplace.eclipse.org/content/pdf-viewer">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='188' name='pdf viewer' url='http://marketplace.eclipse.org/category/free-tagging/pdf-viewer'/>
+        <tag id='541' name='PDF' url='http://marketplace.eclipse.org/category/free-tagging/pdf'/>
+        <tag id='1137' name='jpedal' url='http://marketplace.eclipse.org/category/free-tagging/jpedal'/>
+      </tags>
+      
+      <owner>mark stephens</owner>
+      <favorited>4</favorited>
+      <installstotal>1426</installstotal>
+      <installsrecent>37</installsrecent>
+      <shortdescription><![CDATA[JPedal PDF viewer provides a free plugin to add native PDF viewing and searching to Eclipse. It also allows you to bookmark and store links to all your favourite PDF files for easy acess.
+
+The plugin also adds a PDF view and perspective to Eclipse, providing integrated display of PDF files without the need for any external tools.
+
+JPedal PDF viewer is released under an LGPL license.
+]]></shortdescription>
+      <body><![CDATA[JPedal PDF viewer provides a free plugin to add native PDF viewing and searching to Eclipse. It also allows you to bookmark and store links to all your favourite PDF files for easy acess.
+
+The plugin also adds a PDF view and perspective to Eclipse, providing integrated display of PDF files without the need for any external tools.
+
+JPedal PDF viewer is released under an LGPL license.
+]]></body>
+      <created>1163775979</created>
+      <changed>1341945199</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.idrsolutions.com/eclipse-pdf-plugin/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/jpedal-110-80_0.JPG?itok=LI04pEcz]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Capture_0.JPG?itok=mEHrTqWn]]></screenshot>
+      <version>20120413</version>
+      <license>LGPL</license>
+      <companyname><![CDATA[IDRsolutions]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[https://idrsolutions.fogbugz.com/default.asp?support]]></supporturl>
+      <updateurl><![CDATA[http://www.jpedal.org/download/plugin/eclipse/]]></updateurl>
+<ius>
+<iu>org.jpedal.plugin.eclipse</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="886" name="Emacs+ " url="http://marketplace.eclipse.org/content/emacs">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+      </categories>
+      <tags>
+        <tag id='101' name='MulgaSoft' url='http://marketplace.eclipse.org/category/free-tagging/mulgasoft'/>
+        <tag id='102' name='split window' url='http://marketplace.eclipse.org/category/free-tagging/split-window'/>
+        <tag id='146' name='editor' url='http://marketplace.eclipse.org/category/free-tagging/editor'/>
+        <tag id='421' name='keyboard macros' url='http://marketplace.eclipse.org/category/free-tagging/keyboard-macros'/>
+        <tag id='458' name='M-x' url='http://marketplace.eclipse.org/category/free-tagging/m-x'/>
+      </tags>
+      
+      <owner>Mark Feber</owner>
+      <favorited>143</favorited>
+      <installstotal>9261</installstotal>
+      <installsrecent>57</installsrecent>
+      <shortdescription><![CDATA[<p><b>Emacs+ - <font color="#363696"><i>Eclipse Extensions for Emacs Expatriates</i></font></b>  - provides an enhanced <i>Emacs-like</i> experience in the Eclipse text editors.  Includes: </p>
+<ul><li>Keyboard Macros (including name, bind, save, load and auto-loading</li>
+<li><b><i>M-x</i></b> command execution</li>
+<li><b><i>C-u</i></b> universal-argument</li>
+<li><b><i>C-x b</i></b> with search</li>
+<li>Emacs style point/mark selection with both global and buffer-local mark rings</li>
+<li>Emacs style search and query/replace with regular expressions</li>
+<li>A kill ring for deleted text</li>
+<li>Digit argument support <b><i>M-1, M-2 ... C-M-1, C-M-2 ...</i></b>, etc.</li>
+<li>Balanced expression (s-expression) commands</li>
+<li>Split editor windows (<b><i>C-x 2</i></b>, <b><i>C-x 3</i></b>)</li>
+<li>Rectangle Commands</li>
+<li>Named registers </li>
+<li>Tags search (<i>without tags</i>)</li>
+<li>Transposition of characters, words, lines, paragraphs and s-expressions</li>
+<li>Line and character commands</li>
+<li>Space and blank line handling</li>
+<li>Case conversion commands</li>
+</ul><p>An <i>optional</i> feature provides additional bindings for:</p>
+<ul><li>Gnu-style help commands</li>
+<li>Gnu-style shift selection</li>
+<li>Gnu-style GUD bindings</li>
+</ul><p>In cases where the normal Emacs binding interferes with an Eclipse binding, the Emacs binding is preferred. As an optional feature, additional command and convenience override bindings can be installed.<br /><br /><br /><a href="mailto:support@mulgasoft.com?subject=RFE:" target="_blank"><b>Feature requests</b></a> and <a href="mailto:support@mulgasoft.com?subject=Defect:" target="_blank"><b>defect reports</b></a> made in the <i>Reviews</i> section are unlikely to be noticed.  Submit them <a href="mailto:support@mulgasoft.com" target="_blank"><b>here</b></a>.  A forum for discussion can be found at <a href="http://groups.google.com/group/emacsplus/topics">Emacs+ discussion</a>.</p>
+]]></shortdescription>
+      <body><![CDATA[<p><b>Emacs+ - <font color="#363696"><i>Eclipse Extensions for Emacs Expatriates</i></font></b>  - provides an enhanced <i>Emacs-like</i> experience in the Eclipse text editors.  Includes: </p>
+<ul><li>Keyboard Macros (including name, bind, save, load and auto-loading</li>
+<li><b><i>M-x</i></b> command execution</li>
+<li><b><i>C-u</i></b> universal-argument</li>
+<li><b><i>C-x b</i></b> with search</li>
+<li>Emacs style point/mark selection with both global and buffer-local mark rings</li>
+<li>Emacs style search and query/replace with regular expressions</li>
+<li>A kill ring for deleted text</li>
+<li>Digit argument support <b><i>M-1, M-2 ... C-M-1, C-M-2 ...</i></b>, etc.</li>
+<li>Balanced expression (s-expression) commands</li>
+<li>Split editor windows (<b><i>C-x 2</i></b>, <b><i>C-x 3</i></b>)</li>
+<li>Rectangle Commands</li>
+<li>Named registers </li>
+<li>Tags search (<i>without tags</i>)</li>
+<li>Transposition of characters, words, lines, paragraphs and s-expressions</li>
+<li>Line and character commands</li>
+<li>Space and blank line handling</li>
+<li>Case conversion commands</li>
+</ul><p>An <i>optional</i> feature provides additional bindings for:</p>
+<ul><li>Gnu-style help commands</li>
+<li>Gnu-style shift selection</li>
+<li>Gnu-style GUD bindings</li>
+</ul><p>In cases where the normal Emacs binding interferes with an Eclipse binding, the Emacs binding is preferred. As an optional feature, additional command and convenience override bindings can be installed.<br /><br /><br /><a href="mailto:support@mulgasoft.com?subject=RFE:" target="_blank"><b>Feature requests</b></a> and <a href="mailto:support@mulgasoft.com?subject=Defect:" target="_blank"><b>defect reports</b></a> made in the <i>Reviews</i> section are unlikely to be noticed.  Submit them <a href="mailto:support@mulgasoft.com" target="_blank"><b>here</b></a>.  A forum for discussion can be found at <a href="http://groups.google.com/group/emacsplus/topics">Emacs+ discussion</a>.</p>
+]]></body>
+      <created>1236632886</created>
+      <changed>1341361929</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.mulgasoft.com/emacsplus]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/BlueLogo.png?itok=nZGGEYd8]]></image>
+      <version>3.6.5</version>
+      <license>Other</license>
+      <companyname><![CDATA[Mark Feber]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[Ganymede to Indigo]]></eclipseversion>
+      <supporturl><![CDATA[mailto:support@mulgasoft.com]]></supporturl>
+      <updateurl><![CDATA[http://www.mulgasoft.com/emacsplus/update-site]]></updateurl>
+<ius>
+<iu>com.mulgasoft.emacsplus.feature.feature.group</iu>
+<iu>com.mulgasoft.emacsplus.optional.features</iu>
+<iu>com.mulgasoft.emacsplus.maccmd.feature</iu>
+<iu>com.mulgasoft.emacsplus.maccmd.optional.features</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="35037" name="oPDT" url="http://marketplace.eclipse.org/content/opdt">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='43' name='PHP' url='http://marketplace.eclipse.org/category/free-tagging/php'/>
+        <tag id='251' name='pdt' url='http://marketplace.eclipse.org/category/free-tagging/pdt'/>
+      </tags>
+      
+      <owner>Open Way (Mike)</owner>
+      <favorited>5</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>oPDT is an Eclipse Plugin which provide some useful extensions to official PHP Development Tools plugin.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>oPDT is an Eclipse Plugin which provide some useful extensions to official PHP Development Tools plugin.</p>
+]]></body>
+      <created>1298630998</created>
+      <changed>1298906738</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://opdt.openway.com.pl]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[OpenWay]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://openway.com.pl]]></supporturl>
+      <updateurl><![CDATA[http://opdt.openway.com.pl/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

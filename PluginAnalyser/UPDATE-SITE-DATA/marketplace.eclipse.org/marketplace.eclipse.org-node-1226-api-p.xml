@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1226" name="Sonar" url="http://marketplace.eclipse.org/content/sonar">
+      <type>resource</type>
+      <categories>
+        <category id='38' name='Mylyn Connectors' url='http://marketplace.eclipse.org/category/categories/mylyn-connectors'/>
+        <category id='39' name='Reporting' url='http://marketplace.eclipse.org/category/categories/reporting'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='88' name='mylyn' url='http://marketplace.eclipse.org/category/free-tagging/mylyn'/>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='131' name='quality' url='http://marketplace.eclipse.org/category/free-tagging/quality'/>
+        <tag id='139' name='findbugs' url='http://marketplace.eclipse.org/category/free-tagging/findbugs'/>
+        <tag id='194' name='QA' url='http://marketplace.eclipse.org/category/free-tagging/qa'/>
+      </tags>
+      
+      <owner>Evgeny Mandrikov</owner>
+      <favorited>53</favorited>
+      <installstotal>24188</installstotal>
+      <installsrecent>1691</installsrecent>
+      <shortdescription><![CDATA[<p>Sonar for Eclipse provides comprehensive integration of Sonar into Eclipse. It shows quality issues while browsing the source code. Developers are made aware of quality issues compared to corporate standards without leaving their favorite IDE and thus enabling for continuous improvement with no effort. No propagation of standards changes is required anymore as definition is centralized.</p>
+<p>Sonar (<a href="http://sonarsource.org">http://sonarsource.org</a>) is the open source platform for managing centrally source code quality. Live example : <a href="http://nemo.sonarsource.org">http://nemo.sonarsource.org</a> .</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Sonar for Eclipse provides comprehensive integration of Sonar into Eclipse. It shows quality issues while browsing the source code. Developers are made aware of quality issues compared to corporate standards without leaving their favorite IDE and thus enabling for continuous improvement with no effort. No propagation of standards changes is required anymore as definition is centralized.</p>
+<p>Sonar (<a href="http://sonarsource.org">http://sonarsource.org</a>) is the open source platform for managing centrally source code quality. Live example : <a href="http://nemo.sonarsource.org">http://nemo.sonarsource.org</a> .</p>
+]]></body>
+      <created>1274875518</created>
+      <changed>1357728041</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://sonar-ide.codehaus.org/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/sonar_wizban_0.png?itok=Uv92QPse]]></image>
+      <version>3.0.0</version>
+      <license>LGPL</license>
+      <companyname><![CDATA[SonarSource]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6, 3.7, 3.8, 4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.sonarsource.org/support/support/]]></supporturl>
+      <updateurl><![CDATA[http://dist.sonar-ide.codehaus.org/eclipse/]]></updateurl>
+<ius>
+<iu>org.sonar.ide.eclipse.jdt.feature</iu>
+<iu>org.sonar.ide.eclipse.cdt.feature</iu>
+<iu>org.sonar.ide.eclipse.pydev.feature</iu>
+<iu>org.sonar.ide.eclipse.mylyn.feature</iu>
+<iu>org.sonar.ide.eclipse.m2e.feature</iu>
+<iu>org.sonar.ide.eclipse.thirdparty.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

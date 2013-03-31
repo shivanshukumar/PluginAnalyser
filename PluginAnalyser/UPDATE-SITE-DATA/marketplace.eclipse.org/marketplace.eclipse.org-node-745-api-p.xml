@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="745" name="eDependency" url="http://marketplace.eclipse.org/content/edependency">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+      </categories>
+            
+      <owner>Matthias Kappeller</owner>
+      <favorited>1</favorited>
+      <installstotal>337</installstotal>
+      <installsrecent>10</installsrecent>
+      <shortdescription><![CDATA[<h1>eDependency</h1>
+<h4><a href="http://codescale.pytalhost.org/projects/eDependency/screenshots/" title="Screenshots">Screenshots</a> • <a href="http://codescale.pytalhost.org/projects/eDependency/tutorials/" title="Help / Tutorials">Help / Tutorials</a> • <a href="http://codescale.pytalhost.org/projects/eDependency/versionhistory/" title="Versionhistory">Versionhistory</a></h4>
+<p>With eDependency you can <b>manage plug-in dependencies</b>. This will help you to let your software architecture and design <b>grow controlled</b>.</p>
+<p>Softwarearchitecture will challenge you to hold it alive over time. Because software development is getting <b>faster</b> - more agile - and <b><a href="http://tech.norabble.com/2006/05/what-software-crisis.html">increasingly complex</a></b>.<br />
+How will the architecture take its place in this world?<br /><br /><br />
+Technologies as <b>OSGi</b> - the component-model defined by the <a href="http://www.osgi.org">OSGi Alliance</a> - will support you to make your softwarecomponents <b>more well defined</b>. Their dependencies takes a place at that.</p>
+<p>Build upon the OSGi component-model is <b>eDependency</b>. With the assistance of <a href="http://www.eclipse.org">Eclipse</a> and <a href="http://www.eclipse.org/pde">PDE</a>, eDependency creates a <b>graphical representation</b> of your (more or less) complex <b>software-system</b> and its <b>architecture</b>.</p>
+<p>Take a look at the <a href="../../projects/eDependency/screenshots/" title="Screenshots">screenshots</a> to know how this will be done.</p>
+<p>Systemrequirements:<br /><br /></p><ul class="circle"><li>Eclipse 3.5</li>
+<li>RAM 128MB (for bigger models)</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<h1>eDependency</h1>
+<h4><a href="http://codescale.pytalhost.org/projects/eDependency/screenshots/" title="Screenshots">Screenshots</a> • <a href="http://codescale.pytalhost.org/projects/eDependency/tutorials/" title="Help / Tutorials">Help / Tutorials</a> • <a href="http://codescale.pytalhost.org/projects/eDependency/versionhistory/" title="Versionhistory">Versionhistory</a></h4>
+<p>With eDependency you can <b>manage plug-in dependencies</b>. This will help you to let your software architecture and design <b>grow controlled</b>.</p>
+<p>Softwarearchitecture will challenge you to hold it alive over time. Because software development is getting <b>faster</b> - more agile - and <b><a href="http://tech.norabble.com/2006/05/what-software-crisis.html">increasingly complex</a></b>.<br />
+How will the architecture take its place in this world?<br /><br /><br />
+Technologies as <b>OSGi</b> - the component-model defined by the <a href="http://www.osgi.org">OSGi Alliance</a> - will support you to make your softwarecomponents <b>more well defined</b>. Their dependencies takes a place at that.</p>
+<p>Build upon the OSGi component-model is <b>eDependency</b>. With the assistance of <a href="http://www.eclipse.org">Eclipse</a> and <a href="http://www.eclipse.org/pde">PDE</a>, eDependency creates a <b>graphical representation</b> of your (more or less) complex <b>software-system</b> and its <b>architecture</b>.</p>
+<p>Take a look at the <a href="../../projects/eDependency/screenshots/" title="Screenshots">screenshots</a> to know how this will be done.</p>
+<p>Systemrequirements:<br /><br /></p><ul class="circle"><li>Eclipse 3.5</li>
+<li>RAM 128MB (for bigger models)</li>
+</ul>]]></body>
+      <created>1218459814</created>
+      <changed>1273386894</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://codescale.pytalhost.org/projects/eDependency/]]></homepageurl>
+      <image><![CDATA[http://codescale.pytalhost.org/projects/eDependency/files/stacks_image_20_1.png]]></image>
+      <version>0.2.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[codescale.org]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://codescale.pytalhost.org]]></supporturl>
+      <updateurl><![CDATA[http://edependency.sourceforge.net/update/stable/0.2]]></updateurl>
+<ius>
+<iu>org.codescale.edependency.view</iu>
+<iu>org.codescale.edependency.runtime</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

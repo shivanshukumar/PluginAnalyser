@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="92" name="EclipseColorer" url="http://marketplace.eclipse.org/content/eclipsecolorer">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+      <tags>
+        <tag id='146' name='editor' url='http://marketplace.eclipse.org/category/free-tagging/editor'/>
+        <tag id='513' name='syntax' url='http://marketplace.eclipse.org/category/free-tagging/syntax'/>
+        <tag id='514' name='highlight' url='http://marketplace.eclipse.org/category/free-tagging/highlight-0'/>
+        <tag id='516' name='colorer' url='http://marketplace.eclipse.org/category/free-tagging/colorer'/>
+      </tags>
+      
+      <owner>Igor Russkih</owner>
+      <favorited>15</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><P dir=ltr ><STRONG>Eclipse Colorer</strong>is a syntax highlighting plugin for Eclipse platform.<BR>It supports more than 150 languages, has many powerful features and great number of syntaxes. It allows to highlight languages with nested construction (jsp, asp, php), has powerful XML languages support. It validates and shows most XML syntax errors on the fly, allows to highlight and find errors in structured XML languages (XML Schema, XSLT, XSLFO, DocBook, RelaxNG and others).<BR>Colorer makes paired syntax constructions highlighting (C/Java brackets, XML/HTML tags and so on...).</p></p>
+]]></shortdescription>
+      <body><![CDATA[<p><P dir=ltr ><STRONG>Eclipse Colorer</strong>is a syntax highlighting plugin for Eclipse platform.<BR>It supports more than 150 languages, has many powerful features and great number of syntaxes. It allows to highlight languages with nested construction (jsp, asp, php), has powerful XML languages support. It validates and shows most XML syntax errors on the fly, allows to highlight and find errors in structured XML languages (XML Schema, XSLT, XSLFO, DocBook, RelaxNG and others).<BR>Colorer makes paired syntax constructions highlighting (C/Java brackets, XML/HTML tags and so on...).</p></p>
+]]></body>
+      <created>1077712889</created>
+      <changed>1259778466</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://colorer.sf.net/eclipsecolorer/]]></homepageurl>
+      <image><![CDATA[http://colorer.sf.net/images/logo-colorer.png]]></image>
+      <version>0.8.0</version>
+      <license>Free GPL</license>
+      <companyname><![CDATA[Igor Russkih]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.x]]></eclipseversion>
+      <supporturl><![CDATA[http://colorer.sf.net]]></supporturl>
+      <updateurl><![CDATA[http://colorer.sf.net/eclipsecolorer/]]></updateurl>
+    </node>
+    </marketplace>
+    

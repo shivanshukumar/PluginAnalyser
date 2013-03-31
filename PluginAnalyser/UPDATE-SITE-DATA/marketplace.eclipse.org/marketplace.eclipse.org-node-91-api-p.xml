@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="91" name="codeBeamer Plugin for Eclipse" url="http://marketplace.eclipse.org/content/codebeamer-plugin-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+      </categories>
+            
+      <owner>Intland Software</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>codeBeamer is a Collaborative Application Lifecycle Management (ALM) Solution for distributed software development.</p>
+<p>codeBeamer provides project management, wiki, document management, issue tracking, configuration management (ITIL), continuous integration, version control, source code analysis and forums through a single and secure environment. </p>
+<p>This plugin integrates codeBeamer features with the Eclipse.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>codeBeamer is a Collaborative Application Lifecycle Management (ALM) Solution for distributed software development.</p>
+<p>codeBeamer provides project management, wiki, document management, issue tracking, configuration management (ITIL), continuous integration, version control, source code analysis and forums through a single and secure environment. </p>
+<p>This plugin integrates codeBeamer features with the Eclipse.</p>
+]]></body>
+      <created>1077580647</created>
+      <changed>1260286913</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.intland.com/products/cb/overview.html]]></homepageurl>
+      <image><![CDATA[http://www.intland.com/images/cb-logo-110x80.png]]></image>
+      <version>5.4.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Intland Software]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3, 3.4 and 3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.intland.com/support/overview.html]]></supporturl>
+      <updateurl><![CDATA[http://www.intland.com/eclipse-plugin/site.xml]]></updateurl>
+    </node>
+    </marketplace>
+    

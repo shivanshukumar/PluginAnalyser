@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="749" name="Bravo JSP editor" url="http://marketplace.eclipse.org/content/bravo-jsp-editor">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+      </categories>
+      <tags>
+        <tag id='1245' name='jsp' url='http://marketplace.eclipse.org/category/free-tagging/jsp'/>
+        <tag id='1648' name='bravo' url='http://marketplace.eclipse.org/category/free-tagging/bravo'/>
+        <tag id='1649' name='jsp editor' url='http://marketplace.eclipse.org/category/free-tagging/jsp-editor'/>
+        <tag id='2610' name='wysiwyg' url='http://marketplace.eclipse.org/category/free-tagging/wysiwyg'/>
+      </tags>
+      
+      <owner>Beck Yang</owner>
+      <favorited>32</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Bravo JSP editor is a WYSIWYG JSP/HTML editor. It also include a powerful DOM modified tool, String externalize wizard. The free edition can be freely used without time limitation, commercial used is permitted.</p>
+<!--break--><p><b>Visual part</b>: support <b>CSS style, images, JSP expression/tag library/tag file, external included files </b>. The <a href="http://bravo.comxa.com/demo7.php">HTML visual view</a> can used to preview the HTML rendering of editing document.</p>
+<p><b>Editor</b>: composed by visual part and JSP editor from WTP(Eclipse Web Tools platform). So code assist, code template and other functions are reserved. <a href="http://bravo.comxa.com/demo.php">View demo here (need flash player)</a></p>
+<p><b>DOM find/replace dialog</b>: Help to modify DOM based document by custom java script, the editing could be saved as command and combined to a "macro". This feature also support other editors based on Webtools, such as: Hibernate Tools' HBM XML editor. <a href="http://bravo.comxa.com/demo6.php">View demo here</a>
+</p>
+<p><b>String externalize wizard</b>: A simple way to localized your JSP - extract the text inside JSP to property file, generate tag library code. <a href="http://bravo.comxa.com/demo2.php">View demo here (need flash player)</a>
+</p>
+<p><b>JSTL view</b>: could list Java Bean's property or a resource bundle file in it. Once double click a row, the property name/resource bundle key will be copied into active text editor</p>
+<p>
+Do you need to modify exist JSP/HTML based document frequently? Do you prefer to input/copy/paste in code editor?<br />
+Try this plugins, you will love it!
+</p>
+<p>Before you install via update site, please <a href="http://bravo.comxa.com/install.php">read installation page first</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Bravo JSP editor is a WYSIWYG JSP/HTML editor. It also include a powerful DOM modified tool, String externalize wizard. The free edition can be freely used without time limitation, commercial used is permitted.</p>
+<!--break--><p><b>Visual part</b>: support <b>CSS style, images, JSP expression/tag library/tag file, external included files </b>. The <a href="http://bravo.comxa.com/demo7.php">HTML visual view</a> can used to preview the HTML rendering of editing document.</p>
+<p><b>Editor</b>: composed by visual part and JSP editor from WTP(Eclipse Web Tools platform). So code assist, code template and other functions are reserved. <a href="http://bravo.comxa.com/demo.php">View demo here (need flash player)</a></p>
+<p><b>DOM find/replace dialog</b>: Help to modify DOM based document by custom java script, the editing could be saved as command and combined to a "macro". This feature also support other editors based on Webtools, such as: Hibernate Tools' HBM XML editor. <a href="http://bravo.comxa.com/demo6.php">View demo here</a>
+</p>
+<p><b>String externalize wizard</b>: A simple way to localized your JSP - extract the text inside JSP to property file, generate tag library code. <a href="http://bravo.comxa.com/demo2.php">View demo here (need flash player)</a>
+</p>
+<p><b>JSTL view</b>: could list Java Bean's property or a resource bundle file in it. Once double click a row, the property name/resource bundle key will be copied into active text editor</p>
+<p>
+Do you need to modify exist JSP/HTML based document frequently? Do you prefer to input/copy/paste in code editor?<br />
+Try this plugins, you will love it!
+</p>
+<p>Before you install via update site, please <a href="http://bravo.comxa.com/install.php">read installation page first</a></p>
+]]></body>
+      <created>1219086211</created>
+      <changed>1362316690</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://bravo.heliohost.org/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/overview_s.jpg?itok=OQVN2s7X]]></image>
+      <version>2.5.2</version>
+      <license>Other</license>
+      <companyname><![CDATA[Beck Yang]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5~4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://bravo-jsp-editor.blogspot.com/]]></supporturl>
+      <updateurl><![CDATA[http://bravo.comxa.com/update]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

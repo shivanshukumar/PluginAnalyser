@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="644" name="Copyright Wizard" url="http://marketplace.eclipse.org/content/copyright-wizard">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+      </categories>
+            
+      <owner>Eric Wuillai</owner>
+      <favorited>11</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Copyright Wizard is a plugin to implement a copyright comment on the header of files of a project. The wizard lets you set the text of the comment and select the source files on which to applied it.<br />
+The Copyright Wizard main features are:<br />
+<ul><br />
+<li>A single text message can be applied to several different file types (java, XML ...) in the same operation. The format of comment is automatically determined by the wizard from the file ContentType.</li><br />
+<li>The comments formats are adjustable in the preferences for each Eclipse ContentType inheriting Text base type.</li><br />
+<li>The wizard also provides the possibility of adding a license file to selected projects.</li><br />
+<li>The wizard recognizes comment headers already present and can replace them.</li><br />
+</ul></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Copyright Wizard is a plugin to implement a copyright comment on the header of files of a project. The wizard lets you set the text of the comment and select the source files on which to applied it.<br />
+The Copyright Wizard main features are:<br />
+<ul><br />
+<li>A single text message can be applied to several different file types (java, XML ...) in the same operation. The format of comment is automatically determined by the wizard from the file ContentType.</li><br />
+<li>The comments formats are adjustable in the preferences for each Eclipse ContentType inheriting Text base type.</li><br />
+<li>The wizard also provides the possibility of adding a license file to selected projects.</li><br />
+<li>The wizard recognizes comment headers already present and can replace them.</li><br />
+</ul></p>
+]]></body>
+      <created>1202737213</created>
+      <changed>1327100909</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.wdev91.com/?p=cpw]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/guide03.png?itok=y8odK8XR]]></screenshot>
+      <version>1.4.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[WDev91]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5 or greater]]></eclipseversion>
+      <supporturl><![CDATA[https://sourceforge.net/forum/?group_id=218182]]></supporturl>
+      <updateurl><![CDATA[http://www.wdev91.com/update/]]></updateurl>
+    </node>
+    </marketplace>
+    

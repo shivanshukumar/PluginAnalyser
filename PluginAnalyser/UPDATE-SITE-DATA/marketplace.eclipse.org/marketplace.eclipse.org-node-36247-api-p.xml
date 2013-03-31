@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="36247" name="Opera Widgets Plug-in for Eclipse" url="http://marketplace.eclipse.org/content/opera-widgets-plug-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+      <tags>
+        <tag id='854' name='widgets' url='http://marketplace.eclipse.org/category/free-tagging/widgets'/>
+        <tag id='991' name='Mobile' url='http://marketplace.eclipse.org/category/free-tagging/mobile'/>
+        <tag id='1656' name='w3c' url='http://marketplace.eclipse.org/category/free-tagging/w3c'/>
+        <tag id='1657' name='wac' url='http://marketplace.eclipse.org/category/free-tagging/wac'/>
+        <tag id='1658' name='Opera Software' url='http://marketplace.eclipse.org/category/free-tagging/opera-software'/>
+      </tags>
+      
+      <owner>Tomasz Procków</owner>
+      <favorited>2</favorited>
+      <installstotal>187</installstotal>
+      <installsrecent>3</installsrecent>
+      <shortdescription><![CDATA[<p>Opera Widgets Plugin for Eclipse is a tool that simplifies WAC and W3C Widget development process by enabling developers to quickly create Widget project, implement some code and run it in an emulator. With Widget Plugin there is no need for developer to know Widget specification. It support both W3C and WAC standard and all features can be added easily by just few clicks.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Opera Widgets Plugin for Eclipse is a tool that simplifies WAC and W3C Widget development process by enabling developers to quickly create Widget project, implement some code and run it in an emulator. With Widget Plugin there is no need for developer to know Widget specification. It support both W3C and WAC standard and all features can be added easily by just few clicks.</p>
+]]></body>
+      <created>1299149224</created>
+      <changed>1313762605</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://bizon.opera.com/widgets-sdk]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/icon_4.png?itok=frqso1Sy]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/config_editor_1_3.png?itok=970q9MVK]]></screenshot>
+      <version>1.1.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Opera Software]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://my.opera.com/widgetsteam/blog/index.dml/tag/eclipse]]></supporturl>
+      <updateurl><![CDATA[http://bizon.opera.com/widgets-sdk]]></updateurl>
+<ius>
+<iu>com.opera.widget.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

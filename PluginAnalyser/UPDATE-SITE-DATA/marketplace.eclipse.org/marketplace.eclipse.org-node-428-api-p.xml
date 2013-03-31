@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="428" name="Browse by Query" url="http://marketplace.eclipse.org/content/browse-query">
+      <type>resource</type>
+      <categories>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+      </categories>
+            
+      <owner>ads</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>A query language for browsing. You query your database-- why don't you query your code? Write queries to provide custom views of your code base.</p>
+<p>The key concept is a query language for finding things in your code. Like a conventional browser in an IDE, the query language knows your code and your programming language; unlike a conventional browser, there is no limit to how deeply among the web of relationships among your program objects you can search in a single query. Although browsers may be sufficient for most of the searches a programmer might want to do, sometimes what your looking for is more complex. Programmers are used to thinking in terms of language and expressions; the query language lets them formulate arbitrarily complex questions about their code and see the answer almost instantly.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>A query language for browsing. You query your database-- why don't you query your code? Write queries to provide custom views of your code base.</p>
+<p>The key concept is a query language for finding things in your code. Like a conventional browser in an IDE, the query language knows your code and your programming language; unlike a conventional browser, there is no limit to how deeply among the web of relationships among your program objects you can search in a single query. Although browsers may be sufficient for most of the searches a programmer might want to do, sometimes what your looking for is more complex. Programmers are used to thinking in terms of language and expressions; the query language lets them formulate arbitrarily complex questions about their code and see the answer almost instantly.</p>
+]]></body>
+      <created>1175096031</created>
+      <changed>1266589529</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://browsebyquery.sourceforge.net]]></homepageurl>
+      <image><![CDATA[http://browsebyquery.sourceforge.net/weber_epic.png]]></image>
+      <version>0.7.7</version>
+      <license>GPL</license>
+      <companyname><![CDATA[antlersoft]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.1+]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/forum/forum.php?forum_id=469470]]></supporturl>
+      <updateurl><![CDATA[http://browsebyquery.sourceforge.net/eclipse-site/site.xml]]></updateurl>
+    </node>
+    </marketplace>
+    

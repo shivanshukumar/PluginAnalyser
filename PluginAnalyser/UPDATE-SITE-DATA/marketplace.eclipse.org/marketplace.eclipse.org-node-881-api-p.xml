@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="881" name="Vrapper (Vim)" url="http://marketplace.eclipse.org/content/vrapper">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='1972' name='General Purpose Tools' url='http://marketplace.eclipse.org/category/categories/general-purpose-tools'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='82' name='free' url='http://marketplace.eclipse.org/category/free-tagging/free'/>
+        <tag id='377' name='vim' url='http://marketplace.eclipse.org/category/free-tagging/vim'/>
+        <tag id='1387' name='vi' url='http://marketplace.eclipse.org/category/free-tagging/vi'/>
+        <tag id='1888' name='emulation' url='http://marketplace.eclipse.org/category/free-tagging/emulation'/>
+        <tag id='2088' name='GPL' url='http://marketplace.eclipse.org/category/free-tagging/gpl'/>
+      </tags>
+      
+      <owner>Vrapper Team</owner>
+      <favorited>31</favorited>
+      <installstotal>14203</installstotal>
+      <installsrecent>1202</installsrecent>
+      <shortdescription><![CDATA[<p>Vrapper acts as a wrapper for Eclipse text editors to provide a Vim-like input scheme for moving around and editing text.</p>
+<p>Unlike other plugins which embed Vim in Eclipse, Vrapper imitates the behaviour of Vim while still using whatever editor you have opened in the workbench. The goal is to have the comfort and ease which comes with the different modes, complex commands and count/operator/motion combinations which are the key features behind editing with Vim, while preserving the powerful features of the different Eclipse text editors, like code generation and refactoring.</p>
+<p>Vrapper tries to offer Eclipse users the best of both worlds.</p>
+<p>Our update site has optional Vrapper extensions for C/C++ (CDT), Java (JDT), and Python (PyDev).  These optional plugins are not installable via the Eclipse Marketplace because they each have their own dependencies and most users don't need all three.  (This was leading to a lot of "failed dependency" errors for users who didn't unselect the plugins they didn't need.)</p>
+<p>Fork us on GitHub!<br /><a href="https://github.com/vrapper/vrapper">https://github.com/vrapper/vrapper</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Vrapper acts as a wrapper for Eclipse text editors to provide a Vim-like input scheme for moving around and editing text.</p>
+<p>Unlike other plugins which embed Vim in Eclipse, Vrapper imitates the behaviour of Vim while still using whatever editor you have opened in the workbench. The goal is to have the comfort and ease which comes with the different modes, complex commands and count/operator/motion combinations which are the key features behind editing with Vim, while preserving the powerful features of the different Eclipse text editors, like code generation and refactoring.</p>
+<p>Vrapper tries to offer Eclipse users the best of both worlds.</p>
+<p>Our update site has optional Vrapper extensions for C/C++ (CDT), Java (JDT), and Python (PyDev).  These optional plugins are not installable via the Eclipse Marketplace because they each have their own dependencies and most users don't need all three.  (This was leading to a lot of "failed dependency" errors for users who didn't unselect the plugins they didn't need.)</p>
+<p>Fork us on GitHub!<br /><a href="https://github.com/vrapper/vrapper">https://github.com/vrapper/vrapper</a></p>
+]]></body>
+      <created>1236008974</created>
+      <changed>1360526774</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://vrapper.sourceforge.net]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/vrapper_logo_small_0.png?itok=4b9e28gb]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_8.png?itok=7uK6riMu]]></screenshot>
+      <version>0.28.0</version>
+      <license>GPL</license>
+      <companyname><![CDATA[Vrapper Team]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5+]]></eclipseversion>
+      <supporturl><![CDATA[https://github.com/vrapper/vrapper/issues]]></supporturl>
+      <updateurl><![CDATA[http://vrapper.sourceforge.net/update-site/stable]]></updateurl>
+<ius>
+<iu>net.sourceforge.vrapper</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

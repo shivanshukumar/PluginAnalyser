@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="260" name="Topcased UML Editor" url="http://marketplace.eclipse.org/content/topcased-uml-editor">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+      <tags>
+        <tag id='472' name='very good' url='http://marketplace.eclipse.org/category/free-tagging/very-good'/>
+      </tags>
+      
+      <owner>Pierre Gaufillet</owner>
+      <favorited>17</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Topcased UML Editor is a graphical editor compliant with the UML 2.2/2.3 specification.<br />
+10 UML diagrams are supported :</p>
+<ul><li>Package
+</li><li>Class
+</li><li>Object
+</li><li>Component
+</li><li>Deployment
+</li><li>Use Case
+</li><li>Sequence
+</li><li>Activity
+</li><li>State Machine
+</li><li>Composite Structure
+</li></ul><p>State machines can be graphically simulated.<br />
+Topcased also includes MDE generic capabilities like docx/odt document generator, OCL checker, requirements management and more that can be used with UML tools.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Topcased UML Editor is a graphical editor compliant with the UML 2.2/2.3 specification.<br />
+10 UML diagrams are supported :</p>
+<ul><li>Package
+</li><li>Class
+</li><li>Object
+</li><li>Component
+</li><li>Deployment
+</li><li>Use Case
+</li><li>Sequence
+</li><li>Activity
+</li><li>State Machine
+</li><li>Composite Structure
+</li></ul><p>State machines can be graphically simulated.<br />
+Topcased also includes MDE generic capabilities like docx/odt document generator, OCL checker, requirements management and more that can be used with UML tools.</p>
+]]></body>
+      <created>1158673787</created>
+      <changed>1306927985</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.topcased.org]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/topcased_32.gif?itok=WzrvQKmB]]></image>
+      <version>4.3.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[TOPCASED consortium]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[Helios]]></eclipseversion>
+      <supporturl><![CDATA[http://lists.gforge.enseeiht.fr/mailman/listinfo/topcased-users]]></supporturl>
+      <updateurl><![CDATA[http://topcased-mm.gforge.enseeiht.fr/release/topcased4.3.0]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

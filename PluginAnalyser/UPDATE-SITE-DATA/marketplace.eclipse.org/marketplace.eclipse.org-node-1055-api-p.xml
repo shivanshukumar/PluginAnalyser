@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1055" name="Public Eclipse Template Repository" url="http://marketplace.eclipse.org/content/public-eclipse-template-repository">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+            
+      <owner>ant</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This plugin makes it easy to share code templates with other users via public template repository. It adds two actions to Templates View popup menu which make it easy to upload and download templates from public repository. See demo to find out how it works: <a href="http://jcake.com/screencasts/petr-demo/petr-demo-final.mov">http://jcake.com/screencasts/petr-demo/petr-demo-final.mov</a></p>
+<p>Feel free to add your own templates!</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This plugin makes it easy to share code templates with other users via public template repository. It adds two actions to Templates View popup menu which make it easy to upload and download templates from public repository. See demo to find out how it works: <a href="http://jcake.com/screencasts/petr-demo/petr-demo-final.mov">http://jcake.com/screencasts/petr-demo/petr-demo-final.mov</a></p>
+<p>Feel free to add your own templates!</p>
+]]></body>
+      <created>1259598743</created>
+      <changed>1259779391</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://wiki.github.com/veryangryant/PETR]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0.2</version>
+      <license>Free EPL</license>
+      <companyname><![CDATA[jcake software - piotr maj]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://github.com/veryangryant/PETR/issues]]></supporturl>
+      <updateurl><![CDATA[http://jcake.com/petr]]></updateurl>
+    </node>
+    </marketplace>
+    

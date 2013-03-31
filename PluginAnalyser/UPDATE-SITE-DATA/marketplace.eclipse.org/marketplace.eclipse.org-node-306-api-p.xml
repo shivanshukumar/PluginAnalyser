@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="306" name="iWay Terminal Emulators" url="http://marketplace.eclipse.org/content/iway-terminal-emulators">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>Alan Horowitz</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Basic 3270 and 5250 Terminal Emulators.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Basic 3270 and 5250 Terminal Emulators.</p>
+]]></body>
+      <created>1163618267</created>
+      <changed>1273773481</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://iwse.ibi.com/telnet]]></homepageurl>
+      <image><![CDATA[http://iwse.ibi.com/telnet/iwlogo4eclipse.gif]]></image>
+      <version>5.5.4053</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[iWay Software]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.1 and above]]></eclipseversion>
+      <supporturl><![CDATA[http://iwse.ibi.com/telnet]]></supporturl>
+      <updateurl><![CDATA[http://iwse.ibi.com/telnet]]></updateurl>
+    </node>
+    </marketplace>
+    

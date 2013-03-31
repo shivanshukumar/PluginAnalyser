@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="85" name="JasperAssistant" url="http://marketplace.eclipse.org/content/jasperassistant">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+      <tags>
+        <tag id='362' name='reporting' url='http://marketplace.eclipse.org/category/free-tagging/reporting'/>
+        <tag id='771' name='jasperreports' url='http://marketplace.eclipse.org/category/free-tagging/jasperreports'/>
+        <tag id='772' name='designer' url='http://marketplace.eclipse.org/category/free-tagging/designer'/>
+      </tags>
+      
+      <owner>Peter Severin</owner>
+      <favorited>4</favorited>
+      <installstotal>1073</installstotal>
+      <installsrecent>16</installsrecent>
+      <shortdescription><![CDATA[<p>JasperAssistant is a visual report designer for JasperReports, a popular open-source reporting engine. It is built on top of the Eclipse plug-in architecture and its main goal is to assist you in creating JasperReports report definition files through an intuitive and fully WYSIWYG graphical interface.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>JasperAssistant is a visual report designer for JasperReports, a popular open-source reporting engine. It is built on top of the Eclipse plug-in architecture and its main goal is to assist you in creating JasperReports report definition files through an intuitive and fully WYSIWYG graphical interface.</p>
+]]></body>
+      <created>1077656481</created>
+      <changed>1275400061</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.jasperassistant.com]]></homepageurl>
+      <image><![CDATA[http://www.jasperassistant.com/images/logo2-epc.png]]></image>
+      <version>3.1.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Infologic]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.x]]></eclipseversion>
+      <supporturl><![CDATA[http://www.jasperassistant.com/support.html]]></supporturl>
+      <updateurl><![CDATA[http://www.jasperassistant.com/updates/3.x/]]></updateurl>
+<ius>
+<iu>com.jasperassistant.designer</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

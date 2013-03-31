@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="461" name="OpenMake Mojo" url="http://marketplace.eclipse.org/content/openmake-mojo">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+      </categories>
+      <tags>
+        <tag id='93' name='continuous integration' url='http://marketplace.eclipse.org/category/free-tagging/continuous-integration'/>
+        <tag id='135' name='deployment' url='http://marketplace.eclipse.org/category/free-tagging/deployment'/>
+        <tag id='1304' name='Build Management' url='http://marketplace.eclipse.org/category/free-tagging/build-management'/>
+      </tags>
+      
+      <owner>Tracy Ragan</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>OpenMake Mojo® aligns the sharing of operational tasks between developers and production control teams. It creates a centralized process for defining the steps required for building, testing and deploying software. By integrating with internally developed scripts and best of breed commercial and open source tools, Mojo lets your teams jointly define the logic and scheduling of your software builds and deploys with centralized reports and trend analysis. Mojo supports Continuous Build and Deploy, and distributes the workload of your build, test and deploy steps across multiple machines and diverse operating systems. Mojo centralizes logs from all processes that it manages and provides trend analysis for popular testing and static code analysis tools. It can be enhanced to support a dynamic DevOps process using OpenMake Meister, OpenMake Deploy+ and OpenMake CloudBuilder. Mojo is easy to configure, with new projects taking as little as 10 minutes to define and execute. With the added efficiency of server pooling and centralized configuration management, Mojo offers a truly enterprise DevOps solution.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>OpenMake Mojo® aligns the sharing of operational tasks between developers and production control teams. It creates a centralized process for defining the steps required for building, testing and deploying software. By integrating with internally developed scripts and best of breed commercial and open source tools, Mojo lets your teams jointly define the logic and scheduling of your software builds and deploys with centralized reports and trend analysis. Mojo supports Continuous Build and Deploy, and distributes the workload of your build, test and deploy steps across multiple machines and diverse operating systems. Mojo centralizes logs from all processes that it manages and provides trend analysis for popular testing and static code analysis tools. It can be enhanced to support a dynamic DevOps process using OpenMake Meister, OpenMake Deploy+ and OpenMake CloudBuilder. Mojo is easy to configure, with new projects taking as little as 10 minutes to define and execute. With the added efficiency of server pooling and centralized configuration management, Mojo offers a truly enterprise DevOps solution.</p>
+]]></body>
+      <created>1180104303</created>
+      <changed>1345493211</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.openmakesoftware.com/openmake-mojo-for-continuous-integration/]]></homepageurl>
+      <image><![CDATA[http://www.openmakesoftware.com/images/om/eclipse%20marketplace%20logo%20copy.gif]]></image>
+      <version>7.x</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[OpenMake Software]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2, 3.3, 3.4, 3.5, 3.6.1]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://www.openmakesoftware.com]]></updateurl>
+<ius>
+<iu>Easy to configure Continuous Integration</iu>
+<iu>Best-of-Breed Tool Plug-ins</iu>
+<iu>Smart Processing of Operational Tasks</iu>
+<iu>Streamlined Hand-Offs and Intra-Team Coordination</iu>
+<iu>Self-Service Logs and Trend Reports</iu>
+<iu>Reusable and Standardized Operational Logic</iu>
+<iu>Centralized Management of Environment Variables and Machine Configurations</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

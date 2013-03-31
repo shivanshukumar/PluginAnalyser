@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="984" name="FusionDebug" url="http://marketplace.eclipse.org/content/fusiondebug">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+      <tags>
+        <tag id='1341' name='coldfusion debugger' url='http://marketplace.eclipse.org/category/free-tagging/coldfusion-debugger'/>
+        <tag id='1342' name='railo debugger' url='http://marketplace.eclipse.org/category/free-tagging/railo-debugger'/>
+        <tag id='1343' name='cfml debugger' url='http://marketplace.eclipse.org/category/free-tagging/cfml-debugger'/>
+        <tag id='1538' name='coldfusion 9 debugger' url='http://marketplace.eclipse.org/category/free-tagging/coldfusion-9-debugger'/>
+        <tag id='1539' name='coldfusion 8 debugger' url='http://marketplace.eclipse.org/category/free-tagging/coldfusion-8-debugger'/>
+      </tags>
+      
+      <owner>intergral.gmbh</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>FusionDebug is an interactive step debugger which runs on Adobe ColdFusion 6.1, 7, 8, 9 as well as Railo 3.1. FusionDebug lets you see what's happening in your application as each line of code is being executed. It can be used to set breakpoints, step over, into, or out of code, inspect variables (across different scopes), and watch expressions.</p>
+<!--break--><p>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br />
+What's New in 3.5<br />
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br />
+We're excited to be able to bring you FusionDebug 3.5, and we'd like to thank our users for the many great suggestions and bug reports you sent us – we truly appreciate it! Here's a quick rundown of what's new in 3.5.</p>
+<p>>>Non-Intrusive Debugging<br />
+Increase your development team’s productivity! FusionDebug now supports IP Filtering, which allows breakpoints to only fire when connecting via a specified IP address. This makes it possible for a developer to debug and set breakpoints against a central server, leaving the system untouched and unaffected for everyone else.</p>
+<p>In many CF Shops it is common to have multiple developers working against an application setup on a central server. Previously when one developer was debugging, this could have interfered with the other developers’ work as the application would have halted when it hit a breakpoint. Now this is no longer the case. This feature is ideal for development teams, allowing debugging to take place without disruption to the team as a whole.</p>
+<p>>>Change Variable Value Dialog<br />
+The value of a variable can now be changed directly from the Variables View by simply right clicking the variable to change. This enables quick and easy variable modifications while debugging.</p>
+<p>>>Auto detect the server platform<br />
+FusionDebug is now able to auto detect what platform the ColdFusion or Railo server is running on, making the configuration and usage of FusionDebug easier.</p>
+<p>>>Bug Fixes<br />
+We've also worked hard to eliminate the bugs which you reported to us from our 3.0.1 release.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>FusionDebug is an interactive step debugger which runs on Adobe ColdFusion 6.1, 7, 8, 9 as well as Railo 3.1. FusionDebug lets you see what's happening in your application as each line of code is being executed. It can be used to set breakpoints, step over, into, or out of code, inspect variables (across different scopes), and watch expressions.</p>
+<!--break--><p>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br />
+What's New in 3.5<br />
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br />
+We're excited to be able to bring you FusionDebug 3.5, and we'd like to thank our users for the many great suggestions and bug reports you sent us – we truly appreciate it! Here's a quick rundown of what's new in 3.5.</p>
+<p>>>Non-Intrusive Debugging<br />
+Increase your development team’s productivity! FusionDebug now supports IP Filtering, which allows breakpoints to only fire when connecting via a specified IP address. This makes it possible for a developer to debug and set breakpoints against a central server, leaving the system untouched and unaffected for everyone else.</p>
+<p>In many CF Shops it is common to have multiple developers working against an application setup on a central server. Previously when one developer was debugging, this could have interfered with the other developers’ work as the application would have halted when it hit a breakpoint. Now this is no longer the case. This feature is ideal for development teams, allowing debugging to take place without disruption to the team as a whole.</p>
+<p>>>Change Variable Value Dialog<br />
+The value of a variable can now be changed directly from the Variables View by simply right clicking the variable to change. This enables quick and easy variable modifications while debugging.</p>
+<p>>>Auto detect the server platform<br />
+FusionDebug is now able to auto detect what platform the ColdFusion or Railo server is running on, making the configuration and usage of FusionDebug easier.</p>
+<p>>>Bug Fixes<br />
+We've also worked hard to eliminate the bugs which you reported to us from our 3.0.1 release.</p>
+]]></body>
+      <created>1250085974</created>
+      <changed>1289324818</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.fusion-debug.com/fd/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/debug_eclipse.png?itok=ldueSxfy]]></image>
+      <version>3.5</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Intergral GmbH]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.1, 3.2, 3.3, 3.4, 3.5, 3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://www.fusion-reactor.com/fd/support.cfm]]></supporturl>
+      <updateurl><![CDATA[http://www.fusion-reactor.com/fd/fd3update/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

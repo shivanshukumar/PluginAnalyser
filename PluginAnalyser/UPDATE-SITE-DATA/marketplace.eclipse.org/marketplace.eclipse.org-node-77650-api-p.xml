@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="77650" name="Find it EZ Code Search" url="http://marketplace.eclipse.org/content/find-it-ez-code-search">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='40' name='Search' url='http://marketplace.eclipse.org/category/categories/search'/>
+        <category id='1966' name='Programming Languages' url='http://marketplace.eclipse.org/category/categories/programming-languages'/>
+        <category id='1970' name='Database Development' url='http://marketplace.eclipse.org/category/categories/database-development'/>
+      </categories>
+      <tags>
+        <tag id='96' name='source code' url='http://marketplace.eclipse.org/category/free-tagging/source-code'/>
+        <tag id='190' name='database' url='http://marketplace.eclipse.org/category/free-tagging/database'/>
+        <tag id='269' name='report' url='http://marketplace.eclipse.org/category/free-tagging/report'/>
+        <tag id='349' name='search' url='http://marketplace.eclipse.org/category/free-tagging/search'/>
+        <tag id='566' name='google' url='http://marketplace.eclipse.org/category/free-tagging/google'/>
+      </tags>
+      
+      <owner>FinditEZ  </owner>
+      <favorited>1</favorited>
+      <installstotal>218</installstotal>
+      <installsrecent>1</installsrecent>
+      <shortdescription><![CDATA[<p>"Find it EZ Code Search adds full 360 degree application source dependency scanning.  You can now search beyond the scope of your projects from within the Eclipse IDE.  In-file text is easily queried using the context-sensitive menu in the Eclipse editor, which launches a Find it EZ interface, complete with search options and filters.  Either highlight the desired search term or place the cursor near a word you wish to search, Right-click anywhere in the editor, and click "Find it EZ" to instantly query the code to be searched.  Generalized searches can also be launched through the Eclipse Edit menu, by selecting "Find it EZ".</p>
+<p>Find it EZ is a time saving source code search engine that scans relational databases, programming language files and Business Intelligence Reports such as MySQL, Oracle, SQL Server, Crystal Reports, Oracle Reports, SSRS, Active Reports, Java, JavaScript, PHP, Perl, .net and much more.  </p>
+<p>Whether you are a Programmer, DBA, Analyst or Project Manager, Find it EZ can save up to 40%, or over 300 hours annually for each IT professional on change impact analysis.  Find it EZ provides you with the ability to scan your entire application code base, using intuitive and powerful Boolean expressions, producing pinpoint accurate results in a single pass.  It includes syntax aware filters to minimize false positives, and seamless integration with all your familiar programming tools.  With Find it EZ, you can deliver bug free code, increase productivity and drastically improve your on time and on budget project success rates.  To find out more, visit <a href="http://www.finditez.com/products/#benefits">http://www.finditez.com/products/#benefits</a> .</p>
+<p>Try Find it EZ Professional free for up to two weeks, or download our latest Community edition at no charge, ever!  Visit <a href="http://www.finditez.com/products/#editions">http://www.finditez.com/products/#editions</a> for more information and to find the version that best meets your needs.  Find what you've been missing!™</p>
+<p>------------------------------------------</p>
+<p>Update Site / Installation Instructions: <a href="http://eclipse.finditez.com/">http://eclipse.finditez.com/</a><br />
+- NOTE:  Requires Find it EZ Windows client application (version 3.3.3 or higher) to be installed.  The required Find it EZ Windows desktop application is available here <a href="http://www.finditez.com/downloads/">http://www.finditez.com/downloads/</a></p>
+<p>Version Specific Notes:<br />
+Eclipse 3.5 (Galileo): You must ensure the Mylyn update site has been recently loaded.  The required Mylyn update site is <a href="http://download.eclipse.org/tools/mylyn/update/e3.4">http://download.eclipse.org/tools/mylyn/update/e3.4</a></p>
+<p>Eclipse 3.7 (Indigo): You may use the install button available at the top of this site to install the plugin. Simply drag and drop the button into your workspace!</p>
+]]></shortdescription>
+      <body><![CDATA[<p>"Find it EZ Code Search adds full 360 degree application source dependency scanning.  You can now search beyond the scope of your projects from within the Eclipse IDE.  In-file text is easily queried using the context-sensitive menu in the Eclipse editor, which launches a Find it EZ interface, complete with search options and filters.  Either highlight the desired search term or place the cursor near a word you wish to search, Right-click anywhere in the editor, and click "Find it EZ" to instantly query the code to be searched.  Generalized searches can also be launched through the Eclipse Edit menu, by selecting "Find it EZ".</p>
+<p>Find it EZ is a time saving source code search engine that scans relational databases, programming language files and Business Intelligence Reports such as MySQL, Oracle, SQL Server, Crystal Reports, Oracle Reports, SSRS, Active Reports, Java, JavaScript, PHP, Perl, .net and much more.  </p>
+<p>Whether you are a Programmer, DBA, Analyst or Project Manager, Find it EZ can save up to 40%, or over 300 hours annually for each IT professional on change impact analysis.  Find it EZ provides you with the ability to scan your entire application code base, using intuitive and powerful Boolean expressions, producing pinpoint accurate results in a single pass.  It includes syntax aware filters to minimize false positives, and seamless integration with all your familiar programming tools.  With Find it EZ, you can deliver bug free code, increase productivity and drastically improve your on time and on budget project success rates.  To find out more, visit <a href="http://www.finditez.com/products/#benefits">http://www.finditez.com/products/#benefits</a> .</p>
+<p>Try Find it EZ Professional free for up to two weeks, or download our latest Community edition at no charge, ever!  Visit <a href="http://www.finditez.com/products/#editions">http://www.finditez.com/products/#editions</a> for more information and to find the version that best meets your needs.  Find what you've been missing!™</p>
+<p>------------------------------------------</p>
+<p>Update Site / Installation Instructions: <a href="http://eclipse.finditez.com/">http://eclipse.finditez.com/</a><br />
+- NOTE:  Requires Find it EZ Windows client application (version 3.3.3 or higher) to be installed.  The required Find it EZ Windows desktop application is available here <a href="http://www.finditez.com/downloads/">http://www.finditez.com/downloads/</a></p>
+<p>Version Specific Notes:<br />
+Eclipse 3.5 (Galileo): You must ensure the Mylyn update site has been recently loaded.  The required Mylyn update site is <a href="http://download.eclipse.org/tools/mylyn/update/e3.4">http://download.eclipse.org/tools/mylyn/update/e3.4</a></p>
+<p>Eclipse 3.7 (Indigo): You may use the install button available at the top of this site to install the plugin. Simply drag and drop the button into your workspace!</p>
+]]></body>
+      <created>1309463174</created>
+      <changed>1335219239</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.finditez.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/ez176_128_0.png?itok=yt76KbII]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/cs_screenshot.png?itok=rL1XV79S]]></screenshot>
+      <version>1.1.6</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[Find it EZ Software Corp.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5, 3.6, 3.7 (See description for update site)]]></eclipseversion>
+      <supporturl><![CDATA[http://www.finditez.com/support]]></supporturl>
+      <updateurl><![CDATA[http://eclipse.finditez.com/]]></updateurl>
+<ius>
+<iu>com.finditez.eclipse.ezl</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

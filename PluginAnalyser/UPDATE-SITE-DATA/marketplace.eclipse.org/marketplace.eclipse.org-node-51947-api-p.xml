@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="51947" name="Whole Brain Programming" url="http://marketplace.eclipse.org/content/whole-brain-programming">
+      <type>resource</type>
+      <categories>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='1964' name='Application Development Frameworks' url='http://marketplace.eclipse.org/category/categories/application-development-frameworks'/>
+      </categories>
+      <tags>
+        <tag id='1849' name='Hammurapi Group LLC' url='http://marketplace.eclipse.org/category/free-tagging/hammurapi-group-llc'/>
+        <tag id='1899' name='executable diagrams' url='http://marketplace.eclipse.org/category/free-tagging/executable-diagrams'/>
+      </tags>
+      
+      <owner>Pavel Vlasov</owner>
+      <favorited>0</favorited>
+      <installstotal>71</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Whole Brain Programming (WBP) is a software development approach based on the following principles:</p>
+<p></p><h2>NOTE: This product is replaced by Amur</h2>
+<ul><li>Leveraging the whole brain to develop software through use of
+<ul><li>Diagramming for defining components dependency and program flow (high level program structure and behavior) - D. Imaginative thinking.</li>
+<li>Property sheets for configuration - B. Sequential thinking.</li>
+<li>Code fragments (through code properties) for low-level behavior - A. Analytical thinking.</li>
+<li>Rich documentation embedded into the diagram/model for efficient knowledge sharing - C. Interpersonal thinking.</li>
+</ul></li>
+<li>Progressive elaboration of the model with
+<ul><li>Implementation types</li>
+<li>Facets</li>
+</ul></li>
+<li>Extensibility - creation of custom implementation types and facets is a straightforward well documented process which doesn't require advanced development skills.</li>
+<li>High modifiability, traceability and instant gratification of executability through the use of the same model from requirements to implementation.</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>Whole Brain Programming (WBP) is a software development approach based on the following principles:</p>
+<p></p><h2>NOTE: This product is replaced by Amur</h2>
+<ul><li>Leveraging the whole brain to develop software through use of
+<ul><li>Diagramming for defining components dependency and program flow (high level program structure and behavior) - D. Imaginative thinking.</li>
+<li>Property sheets for configuration - B. Sequential thinking.</li>
+<li>Code fragments (through code properties) for low-level behavior - A. Analytical thinking.</li>
+<li>Rich documentation embedded into the diagram/model for efficient knowledge sharing - C. Interpersonal thinking.</li>
+</ul></li>
+<li>Progressive elaboration of the model with
+<ul><li>Implementation types</li>
+<li>Facets</li>
+</ul></li>
+<li>Extensibility - creation of custom implementation types and facets is a straightforward well documented process which doesn't require advanced development skills.</li>
+<li>High modifiability, traceability and instant gratification of executability through the use of the same model from requirements to implementation.</li>
+</ul>]]></body>
+      <created>1305006185</created>
+      <changed>1339257259</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.hammurapi.com/dokuwiki/doku.php/products:whole_brain_programming:start]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/wbp_logo_colorful.jpg?itok=kVM8wKyv]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/CropperCapture%5B3%5D.png?itok=-tkWwIkS]]></screenshot>
+      <version>1.0.0.201106082217</version>
+      <license>Free for non-commerical use</license>
+      <companyname><![CDATA[Hammurapi Group LLC]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.6.0+]]></eclipseversion>
+      <supporturl><![CDATA[http://www.hammurapi.com/bb/viewforum.php?f=14]]></supporturl>
+      <updateurl><![CDATA[http://www.hammurapi.com/products/wbp/update-site]]></updateurl>
+<ius>
+<iu>com.hammurapi.wbp.core</iu>
+<iu>com.hammurapi.wbp.foundation</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

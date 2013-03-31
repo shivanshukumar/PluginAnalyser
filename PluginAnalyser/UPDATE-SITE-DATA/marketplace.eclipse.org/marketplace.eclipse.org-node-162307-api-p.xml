@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="162307" name="Telosys Tools" url="http://marketplace.eclipse.org/content/telosys-tools">
+      <type>resource</type>
+      <categories>
+        <category id='1964' name='Application Development Frameworks' url='http://marketplace.eclipse.org/category/categories/application-development-frameworks'/>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='1970' name='Database Development' url='http://marketplace.eclipse.org/category/categories/database-development'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='440' name='code generator' url='http://marketplace.eclipse.org/category/free-tagging/code-generator'/>
+        <tag id='574' name='code' url='http://marketplace.eclipse.org/category/free-tagging/code'/>
+        <tag id='1113' name='velocity' url='http://marketplace.eclipse.org/category/free-tagging/velocity'/>
+        <tag id='1235' name='template' url='http://marketplace.eclipse.org/category/free-tagging/template'/>
+        <tag id='1301' name='generator' url='http://marketplace.eclipse.org/category/free-tagging/generator'/>
+      </tags>
+      
+      <owner>Laurent  </owner>
+      <favorited>22</favorited>
+      <installstotal>314</installstotal>
+      <installsrecent>47</installsrecent>
+      <shortdescription><![CDATA[<p>Code generation for all with a pragmatic tool,  light and easy to use.</p>
+<p>The "Telosys Tools" plugin is designed to generated and update a lightweight repository built from an existing database structure.<br />
+This repository is used as a model by Velocity templates to generate the application code (Java classes, Screens, etc... )</p>
+<p>The Telosys Tools provide scaffolding capabilities, it's possible to generate CRUD screens in a few minutes.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Code generation for all with a pragmatic tool,  light and easy to use.</p>
+<p>The "Telosys Tools" plugin is designed to generated and update a lightweight repository built from an existing database structure.<br />
+This repository is used as a model by Velocity templates to generate the application code (Java classes, Screens, etc... )</p>
+<p>The Telosys Tools provide scaffolding capabilities, it's possible to generate CRUD screens in a few minutes.</p>
+]]></body>
+      <created>1322747441</created>
+      <changed>1361809056</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://sites.google.com/site/telosystools/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/telosys_wizard.png?itok=hhYibKAp]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/capture2.png?itok=0JVPIeBX]]></screenshot>
+      <version>2.0.3</version>
+      <license>EPL</license>
+      <companyname><![CDATA[OW2]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[helios indigo juno]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://www.telosys.org/eclipse/v203]]></updateurl>
+<ius>
+<iu>org.telosys.tools.eclipse.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

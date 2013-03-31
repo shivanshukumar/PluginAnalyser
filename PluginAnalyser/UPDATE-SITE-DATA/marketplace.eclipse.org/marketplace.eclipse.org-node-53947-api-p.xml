@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="53947" name="Zeus plugin for Eclipse" url="http://marketplace.eclipse.org/content/zeus-plugin-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='12' name='Network' url='http://marketplace.eclipse.org/taxonomy/term/12'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='21' name='Web Services' url='http://marketplace.eclipse.org/taxonomy/term/21'/>
+      </categories>
+      <tags>
+        <tag id='1917' name='load balancing' url='http://marketplace.eclipse.org/category/free-tagging/load-balancing'/>
+        <tag id='1918' name='traffic management' url='http://marketplace.eclipse.org/category/free-tagging/traffic-management'/>
+      </tags>
+      
+      <owner>oweng</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Zeus Traffic Manager is a powerful load balancing and traffic management solution.  It is generally deployed in front of a farm of web or application servers, and contains a number of capabilities to manage and transform network traffic to improve the performance, security and management of the application.</p>
+<p>Advanced configuration is performed using Zeus' TrafficScript rules language, and the Zeus plugin allows you to edit your TrafficScript code in Eclipse.</p>
+<!--break--><p>The plugin makes it easier and faster to edit and deploy your rules:</p>
+<ul><li>
+    Full syntax highlighting for TrafficScript rules, making it easier to edit and manage complex rules
+</li>
+<li>
+    TrafficScript auto-completion, code hints and online help to create powerful rules more quickly
+</li>
+<li>    The ability to manage rules on several Zeus clusters, comparing rules and copying rules from one cluster to another
+</li>
+<li>    Instant deployment of rules to a Zeus cluster for faster and more responsive implementation of changes
+</li>
+<li>    Syntax checking and validation, ensuring that a faulty rule is never deployed to a Zeus system</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>Zeus Traffic Manager is a powerful load balancing and traffic management solution.  It is generally deployed in front of a farm of web or application servers, and contains a number of capabilities to manage and transform network traffic to improve the performance, security and management of the application.</p>
+<p>Advanced configuration is performed using Zeus' TrafficScript rules language, and the Zeus plugin allows you to edit your TrafficScript code in Eclipse.</p>
+<!--break--><p>The plugin makes it easier and faster to edit and deploy your rules:</p>
+<ul><li>
+    Full syntax highlighting for TrafficScript rules, making it easier to edit and manage complex rules
+</li>
+<li>
+    TrafficScript auto-completion, code hints and online help to create powerful rules more quickly
+</li>
+<li>    The ability to manage rules on several Zeus clusters, comparing rules and copying rules from one cluster to another
+</li>
+<li>    Instant deployment of rules to a Zeus cluster for faster and more responsive implementation of changes
+</li>
+<li>    Syntax checking and validation, ensuring that a faulty rule is never deployed to a Zeus system</li>
+</ul>]]></body>
+      <created>1305565527</created>
+      <changed>1305573166</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.zeus.com/community/extensions/zeus-plugin-eclipse]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/eclipse-6.jpg?itok=h1QUdG35]]></screenshot>
+      <version>1.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Zeus]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4+]]></eclipseversion>
+      <supporturl><![CDATA[http://www.zeus.com/community/]]></supporturl>
+      <updateurl><![CDATA[http://www.zeus.com/eclipse]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

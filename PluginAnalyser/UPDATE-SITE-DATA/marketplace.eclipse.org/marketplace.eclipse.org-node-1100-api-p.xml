@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1100" name="Java Profiler" url="http://marketplace.eclipse.org/content/java-profiler">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='13' name='Profiling' url='http://marketplace.eclipse.org/taxonomy/term/13'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='1571' name='Java profiler' url='http://marketplace.eclipse.org/category/free-tagging/java-profiler'/>
+      </tags>
+      
+      <owner>Jason O'Keefe</owner>
+      <favorited>23</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Pluggable into any Eclipse Classic installation, MyEclipse Java Profiler module offers an advanced integration of Sun's VisualVM profiler. VisualVM for MyEclipse can be used for both performance and memory profiling of Java applications, applets and MyEclipse server applications.</p>
+<p>Users can also profile any Eclipse application or applet. The feature is also available as a standalone Eclipse plugin for use with base Eclipse installations independent of MyEclipse.</p>
+<p>MyEclipse Java Profiler includes:
+</p><ul><li>Ability to profile performance and memory</li>
+<li>Compatibility with Java applications, applets and MyEclipse server applications</li>
+</ul><p>The module is installable on any Eclipse Classic install by utilizing the MyEclipse update site and following the prompts.<br />1. Be sure Eclipse "Classic" is installed.<br />2. Start Eclipse > Select Help > Software Updates > Available Software Tab > Add Site > Enter this URL <a href="http://downloads.myeclipseide.com/downloads/products/eworkbench/helios/enterprise">http://downloads.myeclipseide.com/downloads/products/eworkbench/helios/e...</a> <br />3. From there you just "Next" your way through the wizard and the MyEclipse Java Profiler will be installed for you.</p>
+<p><img src="http://www.myeclipseide.com/modules/ContentExpress/img_repository/docs/75/profiler_threads.png" width="369" height="295" /></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Pluggable into any Eclipse Classic installation, MyEclipse Java Profiler module offers an advanced integration of Sun's VisualVM profiler. VisualVM for MyEclipse can be used for both performance and memory profiling of Java applications, applets and MyEclipse server applications.</p>
+<p>Users can also profile any Eclipse application or applet. The feature is also available as a standalone Eclipse plugin for use with base Eclipse installations independent of MyEclipse.</p>
+<p>MyEclipse Java Profiler includes:
+</p><ul><li>Ability to profile performance and memory</li>
+<li>Compatibility with Java applications, applets and MyEclipse server applications</li>
+</ul><p>The module is installable on any Eclipse Classic install by utilizing the MyEclipse update site and following the prompts.<br />1. Be sure Eclipse "Classic" is installed.<br />2. Start Eclipse > Select Help > Software Updates > Available Software Tab > Add Site > Enter this URL <a href="http://downloads.myeclipseide.com/downloads/products/eworkbench/helios/enterprise">http://downloads.myeclipseide.com/downloads/products/eworkbench/helios/e...</a> <br />3. From there you just "Next" your way through the wizard and the MyEclipse Java Profiler will be installed for you.</p>
+<p><img src="http://www.myeclipseide.com/modules/ContentExpress/img_repository/docs/75/profiler_threads.png" width="369" height="295" /></p>
+]]></body>
+      <created>1262281608</created>
+      <changed>1354564858</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.myeclipseide.com/htmlpages-func-display-pid-441.html]]></homepageurl>
+      <image><![CDATA[http://www.myeclipseide.com/images/features/profiler_70.jpg]]></image>
+      <version>10.7</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Genuitec, LLC]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5.2/3.6.1/3.7.x]]></eclipseversion>
+      <supporturl><![CDATA[http://www.myeclipseide.com/module-htmlpages-display-pid-8.html]]></supporturl>
+      <updateurl><![CDATA[http://downloads.myeclipseide.com/downloads/products/eworkbench/helios/enterprise-earlyaccess]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

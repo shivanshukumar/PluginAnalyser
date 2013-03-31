@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="22980" name="LarCT-R" url="http://marketplace.eclipse.org/content/larct-r">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+      </categories>
+      <tags>
+        <tag id='495' name='RDF' url='http://marketplace.eclipse.org/category/free-tagging/rdf'/>
+        <tag id='1122' name='Artificial intelligence' url='http://marketplace.eclipse.org/category/free-tagging/artificial-intelligence'/>
+        <tag id='1442' name='LarKC' url='http://marketplace.eclipse.org/category/free-tagging/larkc'/>
+      </tags>
+      
+      <owner>ABC Group</owner>
+      <favorited>0</favorited>
+      <installstotal>20</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>A jACT-R extension that uses RDF as its internal data-structure and allows LarKC workflows to be run from jACT-R models. jACT-R is a Java native implementation of the ACT-R (Anderson, 2007) cognitive architecture. The LarKC platform is an effort to enable Web-scale reasoning with Semantic Web data.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>A jACT-R extension that uses RDF as its internal data-structure and allows LarKC workflows to be run from jACT-R models. jACT-R is a Java native implementation of the ACT-R (Anderson, 2007) cognitive architecture. The LarKC platform is an effort to enable Web-scale reasoning with Semantic Web data.</p>
+]]></body>
+      <created>1291547272</created>
+      <changed>1291845579</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://larctr.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_2.png?itok=i9t79uFH]]></image>
+      <version>1.0</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[ABC Group - Max-Planck-Institut für Bildungsforschung]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://larctr.sourceforge.net/update]]></updateurl>
+<ius>
+<iu>eu.larkc.jactr.core</iu>
+<iu>eu.larkc.jactr.larkc</iu>
+</ius>
+    </node>
+    </marketplace>
+    

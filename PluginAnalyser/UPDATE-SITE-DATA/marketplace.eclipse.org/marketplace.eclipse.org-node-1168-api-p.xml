@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1168" name="Exadel JavaFX plug-in" url="http://marketplace.eclipse.org/content/exadel-javafx-plug">
+      <type>resource</type>
+      <categories>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+      </categories>
+      <tags>
+        <tag id='396' name='javafx' url='http://marketplace.eclipse.org/category/free-tagging/javafx'/>
+        <tag id='397' name='ria' url='http://marketplace.eclipse.org/category/free-tagging/ria'/>
+        <tag id='398' name='enterprise' url='http://marketplace.eclipse.org/category/free-tagging/enterprise'/>
+        <tag id='399' name='exadel' url='http://marketplace.eclipse.org/category/free-tagging/exadel'/>
+      </tags>
+      
+      <owner>Max Katz</owner>
+      <favorited>6</favorited>
+      <installstotal>4082</installstotal>
+      <installsrecent>238</installsrecent>
+      <shortdescription><![CDATA[<p>JavaFX is a new platform for creating and deploying rich Internet applications inside a lightweight Java virtual machine. This plug-in works within Eclipse to develop and deploy JavaFX applications. Exadel JavaFX Plug-In comes with numerous features and wizards to make JavaFX application development better. The plug-in works with JavaFX 1.3 and 1.2.x</p>
+]]></shortdescription>
+      <body><![CDATA[<p>JavaFX is a new platform for creating and deploying rich Internet applications inside a lightweight Java virtual machine. This plug-in works within Eclipse to develop and deploy JavaFX applications. Exadel JavaFX Plug-In comes with numerous features and wizards to make JavaFX application development better. The plug-in works with JavaFX 1.3 and 1.2.x</p>
+]]></body>
+      <created>1269892432</created>
+      <changed>1273895003</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://exadel.org/javafxplugin]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screenshot_133.png?itok=P3KRb7De]]></image>
+      <version>1.3.x</version>
+      <license>GPL</license>
+      <companyname><![CDATA[Exadel]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4, 3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://exadel.org/forum/javafxplugin]]></supporturl>
+      <updateurl><![CDATA[http://download.exadel.org/javafx_plugin/updates/stable/]]></updateurl>
+<ius>
+<iu>com.exadel.javafx.ide</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="205" name="Extended VS Presentation" url="http://marketplace.eclipse.org/content/extended-vs-presentation">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+      </categories>
+      <tags>
+        <tag id='110' name='tabs' url='http://marketplace.eclipse.org/category/free-tagging/tabs'/>
+        <tag id='117' name='look and feel' url='http://marketplace.eclipse.org/category/free-tagging/look-and-feel'/>
+        <tag id='118' name='skin' url='http://marketplace.eclipse.org/category/free-tagging/skin'/>
+        <tag id='119' name='presentation' url='http://marketplace.eclipse.org/category/free-tagging/presentation'/>
+        <tag id='120' name='editor list' url='http://marketplace.eclipse.org/category/free-tagging/editor-list'/>
+      </tags>
+      
+      <owner>Andrey Loskutov</owner>
+      <favorited>35</favorited>
+      <installstotal>2480</installstotal>
+      <installsrecent>78</installsrecent>
+      <shortdescription><![CDATA[<p>Extended VS Presentation plugin contributes powerful editing sessions management and highly customisable and very useful Eclipse skin ("look and feel").</p>
+<p>Editing sessions management allows you remember opened editor set (session) and reload it any time later. This is useful if you often switch from one to another context. If you ever used Opera browser, you know the trick ;-)</p>
+<p>The skin does not only have all "default" Eclipse presentation features but adds much more useful things like fully customizable opened/closed editor lists, really useful tab area with predictable tab ordering policy, clear and space - saving look, much more customization options like the tab size / padding / border / color / fonts, "on-the-fly" themes switch support without to "reboot" Eclipse etc.</p>
+<p>Please note, that the skin, tab actions and lists are available <b>for Eclipse 3.x</b> only! Eclipse 4.x is not supported.</p>
+<!--break--><p><b>My other plugins on EPIC</b>:</p>
+<ul><li><a href="http://marketplace.eclipse.org/content/anyedit-tools">AnyEdit Tools</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/bytecode-outline">Bytecode Outline</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/filesync">FileSync</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/jdepend4eclipse">JDepend4Eclipse</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/data-hierarchy">Data Hierarchy</a>
+</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>Extended VS Presentation plugin contributes powerful editing sessions management and highly customisable and very useful Eclipse skin ("look and feel").</p>
+<p>Editing sessions management allows you remember opened editor set (session) and reload it any time later. This is useful if you often switch from one to another context. If you ever used Opera browser, you know the trick ;-)</p>
+<p>The skin does not only have all "default" Eclipse presentation features but adds much more useful things like fully customizable opened/closed editor lists, really useful tab area with predictable tab ordering policy, clear and space - saving look, much more customization options like the tab size / padding / border / color / fonts, "on-the-fly" themes switch support without to "reboot" Eclipse etc.</p>
+<p>Please note, that the skin, tab actions and lists are available <b>for Eclipse 3.x</b> only! Eclipse 4.x is not supported.</p>
+<!--break--><p><b>My other plugins on EPIC</b>:</p>
+<ul><li><a href="http://marketplace.eclipse.org/content/anyedit-tools">AnyEdit Tools</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/bytecode-outline">Bytecode Outline</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/filesync">FileSync</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/jdepend4eclipse">JDepend4Eclipse</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/data-hierarchy">Data Hierarchy</a>
+</li>
+</ul>]]></body>
+      <created>1147875843</created>
+      <changed>1343675281</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://andrei.gmxhome.de/skins/index.html]]></homepageurl>
+      <image><![CDATA[http://andrei.gmxhome.de/images/andrei_epic.gif]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/extendedvs_ani.gif?itok=zbre6aYH]]></screenshot>
+      <version>1.5.6</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Andrey Loskutov]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8]]></eclipseversion>
+      <supporturl><![CDATA[mailto:loskutov@gmx.de]]></supporturl>
+      <updateurl><![CDATA[http://andrei.gmxhome.de/eclipse/]]></updateurl>
+<ius>
+<iu>EclipseSkins</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

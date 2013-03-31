@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="29591" name="JRebel for Eclipse" url="http://marketplace.eclipse.org/content/jrebel-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+      <tags>
+        <tag id='134' name='J2EE' url='http://marketplace.eclipse.org/category/free-tagging/j2ee'/>
+        <tag id='327' name='eclipse' url='http://marketplace.eclipse.org/category/free-tagging/eclipse'/>
+        <tag id='422' name='java ee' url='http://marketplace.eclipse.org/category/free-tagging/java-ee'/>
+        <tag id='573' name='tools' url='http://marketplace.eclipse.org/category/free-tagging/tools'/>
+        <tag id='614' name='productivity' url='http://marketplace.eclipse.org/category/free-tagging/productivity'/>
+      </tags>
+      
+      <owner>Oliver White</owner>
+      <favorited>32</favorited>
+      <installstotal>50525</installstotal>
+      <installsrecent>4238</installsrecent>
+      <shortdescription><![CDATA[<p><strong>News: JRebel 5.2 is out, includes new support for Apache Camel, Spring 3, and better IDE debugger integration.</strong> Is your Java EE development cycle rather more like Continuous Restart than Continuous Coding? Try coding without the need to restart anything, even to see complex Java EE code changes. Get rid of that lengthy build & redeploy phase with JRebel. It's free for 14 days and will save you 10+ minutes each hour!</p>
+<p>**Want to use JRebel on remote servers? Check out the new JRebel Remoting plugin in the Eclipse Marketplace as well!**</p>
+<p>***************************************************<br /><strong>Two easy steps for eliminating redeploys in Java (and rocking out with JRebel for Eclipse):</strong></p>
+<p>1. Search for <strong>JRebel for Eclipse</strong> from the Eclipse Marketplace Client in your IDE - and download it!</p>
+<p>2. Follow the <strong>JRebel Configuration Wizard</strong> to set up your license (new users should choose "I'm a new user and need an evaluation license")</p>
+<p>***************************************************</p>
+<p><strong>Ok, so what is JRebel for Eclipse anyway?</strong></p>
+<p>JRebel for Eclipse is a specialized Eclipse IDE plugin that lets you instantly see the effects of changes you make to your Java code.</p>
+<p>JRebel eliminates the need to build your app, redeploy your container (WebLogic, WebSphere, Tomcat, JBoss, etc.), or restart — so you can code your changes, then see that change immediately reflected in your application.</p>
+<p>JRebel handles changing classes, configurations, or resources — so that’s everything from making a change to a method body, to adding a new method or class, to making a change to your framework configuration.</p>
+<p>***************************************************</p>
+<p><strong>Which Java versions does JRebel support?</strong></p>
+<p>Java 1.4<br />
+Java 5+</p>
+<p>***************************************************</p>
+<p><strong>Which Application Servers does JRebel support?</strong></p>
+<p>Oracle WebLogic 8.x, 9.x, 10.x <br />
+WebSphere 6.0.x, 6.1.x, 7.x, 8.x<br />
+Tomcat 4.x, 5.x, 6.x, 7.x<br />
+JBoss 3.x, 4.x, 5.x, 6.x, 7.x<br />
+GlassFish 2.x, 3.x<br />
+Eclipse Virgo (formerly SpringSource DM Server 2.x)<br />
+Resin 3.x, 4.x<br />
+Google App Engine<br />
+Jetty 5.x, 6.x, 7.x, 8.x<br />
+SAP NetWeaver 7.x<br />
+Oracle OC4J 9.x, 10.x<br />
+Mulesoft TCat Server</p>
+<p>***************************************************</p>
+<p><strong>Which Frameworks & Technologies does JRebel for Eclipse support?</strong></p>
+<p>Spring Framework<br />
+JBoss Seam<br />
+JBoss RESTEasy<br />
+JBoss Weld<br />
+Hibernate<br />
+Hibernate Validator<br />
+Apache CXF<br />
+Jersey<br />
+iBatis<br />
+Google Guice<br />
+Stripes<br />
+Apache Click<br />
+Apache Log4j<br />
+Apache Struts<br />
+Apache Tapestry4<br />
+Apache Tiles<br />
+Apache Velocity<br />
+Apache Wicket<br />
+JAX-WS (Metro)<br />
+JAX-RS (Jersey)<br />
+CDI (JBoss Weld)</p>
+<p>For the full list of the 47 supported frameworks and features, check out <a href="http://www.jrebel.com/features/frameworks/">http://www.jrebel.com/features/frameworks/</a></p>
+<p>***************************************************</p>
+<p>Sound good? Get your free 14-day license key emailed to you here: <a href="http://www.zeroturnaround.com/jrebel/eclipse-eval/">http://www.zeroturnaround.com/jrebel/eclipse-eval/</a>   (*don't forget to download JRebel for Eclipse from the Eclipse Marketplace Client in your IDE)</p>
+<p>Still waiting for your code to compile? Then read on!</p>
+<p>***************************************************</p>
+<p><strong>What's the deal with Redeploys and Restarts in Java anyway?</strong></p>
+<p>We believe that Java should be a fast & agile coding language.  You shouldn't be forced to make changes to code without seeing their direct effects on your application, and redeploying wastes time, affects your focus, hurts your flow, and just plain stinks.  To find out how much time these processes cost Java EE developers, we asked 1000+ to tell us about their environments, and made the report available here:<br /><a href="http://www.zeroturnaround.com/java-ee-productivity-report-2011/">http://www.zeroturnaround.com/java-ee-productivity-report-2011/</a></p>
+<p>Report Spoiler:  5 Weeks per year (40-hour weeks) are spent redeploying and restarting (on average).  Yowza!</p>
+<p>Try JRebel today & Join the Rebellion: <a href="http://www.zeroturnaround.com/jrebel/eclipse-eval/">http://www.zeroturnaround.com/jrebel/eclipse-eval/</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p><strong>News: JRebel 5.2 is out, includes new support for Apache Camel, Spring 3, and better IDE debugger integration.</strong> Is your Java EE development cycle rather more like Continuous Restart than Continuous Coding? Try coding without the need to restart anything, even to see complex Java EE code changes. Get rid of that lengthy build & redeploy phase with JRebel. It's free for 14 days and will save you 10+ minutes each hour!</p>
+<p>**Want to use JRebel on remote servers? Check out the new JRebel Remoting plugin in the Eclipse Marketplace as well!**</p>
+<p>***************************************************<br /><strong>Two easy steps for eliminating redeploys in Java (and rocking out with JRebel for Eclipse):</strong></p>
+<p>1. Search for <strong>JRebel for Eclipse</strong> from the Eclipse Marketplace Client in your IDE - and download it!</p>
+<p>2. Follow the <strong>JRebel Configuration Wizard</strong> to set up your license (new users should choose "I'm a new user and need an evaluation license")</p>
+<p>***************************************************</p>
+<p><strong>Ok, so what is JRebel for Eclipse anyway?</strong></p>
+<p>JRebel for Eclipse is a specialized Eclipse IDE plugin that lets you instantly see the effects of changes you make to your Java code.</p>
+<p>JRebel eliminates the need to build your app, redeploy your container (WebLogic, WebSphere, Tomcat, JBoss, etc.), or restart — so you can code your changes, then see that change immediately reflected in your application.</p>
+<p>JRebel handles changing classes, configurations, or resources — so that’s everything from making a change to a method body, to adding a new method or class, to making a change to your framework configuration.</p>
+<p>***************************************************</p>
+<p><strong>Which Java versions does JRebel support?</strong></p>
+<p>Java 1.4<br />
+Java 5+</p>
+<p>***************************************************</p>
+<p><strong>Which Application Servers does JRebel support?</strong></p>
+<p>Oracle WebLogic 8.x, 9.x, 10.x <br />
+WebSphere 6.0.x, 6.1.x, 7.x, 8.x<br />
+Tomcat 4.x, 5.x, 6.x, 7.x<br />
+JBoss 3.x, 4.x, 5.x, 6.x, 7.x<br />
+GlassFish 2.x, 3.x<br />
+Eclipse Virgo (formerly SpringSource DM Server 2.x)<br />
+Resin 3.x, 4.x<br />
+Google App Engine<br />
+Jetty 5.x, 6.x, 7.x, 8.x<br />
+SAP NetWeaver 7.x<br />
+Oracle OC4J 9.x, 10.x<br />
+Mulesoft TCat Server</p>
+<p>***************************************************</p>
+<p><strong>Which Frameworks & Technologies does JRebel for Eclipse support?</strong></p>
+<p>Spring Framework<br />
+JBoss Seam<br />
+JBoss RESTEasy<br />
+JBoss Weld<br />
+Hibernate<br />
+Hibernate Validator<br />
+Apache CXF<br />
+Jersey<br />
+iBatis<br />
+Google Guice<br />
+Stripes<br />
+Apache Click<br />
+Apache Log4j<br />
+Apache Struts<br />
+Apache Tapestry4<br />
+Apache Tiles<br />
+Apache Velocity<br />
+Apache Wicket<br />
+JAX-WS (Metro)<br />
+JAX-RS (Jersey)<br />
+CDI (JBoss Weld)</p>
+<p>For the full list of the 47 supported frameworks and features, check out <a href="http://www.jrebel.com/features/frameworks/">http://www.jrebel.com/features/frameworks/</a></p>
+<p>***************************************************</p>
+<p>Sound good? Get your free 14-day license key emailed to you here: <a href="http://www.zeroturnaround.com/jrebel/eclipse-eval/">http://www.zeroturnaround.com/jrebel/eclipse-eval/</a>   (*don't forget to download JRebel for Eclipse from the Eclipse Marketplace Client in your IDE)</p>
+<p>Still waiting for your code to compile? Then read on!</p>
+<p>***************************************************</p>
+<p><strong>What's the deal with Redeploys and Restarts in Java anyway?</strong></p>
+<p>We believe that Java should be a fast & agile coding language.  You shouldn't be forced to make changes to code without seeing their direct effects on your application, and redeploying wastes time, affects your focus, hurts your flow, and just plain stinks.  To find out how much time these processes cost Java EE developers, we asked 1000+ to tell us about their environments, and made the report available here:<br /><a href="http://www.zeroturnaround.com/java-ee-productivity-report-2011/">http://www.zeroturnaround.com/java-ee-productivity-report-2011/</a></p>
+<p>Report Spoiler:  5 Weeks per year (40-hour weeks) are spent redeploying and restarting (on average).  Yowza!</p>
+<p>Try JRebel today & Join the Rebellion: <a href="http://www.zeroturnaround.com/jrebel/eclipse-eval/">http://www.zeroturnaround.com/jrebel/eclipse-eval/</a></p>
+]]></body>
+      <created>1295963961</created>
+      <changed>1362659168</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.zeroturnaround.com/software/jrebel/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/jrebel_logo%20CYMK.png?itok=vSWrynIY]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/LicenseServerReport.png?itok=917fPcc-]]></screenshot>
+      <version></version>
+      <license>Commercial</license>
+      <companyname><![CDATA[ZeroTurnaround]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.3+]]></eclipseversion>
+      <supporturl><![CDATA[http://www.zeroturnaround.com/jrebel/documentation/]]></supporturl>
+      <updateurl><![CDATA[http://update.zeroturnaround.com/update-site]]></updateurl>
+<ius>
+<iu>org.zeroturnaround.eclipse.feature</iu>
+<iu>org.zeroturnaround.eclipse.wtp.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

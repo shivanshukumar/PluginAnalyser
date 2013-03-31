@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="225" name="Keytool" url="http://marketplace.eclipse.org/content/keytool">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>Patrick Fust</owner>
+      <favorited>6</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Keytool is an <a href="<a href="http://www.eclipse.org"">http://www.eclipse.org"</a> target=_blank">Eclipse</a> plugin that<br />
+maintains keystores and certificates.</p>
+<p><h2>Keyfeatures</h2><br />
+<ul><br />
+	<li>Export/Import certificate with or without the private key.</li><br />
+	<li>Create certificate.</li><br />
+ 	<li>Create keystore.</li><br />
+	<li>Open existing keystore.</li><br />
+	<li>View all available information about every certificate.</li><br />
+ 	<li>Open existing certificate. Default with the extension <b>.cer</b>.</li><br />
+	<li>View list of certificates in a keystore.</li><br />
+	<li>Handles JKS and PKCS #12.</li><br />
+	<li>Show which certificate in a keystore where you have the private key.</li><br />
+	<li>Filemonitoring, to monitor changes in keystores.</li><br />
+	<li>Default opening a keystore every time Eclipse starts.</li><br />
+</ul><br />
+It allows you to create certificates and put them in a keystore.<br><br />
+You can from Eclipse, open and inspect certificates that are stored as .cer, or in a given keystore.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Keytool is an <a href="<a href="http://www.eclipse.org"">http://www.eclipse.org"</a> target=_blank">Eclipse</a> plugin that<br />
+maintains keystores and certificates.</p>
+<p><h2>Keyfeatures</h2><br />
+<ul><br />
+	<li>Export/Import certificate with or without the private key.</li><br />
+	<li>Create certificate.</li><br />
+ 	<li>Create keystore.</li><br />
+	<li>Open existing keystore.</li><br />
+	<li>View all available information about every certificate.</li><br />
+ 	<li>Open existing certificate. Default with the extension <b>.cer</b>.</li><br />
+	<li>View list of certificates in a keystore.</li><br />
+	<li>Handles JKS and PKCS #12.</li><br />
+	<li>Show which certificate in a keystore where you have the private key.</li><br />
+	<li>Filemonitoring, to monitor changes in keystores.</li><br />
+	<li>Default opening a keystore every time Eclipse starts.</li><br />
+</ul><br />
+It allows you to create certificates and put them in a keystore.<br><br />
+You can from Eclipse, open and inspect certificates that are stored as .cer, or in a given keystore.</p>
+]]></body>
+      <created>1150810633</created>
+      <changed>1259778572</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://keytool.sourceforge.net]]></homepageurl>
+      <image><![CDATA[http://keytool.sourceforge.net/images/keytool110x80.gif]]></image>
+      <version>1.4.1</version>
+      <license>Free GPL</license>
+      <companyname><![CDATA[Patrick Fust]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3]]></eclipseversion>
+      <supporturl><![CDATA[https://sourceforge.net/forum/?group_id=212906]]></supporturl>
+      <updateurl><![CDATA[http://keytool.sourceforge.net/update/]]></updateurl>
+    </node>
+    </marketplace>
+    

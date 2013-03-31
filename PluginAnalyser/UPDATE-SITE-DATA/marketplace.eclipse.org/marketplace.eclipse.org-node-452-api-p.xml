@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="452" name="NTail" url="http://marketplace.eclipse.org/content/ntail">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='37' name='Logging' url='http://marketplace.eclipse.org/category/categories/logging'/>
+      </categories>
+      <tags>
+        <tag id='287' name='tail' url='http://marketplace.eclipse.org/category/free-tagging/tail'/>
+        <tag id='431' name='logging' url='http://marketplace.eclipse.org/category/free-tagging/logging'/>
+        <tag id='835' name='log watcher' url='http://marketplace.eclipse.org/category/free-tagging/log-watcher'/>
+        <tag id='875' name='logger' url='http://marketplace.eclipse.org/category/free-tagging/logger'/>
+      </tags>
+      
+      <owner>Gerald Rosenberg</owner>
+      <favorited>20</favorited>
+      <installstotal>965</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<u>NTail:</u>
+Log file 'tail' plugin for Eclipse. Features include:
+<ul><li>multiple, independent view instances can be open at the same time</li>
+<li>each view instance can host multiple log tail viewers</li>
+<li>view instances can be opened independently in different perspectives</li>
+<li>hyperlinks are active to open JDT editors</li>
+</ul><p>
+Allows watching host platform and plugin-in runtime platform log files at the same time. Useful to simultaneously watch the log files of a mutli-tier system. The same log file can be watched in separate viewers subject to different line filters. 
+</p>
+<p>
+Also works in Aptana (Ruby/Rails) and other Eclipse instances without an installed JDT.
+</p>  ]]></shortdescription>
+      <body><![CDATA[<u>NTail:</u>
+Log file 'tail' plugin for Eclipse. Features include:
+<ul><li>multiple, independent view instances can be open at the same time</li>
+<li>each view instance can host multiple log tail viewers</li>
+<li>view instances can be opened independently in different perspectives</li>
+<li>hyperlinks are active to open JDT editors</li>
+</ul><p>
+Allows watching host platform and plugin-in runtime platform log files at the same time. Useful to simultaneously watch the log files of a mutli-tier system. The same log file can be watched in separate viewers subject to different line filters. 
+</p>
+<p>
+Also works in Aptana (Ruby/Rails) and other Eclipse instances without an installed JDT.
+</p>  ]]></body>
+      <created>1178545373</created>
+      <changed>1276879307</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.certiv.net]]></homepageurl>
+      <image><![CDATA[http://www.certiv.net/images/pen.gif]]></image>
+      <version>1.3.0</version>
+      <license>Other</license>
+      <companyname><![CDATA[Certiv Analytics]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3 -- 3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.certiv.net/support.html]]></supporturl>
+      <updateurl><![CDATA[http://www.certiv.net/updates]]></updateurl>
+<ius>
+<iu>net.certiv.ntail.feature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

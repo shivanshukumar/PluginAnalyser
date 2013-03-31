@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="936" name="Sigasi VHDL Plugin" url="http://marketplace.eclipse.org/content/sigasi-vhdl-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+      </categories>
+      <tags>
+        <tag id='325' name='VHDL' url='http://marketplace.eclipse.org/category/free-tagging/vhdl'/>
+        <tag id='326' name='VHDL plugin' url='http://marketplace.eclipse.org/category/free-tagging/vhdl-plugin'/>
+        <tag id='927' name='Verilog' url='http://marketplace.eclipse.org/category/free-tagging/verilog'/>
+        <tag id='1091' name='student license' url='http://marketplace.eclipse.org/category/free-tagging/student-license'/>
+        <tag id='2297' name='AHDL' url='http://marketplace.eclipse.org/category/free-tagging/ahdl'/>
+      </tags>
+      
+      <owner>Philippe Faes</owner>
+      <favorited>16</favorited>
+      <installstotal>2668</installstotal>
+      <installsrecent>96</installsrecent>
+      <shortdescription><![CDATA[<a href="http://www.sigasi.com/">Sigasi</a> offers the leading <strong>VHDL</strong> plugin for Eclipse:
+
+<ul><li>Makes standard editors obsolete.
+</li><li>Type-time code analysis
+</li><li>Error reporting while you type
+</li><li>Smart content assist
+</li><li>Code inspection and navigation
+</li><li>Design hierarchy view
+</li></ul><ul><li>Syntax highlighting for Verilog and AHDL
+</li></ul>
+
+Check out a <a href="http://www.sigasi.com/screencast/quick_intro">the 1 minute introduction video</a> and the <a href="http://www.sigasi.com/feature-matrix">feature list</a>.<br /><!--break-->
+Sigasi 2.x is an intelligent development environment (IDE) for the VHDL language. As other xDT plugins, such as JDT and CDT, it contains an ultra-fast VHDL parser and compiler that runs transparently in the background. At any given moment as you make modifications, the tool fully understands the design <em>in terms of VHDL concepts</em>. 
+<br /><h2>Starter Edition</h2>
+This plugin can be used free of charge. For <a href="http://www.sigasi.com/sigasi-starter-edition">small projects</a>, all of the <a href="http://www.sigasi.com/sigasi-20-feature-matrix">Pro features</a> will be available. If you want to try the full version, please <a href="http://www.sigasi.com/request-extra-evaluation-license">request a trial license</a> or <a href="http://www.sigasi.com/pricing">buy a license</a> on the Sigasi website.]]></shortdescription>
+      <body><![CDATA[<a href="http://www.sigasi.com/">Sigasi</a> offers the leading <strong>VHDL</strong> plugin for Eclipse:
+
+<ul><li>Makes standard editors obsolete.
+</li><li>Type-time code analysis
+</li><li>Error reporting while you type
+</li><li>Smart content assist
+</li><li>Code inspection and navigation
+</li><li>Design hierarchy view
+</li></ul><ul><li>Syntax highlighting for Verilog and AHDL
+</li></ul>
+
+Check out a <a href="http://www.sigasi.com/screencast/quick_intro">the 1 minute introduction video</a> and the <a href="http://www.sigasi.com/feature-matrix">feature list</a>.<br /><!--break-->
+Sigasi 2.x is an intelligent development environment (IDE) for the VHDL language. As other xDT plugins, such as JDT and CDT, it contains an ultra-fast VHDL parser and compiler that runs transparently in the background. At any given moment as you make modifications, the tool fully understands the design <em>in terms of VHDL concepts</em>. 
+<br /><h2>Starter Edition</h2>
+This plugin can be used free of charge. For <a href="http://www.sigasi.com/sigasi-starter-edition">small projects</a>, all of the <a href="http://www.sigasi.com/sigasi-20-feature-matrix">Pro features</a> will be available. If you want to try the full version, please <a href="http://www.sigasi.com/request-extra-evaluation-license">request a trial license</a> or <a href="http://www.sigasi.com/pricing">buy a license</a> on the Sigasi website.]]></body>
+      <created>1242740130</created>
+      <changed>1363777868</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.sigasi.com/product/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/si_eclipseplugincentral_0.png?itok=nzLg5Y_m]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/EclipseScreenSnapz005.png?itok=JkaaHlNu]]></screenshot>
+      <version>2.12</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[Sigasi]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6, 3.7, 3.8, 4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.sigasi.com/support]]></supporturl>
+      <updateurl><![CDATA[http://download.sigasi.com/updates/marketplace-hdt2]]></updateurl>
+<ius>
+<iu>com.sigasi.hdt.vhdl.feature</iu>
+<iu>com.sigasi.hdt.ahdl.feature</iu>
+<iu>com.sigasi.hdt.verilog.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

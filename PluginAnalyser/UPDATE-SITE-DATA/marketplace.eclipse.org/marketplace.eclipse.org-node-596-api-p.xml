@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="596" name="Xcarecrows 4 MDI" url="http://marketplace.eclipse.org/content/xcarecrows-4-mdi">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+      </categories>
+            
+      <owner>Sany Maamari</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>
+The Xcarecrows 4 MDI Eclipse plugin provides a complete toolset to
+build elaborate applications and systems models from graphical UML diagrams.
+It couples with Rational Software Modeler by IBM to design MDA applications
+and generate executable code directly from the UML modeling tool.
+</p>
+<p>
+<b><u>Features</u></b>
+<br/>
+<ul>
+<li>an UML profile to work with Rational Software Modeler by IBM</li>
+<li>a clear insulation of control logic and operations on data</li>
+<li>a graphical editor whose viewpoint focuses on the behavior of the modeled system</li>
+<li>a code-generating model</li>
+<li>a seamless interfacing with existing applications</li>
+</ul>
+</p>
+<p>
+<b><u>Packaging</u></b>
+<br/>
+<ul>
+<li>Windows and Linux support (platform neutral Java)</li>
+<li>Free online updates</li>
+<li>Installation guide</li>
+<li>User documentation</li>
+<li>Sample tutorial code</li>
+</ul>
+</p>
+<p><b><u>Licensing</u></b><br/>
+Xcarecrows 4 MDI is built on top of <a
+href="<a href="http://www.eclipseplugincentral.com/Web_Links-index-req-viewlink-cid-1056.html">">http://www.eclipseplugincentral.com/Web_Links-index-req-viewlink-cid-105...</a>
+Xcarecrows 4 MDA</a>. Both plugins are available under the Open Source
+<a href="<a href="http://www.apache.org/licenses/LICENSE-2.0"><b>Apache">http://www.apache.org/licenses/LICENSE-2.0"><b>Apache</a> License
+version 2</b></a>.
+</p>
+<p>
+<b><u>Changes from version 1.2.19</u></b>
+<br/>
+<ul>
+<li>Dependencies have been updated to version 1.2.10 of Xcarecrows4MDA</li>
+<li>Documentation appears in its own plugin</li>
+</ul>
+</p>]]></shortdescription>
+      <body><![CDATA[<p>
+The Xcarecrows 4 MDI Eclipse plugin provides a complete toolset to
+build elaborate applications and systems models from graphical UML diagrams.
+It couples with Rational Software Modeler by IBM to design MDA applications
+and generate executable code directly from the UML modeling tool.
+</p>
+<p>
+<b><u>Features</u></b>
+<br/>
+<ul>
+<li>an UML profile to work with Rational Software Modeler by IBM</li>
+<li>a clear insulation of control logic and operations on data</li>
+<li>a graphical editor whose viewpoint focuses on the behavior of the modeled system</li>
+<li>a code-generating model</li>
+<li>a seamless interfacing with existing applications</li>
+</ul>
+</p>
+<p>
+<b><u>Packaging</u></b>
+<br/>
+<ul>
+<li>Windows and Linux support (platform neutral Java)</li>
+<li>Free online updates</li>
+<li>Installation guide</li>
+<li>User documentation</li>
+<li>Sample tutorial code</li>
+</ul>
+</p>
+<p><b><u>Licensing</u></b><br/>
+Xcarecrows 4 MDI is built on top of <a
+href="<a href="http://www.eclipseplugincentral.com/Web_Links-index-req-viewlink-cid-1056.html">">http://www.eclipseplugincentral.com/Web_Links-index-req-viewlink-cid-105...</a>
+Xcarecrows 4 MDA</a>. Both plugins are available under the Open Source
+<a href="<a href="http://www.apache.org/licenses/LICENSE-2.0"><b>Apache">http://www.apache.org/licenses/LICENSE-2.0"><b>Apache</a> License
+version 2</b></a>.
+</p>
+<p>
+<b><u>Changes from version 1.2.19</u></b>
+<br/>
+<ul>
+<li>Dependencies have been updated to version 1.2.10 of Xcarecrows4MDA</li>
+<li>Documentation appears in its own plugin</li>
+</ul>
+</p>]]></body>
+      <created>1196350995</created>
+      <changed>1315403785</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.xcarecrows.com/xcarecrows4mdi.php]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/xcarecrows-mdi.png?itok=sLzFBn1G]]></image>
+      <version>1.2.20</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[Cogenit]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/xcarecrows4mdi]]></supporturl>
+      <updateurl><![CDATA[http://www.xcarecrows.com/eclipse/site.xml]]></updateurl>
+    </node>
+    </marketplace>
+    

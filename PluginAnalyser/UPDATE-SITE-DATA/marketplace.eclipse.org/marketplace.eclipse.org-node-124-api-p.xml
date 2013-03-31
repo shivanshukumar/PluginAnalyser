@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="124" name="Bytecode Outline" url="http://marketplace.eclipse.org/content/bytecode-outline">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='125' name='bytecode' url='http://marketplace.eclipse.org/category/free-tagging/bytecode'/>
+        <tag id='126' name='decompiler' url='http://marketplace.eclipse.org/category/free-tagging/decompiler'/>
+        <tag id='127' name='asm' url='http://marketplace.eclipse.org/category/free-tagging/asm'/>
+      </tags>
+      
+      <owner>Andrey Loskutov</owner>
+      <favorited>36</favorited>
+      <installstotal>6864</installstotal>
+      <installsrecent>331</installsrecent>
+      <shortdescription><![CDATA[<p>Bytecode Outline plugin shows disassembled bytecode of current java editor or class file, allows bytecode compare for java/class files and shows ASMifier code for current bytecode. Have you already asked yourselves what the compiler does with your Java code? Here is the answer ;)<br />
+<br><br><br />
+Bytecode outline help not only to better understand your compiler but also to write your own bytecode on the fly with ASM.</p>
+<!--break--><p>Latest version support Eclipse 3.7 and 3.8, but the update site has links to versions for 3.3, 3.4, 3.5 and 3.6 too.<br /><b>My other plugins on EPIC</b>:</p>
+<ul><li><a href="http://marketplace.eclipse.org/content/anyedit-tools">AnyEdit Tools</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/extended-vs-presentation">Extended VS Presentation</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/filesync">FileSync</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/jdepend4eclipse">JDepend4Eclipse</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/data-hierarchy">Data Hierarchy</a>
+</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>Bytecode Outline plugin shows disassembled bytecode of current java editor or class file, allows bytecode compare for java/class files and shows ASMifier code for current bytecode. Have you already asked yourselves what the compiler does with your Java code? Here is the answer ;)<br />
+<br><br><br />
+Bytecode outline help not only to better understand your compiler but also to write your own bytecode on the fly with ASM.</p>
+<!--break--><p>Latest version support Eclipse 3.7 and 3.8, but the update site has links to versions for 3.3, 3.4, 3.5 and 3.6 too.<br /><b>My other plugins on EPIC</b>:</p>
+<ul><li><a href="http://marketplace.eclipse.org/content/anyedit-tools">AnyEdit Tools</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/extended-vs-presentation">Extended VS Presentation</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/filesync">FileSync</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/jdepend4eclipse">JDepend4Eclipse</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/data-hierarchy">Data Hierarchy</a>
+</li>
+</ul>]]></body>
+      <created>1097009927</created>
+      <changed>1336937380</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://andrei.gmxhome.de/bytecode/index.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/asm2_1.png?itok=QcF65Nxq]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/bco_1.gif?itok=_3Vkh6wW]]></screenshot>
+      <version>2.4.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Andrey Loskutov]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3, 3.4, 3.5, 3.6, 3.7, 3.8]]></eclipseversion>
+      <supporturl><![CDATA[mailto:loskutov@gmx.de]]></supporturl>
+      <updateurl><![CDATA[http://andrei.gmxhome.de/eclipse]]></updateurl>
+<ius>
+<iu>de.loskutov.BytecodeOutline.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

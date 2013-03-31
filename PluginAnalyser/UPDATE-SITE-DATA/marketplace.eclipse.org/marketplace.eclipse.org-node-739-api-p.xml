@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="739" name="Ellipse Plugin" url="http://marketplace.eclipse.org/content/ellipse-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+      <tags>
+        <tag id='422' name='java ee' url='http://marketplace.eclipse.org/category/free-tagging/java-ee'/>
+        <tag id='521' name='xml' url='http://marketplace.eclipse.org/category/free-tagging/xml'/>
+        <tag id='2182' name='Web Development' url='http://marketplace.eclipse.org/category/free-tagging/web-development'/>
+        <tag id='2183' name='web page' url='http://marketplace.eclipse.org/category/free-tagging/web-page'/>
+        <tag id='2184' name='web service' url='http://marketplace.eclipse.org/category/free-tagging/web-service'/>
+      </tags>
+      
+      <owner>Dominique Liard</owner>
+      <favorited>1</favorited>
+      <installstotal>427</installstotal>
+      <installsrecent>27</installsrecent>
+      <shortdescription><![CDATA[<p>Ellipse plugin allows the development of Java EE Web Applications using the Ellipse Framework v 0.4.9. The aims of the Ellipse framework is to improve the productivity of web site development teams. Among the main features: web pages development, web components development, web services (server and client (Javascript) sides), debug tools, web pages indexing, statistics, ...</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Ellipse plugin allows the development of Java EE Web Applications using the Ellipse Framework v 0.4.9. The aims of the Ellipse framework is to improve the productivity of web site development teams. Among the main features: web pages development, web components development, web services (server and client (Javascript) sides), debug tools, web pages indexing, statistics, ...</p>
+]]></body>
+      <created>1217254064</created>
+      <changed>1363252134</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.infini-software.com/Encyclopedie/Developpement/Infini/Ellipse/French/Index.wp]]></homepageurl>
+      <image><![CDATA[http://www.infini-software.com/Encyclopedie/Developpement/Infini/Ellipse/Images/EllipsePlugin_S.png]]></image>
+      <version>0.1.29</version>
+      <license>Other</license>
+      <companyname><![CDATA[Infini Software]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5 / 3.6 / 3.7 / 4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.infini-software.com/Encyclopedie/Developpement/Infini/Ellipse/French/Index.wp]]></supporturl>
+      <updateurl><![CDATA[http://www.infini-software.com/UpdateSite/site.xml]]></updateurl>
+<ius>
+<iu>com.infinisoftware.ellipse.ellipse_feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

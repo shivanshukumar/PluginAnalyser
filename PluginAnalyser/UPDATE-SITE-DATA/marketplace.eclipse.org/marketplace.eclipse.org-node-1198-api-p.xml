@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1198" name="Black Duck Code Search for Code Sight and Ohloh Code" url="http://marketplace.eclipse.org/content/black-duck-code-search-code-sight-and-koderscom">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='40' name='Search' url='http://marketplace.eclipse.org/category/categories/search'/>
+      </categories>
+      <tags>
+        <tag id='96' name='source code' url='http://marketplace.eclipse.org/category/free-tagging/source-code'/>
+        <tag id='349' name='search' url='http://marketplace.eclipse.org/category/free-tagging/search'/>
+        <tag id='369' name='scm' url='http://marketplace.eclipse.org/category/free-tagging/scm'/>
+        <tag id='570' name='code search' url='http://marketplace.eclipse.org/category/free-tagging/code-search'/>
+        <tag id='571' name='programming' url='http://marketplace.eclipse.org/category/free-tagging/programming'/>
+      </tags>
+      
+      <owner>Black Duck Software</owner>
+      <favorited>1</favorited>
+      <installstotal>270</installstotal>
+      <installsrecent>15</installsrecent>
+      <shortdescription><![CDATA[<p>The Eclipse plug-in from Black Duck Software works both with Code Sight, the enterprise source code search application and code.ohloh.net, the industry's leading open source search engine.</p>
+<p>Black Duck™ Code Sight is a source code search engine that brings transparency and easy access to an enterprise’s vast and often distributed source code resources. Code Sight indexes code across an organization’s source code repositories to enable fast search and navigation at enterprise scale. It improves developer productivity and software quality, supports standardization, and enhances compliance. Developers can find code quickly and leverage existing and approved components whether they are internally written, open source, or come from other external sources.  Black Duck Code Sight is based on the proven scalable search technology behind code.ohloh.net, indexing over 10 billion lines of code.</p>
+<p>With your organization’s code base at your fingertips, you can find code to re-use and easily assess the impact of a change.  For example, find a bug once and fix it everywhere that it appears.  Code Sight provides you with one place to access the numerous (and often heterogeneous) source control management systems that are distributed throughout your company or organization.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The Eclipse plug-in from Black Duck Software works both with Code Sight, the enterprise source code search application and code.ohloh.net, the industry's leading open source search engine.</p>
+<p>Black Duck™ Code Sight is a source code search engine that brings transparency and easy access to an enterprise’s vast and often distributed source code resources. Code Sight indexes code across an organization’s source code repositories to enable fast search and navigation at enterprise scale. It improves developer productivity and software quality, supports standardization, and enhances compliance. Developers can find code quickly and leverage existing and approved components whether they are internally written, open source, or come from other external sources.  Black Duck Code Sight is based on the proven scalable search technology behind code.ohloh.net, indexing over 10 billion lines of code.</p>
+<p>With your organization’s code base at your fingertips, you can find code to re-use and easily assess the impact of a change.  For example, find a bug once and fix it everywhere that it appears.  Code Sight provides you with one place to access the numerous (and often heterogeneous) source control management systems that are distributed throughout your company or organization.</p>
+]]></body>
+      <created>1273081509</created>
+      <changed>1348871137</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.blackducksoftware.com/code-sight/plugins]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Untitled_0.png?itok=vMXhu10-]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Screen%20shot%202010-04-14%20at%204.59.21%20PM.png?itok=iAqt-CoO]]></screenshot>
+      <version>2.2</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[Black Duck Software]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7 (Indigo), 4.2 (Juno)]]></eclipseversion>
+      <supporturl><![CDATA[http://www.blackducksoftware.com/code-sight/support]]></supporturl>
+      <updateurl><![CDATA[http://www.blackducksoftware.com/download/Eclipse/]]></updateurl>
+<ius>
+<iu>com.koders.eclipse.searchplugin</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="11179" name="manik-hot-deploy Plugin" url="http://marketplace.eclipse.org/content/manik-hot-deploy-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+      </categories>
+      <tags>
+        <tag id='405' name='maven' url='http://marketplace.eclipse.org/category/free-tagging/maven'/>
+        <tag id='491' name='GlassFish' url='http://marketplace.eclipse.org/category/free-tagging/glassfish'/>
+        <tag id='695' name='jee' url='http://marketplace.eclipse.org/category/free-tagging/jee'/>
+        <tag id='724' name='wtp' url='http://marketplace.eclipse.org/category/free-tagging/wtp'/>
+        <tag id='1206' name='deploy' url='http://marketplace.eclipse.org/category/free-tagging/deploy'/>
+      </tags>
+      
+      <owner>Ralph Soika</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The "Manik Hot deploy" plugin provides an easy way to activate incremental and hot deployment for your maven JEE projects. The Plugin is independend form the WTP and integrates with the Maven Project structure when you are using the m2Eclipse Maven Plugin.<br />
+It takes only some seconds to configure your maven project with the Manik Hot Deploy Plugin. And you will speed up your development!</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The "Manik Hot deploy" plugin provides an easy way to activate incremental and hot deployment for your maven JEE projects. The Plugin is independend form the WTP and integrates with the Maven Project structure when you are using the m2Eclipse Maven Plugin.<br />
+It takes only some seconds to configure your maven project with the Manik Hot Deploy Plugin. And you will speed up your development!</p>
+]]></body>
+      <created>1284489744</created>
+      <changed>1284620927</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/manik-hot-deploy/]]></homepageurl>
+      <image><![CDATA[http://manik-hot-deploy.googlecode.com/files/14.094.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/14.094.png?itok=EtPEM6Kc]]></screenshot>
+      <version>1.0.1</version>
+      <license>GPL</license>
+      <companyname><![CDATA[Imixs]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5 Galileo]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/manik-hot-deploy/issues/list]]></supporturl>
+      <updateurl><![CDATA[http://www.imixs.org/manik.updatesite/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

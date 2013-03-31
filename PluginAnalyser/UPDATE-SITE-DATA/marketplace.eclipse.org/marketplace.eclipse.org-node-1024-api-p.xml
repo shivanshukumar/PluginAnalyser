@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1024" name="Fast Fox" url="http://marketplace.eclipse.org/content/fast-fox">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='78' name='mouse' url='http://marketplace.eclipse.org/category/free-tagging/mouse'/>
+        <tag id='79' name='gestures' url='http://marketplace.eclipse.org/category/free-tagging/gestures'/>
+        <tag id='80' name='firefox' url='http://marketplace.eclipse.org/category/free-tagging/firefox'/>
+        <tag id='81' name='pie' url='http://marketplace.eclipse.org/category/free-tagging/pie'/>
+        <tag id='82' name='free' url='http://marketplace.eclipse.org/category/free-tagging/free'/>
+      </tags>
+      
+      <owner>David Virdefors</owner>
+      <favorited>6</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>IMPORTANT: Fast Fox Beta currently only supports Windows Operating Systems!</p>
+<p>Fast Fox enriches your Eclipse IDE with simple, yet powerful mouse gestures. Often used actions, e.g. "previous editor" and "close editor" are now accessible with a simple mouse movement.</p>
+<p>You do not have to draw complicated symbols, instead Fast Fox features an intuitive pie menu, making it really simple to use.</p>
+<p>Try it out, it is Free!</p>
+<p>Learn more at:<br /><a href="http://www.oixx.se/fastfox.php">http://www.oixx.se/fastfox.php</a></p>
+<p>Source Code at:<br /><a href="http://code.google.com/a/eclipselabs.org/p/fastfox/">http://code.google.com/a/eclipselabs.org/p/fastfox/</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>IMPORTANT: Fast Fox Beta currently only supports Windows Operating Systems!</p>
+<p>Fast Fox enriches your Eclipse IDE with simple, yet powerful mouse gestures. Often used actions, e.g. "previous editor" and "close editor" are now accessible with a simple mouse movement.</p>
+<p>You do not have to draw complicated symbols, instead Fast Fox features an intuitive pie menu, making it really simple to use.</p>
+<p>Try it out, it is Free!</p>
+<p>Learn more at:<br /><a href="http://www.oixx.se/fastfox.php">http://www.oixx.se/fastfox.php</a></p>
+<p>Source Code at:<br /><a href="http://code.google.com/a/eclipselabs.org/p/fastfox/">http://code.google.com/a/eclipselabs.org/p/fastfox/</a></p>
+]]></body>
+      <created>1255614325</created>
+      <changed>1287833031</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.oixx.se/fastfox.php]]></homepageurl>
+      <image><![CDATA[http://www.oixx.se/fastfox_logo_border.jpg]]></image>
+      <version>1.4.0</version>
+      <license>Free for non-commerical use</license>
+      <companyname><![CDATA[David Virdefors - Purple Scout]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://www.oixx.se/contact.php]]></supporturl>
+      <updateurl><![CDATA[http://www.oixx.se/fastfox/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

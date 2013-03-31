@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="892" name="CodeChase" url="http://marketplace.eclipse.org/content/codechase">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='40' name='Search' url='http://marketplace.eclipse.org/category/categories/search'/>
+      </categories>
+      <tags>
+        <tag id='349' name='search' url='http://marketplace.eclipse.org/category/free-tagging/search'/>
+        <tag id='848' name='index' url='http://marketplace.eclipse.org/category/free-tagging/index'/>
+        <tag id='849' name='source' url='http://marketplace.eclipse.org/category/free-tagging/source'/>
+        <tag id='874' name='codechase' url='http://marketplace.eclipse.org/category/free-tagging/codechase'/>
+      </tags>
+      
+      <owner>Gerald Rosenberg</owner>
+      <favorited>12</favorited>
+      <installstotal>89</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<u>CodeChase:</u>
+A local desktop search engine optimized for Eclipse developers and the Eclipse work environment.  Implemented as an IDE plugin.
+
+Features:
+<ul><li>free-text search (Lucene-syntax) over locally hosted content</li>
+<li>intelligent document content specializations for Java, PDF, HTML/XML, and plain-text</li>
+<li>automatically opens <em>jar</em>, <em>zip</em>, <em>tar</em>, <em>tgz</em> and <em>tbz2</em> archives for indexing and searching</li>
+<li>search results files can be opened directly in content appropriate platform editors</li>
+<li>full featured wizard support for setting indexing options</li>
+</ul>
+
+Uses:
+<ul><li>search the Eclipse source jars to see how the platform itself uses any particular methods and classes</li>
+<li>search the Eclipse plugins to find specific features in the <em>plugin.xml</em>s
+</li><li>search over multiple workspaces and projects (do not need to be open)</li>
+<li>search local filesystem hierarchies external to any workspace</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<u>CodeChase:</u>
+A local desktop search engine optimized for Eclipse developers and the Eclipse work environment.  Implemented as an IDE plugin.
+
+Features:
+<ul><li>free-text search (Lucene-syntax) over locally hosted content</li>
+<li>intelligent document content specializations for Java, PDF, HTML/XML, and plain-text</li>
+<li>automatically opens <em>jar</em>, <em>zip</em>, <em>tar</em>, <em>tgz</em> and <em>tbz2</em> archives for indexing and searching</li>
+<li>search results files can be opened directly in content appropriate platform editors</li>
+<li>full featured wizard support for setting indexing options</li>
+</ul>
+
+Uses:
+<ul><li>search the Eclipse source jars to see how the platform itself uses any particular methods and classes</li>
+<li>search the Eclipse plugins to find specific features in the <em>plugin.xml</em>s
+</li><li>search over multiple workspaces and projects (do not need to be open)</li>
+<li>search local filesystem hierarchies external to any workspace</li>
+</ul>]]></body>
+      <created>1237211435</created>
+      <changed>1280076892</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.certiv.net]]></homepageurl>
+      <image><![CDATA[http://www.certiv.net/images/pen.gif]]></image>
+      <version>0.9.0</version>
+      <license>Other</license>
+      <companyname><![CDATA[Certiv Analytics]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.certiv.net/support.html]]></supporturl>
+      <updateurl><![CDATA[http://www.certiv.net/updates]]></updateurl>
+<ius>
+<iu>net.certiv.codechase.feature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="878" name="Force.com IDE" url="http://marketplace.eclipse.org/content/forcecom-ide">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='21' name='Web Services' url='http://marketplace.eclipse.org/taxonomy/term/21'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='156' name='force.com' url='http://marketplace.eclipse.org/category/free-tagging/forcecom'/>
+        <tag id='465' name='Cloud' url='http://marketplace.eclipse.org/category/free-tagging/cloud'/>
+        <tag id='578' name='paas' url='http://marketplace.eclipse.org/category/free-tagging/paas'/>
+        <tag id='581' name='Cloud Computing' url='http://marketplace.eclipse.org/category/free-tagging/cloud-computing'/>
+        <tag id='733' name='salesforce.com' url='http://marketplace.eclipse.org/category/free-tagging/salesforcecom'/>
+      </tags>
+      
+      <owner>Jon Plax</owner>
+      <favorited>5</favorited>
+      <installstotal>2024</installstotal>
+      <installsrecent>37</installsrecent>
+      <shortdescription><![CDATA[<p>The Force.com IDE is a free developer tool for building and deploying Force.com applications. Designed for developers and development teams, the IDE accelerates Force.com application development, including source code editors, test execution tools, wizards and integrated help.</p>
+<p>To sign up for a free Force.com developer account, visit the <A HREF="<a href="http://developer.force.com">Developer">http://developer.force.com">Developer</a> Force</A> community.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The Force.com IDE is a free developer tool for building and deploying Force.com applications. Designed for developers and development teams, the IDE accelerates Force.com application development, including source code editors, test execution tools, wizards and integrated help.</p>
+<p>To sign up for a free Force.com developer account, visit the <A HREF="<a href="http://developer.force.com">Developer">http://developer.force.com">Developer</a> Force</A> community.</p>
+]]></body>
+      <created>1236008765</created>
+      <changed>1288817784</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://wiki.apexdevnet.com/index.php/Force.com_IDE]]></homepageurl>
+      <image><![CDATA[http://wiki.apexdevnet.com/images/9/9c/Force_ide_110x80.png]]></image>
+      <version>20.0</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[salesforce.com]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4/3.5/3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://community.salesforce.com/sforce/board?board.id=general_development]]></supporturl>
+      <updateurl><![CDATA[http://www.adnsandbox.com/tools/ide/install/]]></updateurl>
+<ius>
+<iu>com.salesforce.ide.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

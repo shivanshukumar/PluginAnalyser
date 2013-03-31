@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="73595" name="Ecliballs" url="http://marketplace.eclipse.org/content/ecliballs">
+      <type>resource</type>
+      <categories>
+        <category id='7' name='Entertainment' url='http://marketplace.eclipse.org/taxonomy/term/7'/>
+      </categories>
+      <tags>
+        <tag id='2044' name='game' url='http://marketplace.eclipse.org/category/free-tagging/game'/>
+        <tag id='2045' name='balls' url='http://marketplace.eclipse.org/category/free-tagging/balls'/>
+      </tags>
+      
+      <owner>Wojciech Trocki</owner>
+      <favorited>0</favorited>
+      <installstotal>70</installstotal>
+      <installsrecent>1</installsrecent>
+      <shortdescription><![CDATA[<p>Ecliballs are version of popular logical game, relying on arrangement colored balls into lines.</p>
+<p>Rules:</p>
+<p>Move elements to gain rows or columns with the same colors. You scores if you have more than four balls in row. You have to align same colored balls to eliminate it from the board. The balls will change positions, and if they complete a row of three or more balls with the same color, the row will be cleared.<br />
+Game offer lot's of customizations. You can change board size, number or colors of balls. </p>
+<p>How to start:</p>
+<p>Install in your eclipse and open Ecliballs view in Games category.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Ecliballs are version of popular logical game, relying on arrangement colored balls into lines.</p>
+<p>Rules:</p>
+<p>Move elements to gain rows or columns with the same colors. You scores if you have more than four balls in row. You have to align same colored balls to eliminate it from the board. The balls will change positions, and if they complete a row of three or more balls with the same color, the row will be cleared.<br />
+Game offer lot's of customizations. You can change board size, number or colors of balls. </p>
+<p>How to start:</p>
+<p>Install in your eclipse and open Ecliballs view in Games category.</p>
+]]></body>
+      <created>1309107150</created>
+      <changed>1309257632</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://wtrocki.blogspot.com/2011/02/kulki-w-eclipse.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo.GIF?itok=x3rBjfwx]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/kulki.PNG?itok=NfaAFprj]]></screenshot>
+      <version></version>
+      <license>EPL</license>
+      <companyname><![CDATA[Wojtek Trocki]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[up to 3.5]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://troken.cba.pl/updates/ecliballs/]]></updateurl>
+<ius>
+<iu>pl.troken.ecliballs.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

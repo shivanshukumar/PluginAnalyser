@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="44729" name="License Management Solution" url="http://marketplace.eclipse.org/content/license-management-solution">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+      <tags>
+        <tag id='1847' name='license management' url='http://marketplace.eclipse.org/category/free-tagging/license-management'/>
+        <tag id='1848' name='licensing' url='http://marketplace.eclipse.org/category/free-tagging/licensing'/>
+        <tag id='1849' name='Hammurapi Group LLC' url='http://marketplace.eclipse.org/category/free-tagging/hammurapi-group-llc'/>
+      </tags>
+      
+      <owner>Pavel Vlasov</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The license management solution lets vendors of Eclipse-based software products, such as Eclipse plug-in's, easily integrate license management into their products, i.e. checks whether given Eclipse installation has a valid license for a particular product feature.</p>
+<p>The solution consists of two closely integrated parts:<br />
+  * License management/validation plug-in. Software vendors integrate this plug-in into their products to perform check which features are licensed in a given Eclipse installation. Users of vendor products use the preference page provided by the plug-in to install and view licenses and keys.<br />
+  * License generation/delivery service provided by Hammurapi Group to vendors of Eclipse-based products.</p>
+<p>Key features:<br />
+    * License generation and delivery to customers.<br />
+    * Payment processing.<br />
+    * Licenses are encrypted with asymmetric encryption and cannot be forged.<br />
+    * License management plug-in code is signed.<br />
+    * Vendor plug-in code can implement additional integrity check of the licensing plug-in.<br />
+    * Licenses can have expiration date or expiration period after first use of licensed feature.<br />
+    * Clock-reset resilience - the solution detects when the system clock was rewound to continue to use licensed feature after expiration date.<br />
+    * Fine-grained licensing - vendor product checks licensing at “feature” level, each license can contain multiple licensed features.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The license management solution lets vendors of Eclipse-based software products, such as Eclipse plug-in's, easily integrate license management into their products, i.e. checks whether given Eclipse installation has a valid license for a particular product feature.</p>
+<p>The solution consists of two closely integrated parts:<br />
+  * License management/validation plug-in. Software vendors integrate this plug-in into their products to perform check which features are licensed in a given Eclipse installation. Users of vendor products use the preference page provided by the plug-in to install and view licenses and keys.<br />
+  * License generation/delivery service provided by Hammurapi Group to vendors of Eclipse-based products.</p>
+<p>Key features:<br />
+    * License generation and delivery to customers.<br />
+    * Payment processing.<br />
+    * Licenses are encrypted with asymmetric encryption and cannot be forged.<br />
+    * License management plug-in code is signed.<br />
+    * Vendor plug-in code can implement additional integrity check of the licensing plug-in.<br />
+    * Licenses can have expiration date or expiration period after first use of licensed feature.<br />
+    * Clock-reset resilience - the solution detects when the system clock was rewound to continue to use licensed feature after expiration date.<br />
+    * Fine-grained licensing - vendor product checks licensing at “feature” level, each license can contain multiple licensed features.</p>
+]]></body>
+      <created>1302533427</created>
+      <changed>1309805109</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.hammurapi.com/dokuwiki/doku.php/services:license_management]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/CropperCapture%5B2%5D.png?itok=KXUHQ1JS]]></screenshot>
+      <version>1.0.0.201104092214</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Hammurapi Group LLC]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6.0]]></eclipseversion>
+      <supporturl><![CDATA[http://www.hammurapi.com/bb/viewforum.php?f=13]]></supporturl>
+      <updateurl><![CDATA[http://www.hammurapi.com/products/licensing/update-site/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

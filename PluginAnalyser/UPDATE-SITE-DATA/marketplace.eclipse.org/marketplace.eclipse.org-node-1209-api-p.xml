@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1209" name="SpagoBI" url="http://marketplace.eclipse.org/content/spagobi">
+      <type>resource</type>
+      <categories>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='21' name='Web Services' url='http://marketplace.eclipse.org/taxonomy/term/21'/>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+        <category id='39' name='Reporting' url='http://marketplace.eclipse.org/category/categories/reporting'/>
+        <category id='42' name='BIRT' url='http://marketplace.eclipse.org/category/categories/birt'/>
+      </categories>
+      <tags>
+        <tag id='230' name='Business Intelligence' url='http://marketplace.eclipse.org/category/free-tagging/business-intelligence'/>
+        <tag id='362' name='reporting' url='http://marketplace.eclipse.org/category/free-tagging/reporting'/>
+        <tag id='500' name='open source' url='http://marketplace.eclipse.org/category/free-tagging/open-source'/>
+        <tag id='505' name='SpagoBI' url='http://marketplace.eclipse.org/category/free-tagging/spagobi'/>
+        <tag id='510' name='BAM' url='http://marketplace.eclipse.org/category/free-tagging/bam'/>
+      </tags>
+      
+      <owner>CKlein</owner>
+      <favorited>6</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>SpagoBI is the only entirely open source Business Intelligence suite, supporting the development of innovative and flexible Business Intelligence solutions. It supports day-to-day and strategic business, both at the decision-making and operational levels.<br />
+SpagoBI Studio is the development environment for BI developers who have to design reports, multidimensional analysis, simple and interactive dashboards, geographic and graphic analysis, KPI models, data mining processes and any other kind of analytical document. SpagoBI Meta is the module focused on the technical metadata management.<br />
+SpagoBI (with SpagoBI Studio and SpagoBI Meta) is supported by Engineering Group, an IT global player and the Italian largest operator in the IT services market.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>SpagoBI is the only entirely open source Business Intelligence suite, supporting the development of innovative and flexible Business Intelligence solutions. It supports day-to-day and strategic business, both at the decision-making and operational levels.<br />
+SpagoBI Studio is the development environment for BI developers who have to design reports, multidimensional analysis, simple and interactive dashboards, geographic and graphic analysis, KPI models, data mining processes and any other kind of analytical document. SpagoBI Meta is the module focused on the technical metadata management.<br />
+SpagoBI (with SpagoBI Studio and SpagoBI Meta) is supported by Engineering Group, an IT global player and the Italian largest operator in the IT services market.</p>
+]]></body>
+      <created>1273659128</created>
+      <changed>1273659297</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.spagobi.org/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/spagobi_0.png?itok=tw1-ZnOq]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Example1.png?itok=ghMc1wBU]]></screenshot>
+      <version>2.5</version>
+      <license>LGPL</license>
+      <companyname><![CDATA[Engineering Group]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[Galileo]]></eclipseversion>
+      <supporturl><![CDATA[http://www.spagoworld.org/xwiki/bin/view/SpagoBI/Support ]]></supporturl>
+      <updateurl><![CDATA[http://forge.ow2.org/projects/spagobi ]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

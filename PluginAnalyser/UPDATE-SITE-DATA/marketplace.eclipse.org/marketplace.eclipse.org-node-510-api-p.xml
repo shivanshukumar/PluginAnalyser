@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="510" name="nqDoc  Document Processor" url="http://marketplace.eclipse.org/content/nqdoc-document-processor">
+      <type>resource</type>
+      <categories>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+      </categories>
+      <tags>
+        <tag id='206' name='docbook' url='http://marketplace.eclipse.org/category/free-tagging/docbook'/>
+        <tag id='207' name='dita' url='http://marketplace.eclipse.org/category/free-tagging/dita'/>
+        <tag id='389' name='documentation' url='http://marketplace.eclipse.org/category/free-tagging/documentation'/>
+        <tag id='521' name='xml' url='http://marketplace.eclipse.org/category/free-tagging/xml'/>
+        <tag id='1533' name='Single Sourcing' url='http://marketplace.eclipse.org/category/free-tagging/single-sourcing'/>
+      </tags>
+      
+      <owner>contact</owner>
+      <favorited>2</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The nqDoc Editor is a flexible and easy-to-use documentation tool. It combines document processing and XML-based structured authoring with single source publishing to help you create documentation in multiple languages and formats.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The nqDoc Editor is a flexible and easy-to-use documentation tool. It combines document processing and XML-based structured authoring with single source publishing to help you create documentation in multiple languages and formats.</p>
+]]></body>
+      <created>1185453711</created>
+      <changed>1306738611</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.nqdoc.com]]></homepageurl>
+      <image><![CDATA[http://manu-ed.com/carton.jpg]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/scr_nqdoc_4.png?itok=EkRNTWNW]]></screenshot>
+      <version>1.0.5</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[nq4 Software UG (haftungsbeschränkt)]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5.0 and later]]></eclipseversion>
+      <supporturl><![CDATA[http://www.nqdoc.com]]></supporturl>
+      <updateurl><![CDATA[http://www.nqdoc.com/updatesite/nqdoc/1.x/plugin]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

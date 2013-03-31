@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="65558" name="Acceleo JavaEE Generators (Indigo version)" url="http://marketplace.eclipse.org/content/acceleo-javaee-generators-helios-version">
+      <type>resource</type>
+      <categories>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='1971' name='Modeling' url='http://marketplace.eclipse.org/category/categories/modeling'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='1965' name='SOA Development' url='http://marketplace.eclipse.org/category/categories/soa-development'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+      </categories>
+      <tags>
+        <tag id='134' name='J2EE' url='http://marketplace.eclipse.org/category/free-tagging/j2ee'/>
+        <tag id='158' name='spring' url='http://marketplace.eclipse.org/category/free-tagging/spring'/>
+        <tag id='171' name='struts' url='http://marketplace.eclipse.org/category/free-tagging/struts'/>
+        <tag id='174' name='MDA' url='http://marketplace.eclipse.org/category/free-tagging/mda'/>
+        <tag id='305' name='ui' url='http://marketplace.eclipse.org/category/free-tagging/ui'/>
+      </tags>
+      
+      <owner>Obeo  </owner>
+      <favorited>8</favorited>
+      <installstotal>1581</installstotal>
+      <installsrecent>163</installsrecent>
+      <shortdescription><![CDATA[<p><b>Acceleo Java EE Generators</b> provides a set of code generators for the popular Java/JavaEE frameworks:</p>
+<ul><li>JPA/Hibernate</li>
+<li>Spring Framework</li>
+<li>Struts</li>
+<li>JSP</li>
+<li>...</li>
+</ul><!--break--><p>
+These generators apply on models created with three Domain Specific Modelers:</p>
+<ul><li><a href="http://marketplace.eclipse.org/content/entity-designer-helios-version">Entity Designer</a>: to define entities and their relationships</li>
+<li><a href="http://marketplace.eclipse.org/content/soa-designer-helios-version">SOA Designer</a>: to define components and services </li>
+<li><a href="http://marketplace.eclipse.org/content/cinematic-designer-helios-version">Cinematic Designer</a>: to define the pages and transitions between pages </li>
+</ul><p>
+You can choose which layers to generate:</p>
+<ul><li>UI Presentation: JSP, Javascript with default CSS theme</li>
+<li>UI Cinematic: navigation between screens and event behavior</li>
+<li>Service: complex or simple business service</li>
+<li>Data: store and manage data from a datasource (usualy a database)</li>
+</ul><p>
+These generators can also generate unit tests (based on JUnit) and brige frameworks (example: between Spring and Hibernate).</p>
+<p>
+Several properties are externalized from the generators to simplify architecture choices.</p>
+<p>
+Written with <a href="http://marketplace.eclipse.org/content/acceleo">Acceleo</a>, these generators can be refined and overridden to specialize them project after project. If you need heavy customisation, fork the EPL code to create your own Acceleo templates.</p>
+]]></shortdescription>
+      <body><![CDATA[<p><b>Acceleo Java EE Generators</b> provides a set of code generators for the popular Java/JavaEE frameworks:</p>
+<ul><li>JPA/Hibernate</li>
+<li>Spring Framework</li>
+<li>Struts</li>
+<li>JSP</li>
+<li>...</li>
+</ul><!--break--><p>
+These generators apply on models created with three Domain Specific Modelers:</p>
+<ul><li><a href="http://marketplace.eclipse.org/content/entity-designer-helios-version">Entity Designer</a>: to define entities and their relationships</li>
+<li><a href="http://marketplace.eclipse.org/content/soa-designer-helios-version">SOA Designer</a>: to define components and services </li>
+<li><a href="http://marketplace.eclipse.org/content/cinematic-designer-helios-version">Cinematic Designer</a>: to define the pages and transitions between pages </li>
+</ul><p>
+You can choose which layers to generate:</p>
+<ul><li>UI Presentation: JSP, Javascript with default CSS theme</li>
+<li>UI Cinematic: navigation between screens and event behavior</li>
+<li>Service: complex or simple business service</li>
+<li>Data: store and manage data from a datasource (usualy a database)</li>
+</ul><p>
+These generators can also generate unit tests (based on JUnit) and brige frameworks (example: between Spring and Hibernate).</p>
+<p>
+Several properties are externalized from the generators to simplify architecture choices.</p>
+<p>
+Written with <a href="http://marketplace.eclipse.org/content/acceleo">Acceleo</a>, these generators can be refined and overridden to specialize them project after project. If you need heavy customisation, fork the EPL code to create your own Acceleo templates.</p>
+]]></body>
+      <created>1308132158</created>
+      <changed>1359991295</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://marketplace.obeonetwork.com/module/javaee-generators]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_ON-110x80_1.png?itok=7pivbQof]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/JavaEE-Generator-ois-small.png?itok=ThPzPAr3]]></screenshot>
+      <version>2.3</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Obeo Network]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7.2]]></eclipseversion>
+      <supporturl><![CDATA[http://marketplace.obeonetwork.com/module/javaee-generators#community]]></supporturl>
+      <updateurl><![CDATA[http://marketplace.obeonetwork.com/updates/od6/]]></updateurl>
+<ius>
+<iu>fr.obeo.mda.license.feature.group</iu>
+<iu>org.obeonetwork.sample.demo.weblog.feature.feature.group</iu>
+<iu>org.obeonetwork.dsl.environment.gen.java.feature.feature.group</iu>
+<iu>org.obeonetwork.dsl.entity.gen.java.hibernate.feature.feature.group</iu>
+<iu>org.obeonetwork.dsl.soa.gen.java.spring.feature.feature.group</iu>
+<iu>org.obeonetwork.dsl.soa.gen.java.spring.hibernate.feature.feature.group</iu>
+<iu>org.obeonetwork.dsl.cinematic.gen.java.struts.feature.feature.group</iu>
+<iu>org.obeonetwork.dsl.cinematic.gen.java.struts.spring.feature.feature.group</iu>
+<iu>org.obeonetwork.acceleo.feature.feature.group</iu>
+<iu>org.obeonetwork.dsl.cinematic.design.feature</iu>
+<iu>org.obeonetwork.dsl.feature.is.design</iu>
+<iu>org.obeonetwork.dsl.feature.is</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

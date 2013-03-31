@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="43849" name="Ant Visualization" url="http://marketplace.eclipse.org/content/ant-visualization">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='8' name='Graphics' url='http://marketplace.eclipse.org/taxonomy/term/8'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='47' name='visualization' url='http://marketplace.eclipse.org/category/free-tagging/visualization'/>
+        <tag id='204' name='Ant' url='http://marketplace.eclipse.org/category/free-tagging/ant'/>
+        <tag id='651' name='GEF' url='http://marketplace.eclipse.org/category/free-tagging/gef'/>
+        <tag id='1062' name='zest' url='http://marketplace.eclipse.org/category/free-tagging/zest'/>
+      </tags>
+      
+      <owner>satyagraha.1956</owner>
+      <favorited>8</favorited>
+      <installstotal>5062</installstotal>
+      <installsrecent>284</installsrecent>
+      <shortdescription><![CDATA[<p>Provides a graphical presentation of the dependencies between targets in Ant build.xml files. This is useful in several situations:<br />
+* to aid understanding<br />
+* to highlight excessive complexity<br />
+* to provide images for use in documentation</p>
+<p>Documentation is provided via the built-in Eclipse help facility.</p>
+<p>Note: this plugin has a dependency on the Eclipse GEF/Zest frameworks. Prior to installation, select the Eclipse GEF update site <a href="http://download.eclipse.org/tools/gef/updates/releases/">http://download.eclipse.org/tools/gef/updates/releases/</a> in the list of "Available Software Sites". Then from it install:<br />
+* GEF SDK 3.6.2 or later<br />
+* Zest SDK 1.2 or later</p>
+<p>Then you can install the Ant Visualization plugin.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Provides a graphical presentation of the dependencies between targets in Ant build.xml files. This is useful in several situations:<br />
+* to aid understanding<br />
+* to highlight excessive complexity<br />
+* to provide images for use in documentation</p>
+<p>Documentation is provided via the built-in Eclipse help facility.</p>
+<p>Note: this plugin has a dependency on the Eclipse GEF/Zest frameworks. Prior to installation, select the Eclipse GEF update site <a href="http://download.eclipse.org/tools/gef/updates/releases/">http://download.eclipse.org/tools/gef/updates/releases/</a> in the list of "Available Software Sites". Then from it install:<br />
+* GEF SDK 3.6.2 or later<br />
+* Zest SDK 1.2 or later</p>
+<p>Then you can install the Ant Visualization plugin.</p>
+]]></body>
+      <created>1302219278</created>
+      <changed>1309475408</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://bitbucket.org/satyagraha.1956/ant_vis/wiki/Home]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/antvis.png?itok=jJm-zaJ8]]></screenshot>
+      <version>1.0.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[satyagraha.1956]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6, 3.7]]></eclipseversion>
+      <supporturl><![CDATA[https://bitbucket.org/satyagraha.1956/ant_vis/issues?status=new&status=open]]></supporturl>
+      <updateurl><![CDATA[http://satyagraha.1956.bitbucket.org/ant_vis/latest]]></updateurl>
+<ius>
+<iu>org.ant_vis</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

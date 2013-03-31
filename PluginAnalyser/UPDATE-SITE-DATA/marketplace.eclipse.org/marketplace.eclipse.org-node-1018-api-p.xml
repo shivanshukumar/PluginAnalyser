@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1018" name="BIRT Controls" url="http://marketplace.eclipse.org/content/birt-controls">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='39' name='Reporting' url='http://marketplace.eclipse.org/category/categories/reporting'/>
+        <category id='42' name='BIRT' url='http://marketplace.eclipse.org/category/categories/birt'/>
+      </categories>
+            
+      <owner>Scott Rosenbaum</owner>
+      <favorited>4</favorited>
+      <installstotal>2264</installstotal>
+      <installsrecent>62</installsrecent>
+      <shortdescription><![CDATA[<p>BIRT controls represents a best practice implementation of the BIRT Report Item extension point. Based on the initial RotatedTextItem example code, this project represents significant improvements to the control and the way the control was produced.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>BIRT controls represents a best practice implementation of the BIRT Report Item extension point. Based on the initial RotatedTextItem example code, this project represents significant improvements to the control and the way the control was produced.</p>
+]]></body>
+      <created>1254497699</created>
+      <changed>1280423780</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/a/eclipselabs.org/p/birt-controls-lib/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/icon_controls_planet_eclipse.png?itok=Tx9SY7gb]]></image>
+      <version>1.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Innovent Solutions]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4+]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/a/eclipselabs.org/p/birt-controls-lib/wiki/UsageGuide]]></supporturl>
+      <updateurl><![CDATA[http://svn.codespot.com/a/eclipselabs.org/birt-innovent-update/2.5.2/]]></updateurl>
+<ius>
+<iu>birt.controls.lib.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

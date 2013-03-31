@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1016" name="JASMINe Design" url="http://marketplace.eclipse.org/content/jasmine-design">
+      <type>resource</type>
+      <categories>
+        <category id='1' name='Application Server' url='http://marketplace.eclipse.org/taxonomy/term/1'/>
+      </categories>
+            
+      <owner>Aurelien Pupier</owner>
+      <favorited>3</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>JASMINe Design is GUI that allows you to design and configure a middleware architecture.</p>
+<p>Once your architecture is designed, you can deploy it with DeployME or Jade, tools from JASMINe Deploy.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>JASMINe Design is GUI that allows you to design and configure a middleware architecture.</p>
+<p>Once your architecture is designed, you can deploy it with DeployME or Jade, tools from JASMINe Deploy.</p>
+]]></body>
+      <created>1254319327</created>
+      <changed>1259779329</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://wiki.jasmine.ow2.org/xwiki/bin/view/Main/Design]]></homepageurl>
+      <image><![CDATA[http://jasmine.ow2.org/design/1.2/resources/logo_jasmine.png]]></image>
+      <version>1.2.1-M2</version>
+      <license>Free LGPL</license>
+      <companyname><![CDATA[Bull S.A.]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://mail.ow2.org/wws/info/jasmine]]></supporturl>
+      <updateurl><![CDATA[http://jasmine.ow2.org/design/1.2/update-site]]></updateurl>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="172832" name="Jspresso Translation" url="http://marketplace.eclipse.org/content/jspresso-translation">
+      <type>resource</type>
+      <categories>
+        <category id='1964' name='Application Development Frameworks' url='http://marketplace.eclipse.org/category/categories/application-development-frameworks'/>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='146' name='editor' url='http://marketplace.eclipse.org/category/free-tagging/editor'/>
+        <tag id='1121' name='properties' url='http://marketplace.eclipse.org/category/free-tagging/properties'/>
+        <tag id='1170' name='i18n' url='http://marketplace.eclipse.org/category/free-tagging/i18n'/>
+        <tag id='1239' name='Internationalisation' url='http://marketplace.eclipse.org/category/free-tagging/internationalisation'/>
+        <tag id='1595' name='internationalization' url='http://marketplace.eclipse.org/category/free-tagging/internationalization'/>
+      </tags>
+      
+      <owner>Maxime HAMM</owner>
+      <favorited>1</favorited>
+      <installstotal>596</installstotal>
+      <installsrecent>30</installsrecent>
+      <shortdescription><![CDATA[<p><strong>Jspresso Developer Studio Translation helps you to manage your resource bundles internationalisation (i18n) property files by editing them directly from within your java editor !</strong></p>
+<p>Just select any java string literal and right click on it to open the contextual popup menu... then select <strong>Jspresso>Translate</strong></p>
+<p><strong>NEW</strong> tooltip supports : fly over your string literal to display the current translation... and activate hyperlink to open the translation popup !</p>
+<p><strong>NEW</strong> supports multiple bundles.</p>
+<p><strong>NEW</strong> Juno compatible !</p>
+<p><em>Settings</em> :
+</p><ol><li>setup your prefered languages from eclipse preferences.</li>
+<li>setup your resource bundle location from your project preferences</li>
+</ol><p>Any question ? any issue ? Meet us at <a href="http://www.jspresso.org">www.jspresso.org</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p><strong>Jspresso Developer Studio Translation helps you to manage your resource bundles internationalisation (i18n) property files by editing them directly from within your java editor !</strong></p>
+<p>Just select any java string literal and right click on it to open the contextual popup menu... then select <strong>Jspresso>Translate</strong></p>
+<p><strong>NEW</strong> tooltip supports : fly over your string literal to display the current translation... and activate hyperlink to open the translation popup !</p>
+<p><strong>NEW</strong> supports multiple bundles.</p>
+<p><strong>NEW</strong> Juno compatible !</p>
+<p><em>Settings</em> :
+</p><ol><li>setup your prefered languages from eclipse preferences.</li>
+<li>setup your resource bundle location from your project preferences</li>
+</ol><p>Any question ? any issue ? Meet us at <a href="http://www.jspresso.org">www.jspresso.org</a></p>
+]]></body>
+      <created>1324418013</created>
+      <changed>1349877755</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[www.jspresso.org]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/jspresso-eclipse-market-place.png?itok=W5wsPLN8]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Jspresso%20translation%204.png?itok=56mNDdQ4]]></screenshot>
+      <version>2.2.2</version>
+      <license>GPL</license>
+      <companyname><![CDATA[Jspresso.org]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7, 4.3]]></eclipseversion>
+      <supporturl><![CDATA[www.jspresso.org]]></supporturl>
+      <updateurl><![CDATA[http://www.jspresso.org/external/updates-snapshot/e37/sjsplug]]></updateurl>
+<ius>
+<iu>org.jspresso.contrib.sjsplugin.translation.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

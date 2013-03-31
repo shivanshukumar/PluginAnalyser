@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="626" name="g-Eclipse" url="http://marketplace.eclipse.org/content/g-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='12' name='Network' url='http://marketplace.eclipse.org/taxonomy/term/12'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+      </categories>
+            
+      <owner>Markus Knauer</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>g-Eclipse is a framework that allows users and developers to access Computing Grids and Cloud Computing resources in a unified way. The framework itself is independent from a certain Grid middleware or Cloud Computing provider. The g-Eclipse project maintains a set of connectors to Grid middlewares, such as g-Lite and GRIA, and provides an adapter to the Amazon webservices EC2 and S3.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>g-Eclipse is a framework that allows users and developers to access Computing Grids and Cloud Computing resources in a unified way. The framework itself is independent from a certain Grid middleware or Cloud Computing provider. The g-Eclipse project maintains a set of connectors to Grid middlewares, such as g-Lite and GRIA, and provides an adapter to the Amazon webservices EC2 and S3.</p>
+]]></body>
+      <created>1199804192</created>
+      <changed>1260534894</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.eclipse.org/geclipse]]></homepageurl>
+      <image><![CDATA[http://www.eclipse.org/geclipse/resources/geclipse_logo.gif]]></image>
+      <version>1.0.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[g-Eclipse Consortium]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/technology/geclipse/updates/1.0/]]></updateurl>
+    </node>
+    </marketplace>
+    

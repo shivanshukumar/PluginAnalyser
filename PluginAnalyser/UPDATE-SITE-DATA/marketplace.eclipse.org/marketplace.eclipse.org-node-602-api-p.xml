@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="602" name="Xpeaker" url="http://marketplace.eclipse.org/content/xpeaker">
+      <type>resource</type>
+      <categories>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+      </categories>
+            
+      <owner>cashware</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><p><br />
+Xpeaker is a free and open source solution based on the Xpeak standard (<a href="<a href="http://www.xpeak.org">www.xpeak.org</a>">http://www.xpeak.org">www.xpeak.org</a></a>). The product is largely comprised of three<br />
+elements, including the source code for each one.<br />
+</p><br />
+<ul><br />
+  <li><b>Xpeaker IDE</b></li><br />
+</ul><br />
+<p><br />
+An Eclipse plug-in with test functions, configuration, code-sharing, print form editor, traces viewer, deployment and software update.<br />
+</p><br />
+<ul><br />
+  <li><b>Xpeaker Services</b></li><br />
+</ul><br />
+<p><br />
+A set of device drivers which follow the standard Xpeak and also includes simulators.<br />
+</p><br />
+<ul><br />
+  <li><b>Xpeaking</b></li><br />
+</ul><br />
+<p><br />
+Middleware for the quick and easy development of Xpeak applications.<br />
+</p><br />
+<p><br />
+Xpeaker is commercialized under a dual license. Those clients who do not require the maintenance services may use the Xpeaker complete<br />
+solution totally free of charge. If the contrary applies, they should obtain an EC (End Customer) commercial Xpeaker license.<br />
+</p><br />
+<p><br />
+In the same way and irrespective of whether they are hardware or software dedicated, all businesses that wish to create their own products based<br />
+around Xpeaker may do so free of charge or by acquiring the corresponding commercial license (Xpeaker HW or Xpeaker SW), depending<br />
+on what the intended use of the resulting product is.<br />
+</p><br />
+<p><br />
+The terms and conditions for the use of the Xpeaker product are governed by the <b>Xpeaker Public License</b>.<br />
+</p></p>
+]]></shortdescription>
+      <body><![CDATA[<p><p><br />
+Xpeaker is a free and open source solution based on the Xpeak standard (<a href="<a href="http://www.xpeak.org">www.xpeak.org</a>">http://www.xpeak.org">www.xpeak.org</a></a>). The product is largely comprised of three<br />
+elements, including the source code for each one.<br />
+</p><br />
+<ul><br />
+  <li><b>Xpeaker IDE</b></li><br />
+</ul><br />
+<p><br />
+An Eclipse plug-in with test functions, configuration, code-sharing, print form editor, traces viewer, deployment and software update.<br />
+</p><br />
+<ul><br />
+  <li><b>Xpeaker Services</b></li><br />
+</ul><br />
+<p><br />
+A set of device drivers which follow the standard Xpeak and also includes simulators.<br />
+</p><br />
+<ul><br />
+  <li><b>Xpeaking</b></li><br />
+</ul><br />
+<p><br />
+Middleware for the quick and easy development of Xpeak applications.<br />
+</p><br />
+<p><br />
+Xpeaker is commercialized under a dual license. Those clients who do not require the maintenance services may use the Xpeaker complete<br />
+solution totally free of charge. If the contrary applies, they should obtain an EC (End Customer) commercial Xpeaker license.<br />
+</p><br />
+<p><br />
+In the same way and irrespective of whether they are hardware or software dedicated, all businesses that wish to create their own products based<br />
+around Xpeaker may do so free of charge or by acquiring the corresponding commercial license (Xpeaker HW or Xpeaker SW), depending<br />
+on what the intended use of the resulting product is.<br />
+</p><br />
+<p><br />
+The terms and conditions for the use of the Xpeaker product are governed by the <b>Xpeaker Public License</b>.<br />
+</p></p>
+]]></body>
+      <created>1197043771</created>
+      <changed>1259778897</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.cashware.biz/index.jsp?Language=1&Menu=2]]></homepageurl>
+      <image><![CDATA[http://www.cashware.biz/images/XpeakerEclipse.gif]]></image>
+      <version>1.0</version>
+      <license>Free for non-commercial use</license>
+      <companyname><![CDATA[Cashware]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.x]]></eclipseversion>
+      <supporturl><![CDATA[http://xpeak.org/index.jsp?Menu=Forums]]></supporturl>
+      <updateurl><![CDATA[http://www.cashware.biz/xpeakerupdates]]></updateurl>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="667" name="LPC2000 Flash Burner" url="http://marketplace.eclipse.org/content/lpc2000-flash-burner">
+      <type>resource</type>
+      <categories>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+            
+      <owner>kRoy</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This plug-in allows you to download iHex files into NXP LPC2000-series ARM7 microcontroller directly from Eclipse C/C++ IDE.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This plug-in allows you to download iHex files into NXP LPC2000-series ARM7 microcontroller directly from Eclipse C/C++ IDE.</p>
+]]></body>
+      <created>1206364664</created>
+      <changed>1259778974</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.kroy.hu/lpc2k/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0.4</version>
+      <license>Other</license>
+      <companyname><![CDATA[kRoy.hu]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[>=3.3.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.kroy.hu/lpc2k]]></supporturl>
+      <updateurl><![CDATA[http://www.kroy.hu/lpc2k/site.xml]]></updateurl>
+    </node>
+    </marketplace>
+    

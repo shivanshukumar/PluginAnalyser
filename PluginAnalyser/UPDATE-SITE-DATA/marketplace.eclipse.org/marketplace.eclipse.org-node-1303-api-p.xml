@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1303" name="APS Plug-in" url="http://marketplace.eclipse.org/content/aps-plug">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='21' name='Web Services' url='http://marketplace.eclipse.org/taxonomy/term/21'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+      </categories>
+      <tags>
+        <tag id='580' name='saas' url='http://marketplace.eclipse.org/category/free-tagging/saas'/>
+        <tag id='581' name='Cloud Computing' url='http://marketplace.eclipse.org/category/free-tagging/cloud-computing'/>
+        <tag id='846' name='APS' url='http://marketplace.eclipse.org/category/free-tagging/aps'/>
+      </tags>
+      
+      <owner> </owner>
+      <favorited>4</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>APS plug-in for Eclipse is a tool for software vendors to package SaaS/cloud applications with Application Packaging Standard (APS). The plug-in provides handy and friendly interface to reflect application objects in standard metadata, ensuring their integrity. APS versions 1.x are supported.</p>
+<p>The APS plug-in for Eclipse allows:</p>
+<p>    * Building APS package<br />
+    * Validating APS package<br />
+    * Creating project from existing APS package<br />
+    * Deploying APS package to APS-compliant control panels</p>
+<p>    * Editing APS metadata<br />
+    * APS metadata localization<br />
+    * Inserting APS environment variables while editing scripts</p>
+<p>    * Managing package files and folders<br />
+    * Linking APS project to external application sources<br />
+    * Modifying files and folders from an external application sources</p>
+<p>New in version 1.4:</p>
+<p>    * Deploying APS package to Parallels Operations Automation<br />
+    * Publication of APS package<br />
+    * APS package signing<br />
+    * Quick Fix for missed metadata<br />
+    * Tips for APS Metadata File Editor<br />
+    * Support of Unix archives for external application sources</p>
+<p>See more details at <a href="http://www.apsstandard.org/isv/documentation/">http://www.apsstandard.org/isv/documentation/</a>.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>APS plug-in for Eclipse is a tool for software vendors to package SaaS/cloud applications with Application Packaging Standard (APS). The plug-in provides handy and friendly interface to reflect application objects in standard metadata, ensuring their integrity. APS versions 1.x are supported.</p>
+<p>The APS plug-in for Eclipse allows:</p>
+<p>    * Building APS package<br />
+    * Validating APS package<br />
+    * Creating project from existing APS package<br />
+    * Deploying APS package to APS-compliant control panels</p>
+<p>    * Editing APS metadata<br />
+    * APS metadata localization<br />
+    * Inserting APS environment variables while editing scripts</p>
+<p>    * Managing package files and folders<br />
+    * Linking APS project to external application sources<br />
+    * Modifying files and folders from an external application sources</p>
+<p>New in version 1.4:</p>
+<p>    * Deploying APS package to Parallels Operations Automation<br />
+    * Publication of APS package<br />
+    * APS package signing<br />
+    * Quick Fix for missed metadata<br />
+    * Tips for APS Metadata File Editor<br />
+    * Support of Unix archives for external application sources</p>
+<p>See more details at <a href="http://www.apsstandard.org/isv/documentation/">http://www.apsstandard.org/isv/documentation/</a>.</p>
+]]></body>
+      <created>1276685529</created>
+      <changed>1288328994</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.apsstandard.org/isv/documentation/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/aps_logo_eclipse.png?itok=x-UoEvz5]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/1.png?itok=B7RFxLwM]]></screenshot>
+      <version>1.4</version>
+      <license>Other</license>
+      <companyname><![CDATA[Parallels]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[starting from 3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.apsstandard.org/feedback]]></supporturl>
+      <updateurl><![CDATA[http://www.apsstandard.org/r/doc/sdk/eclipse-plugin]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

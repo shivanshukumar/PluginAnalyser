@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="88068" name="iDocIt!" url="http://marketplace.eclipse.org/content/idocit">
+      <type>resource</type>
+      <categories>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='21' name='Web Services' url='http://marketplace.eclipse.org/taxonomy/term/21'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='1503' name='wsdl' url='http://marketplace.eclipse.org/category/free-tagging/wsdl'/>
+        <tag id='2116' name='API Documentation' url='http://marketplace.eclipse.org/category/free-tagging/api-documentation'/>
+      </tags>
+      
+      <owner>Jan Christian Krause</owner>
+      <favorited>4</favorited>
+      <installstotal>243</installstotal>
+      <installsrecent>23</installsrecent>
+      <shortdescription><![CDATA[<p>iDocIt! is an Eclipse-based editor for API specification. It analyses the identifiers of an interface and suggests aspects to document based on this analysis. By applying this approach it helps to write more complete high quality API-documentation. It currently supports WSDL- and Java-interfaces and could easily be extended with more languages.</p>
+<p>iDocIt! has been designed and developed in the context of the dissertation-project of Jan Christian Krause at the IT-consultancy AKRA GmbH, located in Hamburg Germany. AKRA wants to continue iDocIt!'s development together with the open source community. Therefore we published the complete source code at Google Code under the Apache Licence.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>iDocIt! is an Eclipse-based editor for API specification. It analyses the identifiers of an interface and suggests aspects to document based on this analysis. By applying this approach it helps to write more complete high quality API-documentation. It currently supports WSDL- and Java-interfaces and could easily be extended with more languages.</p>
+<p>iDocIt! has been designed and developed in the context of the dissertation-project of Jan Christian Krause at the IT-consultancy AKRA GmbH, located in Hamburg Germany. AKRA wants to continue iDocIt!'s development together with the open source community. Therefore we published the complete source code at Google Code under the Apache Licence.</p>
+]]></body>
+      <created>1310828549</created>
+      <changed>1353067082</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/idocit/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/idocit-logo.png?itok=oEz0Wlr2]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/idocit-screenshot.png?itok=TsJG6j_h]]></screenshot>
+      <version>0.0.11.201211161140</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[AKRA GmbH]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/idocit/]]></supporturl>
+      <updateurl><![CDATA[https://idocit.akra.de/updatesite/]]></updateurl>
+<ius>
+<iu>de.akra.idocit.core.feature</iu>
+<iu>de.akra.idocit.ui.feature</iu>
+<iu>de.akra.idocit.java.feature</iu>
+<iu>de.akra.idocit.wsdl.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

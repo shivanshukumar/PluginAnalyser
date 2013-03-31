@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="902" name="Snipper - Code Sharing Service" url="http://marketplace.eclipse.org/content/snipper-code-sharing-service">
+      <type>resource</type>
+      <categories>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+      </categories>
+            
+      <owner>bbuffone</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><p>Snipper is an easy way to share code with developers through Twitter. Provided as a plugin for Eclipse(initially); developers can select a file or snippet of text in an editor and share it on Twitter. Check out the <a href="<a href="http://snipper.rockstarapps.com.s3.amazonaws.com/about.html">about">http://snipper.rockstarapps.com.s3.amazonaws.com/about.html">about</a> page</a> for more information. </p></p>
+]]></shortdescription>
+      <body><![CDATA[<p><p>Snipper is an easy way to share code with developers through Twitter. Provided as a plugin for Eclipse(initially); developers can select a file or snippet of text in an editor and share it on Twitter. Check out the <a href="<a href="http://snipper.rockstarapps.com.s3.amazonaws.com/about.html">about">http://snipper.rockstarapps.com.s3.amazonaws.com/about.html">about</a> page</a> for more information. </p></p>
+]]></body>
+      <created>1237919462</created>
+      <changed>1259779216</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://snipper.rockstarapps.com]]></homepageurl>
+      <image><![CDATA[http://snipper.rockstarapps.com.s3.amazonaws.com/resources/images/dialog.png]]></image>
+      <version>1.0.3</version>
+      <license>Free EPL</license>
+      <companyname><![CDATA[RockstarApps]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.2+]]></eclipseversion>
+      <supporturl><![CDATA[http://snipper.rockstarapps.com.s3.amazonaws.com/about.html]]></supporturl>
+      <updateurl><![CDATA[http://www.rockstarapps.com/update-beta]]></updateurl>
+    </node>
+    </marketplace>
+    

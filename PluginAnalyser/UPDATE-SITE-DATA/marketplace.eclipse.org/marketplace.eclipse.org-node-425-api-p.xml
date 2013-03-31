@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="425" name="Agile Enterprise Architecture" url="http://marketplace.eclipse.org/content/agile-enterprise-architecture">
+      <type>resource</type>
+      <categories>
+        <category id='30' name='Process' url='http://marketplace.eclipse.org/taxonomy/term/30'/>
+      </categories>
+            
+      <owner>Charles Edwards</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This is an EPF-Composer generated Plug-in Process used for defining how to go about doing "Enterprise Architecture" in an Agile way. </p>
+<p>Use this process web to establish or refine your Enterprise Architecture practice Operational Process.</p>
+<p>You can download the Library and either use it as is or tailor / modify it to suit you own enterprises' way of working. The Plug-in is based upon sound fundamentals from TOGAF and Agile software development practices, such as SCRUM and Agile Modelling, etc. It will be enhanced and refined over time. Please feel free to get involved in collaborating on this with us.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This is an EPF-Composer generated Plug-in Process used for defining how to go about doing "Enterprise Architecture" in an Agile way. </p>
+<p>Use this process web to establish or refine your Enterprise Architecture practice Operational Process.</p>
+<p>You can download the Library and either use it as is or tailor / modify it to suit you own enterprises' way of working. The Plug-in is based upon sound fundamentals from TOGAF and Agile software development practices, such as SCRUM and Agile Modelling, etc. It will be enhanced and refined over time. Please feel free to get involved in collaborating on this with us.</p>
+]]></body>
+      <created>1174861532</created>
+      <changed>1259778720</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.agileea.com]]></homepageurl>
+      <image><![CDATA[http://www.agileea.com/AeaSquare.jpg]]></image>
+      <version>2009.0.038</version>
+      <license>Free GPL</license>
+      <companyname><![CDATA[Processwave Limited]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[EPC-Composer v1.5.0.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.linkedin.com/groups?home=&gid=1883807&trk=anet_ug_hm]]></supporturl>
+      <updateurl><![CDATA[http://www.AgileEA.com]]></updateurl>
+    </node>
+    </marketplace>
+    

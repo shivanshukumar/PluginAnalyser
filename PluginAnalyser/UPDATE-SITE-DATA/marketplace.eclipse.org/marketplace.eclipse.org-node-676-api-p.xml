@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="676" name="Voxeo VoiceObjects Developer Edition - VoiceXML IDE / SCE" url="http://marketplace.eclipse.org/content/voxeo-voiceobjects-developer-edition-voicexml-ide-sce">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+      </categories>
+      <tags>
+        <tag id='292' name='IVR' url='http://marketplace.eclipse.org/category/free-tagging/ivr'/>
+        <tag id='293' name='ASR' url='http://marketplace.eclipse.org/category/free-tagging/asr'/>
+        <tag id='294' name='speech recognition' url='http://marketplace.eclipse.org/category/free-tagging/speech-recognition'/>
+        <tag id='295' name='TTS' url='http://marketplace.eclipse.org/category/free-tagging/tts'/>
+        <tag id='296' name='text-to-speech' url='http://marketplace.eclipse.org/category/free-tagging/text-speech'/>
+      </tags>
+      
+      <owner>mcodini</owner>
+      <favorited>2</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Voxeo VoiceObjects Developer Edition provides a feature-rich service creation environment to simply design, build, deploy and manage VoiceXML IVR applications. It contains a broad set of tools which are covering the full application lifecycle. Applications are 100% portable and operate seamlessly on leading standards-based IVR platforms such as Avaya, Aspect, Cisco, Genesys, Holly, Intervoice, Nortel, Nuance, Tellme and Voxeo.  </br> </br><br />
+Key features: </br><br />
+- Create telephony services supporting voice, video, text (SMS, USSD and IM) and mobile Web user interfaces. </br><br />
+- Graphical, object based development, including tools for call flow and VUI design, media management, testing and simulation. </br><br />
+- Integrate call flows with any back-end system, CTI (computer telephony integration) and call control platform using CCXML. </br><br />
+- Deploy on any VoiceXML enabled IVR, media server, and USSD/SMS/IM gateway. </br><br />
+- Enable automated speech recognition (ASR) and text-to-speech (TTS) with best-of-breed voice user interface design concepts. </br><br />
+- Get started with a simple DTMF (touch tone) voice application and turn it later on into an advanced speech application with natural language understanding. </br><br />
+- Monitor and analyze user experience in real-time with integrated call flow analytics and reporting. </br><br />
+- Operate VXML applications with carrier grade resilience via a one-click deployment process. </br><br />
+- Deploy speech and touch-tone applications for FREE on Voxeo’s IVR solutions (premise-based or hosted). <a href="http://www.voxeo.com/free/">http://www.voxeo.com/free/</a> </br><br />
+- Receive 24x7x365 developer support for FREE. </br></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Voxeo VoiceObjects Developer Edition provides a feature-rich service creation environment to simply design, build, deploy and manage VoiceXML IVR applications. It contains a broad set of tools which are covering the full application lifecycle. Applications are 100% portable and operate seamlessly on leading standards-based IVR platforms such as Avaya, Aspect, Cisco, Genesys, Holly, Intervoice, Nortel, Nuance, Tellme and Voxeo.  </br> </br><br />
+Key features: </br><br />
+- Create telephony services supporting voice, video, text (SMS, USSD and IM) and mobile Web user interfaces. </br><br />
+- Graphical, object based development, including tools for call flow and VUI design, media management, testing and simulation. </br><br />
+- Integrate call flows with any back-end system, CTI (computer telephony integration) and call control platform using CCXML. </br><br />
+- Deploy on any VoiceXML enabled IVR, media server, and USSD/SMS/IM gateway. </br><br />
+- Enable automated speech recognition (ASR) and text-to-speech (TTS) with best-of-breed voice user interface design concepts. </br><br />
+- Get started with a simple DTMF (touch tone) voice application and turn it later on into an advanced speech application with natural language understanding. </br><br />
+- Monitor and analyze user experience in real-time with integrated call flow analytics and reporting. </br><br />
+- Operate VXML applications with carrier grade resilience via a one-click deployment process. </br><br />
+- Deploy speech and touch-tone applications for FREE on Voxeo’s IVR solutions (premise-based or hosted). <a href="http://www.voxeo.com/free/">http://www.voxeo.com/free/</a> </br><br />
+- Receive 24x7x365 developer support for FREE. </br></p>
+]]></body>
+      <created>1207773269</created>
+      <changed>1268691477</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://developers.voiceobjects.com/downloads/]]></homepageurl>
+      <image><![CDATA[http://developers.voiceobjects.com/images/vodevportal_logo110.gif]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/dfe_dialog_flow.jpg?itok=wLe2M-2o]]></screenshot>
+      <version>9.1</version>
+      <license>Free for non-commerical use</license>
+      <companyname><![CDATA[Voxeo Corporation]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.2 and higher]]></eclipseversion>
+      <supporturl><![CDATA[http://evolution.voxeo.com/support/]]></supporturl>
+      <updateurl><![CDATA[http://developers.voiceobjects.com]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

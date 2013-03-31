@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="3202" name="Counterclockwise" url="http://marketplace.eclipse.org/content/counterclockwise">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='1966' name='Programming Languages' url='http://marketplace.eclipse.org/category/categories/programming-languages'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='984' name='clojure' url='http://marketplace.eclipse.org/category/free-tagging/clojure'/>
+        <tag id='985' name='ccw' url='http://marketplace.eclipse.org/category/free-tagging/ccw'/>
+        <tag id='986' name='counterclockwise' url='http://marketplace.eclipse.org/category/free-tagging/counterclockwise'/>
+        <tag id='987' name='paredit' url='http://marketplace.eclipse.org/category/free-tagging/paredit'/>
+      </tags>
+      
+      <owner>Laurent Petit</owner>
+      <favorited>3</favorited>
+      <installstotal>5816</installstotal>
+      <installsrecent>334</installsrecent>
+      <shortdescription><![CDATA[<p>Counterclockwise is an Eclipse plugin helping developers write Clojure code.<br />
+It also ships with support for Leiningen projects.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Counterclockwise is an Eclipse plugin helping developers write Clojure code.<br />
+It also ships with support for Leiningen projects.</p>
+]]></body>
+      <created>1278521391</created>
+      <changed>1363257310</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/counterclockwise/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/counterclockwise-snapshot.png?itok=9G1p6Pal]]></screenshot>
+      <version>0.12.0.STABLE001</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Counterclockwise Team]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5 3.6 3.7 3.8 4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://groups.google.com/group/clojuredev-users]]></supporturl>
+      <updateurl><![CDATA[http://ccw.cgrand.net/updatesite/]]></updateurl>
+<ius>
+<iu>ccw.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

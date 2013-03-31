@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="988" name="EDevTools LogViewer" url="http://marketplace.eclipse.org/content/edevtools-logviewer">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>C. Graupner</owner>
+      <favorited>8</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The EDevTools LogViewer is a plugin that shows java.util.logging messages in an Eclipse view (multiple at same time possible), while it reads the log entries from file or a configurable socket.</p>
+<p><h3>Currently Avaiable Features</h3><br />
+<h5>Backend</h5><br />
+<ul><br />
+    <li>Support for reading logs from<br />
+    <ul><br />
+        <li>Sockets (reading while created)<br />
+        <ul><br />
+            <li>The port is configurable by a wizard</li><br />
+        </ul><br />
+        </li><br />
+        <li>Files (reading while created and read after full creation)</li><br />
+    </ul><br />
+    </li><br />
+    <li>Understands logs from<br />
+    <ul><br />
+        <li>Java Util Logging as of JDK 1.4<br />
+        <ul><br />
+            <li>Only output from XMLFormater</li><br />
+        </ul><br />
+        </li><br />
+    </ul><br />
+    </li><br />
+    <li>Reading from the sources can be started and stopped to held anwanted log entries away from the view</li><br />
+</ul><br />
+<h5>Frontend</h5><br />
+<ul><br />
+    <li>It is possible to open multiple views, each displaying another log source</li><br />
+    <li>Each entry is colored in a color according to the log level</li><br />
+    <li>An detail view for a single entry opens by a double click on the entry in log table view</li><br />
+    <li>The detail view also shows the level in an appropriate color (same as in table view)</li><br />
+    <li>A comfortable wizard for selecting the input source and format and configuring its options</li><br />
+</ul></p>
+]]></shortdescription>
+      <body><![CDATA[<p>The EDevTools LogViewer is a plugin that shows java.util.logging messages in an Eclipse view (multiple at same time possible), while it reads the log entries from file or a configurable socket.</p>
+<p><h3>Currently Avaiable Features</h3><br />
+<h5>Backend</h5><br />
+<ul><br />
+    <li>Support for reading logs from<br />
+    <ul><br />
+        <li>Sockets (reading while created)<br />
+        <ul><br />
+            <li>The port is configurable by a wizard</li><br />
+        </ul><br />
+        </li><br />
+        <li>Files (reading while created and read after full creation)</li><br />
+    </ul><br />
+    </li><br />
+    <li>Understands logs from<br />
+    <ul><br />
+        <li>Java Util Logging as of JDK 1.4<br />
+        <ul><br />
+            <li>Only output from XMLFormater</li><br />
+        </ul><br />
+        </li><br />
+    </ul><br />
+    </li><br />
+    <li>Reading from the sources can be started and stopped to held anwanted log entries away from the view</li><br />
+</ul><br />
+<h5>Frontend</h5><br />
+<ul><br />
+    <li>It is possible to open multiple views, each displaying another log source</li><br />
+    <li>Each entry is colored in a color according to the log level</li><br />
+    <li>An detail view for a single entry opens by a double click on the entry in log table view</li><br />
+    <li>The detail view also shows the level in an appropriate color (same as in table view)</li><br />
+    <li>A comfortable wizard for selecting the input source and format and configuring its options</li><br />
+</ul></p>
+]]></body>
+      <created>1250512626</created>
+      <changed>1259779294</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://edevtools.sourceforge.net/?q=node/6]]></homepageurl>
+      <image><![CDATA[http://edevtools.sourceforge.net/sites/default/files/edevlv_logo_big.png]]></image>
+      <version>1.0.0</version>
+      <license>Free EPL</license>
+      <companyname><![CDATA[Eclipse Developer Tools Project]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3, 3.4, 3.5]]></eclipseversion>
+      <supporturl><![CDATA[https://sourceforge.net/projects/edevtools/support]]></supporturl>
+      <updateurl><![CDATA[http://edevtools.sourceforge.net/updatesite/logviewer/v1.0/]]></updateurl>
+    </node>
+    </marketplace>
+    

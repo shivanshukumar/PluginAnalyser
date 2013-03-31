@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="587" name="STAN - Structure Analysis for Java" url="http://marketplace.eclipse.org/content/stan-structure-analysis-java">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='47' name='visualization' url='http://marketplace.eclipse.org/category/free-tagging/visualization'/>
+        <tag id='129' name='dependencies' url='http://marketplace.eclipse.org/category/free-tagging/dependencies'/>
+        <tag id='131' name='quality' url='http://marketplace.eclipse.org/category/free-tagging/quality'/>
+        <tag id='210' name='metrics' url='http://marketplace.eclipse.org/category/free-tagging/metrics'/>
+        <tag id='211' name='static analysis' url='http://marketplace.eclipse.org/category/free-tagging/static-analysis'/>
+      </tags>
+      
+      <owner>Christoph Beck</owner>
+      <favorited>16</favorited>
+      <installstotal>1665</installstotal>
+      <installsrecent>21</installsrecent>
+      <shortdescription><![CDATA[<p><em>STAN</em> encourages developers in visualizing their design, understanding code, measuring quality and reporting design flaws.</p>
+<p><strong>New: Eclipse project and OSGi bundle dependency graphs!</strong></p>
+<!--break--><p><em>STAN</em> supports a set of carefully selected metrics, suitable to cover the most important aspects of structural quality. Special focus has been set on visual dependency analysis, a key to structure analysis.<em>STAN</em> provides its own perspective, showing various dependency graphs, ranking metric violations, generating HTML reports, etc.</p>
+<p>You may install and use <em>STAN</em> without a license key (community license option, non-commercial use only).</p>
+<p><em>STAN</em> is also available as an standalone RCP application.</p>
+]]></shortdescription>
+      <body><![CDATA[<p><em>STAN</em> encourages developers in visualizing their design, understanding code, measuring quality and reporting design flaws.</p>
+<p><strong>New: Eclipse project and OSGi bundle dependency graphs!</strong></p>
+<!--break--><p><em>STAN</em> supports a set of carefully selected metrics, suitable to cover the most important aspects of structural quality. Special focus has been set on visual dependency analysis, a key to structure analysis.<em>STAN</em> provides its own perspective, showing various dependency graphs, ranking metric violations, generating HTML reports, etc.</p>
+<p>You may install and use <em>STAN</em> without a license key (community license option, non-commercial use only).</p>
+<p><em>STAN</em> is also available as an standalone RCP application.</p>
+]]></body>
+      <created>1195655948</created>
+      <changed>1349877342</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://stan4j.com]]></homepageurl>
+      <image><![CDATA[http://stan4j.com/images/epic.gif]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/stan-screenshot.png?itok=F-TMiSVr]]></screenshot>
+      <version>2.1.0</version>
+      <license>Free for non-commerical use</license>
+      <companyname><![CDATA[Odysseus Software GmbH]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.3+]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://update.stan4j.com/ide]]></updateurl>
+<ius>
+<iu>de.odysseus.stan.eclipse.ide</iu>
+<iu>de.odysseus.stan.eclipse.tools.ide</iu>
+<iu>de.odysseus.stan.eclipse.tools.ide.pde</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

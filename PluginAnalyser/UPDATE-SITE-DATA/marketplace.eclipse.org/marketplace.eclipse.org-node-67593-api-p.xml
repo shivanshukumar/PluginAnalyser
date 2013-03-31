@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="67593" name="Smartsprites" url="http://marketplace.eclipse.org/content/smartsprites">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+      <tags>
+        <tag id='694' name='CSS' url='http://marketplace.eclipse.org/category/free-tagging/css'/>
+        <tag id='2025' name='bitExpert' url='http://marketplace.eclipse.org/category/free-tagging/bitexpert'/>
+        <tag id='2028' name='Smartsprites' url='http://marketplace.eclipse.org/category/free-tagging/smartsprites'/>
+        <tag id='2029' name='Spritemap' url='http://marketplace.eclipse.org/category/free-tagging/spritemap'/>
+      </tags>
+      
+      <owner>Stephan Hochdoerfer</owner>
+      <favorited>3</favorited>
+      <installstotal>370</installstotal>
+      <installsrecent>6</installsrecent>
+      <shortdescription><![CDATA[<p>Eclipse Smartsprites offers an integration of the SmartSprites engine into the Eclipse IDE. The plugin allows you to easily maintain CSS spritemap files from within your IDE.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Eclipse Smartsprites offers an integration of the SmartSprites engine into the Eclipse IDE. The plugin allows you to easily maintain CSS spritemap files from within your IDE.</p>
+]]></body>
+      <created>1308398146</created>
+      <changed>1329555154</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://blog.bitexpert.de/2011/06/17/eclipse-plugin-smartsprites/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>0.0.9</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[bitExpert AG]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5, 3.6, 3.7]]></eclipseversion>
+      <supporturl><![CDATA[https://github.com/bitExpert/eclipse-smartsprites/issues]]></supporturl>
+      <updateurl><![CDATA[http://update.bitexpert.de/eclipse/3.5/]]></updateurl>
+<ius>
+<iu>de.bitexpert.eclipse.smartsprites.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

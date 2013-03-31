@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1165" name="Visual Rules Suite 12.1: Available now" url="http://marketplace.eclipse.org/content/visual-rules-suite-121-available-now">
+      <type>resource</type>
+      <categories>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+      </categories>
+      <tags>
+        <tag id='378' name='business rules' url='http://marketplace.eclipse.org/category/free-tagging/business-rules'/>
+        <tag id='379' name='rules engine' url='http://marketplace.eclipse.org/category/free-tagging/rules-engine'/>
+        <tag id='380' name='visual rules' url='http://marketplace.eclipse.org/category/free-tagging/visual-rules'/>
+        <tag id='381' name='release' url='http://marketplace.eclipse.org/category/free-tagging/release'/>
+        <tag id='382' name='business rules management' url='http://marketplace.eclipse.org/category/free-tagging/business-rules-management'/>
+      </tags>
+      
+      <owner>Innovations Software Technology</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Visual Rules Modeler provides graphical tools to accomplish all steps of the rule development and management process, consistently providing a unique, intuitive approach. These tools help to minimize business disruptions and to deliver immediate business value.</p>
+<p>Visual Rules is committed to supporting business and IT experts alike, whose common goal is to automate high-quality business rules as the base for enterprise decision management - with a distinctly shortened time-to-market. </p>
+<p>See the New & Noteworthy overview for a complete list of the new features:<br /><a href="http://www.bosch-si.com/de/technologie/business-rules-management-brm/visual-rules-download/new-und-noteworthy/visual-rules-new-noteworthy.html">http://www.bosch-si.com/de/technologie/business-rules-management-brm/vis...</a></p>
+<p>Download:<br /><a href="http://www.bosch-si.com/technology/business-rules-management-brm/visual-rules-download/vr-download-form-3.php">http://www.bosch-si.com/technology/business-rules-management-brm/visual-...</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Visual Rules Modeler provides graphical tools to accomplish all steps of the rule development and management process, consistently providing a unique, intuitive approach. These tools help to minimize business disruptions and to deliver immediate business value.</p>
+<p>Visual Rules is committed to supporting business and IT experts alike, whose common goal is to automate high-quality business rules as the base for enterprise decision management - with a distinctly shortened time-to-market. </p>
+<p>See the New & Noteworthy overview for a complete list of the new features:<br /><a href="http://www.bosch-si.com/de/technologie/business-rules-management-brm/visual-rules-download/new-und-noteworthy/visual-rules-new-noteworthy.html">http://www.bosch-si.com/de/technologie/business-rules-management-brm/vis...</a></p>
+<p>Download:<br /><a href="http://www.bosch-si.com/technology/business-rules-management-brm/visual-rules-download/vr-download-form-3.php">http://www.bosch-si.com/technology/business-rules-management-brm/visual-...</a></p>
+]]></body>
+      <created>1269605466</created>
+      <changed>1355994831</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.bosch-si.com/technology/business-rules-management-brm/visual-rules-suite.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version></version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Bosch Software Innovations]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.4 - 3.6]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://www.download-visual-rules.de/vr/update/]]></updateurl>
+    </node>
+    </marketplace>
+    

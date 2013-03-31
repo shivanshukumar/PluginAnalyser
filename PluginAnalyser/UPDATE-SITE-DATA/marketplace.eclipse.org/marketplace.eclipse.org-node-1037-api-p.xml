@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1037" name="NskDdl - NonStop DDL for ECLIPSE" url="http://marketplace.eclipse.org/content/nskddl-nonstop-ddl-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+      </categories>
+            
+      <owner>Randall Becker</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>NskDdl - NonStop DDL for ECLIPSE Key Features:</p>
+<p>Key Features and Benefits</p>
+<p>* Familiar language syntax supporting the heritage DDL language.<br />
+* C, COBOL, TAL, pTAL, FUP, and Ddl2java definition support.<br />
+* Platform independent compiler.<br />
+* No DDL dictionary or host connectivity required to run DDL compiles.<br />
+* Workstation file name support so that the native file system structure can be leveraged to organize source and generated files.<br />
+* Workstation/Guardian file name mapping supports workstation file name extensions without changes to the DDL source code.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>NskDdl - NonStop DDL for ECLIPSE Key Features:</p>
+<p>Key Features and Benefits</p>
+<p>* Familiar language syntax supporting the heritage DDL language.<br />
+* C, COBOL, TAL, pTAL, FUP, and Ddl2java definition support.<br />
+* Platform independent compiler.<br />
+* No DDL dictionary or host connectivity required to run DDL compiles.<br />
+* Workstation file name support so that the native file system structure can be leveraged to organize source and generated files.<br />
+* Workstation/Guardian file name mapping supports workstation file name extensions without changes to the DDL source code.</p>
+]]></body>
+      <created>1257516437</created>
+      <changed>1291993506</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.nexbridge.com/Products/NskDdl]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>2.1.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Nexbridge Inc.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4,3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://]]></supporturl>
+      <updateurl><![CDATA[http://www.nexbridge.com/Eclipse/Ganymede]]></updateurl>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1146" name="Dresden OCL" url="http://marketplace.eclipse.org/content/dresden-ocl">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='61' name='UML' url='http://marketplace.eclipse.org/category/free-tagging/uml'/>
+        <tag id='64' name='Modeling' url='http://marketplace.eclipse.org/category/free-tagging/modeling'/>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='165' name='code generation' url='http://marketplace.eclipse.org/category/free-tagging/code-generation'/>
+        <tag id='174' name='MDA' url='http://marketplace.eclipse.org/category/free-tagging/mda'/>
+      </tags>
+      
+      <owner>Claas Wilke</owner>
+      <favorited>7</favorited>
+      <installstotal>834</installstotal>
+      <installsrecent>24</installsrecent>
+      <shortdescription><![CDATA[<p>Dresden OCL provides a set of OCL tools that can be used to integrate OCL2.3 support into other Eclipse and stand-alone projects.</p>
+<p>Currently, Dresden OCL supports an OCL2 Parser and Editor (include syntax highlighting and code completation), an OCL2 Interpreter and OCL22Java/OCL2AspectJ and OCL2SQL Code Generators. Because of its Pivot Model architecture, Dresden OCL is meta-model independent and can be connected to various different meta-models. At the moment we support adaptations to MDT UML, EMF Ecore, Java Classes and XML Schema. A Meta-Model Adaptation Code Generator can be used to easily adapt other meta-models.</p>
+<p>Our OCL Interpreter is implementation-independent as well. Currently, OCL2 interpretation is supported for Java and Ecore Objects and XML files.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Dresden OCL provides a set of OCL tools that can be used to integrate OCL2.3 support into other Eclipse and stand-alone projects.</p>
+<p>Currently, Dresden OCL supports an OCL2 Parser and Editor (include syntax highlighting and code completation), an OCL2 Interpreter and OCL22Java/OCL2AspectJ and OCL2SQL Code Generators. Because of its Pivot Model architecture, Dresden OCL is meta-model independent and can be connected to various different meta-models. At the moment we support adaptations to MDT UML, EMF Ecore, Java Classes and XML Schema. A Meta-Model Adaptation Code Generator can be used to easily adapt other meta-models.</p>
+<p>Our OCL Interpreter is implementation-independent as well. Currently, OCL2 interpretation is supported for Java and Ecore Objects and XML files.</p>
+]]></body>
+      <created>1266238576</created>
+      <changed>1348472453</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.dresden-ocl.org/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_marketplace.png?itok=49P8gNH_]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Dresdenocl_perspective.jpg?itok=XZZNYNvB]]></screenshot>
+      <version>3.2.0</version>
+      <license>LGPL</license>
+      <companyname><![CDATA[Technische Universität Dresden, Software Technology Group]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7.*, 4.2.*]]></eclipseversion>
+      <supporturl><![CDATA[http://www.dresden-ocl.org/index.php/DresdenOCL:Contact]]></supporturl>
+      <updateurl><![CDATA[http://www.dresden-ocl.org/update/]]></updateurl>
+<ius>
+<iu>tudresden.ocl20.feature.core</iu>
+<iu>tudresden.ocl20.feature.examples</iu>
+<iu>tudresden.ocl20.feature.facade</iu>
+<iu>tudresden.ocl20.feature.interpreter</iu>
+<iu>tudresden.ocl20.feature.metamodels</iu>
+<iu>tudresden.ocl20.feature.modelinstances</iu>
+<iu>tudresden.ocl20.feature.ocl2java</iu>
+<iu>tudresden.ocl20.feature.parser</iu>
+<iu>tudresden.ocl20.feature.ocl2sql</iu>
+<iu>org.dresdenocl.metrics</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

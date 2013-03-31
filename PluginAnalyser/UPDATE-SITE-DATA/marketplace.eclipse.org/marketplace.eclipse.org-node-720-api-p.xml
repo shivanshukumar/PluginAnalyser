@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="720" name="DITA Open Platform Editor" url="http://marketplace.eclipse.org/content/dita-open-platform-editor">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+            
+      <owner>Claude Vedovini</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The DITA Open Platform is a free, open-source project which goal is to provide an enterprise platform for the edition, management and processing of DITA documents.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The DITA Open Platform is a free, open-source project which goal is to provide an enterprise platform for the edition, management and processing of DITA documents.</p>
+]]></body>
+      <created>1214578689</created>
+      <changed>1259855745</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.dita-op.org/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0.0</version>
+      <license>GPL</license>
+      <companyname><![CDATA[dita-op.org]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.3]]></eclipseversion>
+      <supporturl><![CDATA[http://www.dita-op.org/]]></supporturl>
+      <updateurl><![CDATA[http://www.dita-op.org/updatesite]]></updateurl>
+    </node>
+    </marketplace>
+    

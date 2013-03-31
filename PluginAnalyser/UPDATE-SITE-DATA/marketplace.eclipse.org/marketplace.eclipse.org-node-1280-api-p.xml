@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1280" name="Tweaks" url="http://marketplace.eclipse.org/content/tweaks">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='40' name='Search' url='http://marketplace.eclipse.org/category/categories/search'/>
+      </categories>
+      <tags>
+        <tag id='88' name='mylyn' url='http://marketplace.eclipse.org/category/free-tagging/mylyn'/>
+        <tag id='814' name='find' url='http://marketplace.eclipse.org/category/free-tagging/find'/>
+        <tag id='815' name='bookmark' url='http://marketplace.eclipse.org/category/free-tagging/bookmark'/>
+      </tags>
+      
+      <owner>Gerald Rosenberg</owner>
+      <favorited>8</favorited>
+      <installstotal>152</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><u><b>Tweaks</b></u><br />
+Provides a few enhancements to standard editors:</p>
+<p><b>Findbar</b>: A <i>ctrl-f</i> replacement - embeds the functionality of the find dialog in a bar at the bottom of the current active editor.</p>
+<p><b>Recent Editors</b>: a <i>ctrl-e</i> replacement - provides a swivel popup with:</p>
+<ol><li>most recently closed editors list; </li>
+<li>bookmarked editors lists; and </li>
+<li>most recently opened editors list.</li>
+</ol><p>
+Changed in v0.8: </p>
+<ul><li>added more keyboard bindings and improved find behaviors.</li>
+<li>added caret offset display to the statusbar.</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p><u><b>Tweaks</b></u><br />
+Provides a few enhancements to standard editors:</p>
+<p><b>Findbar</b>: A <i>ctrl-f</i> replacement - embeds the functionality of the find dialog in a bar at the bottom of the current active editor.</p>
+<p><b>Recent Editors</b>: a <i>ctrl-e</i> replacement - provides a swivel popup with:</p>
+<ol><li>most recently closed editors list; </li>
+<li>bookmarked editors lists; and </li>
+<li>most recently opened editors list.</li>
+</ol><p>
+Changed in v0.8: </p>
+<ul><li>added more keyboard bindings and improved find behaviors.</li>
+<li>added caret offset display to the statusbar.</li>
+</ul>]]></body>
+      <created>1276529045</created>
+      <changed>1280076838</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.certiv.net/projects/tweaks.html]]></homepageurl>
+      <image><![CDATA[http://www.certiv.net/images/pen.gif]]></image>
+      <version>0.8.0</version>
+      <license>Other</license>
+      <companyname><![CDATA[Certiv Analytics]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.certiv.net/support.html]]></supporturl>
+      <updateurl><![CDATA[http://www.certiv.net/updates]]></updateurl>
+<ius>
+<iu>net.certiv.editor.tweaks.feature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

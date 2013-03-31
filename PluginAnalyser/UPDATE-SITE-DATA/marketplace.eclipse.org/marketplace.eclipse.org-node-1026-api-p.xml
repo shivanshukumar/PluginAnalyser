@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1026" name="Industrial SQL Connector for Mylyn" url="http://marketplace.eclipse.org/content/industrial-sql-connector-mylyn">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+        <category id='36' name='Database Persistence' url='http://marketplace.eclipse.org/category/categories/database-persistence'/>
+        <category id='38' name='Mylyn Connectors' url='http://marketplace.eclipse.org/category/categories/mylyn-connectors'/>
+      </categories>
+      <tags>
+        <tag id='88' name='mylyn' url='http://marketplace.eclipse.org/category/free-tagging/mylyn'/>
+        <tag id='190' name='database' url='http://marketplace.eclipse.org/category/free-tagging/database'/>
+        <tag id='370' name='alm' url='http://marketplace.eclipse.org/category/free-tagging/alm'/>
+        <tag id='723' name='connector' url='http://marketplace.eclipse.org/category/free-tagging/connector'/>
+        <tag id='743' name='sql' url='http://marketplace.eclipse.org/category/free-tagging/sql'/>
+      </tags>
+      
+      <owner>maarten meijer</owner>
+      <favorited>6</favorited>
+      <installstotal>2185</installstotal>
+      <installsrecent>58</installsrecent>
+      <shortdescription><![CDATA[<p>The Industrial SQL Connector for Mylyn allows you to connect Mylyn to any SQL database based issue or task management system that can be accessed by a JDBC driver.</p>
+<p>You can connect any kind of database content to Mylyn by just writing a set of queries using ibatis SQLMaps, or Eclipselink JPA. Or you can connect by just overrding some methods in a Persistor class. You define capabilities of your connector using<br />
+a set of extension points in a fragment. It allows you to get a connector by only writing the specifics, the rest of the UI code is already done for you.</p>
+<p>CODERS NOTE:<br />
+Recent changes in Mylyn have caused an incompatible break.<br />
+For versions of Mylyn before 3.8.0 you should use 0.9.8 available as a tagged version in svn:<br /><a href="http://svn.codespot.com/a/eclipselabs.org/industrial-mylyn/tags/mylyn-3.7.0">http://svn.codespot.com/a/eclipselabs.org/industrial-mylyn/tags/mylyn-3.7.0</a><br />
+For versions of Mylyn of 3.8.0 and later you should use 0.9.9 available in trunk in svn:<br /><a href="http://svn.codespot.com/a/eclipselabs.org/industrial-mylyn/trunk">http://svn.codespot.com/a/eclipselabs.org/industrial-mylyn/trunk</a></p>
+<p>Demo's included are:
+</p><ul><li>A connection to a local Derby instance using Ibatis SQLMaps</li>
+<li>A connection to a local Derby instance using JPA</li>
+<li>A connection to a simple in memory bases store</li>
+</ul><p>Connecting to Eventum and others is explained at <a href="http://eclipsophy.blogspot.com/">http://eclipsophy.blogspot.com/</a></p>
+<p>Development is sponsored by Industrial TSI. <a href="http://www.industrial-tsi.com/">http://www.industrial-tsi.com/</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>The Industrial SQL Connector for Mylyn allows you to connect Mylyn to any SQL database based issue or task management system that can be accessed by a JDBC driver.</p>
+<p>You can connect any kind of database content to Mylyn by just writing a set of queries using ibatis SQLMaps, or Eclipselink JPA. Or you can connect by just overrding some methods in a Persistor class. You define capabilities of your connector using<br />
+a set of extension points in a fragment. It allows you to get a connector by only writing the specifics, the rest of the UI code is already done for you.</p>
+<p>CODERS NOTE:<br />
+Recent changes in Mylyn have caused an incompatible break.<br />
+For versions of Mylyn before 3.8.0 you should use 0.9.8 available as a tagged version in svn:<br /><a href="http://svn.codespot.com/a/eclipselabs.org/industrial-mylyn/tags/mylyn-3.7.0">http://svn.codespot.com/a/eclipselabs.org/industrial-mylyn/tags/mylyn-3.7.0</a><br />
+For versions of Mylyn of 3.8.0 and later you should use 0.9.9 available in trunk in svn:<br /><a href="http://svn.codespot.com/a/eclipselabs.org/industrial-mylyn/trunk">http://svn.codespot.com/a/eclipselabs.org/industrial-mylyn/trunk</a></p>
+<p>Demo's included are:
+</p><ul><li>A connection to a local Derby instance using Ibatis SQLMaps</li>
+<li>A connection to a local Derby instance using JPA</li>
+<li>A connection to a simple in memory bases store</li>
+</ul><p>Connecting to Eventum and others is explained at <a href="http://eclipsophy.blogspot.com/">http://eclipsophy.blogspot.com/</a></p>
+<p>Development is sponsored by Industrial TSI. <a href="http://www.industrial-tsi.com/">http://www.industrial-tsi.com/</a></p>
+]]></body>
+      <created>1255960126</created>
+      <changed>1343246414</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/a/eclipselabs.org/p/industrial-mylyn/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/industrial-110x80.png?itok=_smwQ2aG]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Install-Connector.png?itok=TvhJj7mW]]></screenshot>
+      <version>0.9.9</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Industrial TSI, Maarten Meijer]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.8, 4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/a/eclipselabs.org/p/industrial-mylyn/issues/list]]></supporturl>
+      <updateurl><![CDATA[http://svn.codespot.com/a/eclipselabs.org/industrial-mylyn/trunk/com.industrialtsi.mylyn.site/]]></updateurl>
+<ius>
+<iu>com.industrialtsi.mylyn.feature</iu>
+<iu>com.industrialtsi.mylyn.demo.jpa.feature</iu>
+<iu>com.industrialtsi.mylyn.demo.derby.feature</iu>
+<iu>org.apache.ibatis.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

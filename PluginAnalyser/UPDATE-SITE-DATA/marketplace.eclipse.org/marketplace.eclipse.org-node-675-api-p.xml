@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="675" name="DBEclipse" url="http://marketplace.eclipse.org/content/dbeclipse">
+      <type>resource</type>
+      <categories>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+      </categories>
+            
+      <owner>Missing Name</owner>
+      <favorited>2</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Database browser plugin for Elipse for databases supported by JDBC. SQL-parser hyperlinks object references for convenient Transact-SQL source browsing just as you would the web site. Supports Sybase, SQLServer, Oracle and DB2.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Database browser plugin for Elipse for databases supported by JDBC. SQL-parser hyperlinks object references for convenient Transact-SQL source browsing just as you would the web site. Supports Sybase, SQLServer, Oracle and DB2.</p>
+]]></body>
+      <created>1207773219</created>
+      <changed>1274299150</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.dbeclipse.org]]></homepageurl>
+      <image><![CDATA[http://www.dbeclipse.org/dbeclipse2.jpg]]></image>
+      <version>1.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[DBEclipse]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.dbeclipse.org]]></supporturl>
+      <updateurl><![CDATA[http://www.dbeclipse.org]]></updateurl>
+    </node>
+    </marketplace>
+    

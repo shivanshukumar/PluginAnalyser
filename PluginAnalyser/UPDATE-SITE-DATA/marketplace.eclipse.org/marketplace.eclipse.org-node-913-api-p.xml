@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="913" name="EVars Eclipse Debug Plugin" url="http://marketplace.eclipse.org/content/evars-eclipse-debug-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+      </categories>
+            
+      <owner>nirav</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>eVars, short for Enhanced Eclipse Variables View, is a debugging utility plug-in which allows developers to filter, save and reload variables on current stack frame. It also features a concise but powerful OPath expression language similar to XPath for navigating/filtering variables from Variable's view.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>eVars, short for Enhanced Eclipse Variables View, is a debugging utility plug-in which allows developers to filter, save and reload variables on current stack frame. It also features a concise but powerful OPath expression language similar to XPath for navigating/filtering variables from Variable's view.</p>
+]]></body>
+      <created>1239023600</created>
+      <changed>1259779227</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/evars/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0</version>
+      <license>Free EPL</license>
+      <companyname><![CDATA[Nirav Thaker]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.4+]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/evars/]]></supporturl>
+      <updateurl><![CDATA[http://evars.googlecode.com/svn/evars-update]]></updateurl>
+    </node>
+    </marketplace>
+    

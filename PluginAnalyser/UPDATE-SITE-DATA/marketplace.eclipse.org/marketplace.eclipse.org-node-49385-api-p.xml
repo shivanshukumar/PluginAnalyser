@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="49385" name="Cricket Score Notifier" url="http://marketplace.eclipse.org/content/cricket-score-notifier">
+      <type>resource</type>
+      <categories>
+        <category id='7' name='Entertainment' url='http://marketplace.eclipse.org/taxonomy/term/7'/>
+      </categories>
+      <tags>
+        <tag id='1889' name='Cricket' url='http://marketplace.eclipse.org/category/free-tagging/cricket'/>
+        <tag id='1890' name='Score Notifier' url='http://marketplace.eclipse.org/category/free-tagging/score-notifier'/>
+        <tag id='1891' name='CricBuzz' url='http://marketplace.eclipse.org/category/free-tagging/cricbuzz'/>
+      </tags>
+      
+      <owner>Devi Vara Prasad Bandaru</owner>
+      <favorited>2</favorited>
+      <installstotal>72</installstotal>
+      <installsrecent>13</installsrecent>
+      <shortdescription><![CDATA[<p>Cricket Score Notifier is an eclipse based plugin which notifies the user with the score of the live cricket matches. Notifications are shown as popups in the corner which can be customized to be visible based on events (boundary, wicket etc.).</p>
+<p>Steps To Install :</p>
+<p>Method1:<br />
+1.Click on the green arrow icon and follow the steps mentioned in the 'More Info' link.</p>
+<p>Method2:<br />
+1. Click on the home icon and download the latest eclipse plugin.<br />
+2. Copy the plugin to eclipse/plugins directory and restart the eclipse.</p>
+<p>Instructions:<br />
+1. Select Cricket icon from the toolbar to open the Score Card view<br />
+2. Click on drop down menu of Start button to view the list of live matches.<br />
+3. Click on eclipse icon to test the notifications<br />
+4. Use Window->Preferences-> Score Notifier for changing the preferences</p>
+<p>Note : 1.If you are using eclipse versions older than 3.5 use the following link to download the plugin, copy it to eclipse plugins directory and restart the eclipse.<br /><a href="http://www.mediafire.com/?oma38fouvv1txrw">http://www.mediafire.com/?oma38fouvv1txrw</a><br />
+2. If the plugin is not detected launch eclipse using eclipse -clean option from command prompt </p>
+<p>Source available at <a href="http://cricket-score-notifier.googlecode.com/svn/source/">http://cricket-score-notifier.googlecode.com/svn/source/</a></p>
+<p>New Features:<br />
+ Score display has been added to the status bar</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Cricket Score Notifier is an eclipse based plugin which notifies the user with the score of the live cricket matches. Notifications are shown as popups in the corner which can be customized to be visible based on events (boundary, wicket etc.).</p>
+<p>Steps To Install :</p>
+<p>Method1:<br />
+1.Click on the green arrow icon and follow the steps mentioned in the 'More Info' link.</p>
+<p>Method2:<br />
+1. Click on the home icon and download the latest eclipse plugin.<br />
+2. Copy the plugin to eclipse/plugins directory and restart the eclipse.</p>
+<p>Instructions:<br />
+1. Select Cricket icon from the toolbar to open the Score Card view<br />
+2. Click on drop down menu of Start button to view the list of live matches.<br />
+3. Click on eclipse icon to test the notifications<br />
+4. Use Window->Preferences-> Score Notifier for changing the preferences</p>
+<p>Note : 1.If you are using eclipse versions older than 3.5 use the following link to download the plugin, copy it to eclipse plugins directory and restart the eclipse.<br /><a href="http://www.mediafire.com/?oma38fouvv1txrw">http://www.mediafire.com/?oma38fouvv1txrw</a><br />
+2. If the plugin is not detected launch eclipse using eclipse -clean option from command prompt </p>
+<p>Source available at <a href="http://cricket-score-notifier.googlecode.com/svn/source/">http://cricket-score-notifier.googlecode.com/svn/source/</a></p>
+<p>New Features:<br />
+ Score display has been added to the status bar</p>
+]]></body>
+      <created>1304081262</created>
+      <changed>1363338540</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://cricket-score-notifier.googlecode.com/svn/update-site/ScoreNotifierUpdateSite/plugins/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Live%20cricket%20score%20board.jpg?itok=FrK6KbZD]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/ScoreCard.jpg?itok=kLY0zCPV]]></screenshot>
+      <version></version>
+      <license>Free for non-commerical use</license>
+      <companyname><![CDATA[Prasad]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://cricket-score-notifier.googlecode.com/svn/update-site/ScoreNotifierUpdateSite/]]></updateurl>
+<ius>
+<iu>ScoreNotifierFeature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

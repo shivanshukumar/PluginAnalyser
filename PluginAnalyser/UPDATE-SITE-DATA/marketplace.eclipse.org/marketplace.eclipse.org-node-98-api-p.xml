@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="98" name="SpectrumSCM Plugin for Eclipse" url="http://marketplace.eclipse.org/content/spectrumscm-plugin-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+      </categories>
+            
+      <owner>SpectrumSCM</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The SpectrumSCM plugin for Eclipse provides the necessary functionality for associating projects in the Eclipse workspace with a SpectrumSCM repository and defines various SpectrumSCM specific operations for managing projects shared with a SpectrumSCM repository, thus providing a tight integration with the Eclipse platform.The plugin gives developers using Eclipse direct access to advanced software configuration management features including version control, branching and issue tracking, all from within the Eclipse environment. To download the Eclipse plugin, click on the "Free Download" link o­n <A href="<a href="http://www.spectrumscm.com">http://www.spectrumscm.com</a>">http://www.spectrumscm.com">http://www.spectrumscm.com</a></a> and check out the "IDE Integrations" section for installation instructions. A user guide is available for the plugin under the "WhitePapers & Other Docs" section o­n the site. You need to download and install the SpectrumSCM product before you can use the plugin. </p>
+]]></shortdescription>
+      <body><![CDATA[<p>The SpectrumSCM plugin for Eclipse provides the necessary functionality for associating projects in the Eclipse workspace with a SpectrumSCM repository and defines various SpectrumSCM specific operations for managing projects shared with a SpectrumSCM repository, thus providing a tight integration with the Eclipse platform.The plugin gives developers using Eclipse direct access to advanced software configuration management features including version control, branching and issue tracking, all from within the Eclipse environment. To download the Eclipse plugin, click on the "Free Download" link o­n <A href="<a href="http://www.spectrumscm.com">http://www.spectrumscm.com</a>">http://www.spectrumscm.com">http://www.spectrumscm.com</a></a> and check out the "IDE Integrations" section for installation instructions. A user guide is available for the plugin under the "WhitePapers & Other Docs" section o­n the site. You need to download and install the SpectrumSCM product before you can use the plugin. </p>
+]]></body>
+      <created>1079071185</created>
+      <changed>1259778470</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.spectrumscm.com]]></homepageurl>
+      <image><![CDATA[http://www.spectrumscm.com/images/scmscr.gif]]></image>
+      <version>31.31.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Spectrum Software Inc.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.1+, verified up to 3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.spectrumscm.com]]></supporturl>
+      <updateurl><![CDATA[http://www.spectrumscm.com/eclipse/plugins]]></updateurl>
+    </node>
+    </marketplace>
+    

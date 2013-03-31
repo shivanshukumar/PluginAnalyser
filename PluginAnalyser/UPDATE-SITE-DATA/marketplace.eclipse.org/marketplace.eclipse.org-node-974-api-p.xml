@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="974" name="EasyShell" url="http://marketplace.eclipse.org/content/easyshell">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='404' name='copy path' url='http://marketplace.eclipse.org/category/free-tagging/copy-path'/>
+        <tag id='564' name='powershell' url='http://marketplace.eclipse.org/category/free-tagging/powershell'/>
+        <tag id='703' name='Shell' url='http://marketplace.eclipse.org/category/free-tagging/shell'/>
+        <tag id='1110' name='explorer' url='http://marketplace.eclipse.org/category/free-tagging/explorer'/>
+        <tag id='2187' name='open' url='http://marketplace.eclipse.org/category/free-tagging/open'/>
+      </tags>
+      
+      <owner>Andre Bossert</owner>
+      <favorited>64</favorited>
+      <installstotal>14731</installstotal>
+      <installsrecent>770</installsrecent>
+      <shortdescription><![CDATA[<p>Easy Shell 1.4.0.1 plugin for Eclipse<br />
+-----------------------------------------</p>
+<p>This plugin allows to open a shell window or file manager from the<br />
+popup menu in the navigation tree or editor view. The current<br />
+directory of the opened shell is the directory which was selected<br />
+with the popup menu. Additionally it is possible to run selected<br />
+file in the shell and copy file or directory path. Multiple<br />
+selections are also supported.</p>
+<p>EasyShell does not support virtual folders, because they are not<br />
+present in the file system!</p>
+<p>The plugin is platform-independent in principal. It just launches<br />
+a (configurable) system command to open the shell. The following<br />
+platform and shell combinations are supported as selections<br />
+available from the drop-down-list in the preferences page:</p>
+<p>Windows:<br />
+- DOS-Shell / Explorer<br />
+- PowerShell / Explorer (check path of PowerShell executable!)<br />
+- Cygwin (Bash) / Explorer (check path of Cygwin-bash executable!)<br />
+  <a href="http://cygwin.com">http://cygwin.com</a><br />
+- Console / Explorer<br />
+  <a href="https://sourceforge.net/projects/console">https://sourceforge.net/projects/console</a><br />
+- DOS-Shell / TotalCommander<br />
+  <a href="http://www.ghisler.com">http://www.ghisler.com</a></p>
+<p>Unix / Linux:<br />
+- KDE Konsole / Konqueror and Dolphin<br />
+- Gnome Terminal / Nautilus<br />
+- CDE Xterm / Dtfile (not tested!)<br />
+- MAC OS X Terminal / Finder (not tested!)</p>
+<p>Other:<br />
+- Default / Unknown (can be defined for all systems supported by Java)</p>
+<p>But you can configure any shell or command you like as long as you<br />
+can figure out how to run a command to open the shell with given<br />
+parameters. The following substitution variables are available<br />
+for building the command:</p>
+<p>{0} = The drive letter (only Windows, not used on other platforms)<br />
+{1} = The selected directory path<br />
+{2} = The selected file or directory path<br />
+{3} = The selected file name<br />
+{4} = The project name of selected directory or path (for external files it&#039;s "Easy Shell")<br />
+{5} = The line separator</p>
+<p>Installation:<br />
+-------------<br />
+a) Extract zip file to "eclipse\dropin" folder and restart.<br />
+OR<br />
+b) Use update site: <a href="http://pluginbox.sourceforge.net">http://pluginbox.sourceforge.net</a></p>
+<p>-------------------------------<br />
+Easy Shell 1.4.0.1 Release Note<br />
+-------------------------------</p>
+<p>by anb0s at 2013-01-07</p>
+<p>Changes:<br />
+--------<br />
+! hot fix: install issue with 1.4.0</p>
+<p>! fixed: #9 Mac OS X defaults are wrong<br />
+  <a href="https://sourceforge.net/p/pluginbox/bugs/9/">https://sourceforge.net/p/pluginbox/bugs/9/</a></p>
+<p>! fixed: #13 EasyShell opening wrong folder in Linux<br />
+  <a href="https://sourceforge.net/p/pluginbox/bugs/13/">https://sourceforge.net/p/pluginbox/bugs/13/</a></p>
+<p>! fixed: #14 Binary download does not include MANIFEST.MF<br />
+  <a href="https://sourceforge.net/p/pluginbox/bugs/14/">https://sourceforge.net/p/pluginbox/bugs/14/</a></p>
+<p>+ changed menu position: "Easy Shell" menu appears near "Open With"<br />
+  <a href="https://sourceforge.net/p/pluginbox/bugs/15/">https://sourceforge.net/p/pluginbox/bugs/15/</a></p>
+<p>+ added new preset "Windows Console / Explorer"<br />
+  <a href="https://sourceforge.net/p/pluginbox/feature-requests/10/">https://sourceforge.net/p/pluginbox/feature-requests/10/</a><br />
+  <a href="https://sourceforge.net/projects/console/">https://sourceforge.net/projects/console/</a></p>
+<p>+ added new preset "Windows DOS-Shell / TotalCommander"<br />
+  <a href="https://sourceforge.net/p/pluginbox/feature-requests/11/">https://sourceforge.net/p/pluginbox/feature-requests/11/</a><br />
+  <a href="http://www.ghisler.com">http://www.ghisler.com</a></p>
+<p>+ added new option "Add Quotes to {1}, {2}, {3}*" with values "No, Single, Double, Automatic"<br />
+  default is "No", if changed to other values, parameters will be eclosed with quotes<br />
+  ATTENTION: use it carefully and remove quotes from commands</p>
+<p>+ added new option "Enable debug output" with values "No, Yes"<br />
+  default is "No", if changed to "Yes", debug messages will be printed to console</p>
+<p>Tested with Windows 7 x64 (Cmd, PowerShell 1.0, Cygwin-bash, Console 2.0, TotalCommander 8.01)<br />
+and Linux (KDE / Kubuntu 12.04, Gnome / Ubuntu 12.04)</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Easy Shell 1.4.0.1 plugin for Eclipse<br />
+-----------------------------------------</p>
+<p>This plugin allows to open a shell window or file manager from the<br />
+popup menu in the navigation tree or editor view. The current<br />
+directory of the opened shell is the directory which was selected<br />
+with the popup menu. Additionally it is possible to run selected<br />
+file in the shell and copy file or directory path. Multiple<br />
+selections are also supported.</p>
+<p>EasyShell does not support virtual folders, because they are not<br />
+present in the file system!</p>
+<p>The plugin is platform-independent in principal. It just launches<br />
+a (configurable) system command to open the shell. The following<br />
+platform and shell combinations are supported as selections<br />
+available from the drop-down-list in the preferences page:</p>
+<p>Windows:<br />
+- DOS-Shell / Explorer<br />
+- PowerShell / Explorer (check path of PowerShell executable!)<br />
+- Cygwin (Bash) / Explorer (check path of Cygwin-bash executable!)<br />
+  <a href="http://cygwin.com">http://cygwin.com</a><br />
+- Console / Explorer<br />
+  <a href="https://sourceforge.net/projects/console">https://sourceforge.net/projects/console</a><br />
+- DOS-Shell / TotalCommander<br />
+  <a href="http://www.ghisler.com">http://www.ghisler.com</a></p>
+<p>Unix / Linux:<br />
+- KDE Konsole / Konqueror and Dolphin<br />
+- Gnome Terminal / Nautilus<br />
+- CDE Xterm / Dtfile (not tested!)<br />
+- MAC OS X Terminal / Finder (not tested!)</p>
+<p>Other:<br />
+- Default / Unknown (can be defined for all systems supported by Java)</p>
+<p>But you can configure any shell or command you like as long as you<br />
+can figure out how to run a command to open the shell with given<br />
+parameters. The following substitution variables are available<br />
+for building the command:</p>
+<p>{0} = The drive letter (only Windows, not used on other platforms)<br />
+{1} = The selected directory path<br />
+{2} = The selected file or directory path<br />
+{3} = The selected file name<br />
+{4} = The project name of selected directory or path (for external files it&#039;s "Easy Shell")<br />
+{5} = The line separator</p>
+<p>Installation:<br />
+-------------<br />
+a) Extract zip file to "eclipse\dropin" folder and restart.<br />
+OR<br />
+b) Use update site: <a href="http://pluginbox.sourceforge.net">http://pluginbox.sourceforge.net</a></p>
+<p>-------------------------------<br />
+Easy Shell 1.4.0.1 Release Note<br />
+-------------------------------</p>
+<p>by anb0s at 2013-01-07</p>
+<p>Changes:<br />
+--------<br />
+! hot fix: install issue with 1.4.0</p>
+<p>! fixed: #9 Mac OS X defaults are wrong<br />
+  <a href="https://sourceforge.net/p/pluginbox/bugs/9/">https://sourceforge.net/p/pluginbox/bugs/9/</a></p>
+<p>! fixed: #13 EasyShell opening wrong folder in Linux<br />
+  <a href="https://sourceforge.net/p/pluginbox/bugs/13/">https://sourceforge.net/p/pluginbox/bugs/13/</a></p>
+<p>! fixed: #14 Binary download does not include MANIFEST.MF<br />
+  <a href="https://sourceforge.net/p/pluginbox/bugs/14/">https://sourceforge.net/p/pluginbox/bugs/14/</a></p>
+<p>+ changed menu position: "Easy Shell" menu appears near "Open With"<br />
+  <a href="https://sourceforge.net/p/pluginbox/bugs/15/">https://sourceforge.net/p/pluginbox/bugs/15/</a></p>
+<p>+ added new preset "Windows Console / Explorer"<br />
+  <a href="https://sourceforge.net/p/pluginbox/feature-requests/10/">https://sourceforge.net/p/pluginbox/feature-requests/10/</a><br />
+  <a href="https://sourceforge.net/projects/console/">https://sourceforge.net/projects/console/</a></p>
+<p>+ added new preset "Windows DOS-Shell / TotalCommander"<br />
+  <a href="https://sourceforge.net/p/pluginbox/feature-requests/11/">https://sourceforge.net/p/pluginbox/feature-requests/11/</a><br />
+  <a href="http://www.ghisler.com">http://www.ghisler.com</a></p>
+<p>+ added new option "Add Quotes to {1}, {2}, {3}*" with values "No, Single, Double, Automatic"<br />
+  default is "No", if changed to other values, parameters will be eclosed with quotes<br />
+  ATTENTION: use it carefully and remove quotes from commands</p>
+<p>+ added new option "Enable debug output" with values "No, Yes"<br />
+  default is "No", if changed to "Yes", debug messages will be printed to console</p>
+<p>Tested with Windows 7 x64 (Cmd, PowerShell 1.0, Cygwin-bash, Console 2.0, TotalCommander 8.01)<br />
+and Linux (KDE / Kubuntu 12.04, Gnome / Ubuntu 12.04)</p>
+]]></body>
+      <created>1248706334</created>
+      <changed>1358077582</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://pluginbox.sourceforge.net/plugins.html]]></homepageurl>
+      <image><![CDATA[http://pluginbox.sourceforge.net/images/EasyShell_Menu.png]]></image>
+      <version>1.4.0</version>
+      <license>LGPL</license>
+      <companyname><![CDATA[anb0s, marcelschoen]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2-4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/pluginbox/support]]></supporturl>
+      <updateurl><![CDATA[http://pluginbox.sourceforge.net]]></updateurl>
+<ius>
+<iu>com.tetrade.eclipse.plugins.easyshell.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

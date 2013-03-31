@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1000" name="eFitNesse: Testingframework for OSGi and embedded Java applications" url="http://marketplace.eclipse.org/content/efitnesse-testingframework-osgi-and-embedded-java-applications">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+      </categories>
+            
+      <owner>Christine Mitterbauer</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>eFitNesse is a testing framework for OSGi and embedded applications that allows to execute different types of test suites like JUnit or Fitnesse acceptance tests. Test cases can even be executed on a remote machine. MicroDoc now provides an Eclipse plug-in that supports easy set-up and execution of eFitNesse tests.</p>
+<p>Details can be found here: <a href="http://www.microdoc.com/efitnesse">http://www.microdoc.com/efitnesse</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>eFitNesse is a testing framework for OSGi and embedded applications that allows to execute different types of test suites like JUnit or Fitnesse acceptance tests. Test cases can even be executed on a remote machine. MicroDoc now provides an Eclipse plug-in that supports easy set-up and execution of eFitNesse tests.</p>
+<p>Details can be found here: <a href="http://www.microdoc.com/efitnesse">http://www.microdoc.com/efitnesse</a></p>
+]]></body>
+      <created>1252417672</created>
+      <changed>1259779306</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.microdoc.com/efitnesse]]></homepageurl>
+      <image><![CDATA[http://www.microdoc.com/files/efitnesse-logo.gif]]></image>
+      <version>1.0.1</version>
+      <license>Free GPL</license>
+      <companyname><![CDATA[MicroDoc Computersystems GmbH]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3+]]></eclipseversion>
+      <supporturl><![CDATA[http://www.microdoc.com/contact]]></supporturl>
+      <updateurl><![CDATA[http://www.microdoc.com/files/efitnesse]]></updateurl>
+    </node>
+    </marketplace>
+    

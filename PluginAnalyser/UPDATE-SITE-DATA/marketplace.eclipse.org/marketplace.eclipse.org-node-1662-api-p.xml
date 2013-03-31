@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1662" name="Vex" url="http://marketplace.eclipse.org/content/vex">
+      <type>resource</type>
+      <categories>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+      </categories>
+      <tags>
+        <tag id='206' name='docbook' url='http://marketplace.eclipse.org/category/free-tagging/docbook'/>
+        <tag id='207' name='dita' url='http://marketplace.eclipse.org/category/free-tagging/dita'/>
+        <tag id='2956' name='XHTML' url='http://marketplace.eclipse.org/taxonomy/term/2956'/>
+        <tag id='694' name='CSS' url='http://marketplace.eclipse.org/category/free-tagging/css'/>
+        <tag id='913' name='Visual Editor for XML' url='http://marketplace.eclipse.org/category/free-tagging/visual-editor-xml'/>
+      </tags>
+      
+      <owner>Holger Voormann</owner>
+      <favorited>11</favorited>
+      <installstotal>3656</installstotal>
+      <installsrecent>116</installsrecent>
+      <shortdescription><![CDATA[<p><a href="http://eclipse.org/vex"><strong>Vex</strong></a> is a <strong>V</strong>isual <strong>E</strong>ditor for <strong>X</strong>ML that hides the raw XML tags from the user, providing instead a <strong>word processor like</strong> interface. Vex uses standard <a href="http://en.wikipedia.org/wiki/Document_Type_Definition">DTD</a>/<a href="http://en.wikipedia.org/wiki/XML_Schema_%28W3C%29">XSD</a> files to define document types and <strong>CSS</strong> to define document layout. Vex contains built-in support for <a href="http://en.wikipedia.org/wiki/Docbook">DocBook</a>, <a href="http://en.wikipedia.org/wiki/DITA">DITA</a> and <a href="http://en.wikipedia.org/wiki/Docbook">XHTML</a>. To edit other XML formats only a DTD/XSD and a CSS are needed.</p>
+<p>See also: <a href="http://vimeo.com/58346326">Video: "Vex - Getting Started"</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p><a href="http://eclipse.org/vex"><strong>Vex</strong></a> is a <strong>V</strong>isual <strong>E</strong>ditor for <strong>X</strong>ML that hides the raw XML tags from the user, providing instead a <strong>word processor like</strong> interface. Vex uses standard <a href="http://en.wikipedia.org/wiki/Document_Type_Definition">DTD</a>/<a href="http://en.wikipedia.org/wiki/XML_Schema_%28W3C%29">XSD</a> files to define document types and <strong>CSS</strong> to define document layout. Vex contains built-in support for <a href="http://en.wikipedia.org/wiki/Docbook">DocBook</a>, <a href="http://en.wikipedia.org/wiki/DITA">DITA</a> and <a href="http://en.wikipedia.org/wiki/Docbook">XHTML</a>. To edit other XML formats only a DTD/XSD and a CSS are needed.</p>
+<p>See also: <a href="http://vimeo.com/58346326">Video: "Vex - Getting Started"</a></p>
+]]></body>
+      <created>1277480836</created>
+      <changed>1359546976</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://eclipse.org/vex]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Vex_110x80.png?itok=-ge0kYCX]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/vex_screenshot_xhtml1.png?itok=qB3KB-L3]]></screenshot>
+      <version>1.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Eclipse.org]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6+]]></eclipseversion>
+      <supporturl><![CDATA[http://wiki.eclipse.org/Vex#Support]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/vex/releases/1.0/]]></updateurl>
+<ius>
+<iu>org.eclipse.vex.feature</iu>
+<iu>org.eclipse.vex.sdk.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

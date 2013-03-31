@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="48572" name="Sigasi HDT 1.0 [deprecated, use Sigasi 2 instead]" url="http://marketplace.eclipse.org/content/sigasi-hdt-10-deprecated-use-sigasi-2-instead">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='325' name='VHDL' url='http://marketplace.eclipse.org/category/free-tagging/vhdl'/>
+        <tag id='326' name='VHDL plugin' url='http://marketplace.eclipse.org/category/free-tagging/vhdl-plugin'/>
+      </tags>
+      
+      <owner>Hendrik Eeckhaut</owner>
+      <favorited>7</favorited>
+      <installstotal>778</installstotal>
+      <installsrecent>3</installsrecent>
+      <shortdescription><![CDATA[<p>Sigasi HDT 1.0 is the old version of Sigasi. We recommend to install <em><a href="http://marketplace.eclipse.org/content/sigasi-vhdl-plugin">Sigasi 2</a></em>.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Sigasi HDT 1.0 is the old version of Sigasi. We recommend to install <em><a href="http://marketplace.eclipse.org/content/sigasi-vhdl-plugin">Sigasi 2</a></em>.</p>
+]]></body>
+      <created>1303825597</created>
+      <changed>1363780803</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.sigasi.com/sigasi-hdt]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Si_Eclipse_MarketPlace_0.png?itok=22YOTZBE]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/r3Overview.png?itok=tRoMCLJF]]></screenshot>
+      <version>1.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Sigasi]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[Eclipse 3.5, 3.6, 3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://www.sigasi.com/support-10]]></supporturl>
+      <updateurl><![CDATA[http://download.sigasi.com/updates/hdt]]></updateurl>
+<ius>
+<iu>com.sigasi.hdt.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="36146" name="Toad Extension for Eclipse" url="http://marketplace.eclipse.org/content/toad-extension-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+        <category id='1970' name='Database Development' url='http://marketplace.eclipse.org/category/categories/database-development'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='1296' name='mysql' url='http://marketplace.eclipse.org/category/free-tagging/mysql'/>
+        <tag id='1297' name='postgresql' url='http://marketplace.eclipse.org/category/free-tagging/postgresql'/>
+        <tag id='155' name='oracle' url='http://marketplace.eclipse.org/category/free-tagging/oracle'/>
+        <tag id='190' name='database' url='http://marketplace.eclipse.org/category/free-tagging/database'/>
+        <tag id='743' name='sql' url='http://marketplace.eclipse.org/category/free-tagging/sql'/>
+      </tags>
+      
+      <owner>Lukas Macek</owner>
+      <favorited>42</favorited>
+      <installstotal>12665</installstotal>
+      <installsrecent>608</installsrecent>
+      <shortdescription><![CDATA[<p>From the makers of Toad for Oracle! We're adding the power of Toad into the Eclipse framework to help you manage changes to your database - without leaving Eclipse! Moreover, Toad Extension for Eclipse supports <b>not only the Oracle database, but also PostgreSQL and MySQL</b> now! And it's all available for free.</p>
+<p>Toad Extension for Eclipse allows you to:</p>
+<li><b>Connect</b> to your Oracle, PostgreSQL or MySQL database from within Eclipse</li>
+<li><b>Browse</b> data, object relationships and other detailed object properties</li>
+<li><b>Develop</b> complex PL/SQL code comfortably</li>
+<li><b>Query</b> data with easy export functions</li>
+<li><b>Manage</b> or <b>Edit</b> data and objects quickly</li>
+<li><b>Import/Export of BLOBs</b></li>
+<li><b>Export data</b></li>
+<p>... and take advantage of many standard Eclipse features including Local History, integration with version control systems, XML editor and more!</p>
+]]></shortdescription>
+      <body><![CDATA[<p>From the makers of Toad for Oracle! We're adding the power of Toad into the Eclipse framework to help you manage changes to your database - without leaving Eclipse! Moreover, Toad Extension for Eclipse supports <b>not only the Oracle database, but also PostgreSQL and MySQL</b> now! And it's all available for free.</p>
+<p>Toad Extension for Eclipse allows you to:</p>
+<li><b>Connect</b> to your Oracle, PostgreSQL or MySQL database from within Eclipse</li>
+<li><b>Browse</b> data, object relationships and other detailed object properties</li>
+<li><b>Develop</b> complex PL/SQL code comfortably</li>
+<li><b>Query</b> data with easy export functions</li>
+<li><b>Manage</b> or <b>Edit</b> data and objects quickly</li>
+<li><b>Import/Export of BLOBs</b></li>
+<li><b>Export data</b></li>
+<p>... and take advantage of many standard Eclipse features including Local History, integration with version control systems, XML editor and more!</p>
+]]></body>
+      <created>1299109099</created>
+      <changed>1363817561</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://toadextensions.com/index.jspa?product=eclipse]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Toad4Eclipse_Marketplace_sm.jpg?itok=klu-gpLp]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/toad-eclipse-oracle-db_0.png?itok=bANsbtEA]]></screenshot>
+      <version>1.7.2 Community Edition</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[Quest Software]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5, 3.6, 3.7, 3.8, 4.2.1]]></eclipseversion>
+      <supporturl><![CDATA[http://toadextensions.com/category.jspa?categoryID=670]]></supporturl>
+      <updateurl><![CDATA[http://community-downloads.quest.com/toadsoft/toadextensions/eclipse/freeware/]]></updateurl>
+<ius>
+<iu>com.quest.toadext.core.feature</iu>
+<iu>com.quest.toadext.feature</iu>
+<iu>com.quest.toadext.mysql.feature</iu>
+<iu>com.quest.toadext.postgre.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

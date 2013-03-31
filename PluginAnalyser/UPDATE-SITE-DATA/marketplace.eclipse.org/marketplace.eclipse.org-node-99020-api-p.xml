@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="99020" name="Trac Wiki Editor 4 Eclipse" url="http://marketplace.eclipse.org/content/trac-wiki-editor-4-eclipse-0">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='1968' name='Collaboration' url='http://marketplace.eclipse.org/category/categories/collaboration'/>
+      </categories>
+      <tags>
+        <tag id='146' name='editor' url='http://marketplace.eclipse.org/category/free-tagging/editor'/>
+        <tag id='157' name='edgewall trac' url='http://marketplace.eclipse.org/category/free-tagging/edgewall-trac'/>
+        <tag id='2150' name='wiki' url='http://marketplace.eclipse.org/category/free-tagging/wiki'/>
+      </tags>
+      
+      <owner>Iván García Sainz-Aja</owner>
+      <favorited>3</favorited>
+      <installstotal>925</installstotal>
+      <installsrecent>39</installsrecent>
+      <shortdescription><![CDATA[<p><strong>Trac Wiki Editor 4 Eclipse</strong> is an eclipse plugin that allows you to edit Trac wiki pages from inside your Eclipse IDE.</p>
+<p>Current version 0.1.0 provides the following features:</p>
+<ul><li>Trac Wiki Servers explorer
+<ul><li>New hierachical tree view among other fixes</li>
+</ul></li>
+<li>Eclipse Wiki Editor:
+<ul><li>Upgraded the editor to benefit from <a class="ext-link" href="http://wiki.eclipse.org/Mylyn/WikiText">Mylyn WikiText</a>.</li>
+<li>Spellcheck</li>
+</ul></li>
+<li>Wiki Page management: Creation, edition and page deletion.</li>
+<li>Concurrent edition management:
+<ul><li>Prevents overwriting other users changes when a concurrent	edit happens.</li>
+<li>Helps merge contents when a concurrent edit happens.</li>
+</ul></li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p><strong>Trac Wiki Editor 4 Eclipse</strong> is an eclipse plugin that allows you to edit Trac wiki pages from inside your Eclipse IDE.</p>
+<p>Current version 0.1.0 provides the following features:</p>
+<ul><li>Trac Wiki Servers explorer
+<ul><li>New hierachical tree view among other fixes</li>
+</ul></li>
+<li>Eclipse Wiki Editor:
+<ul><li>Upgraded the editor to benefit from <a class="ext-link" href="http://wiki.eclipse.org/Mylyn/WikiText">Mylyn WikiText</a>.</li>
+<li>Spellcheck</li>
+</ul></li>
+<li>Wiki Page management: Creation, edition and page deletion.</li>
+<li>Concurrent edition management:
+<ul><li>Prevents overwriting other users changes when a concurrent	edit happens.</li>
+<li>Helps merge contents when a concurrent edit happens.</li>
+</ul></li>
+</ul>]]></body>
+      <created>1312543963</created>
+      <changed>1312813791</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://trac-hacks.org/wiki/WikiEditorForEclipsePlugin]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/trac_48.png?itok=c-MD9S55]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/wikieditor-prespective.png?itok=TJSfiMMu]]></screenshot>
+      <version>0.1.0.x</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[Trac Wiki Editor 4 Eclipse]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6+]]></eclipseversion>
+      <supporturl><![CDATA[https://trac-hacks.org/newticket?component=WikiEditorForEclipsePlugin&owner=ivangsa]]></supporturl>
+      <updateurl><![CDATA[http://trac-hacks.org/svn/wikieditorforeclipseplugin/update-site/v_0.1.0.x/]]></updateurl>
+<ius>
+<iu>org.trachacks.wikieditor.eclipse.feature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="110" name="SortIt" url="http://marketplace.eclipse.org/content/sortit">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+      <tags>
+        <tag id='1446' name='sort length organization' url='http://marketplace.eclipse.org/category/free-tagging/sort-length-organization'/>
+      </tags>
+      
+      <owner>Channing Walton</owner>
+      <favorited>5</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This Eclipse plugin adds simple sorting to editors. You can sort case sensitively, case insensitively, numerically, and reverse the selected text. The numerical sort assumes that the first set of characters on each line is a number and sorts accordingly.</p>
+<p>Note that SortIt is not source code aware, it just sorts text.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This Eclipse plugin adds simple sorting to editors. You can sort case sensitively, case insensitively, numerically, and reverse the selected text. The numerical sort assumes that the first set of characters on each line is a number and sorts accordingly.</p>
+<p>Note that SortIt is not source code aware, it just sorts text.</p>
+]]></body>
+      <created>1087643363</created>
+      <changed>1290460637</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.stateofflow.com/projects/2/sortit]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.5.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Channing Walton]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.1]]></eclipseversion>
+      <supporturl><![CDATA[http://www.stateofflow.com/projects/2/sortit]]></supporturl>
+      <updateurl><![CDATA[http://www.stateofflow.com/UpdateSite/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

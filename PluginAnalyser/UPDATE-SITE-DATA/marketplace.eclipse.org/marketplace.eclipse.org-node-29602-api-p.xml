@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="29602" name="CUDA Plugin (Helios)" url="http://marketplace.eclipse.org/content/cuda-plugin-helios">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='1557' name='Fixstars' url='http://marketplace.eclipse.org/category/free-tagging/fixstars'/>
+        <tag id='1558' name='CUDA' url='http://marketplace.eclipse.org/category/free-tagging/cuda'/>
+      </tags>
+      
+      <owner>Fixstars Corporation</owner>
+      <favorited>2</favorited>
+      <installstotal>676</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[Eclipse CUDA plugin. Eclipse Helios (3.6.1) version.]]></shortdescription>
+      <body><![CDATA[Eclipse CUDA plugin. Eclipse Helios (3.6.1) version.]]></body>
+      <created>1295975853</created>
+      <changed>1297881796</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://ydl.net/eclipse_cuda_plugin/helios]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.1</version>
+      <license>Other</license>
+      <companyname><![CDATA[Fixstars Corporation]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6.1]]></eclipseversion>
+      <supporturl><![CDATA[http://ydl.net/eclipse_cuda_plugin/helios]]></supporturl>
+      <updateurl><![CDATA[http://ydl.net/eclipse_cuda_plugin/helios]]></updateurl>
+<ius>
+<iu>Cuda_Helios</iu>
+</ius>
+<platforms>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

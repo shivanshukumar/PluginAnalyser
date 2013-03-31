@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="474" name="ATLFlow" url="http://marketplace.eclipse.org/content/atlflow">
+      <type>resource</type>
+      <categories>
+        <category id='1971' name='Modeling' url='http://marketplace.eclipse.org/category/categories/modeling'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+      </categories>
+      <tags>
+        <tag id='164' name='model transformation' url='http://marketplace.eclipse.org/category/free-tagging/model-transformation'/>
+        <tag id='186' name='EMF' url='http://marketplace.eclipse.org/category/free-tagging/emf'/>
+        <tag id='638' name='GMF' url='http://marketplace.eclipse.org/category/free-tagging/gmf'/>
+        <tag id='746' name='ATL' url='http://marketplace.eclipse.org/category/free-tagging/atl'/>
+        <tag id='2007' name='model generators' url='http://marketplace.eclipse.org/category/free-tagging/model-generators'/>
+      </tags>
+      
+      <owner>urs zeidler</owner>
+      <favorited>8</favorited>
+      <installstotal>254</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This plug in provides a diagram editor for modeling a process of model transformations in ATL. It describes the structure of a transformation flow. The plug in has also the ability to execute the transformations. You can see it as an planing and execution board.</p>
+<p>Its an GMF based diagram editor to produce models of transformation flows, the GMF editor is customized to support multi diagramming. You can define several diagrams in the diagram file. They are displayed in the outline view, where you also can manage them.</p>
+
+<p>
+It includes some transformation templates like :
+</p><ul><li>generate gmf diagram editor
+</li><li>generate topcased diagram editor
+</li></ul><p>And generators like :
+</p><ul><li>acceleo code generator
+</li><li>eef properties initializer
+</li><li>eef properties generator
+</li><li>emf genmodel importer
+</li><li>emf code generator
+</li><li>gmf genmodel generator
+</li><li>gmf code generator
+</li><li>topcased java2uml generator
+</li><li>topcased java2uml profile generator
+</li></ul>]]></shortdescription>
+      <body><![CDATA[<p>This plug in provides a diagram editor for modeling a process of model transformations in ATL. It describes the structure of a transformation flow. The plug in has also the ability to execute the transformations. You can see it as an planing and execution board.</p>
+<p>Its an GMF based diagram editor to produce models of transformation flows, the GMF editor is customized to support multi diagramming. You can define several diagrams in the diagram file. They are displayed in the outline view, where you also can manage them.</p>
+
+<p>
+It includes some transformation templates like :
+</p><ul><li>generate gmf diagram editor
+</li><li>generate topcased diagram editor
+</li></ul><p>And generators like :
+</p><ul><li>acceleo code generator
+</li><li>eef properties initializer
+</li><li>eef properties generator
+</li><li>emf genmodel importer
+</li><li>emf code generator
+</li><li>gmf genmodel generator
+</li><li>gmf code generator
+</li><li>topcased java2uml generator
+</li><li>topcased java2uml profile generator
+</li></ul>]]></body>
+      <created>1181582470</created>
+      <changed>1357481838</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://opensource.urszeidler.de/ATLflow/]]></homepageurl>
+      <image><![CDATA[http://opensource.urszeidler.de/ATLflow/html1/overview_small.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/overview.png?itok=zGytAWjw]]></screenshot>
+      <version>0.0.26.b20130106-1352</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Urs Zeidler]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://opensource.urszeidler.de/ATLflow/html_0.0.26/]]></supporturl>
+      <updateurl><![CDATA[http://opensource.urszeidler.de/ATLflow/updatesite_4.2/]]></updateurl>
+<ius>
+<iu>de.urszeidler.eclipse.callchain.feature</iu>
+<iu>de.urszeidler.eclipse.callchain.emfgenerators.feature</iu>
+<iu>de.urszeidler.eclipse.callchain.gmfgenerators.feature</iu>
+<iu>de.urszeidler.eclipse.callchain.topcasedgenerators.feature</iu>
+<iu>de.urszeidler.eclipse.callchain.eef.feature</iu>
+<iu>de.urszeidler.eclipse.callchain.acceleogenerators.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="169937" name="eTrice" url="http://marketplace.eclipse.org/content/etrice">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='195' name='DSL' url='http://marketplace.eclipse.org/category/free-tagging/dsl'/>
+        <tag id='526' name='real-time' url='http://marketplace.eclipse.org/category/free-tagging/real-time'/>
+        <tag id='690' name='embedded' url='http://marketplace.eclipse.org/category/free-tagging/embedded'/>
+        <tag id='2380' name='ROOM' url='http://marketplace.eclipse.org/category/free-tagging/room'/>
+        <tag id='2381' name='event driven' url='http://marketplace.eclipse.org/category/free-tagging/event-driven'/>
+      </tags>
+      
+      <owner>Henrik Rentz-Reichert</owner>
+      <favorited>2</favorited>
+      <installstotal>209</installstotal>
+      <installsrecent>15</installsrecent>
+      <shortdescription><![CDATA[<p>eTrice provides an implementation of the ROOM modeling language together with editors, code generators for Java code and exemplary target middleware (soon a C generator and middleware will follow).<br />
+The model is defined in textual form (Xtext) with graphical editors (Graphiti) for the structural and behavioral (i.e. state machine) parts.</p>
+<p><b>eTrice is all about the reduction of complexity:</b></p>
+<ul><li><b>structural complexity</b>
+<ul><li>by explicit modeling of hierarchical Actor containment and layering</li>
+</ul></li>
+<li><b>behavioral complexity</b>
+<ul><li>by hierachical statemachines</li>
+</ul></li>
+<li><b>teamwork complexity</b>
+<ul><li>because loosely coupled Actors provide a natural way to structure team work</li>
+<li>since textual model notation allows simple branching and merging</li>
+</ul></li>
+<li><b>complexity of concurrent & distributed systems</b>
+<ul><li>because loosely coupled Actors are deployable to threads, processes, nodes</li>
+</ul></li>
+<li><b>complexity of variant handling and reuse (e.g. for product lines)</b>
+<ul><li>by composition of existing Actors to new structures</li>
+<li>since Protocols and Ports make Actors replaceable</li>
+<li>by inheritance for structure, behavior and Protocols</li>
+<li>by making use of model level libraries</li>
+</ul></li>
+<li><b>complexity of debugging</b>
+<ul><li>model level debugging: state machine animation, data inspection and<br />
+		manipulation, message injection, generated message sequence charts</li>
+<li>model checking easier for model than for code (detect errors before they occur)</li>
+</ul></li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>eTrice provides an implementation of the ROOM modeling language together with editors, code generators for Java code and exemplary target middleware (soon a C generator and middleware will follow).<br />
+The model is defined in textual form (Xtext) with graphical editors (Graphiti) for the structural and behavioral (i.e. state machine) parts.</p>
+<p><b>eTrice is all about the reduction of complexity:</b></p>
+<ul><li><b>structural complexity</b>
+<ul><li>by explicit modeling of hierarchical Actor containment and layering</li>
+</ul></li>
+<li><b>behavioral complexity</b>
+<ul><li>by hierachical statemachines</li>
+</ul></li>
+<li><b>teamwork complexity</b>
+<ul><li>because loosely coupled Actors provide a natural way to structure team work</li>
+<li>since textual model notation allows simple branching and merging</li>
+</ul></li>
+<li><b>complexity of concurrent & distributed systems</b>
+<ul><li>because loosely coupled Actors are deployable to threads, processes, nodes</li>
+</ul></li>
+<li><b>complexity of variant handling and reuse (e.g. for product lines)</b>
+<ul><li>by composition of existing Actors to new structures</li>
+<li>since Protocols and Ports make Actors replaceable</li>
+<li>by inheritance for structure, behavior and Protocols</li>
+<li>by making use of model level libraries</li>
+</ul></li>
+<li><b>complexity of debugging</b>
+<ul><li>model level debugging: state machine animation, data inspection and<br />
+		manipulation, message injection, generated message sequence charts</li>
+<li>model checking easier for model than for code (detect errors before they occur)</li>
+</ul></li>
+</ul>]]></body>
+      <created>1323972906</created>
+      <changed>1350025964</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://eclipse.org/etrice]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/eTRICE-logo-eclipse-marketplace.jpg?itok=xi9wxP3N]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/structure_editor.jpg?itok=Jzqve9yl]]></screenshot>
+      <version>0.2</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Protos Software GmbH]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[Juno]]></eclipseversion>
+      <supporturl><![CDATA[http://eclipse.org/etrice/support]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/etrice/updates/releases/0.2.0]]></updateurl>
+<ius>
+<iu>org.eclipse.etrice.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

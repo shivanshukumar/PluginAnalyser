@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1155" name="Plug-in for ZooKeeper" url="http://marketplace.eclipse.org/content/plug-zookeeper">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>mark</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>A full-featured browser and editor for ZooKeeper.</p>
+<p>ZooKeeper, Copyright © 2008 The Apache Software Foundation</p>
+]]></shortdescription>
+      <body><![CDATA[<p>A full-featured browser and editor for ZooKeeper.</p>
+<p>ZooKeeper, Copyright © 2008 The Apache Software Foundation</p>
+]]></body>
+      <created>1266780536</created>
+      <changed>1266800547</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.massedynamic.org/eclipse/zookeeper/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/ZooKeeperPlugin_0.jpg?itok=bK_HKNoa]]></image>
+      <version></version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[Masse Dynamic]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5 or greater]]></eclipseversion>
+      <supporturl><![CDATA[http://www.massedynamic.org/phpbb/viewforum.php?f=2]]></supporturl>
+      <updateurl><![CDATA[http://www.massedynamic.org/eclipse/updates/]]></updateurl>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="148833" name="Eclipse XPath evaluation plugin" url="http://marketplace.eclipse.org/content/eclipse-xpath-evaluation-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='1972' name='General Purpose Tools' url='http://marketplace.eclipse.org/category/categories/general-purpose-tools'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='1967' name='Web, XML, Java EE and OSGi Enterprise Development' url='http://marketplace.eclipse.org/category/categories/web-xml-java-ee-and-osgi-enterprise-development'/>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+      </categories>
+      <tags>
+        <tag id='521' name='xml' url='http://marketplace.eclipse.org/category/free-tagging/xml'/>
+        <tag id='1318' name='xpath' url='http://marketplace.eclipse.org/category/free-tagging/xpath'/>
+        <tag id='2442' name='Namespaces' url='http://marketplace.eclipse.org/category/free-tagging/namespaces'/>
+      </tags>
+      
+      <owner>Martin Uhlir</owner>
+      <favorited>7</favorited>
+      <installstotal>2339</installstotal>
+      <installsrecent>222</installsrecent>
+      <shortdescription><![CDATA[Enables evaluation of XPath expressions against the active text editor containing XML.]]></shortdescription>
+      <body><![CDATA[Enables evaluation of XPath expressions against the active text editor containing XML.]]></body>
+      <created>1320737209</created>
+      <changed>1349877940</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/eclipse-xpath-evaluation-plugin/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_6.png?itok=jJ8Utido]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Screenshot_3.png?itok=XjEVAUPz]]></screenshot>
+      <version>1.2.3</version>
+      <license>BSD</license>
+      <companyname><![CDATA[Martin Uhlir]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[Juno/4.2+, Indigo/3.7+, Helios/3.6+, Galileo/3.5+, Ganymede/3.4+]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/eclipse-xpath-evaluation-plugin/]]></supporturl>
+      <updateurl><![CDATA[http://eclipse-xpath-evaluation-plugin.googlecode.com/svn/trunk/eclipse-xpath-evaluation-plugin-update-site/]]></updateurl>
+<ius>
+<iu>eu.musoft.eclipse.xpath.evaluation.plugin</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

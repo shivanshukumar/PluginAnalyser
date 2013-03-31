@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="23568" name="NEXCORE uTEST Manager" url="http://marketplace.eclipse.org/content/nexcore-utest-manager">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+      </categories>
+      <tags>
+        <tag id='1200' name='coverage' url='http://marketplace.eclipse.org/category/free-tagging/coverage'/>
+        <tag id='1453' name='JUnit Test' url='http://marketplace.eclipse.org/category/free-tagging/junit-test'/>
+      </tags>
+      
+      <owner>inseon,lee</owner>
+      <favorited>1</favorited>
+      <installstotal>41</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>NEXCORE uTEST Manager generates test case per program source and supports to manage quality indicator result quantitatively. </p>
+<p>NEXCORE uTEST Manager generates test case for each service task module at development stage and analyzes code coverage indicator.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>NEXCORE uTEST Manager generates test case per program source and supports to manage quality indicator result quantitatively. </p>
+<p>NEXCORE uTEST Manager generates test case for each service task module at development stage and analyzes code coverage indicator.</p>
+]]></body>
+      <created>1291878585</created>
+      <changed>1291910440</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://nexcore.skcc.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/about_small.png?itok=ddVkXDfS]]></image>
+      <version>1.2.0</version>
+      <license>Other</license>
+      <companyname><![CDATA[SK C&C]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://nexcore.skcc.com]]></supporturl>
+      <updateurl><![CDATA[http://nexcore.skcc.com/update/ut/1.2.0]]></updateurl>
+<ius>
+<iu>nexcore.tool.utm.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

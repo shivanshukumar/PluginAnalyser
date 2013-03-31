@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1066" name="LogViewer" url="http://marketplace.eclipse.org/content/logviewer">
+      <type>resource</type>
+      <categories>
+        <category id='37' name='Logging' url='http://marketplace.eclipse.org/category/categories/logging'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='283' name='log' url='http://marketplace.eclipse.org/category/free-tagging/log'/>
+        <tag id='284' name='file' url='http://marketplace.eclipse.org/category/free-tagging/file'/>
+        <tag id='285' name='console' url='http://marketplace.eclipse.org/category/free-tagging/console'/>
+        <tag id='286' name='viewer' url='http://marketplace.eclipse.org/category/free-tagging/viewer'/>
+        <tag id='287' name='tail' url='http://marketplace.eclipse.org/category/free-tagging/tail'/>
+      </tags>
+      
+      <owner>Andre Bossert</owner>
+      <favorited>88</favorited>
+      <installstotal>8249</installstotal>
+      <installsrecent>368</installsrecent>
+      <shortdescription><![CDATA[<p>Eclipse Plug-in for tailing log files and eclipse consoles (e.g. SVN, Java Stack Trace, CDT), including syntax coloring with either a regular expression or a word match. It allows you to have multiple logs open concurrently.</p>
+<p>Screenshots:<br /><a href="http://logviewer.eclipselabs.org.codespot.com/files/LogViewer_view_File_0.9.8.jpg">http://logviewer.eclipselabs.org.codespot.com/files/LogViewer_view_File_...</a><br /><a href="http://logviewer.eclipselabs.org.codespot.com/files/LogViewerPreferences_0.9.7.jpg">http://logviewer.eclipselabs.org.codespot.com/files/LogViewerPreferences...</a><br /><a href="http://logviewer.eclipselabs.org.codespot.com/files/LogViewer_view_Console_0.9.8.jpg">http://logviewer.eclipselabs.org.codespot.com/files/LogViewer_view_Conso...</a><br /><a href="http://logviewer.eclipselabs.org.codespot.com/files/LogViewer_open_Console_0.9.8.jpg">http://logviewer.eclipselabs.org.codespot.com/files/LogViewer_open_Conso...</a></p>
+<p>Changelog:<br />
+0.9.8.8 (2011-08-07)<br />
+* switched from SVN to GIT, please use GIT from now<br />
+* New update site URL: <a href="http://logviewer.eclipselabs.org.codespot.com/git/de.anbos.eclipse.logviewer.update/">http://logviewer.eclipselabs.org.codespot.com/git/de.anbos.eclipse.logvi...</a><br />
+* Issue 53 : Input of invalid regular expressions is possible in the rules preferences<br />
+* Issue 55 : Improve FileTail's exception handling<br />
+* Issue 56 : Error on Tail all action with already tailing document</p>
+<p>0.9.8.7 (2011-03-07)<br />
+Issue 32 : Translation (German translation added)<br />
+Issue 35 : Tail option's auto-refresh/scrolling is very slow - is unusable (added some small fixes)<br />
+Issue 38 : Cannot enter colors using Mac OS X<br />
+Issue 51 :	Provide possibility to open log file from the beginning on<br />
+Issue 52 : Using java5 jre on ubuntu throws error</p>
+<p>0.9.8.6 (2010-08-15)<br />
+Issue 43 : Null Pointer error in ResourceUtils?.getResource()<br />
+Issue 44 : Exception if opening binary file</p>
+<p>0.9.8.5 (2010-08-10)<br />
+Issue 42 : LogViewer? will not start up (isEmpty method is not available on Java5)<br />
+should be compatible with Java 5 (JRE 1.5) again</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Eclipse Plug-in for tailing log files and eclipse consoles (e.g. SVN, Java Stack Trace, CDT), including syntax coloring with either a regular expression or a word match. It allows you to have multiple logs open concurrently.</p>
+<p>Screenshots:<br /><a href="http://logviewer.eclipselabs.org.codespot.com/files/LogViewer_view_File_0.9.8.jpg">http://logviewer.eclipselabs.org.codespot.com/files/LogViewer_view_File_...</a><br /><a href="http://logviewer.eclipselabs.org.codespot.com/files/LogViewerPreferences_0.9.7.jpg">http://logviewer.eclipselabs.org.codespot.com/files/LogViewerPreferences...</a><br /><a href="http://logviewer.eclipselabs.org.codespot.com/files/LogViewer_view_Console_0.9.8.jpg">http://logviewer.eclipselabs.org.codespot.com/files/LogViewer_view_Conso...</a><br /><a href="http://logviewer.eclipselabs.org.codespot.com/files/LogViewer_open_Console_0.9.8.jpg">http://logviewer.eclipselabs.org.codespot.com/files/LogViewer_open_Conso...</a></p>
+<p>Changelog:<br />
+0.9.8.8 (2011-08-07)<br />
+* switched from SVN to GIT, please use GIT from now<br />
+* New update site URL: <a href="http://logviewer.eclipselabs.org.codespot.com/git/de.anbos.eclipse.logviewer.update/">http://logviewer.eclipselabs.org.codespot.com/git/de.anbos.eclipse.logvi...</a><br />
+* Issue 53 : Input of invalid regular expressions is possible in the rules preferences<br />
+* Issue 55 : Improve FileTail's exception handling<br />
+* Issue 56 : Error on Tail all action with already tailing document</p>
+<p>0.9.8.7 (2011-03-07)<br />
+Issue 32 : Translation (German translation added)<br />
+Issue 35 : Tail option's auto-refresh/scrolling is very slow - is unusable (added some small fixes)<br />
+Issue 38 : Cannot enter colors using Mac OS X<br />
+Issue 51 :	Provide possibility to open log file from the beginning on<br />
+Issue 52 : Using java5 jre on ubuntu throws error</p>
+<p>0.9.8.6 (2010-08-15)<br />
+Issue 43 : Null Pointer error in ResourceUtils?.getResource()<br />
+Issue 44 : Exception if opening binary file</p>
+<p>0.9.8.5 (2010-08-10)<br />
+Issue 42 : LogViewer? will not start up (isEmpty method is not available on Java5)<br />
+should be compatible with Java 5 (JRE 1.5) again</p>
+]]></body>
+      <created>1259957398</created>
+      <changed>1357933814</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/a/eclipselabs.org/p/logviewer/]]></homepageurl>
+      <image><![CDATA[http://logviewer.eclipselabs.org.codespot.com/files/LogViewer_view_File_0.9.8.jpg]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/LogViewer_view_File_0.9.8%5B1%5D.jpg?itok=_LNf31Ld]]></screenshot>
+      <version>0.9.8.8</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[anb0s]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4-3.8]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/a/eclipselabs.org/p/logviewer/issues/list]]></supporturl>
+      <updateurl><![CDATA[http://logviewer.eclipselabs.org.codespot.com/git/de.anbos.eclipse.logviewer.update/]]></updateurl>
+<ius>
+<iu>de.anbos.eclipse.logviewer.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

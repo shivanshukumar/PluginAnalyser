@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="487" name="Apollo for Eclipse" url="http://marketplace.eclipse.org/content/apollo-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+      </categories>
+            
+      <owner>Elizabeth.Grass</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Apollo for Eclipse[TM] is a robust and flexible modeling extension to Eclipse for developers and programmers to dynamically create and edit models alongside code. Fully synchronized roundtrip engineering for Java 5 and UML 2.1 provide insights into existing code, quality documentation and an exemplary means to draft and refine code. It is the first UML extension for Eclipse based on GMF, EMF and UML 2, and seamlessly integrates into the IDE. It is available as an RCP stand-alone tool or as an Eclipse 3.2 plug-in from <a href="http://www.gentleware.com">www.gentleware.com</a>.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Apollo for Eclipse[TM] is a robust and flexible modeling extension to Eclipse for developers and programmers to dynamically create and edit models alongside code. Fully synchronized roundtrip engineering for Java 5 and UML 2.1 provide insights into existing code, quality documentation and an exemplary means to draft and refine code. It is the first UML extension for Eclipse based on GMF, EMF and UML 2, and seamlessly integrates into the IDE. It is available as an RCP stand-alone tool or as an Eclipse 3.2 plug-in from <a href="http://www.gentleware.com">www.gentleware.com</a>.</p>
+]]></body>
+      <created>1182778708</created>
+      <changed>1259942465</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.gentleware.com/apollo.html]]></homepageurl>
+      <image><![CDATA[http://www.gentleware.com/fileadmin/media/logos/apollo.gif]]></image>
+      <version>3.0.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Gentleware AG]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3]]></eclipseversion>
+      <supporturl><![CDATA[http://forum.gentleware.com]]></supporturl>
+      <updateurl><![CDATA[http://apollo.gentleware.com/updatesite/]]></updateurl>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="43332" name="Entity Designer (Indigo version)" url="http://marketplace.eclipse.org/content/entity-designer-indigo-version">
+      <type>resource</type>
+      <categories>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+        <category id='36' name='Database Persistence' url='http://marketplace.eclipse.org/category/categories/database-persistence'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+      </categories>
+      <tags>
+        <tag id='64' name='Modeling' url='http://marketplace.eclipse.org/category/free-tagging/modeling'/>
+        <tag id='195' name='DSL' url='http://marketplace.eclipse.org/category/free-tagging/dsl'/>
+        <tag id='732' name='data' url='http://marketplace.eclipse.org/category/free-tagging/data'/>
+        <tag id='1252' name='obeo' url='http://marketplace.eclipse.org/category/free-tagging/obeo'/>
+        <tag id='2226' name='entity' url='http://marketplace.eclipse.org/category/free-tagging/entity'/>
+      </tags>
+      
+      <owner>Obeo  </owner>
+      <favorited>2</favorited>
+      <installstotal>658</installstotal>
+      <installsrecent>49</installsrecent>
+      <shortdescription><![CDATA[<p><b>Entity Designer</b> allows the modeling of business systems by focusing on the main issue: the modeling of data entities.<br />
+This module is particularly well suited for modeling JavaEE persistent entities.</p>
+<p>
+This module uses a dedicated Entity metamodel provided by Obeo Network community and it implements the following diagrams:</p>
+<ul><li>Block Hierarchy</li>
+<li>Entity Diagam</li>
+</ul><p><a href="http://marketplace.obeonetwork.com/module/entity"><br /><img src="http://dl.dropbox.com/u/22228046/Marketplace/entity/entity1.png" width="500px" /><br /></a>
+</p>
+<!--break--><p>
+This modeling tool can be used in conjunction with other designers: </p>
+<ul><li><a href="http://marketplace.obeonetwork.com/module/cinematic">Cinematc Designer</a> for UI cinematic</li>
+<li><a href="http://marketplace.obeonetwork.com/module/soa">SOA Designer</a> for services</li>
+<li><a href="http://marketplace.obeonetwork.com/module/graal">Graal Designer</a> for UI interaction (entry specifications from business specifiers)</li>
+</ul><p>
+You can also generates your application with your own generators or apply this ready-to-use Hibernate, JPA, JDBC generator: <a href="http://marketplace.obeonetwork.com/module/javaee-generators">Acceleo JavaEE Generators</a>.
+</p>
+<p>
+This designer is free (open-source with EPL license).<br />
+You can easily modify it with <a href="http://www.obeodesigner.com">Obeo Designer</a> <strong>to adapt each diagram to your needs</strong> or combine it to your own DSL. To start customizing this module, just <a href="http://www.obeodesigner.com/download">download a free trial version</a> of the architect edition and import the <a href="http://marketplace.obeonetwork.com/module/entity">source code</a> of Entity Designer from Github.
+</p>
+]]></shortdescription>
+      <body><![CDATA[<p><b>Entity Designer</b> allows the modeling of business systems by focusing on the main issue: the modeling of data entities.<br />
+This module is particularly well suited for modeling JavaEE persistent entities.</p>
+<p>
+This module uses a dedicated Entity metamodel provided by Obeo Network community and it implements the following diagrams:</p>
+<ul><li>Block Hierarchy</li>
+<li>Entity Diagam</li>
+</ul><p><a href="http://marketplace.obeonetwork.com/module/entity"><br /><img src="http://dl.dropbox.com/u/22228046/Marketplace/entity/entity1.png" width="500px" /><br /></a>
+</p>
+<!--break--><p>
+This modeling tool can be used in conjunction with other designers: </p>
+<ul><li><a href="http://marketplace.obeonetwork.com/module/cinematic">Cinematc Designer</a> for UI cinematic</li>
+<li><a href="http://marketplace.obeonetwork.com/module/soa">SOA Designer</a> for services</li>
+<li><a href="http://marketplace.obeonetwork.com/module/graal">Graal Designer</a> for UI interaction (entry specifications from business specifiers)</li>
+</ul><p>
+You can also generates your application with your own generators or apply this ready-to-use Hibernate, JPA, JDBC generator: <a href="http://marketplace.obeonetwork.com/module/javaee-generators">Acceleo JavaEE Generators</a>.
+</p>
+<p>
+This designer is free (open-source with EPL license).<br />
+You can easily modify it with <a href="http://www.obeodesigner.com">Obeo Designer</a> <strong>to adapt each diagram to your needs</strong> or combine it to your own DSL. To start customizing this module, just <a href="http://www.obeodesigner.com/download">download a free trial version</a> of the architect edition and import the <a href="http://marketplace.obeonetwork.com/module/entity">source code</a> of Entity Designer from Github.
+</p>
+]]></body>
+      <created>1302079645</created>
+      <changed>1351071862</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://marketplace.obeonetwork.com/module/entity]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_ON-110x80_11.png?itok=Cmw8MrDe]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/entity-main-image.png?itok=AHbK_e8l]]></screenshot>
+      <version>2.3</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Obeo Network]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7.2]]></eclipseversion>
+      <supporturl><![CDATA[http://marketplace.obeonetwork.com/module/entity#community]]></supporturl>
+      <updateurl><![CDATA[http://marketplace.obeonetwork.com/updates/od6/]]></updateurl>
+<ius>
+<iu>org.obeonetwork.dsl.feature.is</iu>
+<iu>org.obeonetwork.dsl.feature.is.design</iu>
+<iu>fr.obeo.mda.license.feature.group</iu>
+<iu>org.obeonetwork.dsl.feature.entity</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

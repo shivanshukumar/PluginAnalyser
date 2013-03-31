@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="34729" name="pex" url="http://marketplace.eclipse.org/content/pex">
+      <type>resource</type>
+      <categories>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+            
+      <owner>hervenm</owner>
+      <favorited>0</favorited>
+      <installstotal>60</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>An editor that visualizes and marks potential problems in the output from a Postgresql EXPLAIN ANALYZE. Idea is based on the site explain.depesz.com</p>
+]]></shortdescription>
+      <body><![CDATA[<p>An editor that visualizes and marks potential problems in the output from a Postgresql EXPLAIN ANALYZE. Idea is based on the site explain.depesz.com</p>
+]]></body>
+      <created>1298532759</created>
+      <changed>1300270942</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/pex/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/pex.png?itok=QYE52XVA]]></screenshot>
+      <version>1.0.7</version>
+      <license>EPL</license>
+      <companyname><![CDATA[pex]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5, 3.6]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://pex.googlecode.com/svn/update/site.xml]]></updateurl>
+<ius>
+<iu>PexFeature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

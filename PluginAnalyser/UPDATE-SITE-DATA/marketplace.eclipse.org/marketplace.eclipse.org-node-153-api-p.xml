@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="153" name="WebCharts3D plugin" url="http://marketplace.eclipse.org/content/webcharts3d-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+      </categories>
+            
+      <owner>vadims</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>WebCharts3D is 100% Java client-side (SWT, Swing) and server-side (JSP, JSF) charting package. WebCharts3D plugin for Eclipse is a full-featured Chart Designer that allows you to develop the chart, view XML styles and model and generate all required code for any platform. The plugin supports standard WebCharts3D project files and can be used instead of the stand-alone WebCharts3D Designer.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>WebCharts3D is 100% Java client-side (SWT, Swing) and server-side (JSP, JSF) charting package. WebCharts3D plugin for Eclipse is a full-featured Chart Designer that allows you to develop the chart, view XML styles and model and generate all required code for any platform. The plugin supports standard WebCharts3D project files and can be used instead of the stand-alone WebCharts3D Designer.</p>
+]]></body>
+      <created>1119489245</created>
+      <changed>1259778521</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.webcharts3d.com/website/WebCharts50/products/eclipse.jsp]]></homepageurl>
+      <image><![CDATA[http://www.webcharts3d.com/website/WebCharts50/eclipse/eclipse_logo.gif]]></image>
+      <version>2.1.0.2256</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.x]]></eclipseversion>
+      <supporturl><![CDATA[http://www.wecharts3d.com]]></supporturl>
+      <updateurl><![CDATA[http://www.webcharts3d.com/website/WebCharts50/eclipse]]></updateurl>
+    </node>
+    </marketplace>
+    

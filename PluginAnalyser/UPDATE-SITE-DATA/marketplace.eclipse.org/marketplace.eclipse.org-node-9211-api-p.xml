@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="9211" name="Rally Mylyn Connector" url="http://marketplace.eclipse.org/content/rally-mylyn-connector">
+      <type>resource</type>
+      <categories>
+        <category id='38' name='Mylyn Connectors' url='http://marketplace.eclipse.org/category/categories/mylyn-connectors'/>
+      </categories>
+      <tags>
+        <tag id='1042' name='Team Development' url='http://marketplace.eclipse.org/category/free-tagging/team-development'/>
+      </tags>
+      
+      <owner>Kevin</owner>
+      <favorited>4</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[]]></shortdescription>
+      <body><![CDATA[]]></body>
+      <created>1283355350</created>
+      <changed>1283434642</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://wiki.rallydev.com/display/rlyintgstging/Eclipse]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>3.4</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Rally Software]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4, 3.5, 3.6]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://www.rallydev.com/integrations/eclipse/update/v3.4/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

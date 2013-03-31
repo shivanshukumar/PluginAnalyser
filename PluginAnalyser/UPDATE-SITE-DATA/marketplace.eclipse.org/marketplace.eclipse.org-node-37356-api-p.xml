@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="37356" name="Kalistick" url="http://marketplace.eclipse.org/content/kalistick">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='39' name='Reporting' url='http://marketplace.eclipse.org/category/categories/reporting'/>
+      </categories>
+      <tags>
+        <tag id='95' name='code review' url='http://marketplace.eclipse.org/category/free-tagging/code-review'/>
+        <tag id='131' name='quality' url='http://marketplace.eclipse.org/category/free-tagging/quality'/>
+        <tag id='210' name='metrics' url='http://marketplace.eclipse.org/category/free-tagging/metrics'/>
+        <tag id='242' name='code analysis' url='http://marketplace.eclipse.org/category/free-tagging/code-analysis'/>
+        <tag id='1716' name='kalistick' url='http://marketplace.eclipse.org/category/free-tagging/kalistick'/>
+      </tags>
+      
+      <owner>Kalistick</owner>
+      <favorited>3</favorited>
+      <installstotal>31</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>This plugin provides integration for <strong>Kalistick</strong> platform.</p>
+<p>Kalistick platform is a cloud-based service which aims to speed up software delivery, by monitoring code quality and business changes for effective testing.</p>
+<p>Kalistick plugin for Eclipse allows you to submit analysis on Kalistick platform and see results inside your code.</p>
+<p>All developers of your team will have access to analysis results. You will be able to assign violations to them or deactivate violations so they do not appear anymore. Developers will mark violations as fixed to make correction process easier.</p>
+<p>You are able to create a free account in less than one minute, see <a href="http://www.kalistick.com">www.kalistick.com</a> for more information.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This plugin provides integration for <strong>Kalistick</strong> platform.</p>
+<p>Kalistick platform is a cloud-based service which aims to speed up software delivery, by monitoring code quality and business changes for effective testing.</p>
+<p>Kalistick plugin for Eclipse allows you to submit analysis on Kalistick platform and see results inside your code.</p>
+<p>All developers of your team will have access to analysis results. You will be able to assign violations to them or deactivate violations so they do not appear anymore. Developers will mark violations as fixed to make correction process easier.</p>
+<p>You are able to create a free account in less than one minute, see <a href="http://www.kalistick.com">www.kalistick.com</a> for more information.</p>
+]]></body>
+      <created>1299677658</created>
+      <changed>1301492608</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://doc.kalistick.com/display/help/Eclipse+Plugin]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo-110x80.png?itok=N8sBbiLo]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/KalistickEclipsePlugin.png?itok=JLeSeU8N]]></screenshot>
+      <version>2.2.3</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[Kalistick]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3+]]></eclipseversion>
+      <supporturl><![CDATA[http://support.kalistick.com]]></supporturl>
+      <updateurl><![CDATA[http://download.kalistick.com/eclipse/update]]></updateurl>
+<ius>
+<iu>com.kalistick.plugins.eclipse</iu>
+</ius>
+    </node>
+    </marketplace>
+    

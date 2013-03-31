@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="962" name="Goanna Studio - Static Analysis for C/C++" url="http://marketplace.eclipse.org/content/goanna-studio-static-analysis-cc">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+      <tags>
+        <tag id='57' name='c' url='http://marketplace.eclipse.org/category/free-tagging/c'/>
+        <tag id='58' name='c++' url='http://marketplace.eclipse.org/category/free-tagging/c-0'/>
+        <tag id='211' name='static analysis' url='http://marketplace.eclipse.org/category/free-tagging/static-analysis'/>
+        <tag id='241' name='c/c++' url='http://marketplace.eclipse.org/category/free-tagging/c/c'/>
+        <tag id='242' name='code analysis' url='http://marketplace.eclipse.org/category/free-tagging/code-analysis'/>
+      </tags>
+      
+      <owner>James Campbell</owner>
+      <favorited>4</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><b>Create Code Confidence with Goanna Studio.</b></p>
+<p><p>Goanna Studio is the leading next generation static analysis tool for C/C++ source code that finds deep code deficiencies automatically at development time.<p></p>
+<p><p>Goanna Studio is a fast, scalable and precise static code analysis solution that detects bugs and other software vulnerabilities automatically at development time, saving money and helping keep product launch timetables on track.</p></p>
+<p><p>Available online for a FREE trial from Red Lizard Software <a href="http://www.RedLizards.com.</p>">www.RedLizards.com.</p></a></p>
+<p><b>New:</b><br />
+<ul><br />
+ <li> even more intuitive GUI </li><br />
+ <li> whole-program analysis </li><br />
+ <li> over 100 check classes </li><br />
+ <li> incremental analysis</li><br />
+ <li> analyze single files or whole projects </li><br />
+</ul></p>
+<p><p>Targeted for projects managed by CDT 4.0 or higher.</p></p>
+<p><p>Why Goanna Studio? Because it blends in with its environment and eats bugs.</p></p>
+<p><b>About Red Lizard Software -- <a href="http://www.RedLizards.com</b>">www.RedLizards.com</b></a> <br><br />
+Red Lizard Software is the first company to combine the technologies of static analysis and model checking to create a unique static analysis solution. The analysis is performed quickly, does not require test cases or even fully developed code, reports bugs precisely and has one unique goal: bringing higher quality software to market faster.<b></p>
+]]></shortdescription>
+      <body><![CDATA[<p><b>Create Code Confidence with Goanna Studio.</b></p>
+<p><p>Goanna Studio is the leading next generation static analysis tool for C/C++ source code that finds deep code deficiencies automatically at development time.<p></p>
+<p><p>Goanna Studio is a fast, scalable and precise static code analysis solution that detects bugs and other software vulnerabilities automatically at development time, saving money and helping keep product launch timetables on track.</p></p>
+<p><p>Available online for a FREE trial from Red Lizard Software <a href="http://www.RedLizards.com.</p>">www.RedLizards.com.</p></a></p>
+<p><b>New:</b><br />
+<ul><br />
+ <li> even more intuitive GUI </li><br />
+ <li> whole-program analysis </li><br />
+ <li> over 100 check classes </li><br />
+ <li> incremental analysis</li><br />
+ <li> analyze single files or whole projects </li><br />
+</ul></p>
+<p><p>Targeted for projects managed by CDT 4.0 or higher.</p></p>
+<p><p>Why Goanna Studio? Because it blends in with its environment and eats bugs.</p></p>
+<p><b>About Red Lizard Software -- <a href="http://www.RedLizards.com</b>">www.RedLizards.com</b></a> <br><br />
+Red Lizard Software is the first company to combine the technologies of static analysis and model checking to create a unique static analysis solution. The analysis is performed quickly, does not require test cases or even fully developed code, reports bugs precisely and has one unique goal: bringing higher quality software to market faster.<b></p>
+]]></body>
+      <created>1246286537</created>
+      <changed>1308120640</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.redlizards.com/download.html?view=download]]></homepageurl>
+      <image><![CDATA[http://www.redlizards.com/goannadocs/Goanna-logo.gif]]></image>
+      <version>2.4</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Red Lizard Software]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4 or higher, CDT 4.0 or higher]]></eclipseversion>
+      <supporturl><![CDATA[http://www.redlizards.com/support.html]]></supporturl>
+      <updateurl><![CDATA[http://www.redlizards.com]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

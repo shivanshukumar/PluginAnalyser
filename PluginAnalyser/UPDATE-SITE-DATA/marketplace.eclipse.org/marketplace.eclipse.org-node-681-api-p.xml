@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="681" name="Q for Eclipse" url="http://marketplace.eclipse.org/content/q-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='405' name='maven' url='http://marketplace.eclipse.org/category/free-tagging/maven'/>
+        <tag id='407' name='integration' url='http://marketplace.eclipse.org/category/free-tagging/integration'/>
+      </tags>
+      
+      <owner>Abel Muiño</owner>
+      <favorited>3</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><strong>Please note that q4e source code has been donated to the <a href="http://eclipse.org/iam">Eclipse IAM project</a> and recent versions are published under that name. You can <a href="http://marketplace.eclipse.org/content/eclipse-iam">find it on the marketplace too</a>.</strong></p>
+<p>Q is an Apache Maven plugin for Eclipse that will let you use Maven 2 from the Eclipse IDE</p>
+<p>This plugin better integrates the development and building processes by bringing Maven into the Integrated Development Environment (IDE).</p>
+<p>As a bonus, you also get support for Web development with WTP and the ability to analyze complex dependencies on your builds.</p>
+]]></shortdescription>
+      <body><![CDATA[<p><strong>Please note that q4e source code has been donated to the <a href="http://eclipse.org/iam">Eclipse IAM project</a> and recent versions are published under that name. You can <a href="http://marketplace.eclipse.org/content/eclipse-iam">find it on the marketplace too</a>.</strong></p>
+<p>Q is an Apache Maven plugin for Eclipse that will let you use Maven 2 from the Eclipse IDE</p>
+<p>This plugin better integrates the development and building processes by bringing Maven into the Integrated Development Environment (IDE).</p>
+<p>As a bonus, you also get support for Web development with WTP and the ability to analyze complex dependencies on your builds.</p>
+]]></body>
+      <created>1209392096</created>
+      <changed>1274203402</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/q4e/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>0.6.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Q for Eclipse (q4e)]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.3, 3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://groups.google.com/group/q4e-users]]></supporturl>
+      <updateurl><![CDATA[http://q4e.googlecode.com/svn/trunk/updatesite/]]></updateurl>
+    </node>
+    </marketplace>
+    

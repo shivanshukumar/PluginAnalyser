@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1200" name="MintJams Content Management" url="http://marketplace.eclipse.org/content/mintjams-content-management">
+      <type>resource</type>
+      <categories>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+        <category id='40' name='Search' url='http://marketplace.eclipse.org/category/categories/search'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='162' name='osgi' url='http://marketplace.eclipse.org/category/free-tagging/osgi'/>
+        <tag id='182' name='collaboration' url='http://marketplace.eclipse.org/category/free-tagging/collaboration'/>
+        <tag id='313' name='ftp' url='http://marketplace.eclipse.org/category/free-tagging/ftp'/>
+        <tag id='375' name='Web Services' url='http://marketplace.eclipse.org/category/free-tagging/web-services'/>
+        <tag id='468' name='MintJams' url='http://marketplace.eclipse.org/category/free-tagging/mintjams'/>
+      </tags>
+      
+      <owner>Kenichi Fukuda</owner>
+      <favorited>3</favorited>
+      <installstotal>323</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><a href="http://marketplace.eclipse.org/node/390933">MintJams Content Management Tools v2.0.6</a> released.</p>
+<p>v1.3:<br />
+- Support for Full-Text search in WebDAV, FTP, Cloud</p>
+<p>v1.2.1:<br />
+- Support for Versioning Extensions to WebDAV</p>
+<p>The MintJams Content Management is an innovative content management and storage management tool. MintJams Content Management enables you to connect, access and manage local drive, WebDAV storage, and FTP storage using same user interface in powerful new ways. Designed to meet the needs of today's business, MintJams Content Management helps you get more done -- easier, faster, better.</p>
+<p>Content Management is MintJams Cloud Desktop Tools family. MintJams Cloud Desktop Tools is Low-Cost, Easy-to-Use desktop application for online storage users.</p>
+]]></shortdescription>
+      <body><![CDATA[<p><a href="http://marketplace.eclipse.org/node/390933">MintJams Content Management Tools v2.0.6</a> released.</p>
+<p>v1.3:<br />
+- Support for Full-Text search in WebDAV, FTP, Cloud</p>
+<p>v1.2.1:<br />
+- Support for Versioning Extensions to WebDAV</p>
+<p>The MintJams Content Management is an innovative content management and storage management tool. MintJams Content Management enables you to connect, access and manage local drive, WebDAV storage, and FTP storage using same user interface in powerful new ways. Designed to meet the needs of today's business, MintJams Content Management helps you get more done -- easier, faster, better.</p>
+<p>Content Management is MintJams Cloud Desktop Tools family. MintJams Cloud Desktop Tools is Low-Cost, Easy-to-Use desktop application for online storage users.</p>
+]]></body>
+      <created>1273117720</created>
+      <changed>1360707506</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://marketplace.eclipse.org/node/390933]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/cdt-logo.jpg?itok=NY-8HOsK]]></image>
+      <version>1.3</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[MintJams Inc.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://twitter.com/mintjamsinc]]></supporturl>
+      <updateurl><![CDATA[http://www.mintjams.co.jp/updates/]]></updateurl>
+<ius>
+<iu>jp.co.mintjams.cm.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

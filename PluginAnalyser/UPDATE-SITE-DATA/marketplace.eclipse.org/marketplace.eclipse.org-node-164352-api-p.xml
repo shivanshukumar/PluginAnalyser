@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="164352" name="Selection Explorer Eclipse Plug-in" url="http://marketplace.eclipse.org/content/selection-explorer-eclipse-plug">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='327' name='eclipse' url='http://marketplace.eclipse.org/category/free-tagging/eclipse'/>
+        <tag id='2368' name='selection' url='http://marketplace.eclipse.org/category/free-tagging/selection'/>
+      </tags>
+      
+      <owner>Sandip Chitale</owner>
+      <favorited>2</favorited>
+      <installstotal>163</installstotal>
+      <installsrecent>2</installsrecent>
+      <shortdescription><![CDATA[<p>This Selection Explorer feature shows information about:</p>
+<p>  - Active Part (this is somewhat similar to Plug-in spy action)<br />
+    - Part name<br />
+    - Part Id<br />
+    - Class implementing the part<br />
+    - Super class of the class implementing the part<br />
+    - Interfaces<br />
+    - Contributing Plugin<br />
+  - Active Selection<br />
+    - Class of selection objects<br />
+    - Superclass of selection object<br />
+    - Interfaces<br />
+    - Adapted Types<br />
+    - toString() value<br />
+  - Active Contexts<br />
+  - Active ActionSet Contexts</p>
+]]></shortdescription>
+      <body><![CDATA[<p>This Selection Explorer feature shows information about:</p>
+<p>  - Active Part (this is somewhat similar to Plug-in spy action)<br />
+    - Part name<br />
+    - Part Id<br />
+    - Class implementing the part<br />
+    - Super class of the class implementing the part<br />
+    - Interfaces<br />
+    - Contributing Plugin<br />
+  - Active Selection<br />
+    - Class of selection objects<br />
+    - Superclass of selection object<br />
+    - Interfaces<br />
+    - Adapted Types<br />
+    - toString() value<br />
+  - Active Contexts<br />
+  - Active ActionSet Contexts</p>
+]]></body>
+      <created>1323110262</created>
+      <changed>1323183687</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/sandipchitaleseclipseplugins/#Selection_Explorer]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/SelectionExplorer_0.png?itok=JIBqTZs-]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/SelectionExplorer.png?itok=t-cAM7AR]]></screenshot>
+      <version>1.0.2</version>
+      <license>BSD</license>
+      <companyname><![CDATA[Sandip Chitale]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.7,3.7.1,3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/sandipchitaleseclipseplugins/issues/list]]></supporturl>
+      <updateurl><![CDATA[http://sandipchitaleseclipseplugins.googlecode.com/svn/trunk/SelectionExplorerUpdateSite]]></updateurl>
+<ius>
+<iu>SelectionExplorerFeature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

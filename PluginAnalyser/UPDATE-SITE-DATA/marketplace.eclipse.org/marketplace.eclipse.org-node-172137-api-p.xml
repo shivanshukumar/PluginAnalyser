@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="172137" name="Zend Studio - Eclipse based PHP IDE" url="http://marketplace.eclipse.org/content/zend-studio-eclipse-based-php-ide">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='43' name='PHP' url='http://marketplace.eclipse.org/category/free-tagging/php'/>
+        <tag id='202' name='html' url='http://marketplace.eclipse.org/category/free-tagging/html'/>
+        <tag id='810' name='javascript' url='http://marketplace.eclipse.org/category/free-tagging/javascript'/>
+      </tags>
+      
+      <owner>Orly Maman</owner>
+      <favorited>2</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Zend Studio is the leading Integrated Development Environment (IDE) built on the Eclipse platform. Incorporating all the capabilities of the latest Eclipse release, features like refactoring, code generation, code assist and semantic analysis combine to enable rapid application development on both the server side (in PHP) and the browser side (in JavaScript). Zend Studio also makes it simple to develop in a production-like environment by integrating with VMware Workstation for running and debugging PHP applications.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Zend Studio is the leading Integrated Development Environment (IDE) built on the Eclipse platform. Incorporating all the capabilities of the latest Eclipse release, features like refactoring, code generation, code assist and semantic analysis combine to enable rapid application development on both the server side (in PHP) and the browser side (in JavaScript). Zend Studio also makes it simple to develop in a production-like environment by integrating with VMware Workstation for running and debugging PHP applications.</p>
+]]></body>
+      <created>1324332267</created>
+      <changed>1344014172</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.zend.com/en/products/studio/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Zend-Studio-logo-110x80px.png?itok=wqknbTBu]]></image>
+      <version></version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Zend Technologies]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://www.zend.com/en/support-center/]]></supporturl>
+      <updateurl><![CDATA[http://downloads.zend.com/studio-eclipse/updates/9_0]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

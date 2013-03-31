@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="870" name="CollabNet Desktop - Eclipse Edition" url="http://marketplace.eclipse.org/content/collabnet-desktop-eclipse-edition">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='38' name='Mylyn Connectors' url='http://marketplace.eclipse.org/category/categories/mylyn-connectors'/>
+        <category id='26' name='SCM' url='http://marketplace.eclipse.org/taxonomy/term/26'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+      </categories>
+      <tags>
+        <tag id='44' name='svn' url='http://marketplace.eclipse.org/category/free-tagging/svn'/>
+        <tag id='46' name='team provider' url='http://marketplace.eclipse.org/category/free-tagging/team-provider'/>
+        <tag id='88' name='mylyn' url='http://marketplace.eclipse.org/category/free-tagging/mylyn'/>
+        <tag id='367' name='teamforge' url='http://marketplace.eclipse.org/category/free-tagging/teamforge'/>
+        <tag id='368' name='collabnet' url='http://marketplace.eclipse.org/category/free-tagging/collabnet'/>
+      </tags>
+      
+      <owner>Mark Phippard</owner>
+      <favorited>14</favorited>
+      <installstotal>5399</installstotal>
+      <installsrecent>204</installsrecent>
+      <shortdescription><![CDATA[<p>This open source integration enables developers using Eclipse to access the rich features and functionality of the CollabNet TeamForge™ ALM platform and the Subversion software configuration management (SCM) tool from their IDE.   </p>
+<p>CollabNet Desktop connects Eclipse and Subversion through Subclipse.   </p>
+<p>CollabNet Desktop – Eclipse Edition features substantial ease-of-use innovations and deeper integration between IDEs and the CollabNet products than ever before. This new version of the desktops increase developer productivity with seamless integration and an all-new graphical point-and-click interface.  Associations between pieces of code, or between code and defects are now made with drag-and-drop precision, eliminating the need for error-prone re-typing or cutting and pasting of defect numbers.  Multiple issue and bug trackers are also supported for end-to-end collaboration between developers and testers for defect management.</p>
+<p>Distributed ALM from you Desktop</p>
+<p>-- Source Code Management: access repositories and perform all Subversion-related activities with support of  a powerful interface for merge tracking, graphical conflict resolution, and tree conflict handling.<br />
+--  Requirements, Issue Tracking, Project Management, Collaboration: easily open requirements documents, link code changes to issues, manage timelines, and search discussion forums and wikis across projects.<br />
+--  Continuous Build & Test Integration: set the rules that drive build behavior and alerts. Access issues logged automatically to your issue tracking system for unsuccessful builds or manage file releases from successful builds.<br />
+-- Lab Management: dynamically provision build and test servers right from your IDE using a graphical interface.  Manage resources in a private or a public cloud.</p>
+<p>Need a Subversion server, too? Checkout <a href="http://www.open.collab.net/downloads/subversion?cid=empcd">CollabNet Subversion Edge</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>This open source integration enables developers using Eclipse to access the rich features and functionality of the CollabNet TeamForge™ ALM platform and the Subversion software configuration management (SCM) tool from their IDE.   </p>
+<p>CollabNet Desktop connects Eclipse and Subversion through Subclipse.   </p>
+<p>CollabNet Desktop – Eclipse Edition features substantial ease-of-use innovations and deeper integration between IDEs and the CollabNet products than ever before. This new version of the desktops increase developer productivity with seamless integration and an all-new graphical point-and-click interface.  Associations between pieces of code, or between code and defects are now made with drag-and-drop precision, eliminating the need for error-prone re-typing or cutting and pasting of defect numbers.  Multiple issue and bug trackers are also supported for end-to-end collaboration between developers and testers for defect management.</p>
+<p>Distributed ALM from you Desktop</p>
+<p>-- Source Code Management: access repositories and perform all Subversion-related activities with support of  a powerful interface for merge tracking, graphical conflict resolution, and tree conflict handling.<br />
+--  Requirements, Issue Tracking, Project Management, Collaboration: easily open requirements documents, link code changes to issues, manage timelines, and search discussion forums and wikis across projects.<br />
+--  Continuous Build & Test Integration: set the rules that drive build behavior and alerts. Access issues logged automatically to your issue tracking system for unsuccessful builds or manage file releases from successful builds.<br />
+-- Lab Management: dynamically provision build and test servers right from your IDE using a graphical interface.  Manage resources in a private or a public cloud.</p>
+<p>Need a Subversion server, too? Checkout <a href="http://www.open.collab.net/downloads/subversion?cid=empcd">CollabNet Subversion Edge</a></p>
+]]></body>
+      <created>1236008103</created>
+      <changed>1351780250</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.open.collab.net/products/desktops/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/collabnet-logo.png?itok=wZR367Ck]]></image>
+      <version>3.5.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[CollabNet, Inc.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[(3.3, 3.4) 3.5, 3.6, 3.7, 3.8, 4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://desktop-eclipse.open.collab.net/servlets/ProjectProcess?pageID=3794]]></supporturl>
+      <updateurl><![CDATA[http://downloads.open.collab.net/eclipse/update-site/e3.8]]></updateurl>
+<ius>
+<iu>com.collabnet.desktop.feature.feature.group</iu>
+<iu>com.collabnet.gerrit.feature.feature.group</iu>
+<iu>com.collabnet.git.feature.feature.group</iu>
+<iu>com.collabnet.reviewboard.feature.feature.group</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="129467" name="Testdroid Recorder" url="http://marketplace.eclipse.org/content/testdroid-recorder">
+      <type>resource</type>
+      <categories>
+        <category id='1964' name='Application Development Frameworks' url='http://marketplace.eclipse.org/category/categories/application-development-frameworks'/>
+        <category id='1974' name='Mobile and Device Development' url='http://marketplace.eclipse.org/category/categories/mobile-and-device-development'/>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='408' name='android' url='http://marketplace.eclipse.org/category/free-tagging/android'/>
+        <tag id='2240' name='robotium' url='http://marketplace.eclipse.org/category/free-tagging/robotium'/>
+        <tag id='2241' name='automated testing' url='http://marketplace.eclipse.org/category/free-tagging/automated-testing'/>
+        <tag id='2242' name='testdroid' url='http://marketplace.eclipse.org/category/free-tagging/testdroid'/>
+        <tag id='2243' name='monkeyrunner' url='http://marketplace.eclipse.org/category/free-tagging/monkeyrunner'/>
+      </tags>
+      
+      <owner>Bitbar Technologies</owner>
+      <favorited>3</favorited>
+      <installstotal>760</installstotal>
+      <installsrecent>17</installsrecent>
+      <shortdescription><![CDATA[<p>Testdroid Recorder enables easy automated UI testing of Android applications. Use your application to record test cases and playback on any device Android device or emulator.</p>
+<p>Testdroid Recorder users need a Testdroid Cloud account. Signing up to Testdroid Cloud is free and can be done here: <a href="http://cloud.testdroid.com/web/home">http://cloud.testdroid.com/web/home</a></p>
+<p><strong>REQUIRED: Make sure you have Google Android Development Tools (ADT) installed in Eclipse.</strong>  Installation instructions: <a href="http://developer.android.com/sdk/eclipse-adt.html#installing">http://developer.android.com/sdk/eclipse-adt.html#installing</a></p>
+<p><strong>Automatically configures your Android Test project for Robotium use</strong><br />
+Testdroid Recorder takes your Android Test project and automatically generates all files needed to set up a working Robotium test project. This means that you will have your first automated Android tests in matter of minutes.</p>
+<p><strong>Recording test cases without application source code (just APK is needed)</strong><br />
+Capability to record test cases without the application source code. Take almost any APK file and create Robotium tests for that APK by using Testdroid Recorder.</p>
+<p><strong>HTML applications support</strong><br />
+Testdroid Recorder supports WebViews recording and playback, like PhoneGap apps or hybrid apps.</p>
+<p><strong>Assertions</strong><br />
+Button “Smart Asserts” can help you to control, what is presented on the screen, which controls (views) are enabled or disabled at the specific time.</p>
+<p><strong>Manual command edition</strong><br />
+Command creator and editor helps you insert your own test commands between recorded test steps and edit them if you need. This is very useful in cases where Testdroid Recorder, for some reason, does not correctly recognize some specific event or if you would like to add steps and validations that cannot be captured during normal recording process. Command creator and command editor you can used with right click menu during recording.</p>
+<p>For more information about Testdroid Recorder, visit:<br /><a href="http://help.testdroid.com/customer/portal/articles/682679-testdroid-recorder">http://help.testdroid.com/customer/portal/articles/682679-testdroid-reco...</a></p>
+<p><strong>New features in last releases:</strong><br />
+Version 3.7:<br />
+A streamlined Run in Cloud feature, update Recorder button, report any problems in every wizard page with click of a button. More details about features and bug fixes you can find on: <a href="http://testdroid.com/testdroid/3834/testdroid-recorder-3-7-is-out-with-incredible-ux-smoothness">http://testdroid.com/testdroid/3834/testdroid-recorder-3-7-is-out-with-i...</a></p>
+<p>Version 3.6:<br />
+Tesdroid Cloud Results, extra permissions in Testdroid Tools, icon of application during run in cloud. More details about features and bug fixes you can find on: <a href="http://testdroid.com/testdroid/3791/testdroid-recorder-3-6-is-out">http://testdroid.com/testdroid/3791/testdroid-recorder-3-6-is-out</a></p>
+<p>Version 3.5:<br />
+Testdroid Tools in context menu. More details about features and bug fixes you can find on: <a href="http://testdroid.com/testdroid/3704/testdroid-recorder-3-5-is-out">http://testdroid.com/testdroid/3704/testdroid-recorder-3-5-is-out</a></p>
+<p>Version 3.4:<br />
+Recording performance improved. More details about features and bug fixes you can find on: <a href="http://testdroid.com/testdroid/3598/testdroid-recorder-3-4-is-out">http://testdroid.com/testdroid/3598/testdroid-recorder-3-4-is-out</a></p>
+<p>Version 3.3:<br />
+New wizard for recording mobile websites, couple of bugs fixed. More details about features and bug fixes you can find on:<br /><a href="http://testdroid.com/testdroid/3388/testdroid-recorder-3-3-is-out">http://testdroid.com/testdroid/3388/testdroid-recorder-3-3-is-out</a></p>
+<p>Version 3.2:<br />
+Bunch of bug fixes. More details about features and bug fixes you can find on:<br /><a href="http://testdroid.com/testdroid/3267/testdroid-recorder-3-2-is-out">http://testdroid.com/testdroid/3267/testdroid-recorder-3-2-is-out</a></p>
+<p>Version 3.1:<br />
+Running android jUnit test from apk(without sources of application project), optimized WebView handling by playback test, additional manual command(switch off/on wifi on device). More details about features and bug fixes you can find on:<br /><a href="http://testdroid.com/testdroid/3043/testdroid-recorder-3-1-is-out">http://testdroid.com/testdroid/3043/testdroid-recorder-3-1-is-out</a></p>
+<p>Version 3.0:<br />
+Running instatest from either application or apk, sending eclipse log file from preference page. More details about features and bug fixes you can find on:<br /><a href="http://testdroid.com/testdroid/2969/testdroid-recorder-3-0-is-out">http://testdroid.com/testdroid/2969/testdroid-recorder-3-0-is-out</a></p>
+<p>Version 2.9:<br />
+Sleeps adjuster for cutting too long sleeps, taking screenshot from openGL applications, informing user about lacks of usable elements in application's manifest. More details about features and bug fixes you can find on: <a href="http://testdroid.com/testdroid/2759/testdroid-recorder-2-9-is-out-2">http://testdroid.com/testdroid/2759/testdroid-recorder-2-9-is-out-2</a></p>
+<p>Version 2.8:<br />
+Support clicks on Edit Texts, Metadata file, which improves displaying results in Testdroid Cloud, few other commands for manual usage. More details you can find on: <a href="http://testdroid.com/testdroid/2560/testdroid-recorder-2-8-is-out">http://testdroid.com/testdroid/2560/testdroid-recorder-2-8-is-out</a></p>
+<p>Version 2.7:<br />
+Support for multipath drags. Bypassing APK rebuilding when recording from APK.<br />
+Full list of features and bug fixes can be found here: <a href="http://testdroid.com/testdroid/2433/testdroid-recorder-2-7-is-out">http://testdroid.com/testdroid/2433/testdroid-recorder-2-7-is-out</a></p>
+<p>Version 2.6:<br />
+Support for changing device locale during tests for testing localized apps<br />
+For other new features, please check: <a href="http://testdroid.com/testdroid/2311/testdroid-recorder-2-6-is-out">http://testdroid.com/testdroid/2311/testdroid-recorder-2-6-is-out</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Testdroid Recorder enables easy automated UI testing of Android applications. Use your application to record test cases and playback on any device Android device or emulator.</p>
+<p>Testdroid Recorder users need a Testdroid Cloud account. Signing up to Testdroid Cloud is free and can be done here: <a href="http://cloud.testdroid.com/web/home">http://cloud.testdroid.com/web/home</a></p>
+<p><strong>REQUIRED: Make sure you have Google Android Development Tools (ADT) installed in Eclipse.</strong>  Installation instructions: <a href="http://developer.android.com/sdk/eclipse-adt.html#installing">http://developer.android.com/sdk/eclipse-adt.html#installing</a></p>
+<p><strong>Automatically configures your Android Test project for Robotium use</strong><br />
+Testdroid Recorder takes your Android Test project and automatically generates all files needed to set up a working Robotium test project. This means that you will have your first automated Android tests in matter of minutes.</p>
+<p><strong>Recording test cases without application source code (just APK is needed)</strong><br />
+Capability to record test cases without the application source code. Take almost any APK file and create Robotium tests for that APK by using Testdroid Recorder.</p>
+<p><strong>HTML applications support</strong><br />
+Testdroid Recorder supports WebViews recording and playback, like PhoneGap apps or hybrid apps.</p>
+<p><strong>Assertions</strong><br />
+Button “Smart Asserts” can help you to control, what is presented on the screen, which controls (views) are enabled or disabled at the specific time.</p>
+<p><strong>Manual command edition</strong><br />
+Command creator and editor helps you insert your own test commands between recorded test steps and edit them if you need. This is very useful in cases where Testdroid Recorder, for some reason, does not correctly recognize some specific event or if you would like to add steps and validations that cannot be captured during normal recording process. Command creator and command editor you can used with right click menu during recording.</p>
+<p>For more information about Testdroid Recorder, visit:<br /><a href="http://help.testdroid.com/customer/portal/articles/682679-testdroid-recorder">http://help.testdroid.com/customer/portal/articles/682679-testdroid-reco...</a></p>
+<p><strong>New features in last releases:</strong><br />
+Version 3.7:<br />
+A streamlined Run in Cloud feature, update Recorder button, report any problems in every wizard page with click of a button. More details about features and bug fixes you can find on: <a href="http://testdroid.com/testdroid/3834/testdroid-recorder-3-7-is-out-with-incredible-ux-smoothness">http://testdroid.com/testdroid/3834/testdroid-recorder-3-7-is-out-with-i...</a></p>
+<p>Version 3.6:<br />
+Tesdroid Cloud Results, extra permissions in Testdroid Tools, icon of application during run in cloud. More details about features and bug fixes you can find on: <a href="http://testdroid.com/testdroid/3791/testdroid-recorder-3-6-is-out">http://testdroid.com/testdroid/3791/testdroid-recorder-3-6-is-out</a></p>
+<p>Version 3.5:<br />
+Testdroid Tools in context menu. More details about features and bug fixes you can find on: <a href="http://testdroid.com/testdroid/3704/testdroid-recorder-3-5-is-out">http://testdroid.com/testdroid/3704/testdroid-recorder-3-5-is-out</a></p>
+<p>Version 3.4:<br />
+Recording performance improved. More details about features and bug fixes you can find on: <a href="http://testdroid.com/testdroid/3598/testdroid-recorder-3-4-is-out">http://testdroid.com/testdroid/3598/testdroid-recorder-3-4-is-out</a></p>
+<p>Version 3.3:<br />
+New wizard for recording mobile websites, couple of bugs fixed. More details about features and bug fixes you can find on:<br /><a href="http://testdroid.com/testdroid/3388/testdroid-recorder-3-3-is-out">http://testdroid.com/testdroid/3388/testdroid-recorder-3-3-is-out</a></p>
+<p>Version 3.2:<br />
+Bunch of bug fixes. More details about features and bug fixes you can find on:<br /><a href="http://testdroid.com/testdroid/3267/testdroid-recorder-3-2-is-out">http://testdroid.com/testdroid/3267/testdroid-recorder-3-2-is-out</a></p>
+<p>Version 3.1:<br />
+Running android jUnit test from apk(without sources of application project), optimized WebView handling by playback test, additional manual command(switch off/on wifi on device). More details about features and bug fixes you can find on:<br /><a href="http://testdroid.com/testdroid/3043/testdroid-recorder-3-1-is-out">http://testdroid.com/testdroid/3043/testdroid-recorder-3-1-is-out</a></p>
+<p>Version 3.0:<br />
+Running instatest from either application or apk, sending eclipse log file from preference page. More details about features and bug fixes you can find on:<br /><a href="http://testdroid.com/testdroid/2969/testdroid-recorder-3-0-is-out">http://testdroid.com/testdroid/2969/testdroid-recorder-3-0-is-out</a></p>
+<p>Version 2.9:<br />
+Sleeps adjuster for cutting too long sleeps, taking screenshot from openGL applications, informing user about lacks of usable elements in application's manifest. More details about features and bug fixes you can find on: <a href="http://testdroid.com/testdroid/2759/testdroid-recorder-2-9-is-out-2">http://testdroid.com/testdroid/2759/testdroid-recorder-2-9-is-out-2</a></p>
+<p>Version 2.8:<br />
+Support clicks on Edit Texts, Metadata file, which improves displaying results in Testdroid Cloud, few other commands for manual usage. More details you can find on: <a href="http://testdroid.com/testdroid/2560/testdroid-recorder-2-8-is-out">http://testdroid.com/testdroid/2560/testdroid-recorder-2-8-is-out</a></p>
+<p>Version 2.7:<br />
+Support for multipath drags. Bypassing APK rebuilding when recording from APK.<br />
+Full list of features and bug fixes can be found here: <a href="http://testdroid.com/testdroid/2433/testdroid-recorder-2-7-is-out">http://testdroid.com/testdroid/2433/testdroid-recorder-2-7-is-out</a></p>
+<p>Version 2.6:<br />
+Support for changing device locale during tests for testing localized apps<br />
+For other new features, please check: <a href="http://testdroid.com/testdroid/2311/testdroid-recorder-2-6-is-out">http://testdroid.com/testdroid/2311/testdroid-recorder-2-6-is-out</a></p>
+]]></body>
+      <created>1317645323</created>
+      <changed>1362480644</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.testdroid.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/recorder_market_0.png?itok=nwk8r2Xe]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screenshot_13.png?itok=0xlMh5pj]]></screenshot>
+      <version>3.7</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Bitbar]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[>= 3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://testdroid.com/help]]></supporturl>
+      <updateurl><![CDATA[http://testdroid.com/updates/]]></updateurl>
+<ius>
+<iu>com.bitbar.testdroid.eclipse.testtools.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

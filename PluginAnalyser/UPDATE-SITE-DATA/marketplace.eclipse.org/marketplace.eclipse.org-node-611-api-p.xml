@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="611" name="obfuscate4e - Obfuscation for Eclipse" url="http://marketplace.eclipse.org/content/obfuscate4e-obfuscation-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+      </categories>
+            
+      <owner>PartMaster GmbH</owner>
+      <favorited>2</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Obfuscate4e integrated obfuscation into the Eclipse PDE build prozess. It enables obfuscation of your plugins, features and products during the regular build.</p>
+<p><p>Obfuscate4e comes with the ProGuard obfuscator, but can easily be adapted for other obfuscators.</p><br />
+<p>Version 0.7  adds automatic detection (and exclusion from obfuscation) of classes used in the plugin's extensions. This feature requires Eclipse 3.4 (or above) to work correctly. We also included an Obfuscate4e section for Eclipse's online help.</p><br />
+<p>Obfuscate4e is now ready for <em>Eclipse Galileo</em></p></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Obfuscate4e integrated obfuscation into the Eclipse PDE build prozess. It enables obfuscation of your plugins, features and products during the regular build.</p>
+<p><p>Obfuscate4e comes with the ProGuard obfuscator, but can easily be adapted for other obfuscators.</p><br />
+<p>Version 0.7  adds automatic detection (and exclusion from obfuscation) of classes used in the plugin's extensions. This feature requires Eclipse 3.4 (or above) to work correctly. We also included an Obfuscate4e section for Eclipse's online help.</p><br />
+<p>Obfuscate4e is now ready for <em>Eclipse Galileo</em></p></p>
+]]></body>
+      <created>1197645191</created>
+      <changed>1259778904</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://obfuscate4e.partmaster.de]]></homepageurl>
+      <image><![CDATA[http://www.partmaster.de/partmaster_logo.png]]></image>
+      <version>0.7.1</version>
+      <license>Free EPL</license>
+      <companyname><![CDATA[PartMaster GmbH]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2+]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/obfuscate4e/]]></supporturl>
+      <updateurl><![CDATA[http://obfuscate4e.partmaster.de/updates]]></updateurl>
+    </node>
+    </marketplace>
+    

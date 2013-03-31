@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="14453" name="freeNLS " url="http://marketplace.eclipse.org/content/freenls">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+      <tags>
+        <tag id='1170' name='i18n' url='http://marketplace.eclipse.org/category/free-tagging/i18n'/>
+        <tag id='1237' name='NLS' url='http://marketplace.eclipse.org/category/free-tagging/nls'/>
+        <tag id='1238' name='L10n' url='http://marketplace.eclipse.org/category/free-tagging/l10n'/>
+        <tag id='1239' name='Internationalisation' url='http://marketplace.eclipse.org/category/free-tagging/internationalisation'/>
+        <tag id='1240' name='National Language Support' url='http://marketplace.eclipse.org/category/free-tagging/national-language-support'/>
+      </tags>
+      
+      <owner>Chris May</owner>
+      <favorited>0</favorited>
+      <installstotal>6</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>freeNLS is a NLS (National Language Support) round-trip solution with Ajax web frontend. It allows efficient and real-time communication between translator and developer.</p>
+<p>The framework consists of an Eclipse plugin and an Ajax web application, which can be syncronized by means of an syncronization view (similar to CVS/SVN syncronization). No need for sending .properties files forth and back, just upload your terms and the translator can conveniently place his translations into the web application, which you then can merge back into your code base.</p>
+<p>Another feature of freeNLS is the type-safe constants for your term IDs, as well as annotation based metadata for your translations. This makes code navigation and refactoring a breeze, and helps you to keep your code maintainable over time.</p>
+<p>freeNLS is freeware for unlimted private and commercial use. </p>
+]]></shortdescription>
+      <body><![CDATA[<p>freeNLS is a NLS (National Language Support) round-trip solution with Ajax web frontend. It allows efficient and real-time communication between translator and developer.</p>
+<p>The framework consists of an Eclipse plugin and an Ajax web application, which can be syncronized by means of an syncronization view (similar to CVS/SVN syncronization). No need for sending .properties files forth and back, just upload your terms and the translator can conveniently place his translations into the web application, which you then can merge back into your code base.</p>
+<p>Another feature of freeNLS is the type-safe constants for your term IDs, as well as annotation based metadata for your translations. This makes code navigation and refactoring a breeze, and helps you to keep your code maintainable over time.</p>
+<p>freeNLS is freeware for unlimted private and commercial use. </p>
+]]></body>
+      <created>1285937858</created>
+      <changed>1286198282</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[www.freenls.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/freeNLS.png?itok=HOEC6n4z]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/sync.gif?itok=Gwqu8H_2]]></screenshot>
+      <version>1.0 Beta</version>
+      <license>Other</license>
+      <companyname><![CDATA[freeNLS]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://www.freenls.com/eclipse/updatesite]]></updateurl>
+<ius>
+<iu>com.freenls</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

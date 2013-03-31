@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="27510" name="SpringSource Tool Suite (STS) for Eclipse Helios (3.6)" url="http://marketplace.eclipse.org/content/springsource-tool-suite-sts-eclipse-helios-36">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='134' name='J2EE' url='http://marketplace.eclipse.org/category/free-tagging/j2ee'/>
+        <tag id='158' name='spring' url='http://marketplace.eclipse.org/category/free-tagging/spring'/>
+        <tag id='465' name='Cloud' url='http://marketplace.eclipse.org/category/free-tagging/cloud'/>
+        <tag id='695' name='jee' url='http://marketplace.eclipse.org/category/free-tagging/jee'/>
+        <tag id='1383' name='STS' url='http://marketplace.eclipse.org/category/free-tagging/sts'/>
+      </tags>
+      
+      <owner>Martin Lippert</owner>
+      <favorited>21</favorited>
+      <installstotal>16953</installstotal>
+      <installsrecent>421</installsrecent>
+      <shortdescription><![CDATA[<p>SpringSource Tool Suite™ (STS) provides the best Eclipse-powered development environment for building Spring-powered enterprise applications. STS supplies tools for all of the latest enterprise Java, Spring, Groovy and Grails based technologies as well as the most advanced tooling available for enterprise OSGi development.</p>
+<p>Included with STS is the developer edition of vFabric tc Server, the drop-in replacement for Apache Tomcat that’s optimized for Spring. With its Spring Insight console, tc Server Developer Edition provides a graphical real-time view of application performance metrics that lets developers identify and diagnose problems from their desktops.</p>
+<p>STS supports application targeting to local, virtual and cloud-based servers. It is freely available for development and internal business operations use with no time limits.</p>
+<h2>Spring Application Tools</h2>
+<ul><li>Spring project, bean and XML file wizards</li>
+<li>Graphical Spring configuration editor</li>
+<li><a href="http://www.springsource.org/about">Spring 3.0</a> support including @Configuration and @Bean styles</li>
+<li><a href="http://www.springsource.org/webflow">Spring Web Flow</a> and <a href="http://static.springsource.org/spring-batch/">Spring Batch</a> visual development tools</li>
+<li>Spring Roo project wizard and development shell</li>
+<li>Spring Application blue prints and best practice validation</li>
+</ul><h2>Flexible Deployment Targets</h2>
+<ul><li>Support for all the most common Java EE application servers</li>
+<li>Advanced support for SpringSource tc Server</li>
+<li>Cloud Foundry targeting for dm Server and tc Server</li>
+<li>VMware Lab Manager and Workstation integration and deployment</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>SpringSource Tool Suite™ (STS) provides the best Eclipse-powered development environment for building Spring-powered enterprise applications. STS supplies tools for all of the latest enterprise Java, Spring, Groovy and Grails based technologies as well as the most advanced tooling available for enterprise OSGi development.</p>
+<p>Included with STS is the developer edition of vFabric tc Server, the drop-in replacement for Apache Tomcat that’s optimized for Spring. With its Spring Insight console, tc Server Developer Edition provides a graphical real-time view of application performance metrics that lets developers identify and diagnose problems from their desktops.</p>
+<p>STS supports application targeting to local, virtual and cloud-based servers. It is freely available for development and internal business operations use with no time limits.</p>
+<h2>Spring Application Tools</h2>
+<ul><li>Spring project, bean and XML file wizards</li>
+<li>Graphical Spring configuration editor</li>
+<li><a href="http://www.springsource.org/about">Spring 3.0</a> support including @Configuration and @Bean styles</li>
+<li><a href="http://www.springsource.org/webflow">Spring Web Flow</a> and <a href="http://static.springsource.org/spring-batch/">Spring Batch</a> visual development tools</li>
+<li>Spring Roo project wizard and development shell</li>
+<li>Spring Application blue prints and best practice validation</li>
+</ul><h2>Flexible Deployment Targets</h2>
+<ul><li>Support for all the most common Java EE application servers</li>
+<li>Advanced support for SpringSource tc Server</li>
+<li>Cloud Foundry targeting for dm Server and tc Server</li>
+<li>VMware Lab Manager and Workstation integration and deployment</li>
+</ul>]]></body>
+      <created>1294843864</created>
+      <changed>1341394315</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.springsource.com/developer/sts]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/sts-logo2_1.png?itok=0slRjFrR]]></image>
+      <version>2.9.2.RELEASE</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[SpringSource, a division of VMware, Inc.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://forum.springframework.org/forumdisplay.php?f=32]]></supporturl>
+      <updateurl><![CDATA[http://dist.springsource.com/release/TOOLS/market-place/e3.6/]]></updateurl>
+<ius>
+<iu>org.springframework.ide.eclipse.feature</iu>
+<iu>org.springframework.ide.eclipse.aop.feature</iu>
+<iu>org.springframework.ide.eclipse.ajdt.feature</iu>
+<iu>org.springframework.ide.eclipse.webflow.feature</iu>
+<iu>org.springframework.ide.eclipse.mylyn.feature</iu>
+<iu>org.springframework.ide.eclipse.osgi.feature</iu>
+<iu>org.springframework.ide.eclipse.security.feature</iu>
+<iu>org.springframework.ide.eclipse.autowire.feature</iu>
+<iu>org.springframework.ide.eclipse.batch.feature</iu>
+<iu>org.springframework.ide.eclipse.integration.feature</iu>
+<iu>com.springsource.sts</iu>
+<iu>com.springsource.sts.server.tc</iu>
+<iu>com.springsource.sts.tutorials</iu>
+<iu>com.springsource.sts.vmware</iu>
+<iu>com.springsource.sts.maven</iu>
+<iu>com.springsource.sts.roo</iu>
+<iu>com.vmware.vixapi</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="39590" name="MODembed" url="http://marketplace.eclipse.org/content/modembed">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+      </categories>
+      <tags>
+        <tag id='690' name='embedded' url='http://marketplace.eclipse.org/category/free-tagging/embedded'/>
+        <tag id='1428' name='feature modeling' url='http://marketplace.eclipse.org/category/free-tagging/feature-modeling'/>
+        <tag id='1727' name='assembly' url='http://marketplace.eclipse.org/category/free-tagging/assembly'/>
+      </tags>
+      
+      <owner>Balázs Grill</owner>
+      <favorited>3</favorited>
+      <installstotal>63</installstotal>
+      <installsrecent>2</installsrecent>
+      <shortdescription><![CDATA[<p>MODembed is an experimental IDE aiming to provide a more advanced toolchain for embedded software development. It provides a model-based approach for defining the whole compilation process.</p>
+<p>Features:</p>
+<ul><li><em>Model-based approach</em> - everything is a model: program, device and architecture</li>
+<li><em>Compilation is a modeling workflow</em> - User gets full control over compilation process</li>
+<li><em>Device- and platform-independent toolchain</em> - program and target architecture model are differentiated</li>
+<li><em>Support for reverse-engineering</em> Disassembling and decompiling programs</li>
+<li><em>Included libraries</em>
+<ul><li>Microchip PIC 8-bit architectures</li>
+<ul><li>Midrange (Pic16) and enchanced midrange (Pic16E) instruction set and generated libraries</li>
+<li>High-end (Pic18) instruction set and generated libraries</li>
+<li>Support for configuration bits</li>
+</ul></ul></li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>MODembed is an experimental IDE aiming to provide a more advanced toolchain for embedded software development. It provides a model-based approach for defining the whole compilation process.</p>
+<p>Features:</p>
+<ul><li><em>Model-based approach</em> - everything is a model: program, device and architecture</li>
+<li><em>Compilation is a modeling workflow</em> - User gets full control over compilation process</li>
+<li><em>Device- and platform-independent toolchain</em> - program and target architecture model are differentiated</li>
+<li><em>Support for reverse-engineering</em> Disassembling and decompiling programs</li>
+<li><em>Included libraries</em>
+<ul><li>Microchip PIC 8-bit architectures</li>
+<ul><li>Midrange (Pic16) and enchanced midrange (Pic16E) instruction set and generated libraries</li>
+<li>High-end (Pic18) instruction set and generated libraries</li>
+<li>Support for configuration bits</li>
+</ul></ul></li>
+</ul>]]></body>
+      <created>1300732099</created>
+      <changed>1362386472</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://balazsgrill.github.com/modembed]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/MODembed_logo_mpc_0.png?itok=2Om4GAjr]]></image>
+      <version>0.8.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Cubussapiens.hu]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.8]]></eclipseversion>
+      <supporturl><![CDATA[https://github.com/balazsgrill/modembed]]></supporturl>
+      <updateurl><![CDATA[http://modembed-updatesite.balazs-grill.cloudbees.net/]]></updateurl>
+<ius>
+<iu>hu.modembed.core.feature</iu>
+<iu>hu.modembed.pic.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

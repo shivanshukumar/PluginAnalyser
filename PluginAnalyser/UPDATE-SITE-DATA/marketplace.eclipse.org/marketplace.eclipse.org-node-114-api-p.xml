@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="114" name="PyDev - Python IDE for Eclipse" url="http://marketplace.eclipse.org/content/pydev-python-ide-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+      <tags>
+        <tag id='51' name='IDE' url='http://marketplace.eclipse.org/category/free-tagging/ide'/>
+        <tag id='352' name='Python' url='http://marketplace.eclipse.org/category/free-tagging/python'/>
+        <tag id='353' name='Aptana' url='http://marketplace.eclipse.org/category/free-tagging/aptana'/>
+        <tag id='354' name='Pydev' url='http://marketplace.eclipse.org/category/free-tagging/pydev'/>
+        <tag id='459' name='Django' url='http://marketplace.eclipse.org/category/free-tagging/django'/>
+      </tags>
+      
+      <owner>Fabio Zadrozny</owner>
+      <favorited>212</favorited>
+      <installstotal>111565</installstotal>
+      <installsrecent>7542</installsrecent>
+      <shortdescription><![CDATA[<p><strong>Important: Help funding PyDev so that it does not become unsupported: <a href="http://igg.me/at/liclipse">http://igg.me/at/liclipse</a></strong></p>
+<p>PyDev is a plugin that enables Eclipse to be used as a Python IDE (supporting also Jython and IronPython). </p>
+<p>It uses advanced type inference techniques to provide features such code completion and code analysis, while still providing many others such as a debugger, interactive console, refactoring, etc.</p>
+<p>The complete feature matrix may be found at <a href="http://pydev.org/manual_adv_features.html">http://pydev.org/manual_adv_features.html</a></p>
+<p>Below are some of its highlighted features.</p>
+<ul><li><strong>Python</strong>, <strong>Jython</strong> and <strong>IronPython</strong> support</li>
+<li><strong>Django integration</strong></li>
+<li><strong>Django templates editor</strong> (separate feature that requires Aptana Studio 3 -- not included in the marketplace because of its pre-requisites)</li>
+<li><strong>Code completion</strong></li>
+<li><strong>Debugger</strong></li>
+<li><strong>Unittest integration</strong></li>
+<li><strong>Interactive Console</strong></li>
+<li><strong>Code analysis</strong></li>
+<li>Go to definition</li>
+<li>Refactoring</li>
+<li>Google App Engine integration</li>
+<li>Syntax highlighting</li>
+<li>Parser errors</li>
+<li>Outline view</li>
+<li>Tabs or spaces preferences</li>
+<li>Smart indent / dedent</li>
+<li>Comment / uncomment / comment blocks</li>
+<li>Code folding</li>
+<li>TODO tasks</li>
+<li>Content Assistants (Ctrl+1)</li>
+<li>Scripting with Jython</li>
+<li>Mark Occurrences</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p><strong>Important: Help funding PyDev so that it does not become unsupported: <a href="http://igg.me/at/liclipse">http://igg.me/at/liclipse</a></strong></p>
+<p>PyDev is a plugin that enables Eclipse to be used as a Python IDE (supporting also Jython and IronPython). </p>
+<p>It uses advanced type inference techniques to provide features such code completion and code analysis, while still providing many others such as a debugger, interactive console, refactoring, etc.</p>
+<p>The complete feature matrix may be found at <a href="http://pydev.org/manual_adv_features.html">http://pydev.org/manual_adv_features.html</a></p>
+<p>Below are some of its highlighted features.</p>
+<ul><li><strong>Python</strong>, <strong>Jython</strong> and <strong>IronPython</strong> support</li>
+<li><strong>Django integration</strong></li>
+<li><strong>Django templates editor</strong> (separate feature that requires Aptana Studio 3 -- not included in the marketplace because of its pre-requisites)</li>
+<li><strong>Code completion</strong></li>
+<li><strong>Debugger</strong></li>
+<li><strong>Unittest integration</strong></li>
+<li><strong>Interactive Console</strong></li>
+<li><strong>Code analysis</strong></li>
+<li>Go to definition</li>
+<li>Refactoring</li>
+<li>Google App Engine integration</li>
+<li>Syntax highlighting</li>
+<li>Parser errors</li>
+<li>Outline view</li>
+<li>Tabs or spaces preferences</li>
+<li>Smart indent / dedent</li>
+<li>Comment / uncomment / comment blocks</li>
+<li>Code folding</li>
+<li>TODO tasks</li>
+<li>Content Assistants (Ctrl+1)</li>
+<li>Scripting with Jython</li>
+<li>Mark Occurrences</li>
+</ul>]]></body>
+      <created>1089201996</created>
+      <changed>1363399025</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://pydev.org]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/pydev_banner_110_80.gif?itok=TF91frhw]]></image>
+      <version>2.7.3</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Appcelerator]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.2 - 3.8, 4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://pydev.org/manual.html]]></supporturl>
+      <updateurl><![CDATA[http://pydev.org/updates/]]></updateurl>
+<ius>
+<iu>org.python.pydev.feature</iu>
+<iu>org.python.pydev.mylyn.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

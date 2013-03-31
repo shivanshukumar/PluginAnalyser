@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="65544" name="SysML Designer (Eclipse 3.8 version)" url="http://marketplace.eclipse.org/content/sysml-designer-indigo-version">
+      <type>resource</type>
+      <categories>
+        <category id='1971' name='Modeling' url='http://marketplace.eclipse.org/category/categories/modeling'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+      </categories>
+      <tags>
+        <tag id='61' name='UML' url='http://marketplace.eclipse.org/category/free-tagging/uml'/>
+        <tag id='70' name='BDD' url='http://marketplace.eclipse.org/category/free-tagging/bdd'/>
+        <tag id='680' name='SysML' url='http://marketplace.eclipse.org/category/free-tagging/sysml'/>
+        <tag id='2224' name='embedded system' url='http://marketplace.eclipse.org/category/free-tagging/embedded-system'/>
+        <tag id='2225' name='system engineering' url='http://marketplace.eclipse.org/category/free-tagging/system-engineering'/>
+      </tags>
+      
+      <owner>Obeo  </owner>
+      <favorited>3</favorited>
+      <installstotal>341</installstotal>
+      <installsrecent>52</installsrecent>
+      <shortdescription><![CDATA[<p><b>SysML Designer</b> is a graphical tool to edit and vizualize SysML models.</p>
+<p>
+This designer provides these common diagrams:</p>
+<ul><li>Block Definition Diagram (BBD): allows you to defines features of blocks and relationships between blocks such as associations</li>
+<li>Internal Block Diagram (IBD): allows you to captures the internal structure of a block in terms of properties and connectors between properties. A block can include properties to specify its values, parts, and references to other blocks.</li>
+<li>Requirements Table : allows you to define the requirements of your system.</li>
+<li>Requirements CrossTable : allows you to relate the requirements to other modeling elements.</li>
+<li>Parametric Diagram : allows you to include usages of constraint blocks to constrain the properties of another block. Constraint blocks provide a mechanism for integrating engineering analysis such as performance and reliability models with other SysML models.</li>
+<li>UML : standard diagrams</li>
+</ul><p>If you need some information on this standard, please visit : <a href="http://www.omgsysml.org/">http://www.omgsysml.org/</a></p>
+<p>As it is based on Obeo Designer, it provides an easy way to combine SysML with domain specific modelling. You can extend the provided diagram definitions and seamlessly work on both SysML and DSL models at the same time.</p>
+<p><a href="http://marketplace.obeonetwork.com/module/sysml"><br /><img src="http://dl.dropbox.com/u/22228046/Marketplace/sysml/sysml-viewpoint-par.png" width="500" /></a></p>
+<!--break--><p>
+This designer is free (open-source with EPL license).</p>
+<p>
+You can easily modify it with <a href="http://www.obeodesigner.com">Obeo Designer</a> <strong>to adapt each diagram to your needs</strong> or combine it to your own DSL. To start customizing this module, just <a href="http://www.obeodesigner.com/download">download an evaluation version</a> of the architect edition and import the <a href="http://marketplace.obeonetwork.com/module/sysml">source code</a> of SysML Designer from Github.
+</p>
+]]></shortdescription>
+      <body><![CDATA[<p><b>SysML Designer</b> is a graphical tool to edit and vizualize SysML models.</p>
+<p>
+This designer provides these common diagrams:</p>
+<ul><li>Block Definition Diagram (BBD): allows you to defines features of blocks and relationships between blocks such as associations</li>
+<li>Internal Block Diagram (IBD): allows you to captures the internal structure of a block in terms of properties and connectors between properties. A block can include properties to specify its values, parts, and references to other blocks.</li>
+<li>Requirements Table : allows you to define the requirements of your system.</li>
+<li>Requirements CrossTable : allows you to relate the requirements to other modeling elements.</li>
+<li>Parametric Diagram : allows you to include usages of constraint blocks to constrain the properties of another block. Constraint blocks provide a mechanism for integrating engineering analysis such as performance and reliability models with other SysML models.</li>
+<li>UML : standard diagrams</li>
+</ul><p>If you need some information on this standard, please visit : <a href="http://www.omgsysml.org/">http://www.omgsysml.org/</a></p>
+<p>As it is based on Obeo Designer, it provides an easy way to combine SysML with domain specific modelling. You can extend the provided diagram definitions and seamlessly work on both SysML and DSL models at the same time.</p>
+<p><a href="http://marketplace.obeonetwork.com/module/sysml"><br /><img src="http://dl.dropbox.com/u/22228046/Marketplace/sysml/sysml-viewpoint-par.png" width="500" /></a></p>
+<!--break--><p>
+This designer is free (open-source with EPL license).</p>
+<p>
+You can easily modify it with <a href="http://www.obeodesigner.com">Obeo Designer</a> <strong>to adapt each diagram to your needs</strong> or combine it to your own DSL. To start customizing this module, just <a href="http://www.obeodesigner.com/download">download an evaluation version</a> of the architect edition and import the <a href="http://marketplace.obeonetwork.com/module/sysml">source code</a> of SysML Designer from Github.
+</p>
+]]></body>
+      <created>1308131635</created>
+      <changed>1361526035</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://marketplace.obeonetwork.com/module/sysml]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_ON-110x80.png?itok=1bkMJ111]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/sysml-main-image_0.png?itok=vnJVFehg]]></screenshot>
+      <version>2.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Obeo Network]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://marketplace.obeonetwork.com/module/sysml#community]]></supporturl>
+      <updateurl><![CDATA[http://marketplace.obeonetwork.com/updates/od61/]]></updateurl>
+<ius>
+<iu>org.obeonetwork.dsl.sysml.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

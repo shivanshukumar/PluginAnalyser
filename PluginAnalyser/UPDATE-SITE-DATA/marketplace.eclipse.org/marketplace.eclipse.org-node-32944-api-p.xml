@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="32944" name="Toad for Cloud Databases" url="http://marketplace.eclipse.org/content/toad-cloud-databases">
+      <type>resource</type>
+      <categories>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+      </categories>
+      <tags>
+        <tag id='1010' name='hadoop' url='http://marketplace.eclipse.org/category/free-tagging/hadoop'/>
+        <tag id='1229' name='Windows Azure' url='http://marketplace.eclipse.org/category/free-tagging/windows-azure'/>
+        <tag id='1296' name='mysql' url='http://marketplace.eclipse.org/category/free-tagging/mysql'/>
+        <tag id='1614' name='hbase' url='http://marketplace.eclipse.org/category/free-tagging/hbase'/>
+        <tag id='1615' name='hive' url='http://marketplace.eclipse.org/category/free-tagging/hive'/>
+      </tags>
+      
+      <owner>betsy.mendenhall</owner>
+      <favorited>6</favorited>
+      <installstotal>1815</installstotal>
+      <installsrecent>28</installsrecent>
+      <shortdescription><![CDATA[<p>Toad for Cloud Databases, with its newly released Eclipse plug-in, allows users to easily write and execute queries against cloud and "NoSQL" databases from Eclipse. Toad for Cloud Databases provides a SQL-based interface that makes it simple for developers to generate queries, migrate, browse and edit data, as well as create reports and tables in a familiar SQL view. </p>
+<p>Version 1.6 supports SQL queries against the following targets:</p>
+<p>* Apache HBase<br />
+* Amazon SimpleDB<br />
+* Azure Table Services<br />
+* Apache HIVE (direct Hive connection or via SSH tunnel)<br />
+* Apache Cassandra<br />
+* 10gen MongoDB<br />
+* Oracle, SQL Server, MySQL, SQL Azure and other ODBC enabled SQL databases</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Toad for Cloud Databases, with its newly released Eclipse plug-in, allows users to easily write and execute queries against cloud and "NoSQL" databases from Eclipse. Toad for Cloud Databases provides a SQL-based interface that makes it simple for developers to generate queries, migrate, browse and edit data, as well as create reports and tables in a familiar SQL view. </p>
+<p>Version 1.6 supports SQL queries against the following targets:</p>
+<p>* Apache HBase<br />
+* Amazon SimpleDB<br />
+* Azure Table Services<br />
+* Apache HIVE (direct Hive connection or via SSH tunnel)<br />
+* Apache Cassandra<br />
+* 10gen MongoDB<br />
+* Oracle, SQL Server, MySQL, SQL Azure and other ODBC enabled SQL databases</p>
+]]></body>
+      <created>1297696984</created>
+      <changed>1331088286</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://toadforcloud.com/entry!default.jspa?categoryID=677&externalID=4372]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Toad-for-Cloud-DBs_aboutBg.png?itok=VifN6zrr]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/toadforcloud.png?itok=Yme_sToc]]></screenshot>
+      <version>1.6</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[Quest Software]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://toadforcloud.com/forumindex.jspa?categoryID=735]]></supporturl>
+      <updateurl><![CDATA[http://toaddownload.quest.com/toadforcloud/eclipse/releases]]></updateurl>
+<ius>
+<iu>com.quest.toad.cloud</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

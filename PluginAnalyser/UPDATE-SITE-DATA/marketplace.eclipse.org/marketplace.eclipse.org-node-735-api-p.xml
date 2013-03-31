@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="735" name="p6spy viewer" url="http://marketplace.eclipse.org/content/p6spy-viewer">
+      <type>resource</type>
+      <categories>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+      </categories>
+            
+      <owner>Roth</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>A Simple viewer for p6spy log files.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>A Simple viewer for p6spy log files.</p>
+]]></body>
+      <created>1216133576</created>
+      <changed>1259779053</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.impart.ch/download_p6spy.htm]]></homepageurl>
+      <image><![CDATA[http://www.impart.ch/download/p6spyviewer.png]]></image>
+      <version>1.0.3</version>
+      <license>Free EPL</license>
+      <companyname><![CDATA[Impart GmbH]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2, 3.3, 3.4, 3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.impart.ch]]></supporturl>
+      <updateurl><![CDATA[http://impart.ch/download/p6spyviewer/]]></updateurl>
+    </node>
+    </marketplace>
+    

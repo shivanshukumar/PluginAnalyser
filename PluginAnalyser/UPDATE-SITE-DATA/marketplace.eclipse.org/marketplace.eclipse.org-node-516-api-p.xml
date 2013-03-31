@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="516" name="CoViewDeveloper" url="http://marketplace.eclipse.org/content/coviewdeveloper">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+      </categories>
+            
+      <owner>jponczak</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>CoViewDeveloper is an Eclipse plug-in that promotes testable code by designing and creating JUnit tests, mock objects and measuring path coverage. With the focus on how data flows through a method, CoViewDeveloper walks you through every step of the way. CoViewDeveloper is ideal for organizations, consultants, developers and students who are interested in an affordable solution that provides a lot of value.</p>
+<p>Version 4.1 provides support for Eclipse 3.5 as well as some housekeeping.</p>
+<p>Version 4.0 introduces provides a 'code grade' capability that makes it easy to pinpoint untestable areas in your code. We are not a vendor that passes judgment on your code - the grade is based on your metric selection and threshold values.</p>
+<p>We also introduced a 1 year Community Edition for FREE and a 1 year Premium Edition for only $9.99!</p>
+]]></shortdescription>
+      <body><![CDATA[<p>CoViewDeveloper is an Eclipse plug-in that promotes testable code by designing and creating JUnit tests, mock objects and measuring path coverage. With the focus on how data flows through a method, CoViewDeveloper walks you through every step of the way. CoViewDeveloper is ideal for organizations, consultants, developers and students who are interested in an affordable solution that provides a lot of value.</p>
+<p>Version 4.1 provides support for Eclipse 3.5 as well as some housekeeping.</p>
+<p>Version 4.0 introduces provides a 'code grade' capability that makes it easy to pinpoint untestable areas in your code. We are not a vendor that passes judgment on your code - the grade is based on your metric selection and threshold values.</p>
+<p>We also introduced a 1 year Community Edition for FREE and a 1 year Premium Edition for only $9.99!</p>
+]]></body>
+      <created>1186060664</created>
+      <changed>1259942356</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.codign.com/products.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>4.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Codign Software]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2, 3.3, 3.4, 3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.codign.com/forums]]></supporturl>
+      <updateurl><![CDATA[http://www.codign.com/updates]]></updateurl>
+    </node>
+    </marketplace>
+    

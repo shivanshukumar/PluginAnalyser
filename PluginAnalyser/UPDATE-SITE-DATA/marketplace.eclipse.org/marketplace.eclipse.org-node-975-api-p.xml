@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="975" name="More Emacs" url="http://marketplace.eclipse.org/content/more-emacs">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+            
+      <owner>quiver2k</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>More Emacs Plugin is an eclipse plugin for emacs users.</p>
+<p>Eclipse provides the emacs like key bindings. But emacs users requires more emacs like key bindings. More emacs plugin provides more emacs like key bindings. The key bind scheme of more emacs is a child schema of Eclispe's emacs scheme. It adds some key bindings or overrides some bindings to emacs scheme. </p>
+]]></shortdescription>
+      <body><![CDATA[<p>More Emacs Plugin is an eclipse plugin for emacs users.</p>
+<p>Eclipse provides the emacs like key bindings. But emacs users requires more emacs like key bindings. More emacs plugin provides more emacs like key bindings. The key bind scheme of more emacs is a child schema of Eclispe's emacs scheme. It adds some key bindings or overrides some bindings to emacs scheme. </p>
+]]></body>
+      <created>1248814882</created>
+      <changed>1259779281</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://moreemacs.sourceforge.jp/]]></homepageurl>
+      <image><![CDATA[http://moreemacs.sourceforge.jp/epic.png]]></image>
+      <version>1.2.0</version>
+      <license>Other</license>
+      <companyname><![CDATA[quiver2k]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://]]></supporturl>
+      <updateurl><![CDATA[http://moreemacs.sourceforge.jp/update-site]]></updateurl>
+    </node>
+    </marketplace>
+    

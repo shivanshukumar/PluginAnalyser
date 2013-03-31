@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1089" name="Project Usus" url="http://marketplace.eclipse.org/content/project-usus">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='47' name='visualization' url='http://marketplace.eclipse.org/category/free-tagging/visualization'/>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='137' name='analysis' url='http://marketplace.eclipse.org/category/free-tagging/analysis'/>
+        <tag id='210' name='metrics' url='http://marketplace.eclipse.org/category/free-tagging/metrics'/>
+        <tag id='242' name='code analysis' url='http://marketplace.eclipse.org/category/free-tagging/code-analysis'/>
+      </tags>
+      
+      <owner>Stefan Schuerle</owner>
+      <favorited>7</favorited>
+      <installstotal>237</installstotal>
+      <installsrecent>13</installsrecent>
+      <shortdescription><![CDATA[<p>Common coding and design practices in software projects are a good thing. To support them, there is a number of helpful tools around, such as static code analyzers, test coverage tools, code formatters and so on.</p>
+<p>The goal of this project is to provide Eclipse Plug-Ins that help to integrate common compiler and formatter settings in the Eclipse workspace and apply some object-oriented design metrics to find and possibly eliminate weak spots in the code.</p>
+<p>These settings and metrics reflect the "usus" (common practice) in projects we've worked in and have proven useful; we want to integrate them in order to have them handy at all times.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Common coding and design practices in software projects are a good thing. To support them, there is a number of helpful tools around, such as static code analyzers, test coverage tools, code formatters and so on.</p>
+<p>The goal of this project is to provide Eclipse Plug-Ins that help to integrate common compiler and formatter settings in the Eclipse workspace and apply some object-oriented design metrics to find and possibly eliminate weak spots in the code.</p>
+<p>These settings and metrics reflect the "usus" (common practice) in projects we've worked in and have proven useful; we want to integrate them in order to have them handy at all times.</p>
+]]></body>
+      <created>1260861995</created>
+      <changed>1352661663</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.projectusus.org]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/usus-marketplace.png?itok=6jNL1UnX]]></image>
+      <version>0.7.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4, 3.5, 3.6, 3.7, 4.2]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://projectusus.googlecode.com/svn/updates/]]></updateurl>
+<ius>
+<iu>org.projectusus</iu>
+<iu>org.projectusus.autotestsuite</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

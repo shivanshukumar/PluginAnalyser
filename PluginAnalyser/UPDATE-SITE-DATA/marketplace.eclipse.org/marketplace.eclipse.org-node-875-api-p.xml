@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="875" name="ReviewClipse" url="http://marketplace.eclipse.org/content/reviewclipse">
+      <type>resource</type>
+      <categories>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='26' name='SCM' url='http://marketplace.eclipse.org/taxonomy/term/26'/>
+      </categories>
+            
+      <owner>Christoph Mayerhofer</owner>
+      <favorited>3</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>ReviewClipse is an Eclipse integrated code review plug-in, which helps developers to review the source code efficient on a per changeset basis - the item under inspection is one changeset in the revision control system.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>ReviewClipse is an Eclipse integrated code review plug-in, which helps developers to review the source code efficient on a per changeset basis - the item under inspection is one changeset in the revision control system.</p>
+]]></body>
+      <created>1236008472</created>
+      <changed>1260515533</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.inso.tuwien.ac.at/reviewclipse/]]></homepageurl>
+      <image><![CDATA[http://www.inso.tuwien.ac.at/uploads/media/reviewclipse_logo_110x80.png]]></image>
+      <version>1.0.0.200910231135</version>
+      <license>Other</license>
+      <companyname><![CDATA[Industrial Software (INSO), Vienna University of Technology]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[>= 3.4]]></eclipseversion>
+      <supporturl><![CDATA[mailto:support.reviewclipse@inso.tuwien.ac.at]]></supporturl>
+      <updateurl><![CDATA[http://www.inso.tuwien.ac.at/projects/reviewclipse/update-site]]></updateurl>
+    </node>
+    </marketplace>
+    

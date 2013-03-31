@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="919" name="Yeti 2 - TinyOS 2.x Eclipse Plugin" url="http://marketplace.eclipse.org/content/yeti-2-tinyos-2x-eclipse-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+            
+      <owner>Beni</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Yeti 2 provides an editor for the language nesC and the environment TinyOS. Yeti 2 provides the user with an outline, error detection, hyperlinks, code completion and other useful features.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Yeti 2 provides an editor for the language nesC and the environment TinyOS. Yeti 2 provides the user with an outline, error detection, hyperlinks, code completion and other useful features.</p>
+]]></body>
+      <created>1239305560</created>
+      <changed>1259779232</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://tos-ide.ethz.ch/wiki/index.php]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>2.1.36</version>
+      <license>Free for non-commercial use</license>
+      <companyname><![CDATA[ETH Zurich - Distributed Computing Group]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3.2, 3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://tinyos.ethz.ch/phpBB3/]]></supporturl>
+      <updateurl><![CDATA[http://tos-ide.ethz.ch/update/site.xml]]></updateurl>
+    </node>
+    </marketplace>
+    

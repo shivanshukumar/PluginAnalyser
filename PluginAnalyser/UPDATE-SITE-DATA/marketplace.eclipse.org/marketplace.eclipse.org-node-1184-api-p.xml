@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1184" name="EMFStore Model Repository" url="http://marketplace.eclipse.org/content/emfstore-0">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='26' name='SCM' url='http://marketplace.eclipse.org/taxonomy/term/26'/>
+        <category id='1971' name='Modeling' url='http://marketplace.eclipse.org/category/categories/modeling'/>
+      </categories>
+      <tags>
+        <tag id='64' name='Modeling' url='http://marketplace.eclipse.org/category/free-tagging/modeling'/>
+        <tag id='186' name='EMF' url='http://marketplace.eclipse.org/category/free-tagging/emf'/>
+        <tag id='455' name='Repository' url='http://marketplace.eclipse.org/category/free-tagging/repository'/>
+        <tag id='456' name='Versioning' url='http://marketplace.eclipse.org/category/free-tagging/versioning'/>
+        <tag id='457' name='CDO' url='http://marketplace.eclipse.org/category/free-tagging/cdo'/>
+      </tags>
+      
+      <owner>Jonas Helming</owner>
+      <favorited>6</favorited>
+      <installstotal>180</installstotal>
+      <installsrecent>20</installsrecent>
+      <shortdescription><![CDATA[<p>IMPORTANT: During Installation please select and install all offered features to get access to all functionality. </p>
+<p>EMFStore is a repository for EMF-based models. It features an offline mode and is geared towards collaborative editing of the stored models. Therefore support for conflict detection and interactive merging of models is built into the repository including versioning. EMFStore also ships with a set of client plugins containing an API for the server and even views for commiting changes to, updating changes from the repository as well as merging models in a local workspace. In addition EMFStore provides access control on the repository and storage for the models and their meta data on client and server side. EMFStore also supports changing the Ecore model of the stored EMF model instances by generating model migrators based on Edapt. This is a useful feature if your application evolves and requires changing your data model for example.</p>
+<!--break--><p>Feature Overview:<br />
+- Offline Mode (No server connection neccessary)<br />
+- Interactive Merging<br />
+- Extensible Model Conflict Detection and Merging<br />
+- Model Versioning with full history<br />
+- Model Storage (client and server-side)<br />
+- Access Control<br />
+- Model Migration</p>
+]]></shortdescription>
+      <body><![CDATA[<p>IMPORTANT: During Installation please select and install all offered features to get access to all functionality. </p>
+<p>EMFStore is a repository for EMF-based models. It features an offline mode and is geared towards collaborative editing of the stored models. Therefore support for conflict detection and interactive merging of models is built into the repository including versioning. EMFStore also ships with a set of client plugins containing an API for the server and even views for commiting changes to, updating changes from the repository as well as merging models in a local workspace. In addition EMFStore provides access control on the repository and storage for the models and their meta data on client and server side. EMFStore also supports changing the Ecore model of the stored EMF model instances by generating model migrators based on Edapt. This is a useful feature if your application evolves and requires changing your data model for example.</p>
+<!--break--><p>Feature Overview:<br />
+- Offline Mode (No server connection neccessary)<br />
+- Interactive Merging<br />
+- Extensible Model Conflict Detection and Merging<br />
+- Model Versioning with full history<br />
+- Model Storage (client and server-side)<br />
+- Access Control<br />
+- Model Migration</p>
+]]></body>
+      <created>1271771115</created>
+      <changed>1341580015</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[emfstore.org]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/emfstore-marketplace_0.png?itok=KDwhPDBW]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/4.png?itok=g9yknqrC]]></screenshot>
+      <version>0.9.2</version>
+      <license>EPL</license>
+      <companyname><![CDATA[EclipseSource]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[Galileo, Indigo]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eclipse.org/emfstore/support.php]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/emf-store/releases/latest]]></updateurl>
+<ius>
+<iu>org.eclipse.emf.emfstore.client.ui.feature</iu>
+<iu>org.eclipse.emf.emfstore.ecp.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

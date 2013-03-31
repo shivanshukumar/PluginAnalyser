@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="155258" name="IBM® WebSphere® Application Server V8.0 Developer Tools" url="http://marketplace.eclipse.org/content/ibm-websphere-application-server-v80-developer-tools">
+      <type>resource</type>
+      <categories>
+        <category id='1' name='Application Server' url='http://marketplace.eclipse.org/taxonomy/term/1'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='1974' name='Mobile and Device Development' url='http://marketplace.eclipse.org/category/categories/mobile-and-device-development'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='1967' name='Web, XML, Java EE and OSGi Enterprise Development' url='http://marketplace.eclipse.org/category/categories/web-xml-java-ee-and-osgi-enterprise-development'/>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+      </categories>
+      <tags>
+        <tag id='2255' name='WebSphere' url='http://marketplace.eclipse.org/category/free-tagging/websphere'/>
+        <tag id='695' name='jee' url='http://marketplace.eclipse.org/category/free-tagging/jee'/>
+        <tag id='667' name='jpa' url='http://marketplace.eclipse.org/category/free-tagging/jpa'/>
+        <tag id='162' name='osgi' url='http://marketplace.eclipse.org/category/free-tagging/osgi'/>
+        <tag id='189' name='web' url='http://marketplace.eclipse.org/category/free-tagging/web'/>
+      </tags>
+      
+      <owner>Eric D. Peters</owner>
+      <favorited>9</favorited>
+      <installstotal>4240</installstotal>
+      <installsrecent>314</installsrecent>
+      <shortdescription><![CDATA[<p>*V8.5.1* You can use IBM® WebSphere® Application Server V8.0 Developer Tools to build and deploy Java™ EE, OSGi, and Web 2.0 applications to WebSphere Application Server V8. Tools are provided for managing the server, publishing to a local or remote server, and controlling incremental publishing. Also included is Rich Page Editor, a WYSIWYG editor that you can use to edit HTML files, add Dojo and jQuery widgets to HTML pages, and create and edit web pages for mobile devices. For more information about installing this version of the tools, see <a href="https://www.ibm.com/developerworks/mydeveloperworks/blogs/wasdev/entry/download?lang=en">https://www.ibm.com/developerworks/mydeveloperworks/blogs/wasdev/entry/d...</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>*V8.5.1* You can use IBM® WebSphere® Application Server V8.0 Developer Tools to build and deploy Java™ EE, OSGi, and Web 2.0 applications to WebSphere Application Server V8. Tools are provided for managing the server, publishing to a local or remote server, and controlling incremental publishing. Also included is Rich Page Editor, a WYSIWYG editor that you can use to edit HTML files, add Dojo and jQuery widgets to HTML pages, and create and edit web pages for mobile devices. For more information about installing this version of the tools, see <a href="https://www.ibm.com/developerworks/mydeveloperworks/blogs/wasdev/entry/download?lang=en">https://www.ibm.com/developerworks/mydeveloperworks/blogs/wasdev/entry/d...</a></p>
+]]></body>
+      <created>1321642236</created>
+      <changed>1353942298</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.ibm.com/developerWorks/wasdev]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/was_2.png?itok=-bhrQ06S]]></image>
+      <version>8.5.1</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[IBM]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6.2, 3.7.2, 3.8.1, 4.2.1]]></eclipseversion>
+      <supporturl><![CDATA[http://www.ibm.com/developerworks/forums/forum.jspa?forumID=2666]]></supporturl>
+      <updateurl><![CDATA[http://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/V8.5]]></updateurl>
+<ius>
+<iu>com.ibm.osgi.wdt.feature</iu>
+<iu>com.ibm.websphere.wdt.st.v8</iu>
+<iu>com.ibm.wdt.webtools.top.feature</iu>
+<iu>com.ibm.wdt.webtools.dojo.library.distributions.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

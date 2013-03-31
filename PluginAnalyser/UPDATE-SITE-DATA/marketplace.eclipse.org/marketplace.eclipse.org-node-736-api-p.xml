@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="736" name="EzXML Desktop RCP" url="http://marketplace.eclipse.org/content/ezxml-desktop-rcp">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='21' name='Web Services' url='http://marketplace.eclipse.org/taxonomy/term/21'/>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+            
+      <owner>MrCompiler  </owner>
+      <favorited>4</favorited>
+      <installstotal>20</installstotal>
+      <installsrecent>2</installsrecent>
+      <shortdescription><![CDATA[<p>EzXML is an RCP XML platform providing graphical and source based tools for authoring, debugging and testing lightweight XML based desktop clients on the Eclipse Rich Client Platform. The EzXML Desktop framework provides a comprehensive example implementation that developers can use for creating distributed XML based applications using the Eclipse development and delivery framework.</p>
+<p>It extends the standard Eclipse classes to add full support for retrieval and storage of XML documents using the HTTP and HTTPS protocols. Additionally the Desktop infrastructure includes an embedded HTTP server for easy testing and sharing of XML documents in a workgroup environment.</p>
+<p>If you just want a quick and easy way to look at, create or modify XML documents occassionally then this may be the tool for you.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>EzXML is an RCP XML platform providing graphical and source based tools for authoring, debugging and testing lightweight XML based desktop clients on the Eclipse Rich Client Platform. The EzXML Desktop framework provides a comprehensive example implementation that developers can use for creating distributed XML based applications using the Eclipse development and delivery framework.</p>
+<p>It extends the standard Eclipse classes to add full support for retrieval and storage of XML documents using the HTTP and HTTPS protocols. Additionally the Desktop infrastructure includes an embedded HTTP server for easy testing and sharing of XML documents in a workgroup environment.</p>
+<p>If you just want a quick and easy way to look at, create or modify XML documents occassionally then this may be the tool for you.</p>
+]]></body>
+      <created>1216734199</created>
+      <changed>1325553759</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://sourceforge.net/p/ezxmldesktop/home/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/coollogo_com-288153446.gif?itok=TR30HcZ4]]></image>
+      <version>1.0.1.beta</version>
+      <license>EPL</license>
+      <companyname><![CDATA[MrCompiler.com]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[Helios]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://ezxmldesktop.sourceforge.net/update/]]></updateurl>
+<ius>
+<iu>com.mrcompiler.ezxml.dt.feature</iu>
+<iu>com.mrcompiler.ezxml.core.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

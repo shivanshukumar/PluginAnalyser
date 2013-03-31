@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="32712" name="OfficeFloor" url="http://marketplace.eclipse.org/content/officefloor">
+      <type>resource</type>
+      <categories>
+        <category id='1964' name='Application Development Frameworks' url='http://marketplace.eclipse.org/category/categories/application-development-frameworks'/>
+        <category id='1' name='Application Server' url='http://marketplace.eclipse.org/taxonomy/term/1'/>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='189' name='web' url='http://marketplace.eclipse.org/category/free-tagging/web'/>
+        <tag id='304' name='prototyping' url='http://marketplace.eclipse.org/category/free-tagging/prototyping'/>
+        <tag id='526' name='real-time' url='http://marketplace.eclipse.org/category/free-tagging/real-time'/>
+        <tag id='581' name='Cloud Computing' url='http://marketplace.eclipse.org/category/free-tagging/cloud-computing'/>
+      </tags>
+      
+      <owner>Daniel Sagenschneider</owner>
+      <favorited>5</favorited>
+      <installstotal>146</installstotal>
+      <installsrecent>28</installsrecent>
+      <shortdescription><![CDATA[<p>OfficeFloor is true inversion of control for building simple static to complex real-time web applications that are build once run anywhere - even with Cloud Computing.</p>
+<p>OfficeFloor through its WoOF (Web on OfficeFloor) functionality enables you to:</p>
+<p> - Wire together a working prototype in minutes</p>
+<p> - Extend the prototype to a working web site in hours</p>
+<p> - Deploy and run anywhere</p>
+<p> - Self documenting to make support easier</p>
+<p>For more information visit the OfficeFloor web site ( <a href="http://www.officefloor.net">http://www.officefloor.net</a> )</p>
+]]></shortdescription>
+      <body><![CDATA[<p>OfficeFloor is true inversion of control for building simple static to complex real-time web applications that are build once run anywhere - even with Cloud Computing.</p>
+<p>OfficeFloor through its WoOF (Web on OfficeFloor) functionality enables you to:</p>
+<p> - Wire together a working prototype in minutes</p>
+<p> - Extend the prototype to a working web site in hours</p>
+<p> - Deploy and run anywhere</p>
+<p> - Self documenting to make support easier</p>
+<p>For more information visit the OfficeFloor web site ( <a href="http://www.officefloor.net">http://www.officefloor.net</a> )</p>
+]]></body>
+      <created>1297608373</created>
+      <changed>1364104608</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.officefloor.net]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/OfficeFloorLogo.png?itok=A5sY_Ho5]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/landing_application_woof.png?itok=TjThkc7b]]></screenshot>
+      <version>2.12.0</version>
+      <license>GPL</license>
+      <companyname><![CDATA[OfficeFloor]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.officefloor.net/getting-help.html]]></supporturl>
+      <updateurl><![CDATA[http://www.officefloor.net/update]]></updateurl>
+<ius>
+<iu>net.officefloor.feature</iu>
+<iu>net.officefloor.plugins.feature</iu>
+<iu>net.officefloor.woof.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

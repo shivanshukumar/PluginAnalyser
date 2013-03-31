@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="918" name="FlexUnit Plugin" url="http://marketplace.eclipse.org/content/flexunit-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+      </categories>
+            
+      <owner>MarkTurner</owner>
+      <favorited>2</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>FlexUnit Plugin brings to Actionscript developers what JUnit has done for years for Java. Run your FlexUnit test from within Eclispe!<p></p>
+<p>For details on how to install this plugin visit:<p></p>
+<p><a href="<a href="http://www.codesquared.com/eclipse/installinstructions.html">Install">http://www.codesquared.com/eclipse/installinstructions.html">Install</a> Instructions</a><p></p>
+<p><b>New In Version 1.1.0:</b><br />
+Wizard support to automatically generate the test harness<br><br />
+Dynamic creation and execution of tests direct from the actionscript class </p>
+<p><p><b>Bug Fixes</b><br />
+Special thanks goes to Mickeal Ruellan for assisting in get the MAC compatibilty issues resolved.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>FlexUnit Plugin brings to Actionscript developers what JUnit has done for years for Java. Run your FlexUnit test from within Eclispe!<p></p>
+<p>For details on how to install this plugin visit:<p></p>
+<p><a href="<a href="http://www.codesquared.com/eclipse/installinstructions.html">Install">http://www.codesquared.com/eclipse/installinstructions.html">Install</a> Instructions</a><p></p>
+<p><b>New In Version 1.1.0:</b><br />
+Wizard support to automatically generate the test harness<br><br />
+Dynamic creation and execution of tests direct from the actionscript class </p>
+<p><p><b>Bug Fixes</b><br />
+Special thanks goes to Mickeal Ruellan for assisting in get the MAC compatibilty issues resolved.</p>
+]]></body>
+      <created>1239305518</created>
+      <changed>1259779231</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.codesquared.com/eclipse]]></homepageurl>
+      <image><![CDATA[http://www.codesquared.com/eclipse/flexunit.jpg]]></image>
+      <version>1.1.0</version>
+      <license>Free CPL</license>
+      <companyname><![CDATA[Codesquared]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3.1]]></eclipseversion>
+      <supporturl><![CDATA[http://www.codesquared.com/eclipse/installinstructions.html]]></supporturl>
+      <updateurl><![CDATA[http://www.codesquared.com/eclipse]]></updateurl>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="930" name="eclipseant2dot" url="http://marketplace.eclipse.org/content/eclipseant2dot">
+      <type>resource</type>
+      <categories>
+        <category id='8' name='Graphics' url='http://marketplace.eclipse.org/taxonomy/term/8'/>
+      </categories>
+            
+      <owner>tilaye</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Helps visualize ant files by generating a graph that shows the dependencies between ant targets.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Helps visualize ant files by generating a graph that shows the dependencies between ant targets.</p>
+]]></body>
+      <created>1242141127</created>
+      <changed>1259779242</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://eclipseant2dot.ertale.com/]]></homepageurl>
+      <image><![CDATA[http://eclipseant2dot.ertale.com/images/eclipseant2dot-snapshot-2.jpg]]></image>
+      <version>1.0.0</version>
+      <license>Free GPL</license>
+      <companyname><![CDATA[ertale.com]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.3, 3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://eclipseant2dot.ertale.com]]></supporturl>
+      <updateurl><![CDATA[http://eclipseant2dot.ertale.com/update]]></updateurl>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="57140" name="ZK Studio" url="http://marketplace.eclipse.org/content/zk-studio">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+      </categories>
+      <tags>
+        <tag id='332' name='Ajax UI Construction' url='http://marketplace.eclipse.org/category/free-tagging/ajax-ui-construction'/>
+        <tag id='518' name='ajax' url='http://marketplace.eclipse.org/category/free-tagging/ajax'/>
+        <tag id='589' name='Framework' url='http://marketplace.eclipse.org/category/free-tagging/framework'/>
+        <tag id='1289' name='docx' url='http://marketplace.eclipse.org/category/free-tagging/docx'/>
+        <tag id='1724' name='web framework' url='http://marketplace.eclipse.org/category/free-tagging/web-framework'/>
+      </tags>
+      
+      <owner>ZK Potix</owner>
+      <favorited>5</favorited>
+      <installstotal>20495</installstotal>
+      <installsrecent>1289</installsrecent>
+      <shortdescription><![CDATA[<p>* NOTE: You have to use [Eclipse for J2EE] version or install [Web Tools Platform (WTP)] first before you install ZK Studio.</p>
+<p>ZK Studio</p>
+<p>ZK Studio is a visual integrated development environment providing intuitive tools that span the entire application development lifecycle. Tools are included for UI design, prototyping, development, and deployment when implementing ZK applications.</p>
+<p>ZK Studio provides content assistance, WYSIWYG visual development, hyperlink navigation, variable highlighting, syntax coloring, and many other exciting features. ZK Studio is the most efficient way to develop Ajax applications.</p>
+<p>---<br />
+Update sites:<br />
+for eclipse 4.2(Juno):<br /><a href="http://studio.zkoss.org/resource/plugins/eclipse_4_2/">http://studio.zkoss.org/resource/plugins/eclipse_4_2/</a></p>
+<p>for eclipse 3.7(Indigo):<br /><a href="http://studio.zkoss.org/resource/plugins/eclipse_3_7/">http://studio.zkoss.org/resource/plugins/eclipse_3_7/</a></p>
+<p>---<br />
+Feature Highlights</p>
+<p>* zscript to MVC Extractor<br />
+* Intelligent editor<br />
+* Ajax widget palette<br />
+* Eclipse integration - Plugin<br />
+* Style designer<br />
+* Project and page wizards<br />
+* Automatic update manager<br />
+* Code completion<br />
+* ZK Library management</p>
+<p>---<br />
+Supported Platforms<br />
+* Eclipse 3.7 - Indigo<br />
+* Eclipse 4.2 - Juno<br />
+* MyEclipse<br />
+* IBM RAD 7.5<br />
+* Spring Tool Suite 2.5.1</p>
+]]></shortdescription>
+      <body><![CDATA[<p>* NOTE: You have to use [Eclipse for J2EE] version or install [Web Tools Platform (WTP)] first before you install ZK Studio.</p>
+<p>ZK Studio</p>
+<p>ZK Studio is a visual integrated development environment providing intuitive tools that span the entire application development lifecycle. Tools are included for UI design, prototyping, development, and deployment when implementing ZK applications.</p>
+<p>ZK Studio provides content assistance, WYSIWYG visual development, hyperlink navigation, variable highlighting, syntax coloring, and many other exciting features. ZK Studio is the most efficient way to develop Ajax applications.</p>
+<p>---<br />
+Update sites:<br />
+for eclipse 4.2(Juno):<br /><a href="http://studio.zkoss.org/resource/plugins/eclipse_4_2/">http://studio.zkoss.org/resource/plugins/eclipse_4_2/</a></p>
+<p>for eclipse 3.7(Indigo):<br /><a href="http://studio.zkoss.org/resource/plugins/eclipse_3_7/">http://studio.zkoss.org/resource/plugins/eclipse_3_7/</a></p>
+<p>---<br />
+Feature Highlights</p>
+<p>* zscript to MVC Extractor<br />
+* Intelligent editor<br />
+* Ajax widget palette<br />
+* Eclipse integration - Plugin<br />
+* Style designer<br />
+* Project and page wizards<br />
+* Automatic update manager<br />
+* Code completion<br />
+* ZK Library management</p>
+<p>---<br />
+Supported Platforms<br />
+* Eclipse 3.7 - Indigo<br />
+* Eclipse 4.2 - Juno<br />
+* MyEclipse<br />
+* IBM RAD 7.5<br />
+* Spring Tool Suite 2.5.1</p>
+]]></body>
+      <created>1306721467</created>
+      <changed>1350901866</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.zkoss.org/product/zkstudio.dsp]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/zk-logo2.gif?itok=Nvd8qmbx]]></image>
+      <version>1.0.2.v201210091718</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[Potix Corp.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6 - 4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.zkoss.org/forum/listDiscussion/18]]></supporturl>
+      <updateurl><![CDATA[http://studio.zkoss.org/resource/plugins/eclipse_4_2]]></updateurl>
+<ius>
+<iu>org.zkoss.eclipse</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

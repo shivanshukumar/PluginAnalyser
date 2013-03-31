@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1229" name="MDconnect for DOORS with RSA Extension" url="http://marketplace.eclipse.org/content/mdconnect-doors-rsa-extension">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+        <category id='39' name='Reporting' url='http://marketplace.eclipse.org/category/categories/reporting'/>
+        <category id='42' name='BIRT' url='http://marketplace.eclipse.org/category/categories/birt'/>
+      </categories>
+      <tags>
+        <tag id='184' name='traceability' url='http://marketplace.eclipse.org/category/free-tagging/traceability'/>
+        <tag id='774' name='rational doors' url='http://marketplace.eclipse.org/category/free-tagging/rational-doors'/>
+        <tag id='775' name='sodius' url='http://marketplace.eclipse.org/category/free-tagging/sodius'/>
+        <tag id='776' name='rational software architect' url='http://marketplace.eclipse.org/category/free-tagging/rational-software-architect'/>
+        <tag id='781' name='requirements' url='http://marketplace.eclipse.org/category/free-tagging/requirements'/>
+      </tags>
+      
+      <owner>Philippe Faure</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>MDConnect for DOORS designed to facilitate access to DOORS objects in Eclipse is complemented by commercial extensions allowing DOORS to link with other applications.<br />
+The RSA Extension offers a smart integration of DOORS and Rational Software Architect allowing users to link modeling artifacts to DOORS requirements.<br />
+For developers working with Rational Software Architect and tracking their project requirements in DOORS, synchronizing data and maintaining traceability is often difficult and time consuming. MDConnect for DOORS with its RSA extension offers a smart solution to edit, maintain and report traceability between requirements and model elements within a single user interface.<br />
+By simply using drag-and-drop, users can visually build the relations and enrich their project visibility. In addition, a variety of reporting tools are available to manage traceability and impact analysis.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>MDConnect for DOORS designed to facilitate access to DOORS objects in Eclipse is complemented by commercial extensions allowing DOORS to link with other applications.<br />
+The RSA Extension offers a smart integration of DOORS and Rational Software Architect allowing users to link modeling artifacts to DOORS requirements.<br />
+For developers working with Rational Software Architect and tracking their project requirements in DOORS, synchronizing data and maintaining traceability is often difficult and time consuming. MDConnect for DOORS with its RSA extension offers a smart solution to edit, maintain and report traceability between requirements and model elements within a single user interface.<br />
+By simply using drag-and-drop, users can visually build the relations and enrich their project visibility. In addition, a variety of reporting tools are available to manage traceability and impact analysis.</p>
+]]></body>
+      <created>1275491928</created>
+      <changed>1275491977</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.dxleditor.com/rsa_extension_connecting_doors_and_rational_software_architect]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/mdc4doors_dnd_links.gif?itok=o0lFA--b]]></screenshot>
+      <version></version>
+      <license>Commercial</license>
+      <companyname><![CDATA[SODIUS]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4, 3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.dxleditor.com/forum/mdconnect]]></supporturl>
+      <updateurl><![CDATA[http://download.mdworkbench.com]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

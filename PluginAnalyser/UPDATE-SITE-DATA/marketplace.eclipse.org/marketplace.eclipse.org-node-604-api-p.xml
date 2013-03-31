@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="604" name="OpenSwing" url="http://marketplace.eclipse.org/content/openswing">
+      <type>resource</type>
+      <categories>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+      </categories>
+      <tags>
+        <tag id='116' name='' url='http://marketplace.eclipse.org/taxonomy/term/116'/>
+        <tag id='200' name='swing' url='http://marketplace.eclipse.org/category/free-tagging/swing'/>
+        <tag id='356' name='graphics components' url='http://marketplace.eclipse.org/category/free-tagging/graphics-components'/>
+        <tag id='357' name='grid' url='http://marketplace.eclipse.org/category/free-tagging/grid'/>
+        <tag id='1874' name='http:/%2Fmarketplace.eclipse.org/content/openswing' url='http://marketplace.eclipse.org/category/free-tagging/http2fmarketplaceeclipseorgcontentopenswing'/>
+      </tags>
+      
+      <owner>maurocarniel</owner>
+      <favorited>11</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>OpenSwing is an open source suite of Swing based graphics components.<br />
+These components include <b>label control, multi-line label control, text field, text formatted field, multi-line text field, numeric field, currency field, calendar, grid, grid with nested grids, grid with nested Form, grid with generic nested components, properties grid, pivot table, tree, check-box tree, tree combined with a grid, lookup, gantt diagram, buttons with image, combo-box, combo-box multi-column, radio button, check-box, list, list multi-column, wizard panel, image panel, splash screen, dialog windows, tip of the day frame, progress bar/panel/dialog, licence agreement panel, alert window, iconifable window, "Outlook-like" panes, link button</b>.<br />
+<br>These graphics components are complaints with java bean specifications, so they can be used with the UI designer of Eclipse platform, such as Jigloo or Window Builder plugins.<br><br />
+<br><br />
+OpenSwing provides support for data binding and POJO too.<br><br />
+Graphics components can be used to develop both rich client applications and rich internet applications. <br><br />
+They can be easily combined with the most popular server-side layers, such as Spring, Hibernate, Apache Cayenne, iBatis, JPA and comunication protocol could be HTTP or RMI (for EJB 3.0)<br></p>
+]]></shortdescription>
+      <body><![CDATA[<p>OpenSwing is an open source suite of Swing based graphics components.<br />
+These components include <b>label control, multi-line label control, text field, text formatted field, multi-line text field, numeric field, currency field, calendar, grid, grid with nested grids, grid with nested Form, grid with generic nested components, properties grid, pivot table, tree, check-box tree, tree combined with a grid, lookup, gantt diagram, buttons with image, combo-box, combo-box multi-column, radio button, check-box, list, list multi-column, wizard panel, image panel, splash screen, dialog windows, tip of the day frame, progress bar/panel/dialog, licence agreement panel, alert window, iconifable window, "Outlook-like" panes, link button</b>.<br />
+<br>These graphics components are complaints with java bean specifications, so they can be used with the UI designer of Eclipse platform, such as Jigloo or Window Builder plugins.<br><br />
+<br><br />
+OpenSwing provides support for data binding and POJO too.<br><br />
+Graphics components can be used to develop both rich client applications and rich internet applications. <br><br />
+They can be easily combined with the most popular server-side layers, such as Spring, Hibernate, Apache Cayenne, iBatis, JPA and comunication protocol could be HTTP or RMI (for EJB 3.0)<br></p>
+]]></body>
+      <created>1197297529</created>
+      <changed>1259778899</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://oswing.sourceforge.net]]></homepageurl>
+      <image><![CDATA[http://plugins.netbeans.org/nbpluginportal/files/images/1198315514505_oslogo.gif]]></image>
+      <version>2.0.7</version>
+      <license>Free LGPL</license>
+      <companyname><![CDATA[]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.x]]></eclipseversion>
+      <supporturl><![CDATA[http://oswing.sourceforge.net]]></supporturl>
+      <updateurl><![CDATA[http://sourceforge.net/project/showfiles.php?group_id=167774]]></updateurl>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="429" name="JetSet" url="http://marketplace.eclipse.org/content/jetset">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+      </categories>
+      <tags>
+        <tag id='163' name='domain specific modeling' url='http://marketplace.eclipse.org/category/free-tagging/domain-specific-modeling'/>
+        <tag id='164' name='model transformation' url='http://marketplace.eclipse.org/category/free-tagging/model-transformation'/>
+        <tag id='165' name='code generation' url='http://marketplace.eclipse.org/category/free-tagging/code-generation'/>
+      </tags>
+      
+      <owner>Helge Timenes</owner>
+      <favorited>0</favorited>
+      <installstotal>202</installstotal>
+      <installsrecent>13</installsrecent>
+      <shortdescription><![CDATA[<p>JetSet is a set of Eclipse plugins for the development of model translation tools and code generators. The editor adapts itself to provided source and (optionally) target meta models, making it very fast to specify which data shall be extracted from source models and how they shall be represented in target models. From this specification, the actual model tranformator is generated as a separate Java project.</p>
+<p>Feature Highlights:<br />
+ - Graphical editor for designing and generating domain specific model transformators.<br />
+ - Supports XML to XML, XML to ASCII, ECORE to XML, ECORE to ASCII<br />
+ - Good alternative to XSLT when target is radically different from source.<br />
+ - Extensible by imported and embedded Java code<br />
+ - Stand-alone run-time (batch script capable)</p>
+]]></shortdescription>
+      <body><![CDATA[<p>JetSet is a set of Eclipse plugins for the development of model translation tools and code generators. The editor adapts itself to provided source and (optionally) target meta models, making it very fast to specify which data shall be extracted from source models and how they shall be represented in target models. From this specification, the actual model tranformator is generated as a separate Java project.</p>
+<p>Feature Highlights:<br />
+ - Graphical editor for designing and generating domain specific model transformators.<br />
+ - Supports XML to XML, XML to ASCII, ECORE to XML, ECORE to ASCII<br />
+ - Good alternative to XSLT when target is radically different from source.<br />
+ - Extensible by imported and embedded Java code<br />
+ - Stand-alone run-time (batch script capable)</p>
+]]></body>
+      <created>1175177053</created>
+      <changed>1318225641</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://jetset.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/NewJetset_0.gif?itok=KcyC1TSl]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screenshot001.png?itok=cyDC1Wfg]]></screenshot>
+      <version>2.0.2</version>
+      <license>EPL</license>
+      <companyname><![CDATA[N/A]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5 and later]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/jetset]]></supporturl>
+      <updateurl><![CDATA[http://jetset.sourceforge.net/update]]></updateurl>
+<ius>
+<iu>net.sf.jetset.feature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

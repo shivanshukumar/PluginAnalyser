@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="26832" name="Wsdl Auditing Tool - XML Rule Engine Based" url="http://marketplace.eclipse.org/content/wsdl-auditing-tool-xml-rule-engine-based">
+      <type>resource</type>
+      <categories>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='30' name='Process' url='http://marketplace.eclipse.org/taxonomy/term/30'/>
+        <category id='39' name='Reporting' url='http://marketplace.eclipse.org/category/categories/reporting'/>
+      </categories>
+      <tags>
+        <tag id='1500' name='wsdl audit' url='http://marketplace.eclipse.org/category/free-tagging/wsdl-audit'/>
+        <tag id='1501' name='wsdl auditor' url='http://marketplace.eclipse.org/category/free-tagging/wsdl-auditor'/>
+        <tag id='1502' name='wsdl naming' url='http://marketplace.eclipse.org/category/free-tagging/wsdl-naming'/>
+        <tag id='1503' name='wsdl' url='http://marketplace.eclipse.org/category/free-tagging/wsdl'/>
+        <tag id='1505' name='rule engine' url='http://marketplace.eclipse.org/category/free-tagging/rule-engine'/>
+      </tags>
+      
+      <owner>SaikiranDaripelli  </owner>
+      <favorited>0</favorited>
+      <installstotal>1445</installstotal>
+      <installsrecent>78</installsrecent>
+      <shortdescription><![CDATA[<p>Intro:<br />
+The tool will run the user defined audit rules on supplied WSDL(though currently it supports only WSDL based on w3c schema type, it can be extended to support any XML).<br />
+The rules should be defined in XML, in a defined format which will be explained below.<br />
+The tool also has a capability of comparing two wsdl's(Mainly a old and new version of same WSDL) and run rules on the newly added/removed elements.<br />
+Also this tool is completely extensible, i.e. all the core classes are instantiated using factory backed by Configuration.xml which can supplied as input argument. By Default Tool generates a HTML output, but you can supply any output user, which uses the tool output to generated any kind of file. </p>
+<p>Visit: <a href="http://saikirandaripelli.github.com/WsdlAuditor/">http://saikirandaripelli.github.com/WsdlAuditor/</a> for complete details.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Intro:<br />
+The tool will run the user defined audit rules on supplied WSDL(though currently it supports only WSDL based on w3c schema type, it can be extended to support any XML).<br />
+The rules should be defined in XML, in a defined format which will be explained below.<br />
+The tool also has a capability of comparing two wsdl's(Mainly a old and new version of same WSDL) and run rules on the newly added/removed elements.<br />
+Also this tool is completely extensible, i.e. all the core classes are instantiated using factory backed by Configuration.xml which can supplied as input argument. By Default Tool generates a HTML output, but you can supply any output user, which uses the tool output to generated any kind of file. </p>
+<p>Visit: <a href="http://saikirandaripelli.github.com/WsdlAuditor/">http://saikirandaripelli.github.com/WsdlAuditor/</a> for complete details.</p>
+]]></body>
+      <created>1294344571</created>
+      <changed>1341568252</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://saikirandaripelli.github.com/WsdlAuditor/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[saikirandaripelli@gmail.com]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[https://github.com/SaikiranDaripelli/WsdlAuditor/issues]]></supporturl>
+      <updateurl><![CDATA[http://saikirandaripelli.github.com/WsdlAuditor/WsdlAuditorUpdateSite/]]></updateurl>
+<ius>
+<iu>WsdlAuditor</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

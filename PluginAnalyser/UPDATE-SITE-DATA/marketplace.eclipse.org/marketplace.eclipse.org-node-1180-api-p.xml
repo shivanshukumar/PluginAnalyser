@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1180" name="My Prompt" url="http://marketplace.eclipse.org/content/my-prompt">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='446' name='My Prompt' url='http://marketplace.eclipse.org/category/free-tagging/my-prompt'/>
+        <tag id='623' name='Test Java Features' url='http://marketplace.eclipse.org/category/free-tagging/test-java-features'/>
+        <tag id='901' name='Command Prompt' url='http://marketplace.eclipse.org/category/free-tagging/command-prompt'/>
+        <tag id='921' name='UI Command Line' url='http://marketplace.eclipse.org/category/free-tagging/ui-command-line'/>
+      </tags>
+      
+      <owner>Naveen K.N.</owner>
+      <favorited>9</favorited>
+      <installstotal>118</installstotal>
+      <installsrecent>1</installsrecent>
+      <shortdescription><![CDATA[<div>
+My Prompt is a java utility plug-in for eclipse, which can<br />
+be used to know or test java environment features. However it is not a tool<br />
+which provides complete information about java. The tool just tries to<br />
+help/provide utilities which may be required during java software development.<br />
+It is like a terminal based application wherein you can avail the utility<br />
+features provided by the tool.
+<!--br--><p>My Prompt is a free to use plug-in for Eclipse IDE 3.5 or later and JRE 1.6.</p>
+<!--br--><!--br--><p><b><u>Features</u></b></p>
+<!--br--><p>1. Execute Native Command Line Applications (Pipe is not supported)</p>
+<!--br--><p>2. Test Java Regular Expression</p>
+<!--br--><p>3. Test Java Database Connectivity</p>
+<!--br--><p>4. Check the Eclipse Memory State</p>
+<!--br--><p>5. Release the Unused Memory Space by GC</p>
+<!--br--><p>6. Check the Currently Running Threads and Its State</p>
+<!--br--><p>7. Check the all the Loaded Packages (Eclipse Main and System)</p>
+<!--br--><p>8. Find the Running Bundles and Available Plug-in Jars</p>
+<!--br--><p>9. Check the Class Structure and Class File Structure</p>
+<!--br--><p>10. And, other Utilities</p>
+<!--br--><!--br--><p><b><u>Releases</u></b></p>
+<!--br--><p>Version 1.0.0 (30-June-2010)</p>
+<!--br--><p>
+<b><u>Update Site</u></b></p>
+<!--br--><p>Eclipse 3.5 Update Site - <a href="http://sourceforge.net/downloads/myprompt/">http://sourceforge.net/downloads/myprompt/</a></p>
+<!--br--><p>
+<b><u>Run</u></b><br />
+You can avail the view from Window->Show View->Other View->My Prompt
+</p></div>
+]]></shortdescription>
+      <body><![CDATA[<div>
+My Prompt is a java utility plug-in for eclipse, which can<br />
+be used to know or test java environment features. However it is not a tool<br />
+which provides complete information about java. The tool just tries to<br />
+help/provide utilities which may be required during java software development.<br />
+It is like a terminal based application wherein you can avail the utility<br />
+features provided by the tool.
+<!--br--><p>My Prompt is a free to use plug-in for Eclipse IDE 3.5 or later and JRE 1.6.</p>
+<!--br--><!--br--><p><b><u>Features</u></b></p>
+<!--br--><p>1. Execute Native Command Line Applications (Pipe is not supported)</p>
+<!--br--><p>2. Test Java Regular Expression</p>
+<!--br--><p>3. Test Java Database Connectivity</p>
+<!--br--><p>4. Check the Eclipse Memory State</p>
+<!--br--><p>5. Release the Unused Memory Space by GC</p>
+<!--br--><p>6. Check the Currently Running Threads and Its State</p>
+<!--br--><p>7. Check the all the Loaded Packages (Eclipse Main and System)</p>
+<!--br--><p>8. Find the Running Bundles and Available Plug-in Jars</p>
+<!--br--><p>9. Check the Class Structure and Class File Structure</p>
+<!--br--><p>10. And, other Utilities</p>
+<!--br--><!--br--><p><b><u>Releases</u></b></p>
+<!--br--><p>Version 1.0.0 (30-June-2010)</p>
+<!--br--><p>
+<b><u>Update Site</u></b></p>
+<!--br--><p>Eclipse 3.5 Update Site - <a href="http://sourceforge.net/downloads/myprompt/">http://sourceforge.net/downloads/myprompt/</a></p>
+<!--br--><p>
+<b><u>Run</u></b><br />
+You can avail the view from Window->Show View->Other View->My Prompt
+</p></div>
+]]></body>
+      <created>1271614439</created>
+      <changed>1295240019</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://sites.google.com/site/myprompt/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/MyPromptLogo%20copy.png?itok=azGsJ-aP]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/MyPrompt_0.PNG?itok=lKQtLDBo]]></screenshot>
+      <version>1.0.0</version>
+      <license>Other Open Source</license>
+      <companyname><![CDATA[Naveen K N]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://sourceforge.net/projects/myprompt/files/]]></updateurl>
+<ius>
+<iu>MyPromptFeature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1023" name="Vaadin Plugin for Eclipse" url="http://marketplace.eclipse.org/content/vaadin-plugin-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='134' name='J2EE' url='http://marketplace.eclipse.org/category/free-tagging/j2ee'/>
+        <tag id='189' name='web' url='http://marketplace.eclipse.org/category/free-tagging/web'/>
+        <tag id='397' name='ria' url='http://marketplace.eclipse.org/category/free-tagging/ria'/>
+        <tag id='422' name='java ee' url='http://marketplace.eclipse.org/category/free-tagging/java-ee'/>
+      </tags>
+      
+      <owner>Sami Ekblad</owner>
+      <favorited>17</favorited>
+      <installstotal>23402</installstotal>
+      <installsrecent>1948</installsrecent>
+      <shortdescription><![CDATA[<p>Vaadin is an open source UI library for rich web user interfaces. It is a single jar component library that makes it easy for Java developers to create stunning web applications - no need for any JavaScript or XML programming:</p>
+<p>Label l = new Label("Hello Vaadin User");<br />
+layout.addComponent(l);</p>
+<p>Find the list of components  and sample code at <a href="http://demo.vaadin.com/">http://demo.vaadin.com/</a></p>
+<p>The Vaadin Plugin for Eclipse comes with project wizard and samples and WYSIWYG visual designer for Vaadin web user interfaces.</p>
+<p>Version 2.1 adds support for Vaadin 7.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Vaadin is an open source UI library for rich web user interfaces. It is a single jar component library that makes it easy for Java developers to create stunning web applications - no need for any JavaScript or XML programming:</p>
+<p>Label l = new Label("Hello Vaadin User");<br />
+layout.addComponent(l);</p>
+<p>Find the list of components  and sample code at <a href="http://demo.vaadin.com/">http://demo.vaadin.com/</a></p>
+<p>The Vaadin Plugin for Eclipse comes with project wizard and samples and WYSIWYG visual designer for Vaadin web user interfaces.</p>
+<p>Version 2.1 adds support for Vaadin 7.</p>
+]]></body>
+      <created>1255096152</created>
+      <changed>1359973960</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://vaadin.com/eclipse/]]></homepageurl>
+      <image><![CDATA[http://vaadin.com/image/image_gallery?img_id=74436]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/vaadin-eclipse-wysiwyg.png?itok=mcYmcxB3]]></screenshot>
+      <version>2.1</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[Vaadin Ltd]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[Java EE: Galileo, Helios, Juno]]></eclipseversion>
+      <supporturl><![CDATA[http://vaadin.com/forum]]></supporturl>
+      <updateurl><![CDATA[http://vaadin.com/eclipse/]]></updateurl>
+<ius>
+<iu>com.vaadin.integration.eclipse</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

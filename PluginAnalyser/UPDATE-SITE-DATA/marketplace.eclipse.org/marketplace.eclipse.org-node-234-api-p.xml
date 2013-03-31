@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="234" name="FLABot" url="http://marketplace.eclipse.org/content/flabot">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>asoria</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<h1> Project Description </h1>
+<p>FLABot is a fault-localization and debugging tool for Eclipse plug-ins, which is based on architectural information for aproximating those regions of code where faults are most likely originated.</p>
+<p>This is a joint project developed at the ISISTAN Research Institute (Faculty of Sciences, UNICEN University) and supported by Intel Corporation.<br />
+ Debugging is one of the most problematic activities of software development, because it usually implies a complex process of analysis and reasoning to find faults. Currently, most of the existing techniques to deal with debugging operate at the level of source code. However, this is not always the best approach, as the developer can be overwhelmed by the thousands of lines of code that have to be covered in today systems. This tendency indicates the need of approaches able to assist the developer in more productive and cost-effective ways.</p>
+<p>In this context, we argue that this problem should be tackled by architectural means, that is, we propose an approach based on the identification of the main architectural scenarios of the design, and the systematic exploration of the paths through which these scenarios map to lower-level design issues. By doing so, we can build a tool that can guide the developer in the process of locating faults at higher levels of abstraction, thus, improving the quality of the solutions and reducing the resources spent in this process.</p>
+<p>In this context, FLABot is conceived as an assistance agent that considers the structural/behavioral relationships among the components of the architectural model, and also relates the responsibilities allocated to these components with suitable code structures (e.g., classes and methods). The first aspect is devoted to the exploration of the architectural model in order to locate faulty responsibilities, whereas the latter aspect covers the necessary instrumentation of the plug-in to run a specialized debugging of these responsibilities across the code. Of course, the approach assumes that the developer initially provides some guesses about the sources of the errors. Figure 1 shows an outline of the FLABot tool.</p>
+<p align="center">
+              <img src="http://www.exa.unicen.edu.ar/isistan/flabot/images/flabot-conceptualview.png" width="657" height="461" /></p>
+<h1>  Architecture-Driven Fault Localization</h1>
+<p>Basically, our approach relies on the position that using architectural models enables many debugging concerns to be reasoned about and solved by the developer at a level that is reasonably manageable even for complex systems. In a nutshell, the architectural model provides a high-level picture of the system being developed, documenting also the main design decisions regarding the quality attributes most relevant for that system. In terms of representation, these models capture elements such as: components, interfaces, connectors and responsibilities, among others.</p>
+<p>To represent the architecture, the developer uses a box-and-line vocabulary, based on building blocks such as: components, responsibilities, and scenarios. Here, two levels are distinguished: the base architectural model that corresponds to the architectural design of the Eclipse plug-in platform, and the application plug-in that corresponds to the system to be debugged. The latter can be seen as an “instantiation” of the base architectural model. No matter which notation is chosen for the architectural models, the developer has to specify the functions each component is responsible for through scenarios. This leads to the notion of paths of responsibilities, which are crucial for FLABot to determine causal relationships within the architectural specification. On the other hand, the perceived errors with respect to the architectural specification are fed into FLABot by the developer. When the developer has evidences of some error, he/she can also identify the responsibility in which this error happened. Then, there is an engine equipped with a strategy for tracking and analyzing the different sequences of execution of the responsibilities assigned to the components in the architecture. To do so, the developer can define and run different test cases, so that the tool can collect traces of these runs and extract information about the status of responsibilities. This enables the engine to analyze the architectural model starting at this responsibility, and to present later a set of components potentially responsible for the wrong functioning of the system.</p>
+<p>During the process of fault localization for a given plug-in, the developer interacts with the tool following a mixed-initiative metaphor [Wilkins01]. That is, he/she is responsible for making the principal decisions to put things to work together and communicating these decisions to the FLABot. As critical points of the problem are being answered by the developer, the debugging work can be probably reduced to simpler matters. Then, based on the directives coming from the developer, the tool can make a number of subsidiary decisions about the details of potential faults in the plug-ins.</p>
+<p>Another aspect of FLABot is the traceability between design and implementation artifacts. This means that the developer should be able to relate those responsibilities marked by the fault-localization engine to specific classes and methods in his/her plug-in code. This mapping is necessary for two reasons. First, we have that the elaboration of the traces is determined by monitoring some patterns of events over the execution of the plug-in code. Second, once a set of responsibilities is marked for inspection at the architectural level, it should be possible to insert specific breakpoints in the corresponding regions of the code, so as to further check the plug-in via traditional debugging techniques.</p>
+<h1> The FLABot Modules </h1>
+<p>The functional organization of the FLABot tools comprises 3 modules:</p>
+<ol><li class="style1">
+<p>      Architectural Specification Editors (AEs). This module comprises the functionality necessary for the specification and manipulation of UML models in a graphical way. These models are the main vehicles to convey the architectural information that both the FLA and the SD modules need to do their work.
+  </p></li>
+<li class="style1">
+<p>      Fault-localization Assistant (FLA). This module materializes the strategies for architecture-driven fault localization
+  </p></li>
+<li class="style1">
+<p>      Specialized Debugger (SD). This module adds the debugging support itself. That is, the SD permits to link the output of the FLA with appropriate code structures, so that the developer can perform a normal debugging of the application code.»
+  </p></li>
+</ol><p> </p>
+<p><span class="style2">For questions, please email to: <a href="mailto:asoria@exa.unicen.edu.ar"> Alvaro Soria</a></span></p>
+<!--break--><p></p><h1><a href="documentation.htm">Documentation</a></h1>
+<h1>» Installation</h1>
+<h2>Requirements</h2>
+<p>To use the FLABot Plugin for Eclipse, you need Eclipse 3.3 , JRE/JDK 1.5.0 or later, GEF SDK and EMF SDK.</p>
+<h2>Installation using the Update Manager</h2>
+<p>Add the FLABot update site to the Update Manager and then follow the standard plugin installation procedure using the update manager's wizards. The update site URL for FLABot is:</p>
+<p class="style2"><a href="http://www.exa.unicen.edu.ar/isistan/flabot/updatesite/">http://www.exa.unicen.edu.ar/isistan/flabot/updatesite/</a> </p>
+<h2>Manual Installation  </h2>
+<p>Extract the <a href="http://www.exa.unicen.edu.ar/isistan/flabot/downloads.htm">FLABot_*.*.*.zip</a> in the directory in which you have installed Eclipse. This should be the parent directory of the "plugins" directory within the Eclipse installation. <br /><br />
+Once the plugin has been extracted, start Eclipse and choose Help->About Eclipse SDK->Other->Plugin Details . You should find a Fault Locator Agent Plugin provided by ISISTAN.</p>
+<h2>Troubleshooting</h2>
+<ul><li>Eclipse:</li>
+</ul><p>If the plugin or the plugin's help doesn't start, start eclipse from the command line using the -clean option:</p>
+<p>#  <span class="style2">eclipse -clean </span></p>
+<ul><li>Java:</li>
+</ul><p>If you have both java 1.5 and a previous version installed on the target system, you must check that Eclipse is launched using 1.5. The easiest way to know that is to open a command line and type "<br />
+java –version". If the message that follows that line indicates that the default virtual machine is previous to 1.5, the path must be updated to make 1.5 the default one, or Eclipse must be launched using the</p>
+<p>–vm<br />
+option.</p>
+<ul><li>Linux:</li>
+</ul><p>Flabot needs libcairo.so.1 to be in the library path to work correctly. The library is included with Eclipse, but might not be in the path. Please execute Eclipse from the command line as follows: </p>
+<p>#  <span class="style2">LD_LIBRARY_PATH=path_to_eclipse path_to_eclipse/eclipse</span></p>
+<ul><li>Windows:</li>
+</ul><p>GDI+ is needed for the plugin to work correctly. If you're using Windows XP, it's already included, but if not you must download it from<br /><a href="http://www.microsoft.com/downloads/details.aspx?familyid=6a63ab9c-df12-4d41-933c-be590feaa05a">the microsoft download site</a>.</p>
+<h1 class="subtitle">Technical Reports</h1>
+<ul><li>
+<p>[ADFlabot] FLABot Architectural Design. Technical Report<br />
+              ISISTAN-DGN-TRP-001 v1.0. ISISTAN-Intel Research Project. - <a href="http://www.exa.unicen.edu.ar/isistan/flabot/architecturaldesignflabot.zip">zip file</a></p>
+</li>
+<li>
+<p>[EditorsFlabot] FLABot Editors Design. Technical Report ISISTAN-DGN-TRP-002<br />
+              v1.0. ISISTAN-Intel Research Project.  - <a href="http://www.exa.unicen.edu.ar/isistan/flabot/editorsdesignflabot.zip">zip<br />
+              file</a></p>
+</li>
+<li>
+<p>[PrototypeFlabot] FLABot Fault Locator Prototype Design. Technical Report<br />
+              ISISTAN-DGN-TRP-003<br />
+              v1.0. ISISTAN-Intel Research Project.- <a href="http://www.exa.unicen.edu.ar/isistan/flabot/prototypedesignflabot.zip">zip<br />
+              file</a></p>
+</li>
+</ul><h1 class="subtitle"> Help</h1>
+<ul><li><a href="http://www.exa.unicen.edu.ar/isistan/flabot/documentation.htm">Using the plugin</a></li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<h1> Project Description </h1>
+<p>FLABot is a fault-localization and debugging tool for Eclipse plug-ins, which is based on architectural information for aproximating those regions of code where faults are most likely originated.</p>
+<p>This is a joint project developed at the ISISTAN Research Institute (Faculty of Sciences, UNICEN University) and supported by Intel Corporation.<br />
+ Debugging is one of the most problematic activities of software development, because it usually implies a complex process of analysis and reasoning to find faults. Currently, most of the existing techniques to deal with debugging operate at the level of source code. However, this is not always the best approach, as the developer can be overwhelmed by the thousands of lines of code that have to be covered in today systems. This tendency indicates the need of approaches able to assist the developer in more productive and cost-effective ways.</p>
+<p>In this context, we argue that this problem should be tackled by architectural means, that is, we propose an approach based on the identification of the main architectural scenarios of the design, and the systematic exploration of the paths through which these scenarios map to lower-level design issues. By doing so, we can build a tool that can guide the developer in the process of locating faults at higher levels of abstraction, thus, improving the quality of the solutions and reducing the resources spent in this process.</p>
+<p>In this context, FLABot is conceived as an assistance agent that considers the structural/behavioral relationships among the components of the architectural model, and also relates the responsibilities allocated to these components with suitable code structures (e.g., classes and methods). The first aspect is devoted to the exploration of the architectural model in order to locate faulty responsibilities, whereas the latter aspect covers the necessary instrumentation of the plug-in to run a specialized debugging of these responsibilities across the code. Of course, the approach assumes that the developer initially provides some guesses about the sources of the errors. Figure 1 shows an outline of the FLABot tool.</p>
+<p align="center">
+              <img src="http://www.exa.unicen.edu.ar/isistan/flabot/images/flabot-conceptualview.png" width="657" height="461" /></p>
+<h1>  Architecture-Driven Fault Localization</h1>
+<p>Basically, our approach relies on the position that using architectural models enables many debugging concerns to be reasoned about and solved by the developer at a level that is reasonably manageable even for complex systems. In a nutshell, the architectural model provides a high-level picture of the system being developed, documenting also the main design decisions regarding the quality attributes most relevant for that system. In terms of representation, these models capture elements such as: components, interfaces, connectors and responsibilities, among others.</p>
+<p>To represent the architecture, the developer uses a box-and-line vocabulary, based on building blocks such as: components, responsibilities, and scenarios. Here, two levels are distinguished: the base architectural model that corresponds to the architectural design of the Eclipse plug-in platform, and the application plug-in that corresponds to the system to be debugged. The latter can be seen as an “instantiation” of the base architectural model. No matter which notation is chosen for the architectural models, the developer has to specify the functions each component is responsible for through scenarios. This leads to the notion of paths of responsibilities, which are crucial for FLABot to determine causal relationships within the architectural specification. On the other hand, the perceived errors with respect to the architectural specification are fed into FLABot by the developer. When the developer has evidences of some error, he/she can also identify the responsibility in which this error happened. Then, there is an engine equipped with a strategy for tracking and analyzing the different sequences of execution of the responsibilities assigned to the components in the architecture. To do so, the developer can define and run different test cases, so that the tool can collect traces of these runs and extract information about the status of responsibilities. This enables the engine to analyze the architectural model starting at this responsibility, and to present later a set of components potentially responsible for the wrong functioning of the system.</p>
+<p>During the process of fault localization for a given plug-in, the developer interacts with the tool following a mixed-initiative metaphor [Wilkins01]. That is, he/she is responsible for making the principal decisions to put things to work together and communicating these decisions to the FLABot. As critical points of the problem are being answered by the developer, the debugging work can be probably reduced to simpler matters. Then, based on the directives coming from the developer, the tool can make a number of subsidiary decisions about the details of potential faults in the plug-ins.</p>
+<p>Another aspect of FLABot is the traceability between design and implementation artifacts. This means that the developer should be able to relate those responsibilities marked by the fault-localization engine to specific classes and methods in his/her plug-in code. This mapping is necessary for two reasons. First, we have that the elaboration of the traces is determined by monitoring some patterns of events over the execution of the plug-in code. Second, once a set of responsibilities is marked for inspection at the architectural level, it should be possible to insert specific breakpoints in the corresponding regions of the code, so as to further check the plug-in via traditional debugging techniques.</p>
+<h1> The FLABot Modules </h1>
+<p>The functional organization of the FLABot tools comprises 3 modules:</p>
+<ol><li class="style1">
+<p>      Architectural Specification Editors (AEs). This module comprises the functionality necessary for the specification and manipulation of UML models in a graphical way. These models are the main vehicles to convey the architectural information that both the FLA and the SD modules need to do their work.
+  </p></li>
+<li class="style1">
+<p>      Fault-localization Assistant (FLA). This module materializes the strategies for architecture-driven fault localization
+  </p></li>
+<li class="style1">
+<p>      Specialized Debugger (SD). This module adds the debugging support itself. That is, the SD permits to link the output of the FLA with appropriate code structures, so that the developer can perform a normal debugging of the application code.»
+  </p></li>
+</ol><p> </p>
+<p><span class="style2">For questions, please email to: <a href="mailto:asoria@exa.unicen.edu.ar"> Alvaro Soria</a></span></p>
+<!--break--><p></p><h1><a href="documentation.htm">Documentation</a></h1>
+<h1>» Installation</h1>
+<h2>Requirements</h2>
+<p>To use the FLABot Plugin for Eclipse, you need Eclipse 3.3 , JRE/JDK 1.5.0 or later, GEF SDK and EMF SDK.</p>
+<h2>Installation using the Update Manager</h2>
+<p>Add the FLABot update site to the Update Manager and then follow the standard plugin installation procedure using the update manager's wizards. The update site URL for FLABot is:</p>
+<p class="style2"><a href="http://www.exa.unicen.edu.ar/isistan/flabot/updatesite/">http://www.exa.unicen.edu.ar/isistan/flabot/updatesite/</a> </p>
+<h2>Manual Installation  </h2>
+<p>Extract the <a href="http://www.exa.unicen.edu.ar/isistan/flabot/downloads.htm">FLABot_*.*.*.zip</a> in the directory in which you have installed Eclipse. This should be the parent directory of the "plugins" directory within the Eclipse installation. <br /><br />
+Once the plugin has been extracted, start Eclipse and choose Help->About Eclipse SDK->Other->Plugin Details . You should find a Fault Locator Agent Plugin provided by ISISTAN.</p>
+<h2>Troubleshooting</h2>
+<ul><li>Eclipse:</li>
+</ul><p>If the plugin or the plugin's help doesn't start, start eclipse from the command line using the -clean option:</p>
+<p>#  <span class="style2">eclipse -clean </span></p>
+<ul><li>Java:</li>
+</ul><p>If you have both java 1.5 and a previous version installed on the target system, you must check that Eclipse is launched using 1.5. The easiest way to know that is to open a command line and type "<br />
+java –version". If the message that follows that line indicates that the default virtual machine is previous to 1.5, the path must be updated to make 1.5 the default one, or Eclipse must be launched using the</p>
+<p>–vm<br />
+option.</p>
+<ul><li>Linux:</li>
+</ul><p>Flabot needs libcairo.so.1 to be in the library path to work correctly. The library is included with Eclipse, but might not be in the path. Please execute Eclipse from the command line as follows: </p>
+<p>#  <span class="style2">LD_LIBRARY_PATH=path_to_eclipse path_to_eclipse/eclipse</span></p>
+<ul><li>Windows:</li>
+</ul><p>GDI+ is needed for the plugin to work correctly. If you're using Windows XP, it's already included, but if not you must download it from<br /><a href="http://www.microsoft.com/downloads/details.aspx?familyid=6a63ab9c-df12-4d41-933c-be590feaa05a">the microsoft download site</a>.</p>
+<h1 class="subtitle">Technical Reports</h1>
+<ul><li>
+<p>[ADFlabot] FLABot Architectural Design. Technical Report<br />
+              ISISTAN-DGN-TRP-001 v1.0. ISISTAN-Intel Research Project. - <a href="http://www.exa.unicen.edu.ar/isistan/flabot/architecturaldesignflabot.zip">zip file</a></p>
+</li>
+<li>
+<p>[EditorsFlabot] FLABot Editors Design. Technical Report ISISTAN-DGN-TRP-002<br />
+              v1.0. ISISTAN-Intel Research Project.  - <a href="http://www.exa.unicen.edu.ar/isistan/flabot/editorsdesignflabot.zip">zip<br />
+              file</a></p>
+</li>
+<li>
+<p>[PrototypeFlabot] FLABot Fault Locator Prototype Design. Technical Report<br />
+              ISISTAN-DGN-TRP-003<br />
+              v1.0. ISISTAN-Intel Research Project.- <a href="http://www.exa.unicen.edu.ar/isistan/flabot/prototypedesignflabot.zip">zip<br />
+              file</a></p>
+</li>
+</ul><h1 class="subtitle"> Help</h1>
+<ul><li><a href="http://www.exa.unicen.edu.ar/isistan/flabot/documentation.htm">Using the plugin</a></li>
+</ul>]]></body>
+      <created>1152564796</created>
+      <changed>1259933542</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.exa.unicen.edu.ar/isistan/flabot/]]></homepageurl>
+      <image><![CDATA[http://www.exa.unicen.edu.ar/isistan/flabot/images/beetle.jpg]]></image>
+      <version>0.4.1</version>
+      <license>Other Open Source</license>
+      <companyname><![CDATA[ISISTAN]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.3 or later]]></eclipseversion>
+      <supporturl><![CDATA[http://]]></supporturl>
+      <updateurl><![CDATA[http://www.exa.unicen.edu.ar/isistan/flabot/updatesite/]]></updateurl>
+    </node>
+    </marketplace>
+    

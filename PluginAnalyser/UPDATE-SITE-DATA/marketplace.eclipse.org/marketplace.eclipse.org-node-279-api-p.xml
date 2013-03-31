@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="279" name="Object Teams Development Tooling" url="http://marketplace.eclipse.org/content/object-teams-development-tooling">
+      <type>resource</type>
+      <categories>
+        <category id='1963' name='EclipseRT Target Platform Components' url='http://marketplace.eclipse.org/category/categories/eclipsert-target-platform-components'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='1966' name='Programming Languages' url='http://marketplace.eclipse.org/category/categories/programming-languages'/>
+      </categories>
+      <tags>
+        <tag id='146' name='editor' url='http://marketplace.eclipse.org/category/free-tagging/editor'/>
+        <tag id='1093' name='AOP' url='http://marketplace.eclipse.org/category/free-tagging/aop'/>
+        <tag id='1094' name='AOSD' url='http://marketplace.eclipse.org/category/free-tagging/aosd'/>
+        <tag id='1104' name='programming language' url='http://marketplace.eclipse.org/category/free-tagging/programming-language'/>
+      </tags>
+      
+      <owner>Stephan Herrmann</owner>
+      <favorited>5</favorited>
+      <installstotal>116</installstotal>
+      <installsrecent>5</installsrecent>
+      <shortdescription><![CDATA[<ul><li>Object Teams is a member of the Simultaneous Release Train since Indigo (2011)</li>
+</ul><h3>Programming Language</h3>
+
+The Object Teams Development Tooling embeds the role-based and aspect-oriented language <strong>OT/J</strong> into the Eclipse IDE. OT/J is an extension to the Java language, allowing for intuitive, role-based system modularization, as well as non-invasive adaptations of existing (Java-) software. By grouping roles into so-called <em>teams</em>, scalability is significantly better than in pure object-oriented languages.
+
+Starting with version 2.0.1 OT/J also includes all features of Java 7.
+
+<h3>Development environment</h3>
+
+The IDE is in development since 2003 and is based on the Eclipse Java development tools (JDT). It seamlessly supports and extends all features of the JDT like incremental compilation, code completion, quick-fixes, refactoring, debugging, etc.
+
+<h3>Components</h3>
+
+It is also possible to develop Eclipse plug-ins with OT/J and adapt existing plug-ins
+by hooking aspects into them. This technology — called <strong>OT/Equinox</strong> — can be used for all kinds of OSGi bundles including RCP components.
+
+<h3>We eat our dog food</h3>
+
+The OTDT itself has been developed using OT/Equinox thus showcasing the power of this technology in terms of unanticipated adaptations while sustaining a clear design that is easy to maintain.
+
+<h3>Supported platforms</h3>
+The OTDT has been tested on Linux, Windows and MacOS, but should run on any OS running a recent (≥1.5) JRE.
+
+<h3>Further reading</h3>
+
+<ul><li><a href="http://www.eclipse.org/objectteams/features.php">Full list of features</a></li>
+<li><a href="http://www.eclipse.org/objectteams/download.php">Download</a></li>
+<li><a href="http://wiki.eclipse.org/Category:Object_Teams">Object Teams Wiki</a></li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<ul><li>Object Teams is a member of the Simultaneous Release Train since Indigo (2011)</li>
+</ul><h3>Programming Language</h3>
+
+The Object Teams Development Tooling embeds the role-based and aspect-oriented language <strong>OT/J</strong> into the Eclipse IDE. OT/J is an extension to the Java language, allowing for intuitive, role-based system modularization, as well as non-invasive adaptations of existing (Java-) software. By grouping roles into so-called <em>teams</em>, scalability is significantly better than in pure object-oriented languages.
+
+Starting with version 2.0.1 OT/J also includes all features of Java 7.
+
+<h3>Development environment</h3>
+
+The IDE is in development since 2003 and is based on the Eclipse Java development tools (JDT). It seamlessly supports and extends all features of the JDT like incremental compilation, code completion, quick-fixes, refactoring, debugging, etc.
+
+<h3>Components</h3>
+
+It is also possible to develop Eclipse plug-ins with OT/J and adapt existing plug-ins
+by hooking aspects into them. This technology — called <strong>OT/Equinox</strong> — can be used for all kinds of OSGi bundles including RCP components.
+
+<h3>We eat our dog food</h3>
+
+The OTDT itself has been developed using OT/Equinox thus showcasing the power of this technology in terms of unanticipated adaptations while sustaining a clear design that is easy to maintain.
+
+<h3>Supported platforms</h3>
+The OTDT has been tested on Linux, Windows and MacOS, but should run on any OS running a recent (≥1.5) JRE.
+
+<h3>Further reading</h3>
+
+<ul><li><a href="http://www.eclipse.org/objectteams/features.php">Full list of features</a></li>
+<li><a href="http://www.eclipse.org/objectteams/download.php">Download</a></li>
+<li><a href="http://wiki.eclipse.org/Category:Object_Teams">Object Teams Wiki</a></li>
+</ul>]]></body>
+      <created>1161784656</created>
+      <changed>1358208388</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.eclipse.org/objectteams]]></homepageurl>
+      <image><![CDATA[http://www.eclipse.org/objectteams/images/ot_88x64.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/OTDT_Overview_0.png?itok=4goIfxNo]]></screenshot>
+      <version>2.1.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Eclipse Object Teams Project]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3.2 - 4.2.1]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eclipse.org/forums/eclipse.objectteams]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/objectteams/updates/ot2.1]]></updateurl>
+<ius>
+<iu>org.eclipse.objectteams.otdt.feature.group</iu>
+<iu>org.eclipse.objectteams.otequinox.feature.group</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

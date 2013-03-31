@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1217" name="Eulumdat Tools plugin" url="http://marketplace.eclipse.org/content/eulumdat-tools-plugin">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='146' name='editor' url='http://marketplace.eclipse.org/category/free-tagging/editor'/>
+        <tag id='484' name='eulumdat' url='http://marketplace.eclipse.org/category/free-tagging/eulumdat'/>
+        <tag id='485' name='ies' url='http://marketplace.eclipse.org/category/free-tagging/ies'/>
+        <tag id='486' name='photometric data' url='http://marketplace.eclipse.org/category/free-tagging/photometric-data'/>
+        <tag id='716' name='conversion' url='http://marketplace.eclipse.org/category/free-tagging/conversion'/>
+      </tags>
+      
+      <owner>maarten meijer</owner>
+      <favorited>1</favorited>
+      <installstotal>13</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<ul><li>Zip, Unzip, verify, manage, view, and edit IES and EULUMDAT files </li>
+<li>EULUMDAT is the European standard for photometric data used by all major lighting design programs </li>
+<li>IES is the IESNA standard for photometric data used in USA, Asia, ME and Pacific </li>
+<li>Verify and calculate LOR, Downward Flux fraction, and Direct Flux Factors</li>
+<li>Batch Convert IES files to Eulumdat and Eulumdat to IES</li>
+<li>Free 30 day trial after installation and registration</li>
+<li>Based on industry standard Eclipse</li>
+<li>Check many files against configurable rules and lamp designations</li>
+<li>Support for Absolute Photometry EULUMDAT as used for LED sources</li>
+<li>Edit data in Source, Luminaire or Lamp Set mode</li>
+<li>Content Assist for lamp designations in Source view</li>
+<li>Quick Fix for Rule Violations</li>
+<li>Copy Luminaire, Lamp Set or C-Gamma data as plain text</li>
+<li>Product Properties View to see product designation, symmetry, source type, CIE flux distribution and lamp sets instantly</li>
+<li>Set preferences for rules and checks to perform </li>
+<li>Export photometric diagrams in a range of configurable formats</li>
+<li>Export e100lux per square meter tables as text</li>
+<li>Run on Windows, Linux and Mac Cocoa as Eclipse plugin</li>
+</ul><p>Also available as Eclipse RCP application</p>
+]]></shortdescription>
+      <body><![CDATA[<ul><li>Zip, Unzip, verify, manage, view, and edit IES and EULUMDAT files </li>
+<li>EULUMDAT is the European standard for photometric data used by all major lighting design programs </li>
+<li>IES is the IESNA standard for photometric data used in USA, Asia, ME and Pacific </li>
+<li>Verify and calculate LOR, Downward Flux fraction, and Direct Flux Factors</li>
+<li>Batch Convert IES files to Eulumdat and Eulumdat to IES</li>
+<li>Free 30 day trial after installation and registration</li>
+<li>Based on industry standard Eclipse</li>
+<li>Check many files against configurable rules and lamp designations</li>
+<li>Support for Absolute Photometry EULUMDAT as used for LED sources</li>
+<li>Edit data in Source, Luminaire or Lamp Set mode</li>
+<li>Content Assist for lamp designations in Source view</li>
+<li>Quick Fix for Rule Violations</li>
+<li>Copy Luminaire, Lamp Set or C-Gamma data as plain text</li>
+<li>Product Properties View to see product designation, symmetry, source type, CIE flux distribution and lamp sets instantly</li>
+<li>Set preferences for rules and checks to perform </li>
+<li>Export photometric diagrams in a range of configurable formats</li>
+<li>Export e100lux per square meter tables as text</li>
+<li>Run on Windows, Linux and Mac Cocoa as Eclipse plugin</li>
+</ul><p>Also available as Eclipse RCP application</p>
+]]></body>
+      <created>1274194645</created>
+      <changed>1358259378</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.fold1.com/eulumdattools/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/eulumdat-plugin-mp.png?itok=kOWDfb5I]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/tools1.png?itok=aVQHeu2J]]></screenshot>
+      <version>0.9.12</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[FOLD Systems]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.8, 4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.fold1.com/contact.php]]></supporturl>
+      <updateurl><![CDATA[http://www.fold1.com/eulumdattools/]]></updateurl>
+<ius>
+<iu>com.fold1.eulumdat.tools.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

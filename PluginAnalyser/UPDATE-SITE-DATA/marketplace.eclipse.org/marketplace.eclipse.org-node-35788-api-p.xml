@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="35788" name="MDE Utils" url="http://marketplace.eclipse.org/content/mde-utils">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+      </categories>
+      <tags>
+        <tag id='163' name='domain specific modeling' url='http://marketplace.eclipse.org/category/free-tagging/domain-specific-modeling'/>
+      </tags>
+      
+      <owner>Cyril Faucher</owner>
+      <favorited>2</favorited>
+      <installstotal>13</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The main goal of this set of Eclipse plugins is to provide MDE utils developed by a MDE user for MDE users.<br />
+These plugins are developed upon EMF (Eclipse Modeling Framework).</p>
+<p>All of the provided features are as UI Actions (right-clic on Files or Folders).<br />
+Main features for EMF and Ecore: EEnum fixer, Change NsURI, Mass remover, etc.<br />
+Several features are dedicated to related tools like EMFTriple (<a href="http://marketplace.eclipse.org/content/emf-triple">http://marketplace.eclipse.org/content/emf-triple</a>), Kermeta (<a href="http://www.kermeta.org">http://www.kermeta.org</a>) and Kompose (<a href="http://www.kermeta.org">http://www.kermeta.org</a>).</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The main goal of this set of Eclipse plugins is to provide MDE utils developed by a MDE user for MDE users.<br />
+These plugins are developed upon EMF (Eclipse Modeling Framework).</p>
+<p>All of the provided features are as UI Actions (right-clic on Files or Folders).<br />
+Main features for EMF and Ecore: EEnum fixer, Change NsURI, Mass remover, etc.<br />
+Several features are dedicated to related tools like EMFTriple (<a href="http://marketplace.eclipse.org/content/emf-triple">http://marketplace.eclipse.org/content/emf-triple</a>), Kermeta (<a href="http://www.kermeta.org">http://www.kermeta.org</a>) and Kompose (<a href="http://www.kermeta.org">http://www.kermeta.org</a>).</p>
+]]></body>
+      <created>1298983950</created>
+      <changed>1299076783</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://emios.sourceforge.net/mde/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/icone_large.jpg?itok=ya9yLijg]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/uiActions_01.jpg?itok=WZ8cev7_]]></screenshot>
+      <version>1.0.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Emios Project - Cyril Faucher]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6.x]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://emios.sourceforge.net/mde/update/]]></updateurl>
+<ius>
+<iu>org.emios.mde.utils.feature</iu>
+<iu>org.emios.mde.utils4eclipse.feature</iu>
+<iu>org.emios.mde.utils4emf.feature</iu>
+<iu>org.emios.mde.utils4emftriple.feature</iu>
+<iu>org.emios.mde.utils4kermeta.feature</iu>
+<iu>org.emios.mde.utils4kompose.feature</iu>
+<iu>org.emios.mde.dependencies</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

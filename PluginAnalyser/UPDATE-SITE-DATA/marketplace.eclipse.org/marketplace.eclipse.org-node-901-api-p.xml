@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="901" name="Yet Another RCP Inspector" url="http://marketplace.eclipse.org/content/yet-another-rcp-inspector">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+        <category id='40' name='Search' url='http://marketplace.eclipse.org/category/categories/search'/>
+      </categories>
+      <tags>
+        <tag id='305' name='ui' url='http://marketplace.eclipse.org/category/free-tagging/ui'/>
+        <tag id='327' name='eclipse' url='http://marketplace.eclipse.org/category/free-tagging/eclipse'/>
+        <tag id='328' name='plugin' url='http://marketplace.eclipse.org/category/free-tagging/plugin'/>
+        <tag id='450' name='inspect' url='http://marketplace.eclipse.org/category/free-tagging/inspect'/>
+        <tag id='451' name='inspector' url='http://marketplace.eclipse.org/category/free-tagging/inspector'/>
+      </tags>
+      
+      <owner>remsy  </owner>
+      <favorited>8</favorited>
+      <installstotal>430</installstotal>
+      <installsrecent>17</installsrecent>
+      <shortdescription><![CDATA[A first version of the <strong>YARI</strong> core components (Eclipse- and SWT-Inspector) is available for <strong>RAP</strong> 1.4 applications.
+You can download it from <a href="http://sourceforge.net/projects/yari/files/yari4rap/">http://sourceforge.net/projects/yari/files/yari4rap/</a> and add it to your rap target platform.<br />
+Note: The Eclipse YARI and the RAP Yari is (not yet) binary compatible.
+<br /><br />---<br /><br /><strong>YARI</strong> is a comprehensive tool suite to debug, spy, spider, inspect and navigate Eclipse based application GUIs (Workbench or RCP).
+Just add it to your Eclipse installation or your target platform and you have runtime access to a bunch of information about installed Plug-Ins, opened workbench parts or you can inspect the ui and its layout.<br /><br />
+
+Using the <strong>Eclipse Inspector</strong> view you will get the important information about the actual eclipse workbench. See which Plug-In contributes the active part, find actions and URIs for main menu entries, inspect the workbench with its active part, opened editors, views and perspectives, get an overview of all available OSGi and Eclipse services or search all available Eclipse Extension points and see which bundle contributes to which extension or debug complex Eclipse expressions or sourceProvider variables at runtime using the <em>Expression Evaluator </em> dialog.<br /><br />
+
+The <strong>SWT Inspector</strong> view allows you to navigate through the whole widget hierarchy, inspect and change at runtime layout constraints and see immediately how this change effects to the current layout. Get the SWT Style of a widget in plain text. Change the background color of all the workbench controls to find invisible widgets or see where the controls border exactly is; no more <code>control.setBackgroundColor(…)</code> is needed in your code, just change the color at runtime.<br /><br />
+
+Open the <strong>Bundle Inspector</strong> view to get an OSGi Management Agent. Control the lifecycle of already installed bundles. Install bundles from local or remote sources. Diagnose problems if a bundle cannot change to the active state. Inspect bundle headers, call functions on the bundles or have a look at the OSGi log entries using the OSGi log service.<br /><br />
+
+If you have (buddy) class loading problems: Open the  <strong>ClassLoader Inspector</strong> to see which bundle class loader loads which class or which bundle has access to a specific class. This "search" functionality is especially helpful if buddy class loading is used.<br /><br />
+
+Use an <strong>extended</strong> version of the SWT <strong>Sleak </strong> tool to find resource leaks or identify the identical resources which are allocated more than one time.<br /><br />
+
+See the Yari Wiki for further information:<br /><a href="http://sourceforge.net/apps/trac/yari/">http://sourceforge.net/apps/trac/yari/</a><br /><br /><em>Have a lot of fun!</em>]]></shortdescription>
+      <body><![CDATA[A first version of the <strong>YARI</strong> core components (Eclipse- and SWT-Inspector) is available for <strong>RAP</strong> 1.4 applications.
+You can download it from <a href="http://sourceforge.net/projects/yari/files/yari4rap/">http://sourceforge.net/projects/yari/files/yari4rap/</a> and add it to your rap target platform.<br />
+Note: The Eclipse YARI and the RAP Yari is (not yet) binary compatible.
+<br /><br />---<br /><br /><strong>YARI</strong> is a comprehensive tool suite to debug, spy, spider, inspect and navigate Eclipse based application GUIs (Workbench or RCP).
+Just add it to your Eclipse installation or your target platform and you have runtime access to a bunch of information about installed Plug-Ins, opened workbench parts or you can inspect the ui and its layout.<br /><br />
+
+Using the <strong>Eclipse Inspector</strong> view you will get the important information about the actual eclipse workbench. See which Plug-In contributes the active part, find actions and URIs for main menu entries, inspect the workbench with its active part, opened editors, views and perspectives, get an overview of all available OSGi and Eclipse services or search all available Eclipse Extension points and see which bundle contributes to which extension or debug complex Eclipse expressions or sourceProvider variables at runtime using the <em>Expression Evaluator </em> dialog.<br /><br />
+
+The <strong>SWT Inspector</strong> view allows you to navigate through the whole widget hierarchy, inspect and change at runtime layout constraints and see immediately how this change effects to the current layout. Get the SWT Style of a widget in plain text. Change the background color of all the workbench controls to find invisible widgets or see where the controls border exactly is; no more <code>control.setBackgroundColor(…)</code> is needed in your code, just change the color at runtime.<br /><br />
+
+Open the <strong>Bundle Inspector</strong> view to get an OSGi Management Agent. Control the lifecycle of already installed bundles. Install bundles from local or remote sources. Diagnose problems if a bundle cannot change to the active state. Inspect bundle headers, call functions on the bundles or have a look at the OSGi log entries using the OSGi log service.<br /><br />
+
+If you have (buddy) class loading problems: Open the  <strong>ClassLoader Inspector</strong> to see which bundle class loader loads which class or which bundle has access to a specific class. This "search" functionality is especially helpful if buddy class loading is used.<br /><br />
+
+Use an <strong>extended</strong> version of the SWT <strong>Sleak </strong> tool to find resource leaks or identify the identical resources which are allocated more than one time.<br /><br />
+
+See the Yari Wiki for further information:<br /><a href="http://sourceforge.net/apps/trac/yari/">http://sourceforge.net/apps/trac/yari/</a><br /><br /><em>Have a lot of fun!</em>]]></body>
+      <created>1237919363</created>
+      <changed>1344604175</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://sourceforge.net/apps/trac/yari/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/yari.png?itok=DGCUDZwU]]></screenshot>
+      <version>2.1.2</version>
+      <license>EPL</license>
+      <companyname><![CDATA[remsy]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3+]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/yari/support]]></supporturl>
+      <updateurl><![CDATA[https://yari.svn.sourceforge.net/svnroot/yari/trunk/YariUpdateSite/]]></updateurl>
+<ius>
+<iu>net.sf.yari.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

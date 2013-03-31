@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1044" name="M2Code for Java - Agile Model Driven JEE Generator" url="http://marketplace.eclipse.org/content/m2code-java-agile-model-driven-jee-generator">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+            
+      <owner>Harold Licari</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Building Java Enterprise applications is now easier and faster than ever. With M2Code for Java™, experience the perfect combination of best of breed Model Driven technologies, MagicDraw™ UML® and BLU AGE® Agile Model Transformation, and dramatically enhance your productivity by easily modeling and automatically generating 100% of your Java SOA applications, with advanced teamwork features. M2Code for Java™ is offering an integrated environment for UML models' elaboration, execution and automated transformation into Java applications (JSF / MVC Architecture / Hibernate).<br />
+M2Code for Java is built-on Eclipse and powered by Blu Age.<br />
+Download a free 30-days trial here: <a href="http://www.model2code.com/m2code-for-java-download.html">http://www.model2code.com/m2code-for-java-download.html</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Building Java Enterprise applications is now easier and faster than ever. With M2Code for Java™, experience the perfect combination of best of breed Model Driven technologies, MagicDraw™ UML® and BLU AGE® Agile Model Transformation, and dramatically enhance your productivity by easily modeling and automatically generating 100% of your Java SOA applications, with advanced teamwork features. M2Code for Java™ is offering an integrated environment for UML models' elaboration, execution and automated transformation into Java applications (JSF / MVC Architecture / Hibernate).<br />
+M2Code for Java is built-on Eclipse and powered by Blu Age.<br />
+Download a free 30-days trial here: <a href="http://www.model2code.com/m2code-for-java-download.html">http://www.model2code.com/m2code-for-java-download.html</a></p>
+]]></body>
+      <created>1258654204</created>
+      <changed>1274285254</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.model2code.com/m2code-for-java.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/M2CodeforJava.PNG?itok=OEykOJbA]]></image>
+      <version>1.4.2</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[BLU AGE CORPORATION]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4 (Ganymede)]]></eclipseversion>
+      <supporturl><![CDATA[http://www.model2code.com/support.html]]></supporturl>
+      <updateurl><![CDATA[http://www.model2code.com/m2code-for-java-download.html]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

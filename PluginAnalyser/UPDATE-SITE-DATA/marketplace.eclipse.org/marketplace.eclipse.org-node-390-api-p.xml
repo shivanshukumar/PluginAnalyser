@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="390" name="Eclipse Source Attacher" url="http://marketplace.eclipse.org/content/eclipse-source-attacher">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>Jakub Maler</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Eclipse Source Attacher helps you to attach source codes to jar libraries on one click.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Eclipse Source Attacher helps you to attach source codes to jar libraries on one click.</p>
+]]></body>
+      <created>1170946721</created>
+      <changed>1260376754</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.simpleway.cz/web/guest/eclipse-source-attacher]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.1</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Simple Way Ltd.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2, 3.3]]></eclipseversion>
+      <supporturl><![CDATA[http://www.simpleway.cz/forum]]></supporturl>
+      <updateurl><![CDATA[http://www.simpleway.cz/esa/update]]></updateurl>
+    </node>
+    </marketplace>
+    

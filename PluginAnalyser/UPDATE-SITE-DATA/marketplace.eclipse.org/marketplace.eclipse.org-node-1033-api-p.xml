@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1033" name="Configurator" url="http://marketplace.eclipse.org/content/configurator">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+      </categories>
+            
+      <owner>PavelVlasov</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Configurator is a tool to assemble configuration of Java objects in a GUI editor and then instantiate the configuration at runtime and parameterize it with substitution tokens and deployment profiles.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Configurator is a tool to assemble configuration of Java objects in a GUI editor and then instantiate the configuration at runtime and parameterize it with substitution tokens and deployment profiles.</p>
+]]></body>
+      <created>1256571379</created>
+      <changed>1259779353</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.hammurapi.com/dokuwiki/doku.php/products:config:start]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0</version>
+      <license>Free LGPL</license>
+      <companyname><![CDATA[Hammurapi Group]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5.0]]></eclipseversion>
+      <supporturl><![CDATA[http://]]></supporturl>
+      <updateurl><![CDATA[http://www.hammurapi.com/products/updatesite/]]></updateurl>
+    </node>
+    </marketplace>
+    

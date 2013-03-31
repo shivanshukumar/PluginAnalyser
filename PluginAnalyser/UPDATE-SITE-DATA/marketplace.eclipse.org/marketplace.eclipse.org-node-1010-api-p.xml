@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1010" name="PTI - PHP Tool Integration" url="http://marketplace.eclipse.org/content/pti-php-tool-integration">
+      <type>resource</type>
+      <categories>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='43' name='PHP' url='http://marketplace.eclipse.org/category/free-tagging/php'/>
+      </tags>
+      
+      <owner>Sven Kiera</owner>
+      <favorited>31</favorited>
+      <installstotal>17348</installstotal>
+      <installsrecent>1119</installsrecent>
+      <shortdescription><![CDATA[<p>On one site there exists many good PHP tools such as PHPUnit or PHP CodeSniffer which support the development of PHP scripts. On the other side there powerful IDEs for example PHP Delepment Tools Project (PDT) but mostly with no possibility to use such tools with them. The Eclipse PHP Tool Integration (PTI) is a collection of Eclipse plugins which aims to close this gap.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>On one site there exists many good PHP tools such as PHPUnit or PHP CodeSniffer which support the development of PHP scripts. On the other side there powerful IDEs for example PHP Delepment Tools Project (PDT) but mostly with no possibility to use such tools with them. The Eclipse PHP Tool Integration (PTI) is a collection of Eclipse plugins which aims to close this gap.</p>
+]]></body>
+      <created>1253296188</created>
+      <changed>1328614950</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.phpsrc.org]]></homepageurl>
+      <image><![CDATA[https://sourceforge.net/dbimage.php?id=249682]]></image>
+      <version>1.6.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[PHPsrc]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/pti/support]]></supporturl>
+      <updateurl><![CDATA[http://www.phpsrc.org/eclipse/pti/]]></updateurl>
+<ius>
+<iu>org.phpsrc.eclipse.pti.core</iu>
+<iu>org.phpsrc.eclipse.pti.tools.phpcpd</iu>
+<iu>org.phpsrc.eclipse.pti.tools.phpunit</iu>
+<iu>org.phpsrc.eclipse.pti.tools.phpdepend</iu>
+<iu>org.phpsrc.eclipse.pti.tools.codesniffer</iu>
+<iu>org.phpsrc.eclipse.pti.library.pear</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

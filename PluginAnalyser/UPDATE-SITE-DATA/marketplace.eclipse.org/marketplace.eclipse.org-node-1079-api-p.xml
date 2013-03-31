@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1079" name="iSpectrum" url="http://marketplace.eclipse.org/content/ispectrum">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='27' name='J2ME' url='http://marketplace.eclipse.org/taxonomy/term/27'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+            
+      <owner>Jean-Philippe Lesot</owner>
+      <favorited>4</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Turn your Eclipse in a Java iPhone application development environment. Fully Develop and Debug iPhone application in your Eclipse.</p>
+<!--break--><ol><li> Create a Java project and activates iSpectrum for this project.
+</li><li> Write your code in the latest Java programming language with iPhone APIs
+<ul><li> Java Programming Language with generics, enum, (un)boxing, …
+</li><li> Core APIs based principally on Android: java.lang, java.util, java.net, java.io, java.nio, java.math, java.text
+</li><li> Full automatic Java garbage collector
+  </li></ul></li><li> In one click, execute or debug your application on <strong>iPhone</strong> simulator or device.
+<ul><li> Java code is compiled in Objective-C code, which is compiled in native code with Apple iPhone SDK
+</li><li> Near native performance
+</li><li> Compiling, signing and distributing compliant with Apple
+  </li></ul></li></ol><p>Request a trial key now on <a href="http://www.flexycore.com">http://www.flexycore.com</a>. In January 2010, we will offer free ($0) license key for Open Source project. </p>
+<p><strong>Note</strong>: If you want to compile and obtain an iPhone binary application or an iPhone simulator binary application, you must have installed the iPhone SDK on a MAC OS X on x86 only and use FlexyCore iSpectrum on this system.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Turn your Eclipse in a Java iPhone application development environment. Fully Develop and Debug iPhone application in your Eclipse.</p>
+<!--break--><ol><li> Create a Java project and activates iSpectrum for this project.
+</li><li> Write your code in the latest Java programming language with iPhone APIs
+<ul><li> Java Programming Language with generics, enum, (un)boxing, …
+</li><li> Core APIs based principally on Android: java.lang, java.util, java.net, java.io, java.nio, java.math, java.text
+</li><li> Full automatic Java garbage collector
+  </li></ul></li><li> In one click, execute or debug your application on <strong>iPhone</strong> simulator or device.
+<ul><li> Java code is compiled in Objective-C code, which is compiled in native code with Apple iPhone SDK
+</li><li> Near native performance
+</li><li> Compiling, signing and distributing compliant with Apple
+  </li></ul></li></ol><p>Request a trial key now on <a href="http://www.flexycore.com">http://www.flexycore.com</a>. In January 2010, we will offer free ($0) license key for Open Source project. </p>
+<p><strong>Note</strong>: If you want to compile and obtain an iPhone binary application or an iPhone simulator binary application, you must have installed the iPhone SDK on a MAC OS X on x86 only and use FlexyCore iSpectrum on this system.</p>
+]]></body>
+      <created>1260449318</created>
+      <changed>1260528315</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.flexycore.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/basics.png?itok=lEPO35Ak]]></image>
+      <version>1.1</version>
+      <license>Free for non-commerical use</license>
+      <companyname><![CDATA[FlexyCore]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[> 3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://www.flexycore.com/en/developer-connection/forums/8-support.html]]></supporturl>
+      <updateurl><![CDATA[http://eclipse.flexycore.com/update]]></updateurl>
+    </node>
+    </marketplace>
+    

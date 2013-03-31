@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="154" name="Call Graph Plug-in" url="http://marketplace.eclipse.org/content/call-graph-plug">
+      <type>resource</type>
+      <categories>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+      </categories>
+            
+      <owner>Chris Morris</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Renders a directed graph of the visible nodes in the JDT Call Hierarchy view using a separately installed version of the GraphViz program "dot". BSD License.</p>
+<p>Eclipse versions: 3.0, 3.1, 3.2 (3.4 in progress)</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Renders a directed graph of the visible nodes in the JDT Call Hierarchy view using a separately installed version of the GraphViz program "dot". BSD License.</p>
+<p>Eclipse versions: 3.0, 3.1, 3.2 (3.4 in progress)</p>
+]]></body>
+      <created>1121271916</created>
+      <changed>1259943919</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://clabs.org/blogki/blogki.cgi?page=/ComputersAndTechnology/CallGraphEclipsePlugin]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0.0</version>
+      <license>Other</license>
+      <companyname><![CDATA[cLabs.org]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.0, 3.1, 3.2, 3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://clabs.org/blogki/blogki.cgi?page=/ComputersAndTechnology/CallGraphEclipsePlugin]]></supporturl>
+      <updateurl><![CDATA[http://clabs.org/eclipse/]]></updateurl>
+    </node>
+    </marketplace>
+    

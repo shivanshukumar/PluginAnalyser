@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1027" name="cppcheclipse" url="http://marketplace.eclipse.org/content/cppcheclipse">
+      <type>resource</type>
+      <categories>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+      </categories>
+      <tags>
+        <tag id='761' name='cppcheck' url='http://marketplace.eclipse.org/category/free-tagging/cppcheck'/>
+      </tags>
+      
+      <owner>Konrad Windszus</owner>
+      <favorited>9</favorited>
+      <installstotal>4212</installstotal>
+      <installsrecent>241</installsrecent>
+      <shortdescription><![CDATA[cppcheclipse is an Eclipse plugin which integrates cppcheck (<a href="http://sourceforge.net/projects/cppcheck/">http://sourceforge.net/projects/cppcheck/</a>) with the CDT project.]]></shortdescription>
+      <body><![CDATA[cppcheclipse is an Eclipse plugin which integrates cppcheck (<a href="http://sourceforge.net/projects/cppcheck/">http://sourceforge.net/projects/cppcheck/</a>) with the CDT project.]]></body>
+      <created>1255960271</created>
+      <changed>1353532899</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://eclipselabs.org/p/cppcheclipse]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>0.9.9</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Konrad Windszus]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6,3.7,3.8,4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://eclipselabs.org/p/cppcheclipse]]></supporturl>
+      <updateurl><![CDATA[http://cppcheclipse.eclipselabs.org.codespot.com/svn/update/]]></updateurl>
+<ius>
+<iu>com.googlecode.cppcheclipse.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

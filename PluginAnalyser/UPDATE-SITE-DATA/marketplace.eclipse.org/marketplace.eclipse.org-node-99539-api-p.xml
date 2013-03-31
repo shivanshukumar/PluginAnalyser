@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="99539" name="Annotations Ruler Background" url="http://marketplace.eclipse.org/content/annotations-ruler-background">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='8' name='Graphics' url='http://marketplace.eclipse.org/taxonomy/term/8'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+      </categories>
+      <tags>
+        <tag id='2156' name='annotations ruler' url='http://marketplace.eclipse.org/category/free-tagging/annotations-ruler'/>
+        <tag id='2157' name='overview ruler' url='http://marketplace.eclipse.org/category/free-tagging/overview-ruler'/>
+        <tag id='2158' name='background color' url='http://marketplace.eclipse.org/category/free-tagging/background-color'/>
+      </tags>
+      
+      <owner>Gil Barash</owner>
+      <favorited>1</favorited>
+      <installstotal>158</installstotal>
+      <installsrecent>8</installsrecent>
+      <shortdescription><![CDATA[<p>If you're not able to see the colors in the annotations ruler (AKA overview ruler), this one is for you. This small plugin enables setting the background color for the ruler.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>If you're not able to see the colors in the annotations ruler (AKA overview ruler), this one is for you. This small plugin enables setting the background color for the ruler.</p>
+]]></body>
+      <created>1312630498</created>
+      <changed>1324637734</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://github.com/chookapp/AnnotationsRulerBackground]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screenshot-all.JPG?itok=atU_lo5v]]></screenshot>
+      <version></version>
+      <license>EPL</license>
+      <companyname><![CDATA[Chookapp]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://chookapp.github.com/ChookappUpdateSite/]]></updateurl>
+<ius>
+<iu>com.chookapp.org.OverviewRulerBackground</iu>
+</ius>
+    </node>
+    </marketplace>
+    

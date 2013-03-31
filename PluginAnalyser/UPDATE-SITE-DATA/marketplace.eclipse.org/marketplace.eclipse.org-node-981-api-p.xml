@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="981" name="XLr8Developer for U2 Databases" url="http://marketplace.eclipse.org/content/xlr8developer-u2-databases">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+            
+      <owner>daverch</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>XLr8Developer is a web developer for IBM U2 databases called Universe or Unidata.  Using open-source Apache Tomcat as the server, U2WebLink with UniObjects for Java as the middleware and open-source jabsorb.org as the transport mechanism, we have a complete solution for anyone wanting data entry or reporting from U2 databases.<br />
+All forms are created using HTML and JavaScript.  The forms can be customized through three layers of JavaScript or the HTML source code can be modified.  All calls to the database go through our U2WebLink API via AJAX and data is transformed from U2 using our object editor to JSON objects that JavaScript handles very easily.<br />
+Whether you are handling value marked data fields or sub value marked data fields this tool can create the grid data entry and or display for that data with very little custom code.<br />
+This software runs on Windows, Linux, HP-UX, AIX, and others.  All modifications to code is handled via this IDE and you can incorporate any Internet tools or modules that you want into your forms.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>XLr8Developer is a web developer for IBM U2 databases called Universe or Unidata.  Using open-source Apache Tomcat as the server, U2WebLink with UniObjects for Java as the middleware and open-source jabsorb.org as the transport mechanism, we have a complete solution for anyone wanting data entry or reporting from U2 databases.<br />
+All forms are created using HTML and JavaScript.  The forms can be customized through three layers of JavaScript or the HTML source code can be modified.  All calls to the database go through our U2WebLink API via AJAX and data is transformed from U2 using our object editor to JSON objects that JavaScript handles very easily.<br />
+Whether you are handling value marked data fields or sub value marked data fields this tool can create the grid data entry and or display for that data with very little custom code.<br />
+This software runs on Windows, Linux, HP-UX, AIX, and others.  All modifications to code is handled via this IDE and you can incorporate any Internet tools or modules that you want into your forms.</p>
+]]></body>
+      <created>1249478848</created>
+      <changed>1259779288</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.u2logic.com/XLr8_WebDeveloper.html]]></homepageurl>
+      <image><![CDATA[http://www.u2logic.com/images/XLr8_logo_45X19.gif]]></image>
+      <version>2.52</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[U2logic, Inc.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://groups.google.com/group/xlr8]]></supporturl>
+      <updateurl><![CDATA[http://ww.u2logic.com/update]]></updateurl>
+    </node>
+    </marketplace>
+    

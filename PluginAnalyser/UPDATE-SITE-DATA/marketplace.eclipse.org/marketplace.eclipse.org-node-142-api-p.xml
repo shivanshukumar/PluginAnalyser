@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="142" name="EclipseNSIS" url="http://marketplace.eclipse.org/content/eclipsensis">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+      </categories>
+      <tags>
+        <tag id='2547' name='NSIS' url='http://marketplace.eclipse.org/category/free-tagging/nsis'/>
+      </tags>
+      
+      <owner>icemank</owner>
+      <favorited>9</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>EclipseNSIS is a plugin for the Eclipse platform which enables editing, compiling and testing Nullsoft Installer (NSIS) scripts. It also includes the EclipseNSIS InstallOptions Editor plugin, which enables editing of InstallOptions scripts.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>EclipseNSIS is a plugin for the Eclipse platform which enables editing, compiling and testing Nullsoft Installer (NSIS) scripts. It also includes the EclipseNSIS InstallOptions Editor plugin, which enables editing of InstallOptions scripts.</p>
+]]></body>
+      <created>1113503950</created>
+      <changed>1259778507</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://eclipsensis.sf.net]]></homepageurl>
+      <image><![CDATA[http://eclipsensis.sourceforge.net/images/screenshot01_epic.gif]]></image>
+      <version>0.9.7.2</version>
+      <license>Free CPL</license>
+      <companyname><![CDATA[Sunil Kamath (IcemanK)]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/forum/forum.php?forum_id=396972]]></supporturl>
+      <updateurl><![CDATA[http://eclipsensis.sf.net/update]]></updateurl>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="37743" name="Arctorus XLSX, XLS, ODS, CSV BIRT Emitter" url="http://marketplace.eclipse.org/content/arctorus-xlsx-xls-ods-csv-birt-emitter">
+      <type>resource</type>
+      <categories>
+        <category id='39' name='Reporting' url='http://marketplace.eclipse.org/category/categories/reporting'/>
+        <category id='42' name='BIRT' url='http://marketplace.eclipse.org/category/categories/birt'/>
+      </categories>
+      <tags>
+        <tag id='361' name='birt' url='http://marketplace.eclipse.org/category/free-tagging/birt'/>
+        <tag id='1288' name='openoffice' url='http://marketplace.eclipse.org/category/free-tagging/openoffice'/>
+        <tag id='1685' name='Arctorus Software Inc.' url='http://marketplace.eclipse.org/category/free-tagging/arctorus-software-inc'/>
+        <tag id='1992' name='export' url='http://marketplace.eclipse.org/category/free-tagging/export'/>
+        <tag id='1993' name='emitter' url='http://marketplace.eclipse.org/category/free-tagging/emitter'/>
+      </tags>
+      
+      <owner>Jeff Morris</owner>
+      <favorited>3</favorited>
+      <installstotal>104</installstotal>
+      <installsrecent>6</installsrecent>
+      <shortdescription><![CDATA[<p>Arctorus Birt Emitters provide unique solution to export Eclipse Birt Reports in Microsoft Office (OpenXML) and OpenOffice/LibreOffice formats. These emitters work side by side with Birt Reporting Engine and transparently make it possible to export Birt Reports in one of these new formats which are not supported by Birt natively:</p>
+<ul><li>XLS - Microsoft Excel Spreadsheet</li>
+<li>XLSX - Microsoft Excel Spreadsheet</li>
+<li>CSV - Text CSV - Comma Separated Values</li>
+<li>ODS - OpenOffice Calc Spreadsheet</li>
+</ul><p><strong>What's New:</strong></p>
+<p><em>May 10, 2012 - Arctorus BIRT Emitters 4.3.0 Released.</em></p>
+<ul><li>Export of "Live" Charts into XLSX and XLS formats. Charts are exported as native editable Excel Charts.</li>
+</ul><p><em>March 28, 2012 - Arctorus BIRT Emitters 4.2.0 Released.</em></p>
+<ul><li>Added CSV (Comma Separated Values) export format.</li>
+<li>Fixed licensing issue if several active licenses available.</li>
+</ul><p><em>March 19, 2012 - Arctorus BIRT Emitters 4.1.2 Released.</em></p>
+<ul><li>All emitters created for use with BIRT 3.7 were tested and work fine with latest Eclipse 4.2 (Juno M5).</li>
+<li>Fixed rare losing of cells when export to XLS/XLSX formats.</li>
+<li>Fixed stopping of report export when source database contains dates not recognizable by Excel. For example from far future 02/03/20121.</li>
+</ul><p><em>February 07, 2012 - Arctorus BIRT Emitters 4.1.0 Released.</em></p>
+<ul><li>All XLSX, XLS and ODS emitters available now as a single jar. Arctorus XLSX Birt Emitter license will give access to all these formats. Separate XLSX and ODS emitters are obsolete now.</li>
+<li>Added emitter options for renaming excel sheets.</li>
+<li>Added emitter options for sheets and workbook protection, and workbook encryption.</li>
+<li>Fixed wrong format of exported dates in ODS format when "." is used as separator. For example "dd.MM.yyyy".</li>
+<li>Fixed format of merged cells in XLSX and XLS formats. It was not possible to view it in Excel.</li>
+<li>Fixed possible wrong right and bottom borders of tables.</li>
+</ul><p><em>January 23, 2012 - Arctorus BIRT Emitters 4.0.0 Released.</em></p>
+<ul><li>Added support for XLS format so now we offer export of BIRT reports to the full range of spreadsheet formats XLS, XLSX and ODS.</li>
+<li>All spreadsheet cell types String/Number/DateTime/Boolean with any custom formatting are supported now.</li>
+<li>Highly improved calculation of rows height to fit information to cells.</li>
+<li>Implemented smart borders rendering when several borders defined for a single cell. For example if different borders are defined for adjacent cells or for a cell and cell's content.</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>Arctorus Birt Emitters provide unique solution to export Eclipse Birt Reports in Microsoft Office (OpenXML) and OpenOffice/LibreOffice formats. These emitters work side by side with Birt Reporting Engine and transparently make it possible to export Birt Reports in one of these new formats which are not supported by Birt natively:</p>
+<ul><li>XLS - Microsoft Excel Spreadsheet</li>
+<li>XLSX - Microsoft Excel Spreadsheet</li>
+<li>CSV - Text CSV - Comma Separated Values</li>
+<li>ODS - OpenOffice Calc Spreadsheet</li>
+</ul><p><strong>What's New:</strong></p>
+<p><em>May 10, 2012 - Arctorus BIRT Emitters 4.3.0 Released.</em></p>
+<ul><li>Export of "Live" Charts into XLSX and XLS formats. Charts are exported as native editable Excel Charts.</li>
+</ul><p><em>March 28, 2012 - Arctorus BIRT Emitters 4.2.0 Released.</em></p>
+<ul><li>Added CSV (Comma Separated Values) export format.</li>
+<li>Fixed licensing issue if several active licenses available.</li>
+</ul><p><em>March 19, 2012 - Arctorus BIRT Emitters 4.1.2 Released.</em></p>
+<ul><li>All emitters created for use with BIRT 3.7 were tested and work fine with latest Eclipse 4.2 (Juno M5).</li>
+<li>Fixed rare losing of cells when export to XLS/XLSX formats.</li>
+<li>Fixed stopping of report export when source database contains dates not recognizable by Excel. For example from far future 02/03/20121.</li>
+</ul><p><em>February 07, 2012 - Arctorus BIRT Emitters 4.1.0 Released.</em></p>
+<ul><li>All XLSX, XLS and ODS emitters available now as a single jar. Arctorus XLSX Birt Emitter license will give access to all these formats. Separate XLSX and ODS emitters are obsolete now.</li>
+<li>Added emitter options for renaming excel sheets.</li>
+<li>Added emitter options for sheets and workbook protection, and workbook encryption.</li>
+<li>Fixed wrong format of exported dates in ODS format when "." is used as separator. For example "dd.MM.yyyy".</li>
+<li>Fixed format of merged cells in XLSX and XLS formats. It was not possible to view it in Excel.</li>
+<li>Fixed possible wrong right and bottom borders of tables.</li>
+</ul><p><em>January 23, 2012 - Arctorus BIRT Emitters 4.0.0 Released.</em></p>
+<ul><li>Added support for XLS format so now we offer export of BIRT reports to the full range of spreadsheet formats XLS, XLSX and ODS.</li>
+<li>All spreadsheet cell types String/Number/DateTime/Boolean with any custom formatting are supported now.</li>
+<li>Highly improved calculation of rows height to fit information to cells.</li>
+<li>Implemented smart borders rendering when several borders defined for a single cell. For example if different borders are defined for adjacent cells or for a cell and cell's content.</li>
+</ul>]]></body>
+      <created>1299822443</created>
+      <changed>1336798737</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.arctorus.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/XLSX_____Arctoru_4d5708a327a9e.jpg?itok=aftPl8-A]]></image>
+      <version>4.3.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Arctorus Software Inc.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6, 3.7, 4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.arctorus.com]]></supporturl>
+      <updateurl><![CDATA[http://www.arctorus.com/p2/]]></updateurl>
+<ius>
+<iu>com.arctorus.export.birt37x.xlsx</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="421" name="The Scala IDE for Eclipse" url="http://marketplace.eclipse.org/content/scala-ide-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='592' name='scala' url='http://marketplace.eclipse.org/category/free-tagging/scala'/>
+        <tag id='593' name='functional programming' url='http://marketplace.eclipse.org/category/free-tagging/functional-programming'/>
+      </tags>
+      
+      <owner>Scala IDE for Eclipse</owner>
+      <favorited>36</favorited>
+      <installstotal>253</installstotal>
+      <installsrecent>256</installsrecent>
+      <shortdescription><![CDATA[<p>The Scala IDE for Eclipse is centered around seamless integration with the Eclipse Java tools, providing many of the features Eclipse users have come to expect including,</p>
+
+<ul><li>Support for mixed Scala/Java projects and any combination of Scala/Java project dependencies. Type driven operations are transparent across Scala and Java files and projects, allowing straightforward references from Scala to Java and vice versa.</li>
+<li>A Scala editor with syntax highlighting, inferred type and scaladoc hovers, hyperlinking to definitions, code completion, error and warning markers, indentation, brace matching.</li>
+<li>Project and source navigation including Scala support in the Package explorer view with embedded outline, outline view, quick outline, open type, open type hierarchy.</li>
+<li>Incremental compilation, application launching with integrated debugger, hyperlinking from stacktraces to Scala source, interactive console.</li>
+<li>Support for Eclipse plugin and OSGi development including hyperlinking to Scala source from plugin.xml and manifest files.</li>
+</ul><p>The <a href="http://www.assembla.com/spaces/scala-ide/wiki/Getting_Started">Getting Started Guide</a> is the starting point for the installation guide and other information regarding the use of the Scala IDE for Eclipse.</p>
+
+<p>General discussion, support and troubleshooting questions are welcome on the <a href="http://groups.google.com/group/scala-ide-user">user mailing list</a>. Your question might already have been answered, so please refer to the user documentation and search the list archives for answers before posting.</p>
+
+<p>The Scala IDE is open source, released under a <a href="http://www.scala-lang.org/node/146">BSD-like license</a>, written in Scala (with a modest amount of AspectJ-based monkey-patching of the JDT) and community involvement in its development is strongly encouraged. See the <a href="http://scala-ide.assembla.com/wiki/show/scala-ide/Developer_Documentation">developer documentation</a> for information on how to contribute, subscribe to the <a href="http://groups.google.com/group/scala-ide-dev">developer mailing list</a> and follow <a href="http://twitter.com/ScalaIDE">@ScalaIDE</a> on Twitter.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The Scala IDE for Eclipse is centered around seamless integration with the Eclipse Java tools, providing many of the features Eclipse users have come to expect including,</p>
+
+<ul><li>Support for mixed Scala/Java projects and any combination of Scala/Java project dependencies. Type driven operations are transparent across Scala and Java files and projects, allowing straightforward references from Scala to Java and vice versa.</li>
+<li>A Scala editor with syntax highlighting, inferred type and scaladoc hovers, hyperlinking to definitions, code completion, error and warning markers, indentation, brace matching.</li>
+<li>Project and source navigation including Scala support in the Package explorer view with embedded outline, outline view, quick outline, open type, open type hierarchy.</li>
+<li>Incremental compilation, application launching with integrated debugger, hyperlinking from stacktraces to Scala source, interactive console.</li>
+<li>Support for Eclipse plugin and OSGi development including hyperlinking to Scala source from plugin.xml and manifest files.</li>
+</ul><p>The <a href="http://www.assembla.com/spaces/scala-ide/wiki/Getting_Started">Getting Started Guide</a> is the starting point for the installation guide and other information regarding the use of the Scala IDE for Eclipse.</p>
+
+<p>General discussion, support and troubleshooting questions are welcome on the <a href="http://groups.google.com/group/scala-ide-user">user mailing list</a>. Your question might already have been answered, so please refer to the user documentation and search the list archives for answers before posting.</p>
+
+<p>The Scala IDE is open source, released under a <a href="http://www.scala-lang.org/node/146">BSD-like license</a>, written in Scala (with a modest amount of AspectJ-based monkey-patching of the JDT) and community involvement in its development is strongly encouraged. See the <a href="http://scala-ide.assembla.com/wiki/show/scala-ide/Developer_Documentation">developer documentation</a> for information on how to contribute, subscribe to the <a href="http://groups.google.com/group/scala-ide-dev">developer mailing list</a> and follow <a href="http://twitter.com/ScalaIDE">@ScalaIDE</a> on Twitter.</p>
+]]></body>
+      <created>1173967751</created>
+      <changed>1363793225</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.scala-ide.org/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo-for-assembla.png?itok=31tq4Cwa]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/snapshot2.png?itok=dSBOnymm]]></screenshot>
+      <version>3.0.0</version>
+      <license>BSD</license>
+      <companyname><![CDATA[scala-ide.org]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[4.2.x]]></eclipseversion>
+      <supporturl><![CDATA[http://scala-ide.org/documentation.html]]></supporturl>
+      <updateurl><![CDATA[http://download.scala-ide.org/sdk/e38/scala210/stable/site/]]></updateurl>
+<ius>
+<iu>org.scala-ide.sdt.weaving.feature</iu>
+<iu>org.scala-ide.sdt.feature</iu>
+<iu>org.scalaide.worksheet.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

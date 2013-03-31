@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="359" name="gted (GetText EDitor and Tools Integration)" url="http://marketplace.eclipse.org/content/gted-gettext-editor-and-tools-integration">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+            
+      <owner>Simon Martinelli</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>gted (GetText EDitor) is an editor for gettext po files and an Eclipse integration of gettext tools. gted is developed as Eclipse plugin and therefore very usefull for developers (and translators) using the Eclipse IDE for developement.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>gted (GetText EDitor) is an editor for gettext po files and an Eclipse integration of gettext tools. gted is developed as Eclipse plugin and therefore very usefull for developers (and translators) using the Eclipse IDE for developement.</p>
+]]></body>
+      <created>1168279331</created>
+      <changed>1259778670</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.gted.org]]></homepageurl>
+      <image><![CDATA[http://www.gted.org/screenshots/entries_epic.gif]]></image>
+      <version>1.5.5</version>
+      <license>Free GPL</license>
+      <companyname><![CDATA[Simon Martinelli]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[>= 3.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.sf.net/projects/gted]]></supporturl>
+      <updateurl><![CDATA[http://gted.sourceforge.net/update/]]></updateurl>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="960" name="Trac Wiki Editor 4 Eclipse" url="http://marketplace.eclipse.org/content/trac-wiki-editor-4-eclipse">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+      </categories>
+            
+      <owner>ivangsa</owner>
+      <favorited>3</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Trac Wiki Editor 4 Eclipse allows to Create/Edit/Delete Trac wiki pages from inside eclipse:</p>
+<p>* Wiki source Editor</p>
+<p>* Concurrent Editing detection and merge functionalities</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Trac Wiki Editor 4 Eclipse allows to Create/Edit/Delete Trac wiki pages from inside eclipse:</p>
+<p>* Wiki source Editor</p>
+<p>* Concurrent Editing detection and merge functionalities</p>
+]]></body>
+      <created>1245682942</created>
+      <changed>1259779269</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://trac-hacks.org/wiki/WikiEditorForEclipsePlugin]]></homepageurl>
+      <image><![CDATA[http://trac-hacks.org/svn/wikieditorforeclipseplugin/trunk/source/eclipse/org.trachacks.wikieditor.eclipse.plugin/icons/trac_48.png]]></image>
+      <version>0.0.6</version>
+      <license>Other</license>
+      <companyname><![CDATA[]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.2]]></eclipseversion>
+      <supporturl><![CDATA[http://]]></supporturl>
+      <updateurl><![CDATA[http://trac-hacks.org/svn/wikieditorforeclipseplugin/branches/v_0.0.x/releases/update-site/]]></updateurl>
+    </node>
+    </marketplace>
+    

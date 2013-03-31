@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="16379" name="CVS Version Tree" url="http://marketplace.eclipse.org/content/cvs-version-tree">
+      <type>resource</type>
+      <categories>
+        <category id='26' name='SCM' url='http://marketplace.eclipse.org/taxonomy/term/26'/>
+      </categories>
+      <tags>
+        <tag id='493' name='cvs' url='http://marketplace.eclipse.org/category/free-tagging/cvs'/>
+        <tag id='1294' name='versiontree' url='http://marketplace.eclipse.org/category/free-tagging/versiontree'/>
+      </tags>
+      
+      <owner>Dmitry Mitskevich</owner>
+      <favorited>4</favorited>
+      <installstotal>1027</installstotal>
+      <installsrecent>10</installsrecent>
+      <shortdescription><![CDATA[<p>Eclipse Version Tree Plugin is an easy to use, graphical version tree for project artifacts hosted in a CVS repository. It is a graphical replacment for Eclipse resource history. Supports different layout styles, customization and convenience features.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Eclipse Version Tree Plugin is an easy to use, graphical version tree for project artifacts hosted in a CVS repository. It is a graphical replacment for Eclipse resource history. Supports different layout styles, customization and convenience features.</p>
+]]></body>
+      <created>1287750544</created>
+      <changed>1341407077</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://versiontree.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[https://github.com/angvoz/net.sf.versiontree/raw/master/net.sf.versiontree.doc/images/MergePoints.png]]></image>
+      <version>1.7.0</version>
+      <license>Other Open Source</license>
+      <companyname><![CDATA[Jan Karstens, Andre Langhorst, Konrad Hubner, Dmitry Mitskevich, Andrew Gvozdev]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.7 / 3.8 / 4.2]]></eclipseversion>
+      <supporturl><![CDATA[https://github.com/angvoz/net.sf.versiontree/issues?state=open]]></supporturl>
+      <updateurl><![CDATA[http://versiontree.sourceforge.net/updates]]></updateurl>
+<ius>
+<iu>net.sf.versiontree</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

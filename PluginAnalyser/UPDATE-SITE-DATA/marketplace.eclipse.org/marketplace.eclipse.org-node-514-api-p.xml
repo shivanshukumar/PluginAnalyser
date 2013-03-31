@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="514" name="structure101" url="http://marketplace.eclipse.org/content/structure101">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+      </categories>
+      <tags>
+        <tag id='64' name='Modeling' url='http://marketplace.eclipse.org/category/free-tagging/modeling'/>
+        <tag id='129' name='dependencies' url='http://marketplace.eclipse.org/category/free-tagging/dependencies'/>
+        <tag id='211' name='static analysis' url='http://marketplace.eclipse.org/category/free-tagging/static-analysis'/>
+        <tag id='263' name='architecture' url='http://marketplace.eclipse.org/category/free-tagging/architecture'/>
+        <tag id='924' name='dependency management' url='http://marketplace.eclipse.org/category/free-tagging/dependency-management'/>
+      </tags>
+      
+      <owner>pth</owner>
+      <favorited>2</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The <a href="<a href="http://www.headwaysoftware.com/products/structure101/plugin/">structure101">http://www.headwaysoftware.com/products/structure101/plugin/">structure101</a> plug-in</a> for Eclipse is a free companion to the <a href="<a href="http://www.headwaysoftware.com/products/structure101/client/">structure101">http://www.headwaysoftware.com/products/structure101/client/">structure101</a> client</a> product. </p>
+<p>The plug-in lets you influence your software architecture as it happens – when the code is edited in the IDE. Structure101 <a href="<a href="http://www.headwaysoftware.com/products/structure101/define-architecture.php">architecture">http://www.headwaysoftware.com/products/structure101/define-architecture...</a> diagrams</a> specify layering and composition in a concise format. The plug-in displays the diagrams within the IDE, any violations to the target architecture are shown on the diagrams, and the plug-in lets you navigate to the relevant code. </p>
+<p>A key feature is that the plug-in can be set to warn only on *new* code changes that are inconsistent with the architecture. This way developers can grow the code-base towards the target architecture without being constantly swamped with pre-existing violations.The <a href="<a href="http://www.headwaysoftware.com/products/structure101/plugin/">structure101">http://www.headwaysoftware.com/products/structure101/plugin/">structure101</a> plug-in</a> for Eclipse is a free companion to the <a href="<a href="http://www.headwaysoftware.com/products/structure101/client/">structure101">http://www.headwaysoftware.com/products/structure101/client/">structure101</a> client</a> product. </p>
+<p>The plug-in lets you influence your software architecture as it happens – when the code is edited in the IDE. Structure101 <a href="<a href="http://www.headwaysoftware.com/products/structure101/define-architecture.php">architecture">http://www.headwaysoftware.com/products/structure101/define-architecture...</a> diagrams</a> specify layering and composition in a concise format. The plug-in displays the diagrams within the IDE, any violations to the target architecture are shown on the diagrams, and the plug-in lets you navigate to the relevant code. </p>
+<p>A key feature is that the plug-in can be set to warn only on *new* code changes that are inconsistent with the architecture. This way developers can grow the code-base towards the target architecture without being constantly swamped with pre-existing violations.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The <a href="<a href="http://www.headwaysoftware.com/products/structure101/plugin/">structure101">http://www.headwaysoftware.com/products/structure101/plugin/">structure101</a> plug-in</a> for Eclipse is a free companion to the <a href="<a href="http://www.headwaysoftware.com/products/structure101/client/">structure101">http://www.headwaysoftware.com/products/structure101/client/">structure101</a> client</a> product. </p>
+<p>The plug-in lets you influence your software architecture as it happens – when the code is edited in the IDE. Structure101 <a href="<a href="http://www.headwaysoftware.com/products/structure101/define-architecture.php">architecture">http://www.headwaysoftware.com/products/structure101/define-architecture...</a> diagrams</a> specify layering and composition in a concise format. The plug-in displays the diagrams within the IDE, any violations to the target architecture are shown on the diagrams, and the plug-in lets you navigate to the relevant code. </p>
+<p>A key feature is that the plug-in can be set to warn only on *new* code changes that are inconsistent with the architecture. This way developers can grow the code-base towards the target architecture without being constantly swamped with pre-existing violations.The <a href="<a href="http://www.headwaysoftware.com/products/structure101/plugin/">structure101">http://www.headwaysoftware.com/products/structure101/plugin/">structure101</a> plug-in</a> for Eclipse is a free companion to the <a href="<a href="http://www.headwaysoftware.com/products/structure101/client/">structure101">http://www.headwaysoftware.com/products/structure101/client/">structure101</a> client</a> product. </p>
+<p>The plug-in lets you influence your software architecture as it happens – when the code is edited in the IDE. Structure101 <a href="<a href="http://www.headwaysoftware.com/products/structure101/define-architecture.php">architecture">http://www.headwaysoftware.com/products/structure101/define-architecture...</a> diagrams</a> specify layering and composition in a concise format. The plug-in displays the diagrams within the IDE, any violations to the target architecture are shown on the diagrams, and the plug-in lets you navigate to the relevant code. </p>
+<p>A key feature is that the plug-in can be set to warn only on *new* code changes that are inconsistent with the architecture. This way developers can grow the code-base towards the target architecture without being constantly swamped with pre-existing violations.</p>
+]]></body>
+      <created>1185973075</created>
+      <changed>1277739039</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.headwaysoftware.com/products/structure101/plugin]]></homepageurl>
+      <image><![CDATA[http://www.headwaysoftware.com/images/s101-logo.jpg]]></image>
+      <version>3.3</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Headway Software]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.1,3.2,3.3,3.4,3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://]]></supporturl>
+      <updateurl><![CDATA[http://www.headwaysoftware.com/downloads/structure101/ideplugin/eclipse/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

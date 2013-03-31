@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1185" name="Obeo Designer for IS (Indigo version)" url="http://marketplace.eclipse.org/content/obeo-designer-0">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+      <tags>
+        <tag id='61' name='UML' url='http://marketplace.eclipse.org/category/free-tagging/uml'/>
+        <tag id='134' name='J2EE' url='http://marketplace.eclipse.org/category/free-tagging/j2ee'/>
+        <tag id='158' name='spring' url='http://marketplace.eclipse.org/category/free-tagging/spring'/>
+        <tag id='171' name='struts' url='http://marketplace.eclipse.org/category/free-tagging/struts'/>
+        <tag id='440' name='code generator' url='http://marketplace.eclipse.org/category/free-tagging/code-generator'/>
+      </tags>
+      
+      <owner>Obeo  </owner>
+      <favorited>4</favorited>
+      <installstotal>346</installstotal>
+      <installsrecent>40</installsrecent>
+      <shortdescription><![CDATA[<p>Obeo Designer for IS software displays a set of tools dedicated to the conception and development of JEE applications. It brings a complete development environment based on and integrated to Eclipse, profiting from the latest technological advances regarding model-driven development. This product features :</p>
+<ul><li>DSM modelers (SOA, Entity, ...) fully integrated to Eclipse (based on GMF technology)</li>
+<li>Code generators (Struts, EJB, Web Services, DAO, Hibernate, ...) provided along with their source code</li>
+<li>Traceability between code and models</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>Obeo Designer for IS software displays a set of tools dedicated to the conception and development of JEE applications. It brings a complete development environment based on and integrated to Eclipse, profiting from the latest technological advances regarding model-driven development. This product features :</p>
+<ul><li>DSM modelers (SOA, Entity, ...) fully integrated to Eclipse (based on GMF technology)</li>
+<li>Code generators (Struts, EJB, Web Services, DAO, Hibernate, ...) provided along with their source code</li>
+<li>Traceability between code and models</li>
+</ul>]]></body>
+      <created>1271859457</created>
+      <changed>1361185135</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://marketplace.obeonetwork.com/updates/od5/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_od_128_1.png?itok=96xg4TY7]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/draganddrop.png?itok=vEzvtJsu]]></screenshot>
+      <version>2.3</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Obeo]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3,3.4,3.5,3.6, 3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://www.obeo.fr/pages/maintenance-and-support/]]></supporturl>
+      <updateurl><![CDATA[http://marketplace.obeonetwork.com/updates/od5/]]></updateurl>
+<ius>
+<iu>org.obeonetwork.dsl.feature.cinematic</iu>
+<iu>org.obeonetwork.dsl.feature.entity</iu>
+<iu>org.obeonetwork.dsl.feature.environment</iu>
+<iu>org.obeonetwork.dsl.feature.interaction</iu>
+<iu>org.obeonetwork.dsl.feature.is.designer</iu>
+<iu>org.obeonetwork.dsl.environment.gen.java.feature</iu>
+<iu>org.obeonetwork.dsl.entity.gen.java.hibernate.feature</iu>
+<iu>org.obeonetwork.dsl.soa.gen.java.spring.hibernate.feature</iu>
+<iu>org.obeonetwork.dsl.soa.gen.java.spring.feature</iu>
+<iu>org.obeonetwork.dsl.cinematic.gen.java.struts.feature</iu>
+<iu>org.obeonetwork.dsl.cinematic.gen.java.struts.spring.feature</iu>
+<iu>org.obeonetwork.acceleo.feature</iu>
+<iu>org.obeonetwork.dsl.feature.overview</iu>
+<iu>org.obeonetwork.dsl.feature.soa</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

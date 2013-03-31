@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="58853" name="Command Key binding Cross Reference" url="http://marketplace.eclipse.org/content/command-key-binding-cross-reference">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='327' name='eclipse' url='http://marketplace.eclipse.org/category/free-tagging/eclipse'/>
+        <tag id='1976' name='commands' url='http://marketplace.eclipse.org/category/free-tagging/commands'/>
+        <tag id='1977' name='keybindings' url='http://marketplace.eclipse.org/category/free-tagging/keybindings'/>
+      </tags>
+      
+      <owner>Sandip Chitale</owner>
+      <favorited>3</favorited>
+      <installstotal>175</installstotal>
+      <installsrecent>16</installsrecent>
+      <shortdescription><![CDATA[<p>The idea of this plug-in is similar to Emac's describe-key (Ctrl+h) and where-is (Ctrl+w) but applied to Eclipse with some additional bells and whistles.</p>
+<p>The  Command Key binding Cross Reference Plug-in shows a pop-up dialog. The dialog can be invoked in two modes:</p>
+<p>- Key binding centric<br />
+- Command centric</p>
+<p>Key binding centric mode can be invoked by clicking on the keys icon (Ctrl+Alt+Shift+K) in the status bar. When the dialog is shown, the focus is in the Keysequence: field. You can type any modified keys and it shows the key sequence in text for e.g. Ctrl+D. The BACKSPACE and TAB work normally. If you want to enter the BACKSPACE key itself use the small left arrow menu next to the Keysequence: field. In the bottom table it shows all the commands that match the key  sequence text. The current hierarchy of contexts, platform, and some help info is shows in the legend at the bottom. For example, the legend in the screenshot is showing that the Editing Java Source context is the most active context. The commands applicable in the active contexts are shown in normal font. The commands not applicable in any of the active contexts are shown in disabled font. You can invoked the active commands by double clicking on the row or selecting the row and typing Enter key.</p>
+<p>Eclipse has different key binding schemes. You can explore the key bindings of other schemes by selecting it in the Scheme: combo box.</p>
+<p>You can type the keys without any modifiers. In that case commands matching all modifier variants of the key sequence are shown. This can help you see if you are defining the key binding modifiers in a consistent fashion.</p>
+<p>Command centric mode can be invoked by clicking on the keys icon (Ctrl+Alt+Shift+L) in the status bar. In this mode the Command: field has the focus. You can just type part of the command name and it will filter out the matching commands. To anchor the match at the beginning use the ^. You can use the * and ? as the wildcards. You  can easily switch Key binding centric mode by hitting tab. </p>
+<p>Lastly, the P column shows the icon of the platform if the command is defined for a specific platform such as Windows, Macor Linux. The U column shows the user icon if the user has customized the key binding using Preferences > General > Keys.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The idea of this plug-in is similar to Emac's describe-key (Ctrl+h) and where-is (Ctrl+w) but applied to Eclipse with some additional bells and whistles.</p>
+<p>The  Command Key binding Cross Reference Plug-in shows a pop-up dialog. The dialog can be invoked in two modes:</p>
+<p>- Key binding centric<br />
+- Command centric</p>
+<p>Key binding centric mode can be invoked by clicking on the keys icon (Ctrl+Alt+Shift+K) in the status bar. When the dialog is shown, the focus is in the Keysequence: field. You can type any modified keys and it shows the key sequence in text for e.g. Ctrl+D. The BACKSPACE and TAB work normally. If you want to enter the BACKSPACE key itself use the small left arrow menu next to the Keysequence: field. In the bottom table it shows all the commands that match the key  sequence text. The current hierarchy of contexts, platform, and some help info is shows in the legend at the bottom. For example, the legend in the screenshot is showing that the Editing Java Source context is the most active context. The commands applicable in the active contexts are shown in normal font. The commands not applicable in any of the active contexts are shown in disabled font. You can invoked the active commands by double clicking on the row or selecting the row and typing Enter key.</p>
+<p>Eclipse has different key binding schemes. You can explore the key bindings of other schemes by selecting it in the Scheme: combo box.</p>
+<p>You can type the keys without any modifiers. In that case commands matching all modifier variants of the key sequence are shown. This can help you see if you are defining the key binding modifiers in a consistent fashion.</p>
+<p>Command centric mode can be invoked by clicking on the keys icon (Ctrl+Alt+Shift+L) in the status bar. In this mode the Command: field has the focus. You can just type part of the command name and it will filter out the matching commands. To anchor the match at the beginning use the ^. You can use the * and ? as the wildcards. You  can easily switch Key binding centric mode by hitting tab. </p>
+<p>Lastly, the P column shows the icon of the platform if the command is defined for a specific platform such as Windows, Macor Linux. The U column shows the user icon if the user has customized the key binding using Preferences > General > Keys.</p>
+]]></body>
+      <created>1307235796</created>
+      <changed>1353685879</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://sandipchitale.blogspot.com/2011/06/eclipse-command-key-binding-cross.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/ckxref.png?itok=zJl0mXrf]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/ckxrefdialog.png?itok=OiY5M7En]]></screenshot>
+      <version>1.0.5</version>
+      <license>BSD</license>
+      <companyname><![CDATA[Sandip Chitale]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.6,3.7,3.8]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/sandipchitaleseclipseplugins/issues/list]]></supporturl>
+      <updateurl><![CDATA[http://sandipchitaleseclipseplugins.googlecode.com/svn/trunk/commandkeybinding.xref.updatesite]]></updateurl>
+<ius>
+<iu>commandkeybinding.xref.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

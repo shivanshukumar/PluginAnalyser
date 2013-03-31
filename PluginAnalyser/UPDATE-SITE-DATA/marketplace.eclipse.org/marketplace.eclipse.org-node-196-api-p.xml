@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="196" name="TRex: TTCN-3 Refactoring and Metrics Tool" url="http://marketplace.eclipse.org/content/trex-ttcn-3-refactoring-and-metrics-tool">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+      </categories>
+            
+      <owner>Benjamin Zeiss</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The comprehensive test of modern communication systems leads to large and complex test suites which have to be maintained throughout the system life-cycle. Experience with those written in the standardised Testing and Test Control Notation (TTCN-3) has shown that the maintenance of test suites is a non-trivial task and its burden can be reduced with appropriate tool support. To this aim, we have developed the TRex tool, published as open-source Eclipse plugin under the Eclipse Public License, which provides IDE functionality for the TTCN-3 core notation and supports the assessment and automatic restructuring of TTCN-3 test suites by providing suitable metrics and refactorings.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The comprehensive test of modern communication systems leads to large and complex test suites which have to be maintained throughout the system life-cycle. Experience with those written in the standardised Testing and Test Control Notation (TTCN-3) has shown that the maintenance of test suites is a non-trivial task and its burden can be reduced with appropriate tool support. To this aim, we have developed the TRex tool, published as open-source Eclipse plugin under the Eclipse Public License, which provides IDE functionality for the TTCN-3 core notation and supports the assessment and automatic restructuring of TTCN-3 test suites by providing suitable metrics and refactorings.</p>
+]]></body>
+      <created>1147195609</created>
+      <changed>1260185548</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.trex.informatik.uni-goettingen.de]]></homepageurl>
+      <image><![CDATA[http://www.trex.informatik.uni-goettingen.de/pics/trex-banner.jpg]]></image>
+      <version>0.6.0-daily</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Software Engineering for Distributed Systems Group, Universi]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.trex.informatik.uni-goettingen.de/trac/wiki/MailingLists]]></supporturl>
+      <updateurl><![CDATA[http://www.trex.informatik.uni-goettingen.de/repository]]></updateurl>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="281" name="GWT Designer GUI Builder" url="http://marketplace.eclipse.org/content/gwt-designer-gui-builder">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+      <tags>
+        <tag id='330' name='Instantiations' url='http://marketplace.eclipse.org/category/free-tagging/instantiations'/>
+        <tag id='331' name='GUI Construction' url='http://marketplace.eclipse.org/category/free-tagging/gui-construction'/>
+        <tag id='332' name='Ajax UI Construction' url='http://marketplace.eclipse.org/category/free-tagging/ajax-ui-construction'/>
+        <tag id='333' name='Web UI Construction' url='http://marketplace.eclipse.org/category/free-tagging/web-ui-construction'/>
+        <tag id='566' name='google' url='http://marketplace.eclipse.org/category/free-tagging/google'/>
+      </tags>
+      
+      <owner>Mark Johnson</owner>
+      <favorited>52</favorited>
+      <installstotal>270</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><span style="FONT-FAMILY: Verdana"><strong><span style="FONT-SIZE: 10pt">GWT Designer is now offered as a free download by Google. Watch the Google Web Toolkit blog at <a href="http://googlewebtoolkit.blogspot.com/">http://googlewebtoolkit.blogspot.com/</a> for more information.</span></strong></span></p>
+<p>To opt-in to receive emails about GWT Designer and other Google Development Tools, please visit <a href="http://code.google.com/webtoolkit/tools/optin.html">http://code.google.com/webtoolkit/tools/optin.html</a>.</p>
+<p>GWT Designer is a powerful and easy to use bi-directional GUI creator that supports the Google Web Toolkit (GWT). With GWT Designer, you can use the visual designer and Java code will be generated for you. You can easily add controls using drag-and-drop, add event handlers to your controls, change various properties of controls using a property editor and much more. You have complete freedom to change and refactor its generated code and see your changes immediately reflected in the visual designer. GWT Designer's powerful parser can also reverse engineer code created by hand.</p>
+<table style="WIDTH: 100%; BORDER-COLLAPSE: collapse"><tbody><tr><td>
+<span style="FONT-FAMILY: Verdana"><span style="FONT-SIZE: 10pt">GWT Designer is built as a plug-in to Eclipse, JBuilder MyEclipse and Rational IDEs. The plug-in builds an Abstract Syntax Tree (AST) to navigate the source code and uses GEF to display and manage the visual presentation. Using WYSIWYG layout tools, you don't need to write any lines of Java code - the designer will generate the code for you.</span></span>
+</td>
+<td>  </td>
+</tr></tbody></table><p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">Generated code doesn't require any additional custom libraries to compile and run beyond GWT itself: all of the generated code can be used without having GWT Designer installed. GWT Designer can read and write almost any format. It also supports free form code editing (make changes anywhere, not just in special areas) and most user refactorings (you can move, rename and subdivide methods without a problem).</span> </p>
+<p>XX</p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong><span style="TEXT-DECORATION: underline">FEATURES<br /></span></strong>Highlights of GWT Designer functionality are detailed below:</span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong><span style="TEXT-DECORATION: underline"></span></strong></span></p>
+<ul><li><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><b>True Bi-directional (Round-Trip) Code Generation<br /></b>Directly generates Java code which can be changed in the graphical editor or directly in source. All changes made directly to the source code will be reflected in the graphical designer
+<li>
+<p><b>True WYSIWYG<br /></b>Design view shows real GWT/HTML controls (not fake mockups) so all properties are reflected graphically</p>
+</li>
+<li>
+<p><b>CSS Support<br /></b>GWT Designer can apply CSS to the design view, so you can see an exact rendering of how your screen will look in the browser. Edit CSS files using CSS Editor and edit CSS properties from within graphical designer</p>
+</li>
+<li>
+<p><b>Extremely Fast<br /></b>GWT Designer opens a design in a couple seconds - several times faster than launching the GWT application itself (mostly due to our *proprietary* technique of using ASM for fast bytecode modification). All subsequent edit actions update the Design view in just 300-400 milliseconds</p>
+</li>
+<li>
+<p><b>Rich Editing Experience<br /></b>Support for all panel types with convenient and appropriate layout edit policies. AbsolutePanels provide Matisse-like widget snapping and alignment. Graphically layout Grids, FlexTables and TabPanels.</p>
+</li>
+<li>
+<p><strong>Widget Library Support</strong><br />
+							Comprehensive support for the Smart GWT, Ext-GWT (GXT) and GWT-Ext widget libraries.</p>
+</li>
+<li>
+<p><b>Wizards & Builders<br /></b>Wizards for creating new PopupPanels, DialogBoxes and Composites. Wizards for creating new GWT projects and RemoteServices. A Builder for the automatic creation of the "async" parts of a service is also included</p>
+</li>
+<li>
+<p><b>GWT Application Launching<br /></b>GWT Application launch configuration including launch shortcut for fast launching using popup menu or hot key in editor</p>
+</li>
+<li>
+<p><b>Intelligent Refactoring<br /></b>Renaming or moving a module class or remote service updates the the module XML file and renames any associated *Async and *Impl classes </p>
+</li>
+<p></p></span></li>
+<p><span style="FONT-SIZE: 10pt"></span></p>
+<li>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><b>Internationalization (i18n)<br /></b>Extract hard coded strings to resource bundles and automatically manage multiple locales</span></p>
+</li>
+<li>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><b>Easy Build & Deployment</b><br />
+							One-click deployment tool automatically creates a project WAR file and uploads it to your server. An ANT script is generated for an easy, repeatable build process </span></p></li></ul><p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><span style="TEXT-DECORATION: underline">AWARDS AND ACKNOWLEDGEMENTS</span></span></span><br /><span style="FONT-FAMILY: Verdana" class="bright">Best Commercial Eclipse Developer Tool!</span></strong> The Eclipse Foundation's annual Community Awards were announced at EclipseCon 2009. WindowBuilder (which includes GWT Designer) was one of only three commercial products honored.</span></p>
+<p class="MsoNormal">"When somebody asks me the best way to start with GWT, I generally answer: Install GWT Designer. It is the fastest way to discover GWT."--- Didier Girard, <a href="http://www.ongwt.com/">http://www.ongwt.com/</a></p>
+<p></p>
+<p></p>]]></shortdescription>
+      <body><![CDATA[<p><span style="FONT-FAMILY: Verdana"><strong><span style="FONT-SIZE: 10pt">GWT Designer is now offered as a free download by Google. Watch the Google Web Toolkit blog at <a href="http://googlewebtoolkit.blogspot.com/">http://googlewebtoolkit.blogspot.com/</a> for more information.</span></strong></span></p>
+<p>To opt-in to receive emails about GWT Designer and other Google Development Tools, please visit <a href="http://code.google.com/webtoolkit/tools/optin.html">http://code.google.com/webtoolkit/tools/optin.html</a>.</p>
+<p>GWT Designer is a powerful and easy to use bi-directional GUI creator that supports the Google Web Toolkit (GWT). With GWT Designer, you can use the visual designer and Java code will be generated for you. You can easily add controls using drag-and-drop, add event handlers to your controls, change various properties of controls using a property editor and much more. You have complete freedom to change and refactor its generated code and see your changes immediately reflected in the visual designer. GWT Designer's powerful parser can also reverse engineer code created by hand.</p>
+<table style="WIDTH: 100%; BORDER-COLLAPSE: collapse"><tbody><tr><td>
+<span style="FONT-FAMILY: Verdana"><span style="FONT-SIZE: 10pt">GWT Designer is built as a plug-in to Eclipse, JBuilder MyEclipse and Rational IDEs. The plug-in builds an Abstract Syntax Tree (AST) to navigate the source code and uses GEF to display and manage the visual presentation. Using WYSIWYG layout tools, you don't need to write any lines of Java code - the designer will generate the code for you.</span></span>
+</td>
+<td>  </td>
+</tr></tbody></table><p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt">Generated code doesn't require any additional custom libraries to compile and run beyond GWT itself: all of the generated code can be used without having GWT Designer installed. GWT Designer can read and write almost any format. It also supports free form code editing (make changes anywhere, not just in special areas) and most user refactorings (you can move, rename and subdivide methods without a problem).</span> </p>
+<p>XX</p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong><span style="TEXT-DECORATION: underline">FEATURES<br /></span></strong>Highlights of GWT Designer functionality are detailed below:</span></p>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong><span style="TEXT-DECORATION: underline"></span></strong></span></p>
+<ul><li><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><b>True Bi-directional (Round-Trip) Code Generation<br /></b>Directly generates Java code which can be changed in the graphical editor or directly in source. All changes made directly to the source code will be reflected in the graphical designer
+<li>
+<p><b>True WYSIWYG<br /></b>Design view shows real GWT/HTML controls (not fake mockups) so all properties are reflected graphically</p>
+</li>
+<li>
+<p><b>CSS Support<br /></b>GWT Designer can apply CSS to the design view, so you can see an exact rendering of how your screen will look in the browser. Edit CSS files using CSS Editor and edit CSS properties from within graphical designer</p>
+</li>
+<li>
+<p><b>Extremely Fast<br /></b>GWT Designer opens a design in a couple seconds - several times faster than launching the GWT application itself (mostly due to our *proprietary* technique of using ASM for fast bytecode modification). All subsequent edit actions update the Design view in just 300-400 milliseconds</p>
+</li>
+<li>
+<p><b>Rich Editing Experience<br /></b>Support for all panel types with convenient and appropriate layout edit policies. AbsolutePanels provide Matisse-like widget snapping and alignment. Graphically layout Grids, FlexTables and TabPanels.</p>
+</li>
+<li>
+<p><strong>Widget Library Support</strong><br />
+							Comprehensive support for the Smart GWT, Ext-GWT (GXT) and GWT-Ext widget libraries.</p>
+</li>
+<li>
+<p><b>Wizards & Builders<br /></b>Wizards for creating new PopupPanels, DialogBoxes and Composites. Wizards for creating new GWT projects and RemoteServices. A Builder for the automatic creation of the "async" parts of a service is also included</p>
+</li>
+<li>
+<p><b>GWT Application Launching<br /></b>GWT Application launch configuration including launch shortcut for fast launching using popup menu or hot key in editor</p>
+</li>
+<li>
+<p><b>Intelligent Refactoring<br /></b>Renaming or moving a module class or remote service updates the the module XML file and renames any associated *Async and *Impl classes </p>
+</li>
+<p></p></span></li>
+<p><span style="FONT-SIZE: 10pt"></span></p>
+<li>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><b>Internationalization (i18n)<br /></b>Extract hard coded strings to resource bundles and automatically manage multiple locales</span></p>
+</li>
+<li>
+<p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><b>Easy Build & Deployment</b><br />
+							One-click deployment tool automatically creates a project WAR file and uploads it to your server. An ANT script is generated for an easy, repeatable build process </span></p></li></ul><p><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><strong><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><span style="FONT-FAMILY: Verdana; FONT-SIZE: 10pt"><span style="TEXT-DECORATION: underline">AWARDS AND ACKNOWLEDGEMENTS</span></span></span><br /><span style="FONT-FAMILY: Verdana" class="bright">Best Commercial Eclipse Developer Tool!</span></strong> The Eclipse Foundation's annual Community Awards were announced at EclipseCon 2009. WindowBuilder (which includes GWT Designer) was one of only three commercial products honored.</span></p>
+<p class="MsoNormal">"When somebody asks me the best way to start with GWT, I generally answer: Install GWT Designer. It is the fastest way to discover GWT."--- Didier Girard, <a href="http://www.ongwt.com/">http://www.ongwt.com/</a></p>
+<p></p>
+<p></p>]]></body>
+      <created>1161882565</created>
+      <changed>1292438952</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/webtoolkit/tools/download-gwtdesigner.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/winbuilder_0.png?itok=eg-ZgwMc]]></image>
+      <version>8.0</version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[Google Inc]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4, 3.5 or 3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://forums.instantiations.com/viewforum.php?f=11]]></supporturl>
+      <updateurl><![CDATA[http://dl.google.com/eclipse/inst/d2gwt/latest/3.6]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

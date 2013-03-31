@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="948" name="TWUsbEclipseSchnittstellenPlugin" url="http://marketplace.eclipse.org/content/twusbeclipseschnittstellenplugin">
+      <type>resource</type>
+      <categories>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+      </categories>
+            
+      <owner>TWEclipse</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>A Java Eclipse Plugin for TWUsb inferface for a K8055 board from Vellmann. The framework include a K8055 interface for a board with 5 digital input channels and 8 digital output channels. In addition, there are two analogue inputs and two analogue outputs with 8 bit resolution.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>A Java Eclipse Plugin for TWUsb inferface for a K8055 board from Vellmann. The framework include a K8055 interface for a board with 5 digital input channels and 8 digital output channels. In addition, there are two analogue inputs and two analogue outputs with 8 bit resolution.</p>
+]]></body>
+      <created>1245072057</created>
+      <changed>1259779259</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.wenzlaff.de/twusb-eclipse-plugin.html]]></homepageurl>
+      <image><![CDATA[http://www.wenzlaff.de/download/twusb/twusb-110-80.jpg]]></image>
+      <version>1.2.4</version>
+      <license>Other</license>
+      <companyname><![CDATA[Wenzlaff.de]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://www.wenzlaff.de/twusb-eclipse-plugin.html]]></supporturl>
+      <updateurl><![CDATA[http://www.wenzlaff.de/download/eclipse/plugins/]]></updateurl>
+    </node>
+    </marketplace>
+    

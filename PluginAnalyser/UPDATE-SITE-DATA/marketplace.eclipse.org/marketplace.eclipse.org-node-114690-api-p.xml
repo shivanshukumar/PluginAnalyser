@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="114690" name="Stlipse" url="http://marketplace.eclipse.org/content/stlipse">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='1967' name='Web, XML, Java EE and OSGi Enterprise Development' url='http://marketplace.eclipse.org/category/categories/web-xml-java-ee-and-osgi-enterprise-development'/>
+      </categories>
+      <tags>
+        <tag id='1245' name='jsp' url='http://marketplace.eclipse.org/category/free-tagging/jsp'/>
+        <tag id='2197' name='stripes' url='http://marketplace.eclipse.org/category/free-tagging/stripes'/>
+        <tag id='2198' name='stripes framework' url='http://marketplace.eclipse.org/category/free-tagging/stripes-framework'/>
+      </tags>
+      
+      <owner>Iwao AVE!</owner>
+      <favorited>1</favorited>
+      <installstotal>1145</installstotal>
+      <installsrecent>24</installsrecent>
+      <shortdescription><![CDATA[<p>Stlipse is a <a href="http://www.stripesframework.org/">Stripes</a> plugin for Eclipse.</p>
+<p>[Features]</p>
+<p>Content assist and validation in JSP editor</p>
+<ul><li>'beanclass' attribute of any tag.</li>
+<li>ActionBean properties and event name for Stripes tags.</li>
+</ul><p>Content assist and validation in Java editor.</p>
+<ul><li>'field' attribute of @Validate annotation.</li>
+<li>'allow' and 'deny' attributes of @StrictBinding annotation.</li>
+</ul><p>Miscellaneous features</p>
+<ul><li>Allow Quick Fix to create the missing ActionBean directly from JSP editor.</li>
+<li>Hyperlink for tag attribute value to open the ActionBean.</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>Stlipse is a <a href="http://www.stripesframework.org/">Stripes</a> plugin for Eclipse.</p>
+<p>[Features]</p>
+<p>Content assist and validation in JSP editor</p>
+<ul><li>'beanclass' attribute of any tag.</li>
+<li>ActionBean properties and event name for Stripes tags.</li>
+</ul><p>Content assist and validation in Java editor.</p>
+<ul><li>'field' attribute of @Validate annotation.</li>
+<li>'allow' and 'deny' attributes of @StrictBinding annotation.</li>
+</ul><p>Miscellaneous features</p>
+<ul><li>Allow Quick Fix to create the missing ActionBean directly from JSP editor.</li>
+<li>Hyperlink for tag attribute value to open the ActionBean.</li>
+</ul>]]></body>
+      <created>1315233589</created>
+      <changed>1363935528</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://eclipselabs.org/p/stlipse]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Eclipsecap022.png?itok=rj3jXK-A]]></screenshot>
+      <version>1.0.8</version>
+      <license>MIT</license>
+      <companyname><![CDATA[Stlipse]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6+]]></eclipseversion>
+      <supporturl><![CDATA[http://eclipselabs.org/p/stlipse]]></supporturl>
+      <updateurl><![CDATA[http://stlipse.eclipselabs.org.codespot.com/git/org.eclipselabs.stlipse.site/]]></updateurl>
+<ius>
+<iu>org.eclipselabs.stlipse.feature</iu>
+<iu>org.eclipselabs.stlipse.templates.feature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

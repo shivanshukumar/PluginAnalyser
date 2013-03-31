@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1101" name="Swing GUI Designer" url="http://marketplace.eclipse.org/content/swing-gui-designer">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+      </categories>
+      <tags>
+        <tag id='777' name='Swing GUI' url='http://marketplace.eclipse.org/category/free-tagging/swing-gui'/>
+        <tag id='778' name='Matisse' url='http://marketplace.eclipse.org/category/free-tagging/matisse'/>
+        <tag id='779' name='MyEclipse' url='http://marketplace.eclipse.org/category/free-tagging/myeclipse'/>
+        <tag id='780' name='Swing for Eclipse' url='http://marketplace.eclipse.org/category/free-tagging/swing-eclipse'/>
+        <tag id='836' name='GUI' url='http://marketplace.eclipse.org/category/free-tagging/gui'/>
+      </tags>
+      
+      <owner>Jason O'Keefe</owner>
+      <favorited>32</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Matisse is/was the code name for the well-known WYSIWYG Swing user-interface designer of NetBeans, now called the NetBeans GUI builder. The Matisse4MyEclipse standalone designer, offered by MyEclipse, includes some of the most intuitive and advanced layout and sizing controls of any Swing visual designer today.</p>
+<p>Matisse4MyEclipse is an implementation of NetBeans' Matisse that integrates its functionality into MyEclipse Enterprise Workbench to enable the rapid development of Java Swing rich client applications (RCP) within the MyEclipse environment. Developed in partnership with Sun's NetBeans Project, Matisse4MyEclipse offers full control and round trip development between RAD visual design tools and underlying Java Source code. It consists of a form designer with a source mode, an extensible palette of Swing and AWT controls with drag-and-drop placement support, advanced alignment guides and sizing tools as well as property and outline views. </p>
+<p>The module is installable on any Eclipse Classic install by utilizing the MyEclipse update site and following the prompts.</p>
+<p>1. Be sure Eclipse 3.6.1 "Classic" is installed.</p>
+<p>2. Start Eclipse > Select Help > Software Updates > Available Software Tab > Add Site > Enter this URL <a href="http://downloads.myeclipseide.com/downloads/products/eworkbench/helios/enterprise">http://downloads.myeclipseide.com/downloads/products/eworkbench/helios/e...</a></p>
+<p>3. From there you just "Next" your way through the wizard and MyEclipse will be installed for you.</p>
+<p><img src="http://www.myeclipseide.com/documentation/quickstarts/m4m_overview/images/full_workbench_annot.gif" border="0" /></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Matisse is/was the code name for the well-known WYSIWYG Swing user-interface designer of NetBeans, now called the NetBeans GUI builder. The Matisse4MyEclipse standalone designer, offered by MyEclipse, includes some of the most intuitive and advanced layout and sizing controls of any Swing visual designer today.</p>
+<p>Matisse4MyEclipse is an implementation of NetBeans' Matisse that integrates its functionality into MyEclipse Enterprise Workbench to enable the rapid development of Java Swing rich client applications (RCP) within the MyEclipse environment. Developed in partnership with Sun's NetBeans Project, Matisse4MyEclipse offers full control and round trip development between RAD visual design tools and underlying Java Source code. It consists of a form designer with a source mode, an extensible palette of Swing and AWT controls with drag-and-drop placement support, advanced alignment guides and sizing tools as well as property and outline views. </p>
+<p>The module is installable on any Eclipse Classic install by utilizing the MyEclipse update site and following the prompts.</p>
+<p>1. Be sure Eclipse 3.6.1 "Classic" is installed.</p>
+<p>2. Start Eclipse > Select Help > Software Updates > Available Software Tab > Add Site > Enter this URL <a href="http://downloads.myeclipseide.com/downloads/products/eworkbench/helios/enterprise">http://downloads.myeclipseide.com/downloads/products/eworkbench/helios/e...</a></p>
+<p>3. From there you just "Next" your way through the wizard and MyEclipse will be installed for you.</p>
+<p><img src="http://www.myeclipseide.com/documentation/quickstarts/m4m_overview/images/full_workbench_annot.gif" border="0" /></p>
+]]></body>
+      <created>1262282721</created>
+      <changed>1362962705</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.myeclipseide.com/htmlpages-func-display-pid-5.html]]></homepageurl>
+      <image><![CDATA[http://www.myeclipseide.com/images/features/icons_features_pgms_matisse.gif]]></image>
+      <version>10.7</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Genuitec, LLC]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6.1/3.7.x]]></eclipseversion>
+      <supporturl><![CDATA[http://www.myeclipseide.com/module-htmlpages-display-pid-8.html]]></supporturl>
+      <updateurl><![CDATA[http://downloads.myeclipseide.com/downloads/products/eworkbench/helios/enterprise-earlyaccess]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

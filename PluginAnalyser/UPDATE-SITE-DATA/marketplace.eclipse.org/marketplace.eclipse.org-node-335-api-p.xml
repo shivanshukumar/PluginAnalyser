@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="335" name="AgileJ StructureViews" url="http://marketplace.eclipse.org/content/agilej-structureviews">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='1972' name='General Purpose Tools' url='http://marketplace.eclipse.org/category/categories/general-purpose-tools'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='1971' name='Modeling' url='http://marketplace.eclipse.org/category/categories/modeling'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='1966' name='Programming Languages' url='http://marketplace.eclipse.org/category/categories/programming-languages'/>
+        <category id='39' name='Reporting' url='http://marketplace.eclipse.org/category/categories/reporting'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+        <category id='15' name='Team Development' url='http://marketplace.eclipse.org/taxonomy/term/15'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+      </categories>
+      <tags>
+        <tag id='240' name='Class Diagram' url='http://marketplace.eclipse.org/category/free-tagging/class-diagram'/>
+        <tag id='417' name='reverse engineering' url='http://marketplace.eclipse.org/category/free-tagging/reverse-engineering'/>
+        <tag id='2211' name='uml diagrams' url='http://marketplace.eclipse.org/category/free-tagging/uml-diagrams'/>
+        <tag id='2520' name='reverse engineer' url='http://marketplace.eclipse.org/category/free-tagging/reverse-engineer'/>
+      </tags>
+      
+      <owner>Paul Wells</owner>
+      <favorited>5</favorited>
+      <installstotal>726</installstotal>
+      <installsrecent>23</installsrecent>
+      <shortdescription><![CDATA[<p>AgileJ StructureViews creates reverse engineered Java class diagrams which visualize the object oriented structure in any Java codebase. With a clear, up-to-date picture of the inheritance, composition and dependencies between classes it is easy to maintain a deep understand of the design and monitor the design quality of the project as it progresses. It is much easier to see where refactoring is needed and how the design can be optimized by taking a step back from the execution details and looking at how the classes and interfaces fit together. </p>
+<p>Only AgileJ StructureViews provides interactive filtering of class diagrams. An intuitive filtering language lets you control how classes, fields, methods and associations are shown. So instead of the usual incomprehensible mass of information which is the result of reverse engineering industrial scale Java code, you see filtered-down content which forms a meaningful communication of the architecture. By simply typing which elements you want to highlight or hide the class diagram updates immediately. The criteria for filtering are extensive and can be customized to any facet of your project such as naming conventions, annotations, design patterns and library dependencies.</p>
+<p>The full version includes a batching engine. This creates a collection of class diagrams indexed and ready to browse. Groups of related classes are discovered based on dependency, composition, package and inheritance. Finer control of the population of generated class diagrams is available through filtering, as is the way in which Java elements are presented. </p>
+<ul><li>Reverse engineered UML class diagrams for Java </li>
+<li>Filter script for on-the-fly filtering</li>
+<li>Export to gif, png and svg</li>
+<li>Batch class diagram generation</li>
+<li>Interactive class diagrams in HTML5</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>AgileJ StructureViews creates reverse engineered Java class diagrams which visualize the object oriented structure in any Java codebase. With a clear, up-to-date picture of the inheritance, composition and dependencies between classes it is easy to maintain a deep understand of the design and monitor the design quality of the project as it progresses. It is much easier to see where refactoring is needed and how the design can be optimized by taking a step back from the execution details and looking at how the classes and interfaces fit together. </p>
+<p>Only AgileJ StructureViews provides interactive filtering of class diagrams. An intuitive filtering language lets you control how classes, fields, methods and associations are shown. So instead of the usual incomprehensible mass of information which is the result of reverse engineering industrial scale Java code, you see filtered-down content which forms a meaningful communication of the architecture. By simply typing which elements you want to highlight or hide the class diagram updates immediately. The criteria for filtering are extensive and can be customized to any facet of your project such as naming conventions, annotations, design patterns and library dependencies.</p>
+<p>The full version includes a batching engine. This creates a collection of class diagrams indexed and ready to browse. Groups of related classes are discovered based on dependency, composition, package and inheritance. Finer control of the population of generated class diagrams is available through filtering, as is the way in which Java elements are presented. </p>
+<ul><li>Reverse engineered UML class diagrams for Java </li>
+<li>Filter script for on-the-fly filtering</li>
+<li>Export to gif, png and svg</li>
+<li>Batch class diagram generation</li>
+<li>Interactive class diagrams in HTML5</li>
+</ul>]]></body>
+      <created>1165259860</created>
+      <changed>1363284336</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.agilej.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/eclipsemarketplace.png?itok=RMBlduy1]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Brothersoft.png?itok=3bRZrNfy]]></screenshot>
+      <version>1.7.14</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[AgileJ Ltd]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[Juno + Kepler]]></eclipseversion>
+      <supporturl><![CDATA[http://www.agilej.com/]]></supporturl>
+      <updateurl><![CDATA[http://www.agilej.com/structureViews]]></updateurl>
+<ius>
+<iu>com.agilej.feature</iu>
+<iu>com.agilej.batch.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

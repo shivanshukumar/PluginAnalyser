@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="130183" name="Groovy-Eclipse for Indigo" url="http://marketplace.eclipse.org/content/groovy-eclipse-indigo">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='1966' name='Programming Languages' url='http://marketplace.eclipse.org/category/categories/programming-languages'/>
+      </categories>
+      <tags>
+        <tag id='2248' name='groovy. grails' url='http://marketplace.eclipse.org/category/free-tagging/groovy-grails'/>
+      </tags>
+      
+      <owner>Andrew Eisenberg</owner>
+      <favorited>16</favorited>
+      <installstotal>12690</installstotal>
+      <installsrecent>397</installsrecent>
+      <shortdescription><![CDATA[<p>Groovy-Eclipse is the Eclipse-based tooling for the <a href="http://groovy.codehaus.org/">Groovy programming language</a>.  Groovy-Eclipse provides full IDE support for Groovy including editing support, content assist, search, refactoring, and maven integration.</p>
+<p>Groovy-Eclipse does not provide any direct support for Grails.  If you want Grails tooling, then please consider downloading the <a href="http://www.springsource.com/developer/sts">SpringSource Tool Suite</a> (free, commercial license) that provides first-class support for your Grails projects.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Groovy-Eclipse is the Eclipse-based tooling for the <a href="http://groovy.codehaus.org/">Groovy programming language</a>.  Groovy-Eclipse provides full IDE support for Groovy including editing support, content assist, search, refactoring, and maven integration.</p>
+<p>Groovy-Eclipse does not provide any direct support for Grails.  If you want Grails tooling, then please consider downloading the <a href="http://www.springsource.com/developer/sts">SpringSource Tool Suite</a> (free, commercial license) that provides first-class support for your Grails projects.</p>
+]]></body>
+      <created>1317748464</created>
+      <changed>1348251814</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://groovy.codehaus.org/Eclipse+Plugin]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/groovy-logo-medium_0.png?itok=Z_61OwKY]]></image>
+      <version>2.7.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[VMware, Inc.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://xircles.codehaus.org/lists/eclipse-plugin-user@groovy.codehaus.org]]></supporturl>
+      <updateurl><![CDATA[http://dist.springsource.org/release/GRECLIPSE/e3.7/]]></updateurl>
+<ius>
+<iu>org.codehaus.groovy.eclipse.feature</iu>
+<iu>org.codehaus.groovy20.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="81261" name="Petals Studio" url="http://marketplace.eclipse.org/content/petals-studio">
+      <type>resource</type>
+      <categories>
+        <category id='1965' name='SOA Development' url='http://marketplace.eclipse.org/category/categories/soa-development'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+      </categories>
+      <tags>
+        <tag id='509' name='SOA' url='http://marketplace.eclipse.org/category/free-tagging/soa'/>
+        <tag id='649' name='SOA Software' url='http://marketplace.eclipse.org/category/free-tagging/soa-software'/>
+        <tag id='1583' name='esb' url='http://marketplace.eclipse.org/category/free-tagging/esb'/>
+        <tag id='2085' name='petals' url='http://marketplace.eclipse.org/category/free-tagging/petals'/>
+      </tags>
+      
+      <owner>Vincent Zurczak</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><b>Petals Studio</b> is a development environment based on Eclipse. It provides support to create, validate and package artifacts for Petals ESB. </p>
+<p>For those who do not know it, <b>Petals ESB</b> is an Enterprise Service Bus, that is to say a mediation platform which relies on the principles of Service Oriented Architectures (SOA). One of the key feature of Petals is that it can be distributed, which means you can have several instances that communicate together (something similar to the DNS system or peer-to-peer). Petals can be extended through various components, including connectors (that enable access to external systems or resources through a service mode), transformations components and orchestration features.</p>
+<p>Petals Studio simplifies the development of integration chains and service compositions to deploy them in Petals ESB. It includes Eclipse plug-ins which are specific to Petals, with creation wizards, import and export helpers, validation handlers and editors for configuration files. It also embeds well-know Eclipse tools, like the Java Development Tooling, the XML and XSL tool set from the Web Tools Platform project, the BPEL Designer and tooling from the SOA top level project.</p>
+]]></shortdescription>
+      <body><![CDATA[<p><b>Petals Studio</b> is a development environment based on Eclipse. It provides support to create, validate and package artifacts for Petals ESB. </p>
+<p>For those who do not know it, <b>Petals ESB</b> is an Enterprise Service Bus, that is to say a mediation platform which relies on the principles of Service Oriented Architectures (SOA). One of the key feature of Petals is that it can be distributed, which means you can have several instances that communicate together (something similar to the DNS system or peer-to-peer). Petals can be extended through various components, including connectors (that enable access to external systems or resources through a service mode), transformations components and orchestration features.</p>
+<p>Petals Studio simplifies the development of integration chains and service compositions to deploy them in Petals ESB. It includes Eclipse plug-ins which are specific to Petals, with creation wizards, import and export helpers, validation handlers and editors for configuration files. It also embeds well-know Eclipse tools, like the Java Development Tooling, the XML and XSL tool set from the Web Tools Platform project, the BPEL Designer and tooling from the SOA top level project.</p>
+]]></body>
+      <created>1309946133</created>
+      <changed>1349971900</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.petalslink.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_studio.png?itok=yR9C4OFE]]></image>
+      <version>1.3.3</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Linagora]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://forum.petalslink.com]]></supporturl>
+      <updateurl><![CDATA[http://download.petalslink.com/petals-studio/files/PetalsStudio_1.3/updates/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

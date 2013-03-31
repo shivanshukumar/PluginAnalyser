@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1019" name="BIRT Functions" url="http://marketplace.eclipse.org/content/birt-functions">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='39' name='Reporting' url='http://marketplace.eclipse.org/category/categories/reporting'/>
+        <category id='42' name='BIRT' url='http://marketplace.eclipse.org/category/categories/birt'/>
+      </categories>
+            
+      <owner>Scott Rosenbaum</owner>
+      <favorited>5</favorited>
+      <installstotal>3384</installstotal>
+      <installsrecent>126</installsrecent>
+      <shortdescription><![CDATA[<p>BIRT = Business Intelligence and Reporting Tools. It is a top level Eclipse project.</p>
+<p>As an Eclipse project, BIRT is built for extendability. Developers can customize BIRT to support custom controls and behavior through BIRT extension points. Extension points allow complex custom operations to be integrated right into the BIRT UI and scripting language.</p>
+<p>The birt-functions-lib project shows best practice implementations of two BIRT extension points:</p>
+<p>Aggregate Extension<br />
+Script Function Extension<br />
+The code examples in this project are not just trivial samples. Even if you never look at the source, your BIRT project will benefit from the use of these functions. If you are looking at using these extension points, this project will provide a solid platform for your own custom functions.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>BIRT = Business Intelligence and Reporting Tools. It is a top level Eclipse project.</p>
+<p>As an Eclipse project, BIRT is built for extendability. Developers can customize BIRT to support custom controls and behavior through BIRT extension points. Extension points allow complex custom operations to be integrated right into the BIRT UI and scripting language.</p>
+<p>The birt-functions-lib project shows best practice implementations of two BIRT extension points:</p>
+<p>Aggregate Extension<br />
+Script Function Extension<br />
+The code examples in this project are not just trivial samples. Even if you never look at the source, your BIRT project will benefit from the use of these functions. If you are looking at using these extension points, this project will provide a solid platform for your own custom functions.</p>
+]]></body>
+      <created>1254497742</created>
+      <changed>1280422882</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/a/eclipselabs.org/p/birt-functions-lib/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/icon_functions_planet_eclipse.png?itok=-dW9_76g]]></image>
+      <version>1.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Innovent Solutions]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4+]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/a/eclipselabs.org/p/birt-functions-lib/wiki/UsageGuide]]></supporturl>
+      <updateurl><![CDATA[http://svn.codespot.com/a/eclipselabs.org/birt-innovent-update/2.5.2/]]></updateurl>
+<ius>
+<iu>birt.functions.lib.feature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

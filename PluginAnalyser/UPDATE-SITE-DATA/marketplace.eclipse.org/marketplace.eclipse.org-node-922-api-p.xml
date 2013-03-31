@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="922" name="dUtils toString generator" url="http://marketplace.eclipse.org/content/dutils-tostring-generator">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>jayliu2000</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>With this plugin you can generate toString() method just by clickng the context menu in Java Editor or in package explorer.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>With this plugin you can generate toString() method just by clickng the context menu in Java Editor or in package explorer.</p>
+]]></body>
+      <created>1239807396</created>
+      <changed>1259779234</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.ondev.net/tools/dutils/updatesite]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>0.1.0</version>
+      <license>Free for non-commercial use</license>
+      <companyname><![CDATA[ONDEV.NET]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.2, 3.3, 3.4]]></eclipseversion>
+      <supporturl><![CDATA[http://]]></supporturl>
+      <updateurl><![CDATA[http://www.ondev.net/tools/dutils/updatesite]]></updateurl>
+    </node>
+    </marketplace>
+    

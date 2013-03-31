@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="923" name="Twitterclipse" url="http://marketplace.eclipse.org/content/twitterclipse">
+      <type>resource</type>
+      <categories>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+      </categories>
+            
+      <owner>papicino</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><h4>A plugin to handle your twitter account</h4><br />
+<h5><b>Version 0.7.5</b></h5><br />
+<ul><br />
+<li>Supports multiple twitter accounts. Easyily switch between your account over the twitterclipse preference page</li><br />
+</ul><br />
+<h5><b>Version 0.7.3</b></h5><br />
+<ul><br />
+<li>updated oauth-supports OAuth1.0a / PIN-based authentication</li><br />
+<li>you can now follow users when you make a query</li><br />
+<li>you can stop following your friend over the context menu at the friends view</li><br />
+</ul></p>
+]]></shortdescription>
+      <body><![CDATA[<p><h4>A plugin to handle your twitter account</h4><br />
+<h5><b>Version 0.7.5</b></h5><br />
+<ul><br />
+<li>Supports multiple twitter accounts. Easyily switch between your account over the twitterclipse preference page</li><br />
+</ul><br />
+<h5><b>Version 0.7.3</b></h5><br />
+<ul><br />
+<li>updated oauth-supports OAuth1.0a / PIN-based authentication</li><br />
+<li>you can now follow users when you make a query</li><br />
+<li>you can stop following your friend over the context menu at the friends view</li><br />
+</ul></p>
+]]></body>
+      <created>1240409647</created>
+      <changed>1259779235</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://ww.taubit.de/eclipse/twitterclipse]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>0.7.5</version>
+      <license>Free EPL</license>
+      <companyname><![CDATA[Ivan Papic]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.4 - 3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://www.taubit.de/eclipse/twitterclipse/help/html/gettingstarted/gettingStarted.html]]></supporturl>
+      <updateurl><![CDATA[http://www.taubit.de/eclipse/twitterclipse]]></updateurl>
+    </node>
+    </marketplace>
+    

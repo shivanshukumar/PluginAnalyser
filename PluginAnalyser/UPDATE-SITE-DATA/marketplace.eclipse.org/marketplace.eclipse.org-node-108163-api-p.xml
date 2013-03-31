@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="108163" name="Tip Of The Day" url="http://marketplace.eclipse.org/content/tip-day">
+      <type>resource</type>
+      <categories>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='1972' name='General Purpose Tools' url='http://marketplace.eclipse.org/category/categories/general-purpose-tools'/>
+      </categories>
+            
+      <owner>dominik.hirt</owner>
+      <favorited>1</favorited>
+      <installstotal>77</installstotal>
+      <installsrecent>3</installsrecent>
+      <shortdescription><![CDATA[This plugin provides a typically 'Tip Of The Day' dialog on every startup of Eclipse. 
+The tips are compiled from the "What's new" section of the official Indigo documentation for Workbench, JDT, PDE and Platform Plugin Development. Currently there are more then hundred such tips. Some of the tip are interactive in form of command links they are immediately executed by the Eclipse environment (e.g. open a preferences page) You can disable the plugin and re-enable it via the plugin preferences page.
+
+Try it out !
+]]></shortdescription>
+      <body><![CDATA[This plugin provides a typically 'Tip Of The Day' dialog on every startup of Eclipse. 
+The tips are compiled from the "What's new" section of the official Indigo documentation for Workbench, JDT, PDE and Platform Plugin Development. Currently there are more then hundred such tips. Some of the tip are interactive in form of command links they are immediately executed by the Eclipse environment (e.g. open a preferences page) You can disable the plugin and re-enable it via the plugin preferences page.
+
+Try it out !
+]]></body>
+      <created>1314020052</created>
+      <changed>1314104208</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://blog.todo42.net/?p=163&lang=en]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/screenshot_10.png?itok=SH_bywZS]]></screenshot>
+      <version></version>
+      <license>EPL</license>
+      <companyname><![CDATA[Dominik Hirt]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://www.todo42.net/TipOfTheDay/updateSite]]></updateurl>
+<ius>
+<iu>net.todo42.tipoftheday</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

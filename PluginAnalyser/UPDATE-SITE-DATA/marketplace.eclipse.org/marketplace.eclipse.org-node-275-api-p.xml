@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="275" name="ATL" url="http://marketplace.eclipse.org/content/atl">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='1971' name='Modeling' url='http://marketplace.eclipse.org/category/categories/modeling'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+      </categories>
+      <tags>
+        <tag id='163' name='domain specific modeling' url='http://marketplace.eclipse.org/category/free-tagging/domain-specific-modeling'/>
+        <tag id='174' name='MDA' url='http://marketplace.eclipse.org/category/free-tagging/mda'/>
+        <tag id='745' name='ATL ModelTransformation' url='http://marketplace.eclipse.org/category/free-tagging/atl-modeltransformation'/>
+        <tag id='1105' name='MDSD' url='http://marketplace.eclipse.org/category/free-tagging/mdsd'/>
+      </tags>
+      
+      <owner>Obeo  </owner>
+      <favorited>12</favorited>
+      <installstotal>917</installstotal>
+      <installsrecent>24</installsrecent>
+      <shortdescription><![CDATA[<p><b>ATL</b> (ATL Transformation Language) is a model transformation language and toolkit. In the field of Model-Driven Engineering (MDE), ATL provides ways to produce a set of target models from a set of source models.<br />
+It can used to provide bridge between standards and tools, to refactor models, to refine conceptual models into a more detail view, to verify consistency among rules, ...<br /><br />
+Developed on top of the Eclipse platform, the ATL Integrated Development Environment (IDE) provides a number of standard development tools (syntax highlighting, debugger, etc.) that aim to ease the development of ATL transformations.<br /><br />
+The ATL syntax allows users to easily specify transformations in a declarative way,  without the need to know Eclipse API.</p>
+]]></shortdescription>
+      <body><![CDATA[<p><b>ATL</b> (ATL Transformation Language) is a model transformation language and toolkit. In the field of Model-Driven Engineering (MDE), ATL provides ways to produce a set of target models from a set of source models.<br />
+It can used to provide bridge between standards and tools, to refactor models, to refine conceptual models into a more detail view, to verify consistency among rules, ...<br /><br />
+Developed on top of the Eclipse platform, the ATL Integrated Development Environment (IDE) provides a number of standard development tools (syntax highlighting, debugger, etc.) that aim to ease the development of ATL transformations.<br /><br />
+The ATL syntax allows users to easily specify transformations in a declarative way,  without the need to know Eclipse API.</p>
+]]></body>
+      <created>1161180771</created>
+      <changed>1349102504</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.eclipse.org/atl/]]></homepageurl>
+      <image><![CDATA[http://www.eclipse.org/m2m/atl/resources/atlLogoSmall.png]]></image>
+      <version>3.3</version>
+      <license>EPL</license>
+      <companyname><![CDATA[OBEO]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[Eclipse 4.2, Eclipse 3.8, Eclipse 3.7 Eclipse 3.6, Eclipse 3.5, Eclipse 3.4, Eclipse 3.3, Eclipse 3.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eclipse.org/atl/support/]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/mmt/atl/updates/releases/3.3/]]></updateurl>
+<ius>
+<iu>org.eclipse.m2m.atl.sdk</iu>
+<iu>org.eclipse.m2m.atl</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

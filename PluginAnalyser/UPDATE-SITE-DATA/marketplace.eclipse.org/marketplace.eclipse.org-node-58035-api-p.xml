@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="58035" name="Workshop JPA/Hibernate Designer" url="http://marketplace.eclipse.org/content/workshop-jpahibernate-designer">
+      <type>resource</type>
+      <categories>
+        <category id='1964' name='Application Development Frameworks' url='http://marketplace.eclipse.org/category/categories/application-development-frameworks'/>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+        <category id='1970' name='Database Development' url='http://marketplace.eclipse.org/category/categories/database-development'/>
+        <category id='36' name='Database Persistence' url='http://marketplace.eclipse.org/category/categories/database-persistence'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+      <tags>
+        <tag id='1988' name='JPA designer' url='http://marketplace.eclipse.org/category/free-tagging/jpa-designer'/>
+        <tag id='1989' name='Database designer' url='http://marketplace.eclipse.org/category/free-tagging/database-designer'/>
+        <tag id='2011' name='easyUI designer' url='http://marketplace.eclipse.org/category/free-tagging/easyui-designer'/>
+        <tag id='2012' name='Spring designer' url='http://marketplace.eclipse.org/category/free-tagging/spring-designer'/>
+        <tag id='2052' name='jpa diagram editor' url='http://marketplace.eclipse.org/category/free-tagging/jpa-diagram-editor'/>
+      </tags>
+      
+      <owner>Yang Lu</owner>
+      <favorited>8</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Workshop JBean is a powerful database designer and JPA/Hibernate/ORM designer base on Model-driven architecture which supports many Cross Language and database and many advanced features while fully supporting Java Persistence API (JPA) 2.0 and Spring, Hibernate, EasyUI, Ajax…</p>
+<p><a href="http://marketplace.eclipse.org/sites/default/files/jpa-rbac.png"><img title="Screen" src="http://marketplace.eclipse.org/sites/default/files/jpa-rbac.png" alt="" width="455" height="295" /></a></p>
+<p><strong><strong></strong><span style="color: #000000;"><strong><a title="JBean Developer Guide3.4-For Java" href="http://chnsoa.com/workshop/tutorials/workshop-modeling-java-in-action/" target="_blank"><span style="color: #000000;">JBean Developer Guide3.4 For JAVA</span></a>.</strong></span></strong></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Workshop JBean is a powerful database designer and JPA/Hibernate/ORM designer base on Model-driven architecture which supports many Cross Language and database and many advanced features while fully supporting Java Persistence API (JPA) 2.0 and Spring, Hibernate, EasyUI, Ajax…</p>
+<p><a href="http://marketplace.eclipse.org/sites/default/files/jpa-rbac.png"><img title="Screen" src="http://marketplace.eclipse.org/sites/default/files/jpa-rbac.png" alt="" width="455" height="295" /></a></p>
+<p><strong><strong></strong><span style="color: #000000;"><strong><a title="JBean Developer Guide3.4-For Java" href="http://chnsoa.com/workshop/tutorials/workshop-modeling-java-in-action/" target="_blank"><span style="color: #000000;">JBean Developer Guide3.4 For JAVA</span></a>.</strong></span></strong></p>
+]]></body>
+      <created>1307069426</created>
+      <changed>1355918275</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.chnsoa.com/workshop/jbean-pisces]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Product-log.png?itok=-UPg2oUe]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/jpa-rbac.png?itok=AulW2cu7]]></screenshot>
+      <version>3.5</version>
+      <license>Free for non-commerical use</license>
+      <companyname><![CDATA[Sunyang]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.chnsoa.com]]></supporturl>
+      <updateurl><![CDATA[http://www.chnsoa.com/downloads/jbean-personal-edition]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

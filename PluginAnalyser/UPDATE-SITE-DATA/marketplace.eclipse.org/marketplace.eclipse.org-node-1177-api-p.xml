@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1177" name="Actifsource - Model-Driven Code Generator" url="http://marketplace.eclipse.org/content/actifsource-model-driven-code-generator">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='1971' name='Modeling' url='http://marketplace.eclipse.org/category/categories/modeling'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+      </categories>
+      <tags>
+        <tag id='163' name='domain specific modeling' url='http://marketplace.eclipse.org/category/free-tagging/domain-specific-modeling'/>
+        <tag id='440' name='code generator' url='http://marketplace.eclipse.org/category/free-tagging/code-generator'/>
+        <tag id='441' name='domain driven development' url='http://marketplace.eclipse.org/category/free-tagging/domain-driven-development'/>
+        <tag id='442' name='modeling framework' url='http://marketplace.eclipse.org/category/free-tagging/modeling-framework'/>
+      </tags>
+      
+      <owner>Micha Riser</owner>
+      <favorited>6</favorited>
+      <installstotal>1107</installstotal>
+      <installsrecent>31</installsrecent>
+      <shortdescription><![CDATA[Actifsource is a code generator plug-in for the Eclipse IDE. Code generation is driven by models which are created according to user-defined meta-models. UML-like graphic editor assists modeling. Generic code templates which directly connect to the user's meta-model enable code generation. Among the supported languages are Groovy, Java, C/C++, Scala, ... Regeneration of code happens in realtime whenever model, meta-model or code templates change. The user is guided by content-assist in every situation. Interoperability with other UML and modeling tools is provided by importing and exporting from/to ecore.
+<p align="center">
+<b>Free Community Version available!</b>
+</p>
+
+<p align="center">
+<iframe title="YouTube video player" width="480" height="360" src="http://www.youtube.com/embed/yXoZAq5EoXg?rel=0&hd=1" frameborder="0" allowfullscreen=""></iframe>
+</p>
+
+<p align="center">
+<b><h2>Feature List</h2></b>
+</p><ul><li>Lightweight</li>
+  <li>Manage models and meta-models in a single workspace</li>
+  <li>Realtime validation</li>
+  <li>Type-safe code templates</li>
+  <li>Novel template editor concept</li>
+  <li>Strong typing and content assist</li>
+  <li>VCS integration</li>
+  <li>File-based (no database)</li>
+  <li>Graphical UML-like editor for meta-models</li>
+  <li>Generate code for any programming language</li>  
+  <li>All references linkable</li>  
+  <li>Ecore import/export</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[Actifsource is a code generator plug-in for the Eclipse IDE. Code generation is driven by models which are created according to user-defined meta-models. UML-like graphic editor assists modeling. Generic code templates which directly connect to the user's meta-model enable code generation. Among the supported languages are Groovy, Java, C/C++, Scala, ... Regeneration of code happens in realtime whenever model, meta-model or code templates change. The user is guided by content-assist in every situation. Interoperability with other UML and modeling tools is provided by importing and exporting from/to ecore.
+<p align="center">
+<b>Free Community Version available!</b>
+</p>
+
+<p align="center">
+<iframe title="YouTube video player" width="480" height="360" src="http://www.youtube.com/embed/yXoZAq5EoXg?rel=0&hd=1" frameborder="0" allowfullscreen=""></iframe>
+</p>
+
+<p align="center">
+<b><h2>Feature List</h2></b>
+</p><ul><li>Lightweight</li>
+  <li>Manage models and meta-models in a single workspace</li>
+  <li>Realtime validation</li>
+  <li>Type-safe code templates</li>
+  <li>Novel template editor concept</li>
+  <li>Strong typing and content assist</li>
+  <li>VCS integration</li>
+  <li>File-based (no database)</li>
+  <li>Graphical UML-like editor for meta-models</li>
+  <li>Generate code for any programming language</li>  
+  <li>All references linkable</li>  
+  <li>Ecore import/export</li>
+</ul>]]></body>
+      <created>1271345703</created>
+      <changed>1363205099</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.actifsource.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/a_eclipse_marktplace.png?itok=VIL3aENY]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/as_screenshot_100415.png?itok=yHGNhQ_8]]></screenshot>
+      <version>5.7.4</version>
+      <license>EPL</license>
+      <companyname><![CDATA[actifsource GmbH]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.actifsource.com/support/index.php]]></supporturl>
+      <updateurl><![CDATA[http://www.actifsource.com/updates]]></updateurl>
+<ius>
+<iu>ch.actifsource</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

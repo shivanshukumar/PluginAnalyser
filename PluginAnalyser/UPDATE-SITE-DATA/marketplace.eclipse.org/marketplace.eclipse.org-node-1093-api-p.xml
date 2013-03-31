@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1093" name="InstaSearch" url="http://marketplace.eclipse.org/content/instasearch">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='40' name='Search' url='http://marketplace.eclipse.org/category/categories/search'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='349' name='search' url='http://marketplace.eclipse.org/category/free-tagging/search'/>
+        <tag id='814' name='find' url='http://marketplace.eclipse.org/category/free-tagging/find'/>
+        <tag id='848' name='index' url='http://marketplace.eclipse.org/category/free-tagging/index'/>
+        <tag id='946' name='lucene' url='http://marketplace.eclipse.org/category/free-tagging/lucene'/>
+        <tag id='1369' name='autocomplete' url='http://marketplace.eclipse.org/category/free-tagging/autocomplete'/>
+      </tags>
+      
+      <owner>Andrejs Jermakovics</owner>
+      <favorited>60</favorited>
+      <installstotal>5954</installstotal>
+      <installsrecent>503</installsrecent>
+      <shortdescription><![CDATA[<p><a href="https://github.com/ajermakovics/eclipse-instasearch">InstaSearch</a> is an Eclipse plug-in for doing fast text search in the workspace. The search is performed instantly as-you-type and resulting files are displayed in an Eclipse view. It is a lightweight plug-in based on Apache Lucene search engine.</p>
+<p>Each file then can be previewed using few most matching and relevant lines. A double-click on the match leads to the matching line in the file.</p>
+<p><strong>Main Features</strong>
+</p><ul><li>Instantly shows search results</li>
+<li>Shows suggestions using auto-completion</li>
+<li>Shows a preview using relevant lines</li>
+<li>Matches partial words</li>
+<li>Opens and highlights matches in files</li>
+<li>Searches jar source attachments</li>
+</ul><p><img src="http://code.inf.unibz.it/instasearch/downloads/images/instasearch_new.jpg" /></p>
+]]></shortdescription>
+      <body><![CDATA[<p><a href="https://github.com/ajermakovics/eclipse-instasearch">InstaSearch</a> is an Eclipse plug-in for doing fast text search in the workspace. The search is performed instantly as-you-type and resulting files are displayed in an Eclipse view. It is a lightweight plug-in based on Apache Lucene search engine.</p>
+<p>Each file then can be previewed using few most matching and relevant lines. A double-click on the match leads to the matching line in the file.</p>
+<p><strong>Main Features</strong>
+</p><ul><li>Instantly shows search results</li>
+<li>Shows suggestions using auto-completion</li>
+<li>Shows a preview using relevant lines</li>
+<li>Matches partial words</li>
+<li>Opens and highlights matches in files</li>
+<li>Searches jar source attachments</li>
+</ul><p><img src="http://code.inf.unibz.it/instasearch/downloads/images/instasearch_new.jpg" /></p>
+]]></body>
+      <created>1261152833</created>
+      <changed>1361788384</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[https://github.com/ajermakovics/eclipse-instasearch]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/instasearch_thumb.png?itok=nKkp7R7c]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/instasearch_new.jpg?itok=O4cs08QI]]></screenshot>
+      <version>1.5</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Andrejs Jermakovics]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7, 4.2]]></eclipseversion>
+      <supporturl><![CDATA[https://github.com/ajermakovics/eclipse-instasearch/issues]]></supporturl>
+      <updateurl><![CDATA[http://code.inf.unibz.it/instasearch/downloads/]]></updateurl>
+<ius>
+<iu>it.unibz.instasearch.feature.indigo</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

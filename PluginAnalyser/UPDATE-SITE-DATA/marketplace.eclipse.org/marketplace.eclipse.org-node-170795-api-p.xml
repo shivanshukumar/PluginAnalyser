@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="170795" name="Java Dependency Viewer" url="http://marketplace.eclipse.org/content/java-dependency-viewer">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='5' name='Documentation' url='http://marketplace.eclipse.org/taxonomy/term/5'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='8' name='Graphics' url='http://marketplace.eclipse.org/taxonomy/term/8'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='1971' name='Modeling' url='http://marketplace.eclipse.org/category/categories/modeling'/>
+        <category id='1972' name='General Purpose Tools' url='http://marketplace.eclipse.org/category/categories/general-purpose-tools'/>
+      </categories>
+            
+      <owner>Thai Ha</owner>
+      <favorited>11</favorited>
+      <installstotal>2258</installstotal>
+      <installsrecent>193</installsrecent>
+      <shortdescription><![CDATA[<p>In a complicated java project, having a visual image of dependencies between classes or between Java packages is very useful. Architects and senior developers can review the dependencies to make sure the project is implemented following the design.</p>
+<p><strong>Install plugin:</strong><br />
+- Use Update site URL: <a href="http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/">http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/</a><br />
+- Or download offline: download plugin from <a href="http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/plugins/org.freejava.dependencyviewer_1.0.0.jar">http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/plugin...</a> and save it to eclipse/dropins/ folder</p>
+<p><strong>Requirements:</strong><br />
+- Existing Eclipse with <a href="http://eclipse.org/gef/zest/">Zest</a> plugin installed.</p>
+<p><strong>Usage:</strong><br />
+Select some classes or Java packages, right click and choose "View Class Dependency" or "View Package Dependency". A graph will be displayed.</p>
+<p><strong>Compatibility:</strong><br />
+Tested with Eclipse 3.6 to 3.7 but it should run well on older versions of Eclipse.</p>
+<p>You might also like the plugins:<br />
+- <a href="http://marketplace.eclipse.org/content/java-source-attacher">Java Source Attacher</a> to find source code for open source Java libraries.<br />
+- <a href="http://marketplace.eclipse.org/content/java-examples-search">Java Examples Search</a> to find example code from Eclipse.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>In a complicated java project, having a visual image of dependencies between classes or between Java packages is very useful. Architects and senior developers can review the dependencies to make sure the project is implemented following the design.</p>
+<p><strong>Install plugin:</strong><br />
+- Use Update site URL: <a href="http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/">http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/</a><br />
+- Or download offline: download plugin from <a href="http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/plugins/org.freejava.dependencyviewer_1.0.0.jar">http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/plugin...</a> and save it to eclipse/dropins/ folder</p>
+<p><strong>Requirements:</strong><br />
+- Existing Eclipse with <a href="http://eclipse.org/gef/zest/">Zest</a> plugin installed.</p>
+<p><strong>Usage:</strong><br />
+Select some classes or Java packages, right click and choose "View Class Dependency" or "View Package Dependency". A graph will be displayed.</p>
+<p><strong>Compatibility:</strong><br />
+Tested with Eclipse 3.6 to 3.7 but it should run well on older versions of Eclipse.</p>
+<p>You might also like the plugins:<br />
+- <a href="http://marketplace.eclipse.org/content/java-source-attacher">Java Source Attacher</a> to find source code for open source Java libraries.<br />
+- <a href="http://marketplace.eclipse.org/content/java-examples-search">Java Examples Search</a> to find example code from Eclipse.</p>
+]]></body>
+      <created>1324101851</created>
+      <changed>1326174039</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/a/eclipselabs.org/p/free-plugins]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.1</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[Thai Ha]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://svn.codespot.com/a/eclipselabs.org/free-plugins/trunk/site/]]></updateurl>
+<ius>
+<iu>org.freejava.dependencyviewer.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

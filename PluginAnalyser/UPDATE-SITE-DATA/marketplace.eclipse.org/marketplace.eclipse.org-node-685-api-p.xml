@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="685" name="Origo Mylyn Connector" url="http://marketplace.eclipse.org/content/origo-mylyn-connector">
+      <type>resource</type>
+      <categories>
+        <category id='38' name='Mylyn Connectors' url='http://marketplace.eclipse.org/category/categories/mylyn-connectors'/>
+      </categories>
+            
+      <owner>Origo Dev Team</owner>
+      <favorited>1</favorited>
+      <installstotal>20</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The Mylyn Connector for Origo integrates the Origo issue tracker into Eclipse. This is achieved by providing a connector for the extensible Mylyn framework. The connector features issue creation and editing directly inside Eclipse, task list integration with filtering support, rich editing features (including content assist for tags and a preview for wiki formatted text), support for custom queries and issue change notifications.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The Mylyn Connector for Origo integrates the Origo issue tracker into Eclipse. This is achieved by providing a connector for the extensible Mylyn framework. The connector features issue creation and editing directly inside Eclipse, task list integration with filtering support, rich editing features (including content assist for tags and a preview for wiki formatted text), support for custom queries and issue change notifications.</p>
+]]></body>
+      <created>1210088389</created>
+      <changed>1274291276</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://mylyn.origo.ethz.ch]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>2.0.2</version>
+      <license>Other Open Source</license>
+      <companyname><![CDATA[Origo]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3+]]></eclipseversion>
+      <supporturl><![CDATA[http://mylyn.origo.ethz.ch/forum]]></supporturl>
+      <updateurl><![CDATA[http://download.origo.ethz.ch/mylyn/update-site-2.0.0/]]></updateurl>
+<ius>
+<iu>ch.ethz.origo.mylyn.feature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

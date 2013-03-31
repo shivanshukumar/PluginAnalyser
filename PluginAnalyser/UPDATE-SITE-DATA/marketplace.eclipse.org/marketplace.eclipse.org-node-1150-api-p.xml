@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1150" name="Agile4R" url="http://marketplace.eclipse.org/content/agile4r">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+            
+      <owner>Harold Licari</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Agile4R is a model-driven application generator for IBM Rational Software Modeler (RSM) and Rational Software Architect (RSA). Agile4R generates working JEE business applications from .emx UML models and xHTML GUI mock-ups. Generated applications are based on JSF/Spring/Hibernate frameworks, and can be deployed on IBM Websphere and Apache Tomcat application servers. A free trial is available here : <a href="http://www.agile4r.com">www.agile4r.com</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Agile4R is a model-driven application generator for IBM Rational Software Modeler (RSM) and Rational Software Architect (RSA). Agile4R generates working JEE business applications from .emx UML models and xHTML GUI mock-ups. Generated applications are based on JSF/Spring/Hibernate frameworks, and can be deployed on IBM Websphere and Apache Tomcat application servers. A free trial is available here : <a href="http://www.agile4r.com">www.agile4r.com</a></p>
+]]></body>
+      <created>1266422450</created>
+      <changed>1266422450</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[www.agile4r.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/agile_4r_100x50.png?itok=52xWe36-]]></image>
+      <version>1.1.0</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[BLU AGE CORPORATION]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4.2 + Rational 7.5.4]]></eclipseversion>
+      <supporturl><![CDATA[www.agile4r.com]]></supporturl>
+      <updateurl><![CDATA[http://www.agile4r.com/index.php?cID=download]]></updateurl>
+    </node>
+    </marketplace>
+    

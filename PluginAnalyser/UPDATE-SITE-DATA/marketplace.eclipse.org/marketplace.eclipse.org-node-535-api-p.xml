@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="535" name="Xcarecrows 4 MDA" url="http://marketplace.eclipse.org/content/xcarecrows-4-mda">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+      </categories>
+            
+      <owner>Sany Maamari</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>
+	</p><table><tr><td>The Xcarecrows 4 MDA Eclipse plugin provides a toolchain to
+			<ul><li>build models</li>
+				<li>check their behavior</li>
+				<li>transform them toward applications</li>
+			</ul>
+			Xcarecrows 4 MDA uses a hierarchical, state driven approach and 
+			includes a test generation component to verify the safety of the 
+			models. The validated models can thus be used in software applications 
+			or in complex systems.</td>
+			<td>
+				<img src="http://www.xcarecrows.com/xcarecrows/images/xcarecrows_logos/R4_rational_software_color.gif" border="0" alt="Ready for IBM Rational software" /></td>
+		</tr></table><p>
+	<b><u>Features</u></b>
+	<br /></p><ul><li>a graphical editor to design models</li>
+		<li>a built-in checker to validate models</li>
+		<li>a test and coverage tool to check that each part of the model is exercised at least once</li>
+		<li>a tool to transform the platform independent model into a Java source-code library</li>
+	</ul><p>
+	<b><u>Packaging</u></b>
+	<br /></p><ul><li>Windows and Linux support (platform neutral Java)</li>
+		<li>Free online updates</li>
+		<li>Installation guide</li>
+		<li>User documentation</li>
+		<li>Sample tutorial code</li>
+	</ul><p>
+	<b><u>Licensing</u></b>
+	<br />
+	Xcarecrows 4 MDA is available under the Open Source
+	<a href="http://www.apache.org/licenses/LICENSE-2.0"><b>Apache License version 2</b></a>.
+</p>
+<p>
+	<b><u>Changes from version 1.2.9</u></b>
+	<br /></p><ul><li>Fixed a bug where wrong models could not be read once written</li>
+		<li>Fixed a bug where warnings were still displayed after correction</li>
+		<li>Fixed a bug where the dirty flag was not correctly set for multiple editors (updated to version 1.3.9 of Xcarecrows4XGT)</li>
+	</ul><p>
+	<b><u>Changes from version 1.2.8</u></b>
+	<br /></p><ul><li>Diagnostic messages have been modified for use with Xcarecrows 4 MDI</li>
+	</ul><p>
+	<b><u>Changes from version 1.2.6</u></b>
+	<br /></p><ul><li>Update of the stateMachine compiler to match the Ready for IBM Rational software Integration Requirements V7.0.3</li>
+		<li>Missing icon in the editor (updated to version 1.3.6 of Xcarecrows4XGT)</li>
+	</ul><p>
+	<b><u>Changes from version 1.2.4</u></b>
+	<br /></p><ul><li>Fixed a bug in the compilation of models for XP users (Eclipse 3.3)</li>
+		<li>Multiple editor feature</li>
+		<li>Xcarecrows4MDA-Light renamed to Xcarecrows4MDA-Core</li>
+	</ul><p>
+	<b><u>Changes from version 1.2.3</u></b>
+	<br /></p><ul><li>Projects are directly created with the Xcarecrows4MDA nature to automate the build</li>
+		<li>The Xcarecrows library jar and the Apache log4j library jar are automatically added to the classpath of the new Xcarecrow4MDA projects</li>
+	</ul><p>
+	<b><u>Changes from version 1.2.2</u></b>
+	<br /></p><ul><li>Java code is automatically produced from the model with a builder associated to a new Project nature</li>
+	</ul><p>
+	<b><u>Changes from version 1.2.1</u></b>
+	<br /></p><ul><li>Added a new tutorial to the embedded Eclipse documentation</li>
+	</ul><p>
+	<b><u>Changes from version 1.2.0</u></b>
+	<br /></p><ul><li>Fixed a bug in the compilation of models for XP users</li>
+	</ul>]]></shortdescription>
+      <body><![CDATA[<p>
+	</p><table><tr><td>The Xcarecrows 4 MDA Eclipse plugin provides a toolchain to
+			<ul><li>build models</li>
+				<li>check their behavior</li>
+				<li>transform them toward applications</li>
+			</ul>
+			Xcarecrows 4 MDA uses a hierarchical, state driven approach and 
+			includes a test generation component to verify the safety of the 
+			models. The validated models can thus be used in software applications 
+			or in complex systems.</td>
+			<td>
+				<img src="http://www.xcarecrows.com/xcarecrows/images/xcarecrows_logos/R4_rational_software_color.gif" border="0" alt="Ready for IBM Rational software" /></td>
+		</tr></table><p>
+	<b><u>Features</u></b>
+	<br /></p><ul><li>a graphical editor to design models</li>
+		<li>a built-in checker to validate models</li>
+		<li>a test and coverage tool to check that each part of the model is exercised at least once</li>
+		<li>a tool to transform the platform independent model into a Java source-code library</li>
+	</ul><p>
+	<b><u>Packaging</u></b>
+	<br /></p><ul><li>Windows and Linux support (platform neutral Java)</li>
+		<li>Free online updates</li>
+		<li>Installation guide</li>
+		<li>User documentation</li>
+		<li>Sample tutorial code</li>
+	</ul><p>
+	<b><u>Licensing</u></b>
+	<br />
+	Xcarecrows 4 MDA is available under the Open Source
+	<a href="http://www.apache.org/licenses/LICENSE-2.0"><b>Apache License version 2</b></a>.
+</p>
+<p>
+	<b><u>Changes from version 1.2.9</u></b>
+	<br /></p><ul><li>Fixed a bug where wrong models could not be read once written</li>
+		<li>Fixed a bug where warnings were still displayed after correction</li>
+		<li>Fixed a bug where the dirty flag was not correctly set for multiple editors (updated to version 1.3.9 of Xcarecrows4XGT)</li>
+	</ul><p>
+	<b><u>Changes from version 1.2.8</u></b>
+	<br /></p><ul><li>Diagnostic messages have been modified for use with Xcarecrows 4 MDI</li>
+	</ul><p>
+	<b><u>Changes from version 1.2.6</u></b>
+	<br /></p><ul><li>Update of the stateMachine compiler to match the Ready for IBM Rational software Integration Requirements V7.0.3</li>
+		<li>Missing icon in the editor (updated to version 1.3.6 of Xcarecrows4XGT)</li>
+	</ul><p>
+	<b><u>Changes from version 1.2.4</u></b>
+	<br /></p><ul><li>Fixed a bug in the compilation of models for XP users (Eclipse 3.3)</li>
+		<li>Multiple editor feature</li>
+		<li>Xcarecrows4MDA-Light renamed to Xcarecrows4MDA-Core</li>
+	</ul><p>
+	<b><u>Changes from version 1.2.3</u></b>
+	<br /></p><ul><li>Projects are directly created with the Xcarecrows4MDA nature to automate the build</li>
+		<li>The Xcarecrows library jar and the Apache log4j library jar are automatically added to the classpath of the new Xcarecrow4MDA projects</li>
+	</ul><p>
+	<b><u>Changes from version 1.2.2</u></b>
+	<br /></p><ul><li>Java code is automatically produced from the model with a builder associated to a new Project nature</li>
+	</ul><p>
+	<b><u>Changes from version 1.2.1</u></b>
+	<br /></p><ul><li>Added a new tutorial to the embedded Eclipse documentation</li>
+	</ul><p>
+	<b><u>Changes from version 1.2.0</u></b>
+	<br /></p><ul><li>Fixed a bug in the compilation of models for XP users</li>
+	</ul>]]></body>
+      <created>1188912698</created>
+      <changed>1315403732</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.xcarecrows.com/xcarecrows4mda.php]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/xcarecrows-mda_0.png?itok=rYn6b2c7]]></image>
+      <version>1.2.10</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[Cogenit]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2, 3.3]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/xcarecrows4mda]]></supporturl>
+      <updateurl><![CDATA[http://www.xcarecrows.com/eclipse/site.xml]]></updateurl>
+    </node>
+    </marketplace>
+    

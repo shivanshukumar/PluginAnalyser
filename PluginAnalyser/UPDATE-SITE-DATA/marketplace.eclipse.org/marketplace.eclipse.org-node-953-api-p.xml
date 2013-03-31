@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="953" name="Remus Information Management" url="http://marketplace.eclipse.org/content/remus-information-management">
+      <type>resource</type>
+      <categories>
+        <category id='42' name='BIRT' url='http://marketplace.eclipse.org/category/categories/birt'/>
+        <category id='7' name='Entertainment' url='http://marketplace.eclipse.org/taxonomy/term/7'/>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='614' name='productivity' url='http://marketplace.eclipse.org/category/free-tagging/productivity'/>
+        <tag id='627' name='GTD' url='http://marketplace.eclipse.org/category/free-tagging/gtd'/>
+        <tag id='1153' name='node-taking' url='http://marketplace.eclipse.org/category/free-tagging/node-taking'/>
+        <tag id='1154' name='pim' url='http://marketplace.eclipse.org/category/free-tagging/pim'/>
+      </tags>
+      
+      <owner>Tom Seidel</owner>
+      <favorited>3</favorited>
+      <installstotal>589</installstotal>
+      <installsrecent>15</installsrecent>
+      <shortdescription><![CDATA[<h3>Capture your thoughts</h3>
+<p>Remus is a set of plugins to enable information management in your IDE. It lets you capture your code-snippets, personal notes, website, screencasts, documents or any type of interesting information you see.</p>
+<h3>Enrich your source-code with information</h3>
+<p>With a linking functionality you can assign information units to any resources in your workspace, e.g. you can attach a Code-Snippet to a Java class or a PDF document to a XML file. Decide for your own if you want to share these linkings with others.</p>
+<h3>Share your thoughts</h3>
+<p>Remus provides a wide range of repositories to share your information with other developers, starting from an in-project through your CVS, SVN or Git Team provider until protocol-based repositories like WebDAV.</p>
+<p>Remus is available in german and english Language.</p>
+]]></shortdescription>
+      <body><![CDATA[<h3>Capture your thoughts</h3>
+<p>Remus is a set of plugins to enable information management in your IDE. It lets you capture your code-snippets, personal notes, website, screencasts, documents or any type of interesting information you see.</p>
+<h3>Enrich your source-code with information</h3>
+<p>With a linking functionality you can assign information units to any resources in your workspace, e.g. you can attach a Code-Snippet to a Java class or a PDF document to a XML file. Decide for your own if you want to share these linkings with others.</p>
+<h3>Share your thoughts</h3>
+<p>Remus provides a wide range of repositories to share your information with other developers, starting from an in-project through your CVS, SVN or Git Team provider until protocol-based repositories like WebDAV.</p>
+<p>Remus is available in german and english Language.</p>
+]]></body>
+      <created>1245072276</created>
+      <changed>1357820216</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.eclipse.org/remus]]></homepageurl>
+      <image><![CDATA[http://remus-software.org/media/other/rim_scaled_epic.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/notifications_0.png?itok=ZPSTZMRl]]></screenshot>
+      <version>0.3</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Tom Seidel]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5,3.6,3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eclipse.org/forums/index.php?t=thread&frm_id=166]]></supporturl>
+      <updateurl><![CDATA[http://remus-software.org/updatesites/remus]]></updateurl>
+<ius>
+<iu>org.eclipse.remus.core.feature</iu>
+<iu>org.eclipse.remus.ide.feature</iu>
+<iu>org.eclipse.remus.mylyn.feature</iu>
+<iu>org.remus.infomngmnt.mindmap.feature</iu>
+<iu>org.remus.infomgnmgnt.google.feature</iu>
+<iu>org.remus.infomngmnt.calendar.feature</iu>
+<iu>org.remus.infomngmnt.textediting.feature</iu>
+<iu>org.remus.infomngmnt.filebased.feature</iu>
+<iu>org.remus.infomngmnt.pdf.feature</iu>
+<iu>org.remus.infomngmnt.contacttask.feature</iu>
+<iu>org.remus.infomngmnt.groovy.feature</iu>
+<iu>org.remus.infomngmnt.link.feature</iu>
+<iu>org.remus.infomngmnt.dropbox</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="146866" name="Egap" url="http://marketplace.eclipse.org/content/egap">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='1612' name='dependency injection' url='http://marketplace.eclipse.org/category/free-tagging/dependency-injection'/>
+        <tag id='2312' name='guice' url='http://marketplace.eclipse.org/category/free-tagging/guice'/>
+        <tag id='2864' name='google guice' url='http://marketplace.eclipse.org/taxonomy/term/2864'/>
+        <tag id='2865' name='di' url='http://marketplace.eclipse.org/taxonomy/term/2865'/>
+      </tags>
+      
+      <owner>Tim Majunke</owner>
+      <favorited>0</favorited>
+      <installstotal>99</installstotal>
+      <installsrecent>22</installsrecent>
+      <shortdescription><![CDATA[<p>Egap is an Eclipse plugin for the Guice dependency injection framework giving you support for working with Guice in Eclipse.</p>
+<p>See <a href="http://www.jaculon.de/egap">http://www.jaculon.de/egap</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Egap is an Eclipse plugin for the Guice dependency injection framework giving you support for working with Guice in Eclipse.</p>
+<p>See <a href="http://www.jaculon.de/egap">http://www.jaculon.de/egap</a></p>
+]]></body>
+      <created>1320385959</created>
+      <changed>1350651443</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://jaculon.de/egap]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>1.0.125</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[None]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://jaculon.de/updatesite]]></updateurl>
+<ius>
+<iu>de.jaculon.egap.feature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

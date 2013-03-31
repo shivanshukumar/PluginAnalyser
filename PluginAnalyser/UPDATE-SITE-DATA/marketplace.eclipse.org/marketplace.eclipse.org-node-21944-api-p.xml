@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="21944" name="EMF Validation Builder" url="http://marketplace.eclipse.org/content/emf-validation-builder">
+      <type>resource</type>
+      <categories>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+      </categories>
+      <tags>
+        <tag id='186' name='EMF' url='http://marketplace.eclipse.org/category/free-tagging/emf'/>
+        <tag id='1394' name='incremental' url='http://marketplace.eclipse.org/category/free-tagging/incremental'/>
+        <tag id='1395' name='builder' url='http://marketplace.eclipse.org/category/free-tagging/builder'/>
+        <tag id='1396' name='model' url='http://marketplace.eclipse.org/category/free-tagging/model'/>
+        <tag id='1397' name='validation' url='http://marketplace.eclipse.org/category/free-tagging/validation'/>
+      </tags>
+      
+      <owner>Jean-François Brazeau</owner>
+      <favorited>2</favorited>
+      <installstotal>258</installstotal>
+      <installsrecent>16</installsrecent>
+      <shortdescription><![CDATA[<p>EMF Validation Builder is an eclipse plugin that automates the validation process (“on save” validation). By default, EMF doesn't validate an EMF resource when it is saved (like the JDT does for example).</p>
+<p>With EMF Validation Builder, the EMF resource problem markers are up to date as soon as you save your model (the file itself and the files which rely on it ⇒ EMF Validation Builder maintains a dependency table that allows to re-run the validation process when necessary).</p>
+<p>In particular, EMF Validation Builder can be used with ecore models.</p>
+<p>EMF is available under a BSD licence. It means that you are free to download it and use it.</p>
+<p>Visit emtools homepage for more details : <a href="http://emftools.tuxfamily.org">http://emftools.tuxfamily.org</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>EMF Validation Builder is an eclipse plugin that automates the validation process (“on save” validation). By default, EMF doesn't validate an EMF resource when it is saved (like the JDT does for example).</p>
+<p>With EMF Validation Builder, the EMF resource problem markers are up to date as soon as you save your model (the file itself and the files which rely on it ⇒ EMF Validation Builder maintains a dependency table that allows to re-run the validation process when necessary).</p>
+<p>In particular, EMF Validation Builder can be used with ecore models.</p>
+<p>EMF is available under a BSD licence. It means that you are free to download it and use it.</p>
+<p>Visit emtools homepage for more details : <a href="http://emftools.tuxfamily.org">http://emftools.tuxfamily.org</a></p>
+]]></body>
+      <created>1290977426</created>
+      <changed>1305037280</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://sourceforge.net/projects/emfvalidation/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/emfvb-icon.png?itok=ZV5doRhb]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/preferences-page-2.png?itok=Gbd2vKWT]]></screenshot>
+      <version>1.0.3</version>
+      <license>BSD</license>
+      <companyname><![CDATA[EMF Tools Project  - Jean-François Brazeau]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/projects/emfvalidation/support]]></supporturl>
+      <updateurl><![CDATA[http://emftools.tuxfamily.org/update]]></updateurl>
+<ius>
+<iu>org.emftools.validation</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="9285" name="Integrated Properties Editor" url="http://marketplace.eclipse.org/content/integrated-properties-editor">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='366' name='properties file' url='http://marketplace.eclipse.org/category/free-tagging/properties-file'/>
+        <tag id='1121' name='properties' url='http://marketplace.eclipse.org/category/free-tagging/properties'/>
+        <tag id='1169' name='localized' url='http://marketplace.eclipse.org/category/free-tagging/localized'/>
+        <tag id='1170' name='i18n' url='http://marketplace.eclipse.org/category/free-tagging/i18n'/>
+        <tag id='1171' name='internacionalization' url='http://marketplace.eclipse.org/category/free-tagging/internacionalization'/>
+      </tags>
+      
+      <owner>Leonardo Flores</owner>
+      <favorited>3</favorited>
+      <installstotal>3003</installstotal>
+      <installsrecent>150</installsrecent>
+      <shortdescription><![CDATA[<p>The goal of plugin is provide an editor where we can review and modify all resource files at once and get a glimpse of the texts in all languages used, allowing discover rapidly, untranslated texts.<br />
+This plugin supports files of various properties of programming languages, since its operation is based in an object called WildcardPath.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The goal of plugin is provide an editor where we can review and modify all resource files at once and get a glimpse of the texts in all languages used, allowing discover rapidly, untranslated texts.<br />
+This plugin supports files of various properties of programming languages, since its operation is based in an object called WildcardPath.</p>
+]]></body>
+      <created>1283439268</created>
+      <changed>1313064972</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/localizedproperties/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_market_0.png?itok=atvN_Yef]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/navigator-editor.png?itok=_F2mcTQ2]]></screenshot>
+      <version>0.8.1</version>
+      <license>GPL</license>
+      <companyname><![CDATA[Triadsoft]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.6 Helios]]></eclipseversion>
+      <supporturl><![CDATA[http://code.google.com/p/localizedproperties/]]></supporturl>
+      <updateurl><![CDATA[http://localizedproperties.googlecode.com/svn/trunk/helios/]]></updateurl>
+<ius>
+<iu>com.triadsoft.properties.editor.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

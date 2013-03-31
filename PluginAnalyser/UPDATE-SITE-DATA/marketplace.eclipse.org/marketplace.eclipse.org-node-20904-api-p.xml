@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="20904" name="SpringSource Tool Suite (STS) Edition: MyEclipse for Spring" url="http://marketplace.eclipse.org/content/springsource-tool-suite-sts-edition-myeclipse-spring">
+      <type>resource</type>
+      <categories>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+      </categories>
+      <tags>
+        <tag id='158' name='spring' url='http://marketplace.eclipse.org/category/free-tagging/spring'/>
+        <tag id='779' name='MyEclipse' url='http://marketplace.eclipse.org/category/free-tagging/myeclipse'/>
+        <tag id='912' name='Spring IDE' url='http://marketplace.eclipse.org/category/free-tagging/spring-ide'/>
+        <tag id='1383' name='STS' url='http://marketplace.eclipse.org/category/free-tagging/sts'/>
+      </tags>
+      
+      <owner>Jason O'Keefe</owner>
+      <favorited>13</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>MyEclipse for Spring - STS Edition </p>
+<p><em>Developing Spring applications with STS? It's all about options.</em><br />
+Enhance your STS tool stack to:</p>
+<ul><li>Scaffold Adobe Flex, GWT and iPhone web UIs</li>
+<li>Simplify annotation of Spring and JAX-WS components</li>
+<li>Prime for deployment to Google App Engine</li>
+<li>And moreâ€¦</li>
+</ul><p>MyEclipse for Spring: STS Edition plugs directly into SpringSource Tool Suite (STS) as a value-added option and provides the same set of advanced accelerators for Spring development found in the existing <a href="http://www.myeclipseide.com/me4s/" target="_blank">MyEclipse for Spring IDE</a> solution, including: </p>
+<ul><li><a href="http://www.myeclipseide.com/me4s/features/bootstrapping.php" target="_blank">Spring Project bootstrapping</a></li>
+<li>Scaffolding for a variety of web UIs including <a href="http://www.myeclipseide.com/me4s/features/flex-scaffolding.php" target="_blank">Adobe Flex</a>, <a href="http://www.myeclipseide.com/me4s/features/gwt-scaffolding.php" target="_blank">GWT</a> and <a href="http://www.myeclipseide.com/me4s/features/iphone-scaffolding.php" target="_blank">iPhone web</a></li>
+<li><a href="http://www.myeclipseide.com/me4s/features/code-assistants.php" target="_blank">Code assistants</a> for annotation-based development</li>
+<li><a href="http://www.myeclipseide.com/me4s/features/customizable-code-generation.php" target="_blank">Customizable code generation</a></li>
+<li><a href="http://www.myeclipseide.com/me4s/features/google-app-engine-support.php" target="_blank">Google App Engine support</a></li>
+</ul><p>For STS users looking for an alternative to the Spring Roo generation technology, please visit our <a href="http://www.myeclipseide.com/me4s/faqs/faqs_tool_comparison.php" target="_blank">Tool Comparison</a> to see how MyEclipse for Spring may meet your development needs. </p>
+<p>STS Edition is available as a plug-in for <a href="http://www.myeclipseide.com/me4s/sts-instructions-galileo.php" target="_blank">STS 2.3.2 (Galileo)</a> and <a href="STS 2.5 (Helios)" target="_blank">STS 2.5 (Helios)</a>. </p>
+<p><a href="http://www.myeclipseide.com/index.php?name=Recommend_Us&req=Download&version=ME4S"></a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>MyEclipse for Spring - STS Edition </p>
+<p><em>Developing Spring applications with STS? It's all about options.</em><br />
+Enhance your STS tool stack to:</p>
+<ul><li>Scaffold Adobe Flex, GWT and iPhone web UIs</li>
+<li>Simplify annotation of Spring and JAX-WS components</li>
+<li>Prime for deployment to Google App Engine</li>
+<li>And moreâ€¦</li>
+</ul><p>MyEclipse for Spring: STS Edition plugs directly into SpringSource Tool Suite (STS) as a value-added option and provides the same set of advanced accelerators for Spring development found in the existing <a href="http://www.myeclipseide.com/me4s/" target="_blank">MyEclipse for Spring IDE</a> solution, including: </p>
+<ul><li><a href="http://www.myeclipseide.com/me4s/features/bootstrapping.php" target="_blank">Spring Project bootstrapping</a></li>
+<li>Scaffolding for a variety of web UIs including <a href="http://www.myeclipseide.com/me4s/features/flex-scaffolding.php" target="_blank">Adobe Flex</a>, <a href="http://www.myeclipseide.com/me4s/features/gwt-scaffolding.php" target="_blank">GWT</a> and <a href="http://www.myeclipseide.com/me4s/features/iphone-scaffolding.php" target="_blank">iPhone web</a></li>
+<li><a href="http://www.myeclipseide.com/me4s/features/code-assistants.php" target="_blank">Code assistants</a> for annotation-based development</li>
+<li><a href="http://www.myeclipseide.com/me4s/features/customizable-code-generation.php" target="_blank">Customizable code generation</a></li>
+<li><a href="http://www.myeclipseide.com/me4s/features/google-app-engine-support.php" target="_blank">Google App Engine support</a></li>
+</ul><p>For STS users looking for an alternative to the Spring Roo generation technology, please visit our <a href="http://www.myeclipseide.com/me4s/faqs/faqs_tool_comparison.php" target="_blank">Tool Comparison</a> to see how MyEclipse for Spring may meet your development needs. </p>
+<p>STS Edition is available as a plug-in for <a href="http://www.myeclipseide.com/me4s/sts-instructions-galileo.php" target="_blank">STS 2.3.2 (Galileo)</a> and <a href="STS 2.5 (Helios)" target="_blank">STS 2.5 (Helios)</a>. </p>
+<p><a href="http://www.myeclipseide.com/index.php?name=Recommend_Us&req=Download&version=ME4S"></a></p>
+]]></body>
+      <created>1290448088</created>
+      <changed>1321558691</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.myeclipseide.com/me4s]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/my_leaf2_128x128.png?itok=MZ0P7XDo]]></image>
+      <version>10</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Genuitec, LLC]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://www.myeclipseide.com/PNphpBB2-index-c-12.html]]></supporturl>
+      <updateurl><![CDATA[http://downloads.myeclipseide.com/downloads/products/eworkbench/galileo/me4s-eclipse]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

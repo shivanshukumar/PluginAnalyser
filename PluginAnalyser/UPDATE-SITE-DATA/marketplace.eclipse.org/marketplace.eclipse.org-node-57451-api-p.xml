@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="57451" name="TOGAF Designer (Indigo version)" url="http://marketplace.eclipse.org/content/togaf-designer-indigo-version">
+      <type>resource</type>
+      <categories>
+        <category id='28' name='Application Management' url='http://marketplace.eclipse.org/taxonomy/term/28'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='30' name='Process' url='http://marketplace.eclipse.org/taxonomy/term/30'/>
+        <category id='1965' name='SOA Development' url='http://marketplace.eclipse.org/category/categories/soa-development'/>
+      </categories>
+      <tags>
+        <tag id='818' name='TOGAF' url='http://marketplace.eclipse.org/category/free-tagging/togaf'/>
+        <tag id='2236' name='enterprise architecture' url='http://marketplace.eclipse.org/category/free-tagging/enterprise-architecture'/>
+        <tag id='2237' name='ea' url='http://marketplace.eclipse.org/category/free-tagging/ea'/>
+      </tags>
+      
+      <owner>Obeo  </owner>
+      <favorited>3</favorited>
+      <installstotal>243</installstotal>
+      <installsrecent>41</installsrecent>
+      <shortdescription><![CDATA[<p>TOGAF (The Open Group Architecture Framework) is an industry standard architecture framework used to govern an enterprise information architecture. It provides a set of tools to modeled the four levels:Business, Application, Data and Technology. It's standardized by the Open Group.</p>
+<p>
+This designer provides a set of viewpoints for TOGAF:</p>
+<ul><li><strong>Business Architecture Viewpoint:</strong>
+<ul><li>Organization/Actor Catalog</li>
+<li>Driver/Goal/Objective Catalog</li>
+<li>Role Catalog</li>
+<li>Business Service/Function Catalog</li>
+<li>Location Catalog</li>
+<li>ProcesProcess/Event/Control/Product Catalog</li>
+<li>Contract/Measure Catalog</li>
+<li>Actor/Role Matrix</li>
+<li>Business Interaction Matrix</li>
+<li>Business Service / Information Diagram</li>
+<li>Business Footprint Diagram</li>
+<li>Functional Decomposition Diagram</li>
+<li>Business Use-Case Diagram</li>
+</ul></li>
+<li><strong>Data Architecture Viewpoint:</strong>
+<ul><li>Data Entity/Data Component Catalog</li>
+<li>Data Entity/Business Function Matrix</li>
+<li>System/Data matrix</li>
+<li>Class diagram (Entity Diagram)</li>
+<li>Data Dissemination diagram</li>
+</ul></li>
+<li><strong>Application Architecture Viewpoint:</strong>
+<ul><li>Application Portofolio Catalog</li>
+<li>Interface Catalog</li>
+<li>System/Organization Matrix</li>
+<li>Role/System Matrix</li>
+<li>Systems/Function Matrix</li>
+<li>Application interaction Matrix</li>
+<li>Application Communication Diagram</li>
+<li>Application and User Location Diagram</li>
+<li>System Use-Case diagram</li>
+</ul></li>
+<li><strong>Technology Architecture Viewpoint:</strong>
+<ul><li>Technology Standards Catalog</li>
+<li>Technology Portofolio Catalog</li>
+<li>Environments and Locations Diagram</li>
+<li>Platform Decomposition Diagram</li>
+</ul></li>
+<li><strong>Impact Analysis Viewpoint:</strong>
+<ul><li>Impact Analysis Diagram</li>
+</ul></li>
+</ul><p>This designer is free (open-source with EPL license).</p>
+<p>
+You can easily modify it with <a href="http://www.obeodesigner.com">Obeo Designer</a> <strong>to adapt each diagram to your needs</strong> or combine it to your own DSL. To start customizing this module, just <a href="http://www.obeodesigner.com/download">download an evaluation version</a> of the architect edition and import the <a href="http://marketplace.obeonetwork.com/module/togaf">source code</a> of Togaf Designer from Github.
+</p>
+<p>
+If you enjoy it and want to go further, have a try to <a href="http://www.obeosmartea.com">Obeo SmartEA</a> which brings together your existing repositories and helps you to design your future architectures. Your TOGAF model becomes collaborative, accessible with a web portal, customizable to your business, and feed by connectors.
+</p>
+]]></shortdescription>
+      <body><![CDATA[<p>TOGAF (The Open Group Architecture Framework) is an industry standard architecture framework used to govern an enterprise information architecture. It provides a set of tools to modeled the four levels:Business, Application, Data and Technology. It's standardized by the Open Group.</p>
+<p>
+This designer provides a set of viewpoints for TOGAF:</p>
+<ul><li><strong>Business Architecture Viewpoint:</strong>
+<ul><li>Organization/Actor Catalog</li>
+<li>Driver/Goal/Objective Catalog</li>
+<li>Role Catalog</li>
+<li>Business Service/Function Catalog</li>
+<li>Location Catalog</li>
+<li>ProcesProcess/Event/Control/Product Catalog</li>
+<li>Contract/Measure Catalog</li>
+<li>Actor/Role Matrix</li>
+<li>Business Interaction Matrix</li>
+<li>Business Service / Information Diagram</li>
+<li>Business Footprint Diagram</li>
+<li>Functional Decomposition Diagram</li>
+<li>Business Use-Case Diagram</li>
+</ul></li>
+<li><strong>Data Architecture Viewpoint:</strong>
+<ul><li>Data Entity/Data Component Catalog</li>
+<li>Data Entity/Business Function Matrix</li>
+<li>System/Data matrix</li>
+<li>Class diagram (Entity Diagram)</li>
+<li>Data Dissemination diagram</li>
+</ul></li>
+<li><strong>Application Architecture Viewpoint:</strong>
+<ul><li>Application Portofolio Catalog</li>
+<li>Interface Catalog</li>
+<li>System/Organization Matrix</li>
+<li>Role/System Matrix</li>
+<li>Systems/Function Matrix</li>
+<li>Application interaction Matrix</li>
+<li>Application Communication Diagram</li>
+<li>Application and User Location Diagram</li>
+<li>System Use-Case diagram</li>
+</ul></li>
+<li><strong>Technology Architecture Viewpoint:</strong>
+<ul><li>Technology Standards Catalog</li>
+<li>Technology Portofolio Catalog</li>
+<li>Environments and Locations Diagram</li>
+<li>Platform Decomposition Diagram</li>
+</ul></li>
+<li><strong>Impact Analysis Viewpoint:</strong>
+<ul><li>Impact Analysis Diagram</li>
+</ul></li>
+</ul><p>This designer is free (open-source with EPL license).</p>
+<p>
+You can easily modify it with <a href="http://www.obeodesigner.com">Obeo Designer</a> <strong>to adapt each diagram to your needs</strong> or combine it to your own DSL. To start customizing this module, just <a href="http://www.obeodesigner.com/download">download an evaluation version</a> of the architect edition and import the <a href="http://marketplace.obeonetwork.com/module/togaf">source code</a> of Togaf Designer from Github.
+</p>
+<p>
+If you enjoy it and want to go further, have a try to <a href="http://www.obeosmartea.com">Obeo SmartEA</a> which brings together your existing repositories and helps you to design your future architectures. Your TOGAF model becomes collaborative, accessible with a web portal, customizable to your business, and feed by connectors.
+</p>
+]]></body>
+      <created>1306846271</created>
+      <changed>1350897277</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://marketplace.obeonetwork.com/module/togaf]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/logo_ON-110x80_7.png?itok=8egtNFMQ]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/togaf_small.png?itok=kltzx1GP]]></screenshot>
+      <version>1.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Obeo Network]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://marketplace.obeonetwork.com/module/togaf#community]]></supporturl>
+      <updateurl><![CDATA[http://marketplace.obeonetwork.com/updates/od6/]]></updateurl>
+<ius>
+<iu>org.obeonetwork.dsl.togaf.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

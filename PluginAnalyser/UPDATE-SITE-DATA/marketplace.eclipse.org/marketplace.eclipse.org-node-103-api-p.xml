@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="103" name="eva/3 Application Builder" url="http://marketplace.eclipse.org/content/eva3-application-builder">
+      <type>resource</type>
+      <categories>
+        <category id='3' name='Database' url='http://marketplace.eclipse.org/taxonomy/term/3'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='25' name='Rich Client Applications' url='http://marketplace.eclipse.org/taxonomy/term/25'/>
+        <category id='36' name='Database Persistence' url='http://marketplace.eclipse.org/category/categories/database-persistence'/>
+      </categories>
+            
+      <owner>d.ratkovski</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>eva/3 Application Builder assumes responsibility for the design of forms and reports  via an integrated GUI Builder, the execution of procedures and the<br />
+handling of diverse relational SQL databases through JDBC interface, e.g. Sybase<br />
+SQL Anywhere, Microsoft SQLServer 2000, Microsoft Access, MySQL, IBM<br />
+DB2, SAP MaxDB, Ingres, Firebird, Oracle, Parkway Microfocus, HSQLDB, PostgreSQL, JDataStore. High<br />
+performance database export and import functions are available, too.<br><br />
+<br><br />
+<table><br />
+  <tbody><br />
+    <tr><br />
+      <td vAlign="top"><br />
+      <u><strong>Common features</strong></u><br />
+        <p>o Basic Features<br><br />
+        - SQL and dynamic SQL editor<br><br />
+        - Color management editor<br><br />
+        - User management editor<br><br />
+        - Table editor<br><br />
+        - Macro editor<br><br />
+        - Command editor<br><br />
+        - Referential integrity editor<br><br />
+        - Beans administration <br><br />
+        - Properties editor with muliple selection<br><br />
+        - Database server view<br><br />
+        - eva/3 references view<br><br />
+        - Eclipse based help and documentation<br><br />
+        - Context help<br><br />
+        - Localization<br><br />
+        - Project documentation<br />
+        <p>o Additional Features<br><br />
+        - Form designer<br><br />
+        - Report designer<br><br />
+        - Auto-form generator<br><br />
+        - Auto-report generator<br><br />
+        - Auto-bean schema generator<br><br />
+        <p>o Supported Platforms<br><br />
+        - Windows (JDK 1.4.x)<br><br />
+        - Linux (JDK 1.4.x)</p><br />
+      </td><br />
+      <td vAlign="top"><u><strong>Database features</strong></u><br />
+        <p>o Basic Features<br><br />
+        - Relational JDBC databases are supported<br><br />
+        - Foreign keys<br><br />
+        - Table and view editors<br><br />
+        - Static integrated tables<br><br />
+        - Indicies</p><br />
+        <p>o Additional Features<br><br />
+        - Database converter<br><br />
+        - Database Performance Analyzer<br><br />
+        - CSV export<br><br />
+        - High performance database access<br><br />
+        - Search and filter functions<br><br />
+        - Visual sql editor<br><br />
+        - Print and preview functions<br><br />
+        - Large data sets optimizations<br><br />
+        - Import and export functions</p><br />
+      </td><br />
+      <td vAlign="top"><u><strong>Form features</strong></u><br />
+        <p>o Basic Features<br><br />
+        - Quick form preview<br><br />
+        - Cut / Copy / Paste / Delete functions<br><br />
+        - Undo & Redo functions<br><br />
+        - Modification of components order<br><br />
+        <p>o Additional Features<br><br />
+        - Table elements represent data sources in forms<br><br />
+        - Easy database integration<br><br />
+        - Standard and user defined components<br><br />
+        - Intelectual ComboBoxes<br><br />
+        - Regular Expressions<br><br />
+        - Variable table row height<br><br />
+        - Striped tables with multirow cells</p><br />
+        <p>o Supported Layouts<br><br />
+        - Null<br><br />
+        - FlowLayout<br><br />
+        - GridLayout<br><br />
+        - BorderLayout<br><br />
+        - GridBagLayout<br><br />
+        - CardLayout<br><br />
+        - BoxLayout</p><br />
+      </td><br />
+      <td vAlign="top"><u><strong>Report features</strong></u><br />
+        <p>o Basic features<br><br />
+        - Cut / Copy / Paste / Delete functions<br><br />
+        - Undo & Redo functions<br><br />
+        - Visual modification of components order<br><br />
+        - Zoom function<br><br />
+        - Page format<br><br />
+        - Variable report structure<br><br />
+        - Report groups<br><br />
+        - Previes/Printing reports<br><br />
+        - Report export  as pdf-file<br><br />
+        <p>o Additional Features<br><br />
+        - Easy database integration<br><br />
+        - BarCodes and 2DBarCodes<br><br />
+        - Excel(r) export<br><br />
+        - Advance standard and user defined components<br><br />
+        - Regular expressions</p><br />
+        <p>o Layout of reports<br><br />
+        - Page header<br><br />
+        - Report header<br><br />
+        - Detail area<br><br />
+        - Report footer<br><br />
+        - Page ending<br><br />
+        - Page footer</p><br />
+      </td><br />
+    </tr><br />
+  </tbody><br />
+</table></p>
+]]></shortdescription>
+      <body><![CDATA[<p>eva/3 Application Builder assumes responsibility for the design of forms and reports  via an integrated GUI Builder, the execution of procedures and the<br />
+handling of diverse relational SQL databases through JDBC interface, e.g. Sybase<br />
+SQL Anywhere, Microsoft SQLServer 2000, Microsoft Access, MySQL, IBM<br />
+DB2, SAP MaxDB, Ingres, Firebird, Oracle, Parkway Microfocus, HSQLDB, PostgreSQL, JDataStore. High<br />
+performance database export and import functions are available, too.<br><br />
+<br><br />
+<table><br />
+  <tbody><br />
+    <tr><br />
+      <td vAlign="top"><br />
+      <u><strong>Common features</strong></u><br />
+        <p>o Basic Features<br><br />
+        - SQL and dynamic SQL editor<br><br />
+        - Color management editor<br><br />
+        - User management editor<br><br />
+        - Table editor<br><br />
+        - Macro editor<br><br />
+        - Command editor<br><br />
+        - Referential integrity editor<br><br />
+        - Beans administration <br><br />
+        - Properties editor with muliple selection<br><br />
+        - Database server view<br><br />
+        - eva/3 references view<br><br />
+        - Eclipse based help and documentation<br><br />
+        - Context help<br><br />
+        - Localization<br><br />
+        - Project documentation<br />
+        <p>o Additional Features<br><br />
+        - Form designer<br><br />
+        - Report designer<br><br />
+        - Auto-form generator<br><br />
+        - Auto-report generator<br><br />
+        - Auto-bean schema generator<br><br />
+        <p>o Supported Platforms<br><br />
+        - Windows (JDK 1.4.x)<br><br />
+        - Linux (JDK 1.4.x)</p><br />
+      </td><br />
+      <td vAlign="top"><u><strong>Database features</strong></u><br />
+        <p>o Basic Features<br><br />
+        - Relational JDBC databases are supported<br><br />
+        - Foreign keys<br><br />
+        - Table and view editors<br><br />
+        - Static integrated tables<br><br />
+        - Indicies</p><br />
+        <p>o Additional Features<br><br />
+        - Database converter<br><br />
+        - Database Performance Analyzer<br><br />
+        - CSV export<br><br />
+        - High performance database access<br><br />
+        - Search and filter functions<br><br />
+        - Visual sql editor<br><br />
+        - Print and preview functions<br><br />
+        - Large data sets optimizations<br><br />
+        - Import and export functions</p><br />
+      </td><br />
+      <td vAlign="top"><u><strong>Form features</strong></u><br />
+        <p>o Basic Features<br><br />
+        - Quick form preview<br><br />
+        - Cut / Copy / Paste / Delete functions<br><br />
+        - Undo & Redo functions<br><br />
+        - Modification of components order<br><br />
+        <p>o Additional Features<br><br />
+        - Table elements represent data sources in forms<br><br />
+        - Easy database integration<br><br />
+        - Standard and user defined components<br><br />
+        - Intelectual ComboBoxes<br><br />
+        - Regular Expressions<br><br />
+        - Variable table row height<br><br />
+        - Striped tables with multirow cells</p><br />
+        <p>o Supported Layouts<br><br />
+        - Null<br><br />
+        - FlowLayout<br><br />
+        - GridLayout<br><br />
+        - BorderLayout<br><br />
+        - GridBagLayout<br><br />
+        - CardLayout<br><br />
+        - BoxLayout</p><br />
+      </td><br />
+      <td vAlign="top"><u><strong>Report features</strong></u><br />
+        <p>o Basic features<br><br />
+        - Cut / Copy / Paste / Delete functions<br><br />
+        - Undo & Redo functions<br><br />
+        - Visual modification of components order<br><br />
+        - Zoom function<br><br />
+        - Page format<br><br />
+        - Variable report structure<br><br />
+        - Report groups<br><br />
+        - Previes/Printing reports<br><br />
+        - Report export  as pdf-file<br><br />
+        <p>o Additional Features<br><br />
+        - Easy database integration<br><br />
+        - BarCodes and 2DBarCodes<br><br />
+        - Excel(r) export<br><br />
+        - Advance standard and user defined components<br><br />
+        - Regular expressions</p><br />
+        <p>o Layout of reports<br><br />
+        - Page header<br><br />
+        - Report header<br><br />
+        - Detail area<br><br />
+        - Report footer<br><br />
+        - Page ending<br><br />
+        - Page footer</p><br />
+      </td><br />
+    </tr><br />
+  </tbody><br />
+</table></p>
+]]></body>
+      <created>1084813552</created>
+      <changed>1273046351</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.optadata.com/eng/index.htm]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/eva3_logo.gif?itok=c1gwAOQ9]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/01_formular.png?itok=8MKbXZcb]]></screenshot>
+      <version>1.5.7</version>
+      <license>Free for non-commerical use</license>
+      <companyname><![CDATA[optadat@.com]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[eclipse 3.x/WSAD 5.1.x]]></eclipseversion>
+      <supporturl><![CDATA[http://www.optadata.com/eng/contact.htm]]></supporturl>
+      <updateurl><![CDATA[http://www.optadata.com]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="59153" name="ECF Remote Services Helios" url="http://marketplace.eclipse.org/content/ecf-remote-services-helios">
+      <type>resource</type>
+      <categories>
+        <category id='1' name='Application Server' url='http://marketplace.eclipse.org/taxonomy/term/1'/>
+        <category id='1964' name='Application Development Frameworks' url='http://marketplace.eclipse.org/category/categories/application-development-frameworks'/>
+        <category id='1968' name='Collaboration' url='http://marketplace.eclipse.org/category/categories/collaboration'/>
+      </categories>
+      <tags>
+        <tag id='187' name='ECF' url='http://marketplace.eclipse.org/category/free-tagging/ecf'/>
+        <tag id='425' name='server' url='http://marketplace.eclipse.org/category/free-tagging/server'/>
+        <tag id='894' name='Communications' url='http://marketplace.eclipse.org/category/free-tagging/communications'/>
+        <tag id='968' name='OSGI Remote Services' url='http://marketplace.eclipse.org/category/free-tagging/osgi-remote-services'/>
+        <tag id='969' name='Messaging' url='http://marketplace.eclipse.org/category/free-tagging/messaging'/>
+      </tags>
+      
+      <owner>Wim Jongman</owner>
+      <favorited>3</favorited>
+      <installstotal>145</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The ECF Remote Services Solution enables OSGi Services to be remoted and consumed in another OSGi container.</p>
+<p>ECF is a framework for building distributed servers, applications, and tools. It provides a modular implementation of the OSGi Remote Services standard and implements the OSGi RSA Specification. ECF 3.5.1 also supports REST-based and SOAP-based remote services and asynchronous messaging for remote services.</p>
+<p>See the ECF Wiki for examples, tutorials, other documentation, as well as plans and efforts currently underway for future releases.</p>
+<p><a href="http://www.eclipse.org/ecf">http://www.eclipse.org/ecf</a><br /><a href="http://wiki.eclipse.org/EIG:Integrators_Guide">http://wiki.eclipse.org/EIG:Integrators_Guide</a><br /><a href="http://wiki.eclipse.org/EUG:Users_Guide">http://wiki.eclipse.org/EUG:Users_Guide</a></p>
+]]></shortdescription>
+      <body><![CDATA[<p>The ECF Remote Services Solution enables OSGi Services to be remoted and consumed in another OSGi container.</p>
+<p>ECF is a framework for building distributed servers, applications, and tools. It provides a modular implementation of the OSGi Remote Services standard and implements the OSGi RSA Specification. ECF 3.5.1 also supports REST-based and SOAP-based remote services and asynchronous messaging for remote services.</p>
+<p>See the ECF Wiki for examples, tutorials, other documentation, as well as plans and efforts currently underway for future releases.</p>
+<p><a href="http://www.eclipse.org/ecf">http://www.eclipse.org/ecf</a><br /><a href="http://wiki.eclipse.org/EIG:Integrators_Guide">http://wiki.eclipse.org/EIG:Integrators_Guide</a><br /><a href="http://wiki.eclipse.org/EUG:Users_Guide">http://wiki.eclipse.org/EUG:Users_Guide</a></p>
+]]></body>
+      <created>1307304730</created>
+      <changed>1316689526</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.eclipse.org/ecf]]></homepageurl>
+      <image><![CDATA[http://www.eclipse.org/artwork/images/eclipse_pos_logo_fc_sm.jpg]]></image>
+      <version>3.5.1</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Eclipse]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eclipse.org/ecf/downloads.php]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/rt/ecf/3.5.1/site.p2]]></updateurl>
+<ius>
+<iu>org.eclipse.ecf.remoteservice.sdk.feature.feature.group</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

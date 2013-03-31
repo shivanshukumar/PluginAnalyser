@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="543" name="Whole Platform" url="http://marketplace.eclipse.org/content/whole-platform">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='64' name='Modeling' url='http://marketplace.eclipse.org/category/free-tagging/modeling'/>
+        <tag id='195' name='DSL' url='http://marketplace.eclipse.org/category/free-tagging/dsl'/>
+        <tag id='1198' name='MDD' url='http://marketplace.eclipse.org/category/free-tagging/mdd'/>
+        <tag id='1301' name='generator' url='http://marketplace.eclipse.org/category/free-tagging/generator'/>
+        <tag id='1302' name='lop' url='http://marketplace.eclipse.org/category/free-tagging/lop'/>
+      </tags>
+      
+      <owner>Riccardo Solmi</owner>
+      <favorited>2</favorited>
+      <installstotal>137</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The Whole Platform is a technology for engineering the production of software. </p>
+<p>We think that programming is an activity concerning the development of domain languages; so, we provide a Language Workbench for developing new languages, manipulating them using domain notations and transforming them using a generative model driven approach.<br />
+Using the Whole Platform, the problem domain experts can work together with the programming experts for the development of software products. </p>
+<p>The languages boundled with the Whole Platform include:<br />
+- modeling languages;<br />
+- query and transformation languages;<br />
+- integration languages for grammars, XSD, RDB and Java libraries;<br />
+and popular languages such as Java, Objective C and XML. </p>
+<p>The Whole Platform makes the transition smoother for the developers who prefer to code the domain knowledge as libraries instead of domain specific languages.<br />
+The Platform, in fact, includes both an Eclipse based Language Workbench and a Java based Language Library. All the expressive power of domain languages is also available in their Java coded counterpart generated on top of our Language Framework.<br />
+Furthermore the Whole Platform is written with extensive use of well-known Design Patterns.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The Whole Platform is a technology for engineering the production of software. </p>
+<p>We think that programming is an activity concerning the development of domain languages; so, we provide a Language Workbench for developing new languages, manipulating them using domain notations and transforming them using a generative model driven approach.<br />
+Using the Whole Platform, the problem domain experts can work together with the programming experts for the development of software products. </p>
+<p>The languages boundled with the Whole Platform include:<br />
+- modeling languages;<br />
+- query and transformation languages;<br />
+- integration languages for grammars, XSD, RDB and Java libraries;<br />
+and popular languages such as Java, Objective C and XML. </p>
+<p>The Whole Platform makes the transition smoother for the developers who prefer to code the domain knowledge as libraries instead of domain specific languages.<br />
+The Platform, in fact, includes both an Eclipse based Language Workbench and a Java based Language Library. All the expressive power of domain languages is also available in their Java coded counterpart generated on top of our Language Framework.<br />
+Furthermore the Whole Platform is written with extensive use of well-known Design Patterns.</p>
+]]></body>
+      <created>1190037685</created>
+      <changed>1305296351</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://whole.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/wholelogo_0.png?itok=3P7JLYgu]]></image>
+      <version>1.0.0.v20110512-1609</version>
+      <license>LGPL</license>
+      <companyname><![CDATA[Riccardo Solmi]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://whole.sourceforge.net]]></supporturl>
+      <updateurl><![CDATA[http://whole.sourceforge.net/updates]]></updateurl>
+<ius>
+<iu>org.whole.ide</iu>
+<iu>org.whole.sdk</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

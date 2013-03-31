@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="257" name="AonixADT Ada Development Toolkit for GNAT and ObjectADA" url="http://marketplace.eclipse.org/content/aonixadt-ada-development-toolkit-gnat-and-objectada">
+      <type>resource</type>
+      <categories>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+      </categories>
+      <tags>
+        <tag id='116' name='' url='http://marketplace.eclipse.org/taxonomy/term/116'/>
+        <tag id='2439' name='adt' url='http://marketplace.eclipse.org/category/free-tagging/adt'/>
+      </tags>
+      
+      <owner>grosman</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>AonixADT is a free, commercial quality plugin for Ada language development in Eclipse under Windows, Linux and Sparc Solaris.  In addition to supporting standard Eclipse functionality and views, AonixADT also provides: </p>
+<p>GNAT toolchain support<br />
+ObjectAda toolchain support<br />
+Ada Project Navigator<br />
+Ada 95 Colorizing Editor<br />
+Semantic, project-wide navigation of Ada objects<br />
+Syntactic and Semantic Code Assist<br />
+Build Automation<br />
+Pretty Printing<br />
+Ada Project Wizards<br />
+File, Package, Procedure, Function creation wizards.<br />
+Configurable Toolchains<br />
+Graphical Debugger supporting attaching to running processes    </p>
+]]></shortdescription>
+      <body><![CDATA[<p>AonixADT is a free, commercial quality plugin for Ada language development in Eclipse under Windows, Linux and Sparc Solaris.  In addition to supporting standard Eclipse functionality and views, AonixADT also provides: </p>
+<p>GNAT toolchain support<br />
+ObjectAda toolchain support<br />
+Ada Project Navigator<br />
+Ada 95 Colorizing Editor<br />
+Semantic, project-wide navigation of Ada objects<br />
+Syntactic and Semantic Code Assist<br />
+Build Automation<br />
+Pretty Printing<br />
+Ada Project Wizards<br />
+File, Package, Procedure, Function creation wizards.<br />
+Configurable Toolchains<br />
+Graphical Debugger supporting attaching to running processes    </p>
+]]></body>
+      <created>1158585661</created>
+      <changed>1259778596</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.aonix.com/adt.html]]></homepageurl>
+      <image><![CDATA[http://www.aonix.com/ADT_Logo_110x80.gif]]></image>
+      <version>3.2.2</version>
+      <license>Free for non-commercial use</license>
+      <companyname><![CDATA[Aonix]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.1 +]]></eclipseversion>
+      <supporturl><![CDATA[http://www.aonix.com/support_adt_osf.html]]></supporturl>
+      <updateurl><![CDATA[http://www.aonix.com/adt_update]]></updateurl>
+    </node>
+    </marketplace>
+    

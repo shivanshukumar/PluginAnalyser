@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="69895" name="Sapphire" url="http://marketplace.eclipse.org/content/sapphire">
+      <type>resource</type>
+      <categories>
+        <category id='1964' name='Application Development Frameworks' url='http://marketplace.eclipse.org/category/categories/application-development-frameworks'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+      </categories>
+            
+      <owner>Konstantin Komissarchik</owner>
+      <favorited>8</favorited>
+      <installstotal>703</installstotal>
+      <installsrecent>30</installsrecent>
+      <shortdescription><![CDATA[<p>Sapphire is a user interface development framework that improves productivity by focusing on the semantics of the data and the general intent of how that data is to be presented.</p>
+<p>Little has changed in the way Java desktop UI is written since the original Java release. Technologies have changed (AWT, Swing, SWT, etc.), but fundamentals remain the same. The developer must choose which widgets to use, how to lay those widgets out, how to store the data being edited and how to synchronize the model with the UI. Even the best developers fall into traps of having UI components talk directly to other UI components rather than through the model. Inordinate amount of time is spent debugging layout and data-binding issues.</p>
+<p>Sapphire aims to raise UI development to a higher level of abstraction. The core premise is that the basic building block of UI should not be a widget (text box, label, button, etc.), but rather higher level constructs like property editors. Unlike a widget, a property editor analyzes metadata associated with a given property, renders the appropriate widgets to edit that property and wires up data binding. Data is synchronized, validation is passed from the model to the UI, content assistance is made available, etc.</p>
+<p>This fundamentally changes the way developers interact with a UI framework. Instead of writing UI by telling the system how to do something, the developer tells the system what they intend to accomplish. When using Sapphire, the developer says "I want to edit LastName property of the person object". When using widget toolkits like SWT, the developer says "create label, create text box, lay them out like so, configure their settings, setup data binding and so on". By the time the developer is done, it is hard to see the original goal in the code that's produced. This results in UI that is inconsistent, brittle and difficult to maintain.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Sapphire is a user interface development framework that improves productivity by focusing on the semantics of the data and the general intent of how that data is to be presented.</p>
+<p>Little has changed in the way Java desktop UI is written since the original Java release. Technologies have changed (AWT, Swing, SWT, etc.), but fundamentals remain the same. The developer must choose which widgets to use, how to lay those widgets out, how to store the data being edited and how to synchronize the model with the UI. Even the best developers fall into traps of having UI components talk directly to other UI components rather than through the model. Inordinate amount of time is spent debugging layout and data-binding issues.</p>
+<p>Sapphire aims to raise UI development to a higher level of abstraction. The core premise is that the basic building block of UI should not be a widget (text box, label, button, etc.), but rather higher level constructs like property editors. Unlike a widget, a property editor analyzes metadata associated with a given property, renders the appropriate widgets to edit that property and wires up data binding. Data is synchronized, validation is passed from the model to the UI, content assistance is made available, etc.</p>
+<p>This fundamentally changes the way developers interact with a UI framework. Instead of writing UI by telling the system how to do something, the developer tells the system what they intend to accomplish. When using Sapphire, the developer says "I want to edit LastName property of the person object". When using widget toolkits like SWT, the developer says "create label, create text box, lay them out like so, configure their settings, setup data binding and so on". By the time the developer is done, it is hard to see the original goal in the code that's produced. This results in UI that is inconsistent, brittle and difficult to maintain.</p>
+]]></body>
+      <created>1308792244</created>
+      <changed>1361399488</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.eclipse.org/sapphire/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/sapphire-logo-marketplace.png?itok=q2WsQCT2]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/editor_0.png?itok=T49Ix2kQ]]></screenshot>
+      <version></version>
+      <license>EPL</license>
+      <companyname><![CDATA[Eclipse.org]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.6,3.7,3.8,4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://www.eclipse.org/forums/index.php?t=thread&frm_id=192]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/sapphire/0.6.1/repository]]></updateurl>
+<ius>
+<iu>org.eclipse.sapphire.java.jdt</iu>
+<iu>org.eclipse.sapphire.java</iu>
+<iu>org.eclipse.sapphire.modeling.xml</iu>
+<iu>org.eclipse.sapphire</iu>
+<iu>org.eclipse.sapphire.osgi</iu>
+<iu>org.eclipse.sapphire.platform</iu>
+<iu>org.eclipse.sapphire.sdk</iu>
+<iu>org.eclipse.sapphire.source</iu>
+<iu>org.eclipse.sapphire.ui.swt.gef</iu>
+<iu>org.eclipse.sapphire.ui.swt.xml.editor</iu>
+<iu>org.eclipse.sapphire.ui</iu>
+</ius>
+    </node>
+    </marketplace>
+    

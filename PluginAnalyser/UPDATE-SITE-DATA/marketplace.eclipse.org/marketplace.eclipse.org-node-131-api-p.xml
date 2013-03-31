@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="131" name="JInto" url="http://marketplace.eclipse.org/content/jinto">
+      <type>resource</type>
+      <categories>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+            
+      <owner>G&amp;H Softwareentwicklung GmbH</owner>
+      <favorited>6</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>JInto is a plugin for Eclipse that lets the developer easily edit and maintain resource bundles (files that hold the localized strings for an application). It features parallel editing of all language versions (side by side), warnings when no text has been provided for a specific key, or when the text for one key is identical for different languages, code assist (auto-completion for keys and quick-assist for adding new keys on the fly) and a search wizard to locate unused (strings that are defined but not referenced in the source code) and undefined  (strings that are referenced, but not actually defined in the resource bundle) keys, as well as a "reference search" that shows where in the code a specific key is referenced.  </p>
+<p>It has been tested under Windows and Linux. Eclipse 3.3.x and 3.4.x are still supported by JInto 0.12.0</p>
+]]></shortdescription>
+      <body><![CDATA[<p>JInto is a plugin for Eclipse that lets the developer easily edit and maintain resource bundles (files that hold the localized strings for an application). It features parallel editing of all language versions (side by side), warnings when no text has been provided for a specific key, or when the text for one key is identical for different languages, code assist (auto-completion for keys and quick-assist for adding new keys on the fly) and a search wizard to locate unused (strings that are defined but not referenced in the source code) and undefined  (strings that are referenced, but not actually defined in the resource bundle) keys, as well as a "reference search" that shows where in the code a specific key is referenced.  </p>
+<p>It has been tested under Windows and Linux. Eclipse 3.3.x and 3.4.x are still supported by JInto 0.12.0</p>
+]]></body>
+      <created>1102422784</created>
+      <changed>1263893839</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.guh-software.de/jinto_en.html]]></homepageurl>
+      <image><![CDATA[http://www.guh-software.de/images/jinto1_eclipseplugincentral.gif]]></image>
+      <version>0.13.5</version>
+      <license>EPL</license>
+      <companyname><![CDATA[G&H Softwareentwicklung GmbH]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.3.x, 3.4.x and 3.5.x]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://www.guh-software.de/eclipse]]></updateurl>
+    </node>
+    </marketplace>
+    

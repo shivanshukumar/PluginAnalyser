@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1158" name="MakeGood" url="http://marketplace.eclipse.org/content/makegood-1">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+      </categories>
+      <tags>
+        <tag id='43' name='PHP' url='http://marketplace.eclipse.org/category/free-tagging/php'/>
+        <tag id='249' name='phpunit' url='http://marketplace.eclipse.org/category/free-tagging/phpunit'/>
+        <tag id='936' name='Unit test' url='http://marketplace.eclipse.org/category/free-tagging/unit-test'/>
+      </tags>
+      
+      <owner>matsufuji  </owner>
+      <favorited>13</favorited>
+      <installstotal>2835</installstotal>
+      <installsrecent>195</installsrecent>
+      <shortdescription><![CDATA[<p>
+  MakeGood is a continuous test runner to run unit tests on <a href="http://eclipse.org/pdt/" target="_blank">Eclipse PDT</a>.<br /><br /><br /><br />
+  MakeGood provides fast feedback by automated workflows for running tests, tracking failures and errors and fatal errors. This will help developers to do <a href="http://en.wikipedia.org/wiki/Test-driven_development" target="_blank">Test Driven Development</a> (TDD) and <strong>Continuous Testing</strong>.
+</p>
+<p>
+  <img src="http://piece-framework.com/attachments/339/makegood-en-550.png" /></p>
+<p>
+  Click <a href="http://piece-framework.com/attachments/338/makegood-en.png" target="_blank">here</a> to see the original size.
+</p>
+<h2>Features</h2>
+<ul><li>Runs tests when a file is saved. (<strong>Continuous Testing</strong>)</li>
+<li>Automatically tracks failures, errors, and fatal errors.</li>
+<li>Runs all tests.</li>
+<li>Runs tests from the PHP Explorer, Package Explorer, and Outline, and other views.</li>
+<li>Runs tests from the PHP Editor.</li>
+<li>Runs inherited tests from the Test Outline view.</li>
+<li>Debugs a test.</li>
+<li>Reruns the last test.</li>
+<li>Reruns the failed tests.</li>
+<li>Stops the test run.</li>
+<li>Stops on the first failure or error.</li>
+<li>Specifies the test file pattern.</li>
+<li>Can use the system include path when running tests.</li>
+<li>Supports multibyte characters.</li>
+<li>Supports <a href="http://cakephp.org/" target="_blank">CakePHP</a>, <a href="http://www.knollet.com/foostack/" target="_blank">CIUnit</a>, <a href="http://www.phpspec.net/" target="_blank">PHPSpec</a>, <a href="https://github.com/sebastianbergmann/phpunit" target="_blank">PHPUnit</a>, and <a href="http://simpletest.org/" target="_blank">SimpleTest</a>.
+</li><li>Supports Zend Debugger and <a href="http://xdebug.org/" target="_blank">Xdebug</a>.</li>
+</ul><h2>Requirements</h2>
+<ul><li><a href="http://www.php.net/" target="_blank">PHP</a> 5.3.2 or greater</li>
+<li><a href="http://www.php.net/manual/en/book.pcre.php" target="_blank">pcre</a></li>
+<li><a href="http://www.php.net/manual/en/book.spl.php" target="_blank">SPL</a></li>
+<li>(optional)<a href="http://www.php.net/manual/en/book.dom.php" target="_blank">dom</a></li>
+<li>(optional)<a href="http://www.php.net/manual/en/book.mbstring.php" target="_blank">mbstring</a></li>
+<li>Zend Debugger or <a href="http://xdebug.org/" target="_blank">Xdebug</a></li>
+<li><a href="http://www.eclipse.org/juno/" target="_blank">Eclipse Juno</a> (4.2) or <a href="http://download.eclipse.org/eclipse/downloads/eclipse3x.php" target="_blank">Eclipse 3.8</a> or <a href="http://eclipse.org/indigo" target="_blank">Eclipse Indigo</a> (3.7)</li>
+<li><a href="http://eclipse.org/pdt/" target="_blank">PDT</a> 3.1 or 3.0</li>
+<li>(optional) <a href="http://redmine.piece-framework.com/projects/show/stagehand-testrunner" target="_blank">Stagehand_TestRunner</a> 3.6.0 or greater</li>
+<li>(optional) <a href="http://cakephp.org/" target="_blank">CakePHP</a> 1.3 or 1.2</li>
+<li>(optional) <a href="http://www.knollet.com/foostack/" target="_blank">CIUnit</a> v0.17</li>
+<li>(optional) <a href="http://www.phpspec.net/" target="_blank">PHPSpec</a> 1.3.0beta or greater</li>
+<li>(optional) <a href="https://github.com/sebastianbergmann/phpunit" target="_blank">PHPUnit</a> 3.6.0 or greater</li>
+<li>(optional) <a href="http://simpletest.org/" target="_blank">SimpleTest</a> 1.0.1 or greater</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>
+  MakeGood is a continuous test runner to run unit tests on <a href="http://eclipse.org/pdt/" target="_blank">Eclipse PDT</a>.<br /><br /><br /><br />
+  MakeGood provides fast feedback by automated workflows for running tests, tracking failures and errors and fatal errors. This will help developers to do <a href="http://en.wikipedia.org/wiki/Test-driven_development" target="_blank">Test Driven Development</a> (TDD) and <strong>Continuous Testing</strong>.
+</p>
+<p>
+  <img src="http://piece-framework.com/attachments/339/makegood-en-550.png" /></p>
+<p>
+  Click <a href="http://piece-framework.com/attachments/338/makegood-en.png" target="_blank">here</a> to see the original size.
+</p>
+<h2>Features</h2>
+<ul><li>Runs tests when a file is saved. (<strong>Continuous Testing</strong>)</li>
+<li>Automatically tracks failures, errors, and fatal errors.</li>
+<li>Runs all tests.</li>
+<li>Runs tests from the PHP Explorer, Package Explorer, and Outline, and other views.</li>
+<li>Runs tests from the PHP Editor.</li>
+<li>Runs inherited tests from the Test Outline view.</li>
+<li>Debugs a test.</li>
+<li>Reruns the last test.</li>
+<li>Reruns the failed tests.</li>
+<li>Stops the test run.</li>
+<li>Stops on the first failure or error.</li>
+<li>Specifies the test file pattern.</li>
+<li>Can use the system include path when running tests.</li>
+<li>Supports multibyte characters.</li>
+<li>Supports <a href="http://cakephp.org/" target="_blank">CakePHP</a>, <a href="http://www.knollet.com/foostack/" target="_blank">CIUnit</a>, <a href="http://www.phpspec.net/" target="_blank">PHPSpec</a>, <a href="https://github.com/sebastianbergmann/phpunit" target="_blank">PHPUnit</a>, and <a href="http://simpletest.org/" target="_blank">SimpleTest</a>.
+</li><li>Supports Zend Debugger and <a href="http://xdebug.org/" target="_blank">Xdebug</a>.</li>
+</ul><h2>Requirements</h2>
+<ul><li><a href="http://www.php.net/" target="_blank">PHP</a> 5.3.2 or greater</li>
+<li><a href="http://www.php.net/manual/en/book.pcre.php" target="_blank">pcre</a></li>
+<li><a href="http://www.php.net/manual/en/book.spl.php" target="_blank">SPL</a></li>
+<li>(optional)<a href="http://www.php.net/manual/en/book.dom.php" target="_blank">dom</a></li>
+<li>(optional)<a href="http://www.php.net/manual/en/book.mbstring.php" target="_blank">mbstring</a></li>
+<li>Zend Debugger or <a href="http://xdebug.org/" target="_blank">Xdebug</a></li>
+<li><a href="http://www.eclipse.org/juno/" target="_blank">Eclipse Juno</a> (4.2) or <a href="http://download.eclipse.org/eclipse/downloads/eclipse3x.php" target="_blank">Eclipse 3.8</a> or <a href="http://eclipse.org/indigo" target="_blank">Eclipse Indigo</a> (3.7)</li>
+<li><a href="http://eclipse.org/pdt/" target="_blank">PDT</a> 3.1 or 3.0</li>
+<li>(optional) <a href="http://redmine.piece-framework.com/projects/show/stagehand-testrunner" target="_blank">Stagehand_TestRunner</a> 3.6.0 or greater</li>
+<li>(optional) <a href="http://cakephp.org/" target="_blank">CakePHP</a> 1.3 or 1.2</li>
+<li>(optional) <a href="http://www.knollet.com/foostack/" target="_blank">CIUnit</a> v0.17</li>
+<li>(optional) <a href="http://www.phpspec.net/" target="_blank">PHPSpec</a> 1.3.0beta or greater</li>
+<li>(optional) <a href="https://github.com/sebastianbergmann/phpunit" target="_blank">PHPUnit</a> 3.6.0 or greater</li>
+<li>(optional) <a href="http://simpletest.org/" target="_blank">SimpleTest</a> 1.0.1 or greater</li>
+</ul>]]></body>
+      <created>1267594860</created>
+      <changed>1363685797</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://piece-framework.com/projects/makegood/wiki]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/MakeGoodImage.png?itok=Kc7jJivk]]></image>
+      <version>2.4.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Piece Project]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[Juno (4.2) or 3.8 or Indigo (3.7)]]></eclipseversion>
+      <supporturl><![CDATA[http://redmine.piece-framework.com/projects/makegood/boards]]></supporturl>
+      <updateurl><![CDATA[http://eclipse.piece-framework.com]]></updateurl>
+<ius>
+<iu>com.piece_framework.makegood_feature</iu>
+</ius>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="40935" name="eclatosa" url="http://marketplace.eclipse.org/content/eclatosa">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='51' name='IDE' url='http://marketplace.eclipse.org/category/free-tagging/ide'/>
+        <tag id='146' name='editor' url='http://marketplace.eclipse.org/category/free-tagging/editor'/>
+        <tag id='1768' name='autosave' url='http://marketplace.eclipse.org/category/free-tagging/autosave'/>
+        <tag id='1769' name='save' url='http://marketplace.eclipse.org/category/free-tagging/save'/>
+        <tag id='1771' name='auto' url='http://marketplace.eclipse.org/category/free-tagging/auto'/>
+      </tags>
+      
+      <owner>count negative</owner>
+      <favorited>1</favorited>
+      <installstotal>282</installstotal>
+      <installsrecent>23</installsrecent>
+      <shortdescription><![CDATA[<p>eclipse autosave plugin</p>
+<p>saves all open editors in eclipse when deactivating the eclipse window (like in IntelliJ).<br />
+This is a speedup for developing web apps with wtp.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>eclipse autosave plugin</p>
+<p>saves all open editors in eclipse when deactivating the eclipse window (like in IntelliJ).<br />
+This is a speedup for developing web apps with wtp.</p>
+]]></body>
+      <created>1301246025</created>
+      <changed>1352021185</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/eclatosa/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/eclatosa.png?itok=Dn9_BkcY]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/prefs.png?itok=yF4Zsm5I]]></screenshot>
+      <version>1.0.1</version>
+      <license>Apache 2.0</license>
+      <companyname><![CDATA[count.negative]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2,3.3,3.4,3.5,3.6,3.7,4.2]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://eclatosa.googlecode.com/svn/trunk/eclatosa.updatesite/]]></updateurl>
+<ius>
+<iu>eclatosa.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

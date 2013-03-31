@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="150453" name="Lua Development Tools (Koneki)" url="http://marketplace.eclipse.org/content/lua-development-tools-koneki">
+      <type>resource</type>
+      <categories>
+        <category id='1966' name='Programming Languages' url='http://marketplace.eclipse.org/category/categories/programming-languages'/>
+      </categories>
+      <tags>
+        <tag id='841' name='Lua' url='http://marketplace.eclipse.org/category/free-tagging/lua'/>
+        <tag id='2326' name='ldt' url='http://marketplace.eclipse.org/category/free-tagging/ldt'/>
+        <tag id='2327' name='koneki' url='http://marketplace.eclipse.org/category/free-tagging/koneki'/>
+        <tag id='2328' name='dltk' url='http://marketplace.eclipse.org/category/free-tagging/dltk'/>
+        <tag id='2329' name='m2m' url='http://marketplace.eclipse.org/category/free-tagging/m2m'/>
+      </tags>
+      
+      <owner>Benjamin Cabe</owner>
+      <favorited>8</favorited>
+      <installstotal>4607</installstotal>
+      <installsrecent>405</installsrecent>
+      <shortdescription><![CDATA[<p>LDT is about providing Lua developers with proper user assistance. A user experience as comfortable as the one common static languages users are used to. Like many other dynamic languages, Lua is so flexible that it is hard to analyze enough to provide relevant and powerful tooling. Nevertheless, using static analysis from Metalua, it is possible to analyse Lua enough to provide nice user assistance.</p>
+<p>Visit <a href="http://marketplace.eclipse.org/content/lua-development-tools-koneki/click">Lua Development Tools web page</a> for more information, and make sure you are encouraging the development team by favoriting LDT on the Marketplace or using Google +1 on the project page!</p>
+]]></shortdescription>
+      <body><![CDATA[<p>LDT is about providing Lua developers with proper user assistance. A user experience as comfortable as the one common static languages users are used to. Like many other dynamic languages, Lua is so flexible that it is hard to analyze enough to provide relevant and powerful tooling. Nevertheless, using static analysis from Metalua, it is possible to analyse Lua enough to provide nice user assistance.</p>
+<p>Visit <a href="http://marketplace.eclipse.org/content/lua-development-tools-koneki/click">Lua Development Tools web page</a> for more information, and make sure you are encouraging the development team by favoriting LDT on the Marketplace or using Google +1 on the project page!</p>
+]]></body>
+      <created>1320940561</created>
+      <changed>1357637394</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.eclipse.org/koneki/ldt]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/LDT_64_0.png?itok=dOWrLgcl]]></image>
+      <version>0.9.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Eclipse.org]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced;product=Koneki;classification=Technology]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/koneki/releases/stable/ldt]]></updateurl>
+<ius>
+<iu>org.eclipse.koneki.ldt.feature.group</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

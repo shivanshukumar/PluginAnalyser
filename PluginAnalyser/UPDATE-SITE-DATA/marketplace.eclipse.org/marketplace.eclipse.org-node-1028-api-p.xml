@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1028" name="Headless Eclipse Builder" url="http://marketplace.eclipse.org/content/headless-eclipse-builder">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+      </categories>
+            
+      <owner>Gábor Lipták</owner>
+      <favorited>1</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Headless application to setup a workspace (import projects), clean and build the projects, export wars, etc. </p>
+<p>Eclipse projects contain a lot of information about dependencies. Such information is necessary to compile the projects if you want to use some continuous integration tool. A lot of ant scripts must be created if one want to do the same as Eclipse does during build, export and so on. The information will be duplicated. If dependency changes, ant script will change as well. It would be so great to avoid such work and use Eclipse itself for building. Would not it?</p>
+]]></shortdescription>
+      <body><![CDATA[<p>Headless application to setup a workspace (import projects), clean and build the projects, export wars, etc. </p>
+<p>Eclipse projects contain a lot of information about dependencies. Such information is necessary to compile the projects if you want to use some continuous integration tool. A lot of ant scripts must be created if one want to do the same as Eclipse does during build, export and so on. The information will be duplicated. If dependency changes, ant script will change as well. It would be so great to avoid such work and use Eclipse itself for building. Would not it?</p>
+]]></body>
+      <created>1255960329</created>
+      <changed>1263473483</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/headlesseclipse/]]></homepageurl>
+      <image><![CDATA[http://headlesseclipse.googlecode.com/svn/pictures/headless_small.png]]></image>
+      <version>1.1.8</version>
+      <license>EPL</license>
+      <companyname><![CDATA[IND Group]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4, 3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://groups.google.com/group/headlesseclipse]]></supporturl>
+      <updateurl><![CDATA[http://eclipse.indweb.hu]]></updateurl>
+    </node>
+    </marketplace>
+    

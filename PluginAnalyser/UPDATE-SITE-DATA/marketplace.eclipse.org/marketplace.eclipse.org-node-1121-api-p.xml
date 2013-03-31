@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1121" name="Diver: Dynamic Interactive Views for Reverse Engineering" url="http://marketplace.eclipse.org/content/diver-dynamic-interactive-views-reverse-engineering">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='13' name='Profiling' url='http://marketplace.eclipse.org/taxonomy/term/13'/>
+        <category id='14' name='Source Code Analyzer' url='http://marketplace.eclipse.org/taxonomy/term/14'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='417' name='reverse engineering' url='http://marketplace.eclipse.org/category/free-tagging/reverse-engineering'/>
+        <tag id='2846' name='dynamic analysis' url='http://marketplace.eclipse.org/taxonomy/term/2846'/>
+      </tags>
+      
+      <owner>Chisel Group</owner>
+      <favorited>16</favorited>
+      <installstotal>1547</installstotal>
+      <installsrecent>103</installsrecent>
+      <shortdescription><![CDATA[<p>Diver is a dynamic analysis tool for Java that integrates scalable sequence diagram views with an interactive trace-focused UI in Eclipse.  Diver provides sophisticated debugging support for understanding and exploring features of interest. </p>
+<p>Through a series of plugins for Eclipse, Diver allows you to:</p>
+<ul><li>easily record and capture traces of your running program;</li>
+<li>interactively visualize, filter and share sequence diagrams of the captured traces; </li>
+<li>selectively focus core Eclipse views on the traced code; and </li>
+<li>seamlessly navigate between sequence diagrams and the trace-focused source code views. </li>
+</ul><p>Diver has a rich set of innovative features that include: </p>
+<ul><li>software reconnaissance to support drilling into code that is specific to a feature of interest; </li>
+<li>support for tracing only when certain breakpoints are reached in debug mode;  </li>
+<li>easy to configure filters that can be applied before, during or after trace capture and visualization; and </li>
+<li>advanced sequence diagram features for compressing loops and navigating dynamic traces within a timeline. </li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>Diver is a dynamic analysis tool for Java that integrates scalable sequence diagram views with an interactive trace-focused UI in Eclipse.  Diver provides sophisticated debugging support for understanding and exploring features of interest. </p>
+<p>Through a series of plugins for Eclipse, Diver allows you to:</p>
+<ul><li>easily record and capture traces of your running program;</li>
+<li>interactively visualize, filter and share sequence diagrams of the captured traces; </li>
+<li>selectively focus core Eclipse views on the traced code; and </li>
+<li>seamlessly navigate between sequence diagrams and the trace-focused source code views. </li>
+</ul><p>Diver has a rich set of innovative features that include: </p>
+<ul><li>software reconnaissance to support drilling into code that is specific to a feature of interest; </li>
+<li>support for tracing only when certain breakpoints are reached in debug mode;  </li>
+<li>easy to configure filters that can be applied before, during or after trace capture and visualization; and </li>
+<li>advanced sequence diagram features for compressing loops and navigating dynamic traces within a timeline. </li>
+</ul>]]></body>
+      <created>1264639820</created>
+      <changed>1349215724</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://eclipsediver.wordpress.com/]]></homepageurl>
+      <image><![CDATA[http://diver.sourceforge.net/images/logo-tiny.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/perspective_0.png?itok=dbO0stWs]]></screenshot>
+      <version>0.5.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[University of Victoria - The CHISEL Group]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5+]]></eclipseversion>
+      <supporturl><![CDATA[https://github.com/thechiselgroup/Diver]]></supporturl>
+      <updateurl><![CDATA[http://diver.sourceforge.net/update]]></updateurl>
+<ius>
+<iu>ca.uvic.chisel.diver.feature</iu>
+<iu>ca.uvic.chisel.widgets.feature</iu>
+<iu>ca.uvic.chisel.hsqldb.feature</iu>
+<iu>ca.uvic.chisel.diver.static.feature</iu>
+<iu>ca.uvic.chisel.diver.junit.feature</iu>
+<iu>ca.uvic.chisel.diver.feature.container</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

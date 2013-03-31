@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="776" name="GrinderStone" url="http://marketplace.eclipse.org/content/grinderstone">
+      <type>resource</type>
+      <categories>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='192' name='testing' url='http://marketplace.eclipse.org/category/free-tagging/testing'/>
+        <tag id='193' name='automation' url='http://marketplace.eclipse.org/category/free-tagging/automation'/>
+        <tag id='700' name='performance testing' url='http://marketplace.eclipse.org/category/free-tagging/performance-testing'/>
+        <tag id='701' name='performance' url='http://marketplace.eclipse.org/category/free-tagging/performance'/>
+        <tag id='702' name='jython' url='http://marketplace.eclipse.org/category/free-tagging/jython'/>
+      </tags>
+      
+      <owner>Borislav Andruschuk</owner>
+      <favorited>2</favorited>
+      <installstotal>436</installstotal>
+      <installsrecent>18</installsrecent>
+      <shortdescription><![CDATA[<p><i><b>GrinderStone</b></i> is a plugin to Eclipse for <i>The Grinder</i>, widely used open source performance testing product. The main goal of GrinderStone project is to provide ability to run and debug created scripts for The Grinder in Eclipse.<br />
+Main features:</p>
+<ul><li>running scripts from Eclipse
+</li><li>full debugging support for Grinder scripts
+</li><li>support for all Grinder 3.X versions
+</li><li>ability to create separate running configurations
+</li><li>ability to reference Java projects from Jython projects
+</li><li>redirect all Grinder logging outputs into one Eclipse terminal
+</li></ul>]]></shortdescription>
+      <body><![CDATA[<p><i><b>GrinderStone</b></i> is a plugin to Eclipse for <i>The Grinder</i>, widely used open source performance testing product. The main goal of GrinderStone project is to provide ability to run and debug created scripts for The Grinder in Eclipse.<br />
+Main features:</p>
+<ul><li>running scripts from Eclipse
+</li><li>full debugging support for Grinder scripts
+</li><li>support for all Grinder 3.X versions
+</li><li>ability to create separate running configurations
+</li><li>ability to reference Java projects from Jython projects
+</li><li>redirect all Grinder logging outputs into one Eclipse terminal
+</li></ul>]]></body>
+      <created>1222371831</created>
+      <changed>1310385443</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/grinderstone]]></homepageurl>
+      <image><![CDATA[http://grinderstone.googlecode.com/svn/trunk/documentation/images/grinderstone-medium.png]]></image>
+      <version>2.5.5</version>
+      <license>EPL</license>
+      <companyname><![CDATA[GrinderStone]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.3, 3.4, 3.5, 3.6]]></eclipseversion>
+      <supporturl><![CDATA[http://groups.google.com/group/grinderstone-support]]></supporturl>
+      <updateurl><![CDATA[http://grinderstone.googlecode.com/svn/update/site.xml]]></updateurl>
+<ius>
+<iu>com.googlecode.grinderstone.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

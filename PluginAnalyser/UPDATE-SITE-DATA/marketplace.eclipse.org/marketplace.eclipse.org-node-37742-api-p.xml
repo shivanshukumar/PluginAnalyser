@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="37742" name="Arctorus DOCX BIRT Emitter" url="http://marketplace.eclipse.org/content/arctorus-docx-birt-emitter">
+      <type>resource</type>
+      <categories>
+        <category id='39' name='Reporting' url='http://marketplace.eclipse.org/category/categories/reporting'/>
+        <category id='42' name='BIRT' url='http://marketplace.eclipse.org/category/categories/birt'/>
+      </categories>
+      <tags>
+        <tag id='361' name='birt' url='http://marketplace.eclipse.org/category/free-tagging/birt'/>
+        <tag id='1287' name='word' url='http://marketplace.eclipse.org/category/free-tagging/word'/>
+        <tag id='1288' name='openoffice' url='http://marketplace.eclipse.org/category/free-tagging/openoffice'/>
+        <tag id='1685' name='Arctorus Software Inc.' url='http://marketplace.eclipse.org/category/free-tagging/arctorus-software-inc'/>
+        <tag id='1992' name='export' url='http://marketplace.eclipse.org/category/free-tagging/export'/>
+      </tags>
+      
+      <owner>Jeff Morris</owner>
+      <favorited>4</favorited>
+      <installstotal>34</installstotal>
+      <installsrecent>4</installsrecent>
+      <shortdescription><![CDATA[<p>Arctorus Birt Emitters provide unique solution to export Eclipse Birt Reports in Microsoft Office (OpenXML) and OpenOffice/LibreOffice formats. These emitters work side by side with Birt Reporting Engine and transparently make it possible to export Birt Reports in one of these new formats which are not supported by Birt natively:</p>
+<ul><li>DOCX - Microsoft Word Document (Docx Birt Emitter)</li>
+<li>XLSX - Microsoft Excel Spreadsheet (Xlsx Birt Emitter)</li>
+<li>PPTX - Microsoft PowerPoint Presentation (Pptx Birt Emitter)</li>
+<li>ODT - OpenOffice Writer Document (Odt Birt Emitter)</li>
+<li>ODS - OpenOffice Calc Spreadsheet (Ods Birt Emitter)</li>
+<li>ODP - OpenOffice Impress Presentation (Odp Birt Emitter)</li>
+</ul><p><strong>What's New:</strong></p>
+<p><em>November 10, 2011 - Arctorus Birt Emitters 3.0.3 Released.</em></p>
+<ul><li>XLSX / ODS - Fixed java.lang.IllegalArgumentException: Malformed exponential pattern "0.00E+00" when export numeric fields in scientific format.</li>
+<li>XLSX / ODS - Fixed java.lang.IllegalArgumentException: Illegal pattern character 'A' when export dates with AM/PM marker.</li>
+<li>XLSX / ODS - Fixed wrong format of exported numeric fields in "General Number" format.</li>
+<li>XLSX / ODS - Fixed java.lang.NullPointerException when export images with undefined borders.</li>
+</ul><p><em>October 17, 2011 - Arctorus Birt Emitters 3.0.2 Released.</em></p>
+<ul><li>Fixed NullPointerException when export reports with unformatted date fields to xlsx or ods formats.</li>
+<li>Fixed format of exported dates. Formats depend on current locale or date field settings.</li>
+<li>Fixed format of exported numbers. Floats have 2 decimal places by default.</li>
+</ul><p><em>October 12, 2011 - Arctorus Birt Emitters 3.0.0 Released.</em></p>
+<ul><li>Brand new XLSX and ODS emitters.</li>
+<li>KEY_SHEET_NAME string property used to set sheet names in a workbook.</li>
+<li>Improved latest BIRT 3.7.1 support.</li>
+<li>Fixed loading license and config file with properties in case they are in the folder with space(s) in the name.</li>
+<li>Fixed text blocks size in DOCX and ODT formats. Sometimes text didn't fit to the text blosk and was wrapped to the next line.</li>
+<li>Fixed default vertical alignment of text.</li>
+</ul><p><em>August 09, 2011 - Arctorus Birt Emitters 2.1.0 Released.</em></p>
+<ul><li>Global memory and speed optimization. Emitters now require less memory and work about 7 times quicker than similar open source emitters. Detailed speed and memory use statistics will be available soon on our site.</li>
+</ul><p><em>August 01, 2011 - Arctorus Birt Emitters 2.0.0 Released.</em></p>
+<ul><li>Xml generation now based on StAX and requires smaller amount of memory compared to the previous versions.</li>
+<li>Added possibility to export only selected set of pages through BIRT runtime.</li>
+<li>Added "Single Sheet" mode when multi-page reports exported to XLSX and ODS formats to a single sheet.</li>
+</ul><p><em>June 07, 2011 - Arctorus Birt Emitters 1.4.0 Released.</em></p>
+<ul><li>Highly reduced memory use in XLSX and ODS Birt emitters.</li>
+<li>Improved size of exported images and text blocks in all formats.</li>
+</ul><p><em>May 12, 2011 - Arctorus Birt Emitters 1.3.0 Released.</em></p>
+<ul><li>Fixed NullPointerException on all Windows/Linux/MacOSX Platforms when emitters used in standalone applications without ReportViewer and full eclipse installation.</li>
+<li>Highly improved XLSX and ODS emitters. Now these emitters export data to spreadsheet cells instead of drawing elements.</li>
+<li>All emitters support lists and ranges of exported pages.</li>
+<li>Emitters used without ReportViewer should be called by specifying short name like "Docx", "Xlsx", "Odp" and etc. instead of "docx_by_arctorus", "odp_by_arctorus" in previous versions.</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>Arctorus Birt Emitters provide unique solution to export Eclipse Birt Reports in Microsoft Office (OpenXML) and OpenOffice/LibreOffice formats. These emitters work side by side with Birt Reporting Engine and transparently make it possible to export Birt Reports in one of these new formats which are not supported by Birt natively:</p>
+<ul><li>DOCX - Microsoft Word Document (Docx Birt Emitter)</li>
+<li>XLSX - Microsoft Excel Spreadsheet (Xlsx Birt Emitter)</li>
+<li>PPTX - Microsoft PowerPoint Presentation (Pptx Birt Emitter)</li>
+<li>ODT - OpenOffice Writer Document (Odt Birt Emitter)</li>
+<li>ODS - OpenOffice Calc Spreadsheet (Ods Birt Emitter)</li>
+<li>ODP - OpenOffice Impress Presentation (Odp Birt Emitter)</li>
+</ul><p><strong>What's New:</strong></p>
+<p><em>November 10, 2011 - Arctorus Birt Emitters 3.0.3 Released.</em></p>
+<ul><li>XLSX / ODS - Fixed java.lang.IllegalArgumentException: Malformed exponential pattern "0.00E+00" when export numeric fields in scientific format.</li>
+<li>XLSX / ODS - Fixed java.lang.IllegalArgumentException: Illegal pattern character 'A' when export dates with AM/PM marker.</li>
+<li>XLSX / ODS - Fixed wrong format of exported numeric fields in "General Number" format.</li>
+<li>XLSX / ODS - Fixed java.lang.NullPointerException when export images with undefined borders.</li>
+</ul><p><em>October 17, 2011 - Arctorus Birt Emitters 3.0.2 Released.</em></p>
+<ul><li>Fixed NullPointerException when export reports with unformatted date fields to xlsx or ods formats.</li>
+<li>Fixed format of exported dates. Formats depend on current locale or date field settings.</li>
+<li>Fixed format of exported numbers. Floats have 2 decimal places by default.</li>
+</ul><p><em>October 12, 2011 - Arctorus Birt Emitters 3.0.0 Released.</em></p>
+<ul><li>Brand new XLSX and ODS emitters.</li>
+<li>KEY_SHEET_NAME string property used to set sheet names in a workbook.</li>
+<li>Improved latest BIRT 3.7.1 support.</li>
+<li>Fixed loading license and config file with properties in case they are in the folder with space(s) in the name.</li>
+<li>Fixed text blocks size in DOCX and ODT formats. Sometimes text didn't fit to the text blosk and was wrapped to the next line.</li>
+<li>Fixed default vertical alignment of text.</li>
+</ul><p><em>August 09, 2011 - Arctorus Birt Emitters 2.1.0 Released.</em></p>
+<ul><li>Global memory and speed optimization. Emitters now require less memory and work about 7 times quicker than similar open source emitters. Detailed speed and memory use statistics will be available soon on our site.</li>
+</ul><p><em>August 01, 2011 - Arctorus Birt Emitters 2.0.0 Released.</em></p>
+<ul><li>Xml generation now based on StAX and requires smaller amount of memory compared to the previous versions.</li>
+<li>Added possibility to export only selected set of pages through BIRT runtime.</li>
+<li>Added "Single Sheet" mode when multi-page reports exported to XLSX and ODS formats to a single sheet.</li>
+</ul><p><em>June 07, 2011 - Arctorus Birt Emitters 1.4.0 Released.</em></p>
+<ul><li>Highly reduced memory use in XLSX and ODS Birt emitters.</li>
+<li>Improved size of exported images and text blocks in all formats.</li>
+</ul><p><em>May 12, 2011 - Arctorus Birt Emitters 1.3.0 Released.</em></p>
+<ul><li>Fixed NullPointerException on all Windows/Linux/MacOSX Platforms when emitters used in standalone applications without ReportViewer and full eclipse installation.</li>
+<li>Highly improved XLSX and ODS emitters. Now these emitters export data to spreadsheet cells instead of drawing elements.</li>
+<li>All emitters support lists and ranges of exported pages.</li>
+<li>Emitters used without ReportViewer should be called by specifying short name like "Docx", "Xlsx", "Odp" and etc. instead of "docx_by_arctorus", "odp_by_arctorus" in previous versions.</li>
+</ul>]]></body>
+      <created>1299822298</created>
+      <changed>1327480743</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.arctorus.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/DOCX_Arctorus.jpg?itok=ERYUTp63]]></image>
+      <version>3.0.4</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Arctorus Software Inc.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4, 3.5, 3.6, 3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://www.arctorus.com]]></supporturl>
+      <updateurl><![CDATA[http://www.arctorus.com/p2/]]></updateurl>
+<ius>
+<iu>com.arctorus.export.birt26x.docx</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

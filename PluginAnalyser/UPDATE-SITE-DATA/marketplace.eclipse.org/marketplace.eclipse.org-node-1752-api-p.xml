@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="1752" name="NuGram IDE" url="http://marketplace.eclipse.org/content/nugram-ide-0">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+      <tags>
+        <tag id='294' name='speech recognition' url='http://marketplace.eclipse.org/category/free-tagging/speech-recognition'/>
+        <tag id='922' name='abnf' url='http://marketplace.eclipse.org/category/free-tagging/abnf'/>
+        <tag id='923' name='grammars' url='http://marketplace.eclipse.org/category/free-tagging/grammars'/>
+      </tags>
+      
+      <owner>Dominique Boucher</owner>
+      <favorited>1</favorited>
+      <installstotal>40</installstotal>
+      <installsrecent>1</installsrecent>
+      <shortdescription><![CDATA[<p>NuGram IDE is an Eclipse plug-in that offers a complete development environment for speech recognition grammars based on W3C's SRGS ABNF format. Designed to fully support the rigorous grammar development processes required in order to efficiently produce solid grammars, it:</p>
+<p>- Enables the developer to author static or dynamic grammars using one single concise and legible format, regardless of the target speech recognition engines.<br />
+- Offers a full-featured editor, with syntax coloring, content-assist (code completion, quick fixes, code templates, etc.), sophisticated refactoring tools, and more.<br />
+- Provides powerful grammar analysis, visualization, and debugging tools.<br />
+- Provides tools to test grammar coverage and semantic interpretation correctness.</p>
+]]></shortdescription>
+      <body><![CDATA[<p>NuGram IDE is an Eclipse plug-in that offers a complete development environment for speech recognition grammars based on W3C's SRGS ABNF format. Designed to fully support the rigorous grammar development processes required in order to efficiently produce solid grammars, it:</p>
+<p>- Enables the developer to author static or dynamic grammars using one single concise and legible format, regardless of the target speech recognition engines.<br />
+- Offers a full-featured editor, with syntax coloring, content-assist (code completion, quick fixes, code templates, etc.), sophisticated refactoring tools, and more.<br />
+- Provides powerful grammar analysis, visualization, and debugging tools.<br />
+- Provides tools to test grammar coverage and semantic interpretation correctness.</p>
+]]></body>
+      <created>1277646194</created>
+      <changed>1277646194</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://nugram.nuecho.com]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+      <version>2.2</version>
+      <license>Other</license>
+      <companyname><![CDATA[Nu Echo Inc.]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.4 + ]]></eclipseversion>
+      <supporturl><![CDATA[http://nugram.nuecho.com/support]]></supporturl>
+      <updateurl><![CDATA[http://nugram.nuecho.com/update-site]]></updateurl>
+<ius>
+<iu>com.nuecho.feature.grammaride.basic</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="96" name="Visual Rules Enterprise Platform 4.5: Available now" url="http://marketplace.eclipse.org/content/visual-rules-enterprise-platform-45-available-now">
+      <type>resource</type>
+      <categories>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+      </categories>
+            
+      <owner>difa_99</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>Visual Rules is an especially intuitive and high-performance Business Rules Management System for creating and managing business rules. Business logic is modeled, tested, monitored and managed in a simple but powerful graphical interface. Visual Rules covers the <b>complete rule management process</b>. Via a uniquely comprehensive graphical modeling approach, Visual Rules provides an advanced collaboration platform for business analysts and IT.<br />
+<br><br></p>
+<p>Visual Rules is designed for integration of rule management into applications and Eclipse-based platforms. </p>
+<p><br><br><br></p>
+<p><b>Top Reasons For Choosing Visual Rules</b><br><br />
+- Model business logic graphically - no need to learn a script<br><br />
+- Create business rules via drag & drop of descriptive icons<br><br />
+- Test-driven and iterative approach<br><br />
+- Profiling function for business rules included<br><br />
+- Automatic documentation of rule projects<br><br />
+- Integrated process support<br><br />
+- Powerful collaboration platform for business & IT<br><br />
+- Maximum performance and scaleability<br><br />
+- Hot deployment while executing<br><br />
+- A diversity of extension points for integration into applications and platforms<br></p>
+<p><BR><br></p>
+<p><b>Visual Rules 4.4.1: What's new?</b><br><br />
+<br><br />
+<b>Visual Rules Modeler 4.5</b><br><br />
+    * New versioning and definition of dependencies between rule projects<br/><br />
+    * Dynamic dependency resolution between projects and/or artifacts from an artifact repository (e.g. Apache Archiva)<br/><br />
+    * Support for Maven project layouts<br/><br />
+    * Reuse of rule models inside of JARs (rule artifacts)<br/><br />
+    * New test suite editor for definition and execution of multiple tests<br/><br />
+    * Import of decision tables from Excel<br/><br />
+    * Copy&paste of data into and out of test editor<br/><br />
+    * Service mocking during test execution<br/><br />
+    * Rule model and test refactoring when deleting elements (particularly input/output data, attributes etc.)<br/><br />
+    * Manual overrides within the "Automatic Element Creation" dialog<br/><br />
+    * Recategorized built-in functions<br/><br />
+<br><br />
+<b>Visual Rules QA & Deployment Tools 4.5</b><br/><br />
+    * Full Maven support, including storage of rule artifacts in Maven artifact repositories<br/><br />
+    * Maven plugins for model validation, creation of rule code, WSDL and rule artifacts, and deployment<br/><br />
+    * Support for rule artifacts (JARs with rule code and rule models) for dependency resolution, for deployment, but also for modeling in Visual Rules Modeler (see above)<br/><br />
+    * New Ant task for Execution Server deployments<br/><br />
+<br><br />
+<b>Visual Rules Execution Server 4.5</b><br><br />
+    * Dynamic routing of requests to rule models (based on metadata)<br><br />
+    * Support for external databases<br><br />
+    * Creation and retrieval of execution statistics for traceability<br><br />
+<br><br><br />
+<b>Visual Rules Team Server 4.5</b><br></p>
+<p>    * Support for external databases<br><br />
+    * Improved performance<br></p>
+<p><br><br></p>
+<p><a href="<a href="http://www.visual-rules.de/download-visual-rules-business-rules-management-system.html"><b>Download">http://www.visual-rules.de/download-visual-rules-business-rules-manageme...</a> Visual Rules</b></a><br />
+<br/><br/><br />
+<A href="<a href="http://www.visual-rules.com/visual-rules-new-noteworthy.html">Visual">http://www.visual-rules.com/visual-rules-new-noteworthy.html">Visual</a> Rules 4.5 & older versions: New & Noteworthy</A>.</p>
+<p><BR><BR></p>
+<p>The license is free for a 30 day evaluation phase and for non-commercial, research based organizations (Universities, not-for-profit corporations).<br />
+<BR><BR></p>
+]]></shortdescription>
+      <body><![CDATA[<p>Visual Rules is an especially intuitive and high-performance Business Rules Management System for creating and managing business rules. Business logic is modeled, tested, monitored and managed in a simple but powerful graphical interface. Visual Rules covers the <b>complete rule management process</b>. Via a uniquely comprehensive graphical modeling approach, Visual Rules provides an advanced collaboration platform for business analysts and IT.<br />
+<br><br></p>
+<p>Visual Rules is designed for integration of rule management into applications and Eclipse-based platforms. </p>
+<p><br><br><br></p>
+<p><b>Top Reasons For Choosing Visual Rules</b><br><br />
+- Model business logic graphically - no need to learn a script<br><br />
+- Create business rules via drag & drop of descriptive icons<br><br />
+- Test-driven and iterative approach<br><br />
+- Profiling function for business rules included<br><br />
+- Automatic documentation of rule projects<br><br />
+- Integrated process support<br><br />
+- Powerful collaboration platform for business & IT<br><br />
+- Maximum performance and scaleability<br><br />
+- Hot deployment while executing<br><br />
+- A diversity of extension points for integration into applications and platforms<br></p>
+<p><BR><br></p>
+<p><b>Visual Rules 4.4.1: What's new?</b><br><br />
+<br><br />
+<b>Visual Rules Modeler 4.5</b><br><br />
+    * New versioning and definition of dependencies between rule projects<br/><br />
+    * Dynamic dependency resolution between projects and/or artifacts from an artifact repository (e.g. Apache Archiva)<br/><br />
+    * Support for Maven project layouts<br/><br />
+    * Reuse of rule models inside of JARs (rule artifacts)<br/><br />
+    * New test suite editor for definition and execution of multiple tests<br/><br />
+    * Import of decision tables from Excel<br/><br />
+    * Copy&paste of data into and out of test editor<br/><br />
+    * Service mocking during test execution<br/><br />
+    * Rule model and test refactoring when deleting elements (particularly input/output data, attributes etc.)<br/><br />
+    * Manual overrides within the "Automatic Element Creation" dialog<br/><br />
+    * Recategorized built-in functions<br/><br />
+<br><br />
+<b>Visual Rules QA & Deployment Tools 4.5</b><br/><br />
+    * Full Maven support, including storage of rule artifacts in Maven artifact repositories<br/><br />
+    * Maven plugins for model validation, creation of rule code, WSDL and rule artifacts, and deployment<br/><br />
+    * Support for rule artifacts (JARs with rule code and rule models) for dependency resolution, for deployment, but also for modeling in Visual Rules Modeler (see above)<br/><br />
+    * New Ant task for Execution Server deployments<br/><br />
+<br><br />
+<b>Visual Rules Execution Server 4.5</b><br><br />
+    * Dynamic routing of requests to rule models (based on metadata)<br><br />
+    * Support for external databases<br><br />
+    * Creation and retrieval of execution statistics for traceability<br><br />
+<br><br><br />
+<b>Visual Rules Team Server 4.5</b><br></p>
+<p>    * Support for external databases<br><br />
+    * Improved performance<br></p>
+<p><br><br></p>
+<p><a href="<a href="http://www.visual-rules.de/download-visual-rules-business-rules-management-system.html"><b>Download">http://www.visual-rules.de/download-visual-rules-business-rules-manageme...</a> Visual Rules</b></a><br />
+<br/><br/><br />
+<A href="<a href="http://www.visual-rules.com/visual-rules-new-noteworthy.html">Visual">http://www.visual-rules.com/visual-rules-new-noteworthy.html">Visual</a> Rules 4.5 & older versions: New & Noteworthy</A>.</p>
+<p><BR><BR></p>
+<p>The license is free for a 30 day evaluation phase and for non-commercial, research based organizations (Universities, not-for-profit corporations).<br />
+<BR><BR></p>
+]]></body>
+      <created>1078275612</created>
+      <changed>1259778468</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.visual-rules.com]]></homepageurl>
+      <image><![CDATA[http://www.visual-rules.com/fileadmin/images/logo-usa.gif]]></image>
+      <version>4.5</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[Innovations Softwaretechnologie]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[3.4 - 3.2]]></eclipseversion>
+      <supporturl><![CDATA[mailto:support@visual-rules.de]]></supporturl>
+      <updateurl><![CDATA[http://www.download-visual-rules.de/vr/update/]]></updateurl>
+    </node>
+    </marketplace>
+    

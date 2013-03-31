@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="550" name="SmartTools Software Factory" url="http://marketplace.eclipse.org/content/smarttools-software-factory">
+      <type>resource</type>
+      <categories>
+        <category id='29' name='Systems Development' url='http://marketplace.eclipse.org/taxonomy/term/29'/>
+      </categories>
+            
+      <owner>SmartTools</owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The SmartTools software factory is a set of Domain-Specific languages with associated tools used to develop more rapidelly Eclipse-based application or SOA application.</p>
+<p>The principal advantages of this SmartTools approach are:<br />
+<ul><br />
+<li>A set of model or Domain Specific language (DSL) driven your plugins software development. Let your language, its DSL produce automatically the Java model (java class to represented Abstract Syntax Tree), parser for a particular concrete syntax and various graphical view of your language. </p>
+<p><li>A Service-Oriented Architecture (SOA) on top of Eclipse frame-work for your composition plugins. Thank to particular DSLs (definition of the OSGi services), this SOA manages automatically the communications (with asynchronous messages) between your plugins or your OSGi bundles. </p>
+<p><li>The SmartTools approach completely integrate into Eclipse environment. With the SmartTools perspective, you are accessing to an development environment for each DSL of SmartTools. The functionalities of SmartTools come in addition to those offered by Eclipse.</p>
+<p><li>SmartTools propose, through the Programmable Overlay Network (PON) implementation, a fully decentralised Service-Oriented Architecture built on top of a self-organising peer-to-peer infrastructure.<br />
+</ul></p>
+]]></shortdescription>
+      <body><![CDATA[<p>The SmartTools software factory is a set of Domain-Specific languages with associated tools used to develop more rapidelly Eclipse-based application or SOA application.</p>
+<p>The principal advantages of this SmartTools approach are:<br />
+<ul><br />
+<li>A set of model or Domain Specific language (DSL) driven your plugins software development. Let your language, its DSL produce automatically the Java model (java class to represented Abstract Syntax Tree), parser for a particular concrete syntax and various graphical view of your language. </p>
+<p><li>A Service-Oriented Architecture (SOA) on top of Eclipse frame-work for your composition plugins. Thank to particular DSLs (definition of the OSGi services), this SOA manages automatically the communications (with asynchronous messages) between your plugins or your OSGi bundles. </p>
+<p><li>The SmartTools approach completely integrate into Eclipse environment. With the SmartTools perspective, you are accessing to an development environment for each DSL of SmartTools. The functionalities of SmartTools come in addition to those offered by Eclipse.</p>
+<p><li>SmartTools propose, through the Programmable Overlay Network (PON) implementation, a fully decentralised Service-Oriented Architecture built on top of a self-organising peer-to-peer infrastructure.<br />
+</ul></p>
+]]></body>
+      <created>1191506771</created>
+      <changed>1307127067</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www-sop.inria.fr/members/Didier.Parigot/SmartTools/eclipse]]></homepageurl>
+      <image><![CDATA[http://www-sop.inria.fr/members/Didier.Parigot/SmartTools/eclipse/images/smarttools.gif]]></image>
+      <version>1.6.2</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[INRIA]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://gforge.inria.fr/forum/?group_id=461]]></supporturl>
+      <updateurl><![CDATA[http://www-sop.inria.fr/members/Didier.Parigot/SmartTools/eclipse/update]]></updateurl>
+    </node>
+    </marketplace>
+    

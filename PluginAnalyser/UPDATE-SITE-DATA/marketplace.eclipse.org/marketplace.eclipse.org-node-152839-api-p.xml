@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="152839" name="EzDice Craps Simulator" url="http://marketplace.eclipse.org/content/ezdice-craps-simulator">
+      <type>resource</type>
+      <categories>
+        <category id='7' name='Entertainment' url='http://marketplace.eclipse.org/taxonomy/term/7'/>
+        <category id='11' name='Modeling Tools' url='http://marketplace.eclipse.org/category/categories/modeling-tools'/>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+        <category id='23' name='Other' url='http://marketplace.eclipse.org/taxonomy/term/23'/>
+        <category id='1964' name='Application Development Frameworks' url='http://marketplace.eclipse.org/category/categories/application-development-frameworks'/>
+      </categories>
+      <tags>
+        <tag id='2338' name='craps' url='http://marketplace.eclipse.org/category/free-tagging/craps'/>
+        <tag id='2339' name='dice' url='http://marketplace.eclipse.org/category/free-tagging/dice'/>
+        <tag id='2340' name='gaming' url='http://marketplace.eclipse.org/category/free-tagging/gaming'/>
+        <tag id='2341' name='simulators' url='http://marketplace.eclipse.org/category/free-tagging/simulators'/>
+        <tag id='2342' name='random' url='http://marketplace.eclipse.org/category/free-tagging/random'/>
+      </tags>
+      
+      <owner>MrCompiler  </owner>
+      <favorited>0</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>The EzDice Craps Simulator allows you to create and record game and wager events for the game of Craps in an XML file. The game file records dice roll and game state information such as Come Out roll and Pass Line Winner along with bets placed and outcomes. These may be analyzed, edited and replayed to programatically compare outcomes of different betting strategies against a baseline game.</p>
+<p>Wagers are recorded as children of the roll they are placed along with outcome and payoff information so that they can be replayed and injected appropriately.</p>
+<p>This is an alpha release, games can be played. The games can be edited in the text editor and replayed to evaluate outcomes. A bank history view has been added and support for multiple simultaneous games has been added to the history views. The XML file can also exported to the file system system for further analysis.</p>
+<p> Supported bets include all multi-roll bets ( pass/don't, place/lay, hard ways, big 6/8 ) with odds as appropriate. The Field bet is supported ( with selected bar 2/bar 12 with 2x on 2 and 3x on 12 ). I also have C&E, Any Craps and Yo but most of the single roll bets are missing because they are just, well, silly. I don't have place to lose since most casinos don't offer it but it could be added.</p>
+<p>Odds may be placed in any amount, if you want to simulate 3x odds the put down a 3x odds bet which will be payed. All bets are returned in the case of a win. This is a simulation system, it is intended to model the game of craps mathematically, it does not seek to mimic the behavior of casino personnel. If you want a bet to 'ride' it will have to be placed again. If you want 99x odds bet them, good luck finding a casino on that.</p>
+<p>Although it does record bet, win and loss amounts it doesn't enforce a 'bankroll'</p>
+]]></shortdescription>
+      <body><![CDATA[<p>The EzDice Craps Simulator allows you to create and record game and wager events for the game of Craps in an XML file. The game file records dice roll and game state information such as Come Out roll and Pass Line Winner along with bets placed and outcomes. These may be analyzed, edited and replayed to programatically compare outcomes of different betting strategies against a baseline game.</p>
+<p>Wagers are recorded as children of the roll they are placed along with outcome and payoff information so that they can be replayed and injected appropriately.</p>
+<p>This is an alpha release, games can be played. The games can be edited in the text editor and replayed to evaluate outcomes. A bank history view has been added and support for multiple simultaneous games has been added to the history views. The XML file can also exported to the file system system for further analysis.</p>
+<p> Supported bets include all multi-roll bets ( pass/don't, place/lay, hard ways, big 6/8 ) with odds as appropriate. The Field bet is supported ( with selected bar 2/bar 12 with 2x on 2 and 3x on 12 ). I also have C&E, Any Craps and Yo but most of the single roll bets are missing because they are just, well, silly. I don't have place to lose since most casinos don't offer it but it could be added.</p>
+<p>Odds may be placed in any amount, if you want to simulate 3x odds the put down a 3x odds bet which will be payed. All bets are returned in the case of a win. This is a simulation system, it is intended to model the game of craps mathematically, it does not seek to mimic the behavior of casino personnel. If you want a bet to 'ride' it will have to be placed again. If you want 99x odds bet them, good luck finding a casino on that.</p>
+<p>Although it does record bet, win and loss amounts it doesn't enforce a 'bankroll'</p>
+]]></body>
+      <created>1321335254</created>
+      <changed>1325553556</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://ezxmldesktop.sourceforge.net/]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/all/modules/custom/marketplace/images/no_image.png]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/EzDiceScreenShot.png?itok=KADuj3zg]]></screenshot>
+      <version>1.0.2.alpha</version>
+      <license>EPL</license>
+      <companyname><![CDATA[MrCompiler.Com]]></companyname>
+      <status>Alpha</status>
+      <eclipseversion><![CDATA[Helios]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://ezxmldesktop.sourceforge.net/update/]]></updateurl>
+<ius>
+<iu>com.mrcompiler.ezdice.dt.feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

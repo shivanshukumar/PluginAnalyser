@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="148396" name="Eclipse Xtend" url="http://marketplace.eclipse.org/content/eclipse-xtend">
+      <type>resource</type>
+      <categories>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='9' name='J2EE Development Platform' url='http://marketplace.eclipse.org/taxonomy/term/9'/>
+        <category id='10' name='Languages' url='http://marketplace.eclipse.org/taxonomy/term/10'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='1966' name='Programming Languages' url='http://marketplace.eclipse.org/category/categories/programming-languages'/>
+      </categories>
+      <tags>
+        <tag id='106' name='java' url='http://marketplace.eclipse.org/category/free-tagging/java'/>
+        <tag id='216' name='language' url='http://marketplace.eclipse.org/category/free-tagging/language'/>
+        <tag id='2321' name='JVM' url='http://marketplace.eclipse.org/category/free-tagging/jvm'/>
+        <tag id='2322' name='Xtext' url='http://marketplace.eclipse.org/category/free-tagging/xtext'/>
+      </tags>
+      
+      <owner>Sven Efftinge</owner>
+      <favorited>8</favorited>
+      <installstotal>2380</installstotal>
+      <installsrecent>154</installsrecent>
+      <shortdescription><![CDATA[<p><a href="http://xtend-lang.org">Xtend</a> is a statically-typed programming languages for Java developers.</p>
+<p> It leverages Java's typesystem and reuses its syntax as far as possible, but cuts down the amount of boilerplate you have to write. It compiles to readable Java source code and supports advanced language constructs, such as: </p>
+<ul><li> lambda expressions, </li>
+<li>type inference, </li>
+<li>template expressions, </li>
+<li>operator overloading and </li>
+<li>extension methods.
+</li></ul><p>And of course it comes with advanced Eclipse-IDE support</p>
+]]></shortdescription>
+      <body><![CDATA[<p><a href="http://xtend-lang.org">Xtend</a> is a statically-typed programming languages for Java developers.</p>
+<p> It leverages Java's typesystem and reuses its syntax as far as possible, but cuts down the amount of boilerplate you have to write. It compiles to readable Java source code and supports advanced language constructs, such as: </p>
+<ul><li> lambda expressions, </li>
+<li>type inference, </li>
+<li>template expressions, </li>
+<li>operator overloading and </li>
+<li>extension methods.
+</li></ul><p>And of course it comes with advanced Eclipse-IDE support</p>
+]]></body>
+      <created>1320675422</created>
+      <changed>1345453715</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://xtend-lang.org]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Xtend-Marke-farbig-800.png?itok=ghyvks2k]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/xtend-and-java.png?itok=XIqYLlKu]]></screenshot>
+      <version></version>
+      <license>EPL</license>
+      <companyname><![CDATA[itemis]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.5]]></eclipseversion>
+      <supporturl><![CDATA[https://groups.google.com/forum/?hl=de&fromgroups#!forum/xtend-lang]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/]]></updateurl>
+<ius>
+<iu>org.eclipse.xtend.sdk</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

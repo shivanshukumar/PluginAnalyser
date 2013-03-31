@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="7963" name="Extensions for m2eclipse and eclipse webtools" url="http://marketplace.eclipse.org/content/extensions-m2eclipse-and-eclipse-webtools">
+      <type>resource</type>
+      <categories>
+        <category id='20' name='Web' url='http://marketplace.eclipse.org/taxonomy/term/20'/>
+      </categories>
+      <tags>
+        <tag id='406' name='m2eclipse' url='http://marketplace.eclipse.org/category/free-tagging/m2eclipse'/>
+        <tag id='724' name='wtp' url='http://marketplace.eclipse.org/category/free-tagging/wtp'/>
+        <tag id='1140' name='bug correction' url='http://marketplace.eclipse.org/category/free-tagging/bug-correction'/>
+      </tags>
+      
+      <owner>Sylvain Deschênes</owner>
+      <favorited>4</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p>I'm not the other of this plugins, but I need it to share with co-worker. So, if you need more information this plugin is to resolve : <a href="https://issues.sonatype.org/browse/MNGECLIPSE-599">https://issues.sonatype.org/browse/MNGECLIPSE-599</a></p>
+<p>And you can watch a demo at:<br /><a href="http://printstacktrace.org/blog/2010/01/demo-of-m2eclipse-with-waroverlay/">http://printstacktrace.org/blog/2010/01/demo-of-m2eclipse-with-waroverlay/</a></p>
+<p>A great thanks to the Author. The guy from : "printstacktrace".</p>
+]]></shortdescription>
+      <body><![CDATA[<p>I'm not the other of this plugins, but I need it to share with co-worker. So, if you need more information this plugin is to resolve : <a href="https://issues.sonatype.org/browse/MNGECLIPSE-599">https://issues.sonatype.org/browse/MNGECLIPSE-599</a></p>
+<p>And you can watch a demo at:<br /><a href="http://printstacktrace.org/blog/2010/01/demo-of-m2eclipse-with-waroverlay/">http://printstacktrace.org/blog/2010/01/demo-of-m2eclipse-with-waroverlay/</a></p>
+<p>A great thanks to the Author. The guy from : "printstacktrace".</p>
+]]></body>
+      <created>1282999394</created>
+      <changed>1283182453</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://code.google.com/p/m2eclipse-wtp-ext/]]></homepageurl>
+      <image><![CDATA[http://printstacktrace.org/blog/2010/01/demo-of-m2eclipse-with-waroverlay/]]></image>
+      <version></version>
+      <license>EPL</license>
+      <companyname><![CDATA[http://printstacktrace.org]]></companyname>
+      <status>Beta</status>
+      <eclipseversion><![CDATA[3.5+]]></eclipseversion>
+      <supporturl><![CDATA[]]></supporturl>
+      <updateurl><![CDATA[http://m2eclipse-wtp-ext.googlecode.com/svn/trunk/org.maven.ide.eclipse.wtp.ext.update/]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

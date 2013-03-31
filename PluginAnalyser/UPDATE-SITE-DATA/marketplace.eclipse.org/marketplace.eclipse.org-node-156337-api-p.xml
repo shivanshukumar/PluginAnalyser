@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="156337" name="Q7 Professional" url="http://marketplace.eclipse.org/content/q7-professional">
+      <type>resource</type>
+      <categories>
+        <category id='4' name='Build and Deploy' url='http://marketplace.eclipse.org/taxonomy/term/4'/>
+        <category id='16' name='Testing' url='http://marketplace.eclipse.org/taxonomy/term/16'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='18' name='UI' url='http://marketplace.eclipse.org/taxonomy/term/18'/>
+      </categories>
+      <tags>
+        <tag id='70' name='BDD' url='http://marketplace.eclipse.org/category/free-tagging/bdd'/>
+        <tag id='93' name='continuous integration' url='http://marketplace.eclipse.org/category/free-tagging/continuous-integration'/>
+        <tag id='2241' name='automated testing' url='http://marketplace.eclipse.org/category/free-tagging/automated-testing'/>
+        <tag id='2345' name='capture/replay' url='http://marketplace.eclipse.org/category/free-tagging/capturereplay'/>
+        <tag id='2346' name='UI automation' url='http://marketplace.eclipse.org/category/free-tagging/ui-automation'/>
+      </tags>
+      
+      <owner>Ivan Inozemtsev</owner>
+      <favorited>3</favorited>
+      <installstotal>176</installstotal>
+      <installsrecent>16</installsrecent>
+      <shortdescription><![CDATA[<p>UI test automation solution which works solely with Eclipse-based apps. Our focused approach allows full Eclipse integration and provides productivity boost for QA engineers. Here are some of our key features:</p>
+<ul><li><b>Handcrafted for Eclipse</b> – out-of-the-box support for Eclipse technologies such as SWT/JFace, GEF and GMF</li>
+<li><b>State management</b> – create reusable models describing state of workspace, workbench, preferences and other aspects of application-under-test</li>
+<li><b>Productivity</b> – capture/replay functionality with no dependencies on UI element size and location</li>
+<li><b>Intentions preserving</b> – easy to read DSL language and test-associated metadata such as tags and description allow anyone in the team understand the purpose of the test and performed actions</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p>UI test automation solution which works solely with Eclipse-based apps. Our focused approach allows full Eclipse integration and provides productivity boost for QA engineers. Here are some of our key features:</p>
+<ul><li><b>Handcrafted for Eclipse</b> – out-of-the-box support for Eclipse technologies such as SWT/JFace, GEF and GMF</li>
+<li><b>State management</b> – create reusable models describing state of workspace, workbench, preferences and other aspects of application-under-test</li>
+<li><b>Productivity</b> – capture/replay functionality with no dependencies on UI element size and location</li>
+<li><b>Intentions preserving</b> – easy to read DSL language and test-associated metadata such as tags and description allow anyone in the team understand the purpose of the test and performed actions</li>
+</ul>]]></body>
+      <created>1321861931</created>
+      <changed>1364231933</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://www.xored.com/q7]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/110x80_0_0.png?itok=hNlWEqnf]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/Screen%20Shot%202011-11-21%20at%2013.45.08.png?itok=p5t4LTC4]]></screenshot>
+      <version></version>
+      <license>Commercial - Free</license>
+      <companyname><![CDATA[xored Software, Inc]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7]]></eclipseversion>
+      <supporturl><![CDATA[http://support.xored.com/]]></supporturl>
+      <updateurl><![CDATA[http://dl.xored.com/q7/repository]]></updateurl>
+<ius>
+<iu>com.xored.q7.platform</iu>
+<iu>com.xored.q7.module.ide</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

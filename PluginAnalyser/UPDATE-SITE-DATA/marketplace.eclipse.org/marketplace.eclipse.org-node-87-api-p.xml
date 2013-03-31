@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="87" name="AnyEdit Tools" url="http://marketplace.eclipse.org/content/anyedit-tools">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='1972' name='General Purpose Tools' url='http://marketplace.eclipse.org/category/categories/general-purpose-tools'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+      </categories>
+      <tags>
+        <tag id='108' name='convert' url='http://marketplace.eclipse.org/category/free-tagging/convert'/>
+        <tag id='109' name='white space' url='http://marketplace.eclipse.org/category/free-tagging/white-space'/>
+        <tag id='110' name='tabs' url='http://marketplace.eclipse.org/category/free-tagging/tabs'/>
+        <tag id='111' name='compare' url='http://marketplace.eclipse.org/category/free-tagging/compare'/>
+        <tag id='112' name='clipboard' url='http://marketplace.eclipse.org/category/free-tagging/clipboard'/>
+      </tags>
+      
+      <owner>Andrey Loskutov</owner>
+      <favorited>161</favorited>
+      <installstotal>23897</installstotal>
+      <installsrecent>1237</installsrecent>
+      <shortdescription><![CDATA[<p><a href="http://www.eclipse.org/org/foundation/eclipseawards/winners09.php" class="none" title="Eclipse ready"></a><br />
+AnyEdit Tools plugin adds several new tools to the context menu of text- based Eclipse editors,  to output consoles, to Eclipse main menu, editor toolbar and navigator/explorer.</p>
+<p>Here is a short overview about some *visible* contributions provided by AnyEdit Tools:</p>
+<ul><li>
+AnyEdit contributes Import/Export working sets wizards.
+</li>
+<li>
+AnyEdit can show / convert (also on save) the withespace (tabs/spaces) in editors and may use custom project settings for tab<->spaces auto-convert-on-save feature.
+</li>
+<li>
+AnyEdit can perform tabs <-> spaces convert on multiple files or entire directories and supports also file exclusion filter for tabs <-> spaces action.
+</li>
+<li>
+AnyEdit allows you automatically remove trailing white space and/or perform tabs<->spaces conversion on a "save" action in all text- based Eclipse editors. It can automatically create a new line at the end of the file if the last line was not terminated by new line. Additionally AnyEdit can sort editor text in many ways.
+</li>
+<li>
+AnyEdit adds "Save All", "Open File" and "Show whitespace in editor" buttons to the global Eclipse toolbar and can remove "Print" button from it. Additionally it provides File->"Count (Selected) Resources" menu.
+</li>
+<li>
+AnyEdit adds "Open File", "Open Type" and "Save to file..." actions to supported output consoles and "Save to file..." menu/toolbar button.
+</li>
+<li>
+AnyEdit adds four new context menu actions to each "Compare With" and "Replace With" menus for both editors and files, also for external files and clipboard content.
+</li>
+</ul><p>Some of context menu contributed by AnyEdit to editors/files/console: </p>
+<ul><li>Open file under cursor</li>
+<li>Open java type under cursor</li>
+<li>Convert -> Tabs <-> Spaces</li>
+<li>Convert -> Camel <-> Underscores</li>
+<li>Convert -> Chars to html / Html to chars</li>
+<li>Convert -> Capitalize/Invert case</li>
+<li>Convert -> To upper case/To lower case</li>
+<li>Convert -> To / From Unicode notation</li>
+<li>Convert -> To / From Base64</li>
+<li>Compare / Replace With -> Clipboard</li>
+<li>Compare / Replace With -> Workspace file...</li>
+<li>Compare / Replace With -> External file...</li>
+<li>Compare / Replace With -> Opened Editor...</li>
+<li>Sort -> Case-Sensitive A-z</li>
+<li>Sort -> Case-Sensitive z-A</li>
+<li>Sort -> Case-Insensitive A-Z</li>
+<li>Sort -> Case-Insensitive Z-A</li>
+<li>Sort -> Numerically 0-9</li>
+<li>Sort -> Numerically 9-0</li>
+</ul><p>Current version supports Eclipse 3.5 to 4.2, but older AnyEdit versions for Eclipse 2.1 up to 3.4 may be downloaded from the homepage too.</p>
+<p><a href="http://andrei.gmxhome.de/anyedit/index.html">See more details at the AnyEdit Tools homepage...</a></p>
+<p>My other plugins on EPIC:</p>
+<ul><li><a href="http://marketplace.eclipse.org/content/bytecode-outline">Bytecode Outline</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/extended-vs-presentation">Extended VS Presentation</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/filesync">FileSync</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/jdepend4eclipse">JDepend4Eclipse</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/data-hierarchy">Data Hierarchy</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/findbugs-eclipse-plugin">FindBugs plugin for Eclipse</a>
+</li>
+</ul>]]></shortdescription>
+      <body><![CDATA[<p><a href="http://www.eclipse.org/org/foundation/eclipseawards/winners09.php" class="none" title="Eclipse ready"></a><br />
+AnyEdit Tools plugin adds several new tools to the context menu of text- based Eclipse editors,  to output consoles, to Eclipse main menu, editor toolbar and navigator/explorer.</p>
+<p>Here is a short overview about some *visible* contributions provided by AnyEdit Tools:</p>
+<ul><li>
+AnyEdit contributes Import/Export working sets wizards.
+</li>
+<li>
+AnyEdit can show / convert (also on save) the withespace (tabs/spaces) in editors and may use custom project settings for tab<->spaces auto-convert-on-save feature.
+</li>
+<li>
+AnyEdit can perform tabs <-> spaces convert on multiple files or entire directories and supports also file exclusion filter for tabs <-> spaces action.
+</li>
+<li>
+AnyEdit allows you automatically remove trailing white space and/or perform tabs<->spaces conversion on a "save" action in all text- based Eclipse editors. It can automatically create a new line at the end of the file if the last line was not terminated by new line. Additionally AnyEdit can sort editor text in many ways.
+</li>
+<li>
+AnyEdit adds "Save All", "Open File" and "Show whitespace in editor" buttons to the global Eclipse toolbar and can remove "Print" button from it. Additionally it provides File->"Count (Selected) Resources" menu.
+</li>
+<li>
+AnyEdit adds "Open File", "Open Type" and "Save to file..." actions to supported output consoles and "Save to file..." menu/toolbar button.
+</li>
+<li>
+AnyEdit adds four new context menu actions to each "Compare With" and "Replace With" menus for both editors and files, also for external files and clipboard content.
+</li>
+</ul><p>Some of context menu contributed by AnyEdit to editors/files/console: </p>
+<ul><li>Open file under cursor</li>
+<li>Open java type under cursor</li>
+<li>Convert -> Tabs <-> Spaces</li>
+<li>Convert -> Camel <-> Underscores</li>
+<li>Convert -> Chars to html / Html to chars</li>
+<li>Convert -> Capitalize/Invert case</li>
+<li>Convert -> To upper case/To lower case</li>
+<li>Convert -> To / From Unicode notation</li>
+<li>Convert -> To / From Base64</li>
+<li>Compare / Replace With -> Clipboard</li>
+<li>Compare / Replace With -> Workspace file...</li>
+<li>Compare / Replace With -> External file...</li>
+<li>Compare / Replace With -> Opened Editor...</li>
+<li>Sort -> Case-Sensitive A-z</li>
+<li>Sort -> Case-Sensitive z-A</li>
+<li>Sort -> Case-Insensitive A-Z</li>
+<li>Sort -> Case-Insensitive Z-A</li>
+<li>Sort -> Numerically 0-9</li>
+<li>Sort -> Numerically 9-0</li>
+</ul><p>Current version supports Eclipse 3.5 to 4.2, but older AnyEdit versions for Eclipse 2.1 up to 3.4 may be downloaded from the homepage too.</p>
+<p><a href="http://andrei.gmxhome.de/anyedit/index.html">See more details at the AnyEdit Tools homepage...</a></p>
+<p>My other plugins on EPIC:</p>
+<ul><li><a href="http://marketplace.eclipse.org/content/bytecode-outline">Bytecode Outline</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/extended-vs-presentation">Extended VS Presentation</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/filesync">FileSync</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/jdepend4eclipse">JDepend4Eclipse</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/data-hierarchy">Data Hierarchy</a>
+</li>
+<li><a href="http://marketplace.eclipse.org/content/findbugs-eclipse-plugin">FindBugs plugin for Eclipse</a>
+</li>
+</ul>]]></body>
+      <created>1077150540</created>
+      <changed>1351893590</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://andrei.gmxhome.de/anyedit/index.html]]></homepageurl>
+      <image><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/finalist09_5.jpg?itok=0iR3xF75]]></image>
+<screenshot><![CDATA[http://marketplace.eclipse.org/sites/default/files/styles/medium/public/anyedit_marketplace.png?itok=BApTEGZM]]></screenshot>
+      <version>2.4.3</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Andrey Loskutov]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 4.2]]></eclipseversion>
+      <supporturl><![CDATA[mailto:loskutov@gmx.de]]></supporturl>
+      <updateurl><![CDATA[http://andrei.gmxhome.de/eclipse/]]></updateurl>
+<ius>
+<iu>AnyEditTools</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

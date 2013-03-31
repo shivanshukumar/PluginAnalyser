@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="82" name="Oxygen XML Editor and XSLT Debugger" url="http://marketplace.eclipse.org/content/oxygen-xml-editor-and-xslt-debugger">
+      <type>resource</type>
+      <categories>
+        <category id='22' name='XML' url='http://marketplace.eclipse.org/taxonomy/term/22'/>
+      </categories>
+      <tags>
+        <tag id='521' name='xml' url='http://marketplace.eclipse.org/category/free-tagging/xml'/>
+        <tag id='1305' name='schema' url='http://marketplace.eclipse.org/category/free-tagging/schema'/>
+        <tag id='1316' name='xslt' url='http://marketplace.eclipse.org/category/free-tagging/xslt'/>
+        <tag id='1317' name='xquery' url='http://marketplace.eclipse.org/category/free-tagging/xquery'/>
+        <tag id='1318' name='xpath' url='http://marketplace.eclipse.org/category/free-tagging/xpath'/>
+      </tags>
+      
+      <owner>syncro</owner>
+      <favorited>4</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><STRONG>Oxygen XML Editor and XSLT Debugger</STRONG> integrates smoothly with <STRONG>Eclipse</STRONG> offering a powerful yet simple to use XML editing environment (XML project, XML perspective, XSLT Debugger, XQuery Debugger, XML Databases perspective, wizards, document templates, preferences, help, outline, editors, views, actions, etc.). The context sensitive content assistant is changing the way you edit documents, helping you create valid content all the time. Full support for <STRONG>DTD</STRONG>, <STRONG>XML Schema</STRONG>, <STRONG>Relax NG schema (RNC and RNG)</STRONG>, <STRONG>NVDL </STRONG>and even for<STRONG> NRL schema</STRONG> and the possibility to edit and debug <STRONG>XSLT</STRONG>, <STRONG>XQuery</STRONG>, evaluate <STRONG>XPath </STRONG>and apply transformations on your documents make <STRONG>Oxygen</STRONG> the complete solution for XML applications.<br />
+        <br><br />
+            <br><br />
+     Oxygen provides a powerful and expressive Schema Diagram Page for editing XML Schemas. It is possible to generate XML Schema documentation in various formats including HTML, PDF and Docbook.<br />
+                <br><br />
+                    <br><br />
+     The Author mode of the Oxygen XML Editor demonstrates a new productive way of editing XML documents, similar to a word processor. With an innovative approach to XML authoring Oxygen allows you to work with XML frameworks (DocBook, DITA, TEI, XHTML, etc) easier than ever before.<br />
+                        <br><br />
+                                                              <br><br />
+     Oxygen XML Editor can perform XQuery/XPath queries against a native XML database through a connection to the database server. A dedicated collection of database exploring views are grouped together in a database perspective layout.<br />
+                                        <br>  </p>
+<p>            <br><br />
+     Oxygen XML Editor can be freely evaluated for 30 days from <a href="<a href="http://www.oxygenxml.com/download.html">http//www.oxygenxml.com/download.html</a>">http://www.oxygenxml.com/download.html">http//www.oxygenxml.com/download...</a> .<br />
+                <br></p>
+]]></shortdescription>
+      <body><![CDATA[<p><STRONG>Oxygen XML Editor and XSLT Debugger</STRONG> integrates smoothly with <STRONG>Eclipse</STRONG> offering a powerful yet simple to use XML editing environment (XML project, XML perspective, XSLT Debugger, XQuery Debugger, XML Databases perspective, wizards, document templates, preferences, help, outline, editors, views, actions, etc.). The context sensitive content assistant is changing the way you edit documents, helping you create valid content all the time. Full support for <STRONG>DTD</STRONG>, <STRONG>XML Schema</STRONG>, <STRONG>Relax NG schema (RNC and RNG)</STRONG>, <STRONG>NVDL </STRONG>and even for<STRONG> NRL schema</STRONG> and the possibility to edit and debug <STRONG>XSLT</STRONG>, <STRONG>XQuery</STRONG>, evaluate <STRONG>XPath </STRONG>and apply transformations on your documents make <STRONG>Oxygen</STRONG> the complete solution for XML applications.<br />
+        <br><br />
+            <br><br />
+     Oxygen provides a powerful and expressive Schema Diagram Page for editing XML Schemas. It is possible to generate XML Schema documentation in various formats including HTML, PDF and Docbook.<br />
+                <br><br />
+                    <br><br />
+     The Author mode of the Oxygen XML Editor demonstrates a new productive way of editing XML documents, similar to a word processor. With an innovative approach to XML authoring Oxygen allows you to work with XML frameworks (DocBook, DITA, TEI, XHTML, etc) easier than ever before.<br />
+                        <br><br />
+                                                              <br><br />
+     Oxygen XML Editor can perform XQuery/XPath queries against a native XML database through a connection to the database server. A dedicated collection of database exploring views are grouped together in a database perspective layout.<br />
+                                        <br>  </p>
+<p>            <br><br />
+     Oxygen XML Editor can be freely evaluated for 30 days from <a href="<a href="http://www.oxygenxml.com/download.html">http//www.oxygenxml.com/download.html</a>">http://www.oxygenxml.com/download.html">http//www.oxygenxml.com/download...</a> .<br />
+                <br></p>
+]]></body>
+      <created>1077194915</created>
+      <changed>1259778458</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://www.oxygenxml.com]]></homepageurl>
+      <image><![CDATA[http://www.oxygenxml.com/img/oxygenxml-110x80.jpg]]></image>
+      <version>10.2</version>
+      <license>Commercial</license>
+      <companyname><![CDATA[SyncRO Soft]]></companyname>
+      <status>Mature</status>
+      <eclipseversion><![CDATA[Eclipse 3.3, Eclipse 3.4.1]]></eclipseversion>
+      <supporturl><![CDATA[http://www.oxygenxml.com/forum/]]></supporturl>
+      <updateurl><![CDATA[http://www.oxygenxml.com/InstData/Editor/Eclipse/site.xml]]></updateurl>
+    </node>
+    </marketplace>
+    

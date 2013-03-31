@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="206" name="Mylyn" url="http://marketplace.eclipse.org/content/mylyn">
+      <type>resource</type>
+      <categories>
+        <category id='2' name='Code Management' url='http://marketplace.eclipse.org/taxonomy/term/2'/>
+        <category id='6' name='Editor' url='http://marketplace.eclipse.org/taxonomy/term/6'/>
+        <category id='17' name='Tools' url='http://marketplace.eclipse.org/taxonomy/term/17'/>
+        <category id='24' name='IDE' url='http://marketplace.eclipse.org/taxonomy/term/24'/>
+        <category id='38' name='Mylyn Connectors' url='http://marketplace.eclipse.org/category/categories/mylyn-connectors'/>
+      </categories>
+      <tags>
+        <tag id='136' name='bugs' url='http://marketplace.eclipse.org/category/free-tagging/bugs'/>
+        <tag id='1313' name='tasks' url='http://marketplace.eclipse.org/category/free-tagging/tasks'/>
+        <tag id='1314' name='time management' url='http://marketplace.eclipse.org/category/free-tagging/time-management'/>
+        <tag id='1315' name='changesets' url='http://marketplace.eclipse.org/category/free-tagging/changesets'/>
+      </tags>
+      
+      <owner>Rob Elves</owner>
+      <favorited>157</favorited>
+      <installstotal>15693</installstotal>
+      <installsrecent>549</installsrecent>
+      <shortdescription><![CDATA[<table><tr><td>
+Mylyn integrates defect and project management systems, build systems and other software development tools with Eclipse. Once tasks from these systems are integrated, Mylyn’s task-focused interface reduces information overload and makes multi-tasking easy. It does this by making tasks a first class part of Eclipse, and providing rich and offline editing for repositories such as Bugzilla, Trac, and JIRA. Mylyn monitors your work activity to identify information relevant to the task-at-hand, and uses this task context to focus the Eclipse UI on the interesting information and hide the uninteresting.  </td>
+<td valign="top">
+<img src="http://tasktop.com/assets/images/screenshots/mylyn-task-list.png" /></td>
+</tr></table><p>This puts the information you need to get work done at your fingertips and improves productivity by reducing searching, scrolling, and navigation. By making task context explicit Mylyn also facilitates multitasking, planning, reusing past efforts, and sharing expertise.</p>
+]]></shortdescription>
+      <body><![CDATA[<table><tr><td>
+Mylyn integrates defect and project management systems, build systems and other software development tools with Eclipse. Once tasks from these systems are integrated, Mylyn’s task-focused interface reduces information overload and makes multi-tasking easy. It does this by making tasks a first class part of Eclipse, and providing rich and offline editing for repositories such as Bugzilla, Trac, and JIRA. Mylyn monitors your work activity to identify information relevant to the task-at-hand, and uses this task context to focus the Eclipse UI on the interesting information and hide the uninteresting.  </td>
+<td valign="top">
+<img src="http://tasktop.com/assets/images/screenshots/mylyn-task-list.png" /></td>
+</tr></table><p>This puts the information you need to get work done at your fingertips and improves productivity by reducing searching, scrolling, and navigation. By making task context explicit Mylyn also facilitates multitasking, planning, reusing past efforts, and sharing expertise.</p>
+]]></body>
+      <created>1147875891</created>
+      <changed>1340981416</changed>
+      <foundationmember>1</foundationmember>
+      <homepageurl><![CDATA[http://eclipse.org/mylyn]]></homepageurl>
+      <image><![CDATA[http://www.eclipse.org/mylyn/images/image-epic.gif]]></image>
+      <version>3.8</version>
+      <license>EPL</license>
+      <companyname><![CDATA[Eclipse.org]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.7,3.8,4.2]]></eclipseversion>
+      <supporturl><![CDATA[http://eclipse.org/mylyn/community/]]></supporturl>
+      <updateurl><![CDATA[http://download.eclipse.org/mylyn/releases/latest]]></updateurl>
+<ius>
+<iu>org.eclipse.mylyn_feature</iu>
+<iu>org.eclipse.mylyn.bugzilla_feature</iu>
+<iu>org.eclipse.mylyn.ide_feature</iu>
+<iu>org.eclipse.mylyn.context_feature</iu>
+<iu>org.eclipse.mylyn.team_feature</iu>
+</ius>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    

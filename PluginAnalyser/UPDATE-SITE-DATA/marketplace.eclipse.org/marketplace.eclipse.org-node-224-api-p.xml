@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>    <marketplace>
+        <node id="224" name="Green UML" url="http://marketplace.eclipse.org/content/green-uml">
+      <type>resource</type>
+      <categories>
+        <category id='19' name='UML' url='http://marketplace.eclipse.org/taxonomy/term/19'/>
+      </categories>
+      <tags>
+        <tag id='61' name='UML' url='http://marketplace.eclipse.org/category/free-tagging/uml'/>
+        <tag id='240' name='Class Diagram' url='http://marketplace.eclipse.org/category/free-tagging/class-diagram'/>
+        <tag id='447' name='live round-tripping' url='http://marketplace.eclipse.org/category/free-tagging/live-round-tripping'/>
+      </tags>
+      
+      <owner>green.dev.team</owner>
+      <favorited>4</favorited>
+      <installstotal>0</installstotal>
+      <installsrecent>0</installsrecent>
+      <shortdescription><![CDATA[<p><P><FONT face=Arial><FONT color=#00bb00>green</FONT> is a LIVE round-tripping UML class diagram editor, meaning that it supports both software engineering and reverse engineering of existing code. You can use <FONT color=#00bb00>green</FONT> to create a UML class diagram from existing code, or to generate new code by drawing a class diagram.<BR><BR></FONT><FONT face=Arial><FONT color=#00bb00>green</FONT> was developed with the pedagogical goal of focusing students on design. However <FONT color=#00bb00>green</FONT> has proven to be a robust and flexible tool that can easily provide UML support in any environment.</FONT></P><P><FONT face=Arial><FONT color=#00bb00>green</FONT> also supports incremental exploration of a codebase. By selecting a class and doing an "incrementally explore" operation, all types which the class is related to are brought into the diagram.</FONT></P><P><FONT face=Arial>All the relationships that <FONT color=#00bb00>green</FONT> uses are plug-ins to <FONT color=#00bb00>green</FONT>. This means that at any time you can remove one of the pre-defined relationships, or if you are interested, you can develop your own relationship as a plug-in to <FONT color=#00bb00>green</FONT>. In our teaching we reveal the relationships one at a time as we teach students about them.</FONT></P><P><FONT face=Arial><FONT color=#00bb00>green</FONT> can save diagrams as simple XML files, and can also save diagrams as in a jpg format (for printing or inclusion in a web page).</FONT></P><br />
+<P><FONT face=Arial><FONT color=#00bb00>green</FONT> now supports Zoom functionality!  Download today!</FONT></P></p>
+]]></shortdescription>
+      <body><![CDATA[<p><P><FONT face=Arial><FONT color=#00bb00>green</FONT> is a LIVE round-tripping UML class diagram editor, meaning that it supports both software engineering and reverse engineering of existing code. You can use <FONT color=#00bb00>green</FONT> to create a UML class diagram from existing code, or to generate new code by drawing a class diagram.<BR><BR></FONT><FONT face=Arial><FONT color=#00bb00>green</FONT> was developed with the pedagogical goal of focusing students on design. However <FONT color=#00bb00>green</FONT> has proven to be a robust and flexible tool that can easily provide UML support in any environment.</FONT></P><P><FONT face=Arial><FONT color=#00bb00>green</FONT> also supports incremental exploration of a codebase. By selecting a class and doing an "incrementally explore" operation, all types which the class is related to are brought into the diagram.</FONT></P><P><FONT face=Arial>All the relationships that <FONT color=#00bb00>green</FONT> uses are plug-ins to <FONT color=#00bb00>green</FONT>. This means that at any time you can remove one of the pre-defined relationships, or if you are interested, you can develop your own relationship as a plug-in to <FONT color=#00bb00>green</FONT>. In our teaching we reveal the relationships one at a time as we teach students about them.</FONT></P><P><FONT face=Arial><FONT color=#00bb00>green</FONT> can save diagrams as simple XML files, and can also save diagrams as in a jpg format (for printing or inclusion in a web page).</FONT></P><br />
+<P><FONT face=Arial><FONT color=#00bb00>green</FONT> now supports Zoom functionality!  Download today!</FONT></P></p>
+]]></body>
+      <created>1150810487</created>
+      <changed>1271626475</changed>
+      <foundationmember>0</foundationmember>
+      <homepageurl><![CDATA[http://green.sourceforge.net]]></homepageurl>
+      <image><![CDATA[http://green.sourceforge.net/Images/logo.gif]]></image>
+      <version>3.5.0</version>
+      <license>EPL</license>
+      <companyname><![CDATA[University at Buffalo]]></companyname>
+      <status>Production/Stable</status>
+      <eclipseversion><![CDATA[3.2/3.3/3.4/3.5]]></eclipseversion>
+      <supporturl><![CDATA[http://sourceforge.net/tracker/?func=browse&group_id=132685&atid=724951]]></supporturl>
+      <updateurl><![CDATA[http://www.cse.buffalo.edu/faculty/alphonce/green]]></updateurl>
+<platforms>
+<platform>Windows</platform>
+<platform>Mac</platform>
+<platform>Linux/GTK</platform>
+</platforms>
+    </node>
+    </marketplace>
+    
