@@ -35,10 +35,12 @@ public class PluginAnalyserJobRunner {
 		String mirrorSiteDesinationPathPrefix = "/Users/singhsk/Developer/eclipse_plugins";
 
 		String mirrorSiteDesinationName =
-		"new_site2_____";
-//				"new_site6_____";
+//				"super_site7_compareWithBase_NoCopy_____";
+//		"new_site2_____";
+//		"new_site6_____";
 //		 "__WorkingEclipseSite_features_and_plugins__";
 //		 "_plugin_sandbox";
+				"eclipse_juno_p2_mirror_site";
 		// + Util.getCurrentTimeString();
 
 		mirrorSiteDesinationName = mirrorSiteDesinationName.replace("/", "-").replace(":", "-").replace(".", "-")
@@ -62,10 +64,13 @@ public class PluginAnalyserJobRunner {
 		// gotUpdateSites.addAll(ec.getSites());
 		// //////////////////////////////////////////////////////
 
-		String eclipseHome = "/Users/singhsk/Developer/eclipse_sandbox";// without
-																		// the
-																		// trailing
-																		// slash(/).
+		
+		//		 without  		 the  		 trailing  		 slash(/).
+		String eclipseHome = 
+//				"/Users/singhsk/Developer/eclipse";
+				"/Users/singhsk/Developer/eclipse_sandbox";
+			
+		
 		String eclipseApp = "Eclipse";
 		String equinoxAppName = "org.eclipse.equinox.p2.artifact.repository.mirrorApplication";
 
@@ -100,12 +105,11 @@ public class PluginAnalyserJobRunner {
 		updateSiteCollection.add("						 http://download.eclipse.org/tools/pdt/updates/release");
 		updateSiteCollection.add("					 http://www.ne.jp/asahi/zigen/home/plugin/dbviewer/");
 		// add an eclipse site to club plugins with a base eclipse product.
-		// updateSiteCollection
-		// .add("http://download.eclipse.org/releases/juno/");
+//		 updateSiteCollection .add("http://download.eclipse.org/releases/juno/");
 
 		// ///////////////////////////////////////////////////
 		// // building the updateSiteURLSet from updatesite extracts.
-		updateSiteCollection = new HashSet<String>();
+		/*		updateSiteCollection = new HashSet<String>();
 		List<String> xxxx = new ArrayList<String>();
 
 		ec.restoreFromBaseLocation("./_UPDATE-SITE-DATA");
@@ -123,7 +127,7 @@ public class PluginAnalyserJobRunner {
 		}
 
 		Log.outln("====Number of Update Sites=" + updateSiteCollection.size());
-		// //////////////////////////////////////////////////////////
+	*/	// //////////////////////////////////////////////////////////
 
 		// this is there the mirrored site would be available. It automatically
 		// gets created by p2.
@@ -137,18 +141,20 @@ public class PluginAnalyserJobRunner {
 			// this way old mirror site can be complete removed first.
 			boolean eraseOld = false;
 
+			// this way the base eclipse installation gets copied to the staging location
+			boolean copyBaseEclipseSite=false;
 			// getting features from update sites
-
-		/*	String baseEclipseInstallationHome = eclipseHome;
+/*
+			String baseEclipseP2SiteLocation = 	"/Users/singhsk/Developer/eclipse_plugins/eclipse_juno_p2_mirror_site";
 			if (!DownloadAndStagingRunner
-					.downloadAndStageWithEclipseInstallation(eclipseHome, eclipseApp, equinoxAppName,
-							baseEclipseInstallationHome, updateSiteURLCollection_list, destinationDirectory, verbose, raw,
+					.downloadAndStageAgainstBaseEclipseSite(eclipseHome, eclipseApp, equinoxAppName,
+							baseEclipseP2SiteLocation,  copyBaseEclipseSite , updateSiteURLCollection_list, destinationDirectory, verbose, raw,
 							eraseOld))
 
 			
-			 * if (!DownloadAndStagingRunner.downloadAndStage(eclipseHome,
-			 * eclipseApp, equinoxAppName, updateSiteURLCollection_list,
-			 * destinationDirectory, verbose, raw, eraseOld))
+			  if (!DownloadAndStagingRunner.downloadAndStage(eclipseHome,
+			  eclipseApp, equinoxAppName, updateSiteURLCollection_list,
+			  destinationDirectory, verbose, raw, eraseOld))
 			 
 			{
 				Log.errln("XXXXXXX  " + "\n  Download and staging error for: " + "\n  " + destinationDirectory
@@ -157,19 +163,19 @@ public class PluginAnalyserJobRunner {
 						+ "\n    ---- " + "\nXXXXXXX");
 				Log.errln("But still  any  way   going on with the analysis for now ..............");
 			}
-			long stage2 = System.currentTimeMillis();
+	*/		long stage2 = System.currentTimeMillis();
 			Log.outln("Downloading and Staging for site configuration at  :  " + destinationDirectory + "  time: "
 					+ Util.getFormattedTime(stage2 - stage1));
 			Log.errln("Downloading and Staging for site configuration at  :  " + destinationDirectory + "  time: "
 					+ Util.getFormattedTime(stage2 - stage1));
-*/
+
 			/*
 			 * starting analysis ....
 			 */
 
 			String outputLocation = "./" + currOutpurDir + "/_OUTPUT";
 			boolean eraseOldExtrcats=true;
-			AnalysisRunner.analyseAndRecord(destinationDirectory, outputLocation, eraseOldExtrcats);
+//			AnalysisRunner.analyseAndRecord(destinationDirectory, outputLocation, eraseOldExtrcats);
 
 			// //////////////////////////////////////////////////////
 			// the dependency finder.
@@ -184,8 +190,8 @@ public class PluginAnalyserJobRunner {
 			boolean eraseoldDependenctSetExtrcats=true;
 			boolean considerBundleExportsOnly=false;
 			boolean  ignoreBundlesMarkedToBeIgnored=false;
-			boolean includeInvokationSatisfactionProxies=true;
-			DependencyFinder.buildPluginDependencySuperSet(pluginExtractsLocation, pluginextractAnalysisDestLocation, considerBundleExportsOnly  , ignoreBundlesMarkedToBeIgnored, includeInvokationSatisfactionProxies, eraseoldDependenctSetExtrcats);
+			boolean considerInvokationSatisfactionProxies=true;
+			DependencyFinder.buildPluginDependencySuperSet(pluginExtractsLocation, pluginextractAnalysisDestLocation, considerBundleExportsOnly  , ignoreBundlesMarkedToBeIgnored, considerInvokationSatisfactionProxies, eraseoldDependenctSetExtrcats);
 			// ///////////////////////////////////////////////////////////////////////////////////////////////
 			long time2 = System.currentTimeMillis();
 			Log.outln("Current Job for site configuration at  :  " + destinationDirectory + "  time: "

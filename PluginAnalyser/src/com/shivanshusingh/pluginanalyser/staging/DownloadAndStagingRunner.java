@@ -158,14 +158,17 @@ public class DownloadAndStagingRunner {
 	 * @param equinoxAppName
 	 *            the name of the equinox application. generally it is
 	 *            {@code org.eclipse.equinox.p2.artifact.repository.mirrorApplication}
-	 * @param baseEclipseInstallationHome
-	 *            the path to the base eclipse installation home, without the
+	 * @param baseEclipseSiteLocation
+	 *            the path to the base eclipse p2 site home, without the
 	 *            trailing slash(/) , in case this must also be staged for
 	 *            analysis in addition to the other p2 repositories / updates
 	 *            sites. The assumption is that all features and plugins will be
 	 *            available in flat directories at
-	 *            {@link baseEclipseInstallationHome/features} and
-	 *            {@link baseEclipseInstallationHome/plugins} respectively.
+	 *            {@link baseEclipseSiteLocation/features} and
+	 *            {@link baseEclipseSiteLocation/plugins} respectively.
+	 * @param copyBaseEclipseSite
+	 *            true if this base eclipse p2 site should also be copied over
+	 *            to the staging site, being setup for analysis.
 	 * @param updateSiteURLCollection
 	 *            {@link Set} collection of the URLs of the sites from where the
 	 *            plugins and metadata would be fetched. This is generally a
@@ -182,12 +185,11 @@ public class DownloadAndStagingRunner {
 	 *            true if you want the old destinationDirectory to be erased
 	 *            first. All its contents will be erased first and then the
 	 *            mirroring will be done.
-	 * 
 	 * @throws IOException
 	 */
-	public static boolean downloadAndStageWithEclipseInstallation(String eclipseHome, String eclipseApp,
-			String equinoxAppName, String baseEclipseInstallationHome, Collection updateSiteURLCollection,
-			String destinationDirectory, boolean verbose, boolean raw, boolean eraseOld
+	public static boolean downloadAndStageAgainstBaseEclipseSite(String eclipseHome, String eclipseApp,
+			String equinoxAppName, String baseEclipseSiteLocation, boolean copyBaseEclipseSite,
+			Collection updateSiteURLCollection, String destinationDirectory, boolean verbose, boolean raw, boolean eraseOld
 
 	) throws IOException {
 
@@ -207,10 +209,10 @@ public class DownloadAndStagingRunner {
 			}
 		}
 
-		File srcDirectory = new File(baseEclipseInstallationHome);
+		File srcDirectory = new File(baseEclipseSiteLocation);
 
-		File srcFeatureDirectory = new File(baseEclipseInstallationHome + FEATURE_FOLDER_REL_PATH);
-		File srcPluginDirectory = new File(baseEclipseInstallationHome + PLUGIN_FOLDER_REL_PATH);
+		File srcFeatureDirectory = new File(baseEclipseSiteLocation + FEATURE_FOLDER_REL_PATH);
+		File srcPluginDirectory = new File(baseEclipseSiteLocation + PLUGIN_FOLDER_REL_PATH);
 
 		if (!Util.checkDirectory(srcDirectory, true, true, true, false)) {
 
@@ -272,10 +274,12 @@ public class DownloadAndStagingRunner {
 		try {
 			File destFeatureDirectory = new File(destFeatureDirectoryPath);
 			File destPluginDirectory = new File(destPluginDirectoryPath);
-			// copying all the features.
-			Util.copyDirectoryContents(srcFeatureDirectory, destFeatureDirectory);
-			// copying all the plugin.
-			Util.copyDirectoryContents(srcPluginDirectory, destPluginDirectory);
+			if (copyBaseEclipseSite) {
+				// copying all the features.
+				Util.copyDirectoryContents(srcFeatureDirectory, destFeatureDirectory);
+				// copying all the plugin.
+				Util.copyDirectoryContents(srcPluginDirectory, destPluginDirectory);
+			}
 		} catch (IOException e) {
 			Log.errln("xxxx  could not stage the eclipse base installation,  Exit.  Error in copying featues and plugins . ");
 			Log.errln(e.getStackTrace().toString());
@@ -285,8 +289,8 @@ public class DownloadAndStagingRunner {
 		Log.outln("========  Eclipse Base Installation Staging done, now Staging the Update Sites. ==========");
 		Log.errln("========  Eclipse Base Installation Staging done, now Staging the Update Sites. ==========");
 
-		return downloadAndStage(eclipseHome, eclipseApp, equinoxAppName, updateSiteURLCollection, destinationDirectory,
-				verbose, raw, false);
+		return downloadAndStage(eclipseHome, eclipseApp, equinoxAppName + " -compare -baseline " + baseEclipseSiteLocation
+				+ " ", updateSiteURLCollection, destinationDirectory, verbose, raw, false);
 	}
 
 }

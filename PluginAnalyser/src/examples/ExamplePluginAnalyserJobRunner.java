@@ -21,21 +21,21 @@ import com.shivanshusingh.pluginanalyser.utils.logging.Log;
 public class ExamplePluginAnalyserJobRunner {
 
 	public static void main(String[] args) {
+//
+//		SourceCrawler ec = new EclipseMarketplaceCrawler();
+//		 SourceCrawler ec=new EclipseMarketplaceCrawler(     158915, 180100,
+//		 "./_UPDATE-SITE-DATA");
+//		 ec.crawl();
+//		ec.restoreFromBaseLocation("./_UPDATE-SITE-DATA");
+//		Set<UpdateSiteInfo> gotUpdateSites = new HashSet();
+//		gotUpdateSites.addAll(ec.getSites());
+//
+//		for (UpdateSiteInfo updateSiteInfo : gotUpdateSites) {
+//			Log.outln("name=" + updateSiteInfo.getName() + ";\t site=" + updateSiteInfo.getUpdateURL());
+//
+//		}
+//		Log.outln("" + gotUpdateSites.size());
 
-		/*SourceCrawler ec = new EclipseMarketplaceCrawler();
-		// SourceCrawler ec=new EclipseMarketplaceCrawler(240001,250000,
-		// "./_UPDATE-SITE-DATA");
-		// ec.crawl();
-		ec.restoreFromBaseLocation("./_UPDATE-SITE-DATA");
-		Set<UpdateSiteInfo> gotUpdateSites = new HashSet();
-		gotUpdateSites.addAll(ec.getSites());
-
-		for (UpdateSiteInfo updateSiteInfo : gotUpdateSites) {
-			Log.outln("name=" + updateSiteInfo.getName() + ";\t site=" + updateSiteInfo.getUpdateURL());
-
-		}
-		Log.outln("" + gotUpdateSites.size());
-*/
 		 PluginAnalyserJobRunner job = new PluginAnalyserJobRunner();
 		 job.run();
 
