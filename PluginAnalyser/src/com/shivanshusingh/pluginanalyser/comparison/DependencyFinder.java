@@ -10,9 +10,6 @@ import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
-import java.util.StringTokenizer;
-
-import javax.media.j3d.SpotLight;
 
 import com.shivanshusingh.pluginanalyser.utils.Util;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
@@ -59,7 +56,8 @@ public class DependencyFinder {
 	 */
 	public static void buildPluginDependencySuperSet(String pathToBasePluginExtractsDir,
 			String pathToPluginDependencyAnalysisOutputLocation, boolean considerBundleExportersOnly,
-			boolean ignoreBundlesMarkedToBeIgnored, boolean alsoConsiderInvokationSatisfactionProxies, boolean eraseOld) throws IOException {
+			boolean ignoreBundlesMarkedToBeIgnored, boolean alsoConsiderInvokationSatisfactionProxies, boolean eraseOld)
+			throws IOException {
 
 		Log.outln("==== Now Building the  Plugin Dependency  Set from source: " + pathToBasePluginExtractsDir
 				+ " , considerBundleExportsOnly is " + considerBundleExportersOnly + " ====");
@@ -119,10 +117,12 @@ public class DependencyFinder {
 				// + thisPluginExtractName + "====");
 
 				// restoring the functions information from the file.
-				
-				/*org.eclipse.wst.jsdt.internal.corext.refactoring.changes.PackageFragmentRootReorgChange.getName ()*/
-if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701"))
-	System.out.println("$$$$ adding  all the information ");
+
+				/*
+				 * org.eclipse.wst.jsdt.internal.corext.refactoring.changes.
+				 * PackageFragmentRootReorgChange.getName ()
+				 */
+
 				boolean ignorePluginExtract = false;
 				Set<String> ignoreBundleProperty = ParsingUtil.restorePropertyFromExtract(pluginExtract,
 						Constants.BUNDLE_IGNORE);
@@ -154,7 +154,8 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 						Constants.PLUGIN_ALL_TYPES_DETECTED_EXTERNAL_AND_NON_JAVA);
 				Set<String> superClassesAndInterfacesSuperSet = ParsingUtil.restorePropertyFromExtract(pluginExtract,
 						Constants.PLUGIN_ALL_INHERITANCE_AND_INTERFACE_PAIRS);
-				Set<String>  myInvokationProxyPairs=ParsingUtil.restorePropertyFromExtract(pluginExtract,Constants.PLUGIN_ALL_INVOKATION_PROXY_PAIRS);
+				Set<String> myInvokationProxyPairs = ParsingUtil.restorePropertyFromExtract(pluginExtract,
+						Constants.PLUGIN_ALL_INVOKATION_PROXY_PAIRS);
 
 				// //////////////////////////////////////////
 				// building DependencyFinder.plugins object
@@ -179,7 +180,7 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 					po.superClassesAndInterfaces.put(baseType, depTypes);
 
 				}
-				
+
 				// building the interfaceProxies Set
 				for (String pair : myInvokationProxyPairs) {
 					String[] pairElements = pair.split(Constants.DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE);
@@ -199,7 +200,6 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 
 				po.imports.addAll(myMethodImports);
 				po.imports.addAll(myTypeImports);
-			
 
 				// merging functions
 				for (String myMethodExport : myMethodExports) {
@@ -320,18 +320,25 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 				// System.out.println(types.keySet().toString());
 
 				if (pluginExtractsDone % 250 == 0 || pluginExtractsDone == entriesLength) {
-					Log.outln("#### PluginExtractsMerged = " + pluginExtractsDone + " of " + entriesLength + "("
-							+ (float) (pluginExtractsDone * 100 / entriesLength) + "%)");
+					Log.outln("#### PluginExtractsMerged = " + pluginExtractsDone + " of " + entriesLength + " ("
+							+ (pluginExtractsDone * 100 / entriesLength) + "%)");
 
-				/*	int functionsMemSize = functions.toString().length() / (1024 * 1024);
-					int typesMemSize = types.toString().length() / (1024 * 1024);
-					int pluginsMemSize = (plugins.toString().length() + po.toString().length()) / (1024 * 1024);
-
-					Log.outln("## functions \tobjectSize\t= " + functionsMemSize + "MB");
-					Log.outln("## types \t\tobjectSize\t= " + typesMemSize + "MB");
-					Log.outln("## plugins \tobjectSize\t= " + pluginsMemSize + "MB");
-					Log.outln("## TOTAL 3 \tobjectSize\t= " + (functionsMemSize + typesMemSize + pluginsMemSize) + "MB");
-*/
+//					
+//					  int functionsMemSize = functions.toString().length() /
+//					  (1024 * 1024); int typesMemSize =
+//					  types.toString().length() / (1024 * 1024); int
+//					  pluginsMemSize = (plugins.toString().length() +
+//					  po.toString().length()) / (1024 * 1024);
+//					  
+//					  Log.outln("## functions \tobjectSize\t= " +
+//					  functionsMemSize + "MB");
+//					  Log.outln("## types \t\tobjectSize\t= " + typesMemSize +
+//					  "MB"); Log.outln("## plugins \tobjectSize\t= " +
+//					  pluginsMemSize + "MB");
+//					  Log.outln("## TOTAL 3 \tobjectSize\t= " +
+//					  (functionsMemSize + typesMemSize + pluginsMemSize) +
+//					  "MB");
+//					 
 					Log.outln("## time (merging) so far \t= " + Util.getFormattedTime(System.currentTimeMillis() - time1));
 				}
 
@@ -343,40 +350,43 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 				// information to the DependencyFinder.plugins object /////////
 			}
 		}
-	Log.outln(" ///////// now doing the circular inter plugin dependency analysis    /////////    ")    ;
+		Log.outln(" ///////// now doing the circular inter plugin dependency analysis    /////////    ");
 
 		Set<Entry<String, PluginObject>> pluginEntrySet = plugins.entrySet();
-		for (Entry<String, PluginObject> entry : pluginEntrySet) {
+		
+		long totalnumberofplugins= pluginEntrySet.size(), counter=0,indirectDepAnalysisTime1=System.currentTimeMillis();
+		
+		for (Entry<String, PluginObject> entry : pluginEntrySet) 
+		{
+			
+			counter++;
 			PluginObject pluginObj = entry.getValue();
+			Log.outln("== plugin  "+counter   + " : "+pluginObj.name);
 			for (String imp : pluginObj.imports) {
-				
-				Set<Set<String>> exporterPluginSets=new LinkedHashSet<Set<String>>();
-				// if the alsoConsiderInvokationSatisfactionProxies flag  parameter is true, then build a set of all invokations to be considered: original plus all its proxy invokations.
-				if(alsoConsiderInvokationSatisfactionProxies)
-				{
-						Set<String> allImpProxies=new HashSet<String>();
-						
-						Set<String> invokationProxies=pluginObj.invokationProxies.get(imp);
-						if(null!=invokationProxies && 1<=invokationProxies.size())
-						{
-							//Log.outln("$$$$"+invokationProxies.size()+" Proxies available for "+imp);
-							for(String invokationProxy:invokationProxies)
-							{
-								//Log.outln("$$$$  There are proxies available as well.: "+imp+" => "+invokationProxy);
-								allImpProxies.add(invokationProxy);
-							}
-						}
-						exporterPluginSets = findExporters(imp,allImpProxies,pluginObj.name);
-				}
-				else
-				{
-				
-				
-				 exporterPluginSets = findExporters(imp);
+
+				Set<Set<String>> exporterPluginSets = new LinkedHashSet<Set<String>>();
+				// if the alsoConsiderInvokationSatisfactionProxies flag
+				// parameter is true, then build a set of all invokations to be
+				// considered: all its proxy invokations if they exists else
+				// check the original invokation.
+				if (alsoConsiderInvokationSatisfactionProxies) {
+					Set<String> invokationProxies = pluginObj.invokationProxies.get(imp);
+					if (null != invokationProxies && 1 <= invokationProxies.size()) {
+						// check only the proxies, as we know that if it has not
+						// been satisfied till now at the plugin level ( i.e. a
+						// proxy exists) then if it has to be satisfied , it
+						// will be satisfied through the proxy only.
+						exporterPluginSets = findExporters(invokationProxies, pluginObj.name);
+					} else {
+						exporterPluginSets = findExporters(imp);
+					}
+				} else {
+
+					exporterPluginSets = findExporters(imp);
 				}
 
-				// now if there were any  indirect /   transitive exporters, check for that 
-				// and mark the import as satisfied.
+				// now if there were any indirect / transitive exporters, check
+				// for that and mark the import as satisfied.
 
 				// recording the data in the functions or types objects.
 				if (functions.containsKey(imp)) {
@@ -400,6 +410,13 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 
 				}
 			}
+			if (counter % 250 == 0 || counter == totalnumberofplugins) {
+
+				Log.outln("#### indirect dep analysis done for " + (counter) + " of " + totalnumberofplugins + " ("
+						+ (counter * 100 / totalnumberofplugins) + "%)");
+				Log.outln("## time (indirect dep analysis) so far \t= "
+						+ Util.getFormattedTime(System.currentTimeMillis() - indirectDepAnalysisTime1));
+			}
 		}
 
 		// write out the merged file
@@ -419,24 +436,9 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 	 */
 	private static Map<String, Set<Set<String>>> exporterSetsCache = new HashMap<String, Set<Set<String>>>();
 
-	
-	private static Set<Set<String>> findExporters(String importEntry, Set<String> importEntryProxies, String ownerPluginName) {
-		
-		Set<Set<String>> result = new LinkedHashSet<Set<String>>();
-		
-		//  first checking if the exporters   are available from the importEntry itself and there is no need to go for the proxies.
-		result=findExporters(importEntry);
-		long counter=0;
-		for(Set<String> s: result)
-		{
-			if (null != s && 1 <= s.size())
-				counter++;
-		}
+	private static Set<Set<String>> findExporters(Set<String> importEntryProxies, String ownerPluginName) {
 
-		// so if the result would have any set in it, which in turn is not
-		// empty, the condition below will be true;
-		if (counter > 0)
-			return result;
+		Set<Set<String>> result = new LinkedHashSet<Set<String>>();
 
 		// otherwise, try the proxies but then this means that we would need to
 		// include the plugin that owns the import entry in the result as the
@@ -444,8 +446,7 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 		// the owner plugin and the dependency cannot be satisfied without the
 		// owner plugin in the mix.
 
-		for(String importEntryProxy:importEntryProxies)
-		{
+		for (String importEntryProxy : importEntryProxies) {
 			Set<Set<String>> interimResult = new LinkedHashSet<Set<String>>();
 
 			interimResult = findExporters(importEntryProxy);
@@ -456,10 +457,10 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 				}
 			result.addAll(interimResult);
 
-	}
+		}
 		return result;
 	}
-	
+
 	/**
 	 * recursively finds the exporter sets of the given imports.
 	 * 
@@ -470,8 +471,6 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 		// if(exporterSetsCache.containsKey(imp))
 		// return exporterSetsCache.get(imp);
 
-		if(imp.trim().equalsIgnoreCase("java.lang.String org.eclipse.wst.jsdt.internal.corext.refactoring.changes.PackageFragmentRootReorgChange.getName ()"))
-			System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
 		Set<Set<String>> result = new LinkedHashSet<Set<String>>();
 		imp = imp.trim();
 		int impType = ParsingUtil.getEntryType(imp);
@@ -495,7 +494,7 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 						// System.out.println("result: "+result);
 
 					}
-										
+
 					else {
 						if (null != targetPlugin.superClassesAndInterfaces) {
 							Set<String> superclasses = targetPlugin.superClassesAndInterfaces.get(classname);
@@ -509,7 +508,7 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 								if (impTypeIsFunction) {
 									// it is a function, so get the class name.
 									String[] funcElements = ParsingUtil.separateFuncNameElements(imp);
-									// replace the  class name.
+									// replace the class name.
 									funcElements[1] = superclass;
 									// recnstruct
 									newImp = ParsingUtil.reconstructFuncSignature(funcElements);
@@ -640,9 +639,9 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 			// terminating the key ( function name )
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 			counter++;
-			if (counter % 75000 == 0 || counter == functionsLength)
-				Log.outln("## functions written: " + counter + " of " + functionsLength + "("
-						+ (float) (counter * 100 / functionsLength) + "%)");
+			if (counter % 200000 == 0 || counter == functionsLength)
+				Log.outln("## functions written: " + counter + " of " + functionsLength + " ("
+						+ (counter * 100 / functionsLength) + "%)");
 		}
 		writer.write(Constants.PLUGIN_DEPENDENCY_ALL_UNMATCHED_FUNCTION_IMPORTS + "\n");
 		Log.outln(Constants.PLUGIN_DEPENDENCY_ALL_UNMATCHED_FUNCTION_IMPORTS + "\n");
@@ -733,8 +732,8 @@ if(thisPluginExtractName.equals("org.eclipse.wst.jsdt.ui_1.1.202.v201208171701")
 
 			counter++;
 			if (counter % 75000 == 0 || counter == typesLength)
-				Log.outln("## types written: " + counter + " of " + typesLength + "("
-						+ (float) (counter * 100 / typesLength) + "%)");
+				Log.outln("## types written: " + counter + " of " + typesLength + " ("
+						+  (counter * 100 / typesLength) + "%)");
 
 		}
 
