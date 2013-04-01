@@ -526,7 +526,7 @@ public class DependencyFinder {
 
 								}
 
-								Set<Set<String>> setOfSets = findExporters(newImp);
+								Set<Set<String>> setOfSets = fetchExporters(newImp);
 								if (setOfSets.size() > 0)
 									for (Set<String> set : setOfSets) {
 										if (set.size() > 0)
