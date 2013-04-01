@@ -152,7 +152,7 @@ public class Util {
 		int hours   = (int) ((milliseconds / (1000*60*60)) % 24);
 		int millis=(int) (milliseconds%1000);
 		String formattedTime = ""
-				// + form2.format(hours)+" h : "
+				+ form2.format(hours)+" h : "
 				+ form2.format(minutes) + " m : " + form2.format(seconds )
 				+ " s : " + form3.format(millis) + " ms";
 
