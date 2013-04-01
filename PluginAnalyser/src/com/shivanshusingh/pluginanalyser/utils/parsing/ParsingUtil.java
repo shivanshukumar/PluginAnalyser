@@ -43,6 +43,7 @@ public class ParsingUtil {
 				break;
 			}
 		}
+		br.close();
 		return result;
 	}
 
