@@ -106,8 +106,14 @@ public class DependencyFinder {
 				 * missing manifest.mf file for thus plugin.
 				 */
 				String thisPluginExtractName = pluginExtract.getName().trim();
+				
+				// ignoring the ones that are not plugin or other extracts
+				if(!thisPluginExtractName.endsWith(Constants.EXTRACT_FILE_EXTENSION_PLUGIN))
+					continue;
+				
 				int startingIndex = thisPluginExtractName.indexOf(Constants.EXTRACT_FILE_PREFIX_PLUGIN)
 						+ Constants.EXTRACT_FILE_PREFIX_PLUGIN.length();
+				
 				thisPluginExtractName = thisPluginExtractName.substring(startingIndex);
 				if (thisPluginExtractName.toLowerCase().endsWith(Constants.EXTRACT_FILE_EXTENSION_PLUGIN))
 					thisPluginExtractName = thisPluginExtractName.substring(0, thisPluginExtractName.length()
