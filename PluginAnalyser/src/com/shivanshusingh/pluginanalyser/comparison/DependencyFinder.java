@@ -374,13 +374,13 @@ public class DependencyFinder {
 						// been satisfied till now at the plugin level ( i.e. a
 						// proxy exists) then if it has to be satisfied , it
 						// will be satisfied through the proxy only.
-						exporterPluginSets = findExporters(invokationProxies, pluginObj.name);
+						exporterPluginSets = fetchExporters(invokationProxies, pluginObj.name);
 					} else {
-						exporterPluginSets = findExporters(imp);
+						exporterPluginSets = fetchExporters(imp);
 					}
 				} else {
 
-					exporterPluginSets = findExporters(imp);
+					exporterPluginSets = fetchExporters(imp);
 				}
 
 				// now if there were any indirect / transitive exporters, check
@@ -418,14 +418,7 @@ public class DependencyFinder {
 				+ pathToBasePluginExtractsDir + "  time: " + Util.getFormattedTime(time2 - time1));
 
 	}
-
-	/**
-	 * helper to store already traversed imports, helping DependencyFinder.
-	 * findExporters
-	 */
-	private static Map<String, Set<Set<String>>> exporterSetsCache = new HashMap<String, Set<Set<String>>>();
-
-	private static Set<Set<String>> findExporters(Set<String> importEntryProxies, String ownerPluginName) {
+	private static Set<Set<String>> fetchExporters(Set<String> importEntryProxies, String ownerPluginName) {
 
 		Set<Set<String>> result = new LinkedHashSet<Set<String>>();
 
@@ -438,8 +431,8 @@ public class DependencyFinder {
 		for (String importEntryProxy : importEntryProxies) {
 			Set<Set<String>> interimResult = new LinkedHashSet<Set<String>>();
 
-			interimResult = findExporters(importEntryProxy);
-			if (interimResult.size() > 0)
+			interimResult = fetchExporters(importEntryProxy);
+			if (interimResult.size() > 0)//null!=interimResult && 
 				for (Set<String> set : interimResult) {
 					if (set.size() > 0)
 						set.add(ownerPluginName);
@@ -449,17 +442,46 @@ public class DependencyFinder {
 		}
 		return result;
 	}
+	
+	/**
+	 * get  the set of   exporting plugin combinations   either from the cache, if available or else do a fresh search.
+	 * @param imp
+	 * @return
+	 */
+	private static Set<Set<String>> fetchExporters(String imp) {
+		Set<Set<String>> result = new LinkedHashSet<Set<String>>();
+		Set<Set<String>> interimresult = new LinkedHashSet<Set<String>>();
+		if(exporterSetsCache.containsKey(imp))
+		{
+			result=exporterSetsCache.get(imp);
+		}
+		else
+		{
+			interimresult= findExporters(imp);
+			if(null!=interimresult&&1<=interimresult.size())
+			{
+				exporterSetsCache.put(imp, interimresult);
+				result=interimresult;
+			}
+		}
+		
+		return result;
+	}
+	
+	/**
+	 * helper to store already traversed imports, helping DependencyFinder.
+	 * findExporters
+	 */
+	private static Map<String, Set<Set<String>>> exporterSetsCache = new HashMap<String, Set<Set<String>>>();
 
 	/**
 	 * recursively finds the exporter sets of the given imports.
 	 * 
-	 * @param imp
-	 * @return
+	 * @param imp the import signature (function or type)
+	 * @return Set<Set<String>> a set of sets of plugin combinations that satisfy the import
 	 */
 	private static Set<Set<String>> findExporters(String imp) {
-		// if(exporterSetsCache.containsKey(imp))
-		// return exporterSetsCache.get(imp);
-
+		
 		Set<Set<String>> result = new LinkedHashSet<Set<String>>();
 		imp = imp.trim();
 		int impType = ParsingUtil.getEntryType(imp);
