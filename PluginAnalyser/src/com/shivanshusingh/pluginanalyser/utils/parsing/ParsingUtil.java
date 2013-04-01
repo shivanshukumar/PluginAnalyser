@@ -67,7 +67,11 @@ public class ParsingUtil {
 		classAndFuncName[2] = dotSplits[dotSplits.length - 1].trim() + " " + spaceSplits[2].trim();
 	
 		// class name
-		classAndFuncName[1] = dotSplits[0].trim();
+		if(2<=dotSplits.length)
+			classAndFuncName[1] = dotSplits[0].trim();
+		else
+			classAndFuncName[1]=    "";
+		
 		for (int x = 1; x < dotSplits.length - 1; x++)
 			classAndFuncName[1] += "." + dotSplits[x].trim();
 	
@@ -114,7 +118,7 @@ public class ParsingUtil {
 			return 0;
 		str = str.trim();
 		String[] splits = str.split(" ");
-		if (splits.length >= 2)
+		if (splits.length >= 3)
 			return 1;
 		else
 	

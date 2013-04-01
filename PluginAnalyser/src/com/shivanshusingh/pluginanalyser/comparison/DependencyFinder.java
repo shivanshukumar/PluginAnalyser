@@ -118,11 +118,6 @@ public class DependencyFinder {
 
 				// restoring the functions information from the file.
 
-				/*
-				 * org.eclipse.wst.jsdt.internal.corext.refactoring.changes.
-				 * PackageFragmentRootReorgChange.getName ()
-				 */
-
 				boolean ignorePluginExtract = false;
 				Set<String> ignoreBundleProperty = ParsingUtil.restorePropertyFromExtract(pluginExtract,
 						Constants.BUNDLE_IGNORE);
@@ -218,9 +213,7 @@ public class DependencyFinder {
 							// String funcClassName = s.split(" ")[1].trim();
 							String[] funcNameElements = ParsingUtil.separateFuncNameElements(myMethodExport);
 
-							String funcRetType = funcNameElements[0];
 							String funcClassName = funcNameElements[1];
-							String funcName = funcNameElements[2];
 
 							for (String bundleExport : bundleExports) {
 								bundleExport = bundleExport.trim();
@@ -323,22 +316,22 @@ public class DependencyFinder {
 					Log.outln("#### PluginExtractsMerged = " + pluginExtractsDone + " of " + entriesLength + " ("
 							+ (pluginExtractsDone * 100 / entriesLength) + "%)");
 
-//					
-//					  int functionsMemSize = functions.toString().length() /
-//					  (1024 * 1024); int typesMemSize =
-//					  types.toString().length() / (1024 * 1024); int
-//					  pluginsMemSize = (plugins.toString().length() +
-//					  po.toString().length()) / (1024 * 1024);
-//					  
-//					  Log.outln("## functions \tobjectSize\t= " +
-//					  functionsMemSize + "MB");
-//					  Log.outln("## types \t\tobjectSize\t= " + typesMemSize +
-//					  "MB"); Log.outln("## plugins \tobjectSize\t= " +
-//					  pluginsMemSize + "MB");
-//					  Log.outln("## TOTAL 3 \tobjectSize\t= " +
-//					  (functionsMemSize + typesMemSize + pluginsMemSize) +
-//					  "MB");
-//					 
+					//
+					// int functionsMemSize = functions.toString().length() /
+					// (1024 * 1024); int typesMemSize =
+					// types.toString().length() / (1024 * 1024); int
+					// pluginsMemSize = (plugins.toString().length() +
+					// po.toString().length()) / (1024 * 1024);
+					//
+					// Log.outln("## functions \tobjectSize\t= " +
+					// functionsMemSize + "MB");
+					// Log.outln("## types \t\tobjectSize\t= " + typesMemSize +
+					// "MB"); Log.outln("## plugins \tobjectSize\t= " +
+					// pluginsMemSize + "MB");
+					// Log.outln("## TOTAL 3 \tobjectSize\t= " +
+					// (functionsMemSize + typesMemSize + pluginsMemSize) +
+					// "MB");
+					//
 					Log.outln("## time (merging) so far \t= " + Util.getFormattedTime(System.currentTimeMillis() - time1));
 				}
 
@@ -353,17 +346,16 @@ public class DependencyFinder {
 		Log.outln(" ///////// now doing the circular inter plugin dependency analysis    /////////    ");
 
 		Set<Entry<String, PluginObject>> pluginEntrySet = plugins.entrySet();
-		
-		long totalnumberofplugins= pluginEntrySet.size(), counter=0,indirectDepAnalysisTime1=System.currentTimeMillis();
-		
-		for (Entry<String, PluginObject> entry : pluginEntrySet) 
-		{
-			
+
+		long totalnumberofplugins = pluginEntrySet.size(), counter = 0, indirectDepAnalysisTime1 = System
+				.currentTimeMillis();
+
+		for (Entry<String, PluginObject> entry : pluginEntrySet) {
+
 			counter++;
 			PluginObject pluginObj = entry.getValue();
-			Log.outln("== plugin  "+counter   + " : "+pluginObj.name);
+			Log.outln("== plugin  " + counter + " : " + pluginObj.name);
 			for (String imp : pluginObj.imports) {
-
 				Set<Set<String>> exporterPluginSets = new LinkedHashSet<Set<String>>();
 				// if the alsoConsiderInvokationSatisfactionProxies flag
 				// parameter is true, then build a set of all invokations to be
@@ -389,25 +381,16 @@ public class DependencyFinder {
 				// for that and mark the import as satisfied.
 
 				// recording the data in the functions or types objects.
-				if (functions.containsKey(imp)) {
+				if (functions.containsKey(imp) && 1 <= exporterPluginSets.size()) {
 					ImpExp impexp = functions.get(imp);
-
 					impexp.satisfyingPluginsSets.addAll(exporterPluginSets);
-
-					if (1 <= exporterPluginSets.size())
-						impexp.addToExp(exporterPluginSets.toString());
-
+					impexp.addToExp("==SatisfyingPluginSet: " + exporterPluginSets.toString());
 					functions.put(imp, impexp);
-				} else if (types.containsKey(imp)) {
+				} else if (types.containsKey(imp) && 1 <= exporterPluginSets.size()) {
 					ImpExp impexp = types.get(imp);
-
 					impexp.satisfyingPluginsSets.addAll(exporterPluginSets);
-
-					if (1 <= exporterPluginSets.size())
-						impexp.addToExp(exporterPluginSets.toString());
-
-					functions.put(imp, impexp);
-
+					impexp.addToExp(exporterPluginSets.toString());
+					types.put(imp, impexp);
 				}
 			}
 			if (counter % 250 == 0 || counter == totalnumberofplugins) {
@@ -503,7 +486,7 @@ public class DependencyFinder {
 								String newImp = imp.replace(classname, superclass);
 								// if imp is a functioninvokation, then replace
 								// just the class name with superclass name
-								boolean impTypeIsFunction = 1 == ParsingUtil.getEntryType(imp) ? true : false;
+								boolean impTypeIsFunction = (1 == ParsingUtil.getEntryType(imp)) ? true : false;
 
 								if (impTypeIsFunction) {
 									// it is a function, so get the class name.
@@ -732,8 +715,8 @@ public class DependencyFinder {
 
 			counter++;
 			if (counter % 75000 == 0 || counter == typesLength)
-				Log.outln("## types written: " + counter + " of " + typesLength + " ("
-						+  (counter * 100 / typesLength) + "%)");
+				Log.outln("## types written: " + counter + " of " + typesLength + " (" + (counter * 100 / typesLength)
+						+ "%)");
 
 		}
 
