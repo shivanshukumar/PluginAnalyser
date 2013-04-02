@@ -9,48 +9,46 @@ import com.sun.tools.corba.se.idl.constExpr.Equal;
 
 /**
  * Logger to log errors and other info.
+ * 
  * @author Shivanshu Singh
- *
+ * 
  */
 public class Log {
-	
+
 	public static final String STD_ERR_LOG_FILENAME = "stderr.log";
 
-	public  static final String STD_OUT_LOG_FILENAME = "stdout.log";
+	public static final String STD_OUT_LOG_FILENAME = "stdout.log";
 
-	private static  boolean outnewline=true;
-	private static  boolean errnewline=true;
-	public static void outln(String entry)
-	{
-		boolean oldOutNewLineFlag=outnewline;
-		outnewline=false;
-		out(outaddon()+entry);
+	private static boolean outnewline = true;
+	private static boolean errnewline = true;
+
+	public static void outln(String entry) {
+		boolean oldOutNewLineFlag = outnewline;
+		outnewline = false;
+		out(outaddon() + entry);
 		System.out.print("\n");
-		outnewline=oldOutNewLineFlag;
+		outnewline = oldOutNewLineFlag;
 	}
-	public static void out(String entry)
-	{
 
-		int newLineIndex=0;
-		String toWrite="";
-		
-		
+	public static void out(String entry) {
+
+		int newLineIndex = 0;
+		String toWrite = "";
 
 		while (newLineIndex >= 0) {
-			
-			if(outnewline &&  !"".equals(entry))
-			{
+
+			if (outnewline && !"".equals(entry)) {
 				toWrite += outaddon();
-				outnewline=false;
+				outnewline = false;
 			}
 
 			newLineIndex = entry.indexOf("\n");
 			if (newLineIndex >= 0) {
 				toWrite += entry.substring(0, newLineIndex + 1);
-				entry =  entry.substring(newLineIndex + 1);
-				outnewline=true;
+				entry = entry.substring(newLineIndex + 1);
+				outnewline = true;
 			}
-			
+
 		}
 
 		toWrite += entry;
@@ -58,76 +56,74 @@ public class Log {
 		System.out.print(toWrite);
 	}
 
-	public static void errln(String entry)
-	{
-		boolean oldErrNewLine=errnewline;
-		errnewline=false;
-		err(erraddon()+entry);
+	public static void errln(String entry) {
+		boolean oldErrNewLine = errnewline;
+		errnewline = false;
+		err(erraddon() + entry);
 		System.err.print("\n");
-		errnewline=oldErrNewLine;	
+		errnewline = oldErrNewLine;
 	}
-	public static void err(String entry)
-	{
 
-		int newLineIndex=0;
-		String toWrite="";
-		
-		while(newLineIndex>=0)
-			{
-			
-			if(errnewline &&  !"".equals(entry))
-			{
+	public static void err(String entry) {
+
+		int newLineIndex = 0;
+		String toWrite = "";
+
+		while (newLineIndex >= 0) {
+
+			if (errnewline && !"".equals(entry)) {
 				toWrite += erraddon();
-				errnewline=false;
+				errnewline = false;
 			}
 
 			newLineIndex = entry.indexOf("\n");
 			if (newLineIndex >= 0) {
 				toWrite += entry.substring(0, newLineIndex + 1);
-				entry =  entry.substring(newLineIndex + 1);
-				errnewline=true;
+				entry = entry.substring(newLineIndex + 1);
+				errnewline = true;
 			}
-			  
-			}
-		toWrite+=entry;
-		
+
+		}
+		toWrite += entry;
+
 		System.err.print(toWrite);
 	}
-	public static void errln(char entry)
-	{
-		errln(""+entry);
+
+	public static void errln(char entry) {
+		errln("" + entry);
 	}
-	public static void err(char entry)
-	{
-		err(""+entry);
+
+	public static void err(char entry) {
+		err("" + entry);
 	}
-	public static void outln(char entry)
-	{
-		outln(""+entry);
+
+	public static void outln(char entry) {
+		outln("" + entry);
 	}
-	public static void out(char entry)
-	{
-		out(""+entry);
+
+	public static void out(char entry) {
+		out("" + entry);
 	}
-	private static String addon()
-	{
+
+	private static String addon() {
 		java.util.Date dt = new java.util.Date();
 
-		java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("yyyy/MMM/dd HH:mm:ss");//yyyy-MM-dd hh:mm:ss:SSS
+		java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("yyyy/MMM/dd HH:mm:ss");// yyyy-MM-dd
+																								// hh:mm:ss:SSS
 
 		String currentTime = sdf.format(dt);
-		
+
 		return currentTime;
 	}
-	private static String erraddon()
-	{
-		return "["+addon()+" ERR] ";
+
+	private static String erraddon() {
+		return "[" + addon() + " ERR] ";
 	}
-	private static String outaddon()
-	{
-		return "["+addon()+" OUT] ";
+
+	private static String outaddon() {
+		return "[" + addon() + " OUT] ";
 	}
-	
+
 	/**
 	 * Starts the logging capability. It maps the System.out or stdout and
 	 * System.err or stderr to respective FileOutputStream. So after calling
@@ -153,17 +149,15 @@ public class Log {
 			return false;
 		path = (path + "/").replaceAll("//", "/");
 		try {
-			FileOutputStream fout = new FileOutputStream(path + "_"
-					+ Log.STD_OUT_LOG_FILENAME);
-			FileOutputStream ferr = new FileOutputStream(path + "_"
-					+ Log.STD_ERR_LOG_FILENAME);
-	
-			MultiOutputStream multiOut = new MultiOutputStream(fout  , System.out);
-			MultiOutputStream multiErr = new MultiOutputStream(ferr  , System.err);
-	
+			FileOutputStream fout = new FileOutputStream(path + "_" + Log.STD_OUT_LOG_FILENAME);
+			FileOutputStream ferr = new FileOutputStream(path + "_" + Log.STD_ERR_LOG_FILENAME);
+
+			MultiOutputStream multiOut = new MultiOutputStream(fout); // System.out);
+			MultiOutputStream multiErr = new MultiOutputStream(ferr); // System.err);
+
 			PrintStream stdout = new PrintStream(multiOut);
 			PrintStream stderr = new PrintStream(multiErr);
-	
+
 			System.setOut(stdout);
 			System.setErr(stderr);
 		} catch (FileNotFoundException ex) {

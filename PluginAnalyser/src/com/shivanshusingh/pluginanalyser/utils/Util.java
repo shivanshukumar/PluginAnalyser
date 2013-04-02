@@ -154,7 +154,7 @@ public class Util {
 		String formattedTime = ""
 				+ form2.format(hours)  +":"
 				+ form2.format(minutes) + ":"
-				+ form2.format(seconds )		+ ":"
+				+ form2.format(seconds )		+ "."
 				+ form3.format(millis) ;
 
 		return formattedTime;
