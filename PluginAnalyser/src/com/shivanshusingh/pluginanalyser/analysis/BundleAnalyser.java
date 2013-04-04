@@ -71,7 +71,7 @@ public class BundleAnalyser extends ManifestParser {
 		if (Util.checkDirectory(new File(pathToJavaClasses), true, true, true, false)) {
 			// the whole process of creating a plugin extract for java platform
 			// classes.
-	//		buildJavaPlatformClassesExtract(pathToJavaClasses, outputLocation);
+			buildJavaPlatformClassesExtract(pathToJavaClasses, outputLocation);
 
 		} else {
 			Log.errln("xxxx Error Accessing Java Classes Location in Plugin Analysis : " + pluginFolderPath
@@ -206,6 +206,7 @@ public class BundleAnalyser extends ManifestParser {
 	}
 
 	/**
+	 * the whole process of creating a plugin extract for java platform classes.  This is so that the java sdk classes can be   marked for satisfaction during Dependency Analysis.
 	 * @param pathToJavaClasses
 	 * @param outputLocation
 	 */
