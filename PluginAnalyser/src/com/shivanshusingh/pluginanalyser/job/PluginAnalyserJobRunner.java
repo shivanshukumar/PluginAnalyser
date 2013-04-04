@@ -35,12 +35,11 @@ public class PluginAnalyserJobRunner {
 		String mirrorSiteDesinationPathPrefix = "/Users/singhsk/Developer/eclipse_plugins";
 
 		String mirrorSiteDesinationName =
-		// "super_site7_compareWithBase_NoCopy_____";
-		// "new_site2_____";
-		// "new_site6_____";
-		"__WorkingEclipseSite_features_and_plugins__";
-		// "_plugin_sandbox";
-		// "eclipse_juno_p2_mirror_site";
+		 "new_site2_____";
+//		 "new_site3_____";
+//		"__WorkingEclipseSite_features_and_plugins__";
+//		 "_plugin_sandbox";
+//		 "eclipse_juno_p2_mirror_site";
 		// + Util.getCurrentTimeString();
 
 		mirrorSiteDesinationName = mirrorSiteDesinationName.replace("/", "-").replace(":", "-").replace(".", "-")
@@ -108,7 +107,7 @@ public class PluginAnalyserJobRunner {
 
 		// ///////////////////////////////////////////////////
 		// // building the updateSiteURLSet from updatesite extracts.
-		// updateSiteCollection = new HashSet<String>();
+		 updateSiteCollection = new HashSet<String>();
 		// List<String> xxxx = new ArrayList<String>();
 		//
 		// ec.restoreFromBaseLocation("./UPDATE-SITE-DATA");
@@ -148,32 +147,33 @@ public class PluginAnalyserJobRunner {
 			// this way the base eclipse installation gets copied to the staging
 			// location
 			boolean copyBaseEclipseSite = false;
-			// getting features from update sites
-			//
-			// String baseEclipseP2SiteLocation =
-			// "/Users/singhsk/Developer/eclipse_plugins/eclipse_juno_p2_mirror_site";
-			// if (!DownloadAndStagingRunner
-			// .downloadAndStageAgainstBaseEclipseSite(eclipseHome, eclipseApp,
-			// equinoxAppName,
-			// baseEclipseP2SiteLocation, copyBaseEclipseSite ,
-			// updateSiteURLCollection_list, destinationDirectory, verbose, raw,
-			// eraseOld))
-			//
-			//
-			// if (!DownloadAndStagingRunner.downloadAndStage(eclipseHome,
-			// eclipseApp, equinoxAppName, updateSiteURLCollection_list,
-			// destinationDirectory, verbose, raw, eraseOld))
-			//
-			// {
-			// Log.errln("XXXXXXX  " + "\n  Download and staging error for: " +
-			// "\n  " + destinationDirectory
-			// + "\n    cannot continue  with the analysis and data extraction."
-			// + "\n    ----"
-			// + "\n     You may want to check the logs at  :  " + "\n     " +
-			// eclipseHome + "configuration/  "
-			// + "\n    ---- " + "\nXXXXXXX");
-			// Log.errln("But still  any  way   going on with the analysis for now ..............");
-			// }
+			
+//			// getting features from update sites
+//			//
+//			// String baseEclipseP2SiteLocation =
+//			// "/Users/singhsk/Developer/eclipse_plugins/eclipse_juno_p2_mirror_site";
+//			
+//			// if (!DownloadAndStagingRunner
+//			// .downloadAndStageAgainstBaseEclipseSite(eclipseHome, eclipseApp,
+//			// equinoxAppName, baseEclipseP2SiteLocation, copyBaseEclipseSite ,
+//			// updateSiteURLCollection_list, destinationDirectory, verbose, raw,
+//			// eraseOld))
+//			//
+//			
+//			 if (!DownloadAndStagingRunner.downloadAndStage(eclipseHome,
+//			 eclipseApp, equinoxAppName, updateSiteURLCollection_list,
+//			 destinationDirectory, verbose, raw, eraseOld))
+//			
+//			 {
+//			 Log.errln("XXXXXXX  " + "\n  Download and staging error for: " +
+//			 "\n  " + destinationDirectory
+//			 + "\n    cannot continue  with the analysis and data extraction."
+//			 + "\n    ----"
+//			 + "\n     You may want to check the logs at  :  " + "\n     " +
+//			 eclipseHome + "configuration/  "
+//			 + "\n    ---- " + "\nXXXXXXX");
+//			 Log.errln("But still  any  way   going on with the analysis for now ..............");
+//			 }
 			long stage2 = System.currentTimeMillis();
 			Log.outln("Downloading and Staging for site configuration at  :  " + destinationDirectory + "  time: "
 					+ Util.getFormattedTime(stage2 - stage1));
@@ -185,8 +185,9 @@ public class PluginAnalyserJobRunner {
 			 */
 
 			String outputLocation = "./" + currOutpurDir + "/_OUTPUT";
+			String pathToJavaClasses="/Users/singhsk/Developer/java_classes";
 			boolean eraseOldExtrcats = true;
-			AnalysisRunner.analyseAndRecord(destinationDirectory, outputLocation, eraseOldExtrcats);
+			AnalysisRunner.analyseAndRecord(destinationDirectory, outputLocation, pathToJavaClasses, eraseOldExtrcats);
 
 			// //////////////////////////////////////////////////////
 			// the dependency finder.
@@ -204,7 +205,7 @@ public class PluginAnalyserJobRunner {
 			DependencyFinder.buildPluginDependencySuperSet(pluginExtractsLocation, pluginextractAnalysisDestLocation,
 					considerBundleExportsOnly, ignoreBundlesMarkedToBeIgnored, considerInvokationSatisfactionProxies,
 					eraseoldDependenctSetExtrcats);
-			// ///////////////////////////////////////////////////////////////////////////////////////////////
+			 ///////////////////////////////////////////////////////////////////////////////////////////////
 			long time2 = System.currentTimeMillis();
 			Log.outln("Current Job for site configuration at  :  " + destinationDirectory + "  time: "
 					+ Util.getFormattedTime(time2 - time1));

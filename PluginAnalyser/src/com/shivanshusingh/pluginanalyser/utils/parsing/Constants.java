@@ -1,5 +1,8 @@
 package com.shivanshusingh.pluginanalyser.utils.parsing;
 
+import java.util.Collection;
+import java.util.HashSet;
+
 /**
  * 
  * extracts related constants used for recording extracted information and also for parsing during restoration from extracts.
@@ -74,6 +77,12 @@ public interface Constants {
 	public static final String PLUGIN_DEPENDENCY_IMPORTERS_UNSATISFIED  				= MARKER_ADDON + "Importers  UnSatisfied " 					+ MARKER_ADDON;
 	public static final String PLUGIN_DEPENDENCY_SATISFYING_PLUGINS_SETS 				= MARKER_ADDON + "Satisfying Plugins SETS"					+ MARKER_ADDON;
 	
+//	public static final HashSet<String> JAVA_LANG_OBJECT_FUNCTIONS =  {
+//		
+//		""
+//	};
+//	
+//TODO add the set of java.lang.Object  signatures that can be pruned.
 	
 	//TODO Add support for features.
 }

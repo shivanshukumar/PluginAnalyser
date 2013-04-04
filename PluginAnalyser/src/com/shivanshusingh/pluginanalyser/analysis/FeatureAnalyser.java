@@ -53,10 +53,14 @@ public class FeatureAnalyser {
 
 	public static void analyseAndRecordAllInformationFromBaseFeautreFolder(String featureFolderPath, String outputLocation,
 			boolean eraseOld) throws IOException {
-
+		if (!Util.checkDirectory(new File(featureFolderPath), true, true, true, false)) {
+			Log.errln("xxxx Error Accessing Feature source base Directory for Feature Analysis : " + featureFolderPath
+					+ "\n Cannot continue with the fetaure analysis.");
+			return;
+		}
 		if (!Util.checkAndCreateDirectory(outputLocation)) {
 			Log.errln("Error Accessing/Creating Output Directory for  Feature  Analysis Output at: " + outputLocation
-					+ "\n Cannot continue with the analysis.");
+					+ "\n Cannot continue with the feature analysis.");
 			return;
 		}
 
@@ -68,10 +72,10 @@ public class FeatureAnalyser {
 
 		Log.outln("=======Analysing  Feature Source:" + featureFolderPath);
 		File folder = new File(featureFolderPath);
-		if (null == folder) {
+		/*if (null == folder) {
 			Log.outln("==== nothing here.");
 			return;
-		}
+		}*/
 		File[] listOfFiles = folder.listFiles();
 		long featureAnlalysedCounter = 0;
 		for (int i = 0; i < listOfFiles.length; i++) {

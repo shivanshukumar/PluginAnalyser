@@ -26,10 +26,11 @@ public class AnalysisRunner {
 	 * @param outputLocation
 	 * 
 	 * @param eraseOld
+	 * @param pathToJavaClasses 
 	 * @throws IOException
 	 */
 	public static void analyseAndRecord(String mirrorSiteLocation,
-			String outputLocation, boolean eraseOld) throws IOException {
+			String outputLocation, String pathToJavaClasses, boolean eraseOld) throws IOException {
 		
 		if(eraseOld)
 		{
@@ -45,7 +46,7 @@ public class AnalysisRunner {
 		// reading all the files (plugin jars) in the specified plugin folder
 		String pluginFolderPath = mirrorSiteLocation + "/plugins/";
 		BundleAnalyser.analyseAndRecordAllInformationFromBasePluginFolder(
-				pluginFolderPath, outputLocation + "/plugins", true);
+				pluginFolderPath, outputLocation + "/plugins", pathToJavaClasses, true);
 	}
 
 }

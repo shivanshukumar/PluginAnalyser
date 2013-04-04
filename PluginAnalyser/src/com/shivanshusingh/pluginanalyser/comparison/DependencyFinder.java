@@ -374,7 +374,7 @@ public class DependencyFinder {
 						// been satisfied till now at the plugin level ( i.e. a
 						// proxy exists) then if it has to be satisfied , it
 						// will be satisfied through the proxy only.
-						exporterPluginSets = fetchExporters(invokationProxies, pluginObj.name);
+						exporterPluginSets = fetchExporters(  imp, invokationProxies, pluginObj.name);
 					} else {
 						exporterPluginSets = fetchExporters(imp);
 					}
@@ -418,10 +418,19 @@ public class DependencyFinder {
 				+ pathToBasePluginExtractsDir + "  time: " + Util.getFormattedTime(time2 - time1));
 
 	}
-	private static Set<Set<String>> fetchExporters(Set<String> importEntryProxies, String ownerPluginName) {
+	private static Set<Set<String>> fetchExporters(    String imp, Set<String> importEntryProxies, String ownerPluginName) {
 
 		Set<Set<String>> result = new LinkedHashSet<Set<String>>();
 
+		//  		first see if the import can be satisfied on its own
+		//  this is required as there might be some interface implementations that may  satisfy the invokation indirectly.
+		Set<Set<String>> interimResult= new  HashSet<Set<String>>();
+		 interimResult = fetchExporters(imp);
+		 if (null!=interimResult&&interimResult.size() > 0)
+			 result=interimResult;
+		 else
+		 {
+		
 		// otherwise, try the proxies but then this means that we would need to
 		// include the plugin that owns the import entry in the result as the
 		// proxy is generated to go outside of the owner plugin from inside of
@@ -429,7 +438,7 @@ public class DependencyFinder {
 		// owner plugin in the mix.
 
 		for (String importEntryProxy : importEntryProxies) {
-			Set<Set<String>> interimResult = new LinkedHashSet<Set<String>>();
+			 interimResult = new LinkedHashSet<Set<String>>();
 
 			interimResult = fetchExporters(importEntryProxy);
 			if (interimResult.size() > 0)//null!=interimResult && 
@@ -440,6 +449,7 @@ public class DependencyFinder {
 			result.addAll(interimResult);
 
 		}
+		 }
 		return result;
 	}
 	
@@ -509,7 +519,10 @@ public class DependencyFinder {
 					else {
 						if (null != targetPlugin.superClassesAndInterfaces) {
 							Set<String> superclasses = targetPlugin.superClassesAndInterfaces.get(classname);
-							for (String superclass : superclasses) {
+							if(null!=superclasses)
+							{
+							for (String superclass : superclasses) 
+							{
 
 								String newImp = imp.replace(classname, superclass);
 								// if imp is a functioninvokation, then replace
@@ -526,7 +539,7 @@ public class DependencyFinder {
 
 								}
 
-								Set<Set<String>> setOfSets = fetchExporters(newImp);
+								Set<Set<String>> setOfSets = findExporters(newImp);
 								if (setOfSets.size() > 0)
 									for (Set<String> set : setOfSets) {
 										if (set.size() > 0)
@@ -536,6 +549,7 @@ public class DependencyFinder {
 								result.addAll(setOfSets);
 
 								// System.out.println("result_branch: "+result);
+							}
 							}
 						}
 					}
