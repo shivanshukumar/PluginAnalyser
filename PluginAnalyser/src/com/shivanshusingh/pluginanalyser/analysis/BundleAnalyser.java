@@ -835,7 +835,8 @@ public class BundleAnalyser extends ManifestParser {
 
 		// ///////////////////////////////////
 
-		Map<String, TypeDependency> allTypeDependencies_SuperClassAndInterfaces = v.getAllMyTypeDependencies();
+		Map<String, TypeDependency> allTypeDependencies_SuperClassAndInterfaces = new HashMap<String, TypeDependency>();
+		allTypeDependencies_SuperClassAndInterfaces.putAll(v.getAllMyTypeDependencies());
 
 		Set<String> allInheritancePairs = new HashSet<String>();
 		Set<String> allInheritanceHierarchies = new HashSet<String>();
@@ -879,7 +880,7 @@ public class BundleAnalyser extends ManifestParser {
 			TypeDependency typeDep = (TypeDependency) allTypeDependencies_SuperClassAndInterfaces.get(key);
 
 			String entry = "";
-			if (null != typeDep.interfaces && 1 >= typeDep.interfaces.size()) {
+			if (null != typeDep.interfaces && 1 <= typeDep.interfaces.size()) {
 
 				// System.out.println("++++++++ interfaces implemented:"+typeDep1.interfaces.size());
 				for (String interfaceImplemented : typeDep.interfaces) {

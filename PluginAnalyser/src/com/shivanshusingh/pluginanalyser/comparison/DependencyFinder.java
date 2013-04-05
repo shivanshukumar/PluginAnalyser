@@ -460,18 +460,18 @@ public class DependencyFinder {
 	 */
 	private static Set<Set<String>> fetchExporters(String imp) {
 		Set<Set<String>> result = new LinkedHashSet<Set<String>>();
-		Set<Set<String>> interimresult = new LinkedHashSet<Set<String>>();
+		
 		if(exporterSetsCache.containsKey(imp))
 		{
 			result=exporterSetsCache.get(imp);
 		}
 		else
 		{
-			interimresult= findExporters(imp);
-			if(null!=interimresult&&1<=interimresult.size())
+			Set<Set<String>> interimresult =  findExporters(imp);
+			if(null!=interimresult && 1<=interimresult.size())
 			{
 				exporterSetsCache.put(imp, interimresult);
-				result=interimresult;
+				result.addAll(interimresult);
 			}
 		}
 		

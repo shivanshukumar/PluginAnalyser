@@ -17,18 +17,6 @@ import org.objectweb.asm.Type;
 import org.objectweb.asm.signature.SignatureReader;
 import org.objectweb.asm.signature.SignatureVisitor;
 
-//mine
-class InvokeDynamicException extends Exception {
-	private static final long serialVersionUID = -930230783895227740L;
-
-	public InvokeDynamicException() {
-	}
-
-	public InvokeDynamicException(String msg) {
-		super(msg);
-	}
-}
-
 public class DependencyVisitor extends ClassVisitor {
 	Set<String> packages = new HashSet<String>();
 
@@ -258,15 +246,19 @@ public class DependencyVisitor extends ClassVisitor {
 
 		// mine - adding to MyClasses
 		String myFullyQualifiedClassName = Type.getObjectType(name).getClassName();
+		
+		if(0=="scala.collection.mutable.Set".compareToIgnoreCase(myFullyQualifiedClassName)  )
+				System.out.println("$$$$$$$$$$$$$$$$$$$$$$");
+		
 		allMyClasses.add(myFullyQualifiedClassName);
 		// mine- adding to public classes and no other.
 		if ((access & Opcodes.ACC_PUBLIC) != 0)
-			allMyPublicClasses.add(Type.getObjectType(name).getClassName());
+			allMyPublicClasses.add(myFullyQualifiedClassName);
 		// mine- adding to protected or unspecified classes and no other.
 		if ((access & Opcodes.ACC_PROTECTED) != 0) {
 			// for now adding to public classes to see ....
-			allMyClasses.add(Type.getObjectType(name).getClassName());
-			allMyProtectedClasses.add(Type.getObjectType(name).getClassName());
+			allMyClasses.add(myFullyQualifiedClassName);
+			allMyProtectedClasses.add(myFullyQualifiedClassName);
 		}
 		// if method access is anything else than private then, also include it
 		// for now as a public class
@@ -274,12 +266,12 @@ public class DependencyVisitor extends ClassVisitor {
 		if (!isPrivate)
 		{// // for now adding them to
 													// public.... to see
-			allMyClasses.add(Type.getObjectType(name).getClassName());
+			allMyClasses.add(myFullyQualifiedClassName);
 		}
 		// if class access is deprecated then this is a personal deprecated
 		// class
 		if ((access & Opcodes.ACC_DEPRECATED) != 0)
-			allMyDeprecatedClasses.add(Type.getObjectType(name).getClassName());
+			allMyDeprecatedClasses.add(myFullyQualifiedClassName);
 
 		// adding all dependent types (super classes and interfaces)
 		if (null != superName && !"".equalsIgnoreCase(superName)) {
@@ -287,7 +279,8 @@ public class DependencyVisitor extends ClassVisitor {
 			TypeDependency typeDep = new TypeDependency();
 			if (allMyTypeDependencies.containsKey(myFullyQualifiedClassName))
 				typeDep = allMyTypeDependencies.get(myFullyQualifiedClassName);
-			typeDep.superClass = (Type.getObjectType(superName).getClassName());
+			String superClassFullyQualName=Type.getObjectType(superName).getClassName();
+			typeDep.superClass = (superClassFullyQualName);
 			allMyTypeDependencies.put(myFullyQualifiedClassName, typeDep);
 		}
 
@@ -298,7 +291,10 @@ public class DependencyVisitor extends ClassVisitor {
 				typeDep = allMyTypeDependencies.get(myFullyQualifiedClassName);
 			for (String s : interfaces) {
 				if (null != s && !"".equalsIgnoreCase(s))
-					typeDep.interfaces.add(Type.getObjectType(s).getClassName());
+				{
+					String interfaceFullyQualName = Type.getObjectType(s).getClassName();
+					typeDep.interfaces.add(interfaceFullyQualName);
+				}
 			}
 			allMyTypeDependencies.put(myFullyQualifiedClassName, typeDep);
 
