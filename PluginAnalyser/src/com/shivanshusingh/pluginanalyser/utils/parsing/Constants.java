@@ -20,7 +20,7 @@ public interface Constants {
 	public static final String BUNDLE_IGNORE 											= MARKER_ADDON + "IGNORE BUNDLE COZ MANIFEST(OR SOME PROPERTY OF IT) MALFORMED " 							+ MARKER_ADDON;
 	public static final String BUNDLE_IMPORTS 											= MARKER_ADDON + "Bundle Package Imports"  				  +  MARKER_ADDON ;
 	public static final String BUNDLE_PLUGIN_XML 										= MARKER_ADDON + "Bundle Plugin.xml"  					  +  MARKER_ADDON ;
-	public static final String BUNDLE_PROPERTY_VALUE_UNKNOWN							= "UNKNOWN";
+	public static final String BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL					= "PA~!UNKNOWN";
 	
 	public static final String BUNDLE_REQUIREMENTS 										= MARKER_ADDON + "Bundle Requirements"  				  +  MARKER_ADDON ;
 	public static final String BUNDLE_REQUIRES 											= MARKER_ADDON + "Bundle Other BUNDLE Imports"  			+ MARKER_ADDON ;
@@ -28,9 +28,9 @@ public interface Constants {
 	public static final String BUNDLE_VERSION 											= MARKER_ADDON + "Version"  							  +  MARKER_ADDON ;
 	public static final String BUNDLE_VERSION_WITHOUT_QUALIFIER 						= MARKER_ADDON + "Version without qualifier"  			  +  MARKER_ADDON ;
 
-	public static final String BUNDLE_SYMBOLICNAME_UNKNOWN 										= BUNDLE_PROPERTY_VALUE_UNKNOWN		 ;
-	public static final String BUNDLE_VERSION_UNKNOWN_WITHOUT_QUALIFIER 				=  BUNDLE_PROPERTY_VALUE_UNKNOWN + "." + BUNDLE_PROPERTY_VALUE_UNKNOWN + "." + BUNDLE_PROPERTY_VALUE_UNKNOWN;
-	public static final String BUNDLE_VERSION_UNKNOWN 									=  BUNDLE_VERSION_UNKNOWN_WITHOUT_QUALIFIER  + "." + BUNDLE_PROPERTY_VALUE_UNKNOWN;
+	public static final String BUNDLE_SYMBOLICNAME_UNKNOWN_LITERAL 						= BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL		 ;
+	public static final String BUNDLE_VERSION_UNKNOWN_WITHOUT_QUALIFIER_LITERAL 		=  BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL + "." + BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL + "." + BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL;
+	public static final String BUNDLE_VERSION_UNKNOWN_LITERAL 							=  BUNDLE_VERSION_UNKNOWN_WITHOUT_QUALIFIER_LITERAL  + "." + BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL;
 
 	public static final String DELIM_PLUGIN_DEPENDENCY_ELEMENT_SET  					= "####";
 	public static final String DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE 				= " => ";

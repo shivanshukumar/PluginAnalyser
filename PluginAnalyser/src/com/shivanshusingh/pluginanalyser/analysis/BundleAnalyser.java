@@ -1052,7 +1052,7 @@ public class BundleAnalyser extends ManifestParser {
 		}
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 		writer.write(Constants.BUNDLE_SYMBOLICNAME + "\n");
-		String symbolicName=Constants.BUNDLE_SYMBOLICNAME_UNKNOWN+"_"+UNKNOWN_SYMBOLIC_NAME_Counter++;
+		String symbolicName=Constants.BUNDLE_SYMBOLICNAME_UNKNOWN_LITERAL+"_"+UNKNOWN_SYMBOLIC_NAME_Counter++;
 		if (flag_bundleInfoExists) {
 			symbolicName=((null != bundleinfo.getSymbolicName() && !"".equalsIgnoreCase(bundleinfo.getSymbolicName().trim() ) ) ? bundleinfo.getSymbolicName().toString().trim() : symbolicName);
 			// Log.outln("Symbolic Name = "+
@@ -1062,7 +1062,7 @@ public class BundleAnalyser extends ManifestParser {
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 		
 		writer.write(Constants.BUNDLE_VERSION + "\n");
-		String bundleVersion=Constants.BUNDLE_VERSION_UNKNOWN;
+		String bundleVersion=Constants.BUNDLE_VERSION_UNKNOWN_LITERAL;
 		if (flag_bundleInfoExists) {
 			bundleVersion=((null != bundleinfo.getVersion() && !"".equalsIgnoreCase(bundleinfo.getVersion().toString().trim() )) ? bundleinfo.getVersion().toString().trim()  : bundleVersion);
 			// Log.outln("Version = " +
@@ -1078,7 +1078,7 @@ public class BundleAnalyser extends ManifestParser {
 	
 		
 		writer.write(Constants.BUNDLE_VERSION_WITHOUT_QUALIFIER + "\n");
-		String bundleVersionWithoutQual=Constants.BUNDLE_VERSION_UNKNOWN_WITHOUT_QUALIFIER;
+		String bundleVersionWithoutQual=Constants.BUNDLE_VERSION_UNKNOWN_WITHOUT_QUALIFIER_LITERAL;
 		if (flag_bundleInfoExists) {
 			bundleVersionWithoutQual=((null != bundleinfo.getVersion() && !"".equalsIgnoreCase(bundleinfo.getVersion().toString().trim() )) ? bundleinfo.getVersion().withoutQualifier().toString().trim() : bundleVersionWithoutQual);
 			// Log.outln("Version without qualifier  = " +
@@ -1572,7 +1572,7 @@ public class BundleAnalyser extends ManifestParser {
 			// bundleinfo.getImports().toString());
 		}
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
-		
+		writer.write(Constants.BUNDLE_SYMBOLICNAME + "\n");
 		String symbolicName=Constants.EXTRACT_FILE_NAME_JAVA_CLASSES_PLATFORM;
 		if (flag_bundleInfoExists) {
 			symbolicName=((null != bundleinfo.getSymbolicName() && !"".equalsIgnoreCase(bundleinfo.getSymbolicName().trim() ) ) ? bundleinfo.getSymbolicName().toString().trim() : symbolicName);
@@ -1584,7 +1584,7 @@ public class BundleAnalyser extends ManifestParser {
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 		
 		writer.write(Constants.BUNDLE_VERSION + "\n");
-		String bundleVersion=Constants.BUNDLE_VERSION_UNKNOWN;
+		String bundleVersion=Constants.BUNDLE_VERSION_UNKNOWN_LITERAL;
 		if (flag_bundleInfoExists) {
 			bundleVersion=((null != bundleinfo.getVersion() && !"".equalsIgnoreCase(bundleinfo.getVersion().toString().trim() )) ? bundleinfo.getVersion().toString().trim()  : bundleVersion);
 			// Log.outln("Version = " +
@@ -1601,7 +1601,7 @@ public class BundleAnalyser extends ManifestParser {
 	
 		
 		writer.write(Constants.BUNDLE_VERSION_WITHOUT_QUALIFIER + "\n");
-		String bundleVersionWithoutQual=Constants.BUNDLE_VERSION_UNKNOWN_WITHOUT_QUALIFIER;
+		String bundleVersionWithoutQual=Constants.BUNDLE_VERSION_UNKNOWN_WITHOUT_QUALIFIER_LITERAL;
 		if (flag_bundleInfoExists) {
 			bundleVersionWithoutQual=((null != bundleinfo.getVersion() && !"".equalsIgnoreCase(bundleinfo.getVersion().toString().trim() )) ? bundleinfo.getVersion().withoutQualifier().toString().trim() : bundleVersionWithoutQual);
 			// Log.outln("Version without qualifier  = " +

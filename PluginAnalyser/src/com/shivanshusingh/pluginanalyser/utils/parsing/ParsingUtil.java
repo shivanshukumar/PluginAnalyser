@@ -16,16 +16,16 @@ import java.util.Set;
 public class ParsingUtil {
 
 	/**
-	 * @param entry
+	 * @param extractFile
 	 * @param property
 	 * @return {@link Set}
 	 * @throws IOException
 	 */
-	public static Set<String> restorePropertyFromExtract(File entry, String property) throws IOException {
+	public static Set<String> restorePropertyFromExtract(File extractFile, String property) throws IOException {
 	
 		property = property.trim();
 		Set<String> result = new HashSet<String>();
-		BufferedReader br = new BufferedReader(new FileReader(entry));
+		BufferedReader br = new BufferedReader(new FileReader(extractFile));
 		String line = "";
 		while (null != (line = br.readLine())) {
 	
@@ -124,6 +124,32 @@ public class ParsingUtil {
 		else
 	
 			return 2;
+	}
+
+	/**
+	 * 
+	 * gets the plugin ID from the plugin extract
+	 * e.g. if the bundle SymbolicName = A and the Bundle version = b.c.d.qualifier then the result returned will be: A[b.c.d.qualifier]
+	 * 
+	 * @param pluginExtract
+	 * @return
+	 */
+	public static String buildPluginId(File pluginExtract) {
+		StringBuffer pluginId=new StringBuffer();
+		try {
+			Set<String> pluginSymbolicNameSet=restorePropertyFromExtract(pluginExtract,  Constants.BUNDLE_SYMBOLICNAME  );
+			Set<String> pluginVersionSet=restorePropertyFromExtract(pluginExtract,  Constants.BUNDLE_VERSION  );
+			for(String s: pluginSymbolicNameSet)
+				pluginId.append(s.trim());
+			pluginId.append("[");
+			for(String s: pluginVersionSet)
+				pluginId.append(s.trim());
+			pluginId.append("]");
+		} catch (IOException e) {
+			pluginId=new StringBuffer();
+			e.printStackTrace();
+		}
+		return pluginId.toString();
 	}
 
 }

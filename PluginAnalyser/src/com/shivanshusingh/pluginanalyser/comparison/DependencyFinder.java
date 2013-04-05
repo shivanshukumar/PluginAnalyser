@@ -136,27 +136,14 @@ public class DependencyFinder {
 				 * missing manifest.mf file for thus plugin.
 				 */
 				String thisPluginExtractName = pluginExtract.getName().trim();
-				
-				// ignoring the ones that are not plugin extracts
-				if(
-						!(
-								thisPluginExtractName.endsWith(Constants.EXTRACT_FILE_EXTENSION_PLUGIN)	&&
-									thisPluginExtractName.startsWith(Constants.EXTRACT_FILE_PREFIX_PLUGIN)
-						)
-				)
-					continue;
-				
-				int startingIndex = thisPluginExtractName.indexOf(Constants.EXTRACT_FILE_PREFIX_PLUGIN)
-						+ Constants.EXTRACT_FILE_PREFIX_PLUGIN.length();
-				
-				thisPluginExtractName = thisPluginExtractName.substring(startingIndex);
-				if (thisPluginExtractName.toLowerCase().endsWith(Constants.EXTRACT_FILE_EXTENSION_PLUGIN))
-					thisPluginExtractName = thisPluginExtractName.substring(0, thisPluginExtractName.length()
-							- Constants.EXTRACT_FILE_EXTENSION_PLUGIN.length());
-				// Log.outln("==== Adding to DependencySet,  plugin " +
-				// pluginExtractsDone + " of " + entriesLength + " : "
-				// + thisPluginExtractName + "====");
 
+				// ignoring the ones that are not plugin extracts
+				if (!(thisPluginExtractName.endsWith(Constants.EXTRACT_FILE_EXTENSION_PLUGIN) && thisPluginExtractName
+						.startsWith(Constants.EXTRACT_FILE_PREFIX_PLUGIN)))
+					continue;		
+				
+				// constructing this plugin extract plugin id.
+				 String   thisPluginId=   ParsingUtil.buildPluginId(pluginExtract);
 				// restoring the functions information from the file.
 
 				boolean ignorePluginExtract = false;
@@ -168,9 +155,9 @@ public class DependencyFinder {
 				}
 				// System.out.println("==== ignoreBundleProperty= "+ignoreBundleProperty.toString());
 				if (ignorePluginExtract) {
-					Log.outln("==== " + thisPluginExtractName + " must be IGNORED");
-					Log.errln("==== " + thisPluginExtractName + " must be IGNORED");
-					pluginExtractsIgnored.add(thisPluginExtractName);
+					Log.outln("==== " + thisPluginId + " must be IGNORED");
+					Log.errln("==== " + thisPluginId + " must be IGNORED");
+					pluginExtractsIgnored.add(thisPluginId);
 					continue;
 
 				}
@@ -198,10 +185,10 @@ public class DependencyFinder {
 				// /////////////////////////////////////////
 
 				PluginObject po = new PluginObject();
-				if (plugins.containsKey(thisPluginExtractName))
-					po = plugins.get(thisPluginExtractName);
+				if (plugins.containsKey(thisPluginId))
+					po = plugins.get(thisPluginId);
 
-				po.name = thisPluginExtractName;
+				po.name = thisPluginId;
 
 				// building the superclassAndInterface SuperSet
 				for (String pair : superClassesAndInterfacesSuperSet) {
@@ -277,7 +264,7 @@ public class DependencyFinder {
 						if (flag_isExported) {
 							// Log.outln("*********** adding to exports:"+thisPluginExtractName+
 							// "    for invokation: "+ myMethodExport);
-							impexp.addToExp(thisPluginExtractName);
+							impexp.addToExp(thisPluginId);
 							functions.put(myMethodExport, impexp);
 
 							// building the plugins object for exports.
@@ -295,7 +282,7 @@ public class DependencyFinder {
 						if (functions.containsKey(s))
 							impexp = functions.get(s);
 
-						impexp.addToImp(thisPluginExtractName);
+						impexp.addToImp(thisPluginId);
 						functions.put(s, impexp);
 
 					}
@@ -332,7 +319,7 @@ public class DependencyFinder {
 						if (flag_isExported) {
 							// Log.outln("*********** adding to exports:"+thisPluginExtractName+
 							// "    for type: "+myTypeExport);
-							impexp.addToExp(thisPluginExtractName);
+							impexp.addToExp(thisPluginId);
 							types.put(myTypeExport, impexp);
 
 							// building the plugins object for exports.
@@ -347,7 +334,7 @@ public class DependencyFinder {
 						ImpExp impexp = new ImpExp();
 						if (types.containsKey(s))
 							impexp = types.get(s);
-						impexp.addToImp(thisPluginExtractName);
+						impexp.addToImp(thisPluginId);
 						types.put(s, impexp);
 					}
 				}
@@ -362,7 +349,7 @@ public class DependencyFinder {
 
 				// adding the constructed object to the DependencyFinder.plugins
 				// object.
-				plugins.put(thisPluginExtractName, po);
+				plugins.put(thisPluginId, po);
 
 				// ///////////////// done with adding the current plugin
 				// information to the DependencyFinder.plugins object /////////
@@ -445,6 +432,7 @@ public class DependencyFinder {
 	 * @param pathToPluginMapFile
 	 * @return
 	 */
+	@SuppressWarnings("unchecked")
 	private static boolean populatePluginMap(String pathToPluginMapFile) {
 		try {
 			ObjectInputStream ois;
