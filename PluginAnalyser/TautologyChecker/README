@@ -1,0 +1,14 @@
+This is a simple Tautology Checker for PluginAnalyser Dependency Reports
+
+> a feature model from inter plugin dependencies has to be created, name it as dependencies.fm
+> a constraints model with information on how each function invokation is satisfied, from importers to exporter sets need to be created, name it as constraints.fm
+
+put both of them in the TautologyChecker HOME/fodder folder.
+
+Run using sbt:
+
+"sbt compile" gets all required dependencies, compiles the code,
+
+"sbt run" gets all required dependencies, compiles the code, and runs it
+
+"sbt mkrun" creates a shell script that you can use to run it from the command line
