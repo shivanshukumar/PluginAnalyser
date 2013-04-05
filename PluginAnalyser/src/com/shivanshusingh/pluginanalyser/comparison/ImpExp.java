@@ -13,34 +13,34 @@ import java.util.Set;
 public class ImpExp {
 
 	
-//	public Set<Set<String>> satisfyingPluginsSets=new HashSet<Set<String>>();
-	public Set<Set> satisfyingPluginsSets = new HashSet<Set>();
+	public Set<Set<String>> satisfyingPluginsSets=new HashSet<Set<String>>();
+//	public Set<Set> satisfyingPluginsSets = new HashSet<Set>();
 	
-	private Set exp = new HashSet();
+	private Set<String> exp = new HashSet<String>();
 
-	private Set imp = new HashSet();
+	private Set<String> imp = new HashSet<String>();
 
-	public Set getExp() {
+	public Set<String> getExp() {
 		return exp;
 	}
 
-	public void addToExp(Object arg0) {
+	public void addToExp(String arg0) {
 		this.exp.add(arg0);
 	}
 
-	public void addToImp(Object arg0) {
+	public void addToImp(String arg0) {
 		this.imp.add(arg0);
 	}
 
-	public Set getImp() {
+	public Set<String> getImp() {
 		return imp;
 	}
 
-	public void setExp(Set exp) {
+	public void setExp(Set<String> exp) {
 		this.exp = exp;
 	}
 
-	public void setImp(Set imp) {
+	public void setImp(Set<String> imp) {
 		this.imp = imp;
 	}
 	

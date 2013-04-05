@@ -2,8 +2,10 @@ package com.shivanshusingh.pluginanalyser.comparison;
 
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
@@ -21,6 +23,9 @@ import com.shivanshusingh.pluginanalyser.utils.parsing.ParsingUtil;
  * 
  */
 public class DependencyFinder {
+
+	// Map for:  Pluin Name (symbolic name) => pluginId(symbolicname[version.qualifier]) => plugin extract file names set.. 
+	private static   Map<String,Map<String,Set<String>>> pluginMap = new HashMap<String, Map<String,Set<String>>>(); 
 
 	static Map<String, ImpExp> functions = new HashMap<String, ImpExp>();
 	static Set<String> pluginExtractsIgnored = new HashSet<String>();
@@ -84,14 +89,39 @@ public class DependencyFinder {
 		if (eraseOld) {
 			Util.clearFolder(new File(pathToPluginDependencyAnalysisOutputLocation));
 		}
-		File[] pluginExtractEntries = pluginExtractDirectory.listFiles();
-		int entriesLength = pluginExtractEntries.length;
-		if (entriesLength < 2) {
 
-			Log.errln("XXXX  \n "
-					+ pluginExtractDirectory.getAbsolutePath()
-					+ "\n has has than 2 extracts, cannot compare.\n The location must have at least 2 extract files.  \nXXXX  ");
+		// the first order of business is to load the plugin map.
+		// the plugin map contains the plugin name to plugin id to plugin
+		// extract file name data.
+		String pathToPluginMap = pathToBasePluginExtractsDir + "/" + Constants.EXTRACT_FILE_PREFIX_PLUGINMAP
+				+ Constants.EXTRACT_FILE_NAME_PLUGINMAP + Constants.EXTRACT_FILE_EXTENSION_PLUGINMAP;
+		File pluginMapFile = new File(pathToPluginMap);
+		if (!Util.checkFile(pluginMapFile, true, true, true, false)) {
+			Log.errln("xxxx in buildPluginDependencySuperSet \\\n" + " NO PLUGIN MAP File found at: "
+					+ pluginExtractDirectory.getAbsolutePath() + "\n was expecting to find:" + pathToPluginMap
+					+ "  \n CANNOT CONTINUE with the Dependency Finding. \nxxxx");
+			return;
 		}
+
+		//  populating / loading the plugin map.
+		if (!populatePluginMap(pathToPluginMap)) {
+			Log.errln("xxxx in buildPluginDependencySuperSet \\\n" + "Error While Populating PluginMap"
+					+ "  \n CANNOT CONTINUE with the Dependency Finding. \nxxxx");
+			return;
+		}	
+
+		//  now doing the main work of findind dependencies.
+		
+		File[] pluginExtractEntries = pluginExtractDirectory.listFiles();
+
+		int entriesLength = pluginExtractEntries.length;
+		// if (entriesLength < 2) {
+		//
+		// Log.errln("XXXX  \n "
+		// + pluginExtractDirectory.getAbsolutePath()
+		// +
+		// "\n has has than 2 extracts, cannot compare.\n The location must have at least 2 extract files.  \nXXXX  ");
+		// }
 
 		long pluginExtractsDone = 0;
 
@@ -107,8 +137,13 @@ public class DependencyFinder {
 				 */
 				String thisPluginExtractName = pluginExtract.getName().trim();
 				
-				// ignoring the ones that are not plugin or other extracts
-				if(!thisPluginExtractName.endsWith(Constants.EXTRACT_FILE_EXTENSION_PLUGIN))
+				// ignoring the ones that are not plugin extracts
+				if(
+						!(
+								thisPluginExtractName.endsWith(Constants.EXTRACT_FILE_EXTENSION_PLUGIN)	&&
+									thisPluginExtractName.startsWith(Constants.EXTRACT_FILE_PREFIX_PLUGIN)
+						)
+				)
 					continue;
 				
 				int startingIndex = thisPluginExtractName.indexOf(Constants.EXTRACT_FILE_PREFIX_PLUGIN)
@@ -322,22 +357,6 @@ public class DependencyFinder {
 					Log.outln("#### PluginExtractsMerged = " + pluginExtractsDone + " of " + entriesLength + " ("
 							+ (pluginExtractsDone * 100 / entriesLength) + "%)");
 
-					//
-					// int functionsMemSize = functions.toString().length() /
-					// (1024 * 1024); int typesMemSize =
-					// types.toString().length() / (1024 * 1024); int
-					// pluginsMemSize = (plugins.toString().length() +
-					// po.toString().length()) / (1024 * 1024);
-					//
-					// Log.outln("## functions \tobjectSize\t= " +
-					// functionsMemSize + "MB");
-					// Log.outln("## types \t\tobjectSize\t= " + typesMemSize +
-					// "MB"); Log.outln("## plugins \tobjectSize\t= " +
-					// pluginsMemSize + "MB");
-					// Log.outln("## TOTAL 3 \tobjectSize\t= " +
-					// (functionsMemSize + typesMemSize + pluginsMemSize) +
-					// "MB");
-					//
 					Log.outln("## time (merging) so far \t= " + Util.getFormattedTime(System.currentTimeMillis() - time1));
 				}
 
@@ -362,6 +381,9 @@ public class DependencyFinder {
 			PluginObject pluginObj = entry.getValue();
 			Log.outln("== plugin  " + counter + " : " + pluginObj.name);
 			for (String imp : pluginObj.imports) {
+				
+				if(0=="org.eclipse.jface.wizard.IWizardPage org.eclipse.mylyn.internal.commons.ui.team.wizards.NewRepositoryWizardSelectionPage.getNextPage ()".compareToIgnoreCase(imp))
+					System.out.println("$$$$$$$$$$");
 				Set<Set<String>> exporterPluginSets = new LinkedHashSet<Set<String>>();
 				// if the alsoConsiderInvokationSatisfactionProxies flag
 				// parameter is true, then build a set of all invokations to be
@@ -418,16 +440,39 @@ public class DependencyFinder {
 				+ pathToBasePluginExtractsDir + "  time: " + Util.getFormattedTime(time2 - time1));
 
 	}
+
+	/**
+	 * @param pathToPluginMapFile
+	 * @return
+	 */
+	private static boolean populatePluginMap(String pathToPluginMapFile) {
+		try {
+			ObjectInputStream ois;
+
+			ois = new ObjectInputStream(new FileInputStream(pathToPluginMapFile));
+
+			pluginMap = (Map<String, Map<String, Set<String>>>) ois.readObject();
+
+			ois.close();
+		} catch (Exception e) {
+			Log.errln(Util.getStackTrace(e));
+			return false;
+		}
+		return true;
+
+	}
+	
+	
 	private static Set<Set<String>> fetchExporters(    String imp, Set<String> importEntryProxies, String ownerPluginName) {
 
 		Set<Set<String>> result = new LinkedHashSet<Set<String>>();
 
 		//  		first see if the import can be satisfied on its own
 		//  this is required as there might be some interface implementations that may  satisfy the invokation indirectly.
-		Set<Set<String>> interimResult= new  HashSet<Set<String>>();
+		Set<Set<String>> interimResult= new  LinkedHashSet<Set<String>>();
 		 interimResult = fetchExporters(imp);
 		 if (null!=interimResult&&interimResult.size() > 0)
-			 result=interimResult;
+			 result.addAll(interimResult);
 		 else
 		 {
 		

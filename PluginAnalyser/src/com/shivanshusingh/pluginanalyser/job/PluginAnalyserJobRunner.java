@@ -187,6 +187,7 @@ public class PluginAnalyserJobRunner {
 			String outputLocation = "./" + currOutpurDir + "/_OUTPUT";
 			String pathToJavaClasses="/Users/singhsk/Developer/java_classes";
 			boolean eraseOldExtrcats = true;
+		
 			AnalysisRunner.analyseAndRecord(destinationDirectory, outputLocation, pathToJavaClasses, eraseOldExtrcats);
 
 			// //////////////////////////////////////////////////////

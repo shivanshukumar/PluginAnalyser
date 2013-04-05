@@ -37,7 +37,7 @@ import org.apache.ivy.osgi.util.Version;
  */
 public class BundleInfo {
 
-    public static final Version DEFAULT_VERSION = new Version(1, 0, 0, null);
+    //public static final Version DEFAULT_VERSION = new Version(1, 0, 0, null);
 
     public static final String PACKAGE_TYPE = "package";
 
@@ -112,7 +112,9 @@ public class BundleInfo {
     }
 
     public Version getVersion() {
-        return version == null ? DEFAULT_VERSION : version;
+//        return version == null ? DEFAULT_VERSION : version;
+        return version ;
+
     }
 
     public Version getRawVersion() {
@@ -206,8 +208,9 @@ public class BundleInfo {
         result = prime * result + ((requirements == null) ? 0 : requirements.hashCode());
         result = prime * result + ((symbolicName == null) ? 0 : symbolicName.hashCode());
         result = prime * result + ((version == null) ? 0 : version.hashCode());
-        result = prime * result
-                + ((executionEnvironments == null) ? 0 : executionEnvironments.hashCode());
+        result = prime * result + ((executionEnvironments == null) ? 0 : executionEnvironments.hashCode());
+        result = prime * result + ((classpathEntries == null) ? 0 : classpathEntries.hashCode());
+        
         return result;
     }
 

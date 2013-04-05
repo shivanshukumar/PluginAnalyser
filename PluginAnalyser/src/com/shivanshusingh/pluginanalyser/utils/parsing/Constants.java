@@ -1,7 +1,5 @@
 package com.shivanshusingh.pluginanalyser.utils.parsing;
 
-import java.util.Collection;
-import java.util.HashSet;
 
 /**
  * 
@@ -22,11 +20,17 @@ public interface Constants {
 	public static final String BUNDLE_IGNORE 											= MARKER_ADDON + "IGNORE BUNDLE COZ MANIFEST(OR SOME PROPERTY OF IT) MALFORMED " 							+ MARKER_ADDON;
 	public static final String BUNDLE_IMPORTS 											= MARKER_ADDON + "Bundle Package Imports"  				  +  MARKER_ADDON ;
 	public static final String BUNDLE_PLUGIN_XML 										= MARKER_ADDON + "Bundle Plugin.xml"  					  +  MARKER_ADDON ;
+	public static final String BUNDLE_PROPERTY_VALUE_UNKNOWN							= "UNKNOWN";
+	
 	public static final String BUNDLE_REQUIREMENTS 										= MARKER_ADDON + "Bundle Requirements"  				  +  MARKER_ADDON ;
 	public static final String BUNDLE_REQUIRES 											= MARKER_ADDON + "Bundle Other BUNDLE Imports"  			+ MARKER_ADDON ;
 	public static final String BUNDLE_SYMBOLICNAME 										= MARKER_ADDON + "Symbolic Name"  						  +  MARKER_ADDON ;
 	public static final String BUNDLE_VERSION 											= MARKER_ADDON + "Version"  							  +  MARKER_ADDON ;
 	public static final String BUNDLE_VERSION_WITHOUT_QUALIFIER 						= MARKER_ADDON + "Version without qualifier"  			  +  MARKER_ADDON ;
+
+	public static final String BUNDLE_SYMBOLICNAME_UNKNOWN 										= BUNDLE_PROPERTY_VALUE_UNKNOWN		 ;
+	public static final String BUNDLE_VERSION_UNKNOWN_WITHOUT_QUALIFIER 				=  BUNDLE_PROPERTY_VALUE_UNKNOWN + "." + BUNDLE_PROPERTY_VALUE_UNKNOWN + "." + BUNDLE_PROPERTY_VALUE_UNKNOWN;
+	public static final String BUNDLE_VERSION_UNKNOWN 									=  BUNDLE_VERSION_UNKNOWN_WITHOUT_QUALIFIER  + "." + BUNDLE_PROPERTY_VALUE_UNKNOWN;
 
 	public static final String DELIM_PLUGIN_DEPENDENCY_ELEMENT_SET  					= "####";
 	public static final String DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE 				= " => ";
@@ -38,10 +42,15 @@ public interface Constants {
 
 	public static final String EXTRACT_FILE_EXTENSION_FEATURE							= ".extr";
 	public static final String EXTRACT_FILE_EXTENSION_PLUGIN 							= ".extr";
+	public static final String EXTRACT_FILE_EXTENSION_PLUGINMAP 						= ".obj";
+	public static final String EXTRACT_FILE_NAME_JAVA_CLASSES_PLATFORM 					= "java-classes-platform";
+	public static final String EXTRACT_FILE_NAME_PLUGINMAP 								= "PLUGIN-MAP-OBJECT";
 	public static final String EXTRACT_FILE_PREFIX_FEATURE 								= "EXTRACT-FEATURE-";
 	public static final String EXTRACT_FILE_PREFIX_PLUGIN 								= "EXTRACT-PLUGIN-";
+	public static final String EXTRACT_FILE_PREFIX_PLUGINMAP 							= "EXTRACT-PLUGINMAP-";
+	public static final String EXTENSION_TXT 											= ".txt";
 	
-	public static final String JAVA_LANG_OBJECT 									  	=   "java.lang.Object" ;
+	public static final String JAVA_LANG_OBJECT 									  	= "java.lang.Object" ;
 	
 	public static final String JAR_FILE_EXTENSION 										= ".jar";
 	
@@ -77,7 +86,10 @@ public interface Constants {
 	public static final String PLUGIN_DEPENDENCY_IMPORTERS_UNSATISFIED  				= MARKER_ADDON + "Importers  UnSatisfied " 					+ MARKER_ADDON;
 	public static final String PLUGIN_DEPENDENCY_SATISFYING_PLUGINS_SETS 				= MARKER_ADDON + "Satisfying Plugins SETS"					+ MARKER_ADDON;
 	
-//	public static final HashSet<String> JAVA_LANG_OBJECT_FUNCTIONS =  {
+	
+	
+	
+	//	public static final HashSet<String> JAVA_LANG_OBJECT_FUNCTIONS =  {
 //		
 //		""
 //	};

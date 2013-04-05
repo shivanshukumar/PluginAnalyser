@@ -247,9 +247,6 @@ public class DependencyVisitor extends ClassVisitor {
 		// mine - adding to MyClasses
 		String myFullyQualifiedClassName = Type.getObjectType(name).getClassName();
 		
-		if(0=="scala.collection.mutable.Set".compareToIgnoreCase(myFullyQualifiedClassName)  )
-				System.out.println("$$$$$$$$$$$$$$$$$$$$$$");
-		
 		allMyClasses.add(myFullyQualifiedClassName);
 		// mine- adding to public classes and no other.
 		if ((access & Opcodes.ACC_PUBLIC) != 0)

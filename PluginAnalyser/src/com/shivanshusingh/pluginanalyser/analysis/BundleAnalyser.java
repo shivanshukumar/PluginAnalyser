@@ -4,18 +4,20 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.ObjectOutputStream;
 import java.text.ParseException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -23,14 +25,13 @@ import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 import java.util.jar.Manifest;
 
-//import org.apache.ivy.osgi.core.ManifestParser;
 import org.objectweb.asm.ClassReader;
 
 import com.shivanshusingh.pluginanalyser.utils.Util;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
 import com.shivanshusingh.pluginanalyser.utils.parsing.Constants;
 import com.shivanshusingh.pluginanalyser.utils.parsing.ParsingUtil;
-import com.sun.xml.internal.messaging.saaj.util.ParseUtil;
+//import org.apache.ivy.osgi.core.ManifestParser;
 
 /**
  * Analyzes the plugin / bundles.
@@ -41,6 +42,12 @@ import com.sun.xml.internal.messaging.saaj.util.ParseUtil;
 public class BundleAnalyser extends ManifestParser {
 
 	private static long internalFileCounter = 0;
+	
+	// Map for: Pluin Name (symbolic name) =>
+	// pluginId(symbolicname[version.qualifier]) => plugin extract file names
+	// set..
+	private static Map<String, Map<String, Set<String>>> pluginMap = new HashMap<String, Map<String, Set<String>>>();
+	private static long UNKNOWN_SYMBOLIC_NAME_Counter = 0;
 
 	/**
 	 * @param pluginFolderPath
@@ -110,6 +117,9 @@ public class BundleAnalyser extends ManifestParser {
 				// Log.outln("Directory " + listOfFiles[i].getName());
 			}
 		}
+		//writing the plugin map to disk.
+		writePluginMap(Constants.EXTRACT_FILE_NAME_PLUGINMAP, outputLocation);
+		
 		long l2 = System.currentTimeMillis();
 		Log.outln(pluginAnalysedCounter + " plugin have been analyzed");
 		Log.errln(pluginAnalysedCounter + " plugin have been analyzed");
@@ -220,7 +230,7 @@ public class BundleAnalyser extends ManifestParser {
 			BundleInfo dummyBundleInfo = new BundleInfo();
 			extractDependenciesAndExportsFromJavaPlatform(v, javaPlatformClassesFolder);
 
-			writeJavaPlatformClassesData(v, dummyBundleInfo, "java-classes-platform", outputLocation);
+			writeJavaPlatformClassesData(v, dummyBundleInfo, Constants.EXTRACT_FILE_NAME_JAVA_CLASSES_PLATFORM, outputLocation);
 			long l2 = System.currentTimeMillis();
 
 			Log.errln("==== analysed:  \n " + javaPlatformClassesFolder.getAbsolutePath() + "\n time: "
@@ -808,10 +818,10 @@ public class BundleAnalyser extends ManifestParser {
 		if (pluginFileName.endsWith(Constants.JAR_FILE_EXTENSION))
 			pluginFileName = pluginFileName.substring(0, pluginFileName.length() - Constants.JAR_FILE_EXTENSION.length());
 
-		outputLocation = (outputLocation + "/").trim().replaceAll("//", "/");
-
+		outputLocation = (outputLocation + "/").trim().replaceAll("//", "/").replaceAll("\\\\", "\\");
+		pluginFileName=pluginFileName.replace('/', '_').replace('\\', '_'); 
 		FileWriter fwriter = new FileWriter(outputLocation + Constants.EXTRACT_FILE_PREFIX_PLUGIN
-				+ pluginFileName.replace('/', '_') + Constants.EXTRACT_FILE_EXTENSION_PLUGIN);
+				+pluginFileName + Constants.EXTRACT_FILE_EXTENSION_PLUGIN);
 		BufferedWriter writer = new BufferedWriter(fwriter);
 
 		// ////////////////////////////////////////////////
@@ -1042,27 +1052,41 @@ public class BundleAnalyser extends ManifestParser {
 		}
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 		writer.write(Constants.BUNDLE_SYMBOLICNAME + "\n");
+		String symbolicName=Constants.BUNDLE_SYMBOLICNAME_UNKNOWN+"_"+UNKNOWN_SYMBOLIC_NAME_Counter++;
 		if (flag_bundleInfoExists) {
-			writer.write(null != bundleinfo.getSymbolicName() ? bundleinfo.getSymbolicName().toString() + "\n" : "");
+			symbolicName=((null != bundleinfo.getSymbolicName() && !"".equalsIgnoreCase(bundleinfo.getSymbolicName().trim() ) ) ? bundleinfo.getSymbolicName().toString().trim() : symbolicName);
 			// Log.outln("Symbolic Name = "+
 			// bundleinfo.getSymbolicName().toString());
 		}
+		writer.write(  symbolicName + "\n");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
+		
 		writer.write(Constants.BUNDLE_VERSION + "\n");
+		String bundleVersion=Constants.BUNDLE_VERSION_UNKNOWN;
 		if (flag_bundleInfoExists) {
-			writer.write(null != bundleinfo.getVersion() ? bundleinfo.getVersion().toString() + "\n" : "");
+			bundleVersion=((null != bundleinfo.getVersion() && !"".equalsIgnoreCase(bundleinfo.getVersion().toString().trim() )) ? bundleinfo.getVersion().toString().trim()  : bundleVersion);
 			// Log.outln("Version = " +
 			// bundleinfo.getVersion().toString());
 		}
+		writer.write( bundleVersion+ "\n");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
+
+		// adding the  plugin ID and extract file name to the plugin map.
+
+		addToPluginMap(pluginFileName, symbolicName, bundleVersion);
+			
+	
+		
 		writer.write(Constants.BUNDLE_VERSION_WITHOUT_QUALIFIER + "\n");
+		String bundleVersionWithoutQual=Constants.BUNDLE_VERSION_UNKNOWN_WITHOUT_QUALIFIER;
 		if (flag_bundleInfoExists) {
-			writer.write(null != bundleinfo.getVersion() ? bundleinfo.getVersion().withoutQualifier().toString() + "\n"
-					: "");
+			bundleVersionWithoutQual=((null != bundleinfo.getVersion() && !"".equalsIgnoreCase(bundleinfo.getVersion().toString().trim() )) ? bundleinfo.getVersion().withoutQualifier().toString().trim() : bundleVersionWithoutQual);
 			// Log.outln("Version without qualifier  = " +
 			// bundleinfo.getVersion().withoutQualifier().toString());
 		}
+		writer.write( bundleVersionWithoutQual+ "\n");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
+		
 		writer.write(Constants.BUNDLE_CLASSPATHENTRIES + "\n");
 		if (flag_bundleInfoExists) {
 			for (Object s : bundleinfo.getClasspathEntries())
@@ -1320,6 +1344,67 @@ public class BundleAnalyser extends ManifestParser {
 		fwriter.close();
 	}
 
+	/**
+	 * @param pluginFileName
+	 * @param bundleSymbolicName
+	 * @param bundleVersionWithQualifier
+	 */
+	private static void addToPluginMap(String pluginFileName, String bundleSymbolicName, String bundleVersionWithQualifier) {
+		// adding the  plugin ID and extract file name to the plugin map.
+		Map<String,Set<String>> interimPluginIdMap=new HashMap<String, Set<String>>();
+		if(pluginMap.containsKey(bundleSymbolicName))
+			interimPluginIdMap=pluginMap.get(bundleSymbolicName);
+		String pluginId=bundleSymbolicName+"["+bundleVersionWithQualifier+"]";
+		Set<String> interimPluginFileSet=new HashSet<String>();
+		if(interimPluginIdMap.containsKey(pluginId))
+			interimPluginFileSet=interimPluginIdMap.get(pluginId);
+		interimPluginFileSet.add(pluginFileName);
+		//adding back to the Map and outer map.
+		interimPluginIdMap.put(pluginId, interimPluginFileSet);
+		pluginMap.put(bundleSymbolicName, interimPluginIdMap);
+	}
+	
+	
+	/**
+	 * @param pluginMapFileName
+	 * @param outputLocation
+	 * @throws IOException
+	 */
+	private static void writePluginMap(String pluginMapFileName, String outputLocation)
+			throws IOException {
+
+		pluginMapFileName = pluginMapFileName.toLowerCase().trim().replace('/', '_').replace('\\', '_');
+		
+		outputLocation = (outputLocation + "/").trim().replaceAll("//", "/").replaceAll("\\\\", "\\");
+//		
+		
+		FileOutputStream fos = new FileOutputStream(outputLocation + Constants.EXTRACT_FILE_PREFIX_PLUGINMAP
+			+pluginMapFileName + Constants.EXTRACT_FILE_EXTENSION_PLUGINMAP);
+	
+		ObjectOutputStream oos = new ObjectOutputStream(fos);
+	    oos.writeObject(pluginMap);
+	    oos.close();
+	    fos.close();
+	    
+	    // writing a text version for debugging related use.
+		FileWriter fwriter = new FileWriter(outputLocation + Constants.EXTRACT_FILE_PREFIX_PLUGINMAP
+				+pluginMapFileName + Constants.EXTENSION_TXT);
+		BufferedWriter writer = new BufferedWriter(fwriter);
+
+		List<String> pluginNames=new ArrayList<String>(pluginMap.keySet());
+		Collections.sort(pluginNames);
+		for(String pluginName:pluginNames)
+		{
+			
+			String toWrite=pluginName+"="+pluginMap.get(pluginName).toString();
+			writer.write(toWrite+"\n");
+		}
+		
+		// writer.write("===================================================\n");
+		writer.close();
+		fwriter.close();
+	
+	}
 	private static void writeJavaPlatformClassesData(DependencyVisitor v, BundleInfo bundleinfo, String pluginFileName,
 			String outputLocation) throws IOException {
 
@@ -1327,10 +1412,10 @@ public class BundleAnalyser extends ManifestParser {
 		if (pluginFileName.endsWith(Constants.JAR_FILE_EXTENSION))
 			pluginFileName = pluginFileName.substring(0, pluginFileName.length() - Constants.JAR_FILE_EXTENSION.length());
 
-		outputLocation = (outputLocation + "/").trim().replaceAll("//", "/");
-
+		outputLocation = (outputLocation + "/").trim().replaceAll("//", "/").replaceAll("\\\\", "\\");
+		pluginFileName= pluginFileName.replace('/', '_').replace('\\', '_');
 		FileWriter fwriter = new FileWriter(outputLocation + Constants.EXTRACT_FILE_PREFIX_PLUGIN
-				+ pluginFileName.replace('/', '_') + Constants.EXTRACT_FILE_EXTENSION_PLUGIN);
+				+ pluginFileName + Constants.EXTRACT_FILE_EXTENSION_PLUGIN);
 		BufferedWriter writer = new BufferedWriter(fwriter);
 
 		// ////////////////////////////////////////////////
@@ -1487,28 +1572,44 @@ public class BundleAnalyser extends ManifestParser {
 			// bundleinfo.getImports().toString());
 		}
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
-		writer.write(Constants.BUNDLE_SYMBOLICNAME + "\n");
+		
+		String symbolicName=Constants.EXTRACT_FILE_NAME_JAVA_CLASSES_PLATFORM;
 		if (flag_bundleInfoExists) {
-			writer.write(null != bundleinfo.getSymbolicName() ? bundleinfo.getSymbolicName().toString() + "\n" : "");
+			symbolicName=((null != bundleinfo.getSymbolicName() && !"".equalsIgnoreCase(bundleinfo.getSymbolicName().trim() ) ) ? bundleinfo.getSymbolicName().toString().trim() : symbolicName);
 			// Log.outln("Symbolic Name = "+
 			// bundleinfo.getSymbolicName().toString());
 		}
+		writer.write(  symbolicName + "\n");
+	
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
+		
 		writer.write(Constants.BUNDLE_VERSION + "\n");
+		String bundleVersion=Constants.BUNDLE_VERSION_UNKNOWN;
 		if (flag_bundleInfoExists) {
-			writer.write(null != bundleinfo.getVersion() ? bundleinfo.getVersion().toString() + "\n" : "");
+			bundleVersion=((null != bundleinfo.getVersion() && !"".equalsIgnoreCase(bundleinfo.getVersion().toString().trim() )) ? bundleinfo.getVersion().toString().trim()  : bundleVersion);
 			// Log.outln("Version = " +
 			// bundleinfo.getVersion().toString());
 		}
+		writer.write( bundleVersion+ "\n");
+
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
+
+		// adding the  plugin ID and extract file name to the plugin map.
+
+		addToPluginMap(pluginFileName, symbolicName, bundleVersion);
+			
+	
+		
 		writer.write(Constants.BUNDLE_VERSION_WITHOUT_QUALIFIER + "\n");
+		String bundleVersionWithoutQual=Constants.BUNDLE_VERSION_UNKNOWN_WITHOUT_QUALIFIER;
 		if (flag_bundleInfoExists) {
-			writer.write(null != bundleinfo.getVersion() ? bundleinfo.getVersion().withoutQualifier().toString() + "\n"
-					: "");
+			bundleVersionWithoutQual=((null != bundleinfo.getVersion() && !"".equalsIgnoreCase(bundleinfo.getVersion().toString().trim() )) ? bundleinfo.getVersion().withoutQualifier().toString().trim() : bundleVersionWithoutQual);
 			// Log.outln("Version without qualifier  = " +
 			// bundleinfo.getVersion().withoutQualifier().toString());
 		}
-		writer.write(Constants.MARKER_TERMINATOR + "\n");
+		writer.write( bundleVersionWithoutQual+ "\n");
+		
+		
 		writer.write(Constants.BUNDLE_CLASSPATHENTRIES + "\n");
 		if (flag_bundleInfoExists) {
 			for (Object s : bundleinfo.getClasspathEntries())
