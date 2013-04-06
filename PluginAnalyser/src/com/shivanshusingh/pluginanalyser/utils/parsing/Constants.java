@@ -29,16 +29,21 @@ public interface Constants {
 	public static final String BUNDLE_VERSION_WITHOUT_QUALIFIER 						= MARKER_ADDON + "Version without qualifier"  			  +  MARKER_ADDON ;
 
 	public static final String BUNDLE_SYMBOLICNAME_UNKNOWN_LITERAL 						= BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL		 ;
-	public static final String BUNDLE_VERSION_UNKNOWN_WITHOUT_QUALIFIER_LITERAL 		=  BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL + "." + BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL + "." + BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL;
-	public static final String BUNDLE_VERSION_UNKNOWN_LITERAL 							=  BUNDLE_VERSION_UNKNOWN_WITHOUT_QUALIFIER_LITERAL  + "." + BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL;
+	public static final String BUNDLE_VERSION_UNKNOWN_WITHOUT_QUALIFIER_LITERAL 		= BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL + "." + BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL + "." + BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL;
+	public static final String BUNDLE_VERSION_UNKNOWN_LITERAL 							= BUNDLE_VERSION_UNKNOWN_WITHOUT_QUALIFIER_LITERAL  + "." + BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL;
 
+	public static final String DELIM_BUNDLE_VERSION_STRING_CLOSE 						= ">";
+	public static final String DELIM_BUNDLE_VERSION_STRING_OPEN 						= "<";
 	public static final String DELIM_PLUGIN_DEPENDENCY_ELEMENT_SET  					= "####";
 	public static final String DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE 				= " => ";
 
+	public static final String CONSTRAINTS_FILE_EXTENSION 								= ".fm";
+	public static final String CONSTRAINTS_FILE_NAME 									= "constraints";
+	public static final String CONSTRAINTS_FILE_PREFIX 									= "";
 	public static final String DEPENDENCY_SET_FILE_EXTENSION_PLUGIN 					= ".dpst";
 	public static final String DEPENDENCY_SET_FILE_PREFIX_PLUGIN 						= "DEPENDENCY-SET-PLUGIN-";
 	
-	public static final String EXCEPTION_MSG_EARLY_END_OF_A_PARAMETER = "Early end of a parameter";
+	public static final String EXCEPTION_MSG_EARLY_END_OF_A_PARAMETER 					= "Early end of a parameter";
 
 	public static final String EXTRACT_FILE_EXTENSION_FEATURE							= ".extr";
 	public static final String EXTRACT_FILE_EXTENSION_PLUGIN 							= ".extr";
@@ -55,12 +60,12 @@ public interface Constants {
 	public static final String JAR_FILE_EXTENSION 										= ".jar";
 	
 	public static final String PLUGIN_ALL_CLASS_PACKAGES 								= MARKER_ADDON + "All Class packages " 						+ MARKER_ADDON;
-	public static final String PLUGIN_ALL_INHERITANCE_AND_INTERFACE_PAIRS   			= MARKER_ADDON + "All Inheritance AND Interface Impl Pairs Super Set "					+ MARKER_ADDON;
+	public static final String PLUGIN_ALL_INHERITANCE_AND_INTERFACE_PAIRS   			= MARKER_ADDON + "All Inheritance AND Interface Impl Pairs Super Set "			+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_INHERITANCE_HIERARCHIES 						= MARKER_ADDON + "All Inheritance Hierarchies "  	  		+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_INHERITANCE_PAIRS 							= MARKER_ADDON + "All My Inheritance Pairs  "				+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_INTERFACE_IMPLEMENTATION_LISTS 				= MARKER_ADDON + "All Interfaces Implementation Lists "		+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_INTERFACE_IMPLEMENTATION_PAIRS 				= MARKER_ADDON + "All Interfaces Implementation Pairs "		+ MARKER_ADDON;
-	public static final String PLUGIN_ALL_INVOKATION_PROXY_PAIRS 						= MARKER_ADDON + "All Invokation Satisfaction Potential Proxy Pairs"		+ MARKER_ADDON;
+	public static final String PLUGIN_ALL_INVOKATION_PROXY_PAIRS 						= MARKER_ADDON + "All Invokation Satisfaction Potential Proxy Pairs"			+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_JAR_PACKAGES 									= MARKER_ADDON + "All Jar Packages" 						+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_MY_METHOD_CALLS 								= MARKER_ADDON + "All Invokations" 							+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_MY_METHOD_CALLS_EXTERNAL 						= MARKER_ADDON + "All External Invokations" 				+ MARKER_ADDON;

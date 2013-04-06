@@ -141,10 +141,10 @@ public class ParsingUtil {
 			Set<String> pluginVersionSet=restorePropertyFromExtract(pluginExtract,  Constants.BUNDLE_VERSION  );
 			for(String s: pluginSymbolicNameSet)
 				pluginId.append(s.trim());
-			pluginId.append("[");
+			pluginId.append(Constants.DELIM_BUNDLE_VERSION_STRING_OPEN);
 			for(String s: pluginVersionSet)
 				pluginId.append(s.trim());
-			pluginId.append("]");
+			pluginId.append(Constants.DELIM_BUNDLE_VERSION_STRING_CLOSE);
 		} catch (IOException e) {
 			pluginId=new StringBuffer();
 			e.printStackTrace();

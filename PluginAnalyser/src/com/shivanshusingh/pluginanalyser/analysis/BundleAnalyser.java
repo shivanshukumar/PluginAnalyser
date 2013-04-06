@@ -1354,7 +1354,7 @@ public class BundleAnalyser extends ManifestParser {
 		Map<String,Set<String>> interimPluginIdMap=new HashMap<String, Set<String>>();
 		if(pluginMap.containsKey(bundleSymbolicName))
 			interimPluginIdMap=pluginMap.get(bundleSymbolicName);
-		String pluginId=bundleSymbolicName+"["+bundleVersionWithQualifier+"]";
+		String pluginId=bundleSymbolicName+Constants.DELIM_BUNDLE_VERSION_STRING_OPEN+bundleVersionWithQualifier+Constants.DELIM_BUNDLE_VERSION_STRING_CLOSE;
 		Set<String> interimPluginFileSet=new HashSet<String>();
 		if(interimPluginIdMap.containsKey(pluginId))
 			interimPluginFileSet=interimPluginIdMap.get(pluginId);

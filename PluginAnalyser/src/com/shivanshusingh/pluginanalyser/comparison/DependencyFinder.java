@@ -6,9 +6,12 @@ import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.ObjectInputStream;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
@@ -630,42 +633,57 @@ public class DependencyFinder {
 		File functionFile = new File(pluginDependencySetOutputLocationPath + "/"
 				+ Constants.DEPENDENCY_SET_FILE_PREFIX_PLUGIN + "functions"
 				+ Constants.DEPENDENCY_SET_FILE_EXTENSION_PLUGIN);
-		File typeFile = new File(pluginDependencySetOutputLocationPath + "/" + Constants.DEPENDENCY_SET_FILE_PREFIX_PLUGIN
-				+ "types" + Constants.DEPENDENCY_SET_FILE_EXTENSION_PLUGIN);
-
+		File typeFile = new File(pluginDependencySetOutputLocationPath + "/" 
+				+ Constants.DEPENDENCY_SET_FILE_PREFIX_PLUGIN		+ "types" + 
+				Constants.DEPENDENCY_SET_FILE_EXTENSION_PLUGIN);
+		File constraintsFile=new File(pluginDependencySetOutputLocationPath + "/"
+				+ Constants.CONSTRAINTS_FILE_PREFIX + Constants.CONSTRAINTS_FILE_NAME
+				+ Constants.CONSTRAINTS_FILE_EXTENSION);
+		
 		// writing functions set.
 
 		FileWriter filewriter = new FileWriter(functionFile);
 		BufferedWriter writer = new BufferedWriter(filewriter);
 
+		
+		//  the writers for the constraints file.
+		FileWriter constraintsfilewriter = new FileWriter(constraintsFile);
+		BufferedWriter constraintsWriter = new BufferedWriter(constraintsfilewriter);
+		Set<String> constraintsSet=new HashSet<String>();
+		
 		writer.write(Constants.PLUGIN_DEPENDENCY_ALL_FUNCTIONS + "\n");
 		Log.outln(Constants.PLUGIN_DEPENDENCY_ALL_FUNCTIONS + "\n");
 
 		long counter = 0;
 		long functionsLength = functions.keySet().size();
-		for (String key : functions.keySet()) {
+		for (String funcSig : functions.keySet()) {
 
 			writer.write(Constants.DELIM_PLUGIN_DEPENDENCY_ELEMENT_SET + "\n");
 
 			// writing the function signature.
-			writer.write(key + "\n");
+			writer.write(funcSig + "\n");
 
-			ImpExp impexp = functions.get(key);
+			ImpExp impexp = functions.get(funcSig);
 
-			Set imp = impexp.getImp();
-			Set exp = impexp.getExp();
+			Set<String> imp = impexp.getImp();
+			Set<String> exp = impexp.getExp();
 
+			// building the importer part of the constraint expression
+			String constraintsImporters="";
+			if(null!=imp &&  1<=imp.size())
+				constraintsImporters=imp.toString().trim().replace(",", " ||").replace("[", "(").replace("]", ")")+" => ";
+			
 			// all importers
 			writer.write(Constants.PLUGIN_DEPENDENCY_IMPORTERS + "\n");
-			for (Object s : imp) {
-				writer.write((String) s + "\n");
+			for (String s : imp) {
+				writer.write( s + "\n");
 			}
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 			// all exporters
 			writer.write(Constants.PLUGIN_DEPENDENCY_EXPORTERS + "\n");
-			for (Object s : exp) {
-				writer.write((String) s + "\n");
+			for (String s : exp) {
+				writer.write( s + "\n");
 			}
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
@@ -678,7 +696,7 @@ public class DependencyFinder {
 
 			// add to the unmatchedFunctionImports Set.
 			if (0 == exp.size())
-				unmatchedFunctionImports.add(key);
+				unmatchedFunctionImports.add(funcSig);
 
 			// all exporters whose exports were not needed by anyone
 			writer.write(Constants.PLUGIN_DEPENDENCY_EXPORTERS_UNSATISFIED + "\n");
@@ -688,12 +706,30 @@ public class DependencyFinder {
 					+ "\n");
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
+			
+			
+			// building the exporters part of the constratint as well.
+			String constraintsExporters="";
+					
 			writer.write(Constants.PLUGIN_DEPENDENCY_SATISFYING_PLUGINS_SETS + "\n");
 			for (Set<String> s : impexp.satisfyingPluginsSets) {
 				writer.write(s + "\n");
+				
+				// collecting the exporters set
+				String ces=s.toString().trim().replace("[", "(").replace("]", ")").replace(",", " &&");
+				if(null!=ces&&1<=ces.trim().length())
+					constraintsExporters+=ces+" || ";
+				
 			}
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
-
+			
+			if(4<=constraintsExporters.length())
+				constraintsExporters=constraintsExporters.substring(0, constraintsExporters.length()-" || ".length());
+		
+			// collecting the constraint entry  to the constraintsSet.
+			if(1<=constraintsImporters.length  () && 1<=constraintsExporters.length  ()  )
+				constraintsSet.add(constraintsImporters+constraintsExporters+" // "+funcSig);
+			
 			// terminating the key ( function name )
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 			counter++;
@@ -701,6 +737,17 @@ public class DependencyFinder {
 				Log.outln("## functions written: " + counter + " of " + functionsLength + " ("
 						+ (counter * 100 / functionsLength) + "%)");
 		}
+		
+		
+		//  writing the constraints file.
+		List<String> constraintsSet_List=new ArrayList<String>(constraintsSet);
+		Collections.sort(constraintsSet_List);
+		for(String s:constraintsSet_List)
+			constraintsWriter.write(s+"\n");
+		constraintsWriter.close();
+		constraintsfilewriter.close();
+		
+		
 		writer.write(Constants.PLUGIN_DEPENDENCY_ALL_UNMATCHED_FUNCTION_IMPORTS + "\n");
 		Log.outln(Constants.PLUGIN_DEPENDENCY_ALL_UNMATCHED_FUNCTION_IMPORTS + "\n");
 		for (String s : unmatchedFunctionImports)
