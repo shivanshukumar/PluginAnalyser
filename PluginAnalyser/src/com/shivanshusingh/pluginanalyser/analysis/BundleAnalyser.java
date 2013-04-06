@@ -1043,7 +1043,7 @@ public class BundleAnalyser extends ManifestParser {
 			// bundleinfo.getImports().toString());
 		}
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
-		writer.write(Constants.BUNDLE_REQUIRES + "\n ");
+		writer.write(Constants.BUNDLE_OTHER_BUNDLE_IMPORTS + "\n ");
 		if (flag_bundleInfoExists) {
 			for (Object s : bundleinfo.getRequires())
 				writer.write(s.toString() + "\n");
@@ -1564,7 +1564,7 @@ public class BundleAnalyser extends ManifestParser {
 			// bundleinfo.getImports().toString());
 		}
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
-		writer.write(Constants.BUNDLE_REQUIRES + "\n ");
+		writer.write(Constants.BUNDLE_OTHER_BUNDLE_IMPORTS + "\n ");
 		if (flag_bundleInfoExists) {
 			for (Object s : bundleinfo.getRequires())
 				writer.write(s.toString() + "\n");

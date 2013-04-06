@@ -23,7 +23,7 @@ public interface Constants {
 	public static final String BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL					= "PA~!UNKNOWN";
 	
 	public static final String BUNDLE_REQUIREMENTS 										= MARKER_ADDON + "Bundle Requirements"  				  +  MARKER_ADDON ;
-	public static final String BUNDLE_REQUIRES 											= MARKER_ADDON + "Bundle Other BUNDLE Imports"  			+ MARKER_ADDON ;
+	public static final String BUNDLE_OTHER_BUNDLE_IMPORTS 											= MARKER_ADDON + "Bundle Other BUNDLE Imports"  			+ MARKER_ADDON ;
 	public static final String BUNDLE_SYMBOLICNAME 										= MARKER_ADDON + "Symbolic Name"  						  +  MARKER_ADDON ;
 	public static final String BUNDLE_VERSION 											= MARKER_ADDON + "Version"  							  +  MARKER_ADDON ;
 	public static final String BUNDLE_VERSION_WITHOUT_QUALIFIER 						= MARKER_ADDON + "Version without qualifier"  			  +  MARKER_ADDON ;
@@ -37,9 +37,13 @@ public interface Constants {
 	public static final String DELIM_PLUGIN_DEPENDENCY_ELEMENT_SET  					= "####";
 	public static final String DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE 				= " => ";
 
-	public static final String CONSTRAINTS_FILE_EXTENSION 								= ".fm";
-	public static final String CONSTRAINTS_FILE_NAME 									= "constraints";
-	public static final String CONSTRAINTS_FILE_PREFIX 									= "";
+	public static final String FM_CONSTRAINTS_FILE_EXTENSION 							= ".fm";
+	public static final String FM_CONSTRAINTS_FILE_NAME 								= "constraints";
+	public static final String FM_CONSTRAINTS_FILE_PREFIX 								= "";
+	public static final String FM_PLUGIN_DEPENDENCIES_FILE_PREFIX 						= "";
+	public static final String FM_PLUGIN_DEPENDENCIES_FILE_NAME 						= "dependencies";
+	public static final String FM_PLUGIN_DEPENDENCIES_FILE_EXTENSION 					= ".fm";
+	
 	public static final String DEPENDENCY_SET_FILE_EXTENSION_PLUGIN 					= ".dpst";
 	public static final String DEPENDENCY_SET_FILE_PREFIX_PLUGIN 						= "DEPENDENCY-SET-PLUGIN-";
 	

@@ -37,8 +37,8 @@ public class PluginAnalyserJobRunner {
 		String mirrorSiteDesinationName =
 //		 "new_site2_____";
 //		 "new_site3_____";
-		"__WorkingEclipseSite_features_and_plugins__";
-//		 "_plugin_sandbox";
+//		"__WorkingEclipseSite_features_and_plugins__";
+		 "_plugin_sandbox";
 //		 "eclipse_juno_p2_mirror_site";
 		// + Util.getCurrentTimeString();
 
@@ -203,9 +203,10 @@ public class PluginAnalyserJobRunner {
 			boolean considerBundleExportsOnly = false;
 			boolean ignoreBundlesMarkedToBeIgnored = false;
 			boolean considerInvokationSatisfactionProxies = true;
-			DependencyFinder.buildPluginDependencySuperSet(pluginExtractsLocation, pluginextractAnalysisDestLocation,
+			boolean ignoreVersionInFeatureModelGeneration = true;
+			DependencyFinder.buildPluginDependencyReports(pluginExtractsLocation, pluginextractAnalysisDestLocation,
 					considerBundleExportsOnly, ignoreBundlesMarkedToBeIgnored, considerInvokationSatisfactionProxies,
-					eraseoldDependenctSetExtrcats);
+					eraseoldDependenctSetExtrcats, ignoreVersionInFeatureModelGeneration);
 			 ///////////////////////////////////////////////////////////////////////////////////////////////
 			long time2 = System.currentTimeMillis();
 			Log.outln("Current Job for site configuration at  :  " + destinationDirectory + "  time: "

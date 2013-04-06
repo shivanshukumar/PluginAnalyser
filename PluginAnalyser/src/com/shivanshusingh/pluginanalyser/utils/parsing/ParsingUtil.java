@@ -93,18 +93,23 @@ public class ParsingUtil {
 	}
 
 	/**
-	 * get the bundle property name from a bundle property entry by stripping any version or other information
+	 * get the bundle property name from a bundle property entry by stripping any version or other information e.g. (optional).
+	 * If the filterOptionals flag is set to  false, the entry stripped of version but including the "(optional)" keywork is returned.
 	 * 
 	 * @param bundleEntry
+	 * @param filterOptional true if any existing "(optional)" keyword should be removed from the name being returned. it is included if this is set to false.
 	 * @return
 	 */
-	public static String getBundlePropertyNameFromBundleEntry(String bundleEntry) {
+	public static String getBundlePropertyNameFromBundleEntry(String bundleEntry, boolean filterOptional) {
 		// getting the class / package name from the
 		// bundle export entry.
 		// getting split on ";" first.
-		bundleEntry = bundleEntry.split(";")[0].trim();
-		bundleEntry = bundleEntry.split(Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL)[0].trim();
-		return bundleEntry;
+		String newEntry="";
+		 newEntry = bundleEntry.split(";")[0].trim();
+		newEntry = newEntry.replace(Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL,"").trim();
+		if(!filterOptional&& bundleEntry.contains(Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL))
+			bundleEntry+=" "+Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL;
+		return newEntry;
 	}
 
 	/**

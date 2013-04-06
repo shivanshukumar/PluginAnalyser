@@ -27,20 +27,28 @@ import com.shivanshusingh.pluginanalyser.utils.parsing.ParsingUtil;
  */
 public class DependencyFinder {
 
-	// Map for:  Pluin Name (symbolic name) => pluginId(symbolicname[version.qualifier]) => plugin extract file names set.. 
-	private static   Map<String,Map<String,Set<String>>> pluginMap = new HashMap<String, Map<String,Set<String>>>(); 
-
-	static Map<String, ImpExp> functions = new HashMap<String, ImpExp>();
-	static Set<String> pluginExtractsIgnored = new HashSet<String>();
-	static Map<String, ImpExp> types = new HashMap<String, ImpExp>();
-
+	// Map for: Plugin Name (symbolic name) => pluginId(symbolicname[version.qualifier]) => plugin extract file names set..
+	private static Map<String, Map<String, Set<String>>> pluginMap = new HashMap<String, Map<String, Set<String>>>();
 	// sets of plugins
 	static Map<String, PluginObject> plugins = new HashMap<String, PluginObject>();
 
+	private	static Map<String, ImpExp> functions = new HashMap<String, ImpExp>();
+	private static Map<String, ImpExp> types = new HashMap<String, ImpExp>();
+
+	private static Set<String> pluginExtractsIgnored = new HashSet<String>();
+	
+	// a set to collect the feature model (inter plugin dependencies)
+	private static Set<String> pluginDependenciesFM = new HashSet<String>();
+
 	/**
 	 * 
-	 * this function build the superset of dependencies from the extract files
-	 * to finally figure out what dependencies were unstated or missing.
+	 * this function build the reports of dependencies from the extract files to
+	 * finally figure out what dependencies were unstated or missing. The
+	 * following things get emitted : dependency report for function
+	 * invokations, another one for types, feature model of inter plugin
+	 * dependencies (dependencies.fm) and a constraints file (constraints.fm)
+	 * for invokation impoter plugin sets implying exporter plugin set
+	 * combinations.
 	 * 
 	 * @param pathToBasePluginExtractsDir
 	 * @param pathToPluginDependencyAnalysisOutputLocation
@@ -60,11 +68,15 @@ public class DependencyFinder {
 	 *            when building the dependency set and checking if any of those
 	 *            can in turn satisfy some original invokation.
 	 * @param eraseOld
+	 * @param ignoreVersionsInFeatureModelGeneration
+	 *            true if bundle version information must be ignored when
+	 *            generating the feature models and constraint files. false
+	 *            otherwise.
 	 * @throws IOException
 	 */
-	public static void buildPluginDependencySuperSet(String pathToBasePluginExtractsDir,
+	public static void buildPluginDependencyReports(String pathToBasePluginExtractsDir,
 			String pathToPluginDependencyAnalysisOutputLocation, boolean considerBundleExportersOnly,
-			boolean ignoreBundlesMarkedToBeIgnored, boolean alsoConsiderInvokationSatisfactionProxies, boolean eraseOld)
+			boolean ignoreBundlesMarkedToBeIgnored, boolean alsoConsiderInvokationSatisfactionProxies, boolean eraseOld, boolean ignoreVersionsInFeatureModelGeneration)
 			throws IOException {
 
 		Log.outln("==== Now Building the  Plugin Dependency  Set from source: " + pathToBasePluginExtractsDir
@@ -118,14 +130,10 @@ public class DependencyFinder {
 		File[] pluginExtractEntries = pluginExtractDirectory.listFiles();
 
 		int entriesLength = pluginExtractEntries.length;
-		// if (entriesLength < 2) {
-		//
-		// Log.errln("XXXX  \n "
-		// + pluginExtractDirectory.getAbsolutePath()
-		// +
-		// "\n has has than 2 extracts, cannot compare.\n The location must have at least 2 extract files.  \nXXXX  ");
-		// }
-
+		
+		
+		
+		
 		long pluginExtractsDone = 0;
 
 		for (File pluginExtract : pluginExtractEntries) {
@@ -170,6 +178,8 @@ public class DependencyFinder {
 					bundleExports = ParsingUtil.restorePropertyFromExtract(pluginExtract, Constants.BUNDLE_EXPORTS);
 				}
 
+				Set<String> myOtherBundleDependencies = ParsingUtil.restorePropertyFromExtract(pluginExtract,
+						Constants.BUNDLE_OTHER_BUNDLE_IMPORTS);
 				Set<String> myMethodExports = ParsingUtil.restorePropertyFromExtract(pluginExtract,
 						Constants.PLUGIN_ALL_MY_METHODS_PUBLIC);
 				Set<String> myMethodImports = ParsingUtil.restorePropertyFromExtract(pluginExtract,
@@ -182,6 +192,24 @@ public class DependencyFinder {
 						Constants.PLUGIN_ALL_INHERITANCE_AND_INTERFACE_PAIRS);
 				Set<String> myInvokationProxyPairs = ParsingUtil.restorePropertyFromExtract(pluginExtract,
 						Constants.PLUGIN_ALL_INVOKATION_PROXY_PAIRS);
+
+				
+				//  building the  pluginDependenciesFM Set
+				
+				for(String otherPluginName:myOtherBundleDependencies)
+				{
+					otherPluginName = ParsingUtil.getBundlePropertyNameFromBundleEntry(otherPluginName, false);
+					if(null!=otherPluginName&&!"".equalsIgnoreCase(otherPluginName.trim()))
+					{
+						// check if this is optional. If yes this will not be included.
+						if(!otherPluginName.contains(Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL))
+						{
+							String	pluginDepFMEntry=thisPluginId.trim()+" => "+otherPluginName.trim();
+							pluginDepFMEntry=pluginDepFMEntry.replaceAll("<(.*?)>", "");
+							pluginDependenciesFM.add(pluginDepFMEntry);
+						}
+					}
+				}
 
 				// //////////////////////////////////////////
 				// building DependencyFinder.plugins object
@@ -250,7 +278,7 @@ public class DependencyFinder {
 								bundleExport = bundleExport.trim();
 								if (1 <= bundleExport.length()) {
 
-									bundleExport = ParsingUtil.getBundlePropertyNameFromBundleEntry(bundleExport);
+									bundleExport = ParsingUtil.getBundlePropertyNameFromBundleEntry(bundleExport, true);
 									if (1 < bundleExport.length()) {
 										// Log.outln("******** Checking if "+funcWithoutReturnType+" starts with "+a.trim()
 										// +
@@ -307,7 +335,7 @@ public class DependencyFinder {
 								bundleExport = bundleExport.trim();
 								if (1 <= bundleExport.length()) {
 
-									bundleExport = ParsingUtil.getBundlePropertyNameFromBundleEntry(bundleExport);
+									bundleExport = ParsingUtil.getBundlePropertyNameFromBundleEntry(bundleExport, true);
 									if (1 < bundleExport.length()) {
 
 										if (myTypeExport.startsWith(bundleExport.trim() + ".")) {
@@ -372,8 +400,6 @@ public class DependencyFinder {
 			Log.outln("== plugin  " + counter + " : " + pluginObj.name);
 			for (String imp : pluginObj.imports) {
 				
-				if(0=="org.eclipse.jface.wizard.IWizardPage org.eclipse.mylyn.internal.commons.ui.team.wizards.NewRepositoryWizardSelectionPage.getNextPage ()".compareToIgnoreCase(imp))
-					System.out.println("$$$$$$$$$$");
 				Set<Set<String>> exporterPluginSets = new LinkedHashSet<Set<String>>();
 				// if the alsoConsiderInvokationSatisfactionProxies flag
 				// parameter is true, then build a set of all invokations to be
@@ -421,7 +447,7 @@ public class DependencyFinder {
 		}
 
 		// write out the merged file
-		writeData(pathToPluginDependencyAnalysisOutputLocation);
+		writeData(pathToPluginDependencyAnalysisOutputLocation, ignoreVersionsInFeatureModelGeneration);
 
 		long time2 = System.currentTimeMillis();
 		Log.outln("Dependency Set Creation for " + entriesLength + " plugin extracts, at plugin extract src  :  "
@@ -619,7 +645,7 @@ public class DependencyFinder {
 		return result;
 	}
 
-	private static void writeData(String pluginDependencySetOutputLocationPath) throws IOException {
+	private static void writeData(String pluginDependencySetOutputLocationPath, boolean ignoreVersionsInFeatureModelGeneration) throws IOException {
 
 		Set<String> unmatchedFunctionImports = new LinkedHashSet<String>();
 		Set<String> unmatchedTypeImports = new LinkedHashSet<String>();
@@ -636,9 +662,29 @@ public class DependencyFinder {
 		File typeFile = new File(pluginDependencySetOutputLocationPath + "/" 
 				+ Constants.DEPENDENCY_SET_FILE_PREFIX_PLUGIN		+ "types" + 
 				Constants.DEPENDENCY_SET_FILE_EXTENSION_PLUGIN);
-		File constraintsFile=new File(pluginDependencySetOutputLocationPath + "/"
-				+ Constants.CONSTRAINTS_FILE_PREFIX + Constants.CONSTRAINTS_FILE_NAME
-				+ Constants.CONSTRAINTS_FILE_EXTENSION);
+		File constraintsFMFile=new File(pluginDependencySetOutputLocationPath + "/"
+				+ Constants.FM_CONSTRAINTS_FILE_PREFIX + Constants.FM_CONSTRAINTS_FILE_NAME
+				+ Constants.FM_CONSTRAINTS_FILE_EXTENSION);
+		File pluginDependenciesFMFile=new File(pluginDependencySetOutputLocationPath + "/"
+				+ Constants.FM_PLUGIN_DEPENDENCIES_FILE_PREFIX + Constants.FM_PLUGIN_DEPENDENCIES_FILE_NAME
+				+ Constants.FM_PLUGIN_DEPENDENCIES_FILE_EXTENSION);
+		
+		//writing out the pluginDependenciesFM
+		
+		FileWriter pluginDepFMfilewriter = new FileWriter(pluginDependenciesFMFile);
+		BufferedWriter pluginDepFMWriter = new BufferedWriter(pluginDepFMfilewriter);
+		
+		List<String> pluginDepFM_List=new ArrayList<String>(pluginDependenciesFM);
+		Collections.sort(pluginDepFM_List);
+		for(String s:pluginDepFM_List)
+		{
+			pluginDepFMWriter.write(s.replace(".", "_").replace("-", "_")+"\n");
+			
+		}
+		pluginDepFMWriter.close();
+		pluginDepFMfilewriter.close();
+		
+		
 		
 		// writing functions set.
 
@@ -647,9 +693,9 @@ public class DependencyFinder {
 
 		
 		//  the writers for the constraints file.
-		FileWriter constraintsfilewriter = new FileWriter(constraintsFile);
-		BufferedWriter constraintsWriter = new BufferedWriter(constraintsfilewriter);
-		Set<String> constraintsSet=new HashSet<String>();
+		FileWriter constraintsFMfilewriter = new FileWriter(constraintsFMFile);
+		BufferedWriter constraintsFMWriter = new BufferedWriter(constraintsFMfilewriter);
+		Set<String> constraintsFM=new HashSet<String>();
 		
 		writer.write(Constants.PLUGIN_DEPENDENCY_ALL_FUNCTIONS + "\n");
 		Log.outln(Constants.PLUGIN_DEPENDENCY_ALL_FUNCTIONS + "\n");
@@ -728,7 +774,12 @@ public class DependencyFinder {
 		
 			// collecting the constraint entry  to the constraintsSet.
 			if(1<=constraintsImporters.length  () && 1<=constraintsExporters.length  ()  )
-				constraintsSet.add(constraintsImporters+constraintsExporters+" // "+funcSig);
+			{
+				String constraint=constraintsImporters+constraintsExporters;
+				if(ignoreVersionsInFeatureModelGeneration)
+					constraint=(constraint).replaceAll("<(.*?)>", "");
+				constraintsFM.add(constraint+" // "+funcSig);
+			}
 			
 			// terminating the key ( function name )
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
@@ -740,12 +791,12 @@ public class DependencyFinder {
 		
 		
 		//  writing the constraints file.
-		List<String> constraintsSet_List=new ArrayList<String>(constraintsSet);
+		List<String> constraintsSet_List=new ArrayList<String>(constraintsFM);
 		Collections.sort(constraintsSet_List);
 		for(String s:constraintsSet_List)
-			constraintsWriter.write(s+"\n");
-		constraintsWriter.close();
-		constraintsfilewriter.close();
+			constraintsFMWriter.write(s.replace(".", "_").replace("-", "_")+"\n");
+		constraintsFMWriter.close();
+		constraintsFMfilewriter.close();
 		
 		
 		writer.write(Constants.PLUGIN_DEPENDENCY_ALL_UNMATCHED_FUNCTION_IMPORTS + "\n");
@@ -790,8 +841,8 @@ public class DependencyFinder {
 
 			ImpExp impexp = types.get(key);
 
-			Set imp = impexp.getImp();
-			Set exp = impexp.getExp();
+			Set<String> imp = impexp.getImp();
+			Set<String> exp = impexp.getExp();
 
 			// all importers
 			writer.write(Constants.PLUGIN_DEPENDENCY_IMPORTERS + "\n");
