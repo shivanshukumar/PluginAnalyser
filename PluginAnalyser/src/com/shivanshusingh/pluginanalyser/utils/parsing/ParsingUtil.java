@@ -93,24 +93,61 @@ public class ParsingUtil {
 	}
 
 	/**
-	 * get the bundle property name from a bundle property entry by stripping any version or other information e.g. (optional).
-	 * If the filterOptionals flag is set to  false, the entry stripped of version but including the "(optional)" keywork is returned.
+	 * get the bundle property name from a bundle  dependency  property entry by stripping any version or other information e.g. (optional).
+	 * If the filterOptionals flag is set to  false, the entry stripped of version but including the "(optional)" keyword is returned.
 	 * 
-	 * @param bundleEntry
-	 * @param filterOptional true if any existing "(optional)" keyword should be removed from the name being returned. it is included if this is set to false.
+	 * @param bundleDependencyEntry
+	 * @param removeVersionInfo true if any existing version information (version or version range) should be stripped from the result being returned.
+	 * @param removeOptionalIndicator true if any existing "(optional)" keyword should be removed from the name being returned. it is included if this is set to false.
 	 * @return
 	 */
-	public static String getBundlePropertyNameFromBundleEntry(String bundleEntry, boolean filterOptional) {
+	public static String getNameFromBundleDependencyEntry(String bundleDependencyEntry, boolean removeVersionInfo, boolean removeOptionalIndicator) {
 		// getting the class / package name from the
 		// bundle export entry.
 		// getting split on ";" first.
 		String newEntry="";
-		 newEntry = bundleEntry.split(";")[0].trim();
+		if(removeVersionInfo)
+			newEntry = bundleDependencyEntry.split(";")[0].trim();
 		newEntry = newEntry.replace(Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL,"").trim();
-		if(!filterOptional&& bundleEntry.contains(Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL))
-			bundleEntry+=" "+Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL;
+		if(!removeOptionalIndicator&& bundleDependencyEntry.toLowerCase().contains(Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL))
+			bundleDependencyEntry+=" "+Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL;
 		return newEntry;
 	}
+	
+	/**
+	 * get the bundle property version string from a bundle dependency property entry by stripping any version or other information e.g. (optional).
+	 * If the filterOptionals flag is set to  false, the entry stripped of version but including the "(optional)" keyword is returned.
+	 * 
+	 * @param bundleDependencyEntry
+	 * @return
+	 */
+	public static String getVersionStringFromDependencyEntry(String bundleDependencyEntry) {
+		// getting the version from the
+		// bundle export entry.
+		// getting split on ";" first.
+		String newEntry="";
+		String  [] splits=bundleDependencyEntry.split(";");
+		if(null!=splits && 2<=splits.length)
+		{
+			
+			//this means that there is some version information present.
+			newEntry =    splits [1].trim().replace(Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL,"");
+		}
+		return newEntry;
+	}
+	
+	/**
+	 * return if the bundle Dependency Entry is marked as optional, false otherwise. 
+	 * @param bundleDependencyEntry
+	 * @return
+	 */
+	public static boolean isOptional_BundleDependencyEntry(String bundleDependencyEntry) {
+		// getting the version from the
+		// bundle export entry.
+		// getting split on ";" first.
+		return bundleDependencyEntry.toLowerCase().contains(Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL);
+	}
+
 
 	/**
 	 * return 1 is the input is a function entry , 2 in case of a type entry and

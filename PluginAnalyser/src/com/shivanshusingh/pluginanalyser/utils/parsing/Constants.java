@@ -20,10 +20,10 @@ public interface Constants {
 	public static final String BUNDLE_IGNORE 											= MARKER_ADDON + "IGNORE BUNDLE COZ MANIFEST(OR SOME PROPERTY OF IT) MALFORMED " 							+ MARKER_ADDON;
 	public static final String BUNDLE_IMPORTS 											= MARKER_ADDON + "Bundle Package Imports"  				  +  MARKER_ADDON ;
 	public static final String BUNDLE_PLUGIN_XML 										= MARKER_ADDON + "Bundle Plugin.xml"  					  +  MARKER_ADDON ;
-	public static final String BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL					= "PA~!UNKNOWN";
+	public static final String BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL					= "PAUNKNOWN";
 	
 	public static final String BUNDLE_REQUIREMENTS 										= MARKER_ADDON + "Bundle Requirements"  				  +  MARKER_ADDON ;
-	public static final String BUNDLE_OTHER_BUNDLE_IMPORTS 											= MARKER_ADDON + "Bundle Other BUNDLE Imports"  			+ MARKER_ADDON ;
+	public static final String BUNDLE_OTHER_BUNDLE_IMPORTS 								= MARKER_ADDON + "Bundle Other BUNDLE Imports"  			+ MARKER_ADDON ;
 	public static final String BUNDLE_SYMBOLICNAME 										= MARKER_ADDON + "Symbolic Name"  						  +  MARKER_ADDON ;
 	public static final String BUNDLE_VERSION 											= MARKER_ADDON + "Version"  							  +  MARKER_ADDON ;
 	public static final String BUNDLE_VERSION_WITHOUT_QUALIFIER 						= MARKER_ADDON + "Version without qualifier"  			  +  MARKER_ADDON ;
@@ -32,8 +32,8 @@ public interface Constants {
 	public static final String BUNDLE_VERSION_UNKNOWN_WITHOUT_QUALIFIER_LITERAL 		= BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL + "." + BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL + "." + BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL;
 	public static final String BUNDLE_VERSION_UNKNOWN_LITERAL 							= BUNDLE_VERSION_UNKNOWN_WITHOUT_QUALIFIER_LITERAL  + "." + BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL;
 
-	public static final String DELIM_BUNDLE_VERSION_STRING_CLOSE 						= ">";
-	public static final String DELIM_BUNDLE_VERSION_STRING_OPEN 						= "<";
+	public static final String DELIM_BUNDLE_VERSION_STRING_CLOSE 						= "%>";
+	public static final String DELIM_BUNDLE_VERSION_STRING_OPEN 						= "<%";
 	public static final String DELIM_PLUGIN_DEPENDENCY_ELEMENT_SET  					= "####";
 	public static final String DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE 				= " => ";
 
@@ -52,7 +52,7 @@ public interface Constants {
 	public static final String EXTRACT_FILE_EXTENSION_FEATURE							= ".extr";
 	public static final String EXTRACT_FILE_EXTENSION_PLUGIN 							= ".extr";
 	public static final String EXTRACT_FILE_EXTENSION_PLUGINMAP 						= ".obj";
-	public static final String EXTRACT_FILE_NAME_JAVA_CLASSES_PLATFORM 					= "java-classes-platform";
+	public static final String EXTRACT_FILE_NAME_JAVA_CLASSES_PLATFORM 					= "java.classes.platform";
 	public static final String EXTRACT_FILE_NAME_PLUGINMAP 								= "PLUGIN-MAP-OBJECT";
 	public static final String EXTRACT_FILE_PREFIX_FEATURE 								= "EXTRACT-FEATURE-";
 	public static final String EXTRACT_FILE_PREFIX_PLUGIN 								= "EXTRACT-PLUGIN-";

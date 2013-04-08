@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.ObjectInputStream;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -15,6 +16,14 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
+
+import com.shivanshusingh.pluginanalyser.internal.osgihelper.util.VersionRange;
+import org.apache.ivy.osgi.util.Version;
+
+//import org.osgi.framework.Version;
+
+//import com.shivanshusingh.pluginanalyser.internal.org.eclipse.osgi.service.resolver.VersionRange;
+
 
 import com.shivanshusingh.pluginanalyser.utils.Util;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
@@ -193,22 +202,61 @@ public class DependencyFinder {
 				Set<String> myInvokationProxyPairs = ParsingUtil.restorePropertyFromExtract(pluginExtract,
 						Constants.PLUGIN_ALL_INVOKATION_PROXY_PAIRS);
 
-				
+
 				//  building the  pluginDependenciesFM Set
-				
-				for(String otherPluginName:myOtherBundleDependencies)
+
+				for(String otherPluginDepEntry:myOtherBundleDependencies)
 				{
-					otherPluginName = ParsingUtil.getBundlePropertyNameFromBundleEntry(otherPluginName, false);
-					if(null!=otherPluginName&&!"".equalsIgnoreCase(otherPluginName.trim()))
-					{
+					String otherPluginName = ParsingUtil.getNameFromBundleDependencyEntry(otherPluginDepEntry, true, false);
+					if(null!=otherPluginName  &&  !"".equalsIgnoreCase(otherPluginName.trim()))
+					{// this means that there is some name to it.
+						otherPluginName=otherPluginName.trim();
+
 						// check if this is optional. If yes this will not be included.
 						if(!otherPluginName.contains(Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL))
 						{
-							String	pluginDepFMEntry=thisPluginId.trim()+" => "+otherPluginName.trim();
-							pluginDepFMEntry=pluginDepFMEntry.replaceAll("<(.*?)>", "");
-							pluginDependenciesFM.add(pluginDepFMEntry);
-						}
+							if(!ignoreVersionsInFeatureModelGeneration)
+							{
+								// now doing the check for whether there exists some bundle that falls in the version range specified by the otherPluginDepEntry.
+								String versionRangeStr=ParsingUtil.getVersionStringFromDependencyEntry(otherPluginDepEntry);
+								
+								
+								try {	
+									VersionRange 	versionRange = new VersionRange(versionRangeStr);
+
+
+									// 	now getting all Plugin IDs for the plugin name of the dependency entry from the pluginmap.
+									if(pluginMap.containsKey(otherPluginName))
+									{
+										Set<String> candidatePluginIds=pluginMap.get(otherPluginName).keySet();
+										for(String candidatePluginId:candidatePluginIds)
+										{
+											String candidatePluginVersionStr=parsePluginIdForVersion(candidatePluginId);
+											Version candidateVersion = new Version(candidatePluginVersionStr);
+											if(versionRange.contains(candidateVersion)) //versionRange.includes(candidateVersion))
+											{
+
+												String	pluginDepFMEntry=thisPluginId.trim()+" => "+candidatePluginId.trim();
+
+												pluginDependenciesFM.add(pluginDepFMEntry);
+											}
+										}
+									}
+
+								} catch (ParseException e) {
+									// TODO Auto-generated catch block
+									e.printStackTrace();
+								}
+							}
+							else
+							{
+								// not considering the version ranges at all, so skipping the check of whether a plugin exists in the sepcified range.
+								String	pluginDepFMEntry=thisPluginId.trim()+" => "+otherPluginName.trim();
+								pluginDepFMEntry=pluginDepFMEntry.replaceAll("<(.*?)>", "");
+								pluginDependenciesFM.add(pluginDepFMEntry);
+							}
 					}
+				}
 				}
 
 				// //////////////////////////////////////////
@@ -278,7 +326,7 @@ public class DependencyFinder {
 								bundleExport = bundleExport.trim();
 								if (1 <= bundleExport.length()) {
 
-									bundleExport = ParsingUtil.getBundlePropertyNameFromBundleEntry(bundleExport, true);
+									bundleExport = ParsingUtil.getNameFromBundleDependencyEntry(bundleExport, true, true);
 									if (1 < bundleExport.length()) {
 										// Log.outln("******** Checking if "+funcWithoutReturnType+" starts with "+a.trim()
 										// +
@@ -335,7 +383,7 @@ public class DependencyFinder {
 								bundleExport = bundleExport.trim();
 								if (1 <= bundleExport.length()) {
 
-									bundleExport = ParsingUtil.getBundlePropertyNameFromBundleEntry(bundleExport, true);
+									bundleExport = ParsingUtil.getNameFromBundleDependencyEntry(bundleExport, true, true);
 									if (1 < bundleExport.length()) {
 
 										if (myTypeExport.startsWith(bundleExport.trim() + ".")) {
@@ -455,6 +503,28 @@ public class DependencyFinder {
 		Log.errln("Dependency Set Creation for " + entriesLength + " plugin extracts, at plugin extract src  :  "
 				+ pathToBasePluginExtractsDir + "  time: " + Util.getFormattedTime(time2 - time1));
 
+	}
+
+	/**
+	 * parses the pluginId got from the plugin Map to return the version
+	 * information. e.g. pluginA<version.a.b.qual> will return version.a.b.qual
+	 * an empty string is returned if there is no version information available.
+	 * 
+	 * @param candidatePluginId
+	 */
+	private static String parsePluginIdForVersion(String candidatePluginId) {
+		String version = "";
+		String[] splits = candidatePluginId.split(Constants.DELIM_BUNDLE_VERSION_STRING_OPEN);
+		if (null != splits && 2 <= splits.length) {// this means that there was
+													// some version information,
+													// else there is no version
+													// information.
+			version = splits[1];
+			version = version.replace(Constants.DELIM_BUNDLE_VERSION_STRING_OPEN, "")
+					.replace(Constants.DELIM_BUNDLE_VERSION_STRING_CLOSE, "").trim();
+		}
+
+		return version;
 	}
 
 	/**
@@ -634,7 +704,7 @@ public class DependencyFinder {
 
 		// getting the list of plugin names that export this type.
 		if (types.containsKey(classname)) {
-			Set allPluginExporters = types.get(classname).getExp();
+			Set<String> allPluginExporters = types.get(classname).getExp();
 			for (Object pluginName : allPluginExporters) {
 				// getting the PluginObjects for all the plugin names obtained.
 				PluginObject pobj = plugins.get((String) pluginName);
@@ -678,8 +748,7 @@ public class DependencyFinder {
 		Collections.sort(pluginDepFM_List);
 		for(String s:pluginDepFM_List)
 		{
-			pluginDepFMWriter.write(s.replace(".", "_").replace("-", "_")+"\n");
-			
+			pluginDepFMWriter.write(s.replace(".", "_").replace("-", "_").replace(Constants.DELIM_BUNDLE_VERSION_STRING_OPEN, "__").replace(Constants.DELIM_BUNDLE_VERSION_STRING_CLOSE, "__")+"\n");
 		}
 		pluginDepFMWriter.close();
 		pluginDepFMfilewriter.close();
@@ -794,7 +863,7 @@ public class DependencyFinder {
 		List<String> constraintsSet_List=new ArrayList<String>(constraintsFM);
 		Collections.sort(constraintsSet_List);
 		for(String s:constraintsSet_List)
-			constraintsFMWriter.write(s.replace(".", "_").replace("-", "_")+"\n");
+			constraintsFMWriter.write(s.replace(".", "_").replace("-", "_").replace(Constants.DELIM_BUNDLE_VERSION_STRING_OPEN, "__").replace(Constants.DELIM_BUNDLE_VERSION_STRING_CLOSE, "__")+"\n");
 		constraintsFMWriter.close();
 		constraintsFMfilewriter.close();
 		

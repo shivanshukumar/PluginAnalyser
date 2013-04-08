@@ -38,7 +38,8 @@ public class PluginAnalyserJobRunner {
 //		 "new_site2_____";
 //		 "new_site3_____";
 //		"__WorkingEclipseSite_features_and_plugins__";
-		 "_plugin_sandbox";
+//		 "_plugin_sandbox";
+				"_Base_Eclipse_TestingVersion";
 //		 "eclipse_juno_p2_mirror_site";
 		// + Util.getCurrentTimeString();
 
@@ -188,7 +189,7 @@ public class PluginAnalyserJobRunner {
 			String pathToJavaClasses="/Users/singhsk/Developer/java_classes";
 			boolean eraseOldExtracts = true;
 		
-			AnalysisRunner.analyseAndRecord(destinationDirectory, outputLocation, pathToJavaClasses, eraseOldExtracts);
+//			AnalysisRunner.analyseAndRecord(destinationDirectory, outputLocation, pathToJavaClasses, eraseOldExtracts);
 
 			// //////////////////////////////////////////////////////
 			// the dependency finder.
@@ -203,7 +204,7 @@ public class PluginAnalyserJobRunner {
 			boolean considerBundleExportsOnly = false;
 			boolean ignoreBundlesMarkedToBeIgnored = false;
 			boolean considerInvokationSatisfactionProxies = true;
-			boolean ignoreVersionInFeatureModelGeneration = true;
+			boolean ignoreVersionInFeatureModelGeneration = false;
 			DependencyFinder.buildPluginDependencyReports(pluginExtractsLocation, pluginextractAnalysisDestLocation,
 					considerBundleExportsOnly, ignoreBundlesMarkedToBeIgnored, considerInvokationSatisfactionProxies,
 					eraseoldDependenctSetExtrcats, ignoreVersionInFeatureModelGeneration);

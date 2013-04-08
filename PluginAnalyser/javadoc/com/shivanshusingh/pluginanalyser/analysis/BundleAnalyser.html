@@ -93,7 +93,7 @@ com.shivanshusingh.pluginanalyser.analysis</FONT>
 Class BundleAnalyser</H2>
 <PRE>
 java.lang.Object
-  <IMG SRC="../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../com/shivanshusingh/pluginanalyser/analysis/ManifestParser.html" title="class in com.shivanshusingh.pluginanalyser.analysis">com.shivanshusingh.pluginanalyser.analysis.ManifestParser</A>
+  <IMG SRC="../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../com/shivanshusingh/pluginanalyser/analysis/ManifestParser.html" title="class in com.shivanshusingh.pluginanalyser.analysis">com.shivanshusingh.pluginanalyser.internal.osgihelper.util.ManifestParser</A>
       <IMG SRC="../../../../resources/inherit.gif" ALT="extended by "><B>com.shivanshusingh.pluginanalyser.analysis.BundleAnalyser</B>
 </PRE>
 <HR>
@@ -198,7 +198,7 @@ Analyzes the plugin / bundles.
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>private static&nbsp;void</CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../com/shivanshusingh/pluginanalyser/analysis/BundleAnalyser.html#extractDependenciesAndExportsFromDir(com.shivanshusingh.pluginanalyser.analysis.DependencyVisitor, com.shivanshusingh.pluginanalyser.analysis.BundleInfo, java.io.File)">extractDependenciesAndExportsFromDir</A></B>(<A HREF="../../../../com/shivanshusingh/pluginanalyser/analysis/DependencyVisitor.html" title="class in com.shivanshusingh.pluginanalyser.analysis">DependencyVisitor</A>&nbsp;visitor,
+<TD><CODE><B><A HREF="../../../../com/shivanshusingh/pluginanalyser/analysis/BundleAnalyser.html#extractDependenciesAndExportsFromDir(com.shivanshusingh.pluginanalyser.analysis.DependencyVisitor, com.shivanshusingh.pluginanalyser.internal.osgihelper.util.BundleInfo, java.io.File)">extractDependenciesAndExportsFromDir</A></B>(<A HREF="../../../../com/shivanshusingh/pluginanalyser/analysis/DependencyVisitor.html" title="class in com.shivanshusingh.pluginanalyser.analysis">DependencyVisitor</A>&nbsp;visitor,
                                      <A HREF="../../../../com/shivanshusingh/pluginanalyser/analysis/BundleInfo.html" title="class in com.shivanshusingh.pluginanalyser.analysis">BundleInfo</A>&nbsp;bundleInformation,
                                      java.io.File&nbsp;folder)</CODE>
 
@@ -208,7 +208,7 @@ Analyzes the plugin / bundles.
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>private static&nbsp;void</CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../com/shivanshusingh/pluginanalyser/analysis/BundleAnalyser.html#extractDependenciesAndExportsFromJar(com.shivanshusingh.pluginanalyser.analysis.DependencyVisitor, com.shivanshusingh.pluginanalyser.analysis.BundleInfo, java.util.jar.JarFile)">extractDependenciesAndExportsFromJar</A></B>(<A HREF="../../../../com/shivanshusingh/pluginanalyser/analysis/DependencyVisitor.html" title="class in com.shivanshusingh.pluginanalyser.analysis">DependencyVisitor</A>&nbsp;visitor,
+<TD><CODE><B><A HREF="../../../../com/shivanshusingh/pluginanalyser/analysis/BundleAnalyser.html#extractDependenciesAndExportsFromJar(com.shivanshusingh.pluginanalyser.analysis.DependencyVisitor, com.shivanshusingh.pluginanalyser.internal.osgihelper.util.BundleInfo, java.util.jar.JarFile)">extractDependenciesAndExportsFromJar</A></B>(<A HREF="../../../../com/shivanshusingh/pluginanalyser/analysis/DependencyVisitor.html" title="class in com.shivanshusingh.pluginanalyser.analysis">DependencyVisitor</A>&nbsp;visitor,
                                      <A HREF="../../../../com/shivanshusingh/pluginanalyser/analysis/BundleInfo.html" title="class in com.shivanshusingh.pluginanalyser.analysis">BundleInfo</A>&nbsp;bundleInformation,
                                      java.util.jar.JarFile&nbsp;jarfileinstance)</CODE>
 
@@ -289,7 +289,7 @@ Analyzes the plugin / bundles.
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>private static&nbsp;void</CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../com/shivanshusingh/pluginanalyser/analysis/BundleAnalyser.html#writeData(com.shivanshusingh.pluginanalyser.analysis.DependencyVisitor, com.shivanshusingh.pluginanalyser.analysis.BundleInfo, java.lang.String, java.lang.String)">writeData</A></B>(<A HREF="../../../../com/shivanshusingh/pluginanalyser/analysis/DependencyVisitor.html" title="class in com.shivanshusingh.pluginanalyser.analysis">DependencyVisitor</A>&nbsp;v,
+<TD><CODE><B><A HREF="../../../../com/shivanshusingh/pluginanalyser/analysis/BundleAnalyser.html#writeData(com.shivanshusingh.pluginanalyser.analysis.DependencyVisitor, com.shivanshusingh.pluginanalyser.internal.osgihelper.util.BundleInfo, java.lang.String, java.lang.String)">writeData</A></B>(<A HREF="../../../../com/shivanshusingh/pluginanalyser/analysis/DependencyVisitor.html" title="class in com.shivanshusingh.pluginanalyser.analysis">DependencyVisitor</A>&nbsp;v,
           <A HREF="../../../../com/shivanshusingh/pluginanalyser/analysis/BundleInfo.html" title="class in com.shivanshusingh.pluginanalyser.analysis">BundleInfo</A>&nbsp;bundleinfo,
           java.lang.String&nbsp;pluginFileName,
           java.lang.String&nbsp;outputLocation)</CODE>
@@ -300,7 +300,7 @@ Analyzes the plugin / bundles.
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>private static&nbsp;void</CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../com/shivanshusingh/pluginanalyser/analysis/BundleAnalyser.html#writeJavaPlatformClassesData(com.shivanshusingh.pluginanalyser.analysis.DependencyVisitor, com.shivanshusingh.pluginanalyser.analysis.BundleInfo, java.lang.String, java.lang.String)">writeJavaPlatformClassesData</A></B>(<A HREF="../../../../com/shivanshusingh/pluginanalyser/analysis/DependencyVisitor.html" title="class in com.shivanshusingh.pluginanalyser.analysis">DependencyVisitor</A>&nbsp;v,
+<TD><CODE><B><A HREF="../../../../com/shivanshusingh/pluginanalyser/analysis/BundleAnalyser.html#writeJavaPlatformClassesData(com.shivanshusingh.pluginanalyser.analysis.DependencyVisitor, com.shivanshusingh.pluginanalyser.internal.osgihelper.util.BundleInfo, java.lang.String, java.lang.String)">writeJavaPlatformClassesData</A></B>(<A HREF="../../../../com/shivanshusingh/pluginanalyser/analysis/DependencyVisitor.html" title="class in com.shivanshusingh.pluginanalyser.analysis">DependencyVisitor</A>&nbsp;v,
                              <A HREF="../../../../com/shivanshusingh/pluginanalyser/analysis/BundleInfo.html" title="class in com.shivanshusingh.pluginanalyser.analysis">BundleInfo</A>&nbsp;bundleinfo,
                              java.lang.String&nbsp;pluginFileName,
                              java.lang.String&nbsp;outputLocation)</CODE>
@@ -438,7 +438,7 @@ private static void <B>buildJavaPlatformClassesExtract</B>(java.lang.String&nbsp
 </DL>
 <HR>
 
-<A NAME="extractDependenciesAndExportsFromDir(com.shivanshusingh.pluginanalyser.analysis.DependencyVisitor, com.shivanshusingh.pluginanalyser.analysis.BundleInfo, java.io.File)"><!-- --></A><H3>
+<A NAME="extractDependenciesAndExportsFromDir(com.shivanshusingh.pluginanalyser.analysis.DependencyVisitor, com.shivanshusingh.pluginanalyser.internal.osgihelper.util.BundleInfo, java.io.File)"><!-- --></A><H3>
 extractDependenciesAndExportsFromDir</H3>
 <PRE>
 private static void <B>extractDependenciesAndExportsFromDir</B>(<A HREF="../../../../com/shivanshusingh/pluginanalyser/analysis/DependencyVisitor.html" title="class in com.shivanshusingh.pluginanalyser.analysis">DependencyVisitor</A>&nbsp;visitor,
@@ -454,7 +454,7 @@ private static void <B>extractDependenciesAndExportsFromDir</B>(<A HREF="../../.
 </DL>
 <HR>
 
-<A NAME="extractDependenciesAndExportsFromJar(com.shivanshusingh.pluginanalyser.analysis.DependencyVisitor, com.shivanshusingh.pluginanalyser.analysis.BundleInfo, java.util.jar.JarFile)"><!-- --></A><H3>
+<A NAME="extractDependenciesAndExportsFromJar(com.shivanshusingh.pluginanalyser.analysis.DependencyVisitor, com.shivanshusingh.pluginanalyser.internal.osgihelper.util.BundleInfo, java.util.jar.JarFile)"><!-- --></A><H3>
 extractDependenciesAndExportsFromJar</H3>
 <PRE>
 private static void <B>extractDependenciesAndExportsFromJar</B>(<A HREF="../../../../com/shivanshusingh/pluginanalyser/analysis/DependencyVisitor.html" title="class in com.shivanshusingh.pluginanalyser.analysis">DependencyVisitor</A>&nbsp;visitor,
@@ -580,7 +580,7 @@ private static java.lang.StringBuffer <B>getInheritanceHeirarchy</B>(java.lang.S
 </DL>
 <HR>
 
-<A NAME="writeData(com.shivanshusingh.pluginanalyser.analysis.DependencyVisitor, com.shivanshusingh.pluginanalyser.analysis.BundleInfo, java.lang.String, java.lang.String)"><!-- --></A><H3>
+<A NAME="writeData(com.shivanshusingh.pluginanalyser.analysis.DependencyVisitor, com.shivanshusingh.pluginanalyser.internal.osgihelper.util.BundleInfo, java.lang.String, java.lang.String)"><!-- --></A><H3>
 writeData</H3>
 <PRE>
 private static void <B>writeData</B>(<A HREF="../../../../com/shivanshusingh/pluginanalyser/analysis/DependencyVisitor.html" title="class in com.shivanshusingh.pluginanalyser.analysis">DependencyVisitor</A>&nbsp;v,
@@ -597,7 +597,7 @@ private static void <B>writeData</B>(<A HREF="../../../../com/shivanshusingh/plu
 </DL>
 <HR>
 
-<A NAME="writeJavaPlatformClassesData(com.shivanshusingh.pluginanalyser.analysis.DependencyVisitor, com.shivanshusingh.pluginanalyser.analysis.BundleInfo, java.lang.String, java.lang.String)"><!-- --></A><H3>
+<A NAME="writeJavaPlatformClassesData(com.shivanshusingh.pluginanalyser.analysis.DependencyVisitor, com.shivanshusingh.pluginanalyser.internal.osgihelper.util.BundleInfo, java.lang.String, java.lang.String)"><!-- --></A><H3>
 writeJavaPlatformClassesData</H3>
 <PRE>
 private static void <B>writeJavaPlatformClassesData</B>(<A HREF="../../../../com/shivanshusingh/pluginanalyser/analysis/DependencyVisitor.html" title="class in com.shivanshusingh.pluginanalyser.analysis">DependencyVisitor</A>&nbsp;v,

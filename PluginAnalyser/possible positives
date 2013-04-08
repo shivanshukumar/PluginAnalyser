@@ -1,0 +1,27 @@
+possible positives
+
+
+org.apache.xmlbeans.XmlCursor org.apache.xmlbeans.XmlObject.newCursor ()
+==Importers ==
+org.mozilla.javascript_1.7.2.v201005080400
+----
+==Exporters ==
+----
+==Importers  UnSatisfied ==
+true, 1 importer(s) hungry 
+----
+==Exporters  UnSatisfied ==
+false, 1 importer(s) hungry 
+----
+==Satisfying Plugins SETS==
+----
+
+
+
+
+
+
+
+
+
+

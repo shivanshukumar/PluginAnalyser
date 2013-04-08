@@ -1,4 +1,4 @@
-package com.shivanshusingh.pluginanalyser.analysis;
+package com.shivanshusingh.pluginanalyser.internal.osgihelper.util;
 
 import java.util.HashSet;
 import java.util.Set;
