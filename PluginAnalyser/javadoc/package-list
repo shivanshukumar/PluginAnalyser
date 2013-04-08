@@ -3,6 +3,7 @@ com.shivanshusingh.pluginanalyser.comparison
 com.shivanshusingh.pluginanalyser.eclipse.marketplace
 com.shivanshusingh.pluginanalyser.eclipse.marketplace.crawling
 com.shivanshusingh.pluginanalyser.eclipse.marketplace.parsing
+com.shivanshusingh.pluginanalyser.internal.osgihelper.util
 com.shivanshusingh.pluginanalyser.job
 com.shivanshusingh.pluginanalyser.staging
 com.shivanshusingh.pluginanalyser.staging.crawling
