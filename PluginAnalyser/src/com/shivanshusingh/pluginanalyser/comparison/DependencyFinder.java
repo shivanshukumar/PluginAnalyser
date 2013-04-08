@@ -233,7 +233,7 @@ public class DependencyFinder {
 										{
 											String candidatePluginVersionStr=parsePluginIdForVersion(candidatePluginId);
 											Version candidateVersion = new Version(candidatePluginVersionStr);
-											if(versionRange.contains(candidateVersion)) //versionRange.includes(candidateVersion))
+											if(versionRange.containsQualified(candidateVersion)) //versionRange.includes(candidateVersion))
 											{
 
 												String	pluginDepFMEntry=thisPluginId.trim()+" => "+candidatePluginId.trim();
