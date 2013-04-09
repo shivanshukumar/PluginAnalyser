@@ -764,7 +764,7 @@ public class DependencyFinder {
 		//  the writers for the constraints file.
 		FileWriter constraintsFMfilewriter = new FileWriter(constraintsFMFile);
 		BufferedWriter constraintsFMWriter = new BufferedWriter(constraintsFMfilewriter);
-		Set<String> constraintsFM=new HashSet<String>();
+		Map<String, Set<String>> constraintsFM=new HashMap<String,Set<String>>();
 		
 		writer.write(Constants.PLUGIN_DEPENDENCY_ALL_FUNCTIONS + "\n");
 		Log.outln(Constants.PLUGIN_DEPENDENCY_ALL_FUNCTIONS + "\n");
@@ -786,7 +786,7 @@ public class DependencyFinder {
 			// building the importer part of the constraint expression
 			String constraintsImporters="";
 			if(null!=imp &&  1<=imp.size())
-				constraintsImporters=imp.toString().trim().replace(",", " ||").replace("[", "(").replace("]", ")")+" => ";
+				constraintsImporters=imp.toString().trim().replace(", ", " || "+Constants.CONFIG_).replace("[", "("+Constants.CONFIG_).replace("]", ")")+" => ";
 			
 			// all importers
 			writer.write(Constants.PLUGIN_DEPENDENCY_IMPORTERS + "\n");
@@ -831,7 +831,7 @@ public class DependencyFinder {
 				writer.write(s + "\n");
 				
 				// collecting the exporters set
-				String ces=s.toString().trim().replace("[", "(").replace("]", ")").replace(",", " &&");
+				String ces=s.toString().trim().replace("[", "("+Constants.CONFIG_).replace("]", ")").replace(", ", " && "+Constants.CONFIG_);
 				if(null!=ces&&1<=ces.trim().length())
 					constraintsExporters+=ces+" || ";
 				
@@ -847,7 +847,11 @@ public class DependencyFinder {
 				String constraint=constraintsImporters+constraintsExporters;
 				if(ignoreVersionsInFeatureModelGeneration)
 					constraint=(constraint).replaceAll("<(.*?)>", "");
-				constraintsFM.add(constraint+" // "+funcSig);
+				Set<String> funcs= new HashSet<String>();
+				if(constraintsFM.containsKey(constraint))
+					funcs=constraintsFM.get(constraint);
+				funcs.add(" // "+funcSig);
+				constraintsFM.put(constraint, funcs);
 			}
 			
 			// terminating the key ( function name )
@@ -860,10 +864,14 @@ public class DependencyFinder {
 		
 		
 		//  writing the constraints file.
-		List<String> constraintsSet_List=new ArrayList<String>(constraintsFM);
+		List<String> constraintsSet_List=new ArrayList<String>(constraintsFM.keySet());
 		Collections.sort(constraintsSet_List);
 		for(String s:constraintsSet_List)
+		{
+			for(String f:constraintsFM.get(s))
+				s+=f;
 			constraintsFMWriter.write(s.replace(".", "_").replace("-", "_").replace(Constants.DELIM_BUNDLE_VERSION_STRING_OPEN, "__").replace(Constants.DELIM_BUNDLE_VERSION_STRING_CLOSE, "__")+"\n");
+		}
 		constraintsFMWriter.close();
 		constraintsFMfilewriter.close();
 		
@@ -915,15 +923,15 @@ public class DependencyFinder {
 
 			// all importers
 			writer.write(Constants.PLUGIN_DEPENDENCY_IMPORTERS + "\n");
-			for (Object s : imp) {
-				writer.write((String) s + "\n");
+			for (String s : imp) {
+				writer.write(s + "\n");
 			}
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 			// all exporters
 			writer.write(Constants.PLUGIN_DEPENDENCY_EXPORTERS + "\n");
-			for (Object s : exp) {
-				writer.write((String) s + "\n");
+			for (String s : exp) {
+				writer.write(s + "\n");
 			}
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 

@@ -94,6 +94,7 @@ public interface Constants {
 	public static final String PLUGIN_DEPENDENCY_IMPORTERS  							= MARKER_ADDON + "Importers " 								+ MARKER_ADDON;
 	public static final String PLUGIN_DEPENDENCY_IMPORTERS_UNSATISFIED  				= MARKER_ADDON + "Importers  UnSatisfied " 					+ MARKER_ADDON;
 	public static final String PLUGIN_DEPENDENCY_SATISFYING_PLUGINS_SETS 				= MARKER_ADDON + "Satisfying Plugins SETS"					+ MARKER_ADDON;
+	public static final String CONFIG_ = "CONFIG_";
 	
 	
 	
