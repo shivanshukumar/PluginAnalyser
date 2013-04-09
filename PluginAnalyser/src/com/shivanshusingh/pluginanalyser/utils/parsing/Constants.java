@@ -9,6 +9,8 @@ package com.shivanshusingh.pluginanalyser.utils.parsing;
  */
 public interface Constants {
 
+	public static final String CONFIG_ 													= "CONFIG_";
+
 	public static final String MARKER_ADDON 											= "==";
 	public static final String MARKER_INTERIM 											= "====";
 	public static final String MARKER_TERMINATOR 										= "----";
@@ -18,7 +20,7 @@ public interface Constants {
 	public static final String BUNDLE_CLASSPATHENTRIES 									= MARKER_ADDON +  "Bundle ClassPathEntries"  			  +  MARKER_ADDON ;
 	public static final String BUNDLE_EXPORTS 											= MARKER_ADDON + "Bundle Exports"  						  +  MARKER_ADDON ;
 	public static final String BUNDLE_IGNORE 											= MARKER_ADDON + "IGNORE BUNDLE COZ MANIFEST(OR SOME PROPERTY OF IT) MALFORMED " 							+ MARKER_ADDON;
-	public static final String BUNDLE_IMPORTS 											= MARKER_ADDON + "Bundle Package Imports"  				  +  MARKER_ADDON ;
+	public static final String BUNDLE_PACKAGE_IMPORTS 									= MARKER_ADDON + "Bundle Package Imports"  				  +  MARKER_ADDON ;
 	public static final String BUNDLE_PLUGIN_XML 										= MARKER_ADDON + "Bundle Plugin.xml"  					  +  MARKER_ADDON ;
 	public static final String BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL					= "PAUNKNOWN";
 	
@@ -94,11 +96,8 @@ public interface Constants {
 	public static final String PLUGIN_DEPENDENCY_IMPORTERS  							= MARKER_ADDON + "Importers " 								+ MARKER_ADDON;
 	public static final String PLUGIN_DEPENDENCY_IMPORTERS_UNSATISFIED  				= MARKER_ADDON + "Importers  UnSatisfied " 					+ MARKER_ADDON;
 	public static final String PLUGIN_DEPENDENCY_SATISFYING_PLUGINS_SETS 				= MARKER_ADDON + "Satisfying Plugins SETS"					+ MARKER_ADDON;
-	public static final String CONFIG_ = "CONFIG_";
 	
-	
-	
-	
+
 	//	public static final HashSet<String> JAVA_LANG_OBJECT_FUNCTIONS =  {
 //		
 //		""

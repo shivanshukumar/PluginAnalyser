@@ -36,7 +36,7 @@ import com.shivanshusingh.pluginanalyser.utils.parsing.ParsingUtil;
  */
 public class DependencyFinder {
 
-	// Map for: Plugin Name (symbolic name) => pluginId(symbolicname[version.qualifier]) => plugin extract file names set..
+	// Map for: Plugin Name (symbolic name) => pluginId(symbolicname<%version.qualifier%>) => plugin extract file names set..
 	private static Map<String, Map<String, Set<String>>> pluginMap = new HashMap<String, Map<String, Set<String>>>();
 	// sets of plugins
 	static Map<String, PluginObject> plugins = new HashMap<String, PluginObject>();

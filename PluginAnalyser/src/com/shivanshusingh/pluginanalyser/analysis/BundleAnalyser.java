@@ -1037,7 +1037,7 @@ public class BundleAnalyser extends ManifestParser {
 			// bundleinfo.getExports().toString()); // Export-Package
 		}
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
-		writer.write(Constants.BUNDLE_IMPORTS + "\n ");
+		writer.write(Constants.BUNDLE_PACKAGE_IMPORTS + "\n");
 		if (flag_bundleInfoExists) {
 			for (Object s : bundleinfo.getImports())
 				writer.write(s.toString() + "\n");
@@ -1045,7 +1045,7 @@ public class BundleAnalyser extends ManifestParser {
 			// bundleinfo.getImports().toString());
 		}
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
-		writer.write(Constants.BUNDLE_OTHER_BUNDLE_IMPORTS + "\n ");
+		writer.write(Constants.BUNDLE_OTHER_BUNDLE_IMPORTS + "\n");
 		if (flag_bundleInfoExists) {
 			for (Object s : bundleinfo.getRequires())
 				writer.write(s.toString() + "\n");
@@ -1558,7 +1558,7 @@ public class BundleAnalyser extends ManifestParser {
 			// bundleinfo.getExports().toString()); // Export-Package
 		}
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
-		writer.write(Constants.BUNDLE_IMPORTS + "\n ");
+		writer.write(Constants.BUNDLE_PACKAGE_IMPORTS + "\n ");
 		if (flag_bundleInfoExists) {
 			for (Object s : bundleinfo.getImports())
 				writer.write(s.toString() + "\n");
