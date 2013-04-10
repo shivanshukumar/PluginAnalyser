@@ -648,14 +648,24 @@ public class BundleAnalyser extends ManifestParser {
 
 		for (String invokation : invokationsSet) {
 
+			invokation=invokation.trim();
 			String[] thisInvokationElements = ParsingUtil.separateFuncNameElements(invokation);
 			String thisInvokationClassname = thisInvokationElements[1];
 
 			// check if the function is one of provided by java.lang.Object -
 			// marking those as satisfied by default and marking them to be
 			// pruned.
-			// TODO do the java.lang pruning.
-
+			
+			String javaInvokation=invokation;
+			String[] javaInvokationElements = ParsingUtil.separateFuncNameElements(javaInvokation);
+			javaInvokationElements[1]=Constants.JAVA_LANG_OBJECT;
+			javaInvokation=ParsingUtil.reconstructFuncSignature(javaInvokationElements).trim();
+			if(Constants.JAVA_LANG_OBJECT_FUNCTIONS.contains(javaInvokation))
+			{
+				pruningObject.invokationsToBeRemoved.add(invokation);
+			continue;
+			}
+				
 			// see if the current invokation can be satisifed through any of its
 			// inheritence hierarchy classes. If yes, add the invokation to be
 			// removed else create a proxy for this invokation that may be

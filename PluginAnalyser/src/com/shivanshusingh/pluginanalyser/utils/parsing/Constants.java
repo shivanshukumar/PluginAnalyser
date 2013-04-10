@@ -1,5 +1,9 @@
 package com.shivanshusingh.pluginanalyser.utils.parsing;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 
 /**
  * 
@@ -61,8 +65,6 @@ public interface Constants {
 	public static final String EXTRACT_FILE_PREFIX_PLUGINMAP 							= "EXTRACT-PLUGINMAP-";
 	public static final String EXTENSION_TXT 											= ".txt";
 	
-	public static final String JAVA_LANG_OBJECT 									  	= "java.lang.Object" ;
-	
 	public static final String JAR_FILE_EXTENSION 										= ".jar";
 	
 	public static final String PLUGIN_ALL_CLASS_PACKAGES 								= MARKER_ADDON + "All Class packages " 						+ MARKER_ADDON;
@@ -96,14 +98,22 @@ public interface Constants {
 	public static final String PLUGIN_DEPENDENCY_IMPORTERS  							= MARKER_ADDON + "Importers " 								+ MARKER_ADDON;
 	public static final String PLUGIN_DEPENDENCY_IMPORTERS_UNSATISFIED  				= MARKER_ADDON + "Importers  UnSatisfied " 					+ MARKER_ADDON;
 	public static final String PLUGIN_DEPENDENCY_SATISFYING_PLUGINS_SETS 				= MARKER_ADDON + "Satisfying Plugins SETS"					+ MARKER_ADDON;
-	
 
-	//	public static final HashSet<String> JAVA_LANG_OBJECT_FUNCTIONS =  {
-//		
-//		""
-//	};
-//	
-//TODO add the set of java.lang.Object  signatures that can be pruned.
-	
+	public static final String JAVA_LANG_OBJECT 									  	= "java.lang.Object" ;
+
+	public static final List<String> JAVA_LANG_OBJECT_FUNCTIONS = new ArrayList<String>(Arrays.asList(
+			"boolean java.lang.Object.equals (java.lang.Object,)",
+			"int java.lang.Object.hashCode ()",
+			"java.lang.Class java.lang.Object.getClass ()",
+			"java.lang.Object java.lang.Object.clone ()",
+			"java.lang.String java.lang.Object.toString ()",
+			"void java.lang.Object.finalize ()",
+			"void java.lang.Object.notify ()",
+			"void java.lang.Object.notifyAll ()",
+			"void java.lang.Object.wait ()",
+			"void java.lang.Object.wait (long,)",
+			"void java.lang.Object.wait (long,int,)"
+			));
+
 	//TODO Add support for features.
 }

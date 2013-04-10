@@ -37,7 +37,7 @@ import com.shivanshusingh.pluginanalyser.utils.parsing.ParsingUtil;
 public class DependencyFinder {
 
 	// Map for: Plugin Name (symbolic name) => pluginId(symbolicname<%version.qualifier%>) => plugin extract file names set..
-	private static Map<String, Map<String, Set<String>>> pluginMap = new HashMap<String, Map<String, Set<String>>>();
+	private static Map<String, Map<String, Set<String>>> pluginNameIdExtrMap = new HashMap<String, Map<String, Set<String>>>();
 	// sets of plugins
 	static Map<String, PluginObject> plugins = new HashMap<String, PluginObject>();
 
@@ -134,15 +134,12 @@ public class DependencyFinder {
 			return;
 		}	
 
-		//  now doing the main work of findind dependencies.
-		
+		// now doing the main work of findind dependencies.
+
 		File[] pluginExtractEntries = pluginExtractDirectory.listFiles();
 
 		int entriesLength = pluginExtractEntries.length;
-		
-		
-		
-		
+
 		long pluginExtractsDone = 0;
 
 		for (File pluginExtract : pluginExtractEntries) {
@@ -169,17 +166,17 @@ public class DependencyFinder {
 				boolean ignorePluginExtract = false;
 				Set<String> ignoreBundleProperty = ParsingUtil.restorePropertyFromExtract(pluginExtract,
 						Constants.BUNDLE_IGNORE);
+				
 				if (ignoreBundlesMarkedToBeIgnored) {
 					if (null != ignoreBundleProperty && 1 == ignoreBundleProperty.size())
 						ignorePluginExtract = ignoreBundleProperty.toString().toLowerCase().trim().contains("true");
 				}
-				// System.out.println("==== ignoreBundleProperty= "+ignoreBundleProperty.toString());
+				
 				if (ignorePluginExtract) {
 					Log.outln("==== " + thisPluginId + " must be IGNORED");
 					Log.errln("==== " + thisPluginId + " must be IGNORED");
 					pluginExtractsIgnored.add(thisPluginId);
 					continue;
-
 				}
 
 				Set<String> bundleExports = new HashSet<String>();
@@ -212,23 +209,23 @@ public class DependencyFinder {
 					{// this means that there is some name to it.
 						otherPluginName=otherPluginName.trim();
 
-						// check if this is optional. If yes this will not be included.
-						if(!otherPluginName.contains(Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL))
-						{
-							if(!ignoreVersionsInFeatureModelGeneration)
-							{
-								// now doing the check for whether there exists some bundle that falls in the version range specified by the otherPluginDepEntry.
-								String versionRangeStr=ParsingUtil.getVersionStringFromDependencyEntry(otherPluginDepEntry);
+						// check if this is optional. If yes this will not be
+						// included.
+						if (!otherPluginName.contains(Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL)) {
+							if (!ignoreVersionsInFeatureModelGeneration) {
+								// now doing the check for whether there exists
+								// some bundle that falls in the version range
+								// specified by the otherPluginDepEntry.
+								String versionRangeStr = ParsingUtil
+										.getVersionStringFromDependencyEntry(otherPluginDepEntry);
 								
-								
-								try {	
-									VersionRange 	versionRange = new VersionRange(versionRangeStr);
-
+								try {
+									VersionRange versionRange = new VersionRange(versionRangeStr);
 
 									// 	now getting all Plugin IDs for the plugin name of the dependency entry from the pluginmap.
-									if(pluginMap.containsKey(otherPluginName))
+									if(pluginNameIdExtrMap.containsKey(otherPluginName))
 									{
-										Set<String> candidatePluginIds=pluginMap.get(otherPluginName).keySet();
+										Set<String> candidatePluginIds=pluginNameIdExtrMap.get(otherPluginName).keySet();
 										for(String candidatePluginId:candidatePluginIds)
 										{
 											String candidatePluginVersionStr=parsePluginIdForVersion(candidatePluginId);
@@ -244,7 +241,6 @@ public class DependencyFinder {
 									}
 
 								} catch (ParseException e) {
-									// TODO Auto-generated catch block
 									e.printStackTrace();
 								}
 							}
@@ -538,7 +534,7 @@ public class DependencyFinder {
 
 			ois = new ObjectInputStream(new FileInputStream(pathToPluginMapFile));
 
-			pluginMap = (Map<String, Map<String, Set<String>>>) ois.readObject();
+			pluginNameIdExtrMap = (Map<String, Map<String, Set<String>>>) ois.readObject();
 
 			ois.close();
 		} catch (Exception e) {
