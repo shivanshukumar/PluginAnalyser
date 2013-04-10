@@ -246,24 +246,23 @@ public class DependencyVisitor extends ClassVisitor {
 
 		// mine - adding to MyClasses
 		String myFullyQualifiedClassName = Type.getObjectType(name).getClassName();
-		
+
 		allMyClasses.add(myFullyQualifiedClassName);
 		// mine- adding to public classes and no other.
 		if ((access & Opcodes.ACC_PUBLIC) != 0)
 			allMyPublicClasses.add(myFullyQualifiedClassName);
-		// mine- adding to protected or unspecified classes and no other.
+		// mine- adding to protected 
 		if ((access & Opcodes.ACC_PROTECTED) != 0) {
 			// for now adding to public classes to see ....
-			allMyClasses.add(myFullyQualifiedClassName);
+			allMyPublicClasses.add(myFullyQualifiedClassName);
 			allMyProtectedClasses.add(myFullyQualifiedClassName);
 		}
 		// if method access is anything else than private then, also include it
 		// for now as a public class
 		boolean isPrivate=((access & Opcodes.ACC_PRIVATE) != 0)?true:false;
 		if (!isPrivate)
-		{// // for now adding them to
-													// public.... to see
-			allMyClasses.add(myFullyQualifiedClassName);
+		{// // for now adding them to public.... to see  ....
+			allMyPublicClasses.add(myFullyQualifiedClassName);
 		}
 		// if class access is deprecated then this is a personal deprecated
 		// class

@@ -1,5 +1,5 @@
 possible positives
-
+=====================
 
 org.apache.xmlbeans.XmlCursor org.apache.xmlbeans.XmlObject.newCursor ()
 ==Importers ==
@@ -22,6 +22,56 @@ false, 1 importer(s) hungry
 
 
 
+ISSUES and Observations:
+
+(1)  java.lang.String org.slf4j.Logger.getName ()  nt satisfied while being imported by org.eclipse.jetty.util<%8.1.3.v20120522%>
+The problem extends to  *org.slf4j.Logger.* as the package org.slf4j is marked optional in bundle manifest imports.
+
+####
+java.lang.String org.slf4j.Logger.getName ()
+==Importers ==
+org.eclipse.jetty.util<%8.1.3.v20120522%>
+----
+==Exporters ==
+----
+==Importers  UnSatisfied ==
+true, 1 importer(s) hungry 
+----
+==Exporters  UnSatisfied ==
+false, 1 importer(s) hungry 
+----
+==Satisfying Plugins SETS==
+----
+
+
+The issue here   is that the package org.slf4j is marked as an optional  imprt in the manifest. There is however a maven pom included in the   plugin jar that calls for getting org.slf4j but still marked as optional. This function call however as been made from somewhere in the plugin.  Something to think about.
+
+the same goes  for the functions (all being imprted or invoked by org.eclipse.jetty.util<%8.1.3.v20120522%>):
+
+boolean org.slf4j.spi.LocationAwareLogger.isTraceEnabled (org.slf4j.Marker,)
+void org.slf4j.spi.LocationAwareLogger.log (org.slf4j.Marker,java.lang.String,int,java.lang.String,java.lang.Object[],java.lang.Throwable,)
+java.lang.String org.slf4j.Logger.getName ()
+boolean org.slf4j.spi.LocationAwareLogger.isDebugEnabled (org.slf4j.Marker,)
+boolean org.slf4j.spi.LocationAwareLogger.isErrorEnabled (org.slf4j.Marker,)
+java.lang.String org.slf4j.helpers.FormattingTuple.getMessage ()
+boolean org.slf4j.spi.LocationAwareLogger.isTraceEnabled ()
+void org.slf4j.Logger.info (java.lang.String,java.lang.Object[],)
+void org.slf4j.Logger.warn (java.lang.String,java.lang.Object[],)
+void org.slf4j.Logger.warn (java.lang.String,java.lang.Throwable,)
+void org.slf4j.Logger.debug (java.lang.String,java.lang.Object[],)
+boolean org.slf4j.spi.LocationAwareLogger.isInfoEnabled ()
+org.slf4j.Logger org.slf4j.LoggerFactory.getLogger (java.lang.String,)
+java.lang.String org.slf4j.spi.LocationAwareLogger.getName ()
+void org.slf4j.Logger.debug (java.lang.String,java.lang.Throwable,)
+boolean org.slf4j.spi.LocationAwareLogger.isErrorEnabled ()
+boolean org.slf4j.spi.LocationAwareLogger.isWarnEnabled (org.slf4j.Marker,)
+boolean org.slf4j.spi.LocationAwareLogger.isDebugEnabled ()
+void org.slf4j.Logger.info (java.lang.String,java.lang.Throwable,)
+boolean org.slf4j.spi.LocationAwareLogger.isWarnEnabled ()
+boolean org.slf4j.spi.LocationAwareLogger.isInfoEnabled (org.slf4j.Marker,)
+org.slf4j.helpers.FormattingTuple org.slf4j.helpers.MessageFormatter.arrayFormat (java.lang.String,java.lang.Object[],)
+boolean org.slf4j.Logger.isDebugEnabled ()
 
 
 
+(2)
