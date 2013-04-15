@@ -190,6 +190,8 @@ public class DependencyFinder {
 					bundleExports = ParsingUtil.restorePropertyFromExtract(pluginExtract, Constants.BUNDLE_EXPORTS);
 				}
 
+				Set<String> myHosts = ParsingUtil.restorePropertyFromExtract(pluginExtract,
+						Constants.BUNDLE_FRAGMENT_HOST);
 				Set<String> myOtherBundleDependencies = ParsingUtil.restorePropertyFromExtract(pluginExtract,
 						Constants.BUNDLE_OTHER_BUNDLE_IMPORTS);
 				Set<String> myMethodExports = ParsingUtil.restorePropertyFromExtract(pluginExtract,
@@ -205,62 +207,15 @@ public class DependencyFinder {
 				Set<String> myInvokationProxyPairs = ParsingUtil.restorePropertyFromExtract(pluginExtract,
 						Constants.PLUGIN_ALL_INVOKATION_PROXY_PAIRS);
 
-
-				//  building the  pluginDependenciesFM Set
-
-				for(String otherPluginDepEntry:myOtherBundleDependencies)
-				{
-					String otherPluginName = ParsingUtil.getNameFromBundleDependencyEntry(otherPluginDepEntry, true, false);
-					if(null!=otherPluginName  &&  !"".equalsIgnoreCase(otherPluginName.trim()))
-					{// this means that there is some name to it.
-						otherPluginName=otherPluginName.trim();
-
-						// check if this is optional. If yes this will not be
-						// included.
-						if (!otherPluginName.contains(Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL)) {
-							if (!ignoreVersionsInFeatureModelGeneration) {
-								// now doing the check for whether there exists
-								// some bundle that falls in the version range
-								// specified by the otherPluginDepEntry.
-								String versionRangeStr = ParsingUtil
-										.getVersionStringFromDependencyEntry(otherPluginDepEntry);
-								
-								try {
-									VersionRange versionRange = new VersionRange(versionRangeStr);
-
-									// 	now getting all Plugin IDs for the plugin name of the dependency entry from the pluginmap.
-									if(pluginNameIdExtrMap.containsKey(otherPluginName))
-									{
-										Set<String> candidatePluginIds=pluginNameIdExtrMap.get(otherPluginName).keySet();
-										for(String candidatePluginId:candidatePluginIds)
-										{
-											String candidatePluginVersionStr=parsePluginIdForVersion(candidatePluginId);
-											Version candidateVersion = new Version(candidatePluginVersionStr);
-											if(versionRange.containsQualified(candidateVersion)) //versionRange.includes(candidateVersion))
-											{
-
-												String	pluginDepFMEntry=thisPluginId.trim()+" => "+candidatePluginId.trim();
-
-												pluginDependenciesFM.add(pluginDepFMEntry);
-											}
-										}
-									}
-
-								} catch (ParseException e) {
-									e.printStackTrace();
-								}
-							}
-							else
-							{
-								// not considering the version ranges at all, so skipping the check of whether a plugin exists in the sepcified range.
-								String	pluginDepFMEntry=thisPluginId.trim()+" => "+otherPluginName.trim();
-								pluginDepFMEntry=pluginDepFMEntry.replaceAll("<(.*?)>", "");
-								pluginDependenciesFM.add(pluginDepFMEntry);
-							}
-					}
-				}
-				}
-
+				// building the pluginDependenciesFM Set
+				//
+				// adding the host plugin bundle dependency to the feature model
+				addDependenciesToFeatureModel(ignoreVersionsInFeatureModelGeneration, thisPluginId, myHosts);
+				//
+				// adding the bundle dependencies (other bundles) to the feature   model.
+				addDependenciesToFeatureModel(ignoreVersionsInFeatureModelGeneration, thisPluginId,
+						myOtherBundleDependencies);
+				
 				// //////////////////////////////////////////
 				// building DependencyFinder.plugins object
 				// /////////////////////////////////////////
@@ -508,6 +463,70 @@ public class DependencyFinder {
 	}
 
 	/**
+	 * 
+	 *  adds the  provided dependencies  as implications from  the specified plugin in the Dependencies Feature Model. 
+	 * 
+	 * @param ignoreVersionsInFeatureModelGeneration
+	 * @param thisPluginId this plugin's id.
+	 * @param dependencies the {@link Set} of dependencies on other plugins
+	 */
+	private static void addDependenciesToFeatureModel(boolean ignoreVersionsInFeatureModelGeneration, String thisPluginId,
+			Set<String> dependencies) {
+		for(String otherPluginDepEntry:dependencies)
+		{
+			String otherPluginName = ParsingUtil.getNameFromBundleDependencyEntry(otherPluginDepEntry, true, false);
+			if(null!=otherPluginName  &&  !"".equalsIgnoreCase(otherPluginName.trim()))
+			{// this means that there is some name to it.
+				otherPluginName=otherPluginName.trim();
+
+				// check if this is optional. If yes this will not be
+				// included.
+				if (!otherPluginName.contains(Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL)) {
+					if (!ignoreVersionsInFeatureModelGeneration) {
+						// now doing the check for whether there exists
+						// some bundle that falls in the version range
+						// specified by the otherPluginDepEntry.
+						String versionRangeStr = ParsingUtil
+								.getVersionStringFromDependencyEntry(otherPluginDepEntry);
+						
+						try {
+							VersionRange versionRange = new VersionRange(versionRangeStr);
+
+							// 	now getting all Plugin IDs for the plugin name of the dependency entry from the pluginmap.
+							if(pluginNameIdExtrMap.containsKey(otherPluginName))
+							{
+								Set<String> candidatePluginIds=pluginNameIdExtrMap.get(otherPluginName).keySet();
+								for(String candidatePluginId:candidatePluginIds)
+								{
+									String candidatePluginVersionStr=parsePluginIdForVersion(candidatePluginId);
+									Version candidateVersion = new Version(candidatePluginVersionStr);
+									if(versionRange.containsQualified(candidateVersion)) //versionRange.includes(candidateVersion))
+									{
+
+										String	pluginDepFMEntry=thisPluginId.trim()+" => "+candidatePluginId.trim();
+
+										pluginDependenciesFM.add(pluginDepFMEntry);
+									}
+								}
+							}
+
+						} catch (ParseException e) {
+							e.printStackTrace();
+						}
+					}
+					else
+					{
+						// not considering the version ranges at all, so skipping the check of whether a plugin exists in the sepcified range.
+						String	pluginDepFMEntry=thisPluginId.trim()+" => "+otherPluginName.trim();
+						pluginDepFMEntry=pluginDepFMEntry.replaceAll("<(.*?)>", "");
+						pluginDependenciesFM.add(pluginDepFMEntry);
+					}
+				}
+			}
+		}
+	}
+
+	/**
 	 * parses the pluginId got from the plugin Map to return the version
 	 * information. e.g. pluginA<version.a.b.qual> will return version.a.b.qual
 	 * an empty string is returned if there is no version information available.
@@ -550,9 +569,8 @@ public class DependencyFinder {
 		return true;
 
 	}
-	
-	
-	private static Set<Set<String>> fetchExporters(    String imp, Set<String> importEntryProxies, String ownerPluginName) {
+
+	private static Set<Set<String>> fetchExporters(String imp, Set<String> importEntryProxies, String ownerPluginName) {
 
 		Set<Set<String>> result = new LinkedHashSet<Set<String>>();
 
@@ -880,7 +898,9 @@ public class DependencyFinder {
 		
 		writer.write(Constants.PLUGIN_DEPENDENCY_ALL_UNMATCHED_FUNCTION_IMPORTS + "\n");
 		Log.outln(Constants.PLUGIN_DEPENDENCY_ALL_UNMATCHED_FUNCTION_IMPORTS + "\n");
-		for (String s : unmatchedFunctionImports)
+		List<String> unmatchedFunctionImports_List=new ArrayList<String>(unmatchedFunctionImports);
+		Collections.sort(unmatchedFunctionImports_List)    ;
+		for (String s : unmatchedFunctionImports_List)
 			writer.write(s + "\n");
 		writer.write("COUNT=" + unmatchedFunctionImports.size() + "\n");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
@@ -974,8 +994,9 @@ public class DependencyFinder {
 
 		writer.write(Constants.PLUGIN_DEPENDENCY_ALL_UNMATCHED_TYPE_IMPORTS + "\n");
 		Log.outln(Constants.PLUGIN_DEPENDENCY_ALL_UNMATCHED_TYPE_IMPORTS + "\n");
-
-		for (String s : unmatchedTypeImports)
+		ArrayList<String> unmatchedTypeImports_List = new ArrayList<String>(unmatchedTypeImports);
+		Collections.sort(unmatchedTypeImports_List);
+		for (String s : unmatchedTypeImports_List)
 			writer.write(s + "\n");
 		writer.write("COUNT=" + unmatchedTypeImports.size() + "\n");
 

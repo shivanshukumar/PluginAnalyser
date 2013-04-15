@@ -23,7 +23,8 @@ public interface Constants {
 
 	public static final String BUNDLE_CLASSPATHENTRIES 									= MARKER_ADDON +  "Bundle ClassPathEntries"  			  +  MARKER_ADDON ;
 	public static final String BUNDLE_EXPORTS 											= MARKER_ADDON + "Bundle Exports"  						  +  MARKER_ADDON ;
-	public static final String BUNDLE_IGNORE 											= MARKER_ADDON + "IGNORE BUNDLE COZ MANIFEST(OR SOME PROPERTY OF IT) MALFORMED " 							+ MARKER_ADDON;
+	public static final String BUNDLE_FRAGMENT_HOST 									= MARKER_ADDON + "If FRAGMENT then HOSTBUNDLE" +  MARKER_ADDON ;
+	public static final String BUNDLE_IGNORE 											= MARKER_ADDON + "IGNORE BUNDLE COZ MANIFEST OR SOME PROPERTY OF IT WAS MALFORMED " 							+ MARKER_ADDON;
 	public static final String BUNDLE_PACKAGE_IMPORTS 									= MARKER_ADDON + "Bundle Package Imports"  				  +  MARKER_ADDON ;
 	public static final String BUNDLE_PLUGIN_XML 										= MARKER_ADDON + "Bundle Plugin.xml"  					  +  MARKER_ADDON ;
 	public static final String BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL					= "PAUNKNOWN";
@@ -114,6 +115,7 @@ public interface Constants {
 			"void java.lang.Object.wait (long,)",
 			"void java.lang.Object.wait (long,int,)"
 			));
+
 
 	//TODO Add support for features.
 }

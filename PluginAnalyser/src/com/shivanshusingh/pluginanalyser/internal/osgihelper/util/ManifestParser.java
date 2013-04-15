@@ -86,6 +86,8 @@ public class ManifestParser {
 
     private static final String ATTR_USE = "uses";
 
+    private static final String FRAGMENT_HOST = "Fragment-Host";
+
     public static BundleInfo parseJarManifest(InputStream jarStream) throws IOException,
             ParseException {
         final JarInputStream jis = new JarInputStream(jarStream);
@@ -170,18 +172,18 @@ public class ManifestParser {
 			// /////////////////////////////////////////////////////////////////
 			// /////////////////////////////////////////////////////////////////
 
-		} catch (ParseException e) {
-		checkError(e);
-		}
-  //mine commented.
-       /* String description = new ManifestHeaderValue(mainAttributes.getValue(BUNDLE_DESCRIPTION))
+        } catch (ParseException e) {
+        	checkError(e);
+        }
+        //mine commented.
+        /* String description = new ManifestHeaderValue(mainAttributes.getValue(BUNDLE_DESCRIPTION))
                 .getSingleValue();
         if (description == null) {
             description = new ManifestHeaderValue(mainAttributes.getValue(BUNDLE_DESCRIPTION))
                     .getSingleValue();
         }
-      bundleInfo.setDescription(description);
-*/
+      	bundleInfo.setDescription(description);
+         */
         try{
         List/* <String> */environments = new ManifestHeaderValue(
                 mainAttributes.getValue(BUNDLE_REQUIRED_EXECUTION_ENVIRONMENT)).getValues();
@@ -189,20 +191,24 @@ public class ManifestParser {
         }catch(ParseException e){checkError(e);}
 
         
-       try{
-        parseRequirement(bundleInfo, mainAttributes, REQUIRE_BUNDLE, BundleInfo.BUNDLE_TYPE,
-            ATTR_BUNDLE_VERSION);
-       }catch(ParseException e){checkError(e);}
-        try{
-        parseRequirement(bundleInfo, mainAttributes, IMPORT_PACKAGE, BundleInfo.PACKAGE_TYPE,
-            ATTR_VERSION);
-        }catch(ParseException e){checkError(e);}
+		try {
+			parseRequirement(bundleInfo, mainAttributes, REQUIRE_BUNDLE, BundleInfo.BUNDLE_TYPE, ATTR_BUNDLE_VERSION);
+		} catch (ParseException e) {
+			checkError(e);
+		}
+		try {
+			parseRequirement(bundleInfo, mainAttributes, IMPORT_PACKAGE, BundleInfo.PACKAGE_TYPE, ATTR_VERSION);
+		} catch (ParseException e) {
+			checkError(e);
+		}
+		try{
+	        parseRequirement(bundleInfo, mainAttributes,  FRAGMENT_HOST , BundleInfo.FRAGMENT_HOST_TYPE,
+	            ATTR_BUNDLE_VERSION);
+		} catch (ParseException e) {
+			checkError(e);
+		}
+       
         
-       /* try{
-        parseRequirement(bundleInfo, mainAttributes, IMPORT_SERVICE, BundleInfo.SERVICE_TYPE,
-            ATTR_VERSION);
-        }catch(ParseException e){checkError(e);}
-       */ 
         try{
 	        ManifestHeaderValue exportElements = new ManifestHeaderValue(
 	                mainAttributes.getValue(EXPORT_PACKAGE));
@@ -234,11 +240,15 @@ public class ManifestParser {
 	        }
         }catch(ParseException e){checkError(e);}
 
-      /*  try{
+        try{
+            parseRequirement(bundleInfo, mainAttributes, IMPORT_SERVICE, BundleInfo.SERVICE_TYPE,
+                ATTR_VERSION);
+            }catch(ParseException e){checkError(e);}
+        try{
         	parseCapability(bundleInfo, mainAttributes, EXPORT_SERVICE, BundleInfo.SERVICE_TYPE);
         }catch(ParseException e){checkError(e);}
       
-        */
+        
         // handle Eclipse specific source attachement
        /* String eclipseSourceBundle = mainAttributes.getValue(ECLIPSE_SOURCE_BUNDLE);
         if (eclipseSourceBundle != null) {

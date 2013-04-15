@@ -1026,6 +1026,12 @@ public class BundleAnalyser extends ManifestParser {
 			writer.write(bundleinfo.ignoreBundle + "\n");
 
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
+		
+		writer.write(Constants.BUNDLE_FRAGMENT_HOST + "\n");
+		for (Object s : bundleinfo.getBundleFragmentHosts())
+			writer.write(s.toString() + "\n");
+
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 		writer.write(Constants.BUNDLE_REQUIREMENTS + "\n");
 		if (flag_bundleInfoExists) {

@@ -45,6 +45,8 @@ public class BundleInfo {
 
     public static final String SERVICE_TYPE = "service";
 
+	public static final String FRAGMENT_HOST_TYPE = "fragment-host";
+
     public  boolean ignoreBundle=false;
     
     private String symbolicName;
@@ -279,6 +281,18 @@ public class BundleInfo {
         while (itRequirements.hasNext()) {
             BundleRequirement requirement = (BundleRequirement) itRequirements.next();
             if (requirement.getType().equals(PACKAGE_TYPE)) {
+                set.add(requirement);
+            }
+        }
+        return set;
+    }
+    
+    public Set/* <BundleRequirement> */getBundleFragmentHosts() {
+        Set/* <BundleRequirement> */set = new LinkedHashSet/* <BundleRequirement> */();
+        Iterator itRequirements = requirements.iterator();
+        while (itRequirements.hasNext()) {
+            BundleRequirement requirement = (BundleRequirement) itRequirements.next();
+            if (requirement.getType().equals(FRAGMENT_HOST_TYPE)) {
                 set.add(requirement);
             }
         }
