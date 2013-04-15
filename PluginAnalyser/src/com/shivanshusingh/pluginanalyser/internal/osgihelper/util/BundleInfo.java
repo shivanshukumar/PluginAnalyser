@@ -37,7 +37,7 @@ import org.apache.ivy.osgi.util.Version;
  */
 public class BundleInfo {
 
-    //public static final Version DEFAULT_VERSION = new Version(1, 0, 0, null);
+    public static final Version DEFAULT_VERSION = new Version(0, 0, 0, null);
 
     public static final String PACKAGE_TYPE = "package";
 
@@ -112,9 +112,7 @@ public class BundleInfo {
     }
 
     public Version getVersion() {
-//        return version == null ? DEFAULT_VERSION : version;
-        return version ;
-
+        return version == null ? DEFAULT_VERSION : version;
     }
 
     public Version getRawVersion() {

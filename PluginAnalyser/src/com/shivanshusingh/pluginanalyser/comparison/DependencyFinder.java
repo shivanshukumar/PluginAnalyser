@@ -133,6 +133,12 @@ public class DependencyFinder {
 					+ "  \n CANNOT CONTINUE with the Dependency Finding. \nxxxx");
 			return;
 		}	
+		
+		//  adding the  java sdk   to dependenciesFM.
+		
+		if( pluginNameIdExtrMap.containsKey(Constants.EXTRACT_FILE_NAME_JAVA_CLASSES_SDK))
+			for(String javaClassesPlugin: pluginNameIdExtrMap.get(Constants.EXTRACT_FILE_NAME_JAVA_CLASSES_SDK).keySet())
+				pluginDependenciesFM.add(javaClassesPlugin);
 
 		// now doing the main work of findind dependencies.
 

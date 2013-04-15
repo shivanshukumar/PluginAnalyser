@@ -84,7 +84,7 @@ public class ManifestParser {
 
     private static final String ATTR_BUNDLE_VERSION = "bundle-version";
 
-    private static final String ATTR_USE = "use";
+    private static final String ATTR_USE = "uses";
 
     public static BundleInfo parseJarManifest(InputStream jarStream) throws IOException,
             ParseException {

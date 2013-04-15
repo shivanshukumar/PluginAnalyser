@@ -58,7 +58,7 @@ public interface Constants {
 	public static final String EXTRACT_FILE_EXTENSION_FEATURE							= ".extr";
 	public static final String EXTRACT_FILE_EXTENSION_PLUGIN 							= ".extr";
 	public static final String EXTRACT_FILE_EXTENSION_PLUGINMAP 						= ".obj";
-	public static final String EXTRACT_FILE_NAME_JAVA_CLASSES_PLATFORM 					= "java.classes.platform";
+	public static final String EXTRACT_FILE_NAME_JAVA_CLASSES_SDK 						= "java.classes.sdk";
 	public static final String EXTRACT_FILE_NAME_PLUGINMAP 								= "PLUGIN-MAP-OBJECT";
 	public static final String EXTRACT_FILE_PREFIX_FEATURE 								= "EXTRACT-FEATURE-";
 	public static final String EXTRACT_FILE_PREFIX_PLUGIN 								= "EXTRACT-PLUGIN-";

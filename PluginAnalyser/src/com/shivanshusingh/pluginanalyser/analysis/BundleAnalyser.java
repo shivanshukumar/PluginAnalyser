@@ -80,7 +80,7 @@ public class BundleAnalyser extends ManifestParser {
 		if (Util.checkDirectory(new File(pathToJavaClasses), true, true, true, false)) {
 			// the whole process of creating a plugin extract for java platform
 			// classes.
-			buildJavaPlatformClassesExtract(pathToJavaClasses, outputLocation);
+			buildJavaSDKClassesExtract(pathToJavaClasses, outputLocation);
 
 		} else {
 			Log.errln("xxxx Error Accessing Java Classes Location in Plugin Analysis : " + pluginFolderPath
@@ -127,8 +127,6 @@ public class BundleAnalyser extends ManifestParser {
 		Log.errln(pluginAnalysedCounter + " plugin have been analyzed");
 		Log.outln("for source:" + pluginFolderPath + " time: " + Util.getFormattedTime(l2 - l1));
 		Log.errln("for source:" + pluginFolderPath + " time: " + Util.getFormattedTime(l2 - l1));
-		// String pluginJarName
-		// ="com.android.ide.eclipse.adt_21.0.1.2012-12-6-2-58.jar";
 	}
 
 	/**
@@ -222,23 +220,23 @@ public class BundleAnalyser extends ManifestParser {
 	 * @param pathToJavaClasses
 	 * @param outputLocation
 	 */
-	private static void buildJavaPlatformClassesExtract(String pathToJavaClasses, String outputLocation) {
-		File javaPlatformClassesFolder = new File(pathToJavaClasses);
+	private static void buildJavaSDKClassesExtract(String pathToJavaClasses, String outputLocation) {
+		File javaSDKClassesFolder = new File(pathToJavaClasses);
 		long l1 = System.currentTimeMillis();
 
 		try {
 			DependencyVisitor v = new DependencyVisitor();
 
 			BundleInfo dummyBundleInfo = new BundleInfo();
-			extractDependenciesAndExportsFromJavaPlatform(v, javaPlatformClassesFolder);
+			extractDependenciesAndExportsFromJavaSDKDir(v, javaSDKClassesFolder);
 
-			writeJavaPlatformClassesData(v, dummyBundleInfo, Constants.EXTRACT_FILE_NAME_JAVA_CLASSES_PLATFORM, outputLocation);
+			writeJavaSDKClassesData(v, dummyBundleInfo, Constants.EXTRACT_FILE_NAME_JAVA_CLASSES_SDK, outputLocation);
 			long l2 = System.currentTimeMillis();
 
-			Log.errln("==== analysed:  \n " + javaPlatformClassesFolder.getAbsolutePath() + "\n time: "
+			Log.errln("==== analysed:  \n " + javaSDKClassesFolder.getAbsolutePath() + "\n time: "
 					+ Util.getFormattedTime(l2 - l1));
 		} catch (Exception e) {
-			Log.errln("xxxx ERROR WHILE ANALYSING JavaPlatformClassDir Folder : " + pathToJavaClasses);
+			Log.errln("xxxx ERROR WHILE ANALYSING JavaSDKClassDir Folder : " + pathToJavaClasses);
 			e.printStackTrace();
 		}
 	}
@@ -404,9 +402,9 @@ public class BundleAnalyser extends ManifestParser {
 		jarfileinstance.close();
 	}
 
-	private static void extractDependenciesAndExportsFromJavaJar(DependencyVisitor visitor, JarFile jarFile)
+	private static void extractDependenciesAndExportsFromJavaSDKJar(DependencyVisitor visitor, JarFile jarFile)
 			throws IOException {
-		Log.outln("==== Starting the JavaPlatformClassesJar: " + jarFile.getName() + " analysis ====");
+		Log.outln("==== Starting the JavaSDKClassesJar: " + jarFile.getName() + " analysis ====");
 
 		Enumeration<? extends JarEntry> en = jarFile.entries();
 		int classesAnalyzedCounter = 0;
@@ -441,7 +439,7 @@ public class BundleAnalyser extends ManifestParser {
 				bufferedTempReader.close();
 				Log.outln("==== created : " + TEMPFileName + "==== ");
 				internalFileCounter++;
-				extractDependenciesAndExportsFromJavaJar(visitor, new JarFile(TEMPFileName));
+				extractDependenciesAndExportsFromJavaSDKJar(visitor, new JarFile(TEMPFileName));
 				Log.outln("==== delete = " + new File(TEMPFileName).delete() + " : " + TEMPFileName + "====");
 				Log.outln("==== ==== ==== ==== ");
 
@@ -450,14 +448,14 @@ public class BundleAnalyser extends ManifestParser {
 		}
 
 		Log.outln("==== ==== " + classesAnalyzedCounter + " Class Files read.");
-		Log.outln("==== Ending the JavaPlatformClassesJar : " + jarFile.getName() + " analysis ====");
+		Log.outln("==== Ending the JavaSDKClassesJar : " + jarFile.getName() + " analysis ====");
 		jarFile.close();
 	}
 
-	private static void extractDependenciesAndExportsFromJavaPlatform(DependencyVisitor visitor, File folder)
+	private static void extractDependenciesAndExportsFromJavaSDKDir(DependencyVisitor visitor, File folder)
 			throws IOException {
 
-		Log.outln("==== Starting the JavaPlatformClasses Dir : " + folder.getCanonicalPath() + " analysis ====");
+		Log.outln("==== Starting the JavaSDKClasses Dir : " + folder.getCanonicalPath() + " analysis ====");
 
 		// getting a recursive list of all files contained in this plugin dir.
 		Set<String> dirFileList = Util.listFilesForFolder(folder);
@@ -481,13 +479,13 @@ public class BundleAnalyser extends ManifestParser {
 			} else if (name.toLowerCase().endsWith(Constants.JAR_FILE_EXTENSION)) {
 				// nested jar.
 
-				extractDependenciesAndExportsFromJavaJar(visitor, new JarFile(entry));
+				extractDependenciesAndExportsFromJavaSDKJar(visitor, new JarFile(entry));
 
 			}
 		}
 
 		Log.outln(classesAnalyzedCounter + " Class Files read.");
-		Log.outln("==== Ending the JavaPlatformClasses :  " + folder.getCanonicalPath() + " analysis =====");
+		Log.outln("==== Ending the JavaSDKClasses :  " + folder.getCanonicalPath() + " analysis =====");
 	}
 
 	/**
@@ -1417,7 +1415,7 @@ public class BundleAnalyser extends ManifestParser {
 		fwriter.close();
 	
 	}
-	private static void writeJavaPlatformClassesData(DependencyVisitor v, BundleInfo bundleinfo, String pluginFileName,
+	private static void writeJavaSDKClassesData(DependencyVisitor v, BundleInfo bundleinfo, String pluginFileName,
 			String outputLocation) throws IOException {
 
 		pluginFileName = pluginFileName.toLowerCase().trim();
@@ -1585,7 +1583,7 @@ public class BundleAnalyser extends ManifestParser {
 		}
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 		writer.write(Constants.BUNDLE_SYMBOLICNAME + "\n");
-		String symbolicName=Constants.EXTRACT_FILE_NAME_JAVA_CLASSES_PLATFORM;
+		String symbolicName=Constants.EXTRACT_FILE_NAME_JAVA_CLASSES_SDK;
 		if (flag_bundleInfoExists) {
 			symbolicName=((null != bundleinfo.getSymbolicName() && !"".equalsIgnoreCase(bundleinfo.getSymbolicName().trim() ) ) ? bundleinfo.getSymbolicName().toString().trim() : symbolicName);
 			// Log.outln("Symbolic Name = "+

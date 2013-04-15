@@ -37,9 +37,9 @@ public class PluginAnalyserJobRunner {
 		String mirrorSiteDesinationName =
 //		 "new_site2_____";
 //		 "new_site3_____";
-//		"__WorkingEclipseSite_features_and_plugins__";
+		"__WorkingEclipseSite_features_and_plugins__";
 //		 "_plugin_sandbox";
-				"_Base_Eclipse_TestingVersion";
+//				"_Base_Eclipse_TestingVersion";
 //		 "eclipse_juno_p2_mirror_site";
 		// + Util.getCurrentTimeString();
 
@@ -189,7 +189,7 @@ public class PluginAnalyserJobRunner {
 			String pathToJavaClasses="/Users/singhsk/Developer/java_classes";
 			boolean eraseOldExtracts = true;
 		
-//			AnalysisRunner.analyseAndRecord(destinationDirectory, outputLocation, pathToJavaClasses, eraseOldExtracts);
+			AnalysisRunner.analyseAndRecord(destinationDirectory, outputLocation, pathToJavaClasses, eraseOldExtracts);
 
 			// //////////////////////////////////////////////////////
 			// the dependency finder.
