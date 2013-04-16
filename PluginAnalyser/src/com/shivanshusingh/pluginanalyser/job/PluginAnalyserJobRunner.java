@@ -197,6 +197,7 @@ public class PluginAnalyserJobRunner {
 			outputLocation = "./" + currOutpurDir + "/_OUTPUT";
 
 			String pluginExtractsLocation = outputLocation + "/plugins";
+			String featureExtractsLocation = outputLocation + "/features";
 			// without the trailing slash(/)
 			String pluginextractAnalysisDestLocation = outputLocation + "/_DEPENDENCY_SET";
 
@@ -205,9 +206,9 @@ public class PluginAnalyserJobRunner {
 			boolean ignoreBundlesMarkedToBeIgnored = false;
 			boolean considerInvokationSatisfactionProxies = true;
 			boolean ignoreVersionInFeatureModelGeneration = false;
-			DependencyFinder.buildPluginDependencyReports(pluginExtractsLocation, pluginextractAnalysisDestLocation,
-					considerBundleExportsOnly, ignoreBundlesMarkedToBeIgnored, considerInvokationSatisfactionProxies,
-					eraseoldDependenctSetExtrcats, ignoreVersionInFeatureModelGeneration);
+			DependencyFinder.buildPluginAndFeatureDependencyReports(pluginExtractsLocation, featureExtractsLocation,
+					pluginextractAnalysisDestLocation, considerBundleExportsOnly, ignoreBundlesMarkedToBeIgnored,
+					considerInvokationSatisfactionProxies, eraseoldDependenctSetExtrcats, ignoreVersionInFeatureModelGeneration);
 			 ///////////////////////////////////////////////////////////////////////////////////////////////
 			long time2 = System.currentTimeMillis();
 			Log.outln("Current Job for site configuration at  :  " + destinationDirectory + "  time: "
