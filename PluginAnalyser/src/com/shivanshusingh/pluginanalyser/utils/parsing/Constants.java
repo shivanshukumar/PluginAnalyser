@@ -14,6 +14,7 @@ import java.util.List;
 public interface Constants {
 
 	public static final String CONFIG_ 													= "CONFIG_";
+	public static final String _FE_ 													= "_FE:__";
 
 	public static final String MARKER_ADDON 											= "==";
 	public static final String MARKER_INTERIM 											= "====";
@@ -23,11 +24,12 @@ public interface Constants {
 
 	public static final String BUNDLE_CLASSPATHENTRIES 									= MARKER_ADDON +  "Bundle ClassPathEntries"  			  +  MARKER_ADDON ;
 	public static final String BUNDLE_EXPORTS 											= MARKER_ADDON + "Bundle Exports"  						  +  MARKER_ADDON ;
-	public static final String BUNDLE_FRAGMENT_HOST 									= MARKER_ADDON + "If FRAGMENT then HOSTBUNDLE" +  MARKER_ADDON ;
-	public static final String BUNDLE_IGNORE 											= MARKER_ADDON + "IGNORE BUNDLE COZ MANIFEST OR SOME PROPERTY OF IT WAS MALFORMED " 							+ MARKER_ADDON;
+	public static final String BUNDLE_FRAGMENT_HOST 									= MARKER_ADDON + "If FRAGMENT then HOSTBUNDLE"  			 +  MARKER_ADDON ;
+	public static final String BUNDLE_IGNORE 											= MARKER_ADDON + "IGNORE BUNDLE COZ MANIFEST OR SOME PROPERTY OF IT WAS MALFORMED " 			+ MARKER_ADDON;
 	public static final String BUNDLE_PACKAGE_IMPORTS 									= MARKER_ADDON + "Bundle Package Imports"  				  +  MARKER_ADDON ;
 	public static final String BUNDLE_PLUGIN_XML 										= MARKER_ADDON + "Bundle Plugin.xml"  					  +  MARKER_ADDON ;
-	public static final String BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL					= "PAUNKNOWN";
+	
+	public static final String PROPERTY_VALUE_UNKNOWN_LITERAL							= "PAUNKNOWN";
 	
 	public static final String BUNDLE_REQUIREMENTS 										= MARKER_ADDON + "Bundle Requirements"  				  +  MARKER_ADDON ;
 	public static final String BUNDLE_OTHER_BUNDLE_IMPORTS 								= MARKER_ADDON + "Bundle Other BUNDLE Imports"  			+ MARKER_ADDON ;
@@ -35,12 +37,11 @@ public interface Constants {
 	public static final String BUNDLE_VERSION 											= MARKER_ADDON + "Version"  							  +  MARKER_ADDON ;
 	public static final String BUNDLE_VERSION_WITHOUT_QUALIFIER 						= MARKER_ADDON + "Version without qualifier"  			  +  MARKER_ADDON ;
 
-	public static final String BUNDLE_SYMBOLICNAME_UNKNOWN_LITERAL 						= BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL		 ;
-	public static final String BUNDLE_VERSION_UNKNOWN_WITHOUT_QUALIFIER_LITERAL 		= BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL + "." + BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL + "." + BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL;
-	public static final String BUNDLE_VERSION_UNKNOWN_LITERAL 							= BUNDLE_VERSION_UNKNOWN_WITHOUT_QUALIFIER_LITERAL  + "." + BUNDLE_PROPERTY_VALUE_UNKNOWN_LITERAL;
+	public static final String BUNDLE_VERSION_UNKNOWN_WITHOUT_QUALIFIER_LITERAL 		= PROPERTY_VALUE_UNKNOWN_LITERAL + "." + PROPERTY_VALUE_UNKNOWN_LITERAL + "." + PROPERTY_VALUE_UNKNOWN_LITERAL;
+	public static final String BUNDLE_VERSION_UNKNOWN_LITERAL 							= BUNDLE_VERSION_UNKNOWN_WITHOUT_QUALIFIER_LITERAL  + "." + PROPERTY_VALUE_UNKNOWN_LITERAL;
 
-	public static final String DELIM_BUNDLE_VERSION_STRING_CLOSE 						= "%>";
-	public static final String DELIM_BUNDLE_VERSION_STRING_OPEN 						= "<%";
+	public static final String DELIM_VERSION_STRING_CLOSE 						= "%>";
+	public static final String DELIM_VERSION_STRING_OPEN 						= "<%";
 	public static final String DELIM_PLUGIN_DEPENDENCY_ELEMENT_SET  					= "####";
 	public static final String DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE 				= " => ";
 
@@ -57,17 +58,32 @@ public interface Constants {
 	public static final String EXCEPTION_MSG_EARLY_END_OF_A_PARAMETER 					= "Early end of a parameter";
 
 	public static final String EXTRACT_FILE_EXTENSION_FEATURE							= ".extr";
+	public static final String EXTRACT_FILE_EXTENSION_FEATUREMAP 						= ".obj";
 	public static final String EXTRACT_FILE_EXTENSION_PLUGIN 							= ".extr";
 	public static final String EXTRACT_FILE_EXTENSION_PLUGINMAP 						= ".obj";
-	public static final String EXTRACT_FILE_NAME_JAVA_CLASSES_SDK 						= "java.classes.sdk";
+	public static final String EXTRACT_FILE_NAME_JAVA_CLASSES_SDK 						= "JAVA.CLASSES.SDK";
+	public static final String EXTRACT_FILE_NAME_FEATUREMAP 							= "FEATURE-MAP-OBJECT";
 	public static final String EXTRACT_FILE_NAME_PLUGINMAP 								= "PLUGIN-MAP-OBJECT";
 	public static final String EXTRACT_FILE_PREFIX_FEATURE 								= "EXTRACT-FEATURE-";
+	public static final String EXTRACT_FILE_PREFIX_FEATUREMAP 							= "EXTRACT-FEATUREMAP-";
 	public static final String EXTRACT_FILE_PREFIX_PLUGIN 								= "EXTRACT-PLUGIN-";
 	public static final String EXTRACT_FILE_PREFIX_PLUGINMAP 							= "EXTRACT-PLUGINMAP-";
 	public static final String EXTENSION_TXT 											= ".txt";
 	
 	public static final String JAR_FILE_EXTENSION 										= ".jar";
-	
+
+	public static final String FEATURE_FEATURE_XML 										= MARKER_ADDON + "Feature.xml " 				+ MARKER_ADDON;
+	public static final String FEATURE_LABEL 											= MARKER_ADDON + "Label " 						+ MARKER_ADDON;
+	public static final String FEATURE_IMPORTS 											= MARKER_ADDON + "Imports " 					+ MARKER_ADDON;
+	public static final String FEATURE_PROVIDED_PLUGINS 								= MARKER_ADDON + "Provided Plugins " 				+ MARKER_ADDON;
+	public static final String FEATURE_DESCRIPTION 										= MARKER_ADDON + "Description " 				+ MARKER_ADDON;
+	public static final String FEATURE_UPDATE_LABEL 									= MARKER_ADDON + "UpdateLabel " 				+ MARKER_ADDON;
+	public static final String FEATURE_URL 												= MARKER_ADDON + "URL " 								+ MARKER_ADDON;
+	public static final String FEATURE_PROVIDER_NAME 									= MARKER_ADDON + "ProviderName " 				+ MARKER_ADDON;
+	public static final String FEATURE_VERSION_WITHOUT_QUALIFIER 						= MARKER_ADDON + "Version  Without Qualifier  "  		+ MARKER_ADDON;
+	public static final String FEATURE_VERSION 											= MARKER_ADDON + "Version " 							+ MARKER_ADDON;
+	public static final String FEATURE_ID 												= MARKER_ADDON + "Id   " 						+ MARKER_ADDON;
+
 	public static final String PLUGIN_ALL_CLASS_PACKAGES 								= MARKER_ADDON + "All Class packages " 						+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_INHERITANCE_AND_INTERFACE_PAIRS   			= MARKER_ADDON + "All Inheritance AND Interface Impl Pairs Super Set "			+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_INHERITANCE_HIERARCHIES 						= MARKER_ADDON + "All Inheritance Hierarchies "  	  		+ MARKER_ADDON;
@@ -117,5 +133,6 @@ public interface Constants {
 			));
 
 
-	//TODO Add support for features.
+
+
 }

@@ -1,7 +1,10 @@
 package com.shivanshusingh.pluginanalyser.internal.osgihelper.util;
 
+import java.text.ParseException;
 import java.util.HashSet;
 import java.util.Set;
+
+import org.apache.ivy.osgi.util.Version;
 
 /**
  * contains the Feature meta data, feature.xml, the associated plugins and the other dependencies.
@@ -11,29 +14,20 @@ import java.util.Set;
 
 public class FeatureInformation {
 
+	public static final Version DEFAULT_VERSION = new Version(0, 0, 0, null);
 	// plugin format: <name>;<version>
 	private Set<String> plugins = new HashSet<String>();
 	private StringBuffer xml = new StringBuffer();
 	private String id;
 	private String label;
-	private String version;
-	private String versionWithoutQualifier;
+	private Version version;
 	private String providerName;
 	private String url;
 	private String updateLabel;
-	// import format: <type>;<name>;<version><;match>
+	// import format: <type>;<name>;<version>;<match>
 	private Set<String> imports = new HashSet<String>();
 	private String description;
 
-	public String getVersionWithoutQualifier() {
-		return versionWithoutQualifier;
-	}
-
-	public void setVersionWithoutQualifier(String versionWithoutQualifier) {
-		this.versionWithoutQualifier = versionWithoutQualifier;
-	}
-
-	
 	public String getProviderName() {
 		return providerName;
 	}
@@ -106,11 +100,18 @@ public class FeatureInformation {
 		this.xml.append(sb);
 	}
 
-	public String getVersion() {
-		return version;
+	public Version getVersion() {
+		  return version == null ? DEFAULT_VERSION : version;
 	}
 
-	public void setVersion(String version) {
+	public void setVersion(String versionStr) {
+		Version version = null;
+		try {
+			version = new Version(versionStr);
+		} catch (ParseException e) {
+			
+			e.printStackTrace();
+		}
 		this.version = version;
 	}
 

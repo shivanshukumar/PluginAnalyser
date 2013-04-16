@@ -9,7 +9,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Enumeration;
-import java.util.StringTokenizer;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 
@@ -34,6 +37,11 @@ import com.shivanshusingh.pluginanalyser.utils.parsing.Constants;
  * 
  */
 public class FeatureAnalyser {
+
+	// Map for: Feature Name (featureidOrName)  ->   featureId(featureIdOrName<%version.qualifier%>)   ->   feature extract file names
+		// set..
+		private static Map<String, Map<String, Set<String>>> featureMap = new HashMap<String, Map<String, Set<String>>>();
+		private static long UNKNOWN_FeatureId_Counter = 0;
 
 	/**
 	 * analyses and records in output files, all the metada for the features in
@@ -100,6 +108,10 @@ public class FeatureAnalyser {
 			}
 
 		}
+		//writing the plugin map to disk.
+		Util.writeObjectToDisk(featureMap,Constants.EXTRACT_FILE_PREFIX_FEATUREMAP
+				+Constants.EXTRACT_FILE_NAME_FEATUREMAP + Constants.EXTRACT_FILE_EXTENSION_FEATUREMAP, outputLocation);
+			
 		long l2 = System.currentTimeMillis();
 		Log.outln(featureAnlalysedCounter + " features have been analyzed");
 		Log.errln(featureAnlalysedCounter + " features have been analyzed");
@@ -321,13 +333,7 @@ public class FeatureAnalyser {
 					featureInfo.setId(eElement.getAttribute("id").trim());
 					featureInfo.setLabel(eElement.getAttribute("label").trim());
 					featureInfo.setVersion(eElement.getAttribute("version").trim());
-					StringTokenizer versionTokens = new StringTokenizer(eElement.getAttribute("version").trim(), ".");
-					StringBuffer versionWithoutQualifier = new StringBuffer(versionTokens.nextToken());
-					for (int x = 0; x < 2 && versionTokens.hasMoreElements(); x++) {
-						versionWithoutQualifier.append("." + versionTokens.nextToken().trim());
-					}
-					featureInfo.setVersionWithoutQualifier(versionWithoutQualifier.toString());
-
+					
 					featureInfo.setProviderName(eElement.getAttribute("provider-name").trim());
 
 					// Log.outln("  For \"Feature\" id : " +
@@ -413,47 +419,52 @@ public class FeatureAnalyser {
 		FileWriter fwriter = new FileWriter(outputLocation + Constants.EXTRACT_FILE_PREFIX_FEATURE
 				+ featureFileName.replace('/', '_') + Constants.EXTRACT_FILE_EXTENSION_FEATURE);
 		BufferedWriter writer = new BufferedWriter(fwriter);
-		writer.write("Id ========\n");
+		writer.write(Constants.FEATURE_ID+"\n");
+		String featureId=Constants.PROPERTY_VALUE_UNKNOWN_LITERAL+"_"+UNKNOWN_FeatureId_Counter++;
+		featureId=((null != featureInfo.getId() && !"".equalsIgnoreCase(featureInfo.getId().trim() ) ) ? featureInfo.getId().trim() : featureId);
 		writer.write(featureInfo.getId() + "\n");
-		Log.outln(featureInfo.getId() + "=========");
+		//Log.outln(featureInfo.getId() + "=========");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
-		writer.write("Label ========\n");
+		writer.write(Constants.FEATURE_LABEL+"\n");
 		writer.write(featureInfo.getLabel() + "\n");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
-		writer.write("Version ========\n");
-		writer.write(featureInfo.getVersion() + "\n");
+		writer.write(Constants.FEATURE_VERSION+"\n");
+		writer.write(featureInfo.getVersion().toString() + "\n");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
-		writer.write("Version  Without Qualifier  ========\n");
-		writer.write(featureInfo.getVersionWithoutQualifier() + "\n");
+		
+		addToFeatureMap(featureFileName, featureId, featureInfo.getVersion().toString());
+		
+		writer.write(Constants.FEATURE_VERSION_WITHOUT_QUALIFIER+"\n");
+		writer.write(featureInfo.getVersion().withoutQualifier() + "\n");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
-		writer.write("ProviderName ========\n");
+		writer.write(Constants.FEATURE_PROVIDER_NAME+"\n");
 		writer.write(featureInfo.getProviderName() + "\n");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
-		writer.write("URL ========\n");
+		writer.write(Constants.FEATURE_URL+"\n");
 		writer.write(featureInfo.getUrl() + "\n");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
-		writer.write("UpdateLabel ========\n");
+		writer.write(Constants.FEATURE_UPDATE_LABEL+"\n");
 		writer.write(featureInfo.getUpdateLabel() + "\n");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
-		writer.write("Description ========\n");
+		writer.write(Constants.FEATURE_DESCRIPTION+"\n");
 		writer.write(featureInfo.getDescription() + "\n");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 
-		writer.write("Plugins ========\n");
+		writer.write(Constants.FEATURE_PROVIDED_PLUGINS+"\n");
 		for (String s : featureInfo.getPlugins()) {
 			writer.write(s + "\n");
 		}
 		// Log.outln(featureInfo.getPlugins().size() + "," + " plugins.");
 
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
-		writer.write("Imports ========\n");
+		writer.write(Constants.FEATURE_IMPORTS+"\n");
 		for (String s : featureInfo.getImports()) {
 			writer.write(s + "\n");
 		}
 		// Log.outln(featureInfo.getImports().size() + "," + " imports.");
 
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
-		writer.write("Feature.xml ========\n");
+		writer.write(Constants.FEATURE_FEATURE_XML+"\n");
 		writer.write(featureInfo.getXml().trim() + "\n");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 
@@ -461,5 +472,23 @@ public class FeatureAnalyser {
 		fwriter.close();
 
 	}
-
+	/**
+	 * @param featureFileName
+	 * @param featureIdOrName
+	 * @param featureVersionWithQualifier
+	 */
+	private static void addToFeatureMap(String featureFileName, String featureIdOrName, String featureVersionWithQualifier) {
+		// adding the  feature ID and extract file name to the feature map.
+		Map<String,Set<String>> interimFeatureIdMap=new HashMap<String, Set<String>>();
+		if(featureMap.containsKey(featureIdOrName))
+			interimFeatureIdMap=featureMap.get(featureIdOrName);
+		String featureId=featureIdOrName+Constants.DELIM_VERSION_STRING_OPEN+featureVersionWithQualifier+Constants.DELIM_VERSION_STRING_CLOSE;
+		Set<String> interimFeatureFileSet=new HashSet<String>();
+		if(interimFeatureIdMap.containsKey(featureId))
+			interimFeatureFileSet=interimFeatureIdMap.get(featureId);
+		interimFeatureFileSet.add(featureFileName);
+		//adding back to the Map and outer map.
+		interimFeatureIdMap.put(featureId, interimFeatureFileSet);
+		featureMap.put(featureIdOrName, interimFeatureIdMap);
+	}
 }

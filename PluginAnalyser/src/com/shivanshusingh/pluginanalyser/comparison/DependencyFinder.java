@@ -535,14 +535,14 @@ public class DependencyFinder {
 	 */
 	private static String parsePluginIdForVersion(String candidatePluginId) {
 		String version = "";
-		String[] splits = candidatePluginId.split(Constants.DELIM_BUNDLE_VERSION_STRING_OPEN);
+		String[] splits = candidatePluginId.split(Constants.DELIM_VERSION_STRING_OPEN);
 		if (null != splits && 2 <= splits.length) {// this means that there was
 													// some version information,
 													// else there is no version
 													// information.
 			version = splits[1];
-			version = version.replace(Constants.DELIM_BUNDLE_VERSION_STRING_OPEN, "")
-					.replace(Constants.DELIM_BUNDLE_VERSION_STRING_CLOSE, "").trim();
+			version = version.replace(Constants.DELIM_VERSION_STRING_OPEN, "")
+					.replace(Constants.DELIM_VERSION_STRING_CLOSE, "").trim();
 		}
 
 		return version;
@@ -768,7 +768,7 @@ public class DependencyFinder {
 		Collections.sort(pluginDepFM_List);
 		for(String s:pluginDepFM_List)
 		{
-			pluginDepFMWriter.write(s.replace(".", "_").replace("-", "_").replace(Constants.DELIM_BUNDLE_VERSION_STRING_OPEN, "__").replace(Constants.DELIM_BUNDLE_VERSION_STRING_CLOSE, "__")+"\n");
+			pluginDepFMWriter.write(s.replace(".", "_").replace("-", "_").replace(Constants.DELIM_VERSION_STRING_OPEN, "__").replace(Constants.DELIM_VERSION_STRING_CLOSE, "__")+"\n");
 		}
 		pluginDepFMWriter.close();
 		pluginDepFMfilewriter.close();
@@ -890,7 +890,7 @@ public class DependencyFinder {
 		{
 			for(String f:constraintsFM.get(s))
 				s+=f;
-			constraintsFMWriter.write(s.replace(".", "_").replace("-", "_").replace(Constants.DELIM_BUNDLE_VERSION_STRING_OPEN, "__").replace(Constants.DELIM_BUNDLE_VERSION_STRING_CLOSE, "__")+"\n");
+			constraintsFMWriter.write(s.replace(".", "_").replace("-", "_").replace(Constants.DELIM_VERSION_STRING_OPEN, "__").replace(Constants.DELIM_VERSION_STRING_CLOSE, "__")+"\n");
 		}
 		constraintsFMWriter.close();
 		constraintsFMfilewriter.close();

@@ -1,19 +1,29 @@
 package com.shivanshusingh.pluginanalyser.utils;
 
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Collections;
 import java.util.Date;
 import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
 
+import com.shivanshusingh.pluginanalyser.analysis.BundleAnalyser;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
+import com.shivanshusingh.pluginanalyser.utils.parsing.Constants;
 
 /**
  * the utility functions useful in the project.
@@ -287,6 +297,44 @@ public class Util {
 			return false;
 		}
 		return true;
+	}
+
+	/**
+	 * @param fileName
+	 * @param outputLocation
+	 * @throws IOException
+	 */
+	public static void writeObjectToDisk(Object objectToWrite, String fileName, String outputLocation)
+			throws IOException {
+	
+		fileName = fileName.trim().replace('/', '_').replace('\\', '_');
+		
+		outputLocation = (outputLocation + "/").trim().replaceAll("//", "/").replaceAll("\\\\", "\\");
+		
+		FileOutputStream fos = new FileOutputStream(outputLocation + fileName);
+	
+		ObjectOutputStream oos = new ObjectOutputStream(fos);
+	    oos.writeObject(objectToWrite);
+	    oos.close();
+	    fos.close();
+	    
+	    // writing a text version for debugging related use.
+		FileWriter fwriter = new FileWriter(outputLocation+fileName+Constants.EXTENSION_TXT);
+		BufferedWriter writer = new BufferedWriter(fwriter);
+	
+		List<String> pluginNames=new ArrayList<String>(((Map<String, Map<String, Set<String>>>) objectToWrite).keySet());
+		Collections.sort(pluginNames);
+		for(String pluginName:pluginNames)
+		{
+			
+			String toWrite=pluginName+"="+((Map<String, Map<String, Set<String>>>) objectToWrite).get(pluginName).toString();
+			writer.write(toWrite+"\n");
+		}
+		
+		// writer.write("===================================================\n");
+		writer.close();
+		fwriter.close();
+	
 	}
 
 }

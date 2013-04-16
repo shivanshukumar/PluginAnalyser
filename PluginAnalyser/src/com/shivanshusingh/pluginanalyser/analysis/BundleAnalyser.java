@@ -4,16 +4,13 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.ObjectOutputStream;
 import java.text.ParseException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -43,12 +40,11 @@ import com.shivanshusingh.pluginanalyser.utils.parsing.ParsingUtil;
  */
 public class BundleAnalyser extends ManifestParser {
 
-	private static long internalFileCounter = 0;
 	
 	// Map for: Pluin Name (symbolic name) =>
 	// pluginId(symbolicname[version.qualifier]) => plugin extract file names
 	// set..
-	private static Map<String, Map<String, Set<String>>> pluginMap = new HashMap<String, Map<String, Set<String>>>();
+	public static Map<String, Map<String, Set<String>>> pluginMap = new HashMap<String, Map<String, Set<String>>>();
 	private static long UNKNOWN_SYMBOLIC_NAME_Counter = 0;
 
 	/**
@@ -120,7 +116,8 @@ public class BundleAnalyser extends ManifestParser {
 			}
 		}
 		//writing the plugin map to disk.
-		writePluginMap(Constants.EXTRACT_FILE_NAME_PLUGINMAP, outputLocation);
+		Util.writeObjectToDisk(pluginMap,Constants.EXTRACT_FILE_PREFIX_PLUGINMAP
+				+Constants.EXTRACT_FILE_NAME_PLUGINMAP + Constants.EXTRACT_FILE_EXTENSION_PLUGINMAP, outputLocation);
 		
 		long l2 = System.currentTimeMillis();
 		Log.outln(pluginAnalysedCounter + " plugin have been analyzed");
@@ -306,7 +303,6 @@ public class BundleAnalyser extends ManifestParser {
 							bufferedTempWriter.close();
 							bufferedTempReader.close();
 							Log.outln("==== created : " + TEMPFileName + "====");
-							internalFileCounter++;
 							extractDependenciesAndExportsFromJar(visitor, bundleInformation, new JarFile(TEMPFileName));
 							Log.outln("==== delete = " + new File(TEMPFileName).delete() + " : " + TEMPFileName + "====");
 							Log.outln("==== ==== ==== ==== ");
@@ -386,7 +382,6 @@ public class BundleAnalyser extends ManifestParser {
 							bufferedTempWriter.close();
 							bufferedTempReader.close();
 							Log.outln("==== created : " + TEMPFileName + "==== ");
-							internalFileCounter++;
 							extractDependenciesAndExportsFromJar(visitor, bundleInformation, new JarFile(TEMPFileName));
 							Log.outln("==== delete = " + new File(TEMPFileName).delete() + " : " + TEMPFileName + "====");
 							Log.outln("==== ==== ==== ==== ");
@@ -438,7 +433,6 @@ public class BundleAnalyser extends ManifestParser {
 				bufferedTempWriter.close();
 				bufferedTempReader.close();
 				Log.outln("==== created : " + TEMPFileName + "==== ");
-				internalFileCounter++;
 				extractDependenciesAndExportsFromJavaSDKJar(visitor, new JarFile(TEMPFileName));
 				Log.outln("==== delete = " + new File(TEMPFileName).delete() + " : " + TEMPFileName + "====");
 				Log.outln("==== ==== ==== ==== ");
@@ -824,7 +818,7 @@ public class BundleAnalyser extends ManifestParser {
 	private static void writeData(DependencyVisitor v, BundleInfo bundleinfo, String pluginFileName, String outputLocation)
 			throws IOException {
 
-		pluginFileName = pluginFileName.toLowerCase().trim();
+		pluginFileName = pluginFileName.trim();
 		if (pluginFileName.endsWith(Constants.JAR_FILE_EXTENSION))
 			pluginFileName = pluginFileName.substring(0, pluginFileName.length() - Constants.JAR_FILE_EXTENSION.length());
 
@@ -943,13 +937,8 @@ public class BundleAnalyser extends ManifestParser {
 		Log.errln("====Now Pruning  for superClass and Interface function invokations at the plugin Level");
 
 		for (String invokation : pluginPruningObject.invokationsToBeRemoved) {
-			boolean x1 = allExternalInvokations.remove(invokation);
-			boolean x2 = allExternalNonJavaInvokations.remove(invokation);
-			// Log.outln(x1 + "= remove  from AllExternalInvokations \t: " +
-			// invokation);
-			// Log.outln(x2 +
-			// "= remove  from AllExternalAndNonJavaInvokations \t : " +
-			// invokation);
+			 allExternalInvokations.remove(invokation);
+			 allExternalNonJavaInvokations.remove(invokation);
 		}
 
 		// Pruning over.
@@ -1068,7 +1057,7 @@ public class BundleAnalyser extends ManifestParser {
 		}
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 		writer.write(Constants.BUNDLE_SYMBOLICNAME + "\n");
-		String symbolicName=Constants.BUNDLE_SYMBOLICNAME_UNKNOWN_LITERAL+"_"+UNKNOWN_SYMBOLIC_NAME_Counter++;
+		String symbolicName=Constants.PROPERTY_VALUE_UNKNOWN_LITERAL+"_"+UNKNOWN_SYMBOLIC_NAME_Counter++;
 		if (flag_bundleInfoExists) {
 			symbolicName=((null != bundleinfo.getSymbolicName() && !"".equalsIgnoreCase(bundleinfo.getSymbolicName().trim() ) ) ? bundleinfo.getSymbolicName().toString().trim() : symbolicName);
 			// Log.outln("Symbolic Name = "+
@@ -1370,7 +1359,7 @@ public class BundleAnalyser extends ManifestParser {
 		Map<String,Set<String>> interimPluginIdMap=new HashMap<String, Set<String>>();
 		if(pluginMap.containsKey(bundleSymbolicName))
 			interimPluginIdMap=pluginMap.get(bundleSymbolicName);
-		String pluginId=bundleSymbolicName+Constants.DELIM_BUNDLE_VERSION_STRING_OPEN+bundleVersionWithQualifier+Constants.DELIM_BUNDLE_VERSION_STRING_CLOSE;
+		String pluginId=bundleSymbolicName+Constants.DELIM_VERSION_STRING_OPEN+bundleVersionWithQualifier+Constants.DELIM_VERSION_STRING_CLOSE;
 		Set<String> interimPluginFileSet=new HashSet<String>();
 		if(interimPluginIdMap.containsKey(pluginId))
 			interimPluginFileSet=interimPluginIdMap.get(pluginId);
@@ -1381,50 +1370,10 @@ public class BundleAnalyser extends ManifestParser {
 	}
 	
 	
-	/**
-	 * @param pluginMapFileName
-	 * @param outputLocation
-	 * @throws IOException
-	 */
-	private static void writePluginMap(String pluginMapFileName, String outputLocation)
-			throws IOException {
-
-		pluginMapFileName = pluginMapFileName.toLowerCase().trim().replace('/', '_').replace('\\', '_');
-		
-		outputLocation = (outputLocation + "/").trim().replaceAll("//", "/").replaceAll("\\\\", "\\");
-//		
-		
-		FileOutputStream fos = new FileOutputStream(outputLocation + Constants.EXTRACT_FILE_PREFIX_PLUGINMAP
-			+pluginMapFileName + Constants.EXTRACT_FILE_EXTENSION_PLUGINMAP);
-	
-		ObjectOutputStream oos = new ObjectOutputStream(fos);
-	    oos.writeObject(pluginMap);
-	    oos.close();
-	    fos.close();
-	    
-	    // writing a text version for debugging related use.
-		FileWriter fwriter = new FileWriter(outputLocation + Constants.EXTRACT_FILE_PREFIX_PLUGINMAP
-				+pluginMapFileName + Constants.EXTENSION_TXT);
-		BufferedWriter writer = new BufferedWriter(fwriter);
-
-		List<String> pluginNames=new ArrayList<String>(pluginMap.keySet());
-		Collections.sort(pluginNames);
-		for(String pluginName:pluginNames)
-		{
-			
-			String toWrite=pluginName+"="+pluginMap.get(pluginName).toString();
-			writer.write(toWrite+"\n");
-		}
-		
-		// writer.write("===================================================\n");
-		writer.close();
-		fwriter.close();
-	
-	}
 	private static void writeJavaSDKClassesData(DependencyVisitor v, BundleInfo bundleinfo, String pluginFileName,
 			String outputLocation) throws IOException {
 
-		pluginFileName = pluginFileName.toLowerCase().trim();
+		pluginFileName = pluginFileName.trim();
 		if (pluginFileName.endsWith(Constants.JAR_FILE_EXTENSION))
 			pluginFileName = pluginFileName.substring(0, pluginFileName.length() - Constants.JAR_FILE_EXTENSION.length());
 
