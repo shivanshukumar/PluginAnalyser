@@ -14,7 +14,7 @@ import java.util.List;
 public interface Constants {
 
 	public static final String CONFIG_ 													= "CONFIG_";
-	public static final String _FE_ 													= "_FE:__";
+	public static final String _FE_ 													= "__";
 
 	public static final String MARKER_ADDON 											= "==";
 	public static final String MARKER_INTERIM 											= "====";
@@ -82,7 +82,7 @@ public interface Constants {
 	public static final String FEATURE_PROVIDER_NAME 									= MARKER_ADDON + "ProviderName " 				+ MARKER_ADDON;
 	public static final String FEATURE_VERSION_WITHOUT_QUALIFIER 						= MARKER_ADDON + "Version  Without Qualifier  "  		+ MARKER_ADDON;
 	public static final String FEATURE_VERSION 											= MARKER_ADDON + "Version " 							+ MARKER_ADDON;
-	public static final String FEATURE_ID 												= MARKER_ADDON + "Id   " 						+ MARKER_ADDON;
+	public static final String FEATURE_ID 												= MARKER_ADDON + "Id OrName  " 						+ MARKER_ADDON;
 
 	public static final String PLUGIN_ALL_CLASS_PACKAGES 								= MARKER_ADDON + "All Class packages " 						+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_INHERITANCE_AND_INTERFACE_PAIRS   			= MARKER_ADDON + "All Inheritance AND Interface Impl Pairs Super Set "			+ MARKER_ADDON;

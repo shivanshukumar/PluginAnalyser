@@ -278,7 +278,7 @@ public class FeatureAnalyser {
 					String importedElementPatch = eElement.getAttribute("patch");
 					// Log.outln(" feature : " + importedFeature);
 					// Log.outln(" plugin : " + importedPlugin);
-					 Log.outln(" version : " + importedElementVersion+" match : " + importedElementMatch);
+					// Log.outln(" version : " + importedElementVersion+" match : " + importedElementMatch);
 
 					// adding the import element to featureinfo;
 					String importElement = (null != importedFeature && !"".equals(importedFeature) ? "feature;"

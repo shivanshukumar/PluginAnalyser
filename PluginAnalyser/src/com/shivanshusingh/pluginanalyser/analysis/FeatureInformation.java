@@ -15,7 +15,9 @@ import org.apache.ivy.osgi.util.Version;
 public class FeatureInformation {
 
 	public static final Version DEFAULT_VERSION = new Version(0, 0, 0, null);
-	// plugin format: <name>;<version>;<fragment>;<os>;<arch>;<ws>
+	/**
+	 * plugin format: <name>;<version>;<fragment>;<os>;<arch>;<ws>
+	 */
 	private Set<String> plugins = new HashSet<String>();
 	private StringBuffer xml = new StringBuffer();
 	private String id;
@@ -24,7 +26,9 @@ public class FeatureInformation {
 	private String providerName;
 	private String url;
 	private String updateLabel;
-	// import format: <type>;<name>;<version>;<match>;<patch>
+	/**
+	 *  import format: <type>;<name>;<version>;<match>;<patch>
+	 */
 	private Set<String> imports = new HashSet<String>();
 	private String description;
 

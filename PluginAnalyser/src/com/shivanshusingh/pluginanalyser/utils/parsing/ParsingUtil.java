@@ -176,7 +176,7 @@ public class ParsingUtil {
 	 * @param pluginExtract
 	 * @return
 	 */
-	public static String buildPluginId(File pluginExtract) {
+	public static String getPluginIdFromExtract(File pluginExtract) {
 		StringBuffer pluginId=new StringBuffer();
 		try {
 			Set<String> pluginSymbolicNameSet=restorePropertyFromExtract(pluginExtract,  Constants.BUNDLE_SYMBOLICNAME  );
@@ -192,6 +192,31 @@ public class ParsingUtil {
 			e.printStackTrace();
 		}
 		return pluginId.toString();
+	}
+	
+	/**
+	 * 
+	 * gets the feature ID from the feature extract
+	 * 
+	 * @param featureExtract
+	 * @return
+	 */
+	public static String getFeatureIdFromExtract(File featureExtract) {
+		StringBuffer featureId=new StringBuffer();
+		try {
+			Set<String> featureIdOrName=restorePropertyFromExtract(featureExtract,  Constants.FEATURE_ID  );
+			Set<String> pluginVersionSet=restorePropertyFromExtract(featureExtract,  Constants.FEATURE_VERSION  );
+			for(String s: featureIdOrName)
+				featureId.append(s.trim());
+			featureId.append(Constants.DELIM_VERSION_STRING_OPEN);
+			for(String s: pluginVersionSet)
+				featureId.append(s.trim());
+			featureId.append(Constants.DELIM_VERSION_STRING_CLOSE);
+		} catch (IOException e) {
+			featureId=new StringBuffer();
+			e.printStackTrace();
+		}
+		return featureId.toString();
 	}
 
 }

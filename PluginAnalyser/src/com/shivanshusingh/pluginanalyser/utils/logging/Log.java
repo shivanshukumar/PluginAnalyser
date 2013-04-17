@@ -5,7 +5,6 @@ import java.io.FileOutputStream;
 import java.io.PrintStream;
 
 import com.shivanshusingh.pluginanalyser.utils.Util;
-import com.sun.tools.corba.se.idl.constExpr.Equal;
 
 /**
  * Logger to log errors and other info.

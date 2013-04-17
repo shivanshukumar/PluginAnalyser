@@ -20,7 +20,7 @@ package com.shivanshusingh.pluginanalyser.utils;
 
 import java.text.ParseException;
 
-import org.apache.ivy.osgi.util.Version;
+
 
 /**
  * Provides version range support.
@@ -390,4 +390,5 @@ public class VersionRange {
         return true;
     }
 
+	
 }

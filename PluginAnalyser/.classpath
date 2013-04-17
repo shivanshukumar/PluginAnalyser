@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry kind="lib" path="resources/libraries/asm-all-4.1.jar" sourcepath="/Users/singhsk/Developer/asm-bytecode-analysis-framework/asm-4.1/src.zip"/>
 	<classpathentry kind="lib" path="resources/libraries/asm-debug-all-4.1.jar"/>
 	<classpathentry kind="lib" path="resources/libraries/ivy-2.3.0.jar" sourcepath="/Users/singhsk/Developer/apache-ivy/apache-ivy-2.3.0-src.zip"/>

@@ -17,9 +17,8 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-import org.apache.ivy.osgi.util.Version;
-
 import com.shivanshusingh.pluginanalyser.utils.Util;
+import com.shivanshusingh.pluginanalyser.utils.Version;
 import com.shivanshusingh.pluginanalyser.utils.VersionRange;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
 import com.shivanshusingh.pluginanalyser.utils.parsing.Constants;
@@ -87,10 +86,12 @@ public class DependencyFinder {
 			boolean considerBundleExportersOnly, boolean ignoreBundlesMarkedToBeIgnored, boolean alsoConsiderInvokationSatisfactionProxies, boolean eraseOld, boolean ignoreVersionsInFeatureModelGeneration)
 			throws IOException {
 
-		Log.outln("==== Now Building the  Plugin Dependency  Set from source: " + pathToBasePluginExtractsDir
-				+ " , considerBundleExportsOnly is " + considerBundleExportersOnly + " ====");
-		Log.errln("==== Now Building the  Plugin Dependency  Set from source: " + pathToBasePluginExtractsDir
-				+ " , considerBundleExportsOnly is " + considerBundleExportersOnly + " ====");
+		Log.outln("==== Now Building the  Plugin and Feature Dependency Set from sources: \n  plugins: "
+				+ pathToBasePluginExtractsDir + " , considerBundleExportsOnly is " + considerBundleExportersOnly
+				+ "\n  features: " + pathToBaseFeatureExtractsDir + " ====");
+		Log.errln("==== Now Building the  Plugin and Feature Dependency Set from sources: \n  plugins: "
+				+ pathToBasePluginExtractsDir + " , considerBundleExportsOnly is " + considerBundleExportersOnly
+				+ "\n  features: " + pathToBaseFeatureExtractsDir + " ====");
 
 		long time1 = System.currentTimeMillis();
 
@@ -145,8 +146,311 @@ public class DependencyFinder {
 			for(String javaClassesPlugin: pluginMap.get(Constants.EXTRACT_FILE_NAME_JAVA_CLASSES_SDK).keySet())
 				dependenciesFM.add(javaClassesPlugin);
 
+		
+		//  adding the feature -> other feature, plugin  and included plugins dependencies to the dependencies feature model.
+		processFeatureExtracts(ignoreVersionsInFeatureModelGeneration, featureExtractDirectory);
 	
 		// now finding plugin dependencies  and also building the plugin dependencies FM.
+		processPluginExtracts(considerBundleExportersOnly, ignoreBundlesMarkedToBeIgnored,
+				alsoConsiderInvokationSatisfactionProxies, ignoreVersionsInFeatureModelGeneration,
+				pluginExtractDirectory);
+
+		// write out the merged file
+		writeData(pathToDependencyAnalysisOutputLocation, ignoreVersionsInFeatureModelGeneration);
+
+		long time2 = System.currentTimeMillis();
+		int entriesLength = pluginExtractDirectory.listFiles().length;
+
+		Log.outln("Dependency Set Creation for " + entriesLength + " plugin extracts, at plugin extract src  :  "
+				+ pathToBasePluginExtractsDir + "  time: " + Util.getFormattedTime(time2 - time1));
+		Log.errln("Dependency Set Creation for " + entriesLength + " plugin extracts, at plugin extract src  :  "
+				+ pathToBasePluginExtractsDir + "  time: " + Util.getFormattedTime(time2 - time1));
+
+	}
+
+	/**
+	 * the function name explains the functionality provided.
+	 * @param ignoreVersionsInFeatureModelGeneration
+	 * @param featureExtractDirectory
+	 * @throws IOException
+	 */
+	private static void processFeatureExtracts( boolean ignoreVersionsInFeatureModelGeneration,
+			File featureExtractDirectory) throws IOException {
+		long time1 = System.currentTimeMillis();
+		File[] featureExtractEntries = featureExtractDirectory.listFiles();
+
+		int entriesLength = featureExtractEntries.length;
+
+		long featureExtractsDone = 0;
+
+		for (File featureExtract : featureExtractEntries) {
+			//System.out.println(featureExtract.getAbsolutePath());
+			featureExtractsDone++;
+			if (0==featureExtractsDone % 50 || featureExtractsDone >= entriesLength) {
+				Log.outln("#### FeatureExtractsMerged = " + featureExtractsDone + " of " + entriesLength + " ("
+						+ (featureExtractsDone * 100 / entriesLength) + "%)");
+
+				Log.outln("## time (merging) so far \t= " + Util.getFormattedTime(System.currentTimeMillis() - time1));
+			}
+			if (Util.checkFile(featureExtract, true, true, true, false)) {
+				/**
+				 * this is the name of the PluginExtract file, without the
+				 * extension. this is for obtaining the fully qualified plugin
+				 * name with version and qualifier, even if that information is
+				 * not in the pluginExtract file, cause because of an originally
+				 * missing manifest.mf file for thus plugin.
+				 */
+				String thisFeatureExtractName = featureExtract.getName().trim();
+
+				// ignoring the ones that are not feature extracts
+				if (!(thisFeatureExtractName.endsWith(Constants.EXTRACT_FILE_EXTENSION_FEATURE) && thisFeatureExtractName
+						.startsWith(Constants.EXTRACT_FILE_PREFIX_FEATURE)))
+					continue;
+
+				// constructing this plugin extract plugin id.
+				String thisFeatureId = ParsingUtil.getFeatureIdFromExtract(featureExtract);
+				// restoring the functions information from the file.
+
+				
+				Set<String> myPlugins = ParsingUtil.restorePropertyFromExtract(featureExtract,
+						Constants.FEATURE_PROVIDED_PLUGINS);
+				Set<String> myImports = ParsingUtil.restorePropertyFromExtract(featureExtract,
+						Constants.FEATURE_IMPORTS);
+
+				//  processing the included plugins:
+				addFeatureIncludedPluginsToFeatureModel(ignoreVersionsInFeatureModelGeneration, thisFeatureId, myPlugins);
+				
+				//  processing imports of the feature.
+				for(String myImport:myImports)
+				{
+					String[] importProps;
+					String importType = "", importName = "", importVersionStr = "", importMatch = "", importPatch = "";
+					importProps = myImport.split(";");
+					for (int x = 0; x < importProps.length; x++) {
+						switch (x) {
+						case 0:
+							importType = importProps[x].trim();
+							break;
+						case 1:
+							importName = importProps[x].trim();
+							break;
+						case 2:
+							importVersionStr = importProps[x].trim();
+							break;
+						case 3:
+							importMatch = importProps[x].trim();
+							break;
+						case 4:
+							importPatch = importProps[x].trim();
+
+						default:
+							break;
+						}
+					}
+
+					String importNamePrefix="";
+					Map<String, Map<String, Set<String>>>  targetMap;
+					if(0=="feature".compareToIgnoreCase(importType))
+					{
+						//  assigning the right kind of map to look up depending upon the type of the import, feature or plugin.
+						
+						targetMap=featureMap;
+						importNamePrefix=Constants._FE_;
+					}
+					else if(0=="plugin".compareToIgnoreCase(importType))
+						targetMap = pluginMap;
+					else
+						continue;
+					if (targetMap.containsKey(importName)) {
+						if (!ignoreVersionsInFeatureModelGeneration) {
+							Set<String> candidateImportIds = targetMap.get(importName).keySet();
+							for (String candidateImportId : candidateImportIds) {
+								try {
+
+									String candidateImportVersionStr = parsePluginOrFeatureIdForVersion(candidateImportId);
+									Version candidateImportVersion = new Version(candidateImportVersionStr);
+									boolean flag_candidateImportMatches = false;
+
+									if (importVersionStr.trim().length() >= 1) {
+										// version is provided
+
+										Version importVersion = new Version(importVersionStr);
+
+										// the candidate import to be added to  feature model if its version matches
+										// as   per the match type to the import   specified by the feature.
+										if (0 == "perfect".compareToIgnoreCase(importMatch)) {
+											if (0 == candidateImportVersion.compareTo(importVersion))
+												flag_candidateImportMatches = true;
+										}
+
+										else if (0 == "equivalent".compareToIgnoreCase(importMatch)) {
+											// the candidate version must be at
+											// least the version specified or at
+											// a higher service level, i.e.
+											// major and minor version levels
+											// must be equal and the third param
+											// must be equal or higher for the
+											// candidate.
+											if (candidateImportVersion.equivalentTo(importVersion))
+												flag_candidateImportMatches = true;
+										}
+
+										else if (0 == "compatible".compareToIgnoreCase(importMatch)) {
+											// the candidate version must be at
+											// a higher or equal service or
+											// minor level, the major level must
+											// be the same.
+											if (candidateImportVersion.compatibleTo(importVersion))
+												flag_candidateImportMatches = true;
+										}
+
+										else if (0 == "greaterOrEqual".compareToIgnoreCase(importMatch)) {
+											// the candidate version must be
+											// either equal or greater then the
+											// specified version, as specified
+											// through the major, minor and
+											// service levels.
+											if (0 <= candidateImportVersion.compareUnqualified(importVersion))
+												flag_candidateImportMatches = true;
+
+										} else {
+
+											// no match is present. so just do
+											// the unqualified comparison.
+											if (0 == candidateImportVersion.compareUnqualified(importVersion))
+												flag_candidateImportMatches = true;
+										}
+									}
+
+									else {
+										// version is not present. go for all
+										// possible
+										// values.
+										flag_candidateImportMatches = true;
+									}
+									if (flag_candidateImportMatches)
+										dependenciesFM.add(Constants._FE_+thisFeatureId + " => " + importNamePrefix + candidateImportId);
+
+								} catch (Exception e) {
+									e.printStackTrace();
+								}
+
+							}
+
+						} else {
+
+							// the versions were to be ignored completely.
+
+							dependenciesFM.add((Constants._FE_ + thisFeatureId + " => " + importNamePrefix + importName)
+									.replaceAll("<(.*?)>", ""));
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/**
+	 * Adds the plugins provided by the feature to the Dependencies Feature Model. e.g. __feature =>  (plugina && pluginb)
+	 * @param ignoreVersionsInFeatureModelGeneration
+	 * @param thisFeatureId
+	 * @param myPlugins
+	 */
+	private static void addFeatureIncludedPluginsToFeatureModel(boolean ignoreVersionsInFeatureModelGeneration, String thisFeatureId, Set<String> myPlugins)
+	{
+		
+		Set<String> includedPluginsSet=new LinkedHashSet<String>();
+		for(String myPlugin:myPlugins)
+		{
+			String[] pluginProps;
+			String pluginName="",pluginVersionStr="",pluginFragment="",pluginOS="",pluginARCH="",pluginWS="";
+			pluginProps=myPlugin.split(";");
+			for(int x=0;x<pluginProps.length; x++)
+			{
+				switch (x) {
+				case 0:
+					pluginName = pluginProps[x].trim();
+					break;
+				case 1:
+					pluginVersionStr = pluginProps[x].trim();
+					break;
+				case 2:
+					pluginFragment = pluginProps[x].trim();
+					break;
+				case 3:
+					pluginOS = pluginProps[x].trim();
+					break;
+				case 4:
+					pluginARCH = pluginProps[x].trim();
+					break;
+				case 5:
+					pluginWS = pluginProps[x].trim();
+					break;
+				default:
+					break;
+				}
+				
+			try {
+					VersionRange versionRange = new VersionRange(pluginVersionStr);
+
+					// now getting all Plugin IDs for the plugin name of
+					// the dependency entry from the pluginmap.
+					if (pluginMap.containsKey(pluginName)) {
+						if (!ignoreVersionsInFeatureModelGeneration) {
+							Set<String> candidatePluginIds = pluginMap.get(pluginName).keySet();
+							for (String candidatePluginId : candidatePluginIds) {
+								String candidatePluginVersionStr = parsePluginOrFeatureIdForVersion(candidatePluginId);
+								Version candidateVersion = new Version(candidatePluginVersionStr);
+								if (versionRange.containsQualified(candidateVersion)) // versionRange.includes(candidateVersion))
+								{
+									includedPluginsSet.add( candidatePluginId.trim()  );
+								}
+							}
+						} else {
+							includedPluginsSet.add( pluginName.trim());
+						}
+					}
+
+				} catch (ParseException e) {
+					e.printStackTrace();
+				}
+
+			}
+		}
+
+		String includedPluginsRHS="";
+		for(String s:includedPluginsSet)
+		{
+			if(!"".equalsIgnoreCase(s.trim()))
+				includedPluginsRHS+=s+" && ";
+		}
+		includedPluginsSet.clear();
+		
+		// removing the trailing &&
+		if (4 <= includedPluginsRHS.length())
+			includedPluginsRHS = includedPluginsRHS.substring(0, includedPluginsRHS.length() - " && ".length());
+		if (!"".equalsIgnoreCase(includedPluginsRHS.trim())) {
+			String pluginDepFMEntry = Constants._FE_ + thisFeatureId.trim() + " => (" + includedPluginsRHS.trim()
+					+ ")";
+
+			if (ignoreVersionsInFeatureModelGeneration) {
+				pluginDepFMEntry = pluginDepFMEntry.replaceAll("<(.*?)>", "");
+			}
+			dependenciesFM.add(pluginDepFMEntry.trim());
+		}
+	}
+	/**
+	 * @param considerBundleExportersOnly
+	 * @param ignoreBundlesMarkedToBeIgnored
+	 * @param alsoConsiderInvokationSatisfactionProxies
+	 * @param ignoreVersionsInFeatureModelGeneration
+	 * @param pluginExtractDirectory
+	 * @throws IOException
+	 */
+	private static void processPluginExtracts(boolean considerBundleExportersOnly, boolean ignoreBundlesMarkedToBeIgnored,
+			boolean alsoConsiderInvokationSatisfactionProxies, boolean ignoreVersionsInFeatureModelGeneration,
+			File pluginExtractDirectory) throws IOException {
+		long time1 = System.currentTimeMillis();
 		File[] pluginExtractEntries = pluginExtractDirectory.listFiles();
 
 		int entriesLength = pluginExtractEntries.length;
@@ -155,6 +459,12 @@ public class DependencyFinder {
 
 		for (File pluginExtract : pluginExtractEntries) {
 			pluginExtractsDone++;
+			if (pluginExtractsDone % 250 == 0 || pluginExtractsDone >= entriesLength) {
+				Log.outln("#### PluginExtractsMerged = " + pluginExtractsDone + " of " + entriesLength + " ("
+						+ (pluginExtractsDone * 100 / entriesLength) + "%)");
+
+				Log.outln("## time (merging) so far \t= " + Util.getFormattedTime(System.currentTimeMillis() - time1));
+			}
 			if (Util.checkFile(pluginExtract, true, true, true, false)) {
 				/**
 				 * this is the name of the PluginExtract file, without the
@@ -171,7 +481,7 @@ public class DependencyFinder {
 					continue;
 
 				// constructing this plugin extract plugin id.
-				String thisPluginId = ParsingUtil.buildPluginId(pluginExtract);
+				String thisPluginId = ParsingUtil.getPluginIdFromExtract(pluginExtract);
 				// restoring the functions information from the file.
 
 				boolean ignorePluginExtract = false;
@@ -215,10 +525,10 @@ public class DependencyFinder {
 				// building the dependenciesFM Set
 				//
 				// adding the host plugin bundle dependency to the feature model
-				addDependenciesToFeatureModel(ignoreVersionsInFeatureModelGeneration, thisPluginId, myHosts);
+				addPluginDependenciesToFeatureModel(ignoreVersionsInFeatureModelGeneration, thisPluginId, myHosts);
 				//
 				// adding the bundle dependencies (other bundles) to the feature   model.
-				addDependenciesToFeatureModel(ignoreVersionsInFeatureModelGeneration, thisPluginId,
+				addPluginDependenciesToFeatureModel(ignoreVersionsInFeatureModelGeneration, thisPluginId,
 						myOtherBundleDependencies);
 				
 				// //////////////////////////////////////////
@@ -379,14 +689,6 @@ public class DependencyFinder {
 						types.put(s, impexp);
 					}
 				}
-				// System.out.println(types.keySet().toString());
-
-				if (pluginExtractsDone % 250 == 0 || pluginExtractsDone == entriesLength) {
-					Log.outln("#### PluginExtractsMerged = " + pluginExtractsDone + " of " + entriesLength + " ("
-							+ (pluginExtractsDone * 100 / entriesLength) + "%)");
-
-					Log.outln("## time (merging) so far \t= " + Util.getFormattedTime(System.currentTimeMillis() - time1));
-				}
 
 				// adding the constructed object to the DependencyFinder.plugins
 				// object.
@@ -447,7 +749,7 @@ public class DependencyFinder {
 					types.put(imp, impexp);
 				}
 			}
-			if (counter % 250 == 0 || counter == totalnumberofplugins) {
+			if (counter % 250 == 0 || counter >= totalnumberofplugins) {
 
 				Log.outln("#### indirect dep analysis done for " + (counter) + " of " + totalnumberofplugins + " ("
 						+ (counter * 100 / totalnumberofplugins) + "%)");
@@ -455,16 +757,6 @@ public class DependencyFinder {
 						+ Util.getFormattedTime(System.currentTimeMillis() - indirectDepAnalysisTime1));
 			}
 		}
-
-		// write out the merged file
-		writeData(pathToDependencyAnalysisOutputLocation, ignoreVersionsInFeatureModelGeneration);
-
-		long time2 = System.currentTimeMillis();
-		Log.outln("Dependency Set Creation for " + entriesLength + " plugin extracts, at plugin extract src  :  "
-				+ pathToBasePluginExtractsDir + "  time: " + Util.getFormattedTime(time2 - time1));
-		Log.errln("Dependency Set Creation for " + entriesLength + " plugin extracts, at plugin extract src  :  "
-				+ pathToBasePluginExtractsDir + "  time: " + Util.getFormattedTime(time2 - time1));
-
 	}
 
 	/**
@@ -475,7 +767,7 @@ public class DependencyFinder {
 	 * @param thisPluginId this plugin's id.
 	 * @param dependencies the {@link Set} of dependencies on other plugins
 	 */
-	private static void addDependenciesToFeatureModel(boolean ignoreVersionsInFeatureModelGeneration, String thisPluginId,
+	private static void addPluginDependenciesToFeatureModel(boolean ignoreVersionsInFeatureModelGeneration, String thisPluginId,
 			Set<String> dependencies) {
 		for(String otherPluginDepEntry:dependencies)
 		{
@@ -503,7 +795,7 @@ public class DependencyFinder {
 								Set<String> candidatePluginIds=pluginMap.get(otherPluginName).keySet();
 								for(String candidatePluginId:candidatePluginIds)
 								{
-									String candidatePluginVersionStr=parsePluginIdForVersion(candidatePluginId);
+									String candidatePluginVersionStr=parsePluginOrFeatureIdForVersion(candidatePluginId);
 									Version candidateVersion = new Version(candidatePluginVersionStr);
 									if(versionRange.containsQualified(candidateVersion)) //versionRange.includes(candidateVersion))
 									{
@@ -532,15 +824,15 @@ public class DependencyFinder {
 	}
 
 	/**
-	 * parses the pluginId got from the plugin Map to return the version
+	 * parses the pluginId or FeatureId got from the plugin / feature Map to return the version
 	 * information. e.g. pluginA<version.a.b.qual> will return version.a.b.qual
 	 * an empty string is returned if there is no version information available.
 	 * 
-	 * @param candidatePluginId
+	 * @param PluginOrFeatureId
 	 */
-	private static String parsePluginIdForVersion(String candidatePluginId) {
+	private static String parsePluginOrFeatureIdForVersion(String PluginOrFeatureId) {
 		String version = "";
-		String[] splits = candidatePluginId.split(Constants.DELIM_VERSION_STRING_OPEN);
+		String[] splits = PluginOrFeatureId.split(Constants.DELIM_VERSION_STRING_OPEN);
 		if (null != splits && 2 <= splits.length) {// this means that there was
 													// some version information,
 													// else there is no version
