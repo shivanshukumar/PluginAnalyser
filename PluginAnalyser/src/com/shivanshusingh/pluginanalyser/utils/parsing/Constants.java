@@ -131,6 +131,10 @@ public interface Constants {
 			"void java.lang.Object.wait (long,)",
 			"void java.lang.Object.wait (long,int,)"
 			));
+	public static final String IMPLIES_RIGHT = " => ";
+	public static final String IMPLIES_BIDIRECTIONAL = " <=> ";
+	public static final String _OR_ = " || ";
+	public static final String _AND_ = " && ";
 
 
 
