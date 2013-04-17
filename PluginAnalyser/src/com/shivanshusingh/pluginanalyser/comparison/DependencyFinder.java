@@ -207,144 +207,150 @@ public class DependencyFinder {
 						.startsWith(Constants.EXTRACT_FILE_PREFIX_FEATURE)))
 					continue;
 
-				// constructing this plugin extract plugin id.
+				// constructing this feature extract feature id.
 				String thisFeatureId = ParsingUtil.getFeatureIdFromExtract(featureExtract);
-				// restoring the functions information from the file.
-
-				
-				Set<String> myPlugins = ParsingUtil.restorePropertyFromExtract(featureExtract,
-						Constants.FEATURE_PROVIDED_PLUGINS);
-				Set<String> myImports = ParsingUtil.restorePropertyFromExtract(featureExtract,
-						Constants.FEATURE_IMPORTS);
 
 				//  processing the included plugins:
-				addFeatureIncludedPluginsToFeatureModel(ignoreVersionsInFeatureModelGeneration, thisFeatureId, myPlugins);
+				addFeatureIncludedPluginsToFeatureModel(ignoreVersionsInFeatureModelGeneration, thisFeatureId, featureExtract);
 				
 				//  processing imports of the feature.
-				for(String myImport:myImports)
-				{
-					String[] importProps;
-					String importType = "", importName = "", importVersionStr = "", importMatch = "", importPatch = "";
-					importProps = myImport.split(";");
-					for (int x = 0; x < importProps.length; x++) {
-						switch (x) {
-						case 0:
-							importType = importProps[x].trim();
-							break;
-						case 1:
-							importName = importProps[x].trim();
-							break;
-						case 2:
-							importVersionStr = importProps[x].trim();
-							break;
-						case 3:
-							importMatch = importProps[x].trim();
-							break;
-						case 4:
-							importPatch = importProps[x].trim();
+				addFeatureImportsToFeatureModel(ignoreVersionsInFeatureModelGeneration, thisFeatureId, featureExtract);
+			}
+		}
+	}
 
-						default:
-							break;
-						}
-					}
+	/**
+	 * @param ignoreVersionsInFeatureModelGeneration
+	 * @param thisFeatureId
+	 * @param featureExtract 
+	 * @throws IOException 
+	 */
+	private static void addFeatureImportsToFeatureModel(boolean ignoreVersionsInFeatureModelGeneration,
+			String thisFeatureId, File featureExtract) throws IOException {
+		Set<String> myImports = ParsingUtil.restorePropertyFromExtract(featureExtract,
+				Constants.FEATURE_IMPORTS);
+		for(String myImport:myImports)
+		{
+			String[] importProps;
+			String importType = "", importName = "", importVersionStr = "", importMatch = "", importPatch = "";
+			importProps = myImport.split(";");
+			for (int x = 0; x < importProps.length; x++) {
+				switch (x) {
+				case 0:
+					importType = importProps[x].trim();
+					break;
+				case 1:
+					importName = importProps[x].trim();
+					break;
+				case 2:
+					importVersionStr = importProps[x].trim();
+					break;
+				case 3:
+					importMatch = importProps[x].trim();
+					break;
+				case 4:
+					importPatch = importProps[x].trim();
 
-					String importNamePrefix="";
-					Map<String, Map<String, Set<String>>>  targetMap;
-					if(0=="feature".compareToIgnoreCase(importType))
-					{
-						//  assigning the right kind of map to look up depending upon the type of the import, feature or plugin.
-						
-						targetMap=featureMap;
-						importNamePrefix=Constants._FE_;
-					}
-					else if(0=="plugin".compareToIgnoreCase(importType))
-						targetMap = pluginMap;
-					else
-						continue;
-					if (targetMap.containsKey(importName)) {
-						if (!ignoreVersionsInFeatureModelGeneration) {
-							Set<String> candidateImportIds = targetMap.get(importName).keySet();
-							for (String candidateImportId : candidateImportIds) {
-								try {
+				default:
+					break;
+				}
+			}
 
-									String candidateImportVersionStr = parsePluginOrFeatureIdForVersion(candidateImportId);
-									Version candidateImportVersion = new Version(candidateImportVersionStr);
-									boolean flag_candidateImportMatches = false;
+			String importNamePrefix="";
+			Map<String, Map<String, Set<String>>>  targetMap;
+			if(0=="feature".compareToIgnoreCase(importType))
+			{
+				//  assigning the right kind of map to look up depending upon the type of the import, feature or plugin.
+				
+				targetMap=featureMap;
+				importNamePrefix=Constants._FE_;
+			}
+			else if(0=="plugin".compareToIgnoreCase(importType))
+				targetMap = pluginMap;
+			else
+				continue;
+			if (targetMap.containsKey(importName)) {
+				if (!ignoreVersionsInFeatureModelGeneration) {
+					Set<String> candidateImportIds = targetMap.get(importName).keySet();
+					for (String candidateImportId : candidateImportIds) {
+						try {
 
-									if (importVersionStr.trim().length() >= 1) {
-										// version is provided
+							String candidateImportVersionStr = parsePluginOrFeatureIdForVersion(candidateImportId);
+							Version candidateImportVersion = new Version(candidateImportVersionStr);
+							boolean flag_candidateImportMatches = false;
 
-										Version importVersion = new Version(importVersionStr);
+							if (importVersionStr.trim().length() >= 1) {
+								// version is provided
 
-										// the candidate import to be added to  feature model if its version matches
-										// as   per the match type to the import   specified by the feature.
-										if (0 == "perfect".compareToIgnoreCase(importMatch)) {
-											if (0 == candidateImportVersion.compareTo(importVersion))
-												flag_candidateImportMatches = true;
-										}
+								Version importVersion = new Version(importVersionStr);
 
-										else if (0 == "equivalent".compareToIgnoreCase(importMatch)) {
-											// the candidate version must be at
-											// least the version specified or at
-											// a higher service level, i.e.
-											// major and minor version levels
-											// must be equal and the third param
-											// must be equal or higher for the
-											// candidate.
-											if (candidateImportVersion.equivalentTo(importVersion))
-												flag_candidateImportMatches = true;
-										}
-
-										else if (0 == "compatible".compareToIgnoreCase(importMatch)) {
-											// the candidate version must be at
-											// a higher or equal service or
-											// minor level, the major level must
-											// be the same.
-											if (candidateImportVersion.compatibleTo(importVersion))
-												flag_candidateImportMatches = true;
-										}
-
-										else if (0 == "greaterOrEqual".compareToIgnoreCase(importMatch)) {
-											// the candidate version must be
-											// either equal or greater then the
-											// specified version, as specified
-											// through the major, minor and
-											// service levels.
-											if (0 <= candidateImportVersion.compareUnqualified(importVersion))
-												flag_candidateImportMatches = true;
-
-										} else {
-
-											// no match is present. so just do
-											// the unqualified comparison.
-											if (0 == candidateImportVersion.compareUnqualified(importVersion))
-												flag_candidateImportMatches = true;
-										}
-									}
-
-									else {
-										// version is not present. go for all
-										// possible
-										// values.
+								// the candidate import to be added to  feature model if its version matches
+								// as   per the match type to the import   specified by the feature.
+								if (0 == "perfect".compareToIgnoreCase(importMatch)) {
+									if (0 == candidateImportVersion.compareTo(importVersion))
 										flag_candidateImportMatches = true;
-									}
-									if (flag_candidateImportMatches)
-										dependenciesFM.add(Constants._FE_+thisFeatureId + " => " + importNamePrefix + candidateImportId);
-
-								} catch (Exception e) {
-									e.printStackTrace();
 								}
 
+								else if (0 == "equivalent".compareToIgnoreCase(importMatch)) {
+									// the candidate version must be at
+									// least the version specified or at
+									// a higher service level, i.e.
+									// major and minor version levels
+									// must be equal and the third param
+									// must be equal or higher for the
+									// candidate.
+									if (candidateImportVersion.equivalentTo(importVersion))
+										flag_candidateImportMatches = true;
+								}
+
+								else if (0 == "compatible".compareToIgnoreCase(importMatch)) {
+									// the candidate version must be at
+									// a higher or equal service or
+									// minor level, the major level must
+									// be the same.
+									if (candidateImportVersion.compatibleTo(importVersion))
+										flag_candidateImportMatches = true;
+								}
+
+								else if (0 == "greaterOrEqual".compareToIgnoreCase(importMatch)) {
+									// the candidate version must be
+									// either equal or greater then the
+									// specified version, as specified
+									// through the major, minor and
+									// service levels.
+									if (0 <= candidateImportVersion.compareUnqualified(importVersion))
+										flag_candidateImportMatches = true;
+
+								} else {
+
+									// no match is present. so just do
+									// the unqualified comparison.
+									if (0 == candidateImportVersion.compareUnqualified(importVersion))
+										flag_candidateImportMatches = true;
+								}
 							}
 
-						} else {
+							else {
+								// version is not present. go for all
+								// possible
+								// values.
+								flag_candidateImportMatches = true;
+							}
+							if (flag_candidateImportMatches)
+								dependenciesFM.add(Constants._FE_+thisFeatureId + " => " + importNamePrefix + candidateImportId);
 
-							// the versions were to be ignored completely.
-
-							dependenciesFM.add((Constants._FE_ + thisFeatureId + " => " + importNamePrefix + importName)
-									.replaceAll("<(.*?)>", ""));
+						} catch (Exception e) {
+							e.printStackTrace();
 						}
+
 					}
+
+				} else {
+
+					// the versions were to be ignored completely.
+
+					dependenciesFM.add((Constants._FE_ + thisFeatureId + " => " + importNamePrefix + importName)
+							.replaceAll("<(.*?)>", ""));
 				}
 			}
 		}
@@ -354,10 +360,13 @@ public class DependencyFinder {
 	 * Adds the plugins provided by the feature to the Dependencies Feature Model. e.g. __feature =>  (plugina && pluginb)
 	 * @param ignoreVersionsInFeatureModelGeneration
 	 * @param thisFeatureId
-	 * @param myPlugins
+	 * @param featureExtract 
+	 * @throws IOException 
 	 */
-	private static void addFeatureIncludedPluginsToFeatureModel(boolean ignoreVersionsInFeatureModelGeneration, String thisFeatureId, Set<String> myPlugins)
+	private static void addFeatureIncludedPluginsToFeatureModel(boolean ignoreVersionsInFeatureModelGeneration, String thisFeatureId, File featureExtract) throws IOException
 	{
+		Set<String> myPlugins = ParsingUtil.restorePropertyFromExtract(featureExtract,
+				Constants.FEATURE_PROVIDED_PLUGINS);
 		
 		Set<String> includedPluginsSet=new LinkedHashSet<String>();
 		for(String myPlugin:myPlugins)
