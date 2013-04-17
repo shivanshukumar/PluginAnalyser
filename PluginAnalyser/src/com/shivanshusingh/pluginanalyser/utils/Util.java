@@ -9,11 +9,8 @@ import java.io.ObjectOutputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.DecimalFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Collections;
-import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -21,8 +18,6 @@ import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
 
-import com.shivanshusingh.pluginanalyser.analysis.BundleAnalyser;
-import com.shivanshusingh.pluginanalyser.utils.logging.Log;
 import com.shivanshusingh.pluginanalyser.utils.parsing.Constants;
 
 /**
@@ -153,7 +148,7 @@ public class Util {
 	 * @return String
 	 */
 	public static String getFormattedTime(long milliseconds) {
-		DecimalFormat form1 = new DecimalFormat("0");
+	//	DecimalFormat form1 = new DecimalFormat("0");
 		DecimalFormat form2 = new DecimalFormat("00");
 		DecimalFormat form3 = new DecimalFormat("000");
 
@@ -292,7 +287,7 @@ public class Util {
 	 */
 	public static boolean validURL(String spec) {
 		try {
-			java.net.URL url=new URL(spec  );
+			new URL(spec  );
 		} catch (MalformedURLException e) {
 			return false;
 		}

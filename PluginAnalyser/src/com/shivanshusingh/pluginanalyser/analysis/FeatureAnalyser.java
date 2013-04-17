@@ -25,7 +25,6 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import com.shivanshusingh.pluginanalyser.internal.osgihelper.util.FeatureInformation;
 import com.shivanshusingh.pluginanalyser.utils.Util;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
 import com.shivanshusingh.pluginanalyser.utils.parsing.Constants;
@@ -276,18 +275,17 @@ public class FeatureAnalyser {
 					String importedPlugin = eElement.getAttribute("plugin");
 					String importedElementVersion = eElement.getAttribute("version");
 					String importedElementMatch = eElement.getAttribute("match");
+					String importedElementPatch = eElement.getAttribute("patch");
 					// Log.outln(" feature : " + importedFeature);
 					// Log.outln(" plugin : " + importedPlugin);
-					// Log.outln(" version : " +
-					// importedElementVersion);
-					// Log.outln(" match : " + importedElementMatch);
+					 Log.outln(" version : " + importedElementVersion+" match : " + importedElementMatch);
 
 					// adding the import element to featureinfo;
 					String importElement = (null != importedFeature && !"".equals(importedFeature) ? "feature;"
 							+ importedFeature.trim() + ";" : (null != importedPlugin
 							&& !"".equals(importedPlugin) ? "plugin;" + importedPlugin.trim() + ";" : ""));
 					importElement += (null != importElement && !"".equals(importElement) ? importedElementVersion.trim()
-							+ ";" + importedElementMatch + ";" : "");
+							+ ";" + importedElementMatch + ";"+ importedElementPatch  : "");
 					if (null != importElement && !"".equals(importElement))
 						featureInfo.addImport(importElement);
 
@@ -313,8 +311,15 @@ public class FeatureAnalyser {
 
 					// adding the plugin that this feature is made up of to the
 					// featureinformation.
-					featureInfo.addPlugin(eElement.getAttribute("id").trim() + ";"
-							+ eElement.getAttribute("version").trim());
+					featureInfo.addPlugin(
+							eElement.getAttribute("id").trim() 
+							+ ";" 	+ eElement.getAttribute("version").trim()
+							+ ";" 	+ eElement.getAttribute("fragment").trim()
+							+ ";" 	+ eElement.getAttribute("os").trim()
+							+ ";" 	+ eElement.getAttribute("arch").trim()
+							+ ";" 	+ eElement.getAttribute("ws").trim()
+
+							);
 				}
 			}
 

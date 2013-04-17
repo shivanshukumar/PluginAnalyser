@@ -17,15 +17,10 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
-import com.shivanshusingh.pluginanalyser.internal.osgihelper.util.VersionRange;
 import org.apache.ivy.osgi.util.Version;
 
-//import org.osgi.framework.Version;
-
-//import com.shivanshusingh.pluginanalyser.internal.org.eclipse.osgi.service.resolver.VersionRange;
-
-
 import com.shivanshusingh.pluginanalyser.utils.Util;
+import com.shivanshusingh.pluginanalyser.utils.VersionRange;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
 import com.shivanshusingh.pluginanalyser.utils.parsing.Constants;
 import com.shivanshusingh.pluginanalyser.utils.parsing.ParsingUtil;

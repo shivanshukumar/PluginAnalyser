@@ -24,8 +24,6 @@ import java.util.jar.Manifest;
 
 import org.objectweb.asm.ClassReader;
 
-import com.shivanshusingh.pluginanalyser.internal.osgihelper.util.BundleInfo;
-import com.shivanshusingh.pluginanalyser.internal.osgihelper.util.ManifestParser;
 import com.shivanshusingh.pluginanalyser.utils.Util;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
 import com.shivanshusingh.pluginanalyser.utils.parsing.Constants;
@@ -491,7 +489,7 @@ public class BundleAnalyser extends ManifestParser {
 
 		try {
 
-			bundleInformation = com.shivanshusingh.pluginanalyser.internal.osgihelper.util.ManifestParser.parseManifest(manifestStream);// new
+			bundleInformation = com.shivanshusingh.pluginanalyser.analysis.ManifestParser.parseManifest(manifestStream);// new
 																														// BundleInfo(manifestStream);
 			System.err.println("==== " + bundleInformation.toString());
 			// extractBundleInfo(bundleInformation);
@@ -517,7 +515,7 @@ public class BundleAnalyser extends ManifestParser {
 	private static BundleInfo extractManifestInformation(Manifest manifest) {
 		BundleInfo bundleinfo = new BundleInfo();
 		try {
-			bundleinfo = com.shivanshusingh.pluginanalyser.internal.osgihelper.util.ManifestParser.parseManifest(manifest);
+			bundleinfo = com.shivanshusingh.pluginanalyser.analysis.ManifestParser.parseManifest(manifest);
 
 		} catch (ParseException e) {
 			Log.outln("xxxx  NO Manifest found here or cannot parse that  or maybe theres nothing to parse inthis.    \n xxxx  Marking bundleInfo as to be IGNORED.");

@@ -17,7 +17,7 @@
  *  limitations under the License.
  *
  */
-package com.shivanshusingh.pluginanalyser.internal.osgihelper.util;
+package com.shivanshusingh.pluginanalyser.analysis;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -33,7 +33,7 @@ import java.util.jar.Manifest;
 
 import org.apache.ivy.osgi.core.BundleCapability;
 //import org.apache.ivy.osgi.core.BundleInfo;
-import com.shivanshusingh.pluginanalyser.internal.osgihelper.util.BundleInfo;
+import com.shivanshusingh.pluginanalyser.analysis.BundleInfo;
 import com.shivanshusingh.pluginanalyser.utils.Util;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
 import com.shivanshusingh.pluginanalyser.utils.parsing.Constants;

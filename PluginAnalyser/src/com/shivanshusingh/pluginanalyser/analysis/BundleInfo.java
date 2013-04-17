@@ -17,7 +17,7 @@
  *  limitations under the License.
  *
  */
-package com.shivanshusingh.pluginanalyser.internal.osgihelper.util;
+package com.shivanshusingh.pluginanalyser.analysis;
 
 import java.net.URI;
 import java.util.Collections;
