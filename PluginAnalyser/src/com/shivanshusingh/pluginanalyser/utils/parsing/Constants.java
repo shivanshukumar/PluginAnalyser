@@ -138,6 +138,9 @@ public interface Constants {
 	public static final String IMPLIES_BIDIRECTIONAL = " <=> ";
 	public static final String _OR_ = " || ";
 	public static final String _AND_ = " && ";
+	public static final String PLATFORM_PARAM_WS = "____WS_";
+	public static final String PLATFORM_PARAM_ARCH = "____ARCH_";
+	public static final String PLATFORM_PARAM_OS = "____OS_";
 
 
 

@@ -23,6 +23,7 @@ import com.shivanshusingh.pluginanalyser.utils.VersionRange;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
 import com.shivanshusingh.pluginanalyser.utils.parsing.Constants;
 import com.shivanshusingh.pluginanalyser.utils.parsing.ParsingUtil;
+import com.shivanshusingh.pluginanalyser.utils.parsing.EclipsePlatform;
 
 /**
  * @author Shivanshu Singh
@@ -165,6 +166,7 @@ public class DependencyFinder {
 	}
 
 	/**
+	 * adds the default constraints and implications etc to the FeatureModel
 	 * 
 	 */
 	private static void addDefaultsToFeatureModel() {
@@ -173,7 +175,23 @@ public class DependencyFinder {
 			for(String javaClassesPlugin: pluginMap.get(Constants.EXTRACT_FILE_NAME_JAVA_CLASSES_SDK).keySet())
 				dependenciesFM.add(javaClassesPlugin);
 
-		dependenciesFM.add("____OS_macosx\n____ARCH_x86_64\n____WS_cocoa");
+		//  adding the platform parameter constraint to the feature model.
+		String params="";
+		for(String s:EclipsePlatform._list_OS)
+			params+=Constants.PLATFORM_PARAM_OS+s+",";
+		params=params.substring(0, params.length()-",".length());
+		dependenciesFM.add(params.length()>0?"oneOf("+params+")":"");
+		params="";
+		for(String s:EclipsePlatform._list_ARCH)
+			params+=Constants.PLATFORM_PARAM_OS+s+",";
+		params=params.substring(0, params.length()-",".length());
+		dependenciesFM.add(params.length()>0?"oneOf("+params+")":"");
+		params="";
+		for(String s:EclipsePlatform._list_WS)
+			params+=Constants.PLATFORM_PARAM_OS+s+",";
+		params=params.substring(0, params.length()-",".length());
+		dependenciesFM.add(params.length()>0?"oneOf("+params+")":"");
+
 	}
 
 	/**
@@ -494,9 +512,9 @@ public class DependencyFinder {
 	private static String buildPlatformConditionalElement(String pluginOS, String pluginARCH, String pluginWS) {
 		String conditionalElement="";
 		
-		conditionalElement  +=	pluginOS.trim().length()>0  ? "____OS_"+pluginOS+Constants._AND_:"";
-		conditionalElement  +=	pluginARCH.trim().length()>0  ? "____ARCH_"+pluginARCH+Constants._AND_:"";
-		conditionalElement  +=	pluginWS.trim().length()>0  ? "____WS_"+pluginWS+Constants._AND_:"";
+		conditionalElement  +=	pluginOS.trim().length()>0  ? Constants.PLATFORM_PARAM_OS+pluginOS+Constants._AND_:"";
+		conditionalElement  +=	pluginARCH.trim().length()>0  ? Constants.PLATFORM_PARAM_ARCH+pluginARCH+Constants._AND_:"";
+		conditionalElement  +=	pluginWS.trim().length()>0  ? Constants.PLATFORM_PARAM_WS+pluginWS+Constants._AND_:"";
 		
 		if(conditionalElement.endsWith(Constants._AND_))
 			conditionalElement=conditionalElement.substring(0, conditionalElement.length()-Constants._AND_.length());

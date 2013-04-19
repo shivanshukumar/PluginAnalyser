@@ -33,7 +33,7 @@ public class Version implements Comparable/* <Version> */{
 
     private final int minor;
 
-    private final int patch;  //  also referred to as the service level.
+    private final int patch;  // also known as "micro" and "service level".
 
     private final String qualifier;
 

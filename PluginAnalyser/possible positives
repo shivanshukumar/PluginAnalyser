@@ -25,7 +25,9 @@ false, 1 importer(s) hungry
 ISSUES and Observations:
 
 (1)  java.lang.String org.slf4j.Logger.getName ()  nt satisfied while being imported by org.eclipse.jetty.util<%8.1.3.v20120522%>
-The problem extends to  *org.slf4j.Logger.* as the package org.slf4j is marked optional in bundle manifest imports.
+The problem extends to  *org.slf4j.* as the **package org.slf4j is marked optional in bundle manifest imports**.
+
+This could be such that these classes / functions are used only when this package and its classes are available .. so this may not be a real problem.
 
 ####
 java.lang.String org.slf4j.Logger.getName ()
@@ -72,6 +74,88 @@ boolean org.slf4j.spi.LocationAwareLogger.isInfoEnabled (org.slf4j.Marker,)
 org.slf4j.helpers.FormattingTuple org.slf4j.helpers.MessageFormatter.arrayFormat (java.lang.String,java.lang.Object[],)
 boolean org.slf4j.Logger.isDebugEnabled ()
 
+count: 23
 
+----
 
-(2)
+(2) void org.apache.xmlbeans.XmlCursor.insertAttributeWithValue (java.lang.String,java.lang.String,) not satisfied.
+
+This package is **not included in the imports of the manifets not even as an optional parameter**. there maybe a case that this class / package and the associated functions may never have gotten used but then this  may be a real problem.
+The problem, hence goes on for a number of this and related functions that  appear in all classes  under org.apache.xmlbeans.*
+
+The functions that go   unsatisfied therefore are:
+boolean org.apache.xmlbeans.XmlCursor$TokenType.isAnyAttr ()
+boolean org.apache.xmlbeans.XmlCursor$TokenType.isAttr ()
+boolean org.apache.xmlbeans.XmlCursor$TokenType.isComment ()
+boolean org.apache.xmlbeans.XmlCursor$TokenType.isContainer ()
+boolean org.apache.xmlbeans.XmlCursor$TokenType.isEnd ()
+boolean org.apache.xmlbeans.XmlCursor$TokenType.isEnddoc ()
+boolean org.apache.xmlbeans.XmlCursor$TokenType.isNamespace ()
+boolean org.apache.xmlbeans.XmlCursor$TokenType.isNone ()
+boolean org.apache.xmlbeans.XmlCursor$TokenType.isProcinst ()
+boolean org.apache.xmlbeans.XmlCursor$TokenType.isStart ()
+boolean org.apache.xmlbeans.XmlCursor$TokenType.isStartdoc ()
+boolean org.apache.xmlbeans.XmlCursor$TokenType.isText ()
+boolean org.apache.xmlbeans.XmlCursor.copyXml (org.apache.xmlbeans.XmlCursor,)
+boolean org.apache.xmlbeans.XmlCursor.hasPrevToken ()
+boolean org.apache.xmlbeans.XmlCursor.isAttr ()
+boolean org.apache.xmlbeans.XmlCursor.isComment ()
+boolean org.apache.xmlbeans.XmlCursor.isContainer ()
+boolean org.apache.xmlbeans.XmlCursor.isEnd ()
+boolean org.apache.xmlbeans.XmlCursor.isEnddoc ()
+boolean org.apache.xmlbeans.XmlCursor.isFinish ()
+boolean org.apache.xmlbeans.XmlCursor.isInSameDocument (org.apache.xmlbeans.XmlCursor,)
+boolean org.apache.xmlbeans.XmlCursor.isNamespace ()
+boolean org.apache.xmlbeans.XmlCursor.isProcinst ()
+boolean org.apache.xmlbeans.XmlCursor.isStart ()
+boolean org.apache.xmlbeans.XmlCursor.isStartdoc ()
+boolean org.apache.xmlbeans.XmlCursor.isText ()
+boolean org.apache.xmlbeans.XmlCursor.moveXml (org.apache.xmlbeans.XmlCursor,)
+boolean org.apache.xmlbeans.XmlCursor.pop ()
+boolean org.apache.xmlbeans.XmlCursor.removeAttribute (javax.xml.namespace.QName,)
+boolean org.apache.xmlbeans.XmlCursor.removeXml ()
+boolean org.apache.xmlbeans.XmlCursor.setAttributeText (javax.xml.namespace.QName,java.lang.String,)
+boolean org.apache.xmlbeans.XmlCursor.toFirstAttribute ()
+boolean org.apache.xmlbeans.XmlCursor.toFirstChild ()
+boolean org.apache.xmlbeans.XmlCursor.toNextAttribute ()
+boolean org.apache.xmlbeans.XmlCursor.toNextSibling ()
+boolean org.apache.xmlbeans.XmlCursor.toParent ()
+boolean org.apache.xmlbeans.XmlCursor.toPrevSibling ()
+int org.apache.xmlbeans.XmlCursor$TokenType.intValue ()
+int org.apache.xmlbeans.XmlCursor.comparePosition (org.apache.xmlbeans.XmlCursor,)
+java.lang.String org.apache.xmlbeans.XmlCursor.getChars ()
+java.lang.String org.apache.xmlbeans.XmlCursor.getTextValue ()
+java.lang.String org.apache.xmlbeans.XmlCursor.namespaceForPrefix (java.lang.String,)
+java.lang.String org.apache.xmlbeans.XmlCursor.xmlText (org.apache.xmlbeans.XmlOptions,)
+java.lang.String org.apache.xmlbeans.XmlException.getMessage ()
+javax.xml.namespace.QName org.apache.xmlbeans.XmlCursor.getName ()
+org.apache.xmlbeans.XmlCursor org.apache.xmlbeans.XmlObject.newCursor ()
+org.apache.xmlbeans.XmlCursor$TokenType org.apache.xmlbeans.XmlCursor.currentTokenType ()
+org.apache.xmlbeans.XmlCursor$TokenType org.apache.xmlbeans.XmlCursor.toEndToken ()
+org.apache.xmlbeans.XmlCursor$TokenType org.apache.xmlbeans.XmlCursor.toFirstContentToken ()
+org.apache.xmlbeans.XmlCursor$TokenType org.apache.xmlbeans.XmlCursor.toNextToken ()
+org.apache.xmlbeans.XmlCursor$TokenType org.apache.xmlbeans.XmlCursor.toPrevToken ()
+org.apache.xmlbeans.XmlCursor$XmlBookmark org.apache.xmlbeans.XmlCursor.getBookmark (java.lang.Object,)
+org.apache.xmlbeans.XmlObject org.apache.xmlbeans.XmlCursor.getObject ()
+org.apache.xmlbeans.XmlObject org.apache.xmlbeans.XmlObject$Factory.newInstance ()
+org.apache.xmlbeans.XmlObject org.apache.xmlbeans.XmlObject$Factory.parse (java.lang.String,)
+org.apache.xmlbeans.XmlObject org.apache.xmlbeans.XmlObject$Factory.parse (java.lang.String,org.apache.xmlbeans.XmlOptions,)
+void org.apache.xmlbeans.XmlCursor$XmlBookmark.<init> ()
+void org.apache.xmlbeans.XmlCursor.beginElement (java.lang.String,)
+void org.apache.xmlbeans.XmlCursor.beginElement (java.lang.String,java.lang.String,)
+void org.apache.xmlbeans.XmlCursor.dispose ()
+void org.apache.xmlbeans.XmlCursor.insertAttributeWithValue (java.lang.String,java.lang.String,)
+void org.apache.xmlbeans.XmlCursor.insertAttributeWithValue (javax.xml.namespace.QName,java.lang.String,)
+void org.apache.xmlbeans.XmlCursor.insertChars (java.lang.String,)
+void org.apache.xmlbeans.XmlCursor.insertElement (javax.xml.namespace.QName,)
+void org.apache.xmlbeans.XmlCursor.insertNamespace (java.lang.String,java.lang.String,)
+void org.apache.xmlbeans.XmlCursor.push ()
+void org.apache.xmlbeans.XmlCursor.setBookmark (org.apache.xmlbeans.XmlCursor$XmlBookmark,)
+void org.apache.xmlbeans.XmlCursor.setName (javax.xml.namespace.QName,)
+void org.apache.xmlbeans.XmlCursor.toStartDoc ()
+void org.apache.xmlbeans.XmlOptions.<init> ()
+void org.apache.xmlbeans.XmlOptions.put (java.lang.Object,)
+void org.apache.xmlbeans.XmlOptions.put (java.lang.Object,java.lang.Object,)
+ 
+count= 72
+

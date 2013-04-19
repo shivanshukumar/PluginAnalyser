@@ -1,6 +1,10 @@
 package com.shivanshusingh.pluginanalyser.utils.parsing;
 
-public interface Platform {
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public interface EclipsePlatform {
 
 	/**
 	 * Constant string (value "win32") indicating the platform is running on a
@@ -139,5 +143,13 @@ public interface Platform {
 	 * machine running an unknown windowing system.
 	 */
 	public static final String WS_UNKNOWN = "unknown";//$NON-NLS-1$
+
+	
+	/**
+	 * Lists of all  possible values of OS, ARCH and WS parameter
+	 */
+	List<String> _list_OS=new ArrayList<String>(Arrays.asList(OS_AIX,OS_HPUX,OS_LINUX,OS_MACOSX,OS_QNX,OS_SOLARIS,OS_UNKNOWN,OS_WIN32));
+	List<String> _list_ARCH=new ArrayList<String>(Arrays.asList(ARCH_IA64,ARCH_IA64_32,ARCH_PA_RISC,ARCH_PPC,ARCH_SPARC,ARCH_X86,ARCH_X86_64));
+	List<String> _list_WS=new ArrayList<String>(Arrays.asList(WS_CARBON,WS_COCOA,WS_GTK,WS_MOTIF,WS_PHOTON,WS_UNKNOWN,WS_WIN32,WS_WPF));
 
 }
