@@ -140,12 +140,9 @@ public class DependencyFinder {
 			return;
 		}	
 		
-		//  adding the  java sdk   to dependenciesFM.
-		if( pluginMap.containsKey(Constants.EXTRACT_FILE_NAME_JAVA_CLASSES_SDK))
-			for(String javaClassesPlugin: pluginMap.get(Constants.EXTRACT_FILE_NAME_JAVA_CLASSES_SDK).keySet())
-				dependenciesFM.add(javaClassesPlugin);
+		// adding default features (plugins, features, java classes plugin, platform and env parameters what have you ....to the dependencies FM).
+		addDefaultsToFeatureModel();
 
-		
 		//  adding the feature -> other feature, plugin  and included plugins dependencies to the dependencies feature model.
 		processFeatureExtracts(ignoreVersionsInFeatureModelGeneration, featureExtractDirectory);
 	
@@ -165,6 +162,18 @@ public class DependencyFinder {
 		Log.errln("Dependency Set Creation for " + entriesLength + " plugin extracts, at plugin extract src  :  "
 				+ pathToBasePluginExtractsDir + "  time: " + Util.getFormattedTime(time2 - time1));
 
+	}
+
+	/**
+	 * 
+	 */
+	private static void addDefaultsToFeatureModel() {
+		//  adding the  java sdk   to dependenciesFM.
+		if( pluginMap.containsKey(Constants.EXTRACT_FILE_NAME_JAVA_CLASSES_SDK))
+			for(String javaClassesPlugin: pluginMap.get(Constants.EXTRACT_FILE_NAME_JAVA_CLASSES_SDK).keySet())
+				dependenciesFM.add(javaClassesPlugin);
+
+		dependenciesFM.add("____OS_macosx\n____ARCH_x86_64\n____WS_cocoa");
 	}
 
 	/**
@@ -398,6 +407,17 @@ public class DependencyFinder {
 					break;
 				}
 				
+			String conditionalElement="";
+			
+			conditionalElement  +=	pluginOS.length()>0  ? "____OS_"+pluginOS+Constants._AND_:"";
+			conditionalElement  +=	pluginARCH.length()>0  ? "____ARCH_"+pluginARCH+Constants._AND_:"";
+			conditionalElement  +=	pluginWS.length()>0  ? "____WS_"+pluginWS+Constants._AND_:"";
+			
+			if(conditionalElement.endsWith(Constants._AND_))
+				conditionalElement=conditionalElement.substring(0, conditionalElement.length()-Constants._AND_.length());
+			if(conditionalElement.length()>0)
+				conditionalElement="("+conditionalElement+")";
+					
 			try {
 					VersionRange versionRange = new VersionRange(pluginVersionStr);
 
@@ -411,10 +431,14 @@ public class DependencyFinder {
 								Version candidateVersion = new Version(candidatePluginVersionStr);
 								if (versionRange.containsQualified(candidateVersion)) // versionRange.includes(candidateVersion))
 								{
+									if(conditionalElement.length()>0)
+										candidatePluginId="("+conditionalElement+Constants.IMPLIES_RIGHT+candidatePluginId+")";
 									includedPluginsSet.add( candidatePluginId.trim()  );
 								}
 							}
 						} else {
+							if(conditionalElement.length()>0)
+								pluginName="("+conditionalElement+Constants.IMPLIES_RIGHT+pluginName+")";
 							includedPluginsSet.add( pluginName.trim());
 						}
 					}
@@ -435,7 +459,7 @@ public class DependencyFinder {
 		includedPluginsSet.clear();
 		
 		// removing the trailing &&
-		if (4 <= includedPluginsRHS.length())
+		if (Constants._AND_.length() <= includedPluginsRHS.length())
 			includedPluginsRHS = includedPluginsRHS.substring(0, includedPluginsRHS.length() - Constants._AND_.length());
 		if (!"".equalsIgnoreCase(includedPluginsRHS.trim())) {
 			String pluginDepFMEntry = Constants._FE_ + thisFeatureId.trim() + " => (" + includedPluginsRHS.trim()
