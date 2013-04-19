@@ -83,6 +83,9 @@ public interface Constants {
 	public static final String FEATURE_VERSION_WITHOUT_QUALIFIER 						= MARKER_ADDON + "Version  Without Qualifier  "  		+ MARKER_ADDON;
 	public static final String FEATURE_VERSION 											= MARKER_ADDON + "Version " 							+ MARKER_ADDON;
 	public static final String FEATURE_ID 												= MARKER_ADDON + "Id OrName  " 						+ MARKER_ADDON;
+	public static final String FEATURE_OS 												= MARKER_ADDON + "Feature OS " 				+ MARKER_ADDON; 
+	public static final String FEATURE_ARCH 											= MARKER_ADDON + "Feature ARCH " 				+ MARKER_ADDON; 
+	public static final String FEATURE_WS 												= MARKER_ADDON + "Feature WS " 				+ MARKER_ADDON; 
 
 	public static final String PLUGIN_ALL_CLASS_PACKAGES 								= MARKER_ADDON + "All Class packages " 						+ MARKER_ADDON;
 	public static final String PLUGIN_ALL_INHERITANCE_AND_INTERFACE_PAIRS   			= MARKER_ADDON + "All Inheritance AND Interface Impl Pairs Super Set "			+ MARKER_ADDON;

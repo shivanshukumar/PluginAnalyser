@@ -217,12 +217,19 @@ public class DependencyFinder {
 
 				// constructing this feature extract feature id.
 				String thisFeatureId = ParsingUtil.getFeatureIdFromExtract(featureExtract);
-
+				
+				//  construncting the platform conditional set (OS ARCH WS) for this feature.
+				String featureOS = ParsingUtil.restorePropertyFromExtract(featureExtract, Constants.FEATURE_OS).toString().replace("[", "").replace("]","");
+				String featureARCH = ParsingUtil.restorePropertyFromExtract(featureExtract, Constants.FEATURE_ARCH).toString().replace("[", "").replace("]","");
+				String featureWS = ParsingUtil.restorePropertyFromExtract(featureExtract, Constants.FEATURE_WS).toString().replace("[", "").replace("]","");
+				
+				String conditionalElement = buildPlatformConditionalElement(featureOS,featureARCH,featureWS);
+				
 				//  processing the included plugins:
-				addFeatureIncludedPluginsToFeatureModel(ignoreVersionsInFeatureModelGeneration, thisFeatureId, featureExtract);
+				addFeatureIncludedPluginsToFeatureModel(ignoreVersionsInFeatureModelGeneration, thisFeatureId, conditionalElement, featureExtract);
 				
 				//  processing imports of the feature.
-				addFeatureImportsToFeatureModel(ignoreVersionsInFeatureModelGeneration, thisFeatureId, featureExtract);
+				addFeatureImportsToFeatureModel(ignoreVersionsInFeatureModelGeneration, thisFeatureId, conditionalElement, featureExtract);
 			}
 		}
 	}
@@ -230,11 +237,12 @@ public class DependencyFinder {
 	/**
 	 * @param ignoreVersionsInFeatureModelGeneration
 	 * @param thisFeatureId
+	 * @param featureConditionalElem 
 	 * @param featureExtract 
 	 * @throws IOException 
 	 */
 	private static void addFeatureImportsToFeatureModel(boolean ignoreVersionsInFeatureModelGeneration,
-			String thisFeatureId, File featureExtract) throws IOException {
+			String thisFeatureId, String featureConditionalElem, File featureExtract) throws IOException {
 		Set<String> myImports = ParsingUtil.restorePropertyFromExtract(featureExtract,
 				Constants.FEATURE_IMPORTS);
 		for(String myImport:myImports)
@@ -263,7 +271,7 @@ public class DependencyFinder {
 					break;
 				}
 			}
-
+			
 			String importNamePrefix="";
 			Map<String, Map<String, Set<String>>>  targetMap;
 			if(0=="feature".compareToIgnoreCase(importType))
@@ -345,8 +353,13 @@ public class DependencyFinder {
 								flag_candidateImportMatches = true;
 							}
 							if (flag_candidateImportMatches)
-								dependenciesFM.add(Constants._FE_+thisFeatureId + Constants.IMPLIES_RIGHT + importNamePrefix + candidateImportId);
-
+							{
+								String LHS=Constants._FE_+thisFeatureId;
+								if(null!=featureConditionalElem  &&  featureConditionalElem.length()>0)
+									LHS="("+featureConditionalElem+  Constants.IMPLIES_RIGHT +thisFeatureId  +")";
+							
+								dependenciesFM.add(LHS + Constants.IMPLIES_RIGHT + importNamePrefix + candidateImportId);
+							}
 						} catch (Exception e) {
 							e.printStackTrace();
 						}
@@ -356,8 +369,11 @@ public class DependencyFinder {
 				} else {
 
 					// the versions were to be ignored completely.
-
-					dependenciesFM.add((Constants._FE_ + thisFeatureId + Constants.IMPLIES_RIGHT + importNamePrefix + importName)
+					String LHS=Constants._FE_+thisFeatureId.trim();
+					if(null!=featureConditionalElem  &&  featureConditionalElem.length()>0)
+						LHS="("+featureConditionalElem+  Constants.IMPLIES_RIGHT +  LHS   +")";
+				
+					dependenciesFM.add((LHS+ Constants.IMPLIES_RIGHT + importNamePrefix + importName)
 							.replaceAll("<(.*?)>", ""));
 				}
 			}
@@ -368,10 +384,11 @@ public class DependencyFinder {
 	 * Adds the plugins provided by the feature to the Dependencies Feature Model. e.g. __feature =>  (plugina && pluginb)
 	 * @param ignoreVersionsInFeatureModelGeneration
 	 * @param thisFeatureId
+	 * @param featureConditionalElem the conditional element (Plarform parameters)  on the feature itself .  
 	 * @param featureExtract 
 	 * @throws IOException 
 	 */
-	private static void addFeatureIncludedPluginsToFeatureModel(boolean ignoreVersionsInFeatureModelGeneration, String thisFeatureId, File featureExtract) throws IOException
+	private static void addFeatureIncludedPluginsToFeatureModel(boolean ignoreVersionsInFeatureModelGeneration, String thisFeatureId, String featureConditionalElem, File featureExtract) throws IOException
 	{
 		Set<String> myPlugins = ParsingUtil.restorePropertyFromExtract(featureExtract,
 				Constants.FEATURE_PROVIDED_PLUGINS);
@@ -407,16 +424,7 @@ public class DependencyFinder {
 					break;
 				}
 				
-			String conditionalElement="";
-			
-			conditionalElement  +=	pluginOS.length()>0  ? "____OS_"+pluginOS+Constants._AND_:"";
-			conditionalElement  +=	pluginARCH.length()>0  ? "____ARCH_"+pluginARCH+Constants._AND_:"";
-			conditionalElement  +=	pluginWS.length()>0  ? "____WS_"+pluginWS+Constants._AND_:"";
-			
-			if(conditionalElement.endsWith(Constants._AND_))
-				conditionalElement=conditionalElement.substring(0, conditionalElement.length()-Constants._AND_.length());
-			if(conditionalElement.length()>0)
-				conditionalElement="("+conditionalElement+")";
+			String conditionalElement = buildPlatformConditionalElement(pluginOS, pluginARCH, pluginWS);
 					
 			try {
 					VersionRange versionRange = new VersionRange(pluginVersionStr);
@@ -461,15 +469,40 @@ public class DependencyFinder {
 		// removing the trailing &&
 		if (Constants._AND_.length() <= includedPluginsRHS.length())
 			includedPluginsRHS = includedPluginsRHS.substring(0, includedPluginsRHS.length() - Constants._AND_.length());
+		
+		String LHS=Constants._FE_+thisFeatureId.trim();
+		if(null!=featureConditionalElem  &&  featureConditionalElem.length()>0)
+			LHS="("+featureConditionalElem+  Constants.IMPLIES_RIGHT +LHS  +")";
+	
 		if (!"".equalsIgnoreCase(includedPluginsRHS.trim())) {
-			String pluginDepFMEntry = Constants._FE_ + thisFeatureId.trim() + " => (" + includedPluginsRHS.trim()
+			String pluginDepFMEntry = LHS +  Constants.IMPLIES_RIGHT +"(" + includedPluginsRHS.trim()
 					+ ")";
-
+			
 			if (ignoreVersionsInFeatureModelGeneration) {
 				pluginDepFMEntry = pluginDepFMEntry.replaceAll("<(.*?)>", "");
 			}
 			dependenciesFM.add(pluginDepFMEntry.trim());
 		}
+	}
+
+	/**
+	 * @param pluginOS
+	 * @param pluginARCH
+	 * @param pluginWS
+	 * @return
+	 */
+	private static String buildPlatformConditionalElement(String pluginOS, String pluginARCH, String pluginWS) {
+		String conditionalElement="";
+		
+		conditionalElement  +=	pluginOS.trim().length()>0  ? "____OS_"+pluginOS+Constants._AND_:"";
+		conditionalElement  +=	pluginARCH.trim().length()>0  ? "____ARCH_"+pluginARCH+Constants._AND_:"";
+		conditionalElement  +=	pluginWS.trim().length()>0  ? "____WS_"+pluginWS+Constants._AND_:"";
+		
+		if(conditionalElement.endsWith(Constants._AND_))
+			conditionalElement=conditionalElement.substring(0, conditionalElement.length()-Constants._AND_.length());
+		if(conditionalElement.length()>0)
+			conditionalElement="("+conditionalElement+")";
+		return conditionalElement;
 	}
 	/**
 	 * @param considerBundleExportersOnly

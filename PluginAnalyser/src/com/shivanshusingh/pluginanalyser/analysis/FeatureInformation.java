@@ -20,12 +20,43 @@ public class FeatureInformation {
 	 */
 	private Set<String> plugins = new HashSet<String>();
 	private StringBuffer xml = new StringBuffer();
-	private String id;
-	private String label;
-	private Version version;
-	private String providerName;
-	private String url;
-	private String updateLabel;
+	private String id="";
+	private String label="";
+	private Version version=null;
+	private String providerName="";
+	private String url="";
+	private String updateLabel="";
+	private String OS="";
+	private String ARCH="";
+	private String WS="";
+	
+	
+	
+	
+	public String getOS() {
+		return OS;
+	}
+
+	public void setOS(String oS) {
+		OS = oS;
+	}
+
+	public String getARCH() {
+		return ARCH;
+	}
+
+	public void setARCH(String aRCH) {
+		ARCH = aRCH;
+	}
+
+	public String getWS() {
+		return WS;
+	}
+
+	public void setWS(String wS) {
+		WS = wS;
+	}
+
 	/**
 	 *  import format: <type>;<name>;<version>;<match>;<patch>
 	 */
@@ -133,6 +164,8 @@ public class FeatureInformation {
 
 	public FeatureInformation() {
 	}
+
+	
 
 }
 

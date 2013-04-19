@@ -338,8 +338,10 @@ public class FeatureAnalyser {
 					featureInfo.setId(eElement.getAttribute("id").trim());
 					featureInfo.setLabel(eElement.getAttribute("label").trim());
 					featureInfo.setVersion(eElement.getAttribute("version").trim());
-					
 					featureInfo.setProviderName(eElement.getAttribute("provider-name").trim());
+					featureInfo.setOS(eElement.getAttribute("os").trim());
+					featureInfo.setARCH(eElement.getAttribute("arch").trim());
+					featureInfo.setWS(eElement.getAttribute("ws").trim());
 
 					// Log.outln("  For \"Feature\" id : " +
 					// eElement.getAttribute("id")
@@ -428,7 +430,6 @@ public class FeatureAnalyser {
 		String featureId=Constants.PROPERTY_VALUE_UNKNOWN_LITERAL+"_"+UNKNOWN_FeatureId_Counter++;
 		featureId=((null != featureInfo.getId() && !"".equalsIgnoreCase(featureInfo.getId().trim() ) ) ? featureInfo.getId().trim() : featureId);
 		writer.write(featureInfo.getId() + "\n");
-		//Log.outln(featureInfo.getId() + "=========");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 		writer.write(Constants.FEATURE_LABEL+"\n");
 		writer.write(featureInfo.getLabel() + "\n");
@@ -439,6 +440,15 @@ public class FeatureAnalyser {
 		
 		addToFeatureMap(featureFileName, featureId, featureInfo.getVersion().toString());
 		
+		writer.write(Constants.FEATURE_OS+"\n");
+		writer.write(featureInfo.getOS().toString() + "\n");
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
+		writer.write(Constants.FEATURE_ARCH+"\n");
+		writer.write(featureInfo.getARCH().toString() + "\n");
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
+		writer.write(Constants.FEATURE_WS+"\n");
+		writer.write(featureInfo.getWS().toString() + "\n");
+		writer.write(Constants.MARKER_TERMINATOR + "\n");
 		writer.write(Constants.FEATURE_VERSION_WITHOUT_QUALIFIER+"\n");
 		writer.write(featureInfo.getVersion().withoutQualifier() + "\n");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
