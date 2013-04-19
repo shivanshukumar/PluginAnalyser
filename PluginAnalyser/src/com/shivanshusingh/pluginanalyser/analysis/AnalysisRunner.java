@@ -41,12 +41,12 @@ public class AnalysisRunner {
 		String featureFolderPath = mirrorSiteLocation + "/features/";
 
 		FeatureAnalyser.analyseAndRecordAllInformationFromBaseFeautreFolder(
-				featureFolderPath, outputLocation + "/features", true);
+				featureFolderPath, outputLocation + "/features", eraseOld);
 
 		// reading all the files (plugin jars) in the specified plugin folder
 		String pluginFolderPath = mirrorSiteLocation + "/plugins/";
 		BundleAnalyser.analyseAndRecordAllInformationFromBasePluginFolder(
-				pluginFolderPath, outputLocation + "/plugins", pathToJavaClasses, true);
+				pluginFolderPath, outputLocation + "/plugins", pathToJavaClasses, eraseOld);
 	}
 
 }
