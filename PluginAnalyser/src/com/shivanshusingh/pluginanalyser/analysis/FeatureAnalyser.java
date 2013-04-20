@@ -90,7 +90,7 @@ public class FeatureAnalyser {
 			if (listOfFiles[i].isFile()) {
 				// if this is a (jar) file.
 				String featureJarName = listOfFiles[i].getName();
-				if (featureJarName.toLowerCase().endsWith(Constants.JAR_FILE_EXTENSION)) {
+				if (featureJarName.toLowerCase().endsWith(Constants.EXTENSION_JAR)) {
 					// this means that this is a feature jar (it is assumed that
 					// this would be a feature jar if it is at this location)
 					featureAnlalysedCounter++;
@@ -117,7 +117,6 @@ public class FeatureAnalyser {
 		Log.outln("for  source:" + featureFolderPath + "  time: " + Util.getFormattedTime(l2 - l1));
 
 		Log.errln("for  source:" + featureFolderPath + "  time: " + Util.getFormattedTime(l2 - l1));
-
 	}
 
 	public static void analyseAndRecordAllInformationFromFeatureDir(String pathPrefix, String featureDirName,
@@ -154,7 +153,6 @@ public class FeatureAnalyser {
 		long l2 = System.currentTimeMillis();
 
 		Log.errln("==== analysed:  \n " + dirNameWithPathFull + "\n time: " + Util.getFormattedTime(l2 - l1));
-
 	}
 
 	/**
@@ -211,7 +209,6 @@ public class FeatureAnalyser {
 			}
 		}
 		return featureinfo;
-
 	}
 
 	/**
@@ -234,7 +231,6 @@ public class FeatureAnalyser {
 			BufferedReader bufferedTempReader = new BufferedReader(new InputStreamReader(inputStream));
 
 			BufferedWriter bufferedTempWriter;
-
 			bufferedTempWriter = new BufferedWriter(new FileWriter(TEMPFileName));
 
 			int inread;
@@ -288,7 +284,6 @@ public class FeatureAnalyser {
 							+ ";" + importedElementMatch + ";"+ importedElementPatch  : "");
 					if (null != importElement && !"".equals(importElement))
 						featureInfo.addImport(importElement);
-
 				}
 			}
 
@@ -419,9 +414,9 @@ public class FeatureAnalyser {
 		outputLocation = (outputLocation + "/").trim().replaceAll("//", "/");
 
 		featureFileName = featureFileName.trim();
-		if (featureFileName.endsWith(Constants.JAR_FILE_EXTENSION))
+		if (featureFileName.endsWith(Constants.EXTENSION_JAR))
 			featureFileName = featureFileName
-					.substring(0, featureFileName.length() - Constants.JAR_FILE_EXTENSION.length());
+					.substring(0, featureFileName.length() - Constants.EXTENSION_JAR.length());
 
 		FileWriter fwriter = new FileWriter(outputLocation + Constants.EXTRACT_FILE_PREFIX_FEATURE
 				+ featureFileName.replace('/', '_') + Constants.EXTRACT_FILE_EXTENSION_FEATURE);

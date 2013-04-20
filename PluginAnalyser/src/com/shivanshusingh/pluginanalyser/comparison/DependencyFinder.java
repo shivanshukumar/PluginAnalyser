@@ -34,6 +34,7 @@ public class DependencyFinder {
 	// Map for: Plugin Name (symbolic name) => pluginId(symbolicname<%version.qualifier%>) => plugin extract file names set..
 	private static Map<String, Map<String, Set<String>>> pluginMap = new HashMap<String, Map<String, Set<String>>>();
 	private static Map<String, Map<String, Set<String>>> featureMap = new HashMap<String, Map<String, Set<String>>>();
+	private static Map<String, Map<String, Set<String>>> exportedPackagesMap   = new HashMap<String, Map<String, Set<String>>>();
 	
 	// sets of plugins
 	static Map<String, PluginObject> plugins = new HashMap<String, PluginObject>();
@@ -117,7 +118,7 @@ public class DependencyFinder {
 			Util.clearFolder(new File(pathToDependencyAnalysisOutputLocation));
 		}
 
-		// the first order of business is to load the plugin map.
+		// the first order of business is to load the plugin, feature and exportedpackages maps.
 		// the plugin map contains the plugin name to plugin id to plugin
 		// extract file name data.
 		String pathToPluginMap = pathToBasePluginExtractsDir + "/" + Constants.EXTRACT_FILE_PREFIX_PLUGINMAP
@@ -126,6 +127,9 @@ public class DependencyFinder {
 		String pathToFeatureMap = pathToBaseFeatureExtractsDir + "/" + Constants.EXTRACT_FILE_PREFIX_FEATUREMAP
 				+ Constants.EXTRACT_FILE_NAME_FEATUREMAP + Constants.EXTRACT_FILE_EXTENSION_FEATUREMAP;
 		File featureMapFile = new File(pathToFeatureMap);
+		String pathToExportedPackagesMap = pathToBasePluginExtractsDir + "/" + Constants.EXTRACT_FILE_PREFIX_EXPPACKAGEMAP
+				+ Constants.EXTRACT_FILE_NAME_EXPPACKAGEMAP + Constants.EXTRACT_FILE_EXTENSION_EXPPACKAGEMAP;
+		File exportedPackagesMapFile = new File(pathToExportedPackagesMap);
 		
 		if (!Util.checkFile(pluginMapFile, true, true, true, false)||!Util.checkFile(featureMapFile, true, true, true, false)) {
 			Log.errln("xxxx in buildPluginDependencySuperSet \\\n" + " NO PLUGIN  or  FEATURE MAP(s) File found at: "
@@ -133,9 +137,15 @@ public class DependencyFinder {
 					+ "  \n CANNOT CONTINUE with the Dependency Finding. \nxxxx");
 			return;
 		}
+		if (!Util.checkFile(exportedPackagesMapFile, true, true, true, false)) {
+			Log.errln("xxxx in buildPluginDependencySuperSet \\\n" + " NO ExportedPackages MAP File found at: "
+					+ pluginExtractDirectory.getAbsolutePath()  +"__OR__"  + pathToExportedPackagesMap
+					+ "  \n CANNOT CONTINUE with the Dependency Finding. \nxxxx");
+			return;
+		}
 
 		//  populating / loading the plugin  and feature  map s.
-		if (!populatePluginAndFeatureMaps(pathToPluginMap, pathToFeatureMap)) {
+		if (!populateAllMaps(pathToPluginMap, pathToFeatureMap, pathToExportedPackagesMap)) {
 			Log.errln("xxxx in buildPluginDependencySuperSet \\\n" + "Error While Populating PluginMap    or    FeatureMap  "
 					+ "  \n CANNOT CONTINUE with the Dependency Finding. \nxxxx");
 			return;
@@ -309,7 +319,7 @@ public class DependencyFinder {
 					for (String candidateImportId : candidateImportIds) {
 						try {
 
-							String candidateImportVersionStr = parsePluginOrFeatureIdForVersion(candidateImportId);
+							String candidateImportVersionStr = parseDepIdForVersion(candidateImportId);
 							Version candidateImportVersion = new Version(candidateImportVersionStr);
 							boolean flag_candidateImportMatches = false;
 
@@ -453,7 +463,7 @@ public class DependencyFinder {
 						if (!ignoreVersionsInFeatureModelGeneration) {
 							Set<String> candidatePluginIds = pluginMap.get(pluginName).keySet();
 							for (String candidatePluginId : candidatePluginIds) {
-								String candidatePluginVersionStr = parsePluginOrFeatureIdForVersion(candidatePluginId);
+								String candidatePluginVersionStr = parseDepIdForVersion(candidatePluginId);
 								Version candidateVersion = new Version(candidatePluginVersionStr);
 								if (versionRange.containsQualified(candidateVersion)) // versionRange.includes(candidateVersion))
 								{
@@ -565,8 +575,7 @@ public class DependencyFinder {
 
 				// constructing this plugin extract plugin id.
 				String thisPluginId = ParsingUtil.getPluginIdFromExtract(pluginExtract);
-				// restoring the functions information from the file.
-
+				
 				boolean ignorePluginExtract = false;
 				Set<String> ignoreBundleProperty = ParsingUtil.restorePropertyFromExtract(pluginExtract,
 						Constants.BUNDLE_IGNORE);
@@ -588,8 +597,11 @@ public class DependencyFinder {
 					bundleExports = ParsingUtil.restorePropertyFromExtract(pluginExtract, Constants.BUNDLE_EXPORTS);
 				}
 
+				// restoring the plugin information from the  plugin extract file.
 				Set<String> myHosts = ParsingUtil.restorePropertyFromExtract(pluginExtract,
 						Constants.BUNDLE_FRAGMENT_HOST);
+				Set<String> myPackageImports = ParsingUtil.restorePropertyFromExtract(pluginExtract,
+						Constants.BUNDLE_PACKAGE_IMPORTS);
 				Set<String> myOtherBundleDependencies = ParsingUtil.restorePropertyFromExtract(pluginExtract,
 						Constants.BUNDLE_OTHER_BUNDLE_IMPORTS);
 				Set<String> myMethodExports = ParsingUtil.restorePropertyFromExtract(pluginExtract,
@@ -606,13 +618,16 @@ public class DependencyFinder {
 						Constants.PLUGIN_ALL_INVOKATION_PROXY_PAIRS);
 
 				// building the dependenciesFM Set
-				//
+				
 				// adding the host plugin bundle dependency to the feature model
-				addPluginDependenciesToFeatureModel(thisPluginId, myHosts, true, ignoreVersionsInFeatureModelGeneration);
-				//
+				addPluginDependenciesToFeatureModel(thisPluginId, myHosts, pluginMap, true, ignoreVersionsInFeatureModelGeneration);
+
 				// adding the bundle dependencies (other bundles) to the feature   model.
-				addPluginDependenciesToFeatureModel(thisPluginId, myOtherBundleDependencies,
+				addPluginDependenciesToFeatureModel(thisPluginId, myOtherBundleDependencies, pluginMap,
 						false, ignoreVersionsInFeatureModelGeneration);
+				
+				// adding package based bundle dependencies
+				addPackageDependenciesToFeatureModel(thisPluginId, myPackageImports, ignoreVersionsInFeatureModelGeneration);
 				
 				// //////////////////////////////////////////
 				// building DependencyFinder.plugins object
@@ -703,7 +718,6 @@ public class DependencyFinder {
 
 							// building the plugins object for exports.
 							po.exports.add(myMethodExport.trim());
-
 						}
 					}
 				}
@@ -718,7 +732,6 @@ public class DependencyFinder {
 
 						impexp.addToImp(thisPluginId);
 						functions.put(s, impexp);
-
 					}
 				}
 
@@ -844,14 +857,89 @@ public class DependencyFinder {
 
 	/**
 	 * 
+	 * adds package dependencies to the feature model.
+	 * @param thisPluginId
+	 * @param pkgImports
+	 * @param ignoreVersionsInFeatureModelGeneration
+	 */
+	private static void addPackageDependenciesToFeatureModel(String thisPluginId, Set<String> pkgImports,
+			boolean ignoreVersionsInFeatureModelGeneration) {
+		// adding package based bundle dependencies
+		for(String packageImport:pkgImports)
+		{
+			
+			String packageImportName = ParsingUtil.getNameFromBundleDependencyEntry(packageImport, true, false);
+			if(null!=packageImportName  &&  !"".equalsIgnoreCase(packageImportName.trim()))
+			{// this means that there is some name to it.
+				packageImportName=packageImportName.trim();
+
+				// check if this is optional. If yes this will not be
+				// included.
+				if (!packageImportName.contains(Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL)) {
+					
+					// now getting all Plugin IDs for the plugin name of
+					// the dependency entry from the pluginmap.
+					if (exportedPackagesMap.containsKey(packageImportName)) {
+						Map<String, Set<String>> candidatePkgMap = exportedPackagesMap.get(packageImportName)    ;
+						Set<String> candidateExpotedPackageIds = candidatePkgMap.keySet();
+						
+						if (!ignoreVersionsInFeatureModelGeneration) {
+							
+							String versionRangeStr = ParsingUtil
+									.getVersionStrFromBundleDependencyEntry(packageImport);
+
+							try {
+								VersionRange versionRange = new VersionRange(versionRangeStr);
+
+								for (String candidateExpPkgId : candidateExpotedPackageIds) {
+									String candidateExpPkgVersionStr = parseDepIdForVersion(candidateExpPkgId);
+									Version candidateVersion = new Version(candidateExpPkgVersionStr);
+									if (versionRange.containsQualified(candidateVersion)) // versionRange.includes(candidateVersion))
+									{
+
+										for(String candidatePluginId:candidatePkgMap.get(candidateExpPkgId))
+										{
+										String pluginDepFMEntry = thisPluginId.trim() + Constants.IMPLIES_RIGHT
+												+ candidatePluginId.trim()+" // pkgdep";
+
+										dependenciesFM.add(pluginDepFMEntry);
+										}
+									}
+								}
+							} catch (ParseException e) {
+								e.printStackTrace();
+							}
+						} else {
+							// not considering the version ranges at
+							// all, so  add all plugin ids that export all versions of the package.
+							
+							for (String candidateExpPkgId : candidateExpotedPackageIds)
+								for(String candidatePluginId:candidatePkgMap.get(candidateExpPkgId))
+								{
+									String pluginDepFMEntry = thisPluginId.trim() + Constants.IMPLIES_RIGHT + candidatePluginId.trim()+" // pkgdep";
+									pluginDepFMEntry = pluginDepFMEntry.replaceAll("<(.*?)>", "");
+									dependenciesFM.add(pluginDepFMEntry);
+								}
+						}
+					}
+
+				}
+			}
+		}
+	}
+
+	/**
+	 * 
 	 *  adds the  provided dependencies  as implications from  the specified plugin in the Dependencies Feature Model. 
 	 * @param thisPluginId this plugin's id.
 	 * @param dependencies the {@link Set} of dependencies on other plugins
+	 * @param map the {@link Map<k, Map<k, Set>>} of the metadata for the dependencies (dependency name to ID Set and so on ....) e.g. pluginMap.
 	 * @param bidirectional set to true if the dependency has to be stated as bidirectional <=> ,  false otherwise: =>
 	 * @param ignoreVersionsInFeatureModelGeneration
 	 */
-	private static void addPluginDependenciesToFeatureModel(String thisPluginId, Set<String> dependencies,
+	private static void addPluginDependenciesToFeatureModel(String thisPluginId, Set<String> dependencies,Map<String, Map<String, Set<String>>> map  ,
 			boolean bidirectional, boolean ignoreVersionsInFeatureModelGeneration) {
+	
 		String IMPLICATION=Constants.IMPLIES_RIGHT;
 		if(bidirectional)
 			IMPLICATION=Constants.IMPLIES_BIDIRECTIONAL; 
@@ -871,29 +959,26 @@ public class DependencyFinder {
 						// some bundle that falls in the version range
 						// specified by the otherPluginDepEntry.
 						String versionRangeStr = ParsingUtil
-								.getVersionStringFromDependencyEntry(otherPluginDepEntry);
+								.getVersionStrFromBundleDependencyEntry(otherPluginDepEntry);
 						
 						try {
 							VersionRange versionRange = new VersionRange(versionRangeStr);
 
 							// 	now getting all Plugin IDs for the plugin name of the dependency entry from the pluginmap.
-							if(pluginMap.containsKey(otherPluginName))
+							if(map.containsKey(otherPluginName))
 							{
-								Set<String> candidatePluginIds=pluginMap.get(otherPluginName).keySet();
+								Set<String> candidatePluginIds=map.get(otherPluginName).keySet();
 								for(String candidatePluginId:candidatePluginIds)
 								{
-									String candidatePluginVersionStr=parsePluginOrFeatureIdForVersion(candidatePluginId);
+									String candidatePluginVersionStr=parseDepIdForVersion(candidatePluginId);
 									Version candidateVersion = new Version(candidatePluginVersionStr);
 									if(versionRange.containsQualified(candidateVersion)) //versionRange.includes(candidateVersion))
 									{
-
 										String	pluginDepFMEntry=thisPluginId.trim()+IMPLICATION+candidatePluginId.trim();
-
 										dependenciesFM.add(pluginDepFMEntry);
 									}
 								}
 							}
-
 						} catch (ParseException e) {
 							e.printStackTrace();
 						}
@@ -917,7 +1002,7 @@ public class DependencyFinder {
 	 * 
 	 * @param PluginOrFeatureId
 	 */
-	private static String parsePluginOrFeatureIdForVersion(String PluginOrFeatureId) {
+	private static String parseDepIdForVersion(String PluginOrFeatureId) {
 		String version = "";
 		String[] splits = PluginOrFeatureId.split(Constants.DELIM_VERSION_STRING_OPEN);
 		if (null != splits && 2 <= splits.length) {// this means that there was
@@ -928,7 +1013,6 @@ public class DependencyFinder {
 			version = version.replace(Constants.DELIM_VERSION_STRING_OPEN, "")
 					.replace(Constants.DELIM_VERSION_STRING_CLOSE, "").trim();
 		}
-
 		return version;
 	}
 
@@ -938,7 +1022,7 @@ public class DependencyFinder {
 	 * @return
 	 */
 	@SuppressWarnings("unchecked")
-	private static boolean populatePluginAndFeatureMaps(String pathToPluginMapFile, String pathToFeatureMapFile) {
+	private static boolean populateAllMaps(String pathToPluginMapFile, String pathToFeatureMapFile, String pathToExportedPackagesMapFile) {
 		try {
 			ObjectInputStream ois;
 
@@ -950,12 +1034,15 @@ public class DependencyFinder {
 			featureMap = (Map<String, Map<String, Set<String>>>) ois.readObject();
 			ois.close();
 			
+			ois = new ObjectInputStream(new FileInputStream(pathToExportedPackagesMapFile));
+			exportedPackagesMap = (Map<String, Map<String, Set<String>>>) ois.readObject();
+			ois.close();
+			
 		} catch (Exception e) {
 			Log.errln(Util.getStackTrace(e));
 			return false;
 		}
 		return true;
-
 	}
 
 	private static Set<Set<String>> fetchExporters(String imp, Set<String> importEntryProxies, String ownerPluginName) {
@@ -970,25 +1057,24 @@ public class DependencyFinder {
 			 result.addAll(interimResult);
 		 else
 		 {
-		
-		// otherwise, try the proxies but then this means that we would need to
-		// include the plugin that owns the import entry in the result as the
-		// proxy is generated to go outside of the owner plugin from inside of
-		// the owner plugin and the dependency cannot be satisfied without the
-		// owner plugin in the mix.
+			
+			// otherwise, try the proxies but then this means that we would need to
+			// include the plugin that owns the import entry in the result as the
+			// proxy is generated to go outside of the owner plugin from inside of
+			// the owner plugin and the dependency cannot be satisfied without the
+			// owner plugin in the mix.
 
-		for (String importEntryProxy : importEntryProxies) {
-			 interimResult = new LinkedHashSet<Set<String>>();
+			for (String importEntryProxy : importEntryProxies) {
+				 interimResult = new LinkedHashSet<Set<String>>();
 
-			interimResult = fetchExporters(importEntryProxy);
-			if (interimResult.size() > 0)//null!=interimResult && 
-				for (Set<String> set : interimResult) {
-					if (set.size() > 0)
-						set.add(ownerPluginName);
-				}
-			result.addAll(interimResult);
-
-		}
+				interimResult = fetchExporters(importEntryProxy);
+				if (interimResult.size() > 0)//null!=interimResult && 
+					for (Set<String> set : interimResult) {
+						if (set.size() > 0)
+							set.add(ownerPluginName);
+					}
+				result.addAll(interimResult);
+			}
 		 }
 		return result;
 	}
@@ -1014,7 +1100,6 @@ public class DependencyFinder {
 				result.addAll(interimresult);
 			}
 		}
-		
 		return result;
 	}
 	
@@ -1041,7 +1126,6 @@ public class DependencyFinder {
 				// it is a function, so get the class name.
 				String[] funcElements = ParsingUtil.separateFuncNameElements(imp);
 				classname = funcElements[1];// class name.
-
 			}
 			Set<PluginObject> targetPlugins = new HashSet<PluginObject>();
 			targetPlugins = getTargetPlugins(classname);
@@ -1053,43 +1137,37 @@ public class DependencyFinder {
 						newSet.add(targetPlugin.name);
 						result.add(newSet);
 						// System.out.println("result: "+result);
-
 					}
-
 					else {
 						if (null != targetPlugin.superClassesAndInterfaces) {
 							Set<String> superclasses = targetPlugin.superClassesAndInterfaces.get(classname);
 							if(null!=superclasses)
 							{
-							for (String superclass : superclasses) 
-							{
-
-								String newImp = imp.replace(classname, superclass);
-								// if imp is a functioninvokation, then replace
-								// just the class name with superclass name
-								boolean impTypeIsFunction = (1 == ParsingUtil.getEntryType(imp)) ? true : false;
-
-								if (impTypeIsFunction) {
-									// it is a function, so get the class name.
-									String[] funcElements = ParsingUtil.separateFuncNameElements(imp);
-									// replace the class name.
-									funcElements[1] = superclass;
-									// recnstruct
-									newImp = ParsingUtil.reconstructFuncSignature(funcElements);
-
-								}
-
-								Set<Set<String>> setOfSets = findExporters(newImp);
-								if (setOfSets.size() > 0)
-									for (Set<String> set : setOfSets) {
-										if (set.size() > 0)
-											set.add(targetPlugin.name);
-
+								for (String superclass : superclasses) 
+								{
+									String newImp = imp.replace(classname, superclass);
+									// if imp is a functioninvokation, then replace
+									// just the class name with superclass name
+									boolean impTypeIsFunction = (1 == ParsingUtil.getEntryType(imp)) ? true : false;
+	
+									if (impTypeIsFunction) {
+										// it is a function, so get the class name.
+										String[] funcElements = ParsingUtil.separateFuncNameElements(imp);
+										// replace the class name.
+										funcElements[1] = superclass;
+										// recnstruct
+										newImp = ParsingUtil.reconstructFuncSignature(funcElements);
 									}
-								result.addAll(setOfSets);
-
-								// System.out.println("result_branch: "+result);
-							}
+	
+									Set<Set<String>> setOfSets = findExporters(newImp);
+									if (setOfSets.size() > 0)
+										for (Set<String> set : setOfSets) {
+											if (set.size() > 0)
+												set.add(targetPlugin.name);
+										}
+									result.addAll(setOfSets);
+									// System.out.println("result_branch: "+result);
+								}
 							}
 						}
 					}
@@ -1135,11 +1213,11 @@ public class DependencyFinder {
 		}
 
 		File functionFile = new File(pluginDependencySetOutputLocationPath + "/"
-				+ Constants.DEPENDENCY_SET_FILE_PREFIX_PLUGIN + "functions"
-				+ Constants.DEPENDENCY_SET_FILE_EXTENSION_PLUGIN);
+				+ Constants.DEPENDENCY_SET_FILE_PREFIX + "functions"
+				+ Constants.DEPENDENCY_SET_FILE_EXTENSION);
 		File typeFile = new File(pluginDependencySetOutputLocationPath + "/" 
-				+ Constants.DEPENDENCY_SET_FILE_PREFIX_PLUGIN		+ "types" + 
-				Constants.DEPENDENCY_SET_FILE_EXTENSION_PLUGIN);
+				+ Constants.DEPENDENCY_SET_FILE_PREFIX		+ "types" + 
+				Constants.DEPENDENCY_SET_FILE_EXTENSION);
 		File constraintsFMFile=new File(pluginDependencySetOutputLocationPath + "/"
 				+ Constants.FM_CONSTRAINTS_FILE_PREFIX + Constants.FM_CONSTRAINTS_FILE_NAME
 				+ Constants.FM_CONSTRAINTS_FILE_EXTENSION);
@@ -1161,13 +1239,10 @@ public class DependencyFinder {
 		pluginDepFMWriter.close();
 		pluginDepFMfilewriter.close();
 		
-		
-		
 		// writing functions set.
 
 		FileWriter filewriter = new FileWriter(functionFile);
 		BufferedWriter writer = new BufferedWriter(filewriter);
-
 		
 		//  the writers for the constraints file.
 		FileWriter constraintsFMfilewriter = new FileWriter(constraintsFMFile);
@@ -1247,7 +1322,6 @@ public class DependencyFinder {
 			// collecting the constraint entry  to the constraintsSet.
 			if( 1<=constraintsExporters.length  ()  )
 			{
-
 				for(String importer:imp)
 				{
 					importer=importer.trim();
@@ -1270,7 +1344,7 @@ public class DependencyFinder {
 				Log.outln("## functions written: " + counter + " of " + functionsLength + " ("
 						+ (counter * 100 / functionsLength) + "%)");
 		}
-		
+	
 		
 		//  writing the constraints file.
 		List<String> constraintsSet_List=new ArrayList<String>(constraintsFM.keySet());
@@ -1403,7 +1477,5 @@ public class DependencyFinder {
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 		writer.close();
 		filewriter.close();
-
 	}
-
 }

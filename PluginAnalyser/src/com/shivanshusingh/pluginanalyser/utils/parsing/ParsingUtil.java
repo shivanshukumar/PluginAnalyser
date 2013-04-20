@@ -121,7 +121,7 @@ public class ParsingUtil {
 	 * @param bundleDependencyEntry
 	 * @return
 	 */
-	public static String getVersionStringFromDependencyEntry(String bundleDependencyEntry) {
+	public static String getVersionStrFromBundleDependencyEntry(String bundleDependencyEntry) {
 		// getting the version from the
 		// bundle export entry.
 		// getting split on ";" first.
@@ -217,6 +217,17 @@ public class ParsingUtil {
 			e.printStackTrace();
 		}
 		return featureId.toString();
+	}
+
+	/**
+	 * build a ID containing name and version info (for use in plugin and package maps and later for dependency feature model and constraints). E.g. if name = A.B.C and versionStr= 1.2.0.whatever and the opening and closing delimiters for versionStr are <% and %> respectively, the result would be A.B.C<%1.2.0.whatever%> 
+	 * @param name
+	 * @param versionStr
+	 * @return
+	 */
+	public static String buildIdentifier(String name, String versionStr) {
+		String pluginId=name+Constants.DELIM_VERSION_STRING_OPEN+versionStr+Constants.DELIM_VERSION_STRING_CLOSE;
+		return pluginId;
 	}
 
 }

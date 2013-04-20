@@ -25,6 +25,7 @@ import java.util.jar.Manifest;
 import org.objectweb.asm.ClassReader;
 
 import com.shivanshusingh.pluginanalyser.utils.Util;
+import com.shivanshusingh.pluginanalyser.utils.Version;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
 import com.shivanshusingh.pluginanalyser.utils.parsing.Constants;
 import com.shivanshusingh.pluginanalyser.utils.parsing.ParsingUtil;
@@ -39,10 +40,12 @@ import com.shivanshusingh.pluginanalyser.utils.parsing.ParsingUtil;
 public class BundleAnalyser extends ManifestParser {
 
 	
-	// Map for: Pluin Name (symbolic name) =>
+	// Map for: Plugin Name (symbolic name) =>
 	// pluginId(symbolicname[version.qualifier]) => plugin extract file names
 	// set..
 	public static Map<String, Map<String, Set<String>>> pluginMap = new HashMap<String, Map<String, Set<String>>>();
+	// Map for: ExportedPackage name  =>   ExportedPackageId(name[version]) => pluginId set..
+	public static Map<String, Map<String, Set<String>>> exportedPackagesMap = new HashMap<String, Map<String, Set<String>>>();
 	private static long UNKNOWN_SYMBOLIC_NAME_Counter = 0;
 
 	/**
@@ -96,7 +99,7 @@ public class BundleAnalyser extends ManifestParser {
 		for (int i = 0; i < listOfFiles.length; i++) {
 			if (listOfFiles[i].isFile()) {
 				String pluginJarName = listOfFiles[i].getName();
-				if (pluginJarName.toLowerCase().endsWith(Constants.JAR_FILE_EXTENSION)) {
+				if (pluginJarName.toLowerCase().endsWith(Constants.EXTENSION_JAR)) {
 					// this means that this is a plugin jar (it is assumed that
 					// this would be a plugin jar if it is at this location)
 					pluginAnalysedCounter++;
@@ -116,7 +119,10 @@ public class BundleAnalyser extends ManifestParser {
 		//writing the plugin map to disk.
 		Util.writeObjectToDisk(pluginMap,Constants.EXTRACT_FILE_PREFIX_PLUGINMAP
 				+Constants.EXTRACT_FILE_NAME_PLUGINMAP + Constants.EXTRACT_FILE_EXTENSION_PLUGINMAP, outputLocation);
-		
+		//writing the exportedPackages map to disk.
+		Util.writeObjectToDisk(exportedPackagesMap,Constants.EXTRACT_FILE_PREFIX_EXPPACKAGEMAP
+				+Constants.EXTRACT_FILE_NAME_EXPPACKAGEMAP + Constants.EXTRACT_FILE_EXTENSION_EXPPACKAGEMAP, outputLocation);
+				
 		long l2 = System.currentTimeMillis();
 		Log.outln(pluginAnalysedCounter + " plugin have been analyzed");
 		Log.errln(pluginAnalysedCounter + " plugin have been analyzed");
@@ -268,7 +274,7 @@ public class BundleAnalyser extends ManifestParser {
 				classesAnalyzedCounter++;
 				new ClassReader(new FileInputStream(e)).accept(visitor, 0);
 
-			} else if (name.toLowerCase().endsWith(Constants.JAR_FILE_EXTENSION)) {
+			} else if (name.toLowerCase().endsWith(Constants.EXTENSION_JAR)) {
 				// nested jar.
 
 				Log.outln("====> " + name + " found");
@@ -347,7 +353,7 @@ public class BundleAnalyser extends ManifestParser {
 				classesAnalyzedCounter++;
 				new ClassReader(jarfileinstance.getInputStream(e)).accept(visitor, 0);
 
-			} else if (name.toLowerCase().endsWith(Constants.JAR_FILE_EXTENSION)) {
+			} else if (name.toLowerCase().endsWith(Constants.EXTENSION_JAR)) {
 				// nested jar.
 
 				Log.outln("====> " + name + " found");
@@ -413,7 +419,7 @@ public class BundleAnalyser extends ManifestParser {
 				classesAnalyzedCounter++;
 				new ClassReader(jarFile.getInputStream(e)).accept(visitor, 0);
 
-			} else if (name.toLowerCase().endsWith(Constants.JAR_FILE_EXTENSION)) {
+			} else if (name.toLowerCase().endsWith(Constants.EXTENSION_JAR)) {
 				// nested jar.
 
 				String TEMPFileName = (Util.getTEMP_DIR_PATH() + "/pa-sks-plugin-tmp-").replace("//", "/") + Math.random()
@@ -468,7 +474,7 @@ public class BundleAnalyser extends ManifestParser {
 				classesAnalyzedCounter++;
 				new ClassReader(new FileInputStream(e)).accept(visitor, 0);
 
-			} else if (name.toLowerCase().endsWith(Constants.JAR_FILE_EXTENSION)) {
+			} else if (name.toLowerCase().endsWith(Constants.EXTENSION_JAR)) {
 				// nested jar.
 
 				extractDependenciesAndExportsFromJavaSDKJar(visitor, new JarFile(entry));
@@ -817,8 +823,8 @@ public class BundleAnalyser extends ManifestParser {
 			throws IOException {
 
 		pluginFileName = pluginFileName.trim();
-		if (pluginFileName.endsWith(Constants.JAR_FILE_EXTENSION))
-			pluginFileName = pluginFileName.substring(0, pluginFileName.length() - Constants.JAR_FILE_EXTENSION.length());
+		if (pluginFileName.endsWith(Constants.EXTENSION_JAR))
+			pluginFileName = pluginFileName.substring(0, pluginFileName.length() - Constants.EXTENSION_JAR.length());
 
 		outputLocation = (outputLocation + "/").trim().replaceAll("//", "/").replaceAll("\\\\", "\\");
 		pluginFileName=pluginFileName.replace('/', '_').replace('\\', '_'); 
@@ -1075,10 +1081,12 @@ public class BundleAnalyser extends ManifestParser {
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 		// adding the  plugin ID and extract file name to the plugin map.
-
 		addToPluginMap(pluginFileName, symbolicName, bundleVersion);
-			
-	
+				
+		// now that we have the symbolic name and version for this plugin,
+		// building the package exporter map.
+		if (flag_bundleInfoExists) 
+			addPackageExportsToPackageExporterMap(bundleinfo.getExports(),    symbolicName, bundleVersion);
 		
 		writer.write(Constants.BUNDLE_VERSION_WITHOUT_QUALIFIER + "\n");
 		String bundleVersionWithoutQual=Constants.BUNDLE_VERSION_UNKNOWN_WITHOUT_QUALIFIER_LITERAL;
@@ -1103,61 +1111,17 @@ public class BundleAnalyser extends ManifestParser {
 		// //////////////////////////////////////////////////////
 
 		writer.write(Constants.PLUGIN_ALL_INHERITANCE_HIERARCHIES + "\n");
-		/*
-		 * for( String key:classesKeySet) { String toWrite="";
-		 * toWrite+=getInheritanceHeirarchy(key,
-		 * Constants.DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE,
-		 * allTypeDependencies_SuperClassAndInterfaces); if(null!=toWrite &&
-		 * !"".equalsIgnoreCase(toWrite) &&
-		 * !key.trim().equalsIgnoreCase(toWrite.trim()) )
-		 * writer.write(toWrite.trim()+"\n"); }
-		 */
-
 		for (String s : allInheritanceHierarchies_List)
 			writer.write(s + "\n");
 
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 		writer.write(Constants.PLUGIN_ALL_INHERITANCE_PAIRS + "\n");
-		/*
-		 * for( String key:classesKeySet) {
-		 * 
-		 * // for non recursive inheritence relationships. TypeDependency
-		 * typeDep=(TypeDependency)
-		 * allTypeDependencies_SuperClassAndInterfaces.get(key);
-		 * 
-		 * if(null!=typeDep.superClass
-		 * &&!"".equalsIgnoreCase(typeDep.superClass))
-		 * 
-		 * writer.write(key+Constants.DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE+
-		 * typeDep.superClass+"\n");
-		 * 
-		 * 
-		 * }
-		 */
 		for (String s : allInheritancePairs_List)
 			writer.write(s + "\n");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 		writer.write(Constants.PLUGIN_ALL_INTERFACE_IMPLEMENTATION_LISTS + "\n");
-		/*
-		 * for( String key1:classesKeySet) { TypeDependency
-		 * typeDep1=(TypeDependency)
-		 * allTypeDependencies_SuperClassAndInterfaces.get(key1);
-		 * 
-		 * 
-		 * String toWrite=""; if(null!=typeDep1.interfaces && 1>=
-		 * typeDep1.interfaces.size()) {
-		 * 
-		 * //System.out.println(
-		 * "+++++++++++++++++++++++++++++++++++++++++interfacec implemented:"
-		 * +typeDep1.interfaces.size()); for(String interfaceImplemented:
-		 * typeDep1.interfaces) { toWrite+= interfaceImplemented+";"; }
-		 * 
-		 * if(!"".equalsIgnoreCase(toWrite))
-		 * writer.write(key1+Constants.DELIM_PLUGIN_ELEMENT_SUPERCLASS_INTERFACE
-		 * +toWrite+"\n"); } }
-		 */
 		for (String s : allInterfaceImplLists_List)
 			writer.write(s + "\n");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
@@ -1348,6 +1312,45 @@ public class BundleAnalyser extends ManifestParser {
 	}
 
 	/**
+	 * 
+	 * adds the package exports of the current plugin to the exportedPackagesMap.
+	 * 
+	 * @param packageExports
+	 * @param bundleSymbolicName
+	 * @param bundleVersionWithQualifier
+	 */
+	private static void addPackageExportsToPackageExporterMap(Set packageExports, String bundleSymbolicName, String bundleVersionWithQualifier) {
+		String pluginId = ParsingUtil.buildIdentifier(bundleSymbolicName, bundleVersionWithQualifier);
+		for(Object export:packageExports)
+		{
+			String packageExport=export.toString();
+			String packageName=ParsingUtil.getNameFromBundleDependencyEntry(packageExport, true, true).trim();
+			String packageVersion=ParsingUtil.getVersionStrFromBundleDependencyEntry(packageExport).trim();
+			
+			//  defaulting no version information to 0.0.0 as per OSGi core 5.0.0 specification. (section 3.6.5 Export-package, pp42)
+			if(packageVersion.length()<1)
+				packageVersion=new Version(0, 0, 0, null).toString();
+			
+			String packageId=ParsingUtil.buildIdentifier(packageName, packageVersion);
+			
+			Map<String,Set<String>> interimExportedPackageIdMap=new HashMap<String, Set<String>>();
+			if(exportedPackagesMap.containsKey(packageName))
+				interimExportedPackageIdMap=exportedPackagesMap.get(packageName);
+			
+			Set<String> interimExportingPluginSet=new HashSet<String>();
+			if(interimExportedPackageIdMap.containsKey(packageId))
+				interimExportingPluginSet=interimExportedPackageIdMap.get(packageId);
+			
+			interimExportingPluginSet.add(pluginId);
+			interimExportedPackageIdMap.put(packageId, interimExportingPluginSet);
+			exportedPackagesMap.put(packageName, interimExportedPackageIdMap);
+			
+		}
+	}
+
+	/**
+	 * 
+	 * adds a plugin entry to the Plugin map.
 	 * @param pluginFileName
 	 * @param bundleSymbolicName
 	 * @param bundleVersionWithQualifier
@@ -1357,7 +1360,7 @@ public class BundleAnalyser extends ManifestParser {
 		Map<String,Set<String>> interimPluginIdMap=new HashMap<String, Set<String>>();
 		if(pluginMap.containsKey(bundleSymbolicName))
 			interimPluginIdMap=pluginMap.get(bundleSymbolicName);
-		String pluginId=bundleSymbolicName+Constants.DELIM_VERSION_STRING_OPEN+bundleVersionWithQualifier+Constants.DELIM_VERSION_STRING_CLOSE;
+		String pluginId = ParsingUtil.buildIdentifier(bundleSymbolicName, bundleVersionWithQualifier);
 		Set<String> interimPluginFileSet=new HashSet<String>();
 		if(interimPluginIdMap.containsKey(pluginId))
 			interimPluginFileSet=interimPluginIdMap.get(pluginId);
@@ -1366,14 +1369,13 @@ public class BundleAnalyser extends ManifestParser {
 		interimPluginIdMap.put(pluginId, interimPluginFileSet);
 		pluginMap.put(bundleSymbolicName, interimPluginIdMap);
 	}
-	
-	
+
 	private static void writeJavaSDKClassesData(DependencyVisitor v, BundleInfo bundleinfo, String pluginFileName,
 			String outputLocation) throws IOException {
 
 		pluginFileName = pluginFileName.trim();
-		if (pluginFileName.endsWith(Constants.JAR_FILE_EXTENSION))
-			pluginFileName = pluginFileName.substring(0, pluginFileName.length() - Constants.JAR_FILE_EXTENSION.length());
+		if (pluginFileName.endsWith(Constants.EXTENSION_JAR))
+			pluginFileName = pluginFileName.substring(0, pluginFileName.length() - Constants.EXTENSION_JAR.length());
 
 		outputLocation = (outputLocation + "/").trim().replaceAll("//", "/").replaceAll("\\\\", "\\");
 		pluginFileName= pluginFileName.replace('/', '_').replace('\\', '_');
