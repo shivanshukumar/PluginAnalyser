@@ -157,7 +157,7 @@ public interface Constants {
 	 */
 	public static final List<String> BLACKLISTED_PLUGINS = new ArrayList<String>(Arrays.asList(
 			"org.mozilla.javascript"+DELIM_VERSION_STRING_OPEN+"1.7.2.v201005080400"+DELIM_VERSION_STRING_CLOSE  
-//		,	"org.eclipse.jetty.util"+DELIM_VERSION_STRING_OPEN+"8.1.3.v20120522"+DELIM_VERSION_STRING_CLOSE
+//		,	"org.eclipse.jetty.util"+DELIM_VERSION_STRING_OPEN+"8.1.3.v20120522"+DELIM_VERSION_STRING_CLOSE  //the one with an unavailable optional package import.
 			));
 
 

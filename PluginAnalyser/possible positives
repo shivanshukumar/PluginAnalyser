@@ -48,7 +48,7 @@ false, 1 importer(s) hungry
 
 The issue here   is that the package org.slf4j is marked as an optional  imprt in the manifest. There is however a maven pom included in the   plugin jar that calls for getting org.slf4j but still marked as optional. This function call however as been made from somewhere in the plugin.  Something to think about.
 
-the same goes  for the functions (all being imprted or invoked by org.eclipse.jetty.util<%8.1.3.v20120522%>):
+the same goes  for the functions (all being imprted or invoked by org.eclipse.jetty.util<%8.1.3.v20120522%>)    as follows  :
 
 boolean org.slf4j.spi.LocationAwareLogger.isTraceEnabled (org.slf4j.Marker,)
 void org.slf4j.spi.LocationAwareLogger.log (org.slf4j.Marker,java.lang.String,int,java.lang.String,java.lang.Object[],java.lang.Throwable,)
@@ -80,7 +80,8 @@ count: 23
 
 (2) void org.apache.xmlbeans.XmlCursor.insertAttributeWithValue (java.lang.String,java.lang.String,) not satisfied.
 
-This package is **not included in the imports of the manifets not even as an optional parameter**. there maybe a case that this class / package and the associated functions may never have gotten used but then this  may be a real problem.
+This package is **not included in the imports of the manifets not even as an optional parameter** of the importing plugin: org.mozilla.javascript<%1.7.2.v201005080400%>
+ there maybe a case that this class / package and the associated functions may never have gotten used but then this  may be a real problem.
 The problem, hence goes on for a number of this and related functions that  appear in all classes  under org.apache.xmlbeans.*
 
 The functions that go   unsatisfied therefore are:
