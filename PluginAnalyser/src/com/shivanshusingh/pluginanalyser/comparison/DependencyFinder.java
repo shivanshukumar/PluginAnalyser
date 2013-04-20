@@ -674,6 +674,9 @@ public class DependencyFinder {
 				po.imports.addAll(myTypeImports);
 
 				// merging functions
+
+				boolean flag_hasOptionalPluginImport=hasOptional(myOtherBundleDependencies);
+				
 				for (String myMethodExport : myMethodExports) {
 					myMethodExport = myMethodExport.trim();
 					if (1 <= myMethodExport.length()) {
@@ -721,17 +724,20 @@ public class DependencyFinder {
 						}
 					}
 				}
-
-				for (String s : myMethodImports) {
-					s = s.trim();
-					if (1 <= s.length()) {
-
-						ImpExp impexp = new ImpExp();
-						if (functions.containsKey(s))
-							impexp = functions.get(s);
-
-						impexp.addToImp(thisPluginId);
-						functions.put(s, impexp);
+				
+				if(!(flag_hasOptionalPluginImport||Constants.BLACKLISTED_PLUGINS.contains(thisPluginId)))
+				{
+					for (String s : myMethodImports) {
+						s = s.trim();
+						if (1 <= s.length()) {
+	
+							ImpExp impexp = new ImpExp();
+							if (functions.containsKey(s))
+								impexp = functions.get(s);
+	
+							impexp.addToImp(thisPluginId);
+							functions.put(s, impexp);
+						}
 					}
 				}
 
@@ -768,24 +774,26 @@ public class DependencyFinder {
 							// "    for type: "+myTypeExport);
 							impexp.addToExp(thisPluginId);
 							types.put(myTypeExport, impexp);
-
 							// building the plugins object for exports.
 							po.exports.add(myTypeExport.trim());
 						}
 					}
 				}
 
-				for (String s : myTypeImports) {
-					s = s.trim();
-					if (1 <= s.length()) {
-						ImpExp impexp = new ImpExp();
-						if (types.containsKey(s))
-							impexp = types.get(s);
-						impexp.addToImp(thisPluginId);
-						types.put(s, impexp);
+				if(!(flag_hasOptionalPluginImport||Constants.BLACKLISTED_PLUGINS.contains(thisPluginId)))
+				{
+					//  ignore all imports from plugins that either have optional plugin imports are are blacklisted.
+					for (String s : myTypeImports) {
+						s = s.trim();
+						if (1 <= s.length()) {
+							ImpExp impexp = new ImpExp();
+							if (types.containsKey(s))
+								impexp = types.get(s);
+							impexp.addToImp(thisPluginId);
+							types.put(s, impexp);
+						}
 					}
 				}
-
 				// adding the constructed object to the DependencyFinder.plugins
 				// object.
 				plugins.put(thisPluginId, po);
@@ -853,6 +861,13 @@ public class DependencyFinder {
 						+ Util.getFormattedTime(System.currentTimeMillis() - indirectDepAnalysisTime1));
 			}
 		}
+	}
+
+	private static boolean hasOptional(Set<String> s) {
+		for (String a : s)
+			if (a.toLowerCase().contains(Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL))
+				return true;
+		return false;
 	}
 
 	/**
@@ -1366,6 +1381,7 @@ public class DependencyFinder {
 		for (String s : unmatchedFunctionImports_List)
 			writer.write(s + "\n");
 		writer.write("COUNT=" + unmatchedFunctionImports.size() + "\n");
+		Log.outln("COUNT=" + unmatchedFunctionImports.size() + "\n");
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 		writer.write(Constants.PLUGIN_DEPENDENCY_ALL_IGNORED_PLUGINS + "\n");
@@ -1462,6 +1478,7 @@ public class DependencyFinder {
 		for (String s : unmatchedTypeImports_List)
 			writer.write(s + "\n");
 		writer.write("COUNT=" + unmatchedTypeImports.size() + "\n");
+		Log.outln("COUNT=" + unmatchedTypeImports.size() + "\n");
 
 		writer.write(Constants.MARKER_TERMINATOR + "\n");
 

@@ -148,6 +148,17 @@ public interface Constants {
 	public static final String PLATFORM_PARAM_WS = "____WS_";
 	public static final String PLATFORM_PARAM_ARCH = "____ARCH_";
 	public static final String PLATFORM_PARAM_OS = "____OS_";
+	
+	/**
+	 * the blacklisted plugins list is for ignoring all importes from these.
+	 * The may be edited from time to time as needed.
+	 * 
+	 * NOTE****   if optional package impoters (plugins) should be marked as blacklisted is not clear for now. (Dated: 2013-Apr-20).
+	 */
+	public static final List<String> BLACKLISTED_PLUGINS = new ArrayList<String>(Arrays.asList(
+			"org.mozilla.javascript"+DELIM_VERSION_STRING_OPEN+"1.7.2.v201005080400"+DELIM_VERSION_STRING_CLOSE  
+//		,	"org.eclipse.jetty.util"+DELIM_VERSION_STRING_OPEN+"8.1.3.v20120522"+DELIM_VERSION_STRING_CLOSE
+			));
 
 
 
