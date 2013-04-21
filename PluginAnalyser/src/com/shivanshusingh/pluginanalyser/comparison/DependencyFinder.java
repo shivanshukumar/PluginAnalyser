@@ -620,11 +620,11 @@ public class DependencyFinder {
 				// building the dependenciesFM Set
 				
 				// adding the host plugin bundle dependency to the feature model
-				addPluginDependenciesToFeatureModel(thisPluginId, myHosts, pluginMap, true, ignoreVersionsInFeatureModelGeneration);
+				addPluginDependenciesToFeatureModel(thisPluginId, myHosts, pluginMap, Constants.IMPLIES_BIDIRECTIONAL,  "fragmentHost",  ignoreVersionsInFeatureModelGeneration);
 
 				// adding the bundle dependencies (other bundles) to the feature   model.
 				addPluginDependenciesToFeatureModel(thisPluginId, myOtherBundleDependencies, pluginMap,
-						false, ignoreVersionsInFeatureModelGeneration);
+						Constants.IMPLIES_RIGHT, "pluginImp", ignoreVersionsInFeatureModelGeneration);
 				
 				// adding package based bundle dependencies
 				addPackageDependenciesToFeatureModel(thisPluginId, myPackageImports, ignoreVersionsInFeatureModelGeneration);
@@ -716,8 +716,8 @@ public class DependencyFinder {
 						if (flag_isExported) {
 							// Log.outln("*********** adding to exports:"+thisPluginExtractName+
 							// "    for invokation: "+ myMethodExport);
-							impexp.addToExp(thisPluginId);
-							functions.put(myMethodExport, impexp);
+//							impexp.addToExp(thisPluginId);
+//							functions.put(myMethodExport, impexp);
 
 							// building the plugins object for exports.
 							po.exports.add(myMethodExport.trim());
@@ -843,13 +843,11 @@ public class DependencyFinder {
 				// recording the data in the functions or types objects.
 				if (functions.containsKey(imp) && 1 <= exporterPluginSets.size()) {
 					ImpExp impexp = functions.get(imp);
-					impexp.satisfyingPluginsSets.addAll(exporterPluginSets);
-					impexp.addToExp("==SatisfyingPluginSet: " + exporterPluginSets.toString());
+					impexp.addAllToExp(exporterPluginSets);
 					functions.put(imp, impexp);
 				} else if (types.containsKey(imp) && 1 <= exporterPluginSets.size()) {
 					ImpExp impexp = types.get(imp);
-					impexp.satisfyingPluginsSets.addAll(exporterPluginSets);
-					impexp.addToExp(exporterPluginSets.toString());
+					impexp.addAllToExp(exporterPluginSets);
 					types.put(imp, impexp);
 				}
 			}
@@ -931,7 +929,7 @@ public class DependencyFinder {
 							for (String candidateExpPkgId : candidateExpotedPackageIds)
 								for(String candidatePluginId:candidatePkgMap.get(candidateExpPkgId))
 								{
-									String pluginDepFMEntry = thisPluginId.trim() + Constants.IMPLIES_RIGHT + candidatePluginId.trim()+" // pkgdep";
+									String pluginDepFMEntry = thisPluginId.trim() + Constants.IMPLIES_RIGHT + candidatePluginId.trim()+ParsingUtil.DELIM_COMMENT+"pkgdep";
 									pluginDepFMEntry = pluginDepFMEntry.replaceAll("<(.*?)>", "");
 									dependenciesFM.add(pluginDepFMEntry);
 								}
@@ -949,15 +947,14 @@ public class DependencyFinder {
 	 * @param thisPluginId this plugin's id.
 	 * @param dependencies the {@link Set} of dependencies on other plugins
 	 * @param map the {@link Map<k, Map<k, Set>>} of the metadata for the dependencies (dependency name to ID Set and so on ....) e.g. pluginMap.
-	 * @param bidirectional set to true if the dependency has to be stated as bidirectional <=> ,  false otherwise: =>
+	 * @param implies the implication indicator e.g. => or <=> or <=
+	 * @param comment the comment to be added at the end of each dependency entry
 	 * @param ignoreVersionsInFeatureModelGeneration
 	 */
-	private static void addPluginDependenciesToFeatureModel(String thisPluginId, Set<String> dependencies,Map<String, Map<String, Set<String>>> map  ,
-			boolean bidirectional, boolean ignoreVersionsInFeatureModelGeneration) {
-	
-		String IMPLICATION=Constants.IMPLIES_RIGHT;
-		if(bidirectional)
-			IMPLICATION=Constants.IMPLIES_BIDIRECTIONAL; 
+	private static void addPluginDependenciesToFeatureModel(String thisPluginId, Set<String> dependencies,
+			Map<String, Map<String, Set<String>>> map, String implies, String comment,
+			boolean ignoreVersionsInFeatureModelGeneration) {
+		
 		for(String otherPluginDepEntry:dependencies)
 		{
 			
@@ -989,7 +986,7 @@ public class DependencyFinder {
 									Version candidateVersion = new Version(candidatePluginVersionStr);
 									if(versionRange.containsQualified(candidateVersion)) //versionRange.includes(candidateVersion))
 									{
-										String	pluginDepFMEntry=thisPluginId.trim()+IMPLICATION+candidatePluginId.trim();
+										String	pluginDepFMEntry=thisPluginId.trim()+implies+candidatePluginId.trim()+ParsingUtil.DELIM_COMMENT+comment.trim();
 										dependenciesFM.add(pluginDepFMEntry);
 									}
 								}
@@ -1001,7 +998,7 @@ public class DependencyFinder {
 					else
 					{
 						// not considering the version ranges at all, so skipping the check of whether a plugin exists in the sepcified range.
-						String	pluginDepFMEntry=thisPluginId.trim()+IMPLICATION+otherPluginName.trim();
+						String	pluginDepFMEntry=thisPluginId.trim()+implies+otherPluginName.trim()+ParsingUtil.DELIM_COMMENT+comment.trim();
 						pluginDepFMEntry=pluginDepFMEntry.replaceAll("<(.*?)>", "");
 						dependenciesFM.add(pluginDepFMEntry);
 					}
@@ -1288,13 +1285,44 @@ public class DependencyFinder {
 			}
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
+			// building the exporters part of the constraint as well.
+			String constraintsExporters="";
+						
 			// all exporters
 			writer.write(Constants.PLUGIN_DEPENDENCY_EXPORTERS + "\n");
 			for (String s : exp) {
 				writer.write( s + "\n");
+				
+				// collecting the exporters set  ..  to add in the constraints file.
+				String ces=s.trim().replace("[", "("+Constants.CONFIG_).replace("]", ")").replace(", ", Constants._AND_+Constants.CONFIG_);
+				if(null!=ces&&1<=ces.trim().length())
+					constraintsExporters+=ces+Constants._OR_;
+				
 			}
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
+			if(4<=constraintsExporters.length())
+				constraintsExporters=constraintsExporters.substring(0, constraintsExporters.length()-Constants._OR_.length());
+		
+			// collecting the constraint entry  to the constraintsSet.
+			if( 1<=constraintsExporters.length  ()  )
+			{
+				for(String importer:imp)
+				{
+					importer=importer.trim();
+					if("".equalsIgnoreCase(importer))
+						continue;
+					String constraint=Constants.CONFIG_+importer+Constants.IMPLIES_RIGHT+constraintsExporters;
+					if(ignoreVersionsInFeatureModelGeneration)
+						constraint=constraint.replaceAll("<(.*?)>", "");
+					Set<String> funcs= new HashSet<String>();
+					if(constraintsFM.containsKey(constraint))
+						funcs=constraintsFM.get(constraint);
+					funcs.add(ParsingUtil.DELIM_COMMENT+funcSig);
+					constraintsFM.put(constraint, funcs);
+				}
+			}
+			
 			// all importers not satisfied
 			writer.write(Constants.PLUGIN_DEPENDENCY_IMPORTERS_UNSATISFIED + "\n");
 			writer.write((0 == exp.size() ? true + ", " + imp.size() + " importer(s) hungry " : false + ", " + exp.size()
@@ -1313,47 +1341,18 @@ public class DependencyFinder {
 					+ imp.size() + " importer(s) hungry ")
 					+ "\n");
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
+			
+					
+//			writer.write(Constants.PLUGIN_DEPENDENCY_SATISFYING_PLUGINS_SETS + "\n");
+//			for (Set<String> s : impexp.satisfyingPluginsSets) {
+//				writer.write(s + "\n");
+//			}
+//			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 			
-			
-			// building the exporters part of the constraint as well.
-			String constraintsExporters="";
-					
-			writer.write(Constants.PLUGIN_DEPENDENCY_SATISFYING_PLUGINS_SETS + "\n");
-			for (Set<String> s : impexp.satisfyingPluginsSets) {
-				writer.write(s + "\n");
-				
-				// collecting the exporters set
-				String ces=s.toString().trim().replace("[", "("+Constants.CONFIG_).replace("]", ")").replace(", ", Constants._AND_+Constants.CONFIG_);
-				if(null!=ces&&1<=ces.trim().length())
-					constraintsExporters+=ces+Constants._OR_;
-				
-			}
-			writer.write(Constants.MARKER_TERMINATOR + "\n");
-			
-			if(4<=constraintsExporters.length())
-				constraintsExporters=constraintsExporters.substring(0, constraintsExporters.length()-Constants._OR_.length());
-		
-			// collecting the constraint entry  to the constraintsSet.
-			if( 1<=constraintsExporters.length  ()  )
-			{
-				for(String importer:imp)
-				{
-					importer=importer.trim();
-					if("".equalsIgnoreCase(importer))
-						continue;
-					String constraint=Constants.CONFIG_+importer+Constants.IMPLIES_RIGHT+constraintsExporters;
-					if(ignoreVersionsInFeatureModelGeneration)
-						constraint=constraint.replaceAll("<(.*?)>", "");
-					Set<String> funcs= new HashSet<String>();
-					if(constraintsFM.containsKey(constraint))
-						funcs=constraintsFM.get(constraint);
-					funcs.add(" // "+funcSig);
-					constraintsFM.put(constraint, funcs);
-				}
-			}
 			// terminating the key ( function name )
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
+			
 			counter++;
 			if (counter % 200000 == 0 || counter == functionsLength)
 				Log.outln("## functions written: " + counter + " of " + functionsLength + " ("
@@ -1455,11 +1454,11 @@ public class DependencyFinder {
 					+ "\n");
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
-			writer.write(Constants.PLUGIN_DEPENDENCY_SATISFYING_PLUGINS_SETS + "\n");
-			for (Set<String> s : impexp.satisfyingPluginsSets) {
-				writer.write(s + "\n");
-			}
-			writer.write(Constants.MARKER_TERMINATOR + "\n");
+//			writer.write(Constants.PLUGIN_DEPENDENCY_SATISFYING_PLUGINS_SETS + "\n");
+//			for (Set<String> s : impexp.satisfyingPluginsSets) {
+//				writer.write(s + "\n");
+//			}
+//			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 			// terminating the key ( type /class name )
 			writer.write(Constants.MARKER_TERMINATOR + "\n");

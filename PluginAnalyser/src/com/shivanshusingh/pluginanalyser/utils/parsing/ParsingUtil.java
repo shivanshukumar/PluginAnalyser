@@ -230,4 +230,6 @@ public class ParsingUtil {
 		return pluginId;
 	}
 
+	public static final String DELIM_COMMENT = " // ";
+
 }

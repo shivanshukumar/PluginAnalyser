@@ -13,7 +13,7 @@ import java.util.Set;
 public class ImpExp {
 
 	
-	public Set<Set<String>> satisfyingPluginsSets=new HashSet<Set<String>>();
+//	public Set<Set<String>> satisfyingPluginsSets=new HashSet<Set<String>>();
 //	public Set<Set> satisfyingPluginsSets = new HashSet<Set>();
 	
 	private Set<String> exp = new HashSet<String>();
@@ -26,6 +26,11 @@ public class ImpExp {
 
 	public void addToExp(String arg0) {
 		this.exp.add(arg0);
+	}
+	
+	public void addAllToExp(Set<Set<String>> arg0) {
+		for(Set<String> s: arg0)
+		this.exp.add(s.toString());
 	}
 
 	public void addToImp(String arg0) {
