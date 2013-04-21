@@ -189,7 +189,7 @@ public class PluginAnalyserJobRunner {
 			String pathToJavaClasses="/Users/singhsk/Developer/java_classes";
 			boolean eraseOldExtracts = true;
 		
-			AnalysisRunner.analyseAndRecord(destinationDirectory, outputLocation, pathToJavaClasses, eraseOldExtracts);
+//			AnalysisRunner.analyseAndRecord(destinationDirectory, outputLocation, pathToJavaClasses, eraseOldExtracts);
 
 			// //////////////////////////////////////////////////////
 			// the dependency finder.
