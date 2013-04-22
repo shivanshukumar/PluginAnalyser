@@ -160,3 +160,24 @@ void org.apache.xmlbeans.XmlOptions.put (java.lang.Object,java.lang.Object,)
  
 count= 72
 
+
+(3) QUESTION
+  the function call: void org.eclipse.jdt.internal.corext.dom.ModifierRewrite.setVisibility (int,org.eclipse.text.edits.TextEditGroup,)
+is not satisfied for the importer plugin: com.stateofflow.eclipse.tane<%1.3.1.201104282140%>
+
+on further analysis it is found that com.stateofflow.eclipse.tane<%1.3.1.201104282140%> states another bundle  org.eclipse.jdt.ui;[3.4.0,] as mandatory import
+
+the bundle org.eclipse.jdt.ui_3.8.2.v20130107-165834 has in the public functions that it offers:
+org.eclipse.jdt.internal.corext.fix.LinkedProposalPositionGroup$PositionInformation org.eclipse.jdt.internal.corext.dom.ModifierRewrite.setVisibility (int,org.eclipse.text.edits.TextEditGroup,)
+and also lists as a package that it exports: org.eclipse.jdt.internal.corext.dom  which is the  enclosing package for the above function.
+
+so the return type of the imported function (invokation) is void while the return type of the exported (publicly available) function is org.eclipse.jdt.internal.corext.fix.LinkedProposalPositionGroup$PositionInformation ,  which is also available as a public type in the exporting plugin.
+
+technically the different return tyoe essentially means a different function as the signatures are different.
+
+Also, looking at the bytecode decompiled sourcecode of where the invokation is really made, it is found that it is made in the following way:
+ 
+ModifierRewrite.create(astRewrite, declaration).setVisibility(modifier == null ? 0 : modifier.toFlagValue(), null);   i.e. the return is not explicitly handled.
+So does it mean that because   the return was not assigned to anything the signature of the function happened to be like void ..  ???? WEIRD.
+
+ 
