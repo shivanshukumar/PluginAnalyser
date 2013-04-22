@@ -746,7 +746,7 @@ public class DependencyFinder {
 							// exporter is available. If so, then this import
 							// must be ignored.
 							boolean doNotCare = false;
-							doNotCare = importFromOptionalOrphanPkgImport(s, myPackageImports, exportedPackagesMap);
+							doNotCare = checkIfImportFromOptionalOrphanPkgImport(s, myPackageImports, exportedPackagesMap);
 
 							if (!doNotCare) {
 								ImpExp impexp = new ImpExp();
@@ -821,7 +821,7 @@ public class DependencyFinder {
 							// available. If so, then this import must be
 							// ignored.
 							boolean doNotCare = false;
-							doNotCare = importFromOptionalOrphanPkgImport(s, myPackageImports, exportedPackagesMap);
+							doNotCare = checkIfImportFromOptionalOrphanPkgImport(s, myPackageImports, exportedPackagesMap);
 
 							if (!doNotCare) {
 								ImpExp impexp = new ImpExp();
@@ -919,7 +919,7 @@ public class DependencyFinder {
 	 * @param exportedPkgsMap
 	 * @return
 	 */
-	private static boolean importFromOptionalOrphanPkgImport(String importEntry, Set<String> myPackageImports,
+	private static boolean checkIfImportFromOptionalOrphanPkgImport(String importEntry, Set<String> myPackageImports,
 			Map<String, Map<String, Set<String>>> exportedPkgsMap) {
 		boolean result = false;
 		String methodImportClassName = importEntry;
