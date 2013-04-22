@@ -110,7 +110,7 @@ public class ParsingUtil {
 			newEntry = bundleDependencyEntry.split(";")[0].trim();
 		newEntry = newEntry.replace(Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL,"").trim();
 		if(!removeOptionalIndicator&& bundleDependencyEntry.toLowerCase().contains(Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL))
-			bundleDependencyEntry+=" "+Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL;
+			newEntry+=" "+Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL;
 		return newEntry;
 	}
 	
@@ -229,7 +229,5 @@ public class ParsingUtil {
 		String pluginId=name+Constants.DELIM_VERSION_STRING_OPEN+versionStr+Constants.DELIM_VERSION_STRING_CLOSE;
 		return pluginId;
 	}
-
-	public static final String DELIM_COMMENT = " // ";
 
 }
