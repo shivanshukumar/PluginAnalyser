@@ -28,6 +28,7 @@ import com.shivanshusingh.pluginanalyser.utils.Util;
 import com.shivanshusingh.pluginanalyser.utils.Version;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
 import com.shivanshusingh.pluginanalyser.utils.parsing.Constants;
+import com.shivanshusingh.pluginanalyser.utils.parsing.FuncSig;
 import com.shivanshusingh.pluginanalyser.utils.parsing.ParsingUtil;
 //import org.apache.ivy.osgi.core.ManifestParser;
 
@@ -645,17 +646,17 @@ public class BundleAnalyser extends ManifestParser {
 		for (String invokation : invokationsSet) {
 
 			invokation=invokation.trim();
-			String[] thisInvokationElements = ParsingUtil.separateFuncNameElements(invokation);
-			String thisInvokationClassname = thisInvokationElements[1];
+			FuncSig thisInvokationElements = new FuncSig(invokation);
+			String thisInvokationClassname = thisInvokationElements.getClassName();
 
 			// check if the function is one of provided by java.lang.Object -
 			// marking those as satisfied by default and marking them to be
 			// pruned.
 			
 			String javaInvokation=invokation;
-			String[] javaInvokationElements = ParsingUtil.separateFuncNameElements(javaInvokation);
-			javaInvokationElements[1]=Constants.JAVA_LANG_OBJECT;
-			javaInvokation=ParsingUtil.reconstructFuncSignature(javaInvokationElements).trim();
+			FuncSig javaInvokationElements = new FuncSig(javaInvokation);
+			javaInvokationElements.setClassName(Constants.JAVA_LANG_OBJECT);
+			javaInvokation=javaInvokationElements.getSignature().trim();
 			if(Constants.JAVA_LANG_OBJECT_FUNCTIONS.contains(javaInvokation))
 			{
 				pruningObject.invokationsToBeRemoved.add(invokation);
@@ -684,9 +685,9 @@ public class BundleAnalyser extends ManifestParser {
 							String superClassName = superclassNames[x].trim();
 							if (!"".equalsIgnoreCase(superClassName)) {
 								// constructing the new method signature.
-								String[] newInvokationElements = thisInvokationElements;
-								newInvokationElements[1] = superClassName;
-								String newInvokation = ParsingUtil.reconstructFuncSignature(newInvokationElements);
+								FuncSig newInvokationElements =  new FuncSig( thisInvokationElements);
+								newInvokationElements.setClassName(superClassName);
+								String newInvokation = newInvokationElements.getSignature();
 
 								if (allMethodsSet.contains(newInvokation)) {
 									pruningObject.invokationsToBeRemoved.add(invokation);
@@ -705,9 +706,9 @@ public class BundleAnalyser extends ManifestParser {
 
 						if (!flag_invokationIndirectlySatisfied) {
 							String superClassName = superclassNames[superclassNames.length - 1].trim();
-							String[] newInvokationElements = ParsingUtil.separateFuncNameElements(invokation);
-							newInvokationElements[1] = superClassName;
-							String newInvokation = ParsingUtil.reconstructFuncSignature(newInvokationElements);
+							FuncSig newInvokationElements = new FuncSig(invokation);
+							newInvokationElements.setClassName(superClassName);
+							String newInvokation = newInvokationElements.getSignature();
 
 							if (1 <= superClassName.length()) {
 								Set<String> proxySet = new HashSet<String>();
@@ -749,9 +750,9 @@ public class BundleAnalyser extends ManifestParser {
 									if (!"".equalsIgnoreCase(interfaceImplemented)) {
 										// constructing the new method
 										// signature.
-										String[] newInvokationElements = ParsingUtil.separateFuncNameElements(invokation);
-										newInvokationElements[1] = interfaceImplemented;
-										String newInvokation = ParsingUtil.reconstructFuncSignature(newInvokationElements);
+										FuncSig newInvokationElements =    new FuncSig  (invokation);
+										newInvokationElements.setClassName(interfaceImplemented);
+										String newInvokation = newInvokationElements.getSignature();
 
 										// checking for being satisfied.
 										if (allMethodsSet.contains(newInvokation)) {

@@ -49,7 +49,7 @@ public class ImpExp {
 		this.imp = imp;
 	}
 	
-	/*@Override
+	@Override
 	public String toString()
 	{
 		StringBuffer   sb = new StringBuffer();
@@ -59,13 +59,9 @@ public class ImpExp {
 		sb.append("],exp=[");
 		for(Object s:exp)
 			sb.append((String)s+",");
-		sb.append("],satisfyingPluginsSets=[");
-		
-		for(String s:satisfyingPluginsSets)
-			sb.append(s+",");
 		sb.append("]");
-		sb.append("]");
+		sb.append("]\n");
 		return sb.toString();
 	}
-	*/
+	
 }

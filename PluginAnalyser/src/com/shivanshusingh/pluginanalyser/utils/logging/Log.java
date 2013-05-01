@@ -151,8 +151,8 @@ public class Log {
 			FileOutputStream fout = new FileOutputStream(path + "_" + Log.STD_OUT_LOG_FILENAME);
 			FileOutputStream ferr = new FileOutputStream(path + "_" + Log.STD_ERR_LOG_FILENAME);
 
-			MultiOutputStream multiOut = new MultiOutputStream(fout  , System.out);
-			MultiOutputStream multiErr = new MultiOutputStream(ferr  ,   System.err);
+			MultiOutputStream multiOut = new MultiOutputStream( System.out,fout);
+			MultiOutputStream multiErr = new MultiOutputStream(System.err,ferr );
 
 			PrintStream stdout = new PrintStream(multiOut);
 			PrintStream stderr = new PrintStream(multiErr);

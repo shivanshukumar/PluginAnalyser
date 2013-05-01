@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.StringTokenizer;
 
 /**
  * 
@@ -45,51 +46,6 @@ public class ParsingUtil {
 		}
 		br.close();
 		return result;
-	}
-
-	/**
-	 * separates the function class from function name. e.g. if the input is:
-	 * org.s.G com.x.A.foo () returned: classAndFuncName[0]=org.s.G
-	 * classAndFuncName[1]=com.x.A classAndFuncName[3]=foo ()
-	 * 
-	 * @param funcSignature
-	 * @return
-	 */
-	public static String[] separateFuncNameElements(String funcSignature) {
-		String[] classAndFuncName = new String[3];
-		String[] spaceSplits = funcSignature.split(" ");
-	
-		// returnType
-		classAndFuncName[0] = spaceSplits[0].trim();
-	
-		String[] dotSplits = spaceSplits[1].trim().split("\\.");
-	
-		// function name and parameters
-		classAndFuncName[2] = dotSplits[dotSplits.length - 1].trim() + " " + spaceSplits[2].trim();
-	
-		// class name
-		if(2<=dotSplits.length)
-			classAndFuncName[1] = dotSplits[0].trim();
-		else
-			classAndFuncName[1]=    "";
-		
-		for (int x = 1; x < dotSplits.length - 1; x++)
-			classAndFuncName[1] += "." + dotSplits[x].trim();
-	
-		return classAndFuncName;
-	}
-
-	/**
-	 * constructs a function signature from the  funcElements[] array where funcElements[0] is the return type funcElements[1] is the class and funcElements[2] is the function name only without class or return type but will the parameters part.
-	 * @param funcElements
-	 * @return
-	 */
-	public static String reconstructFuncSignature(String[] funcElements) {
-		String signature = "";
-		if (null != funcElements && 3 == funcElements.length) {
-			signature += funcElements[0].trim() + " " + funcElements[1].trim() + "." + funcElements[2].trim();
-		}
-		return signature;
 	}
 
 	/**
@@ -157,15 +113,32 @@ public class ParsingUtil {
 	 * @return
 	 */
 	public static int getEntryType(String str) {
-		if (null == str || "".equalsIgnoreCase(str.trim()))
+		//System.out.println("splitting:"+str);
+		if (null != str && 0 < str.trim().length()) {
+			try {
+				str = str.trim();
+				//String[] splits = str.split(" ");
+				StringTokenizer splits=new StringTokenizer(str," ");
+				if (null != splits  &&  0!=splits.countTokens())
+				{
+					if (splits.countTokens() >= 3)
+					{
+						
+						return 1;
+					} else {
+						
+						return 2;
+					}
+				}
+				
+			} catch (StackOverflowError e) {
+				System.err.println("finding the entry type for:" + str.toString());
+				throw e;
+
+			}
+
+		} 
 			return 0;
-		str = str.trim();
-		String[] splits = str.split(" ");
-		if (splits.length >= 3)
-			return 1;
-		else
-	
-			return 2;
 	}
 
 	/**

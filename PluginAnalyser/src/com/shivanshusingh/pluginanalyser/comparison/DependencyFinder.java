@@ -22,6 +22,7 @@ import com.shivanshusingh.pluginanalyser.utils.Version;
 import com.shivanshusingh.pluginanalyser.utils.VersionRange;
 import com.shivanshusingh.pluginanalyser.utils.logging.Log;
 import com.shivanshusingh.pluginanalyser.utils.parsing.Constants;
+import com.shivanshusingh.pluginanalyser.utils.parsing.FuncSig;
 import com.shivanshusingh.pluginanalyser.utils.parsing.ParsingUtil;
 import com.shivanshusingh.pluginanalyser.utils.parsing.EclipsePlatform;
 
@@ -556,6 +557,12 @@ public class DependencyFinder {
 		return conditionalElement;
 	}
 
+	
+	/**
+	 *     maintains the current depth of calls in the findExporters (circular dependency analysis )  function.
+	 */
+	private static long findExportersRecursiveCallDepth=0;
+		
 	/**
 	 * @param considerBundleExportersOnly
 	 * @param ignoreBundlesMarkedToBeIgnored
@@ -708,9 +715,8 @@ public class DependencyFinder {
 							flag_isExported = false;
 
 							// String funcClassName = s.split(" ")[1].trim();
-							String[] funcNameElements = ParsingUtil.separateFuncNameElements(myMethodExport);
-
-							String funcClassName = funcNameElements[1];
+							FuncSig funcNameElements= new FuncSig(myMethodExport);
+							String funcClassName = funcNameElements.getClassName();
 
 							for (String bundleExport : bundleExports) {
 								bundleExport = bundleExport.trim();
@@ -763,8 +769,9 @@ public class DependencyFinder {
 								po.imports.add(s);
 
 							} else {
-								System.out.println(s + " : do not care because of  ioptional package import in plugin: "
-										+ thisPluginId);
+								// System.out.println(s +
+								// " : do not care because of  ioptional package import in plugin: "
+								// + thisPluginId);
 							}
 						}
 					}
@@ -837,8 +844,8 @@ public class DependencyFinder {
 								po.imports.add(s);
 
 							} else {
-								System.out.println(s + " : do not care because of  ioptional package import in plugin: "
-										+ thisPluginId);
+//								System.out.println(s + " : do not care because of  ioptional package import in plugin: "
+//										+ thisPluginId);
 							}
 						}
 					}
@@ -851,6 +858,7 @@ public class DependencyFinder {
 				// information to the DependencyFinder.plugins object /////////
 			}
 		}
+				
 		Log.outln(" ///////// now doing the circular inter plugin dependency analysis    /////////    ");
 
 		Set<Entry<String, PluginObject>> pluginEntrySet = plugins.entrySet();
@@ -859,12 +867,14 @@ public class DependencyFinder {
 				.currentTimeMillis();
 
 		for (Entry<String, PluginObject> entry : pluginEntrySet) {
-
 			counter++;
 			PluginObject pluginObj = entry.getValue();
 			Log.outln("== plugin  " + counter + " : " + pluginObj.name);
+			Log.errln("== plugin  " + counter + " : " + pluginObj.name);
+			
 			for (String imp : pluginObj.imports) {
-
+				
+				findExportersRecursiveCallDepth=0;
 				Set<Set<String>> exporterPluginSets = new LinkedHashSet<Set<String>>();
 				// if the alsoConsiderInvokationSatisfactionProxies flag
 				// parameter is true, then build a set of all invokations to be
@@ -910,6 +920,193 @@ public class DependencyFinder {
 		}
 	}
 
+	
+
+	private static Set<Set<String>> fetchExporters(String imp, Set<String> importEntryProxies, String ownerPluginName) {
+
+		Set<Set<String>> result = new LinkedHashSet<Set<String>>();
+
+		// first see if the import can be satisfied on its own
+		// this is required as there might be some interface implementations
+		// that may satisfy the invokation indirectly.
+		Set<Set<String>> interimResult = new LinkedHashSet<Set<String>>();
+		interimResult = fetchExporters(imp);
+		if (null != interimResult && interimResult.size() > 0)
+			result.addAll(interimResult);
+		else {
+
+			// otherwise, try the proxies but then this means that we would need
+			// to
+			// include the plugin that owns the import entry in the result as
+			// the
+			// proxy is generated to go outside of the owner plugin from inside
+			// of
+			// the owner plugin and the dependency cannot be satisfied without
+			// the
+			// owner plugin in the mix.
+
+			for (String importEntryProxy : importEntryProxies) {
+				interimResult = new LinkedHashSet<Set<String>>();
+
+				interimResult = fetchExporters(importEntryProxy);
+				if (interimResult.size() > 0)// null!=interimResult &&
+					for (Set<String> set : interimResult) {
+						if (set.size() > 0)
+							set.add(ownerPluginName);
+					}
+				result.addAll(interimResult);
+			}
+		}
+		return result;
+	}
+
+	/**
+	 * get the set of exporting plugin combinations either from the cache, if
+	 * available or else do a fresh search.
+	 * 
+	 * @param imp
+	 * @return
+	 */
+	private static Set<Set<String>> fetchExporters(String imp) {
+		Set<Set<String>> result = new LinkedHashSet<Set<String>>();
+
+		if (exporterSetsCache.containsKey(imp)) {
+			result = exporterSetsCache.get(imp);
+		} else {
+			Set<Set<String>> interimresult = findExporters(imp, new HashSet<String>());
+			if (null != interimresult && 1 <= interimresult.size()) {
+				exporterSetsCache.put(imp, interimresult);
+				result.addAll(interimresult);
+			}
+		}
+		return result;
+	}
+
+	/**
+	 * helper to store already traversed imports, helping DependencyFinder.
+	 * findExporters
+	 */
+	private static Map<String, Set<Set<String>>> exporterSetsCache = new HashMap<String, Set<Set<String>>>();
+
+	/**
+	 * recursively finds the exporter sets of the given imports.
+	 * 
+	 * @param imp
+	 *            the import signature (function or type)
+	 * @return Set<Set<String>> a set of sets of plugin combinations that
+	 *         satisfy the import
+	 */
+	private static Set<Set<String>> findExporters(String imp, Set<String> seenClasses) {
+
+		findExportersRecursiveCallDepth++;
+		if (findExportersRecursiveCallDepth % 500000 == 0)
+			System.err.println(findExportersRecursiveCallDepth + ":" + imp);
+
+		Set<Set<String>> result = new LinkedHashSet<Set<String>>();
+		imp = imp.trim();
+		int impType = ParsingUtil.getEntryType(imp);
+		if (0 != impType) {
+			String classname = imp;
+			if (1 == impType) {
+				/* it is a function, so get the class name. */
+				FuncSig funcElements = new FuncSig(imp);
+				classname = funcElements.getClassName();// class name.
+			}
+			Set<PluginObject> targetPlugins = new HashSet<PluginObject>();
+			targetPlugins = getTargetPlugins(classname);
+
+			for (PluginObject targetPlugin : targetPlugins) {
+
+				if (null != targetPlugin) {
+					if (null != targetPlugin.exports && targetPlugin.exports.contains(imp)) {
+						Set<String> newSet = new LinkedHashSet<String>();
+						newSet.add(targetPlugin.name);
+						result.add(newSet);
+						// System.out.println("result: "+result);
+					} else {
+						if (null != targetPlugin.superClassesAndInterfaces) {
+							Set<String> superclasses = targetPlugin.superClassesAndInterfaces.get(classname);
+							if (null != superclasses) {
+								/*
+								 * iteration level cache of classes visited in
+								 * the current tree of inheritance hierarchy, so
+								 * that a loop can be avoided.
+								 */
+								Set<String> newSeenClasses = new HashSet<String>(seenClasses);
+								newSeenClasses.add(classname);
+								for (String superclass : superclasses) {
+									if (!seenClasses.contains(superclass)
+											&& 0 != Constants.JAVA_LANG_OBJECT.compareToIgnoreCase(superclass))
+									/*
+									 * if this class has been visited already in
+									 * the current iteration and the current
+									 * hierarchy i.e., stop as this is a loop.
+									 * __&&__  
+									 *  ignoring cases where the
+									 * superclass is java.lang.Object as pruning
+									 * for this was done earlier already.
+									 */
+									{
+										String newImp = imp.replace(classname, superclass);
+										/*
+										 * if imp is a functioninvokation, then  replace just the class name with superclass name
+										 */
+										boolean impTypeIsFunction = (1 == ParsingUtil.getEntryType(imp)) ? true : false;
+
+										if (impTypeIsFunction) {
+											// it is a function, so get the
+											// class
+											// name.
+
+											FuncSig funcElements = new FuncSig(imp);
+
+											// replace the class name.
+											funcElements.setClassName(superclass);
+											// recnstruct
+											newImp = funcElements.getSignature();
+										}
+
+										Set<Set<String>> setOfSets = findExporters(newImp, newSeenClasses);
+										if (setOfSets.size() > 0)
+											for (Set<String> set : setOfSets) {
+												if (set.size() > 0)
+													set.add(targetPlugin.name);
+											}
+										result.addAll(setOfSets);
+										// System.out.println("result_branch: "+result);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		return result;
+	}
+
+	/**
+	 * gets a set of PluginsObject for the plugins that export the said
+	 * classname.
+	 * 
+	 * @param classname
+	 * @return
+	 */
+	private static Set<PluginObject> getTargetPlugins(String classname) {
+		Set<PluginObject> result = new HashSet<PluginObject>();
+
+		// getting the list of plugin names that export this type.
+		if (types.containsKey(classname)) {
+			Set<String> allPluginExporters = types.get(classname).getExp();
+			for (Object pluginName : allPluginExporters) {
+				// getting the PluginObjects for all the plugin names obtained.
+				PluginObject pobj = plugins.get((String) pluginName);
+				result.add(pobj);
+			}
+
+		}
+		return result;
+	}
 	/**
 	 * is the importEntry coming from a packageImport that was optional and for
 	 * which no exporter is present?
@@ -925,8 +1122,8 @@ public class DependencyFinder {
 		String methodImportClassName = importEntry;
 
 		if (1 == ParsingUtil.getEntryType(importEntry)) {
-			String[] myMethodImportElems = ParsingUtil.separateFuncNameElements(importEntry);
-			methodImportClassName = myMethodImportElems[1];
+		FuncSig	myMethodImportElems=    new FuncSig(importEntry);
+			methodImportClassName = myMethodImportElems.getClassName();
 		}
 		for (String pkgImpEntry : myPackageImports) {
 			String pkgImpName = ParsingUtil.getNameFromBundleDependencyEntry(pkgImpEntry, true, false);
@@ -957,25 +1154,26 @@ public class DependencyFinder {
 	 * @param thisPluginId
 	 * @param pkgImports
 	 * @param comment
-	 *            TODO
 	 * @param ignoreVersionsInFeatureModelGeneration
 	 */
 	private static void addPackageDependenciesToFeatureModel(String thisPluginId, Set<String> pkgImports, String comment,
 			boolean ignoreVersionsInFeatureModelGeneration) {
 		// adding package based bundle dependencies
 		for (String packageImport : pkgImports) {
-
 			String packageImportName = ParsingUtil.getNameFromBundleDependencyEntry(packageImport, true, false);
-			if (null != packageImportName && !"".equalsIgnoreCase(packageImportName.trim())) {
-				// this means that there is some name to it.
+			if (null != packageImportName && !"".equalsIgnoreCase(packageImportName.trim())) 
+			// this means that there is some name to it.
+			{
 				packageImportName = packageImportName.trim();
-
-				// check if this is optional. If yes this will not be
-				// included.
-				if (!packageImportName.contains(Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL)) {
-
-					// now getting all Plugin IDs for the plugin name of
-					// the dependency entry from the pluginmap.
+				/*
+				 * check if this is optional. If yes this will not be included.
+				 */
+				if (!packageImportName.contains(Constants.BUNDLE_DEPDENDENCY_KEYWORD_OPTIONAL))
+				/*
+				 * now getting all Plugin IDs for the plugin name of the
+				 * dependency entry from the pluginmap.
+				 */
+				{
 					if (exportedPackagesMap.containsKey(packageImportName)) {
 						Map<String, Set<String>> candidatePkgMap = exportedPackagesMap.get(packageImportName);
 						Set<String> candidateExpotedPackageIds = candidatePkgMap.keySet();
@@ -1005,7 +1203,7 @@ public class DependencyFinder {
 							}
 						} else {
 							// not considering the version ranges at
-							// all, so add all plugin ids that export all
+							// all, so add all plugin ids that export any
 							// versions of the package.
 
 							for (String candidateExpPkgId : candidateExpotedPackageIds)
@@ -1148,166 +1346,6 @@ public class DependencyFinder {
 		}
 		return true;
 	}
-
-	private static Set<Set<String>> fetchExporters(String imp, Set<String> importEntryProxies, String ownerPluginName) {
-
-		Set<Set<String>> result = new LinkedHashSet<Set<String>>();
-
-		// first see if the import can be satisfied on its own
-		// this is required as there might be some interface implementations
-		// that may satisfy the invokation indirectly.
-		Set<Set<String>> interimResult = new LinkedHashSet<Set<String>>();
-		interimResult = fetchExporters(imp);
-		if (null != interimResult && interimResult.size() > 0)
-			result.addAll(interimResult);
-		else {
-
-			// otherwise, try the proxies but then this means that we would need
-			// to
-			// include the plugin that owns the import entry in the result as
-			// the
-			// proxy is generated to go outside of the owner plugin from inside
-			// of
-			// the owner plugin and the dependency cannot be satisfied without
-			// the
-			// owner plugin in the mix.
-
-			for (String importEntryProxy : importEntryProxies) {
-				interimResult = new LinkedHashSet<Set<String>>();
-
-				interimResult = fetchExporters(importEntryProxy);
-				if (interimResult.size() > 0)// null!=interimResult &&
-					for (Set<String> set : interimResult) {
-						if (set.size() > 0)
-							set.add(ownerPluginName);
-					}
-				result.addAll(interimResult);
-			}
-		}
-		return result;
-	}
-
-	/**
-	 * get the set of exporting plugin combinations either from the cache, if
-	 * available or else do a fresh search.
-	 * 
-	 * @param imp
-	 * @return
-	 */
-	private static Set<Set<String>> fetchExporters(String imp) {
-		Set<Set<String>> result = new LinkedHashSet<Set<String>>();
-
-		if (exporterSetsCache.containsKey(imp)) {
-			result = exporterSetsCache.get(imp);
-		} else {
-			Set<Set<String>> interimresult = findExporters(imp);
-			if (null != interimresult && 1 <= interimresult.size()) {
-				exporterSetsCache.put(imp, interimresult);
-				result.addAll(interimresult);
-			}
-		}
-		return result;
-	}
-
-	/**
-	 * helper to store already traversed imports, helping DependencyFinder.
-	 * findExporters
-	 */
-	private static Map<String, Set<Set<String>>> exporterSetsCache = new HashMap<String, Set<Set<String>>>();
-
-	/**
-	 * recursively finds the exporter sets of the given imports.
-	 * 
-	 * @param imp
-	 *            the import signature (function or type)
-	 * @return Set<Set<String>> a set of sets of plugin combinations that
-	 *         satisfy the import
-	 */
-	private static Set<Set<String>> findExporters(String imp) {
-
-		Set<Set<String>> result = new LinkedHashSet<Set<String>>();
-		imp = imp.trim();
-		int impType = ParsingUtil.getEntryType(imp);
-		if (0 != impType) {
-			String classname = imp;
-			if (1 == impType) {
-				// it is a function, so get the class name.
-				String[] funcElements = ParsingUtil.separateFuncNameElements(imp);
-				classname = funcElements[1];// class name.
-			}
-			Set<PluginObject> targetPlugins = new HashSet<PluginObject>();
-			targetPlugins = getTargetPlugins(classname);
-			for (PluginObject targetPlugin : targetPlugins) {
-				if (null != targetPlugin) {
-					if (null != targetPlugin.exports && targetPlugin.exports.contains(imp)) {
-
-						Set<String> newSet = new LinkedHashSet<String>();
-						newSet.add(targetPlugin.name);
-						result.add(newSet);
-						// System.out.println("result: "+result);
-					} else {
-						if (null != targetPlugin.superClassesAndInterfaces) {
-							Set<String> superclasses = targetPlugin.superClassesAndInterfaces.get(classname);
-							if (null != superclasses) {
-								for (String superclass : superclasses) {
-									String newImp = imp.replace(classname, superclass);
-									// if imp is a functioninvokation, then
-									// replace
-									// just the class name with superclass name
-									boolean impTypeIsFunction = (1 == ParsingUtil.getEntryType(imp)) ? true : false;
-
-									if (impTypeIsFunction) {
-										// it is a function, so get the class
-										// name.
-										String[] funcElements = ParsingUtil.separateFuncNameElements(imp);
-										// replace the class name.
-										funcElements[1] = superclass;
-										// recnstruct
-										newImp = ParsingUtil.reconstructFuncSignature(funcElements);
-									}
-
-									Set<Set<String>> setOfSets = findExporters(newImp);
-									if (setOfSets.size() > 0)
-										for (Set<String> set : setOfSets) {
-											if (set.size() > 0)
-												set.add(targetPlugin.name);
-										}
-									result.addAll(setOfSets);
-									// System.out.println("result_branch: "+result);
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-		return result;
-
-	}
-
-	/**
-	 * gets a set of PluginsObject for the plugins that export the said
-	 * classname.
-	 * 
-	 * @param classname
-	 * @return
-	 */
-	private static Set<PluginObject> getTargetPlugins(String classname) {
-		Set<PluginObject> result = new HashSet<PluginObject>();
-
-		// getting the list of plugin names that export this type.
-		if (types.containsKey(classname)) {
-			Set<String> allPluginExporters = types.get(classname).getExp();
-			for (Object pluginName : allPluginExporters) {
-				// getting the PluginObjects for all the plugin names obtained.
-				PluginObject pobj = plugins.get((String) pluginName);
-				result.add(pobj);
-			}
-
-		}
-		return result;
-	}
-
 	private static void writeData(String pluginDependencySetOutputLocationPath,
 			boolean ignoreVersionsInFeatureModelGeneration) throws IOException {
 
@@ -1361,14 +1399,14 @@ public class DependencyFinder {
 
 		long counter = 0;
 		long functionsLength = functions.keySet().size();
-		for (String funcSig : functions.keySet()) {
+		for (String funcSign : functions.keySet()) {
 
 			writer.write(Constants.DELIM_PLUGIN_DEPENDENCY_ELEMENT_SET + "\n");
 
 			// writing the function signature.
-			writer.write(funcSig + "\n");
+			writer.write(funcSign + "\n");
 
-			ImpExp impexp = functions.get(funcSig);
+			ImpExp impexp = functions.get(funcSign);
 
 			Set<String> imp = impexp.getImp();
 			Set<String> exp = impexp.getExp();
@@ -1414,7 +1452,7 @@ public class DependencyFinder {
 					Set<String> funcs = new HashSet<String>();
 					if (constraintsFM.containsKey(constraint))
 						funcs = constraintsFM.get(constraint);
-					funcs.add(Constants.DELIM_COMMENT + funcSig);
+				//	funcs.add( funcSign);
 					constraintsFM.put(constraint, funcs);
 				}
 			}
@@ -1428,7 +1466,7 @@ public class DependencyFinder {
 
 			// add to the unmatchedFunctionImports Set.
 			if (0 == exp.size())
-				unmatchedFunctionImports.add(funcSig);
+				unmatchedFunctionImports.add(funcSign);
 
 			// all exporters whose exports were not needed by anyone
 			writer.write(Constants.PLUGIN_DEPENDENCY_EXPORTERS_UNSATISFIED + "\n");
@@ -1449,18 +1487,20 @@ public class DependencyFinder {
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 			counter++;
-			if (counter % 200000 == 0 || counter == functionsLength)
-				Log.outln("## functions written: " + counter + " of " + functionsLength + " ("
+			if (counter % 1000 == 0 || counter == functionsLength)
+				Log.outln("## functions written to disk: " + counter + " of " + functionsLength + " ("
 						+ (counter * 100 / functionsLength) + "%)");
 		}
 
 		// writing the constraints file.
 		List<String> constraintsSet_List = new ArrayList<String>(constraintsFM.keySet());
 		Collections.sort(constraintsSet_List);
-		for (String s : constraintsSet_List) {
-			for (String f : constraintsFM.get(s))
-				s += f;
-			constraintsFMWriter.write(s.replace(".", "_").replace("-", "_")
+		for (String constraint : constraintsSet_List) {
+			String comment="";
+			for (String f : constraintsFM.get(constraint))
+				comment += f.trim()+", ";
+			
+			constraintsFMWriter.write((constraint+(comment.length()>0?Constants.DELIM_COMMENT+comment:"")).replace(".", "_").replace("-", "_")
 					.replace(Constants.DELIM_VERSION_STRING_OPEN, "__").replace(Constants.DELIM_VERSION_STRING_CLOSE, "__")
 					+ "\n");
 		}
@@ -1559,7 +1599,7 @@ public class DependencyFinder {
 			writer.write(Constants.MARKER_TERMINATOR + "\n");
 
 			counter++;
-			if (counter % 75000 == 0 || counter == typesLength)
+			if (counter % 1000 == 0 || counter == typesLength)
 				Log.outln("## types written: " + counter + " of " + typesLength + " (" + (counter * 100 / typesLength)
 						+ "%)");
 

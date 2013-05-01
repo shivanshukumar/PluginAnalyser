@@ -37,7 +37,9 @@ public class PluginAnalyserJobRunner {
 		String mirrorSiteDesinationName =
 //		 "new_site2_____";
 //		 "new_site3_____";
-		"__WorkingEclipseSite_features_and_plugins__";
+//		"__WorkingEclipseSite_features_and_plugins__";
+				"eclipse_multiversion_javadev";
+//				"eclipse_juno_sr2";
 //		 "_plugin_sandbox";
 //				"_Base_Eclipse_TestingVersion";
 //		 "eclipse_juno_p2_mirror_site";
