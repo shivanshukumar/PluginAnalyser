@@ -1452,7 +1452,7 @@ public class DependencyFinder {
 					Set<String> funcs = new HashSet<String>();
 					if (constraintsFM.containsKey(constraint))
 						funcs = constraintsFM.get(constraint);
-				//	funcs.add( funcSign);
+					funcs.add( funcSign);
 					constraintsFM.put(constraint, funcs);
 				}
 			}
@@ -1498,8 +1498,9 @@ public class DependencyFinder {
 		for (String constraint : constraintsSet_List) {
 			String comment="";
 			for (String f : constraintsFM.get(constraint))
-				comment += f.trim()+", ";
-			
+				comment += f.trim()+"; ";
+			if(comment.endsWith("; "))
+				comment=comment.substring(0, comment.length()-"; ".length());
 			constraintsFMWriter.write((constraint+(comment.length()>0?Constants.DELIM_COMMENT+comment:"")).replace(".", "_").replace("-", "_")
 					.replace(Constants.DELIM_VERSION_STRING_OPEN, "__").replace(Constants.DELIM_VERSION_STRING_CLOSE, "__")
 					+ "\n");
