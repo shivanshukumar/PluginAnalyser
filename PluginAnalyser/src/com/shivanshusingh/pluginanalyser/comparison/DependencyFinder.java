@@ -1006,15 +1006,15 @@ public class DependencyFinder {
 		imp = imp.trim();
 		int impType = ParsingUtil.getEntryType(imp);
 		if (0 != impType) {
-			String classname = imp;
-			if (1 == impType) {
-				/* it is a function, so get the class name. */
-				FuncSig funcElements = new FuncSig(imp);
-				classname = funcElements.getClassName();// class name.
-			}
+			String classname = getClassName(imp);
 			Set<PluginObject> targetPlugins = new HashSet<PluginObject>();
 			targetPlugins = getTargetPlugins(classname);
 
+			
+			// Map: parent -> pluginName -> pluginProviderIdsSet
+						Map<String ,  Set<String>> parentProviderPluginIdSets= new HashMap<String, Set<String>>();
+						
+			
 			for (PluginObject targetPlugin : targetPlugins) {
 
 				if (null != targetPlugin) {
@@ -1023,66 +1023,149 @@ public class DependencyFinder {
 						newSet.add(targetPlugin.name);
 						result.add(newSet);
 						// System.out.println("result: "+result);
-					} else {
-						if (null != targetPlugin.superClassesAndInterfaces) {
-							Set<String> superclasses = targetPlugin.superClassesAndInterfaces.get(classname);
-							if (null != superclasses) {
-								/*
-								 * iteration level cache of classes visited in
-								 * the current tree of inheritance hierarchy, so
-								 * that a loop can be avoided.
-								 */
-								Set<String> newSeenClasses = new HashSet<String>(seenClasses);
-								newSeenClasses.add(classname);
-								for (String superclass : superclasses) {
-									if (!seenClasses.contains(superclass)
-											&& 0 != Constants.JAVA_LANG_OBJECT.compareToIgnoreCase(superclass))
-									/*
-									 * if this class has been visited already in
-									 * the current iteration and the current
-									 * hierarchy i.e., stop as this is a loop.
-									 * __&&__  
-									 *  ignoring cases where the
-									 * superclass is java.lang.Object as pruning
-									 * for this was done earlier already.
-									 */
-									{
-										String newImp = imp.replace(classname, superclass);
-										/*
-										 * if imp is a functioninvokation, then  replace just the class name with superclass name
-										 */
-										boolean impTypeIsFunction = (1 == ParsingUtil.getEntryType(imp)) ? true : false;
+					}
+					else 
+					{
+						
+						//build the map of which current targetplugins contain the same inheritance hierarchies.
+						Set<String> parents = targetPlugin.superClassesAndInterfaces.get(classname);
+						for (String parent : parents) {
+							Set<String> providerPluginIdSet = new HashSet<String>();
+							if (parentProviderPluginIdSets.containsKey(parent))
+								providerPluginIdSet = parentProviderPluginIdSets.get(parent);
+							providerPluginIdSet.add(targetPlugin.name);
+							parentProviderPluginIdSets.put(parent, providerPluginIdSet);
+						}
+					}
+				}
+			}
+			findExpFromSupersAndInterfaces(imp, parentProviderPluginIdSets, seenClasses, result);
 
-										if (impTypeIsFunction) {
-											// it is a function, so get the
-											// class
-											// name.
+		}
+		return result;
+	}
 
-											FuncSig funcElements = new FuncSig(imp);
+	/**
+	 * @param imp
+	 * @return
+	 */
+	private static String getClassName(String imp) {
+		int impType = ParsingUtil.getEntryType(imp);
+		String classname = imp;
+		if (1 == impType) {
+			/* it is a function, so get the class name. */
+			FuncSig funcElements = new FuncSig(imp);
+			classname = funcElements.getClassName();// class name.
+		}
+		return classname;
+	}
 
-											// replace the class name.
-											funcElements.setClassName(superclass);
-											// recnstruct
-											newImp = funcElements.getSignature();
-										}
+	/**
+	 * @param imp
+	 * @param parentsAndBaseClassPlugins
+	 * @param seenClasses
+	 * @param result
+	 */
+	private static void findExpFromSupersAndInterfaces(String imp, Map<String  ,  Set<String>> parentsAndBaseClassPlugins,
+			Set<String> seenClasses, Set<Set<String>> result) {
+		String classname = getClassName(imp);
 
-										Set<Set<String>> setOfSets = findExporters(newImp, newSeenClasses);
-										if (setOfSets.size() > 0)
-											for (Set<String> set : setOfSets) {
-												if (set.size() > 0)
-													set.add(targetPlugin.name);
-											}
-										result.addAll(setOfSets);
-										// System.out.println("result_branch: "+result);
+		if(null!=parentsAndBaseClassPlugins)
+		{
+			Set<String> parents = parentsAndBaseClassPlugins.keySet();
+			if (null != parents) {
+				/*
+				 * iteration level cache of classes visited in
+				 * the current tree of inheritance hierarchy, so
+				 * that a loop can be avoided.
+				 */
+				Set<String> newSeenClasses = new HashSet<String>(seenClasses);
+				
+				newSeenClasses.add(classname);
+
+				for (String parent : parents) {
+
+					if (!seenClasses.contains(parent) && 0 != Constants.JAVA_LANG_OBJECT.compareToIgnoreCase(parent)) {
+						/*
+						 * if this class has been visited already in the current
+						 * iteration and the current hierarchy i.e., stop as
+						 * this is a loop. __&&__ ignoring cases where the
+						 * superclass is java.lang.Object as pruning for this
+						 * was done earlier already.
+						 */
+
+						//building the current (base class - containing plugins' set expression)
+						Set<String> baseClassPluginSet=parentsAndBaseClassPlugins.get(parent);
+						if(null!=baseClassPluginSet && 0< baseClassPluginSet.size())
+						{
+							//  continue only if there is some base plugin that says that this parent should be checked for.
+							
+							
+							// the  current plugins' set:
+							List<String> baseClassPluginsList=new ArrayList<String>(baseClassPluginSet);
+							Collections.sort(baseClassPluginsList);
+							
+							String expression="";
+							for(String s:baseClassPluginsList)
+							{
+								if(null!=s  &&  !"".equals(s.trim()))
+									expression+=  s.trim()+Constants._OR_;
+							}
+							if(Constants._OR_.length()  <=  expression.length())
+							{
+								expression=expression.substring(0,expression.length()-Constants._OR_.length());
+							}
+							if(expression.trim().length()>0)
+							{
+								//  again continue only if there is something in this expression, if not then there is no point in checking for this parent.
+								
+								if(expression.contains(Constants._OR_))
+									expression="("+expression+")";
+								
+								String newImp = makeNewImpSig(imp, classname, parent);
+		
+								Set<Set<String>> setOfSets = findExporters(newImp, newSeenClasses);
+								if (setOfSets.size() > 0)
+									for (Set<String> set : setOfSets) {
+										if (set.size() > 0)
+											set.add(expression);
 									}
-								}
+								result.addAll(setOfSets);
+								// System.out.println("result_branch: "+result);
 							}
 						}
 					}
 				}
 			}
 		}
-		return result;
+	}
+
+	/**
+	 * @param imp
+	 * @param classname
+	 * @param superclass
+	 * @return
+	 */
+	private static String makeNewImpSig(String imp, String classname, String superclass) {
+		String newImp = imp.replace(classname, superclass);
+		/*
+		 * if imp is a functioninvokation, then  replace just the class name with superclass name
+		 */
+		boolean impTypeIsFunction = (1 == ParsingUtil.getEntryType(imp)) ? true : false;
+
+		if (impTypeIsFunction) {
+			// it is a function, so get the
+			// class
+			// name.
+
+			FuncSig funcElements = new FuncSig(imp);
+
+			// replace the class name.
+			funcElements.setClassName(superclass);
+			// recnstruct
+			newImp = funcElements.getSignature();
+		}
+		return newImp;
 	}
 
 	/**
@@ -1098,9 +1181,9 @@ public class DependencyFinder {
 		// getting the list of plugin names that export this type.
 		if (types.containsKey(classname)) {
 			Set<String> allPluginExporters = types.get(classname).getExp();
-			for (Object pluginName : allPluginExporters) {
+			for (Object pluginId : allPluginExporters) {
 				// getting the PluginObjects for all the plugin names obtained.
-				PluginObject pobj = plugins.get((String) pluginName);
+				PluginObject pobj = plugins.get((String) pluginId);
 				result.add(pobj);
 			}
 
@@ -1428,8 +1511,8 @@ public class DependencyFinder {
 
 				// collecting the exporters set .. to add in the constraints
 				// file.
-				String ces = s.trim().replace("[", "(" + Constants.CONFIG_).replace("]", ")")
-						.replace(", ", Constants._AND_ + Constants.CONFIG_);
+				String ces = s.trim() .replace("[", "(").replace("]", ")")
+						.replace(", ", Constants._AND_);
 				if (null != ces && 1 <= ces.trim().length())
 					constraintsExporters += ces + Constants._OR_;
 
@@ -1446,7 +1529,7 @@ public class DependencyFinder {
 					importer = importer.trim();
 					if ("".equalsIgnoreCase(importer))
 						continue;
-					String constraint = Constants.CONFIG_ + importer + Constants.IMPLIES_RIGHT + constraintsExporters;
+					String constraint = importer + Constants.IMPLIES_RIGHT + constraintsExporters;
 					if (ignoreVersionsInFeatureModelGeneration)
 						constraint = constraint.replaceAll("<(.*?)>", "");
 					Set<String> funcs = new HashSet<String>();

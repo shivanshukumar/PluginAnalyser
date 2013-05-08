@@ -1,2 +1,0 @@
-#!/bin/sh
-java -ea -Xmx4G -Xms2G -Xss4G -classpath "/Users/singhsk/LearningSpace/git/PluginProject/PluginAnalyser/TautologyChecker/target/scala-2.10/classes:/Users/singhsk/LearningSpace/git/PluginProject/PluginAnalyser/TautologyChecker/lib/javabdd-1.0b2.jar:/Users/singhsk/.sbt/boot/scala-2.10.1/lib/scala-library.jar:/Users/singhsk/.ivy2/cache/de.fosd.typechef/featureexprlib_2.10/jars/featureexprlib_2.10-0.3.4.jar:/Users/singhsk/.ivy2/cache/org.sat4j/org.sat4j.core/jars/org.sat4j.core-2.3.1.jar"  "$@"
